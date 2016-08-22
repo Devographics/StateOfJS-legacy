@@ -8,6 +8,9 @@ $bg: $beige;
 $hmargin: 20px;
 $vmargin: 20px;
 
+$small-break:  600px;
+$small-break-minus-one:  $small-break - 1;
+
 @mixin primary-font{
   font-family: 'Work Sans', sans-serif;
 }
@@ -15,20 +18,42 @@ $vmargin: 20px;
   font-family: 'Space Mono', monospace;
 }
 
+@mixin small(){
+  @media screen and (max-width: $small-break-minus-one) {
+    @content;
+  }
+}
+@mixin large(){
+  @media screen and (min-width: $small-break) {
+    @content;
+  }
+}
+
 body{
   background: $beige;
-  @include primary-font;
-  font-size: 20px;
-  line-height: 1.6;
   color: $text;
-  border: 10px solid rgba($blue, 0.6);
-  padding: 1px;
-  min-height: 100vh;
+  @include primary-font;
+  @include small{
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  @include large{
+    font-size: 20px;
+    line-height: 1.6;
+    border: 10px solid rgba($blue, 0.6);
+    padding: 1px;
+    min-height: 100vh;
+  }
 }
 .outer-wrapper{
-  border: 10px solid rgba($blue, 0.6);
-  padding: $vmargin*3;
-  min-height: calc(100vh - 22px);
+  @include small{
+    padding: $vmargin;
+  }
+  @include large{
+    padding: $vmargin*3;
+    border: 10px solid rgba($blue, 0.6);
+    min-height: calc(100vh - 22px);
+  }
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -46,13 +71,16 @@ a{
 }
 
 .content{
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .logo{
   max-width: 800px;
-  margin: 0 -35px $vmargin*1.5 -35px;
+  @include large{
+    margin: 0 -35px $vmargin*1.5 -35px;
+  }
   img{
     display: block;
     width: 100%;
@@ -66,44 +94,112 @@ a{
   margin-bottom: $vmargin*1.5;
 }
 .bubble{
-  width: 500px;
-  height: 68px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  font-size: 1.8rem;
-  text-align: center;
+   @include small{
+    font-size: 5.5vw;
+  }
+  @media screen and (min-width: 900px){
+    width: 500px;
+    height: 68px;
+    font-size: 1.6rem;
+  }
   line-height: 1;
   position: relative;
   margin: 0;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    margin: 0;
+  }
+  span{
+    position: absolute;
+    display: block;
+    @include small{
+      margin-top: -2px;
+    }
+    @include large{
+      margin-top: -5px;
+    }
+  }
   &.bubble-great{
-    left: -$hmargin*6;
-    background-image: url("images/left-speech-bubble.svg");
-    background-position: top left;
-    padding: 14px 10px 14px 25px;
+    @media screen and (min-width: 900px){
+      left: -$hmargin*6;
+      align-self: flex-start;
+      span{
+        margin-left: 5px;   
+      }
+    }
     color: $blue;
-    align-self: flex-start;
     margin-bottom: $vmargin*1.5;
   }
   &.bubble-mess{
-    right: -$hmargin*6;
-    background-image: url("images/right-speech-bubble.svg");
-    background-position: top right;
-    padding: 14px 25px 14px 10px;
+    @media screen and (min-width: 900px){
+      right: -$hmargin*6;
+      align-self: flex-end;
+      span{
+        margin-left: -5px;
+      }
+    }
     color: $pink; 
-    align-self: flex-end;
   }
+  // @include small{
+  //   font-size: 1rem;
+  // }
+  // @include large{
+  //   width: 500px;
+  //   height: 68px;
+  //   font-size: 1.8rem;
+  // }
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // text-align: center;
+  // line-height: 1;
+  // position: relative;
+  // margin: 0;
+  // white-space: nowrap;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // span{
+  //   display: block;
+  // }
+  // &.bubble-great{
+  //   @include large{
+  //     left: -$hmargin*6;
+  //     align-self: flex-start;
+  //     padding: 14px 10px 14px 25px;
+  //   }
+  //   background-image: url("images/left-speech-bubble.svg");
+  //   background-position: top left;
+  //   color: $blue;
+  //   margin-bottom: $vmargin*1.5;
+  // }
+  // &.bubble-mess{
+  //   @include large{
+  //     right: -$hmargin*6;
+  //     align-self: flex-end;
+  //     padding: 14px 25px 14px 10px;
+  //   }
+  //   background-image: url("images/right-speech-bubble.svg");
+  //   background-position: top right;
+  //   color: $pink; 
+  // }
 }
 
 .intro{
   letter-spacing: -0.5px;
   p:first-child{
-    font-size: 1.4rem;
+    @include large{
+      font-size: 1.4rem;
+    }
   }
 }
 
 .take-survey{
   display: flex;
   justify-content: center;
+  margin-bottom: $vmargin*1.5;
   .take-survey-button{
     @include secondary-font;
     background: $pink;
@@ -133,6 +229,8 @@ a{
   padding: $vmargin*3 $hmargin*2;
   position: relative;
   h3{
+    display: table;
+    max-width: 90%;
     background: $beige;
     padding: 0 20px;
     position: absolute;
@@ -140,22 +238,30 @@ a{
     top: -3px;
     left: 50%;
     transform:translate(-50%, -50%);
-    white-space: nowrap;
   }
 }
 
 .share-options{
   display: flex;
   align-items:center;
-  justify-content: center;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 0 auto;
   a{
     display: block;
-    height: 60px;
-    width: 60px;
+    @include small{
+      height: 40px;
+      width: 40px;
+      padding: 10px;
+    }
+    @include large{
+      height: 60px;
+      width: 60px;
+      padding: 15px;
+    }
     border-radius: 100%;
     background: $blue;
-    padding: 15px;
-    margin-right: $hmargin*3;
+    flex-shrink: 0;
     &:last-child{
       margin-right: 0;
     }
@@ -175,6 +281,7 @@ a{
 .newsletter{
   form{
     display: flex;
+    margin: 0;
   }
   .email{
     display: block;
@@ -183,6 +290,7 @@ a{
     border: 2px solid $blue;
     margin-right: $hmargin/2;
     flex-grow: 1;
+    width: 100%;
     &:focus{
       outline: none;
       border-color: $pink;
