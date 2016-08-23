@@ -23,6 +23,7 @@
     "react": "^15.3.0",
     "react-document-title": "^2.0.1",
     "react-dom": "^15.3.0",
+    "react-ga": "^2.1.1",
     "react-headroom": "^2.1.2",
     "react-remarkable": "^1.1.1",
     "react-responsive-grid": "^0.3.3",
@@ -59,7 +60,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-links && gh-pages -d public",
+    "deploy": "gatsby build --prefix-links && gh-pages -d public --remove '!CNAME'",
     "develop": "gatsby develop",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1"

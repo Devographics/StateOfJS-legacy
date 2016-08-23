@@ -1,3 +1,5 @@
+@import "_normalize.scss";
+
 $blue: #5ec6cc;
 $pink: #ed387a;
 $darkblue: #2e3092;
@@ -29,9 +31,17 @@ $small-break-minus-one:  $small-break - 1;
   }
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body{
   background: $beige;
   color: $text;
+  padding: 0;
   @include primary-font;
   @include small{
     font-size: 16px;
@@ -100,7 +110,7 @@ a{
   @media screen and (min-width: 900px){
     width: 500px;
     height: 68px;
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
   line-height: 1;
   position: relative;
@@ -111,6 +121,8 @@ a{
   align-items: center;
   img{
     margin: 0;
+    display: block;
+    width: 100%;
   }
   span{
     position: absolute;
@@ -229,12 +241,13 @@ a{
   padding: $vmargin*3 $hmargin*2;
   position: relative;
   h3{
+    margin: 0;
     display: table;
     max-width: 90%;
     background: $beige;
     padding: 0 20px;
     position: absolute;
-    line-height: 1;
+    line-height: 1.4;
     top: -3px;
     left: 50%;
     transform:translate(-50%, -50%);

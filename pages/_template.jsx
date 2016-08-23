@@ -2,6 +2,18 @@ import React from 'react'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 // import '../css/markdown-styles'
+import ReactGA from 'react-ga';
+
+if (typeof window !== "undefined") {
+  ReactGA.initialize('UA-83022212-1');
+}
+
+const logPageView = () => {
+  if(typeof window !== "undefined") {
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview(window.location.pathname);
+  }
+};
 
 module.exports = React.createClass({
   propTypes () {
@@ -9,6 +21,11 @@ module.exports = React.createClass({
       children: React.PropTypes.any,
     }
   },
+
+  componentDidMount() {
+    logPageView();
+  },
+
   render () {
     return (
       <div className="outer-wrapper">
