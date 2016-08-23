@@ -1,6 +1,5 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
-
 import { prefixLink } from 'gatsby-helpers'
 
 const BUILD_TIME = new Date().getTime()
@@ -29,7 +28,7 @@ module.exports = React.createClass({
             content="width=device-width, initial-scale=1.0"
           />
           <title>{title}</title>
-          <link rel="shortcut icon" href={this.props.favicon} />
+          <link rel="shortcut icon" href="/images/favicon2.png" />
           {css}
         </head>
         <body>

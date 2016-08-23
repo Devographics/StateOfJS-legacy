@@ -49,6 +49,10 @@ export default class Index extends React.Component {
 
           <div className="section-block" dangerouslySetInnerHTML={{ __html: about.body }} />
 
+          {/*
+          <Link to={prefixLink('/test/')}>test link</Link>
+          */}
+          
         </div>
       </DocumentTitle>
     )
