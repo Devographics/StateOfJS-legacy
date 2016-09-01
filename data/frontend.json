@@ -1,0 +1,58 @@
+[
+  {
+    "Framework": "No Front-End Framework",
+    "I've never heard of it": 479,
+    "I've heard of it, and would like to learn it": 214,
+    "I've heard of it, and am not interested": 784,
+    "I've used it before, and would use it again": 2504,
+    "I've used it before, and would not use it again": 1347
+  },
+  {
+    "Framework": "React",
+    "I've never heard of it": 21,
+    "I've heard of it, and would like to learn it": 1682,
+    "I've heard of it, and am not interested": 581,
+    "I've used it before, and would use it again": 2802,
+    "I've used it before, and would not use it again": 242
+  },
+  {
+    "Framework": "Angular",
+    "I've never heard of it": 7,
+    "I've heard of it, and would like to learn it": 529,
+    "I've heard of it, and am not interested": 1401,
+    "I've used it before, and would use it again": 1586,
+    "I've used it before, and would not use it again": 1805
+  },
+  {
+    "Framework": "Angular 2",
+    "I've never heard of it": 49,
+    "I've heard of it, and would like to learn it": 1893,
+    "I've heard of it, and am not interested": 2294,
+    "I've used it before, and would use it again": 708,
+    "I've used it before, and would not use it again": 384
+  },
+  {
+    "Framework": "Ember",
+    "I've never heard of it": 144,
+    "I've heard of it, and would like to learn it": 1141,
+    "I've heard of it, and am not interested": 3193,
+    "I've used it before, and would use it again": 404,
+    "I've used it before, and would not use it again": 446
+  },
+  {
+    "Framework": "Vue",
+    "I've never heard of it": 1207,
+    "I've heard of it, and would like to learn it": 1750,
+    "I've heard of it, and am not interested": 1794,
+    "I've used it before, and would use it again": 511,
+    "I've used it before, and would not use it again": 66
+  },
+  {
+    "Framework": "Backbone",
+    "I've never heard of it": 129,
+    "I've heard of it, and would like to learn it": 611,
+    "I've heard of it, and am not interested": 2511,
+    "I've used it before, and would use it again": 660,
+    "I've used it before, and would not use it again": 1417
+  }
+]
