@@ -1,3 +1,9 @@
+$interest-dark: #4cbcc1;
+$interest-light: #b3d8da;
+$satisfaction-dark: #e91467;
+$satisfaction-light: #e0a4bc;
+$never-heard: #e8e8e8;
+
 .recharts-cartesian-axis-tick-value {
   font-size: 12px;
 }
@@ -8,5 +14,36 @@
   line-height: 18px;
 }
 .recharts-legend-item-text {
-  font-size: 10px;
+  font-size: 9px;
+}
+.filter ul {
+  list-style: none;
+  cursor: pointer;
+}
+.use-again, .not-use-again, .want-to-learn, .not-interested, .never-heard {
+  text.label {
+    display: none;
+  }
+}
+div.interest {
+  li.interest {
+    color: white;
+    background-color: $interest-dark;
+  }
+  .want-to-learn, .not-interested {
+    text.label {
+      display: block;
+    }
+  }
+}
+div.satisfaction {
+  li.satisfaction {
+    color: white;
+    background-color: $satisfaction-dark;
+  }
+  .use-again, .not-use-again {
+    text.label {
+      display: block;
+    }
+  }
 }
