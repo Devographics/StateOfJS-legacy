@@ -11,15 +11,12 @@ const FILTER = {
   SATISFACTION: 'Satisfaction',
 }
 
-const CustomLabel = (args) => {
-  console.log('args', args)
-  const { key, index, value, x, y } = args
+const CustomLabel = ({ key, index, value, x, y, height }) => {
   const total = sumBy(values(value.data), (d) => (isString(d) ? 0 : d))
-  const percent = (100 * (value[1] - value[0]) / total).toFixed(0)
-  const label = `${percent}%`
+  const label = `${(100 * (value[1] - value[0]) / total).toFixed(0)}%`
   return (
     <g key={key} className="recharts-cartesian-axis-label">
-      <text className="label" x={x} y={y + 10 + args.height/2} textAnchor="middle" fontSize="12" fill="white" >
+      <text className="label" x={x} y={y + 10 + height/2} textAnchor="middle" fontSize="12" fill="white" >
         {label}
       </text>
     </g>
