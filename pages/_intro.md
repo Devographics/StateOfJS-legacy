@@ -5,7 +5,9 @@ What's more, there's just *so many* options: Do you use React or Angular 2? Do y
 Like you, I spent far too many hours reading about all this, and at the end I *still* wasn't sure. So I decided to create this survey to see what everybody else thinks:
 
 <div class="take-survey">
-  <a class="take-survey-button" href="https://stateofjs.typeform.com/to/aYkckG">Take the Survey</a>
+  <a class="take-survey-button" href="https://stateofjs.typeform.com/to/Mulmxw">Take the Survey</a>
 </div>
 
 The survey shouldn't take you more than 10-15 minutes. Good luck!
+
+_**Update**: you can already check out some [preliminary results here](https://medium.com/@sachagreif/the-state-of-javascript-front-end-frameworks-1a2d8a61510)._

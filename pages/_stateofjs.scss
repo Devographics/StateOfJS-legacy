@@ -18,6 +18,7 @@ $small-break-minus-one:  $small-break - 1;
 }
 @mixin secondary-font{
   font-family: 'Space Mono', monospace;
+  font-style: italic;
 }
 
 @mixin small(){
@@ -116,9 +117,9 @@ a{
   position: relative;
   margin: 0;
   white-space: nowrap;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   img{
     margin: 0;
     display: block;
@@ -126,6 +127,9 @@ a{
   }
   span{
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     display: block;
     @include small{
       margin-top: -2px;

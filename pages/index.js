@@ -35,23 +35,20 @@ export default class Index extends React.Component {
           <blockquote className="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Marc was almost ready to implement his &quot;hello world&quot; React app <a href="https://t.co/ptdg4yteF1">pic.twitter.com/ptdg4yteF1</a></p>&mdash; Thomas Fuchs (@thomasfuchs) <a href="https://twitter.com/thomasfuchs/status/708675139253174273">March 12, 2016</a></blockquote>
           */}
 
-          
           <div className="section-block section-border spread-the-word">
             <h3>Help Spread the Word</h3>
             <Share/>
           </div>
 
           <div className="section-block spread-the-word">
-            <h3>Get the Results</h3>
+            <h3>Get the Final Results</h3>
             <p>Leave your email here and you'll be notified when the results are published. </p>
             <Newsletter/>
           </div>
 
           <div className="section-block" dangerouslySetInnerHTML={{ __html: about.body }} />
 
-          {/*
           <Link to={prefixLink('/test/')}>test link</Link>
-          */}
           
         </div>
       </DocumentTitle>

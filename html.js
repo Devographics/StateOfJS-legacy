@@ -1,6 +1,7 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
 import { prefixLink } from 'gatsby-helpers'
+import Helmet from 'react-helmet'
 
 const BUILD_TIME = new Date().getTime()
 
@@ -14,6 +15,7 @@ module.exports = React.createClass({
     const title = DocumentTitle.rewind()
 
     let css
+    let head = Helmet.rewind();
     if (process.env.NODE_ENV === 'production') {
       css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
     }
@@ -30,6 +32,7 @@ module.exports = React.createClass({
           <title>{title}</title>
           <link rel="shortcut icon" href="/images/favicon2.png" />
           {css}
+          {head.meta.toComponent()}
         </head>
         <body>
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />
