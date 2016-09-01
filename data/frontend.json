@@ -1,6 +1,6 @@
 [
   {
-    "Framework": "No Front-End Framework",
+    "Framework": "None",
     "I've never heard of it": 479,
     "I've heard of it, and would like to learn it": 214,
     "I've heard of it, and am not interested": 784,
@@ -24,7 +24,7 @@
     "I've used it before, and would not use it again": 1805
   },
   {
-    "Framework": "Angular 2",
+    "Framework": "Ang 2",
     "I've never heard of it": 49,
     "I've heard of it, and would like to learn it": 1893,
     "I've heard of it, and am not interested": 2294,
