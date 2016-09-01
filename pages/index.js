@@ -23,7 +23,7 @@ export default class Index extends React.Component {
       <DocumentTitle title={config.siteTitle}>
         <div>
           <h1 className="logo"><img src="images/javascript9.svg" alt="The State Of JavaScript"/></h1>
-          
+
           <div className="bubbles">
             <h3 className="bubble bubble-great"><img src="images/left-speech-bubble.svg"/><span>JavaScript is great!</span></h3>
             <h3 className="bubble bubble-mess"><img src="images/right-speech-bubble.svg"/><span>JavaScript is a mess!</span></h3>
@@ -48,8 +48,14 @@ export default class Index extends React.Component {
 
           <div className="section-block" dangerouslySetInnerHTML={{ __html: about.body }} />
 
-          <Link to={prefixLink('/test/')}>test link</Link>
-          
+          <ul>
+            <li>
+              <Link to={prefixLink('/test/')}>test link</Link>
+            </li>
+            <li>
+              <Link to={prefixLink('/results/')}>results</Link>
+            </li>
+          </ul>
         </div>
       </DocumentTitle>
     )
