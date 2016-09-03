@@ -47,3 +47,22 @@ div.satisfaction {
     }
   }
 }
+
+.results-container{
+}
+.section{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.section-contents{
+  width: 35%;
+}
+.chart{
+  position: absolute;
+  left: 0;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 60%;
+  margin-right: 5%;
+}

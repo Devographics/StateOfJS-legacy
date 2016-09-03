@@ -40,16 +40,14 @@ module.exports = React.createClass({
 
     return (
       <div className="outer-wrapper">
-        <div className="content">
-          <Helmet meta={meta} />
-          <link href="https://fonts.googleapis.com/css?family=Space+Mono:400i|Work+Sans:400,700" rel="stylesheet"/>
-          {this.props.children}
-          {/*
-          <div className="footer">
-            Built by <a href="http://twitter.com/SachaGreif">Sacha Greif</a> using <a href="https://github.com/gatsbyjs/gatsby">Gatsby</a>
-          </div>
-          */}
+        <Helmet meta={meta} />
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono:400i|Work+Sans:400,700" rel="stylesheet"/>
+        {this.props.children}
+        {/*
+        <div className="footer">
+          Built by <a href="http://twitter.com/SachaGreif">Sacha Greif</a> using <a href="https://github.com/gatsbyjs/gatsby">Gatsby</a>
         </div>
+        */}
       </div>
     )
   },
