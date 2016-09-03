@@ -50,19 +50,25 @@ div.satisfaction {
 
 .results-container{
 }
-.section-sticky-container{
+.section{
   display: flex;
   justify-content: flex-end;
   position: relative;
+  margin-bottom: 200px;
+  background: rgba(0,0,0,0.1);
 }
 .section-contents{
   width: 35%;
 }
-.chart-sticky{
+.sticky-container{
   position: absolute;
+  top: 0;
+  bottom: 0;
   left: 0;
-  border: 1px solid #ddd;
-  padding: 20px;
   width: 60%;
-  margin-right: 5%;
+}
+.chart{
+  h2{
+    margin-top: 0;
+  }
 }
