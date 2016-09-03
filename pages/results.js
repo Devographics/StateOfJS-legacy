@@ -140,7 +140,6 @@ export default class Results extends React.Component {
 
   handleToggle() {
     const showPercent = !this.state.showPercent
-    console.log('pct', showPercent);
     this.setState({ showPercent })
   }
 
