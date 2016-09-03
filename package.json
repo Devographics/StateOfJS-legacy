@@ -29,6 +29,7 @@
     "react-remarkable": "^1.1.1",
     "react-responsive-grid": "^0.3.3",
     "react-router": "^2.6.1",
+    "react-sticky": "^5.0.5",
     "react-typography": "^0.12.0",
     "recharts": "^0.13.4",
     "toml-js": "0.0.8",

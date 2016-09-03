@@ -50,7 +50,7 @@ div.satisfaction {
 
 .results-container{
 }
-.section{
+.section-sticky-container{
   display: flex;
   justify-content: flex-end;
   position: relative;
@@ -58,7 +58,7 @@ div.satisfaction {
 .section-contents{
   width: 35%;
 }
-.chart{
+.chart-sticky{
   position: absolute;
   left: 0;
   border: 1px solid #ddd;
