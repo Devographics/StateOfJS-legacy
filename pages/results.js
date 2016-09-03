@@ -1,11 +1,11 @@
 import React from 'react'
-import { filter, reduce, includes, values, sumBy, isString } from 'lodash'
 import DocumentTitle from 'react-document-title'
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'Recharts'
-import data from '../data/frontend.json'
+import flavors from '../data/flavors.json'
+import frontend from '../data/frontend.json'
+import StackedBar from './charts/_stackedbar.js'
 import './_results.scss'
 
-const FILTER = {
+const FILTERS = {
   ALL: 'All',
   INTEREST: 'Interest',
   SATISFACTION: 'Satisfaction',
@@ -44,115 +44,21 @@ const SECTIONS = {
   }
 }
 
-const Label = ({ showPercent, currentFilter, key, index, value, x, y, height }) => {
-
-  // overall total for all values (not used)
-  // let total = sumBy(values(value.data), (d) => (isString(d) ? 0 : d))
-
-  // get all currently highlighted sections
-  const highlightedSections = filter(SECTIONS, section => {
-    return includes(section.filters, currentFilter)
-  })
-
-  // sum the total users for the currently highlighted sections
-  let subtotal = 0
-  highlightedSections.forEach(section => {
-    subtotal += value.data[section.string]
-  })
-
-  const count = (value[1] - value[0])
-  const label = showPercent
-    ? `${(100 * count / subtotal).toFixed(0)}%`
-    : count
-
+const Results = () => {
   return (
-    <g key={key} className="recharts-cartesian-axis-label">
-      <text className="label" x={x} y={y + 10 + height/2} textAnchor="middle" fontSize="12" fill="white" >
-        {label}
-      </text>
-    </g>
+    <DocumentTitle title="Results">
+      <div className="results-container">
+        <div className="section">
+          <StackedBar identifier="Flavor" title="JavaScript Flavors" data={flavors} sections={SECTIONS} filters={FILTERS}/>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div className="section">
+          <StackedBar identifier="Framework" title="Front-end Frameworks" data={frontend} sections={SECTIONS} filters={FILTERS}/>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+    </DocumentTitle>
   )
 }
 
-class ResultsChart extends React.Component {
-
-  // get the fill color for a given section according to the current active filter
-  getFill(sectionName) {
-    const section = SECTIONS[sectionName]
-    return includes(section.filters, this.props.filter) ? section.onColor : section.offColor
-  }
-
-  render() {
-    const { filter, showPercent, handleToggle } = this.props
-    const CustomLabel = <Label currentFilter={filter} showPercent={showPercent} />
-    return (
-      <BarChart width={600} height={400} data={data} barCategoryGap="30%" margin={{top: 60, right: 20, left: 20, bottom: 5}} onClick={handleToggle} >
-        <XAxis dataKey="Framework" tickLine={false} axisLine={{ stroke: '#666' }} />
-        <Legend align="left" wrapperStyle={{top: 20}}/>
-        {/* <Tooltip/> */}
-        <Bar className="use-again" isAnimationActive={false} dataKey="I've used it before, and would use it again" stackId="a" fill={this.getFill("useAgain")} label={CustomLabel} />
-        <Bar className="not-use-again" isAnimationActive={false} dataKey="I've used it before, and would not use it again" stackId="a" fill={this.getFill("notAgain")} label={CustomLabel} />
-        <Bar className="want-to-learn" isAnimationActive={false} dataKey="I've heard of it, and would like to learn it" stackId="a" fill={this.getFill("wantToLearn")} label={CustomLabel} />
-        <Bar className="not-interested" isAnimationActive={false} dataKey="I've heard of it, and am not interested" stackId="a" fill={this.getFill("notInterested")} label={CustomLabel} />
-        <Bar className="never-heard" isAnimationActive={false} dataKey="I've never heard of it" stackId="a" fill={this.getFill("neverHeard")} label={CustomLabel} />
-      </BarChart>
-    )
-  }
-
-}
-
-ResultsChart.propTypes = {
-  filter: React.PropTypes.string,
-}
-
-const ResultsFilter = ({ handleSelect }) => (
-  <div className="filter">
-    <h3>Filter</h3>
-    <ul>
-      {values(FILTER).map((filter) => {
-        return (
-          <li key={filter} className={filter.toLowerCase()} onClick={(e) => {
-            e.preventDefault()
-            handleSelect(filter)
-          }}>
-            {filter}
-          </li>
-        )
-      })}
-    </ul>
-  </div>
-)
-
-export default class Results extends React.Component {
-  constructor() {
-    super()
-    this.handleSelect = this.handleSelect.bind(this)
-    this.handleToggle = this.handleToggle.bind(this)
-    this.state = {
-      filter: FILTER.ALL,
-      showPercent: true,
-    }
-  }
-
-  handleSelect(filter) {
-    this.setState({ filter })
-  }
-
-  handleToggle() {
-    const showPercent = !this.state.showPercent
-    this.setState({ showPercent })
-  }
-
-  render () {
-    const { filter, showPercent } = this.state
-    return (
-      <DocumentTitle title="Results">
-        <div className={this.state.filter.toLowerCase()}>
-          <h2>Results</h2>
-          <ResultsFilter handleSelect={this.handleSelect} />
-          <ResultsChart filter={filter} showPercent={showPercent} handleToggle={this.handleToggle}/>
-        </div>
-      </DocumentTitle>
-    )
-  }
-}
+export default Results
