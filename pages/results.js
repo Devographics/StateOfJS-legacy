@@ -73,10 +73,8 @@ FilterPoint.getWindow = () => {
 class Results extends React.Component {
   constructor(props) {
     super(props)
-    this._offset = 0
     this.filterUpdate = this.filterUpdate.bind(this)
     this._handleScroll = throttle(this._handleScroll.bind(this), 100)
-    this._handleResize = throttle(this._handleResize.bind(this), 100)
     this._sectionToBreakpoints = {
       [SECTIONS.FLAVORS]: [],
       [SECTIONS.FRAMEWORKS]: [],
@@ -89,7 +87,7 @@ class Results extends React.Component {
 
   componentDidMount() {
     if (!FilterPoint.getWindow()) return
-    window.addEventListener('resize', this._handleResize)
+    window.addEventListener('resize', this._handleScroll)
     window.addEventListener('scroll', this._handleScroll)
 
     Object.keys(this._sectionToBreakpoints).forEach((section) => {
@@ -99,8 +97,8 @@ class Results extends React.Component {
 
   componentWillUnmount() {
     if (!FilterPoint.getWindow()) return
-    window.addEventListener('resize', this._handleResize)
-    window.addEventListener('scroll', this._handleScroll)
+    window.removeEventListener('resize', this._handleScroll)
+    window.removeEventListener('scroll', this._handleScroll)
   }
 
   filterUpdate(section, value) {
@@ -125,15 +123,10 @@ class Results extends React.Component {
       const filter = this._activeFilter(this._sectionToBreakpoints[section], top)
       if(filter) updatedState[section] = filter
     })
-    
+
     if (!_.isEqual(updatedState, this.state)) {
       this.setState(updatedState)
     }
-  }
-
-  _handleResize() {
-    this._offset = window.innerHeight / 2
-    this._handleScroll()
   }
 
   filterPoint(section, filter) {
