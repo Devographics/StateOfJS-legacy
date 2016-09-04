@@ -5,20 +5,20 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'Rec
 import classNames from 'classnames'
 import '../_results.scss'
 
-const Label = ({ sections, showPercent, currentFilter, key, index, value, x, y, height }) => {
+const Label = ({ choices, showPercent, currentFilter, key, index, value, x, y, height }) => {
 
   // overall total for all values (not used)
   // let total = sumBy(values(value.data), (d) => (isString(d) ? 0 : d))
 
-  // get all currently highlighted sections
-  const highlightedSections = filter(sections, section => {
-    return includes(section.filters, currentFilter)
+  // get all currently highlighted choices
+  const highlightedChoices = filter(choices, choice => {
+    return includes(choice.filters, currentFilter)
   })
 
-  // sum the total users for the currently highlighted sections
+  // sum the total users for the currently highlighted choices
   let subtotal = 0
-  highlightedSections.forEach(section => {
-    subtotal += value.data[section.string]
+  highlightedChoices.forEach(choice => {
+    subtotal += value.data[choice.string]
   })
 
   const count = (value[1] - value[0])
@@ -37,10 +37,10 @@ const Label = ({ sections, showPercent, currentFilter, key, index, value, x, y, 
 
 class ResultsChart extends React.Component {
 
-  // get the fill color for a given section according to the current active filter
-  getFill(sectionName) {
-    const section = this.props.sections[sectionName]
-    return includes(section.filters, this.props.filter) ? section.onColor : section.offColor
+  // get the fill color for a given choice according to the current active filter
+  getFill(choiceName) {
+    const choice = this.props.choices[choiceName]
+    return includes(choice.filters, this.props.filter) ? choice.onColor : choice.offColor
   }
 
   render() {
@@ -115,7 +115,7 @@ export default class StackedBar extends React.Component {
 StackedBar.propTypes = {
   title: React.PropTypes.string,
   data: React.PropTypes.array,
-  sections: React.PropTypes.object,
+  choices: React.PropTypes.object,
   filters: React.PropTypes.object,
   filter: React.PropTypes.string,
   handleSelect: React.PropTypes.func,
