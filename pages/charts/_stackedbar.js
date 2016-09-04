@@ -2,6 +2,7 @@ import React from 'react'
 import { filter, reduce, includes, values, sumBy, isString } from 'lodash'
 import DocumentTitle from 'react-document-title'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'Recharts'
+import classNames from 'classnames'
 import '../_results.scss'
 
 const Label = ({ sections, showPercent, currentFilter, key, index, value, x, y, height }) => {
@@ -87,16 +88,10 @@ const ResultsFilter = ({ filters, handleSelect }) => (
 export default class StackedBar extends React.Component {
   constructor(props) {
     super(props)
-    this.handleSelect = this.handleSelect.bind(this)
     this.handleToggle = this.handleToggle.bind(this)
     this.state = {
-      filter: props.filters.ALL,
       showPercent: true,
     }
-  }
-
-  handleSelect(filter) {
-    this.setState({ filter })
   }
 
   handleToggle() {
@@ -105,12 +100,13 @@ export default class StackedBar extends React.Component {
   }
 
   render () {
-    const { filter, showPercent } = this.state
+    const { showPercent } = this.state
+    const { filter, filterUpdate, filterName } = this.props
     return (
-      <div className={"chart stacked-chart "+this.state.filter.toLowerCase()}>
+      <div className={classNames("chart", "stacked-chart", filter.toLowerCase())}>
         <h2>{this.props.title}</h2>
-        <ResultsFilter {...this.props} handleSelect={this.handleSelect} />
-        <ResultsChart {...this.props} filter={filter} showPercent={showPercent} handleToggle={this.handleToggle}/>
+        <ResultsFilter {...this.props} />
+        <ResultsChart {...this.props} filter={this.props.filter} showPercent={showPercent} handleToggle={this.handleToggle}/>
       </div>
     )
   }
@@ -120,5 +116,7 @@ StackedBar.propTypes = {
   title: React.PropTypes.string,
   data: React.PropTypes.array,
   sections: React.PropTypes.object,
-  filters: React.PropTypes.object
+  filters: React.PropTypes.object,
+  filter: React.PropTypes.string,
+  handleSelect: React.PropTypes.func,
 }
