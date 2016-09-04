@@ -8,6 +8,7 @@
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-1": "^6.13.0",
+    "d3": "^4.2.2",
     "front-matter": "^2.0.7",
     "gatsby": "^0.12.0",
     "highlight.js": "^9.6.0",
@@ -55,7 +56,8 @@
     "react-transform-hmr": "^1.0.4",
     "redbox-react": "^1.3.0",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "@kadira/storybook": "^2.0.0"
   },
   "keywords": [
     "gatsby"
@@ -67,6 +69,8 @@
     "deploy": "gatsby build && gh-pages -d public",
     "develop": "gatsby develop",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   }
 }

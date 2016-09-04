@@ -1,24 +1,24 @@
 import React from 'react'
 import { filter, reduce, includes, values, sumBy, isString } from 'lodash'
 import DocumentTitle from 'react-document-title'
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'Recharts'
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts'
 import classNames from 'classnames'
 import '../_results.scss'
 
-const Label = ({ choices, showPercent, currentFilter, key, index, value, x, y, height }) => {
+const Label = ({ responses, showPercent, currentFilter, key, index, value, x, y, height }) => {
 
   // overall total for all values (not used)
   // let total = sumBy(values(value.data), (d) => (isString(d) ? 0 : d))
 
-  // get all currently highlighted choices
-  const highlightedChoices = filter(choices, choice => {
-    return includes(choice.filters, currentFilter)
+  // get all currently highlighted responses
+  const highlightedResponses = filter(responses, response => {
+    return includes(response.filters, currentFilter)
   })
 
-  // sum the total users for the currently highlighted choices
+  // sum the total users for the currently highlighted responses
   let subtotal = 0
-  highlightedChoices.forEach(choice => {
-    subtotal += value.data[choice.string]
+  highlightedResponses.forEach(response => {
+    subtotal += value.data[response.string]
   })
 
   const count = (value[1] - value[0])
@@ -37,10 +37,10 @@ const Label = ({ choices, showPercent, currentFilter, key, index, value, x, y, h
 
 class ResultsChart extends React.Component {
 
-  // get the fill color for a given choice according to the current active filter
-  getFill(choiceName) {
-    const choice = this.props.choices[choiceName]
-    return includes(choice.filters, this.props.filter) ? choice.onColor : choice.offColor
+  // get the fill color for a given response according to the current active filter
+  getFill(responseName) {
+    const response = this.props.responses[responseName]
+    return includes(response.filters, this.props.filter) ? response.onColor : response.offColor
   }
 
   render() {
@@ -115,7 +115,7 @@ export default class StackedBar extends React.Component {
 StackedBar.propTypes = {
   title: React.PropTypes.string,
   data: React.PropTypes.array,
-  choices: React.PropTypes.object,
+  responses: React.PropTypes.object,
   filters: React.PropTypes.object,
   filter: React.PropTypes.string,
   handleSelect: React.PropTypes.func,
