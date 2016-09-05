@@ -8,16 +8,16 @@ import frontend from '../data/frontend.csv'
 import testing from '../data/testing.csv'
 import heatmap from '../data/heatmap2.js'
 
+import testingIntro from './results/testing/_intro.md'
+import testingInterest from './results/testing/_interest.md'
+import testingSatisfaction from './results/testing/_satisfaction.md'
+
 import './_results.scss'
 
 import { SECTIONS, FILTERS, RESPONSES } from './_constants'
 import StackedBar from './charts/_stackedbar'
 import Heatmap from './charts/_heatmap2'
 import './_results.scss'
-
-console.log('flavors', flavors);
-console.log('frontend', frontend);
-console.log('testing', testing);
 
 class FilterPoint extends React.Component {
   componentDidMount() {
@@ -27,7 +27,7 @@ class FilterPoint extends React.Component {
     })
   }
   render() {
-    return <span ref={(e) => this._ref = e} style={{fontSize: 0}} />;
+    return <span ref={(e) => this._ref = e} style={{fontSize: 0}} />
   }
 }
 
@@ -144,11 +144,12 @@ class Results extends React.Component {
 
             <div className="section-contents">
               <h1>Testing Tools</h1>
-              <p>{this.filterPoint(SECTIONS.TESTING, FILTERS.ALL)} Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              <p>{this.filterPoint(SECTIONS.TESTING, FILTERS.INTEREST)} Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              <p>{this.filterPoint(SECTIONS.TESTING, FILTERS.SATISFACTION)} Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              {this.filterPoint(SECTIONS.TESTING, FILTERS.ALL)}
+              <div dangerouslySetInnerHTML={{ __html: testingIntro.body }} />
+              {this.filterPoint(SECTIONS.TESTING, FILTERS.INTEREST)}
+              <div dangerouslySetInnerHTML={{ __html: testingInterest.body }} />
+              {this.filterPoint(SECTIONS.TESTING, FILTERS.SATISFACTION)}
+              <div dangerouslySetInnerHTML={{ __html: testingSatisfaction.body }} />
             </div>
           </div>
         </div>
