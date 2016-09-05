@@ -3,8 +3,10 @@ import DocumentTitle from 'react-document-title'
 import { StickyContainer, Sticky } from 'react-sticky'
 import { throttle, sortBy } from 'lodash'
 
-import flavors from '../data/flavors.json'
-import frontend from '../data/frontend.json'
+import flavors from '../data/flavors.csv'
+import frontend from '../data/frontend.csv'
+import testing from '../data/testing.csv'
+
 import StackedBar from './charts/_stackedbar.js'
 import './_results.scss'
 

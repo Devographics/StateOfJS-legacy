@@ -8,6 +8,7 @@
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-1": "^6.13.0",
+    "dsv-loader": "^1.1.0",
     "front-matter": "^2.0.7",
     "gatsby": "^0.12.0",
     "highlight.js": "^9.6.0",
