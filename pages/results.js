@@ -15,44 +15,10 @@ const SECTIONS = {
   FRAMEWORKS: 'Frameworks',
 }
 
-const FILTERS = {
-  ALL: 'All',
-  INTEREST: 'Interest',
-  SATISFACTION: 'Satisfaction',
-}
-
-const CHOICES = {
-  neverHeard: {
-    string: "I've never heard of it",
-    onColor: '#e8e8e8',
-    offColor: '#e8e8e8',
-    filters: [FILTERS.ALL, FILTERS.INTEREST]
-  },
-  notInterested: {
-    string: "I've heard of it, and am not interested",
-    onColor: '#b3d8da',
-    offColor: '#dadada',
-    filters: [FILTERS.ALL, FILTERS.INTEREST]
-  },
-  wantToLearn: {
-    string: "I've heard of it, and would like to learn it",
-    onColor: '#4cbcc1',
-    offColor: '#cecece',
-    filters: [FILTERS.ALL, FILTERS.INTEREST]
-  },
-  notAgain: {
-    string: "I've used it before, and would not use it again",
-    onColor: '#e0a4bc',
-    offColor: '#dadada',
-    filters: [FILTERS.ALL, FILTERS.SATISFACTION]
-  },
-  useAgain: {
-    string: "I've used it before, and would use it again",
-    onColor: '#e91467',
-    offColor: '#cecece',
-    filters: [FILTERS.ALL, FILTERS.SATISFACTION]
-  }
-}
+import { SECTIONS, FILTERS, RESPONSES } from './_constants'
+import StackedBar from './charts/_stackedbar'
+import Heatmap from './charts/_heatmap2'
+import './_results.scss'
 
 class FilterPoint extends React.Component {
   componentDidMount() {
@@ -75,10 +41,8 @@ FilterPoint.getWindow = () => {
 class Results extends React.Component {
   constructor(props) {
     super(props)
-    this._offset = 0
     this.filterUpdate = this.filterUpdate.bind(this)
     this._handleScroll = throttle(this._handleScroll.bind(this), 100)
-    this._handleResize = throttle(this._handleResize.bind(this), 100)
     this._sectionToBreakpoints = {
       [SECTIONS.FLAVORS]: [],
       [SECTIONS.FRAMEWORKS]: [],
@@ -91,7 +55,7 @@ class Results extends React.Component {
 
   componentDidMount() {
     if (!FilterPoint.getWindow()) return
-    window.addEventListener('resize', this._handleResize)
+    window.addEventListener('resize', this._handleScroll)
     window.addEventListener('scroll', this._handleScroll)
 
     Object.keys(this._sectionToBreakpoints).forEach((section) => {
@@ -101,8 +65,8 @@ class Results extends React.Component {
 
   componentWillUnmount() {
     if (!FilterPoint.getWindow()) return
-    window.addEventListener('resize', this._handleResize)
-    window.addEventListener('scroll', this._handleScroll)
+    window.removeEventListener('resize', this._handleScroll)
+    window.removeEventListener('scroll', this._handleScroll)
   }
 
   filterUpdate(section, value) {
@@ -127,15 +91,10 @@ class Results extends React.Component {
       const filter = this._activeFilter(this._sectionToBreakpoints[section], top)
       if(filter) updatedState[section] = filter
     })
-    
+
     if (!_.isEqual(updatedState, this.state)) {
       this.setState(updatedState)
     }
-  }
-
-  _handleResize() {
-    this._offset = window.innerHeight / 2
-    this._handleScroll()
   }
 
   filterPoint(section, filter) {
@@ -149,9 +108,12 @@ class Results extends React.Component {
       <DocumentTitle title="Results">
         <div className="results-container">
           <div className="section">
+            <Heatmap width={600} height={600} data={heatmap} />
+          </div>
+          <div className="section">
             <StickyContainer className="sticky-container">
               <Sticky className="sticky">
-                <StackedBar identifier="Flavor" title="JavaScript Flavors" data={flavors} choices={CHOICES} filters={FILTERS} filter={this.state[SECTIONS.FLAVORS]} handleSelect={(filter) => this.filterUpdate(SECTIONS.FLAVORS, filter)} />
+                <StackedBar identifier="Flavor" title="JavaScript Flavors" data={flavors} responses={RESPONSES} filters={FILTERS} filter={this.state[SECTIONS.FLAVORS]} handleSelect={(filter) => this.filterUpdate(SECTIONS.FLAVORS, filter)} />
               </Sticky>
             </StickyContainer>
 
@@ -168,7 +130,7 @@ class Results extends React.Component {
           <div className="section">
             <StickyContainer className="sticky-container">
               <Sticky className="sticky">
-                <StackedBar identifier="Framework" title="Front-end Frameworks" data={frontend} choices={CHOICES} filters={FILTERS} filter={this.state[SECTIONS.FRAMEWORKS]} handleSelect={(filter) => this.filterUpdate(SECTIONS.FRAMEWORKS, filter)}  />
+                <StackedBar identifier="Framework" title="Front-end Frameworks" data={frontend} responses={RESPONSES} filters={FILTERS} filter={this.state[SECTIONS.FRAMEWORKS]} handleSelect={(filter) => this.filterUpdate(SECTIONS.FRAMEWORKS, filter)}  />
               </Sticky>
             </StickyContainer>
 
