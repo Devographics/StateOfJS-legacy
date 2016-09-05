@@ -1,6 +1,7 @@
 const SECTIONS = {
   FLAVORS: 'Flavors',
   FRAMEWORKS: 'Frameworks',
+  TESTING: 'Testing',
 }
 
 const FILTERS = {
@@ -14,7 +15,7 @@ const RESPONSES = {
     string: "I've never heard of it",
     onColor: '#e8e8e8',
     offColor: '#e8e8e8',
-    filters: [FILTERS.ALL, FILTERS.INTEREST]
+    filters: [FILTERS.ALL]
   },
   notInterested: {
     string: "I've heard of it, and am not interested",

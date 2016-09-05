@@ -1,24 +1,23 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
 import { StickyContainer, Sticky } from 'react-sticky'
-import { throttle, sortBy } from 'lodash'
+import { throttle, sortBy, fromPairs, values, last } from 'lodash'
 
 import flavors from '../data/flavors.csv'
 import frontend from '../data/frontend.csv'
 import testing from '../data/testing.csv'
+import heatmap from '../data/heatmap2.js'
 
-import StackedBar from './charts/_stackedbar.js'
 import './_results.scss'
-
-const SECTIONS = {
-  FLAVORS: 'Flavors',
-  FRAMEWORKS: 'Frameworks',
-}
 
 import { SECTIONS, FILTERS, RESPONSES } from './_constants'
 import StackedBar from './charts/_stackedbar'
 import Heatmap from './charts/_heatmap2'
 import './_results.scss'
+
+console.log('flavors', flavors);
+console.log('frontend', frontend);
+console.log('testing', testing);
 
 class FilterPoint extends React.Component {
   componentDidMount() {
@@ -34,7 +33,7 @@ class FilterPoint extends React.Component {
 
 FilterPoint.getWindow = () => {
   if (typeof window !== 'undefined') {
-    return window;
+    return window
   }
 }
 
@@ -43,14 +42,9 @@ class Results extends React.Component {
     super(props)
     this.filterUpdate = this.filterUpdate.bind(this)
     this._handleScroll = throttle(this._handleScroll.bind(this), 100)
-    this._sectionToBreakpoints = {
-      [SECTIONS.FLAVORS]: [],
-      [SECTIONS.FRAMEWORKS]: [],
-    }
-    this.state = {
-      [SECTIONS.FLAVORS]: FILTERS.ALL,
-      [SECTIONS.FRAMEWORKS]: FILTERS.ALL,
-    }
+    // { Flavors: [], ... }
+    this._sectionToBreakpoints = fromPairs(values(SECTIONS).map((section) => [section, []]))
+    this.state = fromPairs(values(SECTIONS).map((section) => [section, FILTERS.ALL]))
   }
 
   componentDidMount() {
@@ -76,7 +70,7 @@ class Results extends React.Component {
   _activeFilter(breakpoints, top) {
     if(!breakpoints.length) return null
     const active = breakpoints.find((b) => b.top < top)
-    return (active && active.filter) || breakpoints[0].filter
+    return (active && active.filter) || last(breakpoints).filter
   }
 
   _handleScroll() {
@@ -113,7 +107,7 @@ class Results extends React.Component {
           <div className="section">
             <StickyContainer className="sticky-container">
               <Sticky className="sticky">
-                <StackedBar identifier="Flavor" title="JavaScript Flavors" data={flavors} responses={RESPONSES} filters={FILTERS} filter={this.state[SECTIONS.FLAVORS]} handleSelect={(filter) => this.filterUpdate(SECTIONS.FLAVORS, filter)} />
+                <StackedBar identifier="Option" title="JavaScript Flavors" data={flavors} responses={RESPONSES} filters={FILTERS} filter={this.state[SECTIONS.FLAVORS]} handleSelect={(filter) => this.filterUpdate(SECTIONS.FLAVORS, filter)} />
               </Sticky>
             </StickyContainer>
 
@@ -130,7 +124,7 @@ class Results extends React.Component {
           <div className="section">
             <StickyContainer className="sticky-container">
               <Sticky className="sticky">
-                <StackedBar identifier="Framework" title="Front-end Frameworks" data={frontend} responses={RESPONSES} filters={FILTERS} filter={this.state[SECTIONS.FRAMEWORKS]} handleSelect={(filter) => this.filterUpdate(SECTIONS.FRAMEWORKS, filter)}  />
+                <StackedBar identifier="Option" title="Front-end Frameworks" data={frontend} responses={RESPONSES} filters={FILTERS} filter={this.state[SECTIONS.FRAMEWORKS]} handleSelect={(filter) => this.filterUpdate(SECTIONS.FRAMEWORKS, filter)}  />
               </Sticky>
             </StickyContainer>
 
@@ -138,6 +132,22 @@ class Results extends React.Component {
               <h1>Front-End Frameworks</h1>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+          </div>
+          <div className="section">
+            <StickyContainer className="sticky-container">
+              <Sticky className="sticky">
+                <StackedBar identifier="Option" title="Testing Tools" data={testing} responses={RESPONSES} filters={FILTERS} filter={this.state[SECTIONS.TESTING]} handleSelect={(filter) => this.filterUpdate(SECTIONS.TESTING, filter)}  />
+              </Sticky>
+            </StickyContainer>
+
+            <div className="section-contents">
+              <h1>Testing Tools</h1>
+              <p>{this.filterPoint(SECTIONS.TESTING, FILTERS.ALL)} Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <p>{this.filterPoint(SECTIONS.TESTING, FILTERS.INTEREST)} Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <p>{this.filterPoint(SECTIONS.TESTING, FILTERS.SATISFACTION)} Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
           </div>

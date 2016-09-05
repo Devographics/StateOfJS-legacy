@@ -18,7 +18,7 @@ const Label = ({ responses, showPercent, currentFilter, key, index, value, x, y,
   // sum the total users for the currently highlighted responses
   let subtotal = 0
   highlightedResponses.forEach(response => {
-    subtotal += value.data[response.string]
+    subtotal += parseInt(value.data[response.string])
   })
 
   const count = (value[1] - value[0])
