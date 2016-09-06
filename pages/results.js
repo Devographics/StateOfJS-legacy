@@ -1,11 +1,14 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
 import { StickyContainer, Sticky } from 'react-sticky'
-import { throttle, sortBy, fromPairs, values, last } from 'lodash'
+import { throttle, sortBy, fromPairs, values, last, take, max } from 'lodash'
+
+import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from 'recharts'
 
 import flavors from '../data/flavors.csv'
 import frontend from '../data/frontend.csv'
 import testing from '../data/testing.csv'
+import testingOther from '../data/testingOther.csv'
 import heatmap from '../data/heatmap2.js'
 
 import testingIntro from './results/testing/_intro.md'
@@ -104,6 +107,7 @@ class Results extends React.Component {
             <Heatmap width={600} height={600} data={heatmap} />
           </div>
           */}
+
           <div className="section">
             <StickyContainer className="sticky-container">
               <Sticky className="sticky">
@@ -151,6 +155,17 @@ class Results extends React.Component {
               {this.filterPoint(SECTIONS.TESTING, FILTERS.SATISFACTION)}
               <div dangerouslySetInnerHTML={{ __html: testingSatisfaction.body }} />
             </div>
+          </div>
+
+          <div className="section">
+            <ResponsiveContainer minHeight={400} width="100%" >
+              <BarChart data={take(testingOther, 10)} layout="vertical" barCategoryGap="30%" margin={ {top: 0, right: 0, left: 20, bottom: 0} } >
+                <YAxis dataKey="Option" type="category" tickLine={false} axisLine={{ stroke: '#666' }} />
+                <XAxis type="number" tickLine={true} axisLine={{ stroke: '#666' }} domain={[0, max(testingOther.map(d => parseInt(d.Mentions)))]} />
+                <Tooltip/>
+                <Bar isAnimationActive={false} dataKey="Mentions" fill="#666" />
+              </BarChart>
+            </ResponsiveContainer>
           </div>
         </div>
       </DocumentTitle>
