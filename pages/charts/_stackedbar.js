@@ -3,7 +3,6 @@ import { filter, reduce, includes, values, sumBy, isString } from 'lodash'
 import DocumentTitle from 'react-document-title'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts'
 import classNames from 'classnames'
-import '../_results.scss'
 
 const Label = ({ responses, showPercent, currentFilter, key, index, value, x, y, height }) => {
 
@@ -49,13 +48,13 @@ class ResultsChart extends React.Component {
     return (
       <BarChart width={600} height={400} data={this.props.data} barCategoryGap="30%" margin={{top: 60, right: 20, left: 20, bottom: 5}} onClick={handleToggle} >
         <XAxis dataKey={this.props.identifier} tickLine={false} axisLine={{ stroke: '#666' }} />
-        <Legend align="left" wrapperStyle={{top: 20}}/>
         {/* <Tooltip/> */}
         <Bar className="use-again" isAnimationActive={false} dataKey="I've used it before, and would use it again" stackId="a" fill={this.getFill("useAgain")} label={CustomLabel} />
         <Bar className="not-use-again" isAnimationActive={false} dataKey="I've used it before, and would not use it again" stackId="a" fill={this.getFill("notAgain")} label={CustomLabel} />
         <Bar className="want-to-learn" isAnimationActive={false} dataKey="I've heard of it, and would like to learn it" stackId="a" fill={this.getFill("wantToLearn")} label={CustomLabel} />
         <Bar className="not-interested" isAnimationActive={false} dataKey="I've heard of it, and am not interested" stackId="a" fill={this.getFill("notInterested")} label={CustomLabel} />
         <Bar className="never-heard" isAnimationActive={false} dataKey="I've never heard of it" stackId="a" fill={this.getFill("neverHeard")} label={CustomLabel} />
+        <Legend align="left"/>
       </BarChart>
     )
   }
@@ -69,8 +68,8 @@ ResultsChart.propTypes = {
 
 const ResultsFilter = ({ filters, handleSelect }) => (
   <div className="filter">
-    <h3>Filter</h3>
-    <ul>
+    <div className="filter-heading">Show:</div>
+    <ul className="filter-options">
       {values(filters).map((filter) => {
         return (
           <li key={filter} className={filter.toLowerCase()} onClick={(e) => {

@@ -1,0 +1,33 @@
+$hmargin: 20px;
+$vmargin: 20px;
+
+$header-height: 50px;
+$header-mobile-height: 50px;
+
+$small-thumbnail-width: 60px;
+$medium-thumbnail-width: 100px;
+
+@mixin flex-center{
+  display: flex;
+  align-items: center;
+}
+
+@mixin border{
+  border: 1px solid $border-color;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@function black($opacity){
+  @return rgba(0,0,0,$opacity);
+}
+
+@function white($opacity){
+  @return rgba(255,255,255,$opacity);
+}

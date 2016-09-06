@@ -1,0 +1,27 @@
+$small-font: 0.8rem;
+$medium-font: 1rem;
+$large-font: 1.3rem;
+
+$light: 100;
+$medium: normal;
+$bold: bold;
+
+@mixin font-light{
+  font-weight: $light;
+}
+
+@mixin font-regular{
+  font-weight: $medium;
+}
+
+@mixin font-bold{
+  font-weight: $bold;
+}
+
+@mixin primary-font{
+  font-family: 'Work Sans', sans-serif;
+}
+@mixin secondary-font{
+  font-family: 'Space Mono', monospace;
+  font-style: italic;
+}

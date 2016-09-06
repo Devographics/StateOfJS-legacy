@@ -12,12 +12,10 @@ import testingIntro from './results/testing/_intro.md'
 import testingInterest from './results/testing/_interest.md'
 import testingSatisfaction from './results/testing/_satisfaction.md'
 
-import './_results.scss'
-
 import { SECTIONS, FILTERS, RESPONSES } from './_constants'
 import StackedBar from './charts/_stackedbar'
 import Heatmap from './charts/_heatmap2'
-import './_results.scss'
+import '../stylesheets/screen.scss'
 
 class FilterPoint extends React.Component {
   componentDidMount() {
@@ -101,9 +99,11 @@ class Results extends React.Component {
     return (
       <DocumentTitle title="Results">
         <div className="results-container">
+          {/*
           <div className="section">
             <Heatmap width={600} height={600} data={heatmap} />
           </div>
+          */}
           <div className="section">
             <StickyContainer className="sticky-container">
               <Sticky className="sticky">
