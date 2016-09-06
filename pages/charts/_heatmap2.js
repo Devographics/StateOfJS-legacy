@@ -27,8 +27,6 @@ class Heatmap extends React.Component {
     const cellWidth = x.bandwidth()
     const cellHeight = x.bandwidth()
 
-    console.log(minCount, maxCount, cellWidth, cellHeight)
-
     return (
       <svg width={width} height={height}>
         {data.map((d) => {
