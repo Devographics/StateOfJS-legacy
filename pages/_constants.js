@@ -25,7 +25,7 @@ const RESPONSES = {
   },
   wantToLearn: {
     string: "I've heard of it, and would like to learn it",
-    onColor: '#4cbcc1',
+    onColor: '#5ec6cc',
     offColor: '#cecece',
     filters: [FILTERS.ALL, FILTERS.INTEREST]
   },
@@ -37,7 +37,7 @@ const RESPONSES = {
   },
   useAgain: {
     string: "I've used it before, and would use it again",
-    onColor: '#e91467',
+    onColor: '#ed387a',
     offColor: '#cecece',
     filters: [FILTERS.ALL, FILTERS.SATISFACTION]
   }

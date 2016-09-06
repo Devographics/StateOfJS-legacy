@@ -1,4 +1,4 @@
-$small-font: 0.8rem;
+$small-font: 0.9rem;
 $medium-font: 1rem;
 $large-font: 1.3rem;
 
@@ -23,5 +23,5 @@ $bold: bold;
 }
 @mixin secondary-font{
   font-family: 'Space Mono', monospace;
-  font-style: italic;
+  // font-style: italic;
 }

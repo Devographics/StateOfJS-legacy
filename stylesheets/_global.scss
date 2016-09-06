@@ -6,8 +6,8 @@ html {
 }
 
 body{
-  background: $beige;
-  color: $text;
+  background: $bg-color;
+  color: $text-color;
   padding: 0;
   @include primary-font;
   @include small{

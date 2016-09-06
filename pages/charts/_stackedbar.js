@@ -1,7 +1,7 @@
 import React from 'react'
 import { filter, reduce, includes, values, sumBy, isString } from 'lodash'
 import DocumentTitle from 'react-document-title'
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts'
+import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts'
 import classNames from 'classnames'
 
 const Label = ({ responses, showPercent, currentFilter, key, index, value, x, y, height }) => {
@@ -27,7 +27,7 @@ const Label = ({ responses, showPercent, currentFilter, key, index, value, x, y,
 
   return (
     <g key={key} className="recharts-cartesian-axis-label">
-      <text className="label" x={x} y={y + 10 + height/2} textAnchor="middle" fontSize="12" fill="white" >
+      <text className="label" x={x} y={y + 10 + height/2} textAnchor="middle" >
         {label}
       </text>
     </g>
@@ -46,7 +46,8 @@ class ResultsChart extends React.Component {
     const { filter, showPercent, handleToggle } = this.props
     const CustomLabel = <Label {...this.props} currentFilter={filter} showPercent={showPercent} />
     return (
-      <BarChart width={600} height={400} data={this.props.data} barCategoryGap="30%" margin={{top: 60, right: 20, left: 20, bottom: 5}} onClick={handleToggle} >
+      <ResponsiveContainer minHeight={450}>
+      <BarChart data={this.props.data} barCategoryGap="30%" margin={{top: 0, right: 0, left: 0, bottom: 0}} onClick={handleToggle} >
         <XAxis dataKey={this.props.identifier} tickLine={false} axisLine={{ stroke: '#666' }} />
         {/* <Tooltip/> */}
         <Bar className="use-again" isAnimationActive={false} dataKey="I've used it before, and would use it again" stackId="a" fill={this.getFill("useAgain")} label={CustomLabel} />
@@ -54,8 +55,9 @@ class ResultsChart extends React.Component {
         <Bar className="want-to-learn" isAnimationActive={false} dataKey="I've heard of it, and would like to learn it" stackId="a" fill={this.getFill("wantToLearn")} label={CustomLabel} />
         <Bar className="not-interested" isAnimationActive={false} dataKey="I've heard of it, and am not interested" stackId="a" fill={this.getFill("notInterested")} label={CustomLabel} />
         <Bar className="never-heard" isAnimationActive={false} dataKey="I've never heard of it" stackId="a" fill={this.getFill("neverHeard")} label={CustomLabel} />
-        <Legend align="left"/>
+        <Legend align="left" wrapperStyle={{bottom: -20}}/>
       </BarChart>
+      </ResponsiveContainer>
     )
   }
 

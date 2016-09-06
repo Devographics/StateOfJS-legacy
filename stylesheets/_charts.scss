@@ -4,14 +4,30 @@
 .recharts-wrapper {
 }
 .recharts-default-legend {
-  line-height: 18px;
+  font-size: $small-font;
+  .recharts-legend-item{
+    width: 100%;
+  }
   .recharts-legend-item-text {
+  }
+}
+
+.recharts-cartesian-axis-label{
+  .label{
+    @include secondary-font;
+    fill: white;
     font-size: 16px;
+    text-shadow: 0px 3px 3px black(0.25);
   }
 }
 
 .filter{
-  display: flex;
+  font-size: $small-font;
+  @include flex-center;
+  justify-content: center;
+}
+.filter-heading{
+  margin-right: $hmargin/2;
 }
 .filter ul {
   list-style: none;
@@ -19,7 +35,7 @@
 }
 
 .filter-options{
-  border: 1px solid black;
+  border: 1px solid $border-color;
   border-radius: 3px;
   display: flex;
   justify-content: flex-start;
@@ -27,7 +43,7 @@
   margin: 0;
   li{
     padding: 10px;
-    border-right: 1px solid black;
+    border-right: 1px solid $border-color;
     &:last-child{
       border-right: none;
     }
@@ -59,30 +75,5 @@ div.satisfaction {
     text.label {
       display: block;
     }
-  }
-}
-
-.results-container{
-}
-.section{
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  margin-bottom: 200px;
-  // background: rgba(0,0,0,0.1);
-}
-.section-contents{
-  width: 35%;
-}
-.sticky-container{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 60%;
-}
-.chart{
-  h2{
-    margin-top: 0;
   }
 }
