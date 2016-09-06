@@ -1,5 +1,5 @@
 import React from 'react'
-import _, { filter, values } from 'lodash'
+import _, { values } from 'lodash'
 // import DocumentTitle from 'react-document-title'
 
 const Filters = ({ filters, handleSelect }) => (

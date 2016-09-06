@@ -15,9 +15,10 @@
 .recharts-cartesian-axis-label{
   .label{
     @include secondary-font;
-    fill: white;
+    // fill: white;
+    fill: $darkgrey;
     font-size: 16px;
-    text-shadow: 0px 3px 3px black(0.25);
+    // text-shadow: 0px 3px 3px black(0.25);
   }
 }
 
@@ -51,12 +52,12 @@
 }
 
 .use-again, .not-use-again, .want-to-learn, .not-interested, .never-heard {
-  text.label {
+  .recharts-cartesian-axis-label {
     display: none;
   }
 }
 div.all{
-  text.label{
+  .recharts-cartesian-axis-label{
     display: block;
   }
 }
@@ -66,7 +67,7 @@ div.interest {
     background-color: $interest-dark;
   }
   .want-to-learn, .not-interested {
-    text.label {
+    .recharts-cartesian-axis-label {
       display: block;
     }
   }
@@ -77,7 +78,7 @@ div.satisfaction {
     background-color: $satisfaction-dark;
   }
   .use-again, .not-use-again {
-    text.label {
+    .recharts-cartesian-axis-label {
       display: block;
     }
   }
