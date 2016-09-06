@@ -13,7 +13,7 @@ import testingInterest from './results/testing/_interest.md'
 import testingSatisfaction from './results/testing/_satisfaction.md'
 
 import { SECTIONS, FILTERS, RESPONSES } from './_constants'
-import StackedBar from './charts/_stackedbar'
+import StackedBar from '../components/stackedbar/StackedBar.js'
 import Heatmap from './charts/_heatmap2'
 import '../stylesheets/screen.scss'
 

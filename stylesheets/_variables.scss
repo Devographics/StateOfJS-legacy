@@ -1,12 +1,6 @@
 $hmargin: 20px;
 $vmargin: 20px;
 
-$header-height: 50px;
-$header-mobile-height: 50px;
-
-$small-thumbnail-width: 60px;
-$medium-thumbnail-width: 100px;
-
 @mixin flex-center{
   display: flex;
   align-items: center;
@@ -16,7 +10,7 @@ $medium-thumbnail-width: 100px;
   border: 1px solid $border-color;
 }
 
-@mixin clearfix {
+@mixin clearfix{
   &:after {
     content: "";
     display: table;

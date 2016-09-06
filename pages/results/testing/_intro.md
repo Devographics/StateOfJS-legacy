@@ -1,3 +1,10 @@
+---
+title: Document
+published: 2017-12-01
+---
+
+..Thing
+
 ### Mocha, Jasmine, Whatever
 
 Like the rest of Javascript world, the testing landscape is highly competitive

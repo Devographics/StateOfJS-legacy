@@ -1,0 +1,9 @@
+{
+  directives: {
+    Thing: {
+      component: {
+        source: './components/Thing.js'
+      }
+    }
+  }
+}
