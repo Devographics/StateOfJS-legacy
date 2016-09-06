@@ -19,7 +19,7 @@ export default class ResultsChart extends React.Component {
     return (
       <ResponsiveContainer minHeight={450}>
         <BarChart data={this.props.data} barCategoryGap="30%" margin={ {top: 0, right: 0, left: 0, bottom: 0} } onClick={handleToggle} >
-          <XAxis dataKey={this.props.identifier} tickLine={false} axisLine={{ stroke: '#666' }} />
+          <XAxis dataKey={this.props.identifier} tickLine={false} axisLine={{ stroke: '#666' }} interval={0} />
           {/* <Tooltip/> */}
           <Bar className="use-again" isAnimationActive={false} dataKey="I've used it before, and would use it again" stackId="a" fill={this.getFill('useAgain')} label={CustomLabel} />
           <Bar className="not-use-again" isAnimationActive={false} dataKey="I've used it before, and would not use it again" stackId="a" fill={this.getFill('notAgain')} label={CustomLabel} />

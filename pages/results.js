@@ -159,7 +159,7 @@ class Results extends React.Component {
 
           <div className="section">
             <ResponsiveContainer minHeight={400} width="100%" >
-              <BarChart data={take(testingOther, 10)} layout="vertical" barCategoryGap="30%" margin={ {top: 0, right: 0, left: 0, bottom: 0} } >
+              <BarChart data={take(testingOther, 10)} layout="vertical" barCategoryGap="30%" margin={ {top: 0, right: 0, left: 20, bottom: 0} } >
                 <YAxis dataKey="Option" type="category" tickLine={false} axisLine={{ stroke: '#666' }} />
                 <XAxis type="number" tickLine={true} axisLine={{ stroke: '#666' }} domain={[0, max(testingOther.map(d => parseInt(d.Mentions)))]} />
                 <Tooltip/>
