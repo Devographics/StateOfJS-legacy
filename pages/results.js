@@ -9,17 +9,18 @@ import flavors from '../data/flavors.csv'
 import frontend from '../data/frontend.csv'
 import testing from '../data/testing.csv'
 import testingOther from '../data/testingOther.csv'
-import heatmap from '../data/heatmap2.js'
+import heatmapData from '../data/heatmap2.js'
 
 import testingIntro from './results/testing/_intro.md'
 import testingInterest from './results/testing/_interest.md'
 import testingSatisfaction from './results/testing/_satisfaction.md'
 
 import { SECTIONS, FILTERS, RESPONSES } from './_constants'
+
 import StackedBar from '../components/stackedbar/StackedBar.js'
 import HorizontalBar from '../components/horizontalbar/HorizontalBar.js'
+import Heatmap from '../components/heatmap/Heatmap.js'
 
-// import Heatmap from './charts/_heatmap2'
 import '../stylesheets/screen.scss'
 
 class FilterPoint extends React.Component {
@@ -104,11 +105,6 @@ class Results extends React.Component {
     return (
       <DocumentTitle title="Results">
         <div className="results-container">
-          {/*
-          <div className="section">
-            <Heatmap width={600} height={600} data={heatmap} />
-          </div>
-          */}
 
           {/*
           <div className="section">
@@ -172,6 +168,19 @@ class Results extends React.Component {
 
             <div className="section-contents">
               <h1>Other Testing Tools</h1>
+              <div dangerouslySetInnerHTML={{ __html: testingSatisfaction.body }} />
+            </div>
+          </div>
+
+          <div className="section">
+            <StickyContainer className="sticky-container">
+              <Sticky className="sticky">
+                <Heatmap title="Heatmap" data={heatmapData} width={600} height={600} />
+              </Sticky>
+            </StickyContainer>
+
+            <div className="section-contents">
+              <h1>Heatmap</h1>
               <div dangerouslySetInnerHTML={{ __html: testingSatisfaction.body }} />
             </div>
           </div>
