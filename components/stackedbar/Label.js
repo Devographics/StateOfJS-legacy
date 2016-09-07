@@ -20,8 +20,8 @@ const Label = (props) => {
     : count
 
   // x coordinate
-  const offsetLabel = percent < 10 || count < 400
-  const xOffset = offsetLabel ? -50 : 0
+  const isOffset = percent < 10 || count < 400
+  const xOffset = isOffset ? -50 : 0
   const finalX = x + xOffset
 
   // y coordinate
@@ -30,18 +30,22 @@ const Label = (props) => {
   let lineYOffset = 0
 
   // now deploying anti-collision measures
-  if (barNumber === 0) {
-    // if this is the lowest bar, "raise" the label off the ground a bit
-    finalY = calculatedY - 10
-  } else {
-    // if this is *not* the lowest bar, get coordinates of label right below
-    // and make sure labels have enough space between them
-    const previousLabelCoords = getCoords(index, barNumber - 1)
-    const newY = previousLabelCoords.y - 20
-    finalY = min([calculatedY, newY])
-    // if offset is greater than 20, adjust line endpoint to fix angle
-    if (calculatedY - newY > 20) {
-      lineYOffset = 5
+  if (isOffset) {
+    if (barNumber === 0) {
+      // if this is the lowest bar, "raise" the label off the ground a bit
+      finalY = calculatedY - 10
+    } else {
+      // if this is *not* the lowest bar, get coordinates of label right below
+      // and make sure labels have enough space between them if both are offset
+      const previousLabelCoords = getCoords(index, barNumber - 1)
+      if (previousLabelCoords.isOffset) {
+        const newY = previousLabelCoords.y - 20
+        finalY = min([calculatedY, newY])
+        // if offset is greater than 20, adjust line endpoint to fix angle
+        if (calculatedY - newY > 20) {
+          lineYOffset = 5
+        }
+      }
     }
   }
 
@@ -50,6 +54,7 @@ const Label = (props) => {
     label,
     x: finalX,
     y: finalY,
+    isOffset,
   })
 
   return (
@@ -57,7 +62,7 @@ const Label = (props) => {
       <text className="label" x={finalX} y={finalY} textAnchor="middle" >
         {label}
       </text>
-      {offsetLabel ? <line x1={finalX + 15} y1={finalY - 5 + lineYOffset} x2={finalX + 30} y2={calculatedY - 5} stroke="#344c4c" strokeWidth="1"/> : null}
+      {isOffset ? <line x1={finalX + 15} y1={finalY - 5 + lineYOffset} x2={finalX + 30} y2={calculatedY - 5} stroke="#344c4c" strokeWidth="1"/> : null}
     </g>
   )
 }

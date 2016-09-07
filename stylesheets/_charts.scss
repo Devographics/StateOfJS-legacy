@@ -22,10 +22,18 @@
   }
 }
 
+.filters{
+  @include flex-center;
+  justify-content: center;
+}
 .filter{
   font-size: $small-font;
   @include flex-center;
   justify-content: center;
+  margin-right: $hmargin*2;
+  &:last-child{
+    margin-right: 0;
+  }
 }
 .filter-heading{
   margin-right: $hmargin/2;

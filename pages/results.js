@@ -17,7 +17,9 @@ import testingSatisfaction from './results/testing/_satisfaction.md'
 
 import { SECTIONS, FILTERS, RESPONSES } from './_constants'
 import StackedBar from '../components/stackedbar/StackedBar.js'
-import Heatmap from './charts/_heatmap2'
+import HorizontalBar from '../components/horizontalbar/HorizontalBar.js'
+
+// import Heatmap from './charts/_heatmap2'
 import '../stylesheets/screen.scss'
 
 class FilterPoint extends React.Component {
@@ -108,6 +110,7 @@ class Results extends React.Component {
           </div>
           */}
 
+          {/*
           <div className="section">
             <StickyContainer className="sticky-container">
               <Sticky className="sticky">
@@ -139,6 +142,9 @@ class Results extends React.Component {
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
           </div>
+
+          */}
+
           <div className="section">
             <StickyContainer className="sticky-container">
               <Sticky className="sticky">
@@ -158,15 +164,18 @@ class Results extends React.Component {
           </div>
 
           <div className="section">
-            <ResponsiveContainer minHeight={400} width="100%" >
-              <BarChart data={take(testingOther, 10)} layout="vertical" barCategoryGap="30%" margin={ {top: 0, right: 0, left: 20, bottom: 0} } >
-                <YAxis dataKey="Option" type="category" tickLine={false} axisLine={{ stroke: '#666' }} />
-                <XAxis type="number" tickLine={true} axisLine={{ stroke: '#666' }} domain={[0, max(testingOther.map(d => parseInt(d.Mentions)))]} />
-                <Tooltip/>
-                <Bar isAnimationActive={false} dataKey="Mentions" fill="#666" />
-              </BarChart>
-            </ResponsiveContainer>
+            <StickyContainer className="sticky-container">
+              <Sticky className="sticky">
+                <HorizontalBar title="Other Testing Tools" data={take(testingOther, 10)} />
+              </Sticky>
+            </StickyContainer>
+
+            <div className="section-contents">
+              <h1>Other Testing Tools</h1>
+              <div dangerouslySetInnerHTML={{ __html: testingSatisfaction.body }} />
+            </div>
           </div>
+          
         </div>
       </DocumentTitle>
     )

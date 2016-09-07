@@ -3,22 +3,47 @@ import _, { values } from 'lodash'
 // import DocumentTitle from 'react-document-title'
 
 const Filters = ({ filters, handleSelect }) => (
-  <div className="filter">
-    <div className="filter-heading">Show:</div>
-    <ul className="filter-options">
-      {values(filters).map(filter =>
+  <div className="filters">
+    <div className="filter">
+      <div className="filter-heading">Filter:</div>
+      <ul className="filter-options">
+        {values(filters).map(filter =>
+          <li
+            key={filter} className={filter.toLowerCase()}
+            onClick={(e) => {
+              e.preventDefault()
+              handleSelect(filter)
+            }}
+          >
+            {filter}
+          </li>
+          )
+        }
+      </ul>
+    </div>
+    <div className="filter">
+      <div className="filter-heading">Show:</div>
+      <ul className="filter-options">
         <li
-          key={filter} className={filter.toLowerCase()}
+          className="percent"
           onClick={(e) => {
             e.preventDefault()
-            handleSelect(filter)
+            // handleSelect(filter)
           }}
         >
-          {filter}
+          Percents
         </li>
-        )
-      }
-    </ul>
+        <li
+          className="numbers"
+          onClick={(e) => {
+            e.preventDefault()
+            // handleSelect(filter)
+          }}
+        >
+          Numbers
+        </li>
+      </ul>
+    </div>
   </div>
 )
 
