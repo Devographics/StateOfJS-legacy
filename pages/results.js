@@ -166,7 +166,7 @@ class Results extends React.Component {
           <div className="section">
             <StickyContainer className="sticky-container">
               <Sticky className="sticky">
-                <HorizontalBar title="Other Testing Tools" data={take(testingOther, 10)} />
+                <HorizontalBar title="Other Testing Tools (Total Mentions)" data={take(testingOther, 10)} />
               </Sticky>
             </StickyContainer>
 
@@ -175,7 +175,7 @@ class Results extends React.Component {
               <div dangerouslySetInnerHTML={{ __html: testingSatisfaction.body }} />
             </div>
           </div>
-          
+
         </div>
       </DocumentTitle>
     )
