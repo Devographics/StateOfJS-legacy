@@ -3,49 +3,61 @@ import _, { filter, includes, min, max } from 'lodash'
 // import DocumentTitle from 'react-document-title'
 
 const Label = (props) => {
-  const { responses, showPercent, currentFilter, key, setCoords, getCoords, barNumber, index, data, value, x, y, height } = props
-  // get all currently highlighted responses
-  const highlightedResponses = filter(responses, response => includes(response.filters, currentFilter))
-
+  const { responses, showPercent, currentFilter, key, setCoords, getCoords, barNumber, index, value, x, y, height } = props
+  
   // sum the total users for all responses, or just the currently highlighted responses
   let total = 0
-  const responses2 = currentFilter === 'All' ? responses : highlightedResponses
-  _.forEach(responses2, response => {
+  const responsesToUse = currentFilter === 'All' ? responses : filter(responses, response => includes(response.filters, currentFilter))
+  _.forEach(responsesToUse, response => {
     total += parseInt(value.data[response.string], 10)
   })
 
+  // calculate count and percent values, and figure out label based on showPercent prop
   const count = (value[1] - value[0])
   const percent = ((100 * count) / total).toFixed(0)
   const label = showPercent
     ? `${percent}%`
     : count
 
+  // x coordinate
   const offsetLabel = percent < 10 || count < 400
   const xOffset = offsetLabel ? -50 : 0
-
-  const prevLabelCoords = getCoords()
-
   const finalX = x + xOffset
-  const calculatedY = y + 10 + (height/2)
-  // const finalY = min([calculatedY, (prevLabelCoords.y + 20)])
-  const finalY = calculatedY
-  // console.log("---")
-  console.log(props)
-  // console.log(label)
-  // console.log(calculatedY)
-  // console.log(prevLabelCoords.y)
 
-  setCoords({
+  // y coordinate
+  const calculatedY = y + 10 + (height/2)
+  let finalY = calculatedY
+  let lineYOffset = 0
+
+  // now deploying anti-collision measures
+  if (barNumber === 0) {
+    // if this is the lowest bar, "raise" the label off the ground a bit
+    finalY = calculatedY - 10
+  } else {
+    // if this is *not* the lowest bar, get coordinates of label right below
+    // and make sure labels have enough space between them
+    const previousLabelCoords = getCoords(index, barNumber - 1)
+    const newY = previousLabelCoords.y - 20
+    finalY = min([calculatedY, newY])
+    // if offset is greater than 20, adjust line endpoint to fix angle
+    if (calculatedY - newY > 20) {
+      lineYOffset = 5
+    }
+  }
+
+  // make this label's coordinates available to the next one
+  setCoords(index, barNumber, {
+    label,
     x: finalX,
-    y: calculatedY
+    y: finalY,
   })
-  
+
   return (
     <g key={key} className="recharts-cartesian-axis-label">
       <text className="label" x={finalX} y={finalY} textAnchor="middle" >
         {label}
       </text>
-      {offsetLabel ? <line x1={finalX + 15} y1={finalY - 5} x2={finalX + 30} y2={finalY - 5} stroke="#344c4c" strokeWidth="1"/> : null}
+      {offsetLabel ? <line x1={finalX + 15} y1={finalY - 5 + lineYOffset} x2={finalX + 30} y2={calculatedY - 5} stroke="#344c4c" strokeWidth="1"/> : null}
     </g>
   )
 }
