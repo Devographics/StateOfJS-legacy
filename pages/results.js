@@ -11,9 +11,11 @@ import testing from '../data/testing.csv'
 import testingOther from '../data/testingOther.csv'
 import heatmapData from '../data/heatmap2.js'
 
-import testingIntro from './results/testing/_intro.md'
-import testingInterest from './results/testing/_interest.md'
-import testingSatisfaction from './results/testing/_satisfaction.md'
+import Testing from '../contents/testing.md'
+import Dummy from '../contents/dummy.md'
+// import TestingIntro from './results/testing/_intro.md'
+// import TestingInterest from './results/testing/_interest.md'
+// import TestingSatisfaction from './results/testing/_satisfaction.md'
 
 import { SECTIONS, FILTERS, RESPONSES } from './_constants'
 
@@ -151,11 +153,9 @@ class Results extends React.Component {
             <div className="section-contents">
               <h1>Testing Tools</h1>
               {this.filterPoint(SECTIONS.TESTING, FILTERS.ALL)}
-              <div dangerouslySetInnerHTML={{ __html: testingIntro.body }} />
+              <Testing />
               {this.filterPoint(SECTIONS.TESTING, FILTERS.INTEREST)}
-              <div dangerouslySetInnerHTML={{ __html: testingInterest.body }} />
               {this.filterPoint(SECTIONS.TESTING, FILTERS.SATISFACTION)}
-              <div dangerouslySetInnerHTML={{ __html: testingSatisfaction.body }} />
             </div>
           </div>
 
@@ -168,7 +168,7 @@ class Results extends React.Component {
 
             <div className="section-contents">
               <h1>Other Testing Tools</h1>
-              <div dangerouslySetInnerHTML={{ __html: testingSatisfaction.body }} />
+              <Dummy />
             </div>
           </div>
 
@@ -181,7 +181,7 @@ class Results extends React.Component {
 
             <div className="section-contents">
               <h1>Heatmap</h1>
-              <div dangerouslySetInnerHTML={{ __html: testingSatisfaction.body }} />
+              <Dummy />
             </div>
           </div>
 

@@ -10,12 +10,12 @@ exports.modifyWebpackConfig = function(config, env) {
     return cfg
   })
 
-  // config.removeLoader('md')
-  // config.loader('md', function(cfg) {
-  //   cfg.test = /\.md$/
-  //   cfg.loader = 'babel-loader!reactdown/webpack'
-  //   return cfg
-  // })
+  config.removeLoader('md')
+  config.loader('md', function(cfg) {
+    cfg.test = /\.md$/
+    cfg.loader = 'babel-loader!reactdown/webpack'
+    return cfg
+  })
   
   return config
 }
