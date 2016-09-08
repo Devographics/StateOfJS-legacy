@@ -1,5 +1,5 @@
 import React from 'react'
 
 export default function Thing(props) {
-  return <div>Life is Good.</div>
+  return <div>Testing 1 2 3.</div>
 }

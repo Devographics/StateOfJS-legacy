@@ -1,7 +1,5 @@
 ### Interest
 
-..Thing
-
 The most interesting framework of the lot was Mocha, with 75% of people who'd
 heard of it wanting to learn it, followed shortly by Enzyme at 72%.
 

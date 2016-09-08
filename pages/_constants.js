@@ -2,6 +2,7 @@ const SECTIONS = {
   FLAVORS: 'Flavors',
   FRAMEWORKS: 'Frameworks',
   TESTING: 'Testing',
+  MOBILE: 'Mobile',
 }
 
 const FILTERS = {

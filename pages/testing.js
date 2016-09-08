@@ -1,9 +1,7 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
 import { StickyContainer, Sticky } from 'react-sticky'
-import { throttle, sortBy, fromPairs, values, last, take, max } from 'lodash'
-
-import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from 'recharts'
+import { throttle, sortBy, fromPairs, values, last, take } from 'lodash'
 
 import flavors from '../data/flavors.csv'
 import frontend from '../data/frontend.csv'
@@ -11,11 +9,11 @@ import testing from '../data/testing.csv'
 import testingOther from '../data/testingOther.csv'
 import heatmapData from '../data/heatmap2.js'
 
-import Testing from '../contents/testing.md'
+import TestingContents from '../contents/testing.md'
 import Dummy from '../contents/dummy.md'
-// import TestingIntro from './results/testing/_intro.md'
-// import TestingInterest from './results/testing/_interest.md'
-// import TestingSatisfaction from './results/testing/_satisfaction.md'
+import TestingIntro from './results/testing/_intro.md'
+import TestingInterest from './results/testing/_interest.md'
+import TestingSatisfaction from './results/testing/_satisfaction.md'
 
 import { SECTIONS, FILTERS, RESPONSES } from './_constants'
 
@@ -43,7 +41,7 @@ FilterPoint.getWindow = () => {
   }
 }
 
-class Results extends React.Component {
+class Testing extends React.Component {
   constructor(props) {
     super(props)
     this.filterUpdate = this.filterUpdate.bind(this)
@@ -153,9 +151,11 @@ class Results extends React.Component {
             <div className="section-contents">
               <h1>Testing Tools</h1>
               {this.filterPoint(SECTIONS.TESTING, FILTERS.ALL)}
-              <Testing />
+              <TestingIntro />
               {this.filterPoint(SECTIONS.TESTING, FILTERS.INTEREST)}
+              <TestingInterest />
               {this.filterPoint(SECTIONS.TESTING, FILTERS.SATISFACTION)}
+              <TestingSatisfaction />
             </div>
           </div>
 
@@ -191,4 +191,4 @@ class Results extends React.Component {
   }
 }
 
-export default Results
+export default Testing
