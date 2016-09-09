@@ -13,7 +13,7 @@ import Dummy from '../contents/dummy.md'
 import '../stylesheets/screen.scss'
 
 const Flavors = () =>
-  <DocumentTitle title="Results">
+  <DocumentTitle title="Flavors">
     <div className="results-container">
       <StackedBlock data={parseCSV(flavors)} contents={Dummy} title="JavaScript Flavors" />
       <HorizontalBlock data={parseCSV(flavorsHappiness)} contents={Dummy} title="Happiness" />
