@@ -7,23 +7,23 @@ import VerticalBlock from '../components/blocks/VerticalBlock.js'
 import HorizontalBlock from '../components/blocks/HorizontalBlock.js'
 import HeatmapBlock from '../components/blocks/HeatmapBlock.js'
 
-import api from '../data/api.csv'
-import apiOther from '../data/apiOther.csv'
-import apiHappiness from '../data/apiHappiness.csv'
+import frontend from '../data/frontend.csv'
+import frontendOther from '../data/frontendOther.csv'
+import frontendHappiness from '../data/frontendHappiness.csv'
 import heatmapData from '../data/heatmap2.js'
 
 import Dummy from '../contents/dummy.md'
 
 import '../stylesheets/screen.scss'
 
-const API = () =>
+const Frontend = () =>
   <DocumentTitle title="Results">
     <div className="results-container">
-      <StackedBlock data={parseCSV(api)} contents={Dummy} title="API Layers" />
-      <VerticalBlock data={parseCSV(apiOther)} contents={Dummy} title="Other API Layers" />
-      <HorizontalBlock data={parseCSV(apiHappiness)} contents={Dummy} title="Happiness" />
+      <StackedBlock data={parseCSV(frontend)} contents={Dummy} title="Front-end Frameworks" />
+      <VerticalBlock data={parseCSV(frontendOther)} contents={Dummy} title="Other Front-end Frameworks" />
+      <HorizontalBlock data={parseCSV(frontendHappiness)} contents={Dummy} title="Happiness" />
       <HeatmapBlock data={heatmapData} contents={Dummy} title="Heatmap" />
     </div>
   </DocumentTitle>
 
-export default API
+export default Frontend

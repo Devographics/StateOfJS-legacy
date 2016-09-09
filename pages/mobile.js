@@ -9,20 +9,21 @@ import HeatmapBlock from '../components/blocks/HeatmapBlock.js'
 
 import mobile from '../data/mobile.csv'
 import mobileOther from '../data/mobileOther.csv'
+import mobileHappiness from '../data/mobileHappiness.csv'
 import heatmapData from '../data/heatmap2.js'
 
 import Dummy from '../contents/dummy.md'
 
 import '../stylesheets/screen.scss'
 
-const Testing = () =>
+const Mobile = () =>
   <DocumentTitle title="Results">
     <div className="results-container">
       <StackedBlock data={parseCSV(mobile)} contents={Dummy} title="Mobile Frameworks" />
       <VerticalBlock data={parseCSV(mobileOther)} contents={Dummy} title="Other Mobile Frameworks" />
+      <HorizontalBlock data={parseCSV(mobileHappiness)} contents={Dummy} title="Happiness" />
       <HeatmapBlock data={heatmapData} contents={Dummy} title="Heatmap" />
-      <HorizontalBlock data={parseCSV(mobileOther)} contents={Dummy} title="Happiness" />
     </div>
   </DocumentTitle>
 
-export default Testing
+export default Mobile
