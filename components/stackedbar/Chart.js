@@ -31,7 +31,7 @@ export default class Chart extends React.Component {
     
     return (
       <ResponsiveContainer minHeight={450}>
-        <BarChart data={data} barCategoryGap="30%" margin={ {top: 0, right: 0, left: 0, bottom: 0} } onClick={handleToggle} >
+        <BarChart data={data} barCategoryGap="30%" margin={ {top: 0, right: 20, left: 20, bottom: 0} } onClick={handleToggle} >
           <XAxis dataKey={identifier} tickLine={false} axisLine={{ stroke: '#666' }} interval={0} />
           {/* <Tooltip/> */}
           <Bar className="use-again" isAnimationActive={false} dataKey="I've used it before, and would use it again" stackId="a" fill={this.getFill('useAgain')} label={customLabel(0)} />

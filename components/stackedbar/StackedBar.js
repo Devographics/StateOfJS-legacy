@@ -23,7 +23,6 @@ export default class StackedBar extends React.Component {
     const { filter } = this.props
     return (
       <div className={classNames('chart', 'stacked-chart', filter.toLowerCase())}>
-        <h2>{this.props.title}</h2>
         <Filters {...this.props} />
         <Chart {...this.props} filter={this.props.filter} showPercent={showPercent} handleToggle={this.handleToggle}/>
       </div>
