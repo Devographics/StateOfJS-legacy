@@ -87,7 +87,7 @@ class StackedBlock extends React.Component {
       <div className="section">
         <StickyContainer className="sticky-container">
           <Sticky className="sticky">
-            <StackedBar identifier="Option" title="Testing Tools" data={this.props.data} responses={RESPONSES} filters={FILTERS} filter={this.state[SECTIONS.TESTING]} handleSelect={(filter) => this.filterUpdate(SECTIONS.TESTING, filter)}  />
+            <StackedBar identifier="Option" title={this.props.title} data={this.props.data} responses={RESPONSES} filters={FILTERS} filter={this.state[SECTIONS.TESTING]} handleSelect={(filter) => this.filterUpdate(SECTIONS.TESTING, filter)}  />
           </Sticky>
         </StickyContainer>
 

@@ -1,13 +1,13 @@
 import React from 'react'
 import { StickyContainer, Sticky } from 'react-sticky'
-import HorizontalBar from '../horizontalbar/HorizontalBar.js'
+import VerticalBar from '../verticalbar/VerticalBar.js'
 
-const HorizontalBlock = props => {
+const VerticalBlock = props => {
   return (
     <div className="section">
       <StickyContainer className="sticky-container">
         <Sticky className="sticky">
-          <HorizontalBar title={props.title} data={props.data} />
+          <VerticalBar title={props.title} data={props.data} />
         </Sticky>
       </StickyContainer>
 
@@ -19,10 +19,10 @@ const HorizontalBlock = props => {
   )
 }
 
-HorizontalBlock.propTypes = {
+VerticalBlock.propTypes = {
   title: React.PropTypes.string,
   contents: React.PropTypes.func,
   data: React.PropTypes.array,
 }
 
-export default HorizontalBlock
+export default VerticalBlock

@@ -16,3 +16,4 @@
 
 - http://localhost:8000/mobile/
 - http://localhost:8000/testing/
+- http://localhost:8000/api/
