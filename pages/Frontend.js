@@ -12,17 +12,20 @@ import frontendOther from '../data/frontendOther.csv'
 import frontendHappiness from '../data/frontendHappiness.csv'
 import heatmapData from '../data/heatmap2.js'
 
-import Dummy from '../contents/dummy.md'
+import dummy from '../contents/dummy.md'
+import results from '../contents/frontend/results.md'
+import other from '../contents/frontend/other.md'
+import happiness from '../contents/frontend/happiness.md'
 
 import '../stylesheets/screen.scss'
 
 const Frontend = () =>
   <DocumentTitle title="Results">
     <div className="results-container">
-      <StackedBlock data={parseCSV(frontend)} contents={Dummy} title="Front-end Frameworks" />
-      <VerticalBlock data={parseCSV(frontendOther)} contents={Dummy} title="Other Front-end Frameworks" />
-      <HorizontalBlock data={parseCSV(frontendHappiness)} contents={Dummy} title="Happiness" />
-      <HeatmapBlock data={heatmapData} contents={Dummy} title="Heatmap" />
+      <StackedBlock data={parseCSV(frontend)} contents={results} title="Front-end Frameworks" />
+      <VerticalBlock data={parseCSV(frontendOther)} contents={other} title="Other Front-end Frameworks" />
+      <HorizontalBlock data={parseCSV(frontendHappiness)} contents={happiness} title="Happiness" />
+      {/*<HeatmapBlock data={heatmapData} contents={dummy} title="Heatmap" />*/}
     </div>
   </DocumentTitle>
 

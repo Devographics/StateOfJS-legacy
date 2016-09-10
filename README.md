@@ -15,3 +15,5 @@
 # Browse Results
 
 - [http://localhost:8000/results/](http://localhost:8000/results/)
+
+Or look at [http://localhost:8000/frontend/](http://localhost:8000/frontend/) for an example. 
