@@ -14,7 +14,8 @@ class StackedBlock extends React.Component {
   constructor (props) {
     super(props)
     this.setPointPosition = this.setPointPosition.bind(this)
-    this.handleScroll = throttle(this.handleScroll.bind(this), 100)
+    this.handleScroll = throttle(this.handleScroll.bind(this), 50)
+    this.handleSelect = this.handleSelect.bind(this)
     this.filterPoints = []
     this.state = {
       filter: 'All',
@@ -42,6 +43,12 @@ class StackedBlock extends React.Component {
     this.filterPoints.push({ filter, top })
   }
 
+  handleSelect (value) {
+    this.setState({
+      filter: value
+    })
+  }
+
   handleScroll () {
     const doc = document
     const body = doc.body
@@ -67,7 +74,7 @@ class StackedBlock extends React.Component {
       <div className="section">
         <StickyContainer className="sticky-container">
           <Sticky className="sticky">
-            <StackedBar identifier="Option" title={this.props.title} data={this.props.data} responses={RESPONSES} filters={FILTERS} filter={this.state.filter} handleSelect={this.filterUpdate} />
+            <StackedBar identifier="Option" title={this.props.title} data={this.props.data} responses={RESPONSES} filters={FILTERS} filter={this.state.filter} handleSelect={this.handleSelect} />
           </Sticky>
         </StickyContainer>
         <div className="section-contents">

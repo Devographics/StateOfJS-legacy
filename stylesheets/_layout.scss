@@ -24,6 +24,9 @@
     bottom: 0;
     left: 0;
     width: 55%;
+    .sticky{
+      padding: $vmargin*2 0;
+    }
   }
 }
 .chart{

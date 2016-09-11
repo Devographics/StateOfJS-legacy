@@ -13,8 +13,9 @@ export default class StackedBar extends React.Component {
     }
   }
 
-  handleToggle () {
-    const showPercent = !this.state.showPercent
+  handleToggle (option) {
+    // either set the state based on "option" argument, or else just toggle it
+    const showPercent = (option && option === 'percent') || !this.state.showPercent
     this.setState({ showPercent })
   }
 
@@ -22,8 +23,8 @@ export default class StackedBar extends React.Component {
     const { showPercent } = this.state
     const { filter } = this.props
     return (
-      <div className={classNames('chart', 'stacked-chart', filter.toLowerCase())}>
-        <Filters {...this.props} />
+      <div className={classNames('chart', 'stacked-chart', filter.toLowerCase(), {percent: showPercent}, {numbers: !showPercent})}>
+        <Filters {...this.props} handleToggle={this.handleToggle} />
         <Chart {...this.props} filter={this.props.filter} showPercent={showPercent} handleToggle={this.handleToggle}/>
       </div>
     )

@@ -2,7 +2,7 @@ import React from 'react'
 import _, { values } from 'lodash'
 // import DocumentTitle from 'react-document-title'
 
-const Filters = ({ filters, handleSelect }) => (
+const Filters = ({ filters, handleSelect, handleToggle }) => (
   <div className="filters">
     <div className="filter">
       <div className="filter-heading">Filter:</div>
@@ -28,7 +28,7 @@ const Filters = ({ filters, handleSelect }) => (
           className="percent"
           onClick={(e) => {
             e.preventDefault()
-            // handleSelect(filter)
+            handleToggle("percent")
           }}
         >
           Percents
@@ -37,7 +37,7 @@ const Filters = ({ filters, handleSelect }) => (
           className="numbers"
           onClick={(e) => {
             e.preventDefault()
-            // handleSelect(filter)
+            handleToggle("numbers")
           }}
         >
           Numbers

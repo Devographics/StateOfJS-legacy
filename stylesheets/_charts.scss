@@ -53,8 +53,18 @@
   li{
     padding: 10px;
     border-right: 1px solid $border-color;
+    &:first-child{
+      border-radius: 3px 0 0 3px;
+    }
     &:last-child{
+      border-radius: 0 3px 3px 0;
       border-right: none;
+    }
+    .percent &.percent{
+      background: $grey;
+    }
+    .numbers &.numbers{
+      background: $grey;
     }
   }
 }
@@ -65,6 +75,9 @@
   }
 }
 div.all{
+  li.all{
+    background: $grey;
+  }
   .recharts-cartesian-axis-label{
     display: block;
   }
