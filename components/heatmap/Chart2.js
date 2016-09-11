@@ -5,7 +5,6 @@ import tinycolor from 'tinycolor2'
 
 const Row = ({ columns, row, rows, index }) => {
   const currentRow = columns.map(c => row[c])
-  console.log(currentRow)
   return (
     <tr>
       <td>{rows[index]}</td>
@@ -15,26 +14,19 @@ const Row = ({ columns, row, rows, index }) => {
 }
 
 const Cell = ({ value }) => {
-  const opacity =(( value/100) * 0.8) + 0.2
-  const color = tinycolor(`rgba (255, 0, 0, ${opacity})`).toRgbString()
+  const opacity =((value/100) * 0.8) + 0.2
+  const color = parseInt(value, 10) === 100 ? '#e8e8e8' : tinycolor(`rgba (255, 0, 0, ${opacity})`).toRgbString()
   return (
-    <td style={{backgroundColor: color}}><span>{value}</span></td>
+    <td style={{ backgroundColor: color }}><span>{value}</span></td>
   )
 }
 
 class Chart2 extends React.Component {
 
   render () {
-
-    console.log(this.props.data)
-
     const columns = this.props.columns
     const rows = _.drop(_.keys(this.props.data[0]),4)
     const data = _.drop(this.props.data, 4)
-
-    console.log(columns)
-    console.log(rows)
-    console.log(data)
 
     return (
       <table className="heatmap-table">
