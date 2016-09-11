@@ -111,3 +111,13 @@ div.satisfaction {
 .recharts-cartesian-axis-tick{
   font-size: 13px;
 }
+
+.heatmap-table{
+  font-size: 13px;
+  td{
+    text-align: center;
+    span{
+      opacity: 0.5;
+    }
+  }
+}

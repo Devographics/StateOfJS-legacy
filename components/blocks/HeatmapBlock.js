@@ -7,7 +7,7 @@ const HeatmapBlock = props => {
     <div className="section">
       <StickyContainer className="sticky-container">
         <Sticky className="sticky">
-          <Heatmap title="Heatmap" data={props.data} width={600} height={600} />
+          <Heatmap columns={props.columns} title="Heatmap" data={props.data} width={600} height={600} />
         </Sticky>
       </StickyContainer>
 

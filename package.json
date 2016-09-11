@@ -38,6 +38,7 @@
     "react-waypoint": "^3.1.1",
     "reactdown": "^1.0.0-alpha14",
     "recharts": "^0.13.4",
+    "tinycolor2": "^1.4.1",
     "toml-js": "0.0.8",
     "typography": "^0.13.0",
     "typography-plugin-code": "^0.13.0"

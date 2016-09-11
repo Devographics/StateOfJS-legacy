@@ -1,13 +1,21 @@
 import React from 'react'
 import * as d3 from 'd3'
 
+import heatmapdata from '../../data/heatmap2.js'
+
+
 const _key = (key) => `${key.section}__${key.option}`
 const _key1 = (d) => _key(d.key1)
 const _key2 = (d) => _key(d.key2)
 const _key12 = (d) => `${_key1(d)}++${_key2(d)}`
 
 class Chart extends React.Component {
+
   render() {
+
+    console.log(heatmapdata)
+    console.log(this.props.data)
+    
     const { width, height, data } = this.props
 
     const x = d3.scaleBand()

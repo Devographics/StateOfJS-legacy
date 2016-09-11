@@ -1,7 +1,7 @@
 import React from 'react'
 // import DocumentTitle from 'react-document-title'
 import classNames from 'classnames'
-import Chart from './Chart.js'
+import Chart2 from './Chart2.js'
 
 export default class Heatmap extends React.Component {
 
@@ -9,7 +9,7 @@ export default class Heatmap extends React.Component {
     return (
       <div className={classNames('chart', 'horizontal-chart')}>
         <h2 className="chart-block-title">{this.props.title}</h2>
-        <Chart {...this.props} />
+        <Chart2 {...this.props} />
       </div>
     )
   }

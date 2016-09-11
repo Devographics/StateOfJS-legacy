@@ -56,7 +56,7 @@ class StackedBlock extends React.Component {
     const scrollHeight = window.innerHeight // (doc.documentElement && doc.documentElement.scrollHeight) || body.scrollHeight
 
     const updatedState = _.clone(this.state) // clone the entire state to be able to compare changes
-    const triggerTop = scrollTop + scrollHeight / 2
+    const triggerTop = scrollTop + scrollHeight / 3 // set the trigger point at one-third of the viewport height
 
     this.filterPoints.forEach(filterPoint => {
       if (triggerTop > filterPoint.top ) {
