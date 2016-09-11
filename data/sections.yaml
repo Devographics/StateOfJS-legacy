@@ -1,0 +1,27 @@
+- name: JavaScript Flavors
+  slug: flavors
+  author: Sacha Greif
+- name: Front-end Frameworks
+  slug: frontend
+  author: Sacha Greif
+- name: State Management
+  slug: statemanagement
+  author: Tom Coleman
+- name: API Layers
+  slug: api
+  author: Abhi Ayier
+- name: Full-stack Frameworks
+  slug: fullstack
+  author: Josh Owens
+- name: Testing Frameworks
+  slug: testing
+  author: Michael Shilman
+- name: CSS Tools
+  slug: css
+  author: Arunoda Susiripala
+- name: Build Tools
+  slug: buildtools
+  author: Wes Bos
+- name: Mobile Frameworks
+  slug: mobile
+  author: Bonnie Eisenman

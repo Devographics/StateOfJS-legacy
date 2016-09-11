@@ -23,8 +23,8 @@ const Frontend = () =>
   <DocumentTitle title="Results">
     <div className="results-container">
       <StackedBlock data={parseCSV(frontend)} contents={results} title="Front-end Frameworks" />
-      <VerticalBlock data={parseCSV(frontendOther)} contents={other} title="Other Front-end Frameworks" />
-      <HorizontalBlock data={parseCSV(frontendHappiness)} contents={happiness} title="Happiness" />
+      <VerticalBlock data={parseCSV(frontendOther)} contents={other} title="Other Frameworks" chartTitle="Other Front-end Frameworks" />
+      <HorizontalBlock data={parseCSV(frontendHappiness)} contents={happiness} title="Happiness" chartTitle="On a scale of 1 to 5, how happy are you with your current solution for the front-end?" />
       {/*<HeatmapBlock data={heatmapData} contents={dummy} title="Heatmap" />*/}
     </div>
   </DocumentTitle>

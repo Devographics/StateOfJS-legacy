@@ -1,6 +1,8 @@
 
 .results-container{
+  margin: $vmargin*3 0;
 }
+
 .section{
   @include large{
     display: flex;

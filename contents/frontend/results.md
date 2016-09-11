@@ -1,12 +1,18 @@
+..FilterPointA
+
 ### Awareness
 
 The battle for JavaScript mindshare is often led by front-end frameworks, and this comes through in the survey results: apart form newcomer **Vue**, every option here stands at over 97% awareness. 
+
+..FilterPointI
 
 ### Interest
 
 While awareness is pretty much a draw, things start getting interesting when you look at interest. **Angular 2** is still brand new, so in absolute numbers it leads the pack when it comes to technologies people are interested in learning. 
 
 But if you look at percentages, it turns out the uncontested leader is instead **React**. What's more surprising is Vue's performance, coming second by both measures. 
+
+..FilterPointS
 
 ### Satisfaction
 

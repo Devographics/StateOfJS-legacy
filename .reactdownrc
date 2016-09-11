@@ -1,9 +1,16 @@
 {
   directives: {
-    Thing: {
-      component: {
-        source: './components/Thing.js'
-      }
+    FilterPoint: {
+      component:  './components/stackedbar/FilterPoint.js'
+    },
+    FilterPointA: {
+      component:  './components/stackedbar/FilterPointA.js'
+    },
+    FilterPointI: {
+      component:  './components/stackedbar/FilterPointI.js'
+    },
+    FilterPointS: {
+      component:  './components/stackedbar/FilterPointS.js'
     }
   }
 }

@@ -5,7 +5,7 @@ const Label = (props) => {
 
   return (
     <g key={key} className="recharts-cartesian-axis-label">
-      <text className="label" x={x-10} y={y} textAnchor="end" >
+      <text className="label" x={x} y={y} textAnchor="start" >
         {value}
       </text>
     </g>

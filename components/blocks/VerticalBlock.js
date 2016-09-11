@@ -7,7 +7,7 @@ const VerticalBlock = props => {
     <div className="section">
       <StickyContainer className="sticky-container">
         <Sticky className="sticky">
-          <VerticalBar title={props.title} data={props.data} />
+          <VerticalBar title={props.chartTitle} data={props.data} />
         </Sticky>
       </StickyContainer>
 

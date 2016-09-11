@@ -1,10 +1,3 @@
-const SECTIONS = {
-  FLAVORS: 'Flavors',
-  FRAMEWORKS: 'Frameworks',
-  TESTING: 'Testing',
-  MOBILE: 'Mobile',
-}
-
 const FILTERS = {
   ALL: 'All',
   INTEREST: 'Interest',
@@ -44,4 +37,4 @@ const RESPONSES = {
   }
 }
 
-export { SECTIONS, FILTERS, RESPONSES }
+export { FILTERS, RESPONSES }

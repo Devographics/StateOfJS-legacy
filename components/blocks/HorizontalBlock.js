@@ -7,7 +7,7 @@ const HorizontalBlock = props => {
     <div className="section">
       <StickyContainer className="sticky-container">
         <Sticky className="sticky">
-          <HorizontalBar title={props.title} data={props.data} />
+          <HorizontalBar title={props.chartTitle} data={props.data} />
         </Sticky>
       </StickyContainer>
 
