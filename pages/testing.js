@@ -10,12 +10,14 @@ import HeatmapBlock from '../components/blocks/HeatmapBlock.js'
 import testing from '../data/testing.csv'
 import testingOther from '../data/testingOther.csv'
 import testingHappiness from '../data/testingHappiness.csv'
-import heatmapData from '../data/heatmap2.js'
+import heatmapData from '../data/heatmap.csv'
 
 import TestingContents from '../contents/testing.md'
 import Dummy from '../contents/dummy.md'
 
 import '../stylesheets/screen.scss'
+
+const columns = ['Mocha', 'Jasmine', 'Enzyme', 'Jest', 'Cucumber', 'Ava']
 
 const Testing = () =>
   <DocumentTitle title="Results">
@@ -23,7 +25,7 @@ const Testing = () =>
       <StackedBlock data={parseCSV(testing)} contents={TestingContents} title="Testing Frameworks" />
       <VerticalBlock data={parseCSV(testingOther)} contents={Dummy} title="Other Testing Tools" />
       <HorizontalBlock data={parseCSV(testingHappiness)} contents={Dummy} title="Happiness" />
-      <HeatmapBlock data={heatmapData} contents={Dummy} title="Heatmap" />
+      <HeatmapBlock columns={columns} data={heatmapData} contents={Dummy} title="Heatmap" />
     </div>
   </DocumentTitle>
 

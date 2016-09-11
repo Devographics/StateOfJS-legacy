@@ -10,11 +10,13 @@ import HeatmapBlock from '../components/blocks/HeatmapBlock.js'
 import api from '../data/api.csv'
 import apiOther from '../data/apiOther.csv'
 import apiHappiness from '../data/apiHappiness.csv'
-import heatmapData from '../data/heatmap2.js'
+import heatmapData from '../data/heatmap.csv'
 
 import Dummy from '../contents/dummy.md'
 
 import '../stylesheets/screen.scss'
+
+const columns = ['Custom REST API', 'Firebase', 'GraphQL', 'Apollo', 'Falcor', 'Horizon']
 
 const API = () =>
   <DocumentTitle title="Results">
@@ -22,7 +24,7 @@ const API = () =>
       <StackedBlock data={parseCSV(api)} contents={Dummy} title="API Layers" />
       <VerticalBlock data={parseCSV(apiOther)} contents={Dummy} title="Other API Layers" />
       <HorizontalBlock data={parseCSV(apiHappiness)} contents={Dummy} title="Happiness" />
-      <HeatmapBlock data={heatmapData} contents={Dummy} title="Heatmap" />
+      <HeatmapBlock columns={columns} data={heatmapData} contents={Dummy} title="Heatmap" />
     </div>
   </DocumentTitle>
 

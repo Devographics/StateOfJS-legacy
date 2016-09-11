@@ -10,11 +10,13 @@ import HeatmapBlock from '../components/blocks/HeatmapBlock.js'
 import stacked from '../data/buildtools.csv'
 import other from '../data/buildtoolsOther.csv'
 import happiness from '../data/buildtoolsHappiness.csv'
-import heatmapData from '../data/heatmap2.js'
+import heatmapData from '../data/heatmap.csv'
 
 import Dummy from '../contents/dummy.md'
 
 import '../stylesheets/screen.scss'
+
+const columns = ['Webpack', 'Grunt', 'Gulp', 'Browserify']
 
 const BuildTools = () =>
   <DocumentTitle title="Build Tools">
@@ -22,7 +24,7 @@ const BuildTools = () =>
       <StackedBlock data={parseCSV(stacked)} contents={Dummy} title="Build Tools" />
       <VerticalBlock data={parseCSV(other)} contents={Dummy} title="Other Build Tools" />
       <HorizontalBlock data={parseCSV(happiness)} contents={Dummy} title="Happiness" />
-      <HeatmapBlock data={heatmapData} contents={Dummy} title="Heatmap" />
+      <HeatmapBlock columns={columns} data={heatmapData} contents={Dummy} title="Heatmap" />
     </div>
   </DocumentTitle>
 

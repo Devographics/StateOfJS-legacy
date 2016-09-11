@@ -10,11 +10,13 @@ import HeatmapBlock from '../components/blocks/HeatmapBlock.js'
 import stacked from '../data/statemanagement.csv'
 import other from '../data/statemanagementOther.csv'
 import happiness from '../data/statemanagementHappiness.csv'
-import heatmapData from '../data/heatmap2.js'
+import heatmapData from '../data/heatmap.csv'
 
 import Dummy from '../contents/dummy.md'
 
 import '../stylesheets/screen.scss'
+
+const columns = ['Redux', 'MobX', 'Relay']
 
 const StateManagement = () =>
   <DocumentTitle title="State Management">
@@ -22,7 +24,7 @@ const StateManagement = () =>
       <StackedBlock data={parseCSV(stacked)} contents={Dummy} title="State Management" />
       <VerticalBlock data={parseCSV(other)} contents={Dummy} title="Other State Management" />
       <HorizontalBlock data={parseCSV(happiness)} contents={Dummy} title="Happiness" />
-      <HeatmapBlock data={heatmapData} contents={Dummy} title="Heatmap" />
+      <HeatmapBlock columns={columns} data={heatmapData} contents={Dummy} title="Heatmap" />
     </div>
   </DocumentTitle>
 
