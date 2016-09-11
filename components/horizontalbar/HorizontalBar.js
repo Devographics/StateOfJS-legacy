@@ -8,7 +8,7 @@ export default class HorizontalBar extends React.Component {
   render () {
     return (
       <div className={classNames('chart', 'horizontal-chart')}>
-        <h4>{this.props.title}</h4>
+        <h4 className="chart-block-title">{this.props.title}</h4>
         <Chart {...this.props} />
       </div>
     )

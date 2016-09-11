@@ -12,7 +12,6 @@ const HorizontalBlock = props => {
       </StickyContainer>
 
       <div className="section-contents">
-        <h1>{props.title}</h1>
         <props.contents />
       </div>
     </div>

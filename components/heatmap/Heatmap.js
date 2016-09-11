@@ -8,7 +8,7 @@ export default class Heatmap extends React.Component {
   render () {
     return (
       <div className={classNames('chart', 'horizontal-chart')}>
-        <h2>{this.props.title}</h2>
+        <h2 className="chart-block-title">{this.props.title}</h2>
         <Chart {...this.props} />
       </div>
     )

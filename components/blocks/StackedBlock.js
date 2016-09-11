@@ -78,7 +78,6 @@ class StackedBlock extends React.Component {
           </Sticky>
         </StickyContainer>
         <div className="section-contents">
-          <h1>{this.props.title}</h1>
           <this.props.contents />
         </div>
       </div>
