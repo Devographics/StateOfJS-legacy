@@ -114,8 +114,15 @@ div.satisfaction {
 
 .heatmap-table{
   font-size: 13px;
+  tr{
+    &:hover{
+      background: $grey;
+    }
+  }
   td{
     text-align: center;
+    width: 60px;
+    height: 60px;
     span{
       opacity: 0.5;
     }

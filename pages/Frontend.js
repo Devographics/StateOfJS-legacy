@@ -19,7 +19,7 @@ import happiness from '../contents/frontend/happiness.md'
 
 import '../stylesheets/screen.scss'
 
-const frontendColumns = ['No Front-End Framework', 'React', 'Angular', 'Angular 2', 'Ember', 'Vue', 'Backbone']
+const frontendColumns = ['No Framework', 'React', 'Angular', 'Angular 2', 'Ember', 'Vue', 'Backbone']
 
 const Frontend = () =>
   <DocumentTitle title="Results">
