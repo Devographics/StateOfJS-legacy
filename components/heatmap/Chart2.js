@@ -13,6 +13,7 @@ Heatmap Data Import Workflow
 3. No Front-End Framework => No Framework
 4. I've used it before, and would use it again => Option
 5. Remove any extra lines at the end
+6. Custom REST API => REST API
 
 */
 
@@ -94,17 +95,19 @@ class Chart2 extends React.Component {
     const data = _.drop(this.props.data, 4)
 
     return (
-      <table className="heatmap-table">
-        <thead>
-          <tr>
-            <td className="row-heading"></td>
-            {columns.map(c => <td key={c} className="column-heading"><span>{c}</span></td>)}
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map((row, index) => <Row key={index} index={index} columns={columns} data={_.find(data, r => r['Option'] === row)} rows={rows} highlightColumn={this.highlightColumn} highlightedColumn={this.state.highlightedColumn} />)}
-        </tbody>
-      </table>
+      <div className="heatmap-table-wrapper">
+        <table className="heatmap-table rtable--flip">
+          <thead>
+            <tr>
+              <th className="row-heading"></th>
+              {columns.map(c => <th key={c} className="column-heading"><span>{c}</span></th>)}
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((row, index) => <Row key={index} index={index} columns={columns} data={_.find(data, r => r['Option'] === row)} rows={rows} highlightColumn={this.highlightColumn} highlightedColumn={this.state.highlightedColumn} />)}
+          </tbody>
+        </table>
+      </div>
     )
   }
 }

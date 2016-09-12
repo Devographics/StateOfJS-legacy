@@ -16,7 +16,7 @@ import Dummy from '../contents/dummy.md'
 
 import '../stylesheets/screen.scss'
 
-const items = ['Custom REST API', 'Firebase', 'GraphQL', 'Apollo', 'Falcor', 'Horizon']
+const items = ['REST API', 'Firebase', 'GraphQL', 'Apollo', 'Falcor', 'Horizon']
 
 const API = () =>
   <DocumentTitle title="Results">

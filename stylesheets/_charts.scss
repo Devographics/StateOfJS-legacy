@@ -26,8 +26,9 @@
 }
 
 .filters{
-  @include flex-center;
-  justify-content: center;
+  @include large{
+    @include flex-center;
+  }
 }
 .filter{
   font-size: $small-font;
@@ -112,47 +113,6 @@ div.satisfaction {
   font-size: 13px;
 }
 
-.heatmap-table{
-  margin: $vmargin*4 0 $vmargin 0;
-  font-size: 12px;
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: collapse;
-  .tile{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .tile-value{
-    opacity: 0;
-    cursor: default;
-  }
-  tr:hover td, td.cell-highlighted{
-    background: rgba($grey,0.5);
-    .tile-value{
-      opacity: 0.6;
-    }
-  }
-  
-  td{
-    text-align: center;
-    height: 30px;
-    white-space: nowrap;
-  }
-  .column-heading{
-    span{
-      transform: rotateZ(-45deg);
-      display: block;
-    }
-  }
-  .row-heading{
-    width: 100px;
-    text-align: right;
-    padding-right: 5px;
-  }
-}
 
 .chart-block-note{
   font-size: $small-font;

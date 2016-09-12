@@ -1,0 +1,56 @@
+.heatmap-table-wrapper{
+  @include flex-center;
+}
+.heatmap-table{
+  margin: $vmargin*4 0 $vmargin 0;
+  font-size: 12px;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  .tile{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tile-value{
+    color: rgba($text-color, 0.5);    
+    @include large{
+      opacity: 0;
+    }
+    cursor: default;
+  }
+  tbody tr:hover td, td.cell-highlighted{
+    background: rgba($grey,0.5);
+    .tile-value{
+      opacity: 0.6;
+    }
+  }
+  td, th{
+    font-weight: normal;
+    text-align: center;
+    height: 30px;
+    white-space: nowrap;
+  }
+  .column-heading{
+    @include small-medium{
+      text-align: right;
+      padding-right: 5px;
+    }
+    span{
+      @include large{
+        transform: rotateZ(-45deg);
+        display: block;
+      }
+    }
+  }
+  .row-heading{
+    min-width: 100px;
+    @include large{
+      width: 100px;
+      text-align: right;
+      padding-right: 5px;
+    }
+  }
+}
