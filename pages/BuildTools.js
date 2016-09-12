@@ -16,7 +16,7 @@ import Dummy from '../contents/dummy.md'
 
 import '../stylesheets/screen.scss'
 
-const columns = ['Webpack', 'Grunt', 'Gulp', 'Browserify']
+const items = ['Webpack', 'Grunt', 'Gulp', 'Browserify']
 
 const BuildTools = () =>
   <DocumentTitle title="Build Tools">
@@ -24,7 +24,7 @@ const BuildTools = () =>
       <StackedBlock data={parseCSV(stacked)} contents={Dummy} title="Build Tools" />
       <VerticalBlock data={parseCSV(other)} contents={Dummy} title="Other Build Tools" />
       <HorizontalBlock data={parseCSV(happiness)} contents={Dummy} title="Happiness" />
-      <HeatmapBlock columns={columns} data={heatmapData} contents={Dummy} title="Heatmap" />
+      <HeatmapBlock items={items} data={heatmapData} contents={Dummy} title="Heatmap" />
     </div>
   </DocumentTitle>
 

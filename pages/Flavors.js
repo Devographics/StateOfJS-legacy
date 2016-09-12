@@ -4,6 +4,7 @@ import parseCSV from '../helpers/parseCSV.js'
 
 import StackedBlock from '../components/blocks/StackedBlock.js'
 import HorizontalBlock from '../components/blocks/HorizontalBlock.js'
+import HeatmapBlock from '../components/blocks/HeatmapBlock.js'
 
 import flavors from '../data/flavors.csv'
 import flavorsHappiness from '../data/flavorsHappiness.csv'
@@ -13,14 +14,14 @@ import Dummy from '../contents/dummy.md'
 
 import '../stylesheets/screen.scss'
 
-const columns = ['Plain JavaScript', 'ES6', 'CoffeeScript', 'TypeScript', 'Elm', 'ClojureScript']
+const items = ['Plain JavaScript', 'ES6', 'CoffeeScript', 'TypeScript', 'Elm', 'ClojureScript']
 
 const Flavors = () =>
   <DocumentTitle title="Flavors">
     <div className="results-container">
       <StackedBlock data={parseCSV(flavors)} contents={Dummy} title="JavaScript Flavors" />
       <HorizontalBlock data={parseCSV(flavorsHappiness)} contents={Dummy} title="Happiness" />
-      <HeatmapBlock columns={columns} data={heatmapData} contents={Dummy} title="Heatmap" />
+      <HeatmapBlock items={items} data={heatmapData} contents={Dummy} title="Heatmap" />
     </div>
   </DocumentTitle>
 

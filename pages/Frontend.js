@@ -19,7 +19,7 @@ import happiness from '../contents/frontend/happiness.md'
 
 import '../stylesheets/screen.scss'
 
-const columns = ['No Framework', 'React', 'Angular', 'Angular 2', 'Ember', 'Vue', 'Backbone']
+const items = ['No Framework', 'React', 'Angular', 'Angular 2', 'Ember', 'Vue', 'Backbone']
 
 const Frontend = () =>
   <DocumentTitle title="Results">
@@ -27,7 +27,7 @@ const Frontend = () =>
       <StackedBlock data={parseCSV(frontend)} contents={results} title="Front-end Frameworks" />
       <VerticalBlock data={parseCSV(frontendOther)} contents={other} title="Other Frameworks" chartTitle="Other Front-end Frameworks" />
       <HorizontalBlock data={parseCSV(frontendHappiness)} contents={happiness} title="Happiness" chartTitle="On a scale of 1 to 5, how happy are you with your current solution for the front-end?" />
-      <HeatmapBlock columns={columns} data={heatmapData} contents={Dummy} title="Heatmap" />
+      <HeatmapBlock items={items} data={heatmapData} contents={Dummy} title="Heatmap" />
     </div>
   </DocumentTitle>
 

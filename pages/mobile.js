@@ -16,7 +16,7 @@ import Dummy from '../contents/dummy.md'
 
 import '../stylesheets/screen.scss'
 
-const columns = ['Native Apps', 'React Native', 'Cordova', 'PhoneGap', 'NativeScript']
+const items = ['Native Apps', 'React Native', 'Cordova', 'PhoneGap', 'NativeScript']
 
 const Mobile = () =>
   <DocumentTitle title="Results">
@@ -24,7 +24,7 @@ const Mobile = () =>
       <StackedBlock data={parseCSV(mobile)} contents={Dummy} title="Mobile Frameworks" />
       <VerticalBlock data={parseCSV(mobileOther)} contents={Dummy} title="Other Mobile Frameworks" />
       <HorizontalBlock data={parseCSV(mobileHappiness)} contents={Dummy} title="Happiness" />
-      <HeatmapBlock columns={columns} data={heatmapData} contents={Dummy} title="Heatmap" />
+      <HeatmapBlock items={items} data={heatmapData} contents={Dummy} title="Heatmap" />
     </div>
   </DocumentTitle>
 

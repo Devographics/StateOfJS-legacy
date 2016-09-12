@@ -16,7 +16,7 @@ import Dummy from '../contents/dummy.md'
 
 import '../stylesheets/screen.scss'
 
-const columns = ['Redux', 'MobX', 'Relay']
+const items = ['Redux', 'MobX', 'Relay']
 
 const StateManagement = () =>
   <DocumentTitle title="State Management">
@@ -24,7 +24,7 @@ const StateManagement = () =>
       <StackedBlock data={parseCSV(stacked)} contents={Dummy} title="State Management" />
       <VerticalBlock data={parseCSV(other)} contents={Dummy} title="Other State Management" />
       <HorizontalBlock data={parseCSV(happiness)} contents={Dummy} title="Happiness" />
-      <HeatmapBlock columns={columns} data={heatmapData} contents={Dummy} title="Heatmap" />
+      <HeatmapBlock items={items} data={heatmapData} contents={Dummy} title="Heatmap" />
     </div>
   </DocumentTitle>
 

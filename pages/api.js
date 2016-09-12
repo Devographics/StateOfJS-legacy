@@ -16,7 +16,7 @@ import Dummy from '../contents/dummy.md'
 
 import '../stylesheets/screen.scss'
 
-const columns = ['Custom REST API', 'Firebase', 'GraphQL', 'Apollo', 'Falcor', 'Horizon']
+const items = ['Custom REST API', 'Firebase', 'GraphQL', 'Apollo', 'Falcor', 'Horizon']
 
 const API = () =>
   <DocumentTitle title="Results">
@@ -24,7 +24,7 @@ const API = () =>
       <StackedBlock data={parseCSV(api)} contents={Dummy} title="API Layers" />
       <VerticalBlock data={parseCSV(apiOther)} contents={Dummy} title="Other API Layers" />
       <HorizontalBlock data={parseCSV(apiHappiness)} contents={Dummy} title="Happiness" />
-      <HeatmapBlock columns={columns} data={heatmapData} contents={Dummy} title="Heatmap" />
+      <HeatmapBlock items={items} data={heatmapData} contents={Dummy} title="Heatmap" />
     </div>
   </DocumentTitle>
 

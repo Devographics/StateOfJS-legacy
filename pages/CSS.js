@@ -16,7 +16,7 @@ import Dummy from '../contents/dummy.md'
 
 import '../stylesheets/screen.scss'
 
-const columns = ['Plain CSS', 'SASS/SCSS', 'LESS', 'CSS Modules', 'Aphrodite']
+const items = ['Plain CSS', 'SASS/SCSS', 'LESS', 'CSS Modules', 'Aphrodite']
 
 const CSS = () =>
   <DocumentTitle title="CSS">
@@ -24,7 +24,7 @@ const CSS = () =>
       <StackedBlock data={parseCSV(stacked)} contents={Dummy} title="CSS" />
       <VerticalBlock data={parseCSV(other)} contents={Dummy} title="Other CSS" />
       <HorizontalBlock data={parseCSV(happiness)} contents={Dummy} title="Happiness" />
-      <HeatmapBlock columns={columns} data={heatmapData} contents={Dummy} title="Heatmap" />
+      <HeatmapBlock items={items} data={heatmapData} contents={Dummy} title="Heatmap" />
     </div>
   </DocumentTitle>
 

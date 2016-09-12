@@ -113,7 +113,9 @@ div.satisfaction {
 }
 
 .heatmap-table{
-  font-size: 13px;
+  font-size: 12px;
+  table-layout: fixed;
+  width: 100%;
   tr{
     &:hover{
       background: $grey;
@@ -121,10 +123,23 @@ div.satisfaction {
   }
   td{
     text-align: center;
-    width: 60px;
     height: 30px;
+    white-space: nowrap;
+  }
+  .cell-contents{
     span{
       opacity: 0.5;
     }
+  }
+  .column-heading{
+    span{
+      transform: rotateZ(-45deg);
+      display: block;
+    }
+  }
+  .row-heading{
+    width: 100px;
+    text-align: right;
+    padding-right: 5px;
   }
 }

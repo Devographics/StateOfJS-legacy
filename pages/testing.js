@@ -17,7 +17,7 @@ import Dummy from '../contents/dummy.md'
 
 import '../stylesheets/screen.scss'
 
-const columns = ['Mocha', 'Jasmine', 'Enzyme', 'Jest', 'Cucumber', 'Ava']
+const items = ['Mocha', 'Jasmine', 'Enzyme', 'Jest', 'Cucumber', 'Ava']
 
 const Testing = () =>
   <DocumentTitle title="Results">
@@ -25,7 +25,7 @@ const Testing = () =>
       <StackedBlock data={parseCSV(testing)} contents={TestingContents} title="Testing Frameworks" />
       <VerticalBlock data={parseCSV(testingOther)} contents={Dummy} title="Other Testing Tools" />
       <HorizontalBlock data={parseCSV(testingHappiness)} contents={Dummy} title="Happiness" />
-      <HeatmapBlock columns={columns} data={heatmapData} contents={Dummy} title="Heatmap" />
+      <HeatmapBlock items={items} data={heatmapData} contents={Dummy} title="Heatmap" />
     </div>
   </DocumentTitle>
 

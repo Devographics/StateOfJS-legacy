@@ -16,7 +16,7 @@ import Dummy from '../contents/dummy.md'
 
 import '../stylesheets/screen.scss'
 
-const columns = ['Meteor', 'FeathersJS', 'DoneJS', 'MERN', 'MEAN']
+const items = ['Meteor', 'FeathersJS', 'DoneJS', 'MERN', 'MEAN']
 
 const FullStack = () =>
   <DocumentTitle title="Full Stack">
@@ -24,7 +24,7 @@ const FullStack = () =>
       <StackedBlock data={parseCSV(stacked)} contents={Dummy} title="Full Stack" />
       {/*<VerticalBlock data={parseCSV(other)} contents={Dummy} title="Other Full Stack" />*/}
       <HorizontalBlock data={parseCSV(happiness)} contents={Dummy} title="Happiness" />
-      <HeatmapBlock columns={columns} data={heatmapData} contents={Dummy} title="Heatmap" />
+      <HeatmapBlock items={items} data={heatmapData} contents={Dummy} title="Heatmap" />
     </div>
   </DocumentTitle>
 

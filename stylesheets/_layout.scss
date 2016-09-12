@@ -12,6 +12,9 @@
   margin-bottom: 200px;
   // background: rgba(0,0,0,0.1);
 }
+.section-layout-b{
+  display: block;
+}
 .section-contents{
   @include large{
     width: 40%;
