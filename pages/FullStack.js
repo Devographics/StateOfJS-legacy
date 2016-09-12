@@ -10,7 +10,7 @@ import HeatmapBlock from '../components/blocks/HeatmapBlock.js'
 import stacked from '../data/fullstack.csv'
 // import other from '../data/fullstackOther.csv'
 import happiness from '../data/fullstackHappiness.csv'
-import heatmapData from '../data/heatmap.csv'
+import heatmapData from '../data/heatmapPhi.csv'
 
 import Dummy from '../contents/dummy.md'
 

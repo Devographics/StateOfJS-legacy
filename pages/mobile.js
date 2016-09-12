@@ -10,7 +10,7 @@ import HeatmapBlock from '../components/blocks/HeatmapBlock.js'
 import mobile from '../data/mobile.csv'
 import mobileOther from '../data/mobileOther.csv'
 import mobileHappiness from '../data/mobileHappiness.csv'
-import heatmapData from '../data/heatmap.csv'
+import heatmapData from '../data/heatmapPhi.csv'
 
 import Dummy from '../contents/dummy.md'
 

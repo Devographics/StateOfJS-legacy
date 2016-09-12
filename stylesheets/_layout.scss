@@ -22,10 +22,6 @@
 }
 .sticky-container{
   @include large{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
     width: 55%;
     .sticky{
       // padding: $vmargin*2 0;

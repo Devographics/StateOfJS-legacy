@@ -1,7 +1,7 @@
 Option,I've never heard of it,"I've heard of it, and would like to learn it","I've heard of it, and am not interested","I've used it before, and would use it again","I've used it before, and would not use it again"
-Plain JavaScript,112,142,139,4216,720
-ES6,69,979,120,4095,65
-CoffeeScript,52,374,3158,303,1441
-TypeScript,97,2055,1782,1144,250
-Elm,1759,1933,1358,234,44
-ClojureScript,1213,1213,2714,124,64
+Plain JavaScript,213,281,242,7364,1206
+ES6,170,1938,205,6886,106
+CoffeeScript,109,753,5618,540,2285
+TypeScript,222,3590,3158,1937,398
+Elm,3569,3104,2246,325,61
+ClojureScript,2479,2028,4526,184,88

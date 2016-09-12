@@ -10,7 +10,7 @@ import HeatmapBlock from '../components/blocks/HeatmapBlock.js'
 import testing from '../data/testing.csv'
 import testingOther from '../data/testingOther.csv'
 import testingHappiness from '../data/testingHappiness.csv'
-import heatmapData from '../data/heatmap.csv'
+import heatmapData from '../data/heatmapPhi.csv'
 
 import TestingContents from '../contents/testing.md'
 import Dummy from '../contents/dummy.md'

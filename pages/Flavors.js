@@ -8,7 +8,7 @@ import HeatmapBlock from '../components/blocks/HeatmapBlock.js'
 
 import flavors from '../data/flavors.csv'
 import flavorsHappiness from '../data/flavorsHappiness.csv'
-import heatmapData from '../data/heatmap.csv'
+import heatmapData from '../data/heatmapPhi.csv'
 
 import Dummy from '../contents/dummy.md'
 
