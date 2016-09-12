@@ -10,7 +10,7 @@ import HeatmapBlock from '../components/blocks/HeatmapBlock.js'
 import frontend from '../data/frontend.csv'
 import frontendOther from '../data/frontendOther.csv'
 import frontendHappiness from '../data/frontendHappiness.csv'
-import heatmapData from '../data/heatmap.csv'
+import heatmapData from '../data/heatmapPhi.csv'
 
 import Dummy from '../contents/dummy.md'
 import results from '../contents/frontend/results.md'
@@ -27,7 +27,7 @@ const Frontend = () =>
       <StackedBlock data={parseCSV(frontend)} contents={results} title="Front-end Frameworks" />
       <VerticalBlock data={parseCSV(frontendOther)} contents={other} title="Other Frameworks" chartTitle="Other Front-end Frameworks" />
       <HorizontalBlock data={parseCSV(frontendHappiness)} contents={happiness} title="Happiness" chartTitle="On a scale of 1 to 5, how happy are you with your current solution for the front-end?" />
-      <HeatmapBlock items={items} data={heatmapData} contents={Dummy} title="Heatmap" />
+      <HeatmapBlock items={items} data={heatmapData} contents={Dummy} title="Heatmap" chartTitle="Correlation between front-end frameworks and other technologies" />
     </div>
   </DocumentTitle>
 

@@ -113,23 +113,33 @@ div.satisfaction {
 }
 
 .heatmap-table{
+  margin: $vmargin*4 0 $vmargin 0;
   font-size: 12px;
   table-layout: fixed;
   width: 100%;
-  tr{
-    &:hover{
-      background: $grey;
+  border-collapse: collapse;
+  .tile{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tile-value{
+    opacity: 0;
+    cursor: default;
+  }
+  tr:hover td, td.cell-highlighted{
+    background: rgba($grey,0.5);
+    .tile-value{
+      opacity: 0.6;
     }
   }
+  
   td{
     text-align: center;
     height: 30px;
     white-space: nowrap;
-  }
-  .cell-contents{
-    span{
-      opacity: 0.5;
-    }
   }
   .column-heading{
     span{
