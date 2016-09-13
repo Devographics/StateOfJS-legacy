@@ -1,11 +1,11 @@
 import React from 'react'
+import classNames from 'classnames'
 
 const Label = (props) => {
-  const { key, value, x, y } = props
-
+  const { highlight, key, value, x, y } = props
   return (
     <g key={key} className="recharts-cartesian-axis-label">
-      <text className="label" x={x} y={y} textAnchor="start" >
+      <text className={classNames('label', { 'label-highlighted': highlight === value })} x={x} y={y} textAnchor="start" >
         {value}
       </text>
     </g>
@@ -17,6 +17,7 @@ Label.propTypes = {
   index: React.PropTypes.number,
   data: React.PropTypes.array,
   value: React.PropTypes.any,
+  highlight: React.PropTypes.any,
   x: React.PropTypes.number,
   y: React.PropTypes.number,
 }

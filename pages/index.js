@@ -4,8 +4,8 @@ import { prefixLink } from 'gatsby-helpers'
 import DocumentTitle from 'react-document-title'
 import { config } from 'config'
 import '../stylesheets/screen.scss'
-import intro from './_intro.md'
-import about from './_about.md'
+import Intro from './_intro.md'
+import About from './_about.md'
 import Share from './_share.js'
 import Newsletter from './_newsletter.js'
 
@@ -29,7 +29,7 @@ export default class Index extends React.Component {
             <h3 className="bubble bubble-mess"><img src="images/right-speech-bubble.svg"/><span>JavaScript is a mess!</span></h3>
           </div>
 
-          <div className="section-block intro" dangerouslySetInnerHTML={{ __html: intro.body }} />
+          <Intro className="section-block intro" />
 
           {/*
           <blockquote className="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Marc was almost ready to implement his &quot;hello world&quot; React app <a href="https://t.co/ptdg4yteF1">pic.twitter.com/ptdg4yteF1</a></p>&mdash; Thomas Fuchs (@thomasfuchs) <a href="https://twitter.com/thomasfuchs/status/708675139253174273">March 12, 2016</a></blockquote>
@@ -46,16 +46,8 @@ export default class Index extends React.Component {
             <Newsletter/>
           </div>
 
-          <div className="section-block" dangerouslySetInnerHTML={{ __html: about.body }} />
+          <About className="section-block" />
 
-          <ul>
-            <li>
-              <Link to={prefixLink('/test/')}>test link</Link>
-            </li>
-            <li>
-              <Link to={prefixLink('/results/')}>results</Link>
-            </li>
-          </ul>
         </div>
       </DocumentTitle>
     )

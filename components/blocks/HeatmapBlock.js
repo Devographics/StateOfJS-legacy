@@ -4,7 +4,7 @@ import Heatmap from '../heatmap/Heatmap.js'
 const HeatmapBlock = props => {
   return (
     <div className="section section-layout-b">
-      <Heatmap items={props.items} title={props.chartTitle} data={props.data} width={600} height={600} />
+      <Heatmap {...props} width={600} height={600} />
       <div className="section-contents-wide">
         <props.contents />
       </div>

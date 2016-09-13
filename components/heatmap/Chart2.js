@@ -4,27 +4,31 @@ import _ from 'lodash'
 import tinycolor from 'tinycolor2'
 import classNames from 'classnames'
 
-/*
+const Row = (props) => {
+  const { columns, rowData, rows, index } = props
+  const currentRow = columns.map(c => rowData[c])
 
-Heatmap Data Import Workflow
-
-1. export as CSV
-2. Good Old Plain JavaScript => Plain JavaScript
-3. No Front-End Framework => No Framework
-4. I've used it before, and would use it again => Option
-5. Remove any extra lines at the end
-6. Custom REST API => REST API
-
-*/
-
-const Row = ({ columns, data, rows, index, highlightColumn, highlightedColumn }) => {
-  const currentRow = columns.map(c => data[c])
   return (
-    <tr>
+    <tr className={classNames({ 'row-highlighted': props.highlight === rows[index] })}>
       <td className="row-heading">{rows[index]}</td>
-      {currentRow.map((v,i) => <Cell key={i} value={v} index={i} highlightColumn={highlightColumn} highlightedColumn={highlightedColumn} />)}
+      {currentRow.map((v, i) =>
+        <Cell
+          {...props}
+          key={i}
+          index={i}
+          value={v}
+        />)}
     </tr>
   )
+}
+
+Row.propTypes = {
+  columns: React.PropTypes.array,
+  rowData: React.PropTypes.object,
+  rows: React.PropTypes.array,
+  index: React.PropTypes.number,
+  highlightColumn: React.PropTypes.func,
+  highlightedColumn: React.PropTypes.number,
 }
 
 class Cell extends React.Component {
@@ -46,7 +50,10 @@ class Cell extends React.Component {
   render () {
 
     const { value } = this.props
-    const alpha = Math.abs(value)
+    const max = this.props.max || 1
+    const min = this.props.min || 0
+    const alphaRange = max - min
+    const alpha = Math.abs(value) / alphaRange
     const isHighlighted = this.props.highlightedColumn === this.props.index
     const className = classNames(
       'cell-contents',
@@ -56,7 +63,7 @@ class Cell extends React.Component {
 
     let color
 
-    if (parseInt(value, 10) === 1) {
+    if (this.props.disabledValues && this.props.disabledValues.indexOf(parseInt(value, 10)) !== -1) {
       color = '#dadada'
     } else if (value < 0) {
       color = tinycolor('#5ec6cc').setAlpha(alpha).toRgbString()
@@ -71,6 +78,16 @@ class Cell extends React.Component {
       </td>
     )
   }
+}
+
+Cell.propTypes = {
+  value: React.PropTypes.any,
+  index: React.PropTypes.number,
+  max: React.PropTypes.number,
+  min: React.PropTypes.number,
+  highlightColumn: React.PropTypes.func,
+  highlightedColumn: React.PropTypes.number,
+  disabledValues: React.PropTypes.array,
 }
 
 class Chart2 extends React.Component {
@@ -90,9 +107,9 @@ class Chart2 extends React.Component {
   }
 
   render () {
-    const columns = _.drop(_.keys(this.props.data[0]),4)
-    const rows = this.props.items
-    const data = _.drop(this.props.data, 4)
+    const data = this.props.data
+    const columns = this.props.columns || _.drop(_.keys(this.props.data[0]),1)
+    const rows = this.props.rows
 
     return (
       <div className="heatmap-table-wrapper">
@@ -104,7 +121,17 @@ class Chart2 extends React.Component {
             </tr>
           </thead>
           <tbody>
-            {rows.map((row, index) => <Row key={index} index={index} columns={columns} data={_.find(data, r => r['Option'] === row)} rows={rows} highlightColumn={this.highlightColumn} highlightedColumn={this.state.highlightedColumn} />)}
+            {rows.map((row, index) =>
+              <Row
+                {...this.props}
+                key={index}
+                index={index}
+                columns={columns}
+                rowData={_.find(data, r => r['Option'] === row)}
+                rows={rows}
+                highlightColumn={this.highlightColumn}
+                highlightedColumn={this.state.highlightedColumn}
+              />)}
           </tbody>
         </table>
       </div>

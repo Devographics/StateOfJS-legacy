@@ -3,9 +3,9 @@ import _ from 'lodash'
 const parseCSV = csv => csv.map(row => {
   const parsedRow = row
   _.keys(parsedRow).forEach(key => {
-    const int = parseInt(parsedRow[key], 10)
-    if (!isNaN(int)) {
-      parsedRow[key] = int
+    const number = parseFloat(parsedRow[key], 10)
+    if (!isNaN(number)) {
+      parsedRow[key] = number
     }
   })
   return parsedRow
