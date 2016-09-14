@@ -4,11 +4,10 @@ import parseCSV from '../helpers/parseCSV.js'
 
 import StackedBlock from '../components/blocks/StackedBlock.js'
 import HorizontalBlock from '../components/blocks/HorizontalBlock.js'
-import HeatmapBlock from '../components/blocks/HeatmapBlock.js'
+import SectionHeatmapBlock from '../components/blocks/SectionHeatmapBlock.js'
 
 import flavors from '../data/flavors.csv'
 import flavorsHappiness from '../data/flavorsHappiness.csv'
-import heatmapData from '../data/heatmapPhi.csv'
 
 import Dummy from '../contents/dummy.md'
 
@@ -21,7 +20,12 @@ const Flavors = () =>
     <div className="results-container">
       <StackedBlock data={parseCSV(flavors)} contents={Dummy} title="JavaScript Flavors" />
       <HorizontalBlock data={parseCSV(flavorsHappiness)} contents={Dummy} title="Happiness" />
-      <HeatmapBlock items={items} data={heatmapData} contents={Dummy} title="Heatmap" />
+      <SectionHeatmapBlock
+        rows={items}
+        contents={Dummy}
+        title="Heatmap"
+        chartTitle="How likely is a JavaScript flavor user to also want to use other technologies?"
+      />
     </div>
   </DocumentTitle>
 

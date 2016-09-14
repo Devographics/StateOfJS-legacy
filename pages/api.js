@@ -5,12 +5,11 @@ import parseCSV from '../helpers/parseCSV.js'
 import StackedBlock from '../components/blocks/StackedBlock.js'
 import VerticalBlock from '../components/blocks/VerticalBlock.js'
 import HorizontalBlock from '../components/blocks/HorizontalBlock.js'
-import HeatmapBlock from '../components/blocks/HeatmapBlock.js'
+import SectionHeatmapBlock from '../components/blocks/SectionHeatmapBlock.js'
 
 import api from '../data/api.csv'
 import apiOther from '../data/apiOther.csv'
 import apiHappiness from '../data/apiHappiness.csv'
-import heatmapData from '../data/heatmapPhi.csv'
 
 import Dummy from '../contents/dummy.md'
 
@@ -24,7 +23,12 @@ const API = () =>
       <StackedBlock data={parseCSV(api)} contents={Dummy} title="API Layers" />
       <VerticalBlock data={parseCSV(apiOther)} contents={Dummy} title="Other API Layers" />
       <HorizontalBlock data={parseCSV(apiHappiness)} contents={Dummy} title="Happiness" />
-      <HeatmapBlock items={items} data={heatmapData} contents={Dummy} title="Heatmap" />
+      <SectionHeatmapBlock
+        rows={items}
+        contents={Dummy}
+        title="Heatmap"
+        chartTitle="How likely is an API layer user to also want to use other technologies?"
+      />
     </div>
   </DocumentTitle>
 
