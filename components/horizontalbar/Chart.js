@@ -3,7 +3,6 @@ import React from 'react'
 import { ResponsiveContainer, BarChart, Bar, YAxis, XAxis, Tooltip, Legend } from 'recharts'
 import _, { max } from 'lodash'
 import Label from './Label.js'
-import Tick from './Tick.js'
 
 export default class Chart extends React.Component {
 
