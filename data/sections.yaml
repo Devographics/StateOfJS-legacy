@@ -25,3 +25,12 @@
 - name: Mobile Frameworks
   slug: mobile
   author: Bonnie Eisenman
+- name: Features
+  slug: features
+  author: Sacha Greif
+- name: Opinions
+  slug: opinions
+  author: Sacha Greif
+- name: Developer Profiles
+  slug: profiles
+  author: Sacha Greif

@@ -5,11 +5,9 @@ const Tick = (props) => {
   const { highlight, key, x, y } = props
   const value = props.payload.value
   return (
-    <g key={key} className="recharts-cartesian-axis-tick">
-      <text className={classNames('tick', { 'tick-highlighted': highlight === value })} x={x} y={y+3} textAnchor="end" >
-        {value}
-      </text>
-    </g>
+    <text className={classNames('tick', { 'tick-highlighted': highlight === value })} x={x} y={y+3} textAnchor="end" >
+      {value}
+    </text>
   )
 }
 
