@@ -2,19 +2,19 @@ import React from 'react'
 import DocumentTitle from 'react-document-title'
 import _ from 'lodash'
 
-import parseCSV from '../helpers/parseCSV.js'
+import parseCSV from '../../helpers/parseCSV.js'
 
-import StackedBlock from '../components/blocks/StackedBlock.js'
-import VerticalBlock from '../components/blocks/VerticalBlock.js'
-import HorizontalBlock from '../components/blocks/HorizontalBlock.js'
+import StackedBlock from '../../components/blocks/StackedBlock.js'
+import VerticalBlock from '../../components/blocks/VerticalBlock.js'
+import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
 
-import frontend from '../data/frontend.csv'
-import frontendOther from '../data/frontendOther.csv'
-import frontendHappiness from '../data/frontendHappiness.csv'
+import frontend from '../../data/frontend/results.csv'
+import frontendOther from '../../data/frontend/other.csv'
+import frontendHappiness from '../../data/frontend/happiness.csv'
 
-import Dummy from '../contents/dummy.md'
+import Dummy from '../../contents/dummy.md'
 
-import '../stylesheets/screen.scss'
+import '../../stylesheets/screen.scss'
 
 const Opinions = () =>
   <DocumentTitle title="Opinions">

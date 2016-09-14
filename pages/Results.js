@@ -9,7 +9,7 @@ const Results = () =>
   <DocumentTitle title="Results">
     <div className="results-container">
       <ul>
-        {Sections.map(section => <li key={section.slug}><Link to={`/${section.slug}/`}>{section.name}</Link> - {section.author}</li>)}
+        {Sections.map(section => <li key={section.slug}><Link to={`/2016/${section.slug}/`}>{section.name}</Link> - {section.author}</li>)}
       </ul>
     </div>
   </DocumentTitle>

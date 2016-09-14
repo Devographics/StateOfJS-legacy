@@ -1,20 +1,20 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
-import parseCSV from '../helpers/parseCSV.js'
+import parseCSV from '../../helpers/parseCSV.js'
 
-import StackedBlock from '../components/blocks/StackedBlock.js'
-import VerticalBlock from '../components/blocks/VerticalBlock.js'
-import HorizontalBlock from '../components/blocks/HorizontalBlock.js'
-import SectionHeatmapBlock from '../components/blocks/SectionHeatmapBlock.js'
+import StackedBlock from '../../components/blocks/StackedBlock.js'
+import VerticalBlock from '../../components/blocks/VerticalBlock.js'
+import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
+import SectionHeatmapBlock from '../../components/blocks/SectionHeatmapBlock.js'
 
-import testing from '../data/testing.csv'
-import testingOther from '../data/testingOther.csv'
-import testingHappiness from '../data/testingHappiness.csv'
+import testing from '../../data/testing/results.csv'
+import testingOther from '../../data/testing/other.csv'
+import testingHappiness from '../../data/testing/happiness.csv'
 
-import TestingContents from '../contents/testing.md'
-import Dummy from '../contents/dummy.md'
+import TestingContents from '../../contents/testing.md'
+import Dummy from '../../contents/dummy.md'
 
-import '../stylesheets/screen.scss'
+import '../../stylesheets/screen.scss'
 
 const items = ['Mocha', 'Jasmine', 'Enzyme', 'Jest', 'Cucumber', 'Ava']
 

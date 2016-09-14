@@ -1,19 +1,19 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
-import parseCSV from '../helpers/parseCSV.js'
+import parseCSV from '../../helpers/parseCSV.js'
 
-import StackedBlock from '../components/blocks/StackedBlock.js'
-import VerticalBlock from '../components/blocks/VerticalBlock.js'
-import HorizontalBlock from '../components/blocks/HorizontalBlock.js'
-import SectionHeatmapBlock from '../components/blocks/SectionHeatmapBlock.js'
+import StackedBlock from '../../components/blocks/StackedBlock.js'
+import VerticalBlock from '../../components/blocks/VerticalBlock.js'
+import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
+import SectionHeatmapBlock from '../../components/blocks/SectionHeatmapBlock.js'
 
-import mobile from '../data/mobile.csv'
-import mobileOther from '../data/mobileOther.csv'
-import mobileHappiness from '../data/mobileHappiness.csv'
+import mobile from '../../data/mobile/results.csv'
+import mobileOther from '../../data/mobile/other.csv'
+import mobileHappiness from '../../data/mobile/happiness.csv'
 
-import Dummy from '../contents/dummy.md'
+import Dummy from '../../contents/dummy.md'
 
-import '../stylesheets/screen.scss'
+import '../../stylesheets/screen.scss'
 
 const items = ['Native Apps', 'React Native', 'Cordova', 'PhoneGap', 'NativeScript']
 

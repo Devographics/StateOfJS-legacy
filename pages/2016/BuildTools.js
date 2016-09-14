@@ -1,19 +1,19 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
-import parseCSV from '../helpers/parseCSV.js'
+import parseCSV from '../../helpers/parseCSV.js'
 
-import StackedBlock from '../components/blocks/StackedBlock.js'
-import VerticalBlock from '../components/blocks/VerticalBlock.js'
-import HorizontalBlock from '../components/blocks/HorizontalBlock.js'
-import SectionHeatmapBlock from '../components/blocks/SectionHeatmapBlock.js'
+import StackedBlock from '../../components/blocks/StackedBlock.js'
+import VerticalBlock from '../../components/blocks/VerticalBlock.js'
+import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
+import SectionHeatmapBlock from '../../components/blocks/SectionHeatmapBlock.js'
 
-import stacked from '../data/buildtools.csv'
-import other from '../data/buildtoolsOther.csv'
-import happiness from '../data/buildtoolsHappiness.csv'
+import stacked from '../../data/buildtools/results.csv'
+import other from '../../data/buildtools/other.csv'
+import happiness from '../../data/buildtools/happiness.csv'
 
-import Dummy from '../contents/dummy.md'
+import Dummy from '../../contents/dummy.md'
 
-import '../stylesheets/screen.scss'
+import '../../stylesheets/screen.scss'
 
 const items = ['Webpack', 'Grunt', 'Gulp', 'Browserify']
 

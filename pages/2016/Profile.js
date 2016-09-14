@@ -2,17 +2,17 @@ import React from 'react'
 import DocumentTitle from 'react-document-title'
 import _ from 'lodash'
 
-import parseCSV from '../helpers/parseCSV.js'
+import parseCSV from '../../helpers/parseCSV.js'
 
-import VerticalBlock from '../components/blocks/VerticalBlock.js'
-import HeatmapBlock from '../components/blocks/HeatmapBlock.js'
+import VerticalBlock from '../../components/blocks/VerticalBlock.js'
+import HeatmapBlock from '../../components/blocks/HeatmapBlock.js'
 
-import experienceAverageData from '../data/experience-average.csv'
-import experienceData from '../data/experience.csv'
+import experienceAverageData from '../../data/profiles/experience-average.csv'
+import experienceData from '../../data/profiles/experience.csv'
 
-import heatmap from '../contents/dummy.md'
+import heatmap from '../../contents/dummy.md'
 
-import '../stylesheets/screen.scss'
+import '../../stylesheets/screen.scss'
 
 const items = ['Less than one year', '1-2 years', '2-5 years', '5-10 years', '10-20 years', '20+ years']
 

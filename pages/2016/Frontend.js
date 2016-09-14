@@ -2,23 +2,23 @@ import React from 'react'
 import DocumentTitle from 'react-document-title'
 import _ from 'lodash'
 
-import parseCSV from '../helpers/parseCSV.js'
+import parseCSV from '../../helpers/parseCSV.js'
 
-import StackedBlock from '../components/blocks/StackedBlock.js'
-import VerticalBlock from '../components/blocks/VerticalBlock.js'
-import HorizontalBlock from '../components/blocks/HorizontalBlock.js'
-import SectionHeatmapBlock from '../components/blocks/SectionHeatmapBlock.js'
+import StackedBlock from '../../components/blocks/StackedBlock.js'
+import VerticalBlock from '../../components/blocks/VerticalBlock.js'
+import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
+import SectionHeatmapBlock from '../../components/blocks/SectionHeatmapBlock.js'
 
-import frontend from '../data/frontend.csv'
-import frontendOther from '../data/frontendOther.csv'
-import frontendHappiness from '../data/frontendHappiness.csv'
+import frontend from '../../data/frontend/results.csv'
+import frontendOther from '../../data/frontend/other.csv'
+import frontendHappiness from '../../data/frontend/happiness.csv'
 
-import results from '../contents/frontend/results.md'
-import other from '../contents/frontend/other.md'
-import happiness from '../contents/frontend/happiness.md'
-import heatmap from '../contents/frontend/heatmap.md'
+import results from '../../data/frontend/results.md'
+import other from '../../data/frontend/other.md'
+import happiness from '../../data/frontend/happiness.md'
+import heatmap from '../../data/frontend/heatmap.md'
 
-import '../stylesheets/screen.scss'
+import '../../stylesheets/screen.scss'
 
 const items = ['No Framework', 'React', 'Angular', 'Angular 2', 'Ember', 'Vue', 'Backbone']
 
