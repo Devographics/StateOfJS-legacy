@@ -6,11 +6,14 @@ import parseCSV from '../../helpers/parseCSV.js'
 
 import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
 import VerticalBlock from '../../components/blocks/VerticalBlock.js'
+import TextBlock from '../../components/blocks/TextBlock.js'
 
 import features from '../../data/features/features.csv'
 import featuresScores from '../../data/features/featuresScores.csv'
 
-import Dummy from '../../contents/dummy.md'
+import FeaturesIntro from '../../data/features/features-intro.md'
+import HighestRated from '../../data/features/highest-rated.md'
+import OtherFeatures from '../../data/features/other-features.md'
 
 import '../../stylesheets/screen.scss'
 
@@ -37,6 +40,7 @@ const imports = {
 const Features = () =>
   <DocumentTitle title="Features">
     <div className="results-container">
+      <TextBlock contents={FeaturesIntro} />
       {features.map(feature => {
         const featureTitle = feature.Option
         const featureFileName = featureTitle.replace(new RegExp(' ', 'g'), '').replace(new RegExp('-', 'g'), '').toLowerCase()
@@ -57,7 +61,8 @@ const Features = () =>
           />
         )
       })}
-      <VerticalBlock data={parseCSV(featuresScores)} contents={Dummy} title="Other Frameworks" chartTitle="Highest-rated Features" />
+      <VerticalBlock data={parseCSV(featuresScores)} contents={HighestRated} title="Other Frameworks" chartTitle="Highest-rated Features" />
+      <TextBlock contents={OtherFeatures} />
     </div>
   </DocumentTitle>
 

@@ -4,24 +4,52 @@ import _ from 'lodash'
 
 import parseCSV from '../../helpers/parseCSV.js'
 
-import StackedBlock from '../../components/blocks/StackedBlock.js'
-import VerticalBlock from '../../components/blocks/VerticalBlock.js'
 import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
+import TextBlock from '../../components/blocks/TextBlock.js'
 
-import frontend from '../../data/frontend/results.csv'
-import frontendOther from '../../data/frontend/other.csv'
-import frontendHappiness from '../../data/frontend/happiness.csv'
+import opinions from '../../data/opinions/opinions.csv'
 
-import Dummy from '../../contents/dummy.md'
+import OpinionsIntro from '../../data/opinions/opinions-intro.md'
 
 import '../../stylesheets/screen.scss'
+
+import enjoyjavascript from '../../data/opinions/enjoy-javascript.md'
+import mainlanguage from '../../data/opinions/main-language.md'
+import overused from '../../data/opinions/over-used.md'
+import overlycomplex from '../../data/opinions/overly-complex.md'
+import rightdirection from '../../data/opinions/right-direction.md'
+import toofast from '../../data/opinions/too-fast.md'
+import toolong from '../../data/opinions/too-long.md'
+
+const imports = {
+  'I enjoy building JavaScript apps': enjoyjavascript,
+  'I would like JavaScript to be my main programming language': mainlanguage,
+  'JavaScript is over-used online': overused,
+  'Building JavaScript apps is overly complex right now': overlycomplex,
+  'JavaScript is moving in the right direction': rightdirection,
+  'The JavaScript ecosystem is changing too fast': toofast,
+  'This survey is too damn long!': toolong,
+}
 
 const Opinions = () =>
   <DocumentTitle title="Opinions">
     <div className="results-container">
-      <StackedBlock data={parseCSV(frontend)} contents={Dummy} title="Front-end Frameworks" />
-      <VerticalBlock data={parseCSV(frontendOther)} contents={Dummy} title="Other Frameworks" chartTitle="Other Front-end Frameworks" />
-      <HorizontalBlock data={parseCSV(frontendHappiness)} contents={Dummy} title="Happiness" chartTitle="On a scale of 1 to 5, how happy are you with your current solution for the front-end?" />
+      <TextBlock contents={OpinionsIntro} />
+      {opinions.map(opinion => {
+        const opinionTitle = opinion.Option
+        const markdown = imports[opinionTitle]
+        delete opinion.Option
+        const dataArray = parseCSV(_.keys(opinion).map(key => ({ Option: key, Value: opinion[key] })))
+
+        return (
+          <HorizontalBlock
+            key={opinionTitle}
+            data={dataArray}
+            contents={markdown}
+            chartTitle={opinionTitle} 
+          />
+        )
+      })}
     </div>
   </DocumentTitle>
 
