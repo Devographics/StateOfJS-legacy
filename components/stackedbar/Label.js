@@ -58,7 +58,7 @@ const Label = (props) => {
   })
 
   return (
-    <g key={key} className="recharts-cartesian-axis-label">
+    <g key={key} className="recharts-cartesian-bar-label">
       <text className="label" x={finalX} y={finalY} textAnchor="middle" >
         {label}
       </text>

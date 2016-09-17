@@ -62,13 +62,12 @@ const Features = () =>
             key={featureTitle}
             data={dataArray}
             contents={markdown}
-            title="Happiness"
-            chartTitle={featureTitle} 
+            title={featureTitle}
           />
         )
       })}
-      <VerticalBlock data={parseCSV(featuresScores)} contents={HighestRated} title="Other Frameworks" chartTitle="Highest-rated Features" />
-      <TextBlock contents={OtherFeatures} />
+      <VerticalBlock data={parseCSV(featuresScores)} contents={HighestRated} title="Highest-Rated Features" />
+      <TextBlock contents={OtherFeatures} title="Other Features" />
       <Pagination currentSection="features" />
     </div>
   </DocumentTitle>

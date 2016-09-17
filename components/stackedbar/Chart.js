@@ -34,8 +34,8 @@ export default class Chart extends React.Component {
       <ResponsiveContainer minHeight={450}>
         <BarChart data={data} barCategoryGap="30%" margin={ {top: 0, right: 30, left: 30, bottom: 0} } onClick={handleToggle} >
           <defs>
-            {_.map(this.props.responses, r => 
-              <pattern key={r.offColor} id={`p${r.offColor.replace('#', '')}`} patternUnits="userSpaceOnUse" width="10" height="10">
+            {_.map(this.props.responses, (r, i) => 
+              <pattern key={i} id={`p${r.offColor.replace('#', '')}`} patternUnits="userSpaceOnUse" width="10" height="10">
                 <path d="M 0,10 l 10,-10 M -2.5,2.5 l 5,-5 M 7.5,12.5 l 5,-5" strokeWidth="2" shapeRendering="auto" stroke={r.offColor} strokeLinecap="square" />
               </pattern>
             )}

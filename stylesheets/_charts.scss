@@ -20,7 +20,7 @@
   }
 }
 
-.recharts-cartesian-axis-label{
+.recharts-cartesian-axis-label, .recharts-bar-labels{
   .label{
     @include secondary-font;
     // fill: white;
@@ -35,6 +35,7 @@
   @include large{
     @include flex-center;
   }
+  margin-bottom: $vmargin;
 }
 .filter{
   font-size: $small-font;
@@ -94,7 +95,7 @@
 }
 
 .use-again, .not-use-again, .want-to-learn, .not-interested, .never-heard {
-  .recharts-cartesian-axis-label {
+  .recharts-cartesian-bar-label {
     display: none;
   }
 }
@@ -102,7 +103,7 @@ div.all{
   li.all{
     background: $grey;
   }
-  .recharts-cartesian-axis-label{
+  .recharts-cartesian-bar-label{
     display: block;
   }
 }
@@ -112,7 +113,7 @@ div.interest {
     background-color: $interest-dark;
   }
   .want-to-learn, .not-interested {
-    .recharts-cartesian-axis-label {
+    .recharts-cartesian-bar-label {
       display: block;
     }
   }
@@ -123,7 +124,7 @@ div.satisfaction {
     background-color: $satisfaction-dark;
   }
   .use-again, .not-use-again {
-    .recharts-cartesian-axis-label {
+    .recharts-cartesian-bar-label {
       display: block;
     }
   }

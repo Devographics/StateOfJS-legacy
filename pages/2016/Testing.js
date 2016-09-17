@@ -26,7 +26,7 @@ const Testing = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle title={title} currentSection={section} />
-      <StackedBlock data={parseCSV(testing)} contents={TestingContents} title="Testing Frameworks" />
+      <StackedBlock data={parseCSV(testing)} contents={TestingContents} />
       <VerticalBlock data={parseCSV(testingOther)} contents={Dummy} title="Other Testing Tools" />
       <HorizontalBlock data={parseCSV(testingHappiness)} contents={Dummy} title="On a scale of 1 to 5, how happy are you with your current testing solution?" />
       <SectionHeatmapBlock

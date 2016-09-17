@@ -2,12 +2,13 @@ import React from 'react'
 // import DocumentTitle from 'react-document-title'
 import { ResponsiveContainer, BarChart, Bar, YAxis, XAxis, Tooltip, Legend } from 'recharts'
 import _, { max } from 'lodash'
-import Label from './Label.js'
+import Label from '../common/Label.js'
 import Tick from './Tick.js'
 
 export default class Chart extends React.Component {
 
   render () {
+    const total = _.reduce(this.props.data, (sum, n) => sum + n.Value, 0)
     const rowCount = this.props.data.length -1
     const aspect = 15 / rowCount
     return (
@@ -20,7 +21,7 @@ export default class Chart extends React.Component {
           </defs>
           <YAxis dataKey="Option" interval={0} type="category" tickLine={false} tick={<Tick highlight={this.props.highlight}/>} axisLine={{ stroke: '#5ec6cc' }} />
           <XAxis hide type="number" domain={[0, max(this.props.data.map(d => parseInt(d.Mentions, 10)))]} />
-          <Bar isAnimationActive={false} dataKey="Value" fill="url(#cfwue)" label={<Label highlight={this.props.highlight} />} />
+          <Bar isAnimationActive={false} dataKey="Value" fill="url(#cfwue)" label={<Label total={total} showPercent={this.props.showPercent} textAnchor="start" highlight={this.props.highlight} />} />
         </BarChart>
       </ResponsiveContainer>
     )

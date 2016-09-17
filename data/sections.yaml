@@ -34,3 +34,6 @@
 - name: Developer Profiles
   slug: profiles
   author: Sacha Greif
+- name: Conclusion
+  slug: conclusion
+  author: Sacha Greif

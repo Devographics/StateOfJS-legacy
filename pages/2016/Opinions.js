@@ -37,7 +37,7 @@ const section = 'opinions'
 const title = 'Opinions'
 
 const Opinions = () =>
-  <DocumentTitle title="Opinions">
+  <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle title={title} currentSection={section} />
       <TextBlock contents={OpinionsIntro} />
@@ -56,7 +56,7 @@ const Opinions = () =>
           />
         )
       })}
-      <Pagination currentSection="opinions" />
+      <Pagination currentSection={section} />
     </div>
   </DocumentTitle>
 
