@@ -6,6 +6,8 @@ import StackedBlock from '../../components/blocks/StackedBlock.js'
 import VerticalBlock from '../../components/blocks/VerticalBlock.js'
 import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
 import SectionHeatmapBlock from '../../components/blocks/SectionHeatmapBlock.js'
+import Pagination from '../../components/Pagination.js'
+import PageTitle from '../../components/PageTitle.js'
 
 import testing from '../../data/testing/results.csv'
 import testingOther from '../../data/testing/other.csv'
@@ -16,20 +18,23 @@ import Dummy from '../../contents/dummy.md'
 
 import '../../stylesheets/screen.scss'
 
+const section = 'testing'
+const title = 'Testing'
 const items = ['Mocha', 'Jasmine', 'Enzyme', 'Jest', 'Cucumber', 'Ava']
 
 const Testing = () =>
-  <DocumentTitle title="Results">
+  <DocumentTitle title={title}>
     <div className="results-container">
+      <PageTitle title={title} currentSection={section} />
       <StackedBlock data={parseCSV(testing)} contents={TestingContents} title="Testing Frameworks" />
       <VerticalBlock data={parseCSV(testingOther)} contents={Dummy} title="Other Testing Tools" />
-      <HorizontalBlock data={parseCSV(testingHappiness)} contents={Dummy} title="Happiness" />
+      <HorizontalBlock data={parseCSV(testingHappiness)} contents={Dummy} title="On a scale of 1 to 5, how happy are you with your current testing solution?" />
       <SectionHeatmapBlock
         rows={items}
         contents={Dummy}
-        title="Heatmap"
-        chartTitle="How likely is a testing framework user to also want to use other technologies?"
-      />    
+        title="How likely are testing framework users to also want to use other technologies?"
+      />
+      <Pagination currentSection={section} />
     </div>
   </DocumentTitle>
 

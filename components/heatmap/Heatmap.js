@@ -1,15 +1,14 @@
 import React from 'react'
 // import DocumentTitle from 'react-document-title'
 import classNames from 'classnames'
-import Chart2 from './Chart2.js'
+import Chart from './Chart.js'
 
 export default class Heatmap extends React.Component {
 
   render () {
     return (
-      <div className={classNames('chart', 'horizontal-chart')}>
-        <h4 className="chart-block-title">{this.props.chartTitle}</h4>
-        <Chart2 {...this.props} />
+      <div className={classNames('chart', 'heatmap-chart')}>
+        <Chart {...this.props} />
         {this.props.note}
       </div>
     )

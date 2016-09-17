@@ -6,6 +6,8 @@ import StackedBlock from '../../components/blocks/StackedBlock.js'
 import VerticalBlock from '../../components/blocks/VerticalBlock.js'
 import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
 import SectionHeatmapBlock from '../../components/blocks/SectionHeatmapBlock.js'
+import Pagination from '../../components/Pagination.js'
+import PageTitle from '../../components/PageTitle.js'
 
 import mobile from '../../data/mobile/results.csv'
 import mobileOther from '../../data/mobile/other.csv'
@@ -15,11 +17,14 @@ import Dummy from '../../contents/dummy.md'
 
 import '../../stylesheets/screen.scss'
 
+const section = 'mobile'
+const title = 'Mobile Frameworks'
 const items = ['Native Apps', 'React Native', 'Cordova', 'PhoneGap', 'NativeScript']
 
 const Mobile = () =>
-  <DocumentTitle title="Results">
+  <DocumentTitle title={title}>
     <div className="results-container">
+      <PageTitle title={title} currentSection={section} />
       <StackedBlock data={parseCSV(mobile)} contents={Dummy} title="Mobile Frameworks" />
       <VerticalBlock data={parseCSV(mobileOther)} contents={Dummy} title="Other Mobile Frameworks" />
       <HorizontalBlock data={parseCSV(mobileHappiness)} contents={Dummy} title="Happiness" />
@@ -29,6 +34,7 @@ const Mobile = () =>
         title="Heatmap"
         chartTitle="How likely is a mobile framework user to also want to use other technologies?"
       />
+      <Pagination currentSection={section} />
     </div>
   </DocumentTitle>
 

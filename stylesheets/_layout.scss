@@ -1,15 +1,93 @@
 
-.results-container{
-  margin: $vmargin*3 0;
+.outer-wrapper{
+  @include small-medium{
+    padding: $vmargin $hmargin;
+  }
+  @include large{
+    padding: $vmargin*3 $vmargin*6;
+    border: 10px solid rgba($blue, 0.6);
+    min-height: calc(100vh - 22px);
+  }
+}
+
+.page-title{
+  margin: 0 0 $vmargin*3 0;
+  // box-shadow: 10px 10px 0 0 $grey;
+  position: relative;
+  border: 1px solid $border-color;
+  .inner{
+    padding: $vmargin $hmargin;
+    background: $beige;
+    display: block;
+    z-index: 10;
+    position: relative;
+    @include large{
+      @include flex-center;
+      justify-content: space-between;
+    }
+  }
+  &:before{
+    z-index: 1;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    height: 100%;
+    width: 100%;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAALUlEQVQYV2OsaGj439HQwMgABSA+nAMSAwmAaBQVIAGQLrAgTAXMGEZ0AZAiAJnTFPTxZT3RAAAAAElFTkSuQmCC);
+  }
+  h1{
+    font-size: $largest-font;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    @include small-medium{
+      margin-bottom: $vmargin/2;
+    }
+    @include large{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .spacer{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    /* shorthand would be: flex: 1 1 250px; */
+    visibility: hidden;
+  }
 }
 
 .section{
-  @include large{
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
+  @include small{
+    margin-bottom: $vmargin*2;
   }
-  margin-bottom: 200px;
+  @include medium{
+    margin-bottom: $vmargin*4;
+  }
+  @include large{
+    margin-bottom: $vmargin*6;
+  }
+  .section-inner{
+    @include large{
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+    }
+  }
+  .section-title{
+    font-size: $large-font;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 3px;
+    margin: 0 0 $vmargin*2 0;
+    span{
+      display: block;
+      padding-bottom: $vmargin/2;
+      border-bottom: 1px solid $border-color;
+    }
+  }
   // background: rgba(0,0,0,0.1);
 }
 .section-layout-b{
@@ -20,9 +98,18 @@
     width: 40%;
   }
 }
+.section-contents-wide{
+  @include large{
+    padding: 0 $hmargin*6;
+  }
+}
 .sticky-container{
+  @include small-medium{
+    margin-bottom: $vmargin;
+  }
   @include large{
     width: 55%;
+    margin-right: 5%;
     .sticky{
       // padding: $vmargin*2 0;
     }

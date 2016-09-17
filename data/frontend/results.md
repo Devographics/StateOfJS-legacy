@@ -1,10 +1,10 @@
-..FilterPointA
+..FilterPoint All
 
 ### Awareness
 
 The battle for JavaScript mindshare is often led by front-end frameworks, and this comes through in the survey results: apart form newcomer **Vue**, every option here stands at over 97% awareness. 
 
-..FilterPointI
+..FilterPoint Interest
 
 ### Interest
 
@@ -12,7 +12,7 @@ While awareness is pretty much a draw, things start getting interesting when you
 
 But if you look at percentages, it turns out the uncontested leader is instead **React**. What's more surprising is Vue's performance, coming second by both measures. 
 
-..FilterPointS
+..FilterPoint Satisfaction
 
 ### Satisfaction
 

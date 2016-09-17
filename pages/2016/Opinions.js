@@ -6,6 +6,8 @@ import parseCSV from '../../helpers/parseCSV.js'
 
 import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
 import TextBlock from '../../components/blocks/TextBlock.js'
+import Pagination from '../../components/Pagination.js'
+import PageTitle from '../../components/PageTitle.js'
 
 import opinions from '../../data/opinions/opinions.csv'
 
@@ -31,9 +33,13 @@ const imports = {
   'This survey is too damn long!': toolong,
 }
 
+const section = 'opinions'
+const title = 'Opinions'
+
 const Opinions = () =>
   <DocumentTitle title="Opinions">
     <div className="results-container">
+      <PageTitle title={title} currentSection={section} />
       <TextBlock contents={OpinionsIntro} />
       {opinions.map(opinion => {
         const opinionTitle = opinion.Option
@@ -46,10 +52,11 @@ const Opinions = () =>
             key={opinionTitle}
             data={dataArray}
             contents={markdown}
-            chartTitle={opinionTitle} 
+            title={opinionTitle} 
           />
         )
       })}
+      <Pagination currentSection="opinions" />
     </div>
   </DocumentTitle>
 

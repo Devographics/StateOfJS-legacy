@@ -1,16 +1,8 @@
 {
   directives: {
     FilterPoint: {
-      component:  './components/stackedbar/FilterPoint.js'
-    },
-    FilterPointA: {
-      component:  './components/stackedbar/FilterPointA.js'
-    },
-    FilterPointI: {
-      component:  './components/stackedbar/FilterPointI.js'
-    },
-    FilterPointS: {
-      component:  './components/stackedbar/FilterPointS.js'
+      component:  './components/stackedbar/FilterPoint.js',
+      line: 'optional'
     }
   }
 }

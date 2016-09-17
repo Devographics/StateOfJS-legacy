@@ -8,7 +8,6 @@ export default class VerticalBar extends React.Component {
   render () {
     return (
       <div className={classNames('chart', 'vertical-chart')}>
-        <h4 className="chart-block-title">{this.props.chartTitle}</h4>
         <Chart {...this.props} />
       </div>
     )

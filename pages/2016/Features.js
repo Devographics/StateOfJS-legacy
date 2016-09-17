@@ -7,6 +7,8 @@ import parseCSV from '../../helpers/parseCSV.js'
 import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
 import VerticalBlock from '../../components/blocks/VerticalBlock.js'
 import TextBlock from '../../components/blocks/TextBlock.js'
+import Pagination from '../../components/Pagination.js'
+import PageTitle from '../../components/PageTitle.js'
 
 import features from '../../data/features/features.csv'
 import featuresScores from '../../data/features/featuresScores.csv'
@@ -37,9 +39,13 @@ const imports = {
   timetraveldebugging,
 }
 
+const section = 'features'
+const title = 'Features'
+
 const Features = () =>
   <DocumentTitle title="Features">
     <div className="results-container">
+      <PageTitle title={title} currentSection={section} />
       <TextBlock contents={FeaturesIntro} />
       {features.map(feature => {
         const featureTitle = feature.Option
@@ -57,12 +63,13 @@ const Features = () =>
             data={dataArray}
             contents={markdown}
             title="Happiness"
-            chartTitle={`How important is ${featureTitle} to you?`} 
+            chartTitle={featureTitle} 
           />
         )
       })}
       <VerticalBlock data={parseCSV(featuresScores)} contents={HighestRated} title="Other Frameworks" chartTitle="Highest-rated Features" />
       <TextBlock contents={OtherFeatures} />
+      <Pagination currentSection="features" />
     </div>
   </DocumentTitle>
 

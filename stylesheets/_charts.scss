@@ -8,10 +8,15 @@
 }
 .recharts-default-legend {
   font-size: $small-font;
+  display: flex;
+  flex-direction: column-reverse;
   .recharts-legend-item{
     width: 100%;
   }
   .recharts-legend-item-text {
+  }
+  .recharts-surface{
+    // border: 1px solid $border-color;
   }
 }
 
@@ -20,12 +25,13 @@
     @include secondary-font;
     // fill: white;
     fill: $darkgrey;
-    font-size: 16px;
+    font-size: $small-font;
     // text-shadow: 0px 3px 3px black(0.25);
   }
 }
 
 .filters{
+  @include secondary-font;
   @include large{
     @include flex-center;
   }
@@ -34,13 +40,26 @@
   font-size: $small-font;
   @include flex-center;
   justify-content: center;
-  margin-right: $hmargin*2;
+  @include small{
+    flex-direction: column;
+  }
+  @include small-medium{
+    margin-bottom: $vmargin/2;
+  }
+  @include large{
+    margin-right: $hmargin;
+  }
   &:last-child{
     margin-right: 0;
   }
 }
 .filter-heading{
-  margin-right: $hmargin/2;
+  @include small{
+    margin-bottom: $vmargin/4;
+  }
+  @include medium-large{
+    margin-right: $hmargin/2;
+  }
 }
 .filter ul {
   list-style: none;
@@ -55,15 +74,16 @@
   padding: 0;
   margin: 0;
   li{
-    padding: 10px;
+    padding: $vmargin/4 $hmargin/2;
     border-right: 1px solid $border-color;
     &:first-child{
       border-radius: 3px 0 0 3px;
     }
     &:last-child{
       border-radius: 0 3px 3px 0;
-      border-right: none;
+      border: none;
     }
+
     .percent &.percent{
       background: $grey;
     }
@@ -121,4 +141,10 @@ div.satisfaction {
 .chart-block-note{
   font-size: $small-font;
   font-style: italic;
+  margin: 0;
+  .section-layout-b &{
+    @include large{
+      padding: 0 $hmargin*6;
+    }
+  }
 }

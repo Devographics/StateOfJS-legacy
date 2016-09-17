@@ -1,6 +1,10 @@
-$small-font: 0.9rem;
+$root-size-mobile: 16px;
+$root-size: 19px;
+
+$small-font: 0.8rem;
 $medium-font: 1rem;
 $large-font: 1.3rem;
+$largest-font: 2rem;
 
 $light: 100;
 $medium: normal;
@@ -19,7 +23,7 @@ $bold: bold;
 }
 
 @mixin primary-font{
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Source Sans Pro', 'Work Sans', sans-serif;
 }
 @mixin secondary-font{
   font-family: 'Space Mono', monospace;

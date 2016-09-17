@@ -3,6 +3,7 @@ import _ from 'lodash'
 
 import Heatmap from '../heatmap/Heatmap.js'
 import heatmapData from '../../data/heatmapPhi.csv'
+import SectionTitle from './SectionTitle.js'
 
 /*
 
@@ -22,6 +23,7 @@ const heatmapNote = <p className="chart-block-note">Note: “user” defined as 
 const SectionHeatmapBlock = props => {
   return (
     <div className="section section-layout-b">
+      {props.title ? <SectionTitle title={props.title} /> : null}
       <Heatmap
         {...props}
         data={_.drop(heatmapData, 4)}

@@ -1,0 +1,35 @@
+.pagination{
+  @include large{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $vmargin*2;
+  }
+}
+.pagination-link{
+  display: block;
+  @include secondary-font;
+  white-space: nowrap;
+  font-size: $medium-font;
+  .pagination &{
+    border: $border-color 1px solid;
+    border-radius: 3px;
+    padding: $vmargin/2 $hmargin;
+  }
+}
+.pagination-previous{
+  @include small-medium{
+    text-align: center;
+    margin-bottom: $vmargin/2;
+  }
+  @include large{
+    text-align: left;
+  }
+}
+.pagination-next{
+  @include small-medium{
+    text-align: center;
+  }
+  @include large{
+    text-align: right;
+  }
+}
