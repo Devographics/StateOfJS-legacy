@@ -1,3 +1,6 @@
+- name: Introduction
+  slug: introduction
+  author: Sacha Greif
 - name: JavaScript Flavors
   slug: flavors
   author: Sacha Greif

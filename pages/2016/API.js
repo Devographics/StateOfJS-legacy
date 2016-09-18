@@ -16,8 +16,6 @@ import apiHappiness from '../../data/api/happiness.csv'
 
 import Dummy from '../../contents/dummy.md'
 
-import '../../stylesheets/screen.scss'
-
 const section = 'api'
 const title = 'API Layers'
 const items = ['REST API', 'Firebase', 'GraphQL', 'Apollo', 'Falcor', 'Horizon']

@@ -7,10 +7,10 @@ import PageTitle from '../../components/PageTitle.js'
 
 import OpinionsIntro from '../../data/opinions/opinions-intro.md'
 
-const section = 'conclusion'
-const title = 'Conclusion'
+const section = 'introduction'
+const title = 'Introduction'
 
-const Conclusion = () =>
+const Introduction = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle title={title} currentSection={section} />
@@ -19,4 +19,4 @@ const Conclusion = () =>
     </div>
   </DocumentTitle>
 
-export default Conclusion
+export default Introduction

@@ -20,8 +20,6 @@ import experience from '../../contents/dummy.md'
 import salary from '../../contents/dummy.md'
 import textEditors from '../../contents/dummy.md'
 
-import '../../stylesheets/screen.scss'
-
 // const items = ['Less than one year', '1-2 years', '2-5 years', '5-10 years', '10-20 years', '20+ years']
 
 const section = 'profiles'

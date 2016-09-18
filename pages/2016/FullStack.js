@@ -15,8 +15,6 @@ import happiness from '../../data/fullstack/happiness.csv'
 
 import Dummy from '../../contents/dummy.md'
 
-import '../../stylesheets/screen.scss'
-
 const section = 'fullstack'
 const title = 'Full Stack'
 const items = ['Meteor', 'FeathersJS', 'DoneJS', 'MERN', 'MEAN']

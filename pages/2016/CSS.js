@@ -15,8 +15,6 @@ import happiness from '../../data/css/happiness.csv'
 
 import Dummy from '../../contents/dummy.md'
 
-import '../../stylesheets/screen.scss'
-
 const section = 'css'
 const title = 'CSS'
 const items = ['Plain CSS', 'SASS/SCSS', 'LESS', 'CSS Modules', 'Aphrodite']

@@ -20,8 +20,6 @@ import other from '../../data/frontend/other.md'
 import happiness from '../../data/frontend/happiness.md'
 import heatmap from '../../data/frontend/heatmap.md'
 
-import '../../stylesheets/screen.scss'
-
 const section = 'frontend'
 const title = 'Front-End Frameworks'
 const items = ['No Framework', 'React', 'Angular', 'Angular 2', 'Ember', 'Vue', 'Backbone']

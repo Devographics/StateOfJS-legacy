@@ -3,6 +3,10 @@
     FilterPoint: {
       component:  './components/stackedbar/FilterPoint.js',
       line: 'optional'
+    },
+    Fact: {
+      component:  './components/common/Fact.js',
+      line: 'optional'
     }
   }
 }

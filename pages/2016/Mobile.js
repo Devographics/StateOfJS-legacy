@@ -15,8 +15,6 @@ import mobileHappiness from '../../data/mobile/happiness.csv'
 
 import Dummy from '../../contents/dummy.md'
 
-import '../../stylesheets/screen.scss'
-
 const section = 'mobile'
 const title = 'Mobile Frameworks'
 const items = ['Native Apps', 'React Native', 'Cordova', 'PhoneGap', 'NativeScript']

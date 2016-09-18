@@ -16,8 +16,6 @@ import testingHappiness from '../../data/testing/happiness.csv'
 import TestingContents from '../../contents/testing.md'
 import Dummy from '../../contents/dummy.md'
 
-import '../../stylesheets/screen.scss'
-
 const section = 'testing'
 const title = 'Testing'
 const items = ['Mocha', 'Jasmine', 'Enzyme', 'Jest', 'Cucumber', 'Ava']

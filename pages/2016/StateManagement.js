@@ -15,8 +15,6 @@ import happiness from '../../data/statemanagement/happiness.csv'
 
 import Dummy from '../../contents/dummy.md'
 
-import '../../stylesheets/screen.scss'
-
 const section = 'statemanagement'
 const title = 'State Management'
 const items = ['Redux', 'MobX', 'Relay']

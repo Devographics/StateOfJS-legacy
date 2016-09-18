@@ -15,8 +15,6 @@ import happiness from '../../data/buildtools/happiness.csv'
 
 import Dummy from '../../contents/dummy.md'
 
-import '../../stylesheets/screen.scss'
-
 const section = 'buildtools'
 const title = 'Build Tools'
 const items = ['Webpack', 'Grunt', 'Gulp', 'Browserify']

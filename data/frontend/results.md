@@ -2,9 +2,11 @@
 
 ### Awareness
 
-The battle for JavaScript mindshare is often led by front-end frameworks, and this comes through in the survey results: apart form newcomer **Vue**, every option here stands at over 97% awareness. 
+The battle for JavaScript mindshare is often led by front-end frameworks, and this comes through in the survey results: apart from relative newcomer **Vue**, every option here stands at over 97% awareness. 
 
 ..FilterPoint Interest
+
+..Fact Lorem ipsum dolor sit amet
 
 ### Interest
 

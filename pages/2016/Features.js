@@ -17,8 +17,6 @@ import FeaturesIntro from '../../data/features/features-intro.md'
 import HighestRated from '../../data/features/highest-rated.md'
 import OtherFeatures from '../../data/features/other-features.md'
 
-import '../../stylesheets/screen.scss'
-
 import codesplitting from '../../data/features/code-splitting.md'
 import deadcodeelimination from '../../data/features/dead-code-elimination.md'
 import hotmodulereloading from '../../data/features/hot-module-reloading.md'

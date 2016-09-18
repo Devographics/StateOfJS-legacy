@@ -13,8 +13,6 @@ import opinions from '../../data/opinions/opinions.csv'
 
 import OpinionsIntro from '../../data/opinions/opinions-intro.md'
 
-import '../../stylesheets/screen.scss'
-
 import enjoyjavascript from '../../data/opinions/enjoy-javascript.md'
 import mainlanguage from '../../data/opinions/main-language.md'
 import overused from '../../data/opinions/over-used.md'
