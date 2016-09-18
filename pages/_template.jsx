@@ -14,29 +14,28 @@ module.exports = React.createClass({
   },
 
   render () {
-
     const title = DocumentTitle.peek()
-    const description = "A short survey about current popular JavaScript technologies.";
-    const url = "http://stateofjs.com";
-    const image = "http://stateofjs.com/images/javascript9.png";
+    const description = 'A short survey about current popular JavaScript technologies.'
+    const url = 'http://stateofjs.com'
+    const image = 'http://stateofjs.com/images/javascript9.png'
 
     const meta = [
-      { charset: "utf-8" },
-      { name: "description", content: description },
+      { charset: 'utf-8' },
+      { name: 'description', content: description },
       // responsive
-      { name: "viewport", content:"width=device-width, initial-scale=1" },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       // facebook
-      { property: "og:type", content: "article" },
-      { property: "og:url", content: url },
-      { property: "og:image", content: image },
-      { property: "og:title", content: title },
-      { property: "og:description", content: description },
-      //twitter
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:image:src", content: image },
-      { name: "twitter:title", content: title },
-      { name: "twitter:description", content: description }
-    ];
+      { property: 'og:type', content: 'article' },
+      { property: 'og:url', content: url },
+      { property: 'og:image', content: image },
+      { property: 'og:title', content: title },
+      { property: 'og:description', content: description },
+      // twitter
+      { name: 'twitter:card', content: 'summary' },
+      { name: 'twitter:image:src', content: image },
+      { name: 'twitter:title', content: title },
+      { name: 'twitter:description', content: description },
+    ]
 
     return (
       <div className="outer-wrapper">

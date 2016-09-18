@@ -62,13 +62,15 @@ exports.postBuild = function (pages, callback) {
       // export PNG
 
       // see https://cloudconvert.com/api/convert/svg-to-png
-      cloudconvert.convert({
-        inputformat: 'svg',
-        outputformat: 'png',
-        input: 'raw',
-        filename: `${svgId}.svg`,
-        file: svgContents,
-      }).pipe(fs.createWriteStream(pngPath))
+      // try {
+      //   cloudconvert.convert({
+      //     inputformat: 'svg',
+      //     outputformat: 'png',
+      //     input: 'raw',
+      //     filename: `${svgId}.svg`,
+      //     file: svgContents,
+      //   }).pipe(fs.createWriteStream(pngPath))
+      // } catch (err) { console.log(err) }
     })
   })
 

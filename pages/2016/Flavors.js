@@ -13,8 +13,6 @@ import flavorsHappiness from '../../data/flavors/happiness.csv'
 
 import Dummy from '../../contents/dummy.md'
 
-import '../../stylesheets/screen.scss'
-
 const section = 'flavors'
 const title = 'JavaScript Flavors'
 const items = ['Plain JavaScript', 'ES6', 'CoffeeScript', 'TypeScript', 'Elm', 'ClojureScript']
