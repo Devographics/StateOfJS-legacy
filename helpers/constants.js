@@ -6,31 +6,31 @@ const FILTERS = {
 
 const RESPONSES = {
   neverHeard: {
-    string: "I've never heard of it",
+    string: "Never heard of it",
     onColor: '#e8e8e8',
     offColor: '#e8e8e8',
     filters: [FILTERS.ALL]
   },
   notInterested: {
-    string: "I've heard of it, and am not interested",
+    string: "Heard of it, not interested",
     onColor: '#b3d8da',
     offColor: '#dadada',
     filters: [FILTERS.ALL, FILTERS.INTEREST]
   },
   wantToLearn: {
-    string: "I've heard of it, and would like to learn it",
+    string: "Heard of it, would like to learn",
     onColor: '#5ec6cc',
     offColor: '#cecece',
     filters: [FILTERS.ALL, FILTERS.INTEREST]
   },
   notAgain: {
-    string: "I've used it before, and would not use it again",
+    string: "Used it before, would not use again",
     onColor: '#e0a4bc',
     offColor: '#dadada',
     filters: [FILTERS.ALL, FILTERS.SATISFACTION]
   },
   useAgain: {
-    string: "I've used it before, and would use it again",
+    string: "Used it before, would use again",
     onColor: '#ed387a',
     offColor: '#cecece',
     filters: [FILTERS.ALL, FILTERS.SATISFACTION]

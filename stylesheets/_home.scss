@@ -138,43 +138,6 @@
   }
 }
 
-.share-options{
-  display: flex;
-  align-items:center;
-  justify-content: space-between;
-  max-width: 300px;
-  margin: 0 auto;
-  a{
-    display: block;
-    @include small{
-      height: 40px;
-      width: 40px;
-      padding: 10px;
-    }
-    @include large{
-      height: 60px;
-      width: 60px;
-      padding: 15px;
-    }
-    border-radius: 100%;
-    background: $blue;
-    flex-shrink: 0;
-    &:last-child{
-      margin-right: 0;
-    }
-    &:hover{
-      background: $pink;
-    }
-    svg{
-      height: 100%;
-      width: 100%;
-      path{
-        fill: $beige;
-      }
-    }
-  }
-}
-
 .newsletter{
   form{
     display: flex;

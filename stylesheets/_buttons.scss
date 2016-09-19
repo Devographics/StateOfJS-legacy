@@ -1,0 +1,15 @@
+.button{
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  padding: $vmargin/2 $hmargin;
+  cursor: pointer;
+  display: block;
+  @include secondary-font;
+  font-size: $medium-font;
+  white-space: nowrap;
+  &:hover{
+    background: $pink;
+    border-color: $pink;
+    color: white;
+  }
+}

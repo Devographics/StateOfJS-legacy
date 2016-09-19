@@ -4,6 +4,7 @@ import classNames from 'classnames'
 import Filters from './Filters.js'
 import Chart from './Chart.js'
 import ChartLegend from './ChartLegend.js'
+import ShareChart from '../common/ShareChart.js'
 
 export default class StackedBar extends React.Component {
   constructor (props) {
@@ -28,6 +29,7 @@ export default class StackedBar extends React.Component {
         <Filters {...this.props} handleToggle={this.handleToggle} />
         <Chart {...this.props} filter={this.props.filter} showPercent={showPercent} handleToggle={this.handleToggle}/>
         <ChartLegend {...this.props} filter={this.props.filter} />
+        <ShareChart />
       </div>
     )
   }

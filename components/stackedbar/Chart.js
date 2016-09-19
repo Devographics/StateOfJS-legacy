@@ -14,6 +14,10 @@ export default class Chart extends React.Component {
     return includes(response.filters, this.props.filter) ? response.onColor : `url(#p${response.offColor.replace('#','')})`
   }
 
+  getString (responseName) {
+    return this.props.responses[responseName].string
+  }
+
   renderChart () {
     const { title, data, identifier, filter, showPercent, handleToggle, isExport } = this.props
     const dimensions = isExport ? {height: 600, width: 900} : {}
@@ -37,7 +41,7 @@ export default class Chart extends React.Component {
         className={classNames(filter.toLowerCase(), { percent: showPercent }, { numbers: !showPercent })} 
         data={data}
         barCategoryGap="30%"
-        margin={{ top: 0, right: 20, left: 20, bottom: 0 }}
+        margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
         onClick={handleToggle}
       >
         {title ? <text fill="black" x="50%" y="30" textAnchor="middle" >{title}</text> : null}
@@ -53,7 +57,7 @@ export default class Chart extends React.Component {
         <Bar
           className="use-again"
           isAnimationActive={false}
-          dataKey="I've used it before, and would use it again"
+          dataKey={this.getString('useAgain')}
           stackId="a"
           fill={this.getFill('useAgain')}
           label={customLabel(0)}
@@ -61,7 +65,7 @@ export default class Chart extends React.Component {
         <Bar
           className="not-use-again"
           isAnimationActive={false}
-          dataKey="I've used it before, and would not use it again"
+          dataKey={this.getString('notAgain')}
           stackId="a"
           fill={this.getFill('notAgain')}
           label={customLabel(1)}
@@ -69,7 +73,7 @@ export default class Chart extends React.Component {
         <Bar
           className="want-to-learn"
           isAnimationActive={false}
-          dataKey="I've heard of it, and would like to learn it"
+          dataKey={this.getString('wantToLearn')}
           stackId="a"
           fill={this.getFill('wantToLearn')}
           label={customLabel(2)}
@@ -77,7 +81,7 @@ export default class Chart extends React.Component {
         <Bar
           className="not-interested"
           isAnimationActive={false}
-          dataKey="I've heard of it, and am not interested"
+          dataKey={this.getString('notInterested')}
           stackId="a"
           fill={this.getFill('notInterested')}
           label={customLabel(3)}
@@ -85,7 +89,7 @@ export default class Chart extends React.Component {
         <Bar
           className="never-heard"
           isAnimationActive={false}
-          dataKey="I've never heard of it"
+          dataKey={this.getString('neverHeard')}
           stackId="a"
           fill={this.getFill('neverHeard')}
           label={customLabel(4)}

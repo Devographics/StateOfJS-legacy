@@ -1,8 +1,12 @@
 
 .chart-wrapper{
-  overflow-x: scroll;
-  overflow-y: hidden;
   @include small{
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    padding: 0 $hmargin;
+
     // optional - enable iOS momentum scrolling
     -webkit-overflow-scrolling: touch;
     
@@ -56,6 +60,9 @@
     @include flex-center;
   }
   margin-bottom: $vmargin;
+  .stacked-chart &{
+    margin: 0;
+  }
 }
 .filter{
   font-size: $small-font;
@@ -170,18 +177,26 @@ div.satisfaction {
   }
 }
 
-.legend-wrapper{
-  @include flex-center;
-}
 .legend{
   list-style: none;
   padding: 0;
-  margin: $vmargin/2 0;
+  margin: $vmargin/2 0 $vmargin 0;
   font-size: $small-font;
+  display: flex;
+  li{
+    flex: 1;
+    margin-right: $hmargin/2;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
 }
 .legend-key{
   display: inline-block;
   height: 10px;
   width: 12px;
   margin-right: 5px;
+}
+.legend-label{
+
 }

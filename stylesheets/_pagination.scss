@@ -6,15 +6,6 @@
   }
 }
 .pagination-link{
-  display: block;
-  @include secondary-font;
-  white-space: nowrap;
-  font-size: $medium-font;
-  .pagination &{
-    border: $border-color 1px solid;
-    border-radius: 3px;
-    padding: $vmargin/2 $hmargin;
-  }
 }
 .pagination-previous{
   @include small-medium{

@@ -27,11 +27,9 @@ export default class ChartLegend extends React.Component {
 
   render () {
     return (
-      <div className="legend-wrapper">
-        <ul className="legend">
-          {_.map(this.props.responses, this.renderItem)}
-        </ul>
-      </div>
+      <ul className="legend">
+        {_.map(this.props.responses, this.renderItem)}
+      </ul>
     )
   }
 
