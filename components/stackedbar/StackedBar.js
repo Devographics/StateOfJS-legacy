@@ -3,6 +3,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Filters from './Filters.js'
 import Chart from './Chart.js'
+import ChartLegend from './ChartLegend.js'
 
 export default class StackedBar extends React.Component {
   constructor (props) {
@@ -26,6 +27,7 @@ export default class StackedBar extends React.Component {
       <div className={classNames('chart', 'stacked-chart', filter.toLowerCase(), {percent: showPercent}, {numbers: !showPercent})}>
         <Filters {...this.props} handleToggle={this.handleToggle} />
         <Chart {...this.props} filter={this.props.filter} showPercent={showPercent} handleToggle={this.handleToggle}/>
+        <ChartLegend {...this.props} filter={this.props.filter} />
       </div>
     )
   }

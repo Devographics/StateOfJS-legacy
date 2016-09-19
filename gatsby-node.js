@@ -29,7 +29,7 @@ exports.modifyWebpackConfig = function (config, env) {
 
 exports.postBuild = function (pages, callback) {
   // perform actions on pages here
-  const svgpath = 'public/SVGContainer/index.html'
+  const svgpath = 'public/svgcontainer/index.html'
 
   fs.readFile(svgpath, 'utf8', (err1, data) => {
     if (err1) throw err1
@@ -47,9 +47,6 @@ exports.postBuild = function (pages, callback) {
 
       console.log(`// exporting ${svgId}…`)
 
-      // console.log(svgContents)
-      // console.log($.html('.block-'+i))
-
       // export SVG
 
       fs.exists(svgPath, exists => {
@@ -62,15 +59,15 @@ exports.postBuild = function (pages, callback) {
       // export PNG
 
       // see https://cloudconvert.com/api/convert/svg-to-png
-      // try {
-      //   cloudconvert.convert({
-      //     inputformat: 'svg',
-      //     outputformat: 'png',
-      //     input: 'raw',
-      //     filename: `${svgId}.svg`,
-      //     file: svgContents,
-      //   }).pipe(fs.createWriteStream(pngPath))
-      // } catch (err) { console.log(err) }
+      try {
+        cloudconvert.convert({
+          inputformat: 'svg',
+          outputformat: 'png',
+          input: 'raw',
+          filename: `${svgId}.svg`,
+          file: svgContents,
+        }).pipe(fs.createWriteStream(pngPath))
+      } catch (err) { console.log(err) }
     })
   })
 

@@ -1,3 +1,23 @@
+
+.chart-wrapper{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  @include small{
+    // optional - enable iOS momentum scrolling
+    -webkit-overflow-scrolling: touch;
+    
+    // scrolling shadows
+    background: radial-gradient(ellipse at left, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 0 center,
+                radial-gradient(ellipse at right, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 100% center;
+    background-size: 10px 100%, 10px 100%;
+    background-attachment: scroll, scroll;
+    background-repeat: no-repeat;
+  }
+}
+
+.recharts-surface{
+  overflow: visible !important;
+}
 .chart-block-title{
   margin-top: 0;
 }
@@ -148,4 +168,20 @@ div.satisfaction {
       padding: 0 $hmargin*6;
     }
   }
+}
+
+.legend-wrapper{
+  @include flex-center;
+}
+.legend{
+  list-style: none;
+  padding: 0;
+  margin: $vmargin/2 0;
+  font-size: $small-font;
+}
+.legend-key{
+  display: inline-block;
+  height: 10px;
+  width: 12px;
+  margin-right: 5px;
 }

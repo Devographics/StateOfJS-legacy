@@ -6,8 +6,6 @@ The battle for JavaScript mindshare is often led by front-end frameworks, and th
 
 ..FilterPoint Interest
 
-..Fact Lorem ipsum dolor sit amet
-
 ### Interest
 
 While awareness is pretty much a draw, things start getting interesting when you look at interest. **Angular 2** is still brand new, so in absolute numbers it leads the pack when it comes to technologies people are interested in learning. 

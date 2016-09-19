@@ -21,7 +21,7 @@ const Label = (props) => {
 
   // x coordinate
   const isOffset = percent < 10 || count < 400
-  const xOffset = isOffset ? -45 : 0
+  const xOffset = isOffset ? -40 : 0
   const finalX = x + xOffset
 
   // y coordinate
@@ -62,7 +62,7 @@ const Label = (props) => {
       <text className="label" x={finalX} y={finalY} textAnchor="middle" >
         {label}
       </text>
-      {isOffset ? <line x1={finalX + 12} y1={finalY - 5 + lineYOffset} x2={finalX + 27} y2={calculatedY - 5} stroke="#344c4c" strokeWidth="1"/> : null}
+      {isOffset ? <line x1={finalX + 12} y1={finalY - 5 + lineYOffset} x2={finalX + 20} y2={calculatedY - 5} stroke="#344c4c" strokeWidth="1"/> : null}
     </g>
   )
 }

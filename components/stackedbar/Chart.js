@@ -32,7 +32,14 @@ export default class Chart extends React.Component {
     const customLabel = barNumber => <Label {...this.props} setCoords={setCoords} getCoords={getCoords} currentFilter={filter} showPercent={showPercent} barNumber={barNumber} />
     
     return (
-      <BarChart {...dimensions} className={classNames(filter.toLowerCase(), { percent: showPercent }, { numbers: !showPercent })} data={data} barCategoryGap="30%" margin={ {top: 0, right: 30, left: 30, bottom: 0} } onClick={handleToggle} >
+      <BarChart
+        {...dimensions}
+        className={classNames(filter.toLowerCase(), { percent: showPercent }, { numbers: !showPercent })} 
+        data={data}
+        barCategoryGap="30%"
+        margin={{ top: 0, right: 20, left: 20, bottom: 0 }}
+        onClick={handleToggle}
+      >
         {title ? <text fill="black" x="50%" y="30" textAnchor="middle" >{title}</text> : null}
         <defs>
           {_.map(this.props.responses, (r, i) => 
@@ -83,14 +90,12 @@ export default class Chart extends React.Component {
           fill={this.getFill('neverHeard')}
           label={customLabel(4)}
         />
-        {isExport ? null : <Legend align="left" wrapperStyle={{ bottom: -20 }} />}
-        
       </BarChart>
     )
   }
 
   render () {
-    return this.props.isExport ? this.renderChart() : <ResponsiveContainer minHeight={450}>{this.renderChart()}</ResponsiveContainer>
+    return this.props.isExport ? this.renderChart() : <div className="chart-wrapper"><ResponsiveContainer minWidth={500} aspect={1.5} >{this.renderChart()}</ResponsiveContainer></div>
   }
 
 }

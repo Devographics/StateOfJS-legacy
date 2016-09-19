@@ -21,7 +21,7 @@ export default function PageTitle ({ title, currentSection }) {
     { property: 'og:title', content: title },
     { property: 'og:description', content: description },
     // twitter
-    { name: 'twitter:card', content: 'summary' },
+    { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:image:src', content: image },
     { name: 'twitter:title', content: title },
     { name: 'twitter:description', content: description },
