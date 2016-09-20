@@ -12,18 +12,19 @@ export default function PageTitle ({ title, currentSection }) {
 
   const image = `http://stateofjs.com/exports/png/${currentSection}-stacked.png`
   const url = `http://stateofjs.com/2016/${currentSection}/`
-  const description = title
+  const metaTitle = `State Of JavaScript Survey Results: ${title}`
+  const description = `Find out which JavaScript tools and frameworks are the most popular.`
   const meta = [
     // facebook
     { property: 'og:type', content: 'article' },
     { property: 'og:url', content: url },
     { property: 'og:image', content: image },
-    { property: 'og:title', content: title },
+    { property: 'og:title', content: metaTitle },
     { property: 'og:description', content: description },
     // twitter
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:image:src', content: image },
-    { name: 'twitter:title', content: title },
+    { name: 'twitter:title', content: metaTitle },
     { name: 'twitter:description', content: description },
   ]
 

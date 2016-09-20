@@ -79,7 +79,16 @@ class StackedBlock extends React.Component {
         <div className="section-inner">
           <StickyContainer className="sticky-container">
             <Sticky className="sticky">
-              <StackedBar identifier="Option" title={this.props.title} data={this.props.data} responses={RESPONSES} filters={FILTERS} filter={this.state.filter} handleSelect={this.handleSelect} />
+              <StackedBar
+                identifier="Option"
+                title={this.props.title}
+                data={this.props.data}
+                responses={RESPONSES}
+                filters={FILTERS}
+                filter={this.state.filter}
+                handleSelect={this.handleSelect}
+                section={this.props.section}
+              />
             </Sticky>
           </StickyContainer>
           <div className="section-contents">
@@ -93,6 +102,7 @@ class StackedBlock extends React.Component {
 
 StackedBlock.propTypes = {
   title: React.PropTypes.string,
+  section: React.PropTypes.string,
   contents: React.PropTypes.func,
   data: React.PropTypes.array,
 }

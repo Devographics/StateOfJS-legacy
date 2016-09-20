@@ -1,6 +1,7 @@
 import React from 'react'
 import _, { includes } from 'lodash'
 import classNames from 'classnames'
+import Sections from '../../data/sections.yaml'
 
 const Twitter = ({text}) => {
   return (
@@ -62,16 +63,24 @@ export default class ShareChart extends React.Component {
   }
 
   render () {
+    const sectionIndex = _.findIndex(Sections, { slug: this.props.section })
+    const section = Sections[sectionIndex]
+
+    const link = `http://stateofjs.com/2016/${this.props.section}/`
+    const twitterText = `State Of JavaScript Survey Results: ${section.name} ${link} #stateofjs`
+    const subject = `State Of JavaScript Survey Results`
+    const body = `Here are some interesting survey results about ${section.name}: ${link}`
+
     return (
-      <div className={classNames('share-wrapper', {'share-popup-visible': this.state.showOptions})}>
+      <div className={classNames('share-wrapper', { 'share-popup-visible': this.state.showOptions })}>
         <div className="share">
           <a className="share-button button" onClick={this.toggleOptions}>Share This Chart</a>
         </div>
         <div className="share-popup">
           <div className="share-options">
-            <Twitter text="The State Of JavaScript: take a short survey about popular JavaScript technologies http://stateofjs.com #stateofjs"/>
-            <Facebook link="http://stateofjs.com"/>
-            <Email subject="The State Of JavaScript" body="Here's a short survey you can take about popular JavaScript technologies: http://stateofjs.com"/>
+            <Twitter text={twitterText} />
+            <Facebook link={link} />
+            <Email subject={subject} body={body} />
           </div>
         </div>
       </div>
@@ -81,4 +90,5 @@ export default class ShareChart extends React.Component {
 }
 
 ShareChart.propTypes = {
+  section: React.PropTypes.string,
 }

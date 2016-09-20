@@ -21,13 +21,13 @@ const Flavors = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle title={title} currentSection={section} />
-      <StackedBlock data={parseCSV(flavors)} contents={Dummy} title="JavaScript Flavors" />
+      <StackedBlock data={parseCSV(flavors)} contents={Dummy} title="JavaScript Flavors" section={section} />
       <HorizontalBlock data={parseCSV(flavorsHappiness)} contents={Dummy} title="On a scale of 1 to 5, how happy are you with your current JavaScript flavor of choice?" />
       <SectionHeatmapBlock
         rows={items}
         contents={Dummy}
         title="Heatmap"
-        chartTitle="How likely are JavaScript flavor users to also want to use other technologies?"
+        chartTitle="How likely are JavaScript flavor users to also use other technologies?"
       />
       <Pagination currentSection={section} />
     </div>

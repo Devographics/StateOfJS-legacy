@@ -23,14 +23,14 @@ const StateManagement = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle title={title} currentSection={section} />
-      <StackedBlock data={parseCSV(stacked)} contents={Dummy} />
-      <VerticalBlock data={parseCSV(other)} contents={Dummy} title="Other State Management Frameworks (Mentions)" />
-      <HorizontalBlock data={parseCSV(happiness)} contents={Dummy} title="On a scale of 1 to 5, how happy are you with your current solution for state management?" />
+      <StackedBlock data={parseCSV(stacked)} contents={Dummy} section={section} />
       <SectionHeatmapBlock
         rows={items}
         contents={Dummy}
-        title="How likely are state management library users to also want to use other technologies?"
+        title="How likely are state management library users to also use other technologies?"
       />
+      <VerticalBlock data={parseCSV(other)} contents={Dummy} title="Other State Management Frameworks (Mentions)" />
+      <HorizontalBlock data={parseCSV(happiness)} contents={Dummy} title="On a scale of 1 to 5, how happy are you with your current solution for state management?" />
       <Pagination currentSection="statemanagement" />
     </div>
   </DocumentTitle>

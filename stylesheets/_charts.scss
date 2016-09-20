@@ -200,3 +200,10 @@ div.satisfaction {
 .legend-label{
 
 }
+
+.svg-block{
+  margin-bottom: $vmargin*2;
+  .recharts-wrapper>svg{
+    border: 1px solid $border-color;
+  }
+}

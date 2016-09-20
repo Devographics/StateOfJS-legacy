@@ -24,13 +24,13 @@ const API = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle title={title} currentSection={section} />
-      <StackedBlock data={parseCSV(api)} contents={Dummy} />
+      <StackedBlock data={parseCSV(api)} contents={Dummy} section={section} />
       <VerticalBlock data={parseCSV(apiOther)} contents={Dummy} title="Other API Layers (Mentions)" />
       <HorizontalBlock data={parseCSV(apiHappiness)} contents={Dummy} title="On a scale of 1 to 5, how happy are you with your current API layer solution?" />
       <SectionHeatmapBlock
         rows={items}
         contents={Dummy}
-        title="How likely are API layer users to also want to use other technologies?"
+        title="How likely are API layer users to also use other technologies?"
       />
       <Pagination currentSection="api" />
     </div>

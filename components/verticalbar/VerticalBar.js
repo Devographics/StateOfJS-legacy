@@ -9,7 +9,7 @@ export default class VerticalBar extends React.Component {
     super(props)
     this.handleToggle = this.handleToggle.bind(this)
     this.state = {
-      showPercent: true,
+      showPercent: false,
     }
   }
 
@@ -24,7 +24,7 @@ export default class VerticalBar extends React.Component {
 
     return (
       <div className={classNames('chart', 'vertical-chart', {percent: showPercent}, {numbers: !showPercent})}>
-        <Filters handleToggle={this.handleToggle} />
+        {/* <Filters handleToggle={this.handleToggle} /> */}
         <Chart {...this.props} showPercent={showPercent} />
       </div>
     )

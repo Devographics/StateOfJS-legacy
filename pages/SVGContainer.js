@@ -36,7 +36,7 @@ const SVGContainer = () =>
     {_.map(sections, (section, key) => {
       return (
       <div key={key} className="svg-block" id={`${key}-stacked`}>
-        <StackedChart data={parseCSV(section)} showPercent responses={RESPONSES} filter="All" title={_.find(Sections, s => s.slug === key).name} isExport />
+        <StackedChart data={parseCSV(section)} section={key} identifier="Option" showPercent responses={RESPONSES} filter="All" title={_.find(Sections, s => s.slug === key).name} isExport />
       </div>
       )}
     )}

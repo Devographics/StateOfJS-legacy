@@ -24,13 +24,13 @@ const Testing = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle title={title} currentSection={section} />
-      <StackedBlock data={parseCSV(testing)} contents={TestingContents} />
+      <StackedBlock data={parseCSV(testing)} contents={TestingContents} section={section} />
       <VerticalBlock data={parseCSV(testingOther)} contents={Dummy} title="Other Testing Tools" />
       <HorizontalBlock data={parseCSV(testingHappiness)} contents={Dummy} title="On a scale of 1 to 5, how happy are you with your current testing solution?" />
       <SectionHeatmapBlock
         rows={items}
         contents={Dummy}
-        title="How likely are testing framework users to also want to use other technologies?"
+        title="How likely are testing framework users to also use other technologies?"
       />
       <Pagination currentSection={section} />
     </div>

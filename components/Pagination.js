@@ -6,7 +6,7 @@ import classNames from 'classnames'
 import Sections from '../data/sections.yaml'
 
 export default function Pagination ({ currentSection, position }) {
-  const currentSectionIndex = _.findIndex(Sections, { slug: currentSection });
+  const currentSectionIndex = _.findIndex(Sections, { slug: currentSection })
   const previousSection = Sections[currentSectionIndex - 1]
   const nextSection = Sections[currentSectionIndex + 1]
   return (

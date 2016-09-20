@@ -2,10 +2,16 @@ import React from 'react'
 import _, { includes } from 'lodash'
 // import DocumentTitle from 'react-document-title'
 import { ResponsiveContainer, BarChart, Bar, XAxis, Tooltip, Legend } from 'recharts'
-import Label from './Label.js'
 import classNames from 'classnames'
 
+import Label from './Label.js'
+
 export default class Chart extends React.Component {
+
+  constructor () {
+    super()
+    this.renderLegendItem = this.renderLegendItem.bind(this)
+  }
 
   // get the fill color for a given response according to the current active filter
   getFill (responseName) {
@@ -18,9 +24,43 @@ export default class Chart extends React.Component {
     return this.props.responses[responseName].string
   }
 
+  renderTitle () {
+    return <text fill="black" x="50%" y="50" textAnchor="middle" style={{ fontSize: 24 }}>{this.props.title}</text> 
+  }
+
+  renderLegendItem ({ order, string }, key) {
+    const width = (900 - (6*20))/5
+    const x = ((order - 1) * width) + (order * 20)
+    const fill = this.getFill(key)
+
+    const comma = string.indexOf(',') === -1 ? '': ','
+    const line1 = string.split(',')[0]+comma
+    const line2 = string.split(',')[1]
+    return (
+      <svg className="legend-svg-item" key={key} width={width} x={x} y="50" style={{ overflow: "visible" }} >
+        <rect x={0} y={7} width="12" height="10" fill={fill} />
+        <text x={0} y={0} fill="#344c4c" textAnchor="start" style={{ fontSize: 14 }}>
+          <tspan x="18" dy="1.2em">{line1}</tspan>
+          <tspan x="18" dy="1.2em">{line2}</tspan>
+        </text> 
+      </svg>
+    )
+  }
+
+  renderLegend () {
+    return (
+      <svg className="legend-svg" x={0} y="77%">
+        {_.map(this.props.responses, this.renderLegendItem)}
+      </svg>
+    )
+  }
+
   renderChart () {
     const { title, data, identifier, filter, showPercent, handleToggle, isExport } = this.props
-    const dimensions = isExport ? {height: 600, width: 900} : {}
+    const dimensions = isExport ? {height: 450, width: 900} : {}
+    const margins = isExport ? { top: 70, right: 20, left: 20, bottom: 70 } : { top: 0, right: 0, left: 0, bottom: 0 }
+    const style = isExport ? { backgroundColor: "#fffef0" } : {}
+    const barProps = isExport ? { barSize: 50 } : {}
     // create getter and setter to let labels access each other's coordinates
     const bars = 5
     const columns = data.length
@@ -41,10 +81,12 @@ export default class Chart extends React.Component {
         className={classNames(filter.toLowerCase(), { percent: showPercent }, { numbers: !showPercent })} 
         data={data}
         barCategoryGap="30%"
-        margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
+        margin={margins}
         onClick={handleToggle}
+        style={style}
       >
-        {title ? <text fill="black" x="50%" y="30" textAnchor="middle" >{title}</text> : null}
+        {isExport ? this.renderTitle() : null}
+        {isExport ? this.renderLegend() : null}
         <defs>
           {_.map(this.props.responses, (r, i) => 
             <pattern key={i} id={`p${r.offColor.replace('#', '')}`} patternUnits="userSpaceOnUse" width="10" height="10">
@@ -61,6 +103,7 @@ export default class Chart extends React.Component {
           stackId="a"
           fill={this.getFill('useAgain')}
           label={customLabel(0)}
+          {...barProps}
         />
         <Bar
           className="not-use-again"

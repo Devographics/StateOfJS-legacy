@@ -6,6 +6,10 @@
   }
 }
 .pagination-link{
+  display: block;
+  @include secondary-font;
+  white-space: nowrap;
+  font-size: $medium-font;
 }
 .pagination-previous{
   @include small-medium{

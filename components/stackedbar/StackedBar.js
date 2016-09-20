@@ -29,7 +29,7 @@ export default class StackedBar extends React.Component {
         <Filters {...this.props} handleToggle={this.handleToggle} />
         <Chart {...this.props} filter={this.props.filter} showPercent={showPercent} handleToggle={this.handleToggle}/>
         <ChartLegend {...this.props} filter={this.props.filter} />
-        <ShareChart />
+        <ShareChart {...this.props} />
       </div>
     )
   }

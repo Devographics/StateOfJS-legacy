@@ -28,14 +28,14 @@ const Frontend = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle title={title} currentSection={section} />
-      <StackedBlock data={parseCSV(frontend)} contents={results} />
-      <VerticalBlock data={parseCSV(frontendOther)} contents={other} title="Other Front-End Frameworks (Mentions)" chartTitle="Other Front-end Frameworks" />
-      <HorizontalBlock data={parseCSV(frontendHappiness)} contents={happiness} title="On a scale of 1 to 5, how happy are you with your current solution for the front-end?" />
+      <StackedBlock data={parseCSV(frontend)} contents={results} section={section} />
       <SectionHeatmapBlock
         rows={items}
         contents={heatmap}
-        title="How likely are front-end framework users to also want to use other technologies?"
+        title="How likely are front-end framework users to also use other technologies?"
       />
+      <VerticalBlock data={parseCSV(frontendOther)} contents={other} title="Other Front-End Frameworks (Mentions)" chartTitle="Other Front-end Frameworks" />
+      <HorizontalBlock data={parseCSV(frontendHappiness)} contents={happiness} title="On a scale of 1 to 5, how happy are you with your current solution for the front-end?" />
       <Pagination currentSection="frontend" />
     </div>
   </DocumentTitle>

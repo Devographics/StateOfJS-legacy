@@ -41,6 +41,8 @@ exports.postBuild = function (pages, callback) {
     // iterate over SVG blocks
     svgs.each((i, svg) => {
       const svgId = $(svg).attr('id')
+      // insert background color rect
+      $(svg).find('.recharts-surface').prepend('<rect x="0" y="0" width="100%" height="100%" fill="#fffef0" />')
       const svgContents = $(svg).find('.recharts-wrapper').html()
       const svgPath = `public/exports/svg/${svgId}.svg`
       const pngPath = `public/exports/png/${svgId}.png`
