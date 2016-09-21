@@ -11,7 +11,7 @@ const PlaySVG = () => (
   </svg>
 )
 
-const ResourcesBlock = ({ section }) => {
+const ResourcesBlock = ({ section, sponsor }) => {
 
   const sectionResources = _.filter(resources, r => r.section === section)
 
@@ -20,7 +20,7 @@ const ResourcesBlock = ({ section }) => {
       <div className="section-contents-wide resources">
         <div className="resources-title">
           <h2>Recommended Resources</h2>
-          <span className="resources-sponsor">Presented by <a href="http://egghead.io">Egghead.io</a></span>
+          <span className="resources-sponsor">Presented by {sponsor}</span>
         </div>
         <div className="resources-list">
           {_.map(sectionResources, resource =>
@@ -39,7 +39,7 @@ const ResourcesBlock = ({ section }) => {
             </div>
           )}
         </div>
-        <div className="resources-sponsored">Thanks to our partner <a href="http://egghead.io">Egghead.io</a> for supporting this project. Check them out for more awesome programming courses!</div>
+        <div className="resources-sponsored">Thanks to our partners for supporting this project. Check them out for more awesome programming courses!</div>
       </div>
     </div>
   )
