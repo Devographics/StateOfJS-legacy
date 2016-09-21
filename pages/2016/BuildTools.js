@@ -24,13 +24,13 @@ const BuildTools = () =>
     <div className="results-container">
       <PageTitle title={title} currentSection={section} />
       <StackedBlock data={parseCSV(stacked)} contents={Dummy} section={section} />
-      <VerticalBlock data={parseCSV(other)} contents={Dummy} title="Other Build Tools" />
-      <HorizontalBlock data={parseCSV(happiness)} contents={Dummy} title="On a scale of 1 to 5, how happy are you with your current build tools?" />
       <SectionHeatmapBlock
         rows={items}
         contents={Dummy}
         title="How likely are build tool users to also use other technologies?"
       />
+      <VerticalBlock data={parseCSV(other)} contents={Dummy} title="Other Build Tools" />
+      <HorizontalBlock data={parseCSV(happiness)} contents={Dummy} title="On a scale of 1 to 5, how happy are you with your current build tools?" />
       <Pagination currentSection={section} />
     </div>
   </DocumentTitle>

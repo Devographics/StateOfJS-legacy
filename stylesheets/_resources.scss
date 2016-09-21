@@ -1,0 +1,88 @@
+.resources{
+
+}
+.resources-title{
+  @include medium-large{
+    @include flex-center;
+    justify-content: space-between;
+  }
+  margin-bottom: $vmargin/2;
+  h2{
+    margin: 0;
+  }
+}
+.resources-sponsor{
+  color: $lighter-text-color;
+  @include secondary-font;
+}
+.resources-list{
+}
+.resource{
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  background: white;
+  margin-bottom: $vmargin/2;
+  padding: $vmargin $hmargin;
+  @include medium-large{
+    @include flex-center;
+  }
+}
+.resource-image{
+  @include crosshatchBg;
+  @include small{
+    width: 60px;
+    float: right;
+    margin: 0 0 $vmargin $hmargin;
+  }
+  @include medium-large{
+    width: 80px;
+    margin-right: $hmargin;
+  }
+  div {
+    position: relative;
+    z-index: 10;
+    border: 2px solid $border-color;
+  }
+  img, svg{
+    display: block;
+    width: 100%;
+    border: 3px solid white;
+    position: relative;
+  }
+}
+.resource-contents{
+  flex: 1;
+}
+.resource-title{
+  margin-bottom: $vmargin/4;
+}
+.resource-author{
+  margin-bottom: $vmargin/4;
+}
+.resource-description{
+  font-size: $medium-font;
+}
+.resource-play{
+  @include small{
+    display: none;
+  }
+  margin-left: $hmargin/2;
+  a{
+    display: block;
+    height: 70px;
+    width: 70px;
+  }
+  svg{
+    width: 100%;
+    fill: $grey;
+  }
+  a:hover svg{
+    fill: $pink;
+  }
+}
+.resources-sponsored{
+  color: $lighter-text-color;
+  font-size: $smaller-font;
+  text-align: center;
+  @include secondary-font;
+}

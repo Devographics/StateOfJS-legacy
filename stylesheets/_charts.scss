@@ -65,14 +65,17 @@
   }
 }
 .filter{
-  font-size: $small-font;
   @include flex-center;
   justify-content: center;
   @include small{
     flex-direction: column;
+    font-size: $smaller-font;
   }
   @include small-medium{
     margin-bottom: $vmargin/2;
+  }
+  @include medium-large{
+    font-size: $small-font;
   }
   @include large{
     margin-right: $hmargin;
@@ -183,6 +186,9 @@ div.satisfaction {
   margin: $vmargin/2 0 $vmargin 0;
   font-size: $small-font;
   display: flex;
+  @include small{
+    flex-direction: column;
+  }
   li{
     flex: 1;
     margin-right: $hmargin/2;

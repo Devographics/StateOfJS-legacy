@@ -20,6 +20,11 @@ export default class Chart extends React.Component {
     return includes(response.filters, this.props.filter) ? response.onColor : `url(#p${response.offColor.replace('#','')})`
   }
 
+  // if a filter is enabled, set all
+  getData () {
+    return this.props.data
+  }
+
   getString (responseName) {
     return this.props.responses[responseName].string
   }
@@ -56,11 +61,20 @@ export default class Chart extends React.Component {
   }
 
   renderChart () {
-    const { title, data, identifier, filter, showPercent, handleToggle, isExport } = this.props
-    const dimensions = isExport ? {height: 450, width: 900} : {}
+    const { data, identifier, filter, showPercent, handleToggle, isExport } = this.props
+    const dimensions = isExport ? { height: 450, width: 900 } : {}
     const margins = isExport ? { top: 70, right: 20, left: 20, bottom: 70 } : { top: 0, right: 0, left: 0, bottom: 0 }
-    const style = isExport ? { backgroundColor: "#fffef0" } : {}
-    const barProps = isExport ? { barSize: 50 } : {}
+    const style = isExport ? { backgroundColor: '#fffef0' } : {}
+    const barProps = {}
+
+    const finalData = this.getData(data, filter)
+
+    // if this is the export mode; or if there are 4 bars or fewer,
+    // then fix width at 50
+    if (isExport || this.props.data.length <= 4) {
+      barProps.barSize = 50
+    }
+
     // create getter and setter to let labels access each other's coordinates
     const bars = 5
     const columns = data.length

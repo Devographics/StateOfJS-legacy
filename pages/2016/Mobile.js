@@ -24,14 +24,14 @@ const Mobile = () =>
     <div className="results-container">
       <PageTitle title={title} currentSection={section} />
       <StackedBlock data={parseCSV(mobile)} contents={Dummy} title="Mobile Frameworks" section={section} />
-      <VerticalBlock data={parseCSV(mobileOther)} contents={Dummy} title="Other Mobile Frameworks" />
-      <HorizontalBlock data={parseCSV(mobileHappiness)} contents={Dummy} title="Happiness" />
       <SectionHeatmapBlock
         rows={items}
         contents={Dummy}
         title="Heatmap"
         chartTitle="How likely is a mobile framework user to also use other technologies?"
       />
+      <VerticalBlock data={parseCSV(mobileOther)} contents={Dummy} title="Other Mobile Frameworks" />
+      <HorizontalBlock data={parseCSV(mobileHappiness)} contents={Dummy} title="Happiness" />
       <Pagination currentSection={section} />
     </div>
   </DocumentTitle>

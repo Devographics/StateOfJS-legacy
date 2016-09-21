@@ -5,7 +5,12 @@
   cursor: pointer;
   display: block;
   @include secondary-font;
-  font-size: $medium-font;
+  @include small{
+    font-size: $small-font;
+  }
+  @include medium-large{
+    font-size: $medium-font;
+  }
   white-space: nowrap;
   &:hover{
     background: $pink;

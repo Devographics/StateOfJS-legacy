@@ -9,7 +9,12 @@
   display: block;
   @include secondary-font;
   white-space: nowrap;
-  font-size: $medium-font;
+  @include small{
+    font-size: $small-font;
+  }
+  @include medium-large{
+    font-size: $medium-font;
+  }
 }
 .pagination-previous{
   @include small-medium{

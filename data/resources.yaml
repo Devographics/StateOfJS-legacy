@@ -1,0 +1,14 @@
+- name: Getting Started with Redux
+  section: statemanagement
+  url: https://egghead.io/courses/getting-started-with-redux
+  description: Learn the basics of Redux, so that you can start using it to simplify your applications.
+  image: https://d2eip9sf3oo6c2.cloudfront.net/series/covers/000/000/025/full/EGH_Redux-New-cover.png?1461772196
+  author: Dan Abramov
+  avatar: https://d2eip9sf3oo6c2.cloudfront.net/instructors/avatars/000/000/032/medium/9VsY9i09.jpeg
+- name: Manage Complex State in React Apps with MobX
+  section: statemanagement
+  url: https://egghead.io/courses/manage-complex-state-in-react-apps-with-mobx
+  description: MobX is designed to enable building web applications with a complex data model in an intuitive and very performant manner.
+  image: https://d2eip9sf3oo6c2.cloudfront.net/series/covers/000/000/058/full/learn-react-mobx-tutorial.png?1469037353
+  author: Michel Weststrate
+  avatar: https://d2eip9sf3oo6c2.cloudfront.net/instructors/avatars/000/000/071/medium/avatar.jpg

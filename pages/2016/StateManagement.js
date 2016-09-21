@@ -6,6 +6,7 @@ import StackedBlock from '../../components/blocks/StackedBlock.js'
 import VerticalBlock from '../../components/blocks/VerticalBlock.js'
 import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
 import SectionHeatmapBlock from '../../components/blocks/SectionHeatmapBlock.js'
+import ResourcesBlock from '../../components/blocks/ResourcesBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
 
@@ -29,6 +30,7 @@ const StateManagement = () =>
         contents={Dummy}
         title="How likely are state management library users to also use other technologies?"
       />
+      <ResourcesBlock section={section} />
       <VerticalBlock data={parseCSV(other)} contents={Dummy} title="Other State Management Frameworks (Mentions)" />
       <HorizontalBlock data={parseCSV(happiness)} contents={Dummy} title="On a scale of 1 to 5, how happy are you with your current solution for state management?" />
       <Pagination currentSection="statemanagement" />
