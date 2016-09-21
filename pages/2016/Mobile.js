@@ -6,6 +6,7 @@ import StackedBlock from '../../components/blocks/StackedBlock.js'
 import VerticalBlock from '../../components/blocks/VerticalBlock.js'
 import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
 import SectionHeatmapBlock from '../../components/blocks/SectionHeatmapBlock.js'
+import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
 
@@ -22,8 +23,8 @@ const items = ['Native Apps', 'React Native', 'Cordova', 'PhoneGap', 'NativeScri
 const Mobile = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
-      <PageTitle title={title} currentSection={section} />
-      <StackedBlock data={parseCSV(mobile)} contents={Dummy} title="Mobile Frameworks" section={section} />
+      <PageTitle section={section} />
+      <StackedBlock data={parseCSV(mobile)} contents={Dummy} section={section} />
       <SectionHeatmapBlock
         rows={items}
         contents={Dummy}
@@ -32,6 +33,7 @@ const Mobile = () =>
       />
       <VerticalBlock data={parseCSV(mobileOther)} contents={Dummy} title="Other Mobile Frameworks" />
       <HorizontalBlock data={parseCSV(mobileHappiness)} contents={Dummy} title="Happiness" />
+      <AuthorBlock section={section} />
       <Pagination currentSection={section} />
     </div>
   </DocumentTitle>

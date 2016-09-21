@@ -1,42 +1,42 @@
 - name: Introduction
   slug: introduction
-  author: Sacha Greif
+  author: sacha
 - name: JavaScript Flavors
   slug: flavors
-  author: Sacha Greif
+  author: sacha
 - name: Front-end Frameworks
   slug: frontend
-  author: Sacha Greif
+  author: sacha
 - name: State Management
   slug: statemanagement
-  author: Tom Coleman
+  author: tom
 - name: API Layers
   slug: api
-  author: Abhi Ayier
+  author: sacha
 - name: Full-stack Frameworks
   slug: fullstack
-  author: Josh Owens
+  author: josh
 - name: Testing Frameworks
   slug: testing
-  author: Michael Shilman
+  author: michael
 - name: CSS Tools
   slug: css
-  author: Arunoda Susiripala
+  author: arunoda
 - name: Build Tools
   slug: buildtools
-  author: Wes Bos
+  author: sacha
 - name: Mobile Frameworks
   slug: mobile
-  author: Bonnie Eisenman
+  author: josh
 - name: Features
   slug: features
-  author: Sacha Greif
+  author: sacha
 - name: Opinions
   slug: opinions
-  author: Sacha Greif
+  author: sacha
 - name: Developer Profiles
   slug: profiles
-  author: Sacha Greif
+  author: sacha
 - name: Conclusion
   slug: conclusion
-  author: Sacha Greif
+  author: sacha

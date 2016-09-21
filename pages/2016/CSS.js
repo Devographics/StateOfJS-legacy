@@ -6,7 +6,7 @@ import StackedBlock from '../../components/blocks/StackedBlock.js'
 import VerticalBlock from '../../components/blocks/VerticalBlock.js'
 import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
 import SectionHeatmapBlock from '../../components/blocks/SectionHeatmapBlock.js'
-import TextBlock from '../../components/blocks/TextBlock.js'
+import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
 
@@ -26,7 +26,7 @@ const items = ['Plain CSS', 'SASS/SCSS', 'LESS', 'CSS Modules', 'Aphrodite']
 const CSS = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
-      <PageTitle title={title} currentSection={section} />
+      <PageTitle section={section} />
       <StackedBlock data={parseCSV(stacked)} contents={resultsContents} section={section} />
       <SectionHeatmapBlock
         rows={items}
@@ -35,7 +35,8 @@ const CSS = () =>
       />
       <VerticalBlock data={parseCSV(other)} contents={otherContents} title="Other CSS Tools" />
       <HorizontalBlock data={parseCSV(happiness)} contents={happinessContents} title="On a scale of 1 to 5, how happy are you with your current CSS solution?" />
-      <Pagination currentSection={section} />
+      <AuthorBlock section={section} />
+      <Pagination section={section} />
     </div>
   </DocumentTitle>
 

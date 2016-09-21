@@ -7,6 +7,7 @@ import VerticalBlock from '../../components/blocks/VerticalBlock.js'
 import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
 import SectionHeatmapBlock from '../../components/blocks/SectionHeatmapBlock.js'
 import ResourcesBlock from '../../components/blocks/ResourcesBlock.js'
+import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
 
@@ -23,17 +24,18 @@ const items = ['Redux', 'MobX', 'Relay']
 const StateManagement = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
-      <PageTitle title={title} currentSection={section} />
+      <PageTitle section={section} />
       <StackedBlock data={parseCSV(stacked)} contents={Dummy} section={section} />
       <SectionHeatmapBlock
         rows={items}
         contents={Dummy}
         title="How likely are state management library users to also use other technologies?"
       />
-      <ResourcesBlock section={section} sponsor={<a href="https://egghead.io">Egghead.io</a>} />
+      <ResourcesBlock section={section} sponsor={<a href="https://egghead.io"><img src="https://d1xwtr0qwr70yv.cloudfront.net/assets/elements/logo-mobile-0012236aa1a9766db6b0cc9705df19ec.svg" />egghead.io</a>} />
       <VerticalBlock data={parseCSV(other)} contents={Dummy} title="Other State Management Frameworks (Mentions)" />
       <HorizontalBlock data={parseCSV(happiness)} contents={Dummy} title="On a scale of 1 to 5, how happy are you with your current solution for state management?" />
-      <Pagination currentSection="statemanagement" />
+      <AuthorBlock section={section} />
+      <Pagination section="statemanagement" />
     </div>
   </DocumentTitle>
 

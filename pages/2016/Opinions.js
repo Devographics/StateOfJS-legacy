@@ -8,6 +8,7 @@ import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
 import TextBlock from '../../components/blocks/TextBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
+import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 
 import opinions from '../../data/opinions/opinions.csv'
 
@@ -37,7 +38,7 @@ const title = 'Opinions'
 const Opinions = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
-      <PageTitle title={title} currentSection={section} />
+      <PageTitle section={section} />
       <TextBlock contents={OpinionsIntro} />
       {opinions.map(opinion => {
         const opinionTitle = opinion.Option
@@ -54,7 +55,8 @@ const Opinions = () =>
           />
         )
       })}
-      <Pagination currentSection={section} />
+      <AuthorBlock section={section} />
+      <Pagination section={section} />
     </div>
   </DocumentTitle>
 

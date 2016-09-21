@@ -9,6 +9,7 @@ import VerticalBlock from '../../components/blocks/VerticalBlock.js'
 import TextBlock from '../../components/blocks/TextBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
+import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 
 import features from '../../data/features/features.csv'
 import featuresScores from '../../data/features/featuresScores.csv'
@@ -43,7 +44,7 @@ const title = 'Features'
 const Features = () =>
   <DocumentTitle title="Features">
     <div className="results-container">
-      <PageTitle title={title} currentSection={section} />
+      <PageTitle section={section} />
       <TextBlock contents={FeaturesIntro} />
       {features.map(feature => {
         const featureTitle = feature.Option
@@ -66,7 +67,8 @@ const Features = () =>
       })}
       <VerticalBlock data={parseCSV(featuresScores)} contents={HighestRated} title="Highest-Rated Features" />
       <TextBlock contents={OtherFeatures} title="Other Features" />
-      <Pagination currentSection="features" />
+      <AuthorBlock section={section} />
+      <Pagination section="features" />
     </div>
   </DocumentTitle>
 

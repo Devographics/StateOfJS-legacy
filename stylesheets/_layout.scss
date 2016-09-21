@@ -10,47 +10,6 @@
   }
 }
 
-.page-title{
-  margin: 0 0 $vmargin*3 0;
-  // box-shadow: 10px 10px 0 0 $grey;
-  position: relative;
-  border: 1px solid $border-color;
-  .inner{
-    padding: $vmargin $hmargin;
-    background: $beige;
-    display: block;
-    z-index: 10;
-    position: relative;
-    @include large{
-      @include flex-center;
-      justify-content: space-between;
-    }
-  }
-  @include crosshatchBg;
-  h1{
-    text-align: center;
-    margin: 0;
-    line-height: 1;
-    @include small-medium{
-      font-size: $large-font;
-      margin-bottom: $vmargin/2;
-    }
-    @include large{
-      font-size: $largest-font;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-  .spacer{
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 250px;
-    /* shorthand would be: flex: 1 1 250px; */
-    visibility: hidden;
-  }
-}
-
 .section{
   @include small{
     margin-bottom: $vmargin*2;
@@ -59,7 +18,7 @@
     margin-bottom: $vmargin*4;
   }
   @include large{
-    margin-bottom: $vmargin*6;
+    margin-bottom: $vmargin*4;
   }
   .section-inner{
     @include large{

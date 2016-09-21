@@ -4,15 +4,18 @@ import { Link } from 'react-router'
 import Helmet from 'react-helmet'
 
 import Sections from '../data/sections.yaml'
+import Authors from '../data/authors.yaml'
 
-export default function PageTitle ({ title, currentSection }) {
-  const currentSectionIndex = _.findIndex(Sections, { slug: currentSection })
+export default function PageTitle ({ section }) {
+  const currentSectionIndex = _.findIndex(Sections, { slug: section })
+  const currentSection = Sections[currentSectionIndex]
   const previousSection = Sections[currentSectionIndex - 1]
   const nextSection = Sections[currentSectionIndex + 1]
-
+  const author = _.find(Authors, { slug: currentSection.author })
+  
   const image = `http://stateofjs.com/exports/png/${currentSection}-stacked.png`
   const url = `http://stateofjs.com/2016/${currentSection}/`
-  const metaTitle = `State Of JavaScript Survey Results: ${title}`
+  const metaTitle = `State Of JavaScript Survey Results: ${currentSection.title}`
   const description = `Find out which JavaScript tools and frameworks are the most popular.`
   const meta = [
     // facebook
@@ -33,7 +36,14 @@ export default function PageTitle ({ title, currentSection }) {
       <Helmet meta={meta} />
       <div className="inner">
         {previousSection ? <Link className="pagination-link pagination-previous" to={`/2016/${previousSection.slug}/`} >&lt;&lt; {previousSection.name}</Link> : <span />}
-        <h1>{title}</h1>
+        <div className="page-title-contents">
+          <h1 className="page-title-main">{currentSection.name}</h1>
+          <h4 className="page-title-author">
+            <span className="by">by</span>
+            <img className="page-title-avatar" src={author.avatar} />
+            <a href={author.url}>{author.name}</a>
+          </h4>
+        </div>
         <span className="spacer" />
         {nextSection ? <Link className="pagination-link pagination-next" to={`/2016/${nextSection.slug}/`} >{nextSection.name} &gt;&gt;</Link> : <span />}
       </div>
@@ -43,5 +53,5 @@ export default function PageTitle ({ title, currentSection }) {
 
 PageTitle.propTypes = {
   title: React.PropTypes.string,
-  currentSection: React.PropTypes.string,
+  section: React.PropTypes.string,
 }

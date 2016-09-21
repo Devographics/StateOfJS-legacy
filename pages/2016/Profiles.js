@@ -7,6 +7,7 @@ import parseCSV from '../../helpers/parseCSV.js'
 import VerticalBlock from '../../components/blocks/VerticalBlock.js'
 import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
 // import HeatmapBlock from '../../components/blocks/HeatmapBlock.js'
+import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
 
@@ -28,7 +29,7 @@ const title = 'Developer Profiles'
 const Profiles = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
-      <PageTitle title={title} currentSection={section} />
+      <PageTitle section={section} />
       <HorizontalBlock
         data={parseCSV(experienceData)}
         contents={experience}
@@ -44,6 +45,7 @@ const Profiles = () =>
         contents={textEditors}
         title="Favorite Text Editor" 
       />
+      <AuthorBlock section={section} />
       <Pagination currentSection="profiles" />
     </div>
   </DocumentTitle>

@@ -7,6 +7,7 @@ import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
 import SectionHeatmapBlock from '../../components/blocks/SectionHeatmapBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
+import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 
 import flavors from '../../data/flavors/results.csv'
 import flavorsHappiness from '../../data/flavors/happiness.csv'
@@ -20,7 +21,7 @@ const items = ['Plain JavaScript', 'ES6', 'CoffeeScript', 'TypeScript', 'Elm', '
 const Flavors = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
-      <PageTitle title={title} currentSection={section} />
+      <PageTitle section={section} />
       <StackedBlock data={parseCSV(flavors)} contents={Dummy} title="JavaScript Flavors" section={section} />
       <SectionHeatmapBlock
         rows={items}
@@ -29,7 +30,8 @@ const Flavors = () =>
         chartTitle="How likely are JavaScript flavor users to also use other technologies?"
       />
       <HorizontalBlock data={parseCSV(flavorsHappiness)} contents={Dummy} title="On a scale of 1 to 5, how happy are you with your current JavaScript flavor of choice?" />
-      <Pagination currentSection={section} />
+      <AuthorBlock section={section} />
+      <Pagination section={section} />
     </div>
   </DocumentTitle>
 

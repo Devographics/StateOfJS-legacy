@@ -9,6 +9,7 @@ import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
 import SectionHeatmapBlock from '../../components/blocks/SectionHeatmapBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
+import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 
 import api from '../../data/api/results.csv'
 import apiOther from '../../data/api/other.csv'
@@ -23,7 +24,7 @@ const items = ['REST API', 'Firebase', 'GraphQL', 'Apollo', 'Falcor', 'Horizon']
 const API = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
-      <PageTitle title={title} currentSection={section} />
+      <PageTitle section={section} />
       <StackedBlock data={parseCSV(api)} contents={Dummy} section={section} />
       <SectionHeatmapBlock
         rows={items}
@@ -32,7 +33,8 @@ const API = () =>
       />
       <VerticalBlock data={parseCSV(apiOther)} contents={Dummy} title="Other API Layers (Mentions)" />
       <HorizontalBlock data={parseCSV(apiHappiness)} contents={Dummy} title="On a scale of 1 to 5, how happy are you with your current API layer solution?" />
-      <Pagination currentSection="api" />
+      <AuthorBlock section={section} />
+      <Pagination section="api" />
     </div>
   </DocumentTitle>
 

@@ -1,0 +1,34 @@
+- name: Sacha Greif
+  slug: sacha
+  avatar: http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/sacha.jpg
+  url: https://twitter.com/SachaGreif
+  bio: >
+    Founder of [Kadira](http://kadira.io), an end to end performance monitoring platform for Meteor, 
+    and [Storybook](https://github.com/kadirahq/react-storybook), a UI component dev environment for React.
+- name: Michael Shilman
+  slug: michael
+  avatar: https://avatars2.githubusercontent.com/u/488689?v=3&s=400
+  url: https://medium.com/@shilman
+  bio: >
+    Founder of [Kadira](http://kadira.io), an end to end performance monitoring platform for Meteor, 
+    and [Storybook](https://github.com/kadirahq/react-storybook), a UI component dev environment for React.
+- name: Arunoda Susiripala
+  slug: arunoda
+  avatar: https://avatars2.githubusercontent.com/u/50838?v=3&s=400
+  url: https://twitter.com/arunoda
+  bio: >
+    Founder of [Kadira](http://kadira.io), an end to end performance monitoring platform for Meteor, 
+    and [Storybook](https://github.com/kadirahq/react-storybook), a UI component dev environment for React.
+- name: Josh Owens
+  slug: josh
+  avatar: https://pbs.twimg.com/profile_images/431476628166696960/xQCVJI_u_400x400.jpeg
+  url: http://joshowens.me/
+  bio: >
+    Founder of [Kadira](http://kadira.io), an end to end performance monitoring platform for Meteor, 
+    and [Storybook](https://github.com/kadirahq/react-storybook), a UI component dev environment for React.
+- name: Tom Coleman
+  slug: tom
+  avatar: https://avatars1.githubusercontent.com/u/132554?v=3&s=466
+  url: https://twitter.com/tmeasday
+  bio: >
+    Co-author of [Discover Meteor](http://discovermeteor.com), now working at [Meteor](http://meteor.com). Exploring how to improve user experience through technology, design and performance.

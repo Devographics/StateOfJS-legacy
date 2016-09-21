@@ -15,6 +15,12 @@
   color: $lighter-text-color;
   @include secondary-font;
   font-size: $medium-font;
+  img{
+    display: inline-block;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
 }
 .resources-list{
 }

@@ -1,0 +1,31 @@
+.author{
+}
+.author-inner{
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  padding: $vmargin $hmargin;
+  @include medium-large{
+    display: flex;
+    align-items: center;
+  }
+}
+.author-avatar{
+  flex: 1;
+  margin-right: $hmargin;
+  @include small{
+    margin-bottom: $vmargin/2;
+  }
+  a, img{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.author-name{
+  margin-bottom: 0;
+}
+.author-bio{
+  margin-bottom: -$vmargin;
+}

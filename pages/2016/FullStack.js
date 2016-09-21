@@ -8,6 +8,7 @@ import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
 import SectionHeatmapBlock from '../../components/blocks/SectionHeatmapBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
+import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 
 import stacked from '../../data/fullstack/results.csv'
 // import other from '../../data/fullstack/other.csv'
@@ -22,7 +23,7 @@ const items = ['Meteor', 'FeathersJS', 'DoneJS', 'MERN', 'MEAN']
 const FullStack = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
-      <PageTitle title={title} currentSection={section} />
+      <PageTitle title={title} section={section} />
       <StackedBlock data={parseCSV(stacked)} contents={Dummy} title="Full Stack" section={section} />
       <SectionHeatmapBlock
         rows={items}
@@ -31,7 +32,8 @@ const FullStack = () =>
       />
       {/*<VerticalBlock data={parseCSV(other)} contents={Dummy} title="Other Full Stack" />*/}
       <HorizontalBlock data={parseCSV(happiness)} contents={Dummy} title="On a scale of 1 to 5, how happy are you with your current full-stack solution?" />
-      <Pagination currentSection={section} />
+      <AuthorBlock section={section} />
+      <Pagination section={section} />
     </div>
   </DocumentTitle>
 
