@@ -1,0 +1,36 @@
+
+.newsletter{
+  // border: 1px solid $border-color;
+  // padding: $vmargin/2 $hmargin/2;
+  margin-bottom: $vmargin;
+  form{
+    display: flex;
+    margin: 0;
+  }
+  .email{
+    display: block;
+    border-radius: 3px;
+    padding: $vmargin/2 $hmargin/2;
+    border: 1px solid $blue;
+    margin-right: $hmargin/2;
+    flex-grow: 1;
+    width: 100%;
+    &:focus{
+      outline: none;
+      border-color: $pink;
+    }
+  }
+  .button{
+    // display: block;
+    // border-radius: 10px;
+    // padding: 10px 20px;
+    // background: $blue;
+    // border: none;
+    // color: white;
+    // @include secondary-font;
+    // cursor: pointer;
+    // &:hover{
+    //   background: $pink;
+    // }
+  }
+}

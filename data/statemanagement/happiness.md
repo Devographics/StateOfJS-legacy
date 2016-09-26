@@ -1,0 +1,3 @@
+Interestingly, given Redux's clear dominance and high level of satisfaction, overall users are relatively unhappy with their current state management solutions with an average happiness of **3.19**, one of the lowest of the survey. 
+
+It's possible that some developers are put off by Redux's close association with React, even though it can be used outside of that ecosystem. In any case, it'll be interesting to see if the average happiness levels increase as more people adopt Redux and its alternatives. 

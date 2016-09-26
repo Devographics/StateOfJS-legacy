@@ -47,11 +47,14 @@ export default class Share extends React.Component {
 
   render () {
     return (
-      <div className="share-options">
-        <Twitter text="The State Of JavaScript: take a short survey about popular JavaScript technologies http://stateofjs.com #stateofjs"/>
-        <Facebook link="http://stateofjs.com"/>
-        <Email subject="The State Of JavaScript" body="Here's a short survey you can take about popular JavaScript technologies: http://stateofjs.com"/>
-      </div>
+      <div className="section section-narrow section-block spread-the-word">
+        <h3>Help Spread the Word</h3>
+        <div className="share-options">
+          <Twitter text="The State Of JavaScript: discover the most popular JavaScript technologies http://stateofjs.com #stateofjs"/>
+          <Facebook link="http://stateofjs.com"/>
+          <Email subject="The State Of JavaScript" body="A survey about the most popular JavaScript technologies: http://stateofjs.com"/>
+        </div>
+      </div> 
     )
   }
 }

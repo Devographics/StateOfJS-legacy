@@ -1,0 +1,1 @@
+While salary by itself does not tell us a whole lot (since it's very dependent on your location), these results match up fairly reasonably with a mostly North American and Europe-centric audience. 

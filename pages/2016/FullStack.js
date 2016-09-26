@@ -24,7 +24,7 @@ const FullStack = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle title={title} section={section} />
-      <StackedBlock data={parseCSV(stacked)} contents={Dummy} title="Full Stack" section={section} />
+      <StackedBlock data={parseCSV(stacked)} contents={Dummy} section={section} />
       <SectionHeatmapBlock
         rows={items}
         contents={Dummy}

@@ -1,7 +1,7 @@
 - name: Introduction
   slug: introduction
   author: sacha
-- name: JavaScript Flavors
+- name: JavaScript Flavors # todo
   slug: flavors
   author: sacha
 - name: Front-end Frameworks
@@ -10,19 +10,19 @@
 - name: State Management
   slug: statemanagement
   author: tom
-- name: API Layers
+- name: API Layers # todo
   slug: api
   author: sacha
-- name: Full-stack Frameworks
+- name: Full-Stack Frameworks
   slug: fullstack
-  author: josh
-- name: Testing Frameworks
+  author: sacha
+- name: Testing Frameworks # todo
   slug: testing
   author: michael
 - name: CSS Tools
   slug: css
   author: arunoda
-- name: Build Tools
+- name: Build Tools # todo
   slug: buildtools
   author: sacha
 - name: Mobile Frameworks

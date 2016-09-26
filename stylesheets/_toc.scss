@@ -1,0 +1,17 @@
+.toc{
+  ul, ol{
+    padding: 0;
+    li{
+      border-bottom: 1px dashed $border-color;
+      padding-bottom: $vmargin/2;
+      margin-bottom: $vmargin/2;
+    }
+  }
+}
+.toc-section{
+  display: flex;
+  justify-content: space-between;
+}
+.toc-section-name{
+  @include secondary-font;
+}

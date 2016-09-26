@@ -4,7 +4,7 @@
     padding: $vmargin $hmargin;
   }
   @include large{
-    padding: $vmargin*3 $vmargin*6;
+    padding: $vmargin*1.5 $vmargin*6 $vmargin*3 $vmargin*6;
     border: 10px solid rgba($blue, 0.6);
     min-height: calc(100vh - 22px);
   }
@@ -42,16 +42,28 @@
 }
 .section-layout-b{
   display: block;
+  
+  @include large{
+    margin-left: $hmargin*9;
+    margin-right: $hmargin*9;
+  }
 }
 .section-contents{
   @include large{
     width: 40%;
   }
 }
-.section-contents-wide{
+.section-narrow{
   @include large{
-    padding: 0 $hmargin*6;
+    margin-left: $hmargin*9;
+    margin-right: $hmargin*9;
   }
+}
+.section-contents-wide{
+  // @include large{
+  //   padding: 0 $hmargin*9;
+  // }
+
 }
 .sticky-container{
   @include small-medium{
@@ -68,5 +80,30 @@
 .chart{
   h2{
     margin-top: 0;
+  }
+}
+
+
+.section-block{
+  margin-bottom: $vmargin*3;
+  h3{
+    text-align: center;
+  }
+}
+.section-border{
+  border: 1px solid $border-color;
+  padding: $vmargin*2 $hmargin*2;
+  position: relative;
+  h3{
+    margin: 0;
+    display: table;
+    max-width: 90%;
+    background: $beige;
+    padding: 0 20px;
+    position: absolute;
+    line-height: 1.4;
+    top: -3px;
+    left: 50%;
+    transform:translate(-50%, -50%);
   }
 }

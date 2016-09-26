@@ -17,9 +17,9 @@ import experienceData from '../../data/profiles/experience.csv'
 import salaryData from '../../data/profiles/salary.csv'
 import textEditorsData from '../../data/profiles/text-editors.csv'
 
-import experience from '../../contents/dummy.md'
-import salary from '../../contents/dummy.md'
-import textEditors from '../../contents/dummy.md'
+import experienceContents from '../../data/profiles/experience.md'
+import salaryContents from '../../data/profiles/salary.md'
+import texteditorsContents from '../../data/profiles/texteditors.md'
 
 // const items = ['Less than one year', '1-2 years', '2-5 years', '5-10 years', '10-20 years', '20+ years']
 
@@ -32,17 +32,17 @@ const Profiles = () =>
       <PageTitle section={section} />
       <HorizontalBlock
         data={parseCSV(experienceData)}
-        contents={experience}
+        contents={experienceContents}
         title="Years of Experience" 
       />
       <HorizontalBlock
         data={parseCSV(salaryData)}
-        contents={salary}
+        contents={salaryContents}
         title="Yearly Salary" 
       />
       <VerticalBlock
         data={parseCSV(textEditorsData)}
-        contents={textEditors}
+        contents={texteditorsContents}
         title="Favorite Text Editor" 
       />
       <AuthorBlock section={section} />

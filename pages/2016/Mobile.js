@@ -14,7 +14,10 @@ import mobile from '../../data/mobile/results.csv'
 import mobileOther from '../../data/mobile/other.csv'
 import mobileHappiness from '../../data/mobile/happiness.csv'
 
-import Dummy from '../../contents/dummy.md'
+import resultsContents from '../../data/mobile/results.md'
+import otherContents from '../../data/mobile/other.md'
+import happinessContents from '../../data/mobile/happiness.md'
+import heatmapContents from '../../data/mobile/heatmap.md'
 
 const section = 'mobile'
 const title = 'Mobile Frameworks'
@@ -24,17 +27,16 @@ const Mobile = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle section={section} />
-      <StackedBlock data={parseCSV(mobile)} contents={Dummy} section={section} />
+      <StackedBlock data={parseCSV(mobile)} contents={resultsContents} section={section} />
       <SectionHeatmapBlock
         rows={items}
-        contents={Dummy}
-        title="Heatmap"
-        chartTitle="How likely is a mobile framework user to also use other technologies?"
+        contents={heatmapContents}
+        title="How likely is a mobile framework user to also use other technologies?"
       />
-      <VerticalBlock data={parseCSV(mobileOther)} contents={Dummy} title="Other Mobile Frameworks" />
-      <HorizontalBlock data={parseCSV(mobileHappiness)} contents={Dummy} title="Happiness" />
+      <VerticalBlock data={parseCSV(mobileOther)} contents={otherContents} title="Other Mobile Frameworks" />
+      <HorizontalBlock data={parseCSV(mobileHappiness)} contents={happinessContents} title="Happiness" />
       <AuthorBlock section={section} />
-      <Pagination currentSection={section} />
+      <Pagination section={section} />
     </div>
   </DocumentTitle>
 

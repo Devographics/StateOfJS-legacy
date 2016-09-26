@@ -40,7 +40,7 @@ module.exports = React.createClass({
     return (
       <div className="outer-wrapper">
         <Helmet meta={meta} />
-        <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i|Work+Sans:400,700" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i|Roboto+Slab:300,700" rel="stylesheet"/>
         {this.props.children}
         {/*
         <div className="footer">

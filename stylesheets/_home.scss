@@ -1,14 +1,13 @@
 
 .content{
-  max-width: 600px;
-  width: 100%;
-  margin: 0 auto;
+  // max-width: 600px;
+  // width: 100%;
 }
 
 .logo{
-  max-width: 800px;
+  max-width: 700px;
   @include large{
-    margin: 0 -35px $vmargin*1.5 -35px;
+    margin: 0 auto $vmargin*1.5 auto;
   }
   img{
     display: block;
@@ -18,18 +17,20 @@
 }
 
 .bubbles{
+  max-width: 1000px;
+  margin: 0 auto;  
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   margin-bottom: $vmargin*1.5;
 }
 .bubble{
    @include small{
-    font-size: 5.5vw;
+    font-size: $medium-font;
   }
-  @media screen and (min-width: 900px){
+  @include medium-large{
+    font-size: $largest-font;
     width: 500px;
     height: 68px;
-    font-size: 2rem;
   }
   line-height: 1;
   position: relative;
@@ -58,7 +59,7 @@
   }
   &.bubble-great{
     @media screen and (min-width: 900px){
-      left: -$hmargin*6;
+      // left: -$hmargin*6;
       align-self: flex-start;
       span{
         margin-left: 5px;   
@@ -66,10 +67,11 @@
     }
     color: $blue;
     margin-bottom: $vmargin*1.5;
+    margin-right: $hmargin*2;
   }
   &.bubble-mess{
     @media screen and (min-width: 900px){
-      right: -$hmargin*6;
+      // right: -$hmargin*6;
       align-self: flex-end;
       span{
         margin-left: -5px;
@@ -80,7 +82,8 @@
 }
 
 .intro{
-  letter-spacing: -0.5px;
+  position: relative;
+  padding-bottom: $vmargin*3;
   p:first-child{
     @include large{
       font-size: 1.4rem;
@@ -90,85 +93,22 @@
     padding: 10px;
     background: $grey;
   }
-}
-
-.take-survey{
-  display: flex;
-  justify-content: center;
-  margin-bottom: $vmargin*1.5;
-  .take-survey-button{
-    @include secondary-font;
-    background: $pink;
-    border-radius: 10px;
-    display: block;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    margin: 0 auto;
-    font-size: 1.3rem;
-    white-space: nowrap;
-    &:hover{
-      background: $blue;
-    }
-  }
-}
-
-.section-block{
-  margin-bottom: $vmargin*3;
-  h3{
-    text-align: center;
-  }
-}
-.section-border{
-  border: 4px solid $blue;
-  padding: $vmargin*3 $hmargin*2;
-  position: relative;
-  h3{
-    margin: 0;
-    display: table;
-    max-width: 90%;
-    background: $beige;
-    padding: 0 20px;
+  .view-results{
     position: absolute;
-    line-height: 1.4;
-    top: -3px;
+    bottom: -37px;
     left: 50%;
-    transform:translate(-50%, -50%);
+    transform: translateX(-50%);
+    .button{
+      &:link{
+        background: $beige;
+      }
+      position: relative;
+    }
   }
 }
 
-.newsletter{
-  form{
-    display: flex;
-    margin: 0;
-  }
-  .email{
-    display: block;
-    border-radius: 10px;
-    padding: 10px;
-    border: 2px solid $blue;
-    margin-right: $hmargin/2;
-    flex-grow: 1;
-    width: 100%;
-    &:focus{
-      outline: none;
-      border-color: $pink;
-    }
-  }
-  .button{
-    display: block;
-    border-radius: 10px;
-    padding: 10px 20px;
-    background: $blue;
-    border: none;
-    color: white;
-    @include secondary-font;
-    cursor: pointer;
-    &:hover{
-      background: $pink;
-    }
-  }
+.home-footer{
+  text-align: center;
 }
 
 .footer{

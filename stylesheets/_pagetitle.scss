@@ -1,4 +1,9 @@
-
+.page-title-toc{
+  text-align: center;
+  display: block;
+  margin-bottom: $vmargin;
+  font-size: $medium-font;
+}
 .page-title{
   margin: 0 0 $vmargin*3 0;
   // box-shadow: 10px 10px 0 0 $grey;
@@ -41,13 +46,12 @@
   @include large{
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
   }
 }
 .page-title-main{
-  padding-bottom: $vmargin/3;
-  margin-bottom: $vmargin/3;
-  border-bottom: 1px dashed $border-color;
+  margin-bottom: $vmargin/1.5;
   @include small-medium{
     font-size: $large-font;
   }
