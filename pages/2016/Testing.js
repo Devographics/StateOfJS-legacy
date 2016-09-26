@@ -14,8 +14,10 @@ import testing from '../../data/testing/results.csv'
 import testingOther from '../../data/testing/other.csv'
 import testingHappiness from '../../data/testing/happiness.csv'
 
-import TestingContents from '../../contents/testing.md'
-import Dummy from '../../contents/dummy.md'
+import results from '../../data/testing/results.md'
+import other from '../../data/testing/other.md'
+import happiness from '../../data/testing/happiness.md'
+import heatmap from '../../data/testing/heatmap.md'
 
 const section = 'testing'
 const title = 'Testing'
@@ -25,14 +27,14 @@ const Testing = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle title={title} section={section} />
-      <StackedBlock data={parseCSV(testing)} contents={TestingContents} section={section} />
+      <StackedBlock data={parseCSV(testing)} contents={results} section={section} />
       <SectionHeatmapBlock
         rows={items}
-        contents={Dummy}
+        contents={heatmap}
         title="How likely are testing framework users to also use other technologies?"
       />
-      <VerticalBlock data={parseCSV(testingOther)} contents={Dummy} title="Other Testing Tools" />
-      <HorizontalBlock data={parseCSV(testingHappiness)} contents={Dummy} title="On a scale of 1 to 5, how happy are you with your current testing solution?" />
+      <VerticalBlock data={parseCSV(testingOther)} contents={other} title="Other Testing Tools" />
+      <HorizontalBlock data={parseCSV(testingHappiness)} contents={happiness} title="On a scale of 1 to 5, how happy are you with your current testing solution?" />
       <AuthorBlock section={section} />
       <Pagination section={section} />
     </div>
