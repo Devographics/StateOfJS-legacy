@@ -1,1 +1,8 @@
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+The single strongest correlation in the testing category, is **Mocha** and **Jasmine**.
+Not only are people generally happy with both frameworks, but people who are happy
+with one tend to be happy with the other!
+
+Mocha has an edge over Jasmine when it comes to newer technologies: it tends to
+be co-used with **ES6**, **React**, **Redux**, and **Webpack**. We can also see
+a tech hipster factor in the data as well: **Enzyme** and **Ava** appear to
+cluster a little bit with **CSS Modules** and **Aphrodite**.
