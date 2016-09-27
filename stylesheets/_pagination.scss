@@ -1,14 +1,23 @@
 .pagination{
   border-top: 1px solid $border-color;
   padding-top: 3px;
+
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 3px;
+  
+  margin-bottom: $vmargin*4;
+
 }
 .pagination-inner{
   border-top: 1px solid $border-color;
-  padding-top: $vmargin*4;
+  padding-top: $vmargin*2;
+
+  border-bottom: 1px solid $border-color;
+  padding-bottom: $vmargin*2;
+
   @include large{
     display: flex;
     justify-content: space-between;
-    margin-bottom: $vmargin*2;
   }
 }
 .pagination-link{

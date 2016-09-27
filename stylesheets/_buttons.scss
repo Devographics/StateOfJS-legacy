@@ -6,6 +6,7 @@
   cursor: pointer;
   display: block;
   color: $blue;
+  text-align: center;
   @include secondary-font;
   @include small{
     font-size: $small-font;

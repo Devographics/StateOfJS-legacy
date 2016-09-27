@@ -1,14 +1,6 @@
-..FilterPoint All
-
-Like the rest of Javascript world, the testing landscape is highly competitive
-one, with rapid release cycles, feature and performance comparisons, and
-constant one-upsmanship between the frameworks.
-
 Overall, **Mocha** and **Jasmine** stand tall, each having roughly 90% awareness
 and high degrees of interest and satisfaction. In contrast, the rest of the
 field remains relatively unknown.
-
-..FilterPoint Interest
 
 The data shows something fascinating about the relationship between satisfaction
 and interest: the more people are satisfied with a framework, the more other
@@ -26,9 +18,7 @@ At 24% awareness, newcomer **Ava** lacks community mindshare. But with reasonabl
 high interest and satisfaction scores, we can expect that to change in the
 future.
 
-..FilterPoint Satisfaction
-
-For fun, wrote a Gherkin spec for Cucumber's satisfaction rating:
+For fun, I wrote a Gherkin spec for Cucumber's satisfaction rating:
 
 <pre>
 Given you are testing JS,

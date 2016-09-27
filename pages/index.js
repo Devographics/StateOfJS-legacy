@@ -9,11 +9,9 @@ import Share from './_share.js'
 import Newsletter from '../components/common/Newsletter.js'
 import _ from 'lodash'
 import TextBlock from '../components/blocks/TextBlock.js'
-import AuthorBlock from '../components/blocks/AuthorBlock.js'
 
 
 import homeContents from '../data/home/home.md'
-import footerContents from '../data/home/footer.md'
 
 export default class Index extends React.Component {
 
@@ -35,16 +33,9 @@ export default class Index extends React.Component {
             <h3 className="bubble bubble-mess"><img src="images/right-speech-bubble.svg"/><span>JavaScript is a mess!</span></h3>
           </div>
 
-          <TextBlock contents={homeContents} className="intro section-border" />
+          <TextBlock contents={homeContents} className="intro section-border section-narrow" />
 
-          {/*
-          <blockquote className="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Marc was almost ready to implement his &quot;hello world&quot; React app <a href="https://t.co/ptdg4yteF1">pic.twitter.com/ptdg4yteF1</a></p>&mdash; Thomas Fuchs (@thomasfuchs) <a href="https://twitter.com/thomasfuchs/status/708675139253174273">March 12, 2016</a></blockquote>
-          */}
-
-          <Share/>
-
-          <TextBlock contents={footerContents} className="home-footer" />
-
+          {/*<Share/>*/}
 
         </div>
       </DocumentTitle>

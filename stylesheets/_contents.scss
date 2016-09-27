@@ -3,3 +3,12 @@
     margin-top: 0;
   }
 }
+
+.tldr{
+  margin-bottom: $vmargin*2;
+}
+
+.tldr-inner{
+  border: 1px solid $border-color;
+  padding: $vmargin $hmargin;
+}

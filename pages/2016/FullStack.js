@@ -9,12 +9,18 @@ import SectionHeatmapBlock from '../../components/blocks/SectionHeatmapBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
 import AuthorBlock from '../../components/blocks/AuthorBlock.js'
+import TLDRBlock from '../../components/blocks/TLDRBlock.js'
+import TwitterBlock from '../../components/blocks/TwitterBlock.js'
 
-import stacked from '../../data/fullstack/results.csv'
+import resultsData from '../../data/fullstack/results.csv'
 // import other from '../../data/fullstack/other.csv'
-import happiness from '../../data/fullstack/happiness.csv'
+import happinessData from '../../data/fullstack/happiness.csv'
 
-import Dummy from '../../contents/dummy.md'
+import results from '../../data/fullstack/results.md'
+// import other from '../../data/fullstack/other.md'
+import happiness from '../../data/fullstack/happiness.md'
+import heatmap from '../../data/fullstack/heatmap.md'
+import tldr from '../../data/fullstack/tldr.md'
 
 const section = 'fullstack'
 const title = 'Full Stack'
@@ -24,16 +30,23 @@ const FullStack = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle title={title} section={section} />
-      <StackedBlock data={parseCSV(stacked)} contents={Dummy} section={section} />
+      <TLDRBlock contents={tldr} />
+      <StackedBlock
+        data={parseCSV(resultsData)}
+        contents={results}
+        section={section}
+        title={title}
+      />
       <SectionHeatmapBlock
         rows={items}
-        contents={Dummy}
+        contents={heatmap}
         title="How likely are full-stack framework users to also use other technologies?"
       />
       {/*<VerticalBlock data={parseCSV(other)} contents={Dummy} title="Other Full Stack" />*/}
-      <HorizontalBlock data={parseCSV(happiness)} contents={Dummy} title="On a scale of 1 to 5, how happy are you with your current full-stack solution?" />
+      <HorizontalBlock data={parseCSV(happinessData)} contents={happiness} title="On a scale of 1 to 5, how happy are you with your current full-stack solution?" />
       <AuthorBlock section={section} />
       <Pagination section={section} />
+      <TwitterBlock section={section} />
     </div>
   </DocumentTitle>
 

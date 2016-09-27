@@ -11,6 +11,16 @@ const PlaySVG = () => (
   </svg>
 )
 
+const renderSponsor = (sponsor) => {
+  if (sponsor === 'egghead') {
+    return <span><a href="https://egghead.io"><img src="https://d1xwtr0qwr70yv.cloudfront.net/assets/elements/logo-mobile-0012236aa1a9766db6b0cc9705df19ec.svg" />Egghead.io</a></span>
+  } else if (sponsor === 'reactforbeginners') {
+    return <span><a href="https://reactforbeginners.com">React For Beginners</a> & <a href="https://egghead.io"><img src="https://d1xwtr0qwr70yv.cloudfront.net/assets/elements/logo-mobile-0012236aa1a9766db6b0cc9705df19ec.svg" />Egghead.io</a></span>
+  } else if (sponsor === 'es6') {
+    return <span><a href="https://ES6.io/friend/STATEOFJS">ES6 For Everyone</a> & <a href="https://egghead.io"><img src="https://d1xwtr0qwr70yv.cloudfront.net/assets/elements/logo-mobile-0012236aa1a9766db6b0cc9705df19ec.svg" />Egghead.io</a></span>
+  }
+}
+
 const ResourcesBlock = ({ section, sponsor }) => {
 
   const sectionResources = _.filter(resources, r => r.section === section)
@@ -20,7 +30,7 @@ const ResourcesBlock = ({ section, sponsor }) => {
       <div className="section-contents-wide resources">
         <div className="resources-title">
           <h2>Recommended Resources</h2>
-          <span className="resources-sponsor">Presented by {sponsor}</span>
+          <span className="resources-sponsor">Presented by {renderSponsor(sponsor)}</span>
         </div>
         <div className="resources-list">
           {_.map(sectionResources, resource =>

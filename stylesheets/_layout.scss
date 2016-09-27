@@ -43,10 +43,7 @@
 .section-layout-b{
   display: block;
   
-  @include large{
-    margin-left: $hmargin*9;
-    margin-right: $hmargin*9;
-  }
+
 }
 .section-contents{
   @include large{
@@ -58,12 +55,14 @@
     margin-left: $hmargin*9;
     margin-right: $hmargin*9;
   }
+  .section-contents-wide{
+    padding: 0;
+  }
 }
 .section-contents-wide{
-  // @include large{
-  //   padding: 0 $hmargin*9;
-  // }
-
+  @include large{
+    padding: 0 $hmargin*9;
+  }
 }
 .sticky-container{
   @include small-medium{
@@ -92,8 +91,16 @@
 }
 .section-border{
   border: 1px solid $border-color;
-  padding: $vmargin*2 $hmargin*2;
   position: relative;
+  @include small{
+    padding: $vmargin $hmargin $vmargin*2 $hmargin;
+  }
+  @include medium{
+    padding: $vmargin $hmargin $vmargin*2 $hmargin;
+  }
+  @include large{
+    padding: $vmargin*2 $hmargin*2;
+  }
   h3{
     margin: 0;
     display: table;

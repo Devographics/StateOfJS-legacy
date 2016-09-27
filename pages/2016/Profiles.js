@@ -10,6 +10,7 @@ import HorizontalBlock from '../../components/blocks/HorizontalBlock.js'
 import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
+import TwitterBlock from '../../components/blocks/TwitterBlock.js'
 
 // import experienceAverageData from '../../data/profiles/experience-average.csv'
 // import experienceData from '../../data/profiles/experience.csv'
@@ -47,6 +48,7 @@ const Profiles = () =>
       />
       <AuthorBlock section={section} />
       <Pagination currentSection="profiles" />
+      <TwitterBlock section={section} />
     </div>
   </DocumentTitle>
 

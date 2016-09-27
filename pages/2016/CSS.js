@@ -9,6 +9,8 @@ import SectionHeatmapBlock from '../../components/blocks/SectionHeatmapBlock.js'
 import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
+import TLDRBlock from '../../components/blocks/TLDRBlock.js'
+import TwitterBlock from '../../components/blocks/TwitterBlock.js'
 
 import stacked from '../../data/css/results.csv'
 import other from '../../data/css/other.csv'
@@ -18,6 +20,7 @@ import resultsContents from '../../data/css/results.md'
 import heatmapContents from '../../data/css/heatmap.md'
 import otherContents from '../../data/css/other.md'
 import happinessContents from '../../data/css/happiness.md'
+import tldrContents from '../../data/css/tldr.md'
 
 const section = 'css'
 const title = 'CSS'
@@ -27,7 +30,13 @@ const CSS = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle section={section} />
-      <StackedBlock data={parseCSV(stacked)} contents={resultsContents} section={section} />
+      <TLDRBlock contents={tldrContents} />
+      <StackedBlock
+        data={parseCSV(stacked)}
+        contents={resultsContents}
+        section={section}
+        title={title}
+      />
       <SectionHeatmapBlock
         rows={items}
         contents={heatmapContents}
@@ -37,6 +46,7 @@ const CSS = () =>
       <HorizontalBlock data={parseCSV(happiness)} contents={happinessContents} title="On a scale of 1 to 5, how happy are you with your current CSS solution?" />
       <AuthorBlock section={section} />
       <Pagination section={section} />
+      <TwitterBlock section={section} />
     </div>
   </DocumentTitle>
 

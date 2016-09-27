@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6{
 p, ul, ol{
   margin: 0 0 $vmargin 0;
   @include small{
-    line-height: 1.5;
+    line-height: 1.6;
   }
   @include medium-large{
     line-height: 1.8;

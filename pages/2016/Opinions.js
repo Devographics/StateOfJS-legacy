@@ -9,6 +9,7 @@ import TextBlock from '../../components/blocks/TextBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
 import AuthorBlock from '../../components/blocks/AuthorBlock.js'
+import TwitterBlock from '../../components/blocks/TwitterBlock.js'
 
 import opinions from '../../data/opinions/opinions.csv'
 
@@ -57,6 +58,7 @@ const Opinions = () =>
       })}
       <AuthorBlock section={section} />
       <Pagination section={section} />
+      <TwitterBlock section={section} />
     </div>
   </DocumentTitle>
 

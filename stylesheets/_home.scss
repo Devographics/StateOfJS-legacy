@@ -6,9 +6,7 @@
 
 .logo{
   max-width: 700px;
-  @include large{
     margin: 0 auto $vmargin*1.5 auto;
-  }
   img{
     display: block;
     width: 100%;
@@ -18,16 +16,19 @@
 
 .bubbles{
   max-width: 1000px;
-  margin: 0 auto;  
-  display: flex;
+  margin: 0 auto;
+  @include medium-large{
+    display: flex;
+  }
   // flex-direction: column;
   margin-bottom: $vmargin*1.5;
 }
 .bubble{
-   @include small{
+  @include small-medium{
     font-size: $medium-font;
+    width: 100%;
   }
-  @include medium-large{
+  @include large{
     font-size: $largest-font;
     width: 500px;
     height: 68px;
@@ -50,7 +51,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     display: block;
-    @include small{
+    @include small-medium{
       margin-top: -2px;
     }
     @include large{
@@ -58,7 +59,7 @@
     }
   }
   &.bubble-great{
-    @media screen and (min-width: 900px){
+    @include small-medium{
       // left: -$hmargin*6;
       align-self: flex-start;
       span{
@@ -70,7 +71,8 @@
     margin-right: $hmargin*2;
   }
   &.bubble-mess{
-    @media screen and (min-width: 900px){
+    margin-top: $vmargin;
+    @include small-medium{
       // right: -$hmargin*6;
       align-self: flex-end;
       span{

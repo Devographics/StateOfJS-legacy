@@ -10,6 +10,7 @@ import TextBlock from '../../components/blocks/TextBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
 import AuthorBlock from '../../components/blocks/AuthorBlock.js'
+import TwitterBlock from '../../components/blocks/TwitterBlock.js'
 
 import features from '../../data/features/features.csv'
 import featuresScores from '../../data/features/featuresScores.csv'
@@ -69,6 +70,7 @@ const Features = () =>
       <TextBlock contents={OtherFeatures} title="Other Features" />
       <AuthorBlock section={section} />
       <Pagination section="features" />
+      <TwitterBlock section={section} />
     </div>
   </DocumentTitle>
 

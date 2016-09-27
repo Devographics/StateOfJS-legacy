@@ -9,11 +9,14 @@ import SectionHeatmapBlock from '../../components/blocks/SectionHeatmapBlock.js'
 import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
+import TLDRBlock from '../../components/blocks/TLDRBlock.js'
+import TwitterBlock from '../../components/blocks/TwitterBlock.js'
 
 import mobile from '../../data/mobile/results.csv'
 import mobileOther from '../../data/mobile/other.csv'
 import mobileHappiness from '../../data/mobile/happiness.csv'
 
+import tldrContents from '../../data/mobile/tldr.md'
 import resultsContents from '../../data/mobile/results.md'
 import otherContents from '../../data/mobile/other.md'
 import happinessContents from '../../data/mobile/happiness.md'
@@ -27,7 +30,13 @@ const Mobile = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle section={section} />
-      <StackedBlock data={parseCSV(mobile)} contents={resultsContents} section={section} />
+      <TLDRBlock contents={tldrContents} />
+      <StackedBlock
+        data={parseCSV(mobile)}
+        contents={resultsContents}
+        section={section}
+        title={title}
+      />
       <SectionHeatmapBlock
         rows={items}
         contents={heatmapContents}
@@ -37,6 +46,7 @@ const Mobile = () =>
       <HorizontalBlock data={parseCSV(mobileHappiness)} contents={happinessContents} title="Happiness" />
       <AuthorBlock section={section} />
       <Pagination section={section} />
+      <TwitterBlock section={section} />
     </div>
   </DocumentTitle>
 

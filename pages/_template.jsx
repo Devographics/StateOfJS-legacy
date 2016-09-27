@@ -4,6 +4,10 @@ import { prefixLink } from 'gatsby-helpers'
 import DocumentTitle from 'react-document-title'
 import Helmet from 'react-helmet'
 
+import TextBlock from '../components/blocks/TextBlock.js'
+
+import footerContents from '../data/home/footer.md'
+
 // import '../css/markdown-styles'
 
 module.exports = React.createClass({
@@ -47,6 +51,7 @@ module.exports = React.createClass({
           Built by <a href="http://twitter.com/SachaGreif">Sacha Greif</a> using <a href="https://github.com/gatsbyjs/gatsby">Gatsby</a>
         </div>
         */}
+        <TextBlock contents={footerContents} className="home-footer" />
       </div>
     )
   },

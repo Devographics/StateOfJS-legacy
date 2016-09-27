@@ -33,7 +33,11 @@ export default function PageTitle ({ section }) {
 
   return (
     <div className="page-title-wrapper">
-      <Link className="page-title-toc" to="/2016/introduction/#sections">Table Of Contents</Link>
+      <div className="page-title-header">
+        <Link className="page-title-home" to="/">Back to Home</Link>
+        &nbsp;|&nbsp;
+        <Link className="page-title-toc" to="/2016/introduction/#sections">Table Of Contents</Link>
+      </div>
       <div className="page-title">
         <Helmet meta={meta} />
         <div className="inner">

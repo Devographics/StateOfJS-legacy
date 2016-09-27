@@ -11,6 +11,8 @@ import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 import TextBlock from '../../components/blocks/TextBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
+import TLDRBlock from '../../components/blocks/TLDRBlock.js'
+import TwitterBlock from '../../components/blocks/TwitterBlock.js'
 
 import stacked from '../../data/statemanagement/results.csv'
 import other from '../../data/statemanagement/other.csv'
@@ -21,6 +23,7 @@ import heatmapContents from '../../data/statemanagement/heatmap.md'
 import otherContents from '../../data/statemanagement/other.md'
 import happinessContents from '../../data/statemanagement/happiness.md'
 import conclusionContents from '../../data/statemanagement/conclusion.md'
+import tldr from '../../data/statemanagement/tldr.md'
 
 const section = 'statemanagement'
 const title = 'State Management'
@@ -30,7 +33,13 @@ const StateManagement = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle section={section} />
-      <StackedBlock data={parseCSV(stacked)} contents={resultsContents} section={section} />
+      <TLDRBlock contents={tldr} />
+      <StackedBlock
+        data={parseCSV(stacked)}
+        contents={resultsContents}
+        section={section}
+        title={title}
+      />
       <SectionHeatmapBlock
         rows={items}
         contents={heatmapContents}
@@ -42,6 +51,7 @@ const StateManagement = () =>
       <TextBlock contents={conclusionContents} />
       <AuthorBlock section={section} />
       <Pagination section="statemanagement" />
+      <TwitterBlock section={section} />
     </div>
   </DocumentTitle>
 
