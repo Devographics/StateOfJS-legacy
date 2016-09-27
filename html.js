@@ -12,7 +12,7 @@ module.exports = React.createClass({
     }
   },
   render () {
-    const title = DocumentTitle.rewind()
+    const title = `State Of JavaScript: ${DocumentTitle.rewind()}`
 
     let css
     let head = Helmet.rewind()

@@ -35,7 +35,6 @@ export default class TwitterTimeline extends React.Component {
 
   render () {
     const { query, widgetId, chrome, limit } = this.props
-    console.log(query)
     return (
       <div className="twitter-timeline-inner">
         <a

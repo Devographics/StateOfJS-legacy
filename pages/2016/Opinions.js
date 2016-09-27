@@ -23,6 +23,9 @@ import rightdirection from '../../data/opinions/right-direction.md'
 import toofast from '../../data/opinions/too-fast.md'
 import toolong from '../../data/opinions/too-long.md'
 
+const section = 'opinions'
+const title = 'Opinions'
+
 const imports = {
   'I enjoy building JavaScript apps': enjoyjavascript,
   'I would like JavaScript to be my main programming language': mainlanguage,
@@ -33,26 +36,25 @@ const imports = {
   'This survey is too damn long!': toolong,
 }
 
-const section = 'opinions'
-const title = 'Opinions'
-
 const Opinions = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle section={section} />
       <TextBlock contents={OpinionsIntro} />
-      {opinions.map(opinion => {
+      {opinions.map((opinion, i) => {
+        const opinionData = _.clone(opinion)
+        delete opinionData.Option
+
         const opinionTitle = opinion.Option
         const markdown = imports[opinionTitle]
-        delete opinion.Option
-        const dataArray = parseCSV(_.keys(opinion).map(key => ({ Option: key, Value: opinion[key] })))
+        const dataArray = parseCSV(_.keys(opinionData).map(key => ({ Option: key, Value: opinion[key] })))
 
         return (
           <HorizontalBlock
-            key={opinionTitle}
+            key={i}
             data={dataArray}
             contents={markdown}
-            title={opinionTitle} 
+            title={opinionTitle}
           />
         )
       })}

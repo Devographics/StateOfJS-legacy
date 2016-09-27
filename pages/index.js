@@ -24,7 +24,7 @@ export default class Index extends React.Component {
 
   render () {
     return (
-      <DocumentTitle title={config.siteTitle}>
+      <DocumentTitle title="The State Of JavaScript">
         <div className="results-container content home">
           <h1 className="logo"><img src="images/javascript9.svg" alt="The State Of JavaScript"/></h1>
 

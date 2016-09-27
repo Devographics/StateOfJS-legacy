@@ -8,15 +8,16 @@ import Authors from '../data/authors.yaml'
 
 export default function PageTitle ({ section }) {
   const currentSectionIndex = _.findIndex(Sections, { slug: section })
-  const currentSection = Sections[currentSectionIndex]
+  const currentSection = _.find(Sections, { slug: section })
   const previousSection = Sections[currentSectionIndex - 1]
   const nextSection = Sections[currentSectionIndex + 1]
   const author = _.find(Authors, { slug: currentSection.author })
   
   const image = `http://stateofjs.com/exports/png/${currentSection}-stacked.png`
-  const url = `http://stateofjs.com/2016/${currentSection}/`
-  const metaTitle = `State Of JavaScript Survey Results: ${currentSection.title}`
+  const url = `http://stateofjs.com/2016/${section}/`
+  const metaTitle = `State Of JavaScript Survey Results: ${currentSection.name}`
   const description = `Find out which JavaScript tools and frameworks are the most popular.`
+
   const meta = [
     // facebook
     { property: 'og:type', content: 'article' },
