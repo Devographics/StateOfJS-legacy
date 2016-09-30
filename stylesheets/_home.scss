@@ -86,9 +86,18 @@
 .intro{
   position: relative;
   padding-bottom: $vmargin*3;
-  p:first-child{
-    @include large{
-      font-size: 1.4rem;
+  margin-bottom: $vmargin*4;
+  p{
+    &:first-child{
+      @include small-medium{
+        font-size: $large-font;
+      }
+      @include large{
+        font-size: $larger-font;
+      }
+    }
+    &:last-of-type{
+      margin-bottom: 0;
     }
   }
   h4{

@@ -41,7 +41,12 @@ p, ul, ol{
 a{
   text-decoration: none;
   &, &:link, &:visited, &:active, &:focus{
-    color: $blue;
+    @include small{
+      color: $blue2;
+    }
+    @include medium-large{
+      color: $blue;
+    }
   }
   &:hover{
     color: $pink;

@@ -9,9 +9,14 @@
   }
 }
 .toc-section{
-  display: flex;
+  @include flex-center;
   justify-content: space-between;
 }
 .toc-section-name{
+  text-align: left;
+  white-space: nowrap;
   @include secondary-font;
+}
+.toc-section-author{
+  text-align: right;
 }

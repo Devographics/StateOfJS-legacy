@@ -28,7 +28,12 @@
     }
   }
   .section-title{
-    font-size: $large-font;
+    @include small{
+      font-size: $medium-font;
+    }
+    @include medium-large{
+      font-size: $large-font;
+    }
     border-bottom: 1px solid $border-color;
     padding-bottom: 3px;
     margin: 0 0 $vmargin*2 0;

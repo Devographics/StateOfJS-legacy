@@ -6,6 +6,7 @@ $smaller-font: 0.7rem;
 $small-font: 0.8rem;
 $medium-font: 1rem;
 $large-font: 1.3rem;
+$larger-font: 1.5rem;
 $largest-font: 1.9rem;
 
 $light: 100;
@@ -25,9 +26,16 @@ $bold: bold;
 }
 
 @mixin primary-font{
-  font-family: 'Roboto Slab','Monda', 'Slabo 13px', 'Source Sans Pro', 'Work Sans', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
+  @include small{
+    font-weight: 400;
+  }
+  @include medium-large{
+    font-weight: 300;
+  }
 }
 @mixin secondary-font{
   font-family: 'Space Mono', monospace;
+  font-weight: 400;
   // font-style: italic;
 }

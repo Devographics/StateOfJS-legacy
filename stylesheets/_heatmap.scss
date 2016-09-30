@@ -1,11 +1,21 @@
 .heatmap-chart{
-  margin-bottom: $vmargin*2;
+  @include small{
+    margin-bottom: $vmargin;
+  }
+  @include medium-large{
+    margin-bottom: $vmargin*2;
+  }
 }
 .heatmap-table-wrapper{
   @include flex-center;
 }
 .heatmap-table{
-  margin: $vmargin*3 0 $vmargin 0;
+  @include small{
+    margin-bottom: $vmargin;
+  }
+  @include medium-large{
+    margin: $vmargin*3 0 $vmargin 0;
+  }
   font-size: 13px;
   table-layout: fixed;
   width: 100%;
