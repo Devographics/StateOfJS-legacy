@@ -22,6 +22,7 @@
 }
 .pagination-link{
   display: block;
+  min-width: 270px;
   @include secondary-font;
   white-space: nowrap;
   @include small{

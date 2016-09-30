@@ -36,7 +36,7 @@ const ResourcesBlock = ({ section, sponsor }) => {
           {_.map(sectionResources, resource =>
             <div key={resource.name} className="resource">
               <div className="resource-image">
-                <div><img src={resource.avatar} /></div>
+                <div><img src={`/images/resources/${resource.avatar}`} /></div>
               </div>
               <div className="resource-contents">
                 <h4 className="resource-title"><a href={resource.url}>{resource.name}</a></h4>

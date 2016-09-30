@@ -1,0 +1,1 @@
+While the survey didn't push the demographics angle very deep (there were no questions about gender or location), it did reveal a few interesting facts about a developer's most important characteristic: their favorite text editor. 

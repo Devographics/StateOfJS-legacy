@@ -68,7 +68,6 @@ const Features = () =>
       })}
       <VerticalBlock data={parseCSV(featuresScores)} contents={HighestRated} title="Highest-Rated Features" />
       <TextBlock contents={OtherFeatures} title="Other Features" />
-      <AuthorBlock section={section} />
       <Pagination section="features" />
       <TwitterBlock section={section} />
     </div>

@@ -11,6 +11,7 @@ import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
 import TLDRBlock from '../../components/blocks/TLDRBlock.js'
 import TwitterBlock from '../../components/blocks/TwitterBlock.js'
+import ResourcesBlock from '../../components/blocks/ResourcesBlock.js'
 
 import stacked from '../../data/css/results.csv'
 import other from '../../data/css/other.csv'
@@ -42,6 +43,7 @@ const CSS = () =>
         contents={heatmapContents}
         title="How likely is a CSS technology user to also use other technologies?"
       />
+      <ResourcesBlock section={section} />
       <VerticalBlock data={parseCSV(other)} contents={otherContents} title="Other CSS Tools" />
       <HorizontalBlock data={parseCSV(happiness)} contents={happinessContents} title="On a scale of 1 to 5, how happy are you with your current CSS solution?" />
       <AuthorBlock section={section} />

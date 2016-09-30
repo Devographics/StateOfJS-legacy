@@ -12,6 +12,7 @@ import PageTitle from '../../components/PageTitle.js'
 import TLDRBlock from '../../components/blocks/TLDRBlock.js'
 import TextBlock from '../../components/blocks/TextBlock.js'
 import TwitterBlock from '../../components/blocks/TwitterBlock.js'
+import ResourcesBlock from '../../components/blocks/ResourcesBlock.js'
 
 import testing from '../../data/testing/results.csv'
 import testingOther from '../../data/testing/other.csv'
@@ -45,6 +46,7 @@ const Testing = () =>
         contents={heatmapContents}
         title="How likely are testing framework users to also use other technologies?"
       />
+      <ResourcesBlock section={section} />
       <VerticalBlock data={parseCSV(testingOther)} contents={otherContents} title="Other Testing Tools" />
       <HorizontalBlock data={parseCSV(testingHappiness)} contents={happinessContents} title="On a scale of 1 to 5, how happy are you with your current testing solution?" />
       <AuthorBlock section={section} />

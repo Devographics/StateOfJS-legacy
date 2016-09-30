@@ -1,0 +1,3 @@
+Here, we are talking about integrated solutions to build web applications from the back-end side (including the database and the web server) to the front-end layer, using only one language (JavaScript).
+
+Let's face facts: unlike other categories like front-end frameworks, there are very few true contenders in this category apart from Meteor. For that reason, we'll skip the “other frameworks” chart since it didn't reveal any meaningful trends. 

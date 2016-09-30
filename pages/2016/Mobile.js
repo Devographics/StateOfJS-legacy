@@ -11,6 +11,7 @@ import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
 import TLDRBlock from '../../components/blocks/TLDRBlock.js'
 import TwitterBlock from '../../components/blocks/TwitterBlock.js'
+import ResourcesBlock from '../../components/blocks/ResourcesBlock.js'
 
 import mobile from '../../data/mobile/results.csv'
 import mobileOther from '../../data/mobile/other.csv'
@@ -42,6 +43,7 @@ const Mobile = () =>
         contents={heatmapContents}
         title="How likely is a mobile framework user to also use other technologies?"
       />
+      <ResourcesBlock section={section} />
       <VerticalBlock data={parseCSV(mobileOther)} contents={otherContents} title="Other Mobile Frameworks" />
       <HorizontalBlock data={parseCSV(mobileHappiness)} contents={happinessContents} title="Happiness" />
       <AuthorBlock section={section} />

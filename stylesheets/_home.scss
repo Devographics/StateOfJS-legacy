@@ -119,3 +119,88 @@
   font-size: 0.8rem;
   text-align: center;
 }
+
+.comments{
+  // @include flex-center;
+  // flex-direction: column;
+}
+.comments-heading{
+  text-align: center;
+}
+.comment{
+  @include crosshatchBg();
+  max-width: 600px;
+  margin: 0 auto;
+}
+.comment-inner{
+  text-align: center;
+  margin-bottom: $vmargin;
+  font-size: $large-font;
+  position: relative;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  padding: $vmargin $hmargin;
+  background: $white;
+  z-index: 10;
+  @include flex-center;
+  min-height: 190px;
+
+  span{
+    display: block;
+    position: relative;
+    z-index: 20;
+  }
+  &:before, &:after{
+    position: absolute;
+    display: inline-block;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1;
+    z-index: 15;
+    color: $blue;
+  }
+  &:before{
+    content: "“";
+    top: -20px;
+    left: -15px;
+  }
+  &:after{
+    content: "”";
+    bottom: -60px;
+    right: -15px;
+  }
+}
+.comment-next{
+  max-width: 100px;
+  cursor: pointer;
+  margin: 0 auto;
+  line-height: 1;
+}
+
+.stats-heading{
+  text-align: center;
+}
+.stats-inner{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 600px;
+  @include medium-large{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.stat{
+  text-align: center;
+  flex: 1 1 0;
+  @include small{
+    margin-bottom: $vmargin;
+  }
+}
+.stat-count{
+  @include secondary-font;
+  font-size: 3rem;
+  color: $pink;
+}
+.stat-text{
+
+}

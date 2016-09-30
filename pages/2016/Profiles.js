@@ -11,6 +11,7 @@ import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
 import TwitterBlock from '../../components/blocks/TwitterBlock.js'
+import TextBlock from '../../components/blocks/TextBlock.js'
 
 // import experienceAverageData from '../../data/profiles/experience-average.csv'
 // import experienceData from '../../data/profiles/experience.csv'
@@ -18,6 +19,7 @@ import experienceData from '../../data/profiles/experience.csv'
 import salaryData from '../../data/profiles/salary.csv'
 import textEditorsData from '../../data/profiles/text-editors.csv'
 
+import introContents from '../../data/profiles/intro.md'
 import experienceContents from '../../data/profiles/experience.md'
 import salaryContents from '../../data/profiles/salary.md'
 import texteditorsContents from '../../data/profiles/texteditors.md'
@@ -31,10 +33,11 @@ const Profiles = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle section={section} />
+      <TextBlock contents={introContents} />
       <HorizontalBlock
         data={parseCSV(experienceData)}
         contents={experienceContents}
-        title="Years of Experience" 
+        title="Years of Experience"
       />
       <HorizontalBlock
         data={parseCSV(salaryData)}
@@ -46,7 +49,6 @@ const Profiles = () =>
         contents={texteditorsContents}
         title="Favorite Text Editor" 
       />
-      <AuthorBlock section={section} />
       <Pagination currentSection="profiles" />
       <TwitterBlock section={section} />
     </div>

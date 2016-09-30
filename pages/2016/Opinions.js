@@ -58,7 +58,6 @@ const Opinions = () =>
           />
         )
       })}
-      <AuthorBlock section={section} />
       <Pagination section={section} />
       <TwitterBlock section={section} />
     </div>

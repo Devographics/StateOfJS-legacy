@@ -50,7 +50,6 @@ export default class TwitterTimeline extends React.Component {
   }
 }
 
-
 TwitterTimeline.propTypes = {
   query: PropTypes.string,
   widgetId: PropTypes.string,

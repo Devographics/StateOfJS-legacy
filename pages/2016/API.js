@@ -12,6 +12,7 @@ import PageTitle from '../../components/PageTitle.js'
 import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 import TLDRBlock from '../../components/blocks/TLDRBlock.js'
 import TwitterBlock from '../../components/blocks/TwitterBlock.js'
+import ResourcesBlock from '../../components/blocks/ResourcesBlock.js'
 
 import api from '../../data/api/results.csv'
 import apiOther from '../../data/api/other.csv'
@@ -44,9 +45,9 @@ const API = () =>
         contents={heatmap}
         title="How likely are API layer users to also use other technologies?"
       />
+      <ResourcesBlock section={section} />
       <VerticalBlock data={parseCSV(apiOther)} contents={other} title="Other API Layers (Mentions)" />
       <HorizontalBlock data={parseCSV(apiHappiness)} contents={happiness} title="On a scale of 1 to 5, how happy are you with your current API layer solution?" />
-      <AuthorBlock section={section} />
       <Pagination section="api" />
       <TwitterBlock section={section} />
     </div>

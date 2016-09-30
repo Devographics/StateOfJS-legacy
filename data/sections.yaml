@@ -1,42 +1,54 @@
 - name: Introduction
   slug: introduction
   author: sacha
-- name: JavaScript Flavors # todo
+- name: JavaScript Flavors
   slug: flavors
   author: sacha
+  widgetId: "780605416333910017"
 - name: Front-end Frameworks
   slug: frontend
   author: sacha
+  widgetId: "780959638187421696"
 - name: State Management
   slug: statemanagement
   author: tom
-- name: API Layers # todo
+  widgetId: "780959774753959936"
+- name: API Layers
   slug: api
   author: sacha
+  widgetId: "780959888155344896"
 - name: Full-Stack Frameworks
   slug: fullstack
-  author: sacha
-- name: Testing Frameworks # todo
+  author: michaelr
+  widgetId: "780959987702968320"
+- name: Testing Frameworks
   slug: testing
   author: michael
+  widgetId: "780960090132127744"
 - name: CSS Tools
   slug: css
   author: arunoda
-- name: Build Tools # todo
+  widgetId: "780960206415028224"
+- name: Build Tools
   slug: buildtools
   author: sacha
+  widgetId: "780960308084957184"
 - name: Mobile Frameworks
   slug: mobile
   author: josh
+  widgetId: "780960432844476420"
 - name: Features
   slug: features
   author: sacha
+  widgetId: "780960530651426817"
 - name: Opinions
   slug: opinions
   author: sacha
+  widgetId: "780960665221537796"
 - name: Developer Profiles
   slug: profiles
   author: sacha
+  widgetId: "780960777792434180"
 - name: Conclusion
   slug: conclusion
   author: sacha

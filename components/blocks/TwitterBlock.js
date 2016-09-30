@@ -19,7 +19,7 @@ const TwitterBlock = props => {
           <TweetWidget text={text} url={url} hashtag="stateofjs"/>
           <TwitterTimeline
             query={encodeURIComponent(url)}
-            widgetId="780605416333910017"
+            widgetId={section.widgetId}
           />
         </div>
       </div>

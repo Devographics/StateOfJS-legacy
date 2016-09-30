@@ -26,4 +26,10 @@ I wouldn't have been able to take time off to analyze these survey results witho
 
 Both have been a tremendous help in my quest to make sense of the JavaScript ecosystem (in fact Wes' [React course](https://reactforbeginners.com/) is how I learned React from scratch), and you'll find useful links to some of the resources they provide throughout the survey. 
 
-With this out of the way, let's get started with the first section: [JavaScript Flavors](/2016/flavors/).
+### Thanks
+
+I need to thank all the authors who contributed write-ups for this project, all of it for free. And a special thank you goes out to Michael Shilman, who helped me with the code for the charts, as well as Tom Coleman, who helped me analyze the data. 
+
+I also want to highlight both [Gatsby](https://github.com/gatsbyjs/gatsby), the amazing React static site generator I used to build this site; and the great [Recharts](https://github.com/recharts/recharts) library I used for the charts. 
+
+With all this out of the way, let's get started with the first section: [JavaScript Flavors](/2016/flavors/).

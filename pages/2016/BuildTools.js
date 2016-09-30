@@ -11,6 +11,7 @@ import PageTitle from '../../components/PageTitle.js'
 import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 import TLDRBlock from '../../components/blocks/TLDRBlock.js'
 import TwitterBlock from '../../components/blocks/TwitterBlock.js'
+import ResourcesBlock from '../../components/blocks/ResourcesBlock.js'
 
 import stacked from '../../data/buildtools/results.csv'
 import other from '../../data/buildtools/other.csv'
@@ -42,6 +43,7 @@ const BuildTools = () =>
         contents={heatmapContents}
         title="How likely are build tool users to also use other technologies?"
       />
+      <ResourcesBlock section={section} />
       <VerticalBlock data={parseCSV(other)} contents={otherContents} title="Other Build Tools" />
       <HorizontalBlock data={parseCSV(happiness)} contents={happinessContents} title="On a scale of 1 to 5, how happy are you with your current build tools?" />
       <AuthorBlock section={section} />
