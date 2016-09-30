@@ -54,6 +54,7 @@
   margin-bottom: $vmargin/1.5;
   @include small-medium{
     font-size: $large-font;
+    line-height: 1.4;
   }
   @include large{
     font-size: $largest-font;

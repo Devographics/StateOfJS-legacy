@@ -22,7 +22,6 @@
 }
 .pagination-link{
   display: block;
-  min-width: 270px;
   @include secondary-font;
   white-space: nowrap;
   @include small{
@@ -30,6 +29,7 @@
   }
   @include medium-large{
     font-size: $medium-font;
+    min-width: 270px;
   }
 }
 .pagination-previous{

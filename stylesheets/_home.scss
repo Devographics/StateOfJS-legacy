@@ -110,7 +110,7 @@
     left: 50%;
     transform: translateX(-50%);
     .button{
-      &:link{
+      &:link, &:visited{
         background: $beige;
       }
       position: relative;

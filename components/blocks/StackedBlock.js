@@ -5,12 +5,6 @@ import { FILTERS, RESPONSES } from '../../helpers/constants.js'
 import StackedBar from '../stackedbar/StackedBar.js'
 import SectionTitle from './SectionTitle.js'
 
-const getWindow = () => {
-  if (typeof window !== 'undefined') {
-    return window
-  }
-}
-
 class StackedBlock extends React.Component {
   constructor (props) {
     super(props)

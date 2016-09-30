@@ -10,6 +10,12 @@ import footerContents from '../data/footer.md'
 
 // import '../css/markdown-styles'
 
+const getDocument = () => {
+  if (typeof document !== 'undefined') {
+    return document
+  }
+}
+
 export default class Template extends React.Component {
 
   constructor () {
@@ -25,7 +31,7 @@ export default class Template extends React.Component {
 
   componentWillMount () {
     this.setState({
-      sticky: document && document.body.clientWidth > 1200,
+      sticky: getDocument() && getDocument().body.clientWidth > 1200,
     })
   }
 
