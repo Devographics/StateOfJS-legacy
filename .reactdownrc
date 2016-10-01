@@ -8,6 +8,7 @@
     },
     Newsletter: {
       component:  './components/common/Newsletter.js',
+      line: 'optional'
     },
     Sections: {
       component:  './components/common/Sections.js',

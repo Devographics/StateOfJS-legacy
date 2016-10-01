@@ -10,7 +10,7 @@ Like you, I spent far too many hours reading about all this, and at the end I *s
 
 Given the survey's success, I'm hoping to do it again next year to see how the trends evolve. If you'd like to take part next time, just leave me your email and I'll notify you when it launches:
 
-..Newsletter
+..Newsletter introduction
 
 ### Table of Contents
 

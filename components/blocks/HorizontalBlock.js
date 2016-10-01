@@ -10,7 +10,7 @@ const HorizontalBlock = (props, context) => {
       <div className="section-inner">
         <StickyContainer className="sticky-container">
           <Sticky isActive={context.sticky} className="sticky">
-            <HorizontalBar title={props.chartTitle} data={props.data} />
+            <HorizontalBar title={props.title} data={props.data} />
           </Sticky>
         </StickyContainer>
 

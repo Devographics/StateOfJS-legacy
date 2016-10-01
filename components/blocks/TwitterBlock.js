@@ -16,7 +16,7 @@ const TwitterBlock = props => {
       <div className="section-contents-wide twitter-block">
         <h2>Join the Conversation!</h2>
         <div className="twitter-timeline-wrapper">
-          <TweetWidget text={text} url={url} hashtag="stateofjs"/>
+          <TweetWidget section={props.section} text={text} url={url} hashtag="stateofjs"/>
           <TwitterTimeline
             query={encodeURIComponent(url)}
             widgetId={section.widgetId}

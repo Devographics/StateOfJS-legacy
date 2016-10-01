@@ -1,5 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
+import ReactGA from 'react-ga'
 
 export default class TweetWidget extends React.Component {
 
@@ -41,13 +42,14 @@ export default class TweetWidget extends React.Component {
           <textarea onChange={this.handleChange} value={this.state.value} />
           <span className={classNames('tweet-widget-count', { danger: this.state.isDanger })}>{this.state.charsLeft}</span>
         </div>
-        <a href={this.buildTwitterLink()} className="button">Tweet It!</a>
+        <a onClick={() => ReactGA.event({ category: 'Social', action: `Tweet comment ${this.props.section}` })} href={this.buildTwitterLink()} className="button">Tweet It!</a>
       </div>
     )
   }
 }
 
 TweetWidget.propTypes = {
+  section: React.PropTypes.string,
   text: React.PropTypes.string,
   url: React.PropTypes.string,
   hashtag: React.PropTypes.string,

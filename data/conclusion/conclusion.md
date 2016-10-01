@@ -20,7 +20,7 @@ But as valuable as these lessons are, what excites me most is being able to do t
 
 If you'd like to know when that happens, here's a handy form so you can leave me your email address:
 
-..Newsletter
+..Newsletter conclusion
 
 If I had to draw a single conclusion from all this though, it would be that the future looks bright for JavaScript. Sure, the churn rate is high, but on the other hand each successive generation of libraries is making huge leaps in terms of maintainability and developer experience.
 

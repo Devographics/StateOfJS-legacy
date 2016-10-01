@@ -3,6 +3,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Chart from './Chart.js'
 import Filters from '../common/Filters.js'
+import ReactGA from 'react-ga'
 
 export default class HorizontalBar extends React.Component {
   
@@ -18,6 +19,10 @@ export default class HorizontalBar extends React.Component {
     // either set the state based on "option" argument, or else just toggle it
     const showPercent = (option && option === 'percent') || !this.state.showPercent
     this.setState({ showPercent })
+    ReactGA.event({
+      category: 'Horizontal Chart',
+      action: `Toggle ${this.props.title} ${option}`,
+    })
   }
   
   render () {

@@ -13,7 +13,7 @@ export default function PageTitle ({ section }) {
   const nextSection = Sections[currentSectionIndex + 1]
   const author = _.find(Authors, { slug: currentSection.author })
   
-  const image = `http://stateofjs.com/exports/png/${currentSection}-stacked.png`
+  const image = `http://stateofjs.com/exports/png/${section}-stacked.png`
   const url = `http://stateofjs.com/2016/${section}/`
   const metaTitle = `State Of JavaScript Survey Results: ${currentSection.name}`
   const description = `Find out which JavaScript tools and frameworks are the most popular.`

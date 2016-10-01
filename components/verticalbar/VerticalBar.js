@@ -7,16 +7,9 @@ import Filters from '../common/Filters.js'
 export default class VerticalBar extends React.Component {
   constructor (props) {
     super(props)
-    this.handleToggle = this.handleToggle.bind(this)
     this.state = {
       showPercent: false,
     }
-  }
-
-  handleToggle (option) {
-    // either set the state based on "option" argument, or else just toggle it
-    const showPercent = (option && option === 'percent') || !this.state.showPercent
-    this.setState({ showPercent })
   }
 
   render () {
@@ -32,6 +25,7 @@ export default class VerticalBar extends React.Component {
 }
 
 VerticalBar.propTypes = {
+  section: React.PropTypes.string,
   title: React.PropTypes.string,
   data: React.PropTypes.array,
 }

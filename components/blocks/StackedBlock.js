@@ -4,6 +4,7 @@ import _, { throttle } from 'lodash'
 import { FILTERS, RESPONSES } from '../../helpers/constants.js'
 import StackedBar from '../stackedbar/StackedBar.js'
 import SectionTitle from './SectionTitle.js'
+import ReactGA from 'react-ga'
 
 class StackedBlock extends React.Component {
   constructor (props) {
@@ -16,7 +17,11 @@ class StackedBlock extends React.Component {
 
   handleSelect (value) {
     this.setState({
-      filter: value
+      filter: value,
+    })
+    ReactGA.event({
+      category: 'Stacked Chart',
+      action: `Filter ${this.props.section} ${value}`,
     })
   }
 
