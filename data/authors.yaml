@@ -40,3 +40,9 @@
   bio: >
     JavaScript developer and creator of [Bestof.js](http://bestof.js.org/), a platform
     that provides insights and resources about JavaScript libraries.  
+- name: Jennifer Wong
+  slug: jenn
+  avatar: jenn.jpg
+  url: http://mochimachine.org/
+  bio: >
+    Software Engineer at Eventbrite and creator of [(Human) Wasteland](http://mochimachine.org/wasteland/) and [Developers Developers](http://developersdevelope.rs/).

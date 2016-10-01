@@ -1,2 +1,2 @@
 - GraphQL looks promising. 
-- I couldn't find anybody else willing to write about API layers.
+- REST APIs are still the standard by a large margin. 

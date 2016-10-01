@@ -39,3 +39,11 @@ $bold: bold;
   font-weight: 400;
   // font-style: italic;
 }
+
+pre, code{
+  @include secondary-font;
+}
+
+strong{
+  font-weight: 700;
+}

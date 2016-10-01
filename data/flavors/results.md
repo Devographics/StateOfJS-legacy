@@ -6,9 +6,9 @@ Note that when selecting the **Interest** or **Satisfaction** view, percentages 
 
 ### Awareness
 
-ES6, CoffeeScript, and TypeScript all have near-perfect awareness, which surprised me since TypeScript isn’t quite as popular as the other two yet.
+ES6, [CoffeeScript](http://coffeescript.org/), and [TypeScript](https://github.com/Microsoft/TypeScript) all have near-perfect awareness, which surprised me since TypeScript isn’t quite as popular as the other two yet.
 
-Elm and ClojureScript on the other hand have much lower scores, which makes sense since they’re more tied to their own ecosystems, and harder to use in existing apps.
+[Elm](http://elm-lang.org/) and [ClojureScript](https://clojurescript.org/) on the other hand have much lower scores, which makes sense since they’re more tied to their own ecosystems, and harder to use in existing apps.
 
 ### Interest
 

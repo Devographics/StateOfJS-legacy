@@ -113,6 +113,9 @@
       &:link, &:visited{
         background: $beige;
       }
+      &:active, &:hover{
+        background: $pink;
+      }
       position: relative;
     }
   }

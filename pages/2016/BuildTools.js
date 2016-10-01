@@ -12,16 +12,19 @@ import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 import TLDRBlock from '../../components/blocks/TLDRBlock.js'
 import TwitterBlock from '../../components/blocks/TwitterBlock.js'
 import ResourcesBlock from '../../components/blocks/ResourcesBlock.js'
+import TextBlock from '../../components/blocks/TextBlock.js'
 
 import stacked from '../../data/buildtools/results.csv'
 import other from '../../data/buildtools/other.csv'
 import happiness from '../../data/buildtools/happiness.csv'
 
 import tldrContents from '../../data/buildtools/tldr.md'
+import introContents from '../../data/buildtools/intro.md'
 import resultsContents from '../../data/buildtools/results.md'
 import heatmapContents from '../../data/buildtools/heatmap.md'
 import otherContents from '../../data/buildtools/other.md'
 import happinessContents from '../../data/buildtools/happiness.md'
+import conclusionContents from '../../data/buildtools/conclusion.md'
 
 const section = 'buildtools'
 const title = 'Build Tools'
@@ -32,6 +35,7 @@ const BuildTools = () =>
     <div className="results-container">
       <PageTitle section={section} />
       <TLDRBlock contents={tldrContents} />
+      <TextBlock contents={introContents} />
       <StackedBlock
         data={parseCSV(stacked)}
         contents={resultsContents}
@@ -46,6 +50,7 @@ const BuildTools = () =>
       <ResourcesBlock section={section} />
       <VerticalBlock data={parseCSV(other)} contents={otherContents} title="Other Build Tools" />
       <HorizontalBlock data={parseCSV(happiness)} contents={happinessContents} title="On a scale of 1 to 5, how happy are you with your current build tools?" />
+      <TextBlock contents={conclusionContents} />
       <AuthorBlock section={section} />
       <Pagination section={section} />
       <TwitterBlock section={section} />

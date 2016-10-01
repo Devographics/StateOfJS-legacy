@@ -2,6 +2,12 @@ Congratulations for making it all the way through! I have to confess that when I
 
 This entire enterprise grew out of my own search for clarity, and I think it's fair to say that the survey data certainly provided some answers. 
 
+### Download the Data
+
+Speaking of data, you can [download the raw anonymized data here](https://gumroad.com/l/hLWTB). 
+
+The data is available on a pay-what-you-want basis, so if you think what I've done here is valuable, you can optionally support this project with a small donation.
+
 ### Winners & Losers
 
 Some technologies turned out to be clear winners (React), some emerged as promising up-and-comers (Vue), and some proved to be on their way out (CoffeeScript).

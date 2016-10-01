@@ -4,7 +4,7 @@ According to the chart, there's a strong correlation between using plain CSS and
 
 ### CSS in React
 
-React stands out from its competition as it offers the most options when it comes to writing CSS. Apart from CSS Modules, there's also newcomer Aphrodite, a clean way to write CSS in JavaScript and embed styles in individual UI components. This method was popularized by React Native and early frameworks like Radium.
+React stands out from its competition as it offers the most options when it comes to writing CSS. Apart from CSS Modules, there's also newcomer [Aphrodite](https://github.com/Khan/aphrodite), a clean way to write CSS in JavaScript and embed styles in individual UI components. This method was popularized by React Native and early frameworks like [Radium](https://formidable.com/open-source/radium/).
 
 Of course, React developers always have the choice of falling back on more standard frameworks like SASS. But things get complicated for developers who build tools and libraries for React.
 

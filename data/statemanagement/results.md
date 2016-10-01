@@ -2,9 +2,9 @@
 
 State Management is an emerging category in JavaScript, and not necessarily one every developer needs a tool for at the moment. 
 
-Redux is clearly the most popular of the Flux implementations, an architecture championed by Facebook as a system for managing state globally in React or other frontend libraries. 87% of users had heard of **Redux**, which is pretty incredible given it is barely a year old and competing for mindshare with a host of other Flux implementations (as we'll see below).
+[Redux](http://redux.js.org/) is clearly the most popular of the Flux implementations, an architecture championed by Facebook as a system for managing state globally in React or other frontend libraries. 87% of users had heard of Redux, which is pretty incredible given it is barely a year old and competing for mindshare with a host of other Flux implementations (as we'll see below).
 
-On the other hand, despite being one of the most established Redux alternatives **MobX** still has only 30% awareness. 
+On the other hand, despite being one of the most established Redux alternatives [MobX](https://mobxjs.github.io/mobx/) still has only 30% awareness. 
 
 ### Interest
 
@@ -14,6 +14,6 @@ It's especially interesting seeing the high level of interest in Redux, given th
 
 ### Satisfaction
 
-Overall, Redux users are happy users with one of the highest satisfaction ratings of any library; MobX and Relay are middling in this respect and we can perhaps expect to see other competitors emerge in the months to come in this rapidly changing area.
+Overall, Redux users are happy users with one of the highest satisfaction ratings of any library; MobX and [Relay](https://facebook.github.io/relay/) are middling in this respect and we can perhaps expect to see other competitors emerge in the months to come in this rapidly changing area.
 
 It certainly won't be a surprise to see a big difference in this area in future surveys.

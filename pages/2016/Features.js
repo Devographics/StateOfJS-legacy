@@ -48,13 +48,15 @@ const Features = () =>
       <PageTitle section={section} />
       <TextBlock contents={FeaturesIntro} />
       {features.map(feature => {
+        const featureData = _.clone(feature)
+        delete featureData.Option
+
         const featureTitle = feature.Option
         const featureFileName = featureTitle.replace(new RegExp(' ', 'g'), '').replace(new RegExp('-', 'g'), '').toLowerCase()
         const markdown = imports[featureFileName]
 
         // const featurePath = `../../data/features/${featureFileName}.md`
-        delete feature.Option
-        const dataArray = parseCSV(_.keys(feature).map(key => ({ Option: key, Value: feature[key] })))
+        const dataArray = parseCSV(_.keys(featureData).map(key => ({ Option: key, Value: feature[key] })))
         // const contents = require(featurePath)
 
         return (

@@ -12,12 +12,12 @@ const PlaySVG = () => (
 )
 
 const renderSponsor = (sponsor) => {
-  if (sponsor === 'egghead') {
-    return <span><a href="https://egghead.io"><img src="https://d1xwtr0qwr70yv.cloudfront.net/assets/elements/logo-mobile-0012236aa1a9766db6b0cc9705df19ec.svg" />Egghead.io</a></span>
-  } else if (sponsor === 'reactforbeginners') {
+  if (sponsor === 'reactforbeginners') {
     return <span><a href="https://reactforbeginners.com">React For Beginners</a> & <a href="https://egghead.io"><img src="https://d1xwtr0qwr70yv.cloudfront.net/assets/elements/logo-mobile-0012236aa1a9766db6b0cc9705df19ec.svg" />Egghead.io</a></span>
   } else if (sponsor === 'es6') {
     return <span><a href="https://ES6.io/friend/STATEOFJS">ES6 For Everyone</a> & <a href="https://egghead.io"><img src="https://d1xwtr0qwr70yv.cloudfront.net/assets/elements/logo-mobile-0012236aa1a9766db6b0cc9705df19ec.svg" />Egghead.io</a></span>
+  } else {
+    return <span><a href="https://egghead.io"><img src="https://d1xwtr0qwr70yv.cloudfront.net/assets/elements/logo-mobile-0012236aa1a9766db6b0cc9705df19ec.svg" />Egghead.io</a></span>
   }
 }
 
@@ -33,20 +33,25 @@ const ResourcesBlock = ({ section, sponsor }) => {
           <span className="resources-sponsor">Presented by {renderSponsor(sponsor)}</span>
         </div>
         <div className="resources-list">
-          {_.map(sectionResources, resource =>
-            <div key={resource.name} className="resource">
-              <div className="resource-image">
-                <div><img src={`/images/resources/${resource.avatar}`} /></div>
+          {_.map(sectionResources, resource => {
+            const url = `${resource.url}?utm_source=stateofjs&utm_medium=sponsor&utm_campaign=${section}`
+
+            return (
+              <div key={resource.name} className="resource">
+                <div className="resource-image">
+                  <div><img src={`/images/resources/${resource.avatar}`} /></div>
+                </div>
+                <div className="resource-contents">
+                  <h4 className="resource-title"><a href={`${url}&utm_content=textlink`}>{resource.name}</a></h4>
+                  <h5 className="resource-author">{resource.author}</h5>
+                  <div className="resource-description" >{resource.description}</div>
+                </div>
+                <div className="resource-play">
+                  <a href={`${url}&utm_content=playlink`}><PlaySVG /></a>
+                </div>
               </div>
-              <div className="resource-contents">
-                <h4 className="resource-title"><a href={resource.url}>{resource.name}</a></h4>
-                <h5 className="resource-author">{resource.author}</h5>
-                <div className="resource-description" >{resource.description}</div>
-              </div>
-              <div className="resource-play">
-                <a href={resource.url}><PlaySVG /></a>
-              </div>
-            </div>
+              )
+            }
           )}
         </div>
         <div className="resources-sponsored">Thanks to our partners for supporting this project. Check them out for more awesome programming courses!</div>

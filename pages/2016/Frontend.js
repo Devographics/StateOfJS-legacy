@@ -48,7 +48,6 @@ const Frontend = () =>
       <ResourcesBlock section={section} sponsor="reactforbeginners" />
       <VerticalBlock data={parseCSV(frontendOther)} contents={other} title="Other Front-End Frameworks (Mentions)" chartTitle="Other Front-end Frameworks" />
       <HorizontalBlock data={parseCSV(frontendHappiness)} contents={happiness} title="On a scale of 1 to 5, how happy are you with your current solution for the front-end?" />
-      <AuthorBlock section={section} />
       <Pagination section={section} />
       <TwitterBlock section={section} />
     </div>

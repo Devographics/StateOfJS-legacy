@@ -37,9 +37,10 @@ export default class Index extends React.Component {
           <TextBlock contents={homeContents} className="intro section-border section-narrow" />
 
           <Stats />
+          
           <Comments />
 
-          {/*<Share/>*/}
+          <Share/>
 
         </div>
       </DocumentTitle>
