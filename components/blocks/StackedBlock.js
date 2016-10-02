@@ -29,12 +29,13 @@ class StackedBlock extends React.Component {
     document.body.clientWidth
   }
   render () {
+    const topOffset = 60
     return (
       <div className="section">
         {this.props.title ? <SectionTitle title={this.props.title} /> : null}
         <div className="section-inner">
           <StickyContainer className="sticky-container">
-            <Sticky isActive={this.context.sticky} className="sticky">
+            <Sticky topOffset={-topOffset} stickyStyle={{ paddingTop: topOffset }} isActive={this.context.sticky} className="sticky-block">
               <StackedBar
                 identifier="Option"
                 title={this.props.title}

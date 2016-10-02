@@ -16,7 +16,7 @@ const Conclusion = () =>
     <div className="results-container">
       <PageTitle section={section} />
       <TextBlock contents={conclusionContents} />
-      <Pagination currentSection={section} />
+      <Pagination section={section} />
     </div>
   </DocumentTitle>
 

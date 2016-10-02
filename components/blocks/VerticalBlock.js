@@ -4,12 +4,13 @@ import VerticalBar from '../verticalbar/VerticalBar.js'
 import SectionTitle from './SectionTitle.js'
 
 const VerticalBlock = (props, context) => {
+  const topOffset = 60
   return (
     <div className="section">
       {props.title ? <SectionTitle title={props.title} /> : null}
       <div className="section-inner">
         <StickyContainer className="sticky-container">
-          <Sticky isActive={context.sticky} className="sticky">
+          <Sticky topOffset={-topOffset} stickyStyle={{ paddingTop: topOffset }} isActive={context.sticky} className="sticky">
             <VerticalBar {...props} />
           </Sticky>
         </StickyContainer>

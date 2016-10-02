@@ -66,6 +66,11 @@
         margin-left: 5px;   
       }
     }
+    @include large{
+      span{
+        padding-left: 15px;
+      }
+    }
     color: $blue;
     margin-bottom: $vmargin*1.5;
     margin-right: $hmargin*2;
@@ -77,6 +82,11 @@
       align-self: flex-end;
       span{
         margin-left: -5px;
+      }
+    }
+    @include large{
+      span{
+        padding-right: 15px;
       }
     }
     color: $pink; 

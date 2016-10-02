@@ -49,7 +49,7 @@ const Profiles = () =>
         contents={texteditorsContents}
         title="Favorite Text Editor" 
       />
-      <Pagination currentSection="profiles" />
+      <Pagination section="profiles" />
       <TwitterBlock section={section} />
     </div>
   </DocumentTitle>
