@@ -1,0 +1,2 @@
+- Native apps are still the most common solution.
+- React Native is showing promise. 

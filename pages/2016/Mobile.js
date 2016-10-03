@@ -9,12 +9,19 @@ import SectionHeatmapBlock from '../../components/blocks/SectionHeatmapBlock.js'
 import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
+import TLDRBlock from '../../components/blocks/TLDRBlock.js'
+import TwitterBlock from '../../components/blocks/TwitterBlock.js'
+import ResourcesBlock from '../../components/blocks/ResourcesBlock.js'
 
 import mobile from '../../data/mobile/results.csv'
 import mobileOther from '../../data/mobile/other.csv'
 import mobileHappiness from '../../data/mobile/happiness.csv'
 
-import Dummy from '../../contents/dummy.md'
+import tldrContents from '../../data/mobile/tldr.md'
+import resultsContents from '../../data/mobile/results.md'
+import otherContents from '../../data/mobile/other.md'
+import happinessContents from '../../data/mobile/happiness.md'
+import heatmapContents from '../../data/mobile/heatmap.md'
 
 const section = 'mobile'
 const title = 'Mobile Frameworks'
@@ -24,17 +31,24 @@ const Mobile = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle section={section} />
-      <StackedBlock data={parseCSV(mobile)} contents={Dummy} section={section} />
+      <TLDRBlock contents={tldrContents} />
+      <StackedBlock
+        data={parseCSV(mobile)}
+        contents={resultsContents}
+        section={section}
+        title={title}
+      />
       <SectionHeatmapBlock
         rows={items}
-        contents={Dummy}
-        title="Heatmap"
-        chartTitle="How likely is a mobile framework user to also use other technologies?"
+        contents={heatmapContents}
+        title="How likely is a mobile framework user to also use other technologies?"
       />
-      <VerticalBlock data={parseCSV(mobileOther)} contents={Dummy} title="Other Mobile Frameworks" />
-      <HorizontalBlock data={parseCSV(mobileHappiness)} contents={Dummy} title="Happiness" />
+      <ResourcesBlock section={section} />
+      <VerticalBlock data={parseCSV(mobileOther)} contents={otherContents} title="Other Mobile Frameworks" />
+      <HorizontalBlock data={parseCSV(mobileHappiness)} contents={happinessContents} title="Happiness" />
       <AuthorBlock section={section} />
-      <Pagination currentSection={section} />
+      <Pagination section={section} />
+      <TwitterBlock section={section} />
     </div>
   </DocumentTitle>
 

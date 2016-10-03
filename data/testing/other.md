@@ -1,4 +1,4 @@
-Of the remaining write-in frameworks, Javascript users love them some [**Tape**](https://github.com/substack/tape).
+Of the remaining write-in frameworks, Javascript users love them some [Tape](https://github.com/substack/tape).
 Javascript author Eric Elliott makes a case for it in his essay [Why I use Tape Instead of Mocha & So Should You](https://medium.com/javascript-scene/why-i-use-tape-instead-of-mocha-so-should-you-6aa105d8eaf4).
 
 Other popular write-ins include jQuery's testing framework [qUnit](https://qunitjs.com/), the test runner

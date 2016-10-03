@@ -4,14 +4,36 @@ import { prefixLink } from 'gatsby-helpers'
 import DocumentTitle from 'react-document-title'
 import Helmet from 'react-helmet'
 
+import TextBlock from '../components/blocks/TextBlock.js'
+
+import footerContents from '../data/footer.md'
+
 // import '../css/markdown-styles'
 
-module.exports = React.createClass({
-  propTypes () {
-    return {
-      children: React.PropTypes.any,
+const getDocument = () => {
+  if (typeof document !== 'undefined') {
+    return document
+  }
+}
+
+export default class Template extends React.Component {
+
+  constructor () {
+    super()
+    this.state = {
+      sticky: false,
     }
-  },
+  }
+
+  getChildContext () {
+    return { sticky: this.state.sticky }
+  }
+
+  componentWillMount () {
+    this.setState({
+      sticky: getDocument() && getDocument().body.clientWidth > 1200,
+    })
+  }
 
   render () {
     const title = DocumentTitle.peek()
@@ -40,14 +62,19 @@ module.exports = React.createClass({
     return (
       <div className="outer-wrapper">
         <Helmet meta={meta} />
-        <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i|Work+Sans:400,700" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i|Roboto+Slab:300,400,700" rel="stylesheet"/>
         {this.props.children}
         {/*
         <div className="footer">
           Built by <a href="http://twitter.com/SachaGreif">Sacha Greif</a> using <a href="https://github.com/gatsbyjs/gatsby">Gatsby</a>
         </div>
         */}
+        <TextBlock contents={footerContents} className="home-footer" />
       </div>
     )
-  },
-})
+  }
+}
+
+Template.childContextTypes = {
+  sticky: React.PropTypes.bool,
+}

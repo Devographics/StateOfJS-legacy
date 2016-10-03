@@ -1,0 +1,3 @@
+[Sublime Text](https://www.sublimetext.com/) and [Atom](https://atom.io/) are still rule the roost, but the interesting entrant here for me is [VS Code](https://code.visualstudio.com/). 
+
+For a long time, Microsoft was seen as a negative force in the JavaScript ecosystem, dragging us all down with its antiquated browsers. But over the past couple years, the company has shown that it's serious about making up for past faults with well-received initiatives such as TypeScript and VS Code.

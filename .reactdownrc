@@ -1,5 +1,18 @@
 {
   directives: {
+    SponsorsBlock: {
+      component:  './components/blocks/SponsorsBlock.js',
+    },
+    ViewResults: {
+      component:  './components/common/ViewResults.js',
+    },
+    Newsletter: {
+      component:  './components/common/Newsletter.js',
+      line: 'optional'
+    },
+    Sections: {
+      component:  './components/common/Sections.js',
+    },
     FilterPoint: {
       component:  './components/stackedbar/FilterPoint.js',
       line: 'optional'

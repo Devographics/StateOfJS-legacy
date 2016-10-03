@@ -4,81 +4,38 @@ import _, { throttle } from 'lodash'
 import { FILTERS, RESPONSES } from '../../helpers/constants.js'
 import StackedBar from '../stackedbar/StackedBar.js'
 import SectionTitle from './SectionTitle.js'
-
-const getWindow = () => {
-  if (typeof window !== 'undefined') {
-    return window
-  }
-}
+import ReactGA from 'react-ga'
 
 class StackedBlock extends React.Component {
   constructor (props) {
     super(props)
-    this.setPointPosition = this.setPointPosition.bind(this)
-    this.handleScroll = throttle(this.handleScroll.bind(this), 50)
     this.handleSelect = this.handleSelect.bind(this)
-    this.filterPoints = []
     this.state = {
       filter: 'All',
-      filterPoints: [],
     }
-  }
-
-  getChildContext () {
-    return { setPointPosition: this.setPointPosition };
-  }
-
-  componentDidMount () {
-    if (!getWindow()) return
-    // disable scroll trigger for now
-    // window.addEventListener('resize', this.handleScroll)
-    // window.addEventListener('scroll', this.handleScroll)
-  }
-
-  componentWillUnmount () {
-    if (!getWindow()) return
-    // disable scroll trigger for now
-    // window.removeEventListener('resize', this.handleScroll)
-    // window.removeEventListener('scroll', this.handleScroll)
-  }
-
-  setPointPosition (filter, top) {
-    this.filterPoints.push({ filter, top })
   }
 
   handleSelect (value) {
     this.setState({
-      filter: value
+      filter: value,
+    })
+    ReactGA.event({
+      category: 'Stacked Chart',
+      action: `Filter ${this.props.section} ${value}`,
     })
   }
 
-  handleScroll () {
-    const doc = document
-    const body = doc.body
-    const scrollTop = (doc.documentElement && doc.documentElement.scrollTop) || body.scrollTop
-    const scrollHeight = window.innerHeight // (doc.documentElement && doc.documentElement.scrollHeight) || body.scrollHeight
-
-    const updatedState = _.clone(this.state) // clone the entire state to be able to compare changes
-    const triggerTop = scrollTop + scrollHeight / 3 // set the trigger point at one-third of the viewport height
-
-    this.filterPoints.forEach(filterPoint => {
-      if (triggerTop > filterPoint.top ) {
-        updatedState.filter = filterPoint.filter
-      }
-    })
-
-    if (!_.isEqual(updatedState, this.state)) {
-      this.setState(updatedState)
-    }
+  componentDidMount () {
+    document.body.clientWidth
   }
-
   render () {
+    const topOffset = 60
     return (
       <div className="section">
         {this.props.title ? <SectionTitle title={this.props.title} /> : null}
         <div className="section-inner">
           <StickyContainer className="sticky-container">
-            <Sticky className="sticky">
+            <Sticky topOffset={-topOffset} stickyStyle={{ paddingTop: topOffset }} isActive={this.context.sticky} className="sticky-block">
               <StackedBar
                 identifier="Option"
                 title={this.props.title}
@@ -107,8 +64,8 @@ StackedBlock.propTypes = {
   data: React.PropTypes.array,
 }
 
-StackedBlock.childContextTypes = {
-  setPointPosition: React.PropTypes.func,
+StackedBlock.contextTypes = {
+  sticky: React.PropTypes.bool,
 }
 
 export default StackedBlock

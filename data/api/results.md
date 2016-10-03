@@ -1,0 +1,5 @@
+No surprises here, custom REST APIs are the default, even though it looks like [Firebase](https://firebase.google.com/) has managed to carve out a nice little niche for itself. 
+
+All other options had minimal awareness, and even the much-hyped [GraphQL](http://graphql.org/) seems to struggle to break through the noise, although it does have a fairly high 76% “want-to-learn” score. 
+
+It's fair to say this space suffers from a communication problem. While BaaS (back-end-as-a-service) offerings like Firebase or [Parse](https://parse.com/) are able to clearly articulate their value proposition (“we take care of the back-end so you don't have to”), these advantages are less clear when it comes to self-hosted options like GraphQL, [Falcor](http://netflix.github.io/falcor/), or [Horizon](https://horizon.io/). 

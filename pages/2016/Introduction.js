@@ -6,7 +6,7 @@ import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
 import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 
-import OpinionsIntro from '../../data/opinions/opinions-intro.md'
+import introContents from '../../data/introduction/introduction.md'
 
 const section = 'introduction'
 const title = 'Introduction'
@@ -15,7 +15,7 @@ const Introduction = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle section={section} />
-      <TextBlock contents={OpinionsIntro} />
+      <TextBlock contents={introContents} />
       <AuthorBlock section={section} />
       <Pagination section={section} />
     </div>

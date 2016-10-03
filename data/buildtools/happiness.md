@@ -1,0 +1,1 @@
+Most survey takers are pretty happy with their current build tools, with an average happiness level of **3.64** and almost 90% answering 3 or higher. This probably makes sense, since build tools tend to make programming and releasing easier for everyone.

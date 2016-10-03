@@ -9,14 +9,13 @@ body{
   background: $bg-color;
   color: $text-color;
   padding: 0;
+  font-feature-settings: "liga" 0;
   @include primary-font;
   @include small{
     font-size: $root-size-mobile;
-    line-height: 1.5;
   }
   @include large{
     font-size: $root-size;
-    line-height: 1.6;
     border: 10px solid rgba($blue, 0.6);
     padding: 1px;
     min-height: 100vh;
@@ -29,14 +28,25 @@ h1, h2, h3, h4, h5, h6{
   margin: 0 0 $vmargin 0;
 }
 
-p{
+p, ul, ol{
   margin: 0 0 $vmargin 0;
+  @include small{
+    line-height: 1.6;
+  }
+  @include medium-large{
+    line-height: 1.8;
+  }
 }
 
 a{
   text-decoration: none;
   &, &:link, &:visited, &:active, &:focus{
-    color: $blue;
+    @include small{
+      color: $blue2;
+    }
+    @include medium-large{
+      color: $blue;
+    }
   }
   &:hover{
     color: $pink;

@@ -12,6 +12,8 @@ import ResourcesBlock from '../../components/blocks/ResourcesBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
 import AuthorBlock from '../../components/blocks/AuthorBlock.js'
+import TLDRBlock from '../../components/blocks/TLDRBlock.js'
+import TwitterBlock from '../../components/blocks/TwitterBlock.js'
 
 import frontend from '../../data/frontend/results.csv'
 import frontendOther from '../../data/frontend/other.csv'
@@ -21,6 +23,7 @@ import results from '../../data/frontend/results.md'
 import other from '../../data/frontend/other.md'
 import happiness from '../../data/frontend/happiness.md'
 import heatmap from '../../data/frontend/heatmap.md'
+import tldr from '../../data/frontend/tldr.md'
 
 const section = 'frontend'
 const title = 'Front-End Frameworks'
@@ -30,17 +33,23 @@ const Frontend = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle section={section} />
-      <StackedBlock data={parseCSV(frontend)} contents={results} section={section} />
+      <TLDRBlock contents={tldr} />
+      <StackedBlock 
+        data={parseCSV(frontend)} 
+        contents={results} 
+        section={section}
+        title={title}
+      />
       <SectionHeatmapBlock
         rows={items}
         contents={heatmap}
         title="How likely are front-end framework users to also use other technologies?"
       />
-      <ResourcesBlock section={section} sponsor={<span><a href="https://reactforbeginners.com">React For Beginners</a> & <a href="https://egghead.io"><img src="https://d1xwtr0qwr70yv.cloudfront.net/assets/elements/logo-mobile-0012236aa1a9766db6b0cc9705df19ec.svg" />Egghead.io</a></span>} />
+      <ResourcesBlock section={section} sponsor="reactforbeginners" />
       <VerticalBlock data={parseCSV(frontendOther)} contents={other} title="Other Front-End Frameworks (Mentions)" chartTitle="Other Front-end Frameworks" />
       <HorizontalBlock data={parseCSV(frontendHappiness)} contents={happiness} title="On a scale of 1 to 5, how happy are you with your current solution for the front-end?" />
-      <AuthorBlock section={section} />
       <Pagination section={section} />
+      <TwitterBlock section={section} />
     </div>
   </DocumentTitle>
 

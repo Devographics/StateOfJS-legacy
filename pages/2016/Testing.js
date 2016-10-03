@@ -9,15 +9,21 @@ import SectionHeatmapBlock from '../../components/blocks/SectionHeatmapBlock.js'
 import AuthorBlock from '../../components/blocks/AuthorBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
+import TLDRBlock from '../../components/blocks/TLDRBlock.js'
+import TextBlock from '../../components/blocks/TextBlock.js'
+import TwitterBlock from '../../components/blocks/TwitterBlock.js'
+import ResourcesBlock from '../../components/blocks/ResourcesBlock.js'
 
 import testing from '../../data/testing/results.csv'
 import testingOther from '../../data/testing/other.csv'
 import testingHappiness from '../../data/testing/happiness.csv'
 
-import results from '../../data/testing/results.md'
-import other from '../../data/testing/other.md'
-import happiness from '../../data/testing/happiness.md'
-import heatmap from '../../data/testing/heatmap.md'
+import tldrContents from '../../data/testing/tldr.md'
+import introContents from '../../data/testing/intro.md'
+import resultsContents from '../../data/testing/results.md'
+import otherContents from '../../data/testing/other.md'
+import happinessContents from '../../data/testing/happiness.md'
+import heatmapContents from '../../data/testing/heatmap.md'
 
 const section = 'testing'
 const title = 'Testing'
@@ -27,16 +33,25 @@ const Testing = () =>
   <DocumentTitle title={title}>
     <div className="results-container">
       <PageTitle title={title} section={section} />
-      <StackedBlock data={parseCSV(testing)} contents={results} section={section} />
+      <TLDRBlock contents={tldrContents} />
+      <TextBlock contents={introContents} />
+      <StackedBlock
+        data={parseCSV(testing)}
+        contents={resultsContents}
+        section={section}
+        title={title}
+      />
       <SectionHeatmapBlock
         rows={items}
-        contents={heatmap}
+        contents={heatmapContents}
         title="How likely are testing framework users to also use other technologies?"
       />
-      <VerticalBlock data={parseCSV(testingOther)} contents={other} title="Other Testing Tools" />
-      <HorizontalBlock data={parseCSV(testingHappiness)} contents={happiness} title="On a scale of 1 to 5, how happy are you with your current testing solution?" />
+      <ResourcesBlock section={section} />
+      <VerticalBlock data={parseCSV(testingOther)} contents={otherContents} title="Other Testing Tools" />
+      <HorizontalBlock data={parseCSV(testingHappiness)} contents={happinessContents} title="On a scale of 1 to 5, how happy are you with your current testing solution?" />
       <AuthorBlock section={section} />
       <Pagination section={section} />
+      <TwitterBlock section={section} />
     </div>
   </DocumentTitle>
 

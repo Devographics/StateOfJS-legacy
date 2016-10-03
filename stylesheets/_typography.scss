@@ -1,11 +1,13 @@
-$root-size-mobile: 16px;
+
+$root-size-mobile: 15px;
 $root-size: 19px;
 
 $smaller-font: 0.7rem;
 $small-font: 0.8rem;
 $medium-font: 1rem;
 $large-font: 1.3rem;
-$largest-font: 2rem;
+$larger-font: 1.5rem;
+$largest-font: 1.9rem;
 
 $light: 100;
 $medium: normal;
@@ -24,9 +26,24 @@ $bold: bold;
 }
 
 @mixin primary-font{
-  font-family: 'Source Sans Pro', 'Work Sans', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
+  @include small{
+    font-weight: 400;
+  }
+  @include medium-large{
+    font-weight: 300;
+  }
 }
 @mixin secondary-font{
   font-family: 'Space Mono', monospace;
+  font-weight: 400;
   // font-style: italic;
+}
+
+pre, code{
+  @include secondary-font;
+}
+
+strong{
+  font-weight: 700;
 }

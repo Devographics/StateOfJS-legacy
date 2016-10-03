@@ -1,7 +1,8 @@
 .resources{
 
 }
-.resources-title{
+.resources-title, .sponsors-title{
+  font-size: $medium-font;
   @include medium-large{
     @include flex-center;
     justify-content: space-between;
@@ -14,7 +15,7 @@
 .resources-sponsor{
   color: $lighter-text-color;
   @include secondary-font;
-  font-size: $medium-font;
+  font-size: $small-font;
   img{
     display: inline-block;
     height: 20px;
@@ -24,7 +25,10 @@
 }
 .resources-list{
 }
-.resource{
+.sponsors-list{
+  margin-bottom: $vmargin;
+}
+.resource, .sponsor{
   border: 1px solid $border-color;
   border-radius: 3px;
   background: white;
@@ -34,7 +38,7 @@
     @include flex-center;
   }
 }
-.resource-image{
+.resource-image, .sponsor-image{
   @include crosshatchBg;
   @include small{
     width: 60px;
@@ -46,6 +50,7 @@
     margin-right: $hmargin;
   }
   div {
+    background: white;
     position: relative;
     z-index: 10;
     border: 2px solid $border-color;
@@ -57,17 +62,25 @@
     position: relative;
   }
 }
-.resource-contents{
+.resource-contents, .sponsor-contents{
   flex: 1;
 }
-.resource-title{
+.resource-title, .sponsor-title{
   margin-bottom: 0;
+}
+.sponsor-title{
+  font-size: $large-font;
 }
 .resource-author{
   margin-bottom: $vmargin/4;
 }
 .resource-description{
   font-size: $medium-font;
+}
+.sponsor-description{
+  p{
+    margin-bottom: 0;
+  }
 }
 .resource-play{
   @include small{

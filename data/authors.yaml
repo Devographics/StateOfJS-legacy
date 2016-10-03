@@ -1,34 +1,48 @@
 - name: Sacha Greif
   slug: sacha
-  avatar: http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/sacha.jpg
+  avatar: sacha.jpg
   url: https://twitter.com/SachaGreif
   bio: >
-    Founder of [Kadira](http://kadira.io), an end to end performance monitoring platform for Meteor, 
-    and [Storybook](https://github.com/kadirahq/react-storybook), a UI component dev environment for React.
+    Co-author of [Discover Meteor](http://discovermeteor.com) and creator of
+    [Telescope](http://telescopeapp.org). Also runs design newsletter [Sidebar](http://sidebar.io).
 - name: Michael Shilman
   slug: michael
-  avatar: https://avatars2.githubusercontent.com/u/488689?v=3&s=400
+  avatar: michael.jpg
   url: https://medium.com/@shilman
   bio: >
     Founder of [Kadira](http://kadira.io), an end to end performance monitoring platform for Meteor, 
     and [Storybook](https://github.com/kadirahq/react-storybook), a UI component dev environment for React.
 - name: Arunoda Susiripala
   slug: arunoda
-  avatar: https://avatars2.githubusercontent.com/u/50838?v=3&s=400
+  avatar: arunoda.jpg
   url: https://twitter.com/arunoda
   bio: >
     Founder of [Kadira](http://kadira.io), an end to end performance monitoring platform for Meteor, 
     and [Storybook](https://github.com/kadirahq/react-storybook), a UI component dev environment for React.
 - name: Josh Owens
   slug: josh
-  avatar: https://pbs.twimg.com/profile_images/431476628166696960/xQCVJI_u_400x400.jpeg
+  avatar: josh.jpg
   url: http://joshowens.me/
   bio: >
-    Founder of [Kadira](http://kadira.io), an end to end performance monitoring platform for Meteor, 
-    and [Storybook](https://github.com/kadirahq/react-storybook), a UI component dev environment for React.
+    Creator of JavaScript news site [Crater.io](http://crater.io) and host of the 
+    [Crater Podcast](http://podcast.crater.io/) and [SpaceDojo Show](https://show.spacedojo.com/).
 - name: Tom Coleman
   slug: tom
   avatar: https://avatars1.githubusercontent.com/u/132554?v=3&s=466
   url: https://twitter.com/tmeasday
   bio: >
-    Co-author of [Discover Meteor](http://discovermeteor.com), now working at [Meteor](http://meteor.com). Exploring how to improve user experience through technology, design and performance.
+    Co-author of [Discover Meteor](http://discovermeteor.com), now working at [Meteor](http://meteor.com). 
+    Exploring how to improve user experience through technology, design and performance.
+- name: Michael Rambeau
+  slug: michaelr
+  avatar: https://avatars2.githubusercontent.com/u/488689?v=3&s=400
+  url: http://michaelrambeau.com/
+  bio: >
+    JavaScript developer and creator of [Bestof.js](http://bestof.js.org/), a platform
+    that provides insights and resources about JavaScript libraries.  
+- name: Jennifer Wong
+  slug: jenn
+  avatar: jenn.jpg
+  url: http://mochimachine.org/
+  bio: >
+    Software Engineer at Eventbrite and creator of [(Human) Wasteland](http://mochimachine.org/wasteland/) and [Developers Developers](http://developersdevelope.rs/).

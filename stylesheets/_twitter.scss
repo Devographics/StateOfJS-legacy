@@ -1,0 +1,44 @@
+.twitter-block{
+  h2{
+    text-align: center;
+  }
+}
+.twitter-timeline-wrapper{
+  // display: flex;
+  // justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+}
+.twitter-timeline-inner{
+}
+.tweet-widget{
+  border-radius: 3px 3px 0 0;
+  padding: $vmargin $hmargin;
+  border-bottom: 1px solid $border-color;
+  .tweet-widget-textarea{
+    position: relative;
+  }
+  .tweet-widget-count{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    pointer-events: none;
+    @include secondary-font;
+    font-size: $small-font;
+    &.danger{
+      color: $red;
+    }
+  }
+  textarea{
+    width: 100%;
+    height: 120px;
+    font-size: $medium-font;
+    line-height: 1.6;
+    padding: $vmargin/2 $hmargin/2;
+  }
+  .button{
+
+  }
+}

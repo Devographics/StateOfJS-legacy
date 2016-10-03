@@ -1,9 +1,13 @@
 .button{
+  background: none;
   border: 1px solid $border-color;
   border-radius: 3px;
   padding: $vmargin/2 $hmargin;
   cursor: pointer;
   display: block;
+  color: $blue;
+  text-align: center;
+  white-space: nowrap;
   @include secondary-font;
   @include small{
     font-size: $small-font;
@@ -16,5 +20,9 @@
     background: $pink;
     border-color: $pink;
     color: white;
+  }
+  &.large-button{
+    padding: $vmargin $hmargin;
+    font-size: $large-font;
   }
 }

@@ -5,6 +5,7 @@ import Filters from './Filters.js'
 import Chart from './Chart.js'
 import ChartLegend from './ChartLegend.js'
 import ShareChart from '../common/ShareChart.js'
+import ReactGA from 'react-ga'
 
 export default class StackedBar extends React.Component {
   constructor (props) {
@@ -19,6 +20,10 @@ export default class StackedBar extends React.Component {
     // either set the state based on "option" argument, or else just toggle it
     const showPercent = (option && option === 'percent') || !this.state.showPercent
     this.setState({ showPercent })
+    ReactGA.event({
+      category: 'Stacked Chart',
+      action: `Toggle ${this.props.section} ${option}`,
+    })
   }
 
   render () {
@@ -36,6 +41,7 @@ export default class StackedBar extends React.Component {
 }
 
 StackedBar.propTypes = {
+  section: React.PropTypes.string,
   title: React.PropTypes.string,
   data: React.PropTypes.array,
   responses: React.PropTypes.object,

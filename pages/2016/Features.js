@@ -10,6 +10,7 @@ import TextBlock from '../../components/blocks/TextBlock.js'
 import Pagination from '../../components/Pagination.js'
 import PageTitle from '../../components/PageTitle.js'
 import AuthorBlock from '../../components/blocks/AuthorBlock.js'
+import TwitterBlock from '../../components/blocks/TwitterBlock.js'
 
 import features from '../../data/features/features.csv'
 import featuresScores from '../../data/features/featuresScores.csv'
@@ -47,13 +48,15 @@ const Features = () =>
       <PageTitle section={section} />
       <TextBlock contents={FeaturesIntro} />
       {features.map(feature => {
+        const featureData = _.clone(feature)
+        delete featureData.Option
+
         const featureTitle = feature.Option
         const featureFileName = featureTitle.replace(new RegExp(' ', 'g'), '').replace(new RegExp('-', 'g'), '').toLowerCase()
         const markdown = imports[featureFileName]
 
         // const featurePath = `../../data/features/${featureFileName}.md`
-        delete feature.Option
-        const dataArray = parseCSV(_.keys(feature).map(key => ({ Option: key, Value: feature[key] })))
+        const dataArray = parseCSV(_.keys(featureData).map(key => ({ Option: key, Value: feature[key] })))
         // const contents = require(featurePath)
 
         return (
@@ -67,8 +70,8 @@ const Features = () =>
       })}
       <VerticalBlock data={parseCSV(featuresScores)} contents={HighestRated} title="Highest-Rated Features" />
       <TextBlock contents={OtherFeatures} title="Other Features" />
-      <AuthorBlock section={section} />
       <Pagination section="features" />
+      <TwitterBlock section={section} />
     </div>
   </DocumentTitle>
 

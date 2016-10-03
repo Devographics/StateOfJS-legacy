@@ -1,6 +1,12 @@
 .author{
 }
+.author-main{
+  @include crosshatchBg;
+}
 .author-inner{
+  background: $beige;
+  position: relative;
+  z-index: 10;
   border: 1px solid $border-color;
   border-radius: 3px;
   padding: $vmargin $hmargin;
