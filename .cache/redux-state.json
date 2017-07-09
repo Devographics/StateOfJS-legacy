@@ -1,0 +1,818 @@
+{
+  "nodes": {
+    "SitePage /dev-404-page/": {
+      "component": "/Users/sachagreif/Dev/StateOfJS/.cache/dev-404-page.js",
+      "path": "/dev-404-page/",
+      "componentChunkName": "page-component---cache-dev-404-page-js",
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
+      "context": {},
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "id": "SitePage /dev-404-page/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "b1d988471bf27c4b92a066a303c06b3a",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-page-creator": {
+      "resolve": "/Users/sachagreif/Dev/StateOfJS/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "name": "component-page-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/sachagreif/Dev/StateOfJS/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "packageJson": {
+        "name": "component-page-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/pages",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin component-page-creator",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "9f088ded3ed26b746bec6d88d92d15a2",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin internal-data-bridge": {
+      "resolve": "/Users/sachagreif/Dev/StateOfJS/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "name": "internal-data-bridge",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/sachagreif/Dev/StateOfJS/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "packageJson": {
+        "name": "internal-data-bridge",
+        "description": "An internal Gatsby plugin which creates data nodes from internal data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin internal-data-bridge",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "60c2602a486c34521970ab599fc731c8",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin dev-404-page": {
+      "resolve": "/Users/sachagreif/Dev/StateOfJS/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/sachagreif/Dev/StateOfJS/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin dev-404-page",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "fcb55714a95751913017950dfb3f3c95",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin prod-404": {
+      "resolve": "/Users/sachagreif/Dev/StateOfJS/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "name": "prod-404",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/sachagreif/Dev/StateOfJS/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "packageJson": {
+        "name": "prod-404",
+        "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin prod-404",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "723f533985c9f7ce5c509e894394bc79",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin query-runner": {
+      "resolve": "/Users/sachagreif/Dev/StateOfJS/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "name": "query-runner",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/sachagreif/Dev/StateOfJS/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "packageJson": {
+        "name": "query-runner",
+        "description": "Internal plugin for running queries",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin query-runner",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "09b04a23b1783bd3dbbe78a13656686b",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-react-helmet": {
+      "resolve": "/Users/sachagreif/Dev/StateOfJS/node_modules/gatsby-plugin-react-helmet",
+      "name": "gatsby-plugin-react-helmet",
+      "version": "1.0.1",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/sachagreif/Dev/StateOfJS/node_modules/gatsby-plugin-react-helmet",
+      "packageJson": {
+        "name": "gatsby-plugin-react-helmet",
+        "description": "Stub description for gatsby-plugin-react-helmet",
+        "version": "1.0.1",
+        "main": "index.js",
+        "keywords": [
+          "gatsby"
+        ],
+        "author": "Kyle Mathews &lt;mathews.kyle@gmail.com&gt;",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "react-helmet",
+            "version": "^5.1.3"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin gatsby-plugin-react-helmet",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "5e692fe6c5f7b49fe07c72b4e3a5ebd8",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin default-site-plugin": {
+      "resolve": "/Users/sachagreif/Dev/StateOfJS",
+      "name": "default-site-plugin",
+      "version": "dc890298f01822538598cdd382363a2e",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/sachagreif/Dev/StateOfJS",
+      "packageJson": {
+        "name": "gatsby-starter-default",
+        "description": "Gatsby default starter",
+        "version": "1.0.0",
+        "main": "n/a",
+        "keywords": [
+          "gatsby"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-plugin-add-module-exports",
+            "version": "^0.2.0"
+          },
+          {
+            "name": "babel-preset-es2015",
+            "version": "^6.13.2"
+          },
+          {
+            "name": "babel-preset-react",
+            "version": "^6.5.0"
+          },
+          {
+            "name": "babel-preset-stage-1",
+            "version": "^6.24.1"
+          },
+          {
+            "name": "cheerio",
+            "version": "^0.22.0"
+          },
+          {
+            "name": "classnames",
+            "version": "^2.2.5"
+          },
+          {
+            "name": "cloudconvert",
+            "version": "^1.1.1"
+          },
+          {
+            "name": "d3",
+            "version": "^4.2.2"
+          },
+          {
+            "name": "dsv-loader",
+            "version": "^1.1.0"
+          },
+          {
+            "name": "front-matter",
+            "version": "^2.0.7"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^3.0.1"
+          },
+          {
+            "name": "gatsby",
+            "version": "^1.0.7"
+          },
+          {
+            "name": "gatsby-link",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "gatsby-plugin-react-helmet",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "highlight.js",
+            "version": "^9.6.0"
+          },
+          {
+            "name": "history",
+            "version": "^2.0.2"
+          },
+          {
+            "name": "js-yaml",
+            "version": "^3.6.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.15.0"
+          },
+          {
+            "name": "markdown-it",
+            "version": "^7.0.1"
+          },
+          {
+            "name": "markdown-it-abbr",
+            "version": "^1.0.3"
+          },
+          {
+            "name": "markdown-it-attrs",
+            "version": "^0.6.3"
+          },
+          {
+            "name": "markdown-it-deflist",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "markdown-it-footnote",
+            "version": "^3.0.1"
+          },
+          {
+            "name": "markdown-it-sub",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "object-assign",
+            "version": "^4.1.0"
+          },
+          {
+            "name": "react",
+            "version": "^15.3.0"
+          },
+          {
+            "name": "react-document-title",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "react-dom",
+            "version": "^15.3.0"
+          },
+          {
+            "name": "react-ga",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "react-headroom",
+            "version": "^2.1.2"
+          },
+          {
+            "name": "react-helmet",
+            "version": "^5.1.3"
+          },
+          {
+            "name": "react-remarkable",
+            "version": "^1.1.1"
+          },
+          {
+            "name": "react-responsive-grid",
+            "version": "^0.3.3"
+          },
+          {
+            "name": "react-router",
+            "version": "^2.6.1"
+          },
+          {
+            "name": "react-sticky",
+            "version": "^5.0.5"
+          },
+          {
+            "name": "react-typography",
+            "version": "^0.12.0"
+          },
+          {
+            "name": "react-waypoint",
+            "version": "^3.1.1"
+          },
+          {
+            "name": "reactdown",
+            "version": "^1.0.0-alpha14"
+          },
+          {
+            "name": "recharts",
+            "version": "^0.13.4"
+          },
+          {
+            "name": "tinycolor2",
+            "version": "^1.4.1"
+          },
+          {
+            "name": "toml-js",
+            "version": "0.0.8"
+          },
+          {
+            "name": "typography",
+            "version": "^0.13.0"
+          },
+          {
+            "name": "typography-plugin-code",
+            "version": "^0.13.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@kadira/storybook",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "babel-core",
+            "version": "^6.13.2"
+          },
+          {
+            "name": "babel-loader",
+            "version": "^6.2.5"
+          },
+          {
+            "name": "babel-preset-react-hmre",
+            "version": "^1.1.1"
+          },
+          {
+            "name": "css-loader",
+            "version": "^0.23.1"
+          },
+          {
+            "name": "eslint",
+            "version": "^3.3.1"
+          },
+          {
+            "name": "eslint-config-airbnb",
+            "version": "^10.0.1"
+          },
+          {
+            "name": "eslint-plugin-import",
+            "version": "^1.13.0"
+          },
+          {
+            "name": "eslint-plugin-jsx-a11y",
+            "version": "^2.1.0"
+          },
+          {
+            "name": "eslint-plugin-react",
+            "version": "^6.1.2"
+          },
+          {
+            "name": "gh-pages",
+            "version": "^0.11.0"
+          },
+          {
+            "name": "image-webpack-loader",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "null-loader",
+            "version": "^0.1.1"
+          },
+          {
+            "name": "postcss-loader",
+            "version": "^0.10.1"
+          },
+          {
+            "name": "react-transform-catch-errors",
+            "version": "^1.0.2"
+          },
+          {
+            "name": "react-transform-hmr",
+            "version": "^1.0.4"
+          },
+          {
+            "name": "redbox-react",
+            "version": "^1.3.0"
+          },
+          {
+            "name": "style-loader",
+            "version": "^0.13.1"
+          },
+          {
+            "name": "webpack",
+            "version": "^1.13.2"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "id": "Plugin default-site-plugin",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "b7c3eac7d5910f13cce374d2cbbc6cab",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Site": {
+      "siteMetadata": {
+        "title": "The State Of JavaScript"
+      },
+      "port": "8000",
+      "host": "localhost",
+      "buildTime": "2017-07-09T23:38:41.331Z",
+      "id": "Site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "3699e87f7aa7e05df7be95092873edaa",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /Results/": {
+      "path": "/Results/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/Results.js",
+      "componentChunkName": "page-component---src-pages-results-js",
+      "jsonName": "results.json",
+      "internalComponentName": "ComponentResults",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /Results/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "0c9b6171f51197ee671bc3af190a7b3f",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /SVGContainer/": {
+      "path": "/SVGContainer/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/SVGContainer.js",
+      "componentChunkName": "page-component---src-pages-svg-container-js",
+      "jsonName": "svg-container.json",
+      "internalComponentName": "ComponentSvgContainer",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /SVGContainer/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "24205c28fec93ea50f77278fa9a47d44",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "path": "/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/index.js",
+      "componentChunkName": "page-component---src-pages-index-js",
+      "jsonName": "index.json",
+      "internalComponentName": "ComponentIndex",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "4e3f26088e7e2ef0bf0c7b24561183ba",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2016/API/": {
+      "path": "/2016/API/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/API.js",
+      "componentChunkName": "page-component---src-pages-2016-api-js",
+      "jsonName": "2016-api.json",
+      "internalComponentName": "Component2016Api",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /2016/API/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "2cfa01b30494f623a89c60ebf67c73ee",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2016/BuildTools/": {
+      "path": "/2016/BuildTools/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/BuildTools.js",
+      "componentChunkName": "page-component---src-pages-2016-build-tools-js",
+      "jsonName": "2016-build-tools.json",
+      "internalComponentName": "Component2016BuildTools",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /2016/BuildTools/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "e5ef0495fd0804a62ebf7d060ad1251d",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2016/CSS/": {
+      "path": "/2016/CSS/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/CSS.js",
+      "componentChunkName": "page-component---src-pages-2016-css-js",
+      "jsonName": "2016-css.json",
+      "internalComponentName": "Component2016Css",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /2016/CSS/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "130b48ed1aaa5dff0d0d3f16bb6008eb",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2016/Conclusion/": {
+      "path": "/2016/Conclusion/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Conclusion.js",
+      "componentChunkName": "page-component---src-pages-2016-conclusion-js",
+      "jsonName": "2016-conclusion.json",
+      "internalComponentName": "Component2016Conclusion",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /2016/Conclusion/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "0848269be019d5cd46e4c978dafb1abc",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2016/Features/": {
+      "path": "/2016/Features/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Features.js",
+      "componentChunkName": "page-component---src-pages-2016-features-js",
+      "jsonName": "2016-features.json",
+      "internalComponentName": "Component2016Features",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /2016/Features/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "cde833accc78e4e5c853acd202c1a339",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2016/Flavors/": {
+      "path": "/2016/Flavors/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Flavors.js",
+      "componentChunkName": "page-component---src-pages-2016-flavors-js",
+      "jsonName": "2016-flavors.json",
+      "internalComponentName": "Component2016Flavors",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /2016/Flavors/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "158f5fa6c4786a78526d81783863027e",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2016/Frontend/": {
+      "path": "/2016/Frontend/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Frontend.js",
+      "componentChunkName": "page-component---src-pages-2016-frontend-js",
+      "jsonName": "2016-frontend.json",
+      "internalComponentName": "Component2016Frontend",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /2016/Frontend/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "8dfda84ae794a3040da4408ab2e5f5b9",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2016/FullStack/": {
+      "path": "/2016/FullStack/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/FullStack.js",
+      "componentChunkName": "page-component---src-pages-2016-full-stack-js",
+      "jsonName": "2016-full-stack.json",
+      "internalComponentName": "Component2016FullStack",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /2016/FullStack/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "4f4d7b269fc55f876e90bec112a92c06",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2016/Introduction/": {
+      "path": "/2016/Introduction/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Introduction.js",
+      "componentChunkName": "page-component---src-pages-2016-introduction-js",
+      "jsonName": "2016-introduction.json",
+      "internalComponentName": "Component2016Introduction",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /2016/Introduction/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "5d2fbfadc8b237c36c6c93d00a65cc40",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2016/Mobile/": {
+      "path": "/2016/Mobile/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Mobile.js",
+      "componentChunkName": "page-component---src-pages-2016-mobile-js",
+      "jsonName": "2016-mobile.json",
+      "internalComponentName": "Component2016Mobile",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /2016/Mobile/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "b91b4b6030cad7a70c327d53dcf29a32",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2016/Opinions/": {
+      "path": "/2016/Opinions/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Opinions.js",
+      "componentChunkName": "page-component---src-pages-2016-opinions-js",
+      "jsonName": "2016-opinions.json",
+      "internalComponentName": "Component2016Opinions",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /2016/Opinions/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "c43d37326a79a3ad36a19852bf076ac3",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2016/Profiles/": {
+      "path": "/2016/Profiles/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Profiles.js",
+      "componentChunkName": "page-component---src-pages-2016-profiles-js",
+      "jsonName": "2016-profiles.json",
+      "internalComponentName": "Component2016Profiles",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /2016/Profiles/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "cdcc71c1eec6a24df657bbe8e6a92dbf",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2016/StateManagement/": {
+      "path": "/2016/StateManagement/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/StateManagement.js",
+      "componentChunkName": "page-component---src-pages-2016-state-management-js",
+      "jsonName": "2016-state-management.json",
+      "internalComponentName": "Component2016StateManagement",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /2016/StateManagement/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "d1d2a010427086b269fbc4b08c67825e",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2016/Testing/": {
+      "path": "/2016/Testing/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Testing.js",
+      "componentChunkName": "page-component---src-pages-2016-testing-js",
+      "jsonName": "2016-testing.json",
+      "internalComponentName": "Component2016Testing",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /2016/Testing/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "23918e8e5272031c3ccbbcf572706e1e",
+        "owner": "internal-data-bridge"
+      }
+    }
+  },
+  "status": {
+    "plugins": {},
+    "PLUGINS_HASH": "5a2bb2d51a1b494eb4160db91bc2233a"
+  },
+  "pageDataDependencies": {
+    "nodes": {},
+    "connections": {
+      "SitePage": [
+        "/dev-404-page/"
+      ]
+    }
+  }
+}

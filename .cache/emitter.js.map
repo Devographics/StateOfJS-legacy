@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/cache-dir/emitter.js"],"names":["emitter","module","exports"],"mappings":";;AAAA;;;;;;AACA,IAAMA,UAAU,qBAAhB;AACAC,OAAOC,OAAP,GAAiBF,OAAjB","file":"emitter.js","sourcesContent":["import mitt from \"mitt\"\nconst emitter = mitt()\nmodule.exports = emitter\n"]}

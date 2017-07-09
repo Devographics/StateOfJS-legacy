@@ -1,0 +1,92 @@
+[
+    {
+        "componentChunkName": "page-component---cache-dev-404-page-js",
+        "jsonName": "dev-404-page.json",
+        "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-results-js",
+        "jsonName": "results.json",
+        "path": "/Results/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-svg-container-js",
+        "jsonName": "svg-container.json",
+        "path": "/SVGContainer/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-index-js",
+        "jsonName": "index.json",
+        "path": "/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2016-api-js",
+        "jsonName": "2016-api.json",
+        "path": "/2016/API/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2016-build-tools-js",
+        "jsonName": "2016-build-tools.json",
+        "path": "/2016/BuildTools/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2016-css-js",
+        "jsonName": "2016-css.json",
+        "path": "/2016/CSS/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2016-conclusion-js",
+        "jsonName": "2016-conclusion.json",
+        "path": "/2016/Conclusion/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2016-features-js",
+        "jsonName": "2016-features.json",
+        "path": "/2016/Features/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2016-flavors-js",
+        "jsonName": "2016-flavors.json",
+        "path": "/2016/Flavors/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2016-frontend-js",
+        "jsonName": "2016-frontend.json",
+        "path": "/2016/Frontend/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2016-full-stack-js",
+        "jsonName": "2016-full-stack.json",
+        "path": "/2016/FullStack/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2016-introduction-js",
+        "jsonName": "2016-introduction.json",
+        "path": "/2016/Introduction/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2016-mobile-js",
+        "jsonName": "2016-mobile.json",
+        "path": "/2016/Mobile/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2016-opinions-js",
+        "jsonName": "2016-opinions.json",
+        "path": "/2016/Opinions/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2016-profiles-js",
+        "jsonName": "2016-profiles.json",
+        "path": "/2016/Profiles/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2016-state-management-js",
+        "jsonName": "2016-state-management.json",
+        "path": "/2016/StateManagement/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2016-testing-js",
+        "jsonName": "2016-testing.json",
+        "path": "/2016/Testing/"
+    }
+]
