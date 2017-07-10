@@ -22,7 +22,11 @@ export default class Index extends React.Component {
       <DocumentTitle title="The State Of JavaScript">
         <div className="results-container content home">
         
-          <h1 className="logo"><img src="images/javascript9.svg" alt="The State Of JavaScript"/></h1>
+          <h1 className="logo">
+            <img src="images/javascript2017.svg" alt="The State Of JavaScript"/>
+            <div className="logo-1"/>
+            <div className="logo-2"/>
+          </h1>
 
           <div className="bubbles">
             <h3 className="bubble bubble-great"><img src="images/left-speech-bubble.svg"/><span>JavaScript is great!</span></h3>

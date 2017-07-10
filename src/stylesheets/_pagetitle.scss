@@ -16,7 +16,7 @@
     @include medium-large{
       padding: $vmargin*2 $hmargin*2;
     }
-    background: $beige;
+    background: $highlight-color;
     display: block;
     z-index: 10;
     position: relative;

@@ -11,13 +11,13 @@
     display: block;
     border-radius: 3px;
     padding: $vmargin/2 $hmargin/2;
-    border: 1px solid $blue;
+    border: 1px solid $active-color;
     margin-right: $hmargin/2;
     flex-grow: 1;
     width: 100%;
     &:focus{
       outline: none;
-      border-color: $pink;
+      border-color: $secondary-color;
     }
   }
   .button{
@@ -25,13 +25,13 @@
     // display: block;
     // border-radius: 10px;
     // padding: 10px 20px;
-    // background: $blue;
+    // background: $active-color;
     // border: none;
     // color: white;
     // @include secondary-font;
     // cursor: pointer;
     // &:hover{
-    //   background: $pink;
+    //   background: $secondary-color;
     // }
   }
 }

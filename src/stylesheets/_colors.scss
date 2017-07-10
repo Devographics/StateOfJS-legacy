@@ -11,6 +11,12 @@ $red: #E60932;
 
 $white: white;
 
+$yellow: #fbf34c;
+$yellow-faded: #fffec7;
+
+$purple: #4500EE;
+$purple-faded: #7D7494;
+
 $grey: #e8e8e8;
 $grey2: #dadada;
 $grey3: #cecece;
@@ -24,7 +30,17 @@ $satisfaction-dark: $pink;
 $satisfaction-light: $pink-faded;
 $never-heard: $grey;
 
+$interest-dark: $yellow;
+$interest-light: $yellow-faded;
+$satisfaction-dark: $purple;
+$satisfaction-light: $purple-faded;
+$never-heard: $grey;
+
+$active-color: $purple;
+$secondary-color: $purple-faded;
+$hover-color: $yellow;
 $text-color: $darkgrey;
 $lighter-text-color: $mediumgrey;
 $border-color: $mediumgrey;
-$bg-color: $beige;
+$bg-color: #EDEFED;
+$highlight-color: $yellow-faded;

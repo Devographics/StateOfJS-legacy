@@ -4,13 +4,44 @@
   // width: 100%;
 }
 
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 .logo{
   max-width: 700px;
-    margin: 0 auto $vmargin*1.5 auto;
+  margin: 0 auto $vmargin*1.5 auto;
+  position: relative;
   img{
     display: block;
     width: 100%;
     margin: 0;
+    visibility: hidden;
+  }
+  .logo-1, .logo-2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('/images/javascript2017.svg');
+    background-size: cover;
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-end;
+  }
+  .logo-2{
+    background-image: url('/images/javascript2017b.svg');
+    animation-delay: 1.5s;
   }
 }
 
@@ -71,7 +102,7 @@
         padding-left: 15px;
       }
     }
-    color: $blue;
+    color: $active-color;
     margin-bottom: $vmargin*1.5;
     margin-right: $hmargin*2;
   }
@@ -89,7 +120,7 @@
         padding-right: 15px;
       }
     }
-    color: $pink; 
+    color: $active-color; 
   }
 }
 
@@ -129,10 +160,10 @@
       margin-bottom: 10px;
       width: 250px;
       &:link, &:visited{
-        background: $beige;
+        background: $bg-color;
       }
       &:active, &:hover{
-        background: $pink;
+        background: $hover-color;
       }
       position: relative;
     }
@@ -149,7 +180,7 @@
 }
 
 .footer{
-  border-top: 1px solid $blue;
+  border-top: 1px solid $active-color;
   padding-top: $vmargin*3;
   font-size: 0.8rem;
   text-align: center;
@@ -192,7 +223,7 @@
     font-weight: bold;
     line-height: 1;
     z-index: 15;
-    color: $blue;
+    color: $active-color;
   }
   &:before{
     content: "“";

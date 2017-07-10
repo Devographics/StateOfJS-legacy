@@ -1,15 +1,4 @@
 
-.outer-wrapper{
-  @include small-medium{
-    padding: $vmargin $hmargin;
-  }
-  @include large{
-    padding: $vmargin*1.5 $vmargin*6 $vmargin*3 $vmargin*6;
-    border: 10px solid rgba($blue, 0.6);
-    min-height: calc(100vh - 22px);
-  }
-}
-
 .section{
   @include small{
     margin-bottom: $vmargin*2;

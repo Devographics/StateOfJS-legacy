@@ -28,6 +28,17 @@
   }
 }
 
+@keyframes blink2 {
+  from {
+    fill: $active-color;
+  }
+  50% {
+    fill: $hover-color;
+  }
+  to {
+    fill: $active-color;
+  }
+}
 
 .share-options{
   display: flex;
@@ -41,20 +52,27 @@
     width: 40px;
     padding: 10px;
     border-radius: 100%;
-    background: $blue;
+    background: $active-color;
     flex-shrink: 0;
     margin-right: $hmargin;
     &:last-child{
       margin-right: 0;
-    }
-    &:hover{
-      background: $pink;
     }
     svg{
       height: 100%;
       width: 100%;
       path{
         fill: $beige;
+      }
+    }
+    &:hover{
+      background: $hover-color;
+      svg path{
+        fill: $active-color;
+        animation-name: blink2;
+        animation-duration: 300ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
       }
     }
   }

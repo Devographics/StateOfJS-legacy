@@ -16,12 +16,22 @@ body{
   }
   @include large{
     font-size: $root-size;
-    border: 10px solid rgba($blue, 0.6);
+    border: 10px solid $active-color;
     padding: 1px;
     min-height: 100vh;
   }
 }
 
+.outer-wrapper{
+  @include small-medium{
+    padding: $vmargin $hmargin;
+  }
+  @include large{
+    padding: $vmargin*1.5 $vmargin*6 $vmargin*3 $vmargin*6;
+    border: 10px solid $active-color;
+    min-height: calc(100vh - 22px);
+  }
+}
 
 h1, h2, h3, h4, h5, h6{
   @include secondary-font;
@@ -38,6 +48,18 @@ p, ul, ol{
   }
 }
 
+@keyframes blinkfast {
+  from {
+    color: $active-color;
+  }
+  50% {
+    color: $hover-color;
+  }
+  to {
+    color: $active-color;
+  }
+}
+
 a{
   text-decoration: none;
   &, &:link, &:visited, &:active, &:focus{
@@ -45,10 +67,14 @@ a{
       color: $blue2;
     }
     @include medium-large{
-      color: $blue;
+      color: $active-color;
     }
   }
   &:hover{
-    color: $pink;
+    // color: $hover-color;
+    animation-name: blinkfast;
+    animation-duration: 300ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 }
