@@ -6,6 +6,9 @@
     ViewResults: {
       component:  './src/components/common/ViewResults.js',
     },
+    TakeSurvey: {
+      component:  './src/components/common/TakeSurvey.js',
+    },
     Newsletter: {
       component:  './src/components/common/Newsletter.js',
       line: 'optional'

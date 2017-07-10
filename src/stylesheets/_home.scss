@@ -96,7 +96,7 @@
 .intro{
   position: relative;
   padding-bottom: $vmargin*3;
-  margin-bottom: $vmargin*4;
+  margin-bottom: $vmargin*5;
   p{
     &:first-child{
       @include small-medium{
@@ -114,12 +114,20 @@
     padding: 10px;
     background: $grey;
   }
-  .view-results{
+  .view-results, .take-survey{
     position: absolute;
-    bottom: -37px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: -87px;
+    // left: 50%;
+    // transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 0;
+    right: 0;
     .button{
+      margin-bottom: 10px;
+      width: 250px;
       &:link, &:visited{
         background: $beige;
       }
@@ -128,6 +136,11 @@
       }
       position: relative;
     }
+  }
+  .take-survey-note{
+    max-width: 400px;
+    font-size: $smaller-font;
+    text-align: center;
   }
 }
 
@@ -146,7 +159,7 @@
   // @include flex-center;
   // flex-direction: column;
 }
-.comments-heading{
+.section-heading{
   text-align: center;
 }
 .comment{
@@ -225,4 +238,14 @@
 }
 .stat-text{
 
+}
+.results-2016{
+  text-align: center;
+  .or{
+    margin-bottom: $vmargin;
+  }
+  .results-2016-link{
+    @include secondary-font;
+    font-size: $large-font;
+  }
 }

@@ -1,1 +1,1 @@
-A project by [Sacha Greif](http://twitter.com/SachaGreif). Questions? Comments? [Get in touch](http://sachagreif.com/contact).
+Made in Osaka Japan by [Sacha Greif](http://twitter.com/SachaGreif) and [Michael Rambeau](http://michaelrambeau.com/). Questions? Comments? [Get in touch](mailto:hello@sachagreif.com).

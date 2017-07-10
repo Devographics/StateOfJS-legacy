@@ -40,7 +40,7 @@ export default class Comments extends React.Component {
 
     return (
       <div className="section section-layout-b comments">
-        <h2 className="comments-heading">Random Comments</h2>
+        <h2 className="section-heading comments-heading">Random Comments</h2>
         <div className="comment">
           <p className="comment-inner">
             <span>{comment}</span>

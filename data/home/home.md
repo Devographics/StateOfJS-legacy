@@ -1,7 +1,5 @@
-Over nine thousand developers took part in the first edition of the State Of JavaScript survey.
+Last year, over nine thousand developers took part in the first ever edition of the State Of JavaScript survey.
 
-They answered questions on topics ranging from front-end frameworks and state management, to build tools and testing libraries. 
+And now, we're doing it again: from React to Polymer, from Service Workers to Webpack, let's find out together which buzzwords are here to stay and which ones will soon fall to JavaScript fatigue!
 
-You'll find out which libraries developers most want to learn next, and which have the highest satisfaction ratings. And hopefully, this data will help you make sense of the ever-changing JavaScript ecosystem. 
-
-..ViewResults
+..TakeSurvey
