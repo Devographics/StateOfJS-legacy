@@ -1,10 +1,5 @@
 [
     {
-        "componentChunkName": "page-component---cache-dev-404-page-js",
-        "jsonName": "dev-404-page.json",
-        "path": "/dev-404-page/"
-    },
-    {
         "componentChunkName": "page-component---src-pages-results-js",
         "jsonName": "results.json",
         "path": "/Results/"

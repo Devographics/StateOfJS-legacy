@@ -3,6 +3,12 @@ module.exports = {
     title: `The State Of JavaScript`,
   },
   plugins: [
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: 'UA-83022212-1',
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -30,6 +36,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`
   ],
 }
