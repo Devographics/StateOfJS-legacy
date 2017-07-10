@@ -1,7 +1,7 @@
-import fs from 'fs'
-import cheerio from 'cheerio'
-import CloudConvert from 'cloudconvert'
-import stream from 'stream'
+const fs = require('fs')
+const cheerio = require('cheerio')
+const CloudConvert = require('cloudconvert')
+const stream = require('stream')
 
 const cloudconvert = new CloudConvert('AgdEGASfC2FDKiTMeaGgBnol1uZ7mzf57TXO7NearQ2dcaj7AGsc2rHqsFr8plYN-1gH3mr1MWNVhUMiYr04Fw')
 
