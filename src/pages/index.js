@@ -24,8 +24,8 @@ export default class Index extends React.Component {
         
           <h1 className="logo">
             <img src="images/javascript2017.svg" alt="The State Of JavaScript"/>
-            <div className="logo-1"/>
-            <div className="logo-2"/>
+            {/*<div className="logo-1"/>
+            <div className="logo-2"/>*/}
           </h1>
 
           <div className="bubbles">
