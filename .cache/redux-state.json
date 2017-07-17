@@ -1108,12 +1108,12 @@
       },
       "port": "8000",
       "host": "localhost",
-      "buildTime": "2017-07-17T01:01:36.458Z",
+      "buildTime": "2017-07-17T08:40:11.647Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "97db146acf7a338a3bd78afeec912eef",
+        "contentDigest": "35931cfe15bf8875d06fc2de277c3a47",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1253,10 +1253,10 @@
       "extension": "md",
       "size": 184,
       "prettySize": "184 B",
-      "modifiedTime": "2017-07-10T09:34:04.000Z",
-      "accessTime": "2017-07-10T09:34:04.000Z",
-      "changeTime": "2017-07-10T09:34:04.000Z",
-      "birthTime": "2016-12-26T08:25:35.000Z",
+      "modifiedTime": "2017-07-17T08:40:05.000Z",
+      "accessTime": "2017-07-17T08:40:05.000Z",
+      "changeTime": "2017-07-17T08:40:05.000Z",
+      "birthTime": "2017-07-17T08:40:05.000Z",
       "root": "/",
       "dir": "/Users/sachagreif/Dev/StateOfJS/data",
       "base": "footer.md",
@@ -1269,12 +1269,16 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 3186921,
+      "ino": 32503527,
       "blocks": 8,
-      "atime": "2017-07-10T09:34:04.000Z",
-      "mtime": "2017-07-10T09:34:04.000Z",
-      "ctime": "2017-07-10T09:34:04.000Z",
-      "birthtime": "2016-12-26T08:25:35.000Z"
+      "atimeMs": 1500280805000,
+      "mtimeMs": 1500280805000,
+      "ctimeMs": 1500280805000,
+      "birthtimeMs": 1500280805000,
+      "atime": "2017-07-17T08:40:05.000Z",
+      "mtime": "2017-07-17T08:40:05.000Z",
+      "ctime": "2017-07-17T08:40:05.000Z",
+      "birthtime": "2017-07-17T08:40:05.000Z"
     },
     "/Users/sachagreif/Dev/StateOfJS/data/heatmap.csv absPath of file": {
       "id": "/Users/sachagreif/Dev/StateOfJS/data/heatmap.csv absPath of file",
@@ -3332,7 +3336,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "8b481ec0763fe5d8666eba98b59286f4",
+        "contentDigest": "d6cb80eb7c06b3c77f0e3a615a892271",
         "mediaType": "text/x-markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -3341,12 +3345,12 @@
       "absolutePath": "/Users/sachagreif/Dev/StateOfJS/data/features/progressive-enhancement.md",
       "relativePath": "features/progressive-enhancement.md",
       "extension": "md",
-      "size": 517,
-      "prettySize": "517 B",
-      "modifiedTime": "2016-12-26T08:25:35.000Z",
-      "accessTime": "2017-07-10T09:29:38.000Z",
-      "changeTime": "2016-12-26T08:25:35.000Z",
-      "birthTime": "2016-12-26T08:25:35.000Z",
+      "size": 519,
+      "prettySize": "519 B",
+      "modifiedTime": "2017-07-17T08:45:05.000Z",
+      "accessTime": "2017-07-17T08:45:05.000Z",
+      "changeTime": "2017-07-17T08:45:05.000Z",
+      "birthTime": "2017-07-17T08:45:05.000Z",
       "root": "/",
       "dir": "/Users/sachagreif/Dev/StateOfJS/data/features",
       "base": "progressive-enhancement.md",
@@ -3359,12 +3363,16 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 3186909,
+      "ino": 32504018,
       "blocks": 8,
-      "atime": "2017-07-10T09:29:38.000Z",
-      "mtime": "2016-12-26T08:25:35.000Z",
-      "ctime": "2016-12-26T08:25:35.000Z",
-      "birthtime": "2016-12-26T08:25:35.000Z"
+      "atimeMs": 1500281105000,
+      "mtimeMs": 1500281105000,
+      "ctimeMs": 1500281105000,
+      "birthtimeMs": 1500281105000,
+      "atime": "2017-07-17T08:45:05.000Z",
+      "mtime": "2017-07-17T08:45:05.000Z",
+      "ctime": "2017-07-17T08:45:05.000Z",
+      "birthtime": "2017-07-17T08:45:05.000Z"
     },
     "/Users/sachagreif/Dev/StateOfJS/data/features/server-side-rendering.md absPath of file": {
       "id": "/Users/sachagreif/Dev/StateOfJS/data/features/server-side-rendering.md absPath of file",
@@ -4114,10 +4122,10 @@
       "extension": "md",
       "size": 324,
       "prettySize": "324 B",
-      "modifiedTime": "2017-07-10T09:56:25.000Z",
-      "accessTime": "2017-07-10T09:56:25.000Z",
-      "changeTime": "2017-07-10T09:56:25.000Z",
-      "birthTime": "2016-12-26T08:25:35.000Z",
+      "modifiedTime": "2017-07-17T08:40:05.000Z",
+      "accessTime": "2017-07-17T08:40:05.000Z",
+      "changeTime": "2017-07-17T08:40:05.000Z",
+      "birthTime": "2017-07-17T08:40:05.000Z",
       "root": "/",
       "dir": "/Users/sachagreif/Dev/StateOfJS/data/home",
       "base": "home.md",
@@ -4130,12 +4138,16 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 3186944,
+      "ino": 32503529,
       "blocks": 8,
-      "atime": "2017-07-10T09:56:25.000Z",
-      "mtime": "2017-07-10T09:56:25.000Z",
-      "ctime": "2017-07-10T09:56:25.000Z",
-      "birthtime": "2016-12-26T08:25:35.000Z"
+      "atimeMs": 1500280805000,
+      "mtimeMs": 1500280805000,
+      "ctimeMs": 1500280805000,
+      "birthtimeMs": 1500280805000,
+      "atime": "2017-07-17T08:40:05.000Z",
+      "mtime": "2017-07-17T08:40:05.000Z",
+      "ctime": "2017-07-17T08:40:05.000Z",
+      "birthtime": "2017-07-17T08:40:05.000Z"
     },
     "/Users/sachagreif/Dev/StateOfJS/data/opinions/enjoy-javascript.md absPath of file": {
       "id": "/Users/sachagreif/Dev/StateOfJS/data/opinions/enjoy-javascript.md absPath of file",
@@ -6412,8 +6424,8 @@
       "children": [],
       "parent": "/Users/sachagreif/Dev/StateOfJS/data/features/progressive-enhancement.md absPath of file",
       "internal": {
-        "content": "With all this talk of fancy JavaScript features, it's easy to forget that not everybody benefits from them. \n\nAnd no need to travel to faraway lands here: just whip out your brand new, state-of-the-art phone and many sites and apps become unusable due to bloat, incompatibilities, and crappy mobile connectins. \n\nThis is why **progressive enhancement** is still important: it's about making sure your app can be used in as many situations as possible, without sacrificing what made it worth using in the first place. ",
-        "contentDigest": "13f6a1ae7b44a3822c0907f33d3168ae",
+        "content": "With all this talk of fancy JavaScript features, it's easy to forget that not everybody benefits from them. \n\nAnd no need to travel to faraway lands here: just whip out your brand new, state-of-the-art phone and many sites and apps become unusable due to bloat, incompatibilities, and crappy mobile connections. \n\nThis is why **progressive enhancement** is still important: it's about making sure your app can be used in as many situations as possible, without sacrificing what made it worth using in the first place. \n",
+        "contentDigest": "983d49fae719ee269345038142b54605",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark"
       },
@@ -7127,6 +7139,22 @@
       },
       "fileAbsolutePath": "/Users/sachagreif/Dev/StateOfJS/data/testing/tldr.md"
     },
+    "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file",
+      "internal": {
+        "content": "Over nine thousand developers took part in the first edition of the State Of JavaScript survey.\n\nThey answered questions on topics ranging from front-end frameworks and state management, to build tools and testing libraries. \n\nYou'll find out which libraries developers most want to learn next, and which have the highest satisfaction ratings. And hopefully, this data will help you make sense of the ever-changing JavaScript ecosystem. \n\n..TakeSurvey\n",
+        "contentDigest": "dd5c2711a7b7763ada4d7cdf648c50d4",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark"
+      },
+      "frontmatter": {
+        "title": "",
+        "parent": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md"
+    },
     "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file": {
       "id": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file",
       "children": [
@@ -7145,10 +7173,10 @@
       "extension": "md",
       "size": 452,
       "prettySize": "452 B",
-      "modifiedTime": "2017-07-10T09:54:24.000Z",
-      "accessTime": "2017-07-10T09:54:25.000Z",
-      "changeTime": "2017-07-10T09:54:25.000Z",
-      "birthTime": "2017-07-10T09:54:24.000Z",
+      "modifiedTime": "2017-07-17T08:40:05.000Z",
+      "accessTime": "2017-07-17T08:40:05.000Z",
+      "changeTime": "2017-07-17T08:40:05.000Z",
+      "birthTime": "2017-07-17T08:40:05.000Z",
       "root": "/",
       "dir": "/Users/sachagreif/Dev/StateOfJS/data/home",
       "base": "home-results.md",
@@ -7161,28 +7189,16 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 31288101,
+      "ino": 32503528,
       "blocks": 8,
-      "atime": "2017-07-10T09:54:25.000Z",
-      "mtime": "2017-07-10T09:54:24.000Z",
-      "ctime": "2017-07-10T09:54:25.000Z",
-      "birthtime": "2017-07-10T09:54:24.000Z"
-    },
-    "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file >>> MarkdownRemark",
-      "children": [],
-      "parent": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file",
-      "internal": {
-        "content": "Over nine thousand developers took part in the first edition of the State Of JavaScript survey.\n\nThey answered questions on topics ranging from front-end frameworks and state management, to build tools and testing libraries. \n\nYou'll find out which libraries developers most want to learn next, and which have the highest satisfaction ratings. And hopefully, this data will help you make sense of the ever-changing JavaScript ecosystem. \n\n..TakeSurvey\n",
-        "contentDigest": "dd5c2711a7b7763ada4d7cdf648c50d4",
-        "type": "MarkdownRemark",
-        "owner": "gatsby-transformer-remark"
-      },
-      "frontmatter": {
-        "title": "",
-        "parent": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file"
-      },
-      "fileAbsolutePath": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md"
+      "atimeMs": 1500280805000,
+      "mtimeMs": 1500280805000,
+      "ctimeMs": 1500280805000,
+      "birthtimeMs": 1500280805000,
+      "atime": "2017-07-17T08:40:05.000Z",
+      "mtime": "2017-07-17T08:40:05.000Z",
+      "ctime": "2017-07-17T08:40:05.000Z",
+      "birthtime": "2017-07-17T08:40:05.000Z"
     },
     "SitePage /Results/": {
       "path": "/Results/",
@@ -7286,23 +7302,6 @@
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /2016/Conclusion/": {
-      "path": "/2016/Conclusion/",
-      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Conclusion.js",
-      "componentChunkName": "page-component---src-pages-2016-conclusion-js",
-      "jsonName": "2016-conclusion.json",
-      "internalComponentName": "Component2016Conclusion",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "id": "SitePage /2016/Conclusion/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "0848269be019d5cd46e4c978dafb1abc",
-        "owner": "internal-data-bridge"
-      }
-    },
     "SitePage /2016/Features/": {
       "path": "/2016/Features/",
       "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Features.js",
@@ -7317,6 +7316,23 @@
       "internal": {
         "type": "SitePage",
         "contentDigest": "cde833accc78e4e5c853acd202c1a339",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2016/Conclusion/": {
+      "path": "/2016/Conclusion/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Conclusion.js",
+      "componentChunkName": "page-component---src-pages-2016-conclusion-js",
+      "jsonName": "2016-conclusion.json",
+      "internalComponentName": "Component2016Conclusion",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /2016/Conclusion/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "0848269be019d5cd46e4c978dafb1abc",
         "owner": "internal-data-bridge"
       }
     },
