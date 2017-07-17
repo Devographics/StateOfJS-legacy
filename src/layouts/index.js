@@ -68,7 +68,16 @@ export default class Template extends React.Component {
           Built by <a href="http://twitter.com/SachaGreif">Sacha Greif</a> using <a href="https://github.com/gatsbyjs/gatsby">Gatsby</a>
         </div>
         */}
+
         <TextBlock contents={footerContents} className="home-footer" />
+
+        <div className="hosted-by">
+          <h4>Hosted with</h4>
+          <a href="https://www.netlify.com/?ref=stateofjs">
+            <img src="/images/netlify-logo.svg"/>
+          </a>
+        </div>
+
       </div>
     )
   }

@@ -64,7 +64,7 @@ a{
   text-decoration: none;
   &, &:link, &:visited, &:active, &:focus{
     @include small{
-      color: $blue2;
+      color: $active-color;
     }
     @include medium-large{
       color: $active-color;

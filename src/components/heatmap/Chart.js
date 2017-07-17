@@ -66,9 +66,9 @@ class Cell extends React.Component {
     if (this.props.disabledValues && this.props.disabledValues.indexOf(parseInt(value, 10)) !== -1) {
       color = '#dadada'
     } else if (value < 0) {
-      color = tinycolor('#5ec6cc').setAlpha(alpha).toRgbString()
+      color = tinycolor('#4500EE').setAlpha(alpha).toRgbString()
     } else {
-      color = tinycolor('#ed387a').setAlpha(alpha).toRgbString()
+      color = tinycolor('#E60932').setAlpha(alpha).toRgbString()
     }
     return (
       <td onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} className={className}>

@@ -57,13 +57,15 @@ export default class TakeSurvey extends React.Component {
       console.log(error)
     })
 
-    // ga id
-    if (ReactGA.ga() && ReactGA.ga().getAll) {
-      this.setState({
-        gaId: ReactGA.ga().getAll()[0].get('clientId'),
-      })
-    }
-
+    setTimeout(() => {
+      // ga id
+      if (ReactGA.ga() && ReactGA.ga().getAll) {
+        this.setState({
+          gaId: ReactGA.ga().getAll()[0].get('clientId'),
+        })
+      }
+    }, 500)
+    
     // browser data
     const browserData = {
       device: getDevice(),
@@ -79,7 +81,7 @@ export default class TakeSurvey extends React.Component {
   render () {
     return (
       <div className="take-survey">
-          <a className="button large-button" href={`https://stateofjs.typeform.com/to/S5iLk9?gaid=${this.state.gaId}&referrer=${this.state.referrer}&city=${this.state.city}&location=${this.state.location}&device=${this.state.device}&browser=${this.state.browser}&version=${this.state.version}&os=${this.state.os}`}>Take the Survey</a>
+          <a className="button large-button" href={`https://stateofjs.typeform.com/to/S5iLk9?browser=${this.state.browser}&version=${this.state.version}&os=${this.state.os}&referrer=${this.state.referrer}&city=${this.state.city}&location=${this.state.location}&device=${this.state.device}&gaid=${this.state.gaId}`}>Take the Survey</a>
           
           <p className="take-survey-note">Note: to improve results relevance, we keep track of anonymous information such as your referrer, location, device, browser, and OS.</p>
       </div>

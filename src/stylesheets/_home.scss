@@ -280,3 +280,11 @@
     font-size: $large-font;
   }
 }
+
+.hosted-by{
+  text-align: center;
+  margin-bottom: $vmargin * 2;
+  h4{
+    margin-bottom: 5px;
+  }
+}

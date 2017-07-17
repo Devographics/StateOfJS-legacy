@@ -1108,12 +1108,12 @@
       },
       "port": "8000",
       "host": "localhost",
-      "buildTime": "2017-07-10T09:38:25.555Z",
+      "buildTime": "2017-07-17T01:01:36.458Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "42ce67c6721d8c8f35211467761ff05e",
+        "contentDigest": "97db146acf7a338a3bd78afeec912eef",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -7127,6 +7127,63 @@
       },
       "fileAbsolutePath": "/Users/sachagreif/Dev/StateOfJS/data/testing/tldr.md"
     },
+    "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file": {
+      "id": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file",
+      "children": [
+        "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "fdc029fc0651f205a862711733897277",
+        "mediaType": "text/x-markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md",
+      "relativePath": "home/home-results.md",
+      "extension": "md",
+      "size": 452,
+      "prettySize": "452 B",
+      "modifiedTime": "2017-07-10T09:54:24.000Z",
+      "accessTime": "2017-07-10T09:54:25.000Z",
+      "changeTime": "2017-07-10T09:54:25.000Z",
+      "birthTime": "2017-07-10T09:54:24.000Z",
+      "root": "/",
+      "dir": "/Users/sachagreif/Dev/StateOfJS/data/home",
+      "base": "home-results.md",
+      "ext": ".md",
+      "name": "home-results",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 31288101,
+      "blocks": 8,
+      "atime": "2017-07-10T09:54:25.000Z",
+      "mtime": "2017-07-10T09:54:24.000Z",
+      "ctime": "2017-07-10T09:54:25.000Z",
+      "birthtime": "2017-07-10T09:54:24.000Z"
+    },
+    "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file",
+      "internal": {
+        "content": "Over nine thousand developers took part in the first edition of the State Of JavaScript survey.\n\nThey answered questions on topics ranging from front-end frameworks and state management, to build tools and testing libraries. \n\nYou'll find out which libraries developers most want to learn next, and which have the highest satisfaction ratings. And hopefully, this data will help you make sense of the ever-changing JavaScript ecosystem. \n\n..TakeSurvey\n",
+        "contentDigest": "dd5c2711a7b7763ada4d7cdf648c50d4",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark"
+      },
+      "frontmatter": {
+        "title": "",
+        "parent": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md"
+    },
     "SitePage /Results/": {
       "path": "/Results/",
       "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/Results.js",
@@ -7415,63 +7472,6 @@
         "contentDigest": "23918e8e5272031c3ccbbcf572706e1e",
         "owner": "internal-data-bridge"
       }
-    },
-    "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file": {
-      "id": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file",
-      "children": [
-        "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file >>> MarkdownRemark"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "fdc029fc0651f205a862711733897277",
-        "mediaType": "text/x-markdown",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "pages",
-      "absolutePath": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md",
-      "relativePath": "home/home-results.md",
-      "extension": "md",
-      "size": 452,
-      "prettySize": "452 B",
-      "modifiedTime": "2017-07-10T09:54:24.000Z",
-      "accessTime": "2017-07-10T09:54:25.000Z",
-      "changeTime": "2017-07-10T09:54:25.000Z",
-      "birthTime": "2017-07-10T09:54:24.000Z",
-      "root": "/",
-      "dir": "/Users/sachagreif/Dev/StateOfJS/data/home",
-      "base": "home-results.md",
-      "ext": ".md",
-      "name": "home-results",
-      "dev": 16777221,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 31288101,
-      "blocks": 8,
-      "atime": "2017-07-10T09:54:25.000Z",
-      "mtime": "2017-07-10T09:54:24.000Z",
-      "ctime": "2017-07-10T09:54:25.000Z",
-      "birthtime": "2017-07-10T09:54:24.000Z"
-    },
-    "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file >>> MarkdownRemark",
-      "children": [],
-      "parent": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file",
-      "internal": {
-        "content": "Over nine thousand developers took part in the first edition of the State Of JavaScript survey.\n\nThey answered questions on topics ranging from front-end frameworks and state management, to build tools and testing libraries. \n\nYou'll find out which libraries developers most want to learn next, and which have the highest satisfaction ratings. And hopefully, this data will help you make sense of the ever-changing JavaScript ecosystem. \n\n..TakeSurvey\n",
-        "contentDigest": "dd5c2711a7b7763ada4d7cdf648c50d4",
-        "type": "MarkdownRemark",
-        "owner": "gatsby-transformer-remark"
-      },
-      "frontmatter": {
-        "title": "",
-        "parent": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md absPath of file"
-      },
-      "fileAbsolutePath": "/Users/sachagreif/Dev/StateOfJS/data/home/home-results.md"
     }
   },
   "status": {
