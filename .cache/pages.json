@@ -1,10 +1,5 @@
 [
     {
-        "componentChunkName": "page-component---cache-dev-404-page-js",
-        "jsonName": "dev-404-page.json",
-        "path": "/dev-404-page/"
-    },
-    {
         "componentChunkName": "page-component---src-pages-results-js",
         "jsonName": "results.json",
         "path": "/Results/"
@@ -35,14 +30,14 @@
         "path": "/2016/CSS/"
     },
     {
-        "componentChunkName": "page-component---src-pages-2016-features-js",
-        "jsonName": "2016-features.json",
-        "path": "/2016/Features/"
-    },
-    {
         "componentChunkName": "page-component---src-pages-2016-conclusion-js",
         "jsonName": "2016-conclusion.json",
         "path": "/2016/Conclusion/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2016-features-js",
+        "jsonName": "2016-features.json",
+        "path": "/2016/Features/"
     },
     {
         "componentChunkName": "page-component---src-pages-2016-flavors-js",

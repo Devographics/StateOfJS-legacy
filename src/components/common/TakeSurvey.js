@@ -47,15 +47,15 @@ export default class TakeSurvey extends React.Component {
     // document.body.appendChild(script);
 
     // geo data
-    axios.get('http://freegeoip.net/json/').then(response => {
-      // console.log(response)
-      this.setState({
-        location: response.data.country_name,
-        city: response.data.city
-      })
-    }).catch(error => {
-      console.log(error)
-    })
+    // axios.get('http://freegeoip.net/json/').then(response => {
+    //   // console.log(response)
+    //   this.setState({
+    //     location: response.data.country_name,
+    //     city: response.data.city
+    //   })
+    // }).catch(error => {
+    //   console.log(error)
+    // })
 
     setTimeout(() => {
       // ga id
@@ -64,6 +64,15 @@ export default class TakeSurvey extends React.Component {
           gaId: ReactGA.ga().getAll()[0].get('clientId'),
         })
       }
+      geoip2.city(result => {
+        console.log(result.city.names.en, result.country.names.en)
+        this.setState({
+          location: result.country.names.en,
+          city: result.city.names.en,
+        })
+      }, error => {
+        console.log(error)
+      })
     }, 500)
     
     // browser data

@@ -1,19 +1,13 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
-      "component": "/Users/sachagreif/Dev/StateOfJS/.cache/dev-404-page.js",
       "path": "/dev-404-page/",
-      "componentChunkName": "page-component---cache-dev-404-page-js",
-      "jsonName": "dev-404-page.json",
-      "internalComponentName": "ComponentDev404Page",
-      "context": {},
-      "pluginCreator___NODE": "Plugin dev-404-page",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b1d988471bf27c4b92a066a303c06b3a",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
         "owner": "internal-data-bridge"
       }
     },
@@ -1106,14 +1100,12 @@
       "siteMetadata": {
         "title": "The State Of JavaScript"
       },
-      "port": "8000",
-      "host": "localhost",
-      "buildTime": "2017-07-17T08:40:11.647Z",
+      "buildTime": "2017-07-18T00:49:41.706Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "35931cfe15bf8875d06fc2de277c3a47",
+        "contentDigest": "e2f438ada4e5194a0c46cf999d57d860",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -7302,23 +7294,6 @@
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /2016/Features/": {
-      "path": "/2016/Features/",
-      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Features.js",
-      "componentChunkName": "page-component---src-pages-2016-features-js",
-      "jsonName": "2016-features.json",
-      "internalComponentName": "Component2016Features",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "id": "SitePage /2016/Features/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "cde833accc78e4e5c853acd202c1a339",
-        "owner": "internal-data-bridge"
-      }
-    },
     "SitePage /2016/Conclusion/": {
       "path": "/2016/Conclusion/",
       "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Conclusion.js",
@@ -7333,6 +7308,23 @@
       "internal": {
         "type": "SitePage",
         "contentDigest": "0848269be019d5cd46e4c978dafb1abc",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2016/Features/": {
+      "path": "/2016/Features/",
+      "component": "/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Features.js",
+      "componentChunkName": "page-component---src-pages-2016-features-js",
+      "jsonName": "2016-features.json",
+      "internalComponentName": "Component2016Features",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "id": "SitePage /2016/Features/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "cde833accc78e4e5c853acd202c1a339",
         "owner": "internal-data-bridge"
       }
     },

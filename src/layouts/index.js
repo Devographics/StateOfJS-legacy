@@ -56,11 +56,15 @@ export default class Template extends React.Component {
       { name: 'twitter:image:src', content: image },
       { name: 'twitter:title', content: title },
       { name: 'twitter:description', content: description },
+
+      <script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript"></script>
     ]
 
     return (
       <div className="outer-wrapper">
-        {/*<Helmet meta={meta} />*/}
+        <Helmet meta={meta}>
+          <script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript"></script>
+        </Helmet>
         <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i|Roboto+Slab:300,400,700" rel="stylesheet"/>
         {this.props.children()}
         {/*

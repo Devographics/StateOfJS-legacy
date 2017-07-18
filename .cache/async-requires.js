@@ -2,15 +2,14 @@
 const preferDefault = m => m && m.default || m
 
 exports.components = {
-  "page-component---cache-dev-404-page-js": require("gatsby-module-loader?name=page-component---cache-dev-404-page-js!/Users/sachagreif/Dev/StateOfJS/.cache/dev-404-page.js"),
   "page-component---src-pages-results-js": require("gatsby-module-loader?name=page-component---src-pages-results-js!/Users/sachagreif/Dev/StateOfJS/src/pages/Results.js"),
   "page-component---src-pages-svg-container-js": require("gatsby-module-loader?name=page-component---src-pages-svg-container-js!/Users/sachagreif/Dev/StateOfJS/src/pages/SVGContainer.js"),
   "page-component---src-pages-index-js": require("gatsby-module-loader?name=page-component---src-pages-index-js!/Users/sachagreif/Dev/StateOfJS/src/pages/index.js"),
   "page-component---src-pages-2016-api-js": require("gatsby-module-loader?name=page-component---src-pages-2016-api-js!/Users/sachagreif/Dev/StateOfJS/src/pages/2016/API.js"),
   "page-component---src-pages-2016-build-tools-js": require("gatsby-module-loader?name=page-component---src-pages-2016-build-tools-js!/Users/sachagreif/Dev/StateOfJS/src/pages/2016/BuildTools.js"),
   "page-component---src-pages-2016-css-js": require("gatsby-module-loader?name=page-component---src-pages-2016-css-js!/Users/sachagreif/Dev/StateOfJS/src/pages/2016/CSS.js"),
-  "page-component---src-pages-2016-features-js": require("gatsby-module-loader?name=page-component---src-pages-2016-features-js!/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Features.js"),
   "page-component---src-pages-2016-conclusion-js": require("gatsby-module-loader?name=page-component---src-pages-2016-conclusion-js!/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Conclusion.js"),
+  "page-component---src-pages-2016-features-js": require("gatsby-module-loader?name=page-component---src-pages-2016-features-js!/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Features.js"),
   "page-component---src-pages-2016-flavors-js": require("gatsby-module-loader?name=page-component---src-pages-2016-flavors-js!/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Flavors.js"),
   "page-component---src-pages-2016-frontend-js": require("gatsby-module-loader?name=page-component---src-pages-2016-frontend-js!/Users/sachagreif/Dev/StateOfJS/src/pages/2016/Frontend.js"),
   "page-component---src-pages-2016-full-stack-js": require("gatsby-module-loader?name=page-component---src-pages-2016-full-stack-js!/Users/sachagreif/Dev/StateOfJS/src/pages/2016/FullStack.js"),
@@ -23,15 +22,14 @@ exports.components = {
 }
 
 exports.json = {
-  "dev-404-page.json": require("gatsby-module-loader?name=path---dev-404-page!/Users/sachagreif/Dev/StateOfJS/.cache/json/dev-404-page.json"),
   "results.json": require("gatsby-module-loader?name=path---results!/Users/sachagreif/Dev/StateOfJS/.cache/json/results.json"),
   "svg-container.json": require("gatsby-module-loader?name=path---svg-container!/Users/sachagreif/Dev/StateOfJS/.cache/json/svg-container.json"),
   "index.json": require("gatsby-module-loader?name=path---index!/Users/sachagreif/Dev/StateOfJS/.cache/json/index.json"),
   "2016-api.json": require("gatsby-module-loader?name=path---2016-api!/Users/sachagreif/Dev/StateOfJS/.cache/json/2016-api.json"),
   "2016-build-tools.json": require("gatsby-module-loader?name=path---2016-build-tools!/Users/sachagreif/Dev/StateOfJS/.cache/json/2016-build-tools.json"),
   "2016-css.json": require("gatsby-module-loader?name=path---2016-css!/Users/sachagreif/Dev/StateOfJS/.cache/json/2016-css.json"),
-  "2016-features.json": require("gatsby-module-loader?name=path---2016-features!/Users/sachagreif/Dev/StateOfJS/.cache/json/2016-features.json"),
   "2016-conclusion.json": require("gatsby-module-loader?name=path---2016-conclusion!/Users/sachagreif/Dev/StateOfJS/.cache/json/2016-conclusion.json"),
+  "2016-features.json": require("gatsby-module-loader?name=path---2016-features!/Users/sachagreif/Dev/StateOfJS/.cache/json/2016-features.json"),
   "2016-flavors.json": require("gatsby-module-loader?name=path---2016-flavors!/Users/sachagreif/Dev/StateOfJS/.cache/json/2016-flavors.json"),
   "2016-frontend.json": require("gatsby-module-loader?name=path---2016-frontend!/Users/sachagreif/Dev/StateOfJS/.cache/json/2016-frontend.json"),
   "2016-full-stack.json": require("gatsby-module-loader?name=path---2016-full-stack!/Users/sachagreif/Dev/StateOfJS/.cache/json/2016-full-stack.json"),
