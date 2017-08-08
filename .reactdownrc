@@ -9,6 +9,9 @@
     TakeSurvey: {
       component:  './src/components/common/TakeSurvey.js',
     },
+    LeaveEmail: {
+      component:  './src/components/common/LeaveEmail.js',
+    },
     Newsletter: {
       component:  './src/components/common/Newsletter.js',
       line: 'optional'

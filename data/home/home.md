@@ -1,5 +1,5 @@
-Last year, over nine thousand developers took part in the first ever edition of the State Of JavaScript survey.
+**The survey is now closed**. Thanks to the 20,000+ developers who took part!
 
-And now, we're doing it again: from React to Polymer, from Service Workers to Webpack, let's find out together which buzzwords are here to stay and which ones will soon fall to JavaScript fatigue!
+Leave your email below and we'll be sure to let you know when the results are published.
 
-..TakeSurvey
+..LeaveEmail

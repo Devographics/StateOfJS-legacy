@@ -38,7 +38,7 @@ export default class Template extends React.Component {
     const title = DocumentTitle.peek()
     const description = 'A short survey about current popular JavaScript technologies.'
     const url = 'http://stateofjs.com'
-    const image = 'http://stateofjs.com/images/javascript9.png'
+    const image = 'http://stateofjs.com/images/javascript2017-white.png'
 
     const meta = [
       { charset: 'utf-8' },

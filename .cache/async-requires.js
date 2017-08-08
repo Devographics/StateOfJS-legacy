@@ -2,6 +2,7 @@
 const preferDefault = m => m && m.default || m
 
 exports.components = {
+  "page-component---cache-dev-404-page-js": require("gatsby-module-loader?name=page-component---cache-dev-404-page-js!/Users/sachagreif/Dev/StateOfJS/.cache/dev-404-page.js"),
   "page-component---src-pages-results-js": require("gatsby-module-loader?name=page-component---src-pages-results-js!/Users/sachagreif/Dev/StateOfJS/src/pages/Results.js"),
   "page-component---src-pages-svg-container-js": require("gatsby-module-loader?name=page-component---src-pages-svg-container-js!/Users/sachagreif/Dev/StateOfJS/src/pages/SVGContainer.js"),
   "page-component---src-pages-index-js": require("gatsby-module-loader?name=page-component---src-pages-index-js!/Users/sachagreif/Dev/StateOfJS/src/pages/index.js"),
@@ -22,6 +23,7 @@ exports.components = {
 }
 
 exports.json = {
+  "dev-404-page.json": require("gatsby-module-loader?name=path---dev-404-page!/Users/sachagreif/Dev/StateOfJS/.cache/json/dev-404-page.json"),
   "results.json": require("gatsby-module-loader?name=path---results!/Users/sachagreif/Dev/StateOfJS/.cache/json/results.json"),
   "svg-container.json": require("gatsby-module-loader?name=path---svg-container!/Users/sachagreif/Dev/StateOfJS/.cache/json/svg-container.json"),
   "index.json": require("gatsby-module-loader?name=path---index!/Users/sachagreif/Dev/StateOfJS/.cache/json/index.json"),

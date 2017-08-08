@@ -127,7 +127,7 @@
 .intro{
   position: relative;
   padding-bottom: $vmargin*3;
-  margin-bottom: $vmargin*5;
+  margin-bottom: $vmargin*4;
   p{
     &:first-child{
       @include small-medium{
@@ -145,7 +145,7 @@
     padding: 10px;
     background: $grey;
   }
-  .view-results, .take-survey{
+  .view-results, .take-survey, .leave-email{
     position: absolute;
     bottom: -87px;
     // left: 50%;
@@ -166,6 +166,33 @@
         background: $hover-color;
       }
       position: relative;
+    }
+  }
+  .leave-email{
+    bottom: -70px;
+    @include small{
+      bottom: -120px;
+    }
+    .newsletter{
+      background: $bg-color;
+      max-width: 500px;
+      border: 1px solid $border-color;
+      border-radius: 3px;
+      padding: $vmargin $hmargin;
+    }
+    form{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include small{
+        flex-direction: column;
+        input{
+          margin: 0 0 $vmargin/2 0;
+        }
+      }
+    }
+    .button{
+      margin: 0;
     }
   }
   .take-survey-note{

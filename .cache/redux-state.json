@@ -1,13 +1,19 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
+      "component": "/Users/sachagreif/Dev/StateOfJS/.cache/dev-404-page.js",
       "path": "/dev-404-page/",
+      "componentChunkName": "page-component---cache-dev-404-page-js",
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
+      "context": {},
+      "pluginCreator___NODE": "Plugin dev-404-page",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "contentDigest": "b1d988471bf27c4b92a066a303c06b3a",
         "owner": "internal-data-bridge"
       }
     },
@@ -1100,12 +1106,14 @@
       "siteMetadata": {
         "title": "The State Of JavaScript"
       },
-      "buildTime": "2017-07-18T00:49:41.706Z",
+      "port": "8000",
+      "host": "localhost",
+      "buildTime": "2017-08-08T01:30:04.999Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "e2f438ada4e5194a0c46cf999d57d860",
+        "contentDigest": "a06f0926cc76f4aae99fcc7d17e54116",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -4103,7 +4111,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "69424ad723c3b659a0cc5af011d28c65",
+        "contentDigest": "faa62beb99e637386d69c9fbc6f6f066",
         "mediaType": "text/x-markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -4112,11 +4120,11 @@
       "absolutePath": "/Users/sachagreif/Dev/StateOfJS/data/home/home.md",
       "relativePath": "home/home.md",
       "extension": "md",
-      "size": 324,
-      "prettySize": "324 B",
-      "modifiedTime": "2017-07-17T08:40:05.000Z",
-      "accessTime": "2017-07-17T08:40:05.000Z",
-      "changeTime": "2017-07-17T08:40:05.000Z",
+      "size": 182,
+      "prettySize": "182 B",
+      "modifiedTime": "2017-08-07T08:39:31.000Z",
+      "accessTime": "2017-08-07T08:39:31.000Z",
+      "changeTime": "2017-08-07T08:39:31.000Z",
       "birthTime": "2017-07-17T08:40:05.000Z",
       "root": "/",
       "dir": "/Users/sachagreif/Dev/StateOfJS/data/home",
@@ -4132,13 +4140,13 @@
       "blksize": 4096,
       "ino": 32503529,
       "blocks": 8,
-      "atimeMs": 1500280805000,
-      "mtimeMs": 1500280805000,
-      "ctimeMs": 1500280805000,
+      "atimeMs": 1502095171000,
+      "mtimeMs": 1502095171000,
+      "ctimeMs": 1502095171000,
       "birthtimeMs": 1500280805000,
-      "atime": "2017-07-17T08:40:05.000Z",
-      "mtime": "2017-07-17T08:40:05.000Z",
-      "ctime": "2017-07-17T08:40:05.000Z",
+      "atime": "2017-08-07T08:39:31.000Z",
+      "mtime": "2017-08-07T08:39:31.000Z",
+      "ctime": "2017-08-07T08:39:31.000Z",
       "birthtime": "2017-07-17T08:40:05.000Z"
     },
     "/Users/sachagreif/Dev/StateOfJS/data/opinions/enjoy-javascript.md absPath of file": {
@@ -6656,8 +6664,8 @@
       "children": [],
       "parent": "/Users/sachagreif/Dev/StateOfJS/data/home/home.md absPath of file",
       "internal": {
-        "content": "Last year, over nine thousand developers took part in the first ever edition of the State Of JavaScript survey.\n\nAnd now, we're doing it again: from React to Polymer, from Service Workers to Webpack, let's find out together which buzzwords are here to stay and which ones will soon fall to JavaScript fatigue!\n\n..TakeSurvey\n",
-        "contentDigest": "e2b67c522005a013db71c00588b04e87",
+        "content": "**The survey is now closed**. Thanks to the 20,000+ developers who took part!\n\nLeave your email below and we'll be sure to let you know when the results are published.\n\n..LeaveEmail\n",
+        "contentDigest": "62da8a6f2114f05bf93fb4baf00ab6c2",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark"
       },

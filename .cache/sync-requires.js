@@ -3,6 +3,7 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
+  "page-component---cache-dev-404-page-js": preferDefault(require("/Users/sachagreif/Dev/StateOfJS/.cache/dev-404-page.js")),
   "page-component---src-pages-results-js": preferDefault(require("/Users/sachagreif/Dev/StateOfJS/src/pages/Results.js")),
   "page-component---src-pages-svg-container-js": preferDefault(require("/Users/sachagreif/Dev/StateOfJS/src/pages/SVGContainer.js")),
   "page-component---src-pages-index-js": preferDefault(require("/Users/sachagreif/Dev/StateOfJS/src/pages/index.js")),
@@ -23,6 +24,7 @@ exports.components = {
 }
 
 exports.json = {
+  "dev-404-page.json": require("/Users/sachagreif/Dev/StateOfJS/.cache/json/dev-404-page.json"),
   "results.json": require("/Users/sachagreif/Dev/StateOfJS/.cache/json/results.json"),
   "svg-container.json": require("/Users/sachagreif/Dev/StateOfJS/.cache/json/svg-container.json"),
   "index.json": require("/Users/sachagreif/Dev/StateOfJS/.cache/json/index.json"),
