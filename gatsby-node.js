@@ -84,15 +84,17 @@ exports.createPages = async ({graphql, boundActionCreators}) => {
   const {createPage, createRedirect} = boundActionCreators;
 
   nav.items.forEach(item => {
-    createRedirect({
-      fromPath: `/2017/${slugify(item.label)}/`,
-      redirectInBrowser: true,
-      toPath: `/2017/${slugify(item.label)}/${slugify(item.subPages[0])}`,
-    });
-    createRedirect({
-      fromPath: `/2017/${slugify(item.label)}`,
-      redirectInBrowser: true,
-      toPath: `/2017/${slugify(item.label)}/${slugify(item.subPages[0])}`,
-    });
+    if (item.subPages) {
+      createRedirect({
+        fromPath: `/2017/${slugify(item.label)}/`,
+        redirectInBrowser: true,
+        toPath: `/2017/${slugify(item.label)}/${slugify(item.subPages[0])}`,
+      });
+      createRedirect({
+        fromPath: `/2017/${slugify(item.label)}`,
+        redirectInBrowser: true,
+        toPath: `/2017/${slugify(item.label)}/${slugify(item.subPages[0])}`,
+      });
+    }
   });
 }
