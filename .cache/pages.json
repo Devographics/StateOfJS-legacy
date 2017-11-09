@@ -21,34 +21,6 @@
         "path": "/"
     },
     {
-        "componentChunkName": "component---src-pages-2017-back-end-experience-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "2017-back-end-experience.json",
-        "path": "/2017/back-end/Experience/"
-    },
-    {
-        "componentChunkName": "component---src-pages-2017-back-end-others-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "2017-back-end-others.json",
-        "path": "/2017/back-end/Others/"
-    },
-    {
-        "componentChunkName": "component---src-pages-2017-back-end-users-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "2017-back-end-users.json",
-        "path": "/2017/back-end/Users/"
-    },
-    {
-        "componentChunkName": "component---src-pages-2017-back-end-worldwide-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "2017-back-end-worldwide.json",
-        "path": "/2017/back-end/Worldwide/"
-    },
-    {
         "componentChunkName": "component---src-pages-2017-build-tools-affinity-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
@@ -82,6 +54,69 @@
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "2017-build-tools-worldwide.json",
         "path": "/2017/build-tools/Worldwide/"
+    },
+    {
+        "componentChunkName": "component---src-pages-2017-features-features-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "2017-features-features.json",
+        "path": "/2017/features/Features/"
+    },
+    {
+        "componentChunkName": "component---src-pages-2017-back-end-experience-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "2017-back-end-experience.json",
+        "path": "/2017/back-end/Experience/"
+    },
+    {
+        "componentChunkName": "component---src-pages-2017-back-end-others-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "2017-back-end-others.json",
+        "path": "/2017/back-end/Others/"
+    },
+    {
+        "componentChunkName": "component---src-pages-2017-back-end-users-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "2017-back-end-users.json",
+        "path": "/2017/back-end/Users/"
+    },
+    {
+        "componentChunkName": "component---src-pages-2017-back-end-worldwide-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "2017-back-end-worldwide.json",
+        "path": "/2017/back-end/Worldwide/"
+    },
+    {
+        "componentChunkName": "component---src-pages-2017-flavors-affinity-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "2017-flavors-affinity.json",
+        "path": "/2017/flavors/Affinity/"
+    },
+    {
+        "componentChunkName": "component---src-pages-2017-flavors-experience-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "2017-flavors-experience.json",
+        "path": "/2017/flavors/Experience/"
+    },
+    {
+        "componentChunkName": "component---src-pages-2017-flavors-users-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "2017-flavors-users.json",
+        "path": "/2017/flavors/Users/"
+    },
+    {
+        "componentChunkName": "component---src-pages-2017-flavors-worldwide-js",
+        "layout": "index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "2017-flavors-worldwide.json",
+        "path": "/2017/flavors/Worldwide/"
     },
     {
         "componentChunkName": "component---src-pages-2017-css-affinity-js",
@@ -119,39 +154,32 @@
         "path": "/2017/css/Worldwide/"
     },
     {
-        "componentChunkName": "component---src-pages-2017-features-features-js",
+        "componentChunkName": "component---src-pages-2017-mobile-experience-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "2017-features-features.json",
-        "path": "/2017/features/Features/"
+        "jsonName": "2017-mobile-experience.json",
+        "path": "/2017/mobile/Experience/"
     },
     {
-        "componentChunkName": "component---src-pages-2017-flavors-affinity-js",
+        "componentChunkName": "component---src-pages-2017-mobile-users-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "2017-flavors-affinity.json",
-        "path": "/2017/flavors/Affinity/"
+        "jsonName": "2017-mobile-users.json",
+        "path": "/2017/mobile/Users/"
     },
     {
-        "componentChunkName": "component---src-pages-2017-flavors-experience-js",
+        "componentChunkName": "component---src-pages-2017-mobile-worldwide-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "2017-flavors-experience.json",
-        "path": "/2017/flavors/Experience/"
+        "jsonName": "2017-mobile-worldwide.json",
+        "path": "/2017/mobile/Worldwide/"
     },
     {
-        "componentChunkName": "component---src-pages-2017-flavors-users-js",
+        "componentChunkName": "component---src-pages-2017-other-tools-other-tools-js",
         "layout": "index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "2017-flavors-users.json",
-        "path": "/2017/flavors/Users/"
-    },
-    {
-        "componentChunkName": "component---src-pages-2017-flavors-worldwide-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "2017-flavors-worldwide.json",
-        "path": "/2017/flavors/Worldwide/"
+        "jsonName": "2017-other-tools-other-tools.json",
+        "path": "/2017/other-tools/OtherTools/"
     },
     {
         "componentChunkName": "component---src-pages-2017-front-end-affinity-js",
@@ -187,34 +215,6 @@
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "2017-front-end-worldwide.json",
         "path": "/2017/front-end/Worldwide/"
-    },
-    {
-        "componentChunkName": "component---src-pages-2017-other-tools-other-tools-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "2017-other-tools-other-tools.json",
-        "path": "/2017/other-tools/OtherTools/"
-    },
-    {
-        "componentChunkName": "component---src-pages-2017-mobile-experience-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "2017-mobile-experience.json",
-        "path": "/2017/mobile/Experience/"
-    },
-    {
-        "componentChunkName": "component---src-pages-2017-mobile-users-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "2017-mobile-users.json",
-        "path": "/2017/mobile/Users/"
-    },
-    {
-        "componentChunkName": "component---src-pages-2017-mobile-worldwide-js",
-        "layout": "index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "2017-mobile-worldwide.json",
-        "path": "/2017/mobile/Worldwide/"
     },
     {
         "componentChunkName": "component---src-pages-2017-opinions-opinions-js",

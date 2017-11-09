@@ -15,26 +15,6 @@
                 },
                 {
                     "node": {
-                        "path": "/2017/back-end/Experience/"
-                    }
-                },
-                {
-                    "node": {
-                        "path": "/2017/back-end/Others/"
-                    }
-                },
-                {
-                    "node": {
-                        "path": "/2017/back-end/Users/"
-                    }
-                },
-                {
-                    "node": {
-                        "path": "/2017/back-end/Worldwide/"
-                    }
-                },
-                {
-                    "node": {
                         "path": "/2017/build-tools/Affinity/"
                     }
                 },
@@ -56,6 +36,51 @@
                 {
                     "node": {
                         "path": "/2017/build-tools/Worldwide/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/2017/features/Features/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/2017/back-end/Experience/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/2017/back-end/Others/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/2017/back-end/Users/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/2017/back-end/Worldwide/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/2017/flavors/Affinity/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/2017/flavors/Experience/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/2017/flavors/Users/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/2017/flavors/Worldwide/"
                     }
                 },
                 {
@@ -85,27 +110,22 @@
                 },
                 {
                     "node": {
-                        "path": "/2017/features/Features/"
+                        "path": "/2017/mobile/Experience/"
                     }
                 },
                 {
                     "node": {
-                        "path": "/2017/flavors/Affinity/"
+                        "path": "/2017/mobile/Users/"
                     }
                 },
                 {
                     "node": {
-                        "path": "/2017/flavors/Experience/"
+                        "path": "/2017/mobile/Worldwide/"
                     }
                 },
                 {
                     "node": {
-                        "path": "/2017/flavors/Users/"
-                    }
-                },
-                {
-                    "node": {
-                        "path": "/2017/flavors/Worldwide/"
+                        "path": "/2017/other-tools/OtherTools/"
                     }
                 },
                 {
@@ -131,26 +151,6 @@
                 {
                     "node": {
                         "path": "/2017/front-end/Worldwide/"
-                    }
-                },
-                {
-                    "node": {
-                        "path": "/2017/other-tools/OtherTools/"
-                    }
-                },
-                {
-                    "node": {
-                        "path": "/2017/mobile/Experience/"
-                    }
-                },
-                {
-                    "node": {
-                        "path": "/2017/mobile/Users/"
-                    }
-                },
-                {
-                    "node": {
-                        "path": "/2017/mobile/Worldwide/"
                     }
                 },
                 {

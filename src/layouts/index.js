@@ -3,10 +3,10 @@ import Link from 'gatsby-link'
 import DocumentTitle from 'react-document-title'
 import Helmet from 'react-helmet'
 
-import TextBlock from '../components/blocks/TextBlock.js'
 
 import footerContents from '../../data/footer.md'
 
+import HomeLayout from '../components/common/HomeLayout'
 import PageLayout from '../components/common/PageLayout'
 
 // import '../css/markdown-styles'
@@ -69,7 +69,7 @@ export default class Template extends React.Component {
         </Helmet>
         <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i|Roboto+Slab:300,400,700" rel="stylesheet"/>
         
-        {this.props.location.pathname === '/' ? this.props.children() : <PageLayout {...this.props}>{this.props.children()}</PageLayout>}
+        {this.props.location.pathname === '/' ? <HomeLayout {...this.props}>{this.props.children()}</HomeLayout> : <PageLayout {...this.props}>{this.props.children()}</PageLayout>}
 
         {/*
         <div className="footer">
@@ -77,7 +77,6 @@ export default class Template extends React.Component {
         </div>
         */}
 
-        <TextBlock contents={footerContents} className="footer home-footer" />
 
         {/*
         <div className="hosted-by">
@@ -87,7 +86,7 @@ export default class Template extends React.Component {
           </a>
         </div>
         */}
-        
+
       </div>
     )
   }

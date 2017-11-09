@@ -8,7 +8,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/.cache/dev-404-page.js",
       "componentChunkName": "component---cache-dev-404-page-js",
       "context": {},
-      "updatedAt": 1510207715078,
+      "updatedAt": 1510213610322,
       "pluginCreator___NODE": "Plugin dev-404-page",
       "pluginCreatorId": "Plugin dev-404-page",
       "componentPath": "/Users/sacha/Dev/StateOfJS/.cache/dev-404-page.js",
@@ -17,7 +17,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c8a0b3234f6be6b11f2268e530cf2eee",
+        "contentDigest": "6fae757a5011fbb6c6ee89c75a390ea8",
         "owner": "internal-data-bridge"
       }
     },
@@ -1224,12 +1224,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2017-11-09T06:08:33.382Z",
+      "buildTime": "2017-11-09T07:46:47.024Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "2055784399b23eef0d39c6f352eadc2f",
+        "contentDigest": "aa5d05ee4d5bfbf7cd70eb59cc14fa27",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -6402,7 +6402,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/Results.js",
       "componentChunkName": "component---src-pages-results-js",
       "context": {},
-      "updatedAt": 1510207715116,
+      "updatedAt": 1510213610366,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/Results.js",
@@ -6411,7 +6411,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "29c795a31ec6661a16ce8c9ed0ecc5d1",
+        "contentDigest": "d74d8d1227e9b9b9435a3b110bcb4882",
         "owner": "internal-data-bridge"
       }
     },
@@ -6423,7 +6423,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/index.js",
       "componentChunkName": "component---src-pages-index-js",
       "context": {},
-      "updatedAt": 1510207715117,
+      "updatedAt": 1510213610367,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/index.js",
@@ -6432,91 +6432,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "3f4cafdb724484536f047ba142f979da",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /2017/back-end/Experience/": {
-      "layout": "index",
-      "jsonName": "2017-back-end-experience.json",
-      "internalComponentName": "Component2017BackEndExperience",
-      "path": "/2017/back-end/Experience/",
-      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/back-end/Experience.js",
-      "componentChunkName": "component---src-pages-2017-back-end-experience-js",
-      "context": {},
-      "updatedAt": 1510207715123,
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/back-end/Experience.js",
-      "id": "SitePage /2017/back-end/Experience/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "b90a984855a219971f8bc3ecdef1f9da",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /2017/back-end/Others/": {
-      "layout": "index",
-      "jsonName": "2017-back-end-others.json",
-      "internalComponentName": "Component2017BackEndOthers",
-      "path": "/2017/back-end/Others/",
-      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/back-end/Others.js",
-      "componentChunkName": "component---src-pages-2017-back-end-others-js",
-      "context": {},
-      "updatedAt": 1510207715123,
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/back-end/Others.js",
-      "id": "SitePage /2017/back-end/Others/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "799204f675b4b163a1d3e653543bab91",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /2017/back-end/Users/": {
-      "layout": "index",
-      "jsonName": "2017-back-end-users.json",
-      "internalComponentName": "Component2017BackEndUsers",
-      "path": "/2017/back-end/Users/",
-      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/back-end/Users.js",
-      "componentChunkName": "component---src-pages-2017-back-end-users-js",
-      "context": {},
-      "updatedAt": 1510207715124,
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/back-end/Users.js",
-      "id": "SitePage /2017/back-end/Users/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "f12006304e132c67ab228d8fb2c3d03c",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /2017/back-end/Worldwide/": {
-      "layout": "index",
-      "jsonName": "2017-back-end-worldwide.json",
-      "internalComponentName": "Component2017BackEndWorldwide",
-      "path": "/2017/back-end/Worldwide/",
-      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/back-end/Worldwide.js",
-      "componentChunkName": "component---src-pages-2017-back-end-worldwide-js",
-      "context": {},
-      "updatedAt": 1510207715124,
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/back-end/Worldwide.js",
-      "id": "SitePage /2017/back-end/Worldwide/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "efabdb76bd6e85fe28f207389c80fb9b",
+        "contentDigest": "423de1e1e60f154821ca57838e8fd55f",
         "owner": "internal-data-bridge"
       }
     },
@@ -6528,7 +6444,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/build-tools/Affinity.js",
       "componentChunkName": "component---src-pages-2017-build-tools-affinity-js",
       "context": {},
-      "updatedAt": 1510207715125,
+      "updatedAt": 1510213610375,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/build-tools/Affinity.js",
@@ -6537,7 +6453,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9b61e4aeb584fb5af71663027edfd26f",
+        "contentDigest": "ea872457cc2c818ca6026f621c043a6d",
         "owner": "internal-data-bridge"
       }
     },
@@ -6549,7 +6465,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/build-tools/Experience.js",
       "componentChunkName": "component---src-pages-2017-build-tools-experience-js",
       "context": {},
-      "updatedAt": 1510207715125,
+      "updatedAt": 1510213610375,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/build-tools/Experience.js",
@@ -6558,7 +6474,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "bc919c34af841318a1cd5b7bed31ae06",
+        "contentDigest": "b51ee408734df7bf122b31728f8b9d88",
         "owner": "internal-data-bridge"
       }
     },
@@ -6570,7 +6486,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/build-tools/Others.js",
       "componentChunkName": "component---src-pages-2017-build-tools-others-js",
       "context": {},
-      "updatedAt": 1510207715126,
+      "updatedAt": 1510213610376,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/build-tools/Others.js",
@@ -6579,7 +6495,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "76a9f57360b06d67941ef61d1cc46bdb",
+        "contentDigest": "23677b58e5bbcf37a8ca41e47b3416f9",
         "owner": "internal-data-bridge"
       }
     },
@@ -6591,7 +6507,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/build-tools/Users.js",
       "componentChunkName": "component---src-pages-2017-build-tools-users-js",
       "context": {},
-      "updatedAt": 1510207715126,
+      "updatedAt": 1510213610376,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/build-tools/Users.js",
@@ -6600,7 +6516,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "91660774e4c652b86759e2775dcfdf95",
+        "contentDigest": "489c4ec94151160c638598a6d2401476",
         "owner": "internal-data-bridge"
       }
     },
@@ -6612,7 +6528,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/build-tools/Worldwide.js",
       "componentChunkName": "component---src-pages-2017-build-tools-worldwide-js",
       "context": {},
-      "updatedAt": 1510207715127,
+      "updatedAt": 1510213610377,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/build-tools/Worldwide.js",
@@ -6621,112 +6537,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "813542c2a919b8e6edd2fc6d5d83987e",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /2017/css/Affinity/": {
-      "layout": "index",
-      "jsonName": "2017-css-affinity.json",
-      "internalComponentName": "Component2017CssAffinity",
-      "path": "/2017/css/Affinity/",
-      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Affinity.js",
-      "componentChunkName": "component---src-pages-2017-css-affinity-js",
-      "context": {},
-      "updatedAt": 1510207715128,
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Affinity.js",
-      "id": "SitePage /2017/css/Affinity/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "b6afe5883d47e9a85357f543fed4a04b",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /2017/css/Experience/": {
-      "layout": "index",
-      "jsonName": "2017-css-experience.json",
-      "internalComponentName": "Component2017CssExperience",
-      "path": "/2017/css/Experience/",
-      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Experience.js",
-      "componentChunkName": "component---src-pages-2017-css-experience-js",
-      "context": {},
-      "updatedAt": 1510207715128,
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Experience.js",
-      "id": "SitePage /2017/css/Experience/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "be521012aa84b976f1eee5aa146c4285",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /2017/css/Others/": {
-      "layout": "index",
-      "jsonName": "2017-css-others.json",
-      "internalComponentName": "Component2017CssOthers",
-      "path": "/2017/css/Others/",
-      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Others.js",
-      "componentChunkName": "component---src-pages-2017-css-others-js",
-      "context": {},
-      "updatedAt": 1510207715128,
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Others.js",
-      "id": "SitePage /2017/css/Others/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "638cfd830b3c46c0a50e4dfbb480e55d",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /2017/css/Users/": {
-      "layout": "index",
-      "jsonName": "2017-css-users.json",
-      "internalComponentName": "Component2017CssUsers",
-      "path": "/2017/css/Users/",
-      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Users.js",
-      "componentChunkName": "component---src-pages-2017-css-users-js",
-      "context": {},
-      "updatedAt": 1510207715129,
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Users.js",
-      "id": "SitePage /2017/css/Users/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "3427130ec5f1c7d779f89542612ed275",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /2017/css/Worldwide/": {
-      "layout": "index",
-      "jsonName": "2017-css-worldwide.json",
-      "internalComponentName": "Component2017CssWorldwide",
-      "path": "/2017/css/Worldwide/",
-      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Worldwide.js",
-      "componentChunkName": "component---src-pages-2017-css-worldwide-js",
-      "context": {},
-      "updatedAt": 1510207715129,
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Worldwide.js",
-      "id": "SitePage /2017/css/Worldwide/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "0a2092e542884c80a82e2f4336a387ec",
+        "contentDigest": "8b9fd20ee817360d14f2e099fb2709b9",
         "owner": "internal-data-bridge"
       }
     },
@@ -6738,7 +6549,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/features/Features.js",
       "componentChunkName": "component---src-pages-2017-features-features-js",
       "context": {},
-      "updatedAt": 1510207715139,
+      "updatedAt": 1510213610377,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/features/Features.js",
@@ -6747,7 +6558,91 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d9c3d49954cd2f39c7a98b4ab60dadaf",
+        "contentDigest": "1518c97c8b8b455f05f0eedc84874ce5",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2017/back-end/Experience/": {
+      "layout": "index",
+      "jsonName": "2017-back-end-experience.json",
+      "internalComponentName": "Component2017BackEndExperience",
+      "path": "/2017/back-end/Experience/",
+      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/back-end/Experience.js",
+      "componentChunkName": "component---src-pages-2017-back-end-experience-js",
+      "context": {},
+      "updatedAt": 1510213610378,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/back-end/Experience.js",
+      "id": "SitePage /2017/back-end/Experience/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "30bda1fdecd20a4b6d914bc6019f0fa4",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2017/back-end/Others/": {
+      "layout": "index",
+      "jsonName": "2017-back-end-others.json",
+      "internalComponentName": "Component2017BackEndOthers",
+      "path": "/2017/back-end/Others/",
+      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/back-end/Others.js",
+      "componentChunkName": "component---src-pages-2017-back-end-others-js",
+      "context": {},
+      "updatedAt": 1510213610379,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/back-end/Others.js",
+      "id": "SitePage /2017/back-end/Others/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "dce914e396ba56e218f7ea534b83cfd3",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2017/back-end/Users/": {
+      "layout": "index",
+      "jsonName": "2017-back-end-users.json",
+      "internalComponentName": "Component2017BackEndUsers",
+      "path": "/2017/back-end/Users/",
+      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/back-end/Users.js",
+      "componentChunkName": "component---src-pages-2017-back-end-users-js",
+      "context": {},
+      "updatedAt": 1510213610380,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/back-end/Users.js",
+      "id": "SitePage /2017/back-end/Users/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "720273b0f36300b875eb8a21ff74524d",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2017/back-end/Worldwide/": {
+      "layout": "index",
+      "jsonName": "2017-back-end-worldwide.json",
+      "internalComponentName": "Component2017BackEndWorldwide",
+      "path": "/2017/back-end/Worldwide/",
+      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/back-end/Worldwide.js",
+      "componentChunkName": "component---src-pages-2017-back-end-worldwide-js",
+      "context": {},
+      "updatedAt": 1510213610380,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/back-end/Worldwide.js",
+      "id": "SitePage /2017/back-end/Worldwide/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "52d97b91603cd929eea9755b879ec154",
         "owner": "internal-data-bridge"
       }
     },
@@ -6759,7 +6654,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/flavors/Affinity.js",
       "componentChunkName": "component---src-pages-2017-flavors-affinity-js",
       "context": {},
-      "updatedAt": 1510207715140,
+      "updatedAt": 1510213610381,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/flavors/Affinity.js",
@@ -6768,7 +6663,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "692c0d8394cfc1867a81614034af7c90",
+        "contentDigest": "f8e52606d79db4c90aabd9d7189af52d",
         "owner": "internal-data-bridge"
       }
     },
@@ -6780,7 +6675,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/flavors/Experience.js",
       "componentChunkName": "component---src-pages-2017-flavors-experience-js",
       "context": {},
-      "updatedAt": 1510207715140,
+      "updatedAt": 1510213610381,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/flavors/Experience.js",
@@ -6789,7 +6684,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ebbb1960780f0a4ef014fbfa26f2ad8c",
+        "contentDigest": "ce41551a79426098901cb8e6584f3bc8",
         "owner": "internal-data-bridge"
       }
     },
@@ -6801,7 +6696,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/flavors/Users.js",
       "componentChunkName": "component---src-pages-2017-flavors-users-js",
       "context": {},
-      "updatedAt": 1510207715141,
+      "updatedAt": 1510213610382,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/flavors/Users.js",
@@ -6810,7 +6705,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e2f4dec96debbdeaf1c013bfadc9df55",
+        "contentDigest": "cd3898be771512a484bc84682170f4e6",
         "owner": "internal-data-bridge"
       }
     },
@@ -6822,7 +6717,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/flavors/Worldwide.js",
       "componentChunkName": "component---src-pages-2017-flavors-worldwide-js",
       "context": {},
-      "updatedAt": 1510207715141,
+      "updatedAt": 1510213610382,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/flavors/Worldwide.js",
@@ -6831,133 +6726,112 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b09698b2f5176272c5d8e41dfedb6fb5",
+        "contentDigest": "9f3bdcbe6606ac5453d347b073280b96",
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /2017/front-end/Affinity/": {
+    "SitePage /2017/css/Affinity/": {
       "layout": "index",
-      "jsonName": "2017-front-end-affinity.json",
-      "internalComponentName": "Component2017FrontEndAffinity",
-      "path": "/2017/front-end/Affinity/",
-      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Affinity.js",
-      "componentChunkName": "component---src-pages-2017-front-end-affinity-js",
+      "jsonName": "2017-css-affinity.json",
+      "internalComponentName": "Component2017CssAffinity",
+      "path": "/2017/css/Affinity/",
+      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Affinity.js",
+      "componentChunkName": "component---src-pages-2017-css-affinity-js",
       "context": {},
-      "updatedAt": 1510207715142,
+      "updatedAt": 1510213610383,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Affinity.js",
-      "id": "SitePage /2017/front-end/Affinity/",
+      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Affinity.js",
+      "id": "SitePage /2017/css/Affinity/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "856e51d5044b94548c4bc25e2bcecbde",
+        "contentDigest": "46fe58f839e211b3687884a525f65c01",
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /2017/front-end/Experience/": {
+    "SitePage /2017/css/Experience/": {
       "layout": "index",
-      "jsonName": "2017-front-end-experience.json",
-      "internalComponentName": "Component2017FrontEndExperience",
-      "path": "/2017/front-end/Experience/",
-      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Experience.js",
-      "componentChunkName": "component---src-pages-2017-front-end-experience-js",
+      "jsonName": "2017-css-experience.json",
+      "internalComponentName": "Component2017CssExperience",
+      "path": "/2017/css/Experience/",
+      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Experience.js",
+      "componentChunkName": "component---src-pages-2017-css-experience-js",
       "context": {},
-      "updatedAt": 1510207715142,
+      "updatedAt": 1510213610383,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Experience.js",
-      "id": "SitePage /2017/front-end/Experience/",
+      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Experience.js",
+      "id": "SitePage /2017/css/Experience/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ce59d265bbb70a9f84b4b409ea4a96af",
+        "contentDigest": "3361bbe13bc3e159689504bf64c8da4b",
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /2017/front-end/Others/": {
+    "SitePage /2017/css/Others/": {
       "layout": "index",
-      "jsonName": "2017-front-end-others.json",
-      "internalComponentName": "Component2017FrontEndOthers",
-      "path": "/2017/front-end/Others/",
-      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Others.js",
-      "componentChunkName": "component---src-pages-2017-front-end-others-js",
+      "jsonName": "2017-css-others.json",
+      "internalComponentName": "Component2017CssOthers",
+      "path": "/2017/css/Others/",
+      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Others.js",
+      "componentChunkName": "component---src-pages-2017-css-others-js",
       "context": {},
-      "updatedAt": 1510207715142,
+      "updatedAt": 1510213610384,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Others.js",
-      "id": "SitePage /2017/front-end/Others/",
+      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Others.js",
+      "id": "SitePage /2017/css/Others/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9bb30b521b289fc0de83c4522af225c6",
+        "contentDigest": "59dcac71500ff19f3e0f73c12be86f7b",
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /2017/front-end/Users/": {
+    "SitePage /2017/css/Users/": {
       "layout": "index",
-      "jsonName": "2017-front-end-users.json",
-      "internalComponentName": "Component2017FrontEndUsers",
-      "path": "/2017/front-end/Users/",
-      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Users.js",
-      "componentChunkName": "component---src-pages-2017-front-end-users-js",
+      "jsonName": "2017-css-users.json",
+      "internalComponentName": "Component2017CssUsers",
+      "path": "/2017/css/Users/",
+      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Users.js",
+      "componentChunkName": "component---src-pages-2017-css-users-js",
       "context": {},
-      "updatedAt": 1510207715143,
+      "updatedAt": 1510213610384,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Users.js",
-      "id": "SitePage /2017/front-end/Users/",
+      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Users.js",
+      "id": "SitePage /2017/css/Users/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "55902e28d2dadb038c7f5616e26f38f6",
+        "contentDigest": "dbf24862f8ebe81fa4addfdac341cfc7",
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /2017/front-end/Worldwide/": {
+    "SitePage /2017/css/Worldwide/": {
       "layout": "index",
-      "jsonName": "2017-front-end-worldwide.json",
-      "internalComponentName": "Component2017FrontEndWorldwide",
-      "path": "/2017/front-end/Worldwide/",
-      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Worldwide.js",
-      "componentChunkName": "component---src-pages-2017-front-end-worldwide-js",
+      "jsonName": "2017-css-worldwide.json",
+      "internalComponentName": "Component2017CssWorldwide",
+      "path": "/2017/css/Worldwide/",
+      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Worldwide.js",
+      "componentChunkName": "component---src-pages-2017-css-worldwide-js",
       "context": {},
-      "updatedAt": 1510207715143,
+      "updatedAt": 1510213610385,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Worldwide.js",
-      "id": "SitePage /2017/front-end/Worldwide/",
+      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/css/Worldwide.js",
+      "id": "SitePage /2017/css/Worldwide/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1c49d7ab84ef2757736b2ae709217368",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /2017/other-tools/OtherTools/": {
-      "layout": "index",
-      "jsonName": "2017-other-tools-other-tools.json",
-      "internalComponentName": "Component2017OtherToolsOtherTools",
-      "path": "/2017/other-tools/OtherTools/",
-      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/other-tools/OtherTools.js",
-      "componentChunkName": "component---src-pages-2017-other-tools-other-tools-js",
-      "context": {},
-      "updatedAt": 1510207715143,
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/other-tools/OtherTools.js",
-      "id": "SitePage /2017/other-tools/OtherTools/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "881f460c1882001ee81069df67d12ce3",
+        "contentDigest": "dfbd0123ef5dbc6aa6665690bbbd6873",
         "owner": "internal-data-bridge"
       }
     },
@@ -6969,7 +6843,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/mobile/Experience.js",
       "componentChunkName": "component---src-pages-2017-mobile-experience-js",
       "context": {},
-      "updatedAt": 1510207715146,
+      "updatedAt": 1510213610399,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/mobile/Experience.js",
@@ -6978,7 +6852,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "bd034fc585fa0a3e3e17e04cb038c1b7",
+        "contentDigest": "7e9bf0c8a707ab60c3ca36e415233674",
         "owner": "internal-data-bridge"
       }
     },
@@ -6990,7 +6864,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/mobile/Users.js",
       "componentChunkName": "component---src-pages-2017-mobile-users-js",
       "context": {},
-      "updatedAt": 1510207715147,
+      "updatedAt": 1510213610400,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/mobile/Users.js",
@@ -6999,7 +6873,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "35deb7497bf4600fc2ab206273c6891e",
+        "contentDigest": "dff658e940e9b64cca456f6136d3a40e",
         "owner": "internal-data-bridge"
       }
     },
@@ -7011,7 +6885,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/mobile/Worldwide.js",
       "componentChunkName": "component---src-pages-2017-mobile-worldwide-js",
       "context": {},
-      "updatedAt": 1510207715147,
+      "updatedAt": 1510213610400,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/mobile/Worldwide.js",
@@ -7020,7 +6894,133 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "393efbf680377f0f7f4d68c2b1a6bc16",
+        "contentDigest": "cd70e3e071b8b13c8e9c8201d5e3579e",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2017/other-tools/OtherTools/": {
+      "layout": "index",
+      "jsonName": "2017-other-tools-other-tools.json",
+      "internalComponentName": "Component2017OtherToolsOtherTools",
+      "path": "/2017/other-tools/OtherTools/",
+      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/other-tools/OtherTools.js",
+      "componentChunkName": "component---src-pages-2017-other-tools-other-tools-js",
+      "context": {},
+      "updatedAt": 1510213610400,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/other-tools/OtherTools.js",
+      "id": "SitePage /2017/other-tools/OtherTools/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "84ec2c0ee68ba3fe2f73bd56d2855efd",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2017/front-end/Affinity/": {
+      "layout": "index",
+      "jsonName": "2017-front-end-affinity.json",
+      "internalComponentName": "Component2017FrontEndAffinity",
+      "path": "/2017/front-end/Affinity/",
+      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Affinity.js",
+      "componentChunkName": "component---src-pages-2017-front-end-affinity-js",
+      "context": {},
+      "updatedAt": 1510213610401,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Affinity.js",
+      "id": "SitePage /2017/front-end/Affinity/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "aae362e13da94dc20d9245404a70a20f",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2017/front-end/Experience/": {
+      "layout": "index",
+      "jsonName": "2017-front-end-experience.json",
+      "internalComponentName": "Component2017FrontEndExperience",
+      "path": "/2017/front-end/Experience/",
+      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Experience.js",
+      "componentChunkName": "component---src-pages-2017-front-end-experience-js",
+      "context": {},
+      "updatedAt": 1510213610401,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Experience.js",
+      "id": "SitePage /2017/front-end/Experience/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "c3346290028b365dda0a18b884bb5853",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2017/front-end/Others/": {
+      "layout": "index",
+      "jsonName": "2017-front-end-others.json",
+      "internalComponentName": "Component2017FrontEndOthers",
+      "path": "/2017/front-end/Others/",
+      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Others.js",
+      "componentChunkName": "component---src-pages-2017-front-end-others-js",
+      "context": {},
+      "updatedAt": 1510213610402,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Others.js",
+      "id": "SitePage /2017/front-end/Others/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "2624ae5b90a56525af302bb58562eea3",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2017/front-end/Users/": {
+      "layout": "index",
+      "jsonName": "2017-front-end-users.json",
+      "internalComponentName": "Component2017FrontEndUsers",
+      "path": "/2017/front-end/Users/",
+      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Users.js",
+      "componentChunkName": "component---src-pages-2017-front-end-users-js",
+      "context": {},
+      "updatedAt": 1510213610402,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Users.js",
+      "id": "SitePage /2017/front-end/Users/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "c2e6ebfb1e560cd8d4c62272cde2b6bc",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /2017/front-end/Worldwide/": {
+      "layout": "index",
+      "jsonName": "2017-front-end-worldwide.json",
+      "internalComponentName": "Component2017FrontEndWorldwide",
+      "path": "/2017/front-end/Worldwide/",
+      "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Worldwide.js",
+      "componentChunkName": "component---src-pages-2017-front-end-worldwide-js",
+      "context": {},
+      "updatedAt": 1510213610402,
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/front-end/Worldwide.js",
+      "id": "SitePage /2017/front-end/Worldwide/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "213a237c56297b60570edbb5457cb769",
         "owner": "internal-data-bridge"
       }
     },
@@ -7032,7 +7032,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/opinions/Opinions.js",
       "componentChunkName": "component---src-pages-2017-opinions-opinions-js",
       "context": {},
-      "updatedAt": 1510207715147,
+      "updatedAt": 1510213610403,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/opinions/Opinions.js",
@@ -7041,7 +7041,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1789d3f54aa10ab27281d02f628db3c5",
+        "contentDigest": "af65671b19e98482c150e652ea1665a1",
         "owner": "internal-data-bridge"
       }
     },
@@ -7053,7 +7053,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/state-management/Affinity.js",
       "componentChunkName": "component---src-pages-2017-state-management-affinity-js",
       "context": {},
-      "updatedAt": 1510207715148,
+      "updatedAt": 1510213610403,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/state-management/Affinity.js",
@@ -7062,7 +7062,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2783b4e2c631c3133793e43d8e283ace",
+        "contentDigest": "7bd96b5097d7c3a32d509d810f02ed01",
         "owner": "internal-data-bridge"
       }
     },
@@ -7074,7 +7074,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/state-management/Experience.js",
       "componentChunkName": "component---src-pages-2017-state-management-experience-js",
       "context": {},
-      "updatedAt": 1510207715148,
+      "updatedAt": 1510213610404,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/state-management/Experience.js",
@@ -7083,7 +7083,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d2d1752d0c4cca7d2e68a6d8018d3480",
+        "contentDigest": "613c494bd1c3ac76e48ad2f39c0773e2",
         "owner": "internal-data-bridge"
       }
     },
@@ -7095,7 +7095,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/state-management/Others.js",
       "componentChunkName": "component---src-pages-2017-state-management-others-js",
       "context": {},
-      "updatedAt": 1510207715150,
+      "updatedAt": 1510213610404,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/state-management/Others.js",
@@ -7104,7 +7104,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "8d82cb1f7bafd59de6b02c8f0857208b",
+        "contentDigest": "ed6df0d1cacbcd86e9d6d8814ac7e455",
         "owner": "internal-data-bridge"
       }
     },
@@ -7116,7 +7116,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/state-management/Users.js",
       "componentChunkName": "component---src-pages-2017-state-management-users-js",
       "context": {},
-      "updatedAt": 1510207715150,
+      "updatedAt": 1510213610405,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/state-management/Users.js",
@@ -7125,7 +7125,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "25851df21514f26b004c297add66c845",
+        "contentDigest": "256f98781553526bc26e530598616c82",
         "owner": "internal-data-bridge"
       }
     },
@@ -7137,7 +7137,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/state-management/Worldwide.js",
       "componentChunkName": "component---src-pages-2017-state-management-worldwide-js",
       "context": {},
-      "updatedAt": 1510207715150,
+      "updatedAt": 1510213610405,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/state-management/Worldwide.js",
@@ -7146,7 +7146,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "0ca14c0a0299b35225ae849248bc5b49",
+        "contentDigest": "f88cc4d6bf0ba96898dc2cd4125cb9a1",
         "owner": "internal-data-bridge"
       }
     },
@@ -7158,7 +7158,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/testing/Affinity.js",
       "componentChunkName": "component---src-pages-2017-testing-affinity-js",
       "context": {},
-      "updatedAt": 1510207715151,
+      "updatedAt": 1510213610406,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/testing/Affinity.js",
@@ -7167,7 +7167,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a10a72b6f19d68c9a11f3867a8d3192f",
+        "contentDigest": "963407e30f38ecfdfbfd0afebc57aafb",
         "owner": "internal-data-bridge"
       }
     },
@@ -7179,7 +7179,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/testing/Experience.js",
       "componentChunkName": "component---src-pages-2017-testing-experience-js",
       "context": {},
-      "updatedAt": 1510207715151,
+      "updatedAt": 1510213610406,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/testing/Experience.js",
@@ -7188,7 +7188,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "143418c71e716f76f0dc8f5d754495b1",
+        "contentDigest": "6f4e2d07b5d0bbaa77811d87f4c937fb",
         "owner": "internal-data-bridge"
       }
     },
@@ -7200,7 +7200,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/testing/Others.js",
       "componentChunkName": "component---src-pages-2017-testing-others-js",
       "context": {},
-      "updatedAt": 1510207715152,
+      "updatedAt": 1510213610406,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/testing/Others.js",
@@ -7209,7 +7209,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e3f7dde02f51ca7c405c078ebb6895e3",
+        "contentDigest": "c2b971189e964ec3f088f07389a8da4b",
         "owner": "internal-data-bridge"
       }
     },
@@ -7221,7 +7221,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/testing/Users.js",
       "componentChunkName": "component---src-pages-2017-testing-users-js",
       "context": {},
-      "updatedAt": 1510207715152,
+      "updatedAt": 1510213610407,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/testing/Users.js",
@@ -7230,7 +7230,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a69e367918ed214fc64d9b2423de39b7",
+        "contentDigest": "d5e15655e14f9eefd661165ce865e89f",
         "owner": "internal-data-bridge"
       }
     },
@@ -7242,7 +7242,7 @@
       "component": "/Users/sacha/Dev/StateOfJS/src/pages/2017/testing/Worldwide.js",
       "componentChunkName": "component---src-pages-2017-testing-worldwide-js",
       "context": {},
-      "updatedAt": 1510207715152,
+      "updatedAt": 1510213610407,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/sacha/Dev/StateOfJS/src/pages/2017/testing/Worldwide.js",
@@ -7251,7 +7251,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "86ec11d68d60b39b1cea805bbb0e88e1",
+        "contentDigest": "8f179caa371b54c88753edc35f59ed0e",
         "owner": "internal-data-bridge"
       }
     }
