@@ -1,0 +1,35 @@
+.Legends {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Legends__Item {
+    margin-bottom: 12px;
+    margin-left: 15px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.Legends__Item:first-child {
+    margin-left: 0;
+}
+
+.Legends__Item__Chip {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 9px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/*————————————————————————————————————————————————————————————————————————————————————————————————————————————————————*\
+  Vertical mode
+\*————————————————————————————————————————————————————————————————————————————————————————————————————————————————————*/
+.Legends--vertical {
+    flex-direction: column;
+}
+
+.Legends--vertical .Legends__Item {
+    margin-left: 0;
+}

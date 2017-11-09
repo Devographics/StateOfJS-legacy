@@ -8,7 +8,14 @@ const slugify = s => s.toLowerCase().replace(' ', '-')
 const Nav = () =>
     <div className="nav">
 		<ul>
-			{nav.items.map(label => <li><Link to={`/2017/${slugify(label)}/experience`}>{label}</Link></li>)}
+			{nav.items.map(item => 
+				<li>
+					{item.label}: 
+					{item.subPages && item.subPages.map(page => 
+						<Link to={`/2017/${slugify(item.label)}/${slugify(page)}/`}>{page} </Link>
+					)}
+				</li>
+			)}
 		</ul>
     </div>
 

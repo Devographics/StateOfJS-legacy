@@ -1,16 +1,110 @@
 {
-	"items": [
-		"Home",
-		"Flavors",
-		"Front-end",
-		"State Management",
-		"Back-end",
-		"Testing",
-		"CSS",
-		"Build Tools",
-		"Mobile",
-		"Others Tools",
-		"Features",
-		"Opinions"
-	]
+  "items": [
+    {
+      "label": "Home",
+      "subPages": [
+        "Experience",
+        "Others",
+        "Affinity",
+        "Users",
+        "Worldwide"
+      ]
+    },
+    {
+      "label": "Flavors",
+      "subPages": [
+        "Experience",
+        "Others",
+        "Affinity",
+        "Users",
+        "Worldwide"
+      ]
+    },
+    {
+      "label": "Front-end",
+      "subPages": [
+        "Experience",
+        "Others",
+        "Affinity",
+        "Users",
+        "Worldwide"
+      ]
+    },
+    {
+      "label": "State Management",
+      "subPages": [
+        "Experience",
+        "Others",
+        "Affinity",
+        "Users",
+        "Worldwide"
+      ]
+    },
+    {
+      "label": "Back-end",
+      "subPages": [
+        "Experience",
+        "Others",
+        "Affinity",
+        "Users",
+        "Worldwide"
+      ]
+    },
+    {
+      "label": "Testing",
+      "subPages": [
+        "Experience",
+        "Others",
+        "Affinity",
+        "Users",
+        "Worldwide"
+      ]
+    },
+    {
+      "label": "CSS",
+      "subPages": [
+        "Experience",
+        "Others",
+        "Affinity",
+        "Users",
+        "Worldwide"
+      ]
+    },
+    {
+      "label": "Build Tools",
+      "subPages": [
+        "Experience",
+        "Others",
+        "Affinity",
+        "Users",
+        "Worldwide"
+      ]
+    },
+    {
+      "label": "Mobile",
+      "subPages": [
+        "Experience",
+        "Others",
+        "Affinity",
+        "Users",
+        "Worldwide"
+      ]
+    },
+    {
+      "label": "Others Tools",
+      "subPages": [
+        "Experience",
+        "Others",
+        "Affinity",
+        "Users",
+        "Worldwide"
+      ]
+    },
+    {
+      "label": "Features"
+    },
+    {
+      "label": "Opinions"
+    }
+  ]
 }
