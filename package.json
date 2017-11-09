@@ -13,7 +13,6 @@
     "cheerio": "^0.22.0",
     "classnames": "^2.2.5",
     "cloudconvert": "^1.1.2",
-    "d3": "^4.2.2",
     "d3-format": "^1.2.0",
     "dsv-loader": "^1.1.0",
     "front-matter": "^2.0.7",
