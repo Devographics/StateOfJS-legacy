@@ -1,0 +1,172 @@
+{
+    "keys": [
+        "Server-Side Rendering",
+        "Code Splitting",
+        "Optimistic Updates",
+        "Hot Module Reloading",
+        "Time-Travel Debugging",
+        "Real-Time Operations",
+        "Dead Code Elimination",
+        "Progressive Enhancement",
+        "Service Workers",
+        "Offline Usage"
+    ],
+    "aggs": {
+        "Real-Time Operations": {
+            "Nice-to-have, but not important": 8481,
+            "Major feature": 7834,
+            "I don't know what that is": 3451,
+            "Vital feature": 2250,
+            "Not needed": 1476
+        },
+        "Service Workers": {
+            "Nice-to-have, but not important": 10125,
+            "Major feature": 6238,
+            "I don't know what that is": 3548,
+            "Not needed": 2090,
+            "Vital feature": 1498
+        },
+        "Dead Code Elimination": {
+            "Nice-to-have, but not important": 9639,
+            "Major feature": 8264,
+            "Vital feature": 3034,
+            "I don't know what that is": 1612,
+            "Not needed": 981
+        },
+        "Optimistic Updates": {
+            "Nice-to-have, but not important": 10202,
+            "Major feature": 5712,
+            "I don't know what that is": 4550,
+            "Not needed": 1853,
+            "Vital feature": 1217
+        },
+        "Progressive Enhancement": {
+            "Nice-to-have, but not important": 7766,
+            "Major feature": 5934,
+            "Not needed": 5297,
+            "Vital feature": 2721,
+            "I don't know what that is": 1780
+        },
+        "Code Splitting": {
+            "Nice-to-have, but not important": 9138,
+            "Major feature": 9045,
+            "Vital feature": 2722,
+            "I don't know what that is": 1711,
+            "Not needed": 929
+        },
+        "Hot Module Reloading": {
+            "Nice-to-have, but not important": 8703,
+            "Major feature": 7798,
+            "Vital feature": 4084,
+            "I don't know what that is": 1608,
+            "Not needed": 1358
+        },
+        "Time-Travel Debugging": {
+            "Nice-to-have, but not important": 11465,
+            "Major feature": 5460,
+            "I don't know what that is": 2923,
+            "Not needed": 2304,
+            "Vital feature": 1369
+        },
+        "Server-Side Rendering": {
+            "Nice-to-have, but not important": 11197,
+            "Major feature": 6185,
+            "Not needed": 2920,
+            "Vital feature": 1732,
+            "I don't know what that is": 1211
+        },
+        "Offline Usage": {
+            "Nice-to-have, but not important": 10676,
+            "Major feature": 6639,
+            "Not needed": 3526,
+            "Vital feature": 1982,
+            "I don't know what that is": 676
+        }
+    },
+    "others": {
+        "doc_count_error_upper_bound": 5,
+        "sum_other_doc_count": 450,
+        "buckets": [
+            {
+                "key": "Accessibility",
+                "doc_count": 15
+            },
+            {
+                "key": "PWA",
+                "doc_count": 8
+            },
+            {
+                "key": "na",
+                "doc_count": 6
+            },
+            {
+                "key": ".",
+                "doc_count": 4
+            },
+            {
+                "key": "Performance",
+                "doc_count": 4
+            },
+            {
+                "key": "?",
+                "doc_count": 3
+            },
+            {
+                "key": "AOT",
+                "doc_count": 3
+            },
+            {
+                "key": "No",
+                "doc_count": 3
+            },
+            {
+                "key": "\n\n\n",
+                "doc_count": 2
+            },
+            {
+                "key": "\n\n\n\n",
+                "doc_count": 2
+            },
+            {
+                "key": "#",
+                "doc_count": 2
+            },
+            {
+                "key": "'",
+                "doc_count": 2
+            },
+            {
+                "key": "??",
+                "doc_count": 2
+            },
+            {
+                "key": "AMP",
+                "doc_count": 2
+            },
+            {
+                "key": "Accessible",
+                "doc_count": 2
+            },
+            {
+                "key": "Dunno",
+                "doc_count": 2
+            },
+            {
+                "key": "HTTP2",
+                "doc_count": 2
+            },
+            {
+                "key": "Local Storage",
+                "doc_count": 2
+            },
+            {
+                "key": "Push notifications",
+                "doc_count": 2
+            },
+            {
+                "key": "Responsive",
+                "doc_count": 2
+            }
+        ]
+    }
+}

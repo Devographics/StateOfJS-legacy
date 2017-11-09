@@ -1,5 +1,5 @@
 var plugins = [{
-      plugin: require('/Users/sachagreif/Dev/StateOfJS/gatsby-browser.js'),
+      plugin: require('/Users/sacha/Dev/StateOfJS/gatsby-browser.js'),
       options: {"plugins":[]},
     }]
 "use strict";

@@ -7,6 +7,8 @@ import TextBlock from '../components/blocks/TextBlock.js'
 
 import footerContents from '../../data/footer.md'
 
+import PageLayout from '../components/common/PageLayout'
+
 // import '../css/markdown-styles'
 
 const getDocument = () => {
@@ -66,7 +68,9 @@ export default class Template extends React.Component {
           <script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript"></script>
         </Helmet>
         <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i|Roboto+Slab:300,400,700" rel="stylesheet"/>
-        {this.props.children()}
+        
+        {this.props.location.pathname === '/' ? this.props.children() : <PageLayout {...this.props}>{this.props.children()}</PageLayout>}
+
         {/*
         <div className="footer">
           Built by <a href="http://twitter.com/SachaGreif">Sacha Greif</a> using <a href="https://github.com/gatsbyjs/gatsby">Gatsby</a>

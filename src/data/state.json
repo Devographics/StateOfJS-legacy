@@ -1,0 +1,1515 @@
+{
+    "keys": [
+        "REST API",
+        "Redux",
+        "MobX",
+        "GraphQL",
+        "Relay/Relay Modern",
+        "Falcor",
+        "Apollo",
+        "Firebase"
+    ],
+    "experience": {
+        "Firebase": {
+            "I've HEARD of it, and WOULD like to learn it": 7356,
+            "I've USED it before, and WOULD use it again": 5519,
+            "I've HEARD of it, and am NOT interested": 5264,
+            "I've never heard of it": 4529,
+            "I've USED it before, and would NOT use it again": 1036
+        },
+        "REST API": {
+            "I've USED it before, and WOULD use it again": 20615,
+            "I've HEARD of it, and WOULD like to learn it": 1747,
+            "I've USED it before, and would NOT use it again": 621,
+            "I've never heard of it": 510,
+            "I've HEARD of it, and am NOT interested": 211
+        },
+        "Relay/Relay Modern": {
+            "I've never heard of it": 14314,
+            "I've HEARD of it, and WOULD like to learn it": 5668,
+            "I've HEARD of it, and am NOT interested": 2990,
+            "I've USED it before, and WOULD use it again": 521,
+            "I've USED it before, and would NOT use it again": 211
+        },
+        "Apollo": {
+            "I've never heard of it": 16047,
+            "I've HEARD of it, and WOULD like to learn it": 4691,
+            "I've HEARD of it, and am NOT interested": 1624,
+            "I've USED it before, and WOULD use it again": 1260,
+            "I've USED it before, and would NOT use it again": 82
+        },
+        "Redux": {
+            "I've USED it before, and WOULD use it again": 10725,
+            "I've HEARD of it, and WOULD like to learn it": 8028,
+            "I've HEARD of it, and am NOT interested": 2413,
+            "I've never heard of it": 1467,
+            "I've USED it before, and would NOT use it again": 1071
+        },
+        "GraphQL": {
+            "I've HEARD of it, and WOULD like to learn it": 14233,
+            "I've never heard of it": 4247,
+            "I've USED it before, and WOULD use it again": 2794,
+            "I've HEARD of it, and am NOT interested": 2258,
+            "I've USED it before, and would NOT use it again": 172
+        },
+        "Falcor": {
+            "I've never heard of it": 18307,
+            "I've HEARD of it, and am NOT interested": 2723,
+            "I've HEARD of it, and WOULD like to learn it": 2491,
+            "I've USED it before, and would NOT use it again": 105,
+            "I've USED it before, and WOULD use it again": 78
+        },
+        "MobX": {
+            "I've never heard of it": 12728,
+            "I've HEARD of it, and WOULD like to learn it": 5329,
+            "I've HEARD of it, and am NOT interested": 4186,
+            "I've USED it before, and WOULD use it again": 1142,
+            "I've USED it before, and would NOT use it again": 319
+        }
+    },
+    "experienceByUsers": {
+        "Firebase": {
+            "doc_count": 5519,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 1744
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 1174
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 883
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 737
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 389
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 376
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 97
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 1818
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 1605
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 1064
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 690
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 189
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 140
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 30,
+                "sum_other_doc_count": 1427,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 1488
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 1198
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 300
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 179
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 171
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 169
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 133
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 130
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 124
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 114
+                    }
+                ]
+            }
+        },
+        "REST API": {
+            "doc_count": 20615,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 6536
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 4291
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 3517
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 2861
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 1254
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 1240
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 351
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 6210
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 6037
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 4462
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 2286
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 1026
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 519
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 115,
+                "sum_other_doc_count": 5284,
+                "buckets": [
+                    {
+                        "key": "undefined",
+                        "doc_count": 5164
+                    },
+                    {
+                        "key": "United States",
+                        "doc_count": 5039
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 1216
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 764
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 674
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 585
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 424
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 418
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 398
+                    },
+                    {
+                        "key": "Poland",
+                        "doc_count": 371
+                    }
+                ]
+            }
+        },
+        "Relay/Relay Modern": {
+            "doc_count": 521,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 168
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 167
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 59
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 47
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 33
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 21
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 19
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 160
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 153
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 133
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 42
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 25
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 6
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 4,
+                "sum_other_doc_count": 122,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 139
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 130
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 38
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 21
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 17
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 13
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 11
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 9
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 8
+                    },
+                    {
+                        "key": "Denmark",
+                        "doc_count": 8
+                    }
+                ]
+            }
+        },
+        "Apollo": {
+            "doc_count": 1260,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 420
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 331
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 182
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 150
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 67
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 55
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 34
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 400
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 373
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 282
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 123
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 57
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 20
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 7,
+                "sum_other_doc_count": 296,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 310
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 308
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 85
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 62
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 47
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 39
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 29
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 28
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 27
+                    },
+                    {
+                        "key": "Switzerland",
+                        "doc_count": 18
+                    }
+                ]
+            }
+        },
+        "Redux": {
+            "doc_count": 10725,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 3515
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 2572
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 1778
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 1349
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 564
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 495
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 192
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 3410
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 3260
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 2186
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 1154
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 433
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 251
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 60,
+                "sum_other_doc_count": 2754,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 2712
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 2600
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 664
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 387
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 344
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 289
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 236
+                    },
+                    {
+                        "key": "Poland",
+                        "doc_count": 212
+                    },
+                    {
+                        "key": "Russia",
+                        "doc_count": 210
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 207
+                    }
+                ]
+            }
+        },
+        "GraphQL": {
+            "doc_count": 2794,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 941
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 786
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 377
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 291
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 144
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 99
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 97
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 867
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 850
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 668
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 218
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 136
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 45
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 15,
+                "sum_other_doc_count": 632,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 751
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 697
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 182
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 124
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 88
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 69
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 68
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 54
+                    },
+                    {
+                        "key": "Sweden",
+                        "doc_count": 49
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 47
+                    }
+                ]
+            }
+        },
+        "Falcor": {
+            "doc_count": 78,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 26
+                    },
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 17
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 13
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 11
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 5
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 4
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 1
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 27
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 21
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 21
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 5
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 4
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 10,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 24
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 22
+                    },
+                    {
+                        "key": "Sweden",
+                        "doc_count": 4
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 3
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 3
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 3
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 3
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 2
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 2
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 2
+                    }
+                ]
+            }
+        },
+        "MobX": {
+            "doc_count": 1142,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 361
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 275
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 185
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 143
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 66
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 58
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 24
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 332
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 332
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 272
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 119
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 59
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 23
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 8,
+                "sum_other_doc_count": 293,
+                "buckets": [
+                    {
+                        "key": "undefined",
+                        "doc_count": 316
+                    },
+                    {
+                        "key": "United States",
+                        "doc_count": 243
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 61
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 46
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 36
+                    },
+                    {
+                        "key": "Russia",
+                        "doc_count": 31
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 28
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 26
+                    },
+                    {
+                        "key": "Poland",
+                        "doc_count": 26
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 24
+                    }
+                ]
+            }
+        }
+    },
+    "others": {
+        "doc_count_error_upper_bound": 5,
+        "sum_other_doc_count": 852,
+        "buckets": [
+            {
+                "key": "VueX",
+                "doc_count": 358
+            },
+            {
+                "key": "MongoDB",
+                "doc_count": 162
+            },
+            {
+                "key": "Ember Data",
+                "doc_count": 58
+            },
+            {
+                "key": "Flux",
+                "doc_count": 53
+            },
+            {
+                "key": "PouchDB",
+                "doc_count": 51
+            },
+            {
+                "key": "Meteor",
+                "doc_count": 42
+            },
+            {
+                "key": "NgRx",
+                "doc_count": 40
+            },
+            {
+                "key": "graph.cool",
+                "doc_count": 40
+            },
+            {
+                "key": "RxJS",
+                "doc_count": 33
+            },
+            {
+                "key": "Parse",
+                "doc_count": 31
+            },
+            {
+                "key": "MySQL",
+                "doc_count": 30
+            },
+            {
+                "key": "realm",
+                "doc_count": 20
+            },
+            {
+                "key": "RethinkDB",
+                "doc_count": 17
+            },
+            {
+                "key": "elm",
+                "doc_count": 17
+            },
+            {
+                "key": "Redis",
+                "doc_count": 15
+            },
+            {
+                "key": "cerebral",
+                "doc_count": 13
+            },
+            {
+                "key": "Gun.js",
+                "doc_count": 12
+            },
+            {
+                "key": "JSON API",
+                "doc_count": 9
+            },
+            {
+                "key": "Contentful",
+                "doc_count": 8
+            },
+            {
+                "key": "horizon",
+                "doc_count": 8
+            }
+        ]
+    },
+    "frontendChord": {
+        "keys": [
+            "REST API",
+            "Redux",
+            "MobX",
+            "GraphQL",
+            "Relay/Relay Modern",
+            "Falcor",
+            "Apollo",
+            "Firebase",
+            "React",
+            "Angular",
+            "Angular 2",
+            "Ember",
+            "Vue",
+            "Backbone",
+            "Polymer",
+            "Aurelia",
+            "No Front-End Framework"
+        ],
+        "matrix": [
+            [0, 0, 0, 0, 0, 0, 0, 0, 12382, 4317, 4140, 1048, 4210, 1591, 1112, 313, 8393],
+            [0, 0, 0, 0, 0, 0, 0, 0, 9671, 1558, 1795, 500, 1910, 776, 575, 136, 4061],
+            [0, 0, 0, 0, 0, 0, 0, 0, 1062, 145, 166, 60, 282, 78, 73, 34, 426],
+            [0, 0, 0, 0, 0, 0, 0, 0, 2361, 341, 412, 160, 590, 216, 209, 49, 1101],
+            [0, 0, 0, 0, 0, 0, 0, 0, 496, 52, 71, 34, 84, 48, 41, 10, 213],
+            [0, 0, 0, 0, 0, 0, 0, 0, 59, 16, 21, 9, 15, 9, 8, 4, 36],
+            [0, 0, 0, 0, 0, 0, 0, 0, 1127, 125, 190, 63, 253, 71, 78, 20, 426],
+            [0, 0, 0, 0, 0, 0, 0, 0, 3705, 1299, 1389, 374, 1310, 396, 500, 82, 2316],
+            [12382, 9671, 1062, 2361, 496, 59, 1127, 3705, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [4317, 1558, 145, 341, 52, 16, 125, 1299, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [4140, 1795, 166, 412, 71, 21, 190, 1389, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [1048, 500, 60, 160, 34, 9, 63, 374, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [4210, 1910, 282, 590, 84, 15, 253, 1310, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [1591, 776, 78, 216, 48, 9, 71, 396, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [1112, 575, 73, 209, 41, 8, 78, 500, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [313, 136, 34, 49, 10, 4, 20, 82, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [8393, 4061, 426, 1101, 213, 36, 426, 2316, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        ]
+    },
+    "frontendSankey": {
+        "nodes": [
+            {
+                "id": "REST API"
+            },
+            {
+                "id": "Redux"
+            },
+            {
+                "id": "MobX"
+            },
+            {
+                "id": "GraphQL"
+            },
+            {
+                "id": "Relay/Relay Modern"
+            },
+            {
+                "id": "Falcor"
+            },
+            {
+                "id": "Apollo"
+            },
+            {
+                "id": "Firebase"
+            },
+            {
+                "id": "React"
+            },
+            {
+                "id": "Angular"
+            },
+            {
+                "id": "Angular 2"
+            },
+            {
+                "id": "Ember"
+            },
+            {
+                "id": "Vue"
+            },
+            {
+                "id": "Backbone"
+            },
+            {
+                "id": "Polymer"
+            },
+            {
+                "id": "Aurelia"
+            },
+            {
+                "id": "No Front-End Framework"
+            }
+        ],
+        "links": [
+            {
+                "source": "REST API",
+                "target": "React",
+                "value": 12382
+            },
+            {
+                "source": "REST API",
+                "target": "Angular",
+                "value": 4317
+            },
+            {
+                "source": "REST API",
+                "target": "Angular 2",
+                "value": 4140
+            },
+            {
+                "source": "REST API",
+                "target": "Ember",
+                "value": 1048
+            },
+            {
+                "source": "REST API",
+                "target": "Vue",
+                "value": 4210
+            },
+            {
+                "source": "REST API",
+                "target": "Backbone",
+                "value": 1591
+            },
+            {
+                "source": "REST API",
+                "target": "Polymer",
+                "value": 1112
+            },
+            {
+                "source": "REST API",
+                "target": "Aurelia",
+                "value": 313
+            },
+            {
+                "source": "REST API",
+                "target": "No Front-End Framework",
+                "value": 8393
+            },
+            {
+                "source": "Redux",
+                "target": "React",
+                "value": 9671
+            },
+            {
+                "source": "Redux",
+                "target": "Angular",
+                "value": 1558
+            },
+            {
+                "source": "Redux",
+                "target": "Angular 2",
+                "value": 1795
+            },
+            {
+                "source": "Redux",
+                "target": "Ember",
+                "value": 500
+            },
+            {
+                "source": "Redux",
+                "target": "Vue",
+                "value": 1910
+            },
+            {
+                "source": "Redux",
+                "target": "Backbone",
+                "value": 776
+            },
+            {
+                "source": "Redux",
+                "target": "Polymer",
+                "value": 575
+            },
+            {
+                "source": "Redux",
+                "target": "Aurelia",
+                "value": 136
+            },
+            {
+                "source": "Redux",
+                "target": "No Front-End Framework",
+                "value": 4061
+            },
+            {
+                "source": "MobX",
+                "target": "React",
+                "value": 1062
+            },
+            {
+                "source": "MobX",
+                "target": "Angular",
+                "value": 145
+            },
+            {
+                "source": "MobX",
+                "target": "Angular 2",
+                "value": 166
+            },
+            {
+                "source": "MobX",
+                "target": "Ember",
+                "value": 60
+            },
+            {
+                "source": "MobX",
+                "target": "Vue",
+                "value": 282
+            },
+            {
+                "source": "MobX",
+                "target": "Backbone",
+                "value": 78
+            },
+            {
+                "source": "MobX",
+                "target": "Polymer",
+                "value": 73
+            },
+            {
+                "source": "MobX",
+                "target": "Aurelia",
+                "value": 34
+            },
+            {
+                "source": "MobX",
+                "target": "No Front-End Framework",
+                "value": 426
+            },
+            {
+                "source": "GraphQL",
+                "target": "React",
+                "value": 2361
+            },
+            {
+                "source": "GraphQL",
+                "target": "Angular",
+                "value": 341
+            },
+            {
+                "source": "GraphQL",
+                "target": "Angular 2",
+                "value": 412
+            },
+            {
+                "source": "GraphQL",
+                "target": "Ember",
+                "value": 160
+            },
+            {
+                "source": "GraphQL",
+                "target": "Vue",
+                "value": 590
+            },
+            {
+                "source": "GraphQL",
+                "target": "Backbone",
+                "value": 216
+            },
+            {
+                "source": "GraphQL",
+                "target": "Polymer",
+                "value": 209
+            },
+            {
+                "source": "GraphQL",
+                "target": "Aurelia",
+                "value": 49
+            },
+            {
+                "source": "GraphQL",
+                "target": "No Front-End Framework",
+                "value": 1101
+            },
+            {
+                "source": "Relay/Relay Modern",
+                "target": "React",
+                "value": 496
+            },
+            {
+                "source": "Relay/Relay Modern",
+                "target": "Angular",
+                "value": 52
+            },
+            {
+                "source": "Relay/Relay Modern",
+                "target": "Angular 2",
+                "value": 71
+            },
+            {
+                "source": "Relay/Relay Modern",
+                "target": "Ember",
+                "value": 34
+            },
+            {
+                "source": "Relay/Relay Modern",
+                "target": "Vue",
+                "value": 84
+            },
+            {
+                "source": "Relay/Relay Modern",
+                "target": "Backbone",
+                "value": 48
+            },
+            {
+                "source": "Relay/Relay Modern",
+                "target": "Polymer",
+                "value": 41
+            },
+            {
+                "source": "Relay/Relay Modern",
+                "target": "Aurelia",
+                "value": 10
+            },
+            {
+                "source": "Relay/Relay Modern",
+                "target": "No Front-End Framework",
+                "value": 213
+            },
+            {
+                "source": "Falcor",
+                "target": "React",
+                "value": 59
+            },
+            {
+                "source": "Falcor",
+                "target": "Angular",
+                "value": 16
+            },
+            {
+                "source": "Falcor",
+                "target": "Angular 2",
+                "value": 21
+            },
+            {
+                "source": "Falcor",
+                "target": "Ember",
+                "value": 9
+            },
+            {
+                "source": "Falcor",
+                "target": "Vue",
+                "value": 15
+            },
+            {
+                "source": "Falcor",
+                "target": "Backbone",
+                "value": 9
+            },
+            {
+                "source": "Falcor",
+                "target": "Polymer",
+                "value": 8
+            },
+            {
+                "source": "Falcor",
+                "target": "Aurelia",
+                "value": 4
+            },
+            {
+                "source": "Falcor",
+                "target": "No Front-End Framework",
+                "value": 36
+            },
+            {
+                "source": "Apollo",
+                "target": "React",
+                "value": 1127
+            },
+            {
+                "source": "Apollo",
+                "target": "Angular",
+                "value": 125
+            },
+            {
+                "source": "Apollo",
+                "target": "Angular 2",
+                "value": 190
+            },
+            {
+                "source": "Apollo",
+                "target": "Ember",
+                "value": 63
+            },
+            {
+                "source": "Apollo",
+                "target": "Vue",
+                "value": 253
+            },
+            {
+                "source": "Apollo",
+                "target": "Backbone",
+                "value": 71
+            },
+            {
+                "source": "Apollo",
+                "target": "Polymer",
+                "value": 78
+            },
+            {
+                "source": "Apollo",
+                "target": "Aurelia",
+                "value": 20
+            },
+            {
+                "source": "Apollo",
+                "target": "No Front-End Framework",
+                "value": 426
+            },
+            {
+                "source": "Firebase",
+                "target": "React",
+                "value": 3705
+            },
+            {
+                "source": "Firebase",
+                "target": "Angular",
+                "value": 1299
+            },
+            {
+                "source": "Firebase",
+                "target": "Angular 2",
+                "value": 1389
+            },
+            {
+                "source": "Firebase",
+                "target": "Ember",
+                "value": 374
+            },
+            {
+                "source": "Firebase",
+                "target": "Vue",
+                "value": 1310
+            },
+            {
+                "source": "Firebase",
+                "target": "Backbone",
+                "value": 396
+            },
+            {
+                "source": "Firebase",
+                "target": "Polymer",
+                "value": 500
+            },
+            {
+                "source": "Firebase",
+                "target": "Aurelia",
+                "value": 82
+            },
+            {
+                "source": "Firebase",
+                "target": "No Front-End Framework",
+                "value": 2316
+            }
+        ]
+    }
+}

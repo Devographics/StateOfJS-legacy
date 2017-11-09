@@ -1,0 +1,1053 @@
+{
+    "keys": ["Meteor", "Express", "Koa", "Hapi", "FeathersJS", "Sails", "Loopback", "Keystone"],
+    "experience": {
+        "Hapi": {
+            "I've never heard of it": 13397,
+            "I've HEARD of it, and am NOT interested": 4666,
+            "I've HEARD of it, and WOULD like to learn it": 3484,
+            "I've USED it before, and WOULD use it again": 1567,
+            "I've USED it before, and would NOT use it again": 590
+        },
+        "Express": {
+            "I've USED it before, and WOULD use it again": 14541,
+            "I've HEARD of it, and WOULD like to learn it": 3798,
+            "I've HEARD of it, and am NOT interested": 2276,
+            "I've never heard of it": 1904,
+            "I've USED it before, and would NOT use it again": 1185
+        },
+        "Keystone": {
+            "I've never heard of it": 19702,
+            "I've HEARD of it, and am NOT interested": 2313,
+            "I've HEARD of it, and WOULD like to learn it": 1125,
+            "I've USED it before, and WOULD use it again": 309,
+            "I've USED it before, and would NOT use it again": 255
+        },
+        "Loopback": {
+            "I've never heard of it": 18291,
+            "I've HEARD of it, and am NOT interested": 2960,
+            "I've HEARD of it, and WOULD like to learn it": 1480,
+            "I've USED it before, and would NOT use it again": 514,
+            "I've USED it before, and WOULD use it again": 459
+        },
+        "Meteor": {
+            "I've HEARD of it, and am NOT interested": 11226,
+            "I've HEARD of it, and WOULD like to learn it": 5401,
+            "I've never heard of it": 3486,
+            "I've USED it before, and would NOT use it again": 1966,
+            "I've USED it before, and WOULD use it again": 1625
+        },
+        "Koa": {
+            "I've never heard of it": 12601,
+            "I've HEARD of it, and am NOT interested": 4250,
+            "I've HEARD of it, and WOULD like to learn it": 4214,
+            "I've USED it before, and WOULD use it again": 2198,
+            "I've USED it before, and would NOT use it again": 441
+        },
+        "Sails": {
+            "I've never heard of it": 13271,
+            "I've HEARD of it, and am NOT interested": 6274,
+            "I've HEARD of it, and WOULD like to learn it": 2430,
+            "I've USED it before, and would NOT use it again": 1099,
+            "I've USED it before, and WOULD use it again": 630
+        },
+        "FeathersJS": {
+            "I've never heard of it": 18587,
+            "I've HEARD of it, and am NOT interested": 2824,
+            "I've HEARD of it, and WOULD like to learn it": 1668,
+            "I've USED it before, and WOULD use it again": 447,
+            "I've USED it before, and would NOT use it again": 178
+        }
+    },
+    "experienceByUsers": {
+        "Hapi": {
+            "doc_count": 1567,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 505
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 437
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 247
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 170
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 63
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 52
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 51
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 522
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 443
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 400
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 108
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 70
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 19
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 9,
+                "sum_other_doc_count": 333,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 437
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 374
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 107
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 68
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 50
+                    },
+                    {
+                        "key": "Poland",
+                        "doc_count": 45
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 38
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 36
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 34
+                    },
+                    {
+                        "key": "Sweden",
+                        "doc_count": 31
+                    }
+                ]
+            }
+        },
+        "Express": {
+            "doc_count": 14541,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 4527
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 3177
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 2421
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 1928
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 937
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 900
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 261
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 4573
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 4246
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 2925
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 1722
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 636
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 394
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 76,
+                "sum_other_doc_count": 3643,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 3707
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 3512
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 884
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 523
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 469
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 438
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 313
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 305
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 276
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 268
+                    }
+                ]
+            }
+        },
+        "Keystone": {
+            "doc_count": 309,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 100
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 67
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 47
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 44
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 27
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 9
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 7
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 100
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 99
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 51
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 32
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 19
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 7
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 72,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 75
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 63
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 23
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 20
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 12
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 9
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 8
+                    },
+                    {
+                        "key": "Belgium",
+                        "doc_count": 7
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 7
+                    },
+                    {
+                        "key": "Poland",
+                        "doc_count": 7
+                    }
+                ]
+            }
+        },
+        "Loopback": {
+            "doc_count": 459,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 148
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 83
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 81
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 72
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 37
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 23
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 7
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 131
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 129
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 117
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 45
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 26
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 10
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 5,
+                "sum_other_doc_count": 147,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 96
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 94
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 20
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 19
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 18
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 16
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 12
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 12
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 10
+                    },
+                    {
+                        "key": "Poland",
+                        "doc_count": 10
+                    }
+                ]
+            }
+        },
+        "Meteor": {
+            "doc_count": 1625,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 540
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 285
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 272
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 211
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 137
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 115
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 24
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 537
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 454
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 319
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 191
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 81
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 35
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 10,
+                "sum_other_doc_count": 423,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 407
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 371
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 77
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 70
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 59
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 57
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 35
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 35
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 32
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 31
+                    }
+                ]
+            }
+        },
+        "Koa": {
+            "doc_count": 2198,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 704
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 588
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 337
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 246
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 112
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 104
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 61
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 779
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 672
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 467
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 154
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 101
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 15
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 13,
+                "sum_other_doc_count": 539,
+                "buckets": [
+                    {
+                        "key": "undefined",
+                        "doc_count": 660
+                    },
+                    {
+                        "key": "United States",
+                        "doc_count": 481
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 118
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 77
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 70
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 53
+                    },
+                    {
+                        "key": "Russia",
+                        "doc_count": 48
+                    },
+                    {
+                        "key": "China",
+                        "doc_count": 44
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 42
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 39
+                    }
+                ]
+            }
+        },
+        "Sails": {
+            "doc_count": 630,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 196
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 139
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 120
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 96
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 35
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 22
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 11
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 223
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 190
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 131
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 54
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 28
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 3
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 5,
+                "sum_other_doc_count": 174,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 154
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 123
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 34
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 30
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 30
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 20
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 17
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 15
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 13
+                    },
+                    {
+                        "key": "Mexico",
+                        "doc_count": 11
+                    }
+                ]
+            }
+        },
+        "FeathersJS": {
+            "doc_count": 447,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 147
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 76
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 75
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 64
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 31
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 30
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 14
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 134
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 130
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 106
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 33
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 30
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 12
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 4,
+                "sum_other_doc_count": 109,
+                "buckets": [
+                    {
+                        "key": "undefined",
+                        "doc_count": 117
+                    },
+                    {
+                        "key": "United States",
+                        "doc_count": 97
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 25
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 20
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 16
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 14
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 14
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 13
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 10
+                    },
+                    {
+                        "key": "Argentina",
+                        "doc_count": 6
+                    }
+                ]
+            }
+        }
+    },
+    "others": {
+        "doc_count_error_upper_bound": 5,
+        "sum_other_doc_count": 775,
+        "buckets": [
+            {
+                "key": "Node.js",
+                "doc_count": 151
+            },
+            {
+                "key": ".NET",
+                "doc_count": 138
+            },
+            {
+                "key": "Rails",
+                "doc_count": 129
+            },
+            {
+                "key": "PHP",
+                "doc_count": 90
+            },
+            {
+                "key": "java",
+                "doc_count": 88
+            },
+            {
+                "key": "restify",
+                "doc_count": 76
+            },
+            {
+                "key": "django",
+                "doc_count": 66
+            },
+            {
+                "key": "adonis",
+                "doc_count": 56
+            },
+            {
+                "key": "laravel",
+                "doc_count": 45
+            },
+            {
+                "key": "elixir",
+                "doc_count": 42
+            },
+            {
+                "key": "python",
+                "doc_count": 34
+            },
+            {
+                "key": "next.js",
+                "doc_count": 30
+            },
+            {
+                "key": "golang",
+                "doc_count": 28
+            },
+            {
+                "key": "serverless",
+                "doc_count": 28
+            },
+            {
+                "key": "socket.io",
+                "doc_count": 27
+            },
+            {
+                "key": "micro",
+                "doc_count": 24
+            },
+            {
+                "key": "clojure",
+                "doc_count": 22
+            },
+            {
+                "key": "firebase",
+                "doc_count": 18
+            },
+            {
+                "key": "GraphQL",
+                "doc_count": 10
+            },
+            {
+                "key": "Kraken",
+                "doc_count": 9
+            }
+        ]
+    }
+}

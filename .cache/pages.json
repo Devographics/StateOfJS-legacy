@@ -1,0 +1,212 @@
+[
+    {
+        "componentChunkName": "page-component---cache-dev-404-page-js",
+        "jsonName": "dev-404-page.json",
+        "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-results-js",
+        "jsonName": "results.json",
+        "path": "/Results/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-index-js",
+        "jsonName": "index.json",
+        "path": "/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-features-features-js",
+        "jsonName": "2017-features-features.json",
+        "path": "/2017/features/Features/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-build-tools-affinity-js",
+        "jsonName": "2017-build-tools-affinity.json",
+        "path": "/2017/build-tools/Affinity/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-build-tools-experience-js",
+        "jsonName": "2017-build-tools-experience.json",
+        "path": "/2017/build-tools/Experience/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-build-tools-others-js",
+        "jsonName": "2017-build-tools-others.json",
+        "path": "/2017/build-tools/Others/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-build-tools-users-js",
+        "jsonName": "2017-build-tools-users.json",
+        "path": "/2017/build-tools/Users/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-build-tools-worldwide-js",
+        "jsonName": "2017-build-tools-worldwide.json",
+        "path": "/2017/build-tools/Worldwide/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-back-end-experience-js",
+        "jsonName": "2017-back-end-experience.json",
+        "path": "/2017/back-end/Experience/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-back-end-others-js",
+        "jsonName": "2017-back-end-others.json",
+        "path": "/2017/back-end/Others/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-back-end-users-js",
+        "jsonName": "2017-back-end-users.json",
+        "path": "/2017/back-end/Users/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-back-end-worldwide-js",
+        "jsonName": "2017-back-end-worldwide.json",
+        "path": "/2017/back-end/Worldwide/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-css-affinity-js",
+        "jsonName": "2017-css-affinity.json",
+        "path": "/2017/css/Affinity/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-css-experience-js",
+        "jsonName": "2017-css-experience.json",
+        "path": "/2017/css/Experience/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-css-others-js",
+        "jsonName": "2017-css-others.json",
+        "path": "/2017/css/Others/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-css-users-js",
+        "jsonName": "2017-css-users.json",
+        "path": "/2017/css/Users/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-css-worldwide-js",
+        "jsonName": "2017-css-worldwide.json",
+        "path": "/2017/css/Worldwide/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-flavors-affinity-js",
+        "jsonName": "2017-flavors-affinity.json",
+        "path": "/2017/flavors/Affinity/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-flavors-experience-js",
+        "jsonName": "2017-flavors-experience.json",
+        "path": "/2017/flavors/Experience/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-flavors-users-js",
+        "jsonName": "2017-flavors-users.json",
+        "path": "/2017/flavors/Users/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-flavors-worldwide-js",
+        "jsonName": "2017-flavors-worldwide.json",
+        "path": "/2017/flavors/Worldwide/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-front-end-affinity-js",
+        "jsonName": "2017-front-end-affinity.json",
+        "path": "/2017/front-end/Affinity/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-front-end-experience-js",
+        "jsonName": "2017-front-end-experience.json",
+        "path": "/2017/front-end/Experience/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-front-end-others-js",
+        "jsonName": "2017-front-end-others.json",
+        "path": "/2017/front-end/Others/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-front-end-users-js",
+        "jsonName": "2017-front-end-users.json",
+        "path": "/2017/front-end/Users/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-front-end-worldwide-js",
+        "jsonName": "2017-front-end-worldwide.json",
+        "path": "/2017/front-end/Worldwide/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-mobile-experience-js",
+        "jsonName": "2017-mobile-experience.json",
+        "path": "/2017/mobile/Experience/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-mobile-users-js",
+        "jsonName": "2017-mobile-users.json",
+        "path": "/2017/mobile/Users/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-mobile-worldwide-js",
+        "jsonName": "2017-mobile-worldwide.json",
+        "path": "/2017/mobile/Worldwide/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-opinions-opinions-js",
+        "jsonName": "2017-opinions-opinions.json",
+        "path": "/2017/opinions/Opinions/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-other-tools-other-tools-js",
+        "jsonName": "2017-other-tools-other-tools.json",
+        "path": "/2017/other-tools/OtherTools/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-state-management-affinity-js",
+        "jsonName": "2017-state-management-affinity.json",
+        "path": "/2017/state-management/Affinity/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-state-management-experience-js",
+        "jsonName": "2017-state-management-experience.json",
+        "path": "/2017/state-management/Experience/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-state-management-users-js",
+        "jsonName": "2017-state-management-users.json",
+        "path": "/2017/state-management/Users/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-state-management-others-js",
+        "jsonName": "2017-state-management-others.json",
+        "path": "/2017/state-management/Others/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-state-management-worldwide-js",
+        "jsonName": "2017-state-management-worldwide.json",
+        "path": "/2017/state-management/Worldwide/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-testing-affinity-js",
+        "jsonName": "2017-testing-affinity.json",
+        "path": "/2017/testing/Affinity/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-testing-experience-js",
+        "jsonName": "2017-testing-experience.json",
+        "path": "/2017/testing/Experience/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-testing-others-js",
+        "jsonName": "2017-testing-others.json",
+        "path": "/2017/testing/Others/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-testing-users-js",
+        "jsonName": "2017-testing-users.json",
+        "path": "/2017/testing/Users/"
+    },
+    {
+        "componentChunkName": "page-component---src-pages-2017-testing-worldwide-js",
+        "jsonName": "2017-testing-worldwide.json",
+        "path": "/2017/testing/Worldwide/"
+    }
+]

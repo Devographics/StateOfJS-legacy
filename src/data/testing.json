@@ -1,0 +1,1492 @@
+{
+    "keys": ["Mocha", "Jasmine", "Enzyme", "Jest", "Tape", "Ava"],
+    "experience": {
+        "Tape": {
+            "I've never heard of it": 17425,
+            "I've HEARD of it, and am NOT interested": 2262,
+            "I've HEARD of it, and WOULD like to learn it": 2048,
+            "I've USED it before, and WOULD use it again": 1515,
+            "I've USED it before, and would NOT use it again": 454
+        },
+        "Enzyme": {
+            "I've never heard of it": 13540,
+            "I've USED it before, and WOULD use it again": 4580,
+            "I've HEARD of it, and WOULD like to learn it": 3397,
+            "I've HEARD of it, and am NOT interested": 1917,
+            "I've USED it before, and would NOT use it again": 270
+        },
+        "Jasmine": {
+            "I've USED it before, and WOULD use it again": 9236,
+            "I've HEARD of it, and WOULD like to learn it": 5774,
+            "I've HEARD of it, and am NOT interested": 3293,
+            "I've never heard of it": 3034,
+            "I've USED it before, and would NOT use it again": 2367
+        },
+        "Mocha": {
+            "I've USED it before, and WOULD use it again": 10717,
+            "I've HEARD of it, and WOULD like to learn it": 6591,
+            "I've HEARD of it, and am NOT interested": 2587,
+            "I've never heard of it": 2254,
+            "I've USED it before, and would NOT use it again": 1555
+        },
+        "Ava": {
+            "I've never heard of it": 18029,
+            "I've HEARD of it, and WOULD like to learn it": 2181,
+            "I've HEARD of it, and am NOT interested": 1926,
+            "I've USED it before, and WOULD use it again": 1176,
+            "I've USED it before, and would NOT use it again": 392
+        },
+        "Jest": {
+            "I've never heard of it": 9013,
+            "I've HEARD of it, and WOULD like to learn it": 6470,
+            "I've USED it before, and WOULD use it again": 5857,
+            "I've HEARD of it, and am NOT interested": 1967,
+            "I've USED it before, and would NOT use it again": 397
+        }
+    },
+    "experienceByUsers": {
+        "Tape": {
+            "doc_count": 1515,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 504
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 468
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 225
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 135
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 63
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 49
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 36
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 536
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 402
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 392
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 98
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 68
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 15
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 7,
+                "sum_other_doc_count": 304,
+                "buckets": [
+                    {
+                        "key": "undefined",
+                        "doc_count": 427
+                    },
+                    {
+                        "key": "United States",
+                        "doc_count": 408
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 107
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 57
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 38
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 37
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 35
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 33
+                    },
+                    {
+                        "key": "Sweden",
+                        "doc_count": 32
+                    },
+                    {
+                        "key": "Russia",
+                        "doc_count": 28
+                    }
+                ]
+            }
+        },
+        "Enzyme": {
+            "doc_count": 4580,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 1550
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 1393
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 724
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 455
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 140
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 129
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 94
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 1485
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 1475
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 975
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 414
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 145
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 77
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 22,
+                "sum_other_doc_count": 1004,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 1264
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 1092
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 363
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 179
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 150
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 133
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 111
+                    },
+                    {
+                        "key": "Poland",
+                        "doc_count": 83
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 81
+                    },
+                    {
+                        "key": "Russia",
+                        "doc_count": 81
+                    }
+                ]
+            }
+        },
+        "Jasmine": {
+            "doc_count": 9236,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 3186
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 2413
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 1512
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 1064
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 321
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 300
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 197
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 2936
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 2619
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 2197
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 837
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 482
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 140
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 50,
+                "sum_other_doc_count": 2192,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 2580
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 2132
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 592
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 325
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 277
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 259
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 200
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 190
+                    },
+                    {
+                        "key": "Poland",
+                        "doc_count": 187
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 168
+                    }
+                ]
+            }
+        },
+        "Mocha": {
+            "doc_count": 10717,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 3573
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 2751
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 1704
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 1252
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 474
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 448
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 230
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 3314
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 3160
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 2463
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 1030
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 524
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 199
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 55,
+                "sum_other_doc_count": 2516,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 2903
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 2632
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 698
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 369
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 346
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 296
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 242
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 204
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 193
+                    },
+                    {
+                        "key": "Poland",
+                        "doc_count": 182
+                    }
+                ]
+            }
+        },
+        "Ava": {
+            "doc_count": 1176,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 404
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 312
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 167
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 134
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 66
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 48
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 21
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 409
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 391
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 251
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 77
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 30
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 16
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 5,
+                "sum_other_doc_count": 220,
+                "buckets": [
+                    {
+                        "key": "undefined",
+                        "doc_count": 358
+                    },
+                    {
+                        "key": "United States",
+                        "doc_count": 286
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 86
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 49
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 44
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 31
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 25
+                    },
+                    {
+                        "key": "Sweden",
+                        "doc_count": 24
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 23
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 21
+                    }
+                ]
+            }
+        },
+        "Jest": {
+            "doc_count": 5857,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 1976
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 1551
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 974
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 623
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 230
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 226
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 147
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 1878
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 1861
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 1261
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 527
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 220
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 97
+                    }
+                ]
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 26,
+                "sum_other_doc_count": 1330,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 1501
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 1451
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 433
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 241
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 186
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 172
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 145
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 117
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 115
+                    },
+                    {
+                        "key": "Russia",
+                        "doc_count": 114
+                    }
+                ]
+            }
+        }
+    },
+    "others": {
+        "doc_count_error_upper_bound": 5,
+        "sum_other_doc_count": 465,
+        "buckets": [
+            {
+                "key": "karma",
+                "doc_count": 189
+            },
+            {
+                "key": "Qunit",
+                "doc_count": 188
+            },
+            {
+                "key": "chai",
+                "doc_count": 144
+            },
+            {
+                "key": "protractor",
+                "doc_count": 83
+            },
+            {
+                "key": "nightwatch",
+                "doc_count": 49
+            },
+            {
+                "key": "cucumber",
+                "doc_count": 45
+            },
+            {
+                "key": "selenium",
+                "doc_count": 44
+            },
+            {
+                "key": "tap",
+                "doc_count": 32
+            },
+            {
+                "key": "lab",
+                "doc_count": 31
+            },
+            {
+                "key": "sinon",
+                "doc_count": 29
+            },
+            {
+                "key": "elm-test",
+                "doc_count": 28
+            },
+            {
+                "key": "cypress",
+                "doc_count": 24
+            },
+            {
+                "key": "intern",
+                "doc_count": 23
+            },
+            {
+                "key": "PhantomJS",
+                "doc_count": 16
+            },
+            {
+                "key": "testcafe",
+                "doc_count": 15
+            },
+            {
+                "key": "jest",
+                "doc_count": 11
+            },
+            {
+                "key": "junit",
+                "doc_count": 11
+            },
+            {
+                "key": "AVA",
+                "doc_count": 6
+            },
+            {
+                "key": "Mocha",
+                "doc_count": 6
+            },
+            {
+                "key": "ospec",
+                "doc_count": 5
+            }
+        ]
+    },
+    "frontendChord": {
+        "keys": [
+            "Mocha",
+            "Jasmine",
+            "Enzyme",
+            "Jest",
+            "Tape",
+            "Ava",
+            "React",
+            "Angular",
+            "Angular 2",
+            "Ember",
+            "Vue",
+            "Backbone",
+            "Polymer",
+            "Aurelia",
+            "No Front-End Framework"
+        ],
+        "matrix": [
+            [0, 0, 0, 0, 0, 0, 7507, 2172, 2090, 701, 2117, 990, 735, 171, 4507],
+            [0, 0, 0, 0, 0, 0, 5869, 2567, 2539, 572, 1674, 931, 616, 180, 3812],
+            [0, 0, 0, 0, 0, 0, 4480, 507, 483, 247, 555, 340, 196, 37, 1698],
+            [0, 0, 0, 0, 0, 0, 5435, 688, 716, 308, 912, 409, 277, 73, 2237],
+            [0, 0, 0, 0, 0, 0, 1210, 182, 185, 97, 327, 153, 106, 24, 781],
+            [0, 0, 0, 0, 0, 0, 940, 136, 139, 62, 340, 83, 91, 19, 551],
+            [7507, 5869, 4480, 5435, 1210, 940, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [2172, 2567, 507, 688, 182, 136, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [2090, 2539, 483, 716, 185, 139, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [701, 572, 247, 308, 97, 62, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [2117, 1674, 555, 912, 327, 340, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [990, 931, 340, 409, 153, 83, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [735, 616, 196, 277, 106, 91, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [171, 180, 37, 73, 24, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [4507, 3812, 1698, 2237, 781, 551, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        ]
+    },
+    "frontendSankey": {
+        "nodes": [
+            {
+                "id": "Mocha"
+            },
+            {
+                "id": "Jasmine"
+            },
+            {
+                "id": "Enzyme"
+            },
+            {
+                "id": "Jest"
+            },
+            {
+                "id": "Tape"
+            },
+            {
+                "id": "Ava"
+            },
+            {
+                "id": "React"
+            },
+            {
+                "id": "Angular"
+            },
+            {
+                "id": "Angular 2"
+            },
+            {
+                "id": "Ember"
+            },
+            {
+                "id": "Vue"
+            },
+            {
+                "id": "Backbone"
+            },
+            {
+                "id": "Polymer"
+            },
+            {
+                "id": "Aurelia"
+            },
+            {
+                "id": "No Front-End Framework"
+            }
+        ],
+        "links": [
+            {
+                "source": "Mocha",
+                "target": "React",
+                "value": 7507
+            },
+            {
+                "source": "Mocha",
+                "target": "Angular",
+                "value": 2172
+            },
+            {
+                "source": "Mocha",
+                "target": "Angular 2",
+                "value": 2090
+            },
+            {
+                "source": "Mocha",
+                "target": "Ember",
+                "value": 701
+            },
+            {
+                "source": "Mocha",
+                "target": "Vue",
+                "value": 2117
+            },
+            {
+                "source": "Mocha",
+                "target": "Backbone",
+                "value": 990
+            },
+            {
+                "source": "Mocha",
+                "target": "Polymer",
+                "value": 735
+            },
+            {
+                "source": "Mocha",
+                "target": "Aurelia",
+                "value": 171
+            },
+            {
+                "source": "Mocha",
+                "target": "No Front-End Framework",
+                "value": 4507
+            },
+            {
+                "source": "Jasmine",
+                "target": "React",
+                "value": 5869
+            },
+            {
+                "source": "Jasmine",
+                "target": "Angular",
+                "value": 2567
+            },
+            {
+                "source": "Jasmine",
+                "target": "Angular 2",
+                "value": 2539
+            },
+            {
+                "source": "Jasmine",
+                "target": "Ember",
+                "value": 572
+            },
+            {
+                "source": "Jasmine",
+                "target": "Vue",
+                "value": 1674
+            },
+            {
+                "source": "Jasmine",
+                "target": "Backbone",
+                "value": 931
+            },
+            {
+                "source": "Jasmine",
+                "target": "Polymer",
+                "value": 616
+            },
+            {
+                "source": "Jasmine",
+                "target": "Aurelia",
+                "value": 180
+            },
+            {
+                "source": "Jasmine",
+                "target": "No Front-End Framework",
+                "value": 3812
+            },
+            {
+                "source": "Enzyme",
+                "target": "React",
+                "value": 4480
+            },
+            {
+                "source": "Enzyme",
+                "target": "Angular",
+                "value": 507
+            },
+            {
+                "source": "Enzyme",
+                "target": "Angular 2",
+                "value": 483
+            },
+            {
+                "source": "Enzyme",
+                "target": "Ember",
+                "value": 247
+            },
+            {
+                "source": "Enzyme",
+                "target": "Vue",
+                "value": 555
+            },
+            {
+                "source": "Enzyme",
+                "target": "Backbone",
+                "value": 340
+            },
+            {
+                "source": "Enzyme",
+                "target": "Polymer",
+                "value": 196
+            },
+            {
+                "source": "Enzyme",
+                "target": "Aurelia",
+                "value": 37
+            },
+            {
+                "source": "Enzyme",
+                "target": "No Front-End Framework",
+                "value": 1698
+            },
+            {
+                "source": "Jest",
+                "target": "React",
+                "value": 5435
+            },
+            {
+                "source": "Jest",
+                "target": "Angular",
+                "value": 688
+            },
+            {
+                "source": "Jest",
+                "target": "Angular 2",
+                "value": 716
+            },
+            {
+                "source": "Jest",
+                "target": "Ember",
+                "value": 308
+            },
+            {
+                "source": "Jest",
+                "target": "Vue",
+                "value": 912
+            },
+            {
+                "source": "Jest",
+                "target": "Backbone",
+                "value": 409
+            },
+            {
+                "source": "Jest",
+                "target": "Polymer",
+                "value": 277
+            },
+            {
+                "source": "Jest",
+                "target": "Aurelia",
+                "value": 73
+            },
+            {
+                "source": "Jest",
+                "target": "No Front-End Framework",
+                "value": 2237
+            },
+            {
+                "source": "Tape",
+                "target": "React",
+                "value": 1210
+            },
+            {
+                "source": "Tape",
+                "target": "Angular",
+                "value": 182
+            },
+            {
+                "source": "Tape",
+                "target": "Angular 2",
+                "value": 185
+            },
+            {
+                "source": "Tape",
+                "target": "Ember",
+                "value": 97
+            },
+            {
+                "source": "Tape",
+                "target": "Vue",
+                "value": 327
+            },
+            {
+                "source": "Tape",
+                "target": "Backbone",
+                "value": 153
+            },
+            {
+                "source": "Tape",
+                "target": "Polymer",
+                "value": 106
+            },
+            {
+                "source": "Tape",
+                "target": "Aurelia",
+                "value": 24
+            },
+            {
+                "source": "Tape",
+                "target": "No Front-End Framework",
+                "value": 781
+            },
+            {
+                "source": "Ava",
+                "target": "React",
+                "value": 940
+            },
+            {
+                "source": "Ava",
+                "target": "Angular",
+                "value": 136
+            },
+            {
+                "source": "Ava",
+                "target": "Angular 2",
+                "value": 139
+            },
+            {
+                "source": "Ava",
+                "target": "Ember",
+                "value": 62
+            },
+            {
+                "source": "Ava",
+                "target": "Vue",
+                "value": 340
+            },
+            {
+                "source": "Ava",
+                "target": "Backbone",
+                "value": 83
+            },
+            {
+                "source": "Ava",
+                "target": "Polymer",
+                "value": 91
+            },
+            {
+                "source": "Ava",
+                "target": "Aurelia",
+                "value": 19
+            },
+            {
+                "source": "Ava",
+                "target": "No Front-End Framework",
+                "value": 551
+            }
+        ]
+    },
+    "backendChord": {
+        "keys": [
+            "Mocha",
+            "Jasmine",
+            "Enzyme",
+            "Jest",
+            "Tape",
+            "Ava",
+            "Meteor",
+            "Express",
+            "Koa",
+            "Hapi",
+            "FeathersJS",
+            "Sails",
+            "Loopback",
+            "Keystone"
+        ],
+        "matrix": [
+            [0, 0, 0, 0, 0, 0, 846, 8396, 1500, 1081, 265, 390, 301, 191],
+            [0, 0, 0, 0, 0, 0, 667, 6648, 1052, 853, 185, 341, 260, 147],
+            [0, 0, 0, 0, 0, 0, 336, 3593, 855, 543, 110, 130, 112, 91],
+            [0, 0, 0, 0, 0, 0, 447, 4583, 1085, 714, 157, 182, 141, 119],
+            [0, 0, 0, 0, 0, 0, 111, 1230, 415, 301, 57, 52, 50, 36],
+            [0, 0, 0, 0, 0, 0, 85, 963, 392, 235, 58, 49, 43, 35],
+            [846, 667, 336, 447, 111, 85, 0, 0, 0, 0, 0, 0, 0, 0],
+            [8396, 6648, 3593, 4583, 1230, 963, 0, 0, 0, 0, 0, 0, 0, 0],
+            [1500, 1052, 855, 1085, 415, 392, 0, 0, 0, 0, 0, 0, 0, 0],
+            [1081, 853, 543, 714, 301, 235, 0, 0, 0, 0, 0, 0, 0, 0],
+            [265, 185, 110, 157, 57, 58, 0, 0, 0, 0, 0, 0, 0, 0],
+            [390, 341, 130, 182, 52, 49, 0, 0, 0, 0, 0, 0, 0, 0],
+            [301, 260, 112, 141, 50, 43, 0, 0, 0, 0, 0, 0, 0, 0],
+            [191, 147, 91, 119, 36, 35, 0, 0, 0, 0, 0, 0, 0, 0]
+        ]
+    },
+    "backendSankey": {
+        "nodes": [
+            {
+                "id": "Mocha"
+            },
+            {
+                "id": "Jasmine"
+            },
+            {
+                "id": "Enzyme"
+            },
+            {
+                "id": "Jest"
+            },
+            {
+                "id": "Tape"
+            },
+            {
+                "id": "Ava"
+            },
+            {
+                "id": "Meteor"
+            },
+            {
+                "id": "Express"
+            },
+            {
+                "id": "Koa"
+            },
+            {
+                "id": "Hapi"
+            },
+            {
+                "id": "FeathersJS"
+            },
+            {
+                "id": "Sails"
+            },
+            {
+                "id": "Loopback"
+            },
+            {
+                "id": "Keystone"
+            }
+        ],
+        "links": [
+            {
+                "source": "Mocha",
+                "target": "Meteor",
+                "value": 846
+            },
+            {
+                "source": "Mocha",
+                "target": "Express",
+                "value": 8396
+            },
+            {
+                "source": "Mocha",
+                "target": "Koa",
+                "value": 1500
+            },
+            {
+                "source": "Mocha",
+                "target": "Hapi",
+                "value": 1081
+            },
+            {
+                "source": "Mocha",
+                "target": "FeathersJS",
+                "value": 265
+            },
+            {
+                "source": "Mocha",
+                "target": "Sails",
+                "value": 390
+            },
+            {
+                "source": "Mocha",
+                "target": "Loopback",
+                "value": 301
+            },
+            {
+                "source": "Mocha",
+                "target": "Keystone",
+                "value": 191
+            },
+            {
+                "source": "Jasmine",
+                "target": "Meteor",
+                "value": 667
+            },
+            {
+                "source": "Jasmine",
+                "target": "Express",
+                "value": 6648
+            },
+            {
+                "source": "Jasmine",
+                "target": "Koa",
+                "value": 1052
+            },
+            {
+                "source": "Jasmine",
+                "target": "Hapi",
+                "value": 853
+            },
+            {
+                "source": "Jasmine",
+                "target": "FeathersJS",
+                "value": 185
+            },
+            {
+                "source": "Jasmine",
+                "target": "Sails",
+                "value": 341
+            },
+            {
+                "source": "Jasmine",
+                "target": "Loopback",
+                "value": 260
+            },
+            {
+                "source": "Jasmine",
+                "target": "Keystone",
+                "value": 147
+            },
+            {
+                "source": "Enzyme",
+                "target": "Meteor",
+                "value": 336
+            },
+            {
+                "source": "Enzyme",
+                "target": "Express",
+                "value": 3593
+            },
+            {
+                "source": "Enzyme",
+                "target": "Koa",
+                "value": 855
+            },
+            {
+                "source": "Enzyme",
+                "target": "Hapi",
+                "value": 543
+            },
+            {
+                "source": "Enzyme",
+                "target": "FeathersJS",
+                "value": 110
+            },
+            {
+                "source": "Enzyme",
+                "target": "Sails",
+                "value": 130
+            },
+            {
+                "source": "Enzyme",
+                "target": "Loopback",
+                "value": 112
+            },
+            {
+                "source": "Enzyme",
+                "target": "Keystone",
+                "value": 91
+            },
+            {
+                "source": "Jest",
+                "target": "Meteor",
+                "value": 447
+            },
+            {
+                "source": "Jest",
+                "target": "Express",
+                "value": 4583
+            },
+            {
+                "source": "Jest",
+                "target": "Koa",
+                "value": 1085
+            },
+            {
+                "source": "Jest",
+                "target": "Hapi",
+                "value": 714
+            },
+            {
+                "source": "Jest",
+                "target": "FeathersJS",
+                "value": 157
+            },
+            {
+                "source": "Jest",
+                "target": "Sails",
+                "value": 182
+            },
+            {
+                "source": "Jest",
+                "target": "Loopback",
+                "value": 141
+            },
+            {
+                "source": "Jest",
+                "target": "Keystone",
+                "value": 119
+            },
+            {
+                "source": "Tape",
+                "target": "Meteor",
+                "value": 111
+            },
+            {
+                "source": "Tape",
+                "target": "Express",
+                "value": 1230
+            },
+            {
+                "source": "Tape",
+                "target": "Koa",
+                "value": 415
+            },
+            {
+                "source": "Tape",
+                "target": "Hapi",
+                "value": 301
+            },
+            {
+                "source": "Tape",
+                "target": "FeathersJS",
+                "value": 57
+            },
+            {
+                "source": "Tape",
+                "target": "Sails",
+                "value": 52
+            },
+            {
+                "source": "Tape",
+                "target": "Loopback",
+                "value": 50
+            },
+            {
+                "source": "Tape",
+                "target": "Keystone",
+                "value": 36
+            },
+            {
+                "source": "Ava",
+                "target": "Meteor",
+                "value": 85
+            },
+            {
+                "source": "Ava",
+                "target": "Express",
+                "value": 963
+            },
+            {
+                "source": "Ava",
+                "target": "Koa",
+                "value": 392
+            },
+            {
+                "source": "Ava",
+                "target": "Hapi",
+                "value": 235
+            },
+            {
+                "source": "Ava",
+                "target": "FeathersJS",
+                "value": 58
+            },
+            {
+                "source": "Ava",
+                "target": "Sails",
+                "value": 49
+            },
+            {
+                "source": "Ava",
+                "target": "Loopback",
+                "value": 43
+            },
+            {
+                "source": "Ava",
+                "target": "Keystone",
+                "value": 35
+            }
+        ]
+    }
+}

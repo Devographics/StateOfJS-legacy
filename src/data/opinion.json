@@ -1,0 +1,62 @@
+{
+    "keys": [
+        "JavaScript is moving in the right direction",
+        "Building JavaScript apps is overly complex right now",
+        "JavaScript is over-used online",
+        "I enjoy building JavaScript apps",
+        "I would like JavaScript to be my main programming language",
+        "The JavaScript ecosystem is changing too fast",
+        "This survey is too damn long!"
+    ],
+    "aggs": {
+        "The JavaScript ecosystem is changing too fast": {
+            "0": 1569,
+            "1": 2479,
+            "2": 6127,
+            "3": 5843,
+            "4": 7505
+        },
+        "I enjoy building JavaScript apps": {
+            "0": 565,
+            "1": 809,
+            "2": 2799,
+            "3": 7475,
+            "4": 11879
+        },
+        "Building JavaScript apps is overly complex right now": {
+            "0": 1054,
+            "1": 2521,
+            "2": 6449,
+            "3": 6698,
+            "4": 6787
+        },
+        "This survey is too damn long!": {
+            "0": 4137,
+            "1": 2280,
+            "2": 7344,
+            "3": 3190,
+            "4": 6563
+        },
+        "I would like JavaScript to be my main programming language": {
+            "0": 2233,
+            "1": 1747,
+            "2": 4209,
+            "3": 4255,
+            "4": 11105
+        },
+        "JavaScript is over-used online": {
+            "0": 6675,
+            "1": 4786,
+            "2": 6373,
+            "3": 2765,
+            "4": 2911
+        },
+        "JavaScript is moving in the right direction": {
+            "0": 472,
+            "1": 714,
+            "2": 3183,
+            "3": 8927,
+            "4": 10191
+        }
+    }
+}

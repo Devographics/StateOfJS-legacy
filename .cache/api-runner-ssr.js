@@ -1,5 +1,5 @@
 var plugins = [{
-      plugin: require('/Users/sachagreif/Dev/StateOfJS/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
+      plugin: require('/Users/sacha/Dev/StateOfJS/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
       options: {"plugins":[]},
     }]
 "use strict";
