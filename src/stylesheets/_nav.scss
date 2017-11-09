@@ -24,5 +24,13 @@
 
 .nav-subpage{
   display: inline-block;
-  margin-right: $spacing/2;  
+  margin-right: $spacing/2;
+  font-size: $medium-font;
+  &, &:link, &:visited{
+    color: $text-color;
+  }
+}
+
+.nav-subpage-active{
+  @include font-bold;
 }
