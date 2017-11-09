@@ -2,7 +2,7 @@
   background: none;
   border: 1px solid $border-color;
   border-radius: 3px;
-  padding: $vmargin/2 $hmargin;
+  padding: $spacing/2 $spacing;
   cursor: pointer;
   display: block;
   color: $active-color;
@@ -21,7 +21,7 @@
     color: $active-color;
   }
   &.large-button{
-    padding: $vmargin $hmargin;
+    padding: $spacing $spacing;
     font-size: $large-font;
   }
 }

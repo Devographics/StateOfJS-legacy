@@ -54,7 +54,7 @@
     border-radius: 100%;
     background: $active-color;
     flex-shrink: 0;
-    margin-right: $hmargin;
+    margin-right: $spacing;
     &:last-child{
       margin-right: 0;
     }

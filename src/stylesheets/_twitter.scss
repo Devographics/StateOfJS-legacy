@@ -15,7 +15,7 @@
 }
 .tweet-widget{
   border-radius: 3px 3px 0 0;
-  padding: $vmargin $hmargin;
+  padding: $spacing $spacing;
   border-bottom: 1px solid $border-color;
   .tweet-widget-textarea{
     position: relative;
@@ -36,7 +36,7 @@
     height: 120px;
     font-size: $medium-font;
     line-height: 1.6;
-    padding: $vmargin/2 $hmargin/2;
+    padding: $spacing/2 $spacing/2;
   }
   .button{
 

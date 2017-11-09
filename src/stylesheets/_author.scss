@@ -9,7 +9,7 @@
   z-index: 10;
   border: 1px solid $border-color;
   border-radius: 3px;
-  padding: $vmargin $hmargin;
+  padding: $spacing $spacing;
   @include medium-large{
     display: flex;
     align-items: center;
@@ -17,9 +17,9 @@
 }
 .author-avatar{
   flex: 1;
-  margin-right: $hmargin;
+  margin-right: $spacing;
   @include small{
-    margin-bottom: $vmargin/2;
+    margin-bottom: $spacing/2;
   }
   a, img{
     height: 80px;
@@ -33,5 +33,5 @@
   margin-bottom: 0;
 }
 .author-bio{
-  margin-bottom: -$vmargin;
+  margin-bottom: -$spacing;
 }

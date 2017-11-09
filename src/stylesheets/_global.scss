@@ -22,24 +22,14 @@ body{
   }
 }
 
-.outer-wrapper{
-  @include small-medium{
-    padding: $vmargin $hmargin;
-  }
-  @include large{
-    padding: $vmargin*1.5 $vmargin*6 $vmargin*3 $vmargin*6;
-    border: 10px solid $active-color;
-    min-height: calc(100vh - 22px);
-  }
-}
 
 h1, h2, h3, h4, h5, h6{
   @include secondary-font;
-  margin: 0 0 $vmargin 0;
+  margin: 0 0 $spacing 0;
 }
 
 p, ul, ol{
-  margin: 0 0 $vmargin 0;
+  margin: 0 0 $spacing 0;
   @include small{
     line-height: 1.6;
   }

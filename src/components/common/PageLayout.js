@@ -2,10 +2,14 @@ import React from 'react'
 
 import Nav from './Nav'
 
-const PageLayout = ({ children }) =>
+const PageLayout = (props) =>
     <div className="page-layout">
-    	<Nav/>
-    	{children}
+    	<div className="sidebar">
+    		<Nav {...props}/>
+    	</div>
+    	<div className="content">
+    		{props.children}
+    	</div>
     </div>
 
 export default PageLayout

@@ -1,9 +1,9 @@
 .heatmap-chart{
   @include small{
-    margin-bottom: $vmargin;
+    margin-bottom: $spacing;
   }
   @include medium-large{
-    margin-bottom: $vmargin*2;
+    margin-bottom: $spacing*2;
   }
 }
 .heatmap-table-wrapper{
@@ -11,10 +11,10 @@
 }
 .heatmap-table{
   @include small{
-    margin-bottom: $vmargin;
+    margin-bottom: $spacing;
   }
   @include medium-large{
-    margin: $vmargin*3 0 $vmargin 0;
+    margin: $spacing*3 0 $spacing 0;
   }
   font-size: 13px;
   table-layout: fixed;

@@ -1,53 +1,75 @@
-"use strict";
+// TODO add tests especially for handling prefixed links.
+import { matchPath } from "react-router-dom"
 
-var _reactRouterDom = require("react-router-dom");
+const pageCache = {}
 
-var pageCache = {}; // TODO add tests especially for handling prefixed links.
+module.exports = (pages, pathPrefix = ``) => rawPathname => {
+  let pathname = decodeURIComponent(rawPathname)
+  // Remove the pathPrefix from the pathname.
+  let trimmedPathname = pathname.slice(pathPrefix.length)
 
+  // Remove any hashfragment
+  if (trimmedPathname.split(`#`).length > 1) {
+    trimmedPathname = trimmedPathname
+      .split(`#`)
+      .slice(0, -1)
+      .join(``)
+  }
 
-module.exports = function (pages) {
-  var pathPrefix = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "";
-  return function (pathname) {
-    // Remove the pathPrefix from the pathname.
-    var trimmedPathname = pathname.slice(pathPrefix.length
+  // Remove search query
+  if (trimmedPathname.split(`?`).length > 1) {
+    trimmedPathname = trimmedPathname
+      .split(`?`)
+      .slice(0, -1)
+      .join(``)
+  }
 
-    // Remove any hashfragment
-    );if (trimmedPathname.split("#").length > 1) {
-      trimmedPathname = trimmedPathname.split("#").slice(0, -1).join("");
-    }
+  if (pageCache[trimmedPathname]) {
+    return pageCache[trimmedPathname]
+  }
 
-    if (pageCache[trimmedPathname]) {
-      return pageCache[trimmedPathname];
-    }
-
-    var foundPage = void 0;
-    // Array.prototype.find is not supported in IE so we use this somewhat odd
-    // work around.
-    pages.some(function (page) {
-      if (page.matchPath) {
-        // Try both the path and matchPath
-        if ((0, _reactRouterDom.matchPath)(trimmedPathname, { path: page.path }) || (0, _reactRouterDom.matchPath)(trimmedPathname, {
-          path: page.matchPath
-        })) {
-          foundPage = page;
-          pageCache[trimmedPathname] = page;
-          return true;
-        }
-      } else {
-        if ((0, _reactRouterDom.matchPath)(trimmedPathname, {
+  let foundPage
+  // Array.prototype.find is not supported in IE so we use this somewhat odd
+  // work around.
+  pages.some(page => {
+    if (page.matchPath) {
+      // Try both the path and matchPath
+      if (
+        matchPath(trimmedPathname, { path: page.path }) ||
+        matchPath(trimmedPathname, {
+          path: page.matchPath,
+        })
+      ) {
+        foundPage = page
+        pageCache[trimmedPathname] = page
+        return true
+      }
+    } else {
+      if (
+        matchPath(trimmedPathname, {
           path: page.path,
-          exact: true
-        })) {
-          foundPage = page;
-          pageCache[trimmedPathname] = page;
-          return true;
-        }
+          exact: true,
+        })
+      ) {
+        foundPage = page
+        pageCache[trimmedPathname] = page
+        return true
       }
 
-      return false;
-    });
+      // Finally, try and match request with default document.
+      if (
+        matchPath(trimmedPathname, {
+          path: page.path + `index.html`,
+        })
+      ) {
+        foundPage = page
+        pageCache[trimmedPathname] = page
+        return true
+      }
+    }
 
-    return foundPage;
-  };
-};
-//# sourceMappingURL=find-page.js.map
+    return false
+  })
+
+  return foundPage
+}

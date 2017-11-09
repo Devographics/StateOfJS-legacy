@@ -5,15 +5,15 @@
   border-bottom: 1px solid $border-color;
   padding-bottom: 3px;
   
-  margin-bottom: $vmargin*4;
+  margin-bottom: $spacing*4;
 
 }
 .pagination-inner{
   border-top: 1px solid $border-color;
-  padding-top: $vmargin*2;
+  padding-top: $spacing*2;
 
   border-bottom: 1px solid $border-color;
-  padding-bottom: $vmargin*2;
+  padding-bottom: $spacing*2;
 
   @include large{
     display: flex;
@@ -35,7 +35,7 @@
 .pagination-previous{
   @include small-medium{
     text-align: center;
-    margin-bottom: $vmargin/2;
+    margin-bottom: $spacing/2;
   }
   @include large{
     text-align: left;

@@ -1,20 +1,20 @@
 .page-title-header{
   text-align: center;
   display: block;
-  margin-bottom: $vmargin;
+  margin-bottom: $spacing;
   font-size: $medium-font;
 }
 .page-title{
-  margin: 0 0 $vmargin*3 0;
+  margin: 0 0 $spacing*3 0;
   // box-shadow: 10px 10px 0 0 $grey;
   position: relative;
   border: 1px solid $border-color;
   .inner{
     @include small{
-      padding: $vmargin $hmargin;
+      padding: $spacing $spacing;
     }
     @include medium-large{
-      padding: $vmargin*2 $hmargin*2;
+      padding: $spacing*2 $spacing*2;
     }
     background: $bg-color;
     display: block;
@@ -41,7 +41,7 @@
   margin: 0;
   line-height: 1;
   @include small-medium{
-    margin-bottom: $vmargin/2;
+    margin-bottom: $spacing/2;
   }
   @include large{
     position: absolute;
@@ -51,7 +51,7 @@
   }
 }
 .page-title-main{
-  margin-bottom: $vmargin/1.5;
+  margin-bottom: $spacing/1.5;
   @include small-medium{
     font-size: $large-font;
     line-height: 1.4;

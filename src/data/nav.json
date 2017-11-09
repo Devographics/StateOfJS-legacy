@@ -1,14 +1,7 @@
 {
   "items": [
     {
-      "label": "Home",
-      "subPages": [
-        "Experience",
-        "Others",
-        "Affinity",
-        "Users",
-        "Worldwide"
-      ]
+      "label": "Home"
     },
     {
       "label": "Flavors",

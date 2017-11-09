@@ -1,0 +1,25 @@
+.nav{
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    margin-bottom: $spacing/2;
+  }
+}
+
+.nav-page{
+  white-space: nowrap;
+  font-size: $large-font;
+  margin: 0;
+}
+
+.nav-subpages{
+  
+}
+
+.nav-subpage{
+  display: inline-block;
+  margin-right: $spacing/2;  
+}

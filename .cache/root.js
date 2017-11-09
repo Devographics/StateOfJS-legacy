@@ -1,167 +1,201 @@
-"use strict";
+import React, { createElement } from "react"
+import { Router, Route, matchPath, withRouter } from "react-router-dom"
+import { ScrollContext } from "gatsby-react-router-scroll"
+import history from "./history"
+import { apiRunner } from "./api-runner-browser"
+import syncRequires from "./sync-requires"
+import pages from "./pages.json"
+import redirects from "./redirects.json"
+import ComponentRenderer from "./component-renderer"
+import loader from "./loader"
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
+import * as ErrorOverlay from "react-error-overlay"
 
-var _extends2 = require("babel-runtime/helpers/extends");
+// Report runtime errors
+ErrorOverlay.startReportingRuntimeErrors({
+  onError: () => {},
+  filename: `/commons.js`,
+})
+ErrorOverlay.setEditorHandler(errorLocation =>
+  window.fetch(
+    `/__open-stack-frame-in-editor?fileName=` +
+      window.encodeURIComponent(errorLocation.fileName) +
+      `&lineNumber=` +
+      window.encodeURIComponent(errorLocation.lineNumber || 1)
+  )
+)
 
-var _extends3 = _interopRequireDefault(_extends2);
+if (window.__webpack_hot_middleware_reporter__ !== undefined) {
+  // Report build errors
+  window.__webpack_hot_middleware_reporter__.useCustomOverlay({
+    showProblems(type, obj) {
+      if (type !== `errors`) {
+        ErrorOverlay.dismissBuildError()
+        return
+      }
+      ErrorOverlay.reportBuildError(obj[0])
+    },
+    clear() {
+      ErrorOverlay.dismissBuildError()
+    },
+  })
+}
 
-var _react = require("react");
+loader.addPagesArray(pages)
+loader.addDevRequires(syncRequires)
+window.___loader = loader
 
-var _react2 = _interopRequireDefault(_react);
+// Convert to a map for faster lookup in maybeRedirect()
+const redirectMap = redirects.reduce((map, redirect) => {
+  map[redirect.fromPath] = redirect
+  return map
+}, {})
 
-var _reactRouterDom = require("react-router-dom");
-
-var _reactRouterScroll = require("react-router-scroll");
-
-var _createBrowserHistory = require("history/createBrowserHistory");
-
-var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
-
-var _apiRunnerBrowser = require("./api-runner-browser");
-
-var _apiRunnerBrowser2 = _interopRequireDefault(_apiRunnerBrowser);
-
-var _syncRequires = require("./sync-requires");
-
-var _syncRequires2 = _interopRequireDefault(_syncRequires);
-
-var _pages = require("./pages.json");
-
-var _pages2 = _interopRequireDefault(_pages);
-
-var _componentRenderer = require("./component-renderer");
-
-var _componentRenderer2 = _interopRequireDefault(_componentRenderer);
-
-var _loader = require("./loader");
-
-var _loader2 = _interopRequireDefault(_loader);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_loader2.default.addPagesArray(_pages2.default);
-_loader2.default.addDevRequires(_syncRequires2.default);
-window.___loader = _loader2.default;
-
-var history = (0, _createBrowserHistory2.default
+// Check for initial page-load redirect
+maybeRedirect(location.pathname)
 
 // Call onRouteUpdate on the initial page load.
-)();(0, _apiRunnerBrowser2.default)("onRouteUpdate", {
+apiRunner(`onRouteUpdate`, {
   location: history.location,
-  action: history.action
-});
+  action: history.action,
+})
 
 function attachToHistory(history) {
   if (!window.___history) {
-    window.___history = history;
+    window.___history = history
 
-    history.listen(function (location, action) {
-      (0, _apiRunnerBrowser2.default)("onRouteUpdate", { location: location, action: action });
-    });
+    history.listen((location, action) => {
+      if (!maybeRedirect(location.pathname)) {
+        apiRunner(`onRouteUpdate`, { location, action })
+      }
+    })
   }
 }
 
-function shouldUpdateScroll(prevRouterProps, _ref) {
-  var pathname = _ref.location.pathname;
+function maybeRedirect(pathname) {
+  const redirect = redirectMap[pathname]
 
-  var results = (0, _apiRunnerBrowser2.default)("shouldUpdateScroll", {
-    prevRouterProps: prevRouterProps,
-    pathname: pathname
-  });
+  if (redirect != null) {
+    const pageResources = loader.getResourcesForPathname(pathname)
+
+    if (pageResources != null) {
+      console.error(
+        `The route "${
+          pathname
+        }" matches both a page and a redirect; this is probably not intentional.`
+      )
+    }
+
+    history.replace(redirect.toPath)
+    return true
+  } else {
+    return false
+  }
+}
+
+function shouldUpdateScroll(prevRouterProps, { location: { pathname } }) {
+  const results = apiRunner(`shouldUpdateScroll`, {
+    prevRouterProps,
+    pathname,
+  })
   if (results.length > 0) {
-    return results[0];
+    return results[0]
   }
 
   if (prevRouterProps) {
-    var oldPathname = prevRouterProps.location.pathname;
-
+    const { location: { pathname: oldPathname } } = prevRouterProps
     if (oldPathname === pathname) {
-      return false;
+      return false
     }
   }
-  return true;
+  return true
 }
 
-var noMatch = _pages2.default.find(function (r) {
-  return r.path === "/dev-404-page/";
-});
-
-var addNotFoundRoute = function addNotFoundRoute() {
-  if (noMatch) {
-    return (0, _react.createElement)(_reactRouterDom.Route, {
-      key: "404-page",
-      component: function component(props) {
-        return (0, _react.createElement)(_syncRequires2.default.components[noMatch.componentChunkName], (0, _extends3.default)({}, props, _syncRequires2.default.json[noMatch.jsonName]));
-      }
-    });
-  } else {
-    return null;
+let noMatch
+for (let i = 0; i < pages.length; i++) {
+  if (pages[i].path === `/dev-404-page/`) {
+    noMatch = pages[i]
+    break
   }
-};
-
-var navigateTo = function navigateTo(pathname) {
-  window.___history.push(pathname);
-};
-
-window.___navigateTo = navigateTo;
-
-var AltRouter = (0, _apiRunnerBrowser2.default)("replaceRouterComponent", { history: history })[0];
-var DefaultRouter = function DefaultRouter(_ref2) {
-  var children = _ref2.children;
-  return _react2.default.createElement(
-    _reactRouterDom.BrowserRouter,
-    { history: history },
-    children
-  );
-};
-
-// Use default layout if one isn't set.
-var layout = void 0;
-if (_syncRequires2.default.layouts["index"]) {
-  layout = _syncRequires2.default.layouts["index"];
-} else {
-  layout = function layout(_ref3) {
-    var children = _ref3.children;
-    return _react2.default.createElement(
-      "div",
-      null,
-      children()
-    );
-  };
 }
+
+const addNotFoundRoute = () => {
+  if (noMatch) {
+    return createElement(Route, {
+      key: `404-page`,
+      component: props =>
+        createElement(syncRequires.components[noMatch.componentChunkName], {
+          ...props,
+          ...syncRequires.json[noMatch.jsonName],
+        }),
+    })
+  } else {
+    return null
+  }
+}
+
+const navigateTo = pathname => {
+  window.___history.push(pathname)
+}
+
+window.___navigateTo = navigateTo
+
+const AltRouter = apiRunner(`replaceRouterComponent`, { history })[0]
+const DefaultRouter = ({ children }) => (
+  <Router history={history}>{children}</Router>
+)
+
+const ComponentRendererWithRouter = withRouter(ComponentRenderer)
 
 // Always have to have one top-level layout
 // can have ones below that. Find page, if has different
 // parent layout(s), loop through those until finally the
 // page. Tricky part is avoiding re-mounting I think...
 
-var Root = function Root() {
-  return (0, _react.createElement)(AltRouter ? AltRouter : DefaultRouter, null, (0, _react.createElement)(_reactRouterScroll.ScrollContext, { shouldUpdateScroll: shouldUpdateScroll }, (0, _react.createElement)((0, _reactRouterDom.withRouter)(layout), {
-    children: function children(layoutProps) {
-      return (0, _react.createElement)(_reactRouterDom.Route, {
-        render: function render(routeProps) {
-          attachToHistory(routeProps.history);
+const Root = () =>
+  createElement(
+    AltRouter ? AltRouter : DefaultRouter,
+    null,
+    createElement(
+      ScrollContext,
+      { shouldUpdateScroll },
+      createElement(ComponentRendererWithRouter, {
+        layout: true,
+        children: layoutProps =>
+          createElement(Route, {
+            render: routeProps => {
+              const props = layoutProps ? layoutProps : routeProps
+              attachToHistory(props.history)
+              const { pathname } = props.location
+              const pageResources = loader.getResourcesForPathname(pathname)
+              if (pageResources && pageResources.component) {
+                return createElement(ComponentRenderer, {
+                  key: `normal-page`,
+                  page: true,
+                  ...props,
+                  pageResources,
+                })
+              } else {
+                const dev404Page = pages.find(p => p.path === `/dev-404-page/`)
+                return createElement(Route, {
+                  key: `404-page`,
+                  component: props =>
+                    createElement(
+                      syncRequires.components[dev404Page.componentChunkName],
+                      {
+                        ...props,
+                        ...syncRequires.json[dev404Page.jsonName],
+                      }
+                    ),
+                })
+              }
+            },
+          }),
+      })
+    )
+  )
 
-          var props = layoutProps ? layoutProps : routeProps;
-          var pageResources = _loader2.default.getResourcesForPathname(props.location.pathname);
-          if (pageResources) {
-            return (0, _react.createElement)(_componentRenderer2.default, (0, _extends3.default)({}, props, {
-              pageResources: pageResources
-            }));
-          } else {
-            return addNotFoundRoute();
-          }
-        }
-      });
-    }
-  }))
+// Let site, plugins wrap the site e.g. for Redux.
+const WrappedRoot = apiRunner(`wrapRootComponent`, { Root }, Root)[0]
 
-  // Let site, plugins wrap the site e.g. for Redux.
-  );
-};var WrappedRoot = (0, _apiRunnerBrowser2.default)("wrapRootComponent", { Root: Root }, Root)[0];
-
-exports.default = WrappedRoot;
-//# sourceMappingURL=root.js.map
+export default WrappedRoot

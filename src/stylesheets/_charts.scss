@@ -5,7 +5,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
 
-    padding: 0 $hmargin;
+    padding: 0 $spacing;
 
     // optional - enable iOS momentum scrolling
     -webkit-overflow-scrolling: touch;
@@ -59,7 +59,7 @@
   @include large{
     @include flex-center;
   }
-  margin-bottom: $vmargin;
+  margin-bottom: $spacing;
   .stacked-chart &{
     margin: 0;
   }
@@ -72,13 +72,13 @@
     font-size: $smaller-font;
   }
   @include small-medium{
-    margin-bottom: $vmargin/2;
+    margin-bottom: $spacing/2;
   }
   @include medium-large{
     font-size: $small-font;
   }
   @include large{
-    margin-right: $hmargin;
+    margin-right: $spacing;
   }
   &:last-child{
     margin-right: 0;
@@ -86,10 +86,10 @@
 }
 .filter-heading{
   @include small{
-    margin-bottom: $vmargin/4;
+    margin-bottom: $spacing/4;
   }
   @include medium-large{
-    margin-right: $hmargin/2;
+    margin-right: $spacing/2;
   }
 }
 .filter ul {
@@ -105,7 +105,7 @@
   padding: 0;
   margin: 0;
   li{
-    padding: $vmargin/4 $hmargin/2;
+    padding: $spacing/4 $spacing/2;
     border-right: 1px solid $border-color;
     &:first-child{
       border-radius: 3px 0 0 3px;
@@ -175,7 +175,7 @@ div.satisfaction {
   margin: 0;
   .section-layout-b &{
     @include large{
-      padding: 0 $hmargin*6;
+      padding: 0 $spacing*6;
     }
   }
 }
@@ -183,7 +183,7 @@ div.satisfaction {
 .legend{
   list-style: none;
   padding: 0;
-  margin: $vmargin/2 0 $vmargin 0;
+  margin: $spacing/2 0 $spacing 0;
   font-size: $small-font;
   display: flex;
   @include small{
@@ -191,7 +191,7 @@ div.satisfaction {
   }
   li{
     flex: 1;
-    margin-right: $hmargin/2;
+    margin-right: $spacing/2;
     &:last-child{
       margin-right: 0;
     }
@@ -208,7 +208,7 @@ div.satisfaction {
 }
 
 .svg-block{
-  margin-bottom: $vmargin*2;
+  margin-bottom: $spacing*2;
   .recharts-wrapper>svg{
     border: 1px solid $border-color;
   }

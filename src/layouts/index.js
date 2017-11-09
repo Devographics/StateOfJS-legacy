@@ -77,15 +77,17 @@ export default class Template extends React.Component {
         </div>
         */}
 
-        <TextBlock contents={footerContents} className="home-footer" />
+        <TextBlock contents={footerContents} className="footer home-footer" />
 
+        {/*
         <div className="hosted-by">
           <h4>Deploys by</h4>
           <a href="https://www.netlify.com/?ref=stateofjs">
             <img src="/images/netlify-logo.svg"/>
           </a>
         </div>
-
+        */}
+        
       </div>
     )
   }

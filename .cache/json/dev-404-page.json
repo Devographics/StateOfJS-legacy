@@ -15,7 +15,22 @@
                 },
                 {
                     "node": {
-                        "path": "/2017/features/Features/"
+                        "path": "/2017/back-end/Experience/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/2017/back-end/Others/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/2017/back-end/Users/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/2017/back-end/Worldwide/"
                     }
                 },
                 {
@@ -45,26 +60,6 @@
                 },
                 {
                     "node": {
-                        "path": "/2017/back-end/Experience/"
-                    }
-                },
-                {
-                    "node": {
-                        "path": "/2017/back-end/Others/"
-                    }
-                },
-                {
-                    "node": {
-                        "path": "/2017/back-end/Users/"
-                    }
-                },
-                {
-                    "node": {
-                        "path": "/2017/back-end/Worldwide/"
-                    }
-                },
-                {
-                    "node": {
                         "path": "/2017/css/Affinity/"
                     }
                 },
@@ -86,6 +81,11 @@
                 {
                     "node": {
                         "path": "/2017/css/Worldwide/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/2017/features/Features/"
                     }
                 },
                 {
@@ -135,6 +135,11 @@
                 },
                 {
                     "node": {
+                        "path": "/2017/other-tools/OtherTools/"
+                    }
+                },
+                {
+                    "node": {
                         "path": "/2017/mobile/Experience/"
                     }
                 },
@@ -155,11 +160,6 @@
                 },
                 {
                     "node": {
-                        "path": "/2017/other-tools/OtherTools/"
-                    }
-                },
-                {
-                    "node": {
                         "path": "/2017/state-management/Affinity/"
                     }
                 },
@@ -170,12 +170,12 @@
                 },
                 {
                     "node": {
-                        "path": "/2017/state-management/Users/"
+                        "path": "/2017/state-management/Others/"
                     }
                 },
                 {
                     "node": {
-                        "path": "/2017/state-management/Others/"
+                        "path": "/2017/state-management/Users/"
                     }
                 },
                 {

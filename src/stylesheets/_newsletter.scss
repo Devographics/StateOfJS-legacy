@@ -1,8 +1,8 @@
 
 .newsletter{
   // border: 1px solid $border-color;
-  // padding: $vmargin/2 $hmargin/2;
-  margin-bottom: $vmargin;
+  // padding: $spacing/2 $spacing/2;
+  margin-bottom: $spacing;
   form{
     display: flex;
     margin: 0;
@@ -10,9 +10,9 @@
   .email{
     display: block;
     border-radius: 3px;
-    padding: $vmargin/2 $hmargin/2;
+    padding: $spacing/2 $spacing/2;
     border: 1px solid $active-color;
-    margin-right: $hmargin/2;
+    margin-right: $spacing/2;
     flex-grow: 1;
     width: 100%;
     &:focus{

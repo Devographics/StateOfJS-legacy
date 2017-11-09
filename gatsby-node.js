@@ -3,6 +3,8 @@ const cheerio = require('cheerio')
 const CloudConvert = require('cloudconvert')
 const stream = require('stream')
 
+const nav = require('./src/data/nav.json')
+
 const cloudconvert = new CloudConvert('AgdEGASfC2FDKiTMeaGgBnol1uZ7mzf57TXO7NearQ2dcaj7AGsc2rHqsFr8plYN-1gH3mr1MWNVhUMiYr04Fw')
 
 // export.postBuild = function(pages, callback) {
@@ -74,4 +76,23 @@ exports.onPostBuild = function (args, pluginOptions) {
     })
   })
 
+}
+
+const slugify = s => s.toLowerCase().replace(' ', '-')
+
+exports.createPages = async ({graphql, boundActionCreators}) => {
+  const {createPage, createRedirect} = boundActionCreators;
+
+  nav.items.forEach(item => {
+    createRedirect({
+      fromPath: `/2017/${slugify(item.label)}/`,
+      redirectInBrowser: true,
+      toPath: `/2017/${slugify(item.label)}/${slugify(item.subPages[0])}`,
+    });
+    createRedirect({
+      fromPath: `/2017/${slugify(item.label)}`,
+      redirectInBrowser: true,
+      toPath: `/2017/${slugify(item.label)}/${slugify(item.subPages[0])}`,
+    });
+  });
 }

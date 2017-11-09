@@ -2,8 +2,6 @@ var plugins = [{
       plugin: require('/Users/sacha/Dev/StateOfJS/gatsby-browser.js'),
       options: {"plugins":[]},
     }]
-"use strict";
-
 // During bootstrap, we write requires at top of this file which looks
 // basically like:
 // var plugins = [
@@ -11,26 +9,32 @@ var plugins = [{
 //   require('/path/to/plugin2/gatsby-browser.js'),
 // ]
 
-module.exports = function (api, args, defaultReturn) {
-  // Run each plugin in series.
-  var results = plugins.map(function (plugin) {
+export function apiRunner(api, args, defaultReturn) {
+  let results = plugins.map(plugin => {
     if (plugin.plugin[api]) {
-      var result = plugin.plugin[api](args, plugin.options);
-      return result;
+      const result = plugin.plugin[api](args, plugin.options)
+      return result
     }
-  }
+  })
 
   // Filter out undefined results.
-  );results = results.filter(function (result) {
-    return typeof result !== "undefined";
-  });
+  results = results.filter(result => typeof result !== `undefined`)
 
   if (results.length > 0) {
-    return results;
+    return results
   } else if (defaultReturn) {
-    return [defaultReturn];
+    return [defaultReturn]
   } else {
-    return [];
+    return []
   }
-};
-//# sourceMappingURL=api-runner-browser.js.map
+}
+
+export function apiRunnerAsync(api, args, defaultReturn) {
+  return plugins.reduce(
+    (previous, next) =>
+      next.plugin[api]
+        ? previous.then(() => next.plugin[api](args, next.options))
+        : previous,
+    Promise.resolve()
+  )
+}
