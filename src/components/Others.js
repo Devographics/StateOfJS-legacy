@@ -47,7 +47,7 @@ export default class Others extends Component {
                             <OthersBar data={others} />
                         </div>
                     </div>
-                    <div style={{ height: 600 }}>
+                    <div>
                         <h4 className="SubSectionTitle">Compared to available options</h4>
                         <div
                             style={{
@@ -81,7 +81,9 @@ export default class Others extends Component {
                                 ]}
                             />
                         </div>
+                        <div className="chart-wrapper" style={{ height: 600 }}>
                         <OthersBubble data={bubbleData} baseKeys={baseKeys} />
+                        </div>
                     </div>
                 </div>
             </div>

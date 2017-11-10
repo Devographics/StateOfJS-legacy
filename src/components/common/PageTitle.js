@@ -16,8 +16,12 @@ const getTitle = pathname => {
 }
 
 const PageTitle = ({ location }) =>
-    <h2 className="page-title">
-		{getTitle(location.pathname)}
-    </h2>
+	<div className="page-title-wrapper">
+	    <h2 className="page-title">
+	    	<div className="inner">
+				{getTitle(location.pathname)}
+			</div>
+	    </h2>
+    </div>
 
 export default PageTitle

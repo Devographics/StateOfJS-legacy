@@ -9,7 +9,6 @@ const otherTools = clone(frontendData.others.buckets).reverse()
 
 const FrontendOthers = () => (
     <Others
-        title="Other frontend frameworks (Mentions)"
         base={baseTools}
         baseKeys={frontendData.keys}
         others={otherTools}
