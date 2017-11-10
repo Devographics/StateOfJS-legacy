@@ -14,12 +14,12 @@
 }
 
 .content{
-
+  flex: 1;
 }
 .sidebar{
   // max-width: 350px;
   width: 350px;
-  margin-right: $spacing*2;
+  margin-right: $spacing*3;
 }
 // .section{
 //   @include small{

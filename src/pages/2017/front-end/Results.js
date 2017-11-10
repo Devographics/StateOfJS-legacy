@@ -7,7 +7,6 @@ const data = dto.experience(frontendData.experience)
 
 const FrontendExperience = () => (
     <Experience
-        title="Frontend frameworks"
         data={data}
         description={
             <div className="description">

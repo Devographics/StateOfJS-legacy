@@ -42,11 +42,11 @@ export default class FrontendAffinity extends Component {
                         onChange={this.setType}
                     />
                 </div>
-                <div style={{ display: 'flex' }}>
-                    <div style={{ width: '50%' }}>
+                <div>
+                    <div>
                         <AffinitySankey data={sankeyData} sourceKeys={frontendData.keys} />
                     </div>
-                    <div style={{ width: '50%' }}>
+                    <div>
                         <AffinityChord keys={chordKeys} matrix={chordMatrix} />
                     </div>
                 </div>

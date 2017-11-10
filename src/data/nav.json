@@ -1,103 +1,118 @@
 {
   "items": [
     {
-      "label": "Home"
+      "label": "Introduction",
+      "fullLabel": "Introduction"
     },
     {
       "label": "Flavors",
+      "fullLabel": "JavaScript Flavors",
       "subPages": [
-        "Experience",
-        "Others",
-        "Affinity",
-        "Users",
-        "Worldwide"
+        "results",
+        "affinity",
+        "developers",
+        "worldwide"
       ]
     },
     {
       "label": "Front-end",
+      "fullLabel": "Front-end Frameworks",
       "subPages": [
-        "Experience",
-        "Others",
-        "Affinity",
-        "Users",
-        "Worldwide"
+        "results",
+        "other",
+        "affinity",
+        "developers",
+        "worldwide"
       ]
     },
     {
       "label": "State Management",
+      "fullLabel": "State Management Tools",
       "subPages": [
-        "Experience",
-        "Others",
-        "Affinity",
-        "Users",
-        "Worldwide"
+        "results",
+        "other",
+        "affinity",
+        "developers",
+        "worldwide"
       ]
     },
     {
       "label": "Back-end",
+      "fullLabel": "Back-end Frameworks",
       "subPages": [
-        "Experience",
-        "Others",
-        "Affinity",
-        "Users",
-        "Worldwide"
+        "results",
+        "other",
+        "affinity",
+        "developers",
+        "worldwide"
       ]
     },
     {
       "label": "Testing",
+      "fullLabel": "Testing Tools",
       "subPages": [
-        "Experience",
-        "Others",
-        "Affinity",
-        "Users",
-        "Worldwide"
+        "results",
+        "other",
+        "affinity",
+        "developers",
+        "worldwide"
       ]
     },
     {
       "label": "CSS",
+      "fullLabel": "CSS & Styling",
       "subPages": [
-        "Experience",
-        "Others",
-        "Affinity",
-        "Users",
-        "Worldwide"
+        "results",
+        "other",
+        "affinity",
+        "developers",
+        "worldwide"
       ]
     },
     {
       "label": "Build Tools",
+      "fullLabel": "Build Tools",
       "subPages": [
-        "Experience",
-        "Others",
-        "Affinity",
-        "Users",
-        "Worldwide"
+        "results",
+        "other",
+        "affinity",
+        "developers",
+        "worldwide"
       ]
     },
     {
       "label": "Mobile",
+      "fullLabel": "Mobile Frameworks",
       "subPages": [
-        "Experience",
-        "Others",
-        "Affinity",
-        "Users",
-        "Worldwide"
+        "results",
+        "other",
+        "affinity",
+        "developers",
+        "worldwide"
       ]
     },
     {
-      "label": "Others Tools",
+      "label": "others Tools",
+      "fullLabel": "others Tools",
       "subPages": [
-        "Experience",
-        "Others",
-        "Affinity",
-        "Users",
-        "Worldwide"
+        "results",
+        "other",
+        "affinity",
+        "developers",
+        "worldwide"
       ]
     },
     {
-      "label": "Features"
+      "label": "Features",
+      "fullLabel": "Popular Features"
     },
     {
-      "label": "Opinions"
+      "label": "Opinions",
+      "fullLabel": "Developer Opinions"
+    },
+    {
+      "label": "Conclusion",
+      "fullLabel": "Conclusion"
     }
   ]
 }

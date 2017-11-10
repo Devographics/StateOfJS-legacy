@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import classNames from 'classnames'
 import nav from '../../data/nav.json'
-
-const slugify = s => s.toLowerCase().replace(' ', '-')
+import sections from '../../data/sections.json'
+import slugify from '../../helpers/slugify'
 
 const isActive = (pathname, label) => pathname.indexOf(slugify(label)) !== -1
 
@@ -18,7 +18,7 @@ const NavItem = ({ label, subPages, location }) =>
   <li>
     <h3 className="nav-page"><Link to={`/2017/${slugify(label)}/`}>{label}</Link></h3>
     <div className="nav-subpages">
-      {isActive(location.pathname, label) && subPages && subPages.map((subLabel, i) => <NavSubItem key={i} parentLabel={label} label={subLabel} location={location} />)}
+      {isActive(location.pathname, label) && subPages && subPages.map((subPage, i) => <NavSubItem key={i} parentLabel={label} label={sections[subPage].label} location={location} />)}
     </div>
   </li>
 

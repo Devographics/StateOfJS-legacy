@@ -40,17 +40,14 @@ export default class Others extends Component {
                 <h3 className="SectionTitle">
                     <span>{title}</span>
                 </h3>
-                <div
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                    }}
-                >
-                    <div style={{ width: '48%', height: 800 }}>
+                <div>
+                    <div>
                         <h4 className="SubSectionTitle">Top mentions</h4>
-                        <OthersBar data={others} />
+                        <div className="chart-wrapper" style={{ height: 800 }}>
+                            <OthersBar data={others} />
+                        </div>
                     </div>
-                    <div style={{ width: '48%', height: 600 }}>
+                    <div style={{ height: 600 }}>
                         <h4 className="SubSectionTitle">Compared to available options</h4>
                         <div
                             style={{
