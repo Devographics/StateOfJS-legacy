@@ -28,5 +28,8 @@ script:
   #- yarn lint
   # ensure the project builds correctly
   - yarn build
+  # starts static server
+  - cd public && python -m SimpleHTTPServer &
+  - sleep 6
   # ensure the capture works (because it relies on selectors)
   - cd cli && ./cli capture
