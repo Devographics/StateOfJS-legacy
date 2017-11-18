@@ -5,10 +5,11 @@ import Nav from './Nav'
 
 import footerContents from '../../../data/footer.md'
 
-const HomeLayout = (props) =>
+const HomeLayout = props => (
     <div className="home-layout">
-		{props.children}
+        {props.children}
         <TextBlock contents={footerContents} className="footer home-footer" />
     </div>
+)
 
 export default HomeLayout

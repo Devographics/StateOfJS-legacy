@@ -8,18 +8,21 @@ import filter from 'lodash/filter'
 const sections = filter(nav.items, item => item.subPages)
 
 export default class AffinityToggle extends Component {
-    static propTypes = {
-    }
+    static propTypes = {}
 
     render() {
-
         return (
             <div className="Chord--toggle">
-            	<ul>
-	            	{sections.map(section =>
-	            		<li><label><input type="checkbox" />{section.fullLabel}</label></li>
-	            	)}
-            	</ul>
+                <ul>
+                    {sections.map(section => (
+                        <li>
+                            <label>
+                                <input type="checkbox" />
+                                {section.fullLabel}
+                            </label>
+                        </li>
+                    ))}
+                </ul>
             </div>
         )
     }

@@ -9,22 +9,22 @@ const NodeComponent = ({ node, style, handlers }) => {
     return (
         <div
             style={{
-                position:       'absolute',
-                display:        'flex',
-                alignItems:     'center',
+                position: 'absolute',
+                display: 'flex',
+                alignItems: 'center',
                 justifyContent: 'center',
-                textAlign:      'center',
-                background:     style.color,
-                color:          style.labelTextColor,
-                borderWidth:    style.borderWidth,
-                borderColor:    style.borderColor,
-                top:            style.y - style.r,
-                left:           style.x - style.r,
-                width:          style.r * 2,
-                height:         style.r * 2,
-                borderStyle:    'solid',
-                borderRadius:   style.r,
-                cursor:         'pointer',
+                textAlign: 'center',
+                background: style.color,
+                color: style.labelTextColor,
+                borderWidth: style.borderWidth,
+                borderColor: style.borderColor,
+                top: style.y - style.r,
+                left: style.x - style.r,
+                width: style.r * 2,
+                height: style.r * 2,
+                borderStyle: 'solid',
+                borderRadius: style.r,
+                cursor: 'pointer',
             }}
             {...handlers}
         >
@@ -34,15 +34,15 @@ const NodeComponent = ({ node, style, handlers }) => {
 }
 
 NodeComponent.propTypes = {
-    node:     PropTypes.object.isRequired,
-    style:    PropTypes.shape({
-        r:              PropTypes.number.isRequired,
-        x:              PropTypes.number.isRequired,
-        y:              PropTypes.number.isRequired,
-        color:          PropTypes.string.isRequired,
-        fill:           PropTypes.string,
-        borderWidth:    PropTypes.number.isRequired,
-        borderColor:    PropTypes.string.isRequired,
+    node: PropTypes.object.isRequired,
+    style: PropTypes.shape({
+        r: PropTypes.number.isRequired,
+        x: PropTypes.number.isRequired,
+        y: PropTypes.number.isRequired,
+        color: PropTypes.string.isRequired,
+        fill: PropTypes.string,
+        borderWidth: PropTypes.number.isRequired,
+        borderColor: PropTypes.string.isRequired,
         labelTextColor: PropTypes.string.isRequired,
     }).isRequired,
     handlers: PropTypes.object.isRequired,
@@ -55,7 +55,7 @@ export default class CountryBubble extends PureComponent {
             key: PropTypes.string.isRequired,
         }).isRequired,
         setCurrentTool: PropTypes.func.isRequired,
-        currentTool:    PropTypes.string,
+        currentTool: PropTypes.string,
     }
 
     render() {
@@ -77,11 +77,11 @@ export default class CountryBubble extends PureComponent {
                 nodeComponent={NodeComponent}
                 animate={false}
                 root={{
-                    id:       data.key,
+                    id: data.key,
                     children: keys.map(key => ({
-                        id:    key,
-                        value: data[key].doc_count
-                    }))
+                        id: key,
+                        value: data[key].doc_count,
+                    })),
                 }}
             />
         )

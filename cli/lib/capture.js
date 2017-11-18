@@ -10,7 +10,7 @@ const capture = async (page, baseUrl, { path, selector }, outputDir) => {
 
     console.log(chalk`{yellow Capturing {white ${path}}} {dim (selector: ${selector})}`)
 
-    await page.goto(url);
+    await page.goto(url)
 
     const element = await page.$(selector)
     if (element === null) {
@@ -19,11 +19,11 @@ const capture = async (page, baseUrl, { path, selector }, outputDir) => {
 
     const clip = await element.boundingBox()
 
-    const filename =`${_.snakeCase(_.deburr(path))}.png`
+    const filename = `${_.snakeCase(_.deburr(path))}.png`
 
     await page.screenshot({
-        path:  Path.join(outputDir, filename),
-        clip
+        path: Path.join(outputDir, filename),
+        clip,
     })
 
     console.log(chalk`  {green saved to {white ${filename}}}`)
@@ -38,7 +38,7 @@ module.exports = async config => {
 
     try {
         const browser = await puppeteer.launch()
-        const page    = await browser.newPage()
+        const page = await browser.newPage()
         await page.setViewport({ width: 1400, height: 4000 })
 
         for (let pageConfig of config.pages) {

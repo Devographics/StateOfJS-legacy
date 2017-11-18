@@ -6,28 +6,30 @@ const stream = require('stream')
 
 const nav = yaml.safeLoad(fs.readFileSync('./src/data/nav.yaml', 'utf8'))
 
-const cloudconvert = new CloudConvert('AgdEGASfC2FDKiTMeaGgBnol1uZ7mzf57TXO7NearQ2dcaj7AGsc2rHqsFr8plYN-1gH3mr1MWNVhUMiYr04Fw')
+const cloudconvert = new CloudConvert(
+    'AgdEGASfC2FDKiTMeaGgBnol1uZ7mzf57TXO7NearQ2dcaj7AGsc2rHqsFr8plYN-1gH3mr1MWNVhUMiYr04Fw'
+)
 
 // export.postBuild = function(pages, callback) {
 //   // perform actions on pages here
 //   callback()
 // }
 
-exports.modifyWebpackConfig = function ({config, stage}) {
-  config.loader('csv', cfg => {
-    cfg.test = /\.csv$/
-    cfg.loader = 'dsv-loader'
-    return cfg
-  })
+exports.modifyWebpackConfig = function({ config, stage }) {
+    config.loader('csv', cfg => {
+        cfg.test = /\.csv$/
+        cfg.loader = 'dsv-loader'
+        return cfg
+    })
 
-  config.removeLoader('md')
-  config.loader('md', cfg => {
-    cfg.test = /\.md$/
-    cfg.loader = 'babel-loader!reactdown/webpack'
-    return cfg
-  })
-  
-  return config
+    config.removeLoader('md')
+    config.loader('md', cfg => {
+        cfg.test = /\.md$/
+        cfg.loader = 'babel-loader!reactdown/webpack'
+        return cfg
+    })
+
+    return config
 }
 
 // exports.onPostBuild = function (args, pluginOptions) {
@@ -81,21 +83,21 @@ exports.modifyWebpackConfig = function ({config, stage}) {
 
 const slugify = s => s.toLowerCase().replace(' ', '-')
 
-exports.createPages = async ({graphql, boundActionCreators}) => {
-  const {createPage, createRedirect} = boundActionCreators;
+exports.createPages = async ({ boundActionCreators }) => {
+    const { createRedirect } = boundActionCreators
 
-  nav.items.forEach(item => {
-    if (item.subPages) {
-      createRedirect({
-        fromPath: `/2017/${slugify(item.label)}/`,
-        redirectInBrowser: true,
-        toPath: `/2017/${slugify(item.label)}/${slugify(item.subPages[0])}`,
-      });
-      createRedirect({
-        fromPath: `/2017/${slugify(item.label)}`,
-        redirectInBrowser: true,
-        toPath: `/2017/${slugify(item.label)}/${slugify(item.subPages[0])}`,
-      });
-    }
-  });
+    nav.items.forEach(item => {
+        if (item.subPages) {
+            createRedirect({
+                fromPath: `/2017/${slugify(item.label)}/`,
+                redirectInBrowser: true,
+                toPath: `/2017/${slugify(item.label)}/${slugify(item.subPages[0])}`,
+            })
+            createRedirect({
+                fromPath: `/2017/${slugify(item.label)}`,
+                redirectInBrowser: true,
+                toPath: `/2017/${slugify(item.label)}/${slugify(item.subPages[0])}`,
+            })
+        }
+    })
 }

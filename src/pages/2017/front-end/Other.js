@@ -8,11 +8,7 @@ const baseTools = dto.othersBase(frontendData.experienceByUsers)
 const otherTools = clone(frontendData.others.buckets).reverse()
 
 const FrontendOthers = () => (
-    <Others
-        base={baseTools}
-        baseKeys={frontendData.keys}
-        others={otherTools}
-    />
+    <Others base={baseTools} baseKeys={frontendData.keys} others={otherTools} />
 )
 
 export default FrontendOthers

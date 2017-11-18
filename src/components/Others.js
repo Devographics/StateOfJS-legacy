@@ -77,7 +77,7 @@ export default class Others extends Component {
                             />
                         </div>
                         <div className="chart-wrapper" style={{ height: 600 }}>
-                        <OthersBubble data={bubbleData} baseKeys={baseKeys} />
+                            <OthersBubble data={bubbleData} baseKeys={baseKeys} />
                         </div>
                     </div>
                 </div>

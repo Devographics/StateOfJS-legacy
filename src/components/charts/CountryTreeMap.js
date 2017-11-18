@@ -11,34 +11,34 @@ const NodeComponent = setCurrentTool => ({ node, style, handlers }) => {
     return (
         <div
             style={{
-                boxSizing:      'border-box',
-                position:       'absolute',
-                textAlign:      'center',
-                top:            style.y,
-                left:           style.x,
-                width:          style.width,
-                height:         style.height,
-                background:     style.color,
-                overflow:       'hidden',
-                display:        'flex',
-                alignItems:     'center',
+                boxSizing: 'border-box',
+                position: 'absolute',
+                textAlign: 'center',
+                top: style.y,
+                left: style.x,
+                width: style.width,
+                height: style.height,
+                background: style.color,
+                overflow: 'hidden',
+                display: 'flex',
+                alignItems: 'center',
                 justifyContent: 'center',
-                borderWidth:    style.borderWidth,
-                borderStyle:    'solid',
-                borderColor:    style.borderColor,
-                cursor:         'pointer',
+                borderWidth: style.borderWidth,
+                borderStyle: 'solid',
+                borderColor: style.borderColor,
+                cursor: 'pointer',
             }}
             {...handlers}
         >
             {node.label !== false && (
                 <span
                     style={{
-                        color:            style.labelTextColor,
-                        transform:        `rotate(${rotate ? '-90' : '0'}deg)`,
+                        color: style.labelTextColor,
+                        transform: `rotate(${rotate ? '-90' : '0'}deg)`,
                         WebkitUserSelect: 'none',
-                        MozUserSelect:    'none',
-                        MsUserSelect:     'none',
-                        userSelect:       'none',
+                        MozUserSelect: 'none',
+                        MsUserSelect: 'none',
+                        userSelect: 'none',
                     }}
                 >
                     {node.label}
@@ -49,17 +49,17 @@ const NodeComponent = setCurrentTool => ({ node, style, handlers }) => {
 }
 
 NodeComponent.propTypes = {
-    node:  PropTypes.object.isRequired,
+    node: PropTypes.object.isRequired,
     style: PropTypes.shape({
-        x:              PropTypes.number.isRequired,
-        y:              PropTypes.number.isRequired,
-        width:          PropTypes.number.isRequired,
-        height:         PropTypes.number.isRequired,
-        color:          PropTypes.string.isRequired,
-        borderWidth:    PropTypes.number.isRequired,
-        borderColor:    PropTypes.string.isRequired,
+        x: PropTypes.number.isRequired,
+        y: PropTypes.number.isRequired,
+        width: PropTypes.number.isRequired,
+        height: PropTypes.number.isRequired,
+        color: PropTypes.string.isRequired,
+        borderWidth: PropTypes.number.isRequired,
+        borderColor: PropTypes.string.isRequired,
         labelTextColor: PropTypes.string.isRequired,
-        orientLabel:    PropTypes.bool.isRequired,
+        orientLabel: PropTypes.bool.isRequired,
     }).isRequired,
     handlers: PropTypes.object.isRequired,
 }
@@ -71,7 +71,7 @@ export default class CountryTreeMap extends PureComponent {
             key: PropTypes.string.isRequired,
         }).isRequired,
         setCurrentTool: PropTypes.func.isRequired,
-        currentTool:    PropTypes.string,
+        currentTool: PropTypes.string,
     }
 
     render() {
@@ -97,8 +97,8 @@ export default class CountryTreeMap extends PureComponent {
                     id: data.key,
                     children: keys.map(key => ({
                         id: key,
-                        value: data[key].doc_count
-                    }))
+                        value: data[key].doc_count,
+                    })),
                 }}
             />
         )

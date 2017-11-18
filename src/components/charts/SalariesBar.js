@@ -28,11 +28,11 @@ const SalariesBar = ({ data }) => (
             motionStiffness={120}
             motionDamping={15}
             axisLeft={{
-                format: v => `${v}%`
+                format: v => `${v}%`,
             }}
             axisBottom={{
                 tickSize: 0,
-                tickPadding: 12
+                tickPadding: 12,
             }}
             theme={theme}
         />
