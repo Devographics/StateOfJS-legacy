@@ -36,8 +36,8 @@ const keys = [
 ]
 
 const margin = {
-    top: 4,
-    right: 180,
+    top: 10,
+    right: 10,
     bottom: 30,
     left: 10,
 }
@@ -113,13 +113,14 @@ export default class ExperienceBar extends Component {
                 <ResponsiveBar
                     margin={margin}
                     layout="vertical"
-                    padding={0.6}
+                    padding={0.4}
                     data={data}
                     keys={keys}
                     indexBy={indexBy}
                     colorBy={colorBy}
                     label={getLabel}
                     labelSkipWidth={32}
+                    labelSkipHeight={20}
                     labelFormat=".2s"
                     labelTextColor="inherit:darker(1)"
                     enableLabel={true}
@@ -129,10 +130,9 @@ export default class ExperienceBar extends Component {
                     motionStiffness={120}
                     motionDamping={15}
                     axisLeft={null}
-                    axisRight={axisRight}
+                    axisRight={null}
                     axisBottom={axisBottom}
                     theme={theme}
-                    markers={markers}
                 />
             </div>
         )

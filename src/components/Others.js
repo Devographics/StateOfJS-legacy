@@ -56,11 +56,6 @@ export default class Others extends Component {
                                 alignItems: 'center',
                             }}
                         >
-                            <Filters
-                                filters={['compare', 'others only']}
-                                filter={mode}
-                                onChange={this.setMode}
-                            />
                             <Legends
                                 style={{
                                     marginTop: 0,
