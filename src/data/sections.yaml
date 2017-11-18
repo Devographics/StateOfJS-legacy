@@ -1,6 +1,9 @@
 results:
   label: Results
   fullLabel: Results
+heatmap:
+  label: Heatmap
+  fullLabel: Heatmap
 other:
   label: Other
   fullLabel: Other Answers

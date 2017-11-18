@@ -13,6 +13,10 @@ export const colors = {
 
 export const colorRange = [
     colors.purple,
+    colors.purpleLight,
+    colors.yellow,
+    colors.yellowLight,
+    colors.greyLight,
 ]
 
 export const experience = {

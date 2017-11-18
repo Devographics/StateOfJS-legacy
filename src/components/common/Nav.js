@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import classNames from 'classnames'
 import nav from '../../data/nav.yaml'
-import sections from '../../data/sections.json'
+import sections from '../../data/sections.yaml'
 import slugify from '../../helpers/slugify'
 
 const isActive = (pathname, label) => pathname.indexOf(slugify(label)) !== -1

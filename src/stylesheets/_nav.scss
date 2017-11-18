@@ -18,6 +18,12 @@
   margin: 0;
 }
 
+.nav-page-active{
+  &:before{
+    content: "> ";
+  }  
+}
+
 .nav-subpages{
   margin-top: $spacing/2;
 }
