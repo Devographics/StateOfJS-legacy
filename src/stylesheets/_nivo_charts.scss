@@ -1,5 +1,18 @@
 .chart-wrapper{
 	margin-bottom: $spacing*3;
+    font-size: $medium-font;
+    g.xsmall{
+        font-size: 0.6rem;
+    }
+    g.small{
+        font-size: $smaller-font;
+    }
+    g.medium{
+        font-size: $small-font;
+    }
+    g.large, g.xlarge{
+        font-size: $medium-font;
+    }
 }
 
 
