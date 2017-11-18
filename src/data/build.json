@@ -1,5 +1,12 @@
 {
-    "keys": ["Webpack", "Grunt", "Gulp", "Browserify", "NPM", "Rollup"],
+    "keys": [
+        "Webpack",
+        "Grunt",
+        "Gulp",
+        "Browserify",
+        "NPM",
+        "Rollup"
+    ],
     "experience": {
         "Gulp": {
             "I've USED it before, and WOULD use it again": 11175,
@@ -225,7 +232,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 11,
+                "doc_count_error_upper_bound": 10,
                 "sum_other_doc_count": 443,
                 "buckets": [
                     {
@@ -677,7 +684,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 26,
+                "doc_count_error_upper_bound": 25,
                 "sum_other_doc_count": 1110,
                 "buckets": [
                     {
@@ -724,9 +731,715 @@
             }
         }
     },
+    "countries": [
+        {
+            "key": "undefined",
+            "doc_count": 5839,
+            "Gulp": {
+                "doc_count": 2568
+            },
+            "Rollup": {
+                "doc_count": 596
+            },
+            "Browserify": {
+                "doc_count": 1199
+            },
+            "NPM": {
+                "doc_count": 5181
+            },
+            "Webpack": {
+                "doc_count": 4111
+            },
+            "Grunt": {
+                "doc_count": 1057
+            }
+        },
+        {
+            "key": "United States",
+            "doc_count": 5719,
+            "Gulp": {
+                "doc_count": 2791
+            },
+            "Rollup": {
+                "doc_count": 506
+            },
+            "Browserify": {
+                "doc_count": 1421
+            },
+            "NPM": {
+                "doc_count": 5234
+            },
+            "Webpack": {
+                "doc_count": 4026
+            },
+            "Grunt": {
+                "doc_count": 1468
+            }
+        },
+        {
+            "key": "United Kingdom",
+            "doc_count": 1409,
+            "Gulp": {
+                "doc_count": 750
+            },
+            "Rollup": {
+                "doc_count": 145
+            },
+            "Browserify": {
+                "doc_count": 372
+            },
+            "NPM": {
+                "doc_count": 1287
+            },
+            "Webpack": {
+                "doc_count": 978
+            },
+            "Grunt": {
+                "doc_count": 362
+            }
+        },
+        {
+            "key": "Germany",
+            "doc_count": 879,
+            "Gulp": {
+                "doc_count": 368
+            },
+            "Rollup": {
+                "doc_count": 75
+            },
+            "Browserify": {
+                "doc_count": 189
+            },
+            "NPM": {
+                "doc_count": 792
+            },
+            "Webpack": {
+                "doc_count": 595
+            },
+            "Grunt": {
+                "doc_count": 181
+            }
+        },
+        {
+            "key": "Canada",
+            "doc_count": 771,
+            "Gulp": {
+                "doc_count": 378
+            },
+            "Rollup": {
+                "doc_count": 41
+            },
+            "Browserify": {
+                "doc_count": 163
+            },
+            "NPM": {
+                "doc_count": 696
+            },
+            "Webpack": {
+                "doc_count": 512
+            },
+            "Grunt": {
+                "doc_count": 181
+            }
+        },
+        {
+            "key": "France",
+            "doc_count": 695,
+            "Gulp": {
+                "doc_count": 291
+            },
+            "Rollup": {
+                "doc_count": 59
+            },
+            "Browserify": {
+                "doc_count": 167
+            },
+            "NPM": {
+                "doc_count": 643
+            },
+            "Webpack": {
+                "doc_count": 468
+            },
+            "Grunt": {
+                "doc_count": 119
+            }
+        },
+        {
+            "key": "India",
+            "doc_count": 500,
+            "Gulp": {
+                "doc_count": 227
+            },
+            "Rollup": {
+                "doc_count": 27
+            },
+            "Browserify": {
+                "doc_count": 100
+            },
+            "NPM": {
+                "doc_count": 418
+            },
+            "Webpack": {
+                "doc_count": 292
+            },
+            "Grunt": {
+                "doc_count": 123
+            }
+        },
+        {
+            "key": "Australia",
+            "doc_count": 492,
+            "Gulp": {
+                "doc_count": 240
+            },
+            "Rollup": {
+                "doc_count": 52
+            },
+            "Browserify": {
+                "doc_count": 125
+            },
+            "NPM": {
+                "doc_count": 454
+            },
+            "Webpack": {
+                "doc_count": 362
+            },
+            "Grunt": {
+                "doc_count": 117
+            }
+        },
+        {
+            "key": "Netherlands",
+            "doc_count": 449,
+            "Gulp": {
+                "doc_count": 241
+            },
+            "Rollup": {
+                "doc_count": 40
+            },
+            "Browserify": {
+                "doc_count": 102
+            },
+            "NPM": {
+                "doc_count": 418
+            },
+            "Webpack": {
+                "doc_count": 324
+            },
+            "Grunt": {
+                "doc_count": 81
+            }
+        },
+        {
+            "key": "Brazil",
+            "doc_count": 437,
+            "Gulp": {
+                "doc_count": 202
+            },
+            "Rollup": {
+                "doc_count": 22
+            },
+            "Browserify": {
+                "doc_count": 90
+            },
+            "NPM": {
+                "doc_count": 386
+            },
+            "Webpack": {
+                "doc_count": 284
+            },
+            "Grunt": {
+                "doc_count": 79
+            }
+        },
+        {
+            "key": "Poland",
+            "doc_count": 420,
+            "Gulp": {
+                "doc_count": 226
+            },
+            "Rollup": {
+                "doc_count": 27
+            },
+            "Browserify": {
+                "doc_count": 66
+            },
+            "NPM": {
+                "doc_count": 379
+            },
+            "Webpack": {
+                "doc_count": 311
+            },
+            "Grunt": {
+                "doc_count": 54
+            }
+        },
+        {
+            "key": "Spain",
+            "doc_count": 413,
+            "Gulp": {
+                "doc_count": 208
+            },
+            "Rollup": {
+                "doc_count": 27
+            },
+            "Browserify": {
+                "doc_count": 99
+            },
+            "NPM": {
+                "doc_count": 381
+            },
+            "Webpack": {
+                "doc_count": 284
+            },
+            "Grunt": {
+                "doc_count": 89
+            }
+        },
+        {
+            "key": "Russia",
+            "doc_count": 379,
+            "Gulp": {
+                "doc_count": 164
+            },
+            "Rollup": {
+                "doc_count": 22
+            },
+            "Browserify": {
+                "doc_count": 31
+            },
+            "NPM": {
+                "doc_count": 333
+            },
+            "Webpack": {
+                "doc_count": 296
+            },
+            "Grunt": {
+                "doc_count": 24
+            }
+        },
+        {
+            "key": "Sweden",
+            "doc_count": 330,
+            "Gulp": {
+                "doc_count": 137
+            },
+            "Rollup": {
+                "doc_count": 35
+            },
+            "Browserify": {
+                "doc_count": 71
+            },
+            "NPM": {
+                "doc_count": 299
+            },
+            "Webpack": {
+                "doc_count": 249
+            },
+            "Grunt": {
+                "doc_count": 55
+            }
+        },
+        {
+            "key": "Italy",
+            "doc_count": 251,
+            "Gulp": {
+                "doc_count": 122
+            },
+            "Rollup": {
+                "doc_count": 26
+            },
+            "Browserify": {
+                "doc_count": 52
+            },
+            "NPM": {
+                "doc_count": 224
+            },
+            "Webpack": {
+                "doc_count": 154
+            },
+            "Grunt": {
+                "doc_count": 52
+            }
+        },
+        {
+            "key": "Ukraine",
+            "doc_count": 242,
+            "Gulp": {
+                "doc_count": 120
+            },
+            "Rollup": {
+                "doc_count": 12
+            },
+            "Browserify": {
+                "doc_count": 32
+            },
+            "NPM": {
+                "doc_count": 218
+            },
+            "Webpack": {
+                "doc_count": 185
+            },
+            "Grunt": {
+                "doc_count": 21
+            }
+        },
+        {
+            "key": "Denmark",
+            "doc_count": 197,
+            "Gulp": {
+                "doc_count": 114
+            },
+            "Rollup": {
+                "doc_count": 23
+            },
+            "Browserify": {
+                "doc_count": 56
+            },
+            "NPM": {
+                "doc_count": 180
+            },
+            "Webpack": {
+                "doc_count": 126
+            },
+            "Grunt": {
+                "doc_count": 33
+            }
+        },
+        {
+            "key": "Mexico",
+            "doc_count": 167,
+            "Gulp": {
+                "doc_count": 82
+            },
+            "Rollup": {
+                "doc_count": 4
+            },
+            "Browserify": {
+                "doc_count": 35
+            },
+            "NPM": {
+                "doc_count": 147
+            },
+            "Webpack": {
+                "doc_count": 101
+            },
+            "Grunt": {
+                "doc_count": 48
+            }
+        },
+        {
+            "key": "Belgium",
+            "doc_count": 163,
+            "Gulp": {
+                "doc_count": 79
+            },
+            "Rollup": {
+                "doc_count": 18
+            },
+            "Browserify": {
+                "doc_count": 35
+            },
+            "NPM": {
+                "doc_count": 150
+            },
+            "Webpack": {
+                "doc_count": 100
+            },
+            "Grunt": {
+                "doc_count": 24
+            }
+        },
+        {
+            "key": "Norway",
+            "doc_count": 150,
+            "Gulp": {
+                "doc_count": 71
+            },
+            "Rollup": {
+                "doc_count": 10
+            },
+            "Browserify": {
+                "doc_count": 41
+            },
+            "NPM": {
+                "doc_count": 136
+            },
+            "Webpack": {
+                "doc_count": 106
+            },
+            "Grunt": {
+                "doc_count": 26
+            }
+        },
+        {
+            "key": "Argentina",
+            "doc_count": 145,
+            "Gulp": {
+                "doc_count": 73
+            },
+            "Rollup": {
+                "doc_count": 7
+            },
+            "Browserify": {
+                "doc_count": 32
+            },
+            "NPM": {
+                "doc_count": 130
+            },
+            "Webpack": {
+                "doc_count": 92
+            },
+            "Grunt": {
+                "doc_count": 33
+            }
+        },
+        {
+            "key": "New Zealand",
+            "doc_count": 143,
+            "Gulp": {
+                "doc_count": 68
+            },
+            "Rollup": {
+                "doc_count": 16
+            },
+            "Browserify": {
+                "doc_count": 37
+            },
+            "NPM": {
+                "doc_count": 134
+            },
+            "Webpack": {
+                "doc_count": 109
+            },
+            "Grunt": {
+                "doc_count": 26
+            }
+        },
+        {
+            "key": "Switzerland",
+            "doc_count": 136,
+            "Gulp": {
+                "doc_count": 53
+            },
+            "Rollup": {
+                "doc_count": 20
+            },
+            "Browserify": {
+                "doc_count": 19
+            },
+            "NPM": {
+                "doc_count": 120
+            },
+            "Webpack": {
+                "doc_count": 94
+            },
+            "Grunt": {
+                "doc_count": 20
+            }
+        },
+        {
+            "key": "Finland",
+            "doc_count": 133,
+            "Gulp": {
+                "doc_count": 52
+            },
+            "Rollup": {
+                "doc_count": 8
+            },
+            "Browserify": {
+                "doc_count": 20
+            },
+            "NPM": {
+                "doc_count": 120
+            },
+            "Webpack": {
+                "doc_count": 97
+            },
+            "Grunt": {
+                "doc_count": 19
+            }
+        },
+        {
+            "key": "Romania",
+            "doc_count": 132,
+            "Gulp": {
+                "doc_count": 72
+            },
+            "Rollup": {
+                "doc_count": 8
+            },
+            "Browserify": {
+                "doc_count": 36
+            },
+            "NPM": {
+                "doc_count": 123
+            },
+            "Webpack": {
+                "doc_count": 94
+            },
+            "Grunt": {
+                "doc_count": 38
+            }
+        },
+        {
+            "key": "Israel",
+            "doc_count": 126,
+            "Gulp": {
+                "doc_count": 50
+            },
+            "Rollup": {
+                "doc_count": 8
+            },
+            "Browserify": {
+                "doc_count": 20
+            },
+            "NPM": {
+                "doc_count": 118
+            },
+            "Webpack": {
+                "doc_count": 96
+            },
+            "Grunt": {
+                "doc_count": 22
+            }
+        },
+        {
+            "key": "Austria",
+            "doc_count": 116,
+            "Gulp": {
+                "doc_count": 60
+            },
+            "Rollup": {
+                "doc_count": 14
+            },
+            "Browserify": {
+                "doc_count": 18
+            },
+            "NPM": {
+                "doc_count": 106
+            },
+            "Webpack": {
+                "doc_count": 83
+            },
+            "Grunt": {
+                "doc_count": 25
+            }
+        },
+        {
+            "key": "Ireland",
+            "doc_count": 106,
+            "Gulp": {
+                "doc_count": 61
+            },
+            "Rollup": {
+                "doc_count": 4
+            },
+            "Browserify": {
+                "doc_count": 20
+            },
+            "NPM": {
+                "doc_count": 93
+            },
+            "Webpack": {
+                "doc_count": 61
+            },
+            "Grunt": {
+                "doc_count": 35
+            }
+        },
+        {
+            "key": "Portugal",
+            "doc_count": 105,
+            "Gulp": {
+                "doc_count": 51
+            },
+            "Rollup": {
+                "doc_count": 3
+            },
+            "Browserify": {
+                "doc_count": 25
+            },
+            "NPM": {
+                "doc_count": 98
+            },
+            "Webpack": {
+                "doc_count": 72
+            },
+            "Grunt": {
+                "doc_count": 29
+            }
+        },
+        {
+            "key": "Belarus",
+            "doc_count": 104,
+            "Gulp": {
+                "doc_count": 43
+            },
+            "Rollup": {
+                "doc_count": 7
+            },
+            "Browserify": {
+                "doc_count": 9
+            },
+            "NPM": {
+                "doc_count": 96
+            },
+            "Webpack": {
+                "doc_count": 85
+            },
+            "Grunt": {
+                "doc_count": 10
+            }
+        },
+        {
+            "key": "Colombia",
+            "doc_count": 97,
+            "Gulp": {
+                "doc_count": 58
+            },
+            "Rollup": {
+                "doc_count": 7
+            },
+            "Browserify": {
+                "doc_count": 22
+            },
+            "NPM": {
+                "doc_count": 89
+            },
+            "Webpack": {
+                "doc_count": 64
+            },
+            "Grunt": {
+                "doc_count": 22
+            }
+        },
+        {
+            "key": "China",
+            "doc_count": 96,
+            "Gulp": {
+                "doc_count": 46
+            },
+            "Rollup": {
+                "doc_count": 13
+            },
+            "Browserify": {
+                "doc_count": 16
+            },
+            "NPM": {
+                "doc_count": 87
+            },
+            "Webpack": {
+                "doc_count": 83
+            },
+            "Grunt": {
+                "doc_count": 7
+            }
+        }
+    ],
     "others": {
         "doc_count_error_upper_bound": 5,
-        "sum_other_doc_count": 574,
+        "sum_other_doc_count": 578,
         "buckets": [
             {
                 "key": "yarn",
@@ -758,7 +1471,7 @@
             },
             {
                 "key": "Meteor",
-                "doc_count": 33
+                "doc_count": 34
             },
             {
                 "key": "Babel",
@@ -770,15 +1483,15 @@
             },
             {
                 "key": "SystemJS",
-                "doc_count": 19
-            },
-            {
-                "key": "gradle",
                 "doc_count": 18
             },
             {
+                "key": "gradle",
+                "doc_count": 17
+            },
+            {
                 "key": "StealJS",
-                "doc_count": 11
+                "doc_count": 10
             },
             {
                 "key": "Bazel",
@@ -789,12 +1502,12 @@
                 "doc_count": 8
             },
             {
-                "key": "ember-cli",
-                "doc_count": 8
+                "key": "npm scripts",
+                "doc_count": 7
             },
             {
-                "key": "npm scripts",
-                "doc_count": 8
+                "key": "ember-cli",
+                "doc_count": 6
             },
             {
                 "key": "Angular CLI",
@@ -805,8 +1518,8 @@
                 "doc_count": 5
             },
             {
-                "key": "?",
-                "doc_count": 4
+                "key": "Codekit",
+                "doc_count": 5
             }
         ]
     },
@@ -829,21 +1542,261 @@
             "No Front-End Framework"
         ],
         "matrix": [
-            [0, 0, 0, 0, 0, 0, 11922, 2999, 3442, 729, 3767, 1187, 824, 246, 6364],
-            [0, 0, 0, 0, 0, 0, 2541, 1661, 1212, 310, 912, 678, 347, 77, 2255],
-            [0, 0, 0, 0, 0, 0, 6229, 3007, 2591, 593, 2522, 1051, 745, 220, 4900],
-            [0, 0, 0, 0, 0, 0, 3269, 1285, 1043, 389, 1191, 627, 358, 75, 2466],
-            [0, 0, 0, 0, 0, 0, 12896, 4396, 4231, 1044, 4353, 1612, 1121, 327, 8663],
-            [0, 0, 0, 0, 0, 0, 1372, 309, 439, 180, 562, 169, 174, 39, 1015],
-            [11922, 2541, 6229, 3269, 12896, 1372, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [2999, 1661, 3007, 1285, 4396, 309, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [3442, 1212, 2591, 1043, 4231, 439, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [729, 310, 593, 389, 1044, 180, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [3767, 912, 2522, 1191, 4353, 562, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [1187, 678, 1051, 627, 1612, 169, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [824, 347, 745, 358, 1121, 174, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [246, 77, 220, 75, 327, 39, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [6364, 2255, 4900, 2466, 8663, 1015, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                11922,
+                2999,
+                3442,
+                729,
+                3767,
+                1187,
+                824,
+                246,
+                6364
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2541,
+                1661,
+                1212,
+                310,
+                912,
+                678,
+                347,
+                77,
+                2255
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                6229,
+                3007,
+                2591,
+                593,
+                2522,
+                1051,
+                745,
+                220,
+                4900
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3269,
+                1285,
+                1043,
+                389,
+                1191,
+                627,
+                358,
+                75,
+                2466
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                12896,
+                4396,
+                4231,
+                1044,
+                4353,
+                1612,
+                1121,
+                327,
+                8663
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1372,
+                309,
+                439,
+                180,
+                562,
+                169,
+                174,
+                39,
+                1015
+            ],
+            [
+                11922,
+                2541,
+                6229,
+                3269,
+                12896,
+                1372,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                2999,
+                1661,
+                3007,
+                1285,
+                4396,
+                309,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                3442,
+                1212,
+                2591,
+                1043,
+                4231,
+                439,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                729,
+                310,
+                593,
+                389,
+                1044,
+                180,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                3767,
+                912,
+                2522,
+                1191,
+                4353,
+                562,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                1187,
+                678,
+                1051,
+                627,
+                1612,
+                169,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                824,
+                347,
+                745,
+                358,
+                1121,
+                174,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                246,
+                77,
+                220,
+                75,
+                327,
+                39,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                6364,
+                2255,
+                4900,
+                2466,
+                8663,
+                1015,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
         ]
     },
     "frontendSankey": {

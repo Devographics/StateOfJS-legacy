@@ -2,13 +2,10 @@ import React from 'react'
 import styleData from '../../../data/style.json'
 import WorldwideUsage from '../../../components/WorldwideUsage'
 
-const StyleWorldwide = () => (
+export default () => (
     <WorldwideUsage
         title="Styling/CSS solutions worldwide usage"
         tools={styleData.keys}
-        defaultTool="Plain CSS"
-        data={styleData.experienceByUsers}
+        countries={styleData.countries}
     />
 )
-
-export default StyleWorldwide

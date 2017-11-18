@@ -1,5 +1,12 @@
 {
-    "keys": ["Mocha", "Jasmine", "Enzyme", "Jest", "Tape", "Ava"],
+    "keys": [
+        "Mocha",
+        "Jasmine",
+        "Enzyme",
+        "Jest",
+        "Tape",
+        "Ava"
+    ],
     "experience": {
         "Tape": {
             "I've never heard of it": 17425,
@@ -112,7 +119,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 7,
+                "doc_count_error_upper_bound": 8,
                 "sum_other_doc_count": 304,
                 "buckets": [
                     {
@@ -225,7 +232,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 22,
+                "doc_count_error_upper_bound": 23,
                 "sum_other_doc_count": 1004,
                 "buckets": [
                     {
@@ -451,7 +458,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 55,
+                "doc_count_error_upper_bound": 57,
                 "sum_other_doc_count": 2516,
                 "buckets": [
                     {
@@ -565,7 +572,7 @@
             },
             "by_location": {
                 "doc_count_error_upper_bound": 5,
-                "sum_other_doc_count": 220,
+                "sum_other_doc_count": 219,
                 "buckets": [
                     {
                         "key": "undefined",
@@ -605,7 +612,7 @@
                     },
                     {
                         "key": "Spain",
-                        "doc_count": 21
+                        "doc_count": 22
                     }
                 ]
             }
@@ -677,7 +684,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 26,
+                "doc_count_error_upper_bound": 29,
                 "sum_other_doc_count": 1330,
                 "buckets": [
                     {
@@ -724,9 +731,715 @@
             }
         }
     },
+    "countries": [
+        {
+            "key": "undefined",
+            "doc_count": 5839,
+            "Tape": {
+                "doc_count": 427
+            },
+            "Enzyme": {
+                "doc_count": 1092
+            },
+            "Jasmine": {
+                "doc_count": 2132
+            },
+            "Mocha": {
+                "doc_count": 2632
+            },
+            "Ava": {
+                "doc_count": 358
+            },
+            "Jest": {
+                "doc_count": 1451
+            }
+        },
+        {
+            "key": "United States",
+            "doc_count": 5719,
+            "Tape": {
+                "doc_count": 408
+            },
+            "Enzyme": {
+                "doc_count": 1264
+            },
+            "Jasmine": {
+                "doc_count": 2580
+            },
+            "Mocha": {
+                "doc_count": 2903
+            },
+            "Ava": {
+                "doc_count": 286
+            },
+            "Jest": {
+                "doc_count": 1501
+            }
+        },
+        {
+            "key": "United Kingdom",
+            "doc_count": 1409,
+            "Tape": {
+                "doc_count": 107
+            },
+            "Enzyme": {
+                "doc_count": 363
+            },
+            "Jasmine": {
+                "doc_count": 592
+            },
+            "Mocha": {
+                "doc_count": 698
+            },
+            "Ava": {
+                "doc_count": 86
+            },
+            "Jest": {
+                "doc_count": 433
+            }
+        },
+        {
+            "key": "Germany",
+            "doc_count": 879,
+            "Tape": {
+                "doc_count": 57
+            },
+            "Enzyme": {
+                "doc_count": 179
+            },
+            "Jasmine": {
+                "doc_count": 325
+            },
+            "Mocha": {
+                "doc_count": 369
+            },
+            "Ava": {
+                "doc_count": 49
+            },
+            "Jest": {
+                "doc_count": 241
+            }
+        },
+        {
+            "key": "Canada",
+            "doc_count": 771,
+            "Tape": {
+                "doc_count": 35
+            },
+            "Enzyme": {
+                "doc_count": 150
+            },
+            "Jasmine": {
+                "doc_count": 277
+            },
+            "Mocha": {
+                "doc_count": 346
+            },
+            "Ava": {
+                "doc_count": 23
+            },
+            "Jest": {
+                "doc_count": 186
+            }
+        },
+        {
+            "key": "France",
+            "doc_count": 695,
+            "Tape": {
+                "doc_count": 38
+            },
+            "Enzyme": {
+                "doc_count": 111
+            },
+            "Jasmine": {
+                "doc_count": 259
+            },
+            "Mocha": {
+                "doc_count": 296
+            },
+            "Ava": {
+                "doc_count": 44
+            },
+            "Jest": {
+                "doc_count": 172
+            }
+        },
+        {
+            "key": "India",
+            "doc_count": 500,
+            "Tape": {
+                "doc_count": 12
+            },
+            "Enzyme": {
+                "doc_count": 64
+            },
+            "Jasmine": {
+                "doc_count": 152
+            },
+            "Mocha": {
+                "doc_count": 164
+            },
+            "Ava": {
+                "doc_count": 11
+            },
+            "Jest": {
+                "doc_count": 85
+            }
+        },
+        {
+            "key": "Australia",
+            "doc_count": 492,
+            "Tape": {
+                "doc_count": 37
+            },
+            "Enzyme": {
+                "doc_count": 133
+            },
+            "Jasmine": {
+                "doc_count": 200
+            },
+            "Mocha": {
+                "doc_count": 242
+            },
+            "Ava": {
+                "doc_count": 31
+            },
+            "Jest": {
+                "doc_count": 145
+            }
+        },
+        {
+            "key": "Netherlands",
+            "doc_count": 449,
+            "Tape": {
+                "doc_count": 25
+            },
+            "Enzyme": {
+                "doc_count": 81
+            },
+            "Jasmine": {
+                "doc_count": 168
+            },
+            "Mocha": {
+                "doc_count": 193
+            },
+            "Ava": {
+                "doc_count": 16
+            },
+            "Jest": {
+                "doc_count": 117
+            }
+        },
+        {
+            "key": "Brazil",
+            "doc_count": 437,
+            "Tape": {
+                "doc_count": 15
+            },
+            "Enzyme": {
+                "doc_count": 73
+            },
+            "Jasmine": {
+                "doc_count": 163
+            },
+            "Mocha": {
+                "doc_count": 175
+            },
+            "Ava": {
+                "doc_count": 25
+            },
+            "Jest": {
+                "doc_count": 115
+            }
+        },
+        {
+            "key": "Poland",
+            "doc_count": 420,
+            "Tape": {
+                "doc_count": 19
+            },
+            "Enzyme": {
+                "doc_count": 83
+            },
+            "Jasmine": {
+                "doc_count": 187
+            },
+            "Mocha": {
+                "doc_count": 182
+            },
+            "Ava": {
+                "doc_count": 11
+            },
+            "Jest": {
+                "doc_count": 109
+            }
+        },
+        {
+            "key": "Spain",
+            "doc_count": 413,
+            "Tape": {
+                "doc_count": 33
+            },
+            "Enzyme": {
+                "doc_count": 62
+            },
+            "Jasmine": {
+                "doc_count": 190
+            },
+            "Mocha": {
+                "doc_count": 204
+            },
+            "Ava": {
+                "doc_count": 22
+            },
+            "Jest": {
+                "doc_count": 98
+            }
+        },
+        {
+            "key": "Russia",
+            "doc_count": 379,
+            "Tape": {
+                "doc_count": 28
+            },
+            "Enzyme": {
+                "doc_count": 81
+            },
+            "Jasmine": {
+                "doc_count": 111
+            },
+            "Mocha": {
+                "doc_count": 153
+            },
+            "Ava": {
+                "doc_count": 20
+            },
+            "Jest": {
+                "doc_count": 114
+            }
+        },
+        {
+            "key": "Sweden",
+            "doc_count": 330,
+            "Tape": {
+                "doc_count": 32
+            },
+            "Enzyme": {
+                "doc_count": 72
+            },
+            "Jasmine": {
+                "doc_count": 133
+            },
+            "Mocha": {
+                "doc_count": 156
+            },
+            "Ava": {
+                "doc_count": 24
+            },
+            "Jest": {
+                "doc_count": 99
+            }
+        },
+        {
+            "key": "Italy",
+            "doc_count": 251,
+            "Tape": {
+                "doc_count": 10
+            },
+            "Enzyme": {
+                "doc_count": 38
+            },
+            "Jasmine": {
+                "doc_count": 79
+            },
+            "Mocha": {
+                "doc_count": 86
+            },
+            "Ava": {
+                "doc_count": 7
+            },
+            "Jest": {
+                "doc_count": 45
+            }
+        },
+        {
+            "key": "Ukraine",
+            "doc_count": 242,
+            "Tape": {
+                "doc_count": 5
+            },
+            "Enzyme": {
+                "doc_count": 43
+            },
+            "Jasmine": {
+                "doc_count": 89
+            },
+            "Mocha": {
+                "doc_count": 103
+            },
+            "Ava": {
+                "doc_count": 8
+            },
+            "Jest": {
+                "doc_count": 53
+            }
+        },
+        {
+            "key": "Denmark",
+            "doc_count": 197,
+            "Tape": {
+                "doc_count": 12
+            },
+            "Enzyme": {
+                "doc_count": 24
+            },
+            "Jasmine": {
+                "doc_count": 51
+            },
+            "Mocha": {
+                "doc_count": 66
+            },
+            "Ava": {
+                "doc_count": 9
+            },
+            "Jest": {
+                "doc_count": 33
+            }
+        },
+        {
+            "key": "Mexico",
+            "doc_count": 167,
+            "Tape": {
+                "doc_count": 9
+            },
+            "Enzyme": {
+                "doc_count": 15
+            },
+            "Jasmine": {
+                "doc_count": 51
+            },
+            "Mocha": {
+                "doc_count": 61
+            },
+            "Ava": {
+                "doc_count": 3
+            },
+            "Jest": {
+                "doc_count": 22
+            }
+        },
+        {
+            "key": "Belgium",
+            "doc_count": 163,
+            "Tape": {
+                "doc_count": 4
+            },
+            "Enzyme": {
+                "doc_count": 8
+            },
+            "Jasmine": {
+                "doc_count": 77
+            },
+            "Mocha": {
+                "doc_count": 65
+            },
+            "Ava": {
+                "doc_count": 3
+            },
+            "Jest": {
+                "doc_count": 30
+            }
+        },
+        {
+            "key": "Norway",
+            "doc_count": 150,
+            "Tape": {
+                "doc_count": 10
+            },
+            "Enzyme": {
+                "doc_count": 30
+            },
+            "Jasmine": {
+                "doc_count": 53
+            },
+            "Mocha": {
+                "doc_count": 62
+            },
+            "Ava": {
+                "doc_count": 7
+            },
+            "Jest": {
+                "doc_count": 35
+            }
+        },
+        {
+            "key": "Argentina",
+            "doc_count": 145,
+            "Tape": {
+                "doc_count": 8
+            },
+            "Enzyme": {
+                "doc_count": 19
+            },
+            "Jasmine": {
+                "doc_count": 56
+            },
+            "Mocha": {
+                "doc_count": 70
+            },
+            "Ava": {
+                "doc_count": 5
+            },
+            "Jest": {
+                "doc_count": 22
+            }
+        },
+        {
+            "key": "New Zealand",
+            "doc_count": 143,
+            "Tape": {
+                "doc_count": 22
+            },
+            "Enzyme": {
+                "doc_count": 38
+            },
+            "Jasmine": {
+                "doc_count": 64
+            },
+            "Mocha": {
+                "doc_count": 72
+            },
+            "Ava": {
+                "doc_count": 9
+            },
+            "Jest": {
+                "doc_count": 42
+            }
+        },
+        {
+            "key": "Switzerland",
+            "doc_count": 136,
+            "Tape": {
+                "doc_count": 11
+            },
+            "Enzyme": {
+                "doc_count": 17
+            },
+            "Jasmine": {
+                "doc_count": 55
+            },
+            "Mocha": {
+                "doc_count": 55
+            },
+            "Ava": {
+                "doc_count": 8
+            },
+            "Jest": {
+                "doc_count": 34
+            }
+        },
+        {
+            "key": "Finland",
+            "doc_count": 133,
+            "Tape": {
+                "doc_count": 8
+            },
+            "Enzyme": {
+                "doc_count": 25
+            },
+            "Jasmine": {
+                "doc_count": 50
+            },
+            "Mocha": {
+                "doc_count": 69
+            },
+            "Ava": {
+                "doc_count": 2
+            },
+            "Jest": {
+                "doc_count": 31
+            }
+        },
+        {
+            "key": "Romania",
+            "doc_count": 132,
+            "Tape": {
+                "doc_count": 5
+            },
+            "Enzyme": {
+                "doc_count": 26
+            },
+            "Jasmine": {
+                "doc_count": 52
+            },
+            "Mocha": {
+                "doc_count": 52
+            },
+            "Ava": {
+                "doc_count": 2
+            },
+            "Jest": {
+                "doc_count": 26
+            }
+        },
+        {
+            "key": "Israel",
+            "doc_count": 126,
+            "Tape": {
+                "doc_count": 8
+            },
+            "Enzyme": {
+                "doc_count": 21
+            },
+            "Jasmine": {
+                "doc_count": 57
+            },
+            "Mocha": {
+                "doc_count": 48
+            },
+            "Ava": {
+                "doc_count": 2
+            },
+            "Jest": {
+                "doc_count": 20
+            }
+        },
+        {
+            "key": "Austria",
+            "doc_count": 116,
+            "Tape": {
+                "doc_count": 8
+            },
+            "Enzyme": {
+                "doc_count": 13
+            },
+            "Jasmine": {
+                "doc_count": 44
+            },
+            "Mocha": {
+                "doc_count": 52
+            },
+            "Ava": {
+                "doc_count": 7
+            },
+            "Jest": {
+                "doc_count": 24
+            }
+        },
+        {
+            "key": "Ireland",
+            "doc_count": 106,
+            "Tape": {
+                "doc_count": 6
+            },
+            "Enzyme": {
+                "doc_count": 16
+            },
+            "Jasmine": {
+                "doc_count": 60
+            },
+            "Mocha": {
+                "doc_count": 51
+            },
+            "Ava": {
+                "doc_count": 6
+            },
+            "Jest": {
+                "doc_count": 21
+            }
+        },
+        {
+            "key": "Portugal",
+            "doc_count": 105,
+            "Tape": {
+                "doc_count": 2
+            },
+            "Enzyme": {
+                "doc_count": 16
+            },
+            "Jasmine": {
+                "doc_count": 40
+            },
+            "Mocha": {
+                "doc_count": 40
+            },
+            "Ava": {
+                "doc_count": 3
+            },
+            "Jest": {
+                "doc_count": 21
+            }
+        },
+        {
+            "key": "Belarus",
+            "doc_count": 104,
+            "Tape": {
+                "doc_count": 8
+            },
+            "Enzyme": {
+                "doc_count": 24
+            },
+            "Jasmine": {
+                "doc_count": 46
+            },
+            "Mocha": {
+                "doc_count": 48
+            },
+            "Ava": {
+                "doc_count": 3
+            },
+            "Jest": {
+                "doc_count": 31
+            }
+        },
+        {
+            "key": "Colombia",
+            "doc_count": 97,
+            "Tape": {
+                "doc_count": 5
+            },
+            "Enzyme": {
+                "doc_count": 21
+            },
+            "Jasmine": {
+                "doc_count": 35
+            },
+            "Mocha": {
+                "doc_count": 37
+            },
+            "Ava": {
+                "doc_count": 10
+            },
+            "Jest": {
+                "doc_count": 18
+            }
+        },
+        {
+            "key": "China",
+            "doc_count": 96,
+            "Tape": {
+                "doc_count": 4
+            },
+            "Enzyme": {
+                "doc_count": 13
+            },
+            "Jasmine": {
+                "doc_count": 20
+            },
+            "Mocha": {
+                "doc_count": 35
+            },
+            "Ava": {
+                "doc_count": 8
+            },
+            "Jest": {
+                "doc_count": 21
+            }
+        }
+    ],
     "others": {
         "doc_count_error_upper_bound": 5,
-        "sum_other_doc_count": 465,
+        "sum_other_doc_count": 469,
         "buckets": [
             {
                 "key": "karma",
@@ -786,15 +1499,15 @@
             },
             {
                 "key": "testcafe",
-                "doc_count": 15
+                "doc_count": 16
             },
             {
                 "key": "jest",
-                "doc_count": 11
+                "doc_count": 10
             },
             {
                 "key": "junit",
-                "doc_count": 11
+                "doc_count": 10
             },
             {
                 "key": "AVA",
@@ -802,11 +1515,11 @@
             },
             {
                 "key": "Mocha",
-                "doc_count": 6
+                "doc_count": 4
             },
             {
-                "key": "ospec",
-                "doc_count": 5
+                "key": "cljs.test",
+                "doc_count": 4
             }
         ]
     },
@@ -829,21 +1542,261 @@
             "No Front-End Framework"
         ],
         "matrix": [
-            [0, 0, 0, 0, 0, 0, 7507, 2172, 2090, 701, 2117, 990, 735, 171, 4507],
-            [0, 0, 0, 0, 0, 0, 5869, 2567, 2539, 572, 1674, 931, 616, 180, 3812],
-            [0, 0, 0, 0, 0, 0, 4480, 507, 483, 247, 555, 340, 196, 37, 1698],
-            [0, 0, 0, 0, 0, 0, 5435, 688, 716, 308, 912, 409, 277, 73, 2237],
-            [0, 0, 0, 0, 0, 0, 1210, 182, 185, 97, 327, 153, 106, 24, 781],
-            [0, 0, 0, 0, 0, 0, 940, 136, 139, 62, 340, 83, 91, 19, 551],
-            [7507, 5869, 4480, 5435, 1210, 940, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [2172, 2567, 507, 688, 182, 136, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [2090, 2539, 483, 716, 185, 139, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [701, 572, 247, 308, 97, 62, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [2117, 1674, 555, 912, 327, 340, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [990, 931, 340, 409, 153, 83, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [735, 616, 196, 277, 106, 91, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [171, 180, 37, 73, 24, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [4507, 3812, 1698, 2237, 781, 551, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7507,
+                2172,
+                2090,
+                701,
+                2117,
+                990,
+                735,
+                171,
+                4507
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                5869,
+                2567,
+                2539,
+                572,
+                1674,
+                931,
+                616,
+                180,
+                3812
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4480,
+                507,
+                483,
+                247,
+                555,
+                340,
+                196,
+                37,
+                1698
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                5435,
+                688,
+                716,
+                308,
+                912,
+                409,
+                277,
+                73,
+                2237
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1210,
+                182,
+                185,
+                97,
+                327,
+                153,
+                106,
+                24,
+                781
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                940,
+                136,
+                139,
+                62,
+                340,
+                83,
+                91,
+                19,
+                551
+            ],
+            [
+                7507,
+                5869,
+                4480,
+                5435,
+                1210,
+                940,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                2172,
+                2567,
+                507,
+                688,
+                182,
+                136,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                2090,
+                2539,
+                483,
+                716,
+                185,
+                139,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                701,
+                572,
+                247,
+                308,
+                97,
+                62,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                2117,
+                1674,
+                555,
+                912,
+                327,
+                340,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                990,
+                931,
+                340,
+                409,
+                153,
+                83,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                735,
+                616,
+                196,
+                277,
+                106,
+                91,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                171,
+                180,
+                37,
+                73,
+                24,
+                19,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                4507,
+                3812,
+                1698,
+                2237,
+                781,
+                551,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
         ]
     },
     "frontendSankey": {
@@ -1185,20 +2138,230 @@
             "Keystone"
         ],
         "matrix": [
-            [0, 0, 0, 0, 0, 0, 846, 8396, 1500, 1081, 265, 390, 301, 191],
-            [0, 0, 0, 0, 0, 0, 667, 6648, 1052, 853, 185, 341, 260, 147],
-            [0, 0, 0, 0, 0, 0, 336, 3593, 855, 543, 110, 130, 112, 91],
-            [0, 0, 0, 0, 0, 0, 447, 4583, 1085, 714, 157, 182, 141, 119],
-            [0, 0, 0, 0, 0, 0, 111, 1230, 415, 301, 57, 52, 50, 36],
-            [0, 0, 0, 0, 0, 0, 85, 963, 392, 235, 58, 49, 43, 35],
-            [846, 667, 336, 447, 111, 85, 0, 0, 0, 0, 0, 0, 0, 0],
-            [8396, 6648, 3593, 4583, 1230, 963, 0, 0, 0, 0, 0, 0, 0, 0],
-            [1500, 1052, 855, 1085, 415, 392, 0, 0, 0, 0, 0, 0, 0, 0],
-            [1081, 853, 543, 714, 301, 235, 0, 0, 0, 0, 0, 0, 0, 0],
-            [265, 185, 110, 157, 57, 58, 0, 0, 0, 0, 0, 0, 0, 0],
-            [390, 341, 130, 182, 52, 49, 0, 0, 0, 0, 0, 0, 0, 0],
-            [301, 260, 112, 141, 50, 43, 0, 0, 0, 0, 0, 0, 0, 0],
-            [191, 147, 91, 119, 36, 35, 0, 0, 0, 0, 0, 0, 0, 0]
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                846,
+                8396,
+                1500,
+                1081,
+                265,
+                390,
+                301,
+                191
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                667,
+                6648,
+                1052,
+                853,
+                185,
+                341,
+                260,
+                147
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                336,
+                3593,
+                855,
+                543,
+                110,
+                130,
+                112,
+                91
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                447,
+                4583,
+                1085,
+                714,
+                157,
+                182,
+                141,
+                119
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                111,
+                1230,
+                415,
+                301,
+                57,
+                52,
+                50,
+                36
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                85,
+                963,
+                392,
+                235,
+                58,
+                49,
+                43,
+                35
+            ],
+            [
+                846,
+                667,
+                336,
+                447,
+                111,
+                85,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                8396,
+                6648,
+                3593,
+                4583,
+                1230,
+                963,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                1500,
+                1052,
+                855,
+                1085,
+                415,
+                392,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                1081,
+                853,
+                543,
+                714,
+                301,
+                235,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                265,
+                185,
+                110,
+                157,
+                57,
+                58,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                390,
+                341,
+                130,
+                182,
+                52,
+                49,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                301,
+                260,
+                112,
+                141,
+                50,
+                43,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                191,
+                147,
+                91,
+                119,
+                36,
+                35,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
         ]
     },
     "backendSankey": {

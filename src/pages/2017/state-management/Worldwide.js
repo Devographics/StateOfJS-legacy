@@ -2,13 +2,10 @@ import React from 'react'
 import stateData from '../../../data/state.json'
 import WorldwideUsage from '../../../components/WorldwideUsage'
 
-const StateWorldwide = () => (
+export default () => (
     <WorldwideUsage
         title="JavaScript state management tools worldwide usage"
         tools={stateData.keys}
-        defaultTool="REST API"
-        data={stateData.experienceByUsers}
+        countries={stateData.countries}
     />
 )
-
-export default StateWorldwide

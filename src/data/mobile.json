@@ -119,7 +119,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 41,
+                "doc_count_error_upper_bound": 42,
                 "sum_other_doc_count": 1876,
                 "buckets": [
                     {
@@ -232,7 +232,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 22,
+                "doc_count_error_upper_bound": 21,
                 "sum_other_doc_count": 934,
                 "buckets": [
                     {
@@ -345,7 +345,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 25,
+                "doc_count_error_upper_bound": 23,
                 "sum_other_doc_count": 1175,
                 "buckets": [
                     {
@@ -459,7 +459,7 @@
             },
             "by_location": {
                 "doc_count_error_upper_bound": 5,
-                "sum_other_doc_count": 157,
+                "sum_other_doc_count": 158,
                 "buckets": [
                     {
                         "key": "United States",
@@ -494,12 +494,12 @@
                         "doc_count": 17
                     },
                     {
-                        "key": "Italy",
+                        "key": "Spain",
                         "doc_count": 10
                     },
                     {
-                        "key": "Poland",
-                        "doc_count": 10
+                        "key": "Italy",
+                        "doc_count": 9
                     }
                 ]
             }
@@ -571,7 +571,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 19,
+                "doc_count_error_upper_bound": 17,
                 "sum_other_doc_count": 738,
                 "buckets": [
                     {
@@ -684,7 +684,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 27,
+                "doc_count_error_upper_bound": 25,
                 "sum_other_doc_count": 1227,
                 "buckets": [
                     {
@@ -730,5 +730,711 @@
                 ]
             }
         }
-    }
+    },
+    "countries": [
+        {
+            "key": "undefined",
+            "doc_count": 5839,
+            "Native Apps": {
+                "doc_count": 2077
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 720
+            },
+            "Electron": {
+                "doc_count": 1424
+            },
+            "NativeScript": {
+                "doc_count": 92
+            },
+            "Ionic": {
+                "doc_count": 468
+            },
+            "React Native": {
+                "doc_count": 1140
+            }
+        },
+        {
+            "key": "United States",
+            "doc_count": 5719,
+            "Native Apps": {
+                "doc_count": 2016
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 719
+            },
+            "Electron": {
+                "doc_count": 1115
+            },
+            "NativeScript": {
+                "doc_count": 102
+            },
+            "Ionic": {
+                "doc_count": 515
+            },
+            "React Native": {
+                "doc_count": 1211
+            }
+        },
+        {
+            "key": "United Kingdom",
+            "doc_count": 1409,
+            "Native Apps": {
+                "doc_count": 451
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 186
+            },
+            "Electron": {
+                "doc_count": 250
+            },
+            "NativeScript": {
+                "doc_count": 21
+            },
+            "Ionic": {
+                "doc_count": 108
+            },
+            "React Native": {
+                "doc_count": 291
+            }
+        },
+        {
+            "key": "Germany",
+            "doc_count": 879,
+            "Native Apps": {
+                "doc_count": 319
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 170
+            },
+            "Electron": {
+                "doc_count": 221
+            },
+            "NativeScript": {
+                "doc_count": 20
+            },
+            "Ionic": {
+                "doc_count": 107
+            },
+            "React Native": {
+                "doc_count": 149
+            }
+        },
+        {
+            "key": "Canada",
+            "doc_count": 771,
+            "Native Apps": {
+                "doc_count": 262
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 117
+            },
+            "Electron": {
+                "doc_count": 141
+            },
+            "NativeScript": {
+                "doc_count": 4
+            },
+            "Ionic": {
+                "doc_count": 71
+            },
+            "React Native": {
+                "doc_count": 149
+            }
+        },
+        {
+            "key": "France",
+            "doc_count": 695,
+            "Native Apps": {
+                "doc_count": 191
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 150
+            },
+            "Electron": {
+                "doc_count": 190
+            },
+            "NativeScript": {
+                "doc_count": 18
+            },
+            "Ionic": {
+                "doc_count": 114
+            },
+            "React Native": {
+                "doc_count": 130
+            }
+        },
+        {
+            "key": "India",
+            "doc_count": 500,
+            "Native Apps": {
+                "doc_count": 174
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 88
+            },
+            "Electron": {
+                "doc_count": 83
+            },
+            "NativeScript": {
+                "doc_count": 23
+            },
+            "Ionic": {
+                "doc_count": 81
+            },
+            "React Native": {
+                "doc_count": 117
+            }
+        },
+        {
+            "key": "Australia",
+            "doc_count": 492,
+            "Native Apps": {
+                "doc_count": 162
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 63
+            },
+            "Electron": {
+                "doc_count": 102
+            },
+            "NativeScript": {
+                "doc_count": 8
+            },
+            "Ionic": {
+                "doc_count": 38
+            },
+            "React Native": {
+                "doc_count": 108
+            }
+        },
+        {
+            "key": "Netherlands",
+            "doc_count": 449,
+            "Native Apps": {
+                "doc_count": 136
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 68
+            },
+            "Electron": {
+                "doc_count": 88
+            },
+            "NativeScript": {
+                "doc_count": 5
+            },
+            "Ionic": {
+                "doc_count": 51
+            },
+            "React Native": {
+                "doc_count": 93
+            }
+        },
+        {
+            "key": "Brazil",
+            "doc_count": 437,
+            "Native Apps": {
+                "doc_count": 149
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 86
+            },
+            "Electron": {
+                "doc_count": 92
+            },
+            "NativeScript": {
+                "doc_count": 17
+            },
+            "Ionic": {
+                "doc_count": 76
+            },
+            "React Native": {
+                "doc_count": 90
+            }
+        },
+        {
+            "key": "Poland",
+            "doc_count": 420,
+            "Native Apps": {
+                "doc_count": 99
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 50
+            },
+            "Electron": {
+                "doc_count": 75
+            },
+            "NativeScript": {
+                "doc_count": 10
+            },
+            "Ionic": {
+                "doc_count": 40
+            },
+            "React Native": {
+                "doc_count": 58
+            }
+        },
+        {
+            "key": "Spain",
+            "doc_count": 413,
+            "Native Apps": {
+                "doc_count": 109
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 90
+            },
+            "Electron": {
+                "doc_count": 78
+            },
+            "NativeScript": {
+                "doc_count": 12
+            },
+            "Ionic": {
+                "doc_count": 83
+            },
+            "React Native": {
+                "doc_count": 65
+            }
+        },
+        {
+            "key": "Russia",
+            "doc_count": 379,
+            "Native Apps": {
+                "doc_count": 85
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 32
+            },
+            "Electron": {
+                "doc_count": 54
+            },
+            "NativeScript": {
+                "doc_count": 6
+            },
+            "Ionic": {
+                "doc_count": 23
+            },
+            "React Native": {
+                "doc_count": 63
+            }
+        },
+        {
+            "key": "Sweden",
+            "doc_count": 330,
+            "Native Apps": {
+                "doc_count": 113
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 37
+            },
+            "Electron": {
+                "doc_count": 78
+            },
+            "NativeScript": {
+                "doc_count": 4
+            },
+            "Ionic": {
+                "doc_count": 19
+            },
+            "React Native": {
+                "doc_count": 90
+            }
+        },
+        {
+            "key": "Italy",
+            "doc_count": 251,
+            "Native Apps": {
+                "doc_count": 77
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 60
+            },
+            "Electron": {
+                "doc_count": 60
+            },
+            "NativeScript": {
+                "doc_count": 10
+            },
+            "Ionic": {
+                "doc_count": 53
+            },
+            "React Native": {
+                "doc_count": 37
+            }
+        },
+        {
+            "key": "Ukraine",
+            "doc_count": 242,
+            "Native Apps": {
+                "doc_count": 54
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 24
+            },
+            "Electron": {
+                "doc_count": 30
+            },
+            "NativeScript": {
+                "doc_count": 6
+            },
+            "Ionic": {
+                "doc_count": 18
+            },
+            "React Native": {
+                "doc_count": 40
+            }
+        },
+        {
+            "key": "Denmark",
+            "doc_count": 197,
+            "Native Apps": {
+                "doc_count": 73
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 33
+            },
+            "Electron": {
+                "doc_count": 46
+            },
+            "NativeScript": {
+                "doc_count": 4
+            },
+            "Ionic": {
+                "doc_count": 22
+            },
+            "React Native": {
+                "doc_count": 40
+            }
+        },
+        {
+            "key": "Mexico",
+            "doc_count": 167,
+            "Native Apps": {
+                "doc_count": 71
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 33
+            },
+            "Electron": {
+                "doc_count": 32
+            },
+            "NativeScript": {
+                "doc_count": 8
+            },
+            "Ionic": {
+                "doc_count": 28
+            },
+            "React Native": {
+                "doc_count": 47
+            }
+        },
+        {
+            "key": "Belgium",
+            "doc_count": 163,
+            "Native Apps": {
+                "doc_count": 43
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 27
+            },
+            "Electron": {
+                "doc_count": 30
+            },
+            "NativeScript": {
+                "doc_count": 5
+            },
+            "Ionic": {
+                "doc_count": 15
+            },
+            "React Native": {
+                "doc_count": 22
+            }
+        },
+        {
+            "key": "Norway",
+            "doc_count": 150,
+            "Native Apps": {
+                "doc_count": 49
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 26
+            },
+            "Electron": {
+                "doc_count": 26
+            },
+            "NativeScript": {
+                "doc_count": 3
+            },
+            "Ionic": {
+                "doc_count": 14
+            },
+            "React Native": {
+                "doc_count": 24
+            }
+        },
+        {
+            "key": "Argentina",
+            "doc_count": 145,
+            "Native Apps": {
+                "doc_count": 50
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 28
+            },
+            "Electron": {
+                "doc_count": 26
+            },
+            "NativeScript": {
+                "doc_count": 3
+            },
+            "Ionic": {
+                "doc_count": 28
+            },
+            "React Native": {
+                "doc_count": 32
+            }
+        },
+        {
+            "key": "New Zealand",
+            "doc_count": 143,
+            "Native Apps": {
+                "doc_count": 45
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 20
+            },
+            "Electron": {
+                "doc_count": 20
+            },
+            "NativeScript": {
+                "doc_count": 2
+            },
+            "Ionic": {
+                "doc_count": 13
+            },
+            "React Native": {
+                "doc_count": 34
+            }
+        },
+        {
+            "key": "Switzerland",
+            "doc_count": 136,
+            "Native Apps": {
+                "doc_count": 52
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 24
+            },
+            "Electron": {
+                "doc_count": 27
+            },
+            "NativeScript": {
+                "doc_count": 0
+            },
+            "Ionic": {
+                "doc_count": 17
+            },
+            "React Native": {
+                "doc_count": 25
+            }
+        },
+        {
+            "key": "Finland",
+            "doc_count": 133,
+            "Native Apps": {
+                "doc_count": 37
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 18
+            },
+            "Electron": {
+                "doc_count": 16
+            },
+            "NativeScript": {
+                "doc_count": 4
+            },
+            "Ionic": {
+                "doc_count": 12
+            },
+            "React Native": {
+                "doc_count": 23
+            }
+        },
+        {
+            "key": "Romania",
+            "doc_count": 132,
+            "Native Apps": {
+                "doc_count": 30
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 25
+            },
+            "Electron": {
+                "doc_count": 25
+            },
+            "NativeScript": {
+                "doc_count": 4
+            },
+            "Ionic": {
+                "doc_count": 20
+            },
+            "React Native": {
+                "doc_count": 23
+            }
+        },
+        {
+            "key": "Israel",
+            "doc_count": 126,
+            "Native Apps": {
+                "doc_count": 33
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 21
+            },
+            "Electron": {
+                "doc_count": 17
+            },
+            "NativeScript": {
+                "doc_count": 2
+            },
+            "Ionic": {
+                "doc_count": 19
+            },
+            "React Native": {
+                "doc_count": 22
+            }
+        },
+        {
+            "key": "Austria",
+            "doc_count": 116,
+            "Native Apps": {
+                "doc_count": 42
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 22
+            },
+            "Electron": {
+                "doc_count": 29
+            },
+            "NativeScript": {
+                "doc_count": 2
+            },
+            "Ionic": {
+                "doc_count": 15
+            },
+            "React Native": {
+                "doc_count": 18
+            }
+        },
+        {
+            "key": "Ireland",
+            "doc_count": 106,
+            "Native Apps": {
+                "doc_count": 36
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 19
+            },
+            "Electron": {
+                "doc_count": 17
+            },
+            "NativeScript": {
+                "doc_count": 4
+            },
+            "Ionic": {
+                "doc_count": 19
+            },
+            "React Native": {
+                "doc_count": 19
+            }
+        },
+        {
+            "key": "Portugal",
+            "doc_count": 105,
+            "Native Apps": {
+                "doc_count": 45
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 26
+            },
+            "Electron": {
+                "doc_count": 18
+            },
+            "NativeScript": {
+                "doc_count": 4
+            },
+            "Ionic": {
+                "doc_count": 19
+            },
+            "React Native": {
+                "doc_count": 22
+            }
+        },
+        {
+            "key": "Belarus",
+            "doc_count": 104,
+            "Native Apps": {
+                "doc_count": 18
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 12
+            },
+            "Electron": {
+                "doc_count": 11
+            },
+            "NativeScript": {
+                "doc_count": 2
+            },
+            "Ionic": {
+                "doc_count": 3
+            },
+            "React Native": {
+                "doc_count": 15
+            }
+        },
+        {
+            "key": "Colombia",
+            "doc_count": 97,
+            "Native Apps": {
+                "doc_count": 24
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 15
+            },
+            "Electron": {
+                "doc_count": 18
+            },
+            "NativeScript": {
+                "doc_count": 5
+            },
+            "Ionic": {
+                "doc_count": 19
+            },
+            "React Native": {
+                "doc_count": 22
+            }
+        },
+        {
+            "key": "China",
+            "doc_count": 96,
+            "Native Apps": {
+                "doc_count": 21
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 10
+            },
+            "Electron": {
+                "doc_count": 23
+            },
+            "NativeScript": {
+                "doc_count": 1
+            },
+            "Ionic": {
+                "doc_count": 11
+            },
+            "React Native": {
+                "doc_count": 21
+            }
+        }
+    ]
 }

@@ -143,7 +143,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 9,
+                "doc_count_error_upper_bound": 10,
                 "sum_other_doc_count": 332,
                 "buckets": [
                     {
@@ -369,7 +369,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 29,
+                "doc_count_error_upper_bound": 26,
                 "sum_other_doc_count": 1238,
                 "buckets": [
                     {
@@ -482,8 +482,8 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 6,
-                "sum_other_doc_count": 227,
+                "doc_count_error_upper_bound": 5,
+                "sum_other_doc_count": 228,
                 "buckets": [
                     {
                         "key": "United States",
@@ -514,12 +514,12 @@
                         "doc_count": 23
                     },
                     {
-                        "key": "India",
+                        "key": "Sweden",
                         "doc_count": 19
                     },
                     {
-                        "key": "Sweden",
-                        "doc_count": 19
+                        "key": "India",
+                        "doc_count": 18
                     },
                     {
                         "key": "Netherlands",
@@ -595,8 +595,8 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 8,
-                "sum_other_doc_count": 299,
+                "doc_count_error_upper_bound": 7,
+                "sum_other_doc_count": 300,
                 "buckets": [
                     {
                         "key": "United States",
@@ -636,7 +636,7 @@
                     },
                     {
                         "key": "India",
-                        "doc_count": 22
+                        "doc_count": 21
                     }
                 ]
             }
@@ -708,7 +708,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 74,
+                "doc_count_error_upper_bound": 72,
                 "sum_other_doc_count": 3423,
                 "buckets": [
                     {
@@ -934,7 +934,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 31,
+                "doc_count_error_upper_bound": 29,
                 "sum_other_doc_count": 1261,
                 "buckets": [
                     {
@@ -1047,7 +1047,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 2,
+                "doc_count_error_upper_bound": 1,
                 "sum_other_doc_count": 89,
                 "buckets": [
                     {
@@ -1094,9 +1094,1003 @@
             }
         }
     },
+    "countries": [
+        {
+            "key": "undefined",
+            "doc_count": 5839,
+            "Backbone": {
+                "doc_count": 411
+            },
+            "No Front-End Framework": {
+                "doc_count": 2502
+            },
+            "Vue": {
+                "doc_count": 1299
+            },
+            "Ember": {
+                "doc_count": 293
+            },
+            "Polymer": {
+                "doc_count": 250
+            },
+            "React": {
+                "doc_count": 3393
+            },
+            "Angular 2": {
+                "doc_count": 917
+            },
+            "Angular": {
+                "doc_count": 937
+            },
+            "Aurelia": {
+                "doc_count": 74
+            }
+        },
+        {
+            "key": "United States",
+            "doc_count": 5719,
+            "Backbone": {
+                "doc_count": 544
+            },
+            "No Front-End Framework": {
+                "doc_count": 2418
+            },
+            "Vue": {
+                "doc_count": 977
+            },
+            "Ember": {
+                "doc_count": 367
+            },
+            "Polymer": {
+                "doc_count": 281
+            },
+            "React": {
+                "doc_count": 3525
+            },
+            "Angular 2": {
+                "doc_count": 1009
+            },
+            "Angular": {
+                "doc_count": 1246
+            },
+            "Aurelia": {
+                "doc_count": 94
+            }
+        },
+        {
+            "key": "United Kingdom",
+            "doc_count": 1409,
+            "Backbone": {
+                "doc_count": 111
+            },
+            "No Front-End Framework": {
+                "doc_count": 647
+            },
+            "Vue": {
+                "doc_count": 253
+            },
+            "Ember": {
+                "doc_count": 52
+            },
+            "Polymer": {
+                "doc_count": 73
+            },
+            "React": {
+                "doc_count": 857
+            },
+            "Angular 2": {
+                "doc_count": 209
+            },
+            "Angular": {
+                "doc_count": 280
+            },
+            "Aurelia": {
+                "doc_count": 21
+            }
+        },
+        {
+            "key": "Germany",
+            "doc_count": 879,
+            "Backbone": {
+                "doc_count": 67
+            },
+            "No Front-End Framework": {
+                "doc_count": 360
+            },
+            "Vue": {
+                "doc_count": 167
+            },
+            "Ember": {
+                "doc_count": 26
+            },
+            "Polymer": {
+                "doc_count": 50
+            },
+            "React": {
+                "doc_count": 464
+            },
+            "Angular 2": {
+                "doc_count": 173
+            },
+            "Angular": {
+                "doc_count": 148
+            },
+            "Aurelia": {
+                "doc_count": 12
+            }
+        },
+        {
+            "key": "Canada",
+            "doc_count": 771,
+            "Backbone": {
+                "doc_count": 55
+            },
+            "No Front-End Framework": {
+                "doc_count": 347
+            },
+            "Vue": {
+                "doc_count": 154
+            },
+            "Ember": {
+                "doc_count": 37
+            },
+            "Polymer": {
+                "doc_count": 41
+            },
+            "React": {
+                "doc_count": 446
+            },
+            "Angular 2": {
+                "doc_count": 137
+            },
+            "Angular": {
+                "doc_count": 151
+            },
+            "Aurelia": {
+                "doc_count": 7
+            }
+        },
+        {
+            "key": "France",
+            "doc_count": 695,
+            "Backbone": {
+                "doc_count": 47
+            },
+            "No Front-End Framework": {
+                "doc_count": 261
+            },
+            "Vue": {
+                "doc_count": 166
+            },
+            "Ember": {
+                "doc_count": 24
+            },
+            "Polymer": {
+                "doc_count": 41
+            },
+            "React": {
+                "doc_count": 347
+            },
+            "Angular 2": {
+                "doc_count": 160
+            },
+            "Angular": {
+                "doc_count": 132
+            },
+            "Aurelia": {
+                "doc_count": 6
+            }
+        },
+        {
+            "key": "India",
+            "doc_count": 500,
+            "Backbone": {
+                "doc_count": 33
+            },
+            "No Front-End Framework": {
+                "doc_count": 131
+            },
+            "Vue": {
+                "doc_count": 59
+            },
+            "Ember": {
+                "doc_count": 19
+            },
+            "Polymer": {
+                "doc_count": 22
+            },
+            "React": {
+                "doc_count": 246
+            },
+            "Angular 2": {
+                "doc_count": 120
+            },
+            "Angular": {
+                "doc_count": 158
+            },
+            "Aurelia": {
+                "doc_count": 7
+            }
+        },
+        {
+            "key": "Australia",
+            "doc_count": 492,
+            "Backbone": {
+                "doc_count": 22
+            },
+            "No Front-End Framework": {
+                "doc_count": 190
+            },
+            "Vue": {
+                "doc_count": 77
+            },
+            "Ember": {
+                "doc_count": 14
+            },
+            "Polymer": {
+                "doc_count": 22
+            },
+            "React": {
+                "doc_count": 329
+            },
+            "Angular 2": {
+                "doc_count": 78
+            },
+            "Angular": {
+                "doc_count": 84
+            },
+            "Aurelia": {
+                "doc_count": 12
+            }
+        },
+        {
+            "key": "Netherlands",
+            "doc_count": 449,
+            "Backbone": {
+                "doc_count": 33
+            },
+            "No Front-End Framework": {
+                "doc_count": 192
+            },
+            "Vue": {
+                "doc_count": 105
+            },
+            "Ember": {
+                "doc_count": 19
+            },
+            "Polymer": {
+                "doc_count": 39
+            },
+            "React": {
+                "doc_count": 259
+            },
+            "Angular 2": {
+                "doc_count": 94
+            },
+            "Angular": {
+                "doc_count": 73
+            },
+            "Aurelia": {
+                "doc_count": 9
+            }
+        },
+        {
+            "key": "Brazil",
+            "doc_count": 437,
+            "Backbone": {
+                "doc_count": 18
+            },
+            "No Front-End Framework": {
+                "doc_count": 163
+            },
+            "Vue": {
+                "doc_count": 86
+            },
+            "Ember": {
+                "doc_count": 23
+            },
+            "Polymer": {
+                "doc_count": 14
+            },
+            "React": {
+                "doc_count": 236
+            },
+            "Angular 2": {
+                "doc_count": 78
+            },
+            "Angular": {
+                "doc_count": 104
+            },
+            "Aurelia": {
+                "doc_count": 7
+            }
+        },
+        {
+            "key": "Poland",
+            "doc_count": 420,
+            "Backbone": {
+                "doc_count": 26
+            },
+            "No Front-End Framework": {
+                "doc_count": 140
+            },
+            "Vue": {
+                "doc_count": 74
+            },
+            "Ember": {
+                "doc_count": 8
+            },
+            "Polymer": {
+                "doc_count": 20
+            },
+            "React": {
+                "doc_count": 239
+            },
+            "Angular 2": {
+                "doc_count": 100
+            },
+            "Angular": {
+                "doc_count": 91
+            },
+            "Aurelia": {
+                "doc_count": 7
+            }
+        },
+        {
+            "key": "Spain",
+            "doc_count": 413,
+            "Backbone": {
+                "doc_count": 32
+            },
+            "No Front-End Framework": {
+                "doc_count": 150
+            },
+            "Vue": {
+                "doc_count": 79
+            },
+            "Ember": {
+                "doc_count": 16
+            },
+            "Polymer": {
+                "doc_count": 52
+            },
+            "React": {
+                "doc_count": 192
+            },
+            "Angular 2": {
+                "doc_count": 118
+            },
+            "Angular": {
+                "doc_count": 101
+            },
+            "Aurelia": {
+                "doc_count": 4
+            }
+        },
+        {
+            "key": "Russia",
+            "doc_count": 379,
+            "Backbone": {
+                "doc_count": 14
+            },
+            "No Front-End Framework": {
+                "doc_count": 128
+            },
+            "Vue": {
+                "doc_count": 69
+            },
+            "Ember": {
+                "doc_count": 6
+            },
+            "Polymer": {
+                "doc_count": 3
+            },
+            "React": {
+                "doc_count": 242
+            },
+            "Angular 2": {
+                "doc_count": 49
+            },
+            "Angular": {
+                "doc_count": 38
+            },
+            "Aurelia": {
+                "doc_count": 5
+            }
+        },
+        {
+            "key": "Sweden",
+            "doc_count": 330,
+            "Backbone": {
+                "doc_count": 14
+            },
+            "No Front-End Framework": {
+                "doc_count": 158
+            },
+            "Vue": {
+                "doc_count": 58
+            },
+            "Ember": {
+                "doc_count": 19
+            },
+            "Polymer": {
+                "doc_count": 18
+            },
+            "React": {
+                "doc_count": 232
+            },
+            "Angular 2": {
+                "doc_count": 50
+            },
+            "Angular": {
+                "doc_count": 51
+            },
+            "Aurelia": {
+                "doc_count": 10
+            }
+        },
+        {
+            "key": "Italy",
+            "doc_count": 251,
+            "Backbone": {
+                "doc_count": 17
+            },
+            "No Front-End Framework": {
+                "doc_count": 85
+            },
+            "Vue": {
+                "doc_count": 49
+            },
+            "Ember": {
+                "doc_count": 4
+            },
+            "Polymer": {
+                "doc_count": 14
+            },
+            "React": {
+                "doc_count": 102
+            },
+            "Angular 2": {
+                "doc_count": 58
+            },
+            "Angular": {
+                "doc_count": 76
+            },
+            "Aurelia": {
+                "doc_count": 2
+            }
+        },
+        {
+            "key": "Ukraine",
+            "doc_count": 242,
+            "Backbone": {
+                "doc_count": 11
+            },
+            "No Front-End Framework": {
+                "doc_count": 77
+            },
+            "Vue": {
+                "doc_count": 32
+            },
+            "Ember": {
+                "doc_count": 5
+            },
+            "Polymer": {
+                "doc_count": 9
+            },
+            "React": {
+                "doc_count": 135
+            },
+            "Angular 2": {
+                "doc_count": 55
+            },
+            "Angular": {
+                "doc_count": 39
+            },
+            "Aurelia": {
+                "doc_count": 1
+            }
+        },
+        {
+            "key": "Denmark",
+            "doc_count": 197,
+            "Backbone": {
+                "doc_count": 12
+            },
+            "No Front-End Framework": {
+                "doc_count": 91
+            },
+            "Vue": {
+                "doc_count": 39
+            },
+            "Ember": {
+                "doc_count": 8
+            },
+            "Polymer": {
+                "doc_count": 10
+            },
+            "React": {
+                "doc_count": 103
+            },
+            "Angular 2": {
+                "doc_count": 40
+            },
+            "Angular": {
+                "doc_count": 46
+            },
+            "Aurelia": {
+                "doc_count": 1
+            }
+        },
+        {
+            "key": "Mexico",
+            "doc_count": 167,
+            "Backbone": {
+                "doc_count": 14
+            },
+            "No Front-End Framework": {
+                "doc_count": 67
+            },
+            "Vue": {
+                "doc_count": 35
+            },
+            "Ember": {
+                "doc_count": 10
+            },
+            "Polymer": {
+                "doc_count": 17
+            },
+            "React": {
+                "doc_count": 85
+            },
+            "Angular 2": {
+                "doc_count": 39
+            },
+            "Angular": {
+                "doc_count": 55
+            },
+            "Aurelia": {
+                "doc_count": 3
+            }
+        },
+        {
+            "key": "Belgium",
+            "doc_count": 163,
+            "Backbone": {
+                "doc_count": 4
+            },
+            "No Front-End Framework": {
+                "doc_count": 62
+            },
+            "Vue": {
+                "doc_count": 34
+            },
+            "Ember": {
+                "doc_count": 2
+            },
+            "Polymer": {
+                "doc_count": 6
+            },
+            "React": {
+                "doc_count": 74
+            },
+            "Angular 2": {
+                "doc_count": 52
+            },
+            "Angular": {
+                "doc_count": 49
+            },
+            "Aurelia": {
+                "doc_count": 5
+            }
+        },
+        {
+            "key": "Norway",
+            "doc_count": 150,
+            "Backbone": {
+                "doc_count": 6
+            },
+            "No Front-End Framework": {
+                "doc_count": 64
+            },
+            "Vue": {
+                "doc_count": 24
+            },
+            "Ember": {
+                "doc_count": 6
+            },
+            "Polymer": {
+                "doc_count": 9
+            },
+            "React": {
+                "doc_count": 93
+            },
+            "Angular 2": {
+                "doc_count": 25
+            },
+            "Angular": {
+                "doc_count": 15
+            },
+            "Aurelia": {
+                "doc_count": 3
+            }
+        },
+        {
+            "key": "Argentina",
+            "doc_count": 145,
+            "Backbone": {
+                "doc_count": 10
+            },
+            "No Front-End Framework": {
+                "doc_count": 43
+            },
+            "Vue": {
+                "doc_count": 27
+            },
+            "Ember": {
+                "doc_count": 11
+            },
+            "Polymer": {
+                "doc_count": 3
+            },
+            "React": {
+                "doc_count": 73
+            },
+            "Angular 2": {
+                "doc_count": 27
+            },
+            "Angular": {
+                "doc_count": 41
+            },
+            "Aurelia": {
+                "doc_count": 4
+            }
+        },
+        {
+            "key": "New Zealand",
+            "doc_count": 143,
+            "Backbone": {
+                "doc_count": 8
+            },
+            "No Front-End Framework": {
+                "doc_count": 58
+            },
+            "Vue": {
+                "doc_count": 25
+            },
+            "Ember": {
+                "doc_count": 11
+            },
+            "Polymer": {
+                "doc_count": 3
+            },
+            "React": {
+                "doc_count": 96
+            },
+            "Angular 2": {
+                "doc_count": 32
+            },
+            "Angular": {
+                "doc_count": 36
+            },
+            "Aurelia": {
+                "doc_count": 0
+            }
+        },
+        {
+            "key": "Switzerland",
+            "doc_count": 136,
+            "Backbone": {
+                "doc_count": 10
+            },
+            "No Front-End Framework": {
+                "doc_count": 52
+            },
+            "Vue": {
+                "doc_count": 28
+            },
+            "Ember": {
+                "doc_count": 6
+            },
+            "Polymer": {
+                "doc_count": 10
+            },
+            "React": {
+                "doc_count": 69
+            },
+            "Angular 2": {
+                "doc_count": 35
+            },
+            "Angular": {
+                "doc_count": 27
+            },
+            "Aurelia": {
+                "doc_count": 2
+            }
+        },
+        {
+            "key": "Finland",
+            "doc_count": 133,
+            "Backbone": {
+                "doc_count": 11
+            },
+            "No Front-End Framework": {
+                "doc_count": 49
+            },
+            "Vue": {
+                "doc_count": 33
+            },
+            "Ember": {
+                "doc_count": 5
+            },
+            "Polymer": {
+                "doc_count": 14
+            },
+            "React": {
+                "doc_count": 85
+            },
+            "Angular 2": {
+                "doc_count": 19
+            },
+            "Angular": {
+                "doc_count": 17
+            },
+            "Aurelia": {
+                "doc_count": 1
+            }
+        },
+        {
+            "key": "Romania",
+            "doc_count": 132,
+            "Backbone": {
+                "doc_count": 8
+            },
+            "No Front-End Framework": {
+                "doc_count": 55
+            },
+            "Vue": {
+                "doc_count": 23
+            },
+            "Ember": {
+                "doc_count": 7
+            },
+            "Polymer": {
+                "doc_count": 10
+            },
+            "React": {
+                "doc_count": 70
+            },
+            "Angular 2": {
+                "doc_count": 42
+            },
+            "Angular": {
+                "doc_count": 41
+            },
+            "Aurelia": {
+                "doc_count": 4
+            }
+        },
+        {
+            "key": "Israel",
+            "doc_count": 126,
+            "Backbone": {
+                "doc_count": 6
+            },
+            "No Front-End Framework": {
+                "doc_count": 48
+            },
+            "Vue": {
+                "doc_count": 19
+            },
+            "Ember": {
+                "doc_count": 1
+            },
+            "Polymer": {
+                "doc_count": 2
+            },
+            "React": {
+                "doc_count": 75
+            },
+            "Angular 2": {
+                "doc_count": 36
+            },
+            "Angular": {
+                "doc_count": 41
+            },
+            "Aurelia": {
+                "doc_count": 2
+            }
+        },
+        {
+            "key": "Austria",
+            "doc_count": 116,
+            "Backbone": {
+                "doc_count": 4
+            },
+            "No Front-End Framework": {
+                "doc_count": 37
+            },
+            "Vue": {
+                "doc_count": 22
+            },
+            "Ember": {
+                "doc_count": 12
+            },
+            "Polymer": {
+                "doc_count": 6
+            },
+            "React": {
+                "doc_count": 66
+            },
+            "Angular 2": {
+                "doc_count": 31
+            },
+            "Angular": {
+                "doc_count": 19
+            },
+            "Aurelia": {
+                "doc_count": 1
+            }
+        },
+        {
+            "key": "Ireland",
+            "doc_count": 106,
+            "Backbone": {
+                "doc_count": 10
+            },
+            "No Front-End Framework": {
+                "doc_count": 40
+            },
+            "Vue": {
+                "doc_count": 14
+            },
+            "Ember": {
+                "doc_count": 5
+            },
+            "Polymer": {
+                "doc_count": 4
+            },
+            "React": {
+                "doc_count": 52
+            },
+            "Angular 2": {
+                "doc_count": 23
+            },
+            "Angular": {
+                "doc_count": 25
+            },
+            "Aurelia": {
+                "doc_count": 3
+            }
+        },
+        {
+            "key": "Portugal",
+            "doc_count": 105,
+            "Backbone": {
+                "doc_count": 10
+            },
+            "No Front-End Framework": {
+                "doc_count": 33
+            },
+            "Vue": {
+                "doc_count": 22
+            },
+            "Ember": {
+                "doc_count": 2
+            },
+            "Polymer": {
+                "doc_count": 9
+            },
+            "React": {
+                "doc_count": 55
+            },
+            "Angular 2": {
+                "doc_count": 27
+            },
+            "Angular": {
+                "doc_count": 33
+            },
+            "Aurelia": {
+                "doc_count": 1
+            }
+        },
+        {
+            "key": "Belarus",
+            "doc_count": 104,
+            "Backbone": {
+                "doc_count": 4
+            },
+            "No Front-End Framework": {
+                "doc_count": 29
+            },
+            "Vue": {
+                "doc_count": 12
+            },
+            "Ember": {
+                "doc_count": 4
+            },
+            "Polymer": {
+                "doc_count": 3
+            },
+            "React": {
+                "doc_count": 66
+            },
+            "Angular 2": {
+                "doc_count": 33
+            },
+            "Angular": {
+                "doc_count": 24
+            },
+            "Aurelia": {
+                "doc_count": 2
+            }
+        },
+        {
+            "key": "Colombia",
+            "doc_count": 97,
+            "Backbone": {
+                "doc_count": 9
+            },
+            "No Front-End Framework": {
+                "doc_count": 30
+            },
+            "Vue": {
+                "doc_count": 22
+            },
+            "Ember": {
+                "doc_count": 4
+            },
+            "Polymer": {
+                "doc_count": 2
+            },
+            "React": {
+                "doc_count": 51
+            },
+            "Angular 2": {
+                "doc_count": 29
+            },
+            "Angular": {
+                "doc_count": 31
+            },
+            "Aurelia": {
+                "doc_count": 3
+            }
+        },
+        {
+            "key": "China",
+            "doc_count": 96,
+            "Backbone": {
+                "doc_count": 6
+            },
+            "No Front-End Framework": {
+                "doc_count": 27
+            },
+            "Vue": {
+                "doc_count": 50
+            },
+            "Ember": {
+                "doc_count": 2
+            },
+            "Polymer": {
+                "doc_count": 3
+            },
+            "React": {
+                "doc_count": 63
+            },
+            "Angular 2": {
+                "doc_count": 14
+            },
+            "Angular": {
+                "doc_count": 14
+            },
+            "Aurelia": {
+                "doc_count": 0
+            }
+        }
+    ],
     "others": {
-        "doc_count_error_upper_bound": 9,
-        "sum_other_doc_count": 1133,
+        "doc_count_error_upper_bound": 10,
+        "sum_other_doc_count": 1134,
         "buckets": [
             {
                 "key": "Preact",
@@ -1168,7 +2162,7 @@
             },
             {
                 "key": "marionette",
-                "doc_count": 33
+                "doc_count": 32
             },
             {
                 "key": "vanilla javascript",
@@ -1200,22 +2194,294 @@
             "Reason"
         ],
         "matrix": [
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 6588, 13162, 4356, 2227, 938, 446, 117],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 2960, 3971, 2316, 253, 116, 59, 15],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 2257, 3997, 3777, 275, 130, 50, 16],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 622, 1067, 389, 133, 97, 46, 12],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 2608, 4317, 1445, 408, 220, 90, 21],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 1202, 1523, 473, 155, 89, 50, 11],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 696, 1118, 503, 117, 79, 44, 13],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 148, 313, 215, 32, 24, 11, 6],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 6161, 8387, 2985, 908, 558, 242, 52],
-            [6588, 2960, 2257, 622, 2608, 1202, 696, 148, 6161, 0, 0, 0, 0, 0, 0, 0],
-            [13162, 3971, 3997, 1067, 4317, 1523, 1118, 313, 8387, 0, 0, 0, 0, 0, 0, 0],
-            [4356, 2316, 3777, 389, 1445, 473, 503, 215, 2985, 0, 0, 0, 0, 0, 0, 0],
-            [2227, 253, 275, 133, 408, 155, 117, 32, 908, 0, 0, 0, 0, 0, 0, 0],
-            [938, 116, 130, 97, 220, 89, 79, 24, 558, 0, 0, 0, 0, 0, 0, 0],
-            [446, 59, 50, 46, 90, 50, 44, 11, 242, 0, 0, 0, 0, 0, 0, 0],
-            [117, 15, 16, 12, 21, 11, 13, 6, 52, 0, 0, 0, 0, 0, 0, 0]
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                6588,
+                13162,
+                4356,
+                2227,
+                938,
+                446,
+                117
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2960,
+                3971,
+                2316,
+                253,
+                116,
+                59,
+                15
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2257,
+                3997,
+                3777,
+                275,
+                130,
+                50,
+                16
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                622,
+                1067,
+                389,
+                133,
+                97,
+                46,
+                12
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2608,
+                4317,
+                1445,
+                408,
+                220,
+                90,
+                21
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1202,
+                1523,
+                473,
+                155,
+                89,
+                50,
+                11
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                696,
+                1118,
+                503,
+                117,
+                79,
+                44,
+                13
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                148,
+                313,
+                215,
+                32,
+                24,
+                11,
+                6
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                6161,
+                8387,
+                2985,
+                908,
+                558,
+                242,
+                52
+            ],
+            [
+                6588,
+                2960,
+                2257,
+                622,
+                2608,
+                1202,
+                696,
+                148,
+                6161,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                13162,
+                3971,
+                3997,
+                1067,
+                4317,
+                1523,
+                1118,
+                313,
+                8387,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                4356,
+                2316,
+                3777,
+                389,
+                1445,
+                473,
+                503,
+                215,
+                2985,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                2227,
+                253,
+                275,
+                133,
+                408,
+                155,
+                117,
+                32,
+                908,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                938,
+                116,
+                130,
+                97,
+                220,
+                89,
+                79,
+                24,
+                558,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                446,
+                59,
+                50,
+                46,
+                90,
+                50,
+                44,
+                11,
+                242,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                117,
+                15,
+                16,
+                12,
+                21,
+                11,
+                13,
+                6,
+                52,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
         ]
     },
     "flavorSankey": {
@@ -1608,23 +2874,329 @@
             "Firebase"
         ],
         "matrix": [
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 12382, 9671, 1062, 2361, 496, 59, 1127, 3705],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 4317, 1558, 145, 341, 52, 16, 125, 1299],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 4140, 1795, 166, 412, 71, 21, 190, 1389],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 1048, 500, 60, 160, 34, 9, 63, 374],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 4210, 1910, 282, 590, 84, 15, 253, 1310],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 1591, 776, 78, 216, 48, 9, 71, 396],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 1112, 575, 73, 209, 41, 8, 78, 500],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 313, 136, 34, 49, 10, 4, 20, 82],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 8393, 4061, 426, 1101, 213, 36, 426, 2316],
-            [12382, 4317, 4140, 1048, 4210, 1591, 1112, 313, 8393, 0, 0, 0, 0, 0, 0, 0, 0],
-            [9671, 1558, 1795, 500, 1910, 776, 575, 136, 4061, 0, 0, 0, 0, 0, 0, 0, 0],
-            [1062, 145, 166, 60, 282, 78, 73, 34, 426, 0, 0, 0, 0, 0, 0, 0, 0],
-            [2361, 341, 412, 160, 590, 216, 209, 49, 1101, 0, 0, 0, 0, 0, 0, 0, 0],
-            [496, 52, 71, 34, 84, 48, 41, 10, 213, 0, 0, 0, 0, 0, 0, 0, 0],
-            [59, 16, 21, 9, 15, 9, 8, 4, 36, 0, 0, 0, 0, 0, 0, 0, 0],
-            [1127, 125, 190, 63, 253, 71, 78, 20, 426, 0, 0, 0, 0, 0, 0, 0, 0],
-            [3705, 1299, 1389, 374, 1310, 396, 500, 82, 2316, 0, 0, 0, 0, 0, 0, 0, 0]
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                12382,
+                9671,
+                1062,
+                2361,
+                496,
+                59,
+                1127,
+                3705
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4317,
+                1558,
+                145,
+                341,
+                52,
+                16,
+                125,
+                1299
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4140,
+                1795,
+                166,
+                412,
+                71,
+                21,
+                190,
+                1389
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1048,
+                500,
+                60,
+                160,
+                34,
+                9,
+                63,
+                374
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4210,
+                1910,
+                282,
+                590,
+                84,
+                15,
+                253,
+                1310
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1591,
+                776,
+                78,
+                216,
+                48,
+                9,
+                71,
+                396
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1112,
+                575,
+                73,
+                209,
+                41,
+                8,
+                78,
+                500
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                313,
+                136,
+                34,
+                49,
+                10,
+                4,
+                20,
+                82
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                8393,
+                4061,
+                426,
+                1101,
+                213,
+                36,
+                426,
+                2316
+            ],
+            [
+                12382,
+                4317,
+                4140,
+                1048,
+                4210,
+                1591,
+                1112,
+                313,
+                8393,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                9671,
+                1558,
+                1795,
+                500,
+                1910,
+                776,
+                575,
+                136,
+                4061,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                1062,
+                145,
+                166,
+                60,
+                282,
+                78,
+                73,
+                34,
+                426,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                2361,
+                341,
+                412,
+                160,
+                590,
+                216,
+                209,
+                49,
+                1101,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                496,
+                52,
+                71,
+                34,
+                84,
+                48,
+                41,
+                10,
+                213,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                59,
+                16,
+                21,
+                9,
+                15,
+                9,
+                8,
+                4,
+                36,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                1127,
+                125,
+                190,
+                63,
+                253,
+                71,
+                78,
+                20,
+                426,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                3705,
+                1299,
+                1389,
+                374,
+                1310,
+                396,
+                500,
+                82,
+                2316,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
         ]
     },
     "stateSankey": {
@@ -2064,22 +3636,294 @@
             "Foundation"
         ],
         "matrix": [
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 9410, 10809, 1579, 4366, 5432, 7783, 2523],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 3515, 3862, 421, 1893, 884, 3529, 1090],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 3090, 3785, 394, 1530, 917, 3168, 909],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 790, 993, 152, 364, 288, 716, 347],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 3333, 3834, 725, 1409, 1346, 2792, 1042],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 1330, 1460, 247, 738, 440, 1133, 456],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 978, 906, 154, 426, 360, 617, 229],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 242, 262, 42, 135, 79, 248, 80],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 7625, 7297, 1053, 3022, 2574, 5249, 1857],
-            [9410, 3515, 3090, 790, 3333, 1330, 978, 242, 7625, 0, 0, 0, 0, 0, 0, 0],
-            [10809, 3862, 3785, 993, 3834, 1460, 906, 262, 7297, 0, 0, 0, 0, 0, 0, 0],
-            [1579, 421, 394, 152, 725, 247, 154, 42, 1053, 0, 0, 0, 0, 0, 0, 0],
-            [4366, 1893, 1530, 364, 1409, 738, 426, 135, 3022, 0, 0, 0, 0, 0, 0, 0],
-            [5432, 884, 917, 288, 1346, 440, 360, 79, 2574, 0, 0, 0, 0, 0, 0, 0],
-            [7783, 3529, 3168, 716, 2792, 1133, 617, 248, 5249, 0, 0, 0, 0, 0, 0, 0],
-            [2523, 1090, 909, 347, 1042, 456, 229, 80, 1857, 0, 0, 0, 0, 0, 0, 0]
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                9410,
+                10809,
+                1579,
+                4366,
+                5432,
+                7783,
+                2523
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3515,
+                3862,
+                421,
+                1893,
+                884,
+                3529,
+                1090
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3090,
+                3785,
+                394,
+                1530,
+                917,
+                3168,
+                909
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                790,
+                993,
+                152,
+                364,
+                288,
+                716,
+                347
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3333,
+                3834,
+                725,
+                1409,
+                1346,
+                2792,
+                1042
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1330,
+                1460,
+                247,
+                738,
+                440,
+                1133,
+                456
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                978,
+                906,
+                154,
+                426,
+                360,
+                617,
+                229
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                242,
+                262,
+                42,
+                135,
+                79,
+                248,
+                80
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7625,
+                7297,
+                1053,
+                3022,
+                2574,
+                5249,
+                1857
+            ],
+            [
+                9410,
+                3515,
+                3090,
+                790,
+                3333,
+                1330,
+                978,
+                242,
+                7625,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                10809,
+                3862,
+                3785,
+                993,
+                3834,
+                1460,
+                906,
+                262,
+                7297,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                1579,
+                421,
+                394,
+                152,
+                725,
+                247,
+                154,
+                42,
+                1053,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                4366,
+                1893,
+                1530,
+                364,
+                1409,
+                738,
+                426,
+                135,
+                3022,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                5432,
+                884,
+                917,
+                288,
+                1346,
+                440,
+                360,
+                79,
+                2574,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                7783,
+                3529,
+                3168,
+                716,
+                2792,
+                1133,
+                617,
+                248,
+                5249,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                2523,
+                1090,
+                909,
+                347,
+                1042,
+                456,
+                229,
+                80,
+                1857,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
         ]
     },
     "styleSankey": {

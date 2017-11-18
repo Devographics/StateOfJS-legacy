@@ -1,0 +1,7 @@
+# Type form API
+TYPE_FORM_ID:      type_form.form_id
+TYPE_FORM_API_KEY: type_form.api_key
+
+# Elasticsearch
+ELASTIC_HOST: elastic.host
+ELASTIC_PORT: elastic.port

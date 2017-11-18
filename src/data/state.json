@@ -135,7 +135,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 30,
+                "doc_count_error_upper_bound": 28,
                 "sum_other_doc_count": 1427,
                 "buckets": [
                     {
@@ -361,7 +361,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 4,
+                "doc_count_error_upper_bound": 5,
                 "sum_other_doc_count": 122,
                 "buckets": [
                     {
@@ -474,8 +474,8 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 7,
-                "sum_other_doc_count": 296,
+                "doc_count_error_upper_bound": 8,
+                "sum_other_doc_count": 297,
                 "buckets": [
                     {
                         "key": "United States",
@@ -514,8 +514,8 @@
                         "doc_count": 27
                     },
                     {
-                        "key": "Switzerland",
-                        "doc_count": 18
+                        "key": "Poland",
+                        "doc_count": 17
                     }
                 ]
             }
@@ -587,7 +587,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 60,
+                "doc_count_error_upper_bound": 58,
                 "sum_other_doc_count": 2754,
                 "buckets": [
                     {
@@ -700,7 +700,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 15,
+                "doc_count_error_upper_bound": 14,
                 "sum_other_doc_count": 632,
                 "buckets": [
                     {
@@ -922,8 +922,8 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 8,
-                "sum_other_doc_count": 293,
+                "doc_count_error_upper_bound": 6,
+                "sum_other_doc_count": 295,
                 "buckets": [
                     {
                         "key": "undefined",
@@ -959,19 +959,917 @@
                     },
                     {
                         "key": "Poland",
-                        "doc_count": 26
+                        "doc_count": 25
                     },
                     {
                         "key": "Netherlands",
-                        "doc_count": 24
+                        "doc_count": 23
                     }
                 ]
             }
         }
     },
+    "countries": [
+        {
+            "key": "undefined",
+            "doc_count": 5839,
+            "Firebase": {
+                "doc_count": 1198
+            },
+            "REST API": {
+                "doc_count": 5164
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 130
+            },
+            "Apollo": {
+                "doc_count": 308
+            },
+            "Redux": {
+                "doc_count": 2600
+            },
+            "GraphQL": {
+                "doc_count": 697
+            },
+            "Falcor": {
+                "doc_count": 22
+            },
+            "MobX": {
+                "doc_count": 316
+            }
+        },
+        {
+            "key": "United States",
+            "doc_count": 5719,
+            "Firebase": {
+                "doc_count": 1488
+            },
+            "REST API": {
+                "doc_count": 5039
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 139
+            },
+            "Apollo": {
+                "doc_count": 310
+            },
+            "Redux": {
+                "doc_count": 2712
+            },
+            "GraphQL": {
+                "doc_count": 751
+            },
+            "Falcor": {
+                "doc_count": 24
+            },
+            "MobX": {
+                "doc_count": 243
+            }
+        },
+        {
+            "key": "United Kingdom",
+            "doc_count": 1409,
+            "Firebase": {
+                "doc_count": 300
+            },
+            "REST API": {
+                "doc_count": 1216
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 38
+            },
+            "Apollo": {
+                "doc_count": 85
+            },
+            "Redux": {
+                "doc_count": 664
+            },
+            "GraphQL": {
+                "doc_count": 182
+            },
+            "Falcor": {
+                "doc_count": 3
+            },
+            "MobX": {
+                "doc_count": 61
+            }
+        },
+        {
+            "key": "Germany",
+            "doc_count": 879,
+            "Firebase": {
+                "doc_count": 171
+            },
+            "REST API": {
+                "doc_count": 764
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 21
+            },
+            "Apollo": {
+                "doc_count": 62
+            },
+            "Redux": {
+                "doc_count": 387
+            },
+            "GraphQL": {
+                "doc_count": 124
+            },
+            "Falcor": {
+                "doc_count": 3
+            },
+            "MobX": {
+                "doc_count": 46
+            }
+        },
+        {
+            "key": "Canada",
+            "doc_count": 771,
+            "Firebase": {
+                "doc_count": 179
+            },
+            "REST API": {
+                "doc_count": 674
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 11
+            },
+            "Apollo": {
+                "doc_count": 29
+            },
+            "Redux": {
+                "doc_count": 344
+            },
+            "GraphQL": {
+                "doc_count": 68
+            },
+            "Falcor": {
+                "doc_count": 2
+            },
+            "MobX": {
+                "doc_count": 26
+            }
+        },
+        {
+            "key": "France",
+            "doc_count": 695,
+            "Firebase": {
+                "doc_count": 169
+            },
+            "REST API": {
+                "doc_count": 585
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 17
+            },
+            "Apollo": {
+                "doc_count": 47
+            },
+            "Redux": {
+                "doc_count": 289
+            },
+            "GraphQL": {
+                "doc_count": 88
+            },
+            "Falcor": {
+                "doc_count": 3
+            },
+            "MobX": {
+                "doc_count": 28
+            }
+        },
+        {
+            "key": "India",
+            "doc_count": 500,
+            "Firebase": {
+                "doc_count": 133
+            },
+            "REST API": {
+                "doc_count": 424
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 5
+            },
+            "Apollo": {
+                "doc_count": 11
+            },
+            "Redux": {
+                "doc_count": 202
+            },
+            "GraphQL": {
+                "doc_count": 37
+            },
+            "Falcor": {
+                "doc_count": 2
+            },
+            "MobX": {
+                "doc_count": 19
+            }
+        },
+        {
+            "key": "Australia",
+            "doc_count": 492,
+            "Firebase": {
+                "doc_count": 130
+            },
+            "REST API": {
+                "doc_count": 418
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 13
+            },
+            "Apollo": {
+                "doc_count": 39
+            },
+            "Redux": {
+                "doc_count": 236
+            },
+            "GraphQL": {
+                "doc_count": 69
+            },
+            "Falcor": {
+                "doc_count": 1
+            },
+            "MobX": {
+                "doc_count": 36
+            }
+        },
+        {
+            "key": "Netherlands",
+            "doc_count": 449,
+            "Firebase": {
+                "doc_count": 114
+            },
+            "REST API": {
+                "doc_count": 398
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 9
+            },
+            "Apollo": {
+                "doc_count": 27
+            },
+            "Redux": {
+                "doc_count": 207
+            },
+            "GraphQL": {
+                "doc_count": 54
+            },
+            "Falcor": {
+                "doc_count": 2
+            },
+            "MobX": {
+                "doc_count": 24
+            }
+        },
+        {
+            "key": "Brazil",
+            "doc_count": 437,
+            "Firebase": {
+                "doc_count": 124
+            },
+            "REST API": {
+                "doc_count": 368
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 8
+            },
+            "Apollo": {
+                "doc_count": 28
+            },
+            "Redux": {
+                "doc_count": 180
+            },
+            "GraphQL": {
+                "doc_count": 47
+            },
+            "Falcor": {
+                "doc_count": 3
+            },
+            "MobX": {
+                "doc_count": 14
+            }
+        },
+        {
+            "key": "Poland",
+            "doc_count": 420,
+            "Firebase": {
+                "doc_count": 71
+            },
+            "REST API": {
+                "doc_count": 371
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 7
+            },
+            "Apollo": {
+                "doc_count": 17
+            },
+            "Redux": {
+                "doc_count": 212
+            },
+            "GraphQL": {
+                "doc_count": 34
+            },
+            "Falcor": {
+                "doc_count": 0
+            },
+            "MobX": {
+                "doc_count": 26
+            }
+        },
+        {
+            "key": "Spain",
+            "doc_count": 413,
+            "Firebase": {
+                "doc_count": 109
+            },
+            "REST API": {
+                "doc_count": 366
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 6
+            },
+            "Apollo": {
+                "doc_count": 17
+            },
+            "Redux": {
+                "doc_count": 156
+            },
+            "GraphQL": {
+                "doc_count": 41
+            },
+            "Falcor": {
+                "doc_count": 1
+            },
+            "MobX": {
+                "doc_count": 11
+            }
+        },
+        {
+            "key": "Russia",
+            "doc_count": 379,
+            "Firebase": {
+                "doc_count": 29
+            },
+            "REST API": {
+                "doc_count": 306
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 6
+            },
+            "Apollo": {
+                "doc_count": 11
+            },
+            "Redux": {
+                "doc_count": 210
+            },
+            "GraphQL": {
+                "doc_count": 28
+            },
+            "Falcor": {
+                "doc_count": 1
+            },
+            "MobX": {
+                "doc_count": 31
+            }
+        },
+        {
+            "key": "Sweden",
+            "doc_count": 330,
+            "Firebase": {
+                "doc_count": 85
+            },
+            "REST API": {
+                "doc_count": 300
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 7
+            },
+            "Apollo": {
+                "doc_count": 17
+            },
+            "Redux": {
+                "doc_count": 174
+            },
+            "GraphQL": {
+                "doc_count": 49
+            },
+            "Falcor": {
+                "doc_count": 4
+            },
+            "MobX": {
+                "doc_count": 19
+            }
+        },
+        {
+            "key": "Italy",
+            "doc_count": 251,
+            "Firebase": {
+                "doc_count": 52
+            },
+            "REST API": {
+                "doc_count": 219
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 7
+            },
+            "Apollo": {
+                "doc_count": 7
+            },
+            "Redux": {
+                "doc_count": 76
+            },
+            "GraphQL": {
+                "doc_count": 15
+            },
+            "Falcor": {
+                "doc_count": 0
+            },
+            "MobX": {
+                "doc_count": 8
+            }
+        },
+        {
+            "key": "Ukraine",
+            "doc_count": 242,
+            "Firebase": {
+                "doc_count": 39
+            },
+            "REST API": {
+                "doc_count": 181
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 6
+            },
+            "Apollo": {
+                "doc_count": 7
+            },
+            "Redux": {
+                "doc_count": 127
+            },
+            "GraphQL": {
+                "doc_count": 16
+            },
+            "Falcor": {
+                "doc_count": 0
+            },
+            "MobX": {
+                "doc_count": 19
+            }
+        },
+        {
+            "key": "Denmark",
+            "doc_count": 197,
+            "Firebase": {
+                "doc_count": 52
+            },
+            "REST API": {
+                "doc_count": 165
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 8
+            },
+            "Apollo": {
+                "doc_count": 14
+            },
+            "Redux": {
+                "doc_count": 82
+            },
+            "GraphQL": {
+                "doc_count": 34
+            },
+            "Falcor": {
+                "doc_count": 1
+            },
+            "MobX": {
+                "doc_count": 8
+            }
+        },
+        {
+            "key": "Mexico",
+            "doc_count": 167,
+            "Firebase": {
+                "doc_count": 56
+            },
+            "REST API": {
+                "doc_count": 138
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 5
+            },
+            "Apollo": {
+                "doc_count": 11
+            },
+            "Redux": {
+                "doc_count": 65
+            },
+            "GraphQL": {
+                "doc_count": 16
+            },
+            "Falcor": {
+                "doc_count": 1
+            },
+            "MobX": {
+                "doc_count": 5
+            }
+        },
+        {
+            "key": "Belgium",
+            "doc_count": 163,
+            "Firebase": {
+                "doc_count": 32
+            },
+            "REST API": {
+                "doc_count": 146
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 2
+            },
+            "Apollo": {
+                "doc_count": 4
+            },
+            "Redux": {
+                "doc_count": 61
+            },
+            "GraphQL": {
+                "doc_count": 14
+            },
+            "Falcor": {
+                "doc_count": 0
+            },
+            "MobX": {
+                "doc_count": 5
+            }
+        },
+        {
+            "key": "Norway",
+            "doc_count": 150,
+            "Firebase": {
+                "doc_count": 34
+            },
+            "REST API": {
+                "doc_count": 138
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 2
+            },
+            "Apollo": {
+                "doc_count": 5
+            },
+            "Redux": {
+                "doc_count": 81
+            },
+            "GraphQL": {
+                "doc_count": 13
+            },
+            "Falcor": {
+                "doc_count": 0
+            },
+            "MobX": {
+                "doc_count": 3
+            }
+        },
+        {
+            "key": "Argentina",
+            "doc_count": 145,
+            "Firebase": {
+                "doc_count": 39
+            },
+            "REST API": {
+                "doc_count": 124
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 1
+            },
+            "Apollo": {
+                "doc_count": 2
+            },
+            "Redux": {
+                "doc_count": 64
+            },
+            "GraphQL": {
+                "doc_count": 12
+            },
+            "Falcor": {
+                "doc_count": 0
+            },
+            "MobX": {
+                "doc_count": 7
+            }
+        },
+        {
+            "key": "New Zealand",
+            "doc_count": 143,
+            "Firebase": {
+                "doc_count": 34
+            },
+            "REST API": {
+                "doc_count": 128
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 5
+            },
+            "Apollo": {
+                "doc_count": 10
+            },
+            "Redux": {
+                "doc_count": 76
+            },
+            "GraphQL": {
+                "doc_count": 19
+            },
+            "Falcor": {
+                "doc_count": 0
+            },
+            "MobX": {
+                "doc_count": 10
+            }
+        },
+        {
+            "key": "Switzerland",
+            "doc_count": 136,
+            "Firebase": {
+                "doc_count": 26
+            },
+            "REST API": {
+                "doc_count": 119
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 2
+            },
+            "Apollo": {
+                "doc_count": 18
+            },
+            "Redux": {
+                "doc_count": 55
+            },
+            "GraphQL": {
+                "doc_count": 21
+            },
+            "Falcor": {
+                "doc_count": 0
+            },
+            "MobX": {
+                "doc_count": 8
+            }
+        },
+        {
+            "key": "Finland",
+            "doc_count": 133,
+            "Firebase": {
+                "doc_count": 35
+            },
+            "REST API": {
+                "doc_count": 121
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 2
+            },
+            "Apollo": {
+                "doc_count": 5
+            },
+            "Redux": {
+                "doc_count": 73
+            },
+            "GraphQL": {
+                "doc_count": 12
+            },
+            "Falcor": {
+                "doc_count": 0
+            },
+            "MobX": {
+                "doc_count": 3
+            }
+        },
+        {
+            "key": "Romania",
+            "doc_count": 132,
+            "Firebase": {
+                "doc_count": 33
+            },
+            "REST API": {
+                "doc_count": 118
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 2
+            },
+            "Apollo": {
+                "doc_count": 4
+            },
+            "Redux": {
+                "doc_count": 57
+            },
+            "GraphQL": {
+                "doc_count": 11
+            },
+            "Falcor": {
+                "doc_count": 0
+            },
+            "MobX": {
+                "doc_count": 3
+            }
+        },
+        {
+            "key": "Israel",
+            "doc_count": 126,
+            "Firebase": {
+                "doc_count": 26
+            },
+            "REST API": {
+                "doc_count": 117
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 2
+            },
+            "Apollo": {
+                "doc_count": 3
+            },
+            "Redux": {
+                "doc_count": 72
+            },
+            "GraphQL": {
+                "doc_count": 14
+            },
+            "Falcor": {
+                "doc_count": 0
+            },
+            "MobX": {
+                "doc_count": 11
+            }
+        },
+        {
+            "key": "Austria",
+            "doc_count": 116,
+            "Firebase": {
+                "doc_count": 18
+            },
+            "REST API": {
+                "doc_count": 104
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 1
+            },
+            "Apollo": {
+                "doc_count": 8
+            },
+            "Redux": {
+                "doc_count": 52
+            },
+            "GraphQL": {
+                "doc_count": 12
+            },
+            "Falcor": {
+                "doc_count": 0
+            },
+            "MobX": {
+                "doc_count": 4
+            }
+        },
+        {
+            "key": "Ireland",
+            "doc_count": 106,
+            "Firebase": {
+                "doc_count": 18
+            },
+            "REST API": {
+                "doc_count": 96
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 2
+            },
+            "Apollo": {
+                "doc_count": 7
+            },
+            "Redux": {
+                "doc_count": 47
+            },
+            "GraphQL": {
+                "doc_count": 12
+            },
+            "Falcor": {
+                "doc_count": 0
+            },
+            "MobX": {
+                "doc_count": 3
+            }
+        },
+        {
+            "key": "Portugal",
+            "doc_count": 105,
+            "Firebase": {
+                "doc_count": 24
+            },
+            "REST API": {
+                "doc_count": 90
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 2
+            },
+            "Apollo": {
+                "doc_count": 4
+            },
+            "Redux": {
+                "doc_count": 41
+            },
+            "GraphQL": {
+                "doc_count": 10
+            },
+            "Falcor": {
+                "doc_count": 0
+            },
+            "MobX": {
+                "doc_count": 4
+            }
+        },
+        {
+            "key": "Belarus",
+            "doc_count": 104,
+            "Firebase": {
+                "doc_count": 15
+            },
+            "REST API": {
+                "doc_count": 91
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 1
+            },
+            "Apollo": {
+                "doc_count": 2
+            },
+            "Redux": {
+                "doc_count": 59
+            },
+            "GraphQL": {
+                "doc_count": 5
+            },
+            "Falcor": {
+                "doc_count": 0
+            },
+            "MobX": {
+                "doc_count": 1
+            }
+        },
+        {
+            "key": "Colombia",
+            "doc_count": 97,
+            "Firebase": {
+                "doc_count": 28
+            },
+            "REST API": {
+                "doc_count": 78
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 4
+            },
+            "Apollo": {
+                "doc_count": 6
+            },
+            "Redux": {
+                "doc_count": 40
+            },
+            "GraphQL": {
+                "doc_count": 13
+            },
+            "Falcor": {
+                "doc_count": 0
+            },
+            "MobX": {
+                "doc_count": 1
+            }
+        },
+        {
+            "key": "China",
+            "doc_count": 96,
+            "Firebase": {
+                "doc_count": 6
+            },
+            "REST API": {
+                "doc_count": 73
+            },
+            "Relay/Relay Modern": {
+                "doc_count": 1
+            },
+            "Apollo": {
+                "doc_count": 6
+            },
+            "Redux": {
+                "doc_count": 45
+            },
+            "GraphQL": {
+                "doc_count": 9
+            },
+            "Falcor": {
+                "doc_count": 0
+            },
+            "MobX": {
+                "doc_count": 16
+            }
+        }
+    ],
     "others": {
         "doc_count_error_upper_bound": 5,
-        "sum_other_doc_count": 852,
+        "sum_other_doc_count": 855,
         "buckets": [
             {
                 "key": "VueX",
@@ -1019,34 +1917,34 @@
             },
             {
                 "key": "realm",
-                "doc_count": 20
+                "doc_count": 19
             },
             {
                 "key": "RethinkDB",
-                "doc_count": 17
+                "doc_count": 18
             },
             {
                 "key": "elm",
-                "doc_count": 17
-            },
-            {
-                "key": "Redis",
-                "doc_count": 15
-            },
-            {
-                "key": "cerebral",
-                "doc_count": 13
+                "doc_count": 18
             },
             {
                 "key": "Gun.js",
-                "doc_count": 12
+                "doc_count": 13
             },
             {
-                "key": "JSON API",
-                "doc_count": 9
+                "key": "Redis",
+                "doc_count": 13
+            },
+            {
+                "key": "cerebral",
+                "doc_count": 11
             },
             {
                 "key": "Contentful",
+                "doc_count": 8
+            },
+            {
+                "key": "JSON API",
                 "doc_count": 8
             },
             {
@@ -1076,23 +1974,329 @@
             "No Front-End Framework"
         ],
         "matrix": [
-            [0, 0, 0, 0, 0, 0, 0, 0, 12382, 4317, 4140, 1048, 4210, 1591, 1112, 313, 8393],
-            [0, 0, 0, 0, 0, 0, 0, 0, 9671, 1558, 1795, 500, 1910, 776, 575, 136, 4061],
-            [0, 0, 0, 0, 0, 0, 0, 0, 1062, 145, 166, 60, 282, 78, 73, 34, 426],
-            [0, 0, 0, 0, 0, 0, 0, 0, 2361, 341, 412, 160, 590, 216, 209, 49, 1101],
-            [0, 0, 0, 0, 0, 0, 0, 0, 496, 52, 71, 34, 84, 48, 41, 10, 213],
-            [0, 0, 0, 0, 0, 0, 0, 0, 59, 16, 21, 9, 15, 9, 8, 4, 36],
-            [0, 0, 0, 0, 0, 0, 0, 0, 1127, 125, 190, 63, 253, 71, 78, 20, 426],
-            [0, 0, 0, 0, 0, 0, 0, 0, 3705, 1299, 1389, 374, 1310, 396, 500, 82, 2316],
-            [12382, 9671, 1062, 2361, 496, 59, 1127, 3705, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [4317, 1558, 145, 341, 52, 16, 125, 1299, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [4140, 1795, 166, 412, 71, 21, 190, 1389, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [1048, 500, 60, 160, 34, 9, 63, 374, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [4210, 1910, 282, 590, 84, 15, 253, 1310, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [1591, 776, 78, 216, 48, 9, 71, 396, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [1112, 575, 73, 209, 41, 8, 78, 500, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [313, 136, 34, 49, 10, 4, 20, 82, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [8393, 4061, 426, 1101, 213, 36, 426, 2316, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                12382,
+                4317,
+                4140,
+                1048,
+                4210,
+                1591,
+                1112,
+                313,
+                8393
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                9671,
+                1558,
+                1795,
+                500,
+                1910,
+                776,
+                575,
+                136,
+                4061
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1062,
+                145,
+                166,
+                60,
+                282,
+                78,
+                73,
+                34,
+                426
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2361,
+                341,
+                412,
+                160,
+                590,
+                216,
+                209,
+                49,
+                1101
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                496,
+                52,
+                71,
+                34,
+                84,
+                48,
+                41,
+                10,
+                213
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                59,
+                16,
+                21,
+                9,
+                15,
+                9,
+                8,
+                4,
+                36
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1127,
+                125,
+                190,
+                63,
+                253,
+                71,
+                78,
+                20,
+                426
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3705,
+                1299,
+                1389,
+                374,
+                1310,
+                396,
+                500,
+                82,
+                2316
+            ],
+            [
+                12382,
+                9671,
+                1062,
+                2361,
+                496,
+                59,
+                1127,
+                3705,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                4317,
+                1558,
+                145,
+                341,
+                52,
+                16,
+                125,
+                1299,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                4140,
+                1795,
+                166,
+                412,
+                71,
+                21,
+                190,
+                1389,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                1048,
+                500,
+                60,
+                160,
+                34,
+                9,
+                63,
+                374,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                4210,
+                1910,
+                282,
+                590,
+                84,
+                15,
+                253,
+                1310,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                1591,
+                776,
+                78,
+                216,
+                48,
+                9,
+                71,
+                396,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                1112,
+                575,
+                73,
+                209,
+                41,
+                8,
+                78,
+                500,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                313,
+                136,
+                34,
+                49,
+                10,
+                4,
+                20,
+                82,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                8393,
+                4061,
+                426,
+                1101,
+                213,
+                36,
+                426,
+                2316,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
         ]
     },
     "frontendSankey": {
