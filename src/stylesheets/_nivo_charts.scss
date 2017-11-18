@@ -33,3 +33,23 @@
         margin: 0;
     }
 }
+
+.Chord--toggle{
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            width: calc((100% - #{$spacing} * 3)/4);
+            margin-right: $spacing;
+            &:nth-child(4n){
+                margin-right: 0;
+            }
+        }
+        label{
+            font-size: $medium-font;
+        }
+    }
+}

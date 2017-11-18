@@ -15,7 +15,7 @@ export default class AffinityChord extends Component {
         const { keys, matrix } = this.props
 
         return (
-            <div style={{ height: 600 }}>
+            <div style={{ height: 800 }}>
                 <ResponsiveChord
                     margin={{
                         top: 80,
@@ -30,7 +30,7 @@ export default class AffinityChord extends Component {
                     labelRotation={-90}
                     ribbonHoverOthersOpacity={0}
                     label={d => truncate(d.id, { length: 10 })}
-                    colors={colorRange}
+                    /*colors={colorRange}*/
                     animate={false}
                     theme={theme}
                 />
