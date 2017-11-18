@@ -19,17 +19,26 @@ coverage
 # node-waf configuration
 .lock-wscript
 
-# Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
+# Builds
+public
 
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
-.gatsby-context.js
-.sass-cache/
 
-public
-
+# Cache
 .cache
+.sass-cache/
+.gatsby-context.js
 
+# IDE
 .idea
+
+# OSX
+.DS_Store
+
+# Secrets
+.env
+
+# docker volumes
+esdata

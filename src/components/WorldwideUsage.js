@@ -1,23 +1,21 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Filters from './Filters'
-import LocationsBar from './charts/LocationsBar'
+import CountryBubble from './charts/CountryBubble'
 import surveyData from '../data/survey.json'
 
 export default class WorldwideUsage extends Component {
     static propTypes = {
-        title: PropTypes.string.isRequired,
+        //title: PropTypes.string.isRequired,
         tools: PropTypes.arrayOf(PropTypes.string).isRequired,
-        defaultTool: PropTypes.string.isRequired,
-        data: PropTypes.object.isRequired,
+        countries: PropTypes.arrayOf(PropTypes.object).isRequired,
     }
 
     constructor(props) {
         super(props)
 
         this.state = {
-            tool: props.defaultTool,
-            mode: 'absolute',
+            tool: null,
         }
     }
 
@@ -25,11 +23,47 @@ export default class WorldwideUsage extends Component {
         this.setState({ tool })
     }
 
-    setMode = mode => {
-        this.setState({ mode })
-    }
-
     render() {
+        const { title, countries, tools } = this.props
+
+        return (
+            <div className="Section">
+                <h3 className="SectionTitle">
+                    <span>{title}</span>
+                </h3>
+                <div className="description">
+                    <p>
+                        Locations where tools have been used & people are
+                        willing to continue to do so.<br/>
+                        Please be aware that those stats only take in account
+                        responses we were able to locate.
+                    </p>
+                </div>
+                <div style={{
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    justifyContent: 'space-between'
+                }}>
+                    {countries.filter(({ key }) => key !== 'undefined').map(country => (
+                        <div key={country.key} style={{
+                            width: '24%',
+                            marginBottom: 30
+                        }}>
+                            <div style={{ height: 220, marginBottom: 12 }}>
+                                <CountryBubble
+                                    keys={tools}
+                                    data={country}
+                                />
+                            </div>
+                            <h4 style={{ textAlign: 'center' }}>{country.key}</h4>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        )
+
+
+        /*
         const { title, data, tools } = this.props
         const { tool, mode } = this.state
 
@@ -49,9 +83,6 @@ export default class WorldwideUsage extends Component {
 
         return (
             <div className="Section">
-                <h3 className="SectionTitle">
-                    <span>{title}</span>
-                </h3>
                 <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
                     <Filters filters={tools} filter={tool} onChange={this.setTool} />
                     <Filters
@@ -61,31 +92,13 @@ export default class WorldwideUsage extends Component {
                     />
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <div style={{ width: '40%' }} className="description">
-                        <p>
-                            Locations where <strong>{tool}</strong> has been used & people are
-                            willing to continue to do so ({stats.doc_count} people).
-                        </p>
-                        <p>
-                            <strong>{tool}</strong> is most used in{' '}
-                            <strong>{buckets[0].key}</strong>.
-                        </p>
-                        <p>
-                            <strong>relative</strong> mode weights counts according to total number
-                            of responses in each location. It gives a more balanced overview as
-                            locations where a lot of people responded to the survey will often
-                            appear on top.
-                        </p>
-                        <p>
-                            Please be aware that those stats only take in account responses we were
-                            able to locate ({ignored.doc_count} responses were ignored).
-                        </p>
-                    </div>
+
                     <div style={{ width: '58%' }}>
                         <LocationsBar locations={buckets} mode={mode} />
                     </div>
                 </div>
             </div>
         )
+        */
     }
 }

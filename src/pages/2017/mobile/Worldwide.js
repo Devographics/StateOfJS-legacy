@@ -2,13 +2,10 @@ import React from 'react'
 import mobileData from '../../../data/mobile.json'
 import WorldwideUsage from '../../../components/WorldwideUsage'
 
-const MobileWorldwide = () => (
+export default () => (
     <WorldwideUsage
         title="Mobile frameworks worldwide usage"
         tools={mobileData.keys}
-        defaultTool="Native Apps"
-        data={mobileData.experienceByUsers}
+        countries={mobileData.countries}
     />
 )
-
-export default MobileWorldwide
