@@ -1,6 +1,6 @@
 import React from 'react'
-import nav from '../../data/nav.json'
-import sections from '../../data/sections.json'
+import nav from '../../data/nav.yaml'
+import sections from '../../data/sections.yaml'
 import _ from 'lodash'
 import slugify from '../../helpers/slugify'
 

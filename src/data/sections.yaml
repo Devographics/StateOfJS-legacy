@@ -1,0 +1,15 @@
+results:
+  label: Results
+  fullLabel: Results
+other:
+  label: Other
+  fullLabel: Other Answers
+affinity:
+  label: Affinity
+  fullLabel: Affinity
+developers:
+  label: Developers
+  fullLabel: Developers
+worldwide:
+  label: Worldwide
+  fullLabel: Worldwide Usage

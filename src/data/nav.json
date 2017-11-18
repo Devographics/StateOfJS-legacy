@@ -92,15 +92,8 @@
       ]
     },
     {
-      "label": "others Tools",
-      "fullLabel": "others Tools",
-      "subPages": [
-        "results",
-        "other",
-        "affinity",
-        "developers",
-        "worldwide"
-      ]
+      "label": "Others Tools",
+      "fullLabel": "Others Tools"
     },
     {
       "label": "Features",

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import OtherToolBar from '../../../components/charts/OtherToolBar'
-import OtherToolBubble from '../../../components/charts/OtherToolBubble'
-import otherToolsData from '../../../data/otherTools.json'
+import OtherToolBar from '../../components/charts/OtherToolBar'
+import OtherToolBubble from '../../components/charts/OtherToolBubble'
+import otherToolsData from '../../data/otherTools.json'
 
 export default class OtherTools extends Component {
     render() {

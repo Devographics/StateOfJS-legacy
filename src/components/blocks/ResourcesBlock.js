@@ -2,7 +2,7 @@ import React from 'react'
 import _ from 'lodash'
 import ReactGA from 'react-ga'
 
-import resources from '../../../data/resources.yaml'
+import resources from '../../../src/data/resources.yaml'
 
 const trackClick = (section, resource, label) => {
   ReactGA.event({

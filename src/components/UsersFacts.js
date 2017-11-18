@@ -154,7 +154,7 @@ export default class UsersFacts extends Component {
                         />
                     </div>
                     <div style={{ width: '48%' }}>
-                        <h4 className="SubSectionTitle">Salary</h4>
+                        <h4 className="SubSectionTitle">Salary <select><option>United States</option></select></h4>
                         <div className="Help">
                             <HelpCircle size={18} /> click on a bar to see all usages for a given
                             salary range.
@@ -167,6 +167,11 @@ export default class UsersFacts extends Component {
                     </div>
                 </div>
                 <div style={{ marginBottom: 60 }}>
+                    {yearsOfExperience === null && salaryRange === null && (
+                        <div className="user-facts-placeholder">
+                            <h3>Please click a bar above</h3>
+                        </div>
+                    )}
                     {yearsOfExperience !== null && (
                         <div>
                             <h4 className="SubSectionTitle">

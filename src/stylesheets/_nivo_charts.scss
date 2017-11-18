@@ -1,3 +1,35 @@
 .chart-wrapper{
 	margin-bottom: $spacing*3;
 }
+
+
+.PieRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.PieRow svg {
+    margin-right: 15px;
+}
+
+.Help {
+    font-size: 13px;
+    color: #6f8183;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+.Help svg {
+    color: rgb(150, 136, 228);
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.user-facts-placeholder{
+    @include flex-center;
+    border: dotted 1px $border-color;
+    min-height: 400px;
+    h3{
+        margin: 0;
+    }
+}

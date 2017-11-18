@@ -19,11 +19,11 @@
 }
 
 .nav-subpages{
-  
+  margin-top: $spacing/2;
 }
 
 .nav-subpage{
-  display: inline-block;
+  display: block;
   margin-right: $spacing/2;
   font-size: $medium-font;
   &, &:link, &:visited{
@@ -33,4 +33,7 @@
 
 .nav-subpage-active{
   @include font-bold;
+  &:before{
+    content: "> ";
+  }
 }

@@ -1,0 +1,104 @@
+- name: ES6 For Everyone
+  section: flavors
+  url: https://ES6.io/friend/STATEOFJS
+  description: A premium training course to strengthen your core JavaScript skills and master all that ES6 has to offer.
+  author: Wes Bos
+  avatar: wes.jpg
+- name: Up and Running with TypeScript
+  section: flavors
+  url: https://egghead.io/courses/up-and-running-with-typescript
+  description: In this course you'll learn about using the TypeScript compiler, configuring your project, definition files, and more.
+  author: John Lindquist
+  avatar: johnlindquist.jpg
+
+- name: React For Beginners
+  section: frontend
+  url: https://ReactForBeginners.com/friend/STATEOFJS
+  description: Upgrade your JavaScript skills, learn React.js in just a couple of afternoons.
+  author: Wes Bos
+  avatar: wes.jpg
+
+- name: Getting Started with Redux
+  section: statemanagement
+  url: https://egghead.io/courses/getting-started-with-redux
+  description: Learn the basics of Redux, so that you can start using it to simplify your applications.
+  author: Dan Abramov
+  avatar: danabramov.jpg
+- name: Manage Complex State in React Apps with MobX
+  section: statemanagement
+  url: https://egghead.io/courses/manage-complex-state-in-react-apps-with-mobx
+  description: MobX is designed to enable building web applications with a complex data model in an intuitive and very performant manner.
+  author: Michel Weststrate
+  avatar: michelweststrate.jpg
+
+- name: Using GraphQL's GraphiQL Tool
+  section: api
+  url: https://egghead.io/lessons/javascript-using-graphql-s-graphiql-tool
+  description: We'll learn how to use GraphQL's GraphiQL tool as an IDE for writing GraphQL queries.
+  author: egghead.io
+  avatar: egghead.png
+- name: Build Your First React.js App
+  section: api
+  url: https://egghead.io/courses/build-your-first-react-js-application
+  description: Let's start from scratch and build a full React application! We will use Firebase to persist data.
+  author: Tyler McGinnis
+  avatar: tylermcginnis.jpg
+
+- name: Getting Started with Express.js
+  section: fullstack
+  url: https://egghead.io/courses/getting-started-with-express-js
+  description: This series will guide you through the first steps of using Express for building your own applications.
+  author: Ben Clinkinbeard
+  avatar: benclinkinbeard.jpg
+
+- name: React Testing Cookbook
+  section: testing
+  url: https://egghead.io/courses/react-testing-cookbook
+  description: In this course we will take a look at testing React applications. From getting setup and running tests, all the way through testing Redux enabled React applications.
+  author: Trevor Miller
+  avatar: trevormiller.jpg
+- name: Unit testing a React component using Jasmine and Webpack
+  section: testing
+  url: https://egghead.io/lessons/react-unit-testing-a-react-component-using-jasmine-and-webpack
+  description: An introduction on unit testing a ReactJS component using Webpack and Jasmine. 
+  author: Simon Bailey
+  avatar: simonbailey.jpg
+
+- name: Flexbox Fundamentals
+  section: css
+  url: https://egghead.io/courses/flexbox-fundamentals
+  description: Flexbox is a wonderful tool that doesn't require any special framework or library. It makes arranging elements on a page almost fun!
+  author: Garth Braithwaite
+  avatar: garthbraithwaite.jpg
+- name: Styling React Components With Aphrodite
+  section: css
+  url: https://egghead.io/lessons/react-styling-react-components-with-aphrodite
+  description: Learn how to use Aphrodite to style reusable React components.
+  author: Jamison Dance
+  avatar: jamisondance.jpg
+
+- name: Using Webpack for Production JavaScript Applications
+  section: buildtools
+  url: https://egghead.io/courses/using-webpack-for-production-javascript-applications
+  description: Webpack is one of the most popular tools for bundling JavaScript applications and libraries, and it's growing more popular every day.
+  author: Kent C. Dodds
+  avatar: kentcdodds.png
+- name: Gulp and Browserify - Initial Setup
+  section: buildtools
+  url: https://egghead.io/lessons/javascript-gulp-and-browserify-initial-setup
+  description: Let's look at the basics of setting up Gulp and Browserify. 
+  author: Shane Osbourne
+  avatar: shaneosbourne.jpg
+
+- name: React Native Fundamentals
+  section: mobile
+  url: https://egghead.io/courses/react-native-fundamentals
+  description: React Native allows you to build native iOS and Android applications in JavaScript and React.js.
+  author: Tyler McGinnis
+  avatar: tylermcginnis.jpg
+- name: Ionic Quickstart for Windows and Mac
+  section: mobile
+  url: https://egghead.io/courses/ionic-quickstart-for-windows
+  description: Welcome to the Ionic Quickstart series where you will learn how to get started with Ionic from the ground up.
+  author: Lukas Ruebbelke
+  avatar: lukasruebbelke.jpg

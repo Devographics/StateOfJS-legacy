@@ -5,7 +5,7 @@ import ExperienceBar from './charts/ExperienceBar'
 
 export default class Experience extends Component {
     static propTypes = {
-        title: PropTypes.string.isRequired,
+        title: PropTypes.string,
         data: PropTypes.array.isRequired,
     }
 

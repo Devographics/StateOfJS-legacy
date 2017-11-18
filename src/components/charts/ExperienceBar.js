@@ -78,7 +78,7 @@ const axisRight = {
     tickPadding: 16,
 }
 const axisBottomFormatter = format('.2s')
-const axisBottom = { format: v => axisBottomFormatter(Math.abs(v)) }
+const axisBottom = { format: v => v }
 
 export default class ExperienceBar extends Component {
     static propTypes = {
@@ -95,9 +95,9 @@ export default class ExperienceBar extends Component {
                 const column = experienceKeys.reduce(
                     (result, key) => {
                         result[key] = d[key]
-                        if (!experienceSatisfactionKeys.includes(key)) {
-                            result[key] *= -1
-                        }
+                        // if (!experienceSatisfactionKeys.includes(key)) {
+                        //     result[key] *= -1
+                        // }
                         return result
                     },
                     { [indexBy]: d[indexBy] }
@@ -112,11 +112,9 @@ export default class ExperienceBar extends Component {
             <div style={{ height: data.length * 60 }}>
                 <ResponsiveBar
                     margin={margin}
-                    layout="horizontal"
+                    layout="vertical"
                     padding={0.6}
                     data={data}
-                    minValue={-25000}
-                    maxValue={25000}
                     keys={keys}
                     indexBy={indexBy}
                     colorBy={colorBy}

@@ -4,7 +4,6 @@ import UsersFacts from '../../../components/UsersFacts'
 
 const FrontendUsers = () => (
     <UsersFacts
-        title="Frontend frameworks users facts"
         tools={frontendData.keys}
         defaultTool="React"
         data={frontendData.experienceByUsers}

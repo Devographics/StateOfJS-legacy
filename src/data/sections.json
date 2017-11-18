@@ -5,7 +5,7 @@
   },
   "other": {
     "label": "Other",
-    "fullLabel": "Other Options"
+    "fullLabel": "Other Answers"
   },
   "affinity": {
     "label": "Affinity",
@@ -17,6 +17,6 @@
   },
   "worldwide": {
     "label": "Worldwide",
-    "fullLabel": "Worldwide"
+    "fullLabel": "Worldwide Usage"
   }
 }
