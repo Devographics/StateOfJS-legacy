@@ -84,10 +84,12 @@ export default class CountryTreeMap extends PureComponent {
 
         return (
             <ResponsiveTreeMapHtml
-                colorBy={getColor}
+                //colorBy={getColor}
+                colorBy="id"
+                colors="d320b"
                 innerPadding={2}
                 leavesOnly={true}
-                labelTextColor="inherit:brighter(1.2)"
+                labelTextColor={colors.greyLight}
                 labelSkipSize={24}
                 nodeComponent={NodeComponent(setCurrentTool)}
                 animate={false}
