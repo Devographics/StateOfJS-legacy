@@ -31,3 +31,5 @@ node_modules
 public
 
 .cache
+
+.idea
