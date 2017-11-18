@@ -27,7 +27,7 @@ export default class Experience extends Component {
                     <span>{title}</span>
                 </h3>
                 <div style={{ marginBottom: 40 }}>{description !== undefined && description}</div>
-                <div>
+                <div className="capture">
                     {/*
                     <Filters
                         filters={['all', 'interest', 'satisfaction']}

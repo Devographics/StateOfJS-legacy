@@ -1,38 +1,31 @@
-# back to language cpp to try to bypass osx node failure
-language: cpp
-sudo: false
-env:
-  - export NODE_VERSION="0.12"
-  - export NODE_VERSION="4"
-  - export NODE_VERSION="5"
-os:
-  - linux
-  - osx
-# pre-install to bring in the correct version of node via nvm
-before_install:
-  - git submodule update --init --recursive
-  - git clone https://github.com/creationix/nvm.git ./.nvm
-  - source ./.nvm/nvm.sh
-  - nvm install $NODE_VERSION
-  - nvm use $NODE_VERSION
-  - npm config set python `which python`
-  - if [ $TRAVIS_OS_NAME == "linux" ]; then
-      export CC="gcc-4.8";
-      export CXX="g++-4.8";
-      export LINK="gcc-4.8";
-      export LINKXX="g++-4.8";
-    fi
-  - gcc --version
-  - g++ --version
-# node 4 depends on gcc 4.8
+language: node_js
+node_js:
+  - '8'
+
+dist:     trusty
 addons:
   apt:
-    sources:
-    - ubuntu-toolchain-r-test
     packages:
-    - g++-4.8
-    - gcc-4.8
-# script needed to test, because defaults don't work on osx
+      # This is required to run new chrome on old trusty
+      - libnss3
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+# allow headful tests
+before_install:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+
+install:
+  - yarn install
+  # puppeteer's install script downloads Chrome
+
 script:
-  - npm install
-  - npm run lint
+  - yarn lint
+  # ensure the project builds correctly
+  - yarn build
+  # ensure the capture works (because it relies on selectors)
+  - cd cli && ./cli capture

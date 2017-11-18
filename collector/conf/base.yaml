@@ -1,9 +1,0 @@
-elastic:
-  host:  localhost
-  port:  9200
-  log:   warning
-  #log:   trace
-  index: soj
-
-type_form:
-  base_url: https://api.typeform.com/v1/form

@@ -127,7 +127,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 50,
+                "doc_count_error_upper_bound": 52,
                 "sum_other_doc_count": 2199,
                 "buckets": [
                     {
@@ -240,7 +240,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 3,
+                "doc_count_error_upper_bound": 2,
                 "sum_other_doc_count": 100,
                 "buckets": [
                     {
@@ -354,7 +354,7 @@
             },
             "by_location": {
                 "doc_count_error_upper_bound": 5,
-                "sum_other_doc_count": 240,
+                "sum_other_doc_count": 239,
                 "buckets": [
                     {
                         "key": "United States",
@@ -394,7 +394,7 @@
                     },
                     {
                         "key": "Russia",
-                        "doc_count": 20
+                        "doc_count": 21
                     }
                 ]
             }
@@ -466,7 +466,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 65,
+                "doc_count_error_upper_bound": 64,
                 "sum_other_doc_count": 3066,
                 "buckets": [
                     {
@@ -579,7 +579,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 111,
+                "doc_count_error_upper_bound": 109,
                 "sum_other_doc_count": 5291,
                 "buckets": [
                     {
@@ -805,7 +805,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 13,
+                "doc_count_error_upper_bound": 11,
                 "sum_other_doc_count": 549,
                 "buckets": [
                     {

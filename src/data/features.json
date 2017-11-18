@@ -85,7 +85,7 @@
     },
     "others": {
         "doc_count_error_upper_bound": 5,
-        "sum_other_doc_count": 453,
+        "sum_other_doc_count": 451,
         "buckets": [
             {
                 "key": "Accessibility",
@@ -100,19 +100,19 @@
                 "doc_count": 4
             },
             {
+                "key": "No",
+                "doc_count": 4
+            },
+            {
+                "key": "Performance",
+                "doc_count": 4
+            },
+            {
                 "key": "?",
                 "doc_count": 3
             },
             {
                 "key": "AOT",
-                "doc_count": 3
-            },
-            {
-                "key": "No",
-                "doc_count": 3
-            },
-            {
-                "key": "Performance",
                 "doc_count": 3
             },
             {
@@ -164,7 +164,7 @@
                 "doc_count": 2
             },
             {
-                "key": "Type safety",
+                "key": "None ",
                 "doc_count": 2
             }
         ]

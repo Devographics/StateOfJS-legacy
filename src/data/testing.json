@@ -232,7 +232,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 23,
+                "doc_count_error_upper_bound": 21,
                 "sum_other_doc_count": 1004,
                 "buckets": [
                     {
@@ -458,7 +458,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 57,
+                "doc_count_error_upper_bound": 54,
                 "sum_other_doc_count": 2516,
                 "buckets": [
                     {
@@ -572,7 +572,7 @@
             },
             "by_location": {
                 "doc_count_error_upper_bound": 5,
-                "sum_other_doc_count": 219,
+                "sum_other_doc_count": 220,
                 "buckets": [
                     {
                         "key": "undefined",
@@ -603,11 +603,11 @@
                         "doc_count": 25
                     },
                     {
-                        "key": "Sweden",
-                        "doc_count": 24
+                        "key": "Canada",
+                        "doc_count": 23
                     },
                     {
-                        "key": "Canada",
+                        "key": "Sweden",
                         "doc_count": 23
                     },
                     {
@@ -684,7 +684,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 29,
+                "doc_count_error_upper_bound": 26,
                 "sum_other_doc_count": 1330,
                 "buckets": [
                     {
@@ -1439,7 +1439,7 @@
     ],
     "others": {
         "doc_count_error_upper_bound": 5,
-        "sum_other_doc_count": 469,
+        "sum_other_doc_count": 467,
         "buckets": [
             {
                 "key": "karma",
@@ -1491,19 +1491,19 @@
             },
             {
                 "key": "intern",
-                "doc_count": 23
-            },
-            {
-                "key": "PhantomJS",
-                "doc_count": 16
+                "doc_count": 22
             },
             {
                 "key": "testcafe",
-                "doc_count": 16
+                "doc_count": 17
+            },
+            {
+                "key": "PhantomJS",
+                "doc_count": 15
             },
             {
                 "key": "jest",
-                "doc_count": 10
+                "doc_count": 12
             },
             {
                 "key": "junit",
@@ -1515,10 +1515,10 @@
             },
             {
                 "key": "Mocha",
-                "doc_count": 4
+                "doc_count": 5
             },
             {
-                "key": "cljs.test",
+                "key": "Nightmare",
                 "doc_count": 4
             }
         ]

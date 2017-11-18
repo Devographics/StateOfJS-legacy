@@ -50,7 +50,7 @@ export default class UsersFacts extends Component {
                 >
                     @todo.
                 </div>
-                <div>
+                <div className="capture">
                     <h4 className="SubSectionTitle">Salary range</h4>
                     <SalariesBar
                         data={salariesData}

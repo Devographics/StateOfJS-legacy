@@ -41,7 +41,7 @@ export default class Others extends Component {
                     <span>{title}</span>
                 </h3>
                 <div>
-                    <div>
+                    <div className="capture">
                         <h4 className="SubSectionTitle">Top mentions</h4>
                         <div className="chart-wrapper" style={{ height: 800 }}>
                             <OthersBar data={others} />
