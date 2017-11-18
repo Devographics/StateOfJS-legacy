@@ -1,12 +1,47 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Filters from './Filters'
 import CountryBubble from './charts/CountryBubble'
-import surveyData from '../data/survey.json'
+import CountryTreeMap from './charts/CountryTreeMap'
+
+const BubbleImplementation = ({ countries, tools, currentTool, setCurrentTool }) => (
+    <div className="worldwide__grid">
+        {countries.filter(({ key }) => key !== 'undefined').map(country => (
+            <div key={country.key} className="worldwide__grid__item">
+                <div className="worldwide__chart">
+                    <CountryBubble
+                        keys={tools}
+                        data={country}
+                        currentTool={currentTool}
+                        setCurrentTool={setCurrentTool}
+                    />
+                </div>
+                <h4 style={{ textAlign: 'center' }}>{country.key}</h4>
+            </div>
+        ))}
+    </div>
+)
+
+const TreeMapImplementation = ({ countries, tools, currentTool, setCurrentTool }) => (
+    <div className="worldwide__grid">
+        {countries.filter(({ key }, i) => key !== 'undefined').map(country => (
+            <div key={country.key} className="worldwide__grid__item">
+                <div className="worldwide__chart">
+                    <CountryTreeMap
+                        keys={tools}
+                        data={country}
+                        currentTool={currentTool}
+                        setCurrentTool={setCurrentTool}
+                    />
+                </div>
+                <h4 style={{ textAlign: 'center' }}>{country.key}</h4>
+            </div>
+        ))}
+    </div>
+)
 
 export default class WorldwideUsage extends Component {
     static propTypes = {
-        //title: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
         tools: PropTypes.arrayOf(PropTypes.string).isRequired,
         countries: PropTypes.arrayOf(PropTypes.object).isRequired,
     }
@@ -25,6 +60,7 @@ export default class WorldwideUsage extends Component {
 
     render() {
         const { title, countries, tools } = this.props
+        const { tool } = this.state
 
         return (
             <div className="Section">
@@ -39,66 +75,24 @@ export default class WorldwideUsage extends Component {
                         responses we were able to locate.
                     </p>
                 </div>
-                <div style={{
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    justifyContent: 'space-between'
-                }}>
-                    {countries.filter(({ key }) => key !== 'undefined').map(country => (
-                        <div key={country.key} style={{
-                            width: '24%',
-                            marginBottom: 30
-                        }}>
-                            <div style={{ height: 220, marginBottom: 12 }}>
-                                <CountryBubble
-                                    keys={tools}
-                                    data={country}
-                                />
-                            </div>
-                            <h4 style={{ textAlign: 'center' }}>{country.key}</h4>
-                        </div>
-                    ))}
-                </div>
+                {/*
+
+                    @todo
+
+                    You can test bubble or treemap implementation for now,
+                    for testing purpose, but once we decide which one we want to use,
+                    the other should be removed.
+
+                    Simply use `BubbleImplementation` or `TreeMapImplementation`.
+
+                */}
+                <TreeMapImplementation
+                    countries={countries}
+                    tools={tools}
+                    currentTool={tool}
+                    setCurrentTool={this.setTool}
+                />
             </div>
         )
-
-
-        /*
-        const { title, data, tools } = this.props
-        const { tool, mode } = this.state
-
-        const stats = data[tool]
-        let buckets = stats.by_location.buckets.filter(({ key }) => key !== 'undefined')
-        const ignored = stats.by_location.buckets.find(({ key }) => key === 'undefined')
-
-        // compute percentage according to total location responses
-        if (mode !== 'absolute') {
-            buckets = buckets
-                .filter(({ key }) => surveyData.location[key] !== undefined)
-                .map(({ key, doc_count }) => ({
-                    key,
-                    doc_count: Math.round(doc_count / surveyData.location[key] * 100),
-                }))
-        }
-
-        return (
-            <div className="Section">
-                <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
-                    <Filters filters={tools} filter={tool} onChange={this.setTool} />
-                    <Filters
-                        filters={['absolute', 'relative (%)']}
-                        filter={mode}
-                        onChange={this.setMode}
-                    />
-                </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-
-                    <div style={{ width: '58%' }}>
-                        <LocationsBar locations={buckets} mode={mode} />
-                    </div>
-                </div>
-            </div>
-        )
-        */
     }
 }
