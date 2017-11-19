@@ -32,7 +32,6 @@
     "gatsby-transformer-remark": "^1.0.0-beta.6",
     "highlight.js": "^9.6.0",
     "history": "^2.0.2",
-    "js-yaml": "^3.6.0",
     "lodash": "^4.15.0",
     "markdown-it": "^7.0.1",
     "markdown-it-abbr": "^1.0.3",

@@ -5653,7 +5653,7 @@ js-yaml@^3.10.0, js-yaml@^3.4.6, js-yaml@^3.5.2, js-yaml@^3.8.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-js-yaml@^3.5.1, js-yaml@^3.5.5, js-yaml@^3.6.0:
+js-yaml@^3.5.1, js-yaml@^3.5.5:
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.9.0.tgz#4ffbbf25c2ac963b8299dc74da7e3740de1c18ce"
   dependencies:

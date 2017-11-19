@@ -3,7 +3,7 @@ const cheerio = require('cheerio')
 const CloudConvert = require('cloudconvert')
 const stream = require('stream')
 
-const nav = require('./src/data/nav.yaml')
+const nav = require('./src/data/nav.json')
 
 const cloudconvert = new CloudConvert('AgdEGASfC2FDKiTMeaGgBnol1uZ7mzf57TXO7NearQ2dcaj7AGsc2rHqsFr8plYN-1gH3mr1MWNVhUMiYr04Fw')
 
