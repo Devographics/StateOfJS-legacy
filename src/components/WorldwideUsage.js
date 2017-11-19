@@ -1,23 +1,56 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Filters from './Filters'
-import LocationsBar from './charts/LocationsBar'
-import surveyData from '../data/survey.json'
+import CountryBubble from './charts/CountryBubble'
+import CountryTreeMap from './charts/CountryTreeMap'
+
+const BubbleImplementation = ({ countries, tools, currentTool, setCurrentTool }) => (
+    <div className="worldwide__grid">
+        {countries.filter(({ key }) => key !== 'undefined').map(country => (
+            <div key={country.key} className="worldwide__grid__item">
+                <div className="worldwide__chart">
+                    <CountryBubble
+                        keys={tools}
+                        data={country}
+                        currentTool={currentTool}
+                        setCurrentTool={setCurrentTool}
+                    />
+                </div>
+                <h4 style={{ textAlign: 'center' }}>{country.key}</h4>
+            </div>
+        ))}
+    </div>
+)
+
+const TreeMapImplementation = ({ countries, tools, currentTool, setCurrentTool }) => (
+    <div className="worldwide__grid">
+        {countries.filter(({ key }, i) => key !== 'undefined').map(country => (
+            <div key={country.key} className="worldwide__grid__item">
+                <div className="worldwide__chart">
+                    <CountryTreeMap
+                        keys={tools}
+                        data={country}
+                        currentTool={currentTool}
+                        setCurrentTool={setCurrentTool}
+                    />
+                </div>
+                <h4 style={{ textAlign: 'center' }}>{country.key}</h4>
+            </div>
+        ))}
+    </div>
+)
 
 export default class WorldwideUsage extends Component {
     static propTypes = {
         title: PropTypes.string.isRequired,
         tools: PropTypes.arrayOf(PropTypes.string).isRequired,
-        defaultTool: PropTypes.string.isRequired,
-        data: PropTypes.object.isRequired,
+        countries: PropTypes.arrayOf(PropTypes.object).isRequired,
     }
 
     constructor(props) {
         super(props)
 
         this.state = {
-            tool: props.defaultTool,
-            mode: 'absolute',
+            tool: null,
         }
     }
 
@@ -25,66 +58,40 @@ export default class WorldwideUsage extends Component {
         this.setState({ tool })
     }
 
-    setMode = mode => {
-        this.setState({ mode })
-    }
-
     render() {
-        const { title, data, tools } = this.props
-        const { tool, mode } = this.state
-
-        const stats = data[tool]
-        let buckets = stats.by_location.buckets.filter(({ key }) => key !== 'undefined')
-        const ignored = stats.by_location.buckets.find(({ key }) => key === 'undefined')
-
-        // compute percentage according to total location responses
-        if (mode !== 'absolute') {
-            buckets = buckets
-                .filter(({ key }) => surveyData.location[key] !== undefined)
-                .map(({ key, doc_count }) => ({
-                    key,
-                    doc_count: Math.round(doc_count / surveyData.location[key] * 100),
-                }))
-        }
+        const { title, countries, tools } = this.props
+        const { tool } = this.state
 
         return (
             <div className="Section">
                 <h3 className="SectionTitle">
                     <span>{title}</span>
                 </h3>
-                <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
-                    <Filters filters={tools} filter={tool} onChange={this.setTool} />
-                    <Filters
-                        filters={['absolute', 'relative (%)']}
-                        filter={mode}
-                        onChange={this.setMode}
-                    />
+                <div className="description">
+                    <p>
+                        Locations where tools have been used & people are willing to continue to do
+                        so.<br />
+                        Please be aware that those stats only take in account responses we were able
+                        to locate.
+                    </p>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <div style={{ width: '40%' }} className="description">
-                        <p>
-                            Locations where <strong>{tool}</strong> has been used & people are
-                            willing to continue to do so ({stats.doc_count} people).
-                        </p>
-                        <p>
-                            <strong>{tool}</strong> is most used in{' '}
-                            <strong>{buckets[0].key}</strong>.
-                        </p>
-                        <p>
-                            <strong>relative</strong> mode weights counts according to total number
-                            of responses in each location. It gives a more balanced overview as
-                            locations where a lot of people responded to the survey will often
-                            appear on top.
-                        </p>
-                        <p>
-                            Please be aware that those stats only take in account responses we were
-                            able to locate ({ignored.doc_count} responses were ignored).
-                        </p>
-                    </div>
-                    <div style={{ width: '58%' }}>
-                        <LocationsBar locations={buckets} mode={mode} />
-                    </div>
-                </div>
+                {/*
+
+                    @todo
+
+                    You can test bubble or treemap implementation for now,
+                    for testing purpose, but once we decide which one we want to use,
+                    the other should be removed.
+
+                    Simply use `BubbleImplementation` or `TreeMapImplementation`.
+
+                */}
+                <TreeMapImplementation
+                    countries={countries}
+                    tools={tools}
+                    currentTool={tool}
+                    setCurrentTool={this.setTool}
+                />
             </div>
         )
     }

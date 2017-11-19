@@ -9,22 +9,22 @@ const data = dto.experience(frontendData.experience)
 
 const FrontendExperience = () => (
     <div>
-    <Experience
-        data={data}
-        description={
-            <div className="description">
-                <p>
-                    The battle for JavaScript mindshare is clearly led by front-end frameworks, and
-                    this comes through in the survey results: apart from relative newcomer Aurelia,
-                    every option here stands at over high awareness.
-                </p>
-            </div>
-        }
-    />
+        <Experience
+            data={data}
+            description={
+                <div className="description">
+                    <p>
+                        The battle for JavaScript mindshare is clearly led by front-end frameworks,
+                        and this comes through in the survey results: apart from relative newcomer
+                        Aurelia, every option here stands at over high awareness.
+                    </p>
+                </div>
+            }
+        />
 
-    <ShareChart section="frontend" />
+        <ShareChart section="frontend" />
 
-    <ResourcesBlock section="frontend" sponsor="reactforbeginners" />
+        <ResourcesBlock section="frontend" sponsor="reactforbeginners" />
     </div>
 )
 

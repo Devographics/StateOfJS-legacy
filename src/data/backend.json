@@ -1,5 +1,14 @@
 {
-    "keys": ["Meteor", "Express", "Koa", "Hapi", "FeathersJS", "Sails", "Loopback", "Keystone"],
+    "keys": [
+        "Meteor",
+        "Express",
+        "Koa",
+        "Hapi",
+        "FeathersJS",
+        "Sails",
+        "Loopback",
+        "Keystone"
+    ],
     "experience": {
         "Hapi": {
             "I've never heard of it": 13397,
@@ -126,7 +135,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 9,
+                "doc_count_error_upper_bound": 10,
                 "sum_other_doc_count": 333,
                 "buckets": [
                     {
@@ -239,7 +248,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 76,
+                "doc_count_error_upper_bound": 74,
                 "sum_other_doc_count": 3643,
                 "buckets": [
                     {
@@ -466,7 +475,7 @@
             },
             "by_location": {
                 "doc_count_error_upper_bound": 5,
-                "sum_other_doc_count": 147,
+                "sum_other_doc_count": 145,
                 "buckets": [
                     {
                         "key": "United States",
@@ -490,7 +499,7 @@
                     },
                     {
                         "key": "United Kingdom",
-                        "doc_count": 16
+                        "doc_count": 18
                     },
                     {
                         "key": "Brazil",
@@ -505,7 +514,7 @@
                         "doc_count": 10
                     },
                     {
-                        "key": "Poland",
+                        "key": "Spain",
                         "doc_count": 10
                     }
                 ]
@@ -805,7 +814,7 @@
             },
             "by_location": {
                 "doc_count_error_upper_bound": 5,
-                "sum_other_doc_count": 174,
+                "sum_other_doc_count": 175,
                 "buckets": [
                     {
                         "key": "United States",
@@ -837,7 +846,7 @@
                     },
                     {
                         "key": "India",
-                        "doc_count": 15
+                        "doc_count": 14
                     },
                     {
                         "key": "Brazil",
@@ -917,7 +926,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 4,
+                "doc_count_error_upper_bound": 3,
                 "sum_other_doc_count": 109,
                 "buckets": [
                     {
@@ -964,9 +973,907 @@
             }
         }
     },
+    "countries": [
+        {
+            "key": "undefined",
+            "doc_count": 5839,
+            "Hapi": {
+                "doc_count": 374
+            },
+            "Express": {
+                "doc_count": 3512
+            },
+            "Keystone": {
+                "doc_count": 63
+            },
+            "Loopback": {
+                "doc_count": 94
+            },
+            "Meteor": {
+                "doc_count": 371
+            },
+            "Koa": {
+                "doc_count": 660
+            },
+            "Sails": {
+                "doc_count": 123
+            },
+            "FeathersJS": {
+                "doc_count": 117
+            }
+        },
+        {
+            "key": "United States",
+            "doc_count": 5719,
+            "Hapi": {
+                "doc_count": 437
+            },
+            "Express": {
+                "doc_count": 3707
+            },
+            "Keystone": {
+                "doc_count": 75
+            },
+            "Loopback": {
+                "doc_count": 96
+            },
+            "Meteor": {
+                "doc_count": 407
+            },
+            "Koa": {
+                "doc_count": 481
+            },
+            "Sails": {
+                "doc_count": 154
+            },
+            "FeathersJS": {
+                "doc_count": 97
+            }
+        },
+        {
+            "key": "United Kingdom",
+            "doc_count": 1409,
+            "Hapi": {
+                "doc_count": 107
+            },
+            "Express": {
+                "doc_count": 884
+            },
+            "Keystone": {
+                "doc_count": 20
+            },
+            "Loopback": {
+                "doc_count": 18
+            },
+            "Meteor": {
+                "doc_count": 77
+            },
+            "Koa": {
+                "doc_count": 118
+            },
+            "Sails": {
+                "doc_count": 34
+            },
+            "FeathersJS": {
+                "doc_count": 20
+            }
+        },
+        {
+            "key": "Germany",
+            "doc_count": 879,
+            "Hapi": {
+                "doc_count": 50
+            },
+            "Express": {
+                "doc_count": 523
+            },
+            "Keystone": {
+                "doc_count": 12
+            },
+            "Loopback": {
+                "doc_count": 19
+            },
+            "Meteor": {
+                "doc_count": 59
+            },
+            "Koa": {
+                "doc_count": 70
+            },
+            "Sails": {
+                "doc_count": 30
+            },
+            "FeathersJS": {
+                "doc_count": 16
+            }
+        },
+        {
+            "key": "Canada",
+            "doc_count": 771,
+            "Hapi": {
+                "doc_count": 28
+            },
+            "Express": {
+                "doc_count": 469
+            },
+            "Keystone": {
+                "doc_count": 9
+            },
+            "Loopback": {
+                "doc_count": 12
+            },
+            "Meteor": {
+                "doc_count": 70
+            },
+            "Koa": {
+                "doc_count": 53
+            },
+            "Sails": {
+                "doc_count": 20
+            },
+            "FeathersJS": {
+                "doc_count": 25
+            }
+        },
+        {
+            "key": "France",
+            "doc_count": 695,
+            "Hapi": {
+                "doc_count": 68
+            },
+            "Express": {
+                "doc_count": 438
+            },
+            "Keystone": {
+                "doc_count": 8
+            },
+            "Loopback": {
+                "doc_count": 20
+            },
+            "Meteor": {
+                "doc_count": 57
+            },
+            "Koa": {
+                "doc_count": 77
+            },
+            "Sails": {
+                "doc_count": 30
+            },
+            "FeathersJS": {
+                "doc_count": 14
+            }
+        },
+        {
+            "key": "India",
+            "doc_count": 500,
+            "Hapi": {
+                "doc_count": 38
+            },
+            "Express": {
+                "doc_count": 305
+            },
+            "Keystone": {
+                "doc_count": 6
+            },
+            "Loopback": {
+                "doc_count": 18
+            },
+            "Meteor": {
+                "doc_count": 31
+            },
+            "Koa": {
+                "doc_count": 28
+            },
+            "Sails": {
+                "doc_count": 15
+            },
+            "FeathersJS": {
+                "doc_count": 10
+            }
+        },
+        {
+            "key": "Australia",
+            "doc_count": 492,
+            "Hapi": {
+                "doc_count": 34
+            },
+            "Express": {
+                "doc_count": 313
+            },
+            "Keystone": {
+                "doc_count": 23
+            },
+            "Loopback": {
+                "doc_count": 10
+            },
+            "Meteor": {
+                "doc_count": 35
+            },
+            "Koa": {
+                "doc_count": 39
+            },
+            "Sails": {
+                "doc_count": 8
+            },
+            "FeathersJS": {
+                "doc_count": 14
+            }
+        },
+        {
+            "key": "Netherlands",
+            "doc_count": 449,
+            "Hapi": {
+                "doc_count": 17
+            },
+            "Express": {
+                "doc_count": 262
+            },
+            "Keystone": {
+                "doc_count": 7
+            },
+            "Loopback": {
+                "doc_count": 8
+            },
+            "Meteor": {
+                "doc_count": 35
+            },
+            "Koa": {
+                "doc_count": 34
+            },
+            "Sails": {
+                "doc_count": 8
+            },
+            "FeathersJS": {
+                "doc_count": 6
+            }
+        },
+        {
+            "key": "Brazil",
+            "doc_count": 437,
+            "Hapi": {
+                "doc_count": 36
+            },
+            "Express": {
+                "doc_count": 276
+            },
+            "Keystone": {
+                "doc_count": 4
+            },
+            "Loopback": {
+                "doc_count": 12
+            },
+            "Meteor": {
+                "doc_count": 32
+            },
+            "Koa": {
+                "doc_count": 42
+            },
+            "Sails": {
+                "doc_count": 13
+            },
+            "FeathersJS": {
+                "doc_count": 13
+            }
+        },
+        {
+            "key": "Poland",
+            "doc_count": 420,
+            "Hapi": {
+                "doc_count": 45
+            },
+            "Express": {
+                "doc_count": 240
+            },
+            "Keystone": {
+                "doc_count": 7
+            },
+            "Loopback": {
+                "doc_count": 10
+            },
+            "Meteor": {
+                "doc_count": 25
+            },
+            "Koa": {
+                "doc_count": 28
+            },
+            "Sails": {
+                "doc_count": 8
+            },
+            "FeathersJS": {
+                "doc_count": 6
+            }
+        },
+        {
+            "key": "Spain",
+            "doc_count": 413,
+            "Hapi": {
+                "doc_count": 16
+            },
+            "Express": {
+                "doc_count": 268
+            },
+            "Keystone": {
+                "doc_count": 2
+            },
+            "Loopback": {
+                "doc_count": 11
+            },
+            "Meteor": {
+                "doc_count": 23
+            },
+            "Koa": {
+                "doc_count": 22
+            },
+            "Sails": {
+                "doc_count": 18
+            },
+            "FeathersJS": {
+                "doc_count": 7
+            }
+        },
+        {
+            "key": "Russia",
+            "doc_count": 379,
+            "Hapi": {
+                "doc_count": 14
+            },
+            "Express": {
+                "doc_count": 221
+            },
+            "Keystone": {
+                "doc_count": 5
+            },
+            "Loopback": {
+                "doc_count": 7
+            },
+            "Meteor": {
+                "doc_count": 7
+            },
+            "Koa": {
+                "doc_count": 48
+            },
+            "Sails": {
+                "doc_count": 6
+            },
+            "FeathersJS": {
+                "doc_count": 6
+            }
+        },
+        {
+            "key": "Sweden",
+            "doc_count": 330,
+            "Hapi": {
+                "doc_count": 31
+            },
+            "Express": {
+                "doc_count": 213
+            },
+            "Keystone": {
+                "doc_count": 6
+            },
+            "Loopback": {
+                "doc_count": 4
+            },
+            "Meteor": {
+                "doc_count": 19
+            },
+            "Koa": {
+                "doc_count": 38
+            },
+            "Sails": {
+                "doc_count": 8
+            },
+            "FeathersJS": {
+                "doc_count": 4
+            }
+        },
+        {
+            "key": "Italy",
+            "doc_count": 251,
+            "Hapi": {
+                "doc_count": 14
+            },
+            "Express": {
+                "doc_count": 146
+            },
+            "Keystone": {
+                "doc_count": 1
+            },
+            "Loopback": {
+                "doc_count": 6
+            },
+            "Meteor": {
+                "doc_count": 13
+            },
+            "Koa": {
+                "doc_count": 16
+            },
+            "Sails": {
+                "doc_count": 10
+            },
+            "FeathersJS": {
+                "doc_count": 3
+            }
+        },
+        {
+            "key": "Ukraine",
+            "doc_count": 242,
+            "Hapi": {
+                "doc_count": 7
+            },
+            "Express": {
+                "doc_count": 133
+            },
+            "Keystone": {
+                "doc_count": 4
+            },
+            "Loopback": {
+                "doc_count": 5
+            },
+            "Meteor": {
+                "doc_count": 14
+            },
+            "Koa": {
+                "doc_count": 23
+            },
+            "Sails": {
+                "doc_count": 5
+            },
+            "FeathersJS": {
+                "doc_count": 5
+            }
+        },
+        {
+            "key": "Denmark",
+            "doc_count": 197,
+            "Hapi": {
+                "doc_count": 6
+            },
+            "Express": {
+                "doc_count": 101
+            },
+            "Keystone": {
+                "doc_count": 2
+            },
+            "Loopback": {
+                "doc_count": 2
+            },
+            "Meteor": {
+                "doc_count": 8
+            },
+            "Koa": {
+                "doc_count": 21
+            },
+            "Sails": {
+                "doc_count": 3
+            },
+            "FeathersJS": {
+                "doc_count": 1
+            }
+        },
+        {
+            "key": "Mexico",
+            "doc_count": 167,
+            "Hapi": {
+                "doc_count": 21
+            },
+            "Express": {
+                "doc_count": 108
+            },
+            "Keystone": {
+                "doc_count": 4
+            },
+            "Loopback": {
+                "doc_count": 4
+            },
+            "Meteor": {
+                "doc_count": 16
+            },
+            "Koa": {
+                "doc_count": 10
+            },
+            "Sails": {
+                "doc_count": 12
+            },
+            "FeathersJS": {
+                "doc_count": 3
+            }
+        },
+        {
+            "key": "Belgium",
+            "doc_count": 163,
+            "Hapi": {
+                "doc_count": 7
+            },
+            "Express": {
+                "doc_count": 91
+            },
+            "Keystone": {
+                "doc_count": 7
+            },
+            "Loopback": {
+                "doc_count": 2
+            },
+            "Meteor": {
+                "doc_count": 15
+            },
+            "Koa": {
+                "doc_count": 11
+            },
+            "Sails": {
+                "doc_count": 6
+            },
+            "FeathersJS": {
+                "doc_count": 0
+            }
+        },
+        {
+            "key": "Norway",
+            "doc_count": 150,
+            "Hapi": {
+                "doc_count": 7
+            },
+            "Express": {
+                "doc_count": 82
+            },
+            "Keystone": {
+                "doc_count": 1
+            },
+            "Loopback": {
+                "doc_count": 0
+            },
+            "Meteor": {
+                "doc_count": 10
+            },
+            "Koa": {
+                "doc_count": 12
+            },
+            "Sails": {
+                "doc_count": 1
+            },
+            "FeathersJS": {
+                "doc_count": 1
+            }
+        },
+        {
+            "key": "Argentina",
+            "doc_count": 145,
+            "Hapi": {
+                "doc_count": 11
+            },
+            "Express": {
+                "doc_count": 98
+            },
+            "Keystone": {
+                "doc_count": 1
+            },
+            "Loopback": {
+                "doc_count": 1
+            },
+            "Meteor": {
+                "doc_count": 10
+            },
+            "Koa": {
+                "doc_count": 10
+            },
+            "Sails": {
+                "doc_count": 5
+            },
+            "FeathersJS": {
+                "doc_count": 6
+            }
+        },
+        {
+            "key": "New Zealand",
+            "doc_count": 143,
+            "Hapi": {
+                "doc_count": 13
+            },
+            "Express": {
+                "doc_count": 70
+            },
+            "Keystone": {
+                "doc_count": 1
+            },
+            "Loopback": {
+                "doc_count": 3
+            },
+            "Meteor": {
+                "doc_count": 4
+            },
+            "Koa": {
+                "doc_count": 25
+            },
+            "Sails": {
+                "doc_count": 1
+            },
+            "FeathersJS": {
+                "doc_count": 2
+            }
+        },
+        {
+            "key": "Switzerland",
+            "doc_count": 136,
+            "Hapi": {
+                "doc_count": 3
+            },
+            "Express": {
+                "doc_count": 69
+            },
+            "Keystone": {
+                "doc_count": 2
+            },
+            "Loopback": {
+                "doc_count": 1
+            },
+            "Meteor": {
+                "doc_count": 16
+            },
+            "Koa": {
+                "doc_count": 15
+            },
+            "Sails": {
+                "doc_count": 0
+            },
+            "FeathersJS": {
+                "doc_count": 5
+            }
+        },
+        {
+            "key": "Finland",
+            "doc_count": 133,
+            "Hapi": {
+                "doc_count": 10
+            },
+            "Express": {
+                "doc_count": 81
+            },
+            "Keystone": {
+                "doc_count": 2
+            },
+            "Loopback": {
+                "doc_count": 0
+            },
+            "Meteor": {
+                "doc_count": 9
+            },
+            "Koa": {
+                "doc_count": 9
+            },
+            "Sails": {
+                "doc_count": 4
+            },
+            "FeathersJS": {
+                "doc_count": 3
+            }
+        },
+        {
+            "key": "Romania",
+            "doc_count": 132,
+            "Hapi": {
+                "doc_count": 6
+            },
+            "Express": {
+                "doc_count": 76
+            },
+            "Keystone": {
+                "doc_count": 0
+            },
+            "Loopback": {
+                "doc_count": 0
+            },
+            "Meteor": {
+                "doc_count": 10
+            },
+            "Koa": {
+                "doc_count": 8
+            },
+            "Sails": {
+                "doc_count": 1
+            },
+            "FeathersJS": {
+                "doc_count": 0
+            }
+        },
+        {
+            "key": "Israel",
+            "doc_count": 126,
+            "Hapi": {
+                "doc_count": 6
+            },
+            "Express": {
+                "doc_count": 86
+            },
+            "Keystone": {
+                "doc_count": 0
+            },
+            "Loopback": {
+                "doc_count": 2
+            },
+            "Meteor": {
+                "doc_count": 4
+            },
+            "Koa": {
+                "doc_count": 12
+            },
+            "Sails": {
+                "doc_count": 3
+            },
+            "FeathersJS": {
+                "doc_count": 2
+            }
+        },
+        {
+            "key": "Austria",
+            "doc_count": 116,
+            "Hapi": {
+                "doc_count": 9
+            },
+            "Express": {
+                "doc_count": 70
+            },
+            "Keystone": {
+                "doc_count": 0
+            },
+            "Loopback": {
+                "doc_count": 3
+            },
+            "Meteor": {
+                "doc_count": 12
+            },
+            "Koa": {
+                "doc_count": 12
+            },
+            "Sails": {
+                "doc_count": 2
+            },
+            "FeathersJS": {
+                "doc_count": 1
+            }
+        },
+        {
+            "key": "Ireland",
+            "doc_count": 106,
+            "Hapi": {
+                "doc_count": 6
+            },
+            "Express": {
+                "doc_count": 66
+            },
+            "Keystone": {
+                "doc_count": 0
+            },
+            "Loopback": {
+                "doc_count": 3
+            },
+            "Meteor": {
+                "doc_count": 6
+            },
+            "Koa": {
+                "doc_count": 8
+            },
+            "Sails": {
+                "doc_count": 3
+            },
+            "FeathersJS": {
+                "doc_count": 1
+            }
+        },
+        {
+            "key": "Portugal",
+            "doc_count": 105,
+            "Hapi": {
+                "doc_count": 6
+            },
+            "Express": {
+                "doc_count": 58
+            },
+            "Keystone": {
+                "doc_count": 0
+            },
+            "Loopback": {
+                "doc_count": 2
+            },
+            "Meteor": {
+                "doc_count": 11
+            },
+            "Koa": {
+                "doc_count": 11
+            },
+            "Sails": {
+                "doc_count": 3
+            },
+            "FeathersJS": {
+                "doc_count": 1
+            }
+        },
+        {
+            "key": "Belarus",
+            "doc_count": 104,
+            "Hapi": {
+                "doc_count": 7
+            },
+            "Express": {
+                "doc_count": 63
+            },
+            "Keystone": {
+                "doc_count": 0
+            },
+            "Loopback": {
+                "doc_count": 1
+            },
+            "Meteor": {
+                "doc_count": 4
+            },
+            "Koa": {
+                "doc_count": 17
+            },
+            "Sails": {
+                "doc_count": 5
+            },
+            "FeathersJS": {
+                "doc_count": 1
+            }
+        },
+        {
+            "key": "Colombia",
+            "doc_count": 97,
+            "Hapi": {
+                "doc_count": 5
+            },
+            "Express": {
+                "doc_count": 55
+            },
+            "Keystone": {
+                "doc_count": 2
+            },
+            "Loopback": {
+                "doc_count": 2
+            },
+            "Meteor": {
+                "doc_count": 3
+            },
+            "Koa": {
+                "doc_count": 4
+            },
+            "Sails": {
+                "doc_count": 8
+            },
+            "FeathersJS": {
+                "doc_count": 3
+            }
+        },
+        {
+            "key": "China",
+            "doc_count": 96,
+            "Hapi": {
+                "doc_count": 5
+            },
+            "Express": {
+                "doc_count": 64
+            },
+            "Keystone": {
+                "doc_count": 2
+            },
+            "Loopback": {
+                "doc_count": 3
+            },
+            "Meteor": {
+                "doc_count": 4
+            },
+            "Koa": {
+                "doc_count": 44
+            },
+            "Sails": {
+                "doc_count": 2
+            },
+            "FeathersJS": {
+                "doc_count": 1
+            }
+        }
+    ],
     "others": {
         "doc_count_error_upper_bound": 5,
-        "sum_other_doc_count": 775,
+        "sum_other_doc_count": 776,
         "buckets": [
             {
                 "key": "Node.js",
@@ -1006,7 +1913,7 @@
             },
             {
                 "key": "elixir",
-                "doc_count": 42
+                "doc_count": 41
             },
             {
                 "key": "python",
@@ -1038,7 +1945,7 @@
             },
             {
                 "key": "firebase",
-                "doc_count": 18
+                "doc_count": 19
             },
             {
                 "key": "GraphQL",
@@ -1046,7 +1953,7 @@
             },
             {
                 "key": "Kraken",
-                "doc_count": 9
+                "doc_count": 8
             }
         ]
     }

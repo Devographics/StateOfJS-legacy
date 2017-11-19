@@ -127,7 +127,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 49,
+                "doc_count_error_upper_bound": 52,
                 "sum_other_doc_count": 2199,
                 "buckets": [
                     {
@@ -240,7 +240,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 3,
+                "doc_count_error_upper_bound": 2,
                 "sum_other_doc_count": 100,
                 "buckets": [
                     {
@@ -466,7 +466,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 68,
+                "doc_count_error_upper_bound": 64,
                 "sum_other_doc_count": 3066,
                 "buckets": [
                     {
@@ -579,7 +579,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 115,
+                "doc_count_error_upper_bound": 109,
                 "sum_other_doc_count": 5291,
                 "buckets": [
                     {
@@ -805,7 +805,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 12,
+                "doc_count_error_upper_bound": 11,
                 "sum_other_doc_count": 549,
                 "buckets": [
                     {
@@ -852,6 +852,808 @@
             }
         }
     },
+    "countries": [
+        {
+            "key": "undefined",
+            "doc_count": 5839,
+            "TypeScript": {
+                "doc_count": 1943
+            },
+            "ClojureScript": {
+                "doc_count": 162
+            },
+            "Elm": {
+                "doc_count": 346
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 2949
+            },
+            "ES6": {
+                "doc_count": 5148
+            },
+            "Reason": {
+                "doc_count": 25
+            },
+            "Flow": {
+                "doc_count": 613
+            }
+        },
+        {
+            "key": "United States",
+            "doc_count": 5719,
+            "TypeScript": {
+                "doc_count": 1827
+            },
+            "ClojureScript": {
+                "doc_count": 141
+            },
+            "Elm": {
+                "doc_count": 351
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 3375
+            },
+            "ES6": {
+                "doc_count": 5069
+            },
+            "Reason": {
+                "doc_count": 47
+            },
+            "Flow": {
+                "doc_count": 594
+            }
+        },
+        {
+            "key": "United Kingdom",
+            "doc_count": 1409,
+            "TypeScript": {
+                "doc_count": 423
+            },
+            "ClojureScript": {
+                "doc_count": 29
+            },
+            "Elm": {
+                "doc_count": 75
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 847
+            },
+            "ES6": {
+                "doc_count": 1218
+            },
+            "Reason": {
+                "doc_count": 8
+            },
+            "Flow": {
+                "doc_count": 153
+            }
+        },
+        {
+            "key": "Germany",
+            "doc_count": 879,
+            "TypeScript": {
+                "doc_count": 324
+            },
+            "ClojureScript": {
+                "doc_count": 27
+            },
+            "Elm": {
+                "doc_count": 45
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 422
+            },
+            "ES6": {
+                "doc_count": 744
+            },
+            "Reason": {
+                "doc_count": 4
+            },
+            "Flow": {
+                "doc_count": 83
+            }
+        },
+        {
+            "key": "Canada",
+            "doc_count": 771,
+            "TypeScript": {
+                "doc_count": 242
+            },
+            "ClojureScript": {
+                "doc_count": 8
+            },
+            "Elm": {
+                "doc_count": 19
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 466
+            },
+            "ES6": {
+                "doc_count": 658
+            },
+            "Reason": {
+                "doc_count": 1
+            },
+            "Flow": {
+                "doc_count": 71
+            }
+        },
+        {
+            "key": "France",
+            "doc_count": 695,
+            "TypeScript": {
+                "doc_count": 226
+            },
+            "ClojureScript": {
+                "doc_count": 7
+            },
+            "Elm": {
+                "doc_count": 28
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 311
+            },
+            "ES6": {
+                "doc_count": 618
+            },
+            "Reason": {
+                "doc_count": 7
+            },
+            "Flow": {
+                "doc_count": 70
+            }
+        },
+        {
+            "key": "India",
+            "doc_count": 500,
+            "TypeScript": {
+                "doc_count": 162
+            },
+            "ClojureScript": {
+                "doc_count": 7
+            },
+            "Elm": {
+                "doc_count": 9
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 295
+            },
+            "ES6": {
+                "doc_count": 389
+            },
+            "Reason": {
+                "doc_count": 2
+            },
+            "Flow": {
+                "doc_count": 35
+            }
+        },
+        {
+            "key": "Australia",
+            "doc_count": 492,
+            "TypeScript": {
+                "doc_count": 165
+            },
+            "ClojureScript": {
+                "doc_count": 9
+            },
+            "Elm": {
+                "doc_count": 28
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 268
+            },
+            "ES6": {
+                "doc_count": 437
+            },
+            "Reason": {
+                "doc_count": 7
+            },
+            "Flow": {
+                "doc_count": 79
+            }
+        },
+        {
+            "key": "Netherlands",
+            "doc_count": 449,
+            "TypeScript": {
+                "doc_count": 171
+            },
+            "ClojureScript": {
+                "doc_count": 11
+            },
+            "Elm": {
+                "doc_count": 24
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 237
+            },
+            "ES6": {
+                "doc_count": 400
+            },
+            "Reason": {
+                "doc_count": 4
+            },
+            "Flow": {
+                "doc_count": 50
+            }
+        },
+        {
+            "key": "Brazil",
+            "doc_count": 437,
+            "TypeScript": {
+                "doc_count": 147
+            },
+            "ClojureScript": {
+                "doc_count": 13
+            },
+            "Elm": {
+                "doc_count": 25
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 209
+            },
+            "ES6": {
+                "doc_count": 369
+            },
+            "Reason": {
+                "doc_count": 1
+            },
+            "Flow": {
+                "doc_count": 54
+            }
+        },
+        {
+            "key": "Poland",
+            "doc_count": 420,
+            "TypeScript": {
+                "doc_count": 177
+            },
+            "ClojureScript": {
+                "doc_count": 4
+            },
+            "Elm": {
+                "doc_count": 17
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 172
+            },
+            "ES6": {
+                "doc_count": 368
+            },
+            "Reason": {
+                "doc_count": 1
+            },
+            "Flow": {
+                "doc_count": 31
+            }
+        },
+        {
+            "key": "Spain",
+            "doc_count": 413,
+            "TypeScript": {
+                "doc_count": 143
+            },
+            "ClojureScript": {
+                "doc_count": 6
+            },
+            "Elm": {
+                "doc_count": 12
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 225
+            },
+            "ES6": {
+                "doc_count": 354
+            },
+            "Reason": {
+                "doc_count": 0
+            },
+            "Flow": {
+                "doc_count": 33
+            }
+        },
+        {
+            "key": "Russia",
+            "doc_count": 379,
+            "TypeScript": {
+                "doc_count": 117
+            },
+            "ClojureScript": {
+                "doc_count": 12
+            },
+            "Elm": {
+                "doc_count": 21
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 149
+            },
+            "ES6": {
+                "doc_count": 327
+            },
+            "Reason": {
+                "doc_count": 2
+            },
+            "Flow": {
+                "doc_count": 50
+            }
+        },
+        {
+            "key": "Sweden",
+            "doc_count": 330,
+            "TypeScript": {
+                "doc_count": 109
+            },
+            "ClojureScript": {
+                "doc_count": 15
+            },
+            "Elm": {
+                "doc_count": 33
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 157
+            },
+            "ES6": {
+                "doc_count": 308
+            },
+            "Reason": {
+                "doc_count": 2
+            },
+            "Flow": {
+                "doc_count": 41
+            }
+        },
+        {
+            "key": "Italy",
+            "doc_count": 251,
+            "TypeScript": {
+                "doc_count": 88
+            },
+            "ClojureScript": {
+                "doc_count": 4
+            },
+            "Elm": {
+                "doc_count": 5
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 135
+            },
+            "ES6": {
+                "doc_count": 197
+            },
+            "Reason": {
+                "doc_count": 0
+            },
+            "Flow": {
+                "doc_count": 17
+            }
+        },
+        {
+            "key": "Ukraine",
+            "doc_count": 242,
+            "TypeScript": {
+                "doc_count": 74
+            },
+            "ClojureScript": {
+                "doc_count": 5
+            },
+            "Elm": {
+                "doc_count": 8
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 104
+            },
+            "ES6": {
+                "doc_count": 208
+            },
+            "Reason": {
+                "doc_count": 2
+            },
+            "Flow": {
+                "doc_count": 26
+            }
+        },
+        {
+            "key": "Denmark",
+            "doc_count": 197,
+            "TypeScript": {
+                "doc_count": 73
+            },
+            "ClojureScript": {
+                "doc_count": 6
+            },
+            "Elm": {
+                "doc_count": 16
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 113
+            },
+            "ES6": {
+                "doc_count": 155
+            },
+            "Reason": {
+                "doc_count": 0
+            },
+            "Flow": {
+                "doc_count": 19
+            }
+        },
+        {
+            "key": "Mexico",
+            "doc_count": 167,
+            "TypeScript": {
+                "doc_count": 57
+            },
+            "ClojureScript": {
+                "doc_count": 1
+            },
+            "Elm": {
+                "doc_count": 9
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 91
+            },
+            "ES6": {
+                "doc_count": 138
+            },
+            "Reason": {
+                "doc_count": 4
+            },
+            "Flow": {
+                "doc_count": 18
+            }
+        },
+        {
+            "key": "Belgium",
+            "doc_count": 163,
+            "TypeScript": {
+                "doc_count": 72
+            },
+            "ClojureScript": {
+                "doc_count": 0
+            },
+            "Elm": {
+                "doc_count": 8
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 84
+            },
+            "ES6": {
+                "doc_count": 138
+            },
+            "Reason": {
+                "doc_count": 0
+            },
+            "Flow": {
+                "doc_count": 9
+            }
+        },
+        {
+            "key": "Norway",
+            "doc_count": 150,
+            "TypeScript": {
+                "doc_count": 56
+            },
+            "ClojureScript": {
+                "doc_count": 7
+            },
+            "Elm": {
+                "doc_count": 20
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 72
+            },
+            "ES6": {
+                "doc_count": 132
+            },
+            "Reason": {
+                "doc_count": 0
+            },
+            "Flow": {
+                "doc_count": 10
+            }
+        },
+        {
+            "key": "Argentina",
+            "doc_count": 145,
+            "TypeScript": {
+                "doc_count": 43
+            },
+            "ClojureScript": {
+                "doc_count": 1
+            },
+            "Elm": {
+                "doc_count": 3
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 88
+            },
+            "ES6": {
+                "doc_count": 128
+            },
+            "Reason": {
+                "doc_count": 0
+            },
+            "Flow": {
+                "doc_count": 7
+            }
+        },
+        {
+            "key": "New Zealand",
+            "doc_count": 143,
+            "TypeScript": {
+                "doc_count": 59
+            },
+            "ClojureScript": {
+                "doc_count": 2
+            },
+            "Elm": {
+                "doc_count": 10
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 75
+            },
+            "ES6": {
+                "doc_count": 126
+            },
+            "Reason": {
+                "doc_count": 0
+            },
+            "Flow": {
+                "doc_count": 13
+            }
+        },
+        {
+            "key": "Switzerland",
+            "doc_count": 136,
+            "TypeScript": {
+                "doc_count": 58
+            },
+            "ClojureScript": {
+                "doc_count": 0
+            },
+            "Elm": {
+                "doc_count": 5
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 62
+            },
+            "ES6": {
+                "doc_count": 115
+            },
+            "Reason": {
+                "doc_count": 2
+            },
+            "Flow": {
+                "doc_count": 20
+            }
+        },
+        {
+            "key": "Finland",
+            "doc_count": 133,
+            "TypeScript": {
+                "doc_count": 37
+            },
+            "ClojureScript": {
+                "doc_count": 6
+            },
+            "Elm": {
+                "doc_count": 8
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 58
+            },
+            "ES6": {
+                "doc_count": 118
+            },
+            "Reason": {
+                "doc_count": 0
+            },
+            "Flow": {
+                "doc_count": 10
+            }
+        },
+        {
+            "key": "Romania",
+            "doc_count": 132,
+            "TypeScript": {
+                "doc_count": 56
+            },
+            "ClojureScript": {
+                "doc_count": 2
+            },
+            "Elm": {
+                "doc_count": 3
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 71
+            },
+            "ES6": {
+                "doc_count": 114
+            },
+            "Reason": {
+                "doc_count": 0
+            },
+            "Flow": {
+                "doc_count": 7
+            }
+        },
+        {
+            "key": "Israel",
+            "doc_count": 126,
+            "TypeScript": {
+                "doc_count": 57
+            },
+            "ClojureScript": {
+                "doc_count": 1
+            },
+            "Elm": {
+                "doc_count": 3
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 67
+            },
+            "ES6": {
+                "doc_count": 116
+            },
+            "Reason": {
+                "doc_count": 0
+            },
+            "Flow": {
+                "doc_count": 8
+            }
+        },
+        {
+            "key": "Austria",
+            "doc_count": 116,
+            "TypeScript": {
+                "doc_count": 57
+            },
+            "ClojureScript": {
+                "doc_count": 1
+            },
+            "Elm": {
+                "doc_count": 1
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 56
+            },
+            "ES6": {
+                "doc_count": 105
+            },
+            "Reason": {
+                "doc_count": 1
+            },
+            "Flow": {
+                "doc_count": 11
+            }
+        },
+        {
+            "key": "Ireland",
+            "doc_count": 106,
+            "TypeScript": {
+                "doc_count": 35
+            },
+            "ClojureScript": {
+                "doc_count": 1
+            },
+            "Elm": {
+                "doc_count": 2
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 58
+            },
+            "ES6": {
+                "doc_count": 86
+            },
+            "Reason": {
+                "doc_count": 0
+            },
+            "Flow": {
+                "doc_count": 10
+            }
+        },
+        {
+            "key": "Portugal",
+            "doc_count": 105,
+            "TypeScript": {
+                "doc_count": 36
+            },
+            "ClojureScript": {
+                "doc_count": 2
+            },
+            "Elm": {
+                "doc_count": 0
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 55
+            },
+            "ES6": {
+                "doc_count": 89
+            },
+            "Reason": {
+                "doc_count": 1
+            },
+            "Flow": {
+                "doc_count": 10
+            }
+        },
+        {
+            "key": "Belarus",
+            "doc_count": 104,
+            "TypeScript": {
+                "doc_count": 43
+            },
+            "ClojureScript": {
+                "doc_count": 3
+            },
+            "Elm": {
+                "doc_count": 3
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 42
+            },
+            "ES6": {
+                "doc_count": 99
+            },
+            "Reason": {
+                "doc_count": 0
+            },
+            "Flow": {
+                "doc_count": 10
+            }
+        },
+        {
+            "key": "Colombia",
+            "doc_count": 97,
+            "TypeScript": {
+                "doc_count": 34
+            },
+            "ClojureScript": {
+                "doc_count": 1
+            },
+            "Elm": {
+                "doc_count": 4
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 58
+            },
+            "ES6": {
+                "doc_count": 82
+            },
+            "Reason": {
+                "doc_count": 0
+            },
+            "Flow": {
+                "doc_count": 6
+            }
+        },
+        {
+            "key": "China",
+            "doc_count": 96,
+            "TypeScript": {
+                "doc_count": 28
+            },
+            "ClojureScript": {
+                "doc_count": 1
+            },
+            "Elm": {
+                "doc_count": 2
+            },
+            "\"Plain\" JavaScript (ES5)": {
+                "doc_count": 45
+            },
+            "ES6": {
+                "doc_count": 87
+            },
+            "Reason": {
+                "doc_count": 0
+            },
+            "Flow": {
+                "doc_count": 13
+            }
+        }
+    ],
     "frontendChord": {
         "keys": [
             "\"Plain\" JavaScript (ES5)",
@@ -872,22 +1674,294 @@
             "No Front-End Framework"
         ],
         "matrix": [
-            [0, 0, 0, 0, 0, 0, 0, 6588, 2960, 2257, 622, 2608, 1202, 696, 148, 6161],
-            [0, 0, 0, 0, 0, 0, 0, 13162, 3971, 3997, 1067, 4317, 1523, 1118, 313, 8387],
-            [0, 0, 0, 0, 0, 0, 0, 4356, 2316, 3777, 389, 1445, 473, 503, 215, 2985],
-            [0, 0, 0, 0, 0, 0, 0, 2227, 253, 275, 133, 408, 155, 117, 32, 908],
-            [0, 0, 0, 0, 0, 0, 0, 938, 116, 130, 97, 220, 89, 79, 24, 558],
-            [0, 0, 0, 0, 0, 0, 0, 446, 59, 50, 46, 90, 50, 44, 11, 242],
-            [0, 0, 0, 0, 0, 0, 0, 117, 15, 16, 12, 21, 11, 13, 6, 52],
-            [6588, 13162, 4356, 2227, 938, 446, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [2960, 3971, 2316, 253, 116, 59, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [2257, 3997, 3777, 275, 130, 50, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [622, 1067, 389, 133, 97, 46, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [2608, 4317, 1445, 408, 220, 90, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [1202, 1523, 473, 155, 89, 50, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [696, 1118, 503, 117, 79, 44, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [148, 313, 215, 32, 24, 11, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [6161, 8387, 2985, 908, 558, 242, 52, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                6588,
+                2960,
+                2257,
+                622,
+                2608,
+                1202,
+                696,
+                148,
+                6161
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                13162,
+                3971,
+                3997,
+                1067,
+                4317,
+                1523,
+                1118,
+                313,
+                8387
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4356,
+                2316,
+                3777,
+                389,
+                1445,
+                473,
+                503,
+                215,
+                2985
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2227,
+                253,
+                275,
+                133,
+                408,
+                155,
+                117,
+                32,
+                908
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                938,
+                116,
+                130,
+                97,
+                220,
+                89,
+                79,
+                24,
+                558
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                446,
+                59,
+                50,
+                46,
+                90,
+                50,
+                44,
+                11,
+                242
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                117,
+                15,
+                16,
+                12,
+                21,
+                11,
+                13,
+                6,
+                52
+            ],
+            [
+                6588,
+                13162,
+                4356,
+                2227,
+                938,
+                446,
+                117,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                2960,
+                3971,
+                2316,
+                253,
+                116,
+                59,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                2257,
+                3997,
+                3777,
+                275,
+                130,
+                50,
+                16,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                622,
+                1067,
+                389,
+                133,
+                97,
+                46,
+                12,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                2608,
+                4317,
+                1445,
+                408,
+                220,
+                90,
+                21,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                1202,
+                1523,
+                473,
+                155,
+                89,
+                50,
+                11,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                696,
+                1118,
+                503,
+                117,
+                79,
+                44,
+                13,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                148,
+                313,
+                215,
+                32,
+                24,
+                11,
+                6,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                6161,
+                8387,
+                2985,
+                908,
+                558,
+                242,
+                52,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
         ]
     },
     "frontendSankey": {

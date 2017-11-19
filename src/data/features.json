@@ -85,7 +85,7 @@
     },
     "others": {
         "doc_count_error_upper_bound": 5,
-        "sum_other_doc_count": 450,
+        "sum_other_doc_count": 451,
         "buckets": [
             {
                 "key": "Accessibility",
@@ -93,14 +93,14 @@
             },
             {
                 "key": "PWA",
-                "doc_count": 8
-            },
-            {
-                "key": "na",
-                "doc_count": 6
+                "doc_count": 9
             },
             {
                 "key": ".",
+                "doc_count": 4
+            },
+            {
+                "key": "No",
                 "doc_count": 4
             },
             {
@@ -116,7 +116,7 @@
                 "doc_count": 3
             },
             {
-                "key": "No",
+                "key": "na",
                 "doc_count": 3
             },
             {
@@ -160,11 +160,11 @@
                 "doc_count": 2
             },
             {
-                "key": "Push notifications",
+                "key": "Local storage",
                 "doc_count": 2
             },
             {
-                "key": "Responsive",
+                "key": "None ",
                 "doc_count": 2
             }
         ]

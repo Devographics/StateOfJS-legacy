@@ -2,13 +2,10 @@ import React from 'react'
 import testingData from '../../../data/testing.json'
 import WorldwideUsage from '../../../components/WorldwideUsage'
 
-const TestingWorldwide = () => (
+export default () => (
     <WorldwideUsage
         title="Testing frameworks worldwide usage"
         tools={testingData.keys}
-        defaultTool="Mocha"
-        data={testingData.experienceByUsers}
+        countries={testingData.countries}
     />
 )
-
-export default TestingWorldwide

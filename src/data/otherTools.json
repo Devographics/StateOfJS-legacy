@@ -1,9 +1,14 @@
 {
-    "keys": ["Package Managers", "Utility Libraries", "Text Editors", "Code Linters"],
+    "keys": [
+        "Package Managers",
+        "Utility Libraries",
+        "Text Editors",
+        "Code Linters"
+    ],
     "aggs": {
         "Utility Libraries": {
             "doc_count_error_upper_bound": 5,
-            "sum_other_doc_count": 477,
+            "sum_other_doc_count": 478,
             "buckets": [
                 {
                     "key": "lodash",
@@ -39,25 +44,25 @@
                 },
                 {
                     "key": "recompose",
-                    "doc_count": 18
+                    "doc_count": 17
+                },
+                {
+                    "key": "React",
+                    "doc_count": 12
                 },
                 {
                     "key": "async",
                     "doc_count": 12
                 },
                 {
-                    "key": "React",
-                    "doc_count": 11
-                },
-                {
                     "key": "Zepto",
-                    "doc_count": 10
+                    "doc_count": 9
                 }
             ]
         },
         "Code Linters": {
             "doc_count_error_upper_bound": 5,
-            "sum_other_doc_count": 291,
+            "sum_other_doc_count": 293,
             "buckets": [
                 {
                     "key": "eslint",
@@ -97,11 +102,11 @@
                 },
                 {
                     "key": "JSCS",
-                    "doc_count": 17
+                    "doc_count": 16
                 },
                 {
                     "key": "elm-format",
-                    "doc_count": 17
+                    "doc_count": 16
                 },
                 {
                     "key": "CoffeeLint",
@@ -165,7 +170,7 @@
         },
         "Package Managers": {
             "doc_count_error_upper_bound": 5,
-            "sum_other_doc_count": 140,
+            "sum_other_doc_count": 139,
             "buckets": [
                 {
                     "key": "yarn",
@@ -212,8 +217,8 @@
                     "doc_count": 8
                 },
                 {
-                    "key": "Atmosphere",
-                    "doc_count": 3
+                    "key": "apt",
+                    "doc_count": 4
                 }
             ]
         }

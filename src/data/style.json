@@ -1,5 +1,13 @@
 {
-    "keys": ["Plain CSS", "SASS/SCSS", "Stylus", "LESS", "CSS-in-JS", "Bootstrap", "Foundation"],
+    "keys": [
+        "Plain CSS",
+        "SASS/SCSS",
+        "Stylus",
+        "LESS",
+        "CSS-in-JS",
+        "Bootstrap",
+        "Foundation"
+    ],
     "experience": {
         "SASS/SCSS": {
             "I've USED it before, and WOULD use it again": 17879,
@@ -119,7 +127,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 99,
+                "doc_count_error_upper_bound": 98,
                 "sum_other_doc_count": 4528,
                 "buckets": [
                     {
@@ -232,7 +240,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 34,
+                "doc_count_error_upper_bound": 37,
                 "sum_other_doc_count": 1623,
                 "buckets": [
                     {
@@ -458,7 +466,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 80,
+                "doc_count_error_upper_bound": 77,
                 "sum_other_doc_count": 3733,
                 "buckets": [
                     {
@@ -571,7 +579,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 23,
+                "doc_count_error_upper_bound": 22,
                 "sum_other_doc_count": 981,
                 "buckets": [
                     {
@@ -684,7 +692,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 42,
+                "doc_count_error_upper_bound": 41,
                 "sum_other_doc_count": 1875,
                 "buckets": [
                     {
@@ -797,8 +805,8 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 14,
-                "sum_other_doc_count": 601,
+                "doc_count_error_upper_bound": 15,
+                "sum_other_doc_count": 603,
                 "buckets": [
                     {
                         "key": "undefined",
@@ -834,7 +842,7 @@
                     },
                     {
                         "key": "Spain",
-                        "doc_count": 40
+                        "doc_count": 38
                     },
                     {
                         "key": "Australia",
@@ -844,9 +852,811 @@
             }
         }
     },
+    "countries": [
+        {
+            "key": "undefined",
+            "doc_count": 5839,
+            "SASS/SCSS": {
+                "doc_count": 4377
+            },
+            "CSS-in-JS": {
+                "doc_count": 1569
+            },
+            "Plain CSS": {
+                "doc_count": 4128
+            },
+            "Bootstrap": {
+                "doc_count": 3395
+            },
+            "Foundation": {
+                "doc_count": 1055
+            },
+            "LESS": {
+                "doc_count": 1754
+            },
+            "Stylus": {
+                "doc_count": 628
+            }
+        },
+        {
+            "key": "United States",
+            "doc_count": 5719,
+            "SASS/SCSS": {
+                "doc_count": 4436
+            },
+            "CSS-in-JS": {
+                "doc_count": 1672
+            },
+            "Plain CSS": {
+                "doc_count": 4299
+            },
+            "Bootstrap": {
+                "doc_count": 3544
+            },
+            "Foundation": {
+                "doc_count": 1144
+            },
+            "LESS": {
+                "doc_count": 1894
+            },
+            "Stylus": {
+                "doc_count": 549
+            }
+        },
+        {
+            "key": "United Kingdom",
+            "doc_count": 1409,
+            "SASS/SCSS": {
+                "doc_count": 1160
+            },
+            "CSS-in-JS": {
+                "doc_count": 408
+            },
+            "Plain CSS": {
+                "doc_count": 1025
+            },
+            "Bootstrap": {
+                "doc_count": 763
+            },
+            "Foundation": {
+                "doc_count": 267
+            },
+            "LESS": {
+                "doc_count": 416
+            },
+            "Stylus": {
+                "doc_count": 100
+            }
+        },
+        {
+            "key": "Germany",
+            "doc_count": 879,
+            "SASS/SCSS": {
+                "doc_count": 656
+            },
+            "CSS-in-JS": {
+                "doc_count": 233
+            },
+            "Plain CSS": {
+                "doc_count": 565
+            },
+            "Bootstrap": {
+                "doc_count": 485
+            },
+            "Foundation": {
+                "doc_count": 152
+            },
+            "LESS": {
+                "doc_count": 288
+            },
+            "Stylus": {
+                "doc_count": 80
+            }
+        },
+        {
+            "key": "Canada",
+            "doc_count": 771,
+            "SASS/SCSS": {
+                "doc_count": 607
+            },
+            "CSS-in-JS": {
+                "doc_count": 188
+            },
+            "Plain CSS": {
+                "doc_count": 594
+            },
+            "Bootstrap": {
+                "doc_count": 453
+            },
+            "Foundation": {
+                "doc_count": 163
+            },
+            "LESS": {
+                "doc_count": 251
+            },
+            "Stylus": {
+                "doc_count": 82
+            }
+        },
+        {
+            "key": "France",
+            "doc_count": 695,
+            "SASS/SCSS": {
+                "doc_count": 513
+            },
+            "CSS-in-JS": {
+                "doc_count": 186
+            },
+            "Plain CSS": {
+                "doc_count": 476
+            },
+            "Bootstrap": {
+                "doc_count": 400
+            },
+            "Foundation": {
+                "doc_count": 99
+            },
+            "LESS": {
+                "doc_count": 224
+            },
+            "Stylus": {
+                "doc_count": 85
+            }
+        },
+        {
+            "key": "India",
+            "doc_count": 500,
+            "SASS/SCSS": {
+                "doc_count": 325
+            },
+            "CSS-in-JS": {
+                "doc_count": 142
+            },
+            "Plain CSS": {
+                "doc_count": 406
+            },
+            "Bootstrap": {
+                "doc_count": 380
+            },
+            "Foundation": {
+                "doc_count": 76
+            },
+            "LESS": {
+                "doc_count": 145
+            },
+            "Stylus": {
+                "doc_count": 35
+            }
+        },
+        {
+            "key": "Australia",
+            "doc_count": 492,
+            "SASS/SCSS": {
+                "doc_count": 363
+            },
+            "CSS-in-JS": {
+                "doc_count": 169
+            },
+            "Plain CSS": {
+                "doc_count": 331
+            },
+            "Bootstrap": {
+                "doc_count": 279
+            },
+            "Foundation": {
+                "doc_count": 76
+            },
+            "LESS": {
+                "doc_count": 155
+            },
+            "Stylus": {
+                "doc_count": 36
+            }
+        },
+        {
+            "key": "Netherlands",
+            "doc_count": 449,
+            "SASS/SCSS": {
+                "doc_count": 352
+            },
+            "CSS-in-JS": {
+                "doc_count": 107
+            },
+            "Plain CSS": {
+                "doc_count": 308
+            },
+            "Bootstrap": {
+                "doc_count": 238
+            },
+            "Foundation": {
+                "doc_count": 81
+            },
+            "LESS": {
+                "doc_count": 123
+            },
+            "Stylus": {
+                "doc_count": 20
+            }
+        },
+        {
+            "key": "Brazil",
+            "doc_count": 437,
+            "SASS/SCSS": {
+                "doc_count": 306
+            },
+            "CSS-in-JS": {
+                "doc_count": 118
+            },
+            "Plain CSS": {
+                "doc_count": 295
+            },
+            "Bootstrap": {
+                "doc_count": 311
+            },
+            "Foundation": {
+                "doc_count": 99
+            },
+            "LESS": {
+                "doc_count": 126
+            },
+            "Stylus": {
+                "doc_count": 74
+            }
+        },
+        {
+            "key": "Poland",
+            "doc_count": 420,
+            "SASS/SCSS": {
+                "doc_count": 337
+            },
+            "CSS-in-JS": {
+                "doc_count": 107
+            },
+            "Plain CSS": {
+                "doc_count": 250
+            },
+            "Bootstrap": {
+                "doc_count": 244
+            },
+            "Foundation": {
+                "doc_count": 60
+            },
+            "LESS": {
+                "doc_count": 121
+            },
+            "Stylus": {
+                "doc_count": 26
+            }
+        },
+        {
+            "key": "Spain",
+            "doc_count": 413,
+            "SASS/SCSS": {
+                "doc_count": 320
+            },
+            "CSS-in-JS": {
+                "doc_count": 91
+            },
+            "Plain CSS": {
+                "doc_count": 272
+            },
+            "Bootstrap": {
+                "doc_count": 240
+            },
+            "Foundation": {
+                "doc_count": 64
+            },
+            "LESS": {
+                "doc_count": 113
+            },
+            "Stylus": {
+                "doc_count": 40
+            }
+        },
+        {
+            "key": "Russia",
+            "doc_count": 379,
+            "SASS/SCSS": {
+                "doc_count": 229
+            },
+            "CSS-in-JS": {
+                "doc_count": 96
+            },
+            "Plain CSS": {
+                "doc_count": 245
+            },
+            "Bootstrap": {
+                "doc_count": 181
+            },
+            "Foundation": {
+                "doc_count": 28
+            },
+            "LESS": {
+                "doc_count": 96
+            },
+            "Stylus": {
+                "doc_count": 58
+            }
+        },
+        {
+            "key": "Sweden",
+            "doc_count": 330,
+            "SASS/SCSS": {
+                "doc_count": 248
+            },
+            "CSS-in-JS": {
+                "doc_count": 111
+            },
+            "Plain CSS": {
+                "doc_count": 223
+            },
+            "Bootstrap": {
+                "doc_count": 157
+            },
+            "Foundation": {
+                "doc_count": 41
+            },
+            "LESS": {
+                "doc_count": 110
+            },
+            "Stylus": {
+                "doc_count": 36
+            }
+        },
+        {
+            "key": "Italy",
+            "doc_count": 251,
+            "SASS/SCSS": {
+                "doc_count": 175
+            },
+            "CSS-in-JS": {
+                "doc_count": 52
+            },
+            "Plain CSS": {
+                "doc_count": 171
+            },
+            "Bootstrap": {
+                "doc_count": 154
+            },
+            "Foundation": {
+                "doc_count": 38
+            },
+            "LESS": {
+                "doc_count": 77
+            },
+            "Stylus": {
+                "doc_count": 15
+            }
+        },
+        {
+            "key": "Ukraine",
+            "doc_count": 242,
+            "SASS/SCSS": {
+                "doc_count": 176
+            },
+            "CSS-in-JS": {
+                "doc_count": 58
+            },
+            "Plain CSS": {
+                "doc_count": 157
+            },
+            "Bootstrap": {
+                "doc_count": 141
+            },
+            "Foundation": {
+                "doc_count": 30
+            },
+            "LESS": {
+                "doc_count": 70
+            },
+            "Stylus": {
+                "doc_count": 36
+            }
+        },
+        {
+            "key": "Denmark",
+            "doc_count": 197,
+            "SASS/SCSS": {
+                "doc_count": 157
+            },
+            "CSS-in-JS": {
+                "doc_count": 56
+            },
+            "Plain CSS": {
+                "doc_count": 151
+            },
+            "Bootstrap": {
+                "doc_count": 96
+            },
+            "Foundation": {
+                "doc_count": 41
+            },
+            "LESS": {
+                "doc_count": 58
+            },
+            "Stylus": {
+                "doc_count": 12
+            }
+        },
+        {
+            "key": "Mexico",
+            "doc_count": 167,
+            "SASS/SCSS": {
+                "doc_count": 119
+            },
+            "CSS-in-JS": {
+                "doc_count": 44
+            },
+            "Plain CSS": {
+                "doc_count": 130
+            },
+            "Bootstrap": {
+                "doc_count": 120
+            },
+            "Foundation": {
+                "doc_count": 33
+            },
+            "LESS": {
+                "doc_count": 58
+            },
+            "Stylus": {
+                "doc_count": 29
+            }
+        },
+        {
+            "key": "Belgium",
+            "doc_count": 163,
+            "SASS/SCSS": {
+                "doc_count": 130
+            },
+            "CSS-in-JS": {
+                "doc_count": 41
+            },
+            "Plain CSS": {
+                "doc_count": 106
+            },
+            "Bootstrap": {
+                "doc_count": 92
+            },
+            "Foundation": {
+                "doc_count": 19
+            },
+            "LESS": {
+                "doc_count": 44
+            },
+            "Stylus": {
+                "doc_count": 13
+            }
+        },
+        {
+            "key": "Norway",
+            "doc_count": 150,
+            "SASS/SCSS": {
+                "doc_count": 114
+            },
+            "CSS-in-JS": {
+                "doc_count": 43
+            },
+            "Plain CSS": {
+                "doc_count": 98
+            },
+            "Bootstrap": {
+                "doc_count": 73
+            },
+            "Foundation": {
+                "doc_count": 20
+            },
+            "LESS": {
+                "doc_count": 56
+            },
+            "Stylus": {
+                "doc_count": 13
+            }
+        },
+        {
+            "key": "Argentina",
+            "doc_count": 145,
+            "SASS/SCSS": {
+                "doc_count": 109
+            },
+            "CSS-in-JS": {
+                "doc_count": 33
+            },
+            "Plain CSS": {
+                "doc_count": 102
+            },
+            "Bootstrap": {
+                "doc_count": 99
+            },
+            "Foundation": {
+                "doc_count": 21
+            },
+            "LESS": {
+                "doc_count": 47
+            },
+            "Stylus": {
+                "doc_count": 22
+            }
+        },
+        {
+            "key": "New Zealand",
+            "doc_count": 143,
+            "SASS/SCSS": {
+                "doc_count": 115
+            },
+            "CSS-in-JS": {
+                "doc_count": 37
+            },
+            "Plain CSS": {
+                "doc_count": 105
+            },
+            "Bootstrap": {
+                "doc_count": 80
+            },
+            "Foundation": {
+                "doc_count": 22
+            },
+            "LESS": {
+                "doc_count": 37
+            },
+            "Stylus": {
+                "doc_count": 13
+            }
+        },
+        {
+            "key": "Switzerland",
+            "doc_count": 136,
+            "SASS/SCSS": {
+                "doc_count": 100
+            },
+            "CSS-in-JS": {
+                "doc_count": 35
+            },
+            "Plain CSS": {
+                "doc_count": 86
+            },
+            "Bootstrap": {
+                "doc_count": 82
+            },
+            "Foundation": {
+                "doc_count": 17
+            },
+            "LESS": {
+                "doc_count": 32
+            },
+            "Stylus": {
+                "doc_count": 12
+            }
+        },
+        {
+            "key": "Finland",
+            "doc_count": 133,
+            "SASS/SCSS": {
+                "doc_count": 102
+            },
+            "CSS-in-JS": {
+                "doc_count": 37
+            },
+            "Plain CSS": {
+                "doc_count": 85
+            },
+            "Bootstrap": {
+                "doc_count": 80
+            },
+            "Foundation": {
+                "doc_count": 30
+            },
+            "LESS": {
+                "doc_count": 39
+            },
+            "Stylus": {
+                "doc_count": 17
+            }
+        },
+        {
+            "key": "Romania",
+            "doc_count": 132,
+            "SASS/SCSS": {
+                "doc_count": 105
+            },
+            "CSS-in-JS": {
+                "doc_count": 30
+            },
+            "Plain CSS": {
+                "doc_count": 91
+            },
+            "Bootstrap": {
+                "doc_count": 91
+            },
+            "Foundation": {
+                "doc_count": 22
+            },
+            "LESS": {
+                "doc_count": 62
+            },
+            "Stylus": {
+                "doc_count": 6
+            }
+        },
+        {
+            "key": "Israel",
+            "doc_count": 126,
+            "SASS/SCSS": {
+                "doc_count": 92
+            },
+            "CSS-in-JS": {
+                "doc_count": 25
+            },
+            "Plain CSS": {
+                "doc_count": 92
+            },
+            "Bootstrap": {
+                "doc_count": 78
+            },
+            "Foundation": {
+                "doc_count": 20
+            },
+            "LESS": {
+                "doc_count": 42
+            },
+            "Stylus": {
+                "doc_count": 8
+            }
+        },
+        {
+            "key": "Austria",
+            "doc_count": 116,
+            "SASS/SCSS": {
+                "doc_count": 98
+            },
+            "CSS-in-JS": {
+                "doc_count": 23
+            },
+            "Plain CSS": {
+                "doc_count": 72
+            },
+            "Bootstrap": {
+                "doc_count": 68
+            },
+            "Foundation": {
+                "doc_count": 15
+            },
+            "LESS": {
+                "doc_count": 31
+            },
+            "Stylus": {
+                "doc_count": 5
+            }
+        },
+        {
+            "key": "Ireland",
+            "doc_count": 106,
+            "SASS/SCSS": {
+                "doc_count": 81
+            },
+            "CSS-in-JS": {
+                "doc_count": 26
+            },
+            "Plain CSS": {
+                "doc_count": 76
+            },
+            "Bootstrap": {
+                "doc_count": 66
+            },
+            "Foundation": {
+                "doc_count": 22
+            },
+            "LESS": {
+                "doc_count": 41
+            },
+            "Stylus": {
+                "doc_count": 5
+            }
+        },
+        {
+            "key": "Portugal",
+            "doc_count": 105,
+            "SASS/SCSS": {
+                "doc_count": 79
+            },
+            "CSS-in-JS": {
+                "doc_count": 32
+            },
+            "Plain CSS": {
+                "doc_count": 74
+            },
+            "Bootstrap": {
+                "doc_count": 66
+            },
+            "Foundation": {
+                "doc_count": 21
+            },
+            "LESS": {
+                "doc_count": 32
+            },
+            "Stylus": {
+                "doc_count": 9
+            }
+        },
+        {
+            "key": "Belarus",
+            "doc_count": 104,
+            "SASS/SCSS": {
+                "doc_count": 71
+            },
+            "CSS-in-JS": {
+                "doc_count": 28
+            },
+            "Plain CSS": {
+                "doc_count": 64
+            },
+            "Bootstrap": {
+                "doc_count": 51
+            },
+            "Foundation": {
+                "doc_count": 10
+            },
+            "LESS": {
+                "doc_count": 30
+            },
+            "Stylus": {
+                "doc_count": 19
+            }
+        },
+        {
+            "key": "Colombia",
+            "doc_count": 97,
+            "SASS/SCSS": {
+                "doc_count": 77
+            },
+            "CSS-in-JS": {
+                "doc_count": 30
+            },
+            "Plain CSS": {
+                "doc_count": 61
+            },
+            "Bootstrap": {
+                "doc_count": 64
+            },
+            "Foundation": {
+                "doc_count": 34
+            },
+            "LESS": {
+                "doc_count": 35
+            },
+            "Stylus": {
+                "doc_count": 21
+            }
+        },
+        {
+            "key": "China",
+            "doc_count": 96,
+            "SASS/SCSS": {
+                "doc_count": 58
+            },
+            "CSS-in-JS": {
+                "doc_count": 31
+            },
+            "Plain CSS": {
+                "doc_count": 66
+            },
+            "Bootstrap": {
+                "doc_count": 57
+            },
+            "Foundation": {
+                "doc_count": 9
+            },
+            "LESS": {
+                "doc_count": 43
+            },
+            "Stylus": {
+                "doc_count": 10
+            }
+        }
+    ],
     "others": {
-        "doc_count_error_upper_bound": 6,
-        "sum_other_doc_count": 1000,
+        "doc_count_error_upper_bound": 8,
+        "sum_other_doc_count": 999,
         "buckets": [
             {
                 "key": "PostCSS",
@@ -914,7 +1724,7 @@
             },
             {
                 "key": "flexbox",
-                "doc_count": 26
+                "doc_count": 27
             },
             {
                 "key": "CSSnext",
@@ -925,7 +1735,7 @@
                 "doc_count": 19
             },
             {
-                "key": "milligram",
+                "key": "elm-css",
                 "doc_count": 19
             }
         ]
@@ -950,22 +1760,294 @@
             "No Front-End Framework"
         ],
         "matrix": [
-            [0, 0, 0, 0, 0, 0, 0, 9410, 3515, 3090, 790, 3333, 1330, 978, 242, 7625],
-            [0, 0, 0, 0, 0, 0, 0, 10809, 3862, 3785, 993, 3834, 1460, 906, 262, 7297],
-            [0, 0, 0, 0, 0, 0, 0, 1579, 421, 394, 152, 725, 247, 154, 42, 1053],
-            [0, 0, 0, 0, 0, 0, 0, 4366, 1893, 1530, 364, 1409, 738, 426, 135, 3022],
-            [0, 0, 0, 0, 0, 0, 0, 5432, 884, 917, 288, 1346, 440, 360, 79, 2574],
-            [0, 0, 0, 0, 0, 0, 0, 7783, 3529, 3168, 716, 2792, 1133, 617, 248, 5249],
-            [0, 0, 0, 0, 0, 0, 0, 2523, 1090, 909, 347, 1042, 456, 229, 80, 1857],
-            [9410, 10809, 1579, 4366, 5432, 7783, 2523, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [3515, 3862, 421, 1893, 884, 3529, 1090, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [3090, 3785, 394, 1530, 917, 3168, 909, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [790, 993, 152, 364, 288, 716, 347, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [3333, 3834, 725, 1409, 1346, 2792, 1042, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [1330, 1460, 247, 738, 440, 1133, 456, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [978, 906, 154, 426, 360, 617, 229, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [242, 262, 42, 135, 79, 248, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [7625, 7297, 1053, 3022, 2574, 5249, 1857, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                9410,
+                3515,
+                3090,
+                790,
+                3333,
+                1330,
+                978,
+                242,
+                7625
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                10809,
+                3862,
+                3785,
+                993,
+                3834,
+                1460,
+                906,
+                262,
+                7297
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1579,
+                421,
+                394,
+                152,
+                725,
+                247,
+                154,
+                42,
+                1053
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4366,
+                1893,
+                1530,
+                364,
+                1409,
+                738,
+                426,
+                135,
+                3022
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                5432,
+                884,
+                917,
+                288,
+                1346,
+                440,
+                360,
+                79,
+                2574
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                7783,
+                3529,
+                3168,
+                716,
+                2792,
+                1133,
+                617,
+                248,
+                5249
+            ],
+            [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2523,
+                1090,
+                909,
+                347,
+                1042,
+                456,
+                229,
+                80,
+                1857
+            ],
+            [
+                9410,
+                10809,
+                1579,
+                4366,
+                5432,
+                7783,
+                2523,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                3515,
+                3862,
+                421,
+                1893,
+                884,
+                3529,
+                1090,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                3090,
+                3785,
+                394,
+                1530,
+                917,
+                3168,
+                909,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                790,
+                993,
+                152,
+                364,
+                288,
+                716,
+                347,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                3333,
+                3834,
+                725,
+                1409,
+                1346,
+                2792,
+                1042,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                1330,
+                1460,
+                247,
+                738,
+                440,
+                1133,
+                456,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                978,
+                906,
+                154,
+                426,
+                360,
+                617,
+                229,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                242,
+                262,
+                42,
+                135,
+                79,
+                248,
+                80,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                7625,
+                7297,
+                1053,
+                3022,
+                2574,
+                5249,
+                1857,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
         ]
     },
     "frontendSankey": {

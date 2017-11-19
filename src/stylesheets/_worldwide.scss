@@ -1,0 +1,16 @@
+.worldwide__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.worldwide__grid__item {
+  width: 31%;
+  margin-bottom: 30px;
+}
+
+.worldwide__chart {
+  height: 220px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}

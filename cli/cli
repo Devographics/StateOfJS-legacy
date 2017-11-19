@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+'use strict'
+
+const path = require('path')
+const program = require('commander')
+
+require('dotenv').load({
+    path: path.join(__dirname, '../', '.env'),
+})
+
+program
+    .version('0.0.1')
+    .command('fetch', 'fetch data from type form')
+    .command('report <type>', 'compute report for given section')
+    .command('capture', 'capture screenshots')
+    .parse(process.argv)
+

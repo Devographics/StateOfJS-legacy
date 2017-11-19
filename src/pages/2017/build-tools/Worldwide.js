@@ -2,13 +2,10 @@ import React from 'react'
 import buildData from '../../../data/build.json'
 import WorldwideUsage from '../../../components/WorldwideUsage'
 
-const BuildWorldwide = () => (
+export default () => (
     <WorldwideUsage
         title="Build tools worldwide usage"
         tools={buildData.keys}
-        defaultTool="Webpack"
-        data={buildData.experienceByUsers}
+        countries={buildData.countries}
     />
 )
-
-export default BuildWorldwide
