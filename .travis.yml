@@ -28,8 +28,6 @@ script:
   #- yarn lint
   # ensure the project builds correctly
   - yarn build
-  - ls -al public/2017/flavors
-  - ls -al public/2017/flavors/Results
   # starts static server
   - cd public && python -m SimpleHTTPServer &
   - sleep 6
