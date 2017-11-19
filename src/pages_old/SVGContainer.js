@@ -20,26 +20,36 @@ import buildtools from '../../data/buildtools/results.csv'
 import mobile from '../../data/mobile/results.csv'
 
 const sections = {
-  flavors,
-  frontend,
-  statemanagement,
-  api,
-  fullstack,
-  testing,
-  css,
-  buildtools,
-  mobile,
+    flavors,
+    frontend,
+    statemanagement,
+    api,
+    fullstack,
+    testing,
+    css,
+    buildtools,
+    mobile,
 }
 
-const SVGContainer = () =>
-  <div className="svg-container">
-    {_.map(sections, (section, key) => {
-      return (
-      <div key={key} className="svg-block" id={`${key}-stacked`}>
-        <StackedChart data={parseCSV(section)} section={key} identifier="Option" showPercent responses={RESPONSES} filter="All" title={_.find(Sections, s => s.slug === key).name} isExport />
-      </div>
-      )}
-    )}
-  </div>
+const SVGContainer = () => (
+    <div className="svg-container">
+        {_.map(sections, (section, key) => {
+            return (
+                <div key={key} className="svg-block" id={`${key}-stacked`}>
+                    <StackedChart
+                        data={parseCSV(section)}
+                        section={key}
+                        identifier="Option"
+                        showPercent
+                        responses={RESPONSES}
+                        filter="All"
+                        title={_.find(Sections, s => s.slug === key).name}
+                        isExport
+                    />
+                </div>
+            )
+        })}
+    </div>
+)
 
 export default SVGContainer

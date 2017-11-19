@@ -32,7 +32,7 @@ const YearsOfExperienceBar = ({ data }) => (
             }}
             axisBottom={{
                 tickSize: 0,
-                tickPadding: 12
+                tickPadding: 12,
             }}
             theme={theme}
         />
@@ -40,7 +40,7 @@ const YearsOfExperienceBar = ({ data }) => (
 )
 
 YearsOfExperienceBar.propTypes = {
-    data: PropTypes.array.isRequired
+    data: PropTypes.array.isRequired,
 }
 
 export default YearsOfExperienceBar

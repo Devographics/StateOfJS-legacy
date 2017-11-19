@@ -13,5 +13,6 @@ program
     .version('0.0.1')
     .command('fetch', 'fetch data from type form')
     .command('report <type>', 'compute report for given section')
+    .command('capture', 'capture screenshots')
     .parse(process.argv)
 

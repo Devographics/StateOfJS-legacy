@@ -119,7 +119,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 61,
+                "doc_count_error_upper_bound": 60,
                 "sum_other_doc_count": 2929,
                 "buckets": [
                     {
@@ -345,7 +345,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 25,
+                "doc_count_error_upper_bound": 27,
                 "sum_other_doc_count": 1204,
                 "buckets": [
                     {
@@ -458,7 +458,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 118,
+                "doc_count_error_upper_bound": 117,
                 "sum_other_doc_count": 5584,
                 "buckets": [
                     {
@@ -684,7 +684,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 25,
+                "doc_count_error_upper_bound": 26,
                 "sum_other_doc_count": 1110,
                 "buckets": [
                     {
@@ -1439,7 +1439,7 @@
     ],
     "others": {
         "doc_count_error_upper_bound": 5,
-        "sum_other_doc_count": 578,
+        "sum_other_doc_count": 576,
         "buckets": [
             {
                 "key": "yarn",
@@ -1483,15 +1483,11 @@
             },
             {
                 "key": "SystemJS",
-                "doc_count": 18
+                "doc_count": 19
             },
             {
                 "key": "gradle",
-                "doc_count": 17
-            },
-            {
-                "key": "StealJS",
-                "doc_count": 10
+                "doc_count": 18
             },
             {
                 "key": "Bazel",
@@ -1499,15 +1495,19 @@
             },
             {
                 "key": "Webpack",
+                "doc_count": 9
+            },
+            {
+                "key": "StealJS",
                 "doc_count": 8
+            },
+            {
+                "key": "ember-cli",
+                "doc_count": 7
             },
             {
                 "key": "npm scripts",
                 "doc_count": 7
-            },
-            {
-                "key": "ember-cli",
-                "doc_count": 6
             },
             {
                 "key": "Angular CLI",

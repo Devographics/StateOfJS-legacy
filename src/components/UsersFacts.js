@@ -21,7 +21,9 @@ export default class UsersFacts extends Component {
             const buckets = data[tool].by_salary.buckets
             salaryKeys.forEach(salaryKey => {
                 const bucket = buckets.find(({ key }) => key === salaryKey)
-                toolSalaries[salaryKey] = Math.round((bucket ? bucket.doc_count : 0) / totalUserCount * 100)
+                toolSalaries[salaryKey] = Math.round(
+                    (bucket ? bucket.doc_count : 0) / totalUserCount * 100
+                )
             })
 
             return toolSalaries
@@ -33,7 +35,9 @@ export default class UsersFacts extends Component {
             const buckets = data[tool].by_experience.buckets
             yearsOfExperienceKeys.forEach(yearsOfExperienceKey => {
                 const bucket = buckets.find(({ key }) => key === yearsOfExperienceKey)
-                toolYearsOfExperience[yearsOfExperienceKey] = Math.round((bucket ? bucket.doc_count : 0) / totalUserCount * 100)
+                toolYearsOfExperience[yearsOfExperienceKey] = Math.round(
+                    (bucket ? bucket.doc_count : 0) / totalUserCount * 100
+                )
             })
 
             return toolYearsOfExperience
@@ -44,23 +48,16 @@ export default class UsersFacts extends Component {
                 <h3 className="SectionTitle">
                     <span>{title}</span>
                 </h3>
-                <div
-                    style={{ marginBottom: 40 }}
-                    className="description"
-                >
+                <div style={{ marginBottom: 40 }} className="description">
                     @todo.
                 </div>
-                <div>
+                <div className="capture">
                     <h4 className="SubSectionTitle">Salary range</h4>
-                    <SalariesBar
-                        data={salariesData}
-                    />
+                    <SalariesBar data={salariesData} />
                 </div>
                 <div>
                     <h4 className="SubSectionTitle">Years of experience</h4>
-                    <YearsOfExperienceBar
-                        data={yearsOfExperienceData}
-                    />
+                    <YearsOfExperienceBar data={yearsOfExperienceData} />
                 </div>
             </div>
         )

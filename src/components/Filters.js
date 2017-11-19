@@ -6,9 +6,9 @@ const Filters = ({ filters, filter: currentFilter, onChange, className }) => (
         {filters.map(filter => (
             <span
                 key={filter}
-                className={`noSelect Filters__item${filter === currentFilter
-                    ? ' Filters__item--active'
-                    : ''}`}
+                className={`noSelect Filters__item${
+                    filter === currentFilter ? ' Filters__item--active' : ''
+                }`}
                 onClick={() => {
                     onChange(filter)
                 }}

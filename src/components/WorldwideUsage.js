@@ -69,10 +69,10 @@ export default class WorldwideUsage extends Component {
                 </h3>
                 <div className="description">
                     <p>
-                        Locations where tools have been used & people are
-                        willing to continue to do so.<br/>
-                        Please be aware that those stats only take in account
-                        responses we were able to locate.
+                        Locations where tools have been used & people are willing to continue to do
+                        so.<br />
+                        Please be aware that those stats only take in account responses we were able
+                        to locate.
                     </p>
                 </div>
                 {/*

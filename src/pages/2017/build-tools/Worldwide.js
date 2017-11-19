@@ -9,4 +9,3 @@ export default () => (
         countries={buildData.countries}
     />
 )
-

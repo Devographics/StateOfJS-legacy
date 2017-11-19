@@ -5,7 +5,7 @@ const fs = require('fs-extra')
 const chalk = require('chalk')
 const program = require('commander')
 const ora = require('ora')
-const reporter = require('./lib/reporter')
+const reporter = require('./lib/collector/reporter')
 
 const writeReport = async (type, report) =>
     fs.outputFile(

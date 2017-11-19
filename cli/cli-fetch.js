@@ -1,12 +1,12 @@
 'use strict'
 
-const typeForm = require('./lib/type_form')
-const dto = require('./lib/dto')
 const chalk = require('chalk')
 const mapValues = require('lodash/mapValues')
 const omit = require('lodash/omit')
-const elastic = require('./lib/elastic')
-const mapping = require('./lib/mapping')
+const typeForm = require('./lib/collector/type_form')
+const dto = require('./lib/collector/dto')
+const elastic = require('./lib/collector/elastic')
+const mapping = require('./lib/collector/mapping')
 
 const run = async () => {
     try {

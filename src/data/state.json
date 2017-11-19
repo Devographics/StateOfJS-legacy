@@ -135,7 +135,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 28,
+                "doc_count_error_upper_bound": 29,
                 "sum_other_doc_count": 1427,
                 "buckets": [
                     {
@@ -361,7 +361,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 5,
+                "doc_count_error_upper_bound": 4,
                 "sum_other_doc_count": 122,
                 "buckets": [
                     {
@@ -475,7 +475,7 @@
             },
             "by_location": {
                 "doc_count_error_upper_bound": 8,
-                "sum_other_doc_count": 297,
+                "sum_other_doc_count": 296,
                 "buckets": [
                     {
                         "key": "United States",
@@ -514,8 +514,8 @@
                         "doc_count": 27
                     },
                     {
-                        "key": "Poland",
-                        "doc_count": 17
+                        "key": "Switzerland",
+                        "doc_count": 18
                     }
                 ]
             }
@@ -700,8 +700,8 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 14,
-                "sum_other_doc_count": 632,
+                "doc_count_error_upper_bound": 15,
+                "sum_other_doc_count": 634,
                 "buckets": [
                     {
                         "key": "United States",
@@ -736,11 +736,11 @@
                         "doc_count": 54
                     },
                     {
-                        "key": "Sweden",
-                        "doc_count": 49
+                        "key": "Brazil",
+                        "doc_count": 47
                     },
                     {
-                        "key": "Brazil",
+                        "key": "Sweden",
                         "doc_count": 47
                     }
                 ]
@@ -922,8 +922,8 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 6,
-                "sum_other_doc_count": 295,
+                "doc_count_error_upper_bound": 7,
+                "sum_other_doc_count": 293,
                 "buckets": [
                     {
                         "key": "undefined",
@@ -959,11 +959,11 @@
                     },
                     {
                         "key": "Poland",
-                        "doc_count": 25
+                        "doc_count": 26
                     },
                     {
                         "key": "Netherlands",
-                        "doc_count": 23
+                        "doc_count": 24
                     }
                 ]
             }
@@ -1869,7 +1869,7 @@
     ],
     "others": {
         "doc_count_error_upper_bound": 5,
-        "sum_other_doc_count": 855,
+        "sum_other_doc_count": 853,
         "buckets": [
             {
                 "key": "VueX",
@@ -1917,7 +1917,7 @@
             },
             {
                 "key": "realm",
-                "doc_count": 19
+                "doc_count": 20
             },
             {
                 "key": "RethinkDB",
@@ -1929,27 +1929,27 @@
             },
             {
                 "key": "Gun.js",
-                "doc_count": 13
+                "doc_count": 14
             },
             {
                 "key": "Redis",
-                "doc_count": 13
+                "doc_count": 14
             },
             {
                 "key": "cerebral",
-                "doc_count": 11
-            },
-            {
-                "key": "Contentful",
-                "doc_count": 8
+                "doc_count": 12
             },
             {
                 "key": "JSON API",
                 "doc_count": 8
             },
             {
-                "key": "horizon",
-                "doc_count": 8
+                "key": "Contentful",
+                "doc_count": 7
+            },
+            {
+                "key": "couchbase",
+                "doc_count": 7
             }
         ]
     },

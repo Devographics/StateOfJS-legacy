@@ -119,7 +119,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 42,
+                "doc_count_error_upper_bound": 41,
                 "sum_other_doc_count": 1876,
                 "buckets": [
                     {
@@ -345,7 +345,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 23,
+                "doc_count_error_upper_bound": 25,
                 "sum_other_doc_count": 1175,
                 "buckets": [
                     {
@@ -459,7 +459,7 @@
             },
             "by_location": {
                 "doc_count_error_upper_bound": 5,
-                "sum_other_doc_count": 158,
+                "sum_other_doc_count": 157,
                 "buckets": [
                     {
                         "key": "United States",
@@ -494,12 +494,12 @@
                         "doc_count": 17
                     },
                     {
-                        "key": "Spain",
+                        "key": "Italy",
                         "doc_count": 10
                     },
                     {
-                        "key": "Italy",
-                        "doc_count": 9
+                        "key": "Spain",
+                        "doc_count": 10
                     }
                 ]
             }
@@ -684,7 +684,7 @@
                 ]
             },
             "by_location": {
-                "doc_count_error_upper_bound": 25,
+                "doc_count_error_upper_bound": 27,
                 "sum_other_doc_count": 1227,
                 "buckets": [
                     {
