@@ -1,12 +1,12 @@
 import React from 'react'
 import stateData from '../../../data/state.json'
-import Experience from '../../../components/Experience'
+import ResultsBlock from '../../../components/ResultsBlock'
 import * as dto from '../../../dto'
 
 const data = dto.experience(stateData.experience)
 
 const StateExperience = () => (
-    <Experience
+    <ResultsBlock
         title="JavaScript state management"
         data={data}
         description={

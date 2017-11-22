@@ -1,12 +1,12 @@
 import React from 'react'
 import mobileData from '../../../data/mobile.json'
-import Experience from '../../../components/Experience'
+import ResultsBlock from '../../../components/ResultsBlock'
 import * as dto from '../../../dto'
 
 const data = dto.experience(mobileData.experience)
 
 const MobileExperience = () => (
-    <Experience
+    <ResultsBlock
         title="Mobile frameworks"
         data={data}
         description={

@@ -3,9 +3,14 @@
     padding: $spacing;
   }
   @include large{
-    padding: $spacing*3;
+    padding: $spacing*4;
     border: 10px solid $active-color;
     min-height: calc(100vh - 22px);
+  }
+  &.home-wrapper{
+    @include large{
+      padding: $spacing*6;
+    }
   }
 }
 
@@ -18,114 +23,114 @@
 }
 .sidebar{
   max-width: 300px;
-  margin-right: $spacing*3;
+  margin-right: $spacing*4;
 }
-// .section{
-//   @include small{
-//     margin-bottom: $spacing*2;
-//   }
-//   @include medium{
-//     margin-bottom: $spacing*4;
-//   }
-//   @include large{
-//     margin-bottom: $spacing*4;
-//   }
-//   .section-inner{
-//     @include large{
-//       display: flex;
-//       justify-content: flex-end;
-//       position: relative;
-//     }
-//   }
-//   .section-title{
-//     @include small{
-//       font-size: $medium-font;
-//     }
-//     @include medium-large{
-//       font-size: $large-font;
-//     }
-//     border-bottom: 1px solid $border-color;
-//     padding-bottom: 3px;
-//     margin: 0 0 $spacing*2 0;
-//     span{
-//       display: block;
-//       padding-bottom: $spacing/2;
-//       border-bottom: 1px solid $border-color;
-//     }
-//   }
-//   // background: rgba(0,0,0,0.1);
-// }
-// .section-layout-b{
-//   display: block;
+.section{
+  @include small{
+    margin-bottom: $spacing*2;
+  }
+  @include medium{
+    margin-bottom: $spacing*4;
+  }
+  @include large{
+    margin-bottom: $spacing*4;
+  }
+  .section-inner{
+    @include large{
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+    }
+  }
+  .section-title{
+    @include small{
+      font-size: $medium-font;
+    }
+    @include medium-large{
+      font-size: $large-font;
+    }
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 3px;
+    margin: 0 0 $spacing*2 0;
+    span{
+      display: block;
+      padding-bottom: $spacing/2;
+      border-bottom: 1px solid $border-color;
+    }
+  }
+  // background: rgba(0,0,0,0.1);
+}
+.section-layout-b{
+  display: block;
   
 
-// }
-// .section-contents{
-//   @include large{
-//     width: 40%;
-//   }
-// }
-// .section-narrow{
-//   @include large{
-//     margin-left: $spacing*9;
-//     margin-right: $spacing*9;
-//   }
-//   .section-contents-wide{
-//     padding: 0;
-//   }
-// }
-// .section-contents-wide{
-//   @include large{
-//     padding: 0 $spacing*9;
-//   }
-// }
-// .sticky-container{
-//   @include small-medium{
-//     margin-bottom: $spacing;
-//   }
-//   @include large{
-//     width: 55%;
-//     margin-right: 5%;
-//     .sticky{
-//       // padding: $spacing*2 0;
-//     }
-//   }
-// }
-// .chart{
-//   h2{
-//     margin-top: 0;
-//   }
-// }
+}
+.section-contents{
+  @include large{
+    width: 40%;
+  }
+}
+.section-narrow{
+  @include large{
+    margin-left: $spacing*9;
+    margin-right: $spacing*9;
+  }
+  .section-contents-wide{
+    padding: 0;
+  }
+}
+.section-contents-wide{
+  @include large{
+    padding: 0 $spacing*9;
+  }
+}
+.sticky-container{
+  @include small-medium{
+    margin-bottom: $spacing;
+  }
+  @include large{
+    width: 55%;
+    margin-right: 5%;
+    .sticky{
+      // padding: $spacing*2 0;
+    }
+  }
+}
+.chart{
+  h2{
+    margin-top: 0;
+  }
+}
 
 
-// .section-block{
-//   margin-bottom: $spacing*3;
-//   h3{
-//     text-align: center;
-//   }
-// }
-// .section-border{
-//   border: 1px solid $border-color;
-//   position: relative;
-//   @include small{
-//     padding: $spacing $spacing $spacing*2 $spacing;
-//   }
-//   @include medium{
-//     padding: $spacing $spacing $spacing*2 $spacing;
-//   }
-//   @include large{
-//     padding: $spacing*2 $spacing*2;
-//   }
-//   h3{
-//     margin: 0;
-//     display: table;
-//     max-width: 90%;
-//     background: $beige;
-//     padding: 0 20px;
-//     position: absolute;
-//     line-height: 1.4;
-//     top: -3px;
-//     left: 50%;
-//     transform:translate(-50%, -50%);
-//   }
-// }
+.section-block{
+  margin-bottom: $spacing*3;
+  h3{
+    text-align: center;
+  }
+}
+.section-border{
+  border: 1px solid $border-color;
+  position: relative;
+  @include small{
+    padding: $spacing $spacing $spacing*2 $spacing;
+  }
+  @include medium{
+    padding: $spacing $spacing $spacing*2 $spacing;
+  }
+  @include large{
+    padding: $spacing*2 $spacing*2;
+  }
+  h3{
+    margin: 0;
+    display: table;
+    max-width: 90%;
+    background: $beige;
+    padding: 0 20px;
+    position: absolute;
+    line-height: 1.4;
+    top: -3px;
+    left: 50%;
+    transform:translate(-50%, -50%);
+  }
+}

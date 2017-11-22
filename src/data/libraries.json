@@ -1,0 +1,350 @@
+{
+  "count": 43,
+  "updated_at": "2017-11-10T13:31:53.033Z",
+  "projects": [
+    {
+      "name": "Aurelia",
+      "description": "The aurelia framework brings together all the required core aurelia libraries into a ready-to-go application-building platform.",
+      "homepage": "http://aurelia.io/",
+      "slug": "aurelia",
+      "github": "aurelia/framework",
+      "stars": 10234
+    },
+    {
+      "name": "Angular 1",
+      "description": "AngularJS - HTML enhanced for web apps!",
+      "homepage": "https://angularjs.org",
+      "slug": "angular-1",
+      "github": "angular/angular.js",
+      "stars": 57480
+    },
+    {
+      "name": "React",
+      "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+      "homepage": "https://reactjs.org",
+      "slug": "react",
+      "github": "facebook/react",
+      "stars": 80677
+    },
+    {
+      "name": "Foundation",
+      "description": "The most advanced responsive front-end framework in the world. Quickly create prototypes and production code for sites that work on any kind of device.",
+      "homepage": "http://foundation.zurb.com",
+      "slug": "foundation",
+      "github": "zurb/foundation-sites",
+      "stars": 26605
+    },
+    {
+      "name": "Bootstrap",
+      "description": "The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.",
+      "homepage": "http://getbootstrap.com",
+      "slug": "bootstrap",
+      "github": "twbs/bootstrap",
+      "stars": 117794
+    },
+    {
+      "name": "Ionic",
+      "description": "Build amazing native and progressive web apps with open web technologies. One app running on everything 🎉",
+      "homepage": "https://ionicframework.com/",
+      "slug": "ionic",
+      "github": "ionic-team/ionic",
+      "stars": 32143
+    },
+    {
+      "name": "Sails",
+      "description": "Realtime MVC Framework for Node.js",
+      "homepage": "https://sailsjs.com",
+      "slug": "sails",
+      "github": "balderdashy/sails",
+      "stars": 17993
+    },
+    {
+      "name": "Ember",
+      "description": "Ember.js - A JavaScript framework for creating ambitious web applications",
+      "homepage": "http://www.emberjs.com",
+      "slug": "ember",
+      "github": "emberjs/ember.js",
+      "stars": 18413
+    },
+    {
+      "name": "Backbone",
+      "description": "Give your JS App some Backbone with Models, Views, Collections, and Events",
+      "homepage": "http://backbonejs.org",
+      "slug": "backbone",
+      "github": "jashkenas/backbone",
+      "stars": 26826
+    },
+    {
+      "name": "Polymer",
+      "description": "Build modern apps using web components",
+      "homepage": "https://www.polymer-project.org/",
+      "slug": "polymer",
+      "github": "Polymer/polymer",
+      "stars": 18710
+    },
+    {
+      "name": "Express",
+      "description": "Fast, unopinionated, minimalist web framework for node.",
+      "homepage": "https://expressjs.com",
+      "slug": "express",
+      "github": "expressjs/express",
+      "stars": 34970
+    },
+    {
+      "name": "Webpack",
+      "description": "A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows to load parts for the application on demand. Through \"loaders,\" modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff.",
+      "homepage": "https://webpack.js.org",
+      "slug": "webpack",
+      "github": "webpack/webpack",
+      "stars": 33676
+    },
+    {
+      "name": "Gulp",
+      "description": "The streaming build system",
+      "homepage": "http://gulpjs.com",
+      "slug": "gulp",
+      "github": "gulpjs/gulp",
+      "stars": 27876
+    },
+    {
+      "name": "Grunt",
+      "description": "Grunt: The JavaScript Task Runner",
+      "homepage": "http://gruntjs.com/",
+      "slug": "grunt",
+      "github": "gruntjs/grunt",
+      "stars": 11630
+    },
+    {
+      "name": "Jasmine",
+      "description": "Simple JavaScript testing framework for browsers and node.js",
+      "homepage": "http://jasmine.github.io/",
+      "slug": "jasmine",
+      "github": "jasmine/jasmine",
+      "stars": 13013
+    },
+    {
+      "name": "Mocha",
+      "description": "☕️ simple, flexible, fun javascript test framework for node.js & the browser",
+      "homepage": "https://mochajs.org",
+      "slug": "mocha",
+      "github": "mochajs/mocha",
+      "stars": 13779
+    },
+    {
+      "name": "Jest",
+      "description": "🃏 Delightful JavaScript Testing.",
+      "homepage": "http://facebook.github.io/jest/",
+      "slug": "jest",
+      "github": "facebook/jest",
+      "stars": 13297
+    },
+    {
+      "name": "Koa",
+      "description": "Expressive middleware for node.js using ES2017 async functions",
+      "homepage": "http://koajs.com",
+      "slug": "koa",
+      "github": "koajs/koa",
+      "stars": 18186
+    },
+    {
+      "name": "Hapi",
+      "description": "Server Framework  for Node.js",
+      "homepage": "hapijs.com",
+      "slug": "hapi",
+      "github": "hapijs/hapi",
+      "stars": 8585
+    },
+    {
+      "name": "Meteor",
+      "description": "Meteor, the JavaScript App Platform",
+      "homepage": "https://www.meteor.com",
+      "slug": "meteor",
+      "github": "meteor/meteor",
+      "stars": 38610
+    },
+    {
+      "name": "Browserify",
+      "description": "browser-side require() the node.js way",
+      "homepage": "http://browserify.org/",
+      "slug": "browserify",
+      "github": "browserify/browserify",
+      "stars": 11489
+    },
+    {
+      "name": "Loopback",
+      "description": "LoopBack makes it easy to build modern applications that require complex integrations.",
+      "homepage": "http://loopback.io",
+      "slug": "loopback",
+      "github": "strongloop/loopback",
+      "stars": 10075
+    },
+    {
+      "name": "Vue.JS",
+      "description": "A progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+      "homepage": "http://vuejs.org",
+      "slug": "vuejs",
+      "github": "vuejs/vue",
+      "stars": 73209
+    },
+    {
+      "name": "NativeScript",
+      "description": "NativeScript is an open source framework for building truly native mobile apps with JavaScript. Use web skills, like Angular, FlexBox and CSS, and get native UI and performance on iOS and Android.",
+      "homepage": "http://www.nativescript.org",
+      "slug": "nativescript",
+      "github": "NativeScript/NativeScript",
+      "stars": 11636
+    },
+    {
+      "name": "Stylus",
+      "description": "Expressive, robust, feature-rich CSS language built for nodejs",
+      "homepage": "http://stylus-lang.com/",
+      "slug": "stylus",
+      "github": "stylus/stylus",
+      "stars": 8593
+    },
+    {
+      "name": "Redux",
+      "description": "Predictable state container for JavaScript apps",
+      "homepage": "http://redux.js.org",
+      "slug": "redux",
+      "github": "reactjs/redux",
+      "stars": 35503
+    },
+    {
+      "name": "Tape",
+      "description": "tap-producing test harness for node and browsers",
+      "homepage": "",
+      "slug": "tape",
+      "github": "substack/tape",
+      "stars": 4234
+    },
+    {
+      "name": "Less",
+      "description": "Less. The dynamic stylesheet language.",
+      "homepage": "http://lesscss.org",
+      "slug": "less",
+      "github": "less/less.js",
+      "stars": 15202
+    },
+    {
+      "name": "Relay",
+      "description": "Relay is a JavaScript framework for building data-driven React applications.",
+      "homepage": "https://facebook.github.io/relay/",
+      "slug": "relay",
+      "github": "facebook/relay",
+      "stars": 9845
+    },
+    {
+      "name": "Falcor",
+      "description": "A JavaScript library for efficient data fetching",
+      "homepage": "http://netflix.github.io/falcor",
+      "slug": "falcor",
+      "github": "Netflix/falcor",
+      "stars": 8240
+    },
+    {
+      "name": "Electron",
+      "description": "Build cross platform desktop apps with JavaScript, HTML, and CSS",
+      "homepage": "https://electron.atom.io",
+      "slug": "electron",
+      "github": "electron/electron",
+      "stars": 52641
+    },
+    {
+      "name": "TypeScript",
+      "description": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.",
+      "homepage": "http://www.typescriptlang.org",
+      "slug": "typescript",
+      "github": "Microsoft/TypeScript",
+      "stars": 27757
+    },
+    {
+      "name": "React Native",
+      "description": "A framework for building native apps with React.",
+      "homepage": "http://facebook.github.io/react-native/",
+      "slug": "react-native",
+      "github": "facebook/react-native",
+      "stars": 55656
+    },
+    {
+      "name": "rollup",
+      "description": "Next-generation ES6 module bundler",
+      "homepage": "http://rollupjs.org",
+      "slug": "rollup",
+      "github": "rollup/rollup",
+      "stars": 10775
+    },
+    {
+      "name": "AVA",
+      "description": ":rocket: Futuristic JavaScript test runner",
+      "homepage": "",
+      "slug": "ava",
+      "github": "avajs/ava",
+      "stars": 11892
+    },
+    {
+      "name": "GraphQL",
+      "description": "GraphQL is a query language and execution engine tied to any backend service.",
+      "homepage": "http://facebook.github.io/graphql/",
+      "slug": "graphql",
+      "github": "facebook/graphql",
+      "stars": 6458
+    },
+    {
+      "name": "Enzyme",
+      "description": "JavaScript Testing utilities for React",
+      "homepage": "http://airbnb.io/enzyme/",
+      "slug": "enzyme",
+      "github": "airbnb/enzyme",
+      "stars": 11442
+    },
+    {
+      "name": "mobx",
+      "description": "Simple, scalable state management.",
+      "homepage": "http://mobx.js.org",
+      "slug": "mobx",
+      "github": "mobxjs/mobx",
+      "stars": 11867
+    },
+    {
+      "name": "Angular 2",
+      "description": "One framework. Mobile & desktop.",
+      "homepage": "https://angular.io",
+      "slug": "angular-2",
+      "github": "angular/angular",
+      "stars": 29835
+    },
+    {
+      "name": "Yarn",
+      "description": "📦🐈 Fast, reliable, and secure dependency management.",
+      "homepage": "https://yarnpkg.com",
+      "slug": "yarn",
+      "github": "yarnpkg/yarn",
+      "stars": 28504
+    },
+    {
+      "name": "Flow",
+      "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
+      "homepage": "https://flow.org/",
+      "slug": "flow",
+      "github": "facebook/flow",
+      "stars": 14136
+    },
+    {
+      "name": "npm",
+      "description": "a package manager for javascript",
+      "homepage": "http://www.npmjs.com/",
+      "slug": "npm",
+      "github": "npm/npm",
+      "stars": 14421
+    },
+    {
+      "name": "Elm",
+      "description": "Compiler for Elm, a functional language for reliable webapps.",
+      "homepage": "http://elm-lang.org/",
+      "slug": "elm",
+      "github": "elm-lang/elm-compiler",
+      "stars": 4146
+    }
+  ]
+}

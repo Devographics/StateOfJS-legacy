@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { ResponsiveBubbleHtml } from 'nivo'
 import { colors } from '../../constants'
+import BubbleNode from './BubbleNode'
 
 const NodeComponent = ({ node, style, handlers }) => {
     if (style.r <= 0) return null
@@ -69,10 +70,11 @@ export default class CountryBubble extends PureComponent {
 
         return (
             <ResponsiveBubbleHtml
+                nodeComponent={BubbleNode}
                 isZoomable={false}
                 colorBy={getColor}
                 labelTextColor="inherit:darker(2)"
-                labelSkipRadius={20}
+                labelSkipRadius={15}
                 padding={2}
                 nodeComponent={NodeComponent}
                 animate={false}

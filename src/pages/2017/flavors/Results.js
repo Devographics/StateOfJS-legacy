@@ -1,12 +1,12 @@
 import React from 'react'
 import flavorData from '../../../data/flavor.json'
-import Experience from '../../../components/Experience'
+import ResultsBlock from '../../../components/ResultsBlock'
 import * as dto from '../../../dto'
 
 const data = dto.experience(flavorData.experience)
 
 const FlavorExperience = () => (
-    <Experience
+    <ResultsBlock
         title="JavaScript flavors"
         data={data}
         description={

@@ -1,12 +1,12 @@
 import React from 'react'
 import styleData from '../../../data/style.json'
-import Experience from '../../../components/Experience'
+import ResultsBlock from '../../../components/ResultsBlock'
 import * as dto from '../../../dto'
 
 const data = dto.experience(styleData.experience)
 
 const StyleExperience = () => (
-    <Experience
+    <ResultsBlock
         title="Styling/CSS solutions"
         data={data}
         description={

@@ -1,12 +1,12 @@
 import React from 'react'
 import buildData from '../../../data/build.json'
-import Experience from '../../../components/Experience'
+import ResultsBlock from '../../../components/ResultsBlock'
 import * as dto from '../../../dto'
 
 const data = dto.experience(buildData.experience)
 
 const BuildExperience = () => (
-    <Experience
+    <ResultsBlock
         title="Build tools"
         data={data}
         description={

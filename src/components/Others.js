@@ -5,6 +5,8 @@ import Filters from './Filters'
 import Legends from './Legends'
 import OthersBar from './charts/OthersBar'
 import OthersBubble from './charts/OthersBubble'
+import Libraries from './Libraries'
+import reverse from 'lodash/reverse'
 
 export default class Others extends Component {
     state = {
@@ -12,7 +14,7 @@ export default class Others extends Component {
     }
 
     static propTypes = {
-        title: PropTypes.string.isRequired,
+        title: PropTypes.string,
         base: PropTypes.array.isRequired,
         baseKeys: PropTypes.array.isRequired,
         others: PropTypes.array.isRequired,
@@ -43,8 +45,11 @@ export default class Others extends Component {
                 <div>
                     <div className="capture">
                         <h4 className="SubSectionTitle">Top mentions</h4>
-                        <div className="chart-wrapper" style={{ height: 800 }}>
-                            <OthersBar data={others} />
+                        <div className="others-wrapper">
+                            <Libraries data={reverse([...others])} variant="vertical"/>
+                            <div className="chart-wrapper" style={{ height: 800 }}>
+                                <OthersBar data={others} />
+                            </div>
                         </div>
                     </div>
                     <div>

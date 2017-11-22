@@ -1,12 +1,12 @@
 import React from 'react'
 import backendData from '../../../data/backend.json'
-import Experience from '../../../components/Experience'
+import ResultsBlock from '../../../components/ResultsBlock'
 import * as dto from '../../../dto'
 
 const data = dto.experience(backendData.experience)
 
 const BackendExperience = () => (
-    <Experience
+    <ResultsBlock
         title="Full-Stack frameworks"
         data={data}
         description={

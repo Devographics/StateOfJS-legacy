@@ -24,12 +24,14 @@ export default class Legends extends Component {
 
         return (
             <div className={`Legends${modifier ? ` Legends--${modifier}` : ''}`} style={style}>
-                {legends.map(({ label, color }) => (
-                    <div className="Legends__Item" key={label} style={itemStyle}>
-                        <span className="Legends__Item__Chip" style={{ background: color }} />
-                        {label}
-                    </div>
-                ))}
+                <div className="Legends__Inner">
+                    {legends.map(({ label, color }) => (
+                        <div className="Legends__Item" key={label} style={itemStyle}>
+                            <span className="Legends__Item__Chip" style={{ background: color }} />
+                            {label}
+                        </div>
+                    ))}
+                </div>
             </div>
         )
     }

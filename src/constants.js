@@ -106,3 +106,9 @@ export const featureColors = {
     'Major feature': '#9688e4',
     'Vital feature': '#7d70c7',
 }
+
+export const aliases = {
+    Vue: 'Vue.JS',
+    Angular: 'Angular 1',
+    'No Front-End Framework': 'No Framework',
+}

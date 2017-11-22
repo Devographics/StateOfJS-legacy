@@ -1,12 +1,12 @@
 import React from 'react'
 import testingData from '../../../data/testing.json'
-import Experience from '../../../components/Experience'
+import ResultsBlock from '../../../components/ResultsBlock'
 import * as dto from '../../../dto'
 
 const data = dto.experience(testingData.experience)
 
 const TestingExperience = () => (
-    <Experience
+    <ResultsBlock
         title="Testing frameworks"
         data={data}
         description={

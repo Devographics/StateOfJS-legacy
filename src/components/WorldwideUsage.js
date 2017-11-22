@@ -86,7 +86,7 @@ export default class WorldwideUsage extends Component {
                     Simply use `BubbleImplementation` or `TreeMapImplementation`.
 
                 */}
-                <TreeMapImplementation
+                <BubbleImplementation
                     countries={countries}
                     tools={tools}
                     currentTool={tool}

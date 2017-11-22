@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ExperienceLegends from './ExperienceLegends'
 import ExperienceBar from './charts/ExperienceBar'
+import Libraries from './Libraries'
+import { sortDataBy } from '../sorts'
+import ShareChart from '../components/common/ShareChart'
 
 export default class Experience extends Component {
     static propTypes = {
@@ -18,11 +21,14 @@ export default class Experience extends Component {
     }
 
     render() {
-        const { title, data, description } = this.props
+        const { title, data: _data, description } = this.props
         const { tool } = this.state
+        const indexBy = 'tool'
+
+        const data = sortDataBy(_data, indexBy, `I've USED it before, and WOULD use it again`)
 
         return (
-            <div className="Section">
+            <div className="section">
                 <h3 className="SectionTitle">
                     <span>{title}</span>
                 </h3>
@@ -36,8 +42,10 @@ export default class Experience extends Component {
                         className="Filters--experience"
                     />
                     */}
-                    <ExperienceBar facet={tool} data={data} indexBy="tool" />
                     <ExperienceLegends />
+                    <ExperienceBar facet={tool} data={data} indexBy={indexBy} />
+                    <Libraries variant="horizontal" data={data} />
+                    <ShareChart section="frontend" />
                 </div>
             </div>
         )

@@ -1,15 +1,14 @@
 import React from 'react'
 import frontendData from '../../../data/frontend.json'
-import Experience from '../../../components/Experience'
+import ResultsBlock from '../../../components/ResultsBlock'
 import * as dto from '../../../dto'
 import ResourcesBlock from '../../../components/blocks/ResourcesBlock'
-import ShareChart from '../../../components/common/ShareChart'
 
 const data = dto.experience(frontendData.experience)
 
 const FrontendExperience = () => (
     <div>
-        <Experience
+        <ResultsBlock
             data={data}
             description={
                 <div className="description">
@@ -22,7 +21,6 @@ const FrontendExperience = () => (
             }
         />
 
-        <ShareChart section="frontend" />
 
         <ResourcesBlock section="frontend" sponsor="reactforbeginners" />
     </div>

@@ -7,6 +7,7 @@ import footerContents from '../../data/footer.md'
 
 import HomeLayout from '../components/common/HomeLayout'
 import PageLayout from '../components/common/PageLayout'
+import classNames from 'classnames'
 
 // import '../css/markdown-styles'
 
@@ -61,7 +62,7 @@ export default class Template extends React.Component {
         ]
 
         return (
-            <div className="outer-wrapper">
+            <div className={classNames('outer-wrapper', {'home-wrapper': this.props.location.pathname === '/'})}>
                 <Helmet meta={meta}>
                     <script
                         src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js"

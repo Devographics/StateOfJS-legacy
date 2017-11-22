@@ -19,12 +19,9 @@ const OthersBar = ({ data }) => (
             top: 30,
             right: 10,
             bottom: 30,
-            left: 120,
+            left: 20,
         }}
-        axisLeft={{
-            tickSize: 0,
-            tickPadding: 10,
-        }}
+        axisLeft={null}
         axisTop={{
             format: '.2s',
         }}

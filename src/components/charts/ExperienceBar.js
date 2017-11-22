@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import sortBy from 'lodash/sortBy'
 import { format } from 'd3-format'
 import { ResponsiveBar } from 'nivo'
 import { colors } from '../../constants'
 import theme from '../../nivoTheme'
+
 import {
     experience,
     experienceKeys,
@@ -38,7 +38,7 @@ const keys = [
 const margin = {
     top: 10,
     right: 10,
-    bottom: 30,
+    bottom: 10,
     left: 10,
 }
 const getLabel = d => Math.abs(d.value)
@@ -88,32 +88,15 @@ export default class ExperienceBar extends Component {
     }
 
     render() {
-        const { data: _data, indexBy, facet } = this.props
-
-        const data = sortBy(
-            _data.map(d => {
-                const column = experienceKeys.reduce(
-                    (result, key) => {
-                        result[key] = d[key]
-                        // if (!experienceSatisfactionKeys.includes(key)) {
-                        //     result[key] *= -1
-                        // }
-                        return result
-                    },
-                    { [indexBy]: d[indexBy] }
-                )
-
-                return column
-            }),
-            d => d[`I've USED it before, and WOULD use it again`]
-        )
+        const { data, indexBy, facet } = this.props
 
         return (
+            <div className="results-chart-wrapper">
             <div style={{ height: data.length * 60 }}>
                 <ResponsiveBar
                     margin={margin}
                     layout="vertical"
-                    padding={0.4}
+                    padding={0.6}
                     data={data}
                     keys={keys}
                     indexBy={indexBy}
@@ -131,9 +114,10 @@ export default class ExperienceBar extends Component {
                     motionDamping={15}
                     axisLeft={null}
                     axisRight={null}
-                    axisBottom={axisBottom}
+                    axisBottom={null}
                     theme={theme}
                 />
+            </div>
             </div>
         )
     }

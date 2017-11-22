@@ -1,5 +1,4 @@
 .chart-wrapper{
-	margin-bottom: $spacing*3;
     font-size: $medium-font;
     g.xsmall{
         font-size: 0.6rem;
@@ -64,5 +63,12 @@
         label{
             font-size: $medium-font;
         }
+    }
+}
+
+.results-chart-wrapper{
+    padding: 0 $spacing*3;
+    text{
+        font-size: $small-font;
     }
 }

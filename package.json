@@ -8,6 +8,7 @@
     "node": ">=8.3.0"
   },
   "dependencies": {
+    "address": "^1.0.3",
     "axios": "^0.16.2",
     "babel-plugin-add-module-exports": "^0.2.0",
     "babel-preset-es2015": "^6.13.2",
@@ -21,7 +22,7 @@
     "dsv-loader": "^1.1.0",
     "front-matter": "^2.0.7",
     "fs-extra": "^4.0.2",
-    "gatsby": "^1.9.117",
+    "gatsby": "^1.9.118",
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-google-analytics": "^1.0.12",
     "gatsby-plugin-react-helmet": "^1.0.8",
@@ -36,7 +37,7 @@
     "gatsby-transformer-remark": "^1.0.0-beta.6",
     "highlight.js": "^9.6.0",
     "history": "^2.0.2",
-    "js-yaml": "^3.6.0",
+    "js-yaml": "^3.10.0",
     "lodash": "^4.17.4",
     "markdown-it": "^7.0.1",
     "markdown-it-abbr": "^1.0.3",

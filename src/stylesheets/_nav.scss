@@ -19,6 +19,7 @@
 }
 
 .nav-page-active{
+  @include font-bold;
   &:before{
     content: "> ";
   }  
