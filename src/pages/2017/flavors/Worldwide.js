@@ -1,10 +1,9 @@
 import React from 'react'
 import flavorData from '../../../data/flavor.json'
-import WorldwideBlock from '../../../components/blocks/WorldwideBlock'
+import WorldwideTemplate from '../../../components/templates/WorldwideTemplate'
 
 export default () => (
-    <WorldwideBlock
-        title="JavaScript flavors worldwide usage"
+    <WorldwideTemplate
         tools={flavorData.keys}
         countries={flavorData.countries}
     />

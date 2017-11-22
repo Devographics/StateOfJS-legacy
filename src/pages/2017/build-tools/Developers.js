@@ -1,9 +1,9 @@
 import React from 'react'
 import buildData from '../../../data/build.json'
-import DevelopersBlock from '../../../components/blocks/DevelopersBlock'
+import DevelopersTemplate from '../../../components/templates/DevelopersTemplate'
 
 const BuildUsers = () => (
-    <DevelopersBlock
+    <DevelopersTemplate
         title="Build tools users facts"
         tools={buildData.keys}
         defaultTool="Webpack"

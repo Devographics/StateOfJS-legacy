@@ -1,10 +1,9 @@
 import React from 'react'
 import frontendData from '../../../data/frontend.json'
-import WorldwideBlock from '../../../components/blocks/WorldwideBlock'
+import WorldwideTemplate from '../../../components/templates/WorldwideTemplate'
 
 export default () => (
-    <WorldwideBlock
-        title="Frontend frameworks worldwide usage"
+    <WorldwideTemplate
         tools={frontendData.keys}
         countries={frontendData.countries}
     />

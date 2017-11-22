@@ -5,6 +5,7 @@ import Libraries from '../elements/Libraries'
 import { sortDataBy } from '../../sorts'
 import ShareChart from '../common/ShareChart'
 import { experience, experienceColors } from '../../constants'
+import Legends from '../elements/Legends'
 
 const legends = [
     experience.never_heard,

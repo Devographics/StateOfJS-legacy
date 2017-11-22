@@ -15,7 +15,7 @@ items:
   subPages:
   - results
   - other
-  - heatmap
+  # - heatmap
   # - affinity
   - developers
   - worldwide

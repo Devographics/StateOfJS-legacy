@@ -1,9 +1,9 @@
 import React from 'react'
 import testingData from '../../../data/testing.json'
-import DevelopersBlock from '../../../components/blocks/DevelopersBlock'
+import DevelopersTemplate from '../../../components/templates/DevelopersTemplate'
 
 const TestingUsers = () => (
-    <DevelopersBlock
+    <DevelopersTemplate
         title="Testing frameworks users facts"
         tools={testingData.keys}
         defaultTool="Mocha"

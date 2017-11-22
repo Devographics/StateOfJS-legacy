@@ -1,9 +1,9 @@
 import React from 'react'
 import stateData from '../../../data/state.json'
-import DevelopersBlock from '../../../components/blocks/DevelopersBlock'
+import DevelopersTemplate from '../../../components/templates/DevelopersTemplate'
 
 const StateUsers = () => (
-    <DevelopersBlock
+    <DevelopersTemplate
         title="JavaScript state management tools users facts"
         tools={stateData.keys}
         defaultTool="REST API"

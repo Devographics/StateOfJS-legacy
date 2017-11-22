@@ -1,10 +1,9 @@
 import React from 'react'
 import mobileData from '../../../data/mobile.json'
-import WorldwideBlock from '../../../components/blocks/WorldwideBlock'
+import WorldwideTemplate from '../../../components/templates/WorldwideTemplate'
 
 export default () => (
-    <WorldwideBlock
-        title="Mobile frameworks worldwide usage"
+    <WorldwideTemplate
         tools={mobileData.keys}
         countries={mobileData.countries}
     />

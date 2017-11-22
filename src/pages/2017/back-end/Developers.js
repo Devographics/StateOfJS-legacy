@@ -1,9 +1,9 @@
 import React from 'react'
 import backendData from '../../../data/backend.json'
-import DevelopersBlock from '../../../components/blocks/DevelopersBlock'
+import DevelopersTemplate from '../../../components/templates/DevelopersTemplate'
 
 const BackendUsers = () => (
-    <DevelopersBlock
+    <DevelopersTemplate
         title="Full-Stack frameworks users facts"
         tools={backendData.keys}
         defaultTool="Meteor"

@@ -1,10 +1,9 @@
 import React from 'react'
 import testingData from '../../../data/testing.json'
-import WorldwideBlock from '../../../components/blocks/WorldwideBlock'
+import WorldwideTemplate from '../../../components/templates/WorldwideTemplate'
 
 export default () => (
-    <WorldwideBlock
-        title="Testing frameworks worldwide usage"
+    <WorldwideTemplate
         tools={testingData.keys}
         countries={testingData.countries}
     />

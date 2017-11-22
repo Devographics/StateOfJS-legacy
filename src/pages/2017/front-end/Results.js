@@ -21,7 +21,6 @@ const FrontendExperience = () => (
             }
         />
 
-
         <ResourcesBlock section="frontend" sponsor="reactforbeginners" />
     </div>
 )

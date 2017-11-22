@@ -15,20 +15,6 @@ export default class DevelopersBlock extends Component {
     render() {
         const { title, data, tools } = this.props
 
-        const salariesData = tools.map(tool => {
-            const toolSalaries = { tool }
-            const totalUserCount = data[tool].doc_count
-            const buckets = data[tool].by_salary.buckets
-            salaryKeys.forEach(salaryKey => {
-                const bucket = buckets.find(({ key }) => key === salaryKey)
-                toolSalaries[salaryKey] = Math.round(
-                    (bucket ? bucket.doc_count : 0) / totalUserCount * 100
-                )
-            })
-
-            return toolSalaries
-        })
-
         const yearsOfExperienceData = tools.map(tool => {
             const toolYearsOfExperience = { tool }
             const totalUserCount = data[tool].doc_count
@@ -44,21 +30,9 @@ export default class DevelopersBlock extends Component {
         })
 
         return (
-            <div className="Section">
-                <h3 className="SectionTitle">
-                    <span>{title}</span>
-                </h3>
-                <div style={{ marginBottom: 40 }} className="description">
-                    @todo.
-                </div>
-                <div className="capture">
-                    <h4 className="SubSectionTitle">Salary range</h4>
-                    <SalariesBar data={salariesData} />
-                </div>
-                <div>
-                    <h4 className="SubSectionTitle">Years of experience</h4>
-                    <YearsOfExperienceBar data={yearsOfExperienceData} />
-                </div>
+            <div className="block developers-block">
+                <h4 className="SubSectionTitle">Years of experience</h4>
+                <YearsOfExperienceBar data={yearsOfExperienceData} />
             </div>
         )
     }
