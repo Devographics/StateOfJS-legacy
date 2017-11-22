@@ -1,9 +1,9 @@
 import React from 'react'
 import flavorData from '../../../data/flavor.json'
-import UsersFacts from '../../../components/UsersFacts'
+import DevelopersBlock from '../../../components/blocks/DevelopersBlock'
 
 const FlavorUsers = () => (
-    <UsersFacts
+    <DevelopersBlock
         title="JavaScript flavors users facts"
         tools={flavorData.keys}
         defaultTool={'"Plain" JavaScript (ES5)'}

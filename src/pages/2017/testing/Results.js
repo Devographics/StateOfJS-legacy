@@ -1,6 +1,6 @@
 import React from 'react'
 import testingData from '../../../data/testing.json'
-import ResultsBlock from '../../../components/ResultsBlock'
+import ResultsBlock from '../../../components/blocks/ResultsBlock'
 import * as dto from '../../../dto'
 
 const data = dto.experience(testingData.experience)

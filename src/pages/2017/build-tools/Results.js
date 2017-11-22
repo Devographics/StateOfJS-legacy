@@ -1,6 +1,6 @@
 import React from 'react'
 import buildData from '../../../data/build.json'
-import ResultsBlock from '../../../components/ResultsBlock'
+import ResultsBlock from '../../../components/blocks/ResultsBlock'
 import * as dto from '../../../dto'
 
 const data = dto.experience(buildData.experience)

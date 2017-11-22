@@ -1,9 +1,9 @@
 import React from 'react'
 import mobileData from '../../../data/mobile.json'
-import UsersFacts from '../../../components/UsersFacts'
+import DevelopersBlock from '../../../components/blocks/DevelopersBlock'
 
 const MobileUsers = () => (
-    <UsersFacts
+    <DevelopersBlock
         title="Mobile frameworks users facts"
         tools={mobileData.keys}
         defaultTool="Native Apps"

@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import libraries from '../data/libraries.json'
+import libraries from '../../data/libraries.json'
 import find from 'lodash/find'
-import { aliases } from '../constants.js'
+import { aliases } from '../../constants.js'
 import classNames from 'classnames'
 
 const Libraries = ({ data, variant = "horizontal" }) => (

@@ -1,6 +1,6 @@
 import React from 'react'
 import frontendData from '../../../data/frontend.json'
-import ResultsBlock from '../../../components/ResultsBlock'
+import ResultsBlock from '../../../components/blocks/ResultsBlock'
 import * as dto from '../../../dto'
 import ResourcesBlock from '../../../components/blocks/ResourcesBlock'
 

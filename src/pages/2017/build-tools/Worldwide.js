@@ -1,9 +1,9 @@
 import React from 'react'
 import buildData from '../../../data/build.json'
-import WorldwideUsage from '../../../components/WorldwideUsage'
+import WorldwideBlock from '../../../components/blocks/WorldwideBlock'
 
 export default () => (
-    <WorldwideUsage
+    <WorldwideBlock
         title="Build tools worldwide usage"
         tools={buildData.keys}
         countries={buildData.countries}

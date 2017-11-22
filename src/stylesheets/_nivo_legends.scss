@@ -85,14 +85,17 @@
 }
 .libraries-horizontal{
 
-    @include medium-large{
-        padding: 0 $spacing*2;
-    }
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     // note: 19px is half the width of one chart bar
-    padding: 0 calc(#{$spacing*6} + 19px);
+    @include small{
+        padding: 0 calc(#{$spacing} + 19px);
+    }
+    @include medium-large{
+        padding: 0 calc(#{$spacing*6} + 19px);
+    }
     margin-bottom: $spacing*2;
 
     .libraries-item-link{

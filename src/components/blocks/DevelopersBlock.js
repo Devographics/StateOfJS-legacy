@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import YearsOfExperienceBar from './charts/YearsOfExperienceBar'
-import SalariesBar from './charts/SalariesBar'
-import { salaryKeys, yearsOfExperienceKeys } from '../constants'
+import YearsOfExperienceBar from '../charts/YearsOfExperienceBar'
+import SalariesBar from '../charts/SalariesBar'
+import { salaryKeys, yearsOfExperienceKeys } from '../../constants'
 
-export default class UsersFacts extends Component {
+export default class DevelopersBlock extends Component {
     static propTypes = {
         title: PropTypes.string.isRequired,
         tools: PropTypes.arrayOf(PropTypes.string).isRequired,

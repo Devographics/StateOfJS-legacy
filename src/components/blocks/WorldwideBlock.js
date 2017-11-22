@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import CountryBubble from './charts/CountryBubble'
-import CountryTreeMap from './charts/CountryTreeMap'
+import CountryBubble from '../charts/CountryBubble'
+// import CountryTreeMap from '../charts/CountryTreeMap'
 
 const BubbleImplementation = ({ countries, tools, currentTool, setCurrentTool }) => (
     <div className="worldwide__grid">
@@ -21,25 +21,25 @@ const BubbleImplementation = ({ countries, tools, currentTool, setCurrentTool })
     </div>
 )
 
-const TreeMapImplementation = ({ countries, tools, currentTool, setCurrentTool }) => (
-    <div className="worldwide__grid">
-        {countries.filter(({ key }, i) => key !== 'undefined').map(country => (
-            <div key={country.key} className="worldwide__grid__item">
-                <div className="worldwide__chart">
-                    <CountryTreeMap
-                        keys={tools}
-                        data={country}
-                        currentTool={currentTool}
-                        setCurrentTool={setCurrentTool}
-                    />
-                </div>
-                <h4 style={{ textAlign: 'center' }}>{country.key}</h4>
-            </div>
-        ))}
-    </div>
-)
+// const TreeMapImplementation = ({ countries, tools, currentTool, setCurrentTool }) => (
+//     <div className="worldwide__grid">
+//         {countries.filter(({ key }, i) => key !== 'undefined').map(country => (
+//             <div key={country.key} className="worldwide__grid__item">
+//                 <div className="worldwide__chart">
+//                     <CountryTreeMap
+//                         keys={tools}
+//                         data={country}
+//                         currentTool={currentTool}
+//                         setCurrentTool={setCurrentTool}
+//                     />
+//                 </div>
+//                 <h4 style={{ textAlign: 'center' }}>{country.key}</h4>
+//             </div>
+//         ))}
+//     </div>
+// )
 
-export default class WorldwideUsage extends Component {
+export default class WorldwideBlock extends Component {
     static propTypes = {
         title: PropTypes.string.isRequired,
         tools: PropTypes.arrayOf(PropTypes.string).isRequired,

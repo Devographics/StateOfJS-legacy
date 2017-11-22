@@ -1,10 +1,21 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import ExperienceLegends from './ExperienceLegends'
-import ExperienceBar from './charts/ExperienceBar'
-import Libraries from './Libraries'
-import { sortDataBy } from '../sorts'
-import ShareChart from '../components/common/ShareChart'
+import ExperienceBar from '../charts/ExperienceBar'
+import Libraries from '../elements/Libraries'
+import { sortDataBy } from '../../sorts'
+import ShareChart from '../common/ShareChart'
+import { experience, experienceColors } from '../../constants'
+
+const legends = [
+    experience.never_heard,
+    experience.not_interested,
+    experience.would_learn,
+    experience.would_not_use,
+    experience.would_use,
+].map(key => ({
+    label: key,
+    color: experienceColors[key],
+}))
 
 export default class Experience extends Component {
     static propTypes = {
@@ -42,7 +53,7 @@ export default class Experience extends Component {
                         className="Filters--experience"
                     />
                     */}
-                    <ExperienceLegends />
+                    <Legends legends={legends} modifier="horizontal" />
                     <ExperienceBar facet={tool} data={data} indexBy={indexBy} />
                     <Libraries variant="horizontal" data={data} />
                     <ShareChart section="frontend" />

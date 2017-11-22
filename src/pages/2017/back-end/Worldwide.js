@@ -1,9 +1,9 @@
 import React from 'react'
 import backendData from '../../../data/backend.json'
-import WorldwideUsage from '../../../components/WorldwideUsage'
+import WorldwideBlock from '../../../components/blocks/WorldwideBlock'
 
 export default () => (
-    <WorldwideUsage
+    <WorldwideBlock
         title="Full-Stack frameworks worldwide usage"
         tools={backendData.keys}
         countries={backendData.countries}

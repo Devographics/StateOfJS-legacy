@@ -1,9 +1,9 @@
 import React from 'react'
 import styleData from '../../../data/style.json'
-import WorldwideUsage from '../../../components/WorldwideUsage'
+import WorldwideBlock from '../../../components/blocks/WorldwideBlock'
 
 export default () => (
-    <WorldwideUsage
+    <WorldwideBlock
         title="Styling/CSS solutions worldwide usage"
         tools={styleData.keys}
         countries={styleData.countries}

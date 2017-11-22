@@ -1,9 +1,9 @@
 import React from 'react'
 import frontendData from '../../../data/frontend.json'
-import UsersFacts from '../../../components/UsersFacts'
+import DevelopersBlock from '../../../components/blocks/DevelopersBlock'
 
 const FrontendUsers = () => (
-    <UsersFacts
+    <DevelopersBlock
         tools={frontendData.keys}
         defaultTool="React"
         data={frontendData.experienceByUsers}

@@ -1,9 +1,9 @@
 import React from 'react'
 import styleData from '../../../data/style.json'
-import UsersFacts from '../../../components/UsersFacts'
+import DevelopersBlock from '../../../components/blocks/DevelopersBlock'
 
 const StyleUsers = () => (
-    <UsersFacts
+    <DevelopersBlock
         title="Styling/CSS solutions users facts"
         tools={styleData.keys}
         defaultTool="Plain CSS"

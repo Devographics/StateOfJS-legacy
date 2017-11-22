@@ -1,6 +1,6 @@
 import React from 'react'
 import styleData from '../../../data/style.json'
-import ResultsBlock from '../../../components/ResultsBlock'
+import ResultsBlock from '../../../components/blocks/ResultsBlock'
 import * as dto from '../../../dto'
 
 const data = dto.experience(styleData.experience)

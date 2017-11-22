@@ -1,9 +1,9 @@
 import React from 'react'
 import stateData from '../../../data/state.json'
-import WorldwideUsage from '../../../components/WorldwideUsage'
+import WorldwideBlock from '../../../components/blocks/WorldwideBlock'
 
 export default () => (
-    <WorldwideUsage
+    <WorldwideBlock
         title="JavaScript state management tools worldwide usage"
         tools={stateData.keys}
         countries={stateData.countries}

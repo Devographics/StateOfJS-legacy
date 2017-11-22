@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import AffinitySankey from '../../components/charts/AffinitySankey'
 import AffinityChord from '../../components/charts/AffinityChord'
 import AffinityToggle from '../../components/charts/AffinityToggle'
-import Filters from '../../components/Filters'
+import Filters from '../../components/elements/Filters'
 import frontendData from '../../data/frontend.json'
 
 const dataByType = {
