@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { featureKeys, featureColors } from '../../../constants'
-import featuresData from '../../../data/features.json'
-import Legends from '../../../components/elements/Legends'
-import FeatureBar from '../../../components/charts/FeatureBar'
+import { featureKeys, featureColors } from '../../constants'
+import featuresData from '../../data/features.json'
+import Legends from '../../components/elements/Legends'
+import FeatureBar from '../../components/charts/FeatureBar'
 
 const legends = featureKeys.map(key => ({
     label: key,

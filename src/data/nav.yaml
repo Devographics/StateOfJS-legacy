@@ -70,8 +70,10 @@ items:
 - label: Other Tools
   fullLabel: Other Tools
 - label: Features
-  fullLabel: Popular Features
+  fullLabel: Popular Features (Coming Soon…)
+  comingsoon: true
 - label: Opinions
-  fullLabel: Developer Opinions
+  fullLabel: Developer Opinions (Coming Soon…)
+  comingsoon: true
 - label: Conclusion
   fullLabel: Conclusion

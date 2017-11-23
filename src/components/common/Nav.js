@@ -17,9 +17,9 @@ const Nav = ({ location }) => (
     </div>
 )
 
-const NavItem = ({ label, subPages, location }) => (
+const NavItem = ({ label, subPages, location, comingsoon }) => (
     <li>
-        <h3 className="nav-page">
+        <h3 className={classNames('nav-page', {'nav-page-comingsoon': comingsoon})}>
             <Link to={`/2017/${slugify(label)}/`} activeClassName="nav-page-active">
                 {label}
             </Link>
