@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import truncate from 'lodash/truncate'
 import { ResponsiveChord } from 'nivo'
-import { colorRange } from '../../constants'
+import { colorRange, colorScale } from '../../constants'
 import theme from '../../nivoTheme'
 
 export default class AffinityChord extends Component {
@@ -23,6 +23,7 @@ export default class AffinityChord extends Component {
                         bottom: 80,
                         left: 80,
                     }}
+                    colors={colorScale}
                     padAngle={0.02}
                     innerRadiusOffset={0.02}
                     keys={keys}

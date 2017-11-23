@@ -1,8 +1,8 @@
 items:
 - label: Introduction
   fullLabel: Introduction
-- label: Technologies
-  fullLabel: Technologies
+- label: Connections
+  fullLabel: JavaScript Connections
 - label: Flavors
   fullLabel: JavaScript Flavors
   subPages:

@@ -27,7 +27,7 @@ Are *Express* developers also into *Ember*?
 This diagram lets you toggle categories on and off to explore the connections
 between the inhabitants of the vast JavaScript ecosystem.
 `
-export default class FrontendAffinity extends Component {
+export default class Connections extends Component {
     state = {
         type: 'state management',
     }

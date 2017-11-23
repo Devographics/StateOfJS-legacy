@@ -136,10 +136,11 @@ export default class ShareChart extends React.Component {
         const sectionIndex = _.findIndex(Sections, { slug: this.props.section })
         const section = Sections[sectionIndex]
 
+        const name = 'foo'
         const link = `http://stateofjs.com/2016/${this.props.section}/`
-        const twitterText = `State Of JavaScript Survey Results: ${section.name} ${link} #stateofjs`
+        const twitterText = `State Of JavaScript Survey Results: ${name} ${link} #stateofjs`
         const subject = 'State Of JavaScript Survey Results'
-        const body = `Here are some interesting survey results about ${section.name}: ${link}`
+        const body = `Here are some interesting survey results about ${name}: ${link}`
 
         return (
             <div
