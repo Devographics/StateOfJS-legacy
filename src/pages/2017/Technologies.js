@@ -4,6 +4,8 @@ import AffinityChord from '../../components/charts/AffinityChord'
 import AffinityToggle from '../../components/charts/AffinityToggle'
 import Filters from '../../components/elements/Filters'
 import frontendData from '../../data/frontend.json'
+import addParagraphs from '../../helpers/paragraphs'
+import parseBold from '../../helpers/bold'
 
 const dataByType = {
     'state management': {
@@ -18,6 +20,13 @@ const dataByType = {
     },
 }
 
+const text = `
+How many *React* users also use *Redux*? Do *GraphQL* fans prefer *Webpack*? 
+Are *Express* developers also into *Ember*?
+
+This diagram lets you toggle categories on and off to explore the connections
+between the inhabitants of the vast JavaScript ecosystem.
+`
 export default class FrontendAffinity extends Component {
     state = {
         type: 'state management',
@@ -33,6 +42,7 @@ export default class FrontendAffinity extends Component {
 
         return (
             <div className="Section">
+                <div className="block block--text" dangerouslySetInnerHTML={{__html: parseBold(addParagraphs(text))}}/>
                 <AffinityToggle />
                 <AffinityChord keys={chordKeys} matrix={chordMatrix} />
             </div>

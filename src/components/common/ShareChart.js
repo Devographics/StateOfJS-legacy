@@ -1,7 +1,7 @@
 import React from 'react'
 import _, { includes } from 'lodash'
 import classNames from 'classnames'
-import Sections from '../../../data/sections.yaml'
+import Sections from '../../data/sections.yaml'
 import ReactGA from 'react-ga'
 
 const trackShare = (platform, section) => {

@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import DocumentTitle from 'react-document-title'
 import Helmet from 'react-helmet'
 
-import footerContents from '../../data/footer.md'
+import footerContents from '../data/footer.md'
 
 import HomeLayout from '../components/common/HomeLayout'
 import PageLayout from '../components/common/PageLayout'

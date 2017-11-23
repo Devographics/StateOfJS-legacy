@@ -12,7 +12,7 @@ import TextBlock from '../components/blocks/TextBlock.js'
 // import Stats from '../components/common/Stats.js'
 import Comments from '../components/common/Comments.js'
 
-import homeContents from '../../data/home/home.md'
+import homeContents from '../data/home.md'
 
 export default class Index extends React.Component {
     render() {

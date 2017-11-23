@@ -2,7 +2,7 @@ import _ from 'lodash'
 import React from 'react'
 import ReactGA from 'react-ga'
 
-import comments from '../../../data/comments.yaml'
+import comments from '../../data/comments.yaml'
 
 // const commentsRandom = _.shuffle(comments)
 

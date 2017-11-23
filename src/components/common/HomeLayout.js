@@ -3,7 +3,7 @@ import TextBlock from '../blocks/TextBlock.js'
 
 import Nav from './Nav'
 
-import footerContents from '../../../data/footer.md'
+import footerContents from '../../data/footer.md'
 
 const HomeLayout = props => (
     <div className="home-layout">
