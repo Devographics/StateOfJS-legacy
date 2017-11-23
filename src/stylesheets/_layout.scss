@@ -3,7 +3,7 @@
     padding: $spacing;
   }
   @include large{
-    padding: $spacing*4;
+    padding: $spacing $spacing*4 $spacing*4 $spacing*4;
     border: 10px solid $active-color;
     min-height: calc(100vh - 22px);
   }
@@ -14,7 +14,26 @@
   }
 }
 
-.page-layout{
+.pagelayout__header{
+  @include flex-center;
+  margin-bottom: $spacing; 
+  justify-content: space-between;
+}
+
+
+.pagelayout__spacer{
+  height: 5px;
+  flex: 1;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px dashed $border-color;
+}
+
+.pagelayout__logo{
+    margin: 0 $spacing/2;
+    font-size: $small-font;
+}
+
+.pagelayout__inner{
   display: flex;
 }
 
