@@ -8,10 +8,10 @@ import frontendData from '../../data/frontend.json'
 const baseTools = dto.othersBase(frontendData.experienceByUsers)
 const otherTools = clone(frontendData.others.buckets).reverse()
 
-const OthersTemplate = () => (
+const OthersTemplate = props => (
 	<div>
-	    <OthersBarBlock base={baseTools} baseKeys={frontendData.keys} others={otherTools} />
-	    <OthersBubbleBlock base={baseTools} baseKeys={frontendData.keys} others={otherTools} />
+	    <OthersBarBlock {...props} />
+	    <OthersBubbleBlock {...props} />
 	</div>
 )
 
