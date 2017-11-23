@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import ExperienceBar from '../charts/ExperienceBar'
+import ResultsBar from '../charts/ResultsBar'
 import Libraries from '../elements/Libraries'
 import { sortDataBy } from '../../sorts'
 import ShareChart from '../common/ShareChart'
@@ -18,7 +18,7 @@ const legends = [
     color: experienceColors[key],
 }))
 
-export default class Experience extends Component {
+export default class ResultsBlock extends Component {
     static propTypes = {
         title: PropTypes.string,
         data: PropTypes.array.isRequired,
@@ -40,11 +40,9 @@ export default class Experience extends Component {
         const data = sortDataBy(_data, indexBy, `I've USED it before, and WOULD use it again`)
 
         return (
-            <div className="section">
-                <h3 className="SectionTitle">
-                    <span>{title}</span>
-                </h3>
-                <div style={{ marginBottom: 40 }}>{description !== undefined && description}</div>
+            <div className="block block--chart block--results">
+                <h3 className="block__title">Libraries Results</h3>
+                {description && <div className="block__description"><p>{description}</p></div>}
                 <div className="capture">
                     {/*
                     <Filters
@@ -55,7 +53,7 @@ export default class Experience extends Component {
                     />
                     */}
                     <Legends legends={legends} modifier="horizontal" />
-                    <ExperienceBar facet={tool} data={data} indexBy={indexBy} />
+                    <ResultsBar facet={tool} data={data} indexBy={indexBy} />
                     <Libraries variant="horizontal" data={data} />
                     <ShareChart section="frontend" />
                 </div>

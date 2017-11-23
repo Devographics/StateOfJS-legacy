@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ResponsiveBar } from 'nivo'
-import { salaryKeys } from '../../constants'
+import { salaryKeys, colorScale } from '../../constants'
 import theme from '../../nivoTheme'
 
 const SalariesBar = ({ data }) => (
@@ -13,6 +13,7 @@ const SalariesBar = ({ data }) => (
                 bottom: 30,
                 left: 50,
             }}
+            colors={colorScale}
             layout="vertical"
             padding={0.7}
             maxValue={100}

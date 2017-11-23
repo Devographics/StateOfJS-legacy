@@ -37,41 +37,16 @@ export default class OthersBubbleBlock extends Component {
         }
 
         return (
-            <div className="Section">
-                <div>
-                    <div>
-                        <h4 className="SubSectionTitle">Compared to available options</h4>
-                        <div
-                            style={{
-                                display: 'flex',
-                                justifyContent: 'space-between',
-                                alignItems: 'center',
-                            }}
-                        >
-                            <Legends
-                                style={{
-                                    marginTop: 0,
-                                }}
-                                itemStyle={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                }}
-                                legends={[
-                                    {
-                                        label: 'base options',
-                                        color: colorRange[3],
-                                    },
-                                    {
-                                        label: 'others',
-                                        color: colorRange[0],
-                                    },
-                                ]}
-                            />
-                        </div>
-                        <div className="chart-wrapper" style={{ height: 600 }}>
-                            <OthersBubble data={bubbleData} baseKeys={baseKeys} />
-                        </div>
-                    </div>
+            <div className="block block--chart block--othersbubble">
+                <h3 className="block__title">All Libraries</h3>
+                <div className="block__description">
+                    <p>
+                        Main libraries usage (defined as number of
+                        “have used before and would use again” answers) compared to "Other" answers.
+                    </p>
+                </div>
+                <div className="chart-wrapper" style={{ height: 600 }}>
+                    <OthersBubble data={bubbleData} baseKeys={baseKeys} />
                 </div>
             </div>
         )

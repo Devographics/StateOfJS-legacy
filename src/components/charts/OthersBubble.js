@@ -26,7 +26,7 @@ const OthersBubble = ({ data, baseKeys }) => (
         colorBy={({ key }) => {
             if (key === 'tools') return '#F4F6F4'
             if (baseKeys.includes(key)) return colorRange[3]
-            return colorRange[2]
+            return colorRange[1]
         }}
         labelSkipRadius={9}
         motionStiffness={90}

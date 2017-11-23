@@ -80,7 +80,7 @@ const axisRight = {
 const axisBottomFormatter = format('.2s')
 const axisBottom = { format: v => v }
 
-export default class ExperienceBar extends Component {
+export default class ResultsBar extends Component {
     static propTypes = {
         facet: PropTypes.oneOf(Object.keys(keysByFacet)).isRequired,
         data: PropTypes.array.isRequired,
@@ -92,7 +92,7 @@ export default class ExperienceBar extends Component {
 
         return (
             <div className="results-chart-wrapper">
-            <div style={{ height: data.length * 60 }}>
+            <div style={{ height: data.length * 50 }}>
                 <ResponsiveBar
                     margin={margin}
                     layout="vertical"

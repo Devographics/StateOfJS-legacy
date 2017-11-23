@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ResponsiveBar } from 'nivo'
-import { yearsOfExperienceKeys } from '../../constants'
+import { yearsOfExperienceKeys, colorScale } from '../../constants'
 import theme from '../../nivoTheme'
 
 const YearsOfExperienceBar = ({ data }) => (
@@ -13,6 +13,7 @@ const YearsOfExperienceBar = ({ data }) => (
                 bottom: 30,
                 left: 50,
             }}
+            colors={colorScale}
             layout="vertical"
             padding={0.7}
             maxValue={100}

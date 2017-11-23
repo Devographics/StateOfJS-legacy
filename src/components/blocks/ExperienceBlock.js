@@ -2,11 +2,20 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import YearsOfExperienceBar from '../charts/YearsOfExperienceBar'
 import SalariesBar from '../charts/SalariesBar'
-import { salaryKeys, yearsOfExperienceKeys } from '../../constants'
+import { yearsOfExperienceKeys, colorScale } from '../../constants'
+import Legends from '../elements/Legends'
+import Averages from '../elements/Averages'
 
-export default class DevelopersBlock extends Component {
+const legends = yearsOfExperienceKeys.map((key, index) => ({
+    label: key,
+    color: colorScale[index],
+}))
+
+const fakeData = ['4 years', '5 years', '4 years', '5 years', '4 years', '5 years', '4 years', '5 years', '4 years', '5 years', '3 years']
+
+export default class ExperienceBlock extends Component {
     static propTypes = {
-        title: PropTypes.string.isRequired,
+        title: PropTypes.string,
         tools: PropTypes.arrayOf(PropTypes.string).isRequired,
         defaultTool: PropTypes.string.isRequired,
         data: PropTypes.object.isRequired,
@@ -30,8 +39,15 @@ export default class DevelopersBlock extends Component {
         })
 
         return (
-            <div className="block developers-block">
-                <h4 className="SubSectionTitle">Years of experience</h4>
+            <div className="block block--chart block--experience">
+                <h3 className="block__title">Years of Experience</h3>
+                <div className="block__description">
+                    <p>
+                        Per-library breakdown of developers according to years of experience.
+                    </p>
+                </div>
+                <Legends legends={legends} modifier="horizontal" />
+                <Averages data={fakeData}/>
                 <YearsOfExperienceBar data={yearsOfExperienceData} />
             </div>
         )

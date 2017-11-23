@@ -1,0 +1,30 @@
+
+.block{
+	margin-bottom: $spacing*3;
+	&:last-child{
+		margin: 0;
+	}
+}
+
+.block--text{
+	margin-bottom: $spacing;
+}
+
+.block--chart{
+
+}
+
+.block__description{
+	margin-bottom: $spacing;
+	p{
+		&:last-child{
+			margin: 0;
+		}
+	}
+}
+
+.block__title{
+	padding-bottom: $spacing/2;
+	border-bottom: 1px dashed $border-color;
+	margin-bottom: $spacing;
+}

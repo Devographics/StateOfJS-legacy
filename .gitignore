@@ -19,6 +19,9 @@ coverage
 # node-waf configuration
 .lock-wscript
 
+# Captures
+captures
+
 # Builds
 public
 

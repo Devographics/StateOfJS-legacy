@@ -1,0 +1,20 @@
+.averages{
+	@include flex-center;
+	justify-content: space-around;
+	padding: 0 34px;
+	margin: 0 0 0 50px;
+	margin-bottom: $spacing*1.5;
+
+}
+
+.averages__item{
+	position: relative;
+	font-size: $small-font;
+	span{
+		position: absolute;
+		display: block;
+		width: 80px;
+		left: -45px;
+		text-align: center;
+	}
+}

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import CountryBubble from '../charts/CountryBubble'
-// import CountryTreeMap from '../charts/CountryTreeMap'
 
 const BubbleImplementation = ({ countries, tools, currentTool, setCurrentTool }) => (
     <div className="worldwide__grid">
@@ -20,24 +19,6 @@ const BubbleImplementation = ({ countries, tools, currentTool, setCurrentTool })
         ))}
     </div>
 )
-
-// const TreeMapImplementation = ({ countries, tools, currentTool, setCurrentTool }) => (
-//     <div className="worldwide__grid">
-//         {countries.filter(({ key }, i) => key !== 'undefined').map(country => (
-//             <div key={country.key} className="worldwide__grid__item">
-//                 <div className="worldwide__chart">
-//                     <CountryTreeMap
-//                         keys={tools}
-//                         data={country}
-//                         currentTool={currentTool}
-//                         setCurrentTool={setCurrentTool}
-//                     />
-//                 </div>
-//                 <h4 style={{ textAlign: 'center' }}>{country.key}</h4>
-//             </div>
-//         ))}
-//     </div>
-// )
 
 export default class WorldwideBlock extends Component {
     static propTypes = {
@@ -63,29 +44,17 @@ export default class WorldwideBlock extends Component {
         const { tool } = this.state
 
         return (
-            <div className="Section">
-                <h3 className="SectionTitle">
-                    <span>{title}</span>
-                </h3>
-                <div className="description">
+            <div className="block block--chart block--worldwide">
+                <div className="block__description">
                     <p>
-                        Locations where tools have been used & people are willing to continue to do
-                        so.<br />
-                        Please be aware that those stats only take in account responses we were able
-                        to locate.
+                        Tool usage by country (usage defined as respondents who picked
+                        “have used before and would use again”). Red indicates higher compared to average, blue indicates lower
+                        usage compared to average. 
+                    </p>
+                    <p>
+                        Note: only countries which received over 200 total entries are shown. 
                     </p>
                 </div>
-                {/*
-
-                    @todo
-
-                    You can test bubble or treemap implementation for now,
-                    for testing purpose, but once we decide which one we want to use,
-                    the other should be removed.
-
-                    Simply use `BubbleImplementation` or `TreeMapImplementation`.
-
-                */}
                 <BubbleImplementation
                     countries={countries}
                     tools={tools}
