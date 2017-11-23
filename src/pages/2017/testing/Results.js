@@ -1,24 +1,23 @@
 import React from 'react'
 import testingData from '../../../data/testing.json'
-import ResultsBlock from '../../../components/blocks/ResultsBlock'
+import ResultsTemplate from '../../../components/templates/ResultsTemplate'
 import * as dto from '../../../dto'
 
 const data = dto.experience(testingData.experience)
 
-const TestingExperience = () => (
-    <ResultsBlock
-        title="Testing frameworks"
+const Results = () =>
+    <ResultsTemplate
         data={data}
         description={
-            <div className="description">
-                <p>
-                    Like the rest of Javascript world, the testing landscape is highly competitive
+            `
+            Like the rest of Javascript world, the testing landscape is highly competitive
                     one, with rapid release cycles, feature and performance comparisons, and
                     constant one-upsmanship between the frameworks.
-                </p>
-            </div>
+            `
         }
+        section="testing"
+        sponsor="reactforbeginners"
     />
-)
 
-export default TestingExperience
+export default Results
+

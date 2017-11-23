@@ -1,28 +1,25 @@
 import React from 'react'
 import flavorData from '../../../data/flavor.json'
-import ResultsBlock from '../../../components/blocks/ResultsBlock'
+import ResultsTemplate from '../../../components/templates/ResultsTemplate'
 import * as dto from '../../../dto'
 
 const data = dto.experience(flavorData.experience)
 
-const FlavorExperience = () => (
-    <ResultsBlock
-        title="JavaScript flavors"
+const Results = () =>
+    <ResultsTemplate
         data={data}
         description={
-            <div className="description">
-                <p>
-                    When you talk about “JavaScript”, you're not just talking about a single
-                    language: it's actually more like a family of closely related cousins.
-                </p>
-                <p>
-                    What started with CoffeeScript back in 2009 has become an explosion of choice
-                    over the past couple years: ES6, TypeScript, Elm… they all have their strengths,
-                    and they're all growing more and more popular.
-                </p>
-            </div>
+            `
+            When you talk about “JavaScript”, you're not just talking about a single
+            language: it's actually more like a family of closely related cousins.
+            
+            What started with CoffeeScript back in 2009 has become an explosion of choice
+            over the past couple years: ES6, TypeScript, Elm… they all have their strengths,
+            and they're all growing more and more popular.
+                `
         }
+        section="flavors"
+        sponsor="reactforbeginners"
     />
-)
 
-export default FlavorExperience
+export default Results
