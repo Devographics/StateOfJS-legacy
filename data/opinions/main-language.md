@@ -1,3 +1,0 @@
-It's a given that you need JavaScript to build web apps, but that doesn't mean you have to *like* it. In fact, JavaScript has always held a reputation as a somewhat immature, hacky language that *real* programmers only use because they don't have a choice. 
-
-But according to the survey, that reputation is not warranted. The overwhelming majority of JavaScript developers use it not because they have to, but because they *want* to. 

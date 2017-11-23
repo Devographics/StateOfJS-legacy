@@ -1,2 +1,0 @@
-- Mocha and Jasmine lead the pack.
-- Overall, developers are not happy about JavaScript testing.

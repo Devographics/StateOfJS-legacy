@@ -1,3 +1,0 @@
-- ES6 is the new standard.
-- CoffeeScript is past its prime.
-- A new wave of JavaScript flavors is coming. 

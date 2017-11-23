@@ -1,2 +1,0 @@
-- The category is dominated by Meteor.
-- The “all-in-one” model isn't that popular.

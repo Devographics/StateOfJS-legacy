@@ -1,1 +1,0 @@
-Cold, hard data is valuable, but sometimes you just want to know how somebody *feels*. This is why for this section, I asked developers if they disagreed (1), were neutral (3), or agreed (5) with the following statements. 

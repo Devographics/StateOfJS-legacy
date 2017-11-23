@@ -2,7 +2,7 @@ import React from 'react'
 import _ from 'lodash'
 import MarkdownIt from 'markdown-it'
 
-import sponsors from '../../../data/sponsors.yaml'
+import sponsors from '../../data/sponsors.yaml'
 
 const md = new MarkdownIt()
 

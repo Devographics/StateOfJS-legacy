@@ -1,2 +1,0 @@
-- Webpack and Gulp are the shiny future.
-- Grunt may become a thing of the past (with all but a grunt).
