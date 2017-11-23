@@ -10,12 +10,12 @@ const Results = () =>
         data={data}
         description={
             `
-            State Management is an emerging category in JavaScript, and not necessarily one
-            every developer needs a tool for at the moment.
+State Management is an emerging category in JavaScript, and not necessarily one
+every developer needs a tool for at the moment.
 
-            Redux is clearly the most popular of the Flux implementations, an architecture
-            championed by Facebook as a system for managing state globally in React or other
-            frontend libraries.
+Redux is clearly the most popular of the Flux implementations, an architecture
+championed by Facebook as a system for managing state globally in React or other
+frontend libraries.
             `
         }
         section="statemanagement"
