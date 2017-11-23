@@ -9,9 +9,11 @@ const Results = () =>
     <ResultsTemplate
         data={data}
         description={
-`Build tools have been around long before JavaScript. With Make’s initial release
-in 1977 and JavaScript’s in 1996, it’s interesting to see JavaScript developers'
-take on this “old timey” form of software.`
+`Apart from *NPM*, *Webpack* is still the kind of build tools. This is no doubt due to 
+the rise of no-config Webpack wrappers like Create-React-App and Next.js. 
+
+This could prove itself a double-edged sword though: if a better alternative ever comes along, these libraries
+might end up switching to it without a second thought.`
         }
         section="buildtools"
         sponsor="reactforbeginners"

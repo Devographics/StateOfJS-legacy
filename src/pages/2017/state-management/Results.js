@@ -10,12 +10,11 @@ const Results = () =>
         data={data}
         description={
             `
-State Management is an emerging category in JavaScript, and not necessarily one
-every developer needs a tool for at the moment.
+State Management regroups all solutions used to manage data, both on client and server.
 
-Redux is clearly the most popular of the Flux implementations, an architecture
-championed by Facebook as a system for managing state globally in React or other
-frontend libraries.
+On the client *Redux* is still the uncontested leader, but the rise of *GraphQL* might end up shaking
+things up: the huge wave of interest it's generating might help push libraries like *Relay Modern* and *Apollo*
+in the near future. 
             `
         }
         section="statemanagement"

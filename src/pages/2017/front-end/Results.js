@@ -9,9 +9,10 @@ const Results = () =>
     <ResultsTemplate
         data={data}
         description={
-`The battle for JavaScript mindshare is clearly led by front-end frameworks,
-and this comes through in the survey results: apart from relative newcomer
-Aurelia, every option here stands at over high awareness.`
+`As always, the battle for JavaScript mindshare is led by front-end frameworks.
+
+*React* is still the dominant player here, but *Vue* is making big gains on the back of
+*Angular*'s diminishing popularity. By 2018, this chart might end up looking very different!`
         }
         section="frontend"
         sponsor="reactforbeginners"
