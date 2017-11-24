@@ -1,8 +1,10 @@
 import React from 'react'
-import _, { includes } from 'lodash'
 import classNames from 'classnames'
 import Sections from '../../data/sections.yaml'
 import ReactGA from 'react-ga'
+import nav from '../../data/nav.yaml'
+import slugify from '../../helpers/slugify'
+import find from 'lodash/find'
 
 const trackShare = (platform, section) => {
     return event => {
@@ -133,14 +135,17 @@ export default class ShareChart extends React.Component {
     }
 
     render() {
-        const sectionIndex = _.findIndex(Sections, { slug: this.props.section })
-        const section = Sections[sectionIndex]
 
-        const name = 'foo'
-        const link = `http://stateofjs.com/2016/${this.props.section}/`
+        const { section, subSection } = this.props
+        const currentSection = find(nav.items, {label: section })
+
+        const name = currentSection.label
+        const slug = slugify(section)
+        const link = `http://stateofjs.com/2017/${slug}/${subSection}`
+
         const twitterText = `State Of JavaScript Survey Results: ${name} ${link} #stateofjs`
         const subject = 'State Of JavaScript Survey Results'
-        const body = `Here are some interesting survey results about ${name}: ${link}`
+        const body = `Here are some interesting survey results about ${name.toLowerCase()} libraries: ${link}`
 
         return (
             <div
@@ -155,9 +160,9 @@ export default class ShareChart extends React.Component {
                 </div>
                 <div className="share-popup">
                     <div className="share-options">
-                        <Twitter text={twitterText} section={this.props.section} />
-                        <Facebook link={link} section={this.props.section} />
-                        <Email subject={subject} body={body} section={this.props.section} />
+                        <Twitter text={twitterText} section={section} />
+                        <Facebook link={link} section={section} />
+                        <Email subject={subject} body={body} section={section} />
                     </div>
                 </div>
             </div>

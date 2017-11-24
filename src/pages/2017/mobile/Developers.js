@@ -8,6 +8,7 @@ const MobileUsers = () => (
         tools={mobileData.keys}
         defaultTool="Native Apps"
         data={mobileData.experienceByUsers}
+        section="Mobile"
     />
 )
 

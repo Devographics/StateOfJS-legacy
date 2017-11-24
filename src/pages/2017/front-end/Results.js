@@ -14,7 +14,7 @@ const Results = () =>
 *React* is still the dominant player here, but *Vue* is making big gains on the back of
 *Angular*'s diminishing popularity. By 2018, this chart might end up looking very different!`
         }
-        section="frontend"
+        section="Front-end"
         sponsor="reactforbeginners"
     />
 

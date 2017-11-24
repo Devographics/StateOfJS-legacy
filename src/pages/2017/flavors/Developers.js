@@ -8,6 +8,7 @@ const FlavorUsers = () => (
         tools={flavorData.keys}
         defaultTool={'"Plain" JavaScript (ES5)'}
         data={flavorData.experienceByUsers}
+        section="Flavors"
     />
 )
 

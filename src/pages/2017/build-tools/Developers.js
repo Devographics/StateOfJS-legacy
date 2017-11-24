@@ -8,6 +8,7 @@ const BuildUsers = () => (
         tools={buildData.keys}
         defaultTool="Webpack"
         data={buildData.experienceByUsers}
+        section="Build Tools"
     />
 )
 

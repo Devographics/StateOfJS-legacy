@@ -17,7 +17,7 @@ But as the results show, for now developers still prefer the safety of mainstays
  *SASS/SCSS* or even *Plain CSS*. 
 `
         }
-        section="css"
+        section="CSS"
         sponsor="reactforbeginners"
     />
 

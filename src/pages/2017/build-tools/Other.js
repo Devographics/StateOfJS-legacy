@@ -12,6 +12,7 @@ const BuildOthers = () => (
         base={baseTools}
         baseKeys={buildData.keys}
         others={otherTools}
+        section="Build Tools"
     />
 )
 

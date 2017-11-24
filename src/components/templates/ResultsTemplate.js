@@ -1,16 +1,17 @@
 import React from 'react'
 import ResultsBlock from '../blocks/ResultsBlock'
-import ResultsSkillsBlock from '../blocks/ResultsSkillsBlock'
+import NumberOfLibrariesBlock from '../blocks/NumberOfLibrariesBlock'
 import ResourcesBlock from '../blocks/ResourcesBlock'
 import TextBlock from '../blocks/TextBlock'
+import Meta from '../elements/Meta'
 
-const Results = ({ data, description, section, sponsor }) => (
-    <div>
+const Results = ({ data, description, section, sponsor }) => 
+    <div className="template">
+    	<Meta section={section} subSection="results" />
     	<TextBlock text={description} />
-        <ResultsBlock data={data} />
-        <ResultsSkillsBlock data={data} />
+        <ResultsBlock data={data} section={section} />
+        <NumberOfLibrariesBlock data={data} />
         <ResourcesBlock section={section} sponsor={sponsor} />
     </div>
-)
 
 export default Results

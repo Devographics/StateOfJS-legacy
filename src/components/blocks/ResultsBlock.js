@@ -33,7 +33,7 @@ export default class ResultsBlock extends Component {
     }
 
     render() {
-        const { title, data: _data, description } = this.props
+        const { title, data: _data, description, section } = this.props
         const { tool } = this.state
         const indexBy = 'tool'
 
@@ -58,7 +58,7 @@ export default class ResultsBlock extends Component {
                     <Legends legends={legends} modifier="horizontal" />
                     <ResultsBar facet={tool} data={data} indexBy={indexBy} />
                     <Libraries variant="horizontal" data={data} />
-                    <ShareChart section="frontend" />
+                    <ShareChart section={section} subSection="results" />
                 </div>
             </div>
         )

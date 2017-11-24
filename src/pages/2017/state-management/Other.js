@@ -12,6 +12,7 @@ const StateOthers = () => (
         base={baseTools}
         baseKeys={stateData.keys}
         others={otherTools}
+        section="State Management"
     />
 )
 

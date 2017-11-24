@@ -8,6 +8,7 @@ const StyleUsers = () => (
         tools={styleData.keys}
         defaultTool="Plain CSS"
         data={styleData.experienceByUsers}
+        section="CSS"
     />
 )
 

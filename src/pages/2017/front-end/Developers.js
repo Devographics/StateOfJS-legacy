@@ -7,6 +7,7 @@ const FrontendUsers = () => (
         tools={frontendData.keys}
         defaultTool="React"
         data={frontendData.experienceByUsers}
+        section="Front-end"
     />
 )
 

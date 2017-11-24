@@ -1,6 +1,11 @@
 import React from 'react'
 import WorldwideBlock from '../blocks/WorldwideBlock'
+import Meta from '../elements/Meta'
 
-export default (props) => (
-    <WorldwideBlock {...props}/>
-)
+const WorldwideTemplate = (props) =>
+	<div className="template">
+		<Meta section={props.section} subSection="worldwide" />
+	    <WorldwideBlock {...props}/>
+    </div>
+
+export default WorldwideTemplate

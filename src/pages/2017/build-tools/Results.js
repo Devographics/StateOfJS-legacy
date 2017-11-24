@@ -15,7 +15,7 @@ the rise of no-config Webpack wrappers like Create-React-App and Next.js.
 This could prove itself a double-edged sword though: if a better alternative ever comes along, these libraries
 might end up switching to it without a second thought.`
         }
-        section="buildtools"
+        section="Build Tools"
         sponsor="reactforbeginners"
     />
 

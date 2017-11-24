@@ -12,6 +12,7 @@ const StyleOthers = () => (
         base={baseTools}
         baseKeys={styleData.keys}
         others={otherTools}
+        section="CSS"
     />
 )
 

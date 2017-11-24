@@ -12,6 +12,7 @@ const FrontendOthers = () => (
     	base={baseTools} 
     	baseKeys={frontendData.keys} 
     	others={otherTools}
+        section="Front-end"
     />
 )
 

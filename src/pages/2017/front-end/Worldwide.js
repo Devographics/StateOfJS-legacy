@@ -6,5 +6,6 @@ export default () => (
     <WorldwideTemplate
         tools={frontendData.keys}
         countries={frontendData.countries}
+        section="Front-end"
     />
 )

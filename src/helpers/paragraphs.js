@@ -1,7 +1,4 @@
-const replaceAll = function(s, search, replacement) {
-    var target = s;
-    return target.replace(new RegExp(search, 'g'), replacement);
-};
+import replaceAll from './replaceAll'
 
 const addParagraphs = s => `<p>${replaceAll(s, '\n\n', '</p><p>')}</p>`
 

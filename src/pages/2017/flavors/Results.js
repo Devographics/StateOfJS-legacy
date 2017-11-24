@@ -19,7 +19,7 @@ the rise of *TypeScript*, who is quickly becoming the leader in the typed
 JavaScript space. 
                 `
         }
-        section="flavors"
+        section="Flavors"
         sponsor="reactforbeginners"
     />
 

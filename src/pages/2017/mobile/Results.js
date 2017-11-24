@@ -16,8 +16,8 @@ although it looks like *Native Apps* will always remain the most reliable soluti
 
         `
         }
-        section="mobile"
         sponsor="reactforbeginners"
+        section="Mobile"
     />
 
 export default Results

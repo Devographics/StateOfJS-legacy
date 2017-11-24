@@ -6,5 +6,6 @@ export default () => (
     <WorldwideTemplate
         tools={mobileData.keys}
         countries={mobileData.countries}
+        section="Mobile"
     />
 )

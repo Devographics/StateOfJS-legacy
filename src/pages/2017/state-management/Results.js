@@ -17,7 +17,7 @@ things up: the huge wave of interest it's generating might help push libraries l
 in the near future. 
             `
         }
-        section="statemanagement"
+        section="State Management"
         sponsor="reactforbeginners"
     />
 

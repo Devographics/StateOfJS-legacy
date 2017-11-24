@@ -16,7 +16,7 @@ manage to generate a lot of awareness over the years, it sadly seems like it
 wasn't quite able to capitalize on it. 
 `
         }
-        section="backend"
+        section="Back-end"
         sponsor="reactforbeginners"
     />
 
