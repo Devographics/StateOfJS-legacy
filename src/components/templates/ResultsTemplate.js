@@ -11,7 +11,7 @@ const Results = ({ data, description, section, sponsor }) =>
     	<TextBlock text={description} />
         <ResultsBlock data={data} section={section} />
         <NumberOfLibrariesBlock data={data} />
-        <ResourcesBlock section={section} sponsor={sponsor} />
+        <ResourcesBlock section={section}/>
     </div>
 
 export default Results

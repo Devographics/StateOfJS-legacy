@@ -17,7 +17,7 @@ constant one-upsmanship between the frameworks.
 Altough the fight is far from settled, *Jest* and *Enzyme* do stand out from the pack with very high satisfaction ratings.  
 `
         }
-        section="testing"
+        section="Testing"
         sponsor="reactforbeginners"
     />
 

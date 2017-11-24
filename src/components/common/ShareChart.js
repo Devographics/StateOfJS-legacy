@@ -4,6 +4,7 @@ import Sections from '../../data/sections.yaml'
 import ReactGA from 'react-ga'
 import nav from '../../data/nav.yaml'
 import slugify from '../../helpers/slugify'
+import getPageUrl from '../../helpers/getPageUrl'
 import find from 'lodash/find'
 
 const trackShare = (platform, section) => {
@@ -141,7 +142,7 @@ export default class ShareChart extends React.Component {
 
         const name = currentSection.label
         const slug = slugify(section)
-        const link = `http://stateofjs.com/2017/${slug}/${subSection}`
+        const link = getPageUrl(slug, subSection)
 
         const twitterText = `State Of JavaScript Survey Results: ${name} ${link} #stateofjs`
         const subject = 'State Of JavaScript Survey Results'

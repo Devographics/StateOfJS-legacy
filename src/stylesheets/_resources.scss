@@ -46,8 +46,8 @@
     margin: 0 0 $spacing $spacing;
   }
   @include medium-large{
-    width: 80px;
-    margin-right: $spacing;
+    width: 160px;
+    margin-right: $spacing*1.2;
   }
   div {
     background: white;

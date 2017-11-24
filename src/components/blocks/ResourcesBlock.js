@@ -1,6 +1,7 @@
 import React from 'react'
 import _ from 'lodash'
 import ReactGA from 'react-ga'
+import Link from 'gatsby-link'
 
 import resources from '../../../src/data/resources.yaml'
 
@@ -53,12 +54,16 @@ const renderSponsor = sponsor => {
 const ResourcesBlock = ({ section, sponsor }) => {
     const sectionResources = _.filter(resources, r => r.section === section)
 
+    if (!sectionResources.length) {
+        return null
+    }
+
     return (
         <div className="section section-layout-b">
             <div className="section-contents-wide resources">
                 <div className="resources-title">
                     <h2>Recommended Resources</h2>
-                    <span className="resources-sponsor">Presented by {renderSponsor(sponsor)}</span>
+                    <span className="resources-sponsor">Presented by <a href="http://wesbos.com/">Wes Bos</a></span>
                 </div>
                 <div className="resources-list">
                     {_.map(sectionResources, resource => {
@@ -70,7 +75,12 @@ const ResourcesBlock = ({ section, sponsor }) => {
                             <div key={resource.name} className="resource">
                                 <div className="resource-image">
                                     <div>
-                                        <img src={`/images/resources/${resource.avatar}`} />
+                                        <a
+                                            onClick={() => trackClick(section, resource, 'text')}
+                                            href={`${url}&utm_content=textlink`}
+                                        >
+                                            <img src={`/images/resources/${resource.image}`} />
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="resource-contents">
@@ -82,11 +92,14 @@ const ResourcesBlock = ({ section, sponsor }) => {
                                             {resource.name}
                                         </a>
                                     </h4>
+                                    {/*
                                     <h5 className="resource-author">{resource.author}</h5>
+                                    */}
                                     <div className="resource-description">
                                         {resource.description}
                                     </div>
                                 </div>
+                                {/*
                                 <div className="resource-play">
                                     <a
                                         onClick={() => trackClick(section, resource, 'play')}
@@ -95,13 +108,14 @@ const ResourcesBlock = ({ section, sponsor }) => {
                                         <PlaySVG />
                                     </a>
                                 </div>
+                                */}
                             </div>
                         )
                     })}
                 </div>
                 <div className="resources-sponsored">
-                    Thanks to our partners for supporting this project. Check them out for more
-                    awesome programming courses!
+                    Thanks to our partners for supporting this project.&nbsp;
+                    <Link to="/support">Learn more</Link> about supporting The State of JS.
                 </div>
             </div>
         </div>

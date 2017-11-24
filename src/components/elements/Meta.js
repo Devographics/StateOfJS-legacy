@@ -7,15 +7,17 @@ import nav from '../../data/nav.yaml'
 import find from 'lodash/find'
 import Helmet from 'react-helmet'
 import slugify from '../../helpers/slugify'
+import getPageUrl from '../../helpers/getPageUrl'
 
 const Meta = ({ section, subSection }) => {
 	
     const currentSection = find(nav.items, {label: section })
-    const sectionSlug = slugify(section)
+    const sectionSlugA = slugify(section)
+    const sectionSlugB = slugify(section, true)
     const subSectionSlug = subSection
 
-    const image = `http://stateofjs.com/images/captures/${sectionSlug}_${subSectionSlug}.png`
-    const url = `http://stateofjs.com/2017/${sectionSlug}/${subSectionSlug}`
+    const url = getPageUrl(sectionSlugA, subSectionSlug)
+    const image = `http://stateofjs.com/images/captures/${sectionSlugB}_${subSectionSlug}.png`
     const metaTitle = `State Of JavaScript Survey Results: ${currentSection.fullLabel}`
     const metaDescription = `Find out which ${currentSection.label} JavaScript tools and frameworks are the most popular.`
 

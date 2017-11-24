@@ -5,6 +5,7 @@ import SalariesBar from '../charts/SalariesBar'
 import { salaryKeys, colorScale } from '../../constants'
 import Legends from '../elements/Legends'
 import Averages from '../elements/Averages'
+import ShareChart from '../common/ShareChart'
 
 const legends = salaryKeys.map((key, index) => ({
     label: key,
@@ -32,7 +33,7 @@ export default class SalariesBlock extends Component {
     }
 
     render() {
-        const { title, data, tools } = this.props
+        const { title, data, tools, section } = this.props
 
         const salariesData = tools.map(tool => {
             const toolSalaries = { tool }
@@ -62,6 +63,7 @@ export default class SalariesBlock extends Component {
                     <Averages data={fakeDataFormatted}/>
                     <SalariesBar data={salariesData} />
                 </div>
+                <ShareChart section={section} subSection="developers" />
             </div>
         )
     }

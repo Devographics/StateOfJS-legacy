@@ -6,6 +6,7 @@ import Legends from '../elements/Legends'
 import OthersBar from '../charts/OthersBar'
 import Libraries from '../elements/Libraries'
 import reverse from 'lodash/reverse'
+import ShareChart from '../common/ShareChart'
 
 export default class OthersBarsBlock extends Component {
     state = {
@@ -24,7 +25,7 @@ export default class OthersBarsBlock extends Component {
     }
 
     render() {
-        const { title, base, baseKeys, others: _others } = this.props
+        const { title, base, baseKeys, others: _others, section } = this.props
         const { mode } = this.state
 
         const others = _others.filter(({ key }) => !baseKeys.includes(key))
@@ -50,6 +51,7 @@ export default class OthersBarsBlock extends Component {
                         <OthersBar data={others} />
                     </div>
                 </div>
+                <ShareChart section={section} subSection="others" />
             </div>
         )
     }

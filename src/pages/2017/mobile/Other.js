@@ -12,6 +12,7 @@ import mobileData from '../../../data/mobile.json'
 //     	base={baseTools} 
 //     	baseKeys={mobileData.keys} 
 //     	others={otherTools}
+//      section="Mobile"
 //     />
 // )
 
