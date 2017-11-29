@@ -22,7 +22,6 @@ const BubbleImplementation = ({ countries, tools, currentTool, setCurrentTool })
 
 export default class WorldwideBlock extends Component {
     static propTypes = {
-        title: PropTypes.string.isRequired,
         tools: PropTypes.arrayOf(PropTypes.string).isRequired,
         countries: PropTypes.arrayOf(PropTypes.object).isRequired,
     }
@@ -40,7 +39,7 @@ export default class WorldwideBlock extends Component {
     }
 
     render() {
-        const { title, countries, tools } = this.props
+        const { countries, tools } = this.props
         const { tool } = this.state
 
         return (

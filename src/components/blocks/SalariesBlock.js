@@ -26,16 +26,14 @@ const fakeDataFormatted = fakeData.map(formatMoney)
 
 export default class SalariesBlock extends Component {
     static propTypes = {
-        title: PropTypes.string,
         tools: PropTypes.arrayOf(PropTypes.string).isRequired,
-        defaultTool: PropTypes.string.isRequired,
         data: PropTypes.object.isRequired,
     }
 
     render() {
-        const { title, data, tools, section } = this.props
+        const { data, tools, section } = this.props
 
-        const salariesData = tools.map(tool => {
+        const salariesData = ['Aggregated', ...tools].map(tool => {
             const toolSalaries = { tool }
             const totalUserCount = data[tool].doc_count
             const buckets = data[tool].by_salary.buckets

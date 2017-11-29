@@ -105,6 +105,29 @@ exports.experienceByUsers = async (
         },
     })
 
+    const all = await elastic.client.search({
+        index: config.get('elastic.index'),
+        size: 0,
+        body: {
+            query: {
+                bool: {
+                    should: fields.map(field => ({
+                        term: { [field]: experience }
+                    }))
+                }
+            },
+            aggs: {
+                by_salary: { terms: { field: 'Yearly Salary' } },
+                by_experience: { terms: { field: 'Years of Experience' } },
+                //by_location: { terms: { field: 'location' } },
+            },
+        },
+    })
+
+    result.aggregations.Aggregated = Object.assign({}, all.aggregations, {
+        doc_count: all.hits.total
+    })
+
     return result.aggregations
 }
 
@@ -128,6 +151,7 @@ exports.distributionByCountry = async fields => {
                         aggs[field] = {
                             filter: {
                                 term: { [field]: "I've USED it before, and WOULD use it again" },
+
                             },
                         }
 
@@ -139,6 +163,32 @@ exports.distributionByCountry = async fields => {
     })
 
     return result.aggregations.country.buckets
+}
+
+exports.toolsUsageCounts = async tools => {
+    console.log(tools)
+
+    const result = await elastic.client.search({
+        index: config.get('elastic.index'),
+        size: 0,
+        body: {
+            query: {
+                bool: {
+                    should: [
+                        { term:  { 'React': "I've USED it before, and WOULD use it again" } },
+                        { term:  { 'React': "I've USED it before, and would NOT use it again" } },
+                    ]
+                }
+            },
+            aggs: {
+                country: {
+                    terms: { field: 'React' },
+                },
+            },
+        },
+    })
+
+    console.log(result)
 }
 
 exports.frontend = async () => {

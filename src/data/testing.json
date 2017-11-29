@@ -729,6 +729,73 @@
                     }
                 ]
             }
+        },
+        "Aggregated": {
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 5073
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 3715
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 2570
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 1869
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 674
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 668
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 310
+                    }
+                ]
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 4738
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 4553
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 3436
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 1478
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 727
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 289
+                    }
+                ]
+            },
+            "doc_count": 15269
         }
     },
     "countries": [
