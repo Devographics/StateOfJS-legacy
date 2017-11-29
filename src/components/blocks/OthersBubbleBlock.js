@@ -24,7 +24,7 @@ export default class OthersBubbleBlock extends Component {
                         “have used before and would use again” answers) compared to "Other" answers.
                     </p>
                 </div>
-                <div className="chart-wrapper" style={{ height: 600 }}>
+                <div className="chart-wrapper">
                     <OthersBubble data={bubbleData} baseKeys={baseKeys} />
                 </div>
             </div>

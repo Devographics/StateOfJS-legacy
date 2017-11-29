@@ -19,10 +19,16 @@
 }
 
 .block__contents{
-    overflow-x: scroll;
+    @include small{
+       overflow-x: scroll;
+       background: rgba(255,255,255,0.5);
+    }
 }
 .block__contents__inner{
-    min-width: 800px;
+    @include small{
+        padding: 0 $spacing $spacing $spacing;
+        min-width: 800px;
+    }
 }
 .PieRow {
     display: flex;
@@ -87,4 +93,26 @@
         display: block;
         width: 100%;
     }
+}
+
+.block--othersbubble{
+    .chart-wrapper{
+        @include small{
+            height: 300px;
+        }
+        @include medium-large{
+            height: 600px;
+        }
+    }
+}
+
+.block--connections{
+    .chart-wrapper{
+        @include small{
+            height: 300px;
+        }
+        @include medium-large{
+            height: 600px;
+        }
+    }    
 }

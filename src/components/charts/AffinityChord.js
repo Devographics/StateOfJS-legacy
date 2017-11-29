@@ -15,7 +15,7 @@ export default class AffinityChord extends Component {
         const { keys, matrix } = this.props
 
         return (
-            <div style={{ height: 800 }}>
+            <div className="chart-wrapper">
                 <ResponsiveChordCanvas
                     margin={{
                         top: 80,

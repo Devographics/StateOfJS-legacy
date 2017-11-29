@@ -57,8 +57,11 @@ export default class PageLayout extends React.PureComponent {
     }
 
     render() {
+
+        const sidebarClassName = this.state.showSidebar ? 'sidebar--shown' : 'sidebar--hidden';
+
         return (
-            <div className="pagelayout">
+            <div className={`pagelayout ${sidebarClassName}`}>
             	<div className="pagelayout__header">
             		<Spacer/>
             		<h1 className="pagelayout__logo"><Link to="/"><Logo width={150}/></Link></h1>
@@ -66,7 +69,7 @@ export default class PageLayout extends React.PureComponent {
             	</div>
             	<div className="pagelayout__inner">
                     <a className="sidebar__toggle"  href="javascript:void(0)" onClick={this.openSidebar}><span><Menu/></span></a>
-        	        <div className={`sidebar ${this.state.showSidebar ? 'sidebar--shown' : 'sidebar--hidden'}`}>
+        	        <div className={`sidebar ${sidebarClassName}`}>
                         <a className="sidebar__close" href="javascript:void(0)" onClick={this.closeSidebar}><Close/></a>
                         <Nav {...this.props} closeSidebar={this.closeSidebar}/>
                     </div>

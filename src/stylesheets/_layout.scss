@@ -14,6 +14,13 @@
   }
 }
 
+.pagelayout{
+  &.sidebar--shown{
+    overflow: hidden;
+    position: fixed;
+  }
+}
+
 .pagelayout__header{
   @include flex-center;
   margin-bottom: $spacing; 
@@ -40,7 +47,7 @@
 }
 
 .content{
-  flex: 1;
+  flex: 1; 
 }
 .sidebar{
   @include small{
@@ -52,6 +59,8 @@
     background: $bg-color;
     z-index: 1000;
     text-align: center;
+    overflow-y: scroll;
+    padding:  0 0 $spacing*2 0;
     &.sidebar--hidden{
       display: none;
     }
