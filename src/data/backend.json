@@ -146,7 +146,8 @@
                         "doc_count": 19,
                         "percentage": 1
                     }
-                ]
+                ],
+                "average": 8
             },
             "by_location": {
                 "doc_count_error_upper_bound": 10,
@@ -273,7 +274,8 @@
                         "doc_count": 394,
                         "percentage": 3
                     }
-                ]
+                ],
+                "average": 7
             },
             "by_location": {
                 "doc_count_error_upper_bound": 74,
@@ -400,7 +402,8 @@
                         "doc_count": 7,
                         "percentage": 2
                     }
-                ]
+                ],
+                "average": 8
             },
             "by_location": {
                 "doc_count_error_upper_bound": 0,
@@ -527,7 +530,8 @@
                         "doc_count": 10,
                         "percentage": 2
                     }
-                ]
+                ],
+                "average": 8
             },
             "by_location": {
                 "doc_count_error_upper_bound": 5,
@@ -654,7 +658,8 @@
                         "doc_count": 35,
                         "percentage": 2
                     }
-                ]
+                ],
+                "average": 8
             },
             "by_location": {
                 "doc_count_error_upper_bound": 10,
@@ -781,7 +786,8 @@
                         "doc_count": 15,
                         "percentage": 1
                     }
-                ]
+                ],
+                "average": 8
             },
             "by_location": {
                 "doc_count_error_upper_bound": 13,
@@ -908,7 +914,8 @@
                         "doc_count": 3,
                         "percentage": 0
                     }
-                ]
+                ],
+                "average": 8
             },
             "by_location": {
                 "doc_count_error_upper_bound": 5,
@@ -1035,7 +1042,8 @@
                         "doc_count": 12,
                         "percentage": 3
                     }
-                ]
+                ],
+                "average": 8
             },
             "by_location": {
                 "doc_count_error_upper_bound": 3,
@@ -1161,7 +1169,8 @@
                         "doc_count": 417,
                         "percentage": 3
                     }
-                ]
+                ],
+                "average": 8
             },
             "doc_count": 15620
         }

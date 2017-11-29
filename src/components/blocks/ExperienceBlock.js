@@ -36,6 +36,8 @@ export default class ExperienceBlock extends Component {
             return toolYearsOfExperience
         })
 
+        const averages = ['Aggregated', ...tools].map(tool => data[tool].by_experience.average).map(avg => `${avg} years`)
+
         return (
             <div className="block block--chart block--experience">
                 <h3 className="block__title">Years of Experience</h3>
@@ -47,7 +49,7 @@ export default class ExperienceBlock extends Component {
                 <div className="block__contents">
                     <div className="block__contents__inner">
                         <Legends legends={legends} modifier="horizontal" />
-                        <Averages data={fakeData}/>
+                        <Averages data={averages}/>
                         <YearsOfExperienceBar data={yearsOfExperienceData} />
                     </div>
                 </div>

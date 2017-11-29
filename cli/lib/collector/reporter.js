@@ -44,6 +44,15 @@ const salaryAverages = {
     '$200k+': 250,
 }
 
+const yearsOfExperienceAverages = {
+    'Less than one year': 0.5,
+    '1-2 years': 1.5,
+    '2-5 years': 3.5,
+    '5-10 years': 7.5,
+    '10-20 years': 15,
+    '20+ years': 22.5,
+}
+
 const surveyKeys = ['browser', 'city', 'device', 'location', 'os', 'referrer']
 
 const usersKeys = ['Yearly Salary', 'Years of Experience', 'Company Size']
@@ -141,11 +150,9 @@ exports.experienceByUsers = async (
     allFields.forEach(field => {
         const total = result.aggregations[field].doc_count
 
-        result.aggregations[field].by_experience.buckets = result.aggregations[field].by_experience.buckets.map(bucket => Object.assign({}, bucket, {
-            percentage: Math.round(bucket.doc_count / total * 100)
-        }))
-
         const salaryBuckets = result.aggregations[field].by_salary.buckets
+
+        // compute percentages
         result.aggregations[field].by_salary.buckets = salaryBuckets.map(bucket => Object.assign({}, bucket, {
             percentage: Math.round(bucket.doc_count / total * 100)
         }))
@@ -158,6 +165,22 @@ exports.experienceByUsers = async (
             return t + rangeAverage * numberOfUsersInRange
         }, 0)
         result.aggregations[field].by_salary.average = Math.round(totalSalary / total)
+
+        const yearsOfExperienceBuckets = result.aggregations[field].by_experience.buckets
+
+        // compute percentages
+        result.aggregations[field].by_experience.buckets = yearsOfExperienceBuckets.map(bucket => Object.assign({}, bucket, {
+            percentage: Math.round(bucket.doc_count / total * 100)
+        }))
+
+        // compute average years of XP for given years of XP
+        const totalYearsOfExperience = yearsOfExperienceBuckets.reduce((t, bucket) => {
+            const rangeAverage = yearsOfExperienceAverages[bucket.key]
+            const numberOfUsersInRange = bucket.doc_count
+
+            return t + rangeAverage * numberOfUsersInRange
+        }, 0)
+        result.aggregations[field].by_experience.average = Math.round(totalYearsOfExperience / total)
     })
 
     return result.aggregations

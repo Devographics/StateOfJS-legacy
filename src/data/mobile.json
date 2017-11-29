@@ -130,7 +130,8 @@
                         "doc_count": 164,
                         "percentage": 2
                     }
-                ]
+                ],
+                "average": 8
             },
             "by_location": {
                 "doc_count_error_upper_bound": 41,
@@ -257,7 +258,8 @@
                         "doc_count": 38,
                         "percentage": 1
                     }
-                ]
+                ],
+                "average": 9
             },
             "by_location": {
                 "doc_count_error_upper_bound": 21,
@@ -384,7 +386,8 @@
                         "doc_count": 56,
                         "percentage": 1
                     }
-                ]
+                ],
+                "average": 8
             },
             "by_location": {
                 "doc_count_error_upper_bound": 25,
@@ -511,7 +514,8 @@
                         "doc_count": 7,
                         "percentage": 1
                     }
-                ]
+                ],
+                "average": 9
             },
             "by_location": {
                 "doc_count_error_upper_bound": 5,
@@ -638,7 +642,8 @@
                         "doc_count": 36,
                         "percentage": 1
                     }
-                ]
+                ],
+                "average": 8
             },
             "by_location": {
                 "doc_count_error_upper_bound": 17,
@@ -765,7 +770,8 @@
                         "doc_count": 97,
                         "percentage": 2
                     }
-                ]
+                ],
+                "average": 7
             },
             "by_location": {
                 "doc_count_error_upper_bound": 27,
@@ -891,7 +897,8 @@
                         "doc_count": 280,
                         "percentage": 2
                     }
-                ]
+                ],
+                "average": 8
             },
             "doc_count": 13577
         }

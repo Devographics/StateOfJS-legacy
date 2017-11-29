@@ -13,7 +13,7 @@ This is where this survey comes in: we asked over a hundred questions to more th
 
 We belive the result is the most complete picture of the present state of JavaScript currently available. 
 
-– Sacha, Michael, & Raphael
+– Sacha, Michael, & Raphaël
 
 `
 
