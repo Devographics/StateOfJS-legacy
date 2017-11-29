@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import truncate from 'lodash/truncate'
-import { ResponsiveChord } from 'nivo'
+import { ResponsiveChordCanvas } from 'nivo'
 import { colorRange, colorScale } from '../../constants'
 import theme from '../../nivoTheme'
 
@@ -16,7 +16,7 @@ export default class AffinityChord extends Component {
 
         return (
             <div style={{ height: 800 }}>
-                <ResponsiveChord
+                <ResponsiveChordCanvas
                     margin={{
                         top: 80,
                         right: 80,
@@ -31,7 +31,6 @@ export default class AffinityChord extends Component {
                     labelRotation={-90}
                     ribbonHoverOthersOpacity={0}
                     label={d => truncate(d.id, { length: 10 })}
-                    /*colors={colorRange}*/
                     animate={false}
                     theme={theme}
                 />
