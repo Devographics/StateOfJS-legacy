@@ -25,7 +25,7 @@ const slugify = s => s.toLowerCase().replace(' ', '-')
 exports.createPages = async ({ boundActionCreators }) => {
     const { createRedirect } = boundActionCreators
 
-    nav.items.forEach(item => {
+    nav.forEach(item => {
         if (item.subPages) {
             createRedirect({
                 fromPath: `/2017/${slugify(item.label)}/`,

@@ -11,7 +11,7 @@ const legends = yearsOfExperienceKeys.map((key, index) => ({
     color: colorScale[index],
 }))
 
-const fakeData = ['4 years', '5 years', '4 years', '5 years', '4 years', '5 years', '4 years', '5 years', '4 years', '5 years', '3 years']
+const fakeData = ['4 years', '5 years', '4 years', '5 years', '4 years', '5 years', '4 years', '5 years']
 
 export default class ExperienceBlock extends Component {
     static propTypes = {

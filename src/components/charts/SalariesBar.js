@@ -5,7 +5,7 @@ import { salaryKeys, colorScale } from '../../constants'
 import theme from '../../nivoTheme'
 
 const SalariesBar = ({ data }) => (
-    <div style={{ height: 300 }}>
+    <div className="salaries chart--bar" style={{ height: 300 }}>
         <ResponsiveBar
             margin={{
                 top: 10,
@@ -15,7 +15,7 @@ const SalariesBar = ({ data }) => (
             }}
             colors={colorScale}
             layout="vertical"
-            padding={0.7}
+            padding={0.5}
             maxValue={100}
             data={data}
             keys={salaryKeys}
@@ -36,6 +36,7 @@ const SalariesBar = ({ data }) => (
                 tickPadding: 12,
             }}
             theme={theme}
+            labelSkipHeight={15}
         />
     </div>
 )

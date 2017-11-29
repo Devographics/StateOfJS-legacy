@@ -2,15 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import libraries from '../../data/libraries.json'
 import find from 'lodash/find'
-import { aliases } from '../../constants.js'
+import { aliases } from '../../constants'
 import classNames from 'classnames'
-
-const paddingFormula = numberOfBars => {
-  const numberOfColumns = numberOfBars * 2 + 1
-  const singleColumnWidth = `100%/${numberOfColumns}`
-  const paddingWidth = `${singleColumnWidth}/2`
-  return `0 calc(${paddingWidth})`
-}
+import paddingFormula from '../../helpers/paddingFormula'
 
 const Star = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">

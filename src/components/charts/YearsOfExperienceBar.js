@@ -5,7 +5,7 @@ import { yearsOfExperienceKeys, colorScale } from '../../constants'
 import theme from '../../nivoTheme'
 
 const YearsOfExperienceBar = ({ data }) => (
-    <div style={{ height: 300 }}>
+    <div className="experiencebar chart--bar" style={{ height: 300 }}>
         <ResponsiveBar
             margin={{
                 top: 10,
@@ -15,7 +15,7 @@ const YearsOfExperienceBar = ({ data }) => (
             }}
             colors={colorScale}
             layout="vertical"
-            padding={0.7}
+            padding={0.5}
             maxValue={100}
             data={data}
             keys={yearsOfExperienceKeys}
@@ -36,6 +36,7 @@ const YearsOfExperienceBar = ({ data }) => (
                 tickPadding: 12,
             }}
             theme={theme}
+            labelSkipHeight={15}
         />
     </div>
 )

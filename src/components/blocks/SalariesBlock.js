@@ -12,7 +12,7 @@ const legends = salaryKeys.map((key, index) => ({
     color: colorScale[index],
 }))
 
-const fakeData = ['56000', '45000', '52300', '65000', '46000', '64900', '56000', '45000', '52300']
+const fakeData = ['56000', '45000', '52300', '65000', '46000', '64900', '56000', '45000']
 
 // see https://stackoverflow.com/questions/149055/how-can-i-format-numbers-as-dollars-currency-string-in-javascript
 export const formatMoney = n => {

@@ -6,6 +6,7 @@ import slugify from '../../helpers/slugify'
 import getPageUrl from '../../helpers/getPageUrl'
 import Link from 'gatsby-link'
 import filter from 'lodash/filter'
+import classNames from 'classnames'
 
 const navFiltered = filter(nav, item => !item.hide)
 
@@ -101,7 +102,7 @@ const getTitle = ({ section, subSection }, short = false) => {
             <div className="inner">{getTitle(location.pathname)}</div>
         </h2>
         */
-const PageTitle = ({ location }) => {
+const PageTitle = ({ location, mode = "title" }) => {
 
     const currentPage = getCurrentPage(location.pathname)
     const previousPage = getPreviousPage(currentPage)
@@ -112,7 +113,7 @@ const PageTitle = ({ location }) => {
     console.log(nextPage)
 
     return (
-        <div className="pagetitle__wrapper">
+        <div className={classNames(`pagetitle__wrapper`, mode === 'pagination' ? 'pagetitle__wrapper--pagination' : 'pagetitle__wrapper--title')}>
             
             <div className="pagetitle">
                 <div className="pagetitle__inner">
@@ -127,7 +128,7 @@ const PageTitle = ({ location }) => {
                     ) : (
                         <span />
                     )}
-                    <h2 className="pagetitle__main">{getTitle(currentPage)}</h2>
+                    {mode === 'title' && <h2 className="pagetitle__main">{getTitle(currentPage)}</h2>}
                     {nextPage ? (
                         <Link
                             className="pagination__link pagination__next"

@@ -91,33 +91,33 @@ export default class ResultsBar extends Component {
         const { data, indexBy, facet } = this.props
 
         return (
-            <div className="results-chart-wrapper">
-            <div style={{ height: data.length * 50 }}>
-                <ResponsiveBar
-                    margin={margin}
-                    layout="vertical"
-                    padding={0.5}
-                    data={data}
-                    keys={keys}
-                    indexBy={indexBy}
-                    colorBy={colorBy}
-                    label={getLabel}
-                    labelSkipWidth={32}
-                    labelSkipHeight={20}
-                    labelFormat=".2s"
-                    labelTextColor="inherit:darker(1)"
-                    enableLabel={true}
-                    enableGridX={false}
-                    enableGridY={true}
-                    animate={true}
-                    motionStiffness={120}
-                    motionDamping={15}
-                    axisLeft={null}
-                    axisRight={null}
-                    axisBottom={null}
-                    theme={theme}
-                />
-            </div>
+            <div className="results-chart-wrapper resultsbar chart--bar">
+                <div style={{ height: data.length * 50 }}>
+                    <ResponsiveBar
+                        margin={margin}
+                        layout="vertical"
+                        padding={0.5}
+                        data={data}
+                        keys={keys}
+                        indexBy={indexBy}
+                        colorBy={colorBy}
+                        label={getLabel}
+                        labelSkipWidth={32}
+                        labelSkipHeight={20}
+                        labelFormat=".2s"
+                        labelTextColor="inherit:darker(1)"
+                        enableLabel={true}
+                        enableGridX={false}
+                        enableGridY={true}
+                        animate={true}
+                        motionStiffness={120}
+                        motionDamping={15}
+                        axisLeft={null}
+                        axisRight={null}
+                        axisBottom={null}
+                        theme={theme}
+                    />
+                </div>
             </div>
         )
     }

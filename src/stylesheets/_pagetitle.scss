@@ -1,22 +1,32 @@
 
 .pagetitle{
-  margin: 0 0 $spacing*2 0;
   // box-shadow: 10px 10px 0 0 $grey;
   position: relative;
-  border: 1px solid $border-color;
   font-size: $larger-font;
-  @include crosshatchBg;
+  .pagetitle__wrapper--title &{
+    border: 1px solid $border-color;
+    @include crosshatchBg;
+    margin-bottom: $spacing*2;
+  }
+  .pagetitle__wrapper--pagination &{
+    border-top: 1px dashed $border-color;
+    padding-top: $spacing;
+    margin-top: $spacing*2;
+    margin-bottom: $spacing;
+  }
 }
 
 .pagetitle__inner{
-    padding: $spacing;
     text-align: center;
-    background: $bg-color;
-    display: block;
     z-index: 10;
     position: relative;
     @include medium-large{
       @include flex-center;
+      justify-content: space-between;
+    }
+    .pagetitle__wrapper--title &{
+      padding: $spacing;
+      background: $bg-color;
     }
   }
 
@@ -49,7 +59,9 @@
     display: inline-block;
   }
   @include medium-large{
-    display: none;
+    .pagetitle__wrapper--title &{
+      display: none;
+    }
   }
 }
 .pagination__previous{

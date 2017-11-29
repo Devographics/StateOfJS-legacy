@@ -18,8 +18,9 @@ const PageLayout = props => (
 	            <Nav {...props} />
 	        </div>
 	        <div className="content">
-	            <PageTitle {...props} />
+                <PageTitle {...props} />
 	            {props.children}
+                <PageTitle {...props} mode="pagination" />
 	        </div>
         </div>
     </div>
