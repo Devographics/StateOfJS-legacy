@@ -76,33 +76,41 @@
                 "buckets": [
                     {
                         "key": "$50-$100k",
-                        "doc_count": 1744
+                        "doc_count": 1744,
+                        "percentage": 32
                     },
                     {
                         "key": "$100k-$200k",
-                        "doc_count": 1174
+                        "doc_count": 1174,
+                        "percentage": 21
                     },
                     {
                         "key": "$30-50k",
-                        "doc_count": 883
+                        "doc_count": 883,
+                        "percentage": 16
                     },
                     {
                         "key": "$10-$30k",
-                        "doc_count": 737
+                        "doc_count": 737,
+                        "percentage": 13
                     },
                     {
                         "key": "I work for free :(",
-                        "doc_count": 389
+                        "doc_count": 389,
+                        "percentage": 7
                     },
                     {
                         "key": "$0-$10k",
-                        "doc_count": 376
+                        "doc_count": 376,
+                        "percentage": 7
                     },
                     {
                         "key": "$200k+",
-                        "doc_count": 97
+                        "doc_count": 97,
+                        "percentage": 2
                     }
-                ]
+                ],
+                "average": 69
             },
             "by_experience": {
                 "doc_count_error_upper_bound": 0,
@@ -110,27 +118,33 @@
                 "buckets": [
                     {
                         "key": "2-5 years",
-                        "doc_count": 1818
+                        "doc_count": 1818,
+                        "percentage": 33
                     },
                     {
                         "key": "5-10 years",
-                        "doc_count": 1605
+                        "doc_count": 1605,
+                        "percentage": 29
                     },
                     {
                         "key": "10-20 years",
-                        "doc_count": 1064
+                        "doc_count": 1064,
+                        "percentage": 19
                     },
                     {
                         "key": "1-2 years",
-                        "doc_count": 690
+                        "doc_count": 690,
+                        "percentage": 13
                     },
                     {
                         "key": "20+ years",
-                        "doc_count": 189
+                        "doc_count": 189,
+                        "percentage": 3
                     },
                     {
                         "key": "Less than one year",
-                        "doc_count": 140
+                        "doc_count": 140,
+                        "percentage": 3
                     }
                 ]
             },
@@ -189,33 +203,41 @@
                 "buckets": [
                     {
                         "key": "$50-$100k",
-                        "doc_count": 6536
+                        "doc_count": 6536,
+                        "percentage": 32
                     },
                     {
                         "key": "$100k-$200k",
-                        "doc_count": 4291
+                        "doc_count": 4291,
+                        "percentage": 21
                     },
                     {
                         "key": "$30-50k",
-                        "doc_count": 3517
+                        "doc_count": 3517,
+                        "percentage": 17
                     },
                     {
                         "key": "$10-$30k",
-                        "doc_count": 2861
+                        "doc_count": 2861,
+                        "percentage": 14
                     },
                     {
                         "key": "I work for free :(",
-                        "doc_count": 1254
+                        "doc_count": 1254,
+                        "percentage": 6
                     },
                     {
                         "key": "$0-$10k",
-                        "doc_count": 1240
+                        "doc_count": 1240,
+                        "percentage": 6
                     },
                     {
                         "key": "$200k+",
-                        "doc_count": 351
+                        "doc_count": 351,
+                        "percentage": 2
                     }
-                ]
+                ],
+                "average": 69
             },
             "by_experience": {
                 "doc_count_error_upper_bound": 0,
@@ -223,27 +245,33 @@
                 "buckets": [
                     {
                         "key": "2-5 years",
-                        "doc_count": 6210
+                        "doc_count": 6210,
+                        "percentage": 30
                     },
                     {
                         "key": "5-10 years",
-                        "doc_count": 6037
+                        "doc_count": 6037,
+                        "percentage": 29
                     },
                     {
                         "key": "10-20 years",
-                        "doc_count": 4462
+                        "doc_count": 4462,
+                        "percentage": 22
                     },
                     {
                         "key": "1-2 years",
-                        "doc_count": 2286
+                        "doc_count": 2286,
+                        "percentage": 11
                     },
                     {
                         "key": "20+ years",
-                        "doc_count": 1026
+                        "doc_count": 1026,
+                        "percentage": 5
                     },
                     {
                         "key": "Less than one year",
-                        "doc_count": 519
+                        "doc_count": 519,
+                        "percentage": 3
                     }
                 ]
             },
@@ -302,33 +330,41 @@
                 "buckets": [
                     {
                         "key": "$50-$100k",
-                        "doc_count": 168
+                        "doc_count": 168,
+                        "percentage": 32
                     },
                     {
                         "key": "$100k-$200k",
-                        "doc_count": 167
+                        "doc_count": 167,
+                        "percentage": 32
                     },
                     {
                         "key": "$30-50k",
-                        "doc_count": 59
+                        "doc_count": 59,
+                        "percentage": 11
                     },
                     {
                         "key": "$10-$30k",
-                        "doc_count": 47
+                        "doc_count": 47,
+                        "percentage": 9
                     },
                     {
                         "key": "$200k+",
-                        "doc_count": 33
+                        "doc_count": 33,
+                        "percentage": 6
                     },
                     {
                         "key": "$0-$10k",
-                        "doc_count": 21
+                        "doc_count": 21,
+                        "percentage": 4
                     },
                     {
                         "key": "I work for free :(",
-                        "doc_count": 19
+                        "doc_count": 19,
+                        "percentage": 4
                     }
-                ]
+                ],
+                "average": 95
             },
             "by_experience": {
                 "doc_count_error_upper_bound": 0,
@@ -336,27 +372,33 @@
                 "buckets": [
                     {
                         "key": "5-10 years",
-                        "doc_count": 160
+                        "doc_count": 160,
+                        "percentage": 31
                     },
                     {
                         "key": "2-5 years",
-                        "doc_count": 153
+                        "doc_count": 153,
+                        "percentage": 29
                     },
                     {
                         "key": "10-20 years",
-                        "doc_count": 133
+                        "doc_count": 133,
+                        "percentage": 26
                     },
                     {
                         "key": "1-2 years",
-                        "doc_count": 42
+                        "doc_count": 42,
+                        "percentage": 8
                     },
                     {
                         "key": "20+ years",
-                        "doc_count": 25
+                        "doc_count": 25,
+                        "percentage": 5
                     },
                     {
                         "key": "Less than one year",
-                        "doc_count": 6
+                        "doc_count": 6,
+                        "percentage": 1
                     }
                 ]
             },
@@ -415,33 +457,41 @@
                 "buckets": [
                     {
                         "key": "$50-$100k",
-                        "doc_count": 420
+                        "doc_count": 420,
+                        "percentage": 33
                     },
                     {
                         "key": "$100k-$200k",
-                        "doc_count": 331
+                        "doc_count": 331,
+                        "percentage": 26
                     },
                     {
                         "key": "$30-50k",
-                        "doc_count": 182
+                        "doc_count": 182,
+                        "percentage": 14
                     },
                     {
                         "key": "$10-$30k",
-                        "doc_count": 150
+                        "doc_count": 150,
+                        "percentage": 12
                     },
                     {
                         "key": "I work for free :(",
-                        "doc_count": 67
+                        "doc_count": 67,
+                        "percentage": 5
                     },
                     {
                         "key": "$0-$10k",
-                        "doc_count": 55
+                        "doc_count": 55,
+                        "percentage": 4
                     },
                     {
                         "key": "$200k+",
-                        "doc_count": 34
+                        "doc_count": 34,
+                        "percentage": 3
                     }
-                ]
+                ],
+                "average": 80
             },
             "by_experience": {
                 "doc_count_error_upper_bound": 0,
@@ -449,27 +499,33 @@
                 "buckets": [
                     {
                         "key": "2-5 years",
-                        "doc_count": 400
+                        "doc_count": 400,
+                        "percentage": 32
                     },
                     {
                         "key": "5-10 years",
-                        "doc_count": 373
+                        "doc_count": 373,
+                        "percentage": 30
                     },
                     {
                         "key": "10-20 years",
-                        "doc_count": 282
+                        "doc_count": 282,
+                        "percentage": 22
                     },
                     {
                         "key": "1-2 years",
-                        "doc_count": 123
+                        "doc_count": 123,
+                        "percentage": 10
                     },
                     {
                         "key": "20+ years",
-                        "doc_count": 57
+                        "doc_count": 57,
+                        "percentage": 5
                     },
                     {
                         "key": "Less than one year",
-                        "doc_count": 20
+                        "doc_count": 20,
+                        "percentage": 2
                     }
                 ]
             },
@@ -528,33 +584,41 @@
                 "buckets": [
                     {
                         "key": "$50-$100k",
-                        "doc_count": 3515
+                        "doc_count": 3515,
+                        "percentage": 33
                     },
                     {
                         "key": "$100k-$200k",
-                        "doc_count": 2572
+                        "doc_count": 2572,
+                        "percentage": 24
                     },
                     {
                         "key": "$30-50k",
-                        "doc_count": 1778
+                        "doc_count": 1778,
+                        "percentage": 17
                     },
                     {
                         "key": "$10-$30k",
-                        "doc_count": 1349
+                        "doc_count": 1349,
+                        "percentage": 13
                     },
                     {
                         "key": "$0-$10k",
-                        "doc_count": 564
+                        "doc_count": 564,
+                        "percentage": 5
                     },
                     {
                         "key": "I work for free :(",
-                        "doc_count": 495
+                        "doc_count": 495,
+                        "percentage": 5
                     },
                     {
                         "key": "$200k+",
-                        "doc_count": 192
+                        "doc_count": 192,
+                        "percentage": 2
                     }
-                ]
+                ],
+                "average": 74
             },
             "by_experience": {
                 "doc_count_error_upper_bound": 0,
@@ -562,27 +626,33 @@
                 "buckets": [
                     {
                         "key": "2-5 years",
-                        "doc_count": 3410
+                        "doc_count": 3410,
+                        "percentage": 32
                     },
                     {
                         "key": "5-10 years",
-                        "doc_count": 3260
+                        "doc_count": 3260,
+                        "percentage": 30
                     },
                     {
                         "key": "10-20 years",
-                        "doc_count": 2186
+                        "doc_count": 2186,
+                        "percentage": 20
                     },
                     {
                         "key": "1-2 years",
-                        "doc_count": 1154
+                        "doc_count": 1154,
+                        "percentage": 11
                     },
                     {
                         "key": "20+ years",
-                        "doc_count": 433
+                        "doc_count": 433,
+                        "percentage": 4
                     },
                     {
                         "key": "Less than one year",
-                        "doc_count": 251
+                        "doc_count": 251,
+                        "percentage": 2
                     }
                 ]
             },
@@ -641,33 +711,41 @@
                 "buckets": [
                     {
                         "key": "$50-$100k",
-                        "doc_count": 941
+                        "doc_count": 941,
+                        "percentage": 34
                     },
                     {
                         "key": "$100k-$200k",
-                        "doc_count": 786
+                        "doc_count": 786,
+                        "percentage": 28
                     },
                     {
                         "key": "$30-50k",
-                        "doc_count": 377
+                        "doc_count": 377,
+                        "percentage": 13
                     },
                     {
                         "key": "$10-$30k",
-                        "doc_count": 291
+                        "doc_count": 291,
+                        "percentage": 10
                     },
                     {
                         "key": "I work for free :(",
-                        "doc_count": 144
+                        "doc_count": 144,
+                        "percentage": 5
                     },
                     {
                         "key": "$0-$10k",
-                        "doc_count": 99
+                        "doc_count": 99,
+                        "percentage": 4
                     },
                     {
                         "key": "$200k+",
-                        "doc_count": 97
+                        "doc_count": 97,
+                        "percentage": 3
                     }
-                ]
+                ],
+                "average": 84
             },
             "by_experience": {
                 "doc_count_error_upper_bound": 0,
@@ -675,27 +753,33 @@
                 "buckets": [
                     {
                         "key": "5-10 years",
-                        "doc_count": 867
+                        "doc_count": 867,
+                        "percentage": 31
                     },
                     {
                         "key": "2-5 years",
-                        "doc_count": 850
+                        "doc_count": 850,
+                        "percentage": 30
                     },
                     {
                         "key": "10-20 years",
-                        "doc_count": 668
+                        "doc_count": 668,
+                        "percentage": 24
                     },
                     {
                         "key": "1-2 years",
-                        "doc_count": 218
+                        "doc_count": 218,
+                        "percentage": 8
                     },
                     {
                         "key": "20+ years",
-                        "doc_count": 136
+                        "doc_count": 136,
+                        "percentage": 5
                     },
                     {
                         "key": "Less than one year",
-                        "doc_count": 45
+                        "doc_count": 45,
+                        "percentage": 2
                     }
                 ]
             },
@@ -754,33 +838,41 @@
                 "buckets": [
                     {
                         "key": "$100k-$200k",
-                        "doc_count": 26
+                        "doc_count": 26,
+                        "percentage": 33
                     },
                     {
                         "key": "$50-$100k",
-                        "doc_count": 17
+                        "doc_count": 17,
+                        "percentage": 22
                     },
                     {
                         "key": "$30-50k",
-                        "doc_count": 13
+                        "doc_count": 13,
+                        "percentage": 17
                     },
                     {
                         "key": "$200k+",
-                        "doc_count": 11
+                        "doc_count": 11,
+                        "percentage": 14
                     },
                     {
                         "key": "$10-$30k",
-                        "doc_count": 5
+                        "doc_count": 5,
+                        "percentage": 6
                     },
                     {
                         "key": "I work for free :(",
-                        "doc_count": 4
+                        "doc_count": 4,
+                        "percentage": 5
                     },
                     {
                         "key": "$0-$10k",
-                        "doc_count": 1
+                        "doc_count": 1,
+                        "percentage": 1
                     }
-                ]
+                ],
+                "average": 110
             },
             "by_experience": {
                 "doc_count_error_upper_bound": 0,
@@ -788,23 +880,28 @@
                 "buckets": [
                     {
                         "key": "5-10 years",
-                        "doc_count": 27
+                        "doc_count": 27,
+                        "percentage": 35
                     },
                     {
                         "key": "10-20 years",
-                        "doc_count": 21
+                        "doc_count": 21,
+                        "percentage": 27
                     },
                     {
                         "key": "2-5 years",
-                        "doc_count": 21
+                        "doc_count": 21,
+                        "percentage": 27
                     },
                     {
                         "key": "20+ years",
-                        "doc_count": 5
+                        "doc_count": 5,
+                        "percentage": 6
                     },
                     {
                         "key": "1-2 years",
-                        "doc_count": 4
+                        "doc_count": 4,
+                        "percentage": 5
                     }
                 ]
             },
@@ -863,33 +960,41 @@
                 "buckets": [
                     {
                         "key": "$50-$100k",
-                        "doc_count": 361
+                        "doc_count": 361,
+                        "percentage": 32
                     },
                     {
                         "key": "$100k-$200k",
-                        "doc_count": 275
+                        "doc_count": 275,
+                        "percentage": 24
                     },
                     {
                         "key": "$30-50k",
-                        "doc_count": 185
+                        "doc_count": 185,
+                        "percentage": 16
                     },
                     {
                         "key": "$10-$30k",
-                        "doc_count": 143
+                        "doc_count": 143,
+                        "percentage": 13
                     },
                     {
                         "key": "I work for free :(",
-                        "doc_count": 66
+                        "doc_count": 66,
+                        "percentage": 6
                     },
                     {
                         "key": "$0-$10k",
-                        "doc_count": 58
+                        "doc_count": 58,
+                        "percentage": 5
                     },
                     {
                         "key": "$200k+",
-                        "doc_count": 24
+                        "doc_count": 24,
+                        "percentage": 2
                     }
-                ]
+                ],
+                "average": 74
             },
             "by_experience": {
                 "doc_count_error_upper_bound": 0,
@@ -897,27 +1002,33 @@
                 "buckets": [
                     {
                         "key": "2-5 years",
-                        "doc_count": 332
+                        "doc_count": 332,
+                        "percentage": 29
                     },
                     {
                         "key": "5-10 years",
-                        "doc_count": 332
+                        "doc_count": 332,
+                        "percentage": 29
                     },
                     {
                         "key": "10-20 years",
-                        "doc_count": 272
+                        "doc_count": 272,
+                        "percentage": 24
                     },
                     {
                         "key": "1-2 years",
-                        "doc_count": 119
+                        "doc_count": 119,
+                        "percentage": 10
                     },
                     {
                         "key": "20+ years",
-                        "doc_count": 59
+                        "doc_count": 59,
+                        "percentage": 5
                     },
                     {
                         "key": "Less than one year",
-                        "doc_count": 23
+                        "doc_count": 23,
+                        "percentage": 2
                     }
                 ]
             },
@@ -975,33 +1086,41 @@
                 "buckets": [
                     {
                         "key": "$50-$100k",
-                        "doc_count": 6874
+                        "doc_count": 6874,
+                        "percentage": 32
                     },
                     {
                         "key": "$100k-$200k",
-                        "doc_count": 4492
+                        "doc_count": 4492,
+                        "percentage": 21
                     },
                     {
                         "key": "$30-50k",
-                        "doc_count": 3699
+                        "doc_count": 3699,
+                        "percentage": 17
                     },
                     {
                         "key": "$10-$30k",
-                        "doc_count": 3036
+                        "doc_count": 3036,
+                        "percentage": 14
                     },
                     {
                         "key": "I work for free :(",
-                        "doc_count": 1368
+                        "doc_count": 1368,
+                        "percentage": 6
                     },
                     {
                         "key": "$0-$10k",
-                        "doc_count": 1361
+                        "doc_count": 1361,
+                        "percentage": 6
                     },
                     {
                         "key": "$200k+",
-                        "doc_count": 379
+                        "doc_count": 379,
+                        "percentage": 2
                     }
-                ]
+                ],
+                "average": 69
             },
             "by_experience": {
                 "doc_count_error_upper_bound": 0,
@@ -1009,27 +1128,33 @@
                 "buckets": [
                     {
                         "key": "2-5 years",
-                        "doc_count": 6592
+                        "doc_count": 6592,
+                        "percentage": 30
                     },
                     {
                         "key": "5-10 years",
-                        "doc_count": 6348
+                        "doc_count": 6348,
+                        "percentage": 29
                     },
                     {
                         "key": "10-20 years",
-                        "doc_count": 4669
+                        "doc_count": 4669,
+                        "percentage": 21
                     },
                     {
                         "key": "1-2 years",
-                        "doc_count": 2475
+                        "doc_count": 2475,
+                        "percentage": 11
                     },
                     {
                         "key": "20+ years",
-                        "doc_count": 1071
+                        "doc_count": 1071,
+                        "percentage": 5
                     },
                     {
                         "key": "Less than one year",
-                        "doc_count": 574
+                        "doc_count": 574,
+                        "percentage": 3
                     }
                 ]
             },

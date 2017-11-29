@@ -26,6 +26,7 @@ const fakeDataFormatted = fakeData.map(formatMoney)
 
 export default class SalariesBlock extends Component {
     static propTypes = {
+        title: PropTypes.string,
         tools: PropTypes.arrayOf(PropTypes.string).isRequired,
         data: PropTypes.object.isRequired,
     }

@@ -34,6 +34,16 @@ const opinionKeys = [
     'This survey is too damn long!',
 ]
 
+const salaryAverages = {
+    'I work for free :(': 0,
+    '$0-$10k': 5,
+    '$10-$30k': 20,
+    '$30-50k': 40,
+    '$50-$100k': 75,
+    '$100k-$200k': 150,
+    '$200k+': 250,
+}
+
 const surveyKeys = ['browser', 'city', 'device', 'location', 'os', 'referrer']
 
 const usersKeys = ['Yearly Salary', 'Years of Experience', 'Company Size']
@@ -119,13 +129,35 @@ exports.experienceByUsers = async (
             aggs: {
                 by_salary: { terms: { field: 'Yearly Salary' } },
                 by_experience: { terms: { field: 'Years of Experience' } },
-                //by_location: { terms: { field: 'location' } },
             },
         },
     })
 
     result.aggregations.Aggregated = Object.assign({}, all.aggregations, {
         doc_count: all.hits.total
+    })
+
+    const allFields = ['Aggregated', ...fields]
+    allFields.forEach(field => {
+        const total = result.aggregations[field].doc_count
+
+        result.aggregations[field].by_experience.buckets = result.aggregations[field].by_experience.buckets.map(bucket => Object.assign({}, bucket, {
+            percentage: Math.round(bucket.doc_count / total * 100)
+        }))
+
+        const salaryBuckets = result.aggregations[field].by_salary.buckets
+        result.aggregations[field].by_salary.buckets = salaryBuckets.map(bucket => Object.assign({}, bucket, {
+            percentage: Math.round(bucket.doc_count / total * 100)
+        }))
+
+        const totalSalary = salaryBuckets.reduce((t, bucket) => {
+            const rangeAverage = salaryAverages[bucket.key]
+            const numberOfUsersInRange = bucket.doc_count
+
+            return t + rangeAverage * numberOfUsersInRange
+        }, 0)
+
+        result.aggregations[field].by_salary.average = Math.round(totalSalary / total)
     })
 
     return result.aggregations
