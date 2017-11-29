@@ -1,40 +1,19 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { colorRange } from '../../constants'
-import Filters from '../elements/Filters'
-import Legends from '../elements/Legends'
 import OthersBubble from '../charts/OthersBubble'
-import Libraries from '../elements/Libraries'
-import reverse from 'lodash/reverse'
 
 export default class OthersBubbleBlock extends Component {
-    state = {
-        mode: 'compare',
-    }
-
     static propTypes = {
-        title: PropTypes.string,
         base: PropTypes.array.isRequired,
         baseKeys: PropTypes.array.isRequired,
         others: PropTypes.array.isRequired,
     }
 
-    setMode = mode => {
-        this.setState({ mode })
-    }
-
     render() {
-        const { title, base, baseKeys, others: _others } = this.props
-        const { mode } = this.state
+        const { base, baseKeys, others: _others } = this.props
 
         const others = _others.filter(({ key }) => !baseKeys.includes(key))
-
-        let bubbleData
-        if (mode === 'compare') {
-            bubbleData = [...base, ...others]
-        } else {
-            bubbleData = others
-        }
+        const bubbleData = [...base, ...others].filter(({ key }) => key !== 'Aggregated')
 
         return (
             <div className="block block--chart block--othersbubble">

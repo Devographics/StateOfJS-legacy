@@ -1,24 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { mapValues } from 'lodash'
 import CountryBubble from '../charts/CountryBubble'
-
-const BubbleImplementation = ({ countries, tools, currentTool, setCurrentTool }) => (
-    <div className="worldwide__grid">
-        {countries.filter(({ key }) => key !== 'undefined').map(country => (
-            <div key={country.key} className="worldwide__grid__item">
-                <div className="worldwide__chart">
-                    <CountryBubble
-                        keys={tools}
-                        data={country}
-                        currentTool={currentTool}
-                        setCurrentTool={setCurrentTool}
-                    />
-                </div>
-                <h4 style={{ textAlign: 'center' }}>{country.key}</h4>
-            </div>
-        ))}
-    </div>
-)
 
 export default class WorldwideBlock extends Component {
     static propTypes = {
@@ -39,8 +22,17 @@ export default class WorldwideBlock extends Component {
     }
 
     render() {
-        const { countries, tools } = this.props
+        const { countries, tools, all } = this.props
         const { tool } = this.state
+
+        const worldwideAverageData = {
+            key: 'Worldwide average',
+            ...mapValues(all, bucket => ({
+                doc_count: bucket[`I've USED it before, and WOULD use it again`]
+            }))
+        }
+
+        const data = [worldwideAverageData, ...countries.filter(({ key }) => key !== 'undefined')]
 
         return (
             <div className="block block--chart block--worldwide">
@@ -54,12 +46,21 @@ export default class WorldwideBlock extends Component {
                         Note: only countries which received over 200 total entries are shown. 
                     </p>
                 </div>
-                <BubbleImplementation
-                    countries={countries}
-                    tools={tools}
-                    currentTool={tool}
-                    setCurrentTool={this.setTool}
-                />
+                <div className="worldwide__grid">
+                    {data.map(country => (
+                        <div key={country.key} className="worldwide__grid__item">
+                            <div className="worldwide__chart">
+                                <CountryBubble
+                                    keys={tools}
+                                    data={country}
+                                    currentTool={tool}
+                                    setCurrentTool={this.setTool}
+                                />
+                            </div>
+                            <h4 style={{ textAlign: 'center' }}>{country.key}</h4>
+                        </div>
+                    ))}
+                </div>
             </div>
         )
     }

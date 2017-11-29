@@ -6,6 +6,7 @@ export default () => (
     <WorldwideTemplate
         tools={flavorData.keys}
         countries={flavorData.countries}
+        all={flavorData.experience}
         section="Flavors"
     />
 )

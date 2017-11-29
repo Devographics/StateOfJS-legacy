@@ -6,6 +6,7 @@ export default () => (
     <WorldwideTemplate
         tools={stateData.keys}
         countries={stateData.countries}
+        all={stateData.experience}
         section="State Management"
     />
 )
