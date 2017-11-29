@@ -12,6 +12,7 @@ const TestingOthers = () => (
         base={baseTools}
         baseKeys={testingData.keys}
         others={otherTools}
+        section="Testing"
     />
 )
 

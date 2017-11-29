@@ -8,6 +8,7 @@ const TestingUsers = () => (
         tools={testingData.keys}
         defaultTool="Mocha"
         data={testingData.experienceByUsers}
+        section="Testing"
     />
 )
 

@@ -18,6 +18,9 @@ $tooltipDisplay: none;
 .libraries{
 
 }
+.libraries__inner{
+    display: flex;
+}
 .libraries__item{
     position: relative;
 }
@@ -32,11 +35,14 @@ $tooltipDisplay: none;
 }
 
 .libraries--vertical{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
     padding: 50px 0;
+    display: flex;
+    .libraries__inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
     .libraries__item__link{
         white-space: nowrap;
         text-align: right;
@@ -54,7 +60,6 @@ $tooltipDisplay: none;
     }
     margin-bottom: $spacing*2;
     .libraries__inner{
-        display: flex;
         align-items: center;
         justify-content: space-between;
     }

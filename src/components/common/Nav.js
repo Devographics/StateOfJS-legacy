@@ -6,12 +6,14 @@ import sections from '../../data/sections.yaml'
 import slugify from '../../helpers/slugify'
 import filter from 'lodash/filter'
 
+const navFiltered = filter(nav, item => !item.hide)
+
 const isActive = (pathname, label) => pathname.indexOf(slugify(label)) !== -1
 
 const Nav = ({ location }) => (
     <div className="nav">
         <ul>
-            {filter(nav.items, item => !item.hide).map((item, i) => (
+            {navFiltered.map((item, i) => (
                 <NavItem key={i} {...item} location={location} location={location} />
             ))}
         </ul>

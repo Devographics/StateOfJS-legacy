@@ -1,68 +1,74 @@
-.page-title-header{
-  text-align: center;
-  display: block;
-  margin-bottom: $spacing;
-  font-size: $medium-font;
-}
-.page-title{
+
+.pagetitle{
   margin: 0 0 $spacing*2 0;
   // box-shadow: 10px 10px 0 0 $grey;
   position: relative;
   border: 1px solid $border-color;
   font-size: $larger-font;
-  .inner{
+  @include crosshatchBg;
+}
+
+.pagetitle__inner{
     padding: $spacing;
     text-align: center;
     background: $bg-color;
     display: block;
     z-index: 10;
     position: relative;
+    @include medium-large{
+      @include flex-center;
+    }
   }
-  @include crosshatchBg;
-}
 
-
-.page-title-contents{
-  text-align: center;
-  margin: 0;
-  line-height: 1;
-  @include small-medium{
-    margin-bottom: $spacing/2;
-  }
-  @include large{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-  }
-}
-.page-title-main{
-  margin-bottom: $spacing/1.5;
+.pagetitle__main{
+  margin-bottom: 0;
   @include small-medium{
     font-size: $large-font;
     line-height: 1.4;
   }
   @include large{
     font-size: $largest-font;
+    flex-grow: 1;
   }
 }
-.page-title-author{
-  font-size: $medium-font;
-  margin: 0;
-  @include primary-font;
-  font-weight: $medium;
-  @include flex-center;
-  img, span, a{
-    display: block;
+
+.pagination__link{
+  display: block;
+  @include secondary-font;
+  white-space: nowrap;
+  @include small{
+    font-size: $small-font;
   }
-  .by{
-    font-style: italic;
-    margin-right: 6px;
+  @include medium-large{
+    font-size: $medium-font;
   }
 }
-.page-title-avatar{
-  border-radius: 100%;
-  height: 24px;
-  width: 24px;
-  margin-right: 6px;
+
+.pagination__link__label{
+  @include small{
+    display: inline-block;
+  }
+  @include medium-large{
+    display: none;
+  }
+}
+.pagination__previous{
+  @include small-medium{
+    text-align: center;
+    margin-bottom: $spacing/2;
+  }
+  @include large{
+    text-align: left;
+    margin-right: $spacing;
+  }
+}
+
+.pagination__next{
+  @include small-medium{
+    text-align: center;
+  }
+  @include large{
+    text-align: right;
+    margin-left: $spacing;
+  }
 }

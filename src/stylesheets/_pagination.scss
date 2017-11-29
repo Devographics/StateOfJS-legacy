@@ -15,8 +15,9 @@
   border-bottom: 1px solid $border-color;
   padding-bottom: $spacing*2;
 
-  @include large{
-    display: flex;
+
+  @include medium-and-up{
+    @include flex-center;
     justify-content: space-between;
   }
 }

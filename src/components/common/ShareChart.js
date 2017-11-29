@@ -138,7 +138,7 @@ export default class ShareChart extends React.Component {
     render() {
 
         const { section, subSection } = this.props
-        const currentSection = find(nav.items, {label: section })
+        const currentSection = find(nav, {label: section })
 
         const name = currentSection.label
         const slug = slugify(section)

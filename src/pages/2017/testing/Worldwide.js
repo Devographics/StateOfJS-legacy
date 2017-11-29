@@ -6,5 +6,6 @@ export default () => (
     <WorldwideTemplate
         tools={testingData.keys}
         countries={testingData.countries}
+        section="Testing"
     />
 )
