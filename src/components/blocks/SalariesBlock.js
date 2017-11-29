@@ -56,10 +56,12 @@ export default class SalariesBlock extends Component {
                         range (restrict to <a className="salaries__selector" href="#">United States</a>). 
                     </p>
                 </div>
-                <div className="capture">
-                    <Legends legends={legends} modifier="horizontal" />
-                    <Averages data={fakeDataFormatted}/>
-                    <SalariesBar data={salariesData} />
+                <div className="block__contents capture">
+                    <div className="block__contents__inner">
+                        <Legends legends={legends} modifier="horizontal" />
+                        <Averages data={fakeDataFormatted}/>
+                        <SalariesBar data={salariesData} />
+                    </div>
                 </div>
                 <ShareChart section={section} subSection="developers" />
             </div>

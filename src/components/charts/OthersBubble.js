@@ -13,9 +13,9 @@ const OthersBubble = ({ data, baseKeys }) => (
         }}
         margin={{
             top: 0,
-            right: 80,
+            right: 0,
             bottom: 0,
-            left: 80,
+            left: 0,
         }}
         identity="key"
         value="doc_count"

@@ -32,6 +32,9 @@
 
 .pagetitle__main{
   margin-bottom: 0;
+  @include small{
+    margin-bottom: $spacing/2;
+  }
   @include small-medium{
     font-size: $large-font;
     line-height: 1.4;

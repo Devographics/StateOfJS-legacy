@@ -9,7 +9,7 @@ export default class NumberOfLibrariesBlock extends Component {
     render() {
 
         return (
-            <div className="block block--chart block--resultsskills">
+            <div className="block block--chart block--numberoflibs">
                 <h3 className="block__title">Number of Libraries Used</h3>
                 <div className="block__description">
                     <p>

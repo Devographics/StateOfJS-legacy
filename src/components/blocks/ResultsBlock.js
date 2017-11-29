@@ -46,18 +46,20 @@ export default class ResultsBlock extends Component {
                     <div className="block__description"><p>{description}</p></div> :
                     <div className="block__description"><p>Per-library survey results.</p></div>
                 }
-                <div className="capture">
-                    {/*
-                    <Filters
-                        filters={['all', 'interest', 'satisfaction']}
-                        filter={tool}
-                        onChange={this.setTool}
-                        className="Filters--experience"
-                    />
-                    */}
-                    <Legends legends={legends} modifier="horizontal" />
-                    <ResultsBar facet={tool} data={data} indexBy={indexBy} />
-                    <Libraries variant="horizontal" data={data} />
+                <div className="block__contents capture">
+                    <div className="block__contents__inner">
+                        {/*
+                        <Filters
+                            filters={['all', 'interest', 'satisfaction']}
+                            filter={tool}
+                            onChange={this.setTool}
+                            className="Filters--experience"
+                        />
+                        */}
+                        <Legends legends={legends} modifier="horizontal" />
+                        <ResultsBar facet={tool} data={data} indexBy={indexBy} />
+                        <Libraries variant="horizontal" data={data} />
+                    </div>
                 </div>
                 <ShareChart section={section} subSection="results" />
                 

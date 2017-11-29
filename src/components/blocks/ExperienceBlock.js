@@ -44,9 +44,13 @@ export default class ExperienceBlock extends Component {
                         Per-library breakdown of developers according to years of experience.
                     </p>
                 </div>
-                <Legends legends={legends} modifier="horizontal" />
-                <Averages data={fakeData}/>
-                <YearsOfExperienceBar data={yearsOfExperienceData} />
+                <div className="block__contents">
+                    <div className="block__contents__inner">
+                        <Legends legends={legends} modifier="horizontal" />
+                        <Averages data={fakeData}/>
+                        <YearsOfExperienceBar data={yearsOfExperienceData} />
+                    </div>
+                </div>
             </div>
         )
     }

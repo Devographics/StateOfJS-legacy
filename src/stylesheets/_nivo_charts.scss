@@ -18,6 +18,12 @@
     font-size: $medium-font;
 }
 
+.block__contents{
+    overflow-x: scroll;
+}
+.block__contents__inner{
+    min-width: 800px;
+}
 .PieRow {
     display: flex;
     align-items: center;
@@ -73,5 +79,12 @@
     padding: 0 $spacing*3;
     text{
         font-size: $small-font;
+    }
+}
+
+.block--numberoflibs{
+    img{
+        display: block;
+        width: 100%;
     }
 }

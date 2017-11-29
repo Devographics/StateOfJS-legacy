@@ -108,10 +108,6 @@ const PageTitle = ({ location, mode = "title" }) => {
     const previousPage = getPreviousPage(currentPage)
     const nextPage = getNextPage(currentPage)
 
-    console.log(previousPage)
-    console.log(currentPage)
-    console.log(nextPage)
-
     return (
         <div className={classNames(`pagetitle__wrapper`, mode === 'pagination' ? 'pagetitle__wrapper--pagination' : 'pagetitle__wrapper--title')}>
             
