@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { sortBy } from 'lodash'
 import YearsOfExperienceBar from '../charts/YearsOfExperienceBar'
-import SalariesBar from '../charts/SalariesBar'
 import { yearsOfExperienceKeys, colorScale } from '../../constants'
 import Legends from '../elements/Legends'
 import Averages from '../elements/Averages'
@@ -10,8 +10,6 @@ const legends = yearsOfExperienceKeys.map((key, index) => ({
     label: key,
     color: colorScale[index],
 }))
-
-const fakeData = ['4 years', '5 years', '4 years', '5 years', '4 years', '5 years', '4 years', '5 years']
 
 export default class ExperienceBlock extends Component {
     static propTypes = {
@@ -22,21 +20,18 @@ export default class ExperienceBlock extends Component {
     render() {
         const { data, tools } = this.props
 
-        const yearsOfExperienceData = ['Aggregated', ...tools].map(tool => {
+        const allKeys = sortBy(['Aggregated', ...tools], key => data[key].by_experience.average)
+        const averages = allKeys.map(tool => data[tool].by_experience.average).map(avg => `${avg} years`)
+        const yearsOfExperienceData = allKeys.map(tool => {
             const toolYearsOfExperience = { tool }
-            const totalUserCount = data[tool].doc_count
             const buckets = data[tool].by_experience.buckets
             yearsOfExperienceKeys.forEach(yearsOfExperienceKey => {
                 const bucket = buckets.find(({ key }) => key === yearsOfExperienceKey)
-                toolYearsOfExperience[yearsOfExperienceKey] = Math.round(
-                    (bucket ? bucket.doc_count : 0) / totalUserCount * 100
-                )
+                toolYearsOfExperience[yearsOfExperienceKey] = bucket.percentage
             })
 
             return toolYearsOfExperience
         })
-
-        const averages = ['Aggregated', ...tools].map(tool => data[tool].by_experience.average).map(avg => `${avg} years`)
 
         return (
             <div className="block block--chart block--experience">

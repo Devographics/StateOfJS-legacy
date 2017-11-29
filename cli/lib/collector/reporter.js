@@ -1,5 +1,6 @@
 'use strict'
 
+const { maxBy } = require('lodash')
 const config = require('@ekino/config')
 const elastic = require('./elastic')
 const dto = require('./dto')
@@ -100,6 +101,25 @@ exports.experiencePairing = async (
     return result.aggregations
 }
 
+/**
+ * Fix percentages for a given set of buckets.
+ * Because rounding often ends up with a value != 100%,
+ * we take the higher bucket and apply the diff on its average.
+ *
+ * Be aware that this function may mutates the higher bucket.
+ *
+ * @param {Array.<Object>} buckets
+ */
+exports.fixBucketsPercentages = buckets => {
+    const total = buckets.reduce((t, { percentage }) => t + percentage, 0)
+
+    const diff = 100 - total
+    if (diff !== 0) {
+        const higherBucket = maxBy(buckets, 'percentage')
+        higherBucket.percentage = higherBucket.percentage + diff
+    }
+}
+
 exports.experienceByUsers = async (
     fields,
     experience = "I've USED it before, and WOULD use it again"
@@ -150,12 +170,14 @@ exports.experienceByUsers = async (
     allFields.forEach(field => {
         const total = result.aggregations[field].doc_count
 
-        const salaryBuckets = result.aggregations[field].by_salary.buckets
+        let salaryBuckets = result.aggregations[field].by_salary.buckets
 
         // compute percentages
-        result.aggregations[field].by_salary.buckets = salaryBuckets.map(bucket => Object.assign({}, bucket, {
+        salaryBuckets = salaryBuckets.map(bucket => Object.assign({}, bucket, {
             percentage: Math.round(bucket.doc_count / total * 100)
         }))
+        exports.fixBucketsPercentages(salaryBuckets)
+        result.aggregations[field].by_salary.buckets = salaryBuckets
 
         // compute average salary for given tool
         const totalSalary = salaryBuckets.reduce((t, bucket) => {
@@ -166,12 +188,14 @@ exports.experienceByUsers = async (
         }, 0)
         result.aggregations[field].by_salary.average = Math.round(totalSalary / total)
 
-        const yearsOfExperienceBuckets = result.aggregations[field].by_experience.buckets
+        let yearsOfExperienceBuckets = result.aggregations[field].by_experience.buckets
 
         // compute percentages
-        result.aggregations[field].by_experience.buckets = yearsOfExperienceBuckets.map(bucket => Object.assign({}, bucket, {
+        yearsOfExperienceBuckets = yearsOfExperienceBuckets.map(bucket => Object.assign({}, bucket, {
             percentage: Math.round(bucket.doc_count / total * 100)
         }))
+        exports.fixBucketsPercentages(yearsOfExperienceBuckets)
+        result.aggregations[field].by_experience.buckets = yearsOfExperienceBuckets
 
         // compute average years of XP for given years of XP
         const totalYearsOfExperience = yearsOfExperienceBuckets.reduce((t, bucket) => {

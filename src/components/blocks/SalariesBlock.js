@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import YearsOfExperienceBar from '../charts/YearsOfExperienceBar'
+import { sortBy } from 'lodash'
 import SalariesBar from '../charts/SalariesBar'
 import { salaryKeys, colorScale } from '../../constants'
 import Legends from '../elements/Legends'
@@ -29,7 +29,9 @@ export default class SalariesBlock extends Component {
     render() {
         const { data, tools, section } = this.props
 
-        const salariesData = ['Aggregated', ...tools].map(tool => {
+        const allKeys = sortBy(['Aggregated', ...tools], key => data[key].by_salary.average)
+        const averages = allKeys.map(tool => data[tool].by_salary.average * 1000).map(formatMoney)
+        const salariesData = allKeys.map(tool => {
             const toolSalaries = { tool }
             const buckets = data[tool].by_salary.buckets
             salaryKeys.forEach(salaryKey => {
@@ -39,8 +41,6 @@ export default class SalariesBlock extends Component {
 
             return toolSalaries
         })
-
-        const averages = ['Aggregated', ...tools].map(tool => data[tool].by_salary.average * 1000).map(formatMoney)
 
         return (
             <div className="block block--chart block--salaries">

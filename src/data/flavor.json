@@ -69,7 +69,7 @@
                     {
                         "key": "$50-$100k",
                         "doc_count": 2521,
-                        "percentage": 32
+                        "percentage": 35
                     },
                     {
                         "key": "$100k-$200k",
@@ -197,7 +197,7 @@
                     {
                         "key": "$50-$100k",
                         "doc_count": 175,
-                        "percentage": 33
+                        "percentage": 36
                     },
                     {
                         "key": "$100k-$200k",
@@ -325,7 +325,7 @@
                     {
                         "key": "$50-$100k",
                         "doc_count": 456,
-                        "percentage": 37
+                        "percentage": 39
                     },
                     {
                         "key": "$100k-$200k",
@@ -367,7 +367,7 @@
                     {
                         "key": "5-10 years",
                         "doc_count": 398,
-                        "percentage": 32
+                        "percentage": 33
                     },
                     {
                         "key": "2-5 years",
@@ -453,7 +453,7 @@
                     {
                         "key": "$50-$100k",
                         "doc_count": 3958,
-                        "percentage": 31
+                        "percentage": 33
                     },
                     {
                         "key": "$100k-$200k",
@@ -495,7 +495,7 @@
                     {
                         "key": "2-5 years",
                         "doc_count": 3594,
-                        "percentage": 28
+                        "percentage": 29
                     },
                     {
                         "key": "5-10 years",
@@ -581,7 +581,7 @@
                     {
                         "key": "$50-$100k",
                         "doc_count": 6409,
-                        "percentage": 31
+                        "percentage": 34
                     },
                     {
                         "key": "$100k-$200k",
@@ -623,7 +623,7 @@
                     {
                         "key": "2-5 years",
                         "doc_count": 6327,
-                        "percentage": 31
+                        "percentage": 30
                     },
                     {
                         "key": "5-10 years",
@@ -709,7 +709,7 @@
                     {
                         "key": "$100k-$200k",
                         "doc_count": 54,
-                        "percentage": 41
+                        "percentage": 42
                     },
                     {
                         "key": "$50-$100k",
@@ -751,7 +751,7 @@
                     {
                         "key": "2-5 years",
                         "doc_count": 39,
-                        "percentage": 30
+                        "percentage": 31
                     },
                     {
                         "key": "5-10 years",
@@ -837,7 +837,7 @@
                     {
                         "key": "$50-$100k",
                         "doc_count": 754,
-                        "percentage": 32
+                        "percentage": 33
                     },
                     {
                         "key": "$100k-$200k",
@@ -879,7 +879,7 @@
                     {
                         "key": "2-5 years",
                         "doc_count": 811,
-                        "percentage": 34
+                        "percentage": 33
                     },
                     {
                         "key": "5-10 years",
@@ -964,7 +964,7 @@
                     {
                         "key": "$50-$100k",
                         "doc_count": 7099,
-                        "percentage": 31
+                        "percentage": 33
                     },
                     {
                         "key": "$100k-$200k",
