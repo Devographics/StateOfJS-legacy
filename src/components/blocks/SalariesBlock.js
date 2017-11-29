@@ -14,10 +14,10 @@ const legends = salaryKeys.map((key, index) => ({
 
 // see https://stackoverflow.com/questions/149055/how-can-i-format-numbers-as-dollars-currency-string-in-javascript
 export const formatMoney = n => {
-  const figure = n.toString().replace(/./g, function(c, i, a) {
-    return i && c !== "." && ((a.length - i) % 3 === 0) ? ',' + c : c;
-  });
-  return `$${figure}`
+    const figure = n.toString().replace(/./g, function(c, i, a) {
+        return i && c !== '.' && (a.length - i) % 3 === 0 ? ',' + c : c
+    })
+    return `$${figure}`
 }
 
 export default class SalariesBlock extends Component {
@@ -47,14 +47,16 @@ export default class SalariesBlock extends Component {
                 <h3 className="block__title">Salary Ranges</h3>
                 <div className="block__description">
                     <p>
-                        Per-library breakdown of developers according to salary 
-                        range (restrict to <a className="salaries__selector" href="#">United States</a>). 
+                        Per-library breakdown of developers according to salary range (restrict to{' '}
+                        <a className="salaries__selector" href="#">
+                            United States
+                        </a>).
                     </p>
                 </div>
                 <div className="block__contents capture">
                     <div className="block__contents__inner">
                         <Legends legends={legends} modifier="horizontal" />
-                        <Averages data={averages}/>
+                        <Averages data={averages} />
                         <SalariesBar data={salariesData} />
                     </div>
                 </div>

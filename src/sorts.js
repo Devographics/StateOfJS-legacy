@@ -7,7 +7,8 @@ import {
     experienceColors,
 } from './constants'
 
-export const sortDataBy = (_data, indexBy, key) => sortBy(
+export const sortDataBy = (_data, indexBy, key) =>
+    sortBy(
         _data.map(d => {
             const column = experienceKeys.reduce(
                 (result, key) => {

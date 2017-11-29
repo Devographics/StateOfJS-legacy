@@ -8,12 +8,7 @@ const baseTools = dto.othersBase(styleData.experienceByUsers)
 const otherTools = clone(styleData.others.buckets).reverse()
 
 const StyleOthers = () => (
-    <OthersTemplate
-        base={baseTools}
-        baseKeys={styleData.keys}
-        others={otherTools}
-        section="CSS"
-    />
+    <OthersTemplate base={baseTools} baseKeys={styleData.keys} others={otherTools} section="CSS" />
 )
 
 export default StyleOthers

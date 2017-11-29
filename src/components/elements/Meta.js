@@ -10,11 +10,10 @@ import slugify from '../../helpers/slugify'
 import getPageUrl from '../../helpers/getPageUrl'
 
 const Meta = ({ section, subSection }) => {
-	
     console.log('//section')
     console.log(section)
 
-    const currentSection = find(nav, {label: section })
+    const currentSection = find(nav, { label: section })
     const sectionSlugA = slugify(section)
     const sectionSlugB = slugify(section, true)
     const subSectionSlug = subSection
@@ -22,7 +21,9 @@ const Meta = ({ section, subSection }) => {
     const url = getPageUrl(sectionSlugA, subSectionSlug)
     const image = `http://stateofjs.com/images/captures/${sectionSlugB}_${subSectionSlug}.png`
     const metaTitle = `State Of JavaScript Survey Results: ${currentSection.fullLabel}`
-    const metaDescription = `Find out which ${currentSection.label} JavaScript tools and frameworks are the most popular.`
+    const metaDescription = `Find out which ${
+        currentSection.label
+    } JavaScript tools and frameworks are the most popular.`
 
     const meta = [
         // facebook
@@ -38,7 +39,7 @@ const Meta = ({ section, subSection }) => {
         { name: 'twitter:description', content: metaDescription },
     ]
 
-	return <Helmet meta={meta} />
+    return <Helmet meta={meta} />
 }
 
 export default Meta

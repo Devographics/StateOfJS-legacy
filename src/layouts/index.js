@@ -62,7 +62,11 @@ export default class Template extends React.Component {
         ]
 
         return (
-            <div className={classNames('outer-wrapper', {'home-wrapper': this.props.location.pathname === '/'})}>
+            <div
+                className={classNames('outer-wrapper', {
+                    'home-wrapper': this.props.location.pathname === '/',
+                })}
+            >
                 <Helmet meta={meta}>
                     <script
                         src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js"

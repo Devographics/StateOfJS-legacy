@@ -23,15 +23,15 @@ If you'd like to know when we release additional results or announce next year's
 
 const Introduction = () => (
     <DocumentTitle title="Introduction">
-    	<div>
-        <TextBlock text={intro} />
+        <div>
+            <TextBlock text={intro} />
 
-        <div className="newsletter">
-	        <TextBlock title="Stay Tuned" text={newsletter} />
+            <div className="newsletter">
+                <TextBlock title="Stay Tuned" text={newsletter} />
 
-	    	<Newsletter/>
-    	</div>
-    	</div>
+                <Newsletter />
+            </div>
+        </div>
     </DocumentTitle>
 )
 

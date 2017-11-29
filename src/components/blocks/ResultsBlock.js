@@ -42,10 +42,15 @@ export default class ResultsBlock extends Component {
         return (
             <div className="block block--chart block--results">
                 <h3 className="block__title">Libraries Results</h3>
-                {description ? 
-                    <div className="block__description"><p>{description}</p></div> :
-                    <div className="block__description"><p>Per-library survey results.</p></div>
-                }
+                {description ? (
+                    <div className="block__description">
+                        <p>{description}</p>
+                    </div>
+                ) : (
+                    <div className="block__description">
+                        <p>Per-library survey results.</p>
+                    </div>
+                )}
                 <div className="block__contents capture">
                     <div className="block__contents__inner">
                         {/*
@@ -62,7 +67,6 @@ export default class ResultsBlock extends Component {
                     </div>
                 </div>
                 <ShareChart section={section} subSection="results" />
-                
             </div>
         )
     }

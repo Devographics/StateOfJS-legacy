@@ -8,10 +8,10 @@ const baseTools = dto.othersBase(frontendData.experienceByUsers)
 const otherTools = clone(frontendData.others.buckets).reverse()
 
 const FrontendOthers = () => (
-    <OthersTemplate 
-    	base={baseTools} 
-    	baseKeys={frontendData.keys} 
-    	others={otherTools}
+    <OthersTemplate
+        base={baseTools}
+        baseKeys={frontendData.keys}
+        others={otherTools}
         section="Front-end"
     />
 )

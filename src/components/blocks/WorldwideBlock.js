@@ -28,8 +28,8 @@ export default class WorldwideBlock extends Component {
         const worldwideAverageData = {
             key: 'Worldwide average',
             ...mapValues(all, bucket => ({
-                doc_count: bucket[`I've USED it before, and WOULD use it again`]
-            }))
+                doc_count: bucket[`I've USED it before, and WOULD use it again`],
+            })),
         }
 
         const data = [worldwideAverageData, ...countries.filter(({ key }) => key !== 'undefined')]
@@ -38,13 +38,11 @@ export default class WorldwideBlock extends Component {
             <div className="block block--chart block--worldwide">
                 <div className="block__description">
                     <p>
-                        Tool usage by country (usage defined as respondents who picked
-                        “have used before and would use again”). Red indicates higher compared to average, blue indicates lower
-                        usage compared to average. 
+                        Tool usage by country (usage defined as respondents who picked “have used
+                        before and would use again”). Red indicates higher compared to average, blue
+                        indicates lower usage compared to average.
                     </p>
-                    <p>
-                        Note: only countries which received over 200 total entries are shown. 
-                    </p>
+                    <p>Note: only countries which received over 200 total entries are shown.</p>
                 </div>
                 <div className="worldwide__grid">
                     {data.map(country => (

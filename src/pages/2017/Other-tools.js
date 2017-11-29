@@ -17,15 +17,11 @@ export default class OtherTools extends Component {
                     <div className="block block--chart" key={otherTool}>
                         <h3 className="block__title">{otherTool}</h3>
                         <div className="block__description">
-                            <p>
-                                Library usage counts. 
-                            </p>
+                            <p>Library usage counts.</p>
                         </div>
                         <div style={{ height: 460 }}>
                             <OtherToolBar
-                                data={otherToolsData.aggs[otherTool].buckets
-                                    .map(d => d)
-                                    .reverse()}
+                                data={otherToolsData.aggs[otherTool].buckets.map(d => d).reverse()}
                             />
                         </div>
                     </div>

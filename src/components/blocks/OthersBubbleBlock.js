@@ -20,8 +20,8 @@ export default class OthersBubbleBlock extends Component {
                 <h3 className="block__title">All Libraries</h3>
                 <div className="block__description">
                     <p>
-                        Main libraries usage (defined as number of
-                        “have used before and would use again” answers) compared to "Other" answers.
+                        Main libraries usage (defined as number of “have used before and would use
+                        again” answers) compared to "Other" answers.
                     </p>
                 </div>
                 <div className="chart-wrapper">

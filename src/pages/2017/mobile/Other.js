@@ -8,9 +8,9 @@ import mobileData from '../../../data/mobile.json'
 // const otherTools = clone(mobileData.others.buckets).reverse()
 
 // const MobileOthers = () => (
-//     <OthersTemplate 
-//     	base={baseTools} 
-//     	baseKeys={mobileData.keys} 
+//     <OthersTemplate
+//     	base={baseTools}
+//     	baseKeys={mobileData.keys}
 //     	others={otherTools}
 //      section="Mobile"
 //     />

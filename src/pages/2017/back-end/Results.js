@@ -5,19 +5,18 @@ import * as dto from '../../../dto'
 
 const data = dto.experience(backendData.experience)
 
-const Results = () =>
+const Results = () => (
     <ResultsTemplate
         data={data}
-        description={
-`
+        description={`
 Let's face facts: unlike other categories, there are
 very few true contenders here apart from *Express*. Although *Meteor* did 
 manage to generate a lot of awareness over the years, it sadly seems like it 
 wasn't quite able to capitalize on it. 
-`
-        }
+`}
         section="Back-end"
         sponsor="reactforbeginners"
     />
+)
 
 export default Results

@@ -136,9 +136,8 @@ export default class ShareChart extends React.Component {
     }
 
     render() {
-
         const { section, subSection } = this.props
-        const currentSection = find(nav, {label: section })
+        const currentSection = find(nav, { label: section })
 
         const name = currentSection.label
         const slug = slugify(section)
@@ -146,7 +145,9 @@ export default class ShareChart extends React.Component {
 
         const twitterText = `State Of JavaScript Survey Results: ${name} ${link} #stateofjs`
         const subject = 'State Of JavaScript Survey Results'
-        const body = `Here are some interesting survey results about ${name.toLowerCase()} libraries: ${link}`
+        const body = `Here are some interesting survey results about ${name.toLowerCase()} libraries: ${
+            link
+        }`
 
         return (
             <div
