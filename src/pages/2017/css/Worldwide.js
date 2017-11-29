@@ -6,6 +6,7 @@ export default () => (
     <WorldwideTemplate
         tools={styleData.keys}
         countries={styleData.countries}
+        all={styleData.experience}
         section="CSS"
     />
 )
