@@ -37,9 +37,9 @@ const keys = [
 
 const margin = {
     top: 10,
-    right: 10,
+    right: 0,
     bottom: 10,
-    left: 10,
+    left: 0,
 }
 const getLabel = d => Math.abs(d.value)
 const colorBy = d => experienceColors[d.id]
@@ -96,7 +96,7 @@ export default class ResultsBar extends Component {
                 <ResponsiveBar
                     margin={margin}
                     layout="vertical"
-                    padding={0.6}
+                    padding={0.5}
                     data={data}
                     keys={keys}
                     indexBy={indexBy}

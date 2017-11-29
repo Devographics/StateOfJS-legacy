@@ -46,22 +46,22 @@ $tooltipDisplay: none;
     }
 }
 .libraries--horizontal{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    // note: 19px is half the width of one chart bar
     @include small{
-        padding: 0 calc(#{$spacing} + 19px);
+        padding: 0 $spacing;
     }
     @include medium-large{
-        padding: 0 calc(#{$spacing*6} + 19px);
+        padding: 0 $spacing*3;
     }
     margin-bottom: $spacing*2;
-
+    .libraries__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .libraries__item{
+        flex: 1;
+    }
     .libraries__item__link{
-        position: absolute;
-        width: 70px;
-        left: -35px;
         text-align: center;
     }
 }
@@ -126,10 +126,10 @@ $tooltipDisplay: none;
         .tooltip__title__stars{
             @include flex-center;
             font-size: $smaller-font;
-            color: $lighter-text-color;
+            color: $active-color;
             @include font-regular;
             path{
-                fill: $lighter-text-color;
+                fill: $active-color;
             }
         }
     }

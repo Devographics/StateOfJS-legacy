@@ -58,8 +58,9 @@ export default class ResultsBlock extends Component {
                     <Legends legends={legends} modifier="horizontal" />
                     <ResultsBar facet={tool} data={data} indexBy={indexBy} />
                     <Libraries variant="horizontal" data={data} />
-                    <ShareChart section={section} subSection="results" />
                 </div>
+                <ShareChart section={section} subSection="results" />
+                
             </div>
         )
     }
