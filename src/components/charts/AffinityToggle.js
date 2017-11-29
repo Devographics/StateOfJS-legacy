@@ -15,7 +15,7 @@ export default class AffinityToggle extends Component {
             <div className="Chord--toggle">
                 <ul>
                     {sections.map(section => (
-                        <li>
+                        <li key={section.fullLabel}>
                             <label>
                                 <input type="checkbox" />
                                 {section.fullLabel}

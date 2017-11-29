@@ -25,6 +25,7 @@ const types = [
     'features',
     'opinion',
     'otherTools',
+    'allToolsPairing',
     'users',
     'survey',
     'comments',
