@@ -1,5 +1,14 @@
 'use strict'
 
+/**
+ * Format elasticsearch aggregations for nivo sankey diagram.
+ *
+ * @param {Array.<string>} leftKeys
+ * @param {Array.<string>} rightKeys
+ * @param {Object}         aggs
+ *
+ * @return {{ nodes: Array, links: Array }}
+ */
 module.exports = (leftKeys, rightKeys, aggs) => {
     const allKeys = [...leftKeys, ...rightKeys]
 
