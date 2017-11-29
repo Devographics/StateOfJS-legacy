@@ -70,3 +70,91 @@ capture:
       selector: .capture
     - path:     /build-tools/worldwide/
       selector: .worldwide__grid
+
+report:
+  frontend:
+    keys:
+      - React
+      - Angular
+      - Angular 2
+      - Ember
+      - Vue
+      - Backbone
+      - Polymer
+      - Aurelia
+      - No Front-End Framework
+    freeform: Other Front-End Frameworks
+
+  flavors:
+    keys:
+      - '"Plain" JavaScript (ES5)'
+      - ES6
+      - TypeScript
+      - Flow
+      - Elm
+      - ClojureScript
+      - Reason
+
+  stateManagement:
+    keys:
+      - REST API
+      - Redux
+      - MobX
+      - GraphQL
+      - Relay/Relay Modern
+      - Falcor
+      - Apollo
+      - Firebase
+    freeform: Other Data Management Solutions
+
+  styleManagement:
+    keys:
+      - Plain CSS
+      - SASS/SCSS
+      - Stylus
+      - LESS
+      - CSS-in-JS
+      - Bootstrap
+      - Foundation
+    freeform: Other CSS solutions
+
+  backend:
+    keys:
+      - Meteor
+      - Express
+      - Koa
+      - Hapi
+      - FeathersJS
+      - Sails
+      - Loopback
+      - Keystone
+    freeform: Other Back-End Tools
+
+  testing:
+    keys:
+      - Mocha
+      - Jasmine
+      - Enzyme
+      - Jest
+      - Tape
+      - Ava
+    freeform: Other testing frameworks
+
+  buildTools:
+    keys:
+      - Webpack
+      - Grunt
+      - Gulp
+      - Browserify
+      - NPM
+      - Rollup
+    freeform: Other build tools
+
+  mobile:
+    keys:
+      - Native Apps
+      - React Native
+      - Ionic
+      - PhoneGap/Cordova
+      - NativeScript
+      - Electron

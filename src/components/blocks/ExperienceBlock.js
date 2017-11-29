@@ -15,16 +15,14 @@ const fakeData = ['4 years', '5 years', '4 years', '5 years', '4 years', '5 year
 
 export default class ExperienceBlock extends Component {
     static propTypes = {
-        title: PropTypes.string,
         tools: PropTypes.arrayOf(PropTypes.string).isRequired,
-        defaultTool: PropTypes.string.isRequired,
         data: PropTypes.object.isRequired,
     }
 
     render() {
-        const { title, data, tools } = this.props
+        const { data, tools } = this.props
 
-        const yearsOfExperienceData = tools.map(tool => {
+        const yearsOfExperienceData = ['Aggregated', ...tools].map(tool => {
             const toolYearsOfExperience = { tool }
             const totalUserCount = data[tool].doc_count
             const buckets = data[tool].by_experience.buckets

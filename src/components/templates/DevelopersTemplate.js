@@ -5,7 +5,7 @@ import Meta from '../elements/Meta'
 
 const DevelopersTemplate = props => 
     <div className="template">
-    	<Meta section={props.section} subSection="developers" />
+        <Meta section={props.section} subSection="developers" />
         <SalariesBlock {...props}/>
         <ExperienceBlock {...props}/>
     </div>

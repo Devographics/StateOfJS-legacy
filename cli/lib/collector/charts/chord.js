@@ -19,7 +19,11 @@ module.exports = (leftKeys, rightKeys, aggs) => {
             row.push(0)
         })
         rightKeys.forEach(rightKey => {
-            row.push(aggs[leftKey][rightKey].doc_count)
+            let count = 0
+            if (aggs[leftKey] !== undefined && aggs[leftKey][rightKey] !== undefined) {
+                count = aggs[leftKey][rightKey].doc_count
+            }
+            row.push(count)
         })
         matrix.push(row)
     })
@@ -27,7 +31,11 @@ module.exports = (leftKeys, rightKeys, aggs) => {
     rightKeys.forEach(righKey => {
         const row = []
         leftKeys.forEach(leftKey => {
-            row.push(aggs[leftKey][righKey].doc_count)
+            let count = 0
+            if (aggs[leftKey] && aggs[leftKey][righKey]) {
+                count = aggs[leftKey][righKey].doc_count
+            }
+            row.push(count)
         })
         rightKeys.forEach(() => {
             row.push(0)

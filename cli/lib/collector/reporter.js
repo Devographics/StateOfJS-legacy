@@ -7,72 +7,7 @@ const charts = require('./charts')
 
 const OTHERS_AGG_SIZE = 20
 
-const frontendKeys = [
-    'React',
-    'Angular',
-    'Angular 2',
-    'Ember',
-    'Vue',
-    'Backbone',
-    'Polymer',
-    'Aurelia',
-    'No Front-End Framework',
-]
-
-const flavorKeys = [
-    '"Plain" JavaScript (ES5)',
-    'ES6',
-    'TypeScript',
-    'Flow',
-    'Elm',
-    'ClojureScript',
-    'Reason',
-]
-
-const stateKeys = [
-    'REST API',
-    'Redux',
-    'MobX',
-    'GraphQL',
-    'Relay/Relay Modern',
-    'Falcor',
-    'Apollo',
-    'Firebase',
-]
-
-const styleKeys = [
-    'Plain CSS',
-    'SASS/SCSS',
-    'Stylus',
-    'LESS',
-    'CSS-in-JS',
-    'Bootstrap',
-    'Foundation',
-]
-
-const backendKeys = [
-    'Meteor',
-    'Express',
-    'Koa',
-    'Hapi',
-    'FeathersJS',
-    'Sails',
-    'Loopback',
-    'Keystone',
-]
-
-const testingKeys = ['Mocha', 'Jasmine', 'Enzyme', 'Jest', 'Tape', 'Ava']
-
-const buildKeys = ['Webpack', 'Grunt', 'Gulp', 'Browserify', 'NPM', 'Rollup']
-
-const mobileKeys = [
-    'Native Apps',
-    'React Native',
-    'Ionic',
-    'PhoneGap/Cordova',
-    'NativeScript',
-    'Electron',
-]
+const reportConfig = config.get('report')
 
 const otherToolsKeys = ['Package Managers', 'Utility Libraries', 'Text Editors', 'Code Linters']
 
@@ -103,6 +38,17 @@ const surveyKeys = ['browser', 'city', 'device', 'location', 'os', 'referrer']
 
 const usersKeys = ['Yearly Salary', 'Years of Experience', 'Company Size']
 
+const allTools = [
+    'frontend',
+    'flavors',
+    'stateManagement',
+    'styleManagement',
+    'backend',
+    'testing',
+    'buildTools',
+    'mobile'
+].reduce((all, key) => [...all, ...reportConfig[key].keys], [])
+
 exports.experiencePairing = async (
     leftKeys,
     righKeys,
@@ -116,7 +62,7 @@ exports.experiencePairing = async (
         return aggs
     }, {})
 
-    return elastic.client.search({
+    const result = await elastic.client.search({
         index: config.get('elastic.index'),
         size: 0,
         body: {
@@ -131,6 +77,8 @@ exports.experiencePairing = async (
             }, {}),
         },
     })
+
+    return result.aggregations
 }
 
 exports.experienceByUsers = async (
@@ -157,6 +105,29 @@ exports.experienceByUsers = async (
         },
     })
 
+    const all = await elastic.client.search({
+        index: config.get('elastic.index'),
+        size: 0,
+        body: {
+            query: {
+                bool: {
+                    should: fields.map(field => ({
+                        term: { [field]: experience }
+                    }))
+                }
+            },
+            aggs: {
+                by_salary: { terms: { field: 'Yearly Salary' } },
+                by_experience: { terms: { field: 'Years of Experience' } },
+                //by_location: { terms: { field: 'location' } },
+            },
+        },
+    })
+
+    result.aggregations.Aggregated = Object.assign({}, all.aggregations, {
+        doc_count: all.hits.total
+    })
+
     return result.aggregations
 }
 
@@ -180,6 +151,7 @@ exports.distributionByCountry = async fields => {
                         aggs[field] = {
                             filter: {
                                 term: { [field]: "I've USED it before, and WOULD use it again" },
+
                             },
                         }
 
@@ -193,146 +165,153 @@ exports.distributionByCountry = async fields => {
     return result.aggregations.country.buckets
 }
 
+exports.toolsUsageCounts = async tools => {
+    console.log(tools)
+
+    const result = await elastic.client.search({
+        index: config.get('elastic.index'),
+        size: 0,
+        body: {
+            query: {
+                bool: {
+                    should: [
+                        { term:  { 'React': "I've USED it before, and WOULD use it again" } },
+                        { term:  { 'React': "I've USED it before, and would NOT use it again" } },
+                    ]
+                }
+            },
+            aggs: {
+                country: {
+                    terms: { field: 'React' },
+                },
+            },
+        },
+    })
+
+    console.log(result)
+}
+
 exports.frontend = async () => {
-    const experience = await elastic.termsAggs(frontendKeys)
-    const experienceByUsers = await exports.experienceByUsers(frontendKeys)
-    const others = await elastic.termsAgg('Other Front-End Frameworks', OTHERS_AGG_SIZE)
-    const flavor = await exports.experiencePairing(frontendKeys, flavorKeys)
-    const state = await exports.experiencePairing(frontendKeys, stateKeys)
-    const style = await exports.experiencePairing(frontendKeys, styleKeys)
-    const countries = await exports.distributionByCountry(frontendKeys)
+    const experience = await elastic.termsAggs(reportConfig.frontend.keys)
+    const experienceByUsers = await exports.experienceByUsers(reportConfig.frontend.keys)
+    const others = await elastic.termsAgg(reportConfig.frontend.freeform, OTHERS_AGG_SIZE)
+    const countries = await exports.distributionByCountry(reportConfig.frontend.keys)
 
     return {
-        keys: frontendKeys,
+        keys: reportConfig.frontend.keys,
         experience: dto.aggregations(experience.aggregations),
         experienceByUsers,
         countries,
-        others: others.aggregations['Other Front-End Frameworks'],
-        flavorChord: charts.chord(frontendKeys, flavorKeys, flavor.aggregations),
-        flavorSankey: charts.sankey(frontendKeys, flavorKeys, flavor.aggregations),
-        stateChord: charts.chord(frontendKeys, stateKeys, state.aggregations),
-        stateSankey: charts.sankey(frontendKeys, stateKeys, state.aggregations),
-        styleChord: charts.chord(frontendKeys, styleKeys, style.aggregations),
-        styleSankey: charts.sankey(frontendKeys, styleKeys, style.aggregations),
+        others: others.aggregations[reportConfig.frontend.freeform],
     }
 }
 
 exports.flavor = async () => {
-    const experience = await elastic.termsAggs(flavorKeys)
-    const experienceByUsers = await exports.experienceByUsers(flavorKeys)
-    const frontend = await exports.experiencePairing(flavorKeys, frontendKeys)
-    const countries = await exports.distributionByCountry(flavorKeys)
+    const experience = await elastic.termsAggs(reportConfig.flavors.keys)
+    const experienceByUsers = await exports.experienceByUsers(reportConfig.flavors.keys)
+    const countries = await exports.distributionByCountry(reportConfig.flavors.keys)
 
     return {
-        keys: flavorKeys,
+        keys: reportConfig.flavors.keys,
         experience: dto.aggregations(experience.aggregations),
         experienceByUsers,
         countries,
-        frontendChord: charts.chord(flavorKeys, frontendKeys, frontend.aggregations),
-        frontendSankey: charts.sankey(flavorKeys, frontendKeys, frontend.aggregations),
     }
 }
 
 exports.state = async () => {
-    const experience = await elastic.termsAggs(stateKeys)
-    const experienceByUsers = await exports.experienceByUsers(stateKeys)
-    const others = await elastic.termsAgg('Other Data Management Solutions', OTHERS_AGG_SIZE)
-    const frontend = await exports.experiencePairing(stateKeys, frontendKeys)
-    const countries = await exports.distributionByCountry(stateKeys)
+    const experience = await elastic.termsAggs(reportConfig.stateManagement.keys)
+    const experienceByUsers = await exports.experienceByUsers(reportConfig.stateManagement.keys)
+    const others = await elastic.termsAgg(reportConfig.stateManagement.freeform, OTHERS_AGG_SIZE)
+    const countries = await exports.distributionByCountry(reportConfig.stateManagement.keys)
 
     return {
-        keys: stateKeys,
+        keys: reportConfig.stateManagement.keys,
         experience: dto.aggregations(experience.aggregations),
         experienceByUsers,
         countries,
-        others: others.aggregations['Other Data Management Solutions'],
-        frontendChord: charts.chord(stateKeys, frontendKeys, frontend.aggregations),
-        frontendSankey: charts.sankey(stateKeys, frontendKeys, frontend.aggregations),
+        others: others.aggregations[reportConfig.stateManagement.freeform],
     }
 }
 
 exports.style = async () => {
-    const experience = await elastic.termsAggs(styleKeys)
-    const experienceByUsers = await exports.experienceByUsers(styleKeys)
-    const others = await elastic.termsAgg('Other CSS solutions', OTHERS_AGG_SIZE)
-    const frontend = await exports.experiencePairing(styleKeys, frontendKeys)
-    const countries = await exports.distributionByCountry(styleKeys)
+    const experience = await elastic.termsAggs(reportConfig.styleManagement.keys)
+    const experienceByUsers = await exports.experienceByUsers(reportConfig.styleManagement.keys)
+    const others = await elastic.termsAgg(reportConfig.styleManagement.freeform, OTHERS_AGG_SIZE)
+    const countries = await exports.distributionByCountry(reportConfig.styleManagement.keys)
 
     return {
-        keys: styleKeys,
+        keys: reportConfig.styleManagement.keys,
         experience: dto.aggregations(experience.aggregations),
         experienceByUsers,
         countries,
-        others: others.aggregations['Other CSS solutions'],
-        frontendChord: charts.chord(styleKeys, frontendKeys, frontend.aggregations),
-        frontendSankey: charts.sankey(styleKeys, frontendKeys, frontend.aggregations),
+        others: others.aggregations[reportConfig.styleManagement.freeform],
     }
 }
 
 exports.backend = async () => {
-    const experience = await elastic.termsAggs(backendKeys)
-    const experienceByUsers = await exports.experienceByUsers(backendKeys)
-    const others = await elastic.termsAgg('Other Back-End Tools', OTHERS_AGG_SIZE)
-    const countries = await exports.distributionByCountry(backendKeys)
+    const experience = await elastic.termsAggs(reportConfig.backend.keys)
+    const experienceByUsers = await exports.experienceByUsers(reportConfig.backend.keys)
+    const others = await elastic.termsAgg(reportConfig.backend.freeform, OTHERS_AGG_SIZE)
+    const countries = await exports.distributionByCountry(reportConfig.backend.keys)
 
     return {
-        keys: backendKeys,
+        keys: reportConfig.backend.keys,
         experience: dto.aggregations(experience.aggregations),
         experienceByUsers,
         countries,
-        others: others.aggregations['Other Back-End Tools'],
+        others: others.aggregations[reportConfig.backend.freeform],
     }
 }
 
 exports.testing = async () => {
-    const experience = await elastic.termsAggs(testingKeys)
-    const experienceByUsers = await exports.experienceByUsers(testingKeys)
-    const others = await elastic.termsAgg('Other testing frameworks', OTHERS_AGG_SIZE)
-    const frontend = await exports.experiencePairing(testingKeys, frontendKeys)
-    const backend = await exports.experiencePairing(testingKeys, backendKeys)
-    const countries = await exports.distributionByCountry(testingKeys)
+    const experience = await elastic.termsAggs(reportConfig.testing.keys)
+    const experienceByUsers = await exports.experienceByUsers(reportConfig.testing.keys)
+    const others = await elastic.termsAgg(reportConfig.testing.freeform, OTHERS_AGG_SIZE)
+    const countries = await exports.distributionByCountry(reportConfig.testing.keys)
 
     return {
-        keys: testingKeys,
+        keys: reportConfig.testing.keys,
         experience: dto.aggregations(experience.aggregations),
         experienceByUsers,
         countries,
-        others: others.aggregations['Other testing frameworks'],
-        frontendChord: charts.chord(testingKeys, frontendKeys, frontend.aggregations),
-        frontendSankey: charts.sankey(testingKeys, frontendKeys, frontend.aggregations),
-        backendChord: charts.chord(testingKeys, backendKeys, backend.aggregations),
-        backendSankey: charts.sankey(testingKeys, backendKeys, backend.aggregations),
+        others: others.aggregations[reportConfig.testing.freeform],
     }
 }
 
 exports.build = async () => {
-    const experience = await elastic.termsAggs(buildKeys)
-    const experienceByUsers = await exports.experienceByUsers(buildKeys)
-    const others = await elastic.termsAgg('Other build tools', OTHERS_AGG_SIZE)
-    const frontend = await exports.experiencePairing(buildKeys, frontendKeys)
-    const countries = await exports.distributionByCountry(buildKeys)
+    const experience = await elastic.termsAggs(reportConfig.buildTools.keys)
+    const experienceByUsers = await exports.experienceByUsers(reportConfig.buildTools.keys)
+    const others = await elastic.termsAgg(reportConfig.buildTools.freeform, OTHERS_AGG_SIZE)
+    const countries = await exports.distributionByCountry(reportConfig.buildTools.keys)
 
     return {
-        keys: buildKeys,
+        keys: reportConfig.buildTools.keys,
         experience: dto.aggregations(experience.aggregations),
         experienceByUsers,
         countries,
-        others: others.aggregations['Other build tools'],
-        frontendChord: charts.chord(buildKeys, frontendKeys, frontend.aggregations),
-        frontendSankey: charts.sankey(buildKeys, frontendKeys, frontend.aggregations),
+        others: others.aggregations[reportConfig.buildTools.freeform],
     }
 }
 
 exports.mobile = async () => {
-    const experience = await elastic.termsAggs(mobileKeys)
-    const experienceByUsers = await exports.experienceByUsers(mobileKeys)
-    const countries = await exports.distributionByCountry(mobileKeys)
+    const experience = await elastic.termsAggs(reportConfig.mobile.keys)
+    const experienceByUsers = await exports.experienceByUsers(reportConfig.mobile.keys)
+    const countries = await exports.distributionByCountry(reportConfig.mobile.keys)
 
     return {
-        keys: mobileKeys,
+        keys: reportConfig.mobile.keys,
         experience: dto.aggregations(experience.aggregations),
         experienceByUsers,
         countries,
+    }
+}
+
+exports.allToolsPairing = async () => {
+    const allToolsPairing = await exports.experiencePairing(allTools, allTools)
+
+    return {
+        chord: charts.chord(allTools, allTools, allToolsPairing)
     }
 }
 
