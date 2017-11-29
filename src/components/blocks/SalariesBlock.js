@@ -26,7 +26,6 @@ const fakeDataFormatted = fakeData.map(formatMoney)
 
 export default class SalariesBlock extends Component {
     static propTypes = {
-        title: PropTypes.string,
         tools: PropTypes.arrayOf(PropTypes.string).isRequired,
         data: PropTypes.object.isRequired,
     }
@@ -48,6 +47,8 @@ export default class SalariesBlock extends Component {
             return toolSalaries
         })
 
+        const averages = ['Aggregated', ...tools].map(tool => data[tool].by_salary.average * 1000).map(formatMoney)
+
         return (
             <div className="block block--chart block--salaries">
                 <h3 className="block__title">Salary Ranges</h3>
@@ -60,7 +61,7 @@ export default class SalariesBlock extends Component {
                 <div className="block__contents capture">
                     <div className="block__contents__inner">
                         <Legends legends={legends} modifier="horizontal" />
-                        <Averages data={fakeDataFormatted}/>
+                        <Averages data={averages}/>
                         <SalariesBar data={salariesData} />
                     </div>
                 </div>

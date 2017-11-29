@@ -150,13 +150,13 @@ exports.experienceByUsers = async (
             percentage: Math.round(bucket.doc_count / total * 100)
         }))
 
+        // compute average salary for given tool
         const totalSalary = salaryBuckets.reduce((t, bucket) => {
             const rangeAverage = salaryAverages[bucket.key]
             const numberOfUsersInRange = bucket.doc_count
 
             return t + rangeAverage * numberOfUsersInRange
         }, 0)
-
         result.aggregations[field].by_salary.average = Math.round(totalSalary / total)
     })
 
