@@ -30,7 +30,8 @@ export default class SalariesBlock extends Component {
         const { data, tools, section } = this.props
 
         const allKeys = sortBy(['Aggregated', ...tools], key => data[key].by_salary.average)
-        const averages = allKeys.map(tool => data[tool].by_salary.average * 1000).map(formatMoney)
+        const averages = allKeys.map(tool => ({tool, value: formatMoney(data[tool].by_salary.average * 1000)}))
+        
         const salariesData = allKeys.map(tool => {
             const toolSalaries = { tool }
             const buckets = data[tool].by_salary.buckets
@@ -42,7 +43,6 @@ export default class SalariesBlock extends Component {
             return toolSalaries
         })
 
-        const averages = ['Aggregated', ...tools].map(tool => ({tool, value: formatMoney(data[tool].by_salary.average * 1000)}))
 
         return (
             <div className="block block--chart block--salaries">
