@@ -5,17 +5,16 @@ import * as dto from '../../../dto'
 
 const data = dto.experience(frontendData.experience)
 
-const Results = () =>
+const Results = () => (
     <ResultsTemplate
         data={data}
-        description={
-`As always, the battle for JavaScript mindshare is led by front-end frameworks.
+        description={`As always, the battle for JavaScript mindshare is led by front-end frameworks.
 
 *React* is still the dominant player here, but *Vue* is making big gains on the back of
-*Angular*'s diminishing popularity. By 2018, this chart might end up looking very different!`
-        }
+*Angular*'s diminishing popularity. By 2018, this chart might end up looking very different!`}
         section="Front-end"
         sponsor="reactforbeginners"
     />
+)
 
 export default Results

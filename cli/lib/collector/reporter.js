@@ -1,5 +1,6 @@
 'use strict'
 
+const { maxBy } = require('lodash')
 const config = require('@ekino/config')
 const elastic = require('./elastic')
 const dto = require('./dto')
@@ -44,6 +45,15 @@ const salaryAverages = {
     '$200k+': 250,
 }
 
+const yearsOfExperienceAverages = {
+    'Less than one year': 0.5,
+    '1-2 years': 1.5,
+    '2-5 years': 3.5,
+    '5-10 years': 7.5,
+    '10-20 years': 15,
+    '20+ years': 22.5,
+}
+
 const surveyKeys = ['browser', 'city', 'device', 'location', 'os', 'referrer']
 
 const usersKeys = ['Yearly Salary', 'Years of Experience', 'Company Size']
@@ -56,7 +66,7 @@ const allTools = [
     'backend',
     'testing',
     'buildTools',
-    'mobile'
+    'mobile',
 ].reduce((all, key) => [...all, ...reportConfig[key].keys], [])
 
 exports.experiencePairing = async (
@@ -91,6 +101,25 @@ exports.experiencePairing = async (
     return result.aggregations
 }
 
+/**
+ * Fix percentages for a given set of buckets.
+ * Because rounding often ends up with a value != 100%,
+ * we take the higher bucket and apply the diff on its average.
+ *
+ * Be aware that this function may mutates the higher bucket.
+ *
+ * @param {Array.<Object>} buckets
+ */
+exports.fixBucketsPercentages = buckets => {
+    const total = buckets.reduce((t, { percentage }) => t + percentage, 0)
+
+    const diff = 100 - total
+    if (diff !== 0) {
+        const higherBucket = maxBy(buckets, 'percentage')
+        higherBucket.percentage = higherBucket.percentage + diff
+    }
+}
+
 exports.experienceByUsers = async (
     fields,
     experience = "I've USED it before, and WOULD use it again"
@@ -122,9 +151,9 @@ exports.experienceByUsers = async (
             query: {
                 bool: {
                     should: fields.map(field => ({
-                        term: { [field]: experience }
-                    }))
-                }
+                        term: { [field]: experience },
+                    })),
+                },
             },
             aggs: {
                 by_salary: { terms: { field: 'Yearly Salary' } },
@@ -134,21 +163,23 @@ exports.experienceByUsers = async (
     })
 
     result.aggregations.Aggregated = Object.assign({}, all.aggregations, {
-        doc_count: all.hits.total
+        doc_count: all.hits.total,
     })
 
     const allFields = ['Aggregated', ...fields]
     allFields.forEach(field => {
         const total = result.aggregations[field].doc_count
 
-        result.aggregations[field].by_experience.buckets = result.aggregations[field].by_experience.buckets.map(bucket => Object.assign({}, bucket, {
-            percentage: Math.round(bucket.doc_count / total * 100)
-        }))
+        let salaryBuckets = result.aggregations[field].by_salary.buckets
 
-        const salaryBuckets = result.aggregations[field].by_salary.buckets
-        result.aggregations[field].by_salary.buckets = salaryBuckets.map(bucket => Object.assign({}, bucket, {
-            percentage: Math.round(bucket.doc_count / total * 100)
-        }))
+        // compute percentages
+        salaryBuckets = salaryBuckets.map(bucket =>
+            Object.assign({}, bucket, {
+                percentage: Math.round(bucket.doc_count / total * 100),
+            })
+        )
+        exports.fixBucketsPercentages(salaryBuckets)
+        result.aggregations[field].by_salary.buckets = salaryBuckets
 
         // compute average salary for given tool
         const totalSalary = salaryBuckets.reduce((t, bucket) => {
@@ -158,6 +189,28 @@ exports.experienceByUsers = async (
             return t + rangeAverage * numberOfUsersInRange
         }, 0)
         result.aggregations[field].by_salary.average = Math.round(totalSalary / total)
+
+        let yearsOfExperienceBuckets = result.aggregations[field].by_experience.buckets
+
+        // compute percentages
+        yearsOfExperienceBuckets = yearsOfExperienceBuckets.map(bucket =>
+            Object.assign({}, bucket, {
+                percentage: Math.round(bucket.doc_count / total * 100),
+            })
+        )
+        exports.fixBucketsPercentages(yearsOfExperienceBuckets)
+        result.aggregations[field].by_experience.buckets = yearsOfExperienceBuckets
+
+        // compute average years of XP for given years of XP
+        const totalYearsOfExperience = yearsOfExperienceBuckets.reduce((t, bucket) => {
+            const rangeAverage = yearsOfExperienceAverages[bucket.key]
+            const numberOfUsersInRange = bucket.doc_count
+
+            return t + rangeAverage * numberOfUsersInRange
+        }, 0)
+        result.aggregations[field].by_experience.average = Math.round(
+            totalYearsOfExperience / total
+        )
     })
 
     return result.aggregations
@@ -183,7 +236,6 @@ exports.distributionByCountry = async fields => {
                         aggs[field] = {
                             filter: {
                                 term: { [field]: "I've USED it before, and WOULD use it again" },
-
                             },
                         }
 
@@ -193,6 +245,8 @@ exports.distributionByCountry = async fields => {
             },
         },
     })
+
+    console.log(result.aggregations.country.buckets)
 
     return result.aggregations.country.buckets
 }
@@ -207,10 +261,10 @@ exports.toolsUsageCounts = async tools => {
             query: {
                 bool: {
                     should: [
-                        { term:  { 'React': "I've USED it before, and WOULD use it again" } },
-                        { term:  { 'React': "I've USED it before, and would NOT use it again" } },
-                    ]
-                }
+                        { term: { React: "I've USED it before, and WOULD use it again" } },
+                        { term: { React: "I've USED it before, and would NOT use it again" } },
+                    ],
+                },
             },
             aggs: {
                 country: {
@@ -343,7 +397,7 @@ exports.allToolsPairing = async () => {
     const allToolsPairing = await exports.experiencePairing(allTools, allTools)
 
     return {
-        chord: charts.chord(allTools, allTools, allToolsPairing)
+        chord: charts.chord(allTools, allTools, allToolsPairing),
     }
 }
 

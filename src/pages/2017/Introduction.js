@@ -13,7 +13,7 @@ This is where this survey comes in: we asked over a hundred questions to more th
 
 We belive the result is the most complete picture of the present state of JavaScript currently available. 
 
-– Sacha, Michael, & Raphael
+– Sacha, Michael, & Raphaël
 
 `
 
@@ -23,15 +23,13 @@ If you'd like to know when we release additional results or announce next year's
 
 const Introduction = () => (
     <DocumentTitle title="Introduction">
-    	<div>
-        <TextBlock text={intro} />
-
-        <div className="block block--newsletter">
-	        <TextBlock title="Stay Tuned" text={newsletter} />
-
-	    	<Newsletter/>
-    	</div>
-    	</div>
+        <div>
+            <TextBlock text={intro} />
+        	<div className="block block--newsletter">
+	        	<TextBlock title="Stay Tuned" text={newsletter} />
+                <Newsletter />
+            </div>
+        </div>
     </DocumentTitle>
 )
 

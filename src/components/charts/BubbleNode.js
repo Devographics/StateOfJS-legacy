@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-
 const BubbleNode = ({ node, style, handlers }) => {
     if (style.r <= 0) return null
 

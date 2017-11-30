@@ -26,10 +26,16 @@ export default class Connections extends Component {
 
         return (
             <div className="Section">
-                <div className="block block--text" dangerouslySetInnerHTML={{__html: parseBold(addParagraphs(text))}}/>
+                <div
+                    className="block block--text"
+                    dangerouslySetInnerHTML={{ __html: parseBold(addParagraphs(text)) }}
+                />
                 <div className="block block--chart block--connections">
                     <AffinityToggle />
-                    <AffinityChord keys={allToolsPairing.chord.keys} matrix={allToolsPairing.chord.matrix} />
+                    <AffinityChord
+                        keys={allToolsPairing.chord.keys}
+                        matrix={allToolsPairing.chord.matrix}
+                    />
                 </div>
             </div>
         )

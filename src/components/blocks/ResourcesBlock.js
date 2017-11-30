@@ -63,7 +63,9 @@ const ResourcesBlock = ({ section, sponsor }) => {
             <div className="section-contents-wide resources">
                 <div className="resources-title">
                     <h2>Recommended Resources</h2>
-                    <span className="resources-sponsor">Presented by <a href="http://wesbos.com/">Wes Bos</a></span>
+                    <span className="resources-sponsor">
+                        Presented by <a href="http://wesbos.com/">Wes Bos</a>
+                    </span>
                 </div>
                 <div className="resources-list">
                     {_.map(sectionResources, resource => {

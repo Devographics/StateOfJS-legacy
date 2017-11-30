@@ -41,12 +41,10 @@ export default class OthersBarsBlock extends Component {
             <div className="block block--chart block--othersbar">
                 <h3 className="block__title">Top Mentions</h3>
                 <div className="block__description">
-                    <p>
-                        Tools mentioned the most in "Other" answer. 
-                    </p>
+                    <p>Tools mentioned the most in "Other" answer.</p>
                 </div>
                 <div className="capture others-wrapper">
-                    <Libraries data={reverse([...others])} variant="vertical"/>
+                    <Libraries data={reverse([...others])} variant="vertical" />
                     <div className="chart-wrapper" style={{ height: 800 }}>
                         <OthersBar data={others} />
                     </div>

@@ -14,7 +14,13 @@ const Nav = ({ location, closeSidebar }) => (
     <div className="nav">
         <ul>
             {navFiltered.map((item, i) => (
-                <NavItem key={i} {...item} location={location} location={location} closeSidebar={closeSidebar}/>
+                <NavItem
+                    key={i}
+                    {...item}
+                    location={location}
+                    location={location}
+                    closeSidebar={closeSidebar}
+                />
             ))}
         </ul>
     </div>
@@ -22,8 +28,12 @@ const Nav = ({ location, closeSidebar }) => (
 
 const NavItem = ({ label, subPages, location, comingsoon, closeSidebar }) => (
     <li>
-        <h3 className={classNames('nav-page', {'nav-page-comingsoon': comingsoon})}>
-            <Link onClick={closeSidebar} to={`/2017/${slugify(label)}/`} activeClassName="nav-page-active">
+        <h3 className={classNames('nav-page', { 'nav-page-comingsoon': comingsoon })}>
+            <Link
+                onClick={closeSidebar}
+                to={`/2017/${slugify(label)}/`}
+                activeClassName="nav-page-active"
+            >
                 {label}
             </Link>
         </h3>

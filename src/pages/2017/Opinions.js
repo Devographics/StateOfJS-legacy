@@ -12,10 +12,11 @@ If you'd like to know when this section comes out, sign up below and we'll
 be sure to notify you. 
 `
 
-const Opinions = () =>
+const Opinions = () => (
     <div>
-		<TextBlock text={text} />
-    	<Newsletter/>
+        <TextBlock text={text} />
+        <Newsletter />
     </div>
+)
 
 export default Opinions

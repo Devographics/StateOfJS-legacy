@@ -19,7 +19,15 @@ export const colorRange = [
     colors.greyLight,
 ]
 
-export const colorScale = ['#8b8de8', '#b3b5e6', '#dedfec', '#e4d6d9', '#dc9eaa', '#e28194', '#ea2149'];
+export const colorScale = [
+    '#8b8de8',
+    '#b3b5e6',
+    '#dedfec',
+    '#e4d6d9',
+    '#dc9eaa',
+    '#e28194',
+    '#ea2149',
+]
 
 export const experience = {
     never_heard: `I've never heard of it`,
