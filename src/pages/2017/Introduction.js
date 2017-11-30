@@ -26,7 +26,7 @@ const Introduction = () => (
     	<div>
         <TextBlock text={intro} />
 
-        <div className="newsletter">
+        <div className="block block--newsletter">
 	        <TextBlock title="Stay Tuned" text={newsletter} />
 
 	    	<Newsletter/>

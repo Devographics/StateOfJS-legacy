@@ -11,9 +11,6 @@ import getPageUrl from '../../helpers/getPageUrl'
 
 const Meta = ({ section, subSection }) => {
 	
-    console.log('//section')
-    console.log(section)
-
     const currentSection = find(nav, {label: section })
     const sectionSlugA = slugify(section)
     const sectionSlugB = slugify(section, true)

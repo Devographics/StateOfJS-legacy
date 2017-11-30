@@ -61,4 +61,14 @@
 		border-width: 7px;
 		margin-left: -7px;
 	}
+	.averages__item--aggregated &{
+		background: $grey;
+		border: 1px solid $light-border-color;
+		&:after{
+			border-top-color: $grey;
+		}
+		&:before{
+			border-top-color: $light-border-color;
+		}
+	}
 }

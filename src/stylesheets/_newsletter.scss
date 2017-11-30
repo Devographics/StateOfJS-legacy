@@ -3,7 +3,6 @@
   // border: 1px solid $border-color;
   // padding: $spacing/2 $spacing/2;
   max-width: 500px;
-  margin-bottom: $spacing;
   form{
     display: flex;
     margin: 0;
@@ -34,5 +33,17 @@
     // &:hover{
     //   background: $secondary-color;
     // }
+  }
+}
+
+.block--newsletter{
+  border: 1px solid $border-color;
+  padding: $spacing*2;
+  max-width: 500px;
+  .block__title{
+    font-size: $large-font;
+  }
+  .block__contents{
+    font-size: $medium-font;
   }
 }

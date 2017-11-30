@@ -47,7 +47,7 @@ export default class SalariesBlock extends Component {
             return toolSalaries
         })
 
-        const averages = ['Aggregated', ...tools].map(tool => data[tool].by_salary.average * 1000).map(formatMoney)
+        const averages = ['Aggregated', ...tools].map(tool => ({tool, value: formatMoney(data[tool].by_salary.average * 1000)}))
 
         return (
             <div className="block block--chart block--salaries">
