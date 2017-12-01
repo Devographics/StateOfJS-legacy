@@ -1044,800 +1044,1248 @@
             "key": "undefined",
             "doc_count": 5839,
             "TypeScript": {
-                "doc_count": 1943
+                "doc_count": 1943,
+                "percentage": 17,
+                "divergence": -1
             },
             "ClojureScript": {
-                "doc_count": 162
+                "doc_count": 162,
+                "percentage": 1,
+                "divergence": 0
             },
             "Elm": {
-                "doc_count": 346
+                "doc_count": 346,
+                "percentage": 3,
+                "divergence": 0
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 2949
+                "doc_count": 2949,
+                "percentage": 26,
+                "divergence": -2
             },
             "ES6": {
-                "doc_count": 5148
+                "doc_count": 5148,
+                "percentage": 48,
+                "divergence": 3
             },
             "Reason": {
-                "doc_count": 25
+                "doc_count": 25,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 613
+                "doc_count": 613,
+                "percentage": 5,
+                "divergence": 0
             }
         },
         {
             "key": "United States",
             "doc_count": 5719,
             "TypeScript": {
-                "doc_count": 1827
+                "doc_count": 1827,
+                "percentage": 16,
+                "divergence": -2
             },
             "ClojureScript": {
-                "doc_count": 141
+                "doc_count": 141,
+                "percentage": 1,
+                "divergence": 0
             },
             "Elm": {
-                "doc_count": 351
+                "doc_count": 351,
+                "percentage": 3,
+                "divergence": 0
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 3375
+                "doc_count": 3375,
+                "percentage": 30,
+                "divergence": 2
             },
             "ES6": {
-                "doc_count": 5069
+                "doc_count": 5069,
+                "percentage": 45,
+                "divergence": 0
             },
             "Reason": {
-                "doc_count": 47
+                "doc_count": 47,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 594
+                "doc_count": 594,
+                "percentage": 5,
+                "divergence": 0
             }
         },
         {
             "key": "United Kingdom",
             "doc_count": 1409,
             "TypeScript": {
-                "doc_count": 423
+                "doc_count": 423,
+                "percentage": 15,
+                "divergence": -3
             },
             "ClojureScript": {
-                "doc_count": 29
+                "doc_count": 29,
+                "percentage": 1,
+                "divergence": 0
             },
             "Elm": {
-                "doc_count": 75
+                "doc_count": 75,
+                "percentage": 3,
+                "divergence": 0
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 847
+                "doc_count": 847,
+                "percentage": 31,
+                "divergence": 3
             },
             "ES6": {
-                "doc_count": 1218
+                "doc_count": 1218,
+                "percentage": 44,
+                "divergence": -1
             },
             "Reason": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 153
+                "doc_count": 153,
+                "percentage": 6,
+                "divergence": 1
             }
         },
         {
             "key": "Germany",
             "doc_count": 879,
             "TypeScript": {
-                "doc_count": 324
+                "doc_count": 324,
+                "percentage": 20,
+                "divergence": 2
             },
             "ClojureScript": {
-                "doc_count": 27
+                "doc_count": 27,
+                "percentage": 2,
+                "divergence": 1
             },
             "Elm": {
-                "doc_count": 45
+                "doc_count": 45,
+                "percentage": 3,
+                "divergence": 0
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 422
+                "doc_count": 422,
+                "percentage": 26,
+                "divergence": -2
             },
             "ES6": {
-                "doc_count": 744
+                "doc_count": 744,
+                "percentage": 44,
+                "divergence": -1
             },
             "Reason": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 83
+                "doc_count": 83,
+                "percentage": 5,
+                "divergence": 0
             }
         },
         {
             "key": "Canada",
             "doc_count": 771,
             "TypeScript": {
-                "doc_count": 242
+                "doc_count": 242,
+                "percentage": 17,
+                "divergence": -1
             },
             "ClojureScript": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 1,
+                "divergence": 0
             },
             "Elm": {
-                "doc_count": 19
+                "doc_count": 19,
+                "percentage": 1,
+                "divergence": -2
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 466
+                "doc_count": 466,
+                "percentage": 32,
+                "divergence": 4
             },
             "ES6": {
-                "doc_count": 658
+                "doc_count": 658,
+                "percentage": 44,
+                "divergence": -1
             },
             "Reason": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 71
+                "doc_count": 71,
+                "percentage": 5,
+                "divergence": 0
             }
         },
         {
             "key": "France",
             "doc_count": 695,
             "TypeScript": {
-                "doc_count": 226
+                "doc_count": 226,
+                "percentage": 18,
+                "divergence": 0
             },
             "ClojureScript": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 1,
+                "divergence": 0
             },
             "Elm": {
-                "doc_count": 28
+                "doc_count": 28,
+                "percentage": 2,
+                "divergence": -1
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 311
+                "doc_count": 311,
+                "percentage": 25,
+                "divergence": -3
             },
             "ES6": {
-                "doc_count": 618
+                "doc_count": 618,
+                "percentage": 47,
+                "divergence": 2
             },
             "Reason": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 1,
+                "divergence": 1
             },
             "Flow": {
-                "doc_count": 70
+                "doc_count": 70,
+                "percentage": 6,
+                "divergence": 1
             }
         },
         {
             "key": "India",
             "doc_count": 500,
             "TypeScript": {
-                "doc_count": 162
+                "doc_count": 162,
+                "percentage": 18,
+                "divergence": 0
             },
             "ClojureScript": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 1,
+                "divergence": 0
             },
             "Elm": {
-                "doc_count": 9
+                "doc_count": 9,
+                "percentage": 1,
+                "divergence": -2
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 295
+                "doc_count": 295,
+                "percentage": 33,
+                "divergence": 5
             },
             "ES6": {
-                "doc_count": 389
+                "doc_count": 389,
+                "percentage": 43,
+                "divergence": -2
             },
             "Reason": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 35
+                "doc_count": 35,
+                "percentage": 4,
+                "divergence": -1
             }
         },
         {
             "key": "Australia",
             "doc_count": 492,
             "TypeScript": {
-                "doc_count": 165
+                "doc_count": 165,
+                "percentage": 17,
+                "divergence": -1
             },
             "ClojureScript": {
-                "doc_count": 9
+                "doc_count": 9,
+                "percentage": 1,
+                "divergence": 0
             },
             "Elm": {
-                "doc_count": 28
+                "doc_count": 28,
+                "percentage": 3,
+                "divergence": 0
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 268
+                "doc_count": 268,
+                "percentage": 27,
+                "divergence": -1
             },
             "ES6": {
-                "doc_count": 437
+                "doc_count": 437,
+                "percentage": 43,
+                "divergence": -2
             },
             "Reason": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 1,
+                "divergence": 1
             },
             "Flow": {
-                "doc_count": 79
+                "doc_count": 79,
+                "percentage": 8,
+                "divergence": 3
             }
         },
         {
             "key": "Netherlands",
             "doc_count": 449,
             "TypeScript": {
-                "doc_count": 171
+                "doc_count": 171,
+                "percentage": 19,
+                "divergence": 1
             },
             "ClojureScript": {
-                "doc_count": 11
+                "doc_count": 11,
+                "percentage": 1,
+                "divergence": 0
             },
             "Elm": {
-                "doc_count": 24
+                "doc_count": 24,
+                "percentage": 3,
+                "divergence": 0
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 237
+                "doc_count": 237,
+                "percentage": 26,
+                "divergence": -2
             },
             "ES6": {
-                "doc_count": 400
+                "doc_count": 400,
+                "percentage": 45,
+                "divergence": 0
             },
             "Reason": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 50
+                "doc_count": 50,
+                "percentage": 6,
+                "divergence": 1
             }
         },
         {
             "key": "Brazil",
             "doc_count": 437,
             "TypeScript": {
-                "doc_count": 147
+                "doc_count": 147,
+                "percentage": 18,
+                "divergence": 0
             },
             "ClojureScript": {
-                "doc_count": 13
+                "doc_count": 13,
+                "percentage": 2,
+                "divergence": 1
             },
             "Elm": {
-                "doc_count": 25
+                "doc_count": 25,
+                "percentage": 3,
+                "divergence": 0
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 209
+                "doc_count": 209,
+                "percentage": 26,
+                "divergence": -2
             },
             "ES6": {
-                "doc_count": 369
+                "doc_count": 369,
+                "percentage": 44,
+                "divergence": -1
             },
             "Reason": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 54
+                "doc_count": 54,
+                "percentage": 7,
+                "divergence": 2
             }
         },
         {
             "key": "Poland",
             "doc_count": 420,
             "TypeScript": {
-                "doc_count": 177
+                "doc_count": 177,
+                "percentage": 23,
+                "divergence": 5
             },
             "ClojureScript": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 1,
+                "divergence": 0
             },
             "Elm": {
-                "doc_count": 17
+                "doc_count": 17,
+                "percentage": 2,
+                "divergence": -1
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 172
+                "doc_count": 172,
+                "percentage": 22,
+                "divergence": -6
             },
             "ES6": {
-                "doc_count": 368
+                "doc_count": 368,
+                "percentage": 48,
+                "divergence": 3
             },
             "Reason": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 31
+                "doc_count": 31,
+                "percentage": 4,
+                "divergence": -1
             }
         },
         {
             "key": "Spain",
             "doc_count": 413,
             "TypeScript": {
-                "doc_count": 143
+                "doc_count": 143,
+                "percentage": 18,
+                "divergence": 0
             },
             "ClojureScript": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 1,
+                "divergence": 0
             },
             "Elm": {
-                "doc_count": 12
+                "doc_count": 12,
+                "percentage": 2,
+                "divergence": -1
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 225
+                "doc_count": 225,
+                "percentage": 29,
+                "divergence": 1
             },
             "ES6": {
-                "doc_count": 354
+                "doc_count": 354,
+                "percentage": 46,
+                "divergence": 1
             },
             "Reason": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 33
+                "doc_count": 33,
+                "percentage": 4,
+                "divergence": -1
             }
         },
         {
             "key": "Russia",
             "doc_count": 379,
             "TypeScript": {
-                "doc_count": 117
+                "doc_count": 117,
+                "percentage": 17,
+                "divergence": -1
             },
             "ClojureScript": {
-                "doc_count": 12
+                "doc_count": 12,
+                "percentage": 2,
+                "divergence": 1
             },
             "Elm": {
-                "doc_count": 21
+                "doc_count": 21,
+                "percentage": 3,
+                "divergence": 0
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 149
+                "doc_count": 149,
+                "percentage": 22,
+                "divergence": -6
             },
             "ES6": {
-                "doc_count": 327
+                "doc_count": 327,
+                "percentage": 49,
+                "divergence": 4
             },
             "Reason": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 50
+                "doc_count": 50,
+                "percentage": 7,
+                "divergence": 2
             }
         },
         {
             "key": "Sweden",
             "doc_count": 330,
             "TypeScript": {
-                "doc_count": 109
+                "doc_count": 109,
+                "percentage": 16,
+                "divergence": -2
             },
             "ClojureScript": {
-                "doc_count": 15
+                "doc_count": 15,
+                "percentage": 2,
+                "divergence": 1
             },
             "Elm": {
-                "doc_count": 33
+                "doc_count": 33,
+                "percentage": 5,
+                "divergence": 2
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 157
+                "doc_count": 157,
+                "percentage": 24,
+                "divergence": -4
             },
             "ES6": {
-                "doc_count": 308
+                "doc_count": 308,
+                "percentage": 47,
+                "divergence": 2
             },
             "Reason": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 41
+                "doc_count": 41,
+                "percentage": 6,
+                "divergence": 1
             }
         },
         {
             "key": "Italy",
             "doc_count": 251,
             "TypeScript": {
-                "doc_count": 88
+                "doc_count": 88,
+                "percentage": 20,
+                "divergence": 2
             },
             "ClojureScript": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 1,
+                "divergence": 0
             },
             "Elm": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 1,
+                "divergence": -2
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 135
+                "doc_count": 135,
+                "percentage": 30,
+                "divergence": 2
             },
             "ES6": {
-                "doc_count": 197
+                "doc_count": 197,
+                "percentage": 44,
+                "divergence": -1
             },
             "Reason": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 17
+                "doc_count": 17,
+                "percentage": 4,
+                "divergence": -1
             }
         },
         {
             "key": "Ukraine",
             "doc_count": 242,
             "TypeScript": {
-                "doc_count": 74
+                "doc_count": 74,
+                "percentage": 17,
+                "divergence": -1
             },
             "ClojureScript": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 1,
+                "divergence": 0
             },
             "Elm": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 2,
+                "divergence": -1
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 104
+                "doc_count": 104,
+                "percentage": 24,
+                "divergence": -4
             },
             "ES6": {
-                "doc_count": 208
+                "doc_count": 208,
+                "percentage": 50,
+                "divergence": 5
             },
             "Reason": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 26
+                "doc_count": 26,
+                "percentage": 6,
+                "divergence": 1
             }
         },
         {
             "key": "Denmark",
             "doc_count": 197,
             "TypeScript": {
-                "doc_count": 73
+                "doc_count": 73,
+                "percentage": 19,
+                "divergence": 1
             },
             "ClojureScript": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 2,
+                "divergence": 1
             },
             "Elm": {
-                "doc_count": 16
+                "doc_count": 16,
+                "percentage": 4,
+                "divergence": 1
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 113
+                "doc_count": 113,
+                "percentage": 30,
+                "divergence": 2
             },
             "ES6": {
-                "doc_count": 155
+                "doc_count": 155,
+                "percentage": 40,
+                "divergence": -5
             },
             "Reason": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 19
+                "doc_count": 19,
+                "percentage": 5,
+                "divergence": 0
             }
         },
         {
             "key": "Mexico",
             "doc_count": 167,
             "TypeScript": {
-                "doc_count": 57
+                "doc_count": 57,
+                "percentage": 18,
+                "divergence": 0
             },
             "ClojureScript": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": -1
             },
             "Elm": {
-                "doc_count": 9
+                "doc_count": 9,
+                "percentage": 3,
+                "divergence": 0
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 91
+                "doc_count": 91,
+                "percentage": 29,
+                "divergence": 1
             },
             "ES6": {
-                "doc_count": 138
+                "doc_count": 138,
+                "percentage": 43,
+                "divergence": -2
             },
             "Reason": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 1,
+                "divergence": 1
             },
             "Flow": {
-                "doc_count": 18
+                "doc_count": 18,
+                "percentage": 6,
+                "divergence": 1
             }
         },
         {
             "key": "Belgium",
             "doc_count": 163,
             "TypeScript": {
-                "doc_count": 72
+                "doc_count": 72,
+                "percentage": 23,
+                "divergence": 5
             },
             "ClojureScript": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": -1
             },
             "Elm": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 3,
+                "divergence": 0
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 84
+                "doc_count": 84,
+                "percentage": 27,
+                "divergence": -1
             },
             "ES6": {
-                "doc_count": 138
+                "doc_count": 138,
+                "percentage": 44,
+                "divergence": -1
             },
             "Reason": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 9
+                "doc_count": 9,
+                "percentage": 3,
+                "divergence": -2
             }
         },
         {
             "key": "Norway",
             "doc_count": 150,
             "TypeScript": {
-                "doc_count": 56
+                "doc_count": 56,
+                "percentage": 19,
+                "divergence": 1
             },
             "ClojureScript": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 2,
+                "divergence": 1
             },
             "Elm": {
-                "doc_count": 20
+                "doc_count": 20,
+                "percentage": 7,
+                "divergence": 4
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 72
+                "doc_count": 72,
+                "percentage": 24,
+                "divergence": -4
             },
             "ES6": {
-                "doc_count": 132
+                "doc_count": 132,
+                "percentage": 45,
+                "divergence": 0
             },
             "Reason": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 3,
+                "divergence": -2
             }
         },
         {
             "key": "Argentina",
             "doc_count": 145,
             "TypeScript": {
-                "doc_count": 43
+                "doc_count": 43,
+                "percentage": 16,
+                "divergence": -2
             },
             "ClojureScript": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": -1
             },
             "Elm": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 1,
+                "divergence": -2
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 88
+                "doc_count": 88,
+                "percentage": 33,
+                "divergence": 5
             },
             "ES6": {
-                "doc_count": 128
+                "doc_count": 128,
+                "percentage": 47,
+                "divergence": 2
             },
             "Reason": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 3,
+                "divergence": -2
             }
         },
         {
             "key": "New Zealand",
             "doc_count": 143,
             "TypeScript": {
-                "doc_count": 59
+                "doc_count": 59,
+                "percentage": 21,
+                "divergence": 3
             },
             "ClojureScript": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": 0
             },
             "Elm": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 4,
+                "divergence": 1
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 75
+                "doc_count": 75,
+                "percentage": 26,
+                "divergence": -2
             },
             "ES6": {
-                "doc_count": 126
+                "doc_count": 126,
+                "percentage": 43,
+                "divergence": -2
             },
             "Reason": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 13
+                "doc_count": 13,
+                "percentage": 5,
+                "divergence": 0
             }
         },
         {
             "key": "Switzerland",
             "doc_count": 136,
             "TypeScript": {
-                "doc_count": 58
+                "doc_count": 58,
+                "percentage": 22,
+                "divergence": 4
             },
             "ClojureScript": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": -1
             },
             "Elm": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 2,
+                "divergence": -1
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 62
+                "doc_count": 62,
+                "percentage": 24,
+                "divergence": -4
             },
             "ES6": {
-                "doc_count": 115
+                "doc_count": 115,
+                "percentage": 43,
+                "divergence": -2
             },
             "Reason": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": 1
             },
             "Flow": {
-                "doc_count": 20
+                "doc_count": 20,
+                "percentage": 8,
+                "divergence": 3
             }
         },
         {
             "key": "Finland",
             "doc_count": 133,
             "TypeScript": {
-                "doc_count": 37
+                "doc_count": 37,
+                "percentage": 16,
+                "divergence": -2
             },
             "ClojureScript": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 3,
+                "divergence": 2
             },
             "Elm": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 3,
+                "divergence": 0
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 58
+                "doc_count": 58,
+                "percentage": 24,
+                "divergence": -4
             },
             "ES6": {
-                "doc_count": 118
+                "doc_count": 118,
+                "percentage": 50,
+                "divergence": 5
             },
             "Reason": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 4,
+                "divergence": -1
             }
         },
         {
             "key": "Romania",
             "doc_count": 132,
             "TypeScript": {
-                "doc_count": 56
+                "doc_count": 56,
+                "percentage": 22,
+                "divergence": 4
             },
             "ClojureScript": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": 0
             },
             "Elm": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 1,
+                "divergence": -2
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 71
+                "doc_count": 71,
+                "percentage": 28,
+                "divergence": 0
             },
             "ES6": {
-                "doc_count": 114
+                "doc_count": 114,
+                "percentage": 45,
+                "divergence": 0
             },
             "Reason": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 3,
+                "divergence": -2
             }
         },
         {
             "key": "Israel",
             "doc_count": 126,
             "TypeScript": {
-                "doc_count": 57
+                "doc_count": 57,
+                "percentage": 23,
+                "divergence": 5
             },
             "ClojureScript": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": -1
             },
             "Elm": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 1,
+                "divergence": -2
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 67
+                "doc_count": 67,
+                "percentage": 27,
+                "divergence": -1
             },
             "ES6": {
-                "doc_count": 116
+                "doc_count": 116,
+                "percentage": 46,
+                "divergence": 1
             },
             "Reason": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 3,
+                "divergence": -2
             }
         },
         {
             "key": "Austria",
             "doc_count": 116,
             "TypeScript": {
-                "doc_count": 57
+                "doc_count": 57,
+                "percentage": 25,
+                "divergence": 7
             },
             "ClojureScript": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": -1
             },
             "Elm": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": -3
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 56
+                "doc_count": 56,
+                "percentage": 24,
+                "divergence": -4
             },
             "ES6": {
-                "doc_count": 105
+                "doc_count": 105,
+                "percentage": 46,
+                "divergence": 1
             },
             "Reason": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 11
+                "doc_count": 11,
+                "percentage": 5,
+                "divergence": 0
             }
         },
         {
             "key": "Ireland",
             "doc_count": 106,
             "TypeScript": {
-                "doc_count": 35
+                "doc_count": 35,
+                "percentage": 18,
+                "divergence": 0
             },
             "ClojureScript": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 1,
+                "divergence": 0
             },
             "Elm": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -2
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 58
+                "doc_count": 58,
+                "percentage": 30,
+                "divergence": 2
             },
             "ES6": {
-                "doc_count": 86
+                "doc_count": 86,
+                "percentage": 45,
+                "divergence": 0
             },
             "Reason": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 5,
+                "divergence": 0
             }
         },
         {
             "key": "Portugal",
             "doc_count": 105,
             "TypeScript": {
-                "doc_count": 36
+                "doc_count": 36,
+                "percentage": 19,
+                "divergence": 1
             },
             "ClojureScript": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": 0
             },
             "Elm": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": -3
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 55
+                "doc_count": 55,
+                "percentage": 28,
+                "divergence": 0
             },
             "ES6": {
-                "doc_count": 89
+                "doc_count": 89,
+                "percentage": 46,
+                "divergence": 1
             },
             "Reason": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 1,
+                "divergence": 1
             },
             "Flow": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 5,
+                "divergence": 0
             }
         },
         {
             "key": "Belarus",
             "doc_count": 104,
             "TypeScript": {
-                "doc_count": 43
+                "doc_count": 43,
+                "percentage": 22,
+                "divergence": 4
             },
             "ClojureScript": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": 1
             },
             "Elm": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": -1
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 42
+                "doc_count": 42,
+                "percentage": 21,
+                "divergence": -7
             },
             "ES6": {
-                "doc_count": 99
+                "doc_count": 99,
+                "percentage": 48,
+                "divergence": 3
             },
             "Reason": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 5,
+                "divergence": 0
             }
         },
         {
             "key": "Colombia",
             "doc_count": 97,
             "TypeScript": {
-                "doc_count": 34
+                "doc_count": 34,
+                "percentage": 18,
+                "divergence": 0
             },
             "ClojureScript": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 1,
+                "divergence": 0
             },
             "Elm": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": -1
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 58
+                "doc_count": 58,
+                "percentage": 31,
+                "divergence": 3
             },
             "ES6": {
-                "doc_count": 82
+                "doc_count": 82,
+                "percentage": 45,
+                "divergence": 0
             },
             "Reason": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 3,
+                "divergence": -2
             }
         },
         {
             "key": "China",
             "doc_count": 96,
             "TypeScript": {
-                "doc_count": 28
+                "doc_count": 28,
+                "percentage": 16,
+                "divergence": -2
             },
             "ClojureScript": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 1,
+                "divergence": 0
             },
             "Elm": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -2
             },
             "\"Plain\" JavaScript (ES5)": {
-                "doc_count": 45
+                "doc_count": 45,
+                "percentage": 26,
+                "divergence": -2
             },
             "ES6": {
-                "doc_count": 87
+                "doc_count": 87,
+                "percentage": 49,
+                "divergence": 4
             },
             "Reason": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "Flow": {
-                "doc_count": 13
+                "doc_count": 13,
+                "percentage": 7,
+                "divergence": 2
             }
         }
     ]

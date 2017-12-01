@@ -1,8 +1,12 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { ResponsiveBubbleHtml } from 'nivo'
-import { colors } from '../../constants'
-import BubbleNode from './BubbleNode'
+import { colors, DIVERGENCE_MAX_OFFSET, DIVERGENCE_COLORS } from '../../constants'
+import { scaleLinear } from 'd3-scale'
+
+const colorScale = scaleLinear()
+    .domain([-DIVERGENCE_MAX_OFFSET, 0, DIVERGENCE_MAX_OFFSET])
+    .range(DIVERGENCE_COLORS)
 
 const NodeComponent = ({ node, style, handlers }) => {
     if (style.r <= 0) return null
@@ -55,22 +59,20 @@ export default class CountryBubble extends PureComponent {
         data: PropTypes.shape({
             key: PropTypes.string.isRequired,
         }).isRequired,
-        setCurrentTool: PropTypes.func.isRequired,
-        currentTool: PropTypes.string,
+        showDivergence: PropTypes.bool.isRequired,
     }
 
     render() {
-        const { keys, data, setCurrentTool, currentTool } = this.props
+        const { keys, data, showDivergence } = this.props
 
-        const getColor = ({ id, depth }) => {
+        const getColor = ({ depth, divergence }) => {
             if (depth === 0) return colors.greyLight
-            if (currentTool !== null && id !== currentTool) return colors.purpleLight
-            return colors.purple
+            if (showDivergence === false) return DIVERGENCE_COLORS[1]
+            return colorScale(divergence)
         }
 
         return (
             <ResponsiveBubbleHtml
-                nodeComponent={BubbleNode}
                 isZoomable={false}
                 colorBy={getColor}
                 labelTextColor="inherit:darker(2)"
@@ -83,6 +85,8 @@ export default class CountryBubble extends PureComponent {
                     children: keys.map(key => ({
                         id: key,
                         value: data[key].doc_count,
+                        percentage: data[key].percentage,
+                        divergence: data[key].divergence,
                     })),
                 }}
             />

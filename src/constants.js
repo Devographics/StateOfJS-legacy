@@ -122,3 +122,6 @@ export const aliases = {
     Angular: 'Angular 1',
     'No Front-End Framework': 'No Framework',
 }
+
+export const DIVERGENCE_MAX_OFFSET = 15
+export const DIVERGENCE_COLORS = ['#87b8e8', '#8b8de8', '#b741d3']

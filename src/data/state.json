@@ -1175,896 +1175,1408 @@
             "key": "undefined",
             "doc_count": 5839,
             "Firebase": {
-                "doc_count": 1198
+                "doc_count": 1198,
+                "percentage": 11,
+                "divergence": -2
             },
             "REST API": {
-                "doc_count": 5164
+                "doc_count": 5164,
+                "percentage": 50,
+                "divergence": 2
             },
             "Relay/Relay Modern": {
-                "doc_count": 130
+                "doc_count": 130,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 308
+                "doc_count": 308,
+                "percentage": 3,
+                "divergence": 0
             },
             "Redux": {
-                "doc_count": 2600
+                "doc_count": 2600,
+                "percentage": 25,
+                "divergence": 0
             },
             "GraphQL": {
-                "doc_count": 697
+                "doc_count": 697,
+                "percentage": 7,
+                "divergence": 0
             },
             "Falcor": {
-                "doc_count": 22
+                "doc_count": 22,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 316
+                "doc_count": 316,
+                "percentage": 3,
+                "divergence": 0
             }
         },
         {
             "key": "United States",
             "doc_count": 5719,
             "Firebase": {
-                "doc_count": 1488
+                "doc_count": 1488,
+                "percentage": 14,
+                "divergence": 1
             },
             "REST API": {
-                "doc_count": 5039
+                "doc_count": 5039,
+                "percentage": 48,
+                "divergence": 0
             },
             "Relay/Relay Modern": {
-                "doc_count": 139
+                "doc_count": 139,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 310
+                "doc_count": 310,
+                "percentage": 3,
+                "divergence": 0
             },
             "Redux": {
-                "doc_count": 2712
+                "doc_count": 2712,
+                "percentage": 25,
+                "divergence": 0
             },
             "GraphQL": {
-                "doc_count": 751
+                "doc_count": 751,
+                "percentage": 7,
+                "divergence": 0
             },
             "Falcor": {
-                "doc_count": 24
+                "doc_count": 24,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 243
+                "doc_count": 243,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "United Kingdom",
             "doc_count": 1409,
             "Firebase": {
-                "doc_count": 300
+                "doc_count": 300,
+                "percentage": 12,
+                "divergence": -1
             },
             "REST API": {
-                "doc_count": 1216
+                "doc_count": 1216,
+                "percentage": 49,
+                "divergence": 1
             },
             "Relay/Relay Modern": {
-                "doc_count": 38
+                "doc_count": 38,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 85
+                "doc_count": 85,
+                "percentage": 3,
+                "divergence": 0
             },
             "Redux": {
-                "doc_count": 664
+                "doc_count": 664,
+                "percentage": 26,
+                "divergence": 1
             },
             "GraphQL": {
-                "doc_count": 182
+                "doc_count": 182,
+                "percentage": 7,
+                "divergence": 0
             },
             "Falcor": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 61
+                "doc_count": 61,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Germany",
             "doc_count": 879,
             "Firebase": {
-                "doc_count": 171
+                "doc_count": 171,
+                "percentage": 11,
+                "divergence": -2
             },
             "REST API": {
-                "doc_count": 764
+                "doc_count": 764,
+                "percentage": 48,
+                "divergence": 0
             },
             "Relay/Relay Modern": {
-                "doc_count": 21
+                "doc_count": 21,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 62
+                "doc_count": 62,
+                "percentage": 4,
+                "divergence": 1
             },
             "Redux": {
-                "doc_count": 387
+                "doc_count": 387,
+                "percentage": 25,
+                "divergence": 0
             },
             "GraphQL": {
-                "doc_count": 124
+                "doc_count": 124,
+                "percentage": 8,
+                "divergence": 1
             },
             "Falcor": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 46
+                "doc_count": 46,
+                "percentage": 3,
+                "divergence": 0
             }
         },
         {
             "key": "Canada",
             "doc_count": 771,
             "Firebase": {
-                "doc_count": 179
+                "doc_count": 179,
+                "percentage": 13,
+                "divergence": 0
             },
             "REST API": {
-                "doc_count": 674
+                "doc_count": 674,
+                "percentage": 51,
+                "divergence": 3
             },
             "Relay/Relay Modern": {
-                "doc_count": 11
+                "doc_count": 11,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 29
+                "doc_count": 29,
+                "percentage": 2,
+                "divergence": -1
             },
             "Redux": {
-                "doc_count": 344
+                "doc_count": 344,
+                "percentage": 26,
+                "divergence": 1
             },
             "GraphQL": {
-                "doc_count": 68
+                "doc_count": 68,
+                "percentage": 5,
+                "divergence": -2
             },
             "Falcor": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 26
+                "doc_count": 26,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "France",
             "doc_count": 695,
             "Firebase": {
-                "doc_count": 169
+                "doc_count": 169,
+                "percentage": 14,
+                "divergence": 1
             },
             "REST API": {
-                "doc_count": 585
+                "doc_count": 585,
+                "percentage": 48,
+                "divergence": 0
             },
             "Relay/Relay Modern": {
-                "doc_count": 17
+                "doc_count": 17,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 47
+                "doc_count": 47,
+                "percentage": 4,
+                "divergence": 1
             },
             "Redux": {
-                "doc_count": 289
+                "doc_count": 289,
+                "percentage": 24,
+                "divergence": -1
             },
             "GraphQL": {
-                "doc_count": 88
+                "doc_count": 88,
+                "percentage": 7,
+                "divergence": 0
             },
             "Falcor": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 28
+                "doc_count": 28,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "India",
             "doc_count": 500,
             "Firebase": {
-                "doc_count": 133
+                "doc_count": 133,
+                "percentage": 16,
+                "divergence": 3
             },
             "REST API": {
-                "doc_count": 424
+                "doc_count": 424,
+                "percentage": 52,
+                "divergence": 4
             },
             "Relay/Relay Modern": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 11
+                "doc_count": 11,
+                "percentage": 1,
+                "divergence": -2
             },
             "Redux": {
-                "doc_count": 202
+                "doc_count": 202,
+                "percentage": 24,
+                "divergence": -1
             },
             "GraphQL": {
-                "doc_count": 37
+                "doc_count": 37,
+                "percentage": 4,
+                "divergence": -3
             },
             "Falcor": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 19
+                "doc_count": 19,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Australia",
             "doc_count": 492,
             "Firebase": {
-                "doc_count": 130
+                "doc_count": 130,
+                "percentage": 14,
+                "divergence": 1
             },
             "REST API": {
-                "doc_count": 418
+                "doc_count": 418,
+                "percentage": 45,
+                "divergence": -3
             },
             "Relay/Relay Modern": {
-                "doc_count": 13
+                "doc_count": 13,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 39
+                "doc_count": 39,
+                "percentage": 4,
+                "divergence": 1
             },
             "Redux": {
-                "doc_count": 236
+                "doc_count": 236,
+                "percentage": 25,
+                "divergence": 0
             },
             "GraphQL": {
-                "doc_count": 69
+                "doc_count": 69,
+                "percentage": 7,
+                "divergence": 0
             },
             "Falcor": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 36
+                "doc_count": 36,
+                "percentage": 4,
+                "divergence": 1
             }
         },
         {
             "key": "Netherlands",
             "doc_count": 449,
             "Firebase": {
-                "doc_count": 114
+                "doc_count": 114,
+                "percentage": 14,
+                "divergence": 1
             },
             "REST API": {
-                "doc_count": 398
+                "doc_count": 398,
+                "percentage": 48,
+                "divergence": 0
             },
             "Relay/Relay Modern": {
-                "doc_count": 9
+                "doc_count": 9,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 27
+                "doc_count": 27,
+                "percentage": 3,
+                "divergence": 0
             },
             "Redux": {
-                "doc_count": 207
+                "doc_count": 207,
+                "percentage": 25,
+                "divergence": 0
             },
             "GraphQL": {
-                "doc_count": 54
+                "doc_count": 54,
+                "percentage": 6,
+                "divergence": -1
             },
             "Falcor": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 24
+                "doc_count": 24,
+                "percentage": 3,
+                "divergence": 0
             }
         },
         {
             "key": "Brazil",
             "doc_count": 437,
             "Firebase": {
-                "doc_count": 124
+                "doc_count": 124,
+                "percentage": 16,
+                "divergence": 3
             },
             "REST API": {
-                "doc_count": 368
+                "doc_count": 368,
+                "percentage": 48,
+                "divergence": 0
             },
             "Relay/Relay Modern": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 28
+                "doc_count": 28,
+                "percentage": 4,
+                "divergence": 1
             },
             "Redux": {
-                "doc_count": 180
+                "doc_count": 180,
+                "percentage": 23,
+                "divergence": -2
             },
             "GraphQL": {
-                "doc_count": 47
+                "doc_count": 47,
+                "percentage": 6,
+                "divergence": -1
             },
             "Falcor": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 14
+                "doc_count": 14,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Poland",
             "doc_count": 420,
             "Firebase": {
-                "doc_count": 71
+                "doc_count": 71,
+                "percentage": 10,
+                "divergence": -3
             },
             "REST API": {
-                "doc_count": 371
+                "doc_count": 371,
+                "percentage": 49,
+                "divergence": 1
             },
             "Relay/Relay Modern": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 17
+                "doc_count": 17,
+                "percentage": 2,
+                "divergence": -1
             },
             "Redux": {
-                "doc_count": 212
+                "doc_count": 212,
+                "percentage": 29,
+                "divergence": 4
             },
             "GraphQL": {
-                "doc_count": 34
+                "doc_count": 34,
+                "percentage": 5,
+                "divergence": -2
             },
             "Falcor": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 26
+                "doc_count": 26,
+                "percentage": 4,
+                "divergence": 1
             }
         },
         {
             "key": "Spain",
             "doc_count": 413,
             "Firebase": {
-                "doc_count": 109
+                "doc_count": 109,
+                "percentage": 15,
+                "divergence": 2
             },
             "REST API": {
-                "doc_count": 366
+                "doc_count": 366,
+                "percentage": 52,
+                "divergence": 4
             },
             "Relay/Relay Modern": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 17
+                "doc_count": 17,
+                "percentage": 2,
+                "divergence": -1
             },
             "Redux": {
-                "doc_count": 156
+                "doc_count": 156,
+                "percentage": 22,
+                "divergence": -3
             },
             "GraphQL": {
-                "doc_count": 41
+                "doc_count": 41,
+                "percentage": 6,
+                "divergence": -1
             },
             "Falcor": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 11
+                "doc_count": 11,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Russia",
             "doc_count": 379,
             "Firebase": {
-                "doc_count": 29
+                "doc_count": 29,
+                "percentage": 5,
+                "divergence": -8
             },
             "REST API": {
-                "doc_count": 306
+                "doc_count": 306,
+                "percentage": 48,
+                "divergence": 0
             },
             "Relay/Relay Modern": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 11
+                "doc_count": 11,
+                "percentage": 2,
+                "divergence": -1
             },
             "Redux": {
-                "doc_count": 210
+                "doc_count": 210,
+                "percentage": 34,
+                "divergence": 9
             },
             "GraphQL": {
-                "doc_count": 28
+                "doc_count": 28,
+                "percentage": 5,
+                "divergence": -2
             },
             "Falcor": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 31
+                "doc_count": 31,
+                "percentage": 5,
+                "divergence": 2
             }
         },
         {
             "key": "Sweden",
             "doc_count": 330,
             "Firebase": {
-                "doc_count": 85
+                "doc_count": 85,
+                "percentage": 13,
+                "divergence": 0
             },
             "REST API": {
-                "doc_count": 300
+                "doc_count": 300,
+                "percentage": 45,
+                "divergence": -3
             },
             "Relay/Relay Modern": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 17
+                "doc_count": 17,
+                "percentage": 3,
+                "divergence": 0
             },
             "Redux": {
-                "doc_count": 174
+                "doc_count": 174,
+                "percentage": 27,
+                "divergence": 2
             },
             "GraphQL": {
-                "doc_count": 49
+                "doc_count": 49,
+                "percentage": 7,
+                "divergence": 0
             },
             "Falcor": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 1,
+                "divergence": 1
             },
             "MobX": {
-                "doc_count": 19
+                "doc_count": 19,
+                "percentage": 3,
+                "divergence": 0
             }
         },
         {
             "key": "Italy",
             "doc_count": 251,
             "Firebase": {
-                "doc_count": 52
+                "doc_count": 52,
+                "percentage": 14,
+                "divergence": 1
             },
             "REST API": {
-                "doc_count": 219
+                "doc_count": 219,
+                "percentage": 56,
+                "divergence": 8
             },
             "Relay/Relay Modern": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 2,
+                "divergence": 1
             },
             "Apollo": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 2,
+                "divergence": -1
             },
             "Redux": {
-                "doc_count": 76
+                "doc_count": 76,
+                "percentage": 20,
+                "divergence": -5
             },
             "GraphQL": {
-                "doc_count": 15
+                "doc_count": 15,
+                "percentage": 4,
+                "divergence": -3
             },
             "Falcor": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Ukraine",
             "doc_count": 242,
             "Firebase": {
-                "doc_count": 39
+                "doc_count": 39,
+                "percentage": 10,
+                "divergence": -3
             },
             "REST API": {
-                "doc_count": 181
+                "doc_count": 181,
+                "percentage": 45,
+                "divergence": -3
             },
             "Relay/Relay Modern": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 2,
+                "divergence": 1
             },
             "Apollo": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 2,
+                "divergence": -1
             },
             "Redux": {
-                "doc_count": 127
+                "doc_count": 127,
+                "percentage": 32,
+                "divergence": 7
             },
             "GraphQL": {
-                "doc_count": 16
+                "doc_count": 16,
+                "percentage": 4,
+                "divergence": -3
             },
             "Falcor": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 19
+                "doc_count": 19,
+                "percentage": 5,
+                "divergence": 2
             }
         },
         {
             "key": "Denmark",
             "doc_count": 197,
             "Firebase": {
-                "doc_count": 52
+                "doc_count": 52,
+                "percentage": 14,
+                "divergence": 1
             },
             "REST API": {
-                "doc_count": 165
+                "doc_count": 165,
+                "percentage": 46,
+                "divergence": -2
             },
             "Relay/Relay Modern": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 2,
+                "divergence": 1
             },
             "Apollo": {
-                "doc_count": 14
+                "doc_count": 14,
+                "percentage": 4,
+                "divergence": 1
             },
             "Redux": {
-                "doc_count": 82
+                "doc_count": 82,
+                "percentage": 23,
+                "divergence": -2
             },
             "GraphQL": {
-                "doc_count": 34
+                "doc_count": 34,
+                "percentage": 9,
+                "divergence": 2
             },
             "Falcor": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Mexico",
             "doc_count": 167,
             "Firebase": {
-                "doc_count": 56
+                "doc_count": 56,
+                "percentage": 19,
+                "divergence": 6
             },
             "REST API": {
-                "doc_count": 138
+                "doc_count": 138,
+                "percentage": 46,
+                "divergence": -2
             },
             "Relay/Relay Modern": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 2,
+                "divergence": 1
             },
             "Apollo": {
-                "doc_count": 11
+                "doc_count": 11,
+                "percentage": 4,
+                "divergence": 1
             },
             "Redux": {
-                "doc_count": 65
+                "doc_count": 65,
+                "percentage": 22,
+                "divergence": -3
             },
             "GraphQL": {
-                "doc_count": 16
+                "doc_count": 16,
+                "percentage": 5,
+                "divergence": -2
             },
             "Falcor": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Belgium",
             "doc_count": 163,
             "Firebase": {
-                "doc_count": 32
+                "doc_count": 32,
+                "percentage": 12,
+                "divergence": -1
             },
             "REST API": {
-                "doc_count": 146
+                "doc_count": 146,
+                "percentage": 55,
+                "divergence": 7
             },
             "Relay/Relay Modern": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": -1
             },
             "Redux": {
-                "doc_count": 61
+                "doc_count": 61,
+                "percentage": 23,
+                "divergence": -2
             },
             "GraphQL": {
-                "doc_count": 14
+                "doc_count": 14,
+                "percentage": 5,
+                "divergence": -2
             },
             "Falcor": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Norway",
             "doc_count": 150,
             "Firebase": {
-                "doc_count": 34
+                "doc_count": 34,
+                "percentage": 12,
+                "divergence": -1
             },
             "REST API": {
-                "doc_count": 138
+                "doc_count": 138,
+                "percentage": 50,
+                "divergence": 2
             },
             "Relay/Relay Modern": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 2,
+                "divergence": -1
             },
             "Redux": {
-                "doc_count": 81
+                "doc_count": 81,
+                "percentage": 29,
+                "divergence": 4
             },
             "GraphQL": {
-                "doc_count": 13
+                "doc_count": 13,
+                "percentage": 5,
+                "divergence": -2
             },
             "Falcor": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 1,
+                "divergence": -2
             }
         },
         {
             "key": "Argentina",
             "doc_count": 145,
             "Firebase": {
-                "doc_count": 39
+                "doc_count": 39,
+                "percentage": 16,
+                "divergence": 3
             },
             "REST API": {
-                "doc_count": 124
+                "doc_count": 124,
+                "percentage": 49,
+                "divergence": 1
             },
             "Relay/Relay Modern": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": -1
             },
             "Apollo": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -2
             },
             "Redux": {
-                "doc_count": 64
+                "doc_count": 64,
+                "percentage": 26,
+                "divergence": 1
             },
             "GraphQL": {
-                "doc_count": 12
+                "doc_count": 12,
+                "percentage": 5,
+                "divergence": -2
             },
             "Falcor": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 3,
+                "divergence": 0
             }
         },
         {
             "key": "New Zealand",
             "doc_count": 143,
             "Firebase": {
-                "doc_count": 34
+                "doc_count": 34,
+                "percentage": 12,
+                "divergence": -1
             },
             "REST API": {
-                "doc_count": 128
+                "doc_count": 128,
+                "percentage": 44,
+                "divergence": -4
             },
             "Relay/Relay Modern": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 2,
+                "divergence": 1
             },
             "Apollo": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 4,
+                "divergence": 1
             },
             "Redux": {
-                "doc_count": 76
+                "doc_count": 76,
+                "percentage": 27,
+                "divergence": 2
             },
             "GraphQL": {
-                "doc_count": 19
+                "doc_count": 19,
+                "percentage": 7,
+                "divergence": 0
             },
             "Falcor": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 4,
+                "divergence": 1
             }
         },
         {
             "key": "Switzerland",
             "doc_count": 136,
             "Firebase": {
-                "doc_count": 26
+                "doc_count": 26,
+                "percentage": 10,
+                "divergence": -3
             },
             "REST API": {
-                "doc_count": 119
+                "doc_count": 119,
+                "percentage": 49,
+                "divergence": 1
             },
             "Relay/Relay Modern": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 18
+                "doc_count": 18,
+                "percentage": 7,
+                "divergence": 4
             },
             "Redux": {
-                "doc_count": 55
+                "doc_count": 55,
+                "percentage": 22,
+                "divergence": -3
             },
             "GraphQL": {
-                "doc_count": 21
+                "doc_count": 21,
+                "percentage": 8,
+                "divergence": 1
             },
             "Falcor": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 3,
+                "divergence": 0
             }
         },
         {
             "key": "Finland",
             "doc_count": 133,
             "Firebase": {
-                "doc_count": 35
+                "doc_count": 35,
+                "percentage": 14,
+                "divergence": 1
             },
             "REST API": {
-                "doc_count": 121
+                "doc_count": 121,
+                "percentage": 48,
+                "divergence": 0
             },
             "Relay/Relay Modern": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 2,
+                "divergence": -1
             },
             "Redux": {
-                "doc_count": 73
+                "doc_count": 73,
+                "percentage": 29,
+                "divergence": 4
             },
             "GraphQL": {
-                "doc_count": 12
+                "doc_count": 12,
+                "percentage": 5,
+                "divergence": -2
             },
             "Falcor": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 1,
+                "divergence": -2
             }
         },
         {
             "key": "Romania",
             "doc_count": 132,
             "Firebase": {
-                "doc_count": 33
+                "doc_count": 33,
+                "percentage": 14,
+                "divergence": 1
             },
             "REST API": {
-                "doc_count": 118
+                "doc_count": 118,
+                "percentage": 52,
+                "divergence": 4
             },
             "Relay/Relay Modern": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": -1
             },
             "Redux": {
-                "doc_count": 57
+                "doc_count": 57,
+                "percentage": 25,
+                "divergence": 0
             },
             "GraphQL": {
-                "doc_count": 11
+                "doc_count": 11,
+                "percentage": 5,
+                "divergence": -2
             },
             "Falcor": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 1,
+                "divergence": -2
             }
         },
         {
             "key": "Israel",
             "doc_count": 126,
             "Firebase": {
-                "doc_count": 26
+                "doc_count": 26,
+                "percentage": 11,
+                "divergence": -2
             },
             "REST API": {
-                "doc_count": 117
+                "doc_count": 117,
+                "percentage": 48,
+                "divergence": 0
             },
             "Relay/Relay Modern": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 1,
+                "divergence": -2
             },
             "Redux": {
-                "doc_count": 72
+                "doc_count": 72,
+                "percentage": 29,
+                "divergence": 4
             },
             "GraphQL": {
-                "doc_count": 14
+                "doc_count": 14,
+                "percentage": 6,
+                "divergence": -1
             },
             "Falcor": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 11
+                "doc_count": 11,
+                "percentage": 4,
+                "divergence": 1
             }
         },
         {
             "key": "Austria",
             "doc_count": 116,
             "Firebase": {
-                "doc_count": 18
+                "doc_count": 18,
+                "percentage": 9,
+                "divergence": -4
             },
             "REST API": {
-                "doc_count": 104
+                "doc_count": 104,
+                "percentage": 52,
+                "divergence": 4
             },
             "Relay/Relay Modern": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 4,
+                "divergence": 1
             },
             "Redux": {
-                "doc_count": 52
+                "doc_count": 52,
+                "percentage": 26,
+                "divergence": 1
             },
             "GraphQL": {
-                "doc_count": 12
+                "doc_count": 12,
+                "percentage": 6,
+                "divergence": -1
             },
             "Falcor": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Ireland",
             "doc_count": 106,
             "Firebase": {
-                "doc_count": 18
+                "doc_count": 18,
+                "percentage": 10,
+                "divergence": -3
             },
             "REST API": {
-                "doc_count": 96
+                "doc_count": 96,
+                "percentage": 52,
+                "divergence": 4
             },
             "Relay/Relay Modern": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 4,
+                "divergence": 1
             },
             "Redux": {
-                "doc_count": 47
+                "doc_count": 47,
+                "percentage": 25,
+                "divergence": 0
             },
             "GraphQL": {
-                "doc_count": 12
+                "doc_count": 12,
+                "percentage": 6,
+                "divergence": -1
             },
             "Falcor": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Portugal",
             "doc_count": 105,
             "Firebase": {
-                "doc_count": 24
+                "doc_count": 24,
+                "percentage": 14,
+                "divergence": 1
             },
             "REST API": {
-                "doc_count": 90
+                "doc_count": 90,
+                "percentage": 52,
+                "divergence": 4
             },
             "Relay/Relay Modern": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": -1
             },
             "Redux": {
-                "doc_count": 41
+                "doc_count": 41,
+                "percentage": 23,
+                "divergence": -2
             },
             "GraphQL": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 6,
+                "divergence": -1
             },
             "Falcor": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Belarus",
             "doc_count": 104,
             "Firebase": {
-                "doc_count": 15
+                "doc_count": 15,
+                "percentage": 9,
+                "divergence": -4
             },
             "REST API": {
-                "doc_count": 91
+                "doc_count": 91,
+                "percentage": 51,
+                "divergence": 3
             },
             "Relay/Relay Modern": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -2
             },
             "Redux": {
-                "doc_count": 59
+                "doc_count": 59,
+                "percentage": 34,
+                "divergence": 9
             },
             "GraphQL": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 3,
+                "divergence": -4
             },
             "Falcor": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 1,
+                "divergence": -2
             }
         },
         {
             "key": "Colombia",
             "doc_count": 97,
             "Firebase": {
-                "doc_count": 28
+                "doc_count": 28,
+                "percentage": 16,
+                "divergence": 3
             },
             "REST API": {
-                "doc_count": 78
+                "doc_count": 78,
+                "percentage": 45,
+                "divergence": -3
             },
             "Relay/Relay Modern": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": 1
             },
             "Apollo": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 4,
+                "divergence": 1
             },
             "Redux": {
-                "doc_count": 40
+                "doc_count": 40,
+                "percentage": 24,
+                "divergence": -1
             },
             "GraphQL": {
-                "doc_count": 13
+                "doc_count": 13,
+                "percentage": 8,
+                "divergence": 1
             },
             "Falcor": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 1,
+                "divergence": -2
             }
         },
         {
             "key": "China",
             "doc_count": 96,
             "Firebase": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 4,
+                "divergence": -9
             },
             "REST API": {
-                "doc_count": 73
+                "doc_count": 73,
+                "percentage": 46,
+                "divergence": -2
             },
             "Relay/Relay Modern": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 1,
+                "divergence": 0
             },
             "Apollo": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 4,
+                "divergence": 1
             },
             "Redux": {
-                "doc_count": 45
+                "doc_count": 45,
+                "percentage": 29,
+                "divergence": 4
             },
             "GraphQL": {
-                "doc_count": 9
+                "doc_count": 9,
+                "percentage": 6,
+                "divergence": -1
             },
             "Falcor": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": 0
             },
             "MobX": {
-                "doc_count": 16
+                "doc_count": 16,
+                "percentage": 10,
+                "divergence": 7
             }
         }
     ],

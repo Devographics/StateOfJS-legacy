@@ -1316,992 +1316,1568 @@
             "key": "undefined",
             "doc_count": 5839,
             "Backbone": {
-                "doc_count": 411
+                "doc_count": 411,
+                "percentage": 4,
+                "divergence": 0
             },
             "No Front-End Framework": {
-                "doc_count": 2502
+                "doc_count": 2502,
+                "percentage": 25,
+                "divergence": 2
             },
             "Vue": {
-                "doc_count": 1299
+                "doc_count": 1299,
+                "percentage": 13,
+                "divergence": 2
             },
             "Ember": {
-                "doc_count": 293
+                "doc_count": 293,
+                "percentage": 3,
+                "divergence": 0
             },
             "Polymer": {
-                "doc_count": 250
+                "doc_count": 250,
+                "percentage": 2,
+                "divergence": -1
             },
             "React": {
-                "doc_count": 3393
+                "doc_count": 3393,
+                "percentage": 34,
+                "divergence": 1
             },
             "Angular 2": {
-                "doc_count": 917
+                "doc_count": 917,
+                "percentage": 9,
+                "divergence": -2
             },
             "Angular": {
-                "doc_count": 937
+                "doc_count": 937,
+                "percentage": 9,
+                "divergence": -2
             },
             "Aurelia": {
-                "doc_count": 74
+                "doc_count": 74,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "United States",
             "doc_count": 5719,
             "Backbone": {
-                "doc_count": 544
+                "doc_count": 544,
+                "percentage": 5,
+                "divergence": 1
             },
             "No Front-End Framework": {
-                "doc_count": 2418
+                "doc_count": 2418,
+                "percentage": 23,
+                "divergence": 0
             },
             "Vue": {
-                "doc_count": 977
+                "doc_count": 977,
+                "percentage": 9,
+                "divergence": -2
             },
             "Ember": {
-                "doc_count": 367
+                "doc_count": 367,
+                "percentage": 4,
+                "divergence": 1
             },
             "Polymer": {
-                "doc_count": 281
+                "doc_count": 281,
+                "percentage": 3,
+                "divergence": 0
             },
             "React": {
-                "doc_count": 3525
+                "doc_count": 3525,
+                "percentage": 33,
+                "divergence": 0
             },
             "Angular 2": {
-                "doc_count": 1009
+                "doc_count": 1009,
+                "percentage": 10,
+                "divergence": -1
             },
             "Angular": {
-                "doc_count": 1246
+                "doc_count": 1246,
+                "percentage": 12,
+                "divergence": 1
             },
             "Aurelia": {
-                "doc_count": 94
+                "doc_count": 94,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "United Kingdom",
             "doc_count": 1409,
             "Backbone": {
-                "doc_count": 111
+                "doc_count": 111,
+                "percentage": 4,
+                "divergence": 0
             },
             "No Front-End Framework": {
-                "doc_count": 647
+                "doc_count": 647,
+                "percentage": 26,
+                "divergence": 3
             },
             "Vue": {
-                "doc_count": 253
+                "doc_count": 253,
+                "percentage": 10,
+                "divergence": -1
             },
             "Ember": {
-                "doc_count": 52
+                "doc_count": 52,
+                "percentage": 2,
+                "divergence": -1
             },
             "Polymer": {
-                "doc_count": 73
+                "doc_count": 73,
+                "percentage": 3,
+                "divergence": 0
             },
             "React": {
-                "doc_count": 857
+                "doc_count": 857,
+                "percentage": 35,
+                "divergence": 2
             },
             "Angular 2": {
-                "doc_count": 209
+                "doc_count": 209,
+                "percentage": 8,
+                "divergence": -3
             },
             "Angular": {
-                "doc_count": 280
+                "doc_count": 280,
+                "percentage": 11,
+                "divergence": 0
             },
             "Aurelia": {
-                "doc_count": 21
+                "doc_count": 21,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "Germany",
             "doc_count": 879,
             "Backbone": {
-                "doc_count": 67
+                "doc_count": 67,
+                "percentage": 5,
+                "divergence": 1
             },
             "No Front-End Framework": {
-                "doc_count": 360
+                "doc_count": 360,
+                "percentage": 25,
+                "divergence": 2
             },
             "Vue": {
-                "doc_count": 167
+                "doc_count": 167,
+                "percentage": 11,
+                "divergence": 0
             },
             "Ember": {
-                "doc_count": 26
+                "doc_count": 26,
+                "percentage": 2,
+                "divergence": -1
             },
             "Polymer": {
-                "doc_count": 50
+                "doc_count": 50,
+                "percentage": 3,
+                "divergence": 0
             },
             "React": {
-                "doc_count": 464
+                "doc_count": 464,
+                "percentage": 31,
+                "divergence": -2
             },
             "Angular 2": {
-                "doc_count": 173
+                "doc_count": 173,
+                "percentage": 12,
+                "divergence": 1
             },
             "Angular": {
-                "doc_count": 148
+                "doc_count": 148,
+                "percentage": 10,
+                "divergence": -1
             },
             "Aurelia": {
-                "doc_count": 12
+                "doc_count": 12,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "Canada",
             "doc_count": 771,
             "Backbone": {
-                "doc_count": 55
+                "doc_count": 55,
+                "percentage": 4,
+                "divergence": 0
             },
             "No Front-End Framework": {
-                "doc_count": 347
+                "doc_count": 347,
+                "percentage": 25,
+                "divergence": 2
             },
             "Vue": {
-                "doc_count": 154
+                "doc_count": 154,
+                "percentage": 11,
+                "divergence": 0
             },
             "Ember": {
-                "doc_count": 37
+                "doc_count": 37,
+                "percentage": 3,
+                "divergence": 0
             },
             "Polymer": {
-                "doc_count": 41
+                "doc_count": 41,
+                "percentage": 3,
+                "divergence": 0
             },
             "React": {
-                "doc_count": 446
+                "doc_count": 446,
+                "percentage": 32,
+                "divergence": -1
             },
             "Angular 2": {
-                "doc_count": 137
+                "doc_count": 137,
+                "percentage": 10,
+                "divergence": -1
             },
             "Angular": {
-                "doc_count": 151
+                "doc_count": 151,
+                "percentage": 11,
+                "divergence": 0
             },
             "Aurelia": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "France",
             "doc_count": 695,
             "Backbone": {
-                "doc_count": 47
+                "doc_count": 47,
+                "percentage": 4,
+                "divergence": 0
             },
             "No Front-End Framework": {
-                "doc_count": 261
+                "doc_count": 261,
+                "percentage": 22,
+                "divergence": -1
             },
             "Vue": {
-                "doc_count": 166
+                "doc_count": 166,
+                "percentage": 14,
+                "divergence": 3
             },
             "Ember": {
-                "doc_count": 24
+                "doc_count": 24,
+                "percentage": 2,
+                "divergence": -1
             },
             "Polymer": {
-                "doc_count": 41
+                "doc_count": 41,
+                "percentage": 3,
+                "divergence": 0
             },
             "React": {
-                "doc_count": 347
+                "doc_count": 347,
+                "percentage": 29,
+                "divergence": -4
             },
             "Angular 2": {
-                "doc_count": 160
+                "doc_count": 160,
+                "percentage": 14,
+                "divergence": 3
             },
             "Angular": {
-                "doc_count": 132
+                "doc_count": 132,
+                "percentage": 11,
+                "divergence": 0
             },
             "Aurelia": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "India",
             "doc_count": 500,
             "Backbone": {
-                "doc_count": 33
+                "doc_count": 33,
+                "percentage": 4,
+                "divergence": 0
             },
             "No Front-End Framework": {
-                "doc_count": 131
+                "doc_count": 131,
+                "percentage": 16,
+                "divergence": -7
             },
             "Vue": {
-                "doc_count": 59
+                "doc_count": 59,
+                "percentage": 7,
+                "divergence": -4
             },
             "Ember": {
-                "doc_count": 19
+                "doc_count": 19,
+                "percentage": 2,
+                "divergence": -1
             },
             "Polymer": {
-                "doc_count": 22
+                "doc_count": 22,
+                "percentage": 3,
+                "divergence": 0
             },
             "React": {
-                "doc_count": 246
+                "doc_count": 246,
+                "percentage": 32,
+                "divergence": -1
             },
             "Angular 2": {
-                "doc_count": 120
+                "doc_count": 120,
+                "percentage": 15,
+                "divergence": 4
             },
             "Angular": {
-                "doc_count": 158
+                "doc_count": 158,
+                "percentage": 20,
+                "divergence": 9
             },
             "Aurelia": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "Australia",
             "doc_count": 492,
             "Backbone": {
-                "doc_count": 22
+                "doc_count": 22,
+                "percentage": 3,
+                "divergence": -1
             },
             "No Front-End Framework": {
-                "doc_count": 190
+                "doc_count": 190,
+                "percentage": 23,
+                "divergence": 0
             },
             "Vue": {
-                "doc_count": 77
+                "doc_count": 77,
+                "percentage": 9,
+                "divergence": -2
             },
             "Ember": {
-                "doc_count": 14
+                "doc_count": 14,
+                "percentage": 2,
+                "divergence": -1
             },
             "Polymer": {
-                "doc_count": 22
+                "doc_count": 22,
+                "percentage": 3,
+                "divergence": 0
             },
             "React": {
-                "doc_count": 329
+                "doc_count": 329,
+                "percentage": 40,
+                "divergence": 7
             },
             "Angular 2": {
-                "doc_count": 78
+                "doc_count": 78,
+                "percentage": 9,
+                "divergence": -2
             },
             "Angular": {
-                "doc_count": 84
+                "doc_count": 84,
+                "percentage": 10,
+                "divergence": -1
             },
             "Aurelia": {
-                "doc_count": 12
+                "doc_count": 12,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "Netherlands",
             "doc_count": 449,
             "Backbone": {
-                "doc_count": 33
+                "doc_count": 33,
+                "percentage": 4,
+                "divergence": 0
             },
             "No Front-End Framework": {
-                "doc_count": 192
+                "doc_count": 192,
+                "percentage": 23,
+                "divergence": 0
             },
             "Vue": {
-                "doc_count": 105
+                "doc_count": 105,
+                "percentage": 13,
+                "divergence": 2
             },
             "Ember": {
-                "doc_count": 19
+                "doc_count": 19,
+                "percentage": 2,
+                "divergence": -1
             },
             "Polymer": {
-                "doc_count": 39
+                "doc_count": 39,
+                "percentage": 5,
+                "divergence": 2
             },
             "React": {
-                "doc_count": 259
+                "doc_count": 259,
+                "percentage": 32,
+                "divergence": -1
             },
             "Angular 2": {
-                "doc_count": 94
+                "doc_count": 94,
+                "percentage": 11,
+                "divergence": 0
             },
             "Angular": {
-                "doc_count": 73
+                "doc_count": 73,
+                "percentage": 9,
+                "divergence": -2
             },
             "Aurelia": {
-                "doc_count": 9
+                "doc_count": 9,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "Brazil",
             "doc_count": 437,
             "Backbone": {
-                "doc_count": 18
+                "doc_count": 18,
+                "percentage": 2,
+                "divergence": -2
             },
             "No Front-End Framework": {
-                "doc_count": 163
+                "doc_count": 163,
+                "percentage": 22,
+                "divergence": -1
             },
             "Vue": {
-                "doc_count": 86
+                "doc_count": 86,
+                "percentage": 12,
+                "divergence": 1
             },
             "Ember": {
-                "doc_count": 23
+                "doc_count": 23,
+                "percentage": 3,
+                "divergence": 0
             },
             "Polymer": {
-                "doc_count": 14
+                "doc_count": 14,
+                "percentage": 2,
+                "divergence": -1
             },
             "React": {
-                "doc_count": 236
+                "doc_count": 236,
+                "percentage": 33,
+                "divergence": 0
             },
             "Angular 2": {
-                "doc_count": 78
+                "doc_count": 78,
+                "percentage": 11,
+                "divergence": 0
             },
             "Angular": {
-                "doc_count": 104
+                "doc_count": 104,
+                "percentage": 14,
+                "divergence": 3
             },
             "Aurelia": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "Poland",
             "doc_count": 420,
             "Backbone": {
-                "doc_count": 26
+                "doc_count": 26,
+                "percentage": 4,
+                "divergence": 0
             },
             "No Front-End Framework": {
-                "doc_count": 140
+                "doc_count": 140,
+                "percentage": 20,
+                "divergence": -3
             },
             "Vue": {
-                "doc_count": 74
+                "doc_count": 74,
+                "percentage": 10,
+                "divergence": -1
             },
             "Ember": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 1,
+                "divergence": -2
             },
             "Polymer": {
-                "doc_count": 20
+                "doc_count": 20,
+                "percentage": 3,
+                "divergence": 0
             },
             "React": {
-                "doc_count": 239
+                "doc_count": 239,
+                "percentage": 34,
+                "divergence": 1
             },
             "Angular 2": {
-                "doc_count": 100
+                "doc_count": 100,
+                "percentage": 14,
+                "divergence": 3
             },
             "Angular": {
-                "doc_count": 91
+                "doc_count": 91,
+                "percentage": 13,
+                "divergence": 2
             },
             "Aurelia": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "Spain",
             "doc_count": 413,
             "Backbone": {
-                "doc_count": 32
+                "doc_count": 32,
+                "percentage": 4,
+                "divergence": 0
             },
             "No Front-End Framework": {
-                "doc_count": 150
+                "doc_count": 150,
+                "percentage": 20,
+                "divergence": -3
             },
             "Vue": {
-                "doc_count": 79
+                "doc_count": 79,
+                "percentage": 11,
+                "divergence": 0
             },
             "Ember": {
-                "doc_count": 16
+                "doc_count": 16,
+                "percentage": 2,
+                "divergence": -1
             },
             "Polymer": {
-                "doc_count": 52
+                "doc_count": 52,
+                "percentage": 7,
+                "divergence": 4
             },
             "React": {
-                "doc_count": 192
+                "doc_count": 192,
+                "percentage": 25,
+                "divergence": -8
             },
             "Angular 2": {
-                "doc_count": 118
+                "doc_count": 118,
+                "percentage": 16,
+                "divergence": 5
             },
             "Angular": {
-                "doc_count": 101
+                "doc_count": 101,
+                "percentage": 14,
+                "divergence": 3
             },
             "Aurelia": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "Russia",
             "doc_count": 379,
             "Backbone": {
-                "doc_count": 14
+                "doc_count": 14,
+                "percentage": 3,
+                "divergence": -1
             },
             "No Front-End Framework": {
-                "doc_count": 128
+                "doc_count": 128,
+                "percentage": 23,
+                "divergence": 0
             },
             "Vue": {
-                "doc_count": 69
+                "doc_count": 69,
+                "percentage": 12,
+                "divergence": 1
             },
             "Ember": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 1,
+                "divergence": -2
             },
             "Polymer": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 1,
+                "divergence": -2
             },
             "React": {
-                "doc_count": 242
+                "doc_count": 242,
+                "percentage": 43,
+                "divergence": 10
             },
             "Angular 2": {
-                "doc_count": 49
+                "doc_count": 49,
+                "percentage": 9,
+                "divergence": -2
             },
             "Angular": {
-                "doc_count": 38
+                "doc_count": 38,
+                "percentage": 7,
+                "divergence": -4
             },
             "Aurelia": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "Sweden",
             "doc_count": 330,
             "Backbone": {
-                "doc_count": 14
+                "doc_count": 14,
+                "percentage": 2,
+                "divergence": -2
             },
             "No Front-End Framework": {
-                "doc_count": 158
+                "doc_count": 158,
+                "percentage": 26,
+                "divergence": 3
             },
             "Vue": {
-                "doc_count": 58
+                "doc_count": 58,
+                "percentage": 10,
+                "divergence": -1
             },
             "Ember": {
-                "doc_count": 19
+                "doc_count": 19,
+                "percentage": 3,
+                "divergence": 0
             },
             "Polymer": {
-                "doc_count": 18
+                "doc_count": 18,
+                "percentage": 3,
+                "divergence": 0
             },
             "React": {
-                "doc_count": 232
+                "doc_count": 232,
+                "percentage": 38,
+                "divergence": 5
             },
             "Angular 2": {
-                "doc_count": 50
+                "doc_count": 50,
+                "percentage": 8,
+                "divergence": -3
             },
             "Angular": {
-                "doc_count": 51
+                "doc_count": 51,
+                "percentage": 8,
+                "divergence": -3
             },
             "Aurelia": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 2,
+                "divergence": 1
             }
         },
         {
             "key": "Italy",
             "doc_count": 251,
             "Backbone": {
-                "doc_count": 17
+                "doc_count": 17,
+                "percentage": 4,
+                "divergence": 0
             },
             "No Front-End Framework": {
-                "doc_count": 85
+                "doc_count": 85,
+                "percentage": 21,
+                "divergence": -2
             },
             "Vue": {
-                "doc_count": 49
+                "doc_count": 49,
+                "percentage": 12,
+                "divergence": 1
             },
             "Ember": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 1,
+                "divergence": -2
             },
             "Polymer": {
-                "doc_count": 14
+                "doc_count": 14,
+                "percentage": 3,
+                "divergence": 0
             },
             "React": {
-                "doc_count": 102
+                "doc_count": 102,
+                "percentage": 26,
+                "divergence": -7
             },
             "Angular 2": {
-                "doc_count": 58
+                "doc_count": 58,
+                "percentage": 14,
+                "divergence": 3
             },
             "Angular": {
-                "doc_count": 76
+                "doc_count": 76,
+                "percentage": 19,
+                "divergence": 8
             },
             "Aurelia": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 0,
+                "divergence": -1
             }
         },
         {
             "key": "Ukraine",
             "doc_count": 242,
             "Backbone": {
-                "doc_count": 11
+                "doc_count": 11,
+                "percentage": 3,
+                "divergence": -1
             },
             "No Front-End Framework": {
-                "doc_count": 77
+                "doc_count": 77,
+                "percentage": 21,
+                "divergence": -2
             },
             "Vue": {
-                "doc_count": 32
+                "doc_count": 32,
+                "percentage": 9,
+                "divergence": -2
             },
             "Ember": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 1,
+                "divergence": -2
             },
             "Polymer": {
-                "doc_count": 9
+                "doc_count": 9,
+                "percentage": 2,
+                "divergence": -1
             },
             "React": {
-                "doc_count": 135
+                "doc_count": 135,
+                "percentage": 38,
+                "divergence": 5
             },
             "Angular 2": {
-                "doc_count": 55
+                "doc_count": 55,
+                "percentage": 15,
+                "divergence": 4
             },
             "Angular": {
-                "doc_count": 39
+                "doc_count": 39,
+                "percentage": 11,
+                "divergence": 0
             },
             "Aurelia": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": -1
             }
         },
         {
             "key": "Denmark",
             "doc_count": 197,
             "Backbone": {
-                "doc_count": 12
+                "doc_count": 12,
+                "percentage": 3,
+                "divergence": -1
             },
             "No Front-End Framework": {
-                "doc_count": 91
+                "doc_count": 91,
+                "percentage": 26,
+                "divergence": 3
             },
             "Vue": {
-                "doc_count": 39
+                "doc_count": 39,
+                "percentage": 11,
+                "divergence": 0
             },
             "Ember": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 2,
+                "divergence": -1
             },
             "Polymer": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 3,
+                "divergence": 0
             },
             "React": {
-                "doc_count": 103
+                "doc_count": 103,
+                "percentage": 31,
+                "divergence": -2
             },
             "Angular 2": {
-                "doc_count": 40
+                "doc_count": 40,
+                "percentage": 11,
+                "divergence": 0
             },
             "Angular": {
-                "doc_count": 46
+                "doc_count": 46,
+                "percentage": 13,
+                "divergence": 2
             },
             "Aurelia": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": -1
             }
         },
         {
             "key": "Mexico",
             "doc_count": 167,
             "Backbone": {
-                "doc_count": 14
+                "doc_count": 14,
+                "percentage": 4,
+                "divergence": 0
             },
             "No Front-End Framework": {
-                "doc_count": 67
+                "doc_count": 67,
+                "percentage": 21,
+                "divergence": -2
             },
             "Vue": {
-                "doc_count": 35
+                "doc_count": 35,
+                "percentage": 11,
+                "divergence": 0
             },
             "Ember": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 3,
+                "divergence": 0
             },
             "Polymer": {
-                "doc_count": 17
+                "doc_count": 17,
+                "percentage": 5,
+                "divergence": 2
             },
             "React": {
-                "doc_count": 85
+                "doc_count": 85,
+                "percentage": 26,
+                "divergence": -7
             },
             "Angular 2": {
-                "doc_count": 39
+                "doc_count": 39,
+                "percentage": 12,
+                "divergence": 1
             },
             "Angular": {
-                "doc_count": 55
+                "doc_count": 55,
+                "percentage": 17,
+                "divergence": 6
             },
             "Aurelia": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "Belgium",
             "doc_count": 163,
             "Backbone": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 1,
+                "divergence": -3
             },
             "No Front-End Framework": {
-                "doc_count": 62
+                "doc_count": 62,
+                "percentage": 22,
+                "divergence": -1
             },
             "Vue": {
-                "doc_count": 34
+                "doc_count": 34,
+                "percentage": 12,
+                "divergence": 1
             },
             "Ember": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -2
             },
             "Polymer": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 2,
+                "divergence": -1
             },
             "React": {
-                "doc_count": 74
+                "doc_count": 74,
+                "percentage": 25,
+                "divergence": -8
             },
             "Angular 2": {
-                "doc_count": 52
+                "doc_count": 52,
+                "percentage": 18,
+                "divergence": 7
             },
             "Angular": {
-                "doc_count": 49
+                "doc_count": 49,
+                "percentage": 17,
+                "divergence": 6
             },
             "Aurelia": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 2,
+                "divergence": 1
             }
         },
         {
             "key": "Norway",
             "doc_count": 150,
             "Backbone": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 2,
+                "divergence": -2
             },
             "No Front-End Framework": {
-                "doc_count": 64
+                "doc_count": 64,
+                "percentage": 26,
+                "divergence": 3
             },
             "Vue": {
-                "doc_count": 24
+                "doc_count": 24,
+                "percentage": 10,
+                "divergence": -1
             },
             "Ember": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 2,
+                "divergence": -1
             },
             "Polymer": {
-                "doc_count": 9
+                "doc_count": 9,
+                "percentage": 4,
+                "divergence": 1
             },
             "React": {
-                "doc_count": 93
+                "doc_count": 93,
+                "percentage": 39,
+                "divergence": 6
             },
             "Angular 2": {
-                "doc_count": 25
+                "doc_count": 25,
+                "percentage": 10,
+                "divergence": -1
             },
             "Angular": {
-                "doc_count": 15
+                "doc_count": 15,
+                "percentage": 6,
+                "divergence": -5
             },
             "Aurelia": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "Argentina",
             "doc_count": 145,
             "Backbone": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 4,
+                "divergence": 0
             },
             "No Front-End Framework": {
-                "doc_count": 43
+                "doc_count": 43,
+                "percentage": 18,
+                "divergence": -5
             },
             "Vue": {
-                "doc_count": 27
+                "doc_count": 27,
+                "percentage": 11,
+                "divergence": 0
             },
             "Ember": {
-                "doc_count": 11
+                "doc_count": 11,
+                "percentage": 5,
+                "divergence": 2
             },
             "Polymer": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 1,
+                "divergence": -2
             },
             "React": {
-                "doc_count": 73
+                "doc_count": 73,
+                "percentage": 31,
+                "divergence": -2
             },
             "Angular 2": {
-                "doc_count": 27
+                "doc_count": 27,
+                "percentage": 11,
+                "divergence": 0
             },
             "Angular": {
-                "doc_count": 41
+                "doc_count": 41,
+                "percentage": 17,
+                "divergence": 6
             },
             "Aurelia": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": 1
             }
         },
         {
             "key": "New Zealand",
             "doc_count": 143,
             "Backbone": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 3,
+                "divergence": -1
             },
             "No Front-End Framework": {
-                "doc_count": 58
+                "doc_count": 58,
+                "percentage": 22,
+                "divergence": -1
             },
             "Vue": {
-                "doc_count": 25
+                "doc_count": 25,
+                "percentage": 9,
+                "divergence": -2
             },
             "Ember": {
-                "doc_count": 11
+                "doc_count": 11,
+                "percentage": 4,
+                "divergence": 1
             },
             "Polymer": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 1,
+                "divergence": -2
             },
             "React": {
-                "doc_count": 96
+                "doc_count": 96,
+                "percentage": 36,
+                "divergence": 3
             },
             "Angular 2": {
-                "doc_count": 32
+                "doc_count": 32,
+                "percentage": 12,
+                "divergence": 1
             },
             "Angular": {
-                "doc_count": 36
+                "doc_count": 36,
+                "percentage": 13,
+                "divergence": 2
             },
             "Aurelia": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": -1
             }
         },
         {
             "key": "Switzerland",
             "doc_count": 136,
             "Backbone": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 4,
+                "divergence": 0
             },
             "No Front-End Framework": {
-                "doc_count": 52
+                "doc_count": 52,
+                "percentage": 22,
+                "divergence": -1
             },
             "Vue": {
-                "doc_count": 28
+                "doc_count": 28,
+                "percentage": 12,
+                "divergence": 1
             },
             "Ember": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 3,
+                "divergence": 0
             },
             "Polymer": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 4,
+                "divergence": 1
             },
             "React": {
-                "doc_count": 69
+                "doc_count": 69,
+                "percentage": 28,
+                "divergence": -5
             },
             "Angular 2": {
-                "doc_count": 35
+                "doc_count": 35,
+                "percentage": 15,
+                "divergence": 4
             },
             "Angular": {
-                "doc_count": 27
+                "doc_count": 27,
+                "percentage": 11,
+                "divergence": 0
             },
             "Aurelia": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "Finland",
             "doc_count": 133,
             "Backbone": {
-                "doc_count": 11
+                "doc_count": 11,
+                "percentage": 5,
+                "divergence": 1
             },
             "No Front-End Framework": {
-                "doc_count": 49
+                "doc_count": 49,
+                "percentage": 21,
+                "divergence": -2
             },
             "Vue": {
-                "doc_count": 33
+                "doc_count": 33,
+                "percentage": 14,
+                "divergence": 3
             },
             "Ember": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 2,
+                "divergence": -1
             },
             "Polymer": {
-                "doc_count": 14
+                "doc_count": 14,
+                "percentage": 6,
+                "divergence": 3
             },
             "React": {
-                "doc_count": 85
+                "doc_count": 85,
+                "percentage": 37,
+                "divergence": 4
             },
             "Angular 2": {
-                "doc_count": 19
+                "doc_count": 19,
+                "percentage": 8,
+                "divergence": -3
             },
             "Angular": {
-                "doc_count": 17
+                "doc_count": 17,
+                "percentage": 7,
+                "divergence": -4
             },
             "Aurelia": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": -1
             }
         },
         {
             "key": "Romania",
             "doc_count": 132,
             "Backbone": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 3,
+                "divergence": -1
             },
             "No Front-End Framework": {
-                "doc_count": 55
+                "doc_count": 55,
+                "percentage": 21,
+                "divergence": -2
             },
             "Vue": {
-                "doc_count": 23
+                "doc_count": 23,
+                "percentage": 9,
+                "divergence": -2
             },
             "Ember": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 3,
+                "divergence": 0
             },
             "Polymer": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 4,
+                "divergence": 1
             },
             "React": {
-                "doc_count": 70
+                "doc_count": 70,
+                "percentage": 26,
+                "divergence": -7
             },
             "Angular 2": {
-                "doc_count": 42
+                "doc_count": 42,
+                "percentage": 16,
+                "divergence": 5
             },
             "Angular": {
-                "doc_count": 41
+                "doc_count": 41,
+                "percentage": 16,
+                "divergence": 5
             },
             "Aurelia": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": 1
             }
         },
         {
             "key": "Israel",
             "doc_count": 126,
             "Backbone": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 3,
+                "divergence": -1
             },
             "No Front-End Framework": {
-                "doc_count": 48
+                "doc_count": 48,
+                "percentage": 21,
+                "divergence": -2
             },
             "Vue": {
-                "doc_count": 19
+                "doc_count": 19,
+                "percentage": 8,
+                "divergence": -3
             },
             "Ember": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": -3
             },
             "Polymer": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -2
             },
             "React": {
-                "doc_count": 75
+                "doc_count": 75,
+                "percentage": 32,
+                "divergence": -1
             },
             "Angular 2": {
-                "doc_count": 36
+                "doc_count": 36,
+                "percentage": 16,
+                "divergence": 5
             },
             "Angular": {
-                "doc_count": 41
+                "doc_count": 41,
+                "percentage": 18,
+                "divergence": 7
             },
             "Aurelia": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "Austria",
             "doc_count": 116,
             "Backbone": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": -2
             },
             "No Front-End Framework": {
-                "doc_count": 37
+                "doc_count": 37,
+                "percentage": 19,
+                "divergence": -4
             },
             "Vue": {
-                "doc_count": 22
+                "doc_count": 22,
+                "percentage": 11,
+                "divergence": 0
             },
             "Ember": {
-                "doc_count": 12
+                "doc_count": 12,
+                "percentage": 6,
+                "divergence": 3
             },
             "Polymer": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 3,
+                "divergence": 0
             },
             "React": {
-                "doc_count": 66
+                "doc_count": 66,
+                "percentage": 32,
+                "divergence": -1
             },
             "Angular 2": {
-                "doc_count": 31
+                "doc_count": 31,
+                "percentage": 16,
+                "divergence": 5
             },
             "Angular": {
-                "doc_count": 19
+                "doc_count": 19,
+                "percentage": 10,
+                "divergence": -1
             },
             "Aurelia": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "Ireland",
             "doc_count": 106,
             "Backbone": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 6,
+                "divergence": 2
             },
             "No Front-End Framework": {
-                "doc_count": 40
+                "doc_count": 40,
+                "percentage": 23,
+                "divergence": 0
             },
             "Vue": {
-                "doc_count": 14
+                "doc_count": 14,
+                "percentage": 8,
+                "divergence": -3
             },
             "Ember": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 3,
+                "divergence": 0
             },
             "Polymer": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": -1
             },
             "React": {
-                "doc_count": 52
+                "doc_count": 52,
+                "percentage": 29,
+                "divergence": -4
             },
             "Angular 2": {
-                "doc_count": 23
+                "doc_count": 23,
+                "percentage": 13,
+                "divergence": 2
             },
             "Angular": {
-                "doc_count": 25
+                "doc_count": 25,
+                "percentage": 14,
+                "divergence": 3
             },
             "Aurelia": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": 1
             }
         },
         {
             "key": "Portugal",
             "doc_count": 105,
             "Backbone": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 5,
+                "divergence": 1
             },
             "No Front-End Framework": {
-                "doc_count": 33
+                "doc_count": 33,
+                "percentage": 17,
+                "divergence": -6
             },
             "Vue": {
-                "doc_count": 22
+                "doc_count": 22,
+                "percentage": 11,
+                "divergence": 0
             },
             "Ember": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -2
             },
             "Polymer": {
-                "doc_count": 9
+                "doc_count": 9,
+                "percentage": 5,
+                "divergence": 2
             },
             "React": {
-                "doc_count": 55
+                "doc_count": 55,
+                "percentage": 29,
+                "divergence": -4
             },
             "Angular 2": {
-                "doc_count": 27
+                "doc_count": 27,
+                "percentage": 14,
+                "divergence": 3
             },
             "Angular": {
-                "doc_count": 33
+                "doc_count": 33,
+                "percentage": 17,
+                "divergence": 6
             },
             "Aurelia": {
-                "doc_count": 1
+                "doc_count": 1,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "Belarus",
             "doc_count": 104,
             "Backbone": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": -2
             },
             "No Front-End Framework": {
-                "doc_count": 29
+                "doc_count": 29,
+                "percentage": 16,
+                "divergence": -7
             },
             "Vue": {
-                "doc_count": 12
+                "doc_count": 12,
+                "percentage": 7,
+                "divergence": -4
             },
             "Ember": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": -1
             },
             "Polymer": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": -1
             },
             "React": {
-                "doc_count": 66
+                "doc_count": 66,
+                "percentage": 37,
+                "divergence": 4
             },
             "Angular 2": {
-                "doc_count": 33
+                "doc_count": 33,
+                "percentage": 19,
+                "divergence": 8
             },
             "Angular": {
-                "doc_count": 24
+                "doc_count": 24,
+                "percentage": 14,
+                "divergence": 3
             },
             "Aurelia": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": 0
             }
         },
         {
             "key": "Colombia",
             "doc_count": 97,
             "Backbone": {
-                "doc_count": 9
+                "doc_count": 9,
+                "percentage": 5,
+                "divergence": 1
             },
             "No Front-End Framework": {
-                "doc_count": 30
+                "doc_count": 30,
+                "percentage": 17,
+                "divergence": -6
             },
             "Vue": {
-                "doc_count": 22
+                "doc_count": 22,
+                "percentage": 12,
+                "divergence": 1
             },
             "Ember": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": -1
             },
             "Polymer": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -2
             },
             "React": {
-                "doc_count": 51
+                "doc_count": 51,
+                "percentage": 28,
+                "divergence": -5
             },
             "Angular 2": {
-                "doc_count": 29
+                "doc_count": 29,
+                "percentage": 16,
+                "divergence": 5
             },
             "Angular": {
-                "doc_count": 31
+                "doc_count": 31,
+                "percentage": 17,
+                "divergence": 6
             },
             "Aurelia": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": 1
             }
         },
         {
             "key": "China",
             "doc_count": 96,
             "Backbone": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 3,
+                "divergence": -1
             },
             "No Front-End Framework": {
-                "doc_count": 27
+                "doc_count": 27,
+                "percentage": 15,
+                "divergence": -8
             },
             "Vue": {
-                "doc_count": 50
+                "doc_count": 50,
+                "percentage": 28,
+                "divergence": 17
             },
             "Ember": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -2
             },
             "Polymer": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": -1
             },
             "React": {
-                "doc_count": 63
+                "doc_count": 63,
+                "percentage": 35,
+                "divergence": 2
             },
             "Angular 2": {
-                "doc_count": 14
+                "doc_count": 14,
+                "percentage": 8,
+                "divergence": -3
             },
             "Angular": {
-                "doc_count": 14
+                "doc_count": 14,
+                "percentage": 8,
+                "divergence": -3
             },
             "Aurelia": {
-                "doc_count": 0
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": -1
             }
         }
     ],

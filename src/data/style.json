@@ -1044,800 +1044,1248 @@
             "key": "undefined",
             "doc_count": 5839,
             "SASS/SCSS": {
-                "doc_count": 4377
+                "doc_count": 4377,
+                "percentage": 27,
+                "divergence": 0
             },
             "CSS-in-JS": {
-                "doc_count": 1569
+                "doc_count": 1569,
+                "percentage": 9,
+                "divergence": 0
             },
             "Plain CSS": {
-                "doc_count": 4128
+                "doc_count": 4128,
+                "percentage": 24,
+                "divergence": 0
             },
             "Bootstrap": {
-                "doc_count": 3395
+                "doc_count": 3395,
+                "percentage": 20,
+                "divergence": 0
             },
             "Foundation": {
-                "doc_count": 1055
+                "doc_count": 1055,
+                "percentage": 6,
+                "divergence": 0
             },
             "LESS": {
-                "doc_count": 1754
+                "doc_count": 1754,
+                "percentage": 10,
+                "divergence": -1
             },
             "Stylus": {
-                "doc_count": 628
+                "doc_count": 628,
+                "percentage": 4,
+                "divergence": 1
             }
         },
         {
             "key": "United States",
             "doc_count": 5719,
             "SASS/SCSS": {
-                "doc_count": 4436
+                "doc_count": 4436,
+                "percentage": 25,
+                "divergence": -2
             },
             "CSS-in-JS": {
-                "doc_count": 1672
+                "doc_count": 1672,
+                "percentage": 10,
+                "divergence": 1
             },
             "Plain CSS": {
-                "doc_count": 4299
+                "doc_count": 4299,
+                "percentage": 24,
+                "divergence": 0
             },
             "Bootstrap": {
-                "doc_count": 3544
+                "doc_count": 3544,
+                "percentage": 20,
+                "divergence": 0
             },
             "Foundation": {
-                "doc_count": 1144
+                "doc_count": 1144,
+                "percentage": 7,
+                "divergence": 1
             },
             "LESS": {
-                "doc_count": 1894
+                "doc_count": 1894,
+                "percentage": 11,
+                "divergence": 0
             },
             "Stylus": {
-                "doc_count": 549
+                "doc_count": 549,
+                "percentage": 3,
+                "divergence": 0
             }
         },
         {
             "key": "United Kingdom",
             "doc_count": 1409,
             "SASS/SCSS": {
-                "doc_count": 1160
+                "doc_count": 1160,
+                "percentage": 29,
+                "divergence": 2
             },
             "CSS-in-JS": {
-                "doc_count": 408
+                "doc_count": 408,
+                "percentage": 10,
+                "divergence": 1
             },
             "Plain CSS": {
-                "doc_count": 1025
+                "doc_count": 1025,
+                "percentage": 25,
+                "divergence": 1
             },
             "Bootstrap": {
-                "doc_count": 763
+                "doc_count": 763,
+                "percentage": 18,
+                "divergence": -2
             },
             "Foundation": {
-                "doc_count": 267
+                "doc_count": 267,
+                "percentage": 6,
+                "divergence": 0
             },
             "LESS": {
-                "doc_count": 416
+                "doc_count": 416,
+                "percentage": 10,
+                "divergence": -1
             },
             "Stylus": {
-                "doc_count": 100
+                "doc_count": 100,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Germany",
             "doc_count": 879,
             "SASS/SCSS": {
-                "doc_count": 656
+                "doc_count": 656,
+                "percentage": 27,
+                "divergence": 0
             },
             "CSS-in-JS": {
-                "doc_count": 233
+                "doc_count": 233,
+                "percentage": 9,
+                "divergence": 0
             },
             "Plain CSS": {
-                "doc_count": 565
+                "doc_count": 565,
+                "percentage": 23,
+                "divergence": -1
             },
             "Bootstrap": {
-                "doc_count": 485
+                "doc_count": 485,
+                "percentage": 20,
+                "divergence": 0
             },
             "Foundation": {
-                "doc_count": 152
+                "doc_count": 152,
+                "percentage": 6,
+                "divergence": 0
             },
             "LESS": {
-                "doc_count": 288
+                "doc_count": 288,
+                "percentage": 12,
+                "divergence": 1
             },
             "Stylus": {
-                "doc_count": 80
+                "doc_count": 80,
+                "percentage": 3,
+                "divergence": 0
             }
         },
         {
             "key": "Canada",
             "doc_count": 771,
             "SASS/SCSS": {
-                "doc_count": 607
+                "doc_count": 607,
+                "percentage": 26,
+                "divergence": -1
             },
             "CSS-in-JS": {
-                "doc_count": 188
+                "doc_count": 188,
+                "percentage": 8,
+                "divergence": -1
             },
             "Plain CSS": {
-                "doc_count": 594
+                "doc_count": 594,
+                "percentage": 25,
+                "divergence": 1
             },
             "Bootstrap": {
-                "doc_count": 453
+                "doc_count": 453,
+                "percentage": 19,
+                "divergence": -1
             },
             "Foundation": {
-                "doc_count": 163
+                "doc_count": 163,
+                "percentage": 7,
+                "divergence": 1
             },
             "LESS": {
-                "doc_count": 251
+                "doc_count": 251,
+                "percentage": 11,
+                "divergence": 0
             },
             "Stylus": {
-                "doc_count": 82
+                "doc_count": 82,
+                "percentage": 4,
+                "divergence": 1
             }
         },
         {
             "key": "France",
             "doc_count": 695,
             "SASS/SCSS": {
-                "doc_count": 513
+                "doc_count": 513,
+                "percentage": 27,
+                "divergence": 0
             },
             "CSS-in-JS": {
-                "doc_count": 186
+                "doc_count": 186,
+                "percentage": 9,
+                "divergence": 0
             },
             "Plain CSS": {
-                "doc_count": 476
+                "doc_count": 476,
+                "percentage": 24,
+                "divergence": 0
             },
             "Bootstrap": {
-                "doc_count": 400
+                "doc_count": 400,
+                "percentage": 20,
+                "divergence": 0
             },
             "Foundation": {
-                "doc_count": 99
+                "doc_count": 99,
+                "percentage": 5,
+                "divergence": -1
             },
             "LESS": {
-                "doc_count": 224
+                "doc_count": 224,
+                "percentage": 11,
+                "divergence": 0
             },
             "Stylus": {
-                "doc_count": 85
+                "doc_count": 85,
+                "percentage": 4,
+                "divergence": 1
             }
         },
         {
             "key": "India",
             "doc_count": 500,
             "SASS/SCSS": {
-                "doc_count": 325
+                "doc_count": 325,
+                "percentage": 22,
+                "divergence": -5
             },
             "CSS-in-JS": {
-                "doc_count": 142
+                "doc_count": 142,
+                "percentage": 9,
+                "divergence": 0
             },
             "Plain CSS": {
-                "doc_count": 406
+                "doc_count": 406,
+                "percentage": 27,
+                "divergence": 3
             },
             "Bootstrap": {
-                "doc_count": 380
+                "doc_count": 380,
+                "percentage": 25,
+                "divergence": 5
             },
             "Foundation": {
-                "doc_count": 76
+                "doc_count": 76,
+                "percentage": 5,
+                "divergence": -1
             },
             "LESS": {
-                "doc_count": 145
+                "doc_count": 145,
+                "percentage": 10,
+                "divergence": -1
             },
             "Stylus": {
-                "doc_count": 35
+                "doc_count": 35,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Australia",
             "doc_count": 492,
             "SASS/SCSS": {
-                "doc_count": 363
+                "doc_count": 363,
+                "percentage": 26,
+                "divergence": -1
             },
             "CSS-in-JS": {
-                "doc_count": 169
+                "doc_count": 169,
+                "percentage": 12,
+                "divergence": 3
             },
             "Plain CSS": {
-                "doc_count": 331
+                "doc_count": 331,
+                "percentage": 23,
+                "divergence": -1
             },
             "Bootstrap": {
-                "doc_count": 279
+                "doc_count": 279,
+                "percentage": 20,
+                "divergence": 0
             },
             "Foundation": {
-                "doc_count": 76
+                "doc_count": 76,
+                "percentage": 5,
+                "divergence": -1
             },
             "LESS": {
-                "doc_count": 155
+                "doc_count": 155,
+                "percentage": 11,
+                "divergence": 0
             },
             "Stylus": {
-                "doc_count": 36
+                "doc_count": 36,
+                "percentage": 3,
+                "divergence": 0
             }
         },
         {
             "key": "Netherlands",
             "doc_count": 449,
             "SASS/SCSS": {
-                "doc_count": 352
+                "doc_count": 352,
+                "percentage": 28,
+                "divergence": 1
             },
             "CSS-in-JS": {
-                "doc_count": 107
+                "doc_count": 107,
+                "percentage": 9,
+                "divergence": 0
             },
             "Plain CSS": {
-                "doc_count": 308
+                "doc_count": 308,
+                "percentage": 25,
+                "divergence": 1
             },
             "Bootstrap": {
-                "doc_count": 238
+                "doc_count": 238,
+                "percentage": 19,
+                "divergence": -1
             },
             "Foundation": {
-                "doc_count": 81
+                "doc_count": 81,
+                "percentage": 7,
+                "divergence": 1
             },
             "LESS": {
-                "doc_count": 123
+                "doc_count": 123,
+                "percentage": 10,
+                "divergence": -1
             },
             "Stylus": {
-                "doc_count": 20
+                "doc_count": 20,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Brazil",
             "doc_count": 437,
             "SASS/SCSS": {
-                "doc_count": 306
+                "doc_count": 306,
+                "percentage": 24,
+                "divergence": -3
             },
             "CSS-in-JS": {
-                "doc_count": 118
+                "doc_count": 118,
+                "percentage": 9,
+                "divergence": 0
             },
             "Plain CSS": {
-                "doc_count": 295
+                "doc_count": 295,
+                "percentage": 22,
+                "divergence": -2
             },
             "Bootstrap": {
-                "doc_count": 311
+                "doc_count": 311,
+                "percentage": 23,
+                "divergence": 3
             },
             "Foundation": {
-                "doc_count": 99
+                "doc_count": 99,
+                "percentage": 7,
+                "divergence": 1
             },
             "LESS": {
-                "doc_count": 126
+                "doc_count": 126,
+                "percentage": 9,
+                "divergence": -2
             },
             "Stylus": {
-                "doc_count": 74
+                "doc_count": 74,
+                "percentage": 6,
+                "divergence": 3
             }
         },
         {
             "key": "Poland",
             "doc_count": 420,
             "SASS/SCSS": {
-                "doc_count": 337
+                "doc_count": 337,
+                "percentage": 30,
+                "divergence": 3
             },
             "CSS-in-JS": {
-                "doc_count": 107
+                "doc_count": 107,
+                "percentage": 9,
+                "divergence": 0
             },
             "Plain CSS": {
-                "doc_count": 250
+                "doc_count": 250,
+                "percentage": 22,
+                "divergence": -2
             },
             "Bootstrap": {
-                "doc_count": 244
+                "doc_count": 244,
+                "percentage": 21,
+                "divergence": 1
             },
             "Foundation": {
-                "doc_count": 60
+                "doc_count": 60,
+                "percentage": 5,
+                "divergence": -1
             },
             "LESS": {
-                "doc_count": 121
+                "doc_count": 121,
+                "percentage": 11,
+                "divergence": 0
             },
             "Stylus": {
-                "doc_count": 26
+                "doc_count": 26,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Spain",
             "doc_count": 413,
             "SASS/SCSS": {
-                "doc_count": 320
+                "doc_count": 320,
+                "percentage": 27,
+                "divergence": 0
             },
             "CSS-in-JS": {
-                "doc_count": 91
+                "doc_count": 91,
+                "percentage": 8,
+                "divergence": -1
             },
             "Plain CSS": {
-                "doc_count": 272
+                "doc_count": 272,
+                "percentage": 24,
+                "divergence": 0
             },
             "Bootstrap": {
-                "doc_count": 240
+                "doc_count": 240,
+                "percentage": 21,
+                "divergence": 1
             },
             "Foundation": {
-                "doc_count": 64
+                "doc_count": 64,
+                "percentage": 6,
+                "divergence": 0
             },
             "LESS": {
-                "doc_count": 113
+                "doc_count": 113,
+                "percentage": 10,
+                "divergence": -1
             },
             "Stylus": {
-                "doc_count": 40
+                "doc_count": 40,
+                "percentage": 4,
+                "divergence": 1
             }
         },
         {
             "key": "Russia",
             "doc_count": 379,
             "SASS/SCSS": {
-                "doc_count": 229
+                "doc_count": 229,
+                "percentage": 25,
+                "divergence": -2
             },
             "CSS-in-JS": {
-                "doc_count": 96
+                "doc_count": 96,
+                "percentage": 10,
+                "divergence": 1
             },
             "Plain CSS": {
-                "doc_count": 245
+                "doc_count": 245,
+                "percentage": 27,
+                "divergence": 3
             },
             "Bootstrap": {
-                "doc_count": 181
+                "doc_count": 181,
+                "percentage": 19,
+                "divergence": -1
             },
             "Foundation": {
-                "doc_count": 28
+                "doc_count": 28,
+                "percentage": 3,
+                "divergence": -3
             },
             "LESS": {
-                "doc_count": 96
+                "doc_count": 96,
+                "percentage": 10,
+                "divergence": -1
             },
             "Stylus": {
-                "doc_count": 58
+                "doc_count": 58,
+                "percentage": 6,
+                "divergence": 3
             }
         },
         {
             "key": "Sweden",
             "doc_count": 330,
             "SASS/SCSS": {
-                "doc_count": 248
+                "doc_count": 248,
+                "percentage": 27,
+                "divergence": 0
             },
             "CSS-in-JS": {
-                "doc_count": 111
+                "doc_count": 111,
+                "percentage": 12,
+                "divergence": 3
             },
             "Plain CSS": {
-                "doc_count": 223
+                "doc_count": 223,
+                "percentage": 24,
+                "divergence": 0
             },
             "Bootstrap": {
-                "doc_count": 157
+                "doc_count": 157,
+                "percentage": 17,
+                "divergence": -3
             },
             "Foundation": {
-                "doc_count": 41
+                "doc_count": 41,
+                "percentage": 4,
+                "divergence": -2
             },
             "LESS": {
-                "doc_count": 110
+                "doc_count": 110,
+                "percentage": 12,
+                "divergence": 1
             },
             "Stylus": {
-                "doc_count": 36
+                "doc_count": 36,
+                "percentage": 4,
+                "divergence": 1
             }
         },
         {
             "key": "Italy",
             "doc_count": 251,
             "SASS/SCSS": {
-                "doc_count": 175
+                "doc_count": 175,
+                "percentage": 25,
+                "divergence": -2
             },
             "CSS-in-JS": {
-                "doc_count": 52
+                "doc_count": 52,
+                "percentage": 8,
+                "divergence": -1
             },
             "Plain CSS": {
-                "doc_count": 171
+                "doc_count": 171,
+                "percentage": 25,
+                "divergence": 1
             },
             "Bootstrap": {
-                "doc_count": 154
+                "doc_count": 154,
+                "percentage": 23,
+                "divergence": 3
             },
             "Foundation": {
-                "doc_count": 38
+                "doc_count": 38,
+                "percentage": 6,
+                "divergence": 0
             },
             "LESS": {
-                "doc_count": 77
+                "doc_count": 77,
+                "percentage": 11,
+                "divergence": 0
             },
             "Stylus": {
-                "doc_count": 15
+                "doc_count": 15,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Ukraine",
             "doc_count": 242,
             "SASS/SCSS": {
-                "doc_count": 176
+                "doc_count": 176,
+                "percentage": 27,
+                "divergence": 0
             },
             "CSS-in-JS": {
-                "doc_count": 58
+                "doc_count": 58,
+                "percentage": 9,
+                "divergence": 0
             },
             "Plain CSS": {
-                "doc_count": 157
+                "doc_count": 157,
+                "percentage": 24,
+                "divergence": 0
             },
             "Bootstrap": {
-                "doc_count": 141
+                "doc_count": 141,
+                "percentage": 21,
+                "divergence": 1
             },
             "Foundation": {
-                "doc_count": 30
+                "doc_count": 30,
+                "percentage": 4,
+                "divergence": -2
             },
             "LESS": {
-                "doc_count": 70
+                "doc_count": 70,
+                "percentage": 10,
+                "divergence": -1
             },
             "Stylus": {
-                "doc_count": 36
+                "doc_count": 36,
+                "percentage": 5,
+                "divergence": 2
             }
         },
         {
             "key": "Denmark",
             "doc_count": 197,
             "SASS/SCSS": {
-                "doc_count": 157
+                "doc_count": 157,
+                "percentage": 28,
+                "divergence": 1
             },
             "CSS-in-JS": {
-                "doc_count": 56
+                "doc_count": 56,
+                "percentage": 10,
+                "divergence": 1
             },
             "Plain CSS": {
-                "doc_count": 151
+                "doc_count": 151,
+                "percentage": 26,
+                "divergence": 2
             },
             "Bootstrap": {
-                "doc_count": 96
+                "doc_count": 96,
+                "percentage": 17,
+                "divergence": -3
             },
             "Foundation": {
-                "doc_count": 41
+                "doc_count": 41,
+                "percentage": 7,
+                "divergence": 1
             },
             "LESS": {
-                "doc_count": 58
+                "doc_count": 58,
+                "percentage": 10,
+                "divergence": -1
             },
             "Stylus": {
-                "doc_count": 12
+                "doc_count": 12,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Mexico",
             "doc_count": 167,
             "SASS/SCSS": {
-                "doc_count": 119
+                "doc_count": 119,
+                "percentage": 22,
+                "divergence": -5
             },
             "CSS-in-JS": {
-                "doc_count": 44
+                "doc_count": 44,
+                "percentage": 8,
+                "divergence": -1
             },
             "Plain CSS": {
-                "doc_count": 130
+                "doc_count": 130,
+                "percentage": 25,
+                "divergence": 1
             },
             "Bootstrap": {
-                "doc_count": 120
+                "doc_count": 120,
+                "percentage": 23,
+                "divergence": 3
             },
             "Foundation": {
-                "doc_count": 33
+                "doc_count": 33,
+                "percentage": 6,
+                "divergence": 0
             },
             "LESS": {
-                "doc_count": 58
+                "doc_count": 58,
+                "percentage": 11,
+                "divergence": 0
             },
             "Stylus": {
-                "doc_count": 29
+                "doc_count": 29,
+                "percentage": 5,
+                "divergence": 2
             }
         },
         {
             "key": "Belgium",
             "doc_count": 163,
             "SASS/SCSS": {
-                "doc_count": 130
+                "doc_count": 130,
+                "percentage": 29,
+                "divergence": 2
             },
             "CSS-in-JS": {
-                "doc_count": 41
+                "doc_count": 41,
+                "percentage": 9,
+                "divergence": 0
             },
             "Plain CSS": {
-                "doc_count": 106
+                "doc_count": 106,
+                "percentage": 24,
+                "divergence": 0
             },
             "Bootstrap": {
-                "doc_count": 92
+                "doc_count": 92,
+                "percentage": 21,
+                "divergence": 1
             },
             "Foundation": {
-                "doc_count": 19
+                "doc_count": 19,
+                "percentage": 4,
+                "divergence": -2
             },
             "LESS": {
-                "doc_count": 44
+                "doc_count": 44,
+                "percentage": 10,
+                "divergence": -1
             },
             "Stylus": {
-                "doc_count": 13
+                "doc_count": 13,
+                "percentage": 3,
+                "divergence": 0
             }
         },
         {
             "key": "Norway",
             "doc_count": 150,
             "SASS/SCSS": {
-                "doc_count": 114
+                "doc_count": 114,
+                "percentage": 27,
+                "divergence": 0
             },
             "CSS-in-JS": {
-                "doc_count": 43
+                "doc_count": 43,
+                "percentage": 10,
+                "divergence": 1
             },
             "Plain CSS": {
-                "doc_count": 98
+                "doc_count": 98,
+                "percentage": 24,
+                "divergence": 0
             },
             "Bootstrap": {
-                "doc_count": 73
+                "doc_count": 73,
+                "percentage": 18,
+                "divergence": -2
             },
             "Foundation": {
-                "doc_count": 20
+                "doc_count": 20,
+                "percentage": 5,
+                "divergence": -1
             },
             "LESS": {
-                "doc_count": 56
+                "doc_count": 56,
+                "percentage": 13,
+                "divergence": 2
             },
             "Stylus": {
-                "doc_count": 13
+                "doc_count": 13,
+                "percentage": 3,
+                "divergence": 0
             }
         },
         {
             "key": "Argentina",
             "doc_count": 145,
             "SASS/SCSS": {
-                "doc_count": 109
+                "doc_count": 109,
+                "percentage": 24,
+                "divergence": -3
             },
             "CSS-in-JS": {
-                "doc_count": 33
+                "doc_count": 33,
+                "percentage": 8,
+                "divergence": -1
             },
             "Plain CSS": {
-                "doc_count": 102
+                "doc_count": 102,
+                "percentage": 24,
+                "divergence": 0
             },
             "Bootstrap": {
-                "doc_count": 99
+                "doc_count": 99,
+                "percentage": 23,
+                "divergence": 3
             },
             "Foundation": {
-                "doc_count": 21
+                "doc_count": 21,
+                "percentage": 5,
+                "divergence": -1
             },
             "LESS": {
-                "doc_count": 47
+                "doc_count": 47,
+                "percentage": 11,
+                "divergence": 0
             },
             "Stylus": {
-                "doc_count": 22
+                "doc_count": 22,
+                "percentage": 5,
+                "divergence": 2
             }
         },
         {
             "key": "New Zealand",
             "doc_count": 143,
             "SASS/SCSS": {
-                "doc_count": 115
+                "doc_count": 115,
+                "percentage": 28,
+                "divergence": 1
             },
             "CSS-in-JS": {
-                "doc_count": 37
+                "doc_count": 37,
+                "percentage": 9,
+                "divergence": 0
             },
             "Plain CSS": {
-                "doc_count": 105
+                "doc_count": 105,
+                "percentage": 26,
+                "divergence": 2
             },
             "Bootstrap": {
-                "doc_count": 80
+                "doc_count": 80,
+                "percentage": 20,
+                "divergence": 0
             },
             "Foundation": {
-                "doc_count": 22
+                "doc_count": 22,
+                "percentage": 5,
+                "divergence": -1
             },
             "LESS": {
-                "doc_count": 37
+                "doc_count": 37,
+                "percentage": 9,
+                "divergence": -2
             },
             "Stylus": {
-                "doc_count": 13
+                "doc_count": 13,
+                "percentage": 3,
+                "divergence": 0
             }
         },
         {
             "key": "Switzerland",
             "doc_count": 136,
             "SASS/SCSS": {
-                "doc_count": 100
+                "doc_count": 100,
+                "percentage": 26,
+                "divergence": -1
             },
             "CSS-in-JS": {
-                "doc_count": 35
+                "doc_count": 35,
+                "percentage": 10,
+                "divergence": 1
             },
             "Plain CSS": {
-                "doc_count": 86
+                "doc_count": 86,
+                "percentage": 24,
+                "divergence": 0
             },
             "Bootstrap": {
-                "doc_count": 82
+                "doc_count": 82,
+                "percentage": 23,
+                "divergence": 3
             },
             "Foundation": {
-                "doc_count": 17
+                "doc_count": 17,
+                "percentage": 5,
+                "divergence": -1
             },
             "LESS": {
-                "doc_count": 32
+                "doc_count": 32,
+                "percentage": 9,
+                "divergence": -2
             },
             "Stylus": {
-                "doc_count": 12
+                "doc_count": 12,
+                "percentage": 3,
+                "divergence": 0
             }
         },
         {
             "key": "Finland",
             "doc_count": 133,
             "SASS/SCSS": {
-                "doc_count": 102
+                "doc_count": 102,
+                "percentage": 26,
+                "divergence": -1
             },
             "CSS-in-JS": {
-                "doc_count": 37
+                "doc_count": 37,
+                "percentage": 9,
+                "divergence": 0
             },
             "Plain CSS": {
-                "doc_count": 85
+                "doc_count": 85,
+                "percentage": 22,
+                "divergence": -2
             },
             "Bootstrap": {
-                "doc_count": 80
+                "doc_count": 80,
+                "percentage": 21,
+                "divergence": 1
             },
             "Foundation": {
-                "doc_count": 30
+                "doc_count": 30,
+                "percentage": 8,
+                "divergence": 2
             },
             "LESS": {
-                "doc_count": 39
+                "doc_count": 39,
+                "percentage": 10,
+                "divergence": -1
             },
             "Stylus": {
-                "doc_count": 17
+                "doc_count": 17,
+                "percentage": 4,
+                "divergence": 1
             }
         },
         {
             "key": "Romania",
             "doc_count": 132,
             "SASS/SCSS": {
-                "doc_count": 105
+                "doc_count": 105,
+                "percentage": 28,
+                "divergence": 1
             },
             "CSS-in-JS": {
-                "doc_count": 30
+                "doc_count": 30,
+                "percentage": 7,
+                "divergence": -2
             },
             "Plain CSS": {
-                "doc_count": 91
+                "doc_count": 91,
+                "percentage": 22,
+                "divergence": -2
             },
             "Bootstrap": {
-                "doc_count": 91
+                "doc_count": 91,
+                "percentage": 22,
+                "divergence": 2
             },
             "Foundation": {
-                "doc_count": 22
+                "doc_count": 22,
+                "percentage": 5,
+                "divergence": -1
             },
             "LESS": {
-                "doc_count": 62
+                "doc_count": 62,
+                "percentage": 15,
+                "divergence": 4
             },
             "Stylus": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 1,
+                "divergence": -2
             }
         },
         {
             "key": "Israel",
             "doc_count": 126,
             "SASS/SCSS": {
-                "doc_count": 92
+                "doc_count": 92,
+                "percentage": 26,
+                "divergence": -1
             },
             "CSS-in-JS": {
-                "doc_count": 25
+                "doc_count": 25,
+                "percentage": 7,
+                "divergence": -2
             },
             "Plain CSS": {
-                "doc_count": 92
+                "doc_count": 92,
+                "percentage": 25,
+                "divergence": 1
             },
             "Bootstrap": {
-                "doc_count": 78
+                "doc_count": 78,
+                "percentage": 22,
+                "divergence": 2
             },
             "Foundation": {
-                "doc_count": 20
+                "doc_count": 20,
+                "percentage": 6,
+                "divergence": 0
             },
             "LESS": {
-                "doc_count": 42
+                "doc_count": 42,
+                "percentage": 12,
+                "divergence": 1
             },
             "Stylus": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Austria",
             "doc_count": 116,
             "SASS/SCSS": {
-                "doc_count": 98
+                "doc_count": 98,
+                "percentage": 31,
+                "divergence": 4
             },
             "CSS-in-JS": {
-                "doc_count": 23
+                "doc_count": 23,
+                "percentage": 7,
+                "divergence": -2
             },
             "Plain CSS": {
-                "doc_count": 72
+                "doc_count": 72,
+                "percentage": 23,
+                "divergence": -1
             },
             "Bootstrap": {
-                "doc_count": 68
+                "doc_count": 68,
+                "percentage": 22,
+                "divergence": 2
             },
             "Foundation": {
-                "doc_count": 15
+                "doc_count": 15,
+                "percentage": 5,
+                "divergence": -1
             },
             "LESS": {
-                "doc_count": 31
+                "doc_count": 31,
+                "percentage": 10,
+                "divergence": -1
             },
             "Stylus": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Ireland",
             "doc_count": 106,
             "SASS/SCSS": {
-                "doc_count": 81
+                "doc_count": 81,
+                "percentage": 25,
+                "divergence": -2
             },
             "CSS-in-JS": {
-                "doc_count": 26
+                "doc_count": 26,
+                "percentage": 8,
+                "divergence": -1
             },
             "Plain CSS": {
-                "doc_count": 76
+                "doc_count": 76,
+                "percentage": 24,
+                "divergence": 0
             },
             "Bootstrap": {
-                "doc_count": 66
+                "doc_count": 66,
+                "percentage": 21,
+                "divergence": 1
             },
             "Foundation": {
-                "doc_count": 22
+                "doc_count": 22,
+                "percentage": 7,
+                "divergence": 1
             },
             "LESS": {
-                "doc_count": 41
+                "doc_count": 41,
+                "percentage": 13,
+                "divergence": 2
             },
             "Stylus": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 2,
+                "divergence": -1
             }
         },
         {
             "key": "Portugal",
             "doc_count": 105,
             "SASS/SCSS": {
-                "doc_count": 79
+                "doc_count": 79,
+                "percentage": 25,
+                "divergence": -2
             },
             "CSS-in-JS": {
-                "doc_count": 32
+                "doc_count": 32,
+                "percentage": 10,
+                "divergence": 1
             },
             "Plain CSS": {
-                "doc_count": 74
+                "doc_count": 74,
+                "percentage": 24,
+                "divergence": 0
             },
             "Bootstrap": {
-                "doc_count": 66
+                "doc_count": 66,
+                "percentage": 21,
+                "divergence": 1
             },
             "Foundation": {
-                "doc_count": 21
+                "doc_count": 21,
+                "percentage": 7,
+                "divergence": 1
             },
             "LESS": {
-                "doc_count": 32
+                "doc_count": 32,
+                "percentage": 10,
+                "divergence": -1
             },
             "Stylus": {
-                "doc_count": 9
+                "doc_count": 9,
+                "percentage": 3,
+                "divergence": 0
             }
         },
         {
             "key": "Belarus",
             "doc_count": 104,
             "SASS/SCSS": {
-                "doc_count": 71
+                "doc_count": 71,
+                "percentage": 26,
+                "divergence": -1
             },
             "CSS-in-JS": {
-                "doc_count": 28
+                "doc_count": 28,
+                "percentage": 10,
+                "divergence": 1
             },
             "Plain CSS": {
-                "doc_count": 64
+                "doc_count": 64,
+                "percentage": 23,
+                "divergence": -1
             },
             "Bootstrap": {
-                "doc_count": 51
+                "doc_count": 51,
+                "percentage": 19,
+                "divergence": -1
             },
             "Foundation": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 4,
+                "divergence": -2
             },
             "LESS": {
-                "doc_count": 30
+                "doc_count": 30,
+                "percentage": 11,
+                "divergence": 0
             },
             "Stylus": {
-                "doc_count": 19
+                "doc_count": 19,
+                "percentage": 7,
+                "divergence": 4
             }
         },
         {
             "key": "Colombia",
             "doc_count": 97,
             "SASS/SCSS": {
-                "doc_count": 77
+                "doc_count": 77,
+                "percentage": 23,
+                "divergence": -4
             },
             "CSS-in-JS": {
-                "doc_count": 30
+                "doc_count": 30,
+                "percentage": 9,
+                "divergence": 0
             },
             "Plain CSS": {
-                "doc_count": 61
+                "doc_count": 61,
+                "percentage": 19,
+                "divergence": -5
             },
             "Bootstrap": {
-                "doc_count": 64
+                "doc_count": 64,
+                "percentage": 20,
+                "divergence": 0
             },
             "Foundation": {
-                "doc_count": 34
+                "doc_count": 34,
+                "percentage": 11,
+                "divergence": 5
             },
             "LESS": {
-                "doc_count": 35
+                "doc_count": 35,
+                "percentage": 11,
+                "divergence": 0
             },
             "Stylus": {
-                "doc_count": 21
+                "doc_count": 21,
+                "percentage": 7,
+                "divergence": 4
             }
         },
         {
             "key": "China",
             "doc_count": 96,
             "SASS/SCSS": {
-                "doc_count": 58
+                "doc_count": 58,
+                "percentage": 21,
+                "divergence": -6
             },
             "CSS-in-JS": {
-                "doc_count": 31
+                "doc_count": 31,
+                "percentage": 11,
+                "divergence": 2
             },
             "Plain CSS": {
-                "doc_count": 66
+                "doc_count": 66,
+                "percentage": 24,
+                "divergence": 0
             },
             "Bootstrap": {
-                "doc_count": 57
+                "doc_count": 57,
+                "percentage": 21,
+                "divergence": 1
             },
             "Foundation": {
-                "doc_count": 9
+                "doc_count": 9,
+                "percentage": 3,
+                "divergence": -3
             },
             "LESS": {
-                "doc_count": 43
+                "doc_count": 43,
+                "percentage": 16,
+                "divergence": 5
             },
             "Stylus": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 4,
+                "divergence": 1
             }
         }
     ],

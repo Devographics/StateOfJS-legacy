@@ -908,704 +908,1088 @@
             "key": "undefined",
             "doc_count": 5839,
             "Tape": {
-                "doc_count": 427
+                "doc_count": 427,
+                "percentage": 5,
+                "divergence": 0
             },
             "Enzyme": {
-                "doc_count": 1092
+                "doc_count": 1092,
+                "percentage": 13,
+                "divergence": -1
             },
             "Jasmine": {
-                "doc_count": 2132
+                "doc_count": 2132,
+                "percentage": 26,
+                "divergence": -2
             },
             "Mocha": {
-                "doc_count": 2632
+                "doc_count": 2632,
+                "percentage": 34,
+                "divergence": 3
             },
             "Ava": {
-                "doc_count": 358
+                "doc_count": 358,
+                "percentage": 4,
+                "divergence": 0
             },
             "Jest": {
-                "doc_count": 1451
+                "doc_count": 1451,
+                "percentage": 18,
+                "divergence": 0
             }
         },
         {
             "key": "United States",
             "doc_count": 5719,
             "Tape": {
-                "doc_count": 408
+                "doc_count": 408,
+                "percentage": 5,
+                "divergence": 0
             },
             "Enzyme": {
-                "doc_count": 1264
+                "doc_count": 1264,
+                "percentage": 14,
+                "divergence": 0
             },
             "Jasmine": {
-                "doc_count": 2580
+                "doc_count": 2580,
+                "percentage": 29,
+                "divergence": 1
             },
             "Mocha": {
-                "doc_count": 2903
+                "doc_count": 2903,
+                "percentage": 32,
+                "divergence": 1
             },
             "Ava": {
-                "doc_count": 286
+                "doc_count": 286,
+                "percentage": 3,
+                "divergence": -1
             },
             "Jest": {
-                "doc_count": 1501
+                "doc_count": 1501,
+                "percentage": 17,
+                "divergence": -1
             }
         },
         {
             "key": "United Kingdom",
             "doc_count": 1409,
             "Tape": {
-                "doc_count": 107
+                "doc_count": 107,
+                "percentage": 5,
+                "divergence": 0
             },
             "Enzyme": {
-                "doc_count": 363
+                "doc_count": 363,
+                "percentage": 16,
+                "divergence": 2
             },
             "Jasmine": {
-                "doc_count": 592
+                "doc_count": 592,
+                "percentage": 26,
+                "divergence": -2
             },
             "Mocha": {
-                "doc_count": 698
+                "doc_count": 698,
+                "percentage": 30,
+                "divergence": -1
             },
             "Ava": {
-                "doc_count": 86
+                "doc_count": 86,
+                "percentage": 4,
+                "divergence": 0
             },
             "Jest": {
-                "doc_count": 433
+                "doc_count": 433,
+                "percentage": 19,
+                "divergence": 1
             }
         },
         {
             "key": "Germany",
             "doc_count": 879,
             "Tape": {
-                "doc_count": 57
+                "doc_count": 57,
+                "percentage": 5,
+                "divergence": 0
             },
             "Enzyme": {
-                "doc_count": 179
+                "doc_count": 179,
+                "percentage": 15,
+                "divergence": 1
             },
             "Jasmine": {
-                "doc_count": 325
+                "doc_count": 325,
+                "percentage": 27,
+                "divergence": -1
             },
             "Mocha": {
-                "doc_count": 369
+                "doc_count": 369,
+                "percentage": 29,
+                "divergence": -2
             },
             "Ava": {
-                "doc_count": 49
+                "doc_count": 49,
+                "percentage": 4,
+                "divergence": 0
             },
             "Jest": {
-                "doc_count": 241
+                "doc_count": 241,
+                "percentage": 20,
+                "divergence": 2
             }
         },
         {
             "key": "Canada",
             "doc_count": 771,
             "Tape": {
-                "doc_count": 35
+                "doc_count": 35,
+                "percentage": 3,
+                "divergence": -2
             },
             "Enzyme": {
-                "doc_count": 150
+                "doc_count": 150,
+                "percentage": 15,
+                "divergence": 1
             },
             "Jasmine": {
-                "doc_count": 277
+                "doc_count": 277,
+                "percentage": 27,
+                "divergence": -1
             },
             "Mocha": {
-                "doc_count": 346
+                "doc_count": 346,
+                "percentage": 35,
+                "divergence": 4
             },
             "Ava": {
-                "doc_count": 23
+                "doc_count": 23,
+                "percentage": 2,
+                "divergence": -2
             },
             "Jest": {
-                "doc_count": 186
+                "doc_count": 186,
+                "percentage": 18,
+                "divergence": 0
             }
         },
         {
             "key": "France",
             "doc_count": 695,
             "Tape": {
-                "doc_count": 38
+                "doc_count": 38,
+                "percentage": 4,
+                "divergence": -1
             },
             "Enzyme": {
-                "doc_count": 111
+                "doc_count": 111,
+                "percentage": 12,
+                "divergence": -2
             },
             "Jasmine": {
-                "doc_count": 259
+                "doc_count": 259,
+                "percentage": 28,
+                "divergence": 0
             },
             "Mocha": {
-                "doc_count": 296
+                "doc_count": 296,
+                "percentage": 32,
+                "divergence": 1
             },
             "Ava": {
-                "doc_count": 44
+                "doc_count": 44,
+                "percentage": 5,
+                "divergence": 1
             },
             "Jest": {
-                "doc_count": 172
+                "doc_count": 172,
+                "percentage": 19,
+                "divergence": 1
             }
         },
         {
             "key": "India",
             "doc_count": 500,
             "Tape": {
-                "doc_count": 12
+                "doc_count": 12,
+                "percentage": 2,
+                "divergence": -3
             },
             "Enzyme": {
-                "doc_count": 64
+                "doc_count": 64,
+                "percentage": 13,
+                "divergence": -1
             },
             "Jasmine": {
-                "doc_count": 152
+                "doc_count": 152,
+                "percentage": 31,
+                "divergence": 3
             },
             "Mocha": {
-                "doc_count": 164
+                "doc_count": 164,
+                "percentage": 35,
+                "divergence": 4
             },
             "Ava": {
-                "doc_count": 11
+                "doc_count": 11,
+                "percentage": 2,
+                "divergence": -2
             },
             "Jest": {
-                "doc_count": 85
+                "doc_count": 85,
+                "percentage": 17,
+                "divergence": -1
             }
         },
         {
             "key": "Australia",
             "doc_count": 492,
             "Tape": {
-                "doc_count": 37
+                "doc_count": 37,
+                "percentage": 5,
+                "divergence": 0
             },
             "Enzyme": {
-                "doc_count": 133
+                "doc_count": 133,
+                "percentage": 17,
+                "divergence": 3
             },
             "Jasmine": {
-                "doc_count": 200
+                "doc_count": 200,
+                "percentage": 25,
+                "divergence": -3
             },
             "Mocha": {
-                "doc_count": 242
+                "doc_count": 242,
+                "percentage": 31,
+                "divergence": 0
             },
             "Ava": {
-                "doc_count": 31
+                "doc_count": 31,
+                "percentage": 4,
+                "divergence": 0
             },
             "Jest": {
-                "doc_count": 145
+                "doc_count": 145,
+                "percentage": 18,
+                "divergence": 0
             }
         },
         {
             "key": "Netherlands",
             "doc_count": 449,
             "Tape": {
-                "doc_count": 25
+                "doc_count": 25,
+                "percentage": 4,
+                "divergence": -1
             },
             "Enzyme": {
-                "doc_count": 81
+                "doc_count": 81,
+                "percentage": 14,
+                "divergence": 0
             },
             "Jasmine": {
-                "doc_count": 168
+                "doc_count": 168,
+                "percentage": 28,
+                "divergence": 0
             },
             "Mocha": {
-                "doc_count": 193
+                "doc_count": 193,
+                "percentage": 31,
+                "divergence": 0
             },
             "Ava": {
-                "doc_count": 16
+                "doc_count": 16,
+                "percentage": 3,
+                "divergence": -1
             },
             "Jest": {
-                "doc_count": 117
+                "doc_count": 117,
+                "percentage": 20,
+                "divergence": 2
             }
         },
         {
             "key": "Brazil",
             "doc_count": 437,
             "Tape": {
-                "doc_count": 15
+                "doc_count": 15,
+                "percentage": 3,
+                "divergence": -2
             },
             "Enzyme": {
-                "doc_count": 73
+                "doc_count": 73,
+                "percentage": 13,
+                "divergence": -1
             },
             "Jasmine": {
-                "doc_count": 163
+                "doc_count": 163,
+                "percentage": 29,
+                "divergence": 1
             },
             "Mocha": {
-                "doc_count": 175
+                "doc_count": 175,
+                "percentage": 31,
+                "divergence": 0
             },
             "Ava": {
-                "doc_count": 25
+                "doc_count": 25,
+                "percentage": 4,
+                "divergence": 0
             },
             "Jest": {
-                "doc_count": 115
+                "doc_count": 115,
+                "percentage": 20,
+                "divergence": 2
             }
         },
         {
             "key": "Poland",
             "doc_count": 420,
             "Tape": {
-                "doc_count": 19
+                "doc_count": 19,
+                "percentage": 3,
+                "divergence": -2
             },
             "Enzyme": {
-                "doc_count": 83
+                "doc_count": 83,
+                "percentage": 14,
+                "divergence": 0
             },
             "Jasmine": {
-                "doc_count": 187
+                "doc_count": 187,
+                "percentage": 32,
+                "divergence": 4
             },
             "Mocha": {
-                "doc_count": 182
+                "doc_count": 182,
+                "percentage": 31,
+                "divergence": 0
             },
             "Ava": {
-                "doc_count": 11
+                "doc_count": 11,
+                "percentage": 2,
+                "divergence": -2
             },
             "Jest": {
-                "doc_count": 109
+                "doc_count": 109,
+                "percentage": 18,
+                "divergence": 0
             }
         },
         {
             "key": "Spain",
             "doc_count": 413,
             "Tape": {
-                "doc_count": 33
+                "doc_count": 33,
+                "percentage": 5,
+                "divergence": 0
             },
             "Enzyme": {
-                "doc_count": 62
+                "doc_count": 62,
+                "percentage": 10,
+                "divergence": -4
             },
             "Jasmine": {
-                "doc_count": 190
+                "doc_count": 190,
+                "percentage": 31,
+                "divergence": 3
             },
             "Mocha": {
-                "doc_count": 204
+                "doc_count": 204,
+                "percentage": 34,
+                "divergence": 3
             },
             "Ava": {
-                "doc_count": 22
+                "doc_count": 22,
+                "percentage": 4,
+                "divergence": 0
             },
             "Jest": {
-                "doc_count": 98
+                "doc_count": 98,
+                "percentage": 16,
+                "divergence": -2
             }
         },
         {
             "key": "Russia",
             "doc_count": 379,
             "Tape": {
-                "doc_count": 28
+                "doc_count": 28,
+                "percentage": 6,
+                "divergence": 1
             },
             "Enzyme": {
-                "doc_count": 81
+                "doc_count": 81,
+                "percentage": 16,
+                "divergence": 2
             },
             "Jasmine": {
-                "doc_count": 111
+                "doc_count": 111,
+                "percentage": 22,
+                "divergence": -6
             },
             "Mocha": {
-                "doc_count": 153
+                "doc_count": 153,
+                "percentage": 30,
+                "divergence": -1
             },
             "Ava": {
-                "doc_count": 20
+                "doc_count": 20,
+                "percentage": 4,
+                "divergence": 0
             },
             "Jest": {
-                "doc_count": 114
+                "doc_count": 114,
+                "percentage": 22,
+                "divergence": 4
             }
         },
         {
             "key": "Sweden",
             "doc_count": 330,
             "Tape": {
-                "doc_count": 32
+                "doc_count": 32,
+                "percentage": 6,
+                "divergence": 1
             },
             "Enzyme": {
-                "doc_count": 72
+                "doc_count": 72,
+                "percentage": 14,
+                "divergence": 0
             },
             "Jasmine": {
-                "doc_count": 133
+                "doc_count": 133,
+                "percentage": 26,
+                "divergence": -2
             },
             "Mocha": {
-                "doc_count": 156
+                "doc_count": 156,
+                "percentage": 30,
+                "divergence": -1
             },
             "Ava": {
-                "doc_count": 24
+                "doc_count": 24,
+                "percentage": 5,
+                "divergence": 1
             },
             "Jest": {
-                "doc_count": 99
+                "doc_count": 99,
+                "percentage": 19,
+                "divergence": 1
             }
         },
         {
             "key": "Italy",
             "doc_count": 251,
             "Tape": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 4,
+                "divergence": -1
             },
             "Enzyme": {
-                "doc_count": 38
+                "doc_count": 38,
+                "percentage": 14,
+                "divergence": 0
             },
             "Jasmine": {
-                "doc_count": 79
+                "doc_count": 79,
+                "percentage": 30,
+                "divergence": 2
             },
             "Mocha": {
-                "doc_count": 86
+                "doc_count": 86,
+                "percentage": 32,
+                "divergence": 1
             },
             "Ava": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 3,
+                "divergence": -1
             },
             "Jest": {
-                "doc_count": 45
+                "doc_count": 45,
+                "percentage": 17,
+                "divergence": -1
             }
         },
         {
             "key": "Ukraine",
             "doc_count": 242,
             "Tape": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 2,
+                "divergence": -3
             },
             "Enzyme": {
-                "doc_count": 43
+                "doc_count": 43,
+                "percentage": 14,
+                "divergence": 0
             },
             "Jasmine": {
-                "doc_count": 89
+                "doc_count": 89,
+                "percentage": 30,
+                "divergence": 2
             },
             "Mocha": {
-                "doc_count": 103
+                "doc_count": 103,
+                "percentage": 33,
+                "divergence": 2
             },
             "Ava": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 3,
+                "divergence": -1
             },
             "Jest": {
-                "doc_count": 53
+                "doc_count": 53,
+                "percentage": 18,
+                "divergence": 0
             }
         },
         {
             "key": "Denmark",
             "doc_count": 197,
             "Tape": {
-                "doc_count": 12
+                "doc_count": 12,
+                "percentage": 6,
+                "divergence": 1
             },
             "Enzyme": {
-                "doc_count": 24
+                "doc_count": 24,
+                "percentage": 12,
+                "divergence": -2
             },
             "Jasmine": {
-                "doc_count": 51
+                "doc_count": 51,
+                "percentage": 26,
+                "divergence": -2
             },
             "Mocha": {
-                "doc_count": 66
+                "doc_count": 66,
+                "percentage": 34,
+                "divergence": 3
             },
             "Ava": {
-                "doc_count": 9
+                "doc_count": 9,
+                "percentage": 5,
+                "divergence": 1
             },
             "Jest": {
-                "doc_count": 33
+                "doc_count": 33,
+                "percentage": 17,
+                "divergence": -1
             }
         },
         {
             "key": "Mexico",
             "doc_count": 167,
             "Tape": {
-                "doc_count": 9
+                "doc_count": 9,
+                "percentage": 6,
+                "divergence": 1
             },
             "Enzyme": {
-                "doc_count": 15
+                "doc_count": 15,
+                "percentage": 9,
+                "divergence": -5
             },
             "Jasmine": {
-                "doc_count": 51
+                "doc_count": 51,
+                "percentage": 32,
+                "divergence": 4
             },
             "Mocha": {
-                "doc_count": 61
+                "doc_count": 61,
+                "percentage": 37,
+                "divergence": 6
             },
             "Ava": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": -2
             },
             "Jest": {
-                "doc_count": 22
+                "doc_count": 22,
+                "percentage": 14,
+                "divergence": -4
             }
         },
         {
             "key": "Belgium",
             "doc_count": 163,
             "Tape": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": -3
             },
             "Enzyme": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 4,
+                "divergence": -10
             },
             "Jasmine": {
-                "doc_count": 77
+                "doc_count": 77,
+                "percentage": 41,
+                "divergence": 13
             },
             "Mocha": {
-                "doc_count": 65
+                "doc_count": 65,
+                "percentage": 35,
+                "divergence": 4
             },
             "Ava": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": -2
             },
             "Jest": {
-                "doc_count": 30
+                "doc_count": 30,
+                "percentage": 16,
+                "divergence": -2
             }
         },
         {
             "key": "Norway",
             "doc_count": 150,
             "Tape": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 5,
+                "divergence": 0
             },
             "Enzyme": {
-                "doc_count": 30
+                "doc_count": 30,
+                "percentage": 15,
+                "divergence": 1
             },
             "Jasmine": {
-                "doc_count": 53
+                "doc_count": 53,
+                "percentage": 27,
+                "divergence": -1
             },
             "Mocha": {
-                "doc_count": 62
+                "doc_count": 62,
+                "percentage": 31,
+                "divergence": 0
             },
             "Ava": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 4,
+                "divergence": 0
             },
             "Jest": {
-                "doc_count": 35
+                "doc_count": 35,
+                "percentage": 18,
+                "divergence": 0
             }
         },
         {
             "key": "Argentina",
             "doc_count": 145,
             "Tape": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 4,
+                "divergence": -1
             },
             "Enzyme": {
-                "doc_count": 19
+                "doc_count": 19,
+                "percentage": 11,
+                "divergence": -3
             },
             "Jasmine": {
-                "doc_count": 56
+                "doc_count": 56,
+                "percentage": 31,
+                "divergence": 3
             },
             "Mocha": {
-                "doc_count": 70
+                "doc_count": 70,
+                "percentage": 39,
+                "divergence": 8
             },
             "Ava": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 3,
+                "divergence": -1
             },
             "Jest": {
-                "doc_count": 22
+                "doc_count": 22,
+                "percentage": 12,
+                "divergence": -6
             }
         },
         {
             "key": "New Zealand",
             "doc_count": 143,
             "Tape": {
-                "doc_count": 22
+                "doc_count": 22,
+                "percentage": 9,
+                "divergence": 4
             },
             "Enzyme": {
-                "doc_count": 38
+                "doc_count": 38,
+                "percentage": 15,
+                "divergence": 1
             },
             "Jasmine": {
-                "doc_count": 64
+                "doc_count": 64,
+                "percentage": 26,
+                "divergence": -2
             },
             "Mocha": {
-                "doc_count": 72
+                "doc_count": 72,
+                "percentage": 29,
+                "divergence": -2
             },
             "Ava": {
-                "doc_count": 9
+                "doc_count": 9,
+                "percentage": 4,
+                "divergence": 0
             },
             "Jest": {
-                "doc_count": 42
+                "doc_count": 42,
+                "percentage": 17,
+                "divergence": -1
             }
         },
         {
             "key": "Switzerland",
             "doc_count": 136,
             "Tape": {
-                "doc_count": 11
+                "doc_count": 11,
+                "percentage": 6,
+                "divergence": 1
             },
             "Enzyme": {
-                "doc_count": 17
+                "doc_count": 17,
+                "percentage": 9,
+                "divergence": -5
             },
             "Jasmine": {
-                "doc_count": 55
+                "doc_count": 55,
+                "percentage": 31,
+                "divergence": 3
             },
             "Mocha": {
-                "doc_count": 55
+                "doc_count": 55,
+                "percentage": 31,
+                "divergence": 0
             },
             "Ava": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 4,
+                "divergence": 0
             },
             "Jest": {
-                "doc_count": 34
+                "doc_count": 34,
+                "percentage": 19,
+                "divergence": 1
             }
         },
         {
             "key": "Finland",
             "doc_count": 133,
             "Tape": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 4,
+                "divergence": -1
             },
             "Enzyme": {
-                "doc_count": 25
+                "doc_count": 25,
+                "percentage": 14,
+                "divergence": 0
             },
             "Jasmine": {
-                "doc_count": 50
+                "doc_count": 50,
+                "percentage": 27,
+                "divergence": -1
             },
             "Mocha": {
-                "doc_count": 69
+                "doc_count": 69,
+                "percentage": 37,
+                "divergence": 6
             },
             "Ava": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -3
             },
             "Jest": {
-                "doc_count": 31
+                "doc_count": 31,
+                "percentage": 17,
+                "divergence": -1
             }
         },
         {
             "key": "Romania",
             "doc_count": 132,
             "Tape": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 3,
+                "divergence": -2
             },
             "Enzyme": {
-                "doc_count": 26
+                "doc_count": 26,
+                "percentage": 16,
+                "divergence": 2
             },
             "Jasmine": {
-                "doc_count": 52
+                "doc_count": 52,
+                "percentage": 32,
+                "divergence": 4
             },
             "Mocha": {
-                "doc_count": 52
+                "doc_count": 52,
+                "percentage": 32,
+                "divergence": 1
             },
             "Ava": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -3
             },
             "Jest": {
-                "doc_count": 26
+                "doc_count": 26,
+                "percentage": 16,
+                "divergence": -2
             }
         },
         {
             "key": "Israel",
             "doc_count": 126,
             "Tape": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 5,
+                "divergence": 0
             },
             "Enzyme": {
-                "doc_count": 21
+                "doc_count": 21,
+                "percentage": 13,
+                "divergence": -1
             },
             "Jasmine": {
-                "doc_count": 57
+                "doc_count": 57,
+                "percentage": 37,
+                "divergence": 9
             },
             "Mocha": {
-                "doc_count": 48
+                "doc_count": 48,
+                "percentage": 31,
+                "divergence": 0
             },
             "Ava": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -3
             },
             "Jest": {
-                "doc_count": 20
+                "doc_count": 20,
+                "percentage": 13,
+                "divergence": -5
             }
         },
         {
             "key": "Austria",
             "doc_count": 116,
             "Tape": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 5,
+                "divergence": 0
             },
             "Enzyme": {
-                "doc_count": 13
+                "doc_count": 13,
+                "percentage": 9,
+                "divergence": -5
             },
             "Jasmine": {
-                "doc_count": 44
+                "doc_count": 44,
+                "percentage": 30,
+                "divergence": 2
             },
             "Mocha": {
-                "doc_count": 52
+                "doc_count": 52,
+                "percentage": 35,
+                "divergence": 4
             },
             "Ava": {
-                "doc_count": 7
+                "doc_count": 7,
+                "percentage": 5,
+                "divergence": 1
             },
             "Jest": {
-                "doc_count": 24
+                "doc_count": 24,
+                "percentage": 16,
+                "divergence": -2
             }
         },
         {
             "key": "Ireland",
             "doc_count": 106,
             "Tape": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 4,
+                "divergence": -1
             },
             "Enzyme": {
-                "doc_count": 16
+                "doc_count": 16,
+                "percentage": 10,
+                "divergence": -4
             },
             "Jasmine": {
-                "doc_count": 60
+                "doc_count": 60,
+                "percentage": 37,
+                "divergence": 9
             },
             "Mocha": {
-                "doc_count": 51
+                "doc_count": 51,
+                "percentage": 32,
+                "divergence": 1
             },
             "Ava": {
-                "doc_count": 6
+                "doc_count": 6,
+                "percentage": 4,
+                "divergence": 0
             },
             "Jest": {
-                "doc_count": 21
+                "doc_count": 21,
+                "percentage": 13,
+                "divergence": -5
             }
         },
         {
             "key": "Portugal",
             "doc_count": 105,
             "Tape": {
-                "doc_count": 2
+                "doc_count": 2,
+                "percentage": 2,
+                "divergence": -3
             },
             "Enzyme": {
-                "doc_count": 16
+                "doc_count": 16,
+                "percentage": 13,
+                "divergence": -1
             },
             "Jasmine": {
-                "doc_count": 40
+                "doc_count": 40,
+                "percentage": 33,
+                "divergence": 5
             },
             "Mocha": {
-                "doc_count": 40
+                "doc_count": 40,
+                "percentage": 33,
+                "divergence": 2
             },
             "Ava": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": -2
             },
             "Jest": {
-                "doc_count": 21
+                "doc_count": 21,
+                "percentage": 17,
+                "divergence": -1
             }
         },
         {
             "key": "Belarus",
             "doc_count": 104,
             "Tape": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 5,
+                "divergence": 0
             },
             "Enzyme": {
-                "doc_count": 24
+                "doc_count": 24,
+                "percentage": 15,
+                "divergence": 1
             },
             "Jasmine": {
-                "doc_count": 46
+                "doc_count": 46,
+                "percentage": 29,
+                "divergence": 1
             },
             "Mocha": {
-                "doc_count": 48
+                "doc_count": 48,
+                "percentage": 30,
+                "divergence": -1
             },
             "Ava": {
-                "doc_count": 3
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": -2
             },
             "Jest": {
-                "doc_count": 31
+                "doc_count": 31,
+                "percentage": 19,
+                "divergence": 1
             }
         },
         {
             "key": "Colombia",
             "doc_count": 97,
             "Tape": {
-                "doc_count": 5
+                "doc_count": 5,
+                "percentage": 4,
+                "divergence": -1
             },
             "Enzyme": {
-                "doc_count": 21
+                "doc_count": 21,
+                "percentage": 17,
+                "divergence": 3
             },
             "Jasmine": {
-                "doc_count": 35
+                "doc_count": 35,
+                "percentage": 28,
+                "divergence": 0
             },
             "Mocha": {
-                "doc_count": 37
+                "doc_count": 37,
+                "percentage": 29,
+                "divergence": -2
             },
             "Ava": {
-                "doc_count": 10
+                "doc_count": 10,
+                "percentage": 8,
+                "divergence": 4
             },
             "Jest": {
-                "doc_count": 18
+                "doc_count": 18,
+                "percentage": 14,
+                "divergence": -4
             }
         },
         {
             "key": "China",
             "doc_count": 96,
             "Tape": {
-                "doc_count": 4
+                "doc_count": 4,
+                "percentage": 4,
+                "divergence": -1
             },
             "Enzyme": {
-                "doc_count": 13
+                "doc_count": 13,
+                "percentage": 13,
+                "divergence": -1
             },
             "Jasmine": {
-                "doc_count": 20
+                "doc_count": 20,
+                "percentage": 20,
+                "divergence": -8
             },
             "Mocha": {
-                "doc_count": 35
+                "doc_count": 35,
+                "percentage": 34,
+                "divergence": 3
             },
             "Ava": {
-                "doc_count": 8
+                "doc_count": 8,
+                "percentage": 8,
+                "divergence": 4
             },
             "Jest": {
-                "doc_count": 21
+                "doc_count": 21,
+                "percentage": 21,
+                "divergence": 3
             }
         }
     ],
