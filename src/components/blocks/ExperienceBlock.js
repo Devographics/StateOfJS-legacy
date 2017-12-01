@@ -21,15 +21,18 @@ export default class ExperienceBlock extends Component {
         const { data, tools } = this.props
 
         const allKeys = sortBy(['Aggregated', ...tools], key => data[key].by_experience.average)
+
         const averages = allKeys
             .map(tool => data[tool].by_experience.average)
             .map(avg => `${avg} years`)
+
         const yearsOfExperienceData = allKeys.map(tool => {
             const toolYearsOfExperience = { tool }
             const buckets = data[tool].by_experience.buckets
+
             yearsOfExperienceKeys.forEach(yearsOfExperienceKey => {
                 const bucket = buckets.find(({ key }) => key === yearsOfExperienceKey)
-                toolYearsOfExperience[yearsOfExperienceKey] = bucket.percentage
+                toolYearsOfExperience[yearsOfExperienceKey] = bucket ? bucket.percentage : 0
             })
 
             return toolYearsOfExperience
