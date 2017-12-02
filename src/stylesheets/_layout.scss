@@ -9,7 +9,7 @@
   }
   &.home-wrapper{
     @include large{
-      padding: $spacing*6;
+      padding: $spacing*3 $spacing*6 $spacing*1 $spacing*6;
     }
   }
 }

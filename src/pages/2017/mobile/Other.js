@@ -16,6 +16,7 @@ import mobileData from '../../../data/mobile.json'
 //     />
 // )
 
+
 const MobileOthers = () => <div>Others</div>
 
 export default MobileOthers

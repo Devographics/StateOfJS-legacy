@@ -3,37 +3,11 @@ import Link from 'gatsby-link'
 import DocumentTitle from 'react-document-title'
 import Helmet from 'react-helmet'
 
-import footerContents from '../data/footer.md'
-
 import HomeLayout from '../components/common/HomeLayout'
 import PageLayout from '../components/common/PageLayout'
 import classNames from 'classnames'
 
-// import '../css/markdown-styles'
-
-const getDocument = () => {
-    if (typeof document !== 'undefined') {
-        return document
-    }
-}
-
-export default class Template extends React.Component {
-    constructor() {
-        super()
-        this.state = {
-            sticky: false,
-        }
-    }
-
-    getChildContext() {
-        return { sticky: this.state.sticky }
-    }
-
-    componentWillMount() {
-        this.setState({
-            sticky: getDocument() && getDocument().body.clientWidth > 1200,
-        })
-    }
+export default class Layout extends React.Component {
 
     render() {
         const title = DocumentTitle.peek()
@@ -101,8 +75,4 @@ export default class Template extends React.Component {
             </div>
         )
     }
-}
-
-Template.childContextTypes = {
-    sticky: React.PropTypes.bool,
 }

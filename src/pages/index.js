@@ -1,5 +1,5 @@
 import React from 'react'
-// import Link from 'gatsby-link'
+import Link from 'gatsby-link'
 import DocumentTitle from 'react-document-title'
 
 // import ReactGA from 'react-ga'
@@ -21,7 +21,6 @@ So we collected data from over 20,000 developers, asking them questions on topic
 
 You'll find out which libraries developers want to learn next, and which have the best satisfaction ratings. And hopefully, get a better understanding of the ever-changing JavaScript ecosystem.
 
-<div class="view-results"><a class="button large-button" href="/2017/introduction/">View Results</a></div>
 `
 
 export default class Index extends React.Component {
@@ -48,6 +47,7 @@ export default class Index extends React.Component {
 
                     <div className="intro section-border section-narrow">
                         <TextBlock text={homeContents} />
+                        <div className="view-results"><Link className="button large-button" to="/2017/introduction/">View Results</Link></div>
                     </div>
                     {/*<Stats />*/}
 

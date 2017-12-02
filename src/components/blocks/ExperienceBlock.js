@@ -23,8 +23,7 @@ export default class ExperienceBlock extends Component {
         const allKeys = sortBy(['Aggregated', ...tools], key => data[key].by_experience.average)
 
         const averages = allKeys
-            .map(tool => data[tool].by_experience.average)
-            .map(avg => `${avg} years`)
+            .map(tool => ({tool, value: `${data[tool].by_experience.average} years`}))
 
         const yearsOfExperienceData = allKeys.map(tool => {
             const toolYearsOfExperience = { tool }
@@ -42,7 +41,7 @@ export default class ExperienceBlock extends Component {
             <div className="block block--chart block--experience">
                 <h3 className="block__title">Years of Experience</h3>
                 <div className="block__description">
-                    <p>Per-library breakdown of developers according to years of experience.</p>
+                    <p>Per-library breakdown of developers according to years of experience (average value highlighted).</p>
                 </div>
                 <div className="block__contents">
                     <div className="block__contents__inner">

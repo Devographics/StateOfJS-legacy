@@ -49,10 +49,14 @@ export default class SalariesBlock extends Component {
                 <h3 className="block__title">Salary Ranges</h3>
                 <div className="block__description">
                     <p>
-                        Per-library breakdown of developers according to salary range (restrict to{' '}
+                        Per-library breakdown of developers according to salary range  (average value highlighted)
+                        {/*
+                        (restrict to{' '}
                         <a className="salaries__selector" href="#">
                             United States
-                        </a>).
+                        </a>)
+                        */}
+                        .
                     </p>
                 </div>
                 <div className="block__contents capture">

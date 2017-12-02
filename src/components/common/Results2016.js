@@ -5,9 +5,9 @@ const Stats = () => (
     <div className="section section-layout-b results-2016">
         <div className="or">– or –</div>
         <div>
-            <Link className="results-2016-link" to="/2016/introduction/">
+            <a className="results-2016-link" href="http://2016.stateofjs.com">
                 View 2016 Results
-            </Link>
+            </a>
         </div>
     </div>
 )
