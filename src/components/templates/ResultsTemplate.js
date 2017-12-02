@@ -10,7 +10,7 @@ const Results = ({ data, description, section, sponsor }) => (
         <Meta section={section} subSection="results" />
         <TextBlock text={description} />
         <ResultsBlock data={data} section={section} />
-        <NumberOfLibrariesBlock data={data} />
+        {/*<NumberOfLibrariesBlock data={data} />*/}
         <ResourcesBlock section={section} />
     </div>
 )

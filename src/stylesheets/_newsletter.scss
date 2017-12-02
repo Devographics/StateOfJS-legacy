@@ -38,8 +38,7 @@
 
 .block--newsletter{
   border: 1px solid $border-color;
-  padding: $spacing*2;
-  max-width: 500px;
+  padding: $spacing;
   .block__title{
     font-size: $large-font;
   }

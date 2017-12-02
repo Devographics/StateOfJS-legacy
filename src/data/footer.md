@@ -1,1 +1,1 @@
-Footer contents
+Hand-coded in Osaka, Japan. [Get in touch](mailto:hello@stateofjs.com).

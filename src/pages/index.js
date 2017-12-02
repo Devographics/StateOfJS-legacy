@@ -12,7 +12,17 @@ import TextBlock from '../components/blocks/TextBlock.js'
 // import Stats from '../components/common/Stats.js'
 import Comments from '../components/common/Comments.js'
 
-import homeContents from '../data/home.md'
+import FooterContents from '../data/footer.md'
+console.log(FooterContents)
+const homeContents = `
+The JavaScript world is richer and messier than ever.
+
+So we collected data from over 20,000 developers, asking them questions on topics ranging from front-end frameworks and state management, to build tools and testing libraries.
+
+You'll find out which libraries developers want to learn next, and which have the best satisfaction ratings. And hopefully, get a better understanding of the ever-changing JavaScript ecosystem.
+
+<div class="view-results"><a class="button large-button" href="/2017/introduction/">View Results</a></div>
+`
 
 export default class Index extends React.Component {
     render() {
@@ -36,11 +46,9 @@ export default class Index extends React.Component {
                         </h3>
                     </div>
 
-                    <TextBlock
-                        contents={homeContents}
-                        className="intro section-border section-narrow"
-                    />
-
+                    <div className="intro section-border section-narrow">
+                        <TextBlock text={homeContents} />
+                    </div>
                     {/*<Stats />*/}
 
                     <Results2016 />
@@ -48,6 +56,11 @@ export default class Index extends React.Component {
                     <Share />
 
                     <Comments />
+
+                    <div className="footer home-footer">
+                        <TextBlock><FooterContents/></TextBlock>
+                    </div>
+
                 </div>
             </DocumentTitle>
         )

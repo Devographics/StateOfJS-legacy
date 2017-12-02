@@ -127,14 +127,14 @@
 .intro{
   position: relative;
   padding-bottom: $spacing*3;
-  margin-bottom: $spacing*4;
+  margin-bottom: $spacing*2.5;
   p{
     &:first-child{
       @include small-medium{
         font-size: $large-font;
       }
       @include large{
-        font-size: $larger-font;
+        font-size: $largest-font;
       }
     }
     &:last-of-type{
@@ -147,7 +147,7 @@
   }
   .view-results, .take-survey, .leave-email{
     position: absolute;
-    bottom: -87px;
+    bottom: -45px;
     // left: 50%;
     // transform: translateX(-50%);
     display: flex;

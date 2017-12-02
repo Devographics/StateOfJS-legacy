@@ -66,7 +66,7 @@ export default class CountryBubble extends PureComponent {
         const { keys, data, showDivergence } = this.props
 
         const getColor = ({ depth, divergence }) => {
-            if (depth === 0) return colors.greyLight
+            if (depth === 0) return '#F4F6F4'
             if (showDivergence === false) return DIVERGENCE_COLORS[1]
             return colorScale(divergence)
         }

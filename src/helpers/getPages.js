@@ -6,15 +6,15 @@ import slugify from './slugify'
 const navFiltered = filter(nav, item => !item.hide)
 
 export const getCurrentPage = pathname => {
-    const sectionIndex = _.findIndex(navFiltered, item => pathname.indexOf(slugify(item.label)) !== -1)
+    const sectionIndex = _.findIndex(nav, item => pathname.indexOf(slugify(item.label)) !== -1)
     const page = {
         sectionIndex,
-        section: navFiltered[sectionIndex],
+        section: nav[sectionIndex],
     }
     if (page.section.subPages) {
-        const subSectionIndex = _.findIndex(navFiltered[sectionIndex].subPages, item => pathname.indexOf(slugify(item)) !== -1)
+        const subSectionIndex = _.findIndex(nav[sectionIndex].subPages, item => pathname.indexOf(slugify(item)) !== -1)
         page.subSectionIndex = subSectionIndex
-        page.subSection = sections[navFiltered[sectionIndex].subPages[subSectionIndex]]
+        page.subSection = sections[nav[sectionIndex].subPages[subSectionIndex]]
     }
     return page 
 }
@@ -85,10 +85,15 @@ export const getNextPage = ({ section, sectionIndex, subSection, subSectionIndex
 
 export const getPages = (pathname) => {
     const currentPage = getCurrentPage(pathname)
-    return {
-        currentPage,
-        previousPage: getPreviousPage(currentPage),
-        nextPage: getNextPage(currentPage),
+    if (currentPage.section.hide) { 
+        // page is outside "normal" sidebar nav
+        return { currentPage }
+    } else {
+        return {
+            currentPage,
+            previousPage: getPreviousPage(currentPage),
+            nextPage: getNextPage(currentPage),
+        }
     }
 }
 

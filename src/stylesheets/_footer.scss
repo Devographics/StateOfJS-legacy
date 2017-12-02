@@ -1,6 +1,6 @@
 .footer{
-  border-top: 1px solid $active-color;
-  padding-top: $spacing*3;
-  font-size: 0.8rem;
+  border-top: 1px dashed $border-color;
+  padding-top: $spacing*2;
   text-align: center;
+  font-size: $medium-font;
 }

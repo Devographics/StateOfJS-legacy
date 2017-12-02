@@ -124,4 +124,4 @@ export const aliases = {
 }
 
 export const DIVERGENCE_MAX_OFFSET = 15
-export const DIVERGENCE_COLORS = ['#87b8e8', '#8b8de8', '#b741d3']
+export const DIVERGENCE_COLORS = ['#8b8de8', '#dadada', '#ea2149']

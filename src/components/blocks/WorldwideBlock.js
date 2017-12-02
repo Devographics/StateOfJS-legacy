@@ -6,9 +6,9 @@ import { DIVERGENCE_MAX_OFFSET, DIVERGENCE_COLORS } from '../../constants'
 import Legends from '../elements/Legends'
 
 const legends = [
-    { label: `<= -${DIVERGENCE_MAX_OFFSET}%`, color: DIVERGENCE_COLORS[0] },
-    { label: 'even', color: DIVERGENCE_COLORS[1] },
-    { label: `>= ${DIVERGENCE_MAX_OFFSET}%`, color: DIVERGENCE_COLORS[2] },
+    { label: `Lower-than-average usage`, color: DIVERGENCE_COLORS[0] },
+    { label: 'Average usage', color: DIVERGENCE_COLORS[1] },
+    { label: `Higher-than-average usage`, color: DIVERGENCE_COLORS[2] },
 ]
 
 export default class WorldwideBlock extends Component {
@@ -28,22 +28,32 @@ export default class WorldwideBlock extends Component {
         }
 
         const data = countries.filter(({ key }) => key !== 'undefined')
-        const lowerResponseCount = last(data).doc_count
+        // const lowerResponseCount = last(data).doc_count
+        const lowerResponseCount = 100
 
         return (
             <div className="block block--chart block--worldwide">
                 <div className="block__description">
                     <p>
-                        Tool usage by country (usage defined as respondents who picked “have used
-                        before and would use again”). Red indicates higher compared to average, blue
-                        indicates lower usage compared to average.
+                        Library usage by country (defined as respondents who picked “have used
+                        before and would use again”). Red indicates higher compared to worldwide average, blue
+                        indicates lower usage compared to worldwide average.
                     </p>
                     <p>
                         Note: only countries which received over {lowerResponseCount} total entries
                         are shown.
                     </p>
                 </div>
+                <Legends
+                    legends={legends}
+                    modifier="horizontal"
+                    itemStyle={{
+                        padding: '9px 0',
+                    }}
+                />
                 <div className="worldwide__grid">
+
+                    
                     <div className="worldwide__grid__item">
                         <div className="worldwide__chart">
                             <CountryBubble
@@ -52,16 +62,7 @@ export default class WorldwideBlock extends Component {
                                 showDivergence={false}
                             />
                         </div>
-                        <h4 style={{ textAlign: 'center' }}>Worldwide average</h4>
-                    </div>
-                    <div className="worldwide__grid__item">
-                        <Legends
-                            legends={legends}
-                            modifier="vertical"
-                            itemStyle={{
-                                padding: '9px 0',
-                            }}
-                        />
+                        <h4 style={{ textAlign: 'center' }}>Worldwide Average</h4>
                     </div>
                     {data.map(country => (
                         <div key={country.key} className="worldwide__grid__item">
