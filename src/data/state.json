@@ -150,7 +150,7 @@
                 "average": 7
             },
             "by_location": {
-                "doc_count_error_upper_bound": 29,
+                "doc_count_error_upper_bound": 31,
                 "sum_other_doc_count": 1427,
                 "buckets": [
                     {
@@ -406,7 +406,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 4,
+                "doc_count_error_upper_bound": 5,
                 "sum_other_doc_count": 122,
                 "buckets": [
                     {
@@ -534,8 +534,8 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 8,
-                "sum_other_doc_count": 296,
+                "doc_count_error_upper_bound": 7,
+                "sum_other_doc_count": 297,
                 "buckets": [
                     {
                         "key": "United States",
@@ -574,8 +574,8 @@
                         "doc_count": 27
                     },
                     {
-                        "key": "Switzerland",
-                        "doc_count": 18
+                        "key": "Poland",
+                        "doc_count": 17
                     }
                 ]
             }
@@ -662,7 +662,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 58,
+                "doc_count_error_upper_bound": 61,
                 "sum_other_doc_count": 2754,
                 "buckets": [
                     {
@@ -790,8 +790,8 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 15,
-                "sum_other_doc_count": 634,
+                "doc_count_error_upper_bound": 16,
+                "sum_other_doc_count": 632,
                 "buckets": [
                     {
                         "key": "United States",
@@ -826,11 +826,11 @@
                         "doc_count": 54
                     },
                     {
-                        "key": "Brazil",
-                        "doc_count": 47
+                        "key": "Sweden",
+                        "doc_count": 49
                     },
                     {
-                        "key": "Sweden",
+                        "key": "Brazil",
                         "doc_count": 47
                     }
                 ]
@@ -2582,7 +2582,7 @@
     ],
     "others": {
         "doc_count_error_upper_bound": 5,
-        "sum_other_doc_count": 853,
+        "sum_other_doc_count": 841,
         "buckets": [
             {
                 "key": "VueX",
@@ -2618,7 +2618,7 @@
             },
             {
                 "key": "RxJS",
-                "doc_count": 33
+                "doc_count": 32
             },
             {
                 "key": "Parse",
@@ -2633,19 +2633,19 @@
                 "doc_count": 20
             },
             {
-                "key": "RethinkDB",
-                "doc_count": 18
-            },
-            {
                 "key": "elm",
                 "doc_count": 18
             },
             {
-                "key": "Gun.js",
-                "doc_count": 14
+                "key": "RethinkDB",
+                "doc_count": 17
             },
             {
                 "key": "Redis",
+                "doc_count": 15
+            },
+            {
+                "key": "Gun.js",
                 "doc_count": 14
             },
             {
@@ -2653,17 +2653,55 @@
                 "doc_count": 12
             },
             {
-                "key": "JSON API",
-                "doc_count": 8
-            },
-            {
                 "key": "Contentful",
-                "doc_count": 7
+                "doc_count": 9
             },
             {
                 "key": "couchbase",
+                "doc_count": 8
+            },
+            {
+                "key": "CouchDB",
                 "doc_count": 7
             }
         ]
-    }
+    },
+    "numberOfToolsUsed": [
+        {
+            "key": 0,
+            "doc_count": 1894
+        },
+        {
+            "key": 1,
+            "doc_count": 8443
+        },
+        {
+            "key": 2,
+            "doc_count": 8266
+        },
+        {
+            "key": 3,
+            "doc_count": 3419
+        },
+        {
+            "key": 4,
+            "doc_count": 1132
+        },
+        {
+            "key": 5,
+            "doc_count": 429
+        },
+        {
+            "key": 6,
+            "doc_count": 102
+        },
+        {
+            "key": 7,
+            "doc_count": 15
+        },
+        {
+            "key": 8,
+            "doc_count": 4
+        }
+    ]
 }

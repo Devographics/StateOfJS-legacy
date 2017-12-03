@@ -563,7 +563,7 @@
                     },
                     {
                         "key": "Germany",
-                        "doc_count": 26
+                        "doc_count": 25
                     },
                     {
                         "key": "France",
@@ -583,7 +583,7 @@
                     },
                     {
                         "key": "Sweden",
-                        "doc_count": 18
+                        "doc_count": 19
                     }
                 ]
             }
@@ -670,8 +670,8 @@
                 "average": 9
             },
             "by_location": {
-                "doc_count_error_upper_bound": 8,
-                "sum_other_doc_count": 299,
+                "doc_count_error_upper_bound": 6,
+                "sum_other_doc_count": 300,
                 "buckets": [
                     {
                         "key": "United States",
@@ -711,7 +711,7 @@
                     },
                     {
                         "key": "India",
-                        "doc_count": 22
+                        "doc_count": 21
                     }
                 ]
             }
@@ -798,7 +798,7 @@
                 "average": 7
             },
             "by_location": {
-                "doc_count_error_upper_bound": 70,
+                "doc_count_error_upper_bound": 74,
                 "sum_other_doc_count": 3423,
                 "buckets": [
                     {
@@ -926,7 +926,7 @@
                 "average": 7
             },
             "by_location": {
-                "doc_count_error_upper_bound": 32,
+                "doc_count_error_upper_bound": 30,
                 "sum_other_doc_count": 1333,
                 "buckets": [
                     {
@@ -1054,7 +1054,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 29,
+                "doc_count_error_upper_bound": 31,
                 "sum_other_doc_count": 1261,
                 "buckets": [
                     {
@@ -1183,7 +1183,7 @@
             },
             "by_location": {
                 "doc_count_error_upper_bound": 2,
-                "sum_other_doc_count": 89,
+                "sum_other_doc_count": 90,
                 "buckets": [
                     {
                         "key": "United States",
@@ -1206,11 +1206,11 @@
                         "doc_count": 12
                     },
                     {
-                        "key": "Sweden",
-                        "doc_count": 10
+                        "key": "Netherlands",
+                        "doc_count": 9
                     },
                     {
-                        "key": "Netherlands",
+                        "key": "Sweden",
                         "doc_count": 9
                     },
                     {
@@ -2883,7 +2883,7 @@
     ],
     "others": {
         "doc_count_error_upper_bound": 10,
-        "sum_other_doc_count": 1134,
+        "sum_other_doc_count": 1121,
         "buckets": [
             {
                 "key": "Preact",
@@ -2959,12 +2959,50 @@
             },
             {
                 "key": "vanilla javascript",
-                "doc_count": 30
+                "doc_count": 31
             },
             {
                 "key": "Angular",
                 "doc_count": 27
             }
         ]
-    }
+    },
+    "numberOfToolsUsed": [
+        {
+            "key": 0,
+            "doc_count": 1740
+        },
+        {
+            "key": 1,
+            "doc_count": 9212
+        },
+        {
+            "key": 2,
+            "doc_count": 7880
+        },
+        {
+            "key": 3,
+            "doc_count": 3500
+        },
+        {
+            "key": 4,
+            "doc_count": 1057
+        },
+        {
+            "key": 5,
+            "doc_count": 263
+        },
+        {
+            "key": 6,
+            "doc_count": 38
+        },
+        {
+            "key": 7,
+            "doc_count": 12
+        },
+        {
+            "key": 8,
+            "doc_count": 2
+        }
+    ]
 }

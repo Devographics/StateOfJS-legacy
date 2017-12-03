@@ -10,11 +10,11 @@ If you'd like to know when we release additional results or announce next year's
 
 const Conclusion = () => (
     <DocumentTitle title="Conclusion">
-    	<div>
-        <div>Conclusion</div>
+        <div>
+            <div>Conclusion</div>
 
-        	<div className="block block--newsletter">
-	        	<TextBlock title="Stay Tuned" text={newsletterText} />
+            <div className="block block--newsletter">
+                <TextBlock title="Stay Tuned" text={newsletterText} />
                 <Newsletter />
             </div>
         </div>

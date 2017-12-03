@@ -21,14 +21,23 @@ const getTitle = ({ section, subSection }, short = false) => {
         </h2>
         */
 export default class PageTitle extends React.PureComponent {
-
     handleKeyDown = e => {
         const { previousPage, nextPage } = getPages(this.props.location.pathname)
         if (this.props.mode === 'title') {
             if (e.keyCode == 37) {
-              navigateTo(getPageUrl(previousPage.section.label, previousPage.subSection && previousPage.subSection.label))
+                navigateTo(
+                    getPageUrl(
+                        previousPage.section.label,
+                        previousPage.subSection && previousPage.subSection.label
+                    )
+                )
             } else if (e.keyCode == 39) {
-              navigateTo(getPageUrl(nextPage.section.label, nextPage.subSection && nextPage.subSection.label))
+                navigateTo(
+                    getPageUrl(
+                        nextPage.section.label,
+                        nextPage.subSection && nextPage.subSection.label
+                    )
+                )
             }
         }
     }
@@ -43,35 +52,56 @@ export default class PageTitle extends React.PureComponent {
     }
 
     render() {
-
         const { location, mode } = this.props
 
         const { currentPage, previousPage, nextPage } = getPages(this.props.location.pathname)
 
-        const tabindex = mode === 'title' ? {tabIndex: 0} : {}
+        const tabindex = mode === 'title' ? { tabIndex: 0 } : {}
 
         return (
-            <div {...tabindex} ref="title" onKeyDown={this.handleKeyDown} className={classNames(`pagetitle__wrapper`, mode === 'pagination' ? 'pagetitle__wrapper--pagination' : 'pagetitle__wrapper--title')}>
+            <div
+                {...tabindex}
+                ref="title"
+                onKeyDown={this.handleKeyDown}
+                className={classNames(
+                    `pagetitle__wrapper`,
+                    mode === 'pagination'
+                        ? 'pagetitle__wrapper--pagination'
+                        : 'pagetitle__wrapper--title'
+                )}
+            >
                 <div className="pagetitle">
                     <div className="pagetitle__inner">
                         {previousPage ? (
                             <Link
                                 className="pagination__link pagination__previous"
-                                to={getPageUrl(previousPage.section.label, previousPage.subSection && previousPage.subSection.label)}
+                                to={getPageUrl(
+                                    previousPage.section.label,
+                                    previousPage.subSection && previousPage.subSection.label
+                                )}
                             >
                                 <span className="pagination__link__symbol">&lt;&lt;</span>
-                                <span className="pagination__link__label">{getTitle(previousPage, true)}</span>
+                                <span className="pagination__link__label">
+                                    {getTitle(previousPage, true)}
+                                </span>
                             </Link>
                         ) : (
                             <span />
                         )}
-                        {mode === 'title' && <h2 className="pagetitle__main">{getTitle(currentPage)}</h2>}
+                        {mode === 'title' && (
+                            <h2 className="pagetitle__main">{getTitle(currentPage)}</h2>
+                        )}
                         {nextPage ? (
                             <Link
                                 className="pagination__link pagination__next"
-                                to={getPageUrl(nextPage.section.label, nextPage.subSection && nextPage.subSection.label)}
+                                to={getPageUrl(
+                                    nextPage.section.label,
+                                    nextPage.subSection && nextPage.subSection.label
+                                )}
                             >
-                                <span className="pagination__link__label">{getTitle(nextPage, true)}</span>
+                                <span className="pagination__link__label">
+                                    {getTitle(nextPage, true)}
+                                </span>
                                 <span className="pagination__link__symbol">&gt;&gt;</span>
                             </Link>
                         ) : (
@@ -85,5 +115,5 @@ export default class PageTitle extends React.PureComponent {
 }
 
 PageTitle.defaultProps = {
-    mode: 'title'
+    mode: 'title',
 }

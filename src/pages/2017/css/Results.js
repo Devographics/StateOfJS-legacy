@@ -3,11 +3,12 @@ import styleData from '../../../data/style.json'
 import ResultsTemplate from '../../../components/templates/ResultsTemplate'
 import * as dto from '../../../dto'
 
-const data = dto.experience(styleData.experience)
+const experienceData = dto.experience(styleData.experience)
+const numberOfToolsData = dto.experience(styleData.numberOfToolsUsed)
 
 const Results = () => (
     <ResultsTemplate
-        data={data}
+        section="CSS"
         description={`
 Much has been made about new *CSS-in-JS* approaches like Styled Components, especially in 
 the React ecosystem.
@@ -15,7 +16,9 @@ the React ecosystem.
 But as the results show, for now developers still prefer the safety of mainstays like
  *SASS/SCSS* or even *Plain CSS*. 
 `}
-        section="CSS"
+        keys={styleData.keys}
+        experienceData={experienceData}
+        numberOfToolsData={numberOfToolsData}
         sponsor="reactforbeginners"
     />
 )
