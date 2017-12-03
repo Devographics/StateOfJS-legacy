@@ -1,16 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import libraries from '../../data/libraries.json'
+import numeral from 'numeral'
 import find from 'lodash/find'
-import { aliases } from '../../constants'
 import classNames from 'classnames'
+
+import libraries from '../../data/libraries.json'
+import { aliases } from '../../constants'
 import paddingFormula from '../../helpers/paddingFormula'
 
-const Star = () => (
+const StarIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
     <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
   </svg>
 )
+
+const StarTotal = ({ value }) => {
+  const digits = value > 1000 && value < 10000 ? '0.0' : '0'
+  return <span>{numeral(value).format(`${digits}a`)}</span>
+}
 
 const Libraries = ({ data, variant = 'horizontal' }) => (
   <div className={`libraries libraries--${variant} libraries--${data.length}-items`}>
@@ -81,8 +88,8 @@ const Tooltip = ({ library, variant }) => {
             {library.name}
           </a>
           <a className="tooltip__title__stars" href={githubUrl}>
-            <Star />
-            {library.stars.toLocaleString()}
+            <StarTotal value={library.stars.toLocaleString()} />
+            <StarIcon />
           </a>
         </h3>
         <p>

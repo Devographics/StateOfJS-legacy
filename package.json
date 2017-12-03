@@ -47,6 +47,7 @@
     "markdown-it-footnote": "^3.0.1",
     "markdown-it-sub": "^1.0.0",
     "nivo": "^0.30.0",
+    "numeral": "^2.0.6",
     "object-assign": "^4.1.0",
     "path-dirname": "^1.0.2",
     "react": "^15.3.0",
