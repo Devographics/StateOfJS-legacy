@@ -9,7 +9,7 @@ const TextBlock = ({ text, title, children }) => {
 		return (
 		    <div className="block block--text">
 		    	{title && <h3 className="block__title">{title}</h3>}
-		    	{text && <div className="block__contents" dangerouslySetInnerHTML={{__html: parseBold(addParagraphs(text))}}/>}
+		    	{text && <div className="block__content" dangerouslySetInnerHTML={{__html: parseBold(addParagraphs(text))}}/>}
 		    </div>
 		)
 	}
