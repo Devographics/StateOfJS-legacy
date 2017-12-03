@@ -225,7 +225,7 @@ exports.experienceByUsers = async (
  */
 exports.distributionByNumberOfToolsUsed = async tools => {
     const totalScript = `
-        def fields = ['${tools.join('\', \'')}'];
+        def fields = ['${tools.join("', '")}'];
         
         def total = 0; for (int i = 0; i < fields.length; i++) {
             if(doc[fields[i]][0] == "I've USED it before, and WOULD use it again") {
@@ -240,24 +240,27 @@ exports.distributionByNumberOfToolsUsed = async tools => {
         index: config.get('elastic.index'),
         size: 0,
         body: {
-            query: {match_all: {}},
-            aggs:  {
+            query: { match_all: {} },
+            aggs: {
                 by_count: {
                     terms: {
                         script: {
                             lang: 'painless',
-                            source: totalScript
-                        }
-                    }
-                }
-            }
-        }
+                            source: totalScript,
+                        },
+                    },
+                },
+            },
+        },
     })
 
-    return sortBy(result.aggregations.by_count.buckets.map(bucket => ({
-        ...bucket,
-        key: Number(bucket.key),
-    })), 'key')
+    return sortBy(
+        result.aggregations.by_count.buckets.map(bucket => ({
+            ...bucket,
+            key: Number(bucket.key),
+        })),
+        'key'
+    )
 }
 
 /**
@@ -358,7 +361,9 @@ exports.frontend = async () => {
     const experienceByUsers = await exports.experienceByUsers(reportConfig.frontend.keys)
     const others = await elastic.termsAgg(reportConfig.frontend.freeform, OTHERS_AGG_SIZE)
     const countries = await exports.distributionByCountry(reportConfig.frontend.keys)
-    const numberOfToolsUsed = await exports.distributionByNumberOfToolsUsed(reportConfig.frontend.keys)
+    const numberOfToolsUsed = await exports.distributionByNumberOfToolsUsed(
+        reportConfig.frontend.keys
+    )
 
     return {
         keys: reportConfig.frontend.keys,
@@ -374,12 +379,16 @@ exports.flavor = async () => {
     const experience = await elastic.termsAggs(reportConfig.flavors.keys)
     const experienceByUsers = await exports.experienceByUsers(reportConfig.flavors.keys)
     const countries = await exports.distributionByCountry(reportConfig.flavors.keys)
+    const numberOfToolsUsed = await exports.distributionByNumberOfToolsUsed(
+        reportConfig.flavors.keys
+    )
 
     return {
         keys: reportConfig.flavors.keys,
         experience: dto.aggregations(experience.aggregations),
         experienceByUsers,
         countries,
+        numberOfToolsUsed,
     }
 }
 
@@ -388,6 +397,9 @@ exports.state = async () => {
     const experienceByUsers = await exports.experienceByUsers(reportConfig.stateManagement.keys)
     const others = await elastic.termsAgg(reportConfig.stateManagement.freeform, OTHERS_AGG_SIZE)
     const countries = await exports.distributionByCountry(reportConfig.stateManagement.keys)
+    const numberOfToolsUsed = await exports.distributionByNumberOfToolsUsed(
+        reportConfig.stateManagement.keys
+    )
 
     return {
         keys: reportConfig.stateManagement.keys,
@@ -395,6 +407,7 @@ exports.state = async () => {
         experienceByUsers,
         countries,
         others: others.aggregations[reportConfig.stateManagement.freeform],
+        numberOfToolsUsed,
     }
 }
 
@@ -403,6 +416,9 @@ exports.style = async () => {
     const experienceByUsers = await exports.experienceByUsers(reportConfig.styleManagement.keys)
     const others = await elastic.termsAgg(reportConfig.styleManagement.freeform, OTHERS_AGG_SIZE)
     const countries = await exports.distributionByCountry(reportConfig.styleManagement.keys)
+    const numberOfToolsUsed = await exports.distributionByNumberOfToolsUsed(
+        reportConfig.styleManagement.keys
+    )
 
     return {
         keys: reportConfig.styleManagement.keys,
@@ -410,6 +426,7 @@ exports.style = async () => {
         experienceByUsers,
         countries,
         others: others.aggregations[reportConfig.styleManagement.freeform],
+        numberOfToolsUsed,
     }
 }
 
@@ -418,6 +435,9 @@ exports.backend = async () => {
     const experienceByUsers = await exports.experienceByUsers(reportConfig.backend.keys)
     const others = await elastic.termsAgg(reportConfig.backend.freeform, OTHERS_AGG_SIZE)
     const countries = await exports.distributionByCountry(reportConfig.backend.keys)
+    const numberOfToolsUsed = await exports.distributionByNumberOfToolsUsed(
+        reportConfig.backend.keys
+    )
 
     return {
         keys: reportConfig.backend.keys,
@@ -425,6 +445,7 @@ exports.backend = async () => {
         experienceByUsers,
         countries,
         others: others.aggregations[reportConfig.backend.freeform],
+        numberOfToolsUsed,
     }
 }
 
@@ -433,6 +454,9 @@ exports.testing = async () => {
     const experienceByUsers = await exports.experienceByUsers(reportConfig.testing.keys)
     const others = await elastic.termsAgg(reportConfig.testing.freeform, OTHERS_AGG_SIZE)
     const countries = await exports.distributionByCountry(reportConfig.testing.keys)
+    const numberOfToolsUsed = await exports.distributionByNumberOfToolsUsed(
+        reportConfig.testing.keys
+    )
 
     return {
         keys: reportConfig.testing.keys,
@@ -440,6 +464,7 @@ exports.testing = async () => {
         experienceByUsers,
         countries,
         others: others.aggregations[reportConfig.testing.freeform],
+        numberOfToolsUsed,
     }
 }
 
@@ -448,6 +473,9 @@ exports.build = async () => {
     const experienceByUsers = await exports.experienceByUsers(reportConfig.buildTools.keys)
     const others = await elastic.termsAgg(reportConfig.buildTools.freeform, OTHERS_AGG_SIZE)
     const countries = await exports.distributionByCountry(reportConfig.buildTools.keys)
+    const numberOfToolsUsed = await exports.distributionByNumberOfToolsUsed(
+        reportConfig.buildTools.keys
+    )
 
     return {
         keys: reportConfig.buildTools.keys,
@@ -455,6 +483,7 @@ exports.build = async () => {
         experienceByUsers,
         others: others.aggregations[reportConfig.buildTools.freeform],
         countries,
+        numberOfToolsUsed,
     }
 }
 
@@ -463,6 +492,9 @@ exports.mobile = async () => {
     const experienceByUsers = await exports.experienceByUsers(reportConfig.mobile.keys)
     const others = await elastic.termsAgg(reportConfig.mobile.freeform, OTHERS_AGG_SIZE)
     const countries = await exports.distributionByCountry(reportConfig.mobile.keys)
+    const numberOfToolsUsed = await exports.distributionByNumberOfToolsUsed(
+        reportConfig.mobile.keys
+    )
 
     return {
         keys: reportConfig.mobile.keys,
@@ -470,6 +502,7 @@ exports.mobile = async () => {
         experienceByUsers,
         others: others.aggregations[reportConfig.mobile.freeform],
         countries,
+        numberOfToolsUsed,
     }
 }
 

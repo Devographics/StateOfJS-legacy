@@ -16,8 +16,6 @@ We believe the result is the most complete picture of the state of JavaScript cu
 
 `
 
-
-
 const Introduction = () => (
     <DocumentTitle title="Introduction">
         <div>

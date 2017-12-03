@@ -47,7 +47,11 @@ export default class Index extends React.Component {
 
                     <div className="intro section-border section-narrow">
                         <TextBlock text={homeContents} />
-                        <div className="view-results"><Link className="button large-button" to="/2017/introduction/">View Results</Link></div>
+                        <div className="view-results">
+                            <Link className="button large-button" to="/2017/introduction/">
+                                View Results
+                            </Link>
+                        </div>
                     </div>
                     {/*<Stats />*/}
 
@@ -58,9 +62,10 @@ export default class Index extends React.Component {
                     <Comments />
 
                     <div className="footer home-footer">
-                        <TextBlock><FooterContents/></TextBlock>
+                        <TextBlock>
+                            <FooterContents />
+                        </TextBlock>
                     </div>
-
                 </div>
             </DocumentTitle>
         )

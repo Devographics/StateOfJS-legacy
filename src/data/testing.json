@@ -2078,5 +2078,35 @@
                 "doc_count": 4
             }
         ]
-    }
+    },
+    "numberOfToolsUsed": [
+        {
+            "key": 0,
+            "doc_count": 8435
+        },
+        {
+            "key": 1,
+            "doc_count": 4908
+        },
+        {
+            "key": 2,
+            "doc_count": 5616
+        },
+        {
+            "key": 3,
+            "doc_count": 2558
+        },
+        {
+            "key": 4,
+            "doc_count": 1743
+        },
+        {
+            "key": 5,
+            "doc_count": 369
+        },
+        {
+            "key": 6,
+            "doc_count": 75
+        }
+    ]
 }

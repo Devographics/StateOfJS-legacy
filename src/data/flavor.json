@@ -2288,5 +2288,39 @@
                 "divergence": 2
             }
         }
+    ],
+    "numberOfToolsUsed": [
+        {
+            "key": 0,
+            "doc_count": 819
+        },
+        {
+            "key": 1,
+            "doc_count": 6646
+        },
+        {
+            "key": 2,
+            "doc_count": 10859
+        },
+        {
+            "key": 3,
+            "doc_count": 4581
+        },
+        {
+            "key": 4,
+            "doc_count": 660
+        },
+        {
+            "key": 5,
+            "doc_count": 107
+        },
+        {
+            "key": 6,
+            "doc_count": 27
+        },
+        {
+            "key": 7,
+            "doc_count": 5
+        }
     ]
 }

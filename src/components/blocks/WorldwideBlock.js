@@ -36,8 +36,8 @@ export default class WorldwideBlock extends Component {
                 <div className="block__description">
                     <p>
                         Library usage by country (defined as respondents who picked “have used
-                        before and would use again”). Red indicates higher compared to worldwide average, blue
-                        indicates lower usage compared to worldwide average.
+                        before and would use again”). Red indicates higher compared to worldwide
+                        average, blue indicates lower usage compared to worldwide average.
                     </p>
                     <p>
                         Note: only countries which received over {lowerResponseCount} total entries
@@ -52,8 +52,6 @@ export default class WorldwideBlock extends Component {
                     }}
                 />
                 <div className="worldwide__grid">
-
-                    
                     <div className="worldwide__grid__item">
                         <div className="worldwide__chart">
                             <CountryBubble

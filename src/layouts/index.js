@@ -8,7 +8,6 @@ import PageLayout from '../components/common/PageLayout'
 import classNames from 'classnames'
 
 export default class Layout extends React.Component {
-
     render() {
         const title = DocumentTitle.peek()
         const description = 'A short survey about current popular JavaScript technologies.'

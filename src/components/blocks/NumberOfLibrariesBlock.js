@@ -1,19 +1,30 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import NumbersOfLibrariesPie from '../charts/NumbersOfLibrariesPie'
 
 export default class NumberOfLibrariesBlock extends Component {
     static propTypes = {
-        data: PropTypes.array.isRequired,
+        keys: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+        data: PropTypes.arrayOf(
+            PropTypes.shape({
+                key: PropTypes.number.isRequired,
+                doc_count: PropTypes.number.isRequired,
+            })
+        ).isRequired,
     }
 
     render() {
+        const { keys, data } = this.props
+
         return (
             <div className="block block--chart block--numberoflibs">
                 <h3 className="block__title">Number of Libraries Used</h3>
                 <div className="block__description">
-                    <p>How many different libraries have developers used?</p>
+                    <p>How many different libraries are developers using?</p>
                 </div>
-                <img src="https://d3vv6lp55qjaqc.cloudfront.net/items/3r3H092K1I0B17111t2b/Screen%20Shot%202017-11-23%20at%2014.48.50.png?X-CloudApp-Visitor-Id=f25ee64a8f9b32be400086060540ffac&v=92889c34" />
+                <div style={{ height: '500px' }}>
+                    <NumbersOfLibrariesPie keys={keys} data={data} />
+                </div>
             </div>
         )
     }

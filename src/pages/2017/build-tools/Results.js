@@ -3,17 +3,20 @@ import buildData from '../../../data/build.json'
 import ResultsTemplate from '../../../components/templates/ResultsTemplate'
 import * as dto from '../../../dto'
 
-const data = dto.experience(buildData.experience)
+const experienceData = dto.experience(buildData.experience)
+const numberOfToolsData = dto.experience(buildData.numberOfToolsUsed)
 
 const Results = () => (
     <ResultsTemplate
-        data={data}
+        section="Build Tools"
         description={`Apart from *NPM*, *Webpack* is still the kind of build tools. This is no doubt due to 
 the rise of no-config Webpack wrappers like Create-React-App and Next.js. 
 
 This could prove itself a double-edged sword though: if a better alternative ever comes along, these libraries
 might end up switching to it without a second thought.`}
-        section="Build Tools"
+        keys={buildData.keys}
+        experienceData={experienceData}
+        numberOfToolsData={numberOfToolsData}
         sponsor="reactforbeginners"
     />
 )
