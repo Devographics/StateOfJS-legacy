@@ -85,7 +85,7 @@
     },
     "others": {
         "doc_count_error_upper_bound": 5,
-        "sum_other_doc_count": 451,
+        "sum_other_doc_count": 444,
         "buckets": [
             {
                 "key": "Accessibility",
@@ -93,30 +93,18 @@
             },
             {
                 "key": "PWA",
-                "doc_count": 9
-            },
-            {
-                "key": ".",
-                "doc_count": 4
-            },
-            {
-                "key": "No",
-                "doc_count": 4
-            },
-            {
-                "key": "Performance",
-                "doc_count": 4
-            },
-            {
-                "key": "?",
-                "doc_count": 3
-            },
-            {
-                "key": "AOT",
-                "doc_count": 3
+                "doc_count": 7
             },
             {
                 "key": "na",
+                "doc_count": 6
+            },
+            {
+                "key": "Performance",
+                "doc_count": 5
+            },
+            {
+                "key": "AOT",
                 "doc_count": 3
             },
             {
@@ -156,16 +144,28 @@
                 "doc_count": 2
             },
             {
-                "key": "Local Storage",
+                "key": "No runtime exceptions",
                 "doc_count": 2
             },
             {
-                "key": "Local storage",
+                "key": "WebAssembly",
                 "doc_count": 2
             },
             {
-                "key": "None ",
+                "key": "accessibility",
                 "doc_count": 2
+            },
+            {
+                "key": "pwa",
+                "doc_count": 2
+            },
+            {
+                "key": "\n\n\n\n\n",
+                "doc_count": 1
+            },
+            {
+                "key": "   ",
+                "doc_count": 1
             }
         ]
     }

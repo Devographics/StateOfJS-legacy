@@ -150,7 +150,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 10,
+                "doc_count_error_upper_bound": 9,
                 "sum_other_doc_count": 333,
                 "buckets": [
                     {
@@ -278,7 +278,7 @@
                 "average": 7
             },
             "by_location": {
-                "doc_count_error_upper_bound": 74,
+                "doc_count_error_upper_bound": 75,
                 "sum_other_doc_count": 3643,
                 "buckets": [
                     {
@@ -535,7 +535,7 @@
             },
             "by_location": {
                 "doc_count_error_upper_bound": 5,
-                "sum_other_doc_count": 145,
+                "sum_other_doc_count": 144,
                 "buckets": [
                     {
                         "key": "United States",
@@ -570,11 +570,11 @@
                         "doc_count": 12
                     },
                     {
-                        "key": "Australia",
-                        "doc_count": 10
+                        "key": "Spain",
+                        "doc_count": 11
                     },
                     {
-                        "key": "Spain",
+                        "key": "Australia",
                         "doc_count": 10
                     }
                 ]
@@ -919,7 +919,7 @@
             },
             "by_location": {
                 "doc_count_error_upper_bound": 5,
-                "sum_other_doc_count": 175,
+                "sum_other_doc_count": 173,
                 "buckets": [
                     {
                         "key": "United States",
@@ -951,7 +951,7 @@
                     },
                     {
                         "key": "India",
-                        "doc_count": 14
+                        "doc_count": 15
                     },
                     {
                         "key": "Brazil",
@@ -959,7 +959,7 @@
                     },
                     {
                         "key": "Mexico",
-                        "doc_count": 11
+                        "doc_count": 12
                     }
                 ]
             }
@@ -1063,7 +1063,7 @@
                     },
                     {
                         "key": "United Kingdom",
-                        "doc_count": 20
+                        "doc_count": 19
                     },
                     {
                         "key": "Germany",
@@ -1086,8 +1086,8 @@
                         "doc_count": 10
                     },
                     {
-                        "key": "Argentina",
-                        "doc_count": 6
+                        "key": "Spain",
+                        "doc_count": 7
                     }
                 ]
             }
@@ -2587,7 +2587,7 @@
     ],
     "others": {
         "doc_count_error_upper_bound": 5,
-        "sum_other_doc_count": 776,
+        "sum_other_doc_count": 768,
         "buckets": [
             {
                 "key": "Node.js",
@@ -2627,7 +2627,7 @@
             },
             {
                 "key": "elixir",
-                "doc_count": 41
+                "doc_count": 42
             },
             {
                 "key": "python",
@@ -2638,12 +2638,12 @@
                 "doc_count": 30
             },
             {
-                "key": "golang",
+                "key": "serverless",
                 "doc_count": 28
             },
             {
-                "key": "serverless",
-                "doc_count": 28
+                "key": "golang",
+                "doc_count": 27
             },
             {
                 "key": "socket.io",
@@ -2651,7 +2651,7 @@
             },
             {
                 "key": "micro",
-                "doc_count": 24
+                "doc_count": 23
             },
             {
                 "key": "clojure",
@@ -2662,11 +2662,11 @@
                 "doc_count": 19
             },
             {
-                "key": "GraphQL",
-                "doc_count": 10
+                "key": "Kraken",
+                "doc_count": 9
             },
             {
-                "key": "Kraken",
+                "key": "GraphQL",
                 "doc_count": 8
             }
         ]

@@ -134,7 +134,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 60,
+                "doc_count_error_upper_bound": 58,
                 "sum_other_doc_count": 2929,
                 "buckets": [
                     {
@@ -262,7 +262,7 @@
                 "average": 9
             },
             "by_location": {
-                "doc_count_error_upper_bound": 10,
+                "doc_count_error_upper_bound": 12,
                 "sum_other_doc_count": 443,
                 "buckets": [
                     {
@@ -390,7 +390,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 27,
+                "doc_count_error_upper_bound": 26,
                 "sum_other_doc_count": 1204,
                 "buckets": [
                     {
@@ -518,7 +518,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 117,
+                "doc_count_error_upper_bound": 119,
                 "sum_other_doc_count": 5584,
                 "buckets": [
                     {
@@ -646,7 +646,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 91,
+                "doc_count_error_upper_bound": 92,
                 "sum_other_doc_count": 4317,
                 "buckets": [
                     {
@@ -774,7 +774,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 26,
+                "doc_count_error_upper_bound": 25,
                 "sum_other_doc_count": 1110,
                 "buckets": [
                     {
@@ -902,6 +902,92 @@
             },
             "doc_count": 22461
         }
+    },
+    "others": {
+        "doc_count_error_upper_bound": 5,
+        "sum_other_doc_count": 566,
+        "buckets": [
+            {
+                "key": "yarn",
+                "doc_count": 1334
+            },
+            {
+                "key": "GNU Make",
+                "doc_count": 124
+            },
+            {
+                "key": "Brunch",
+                "doc_count": 105
+            },
+            {
+                "key": "Broccoli",
+                "doc_count": 99
+            },
+            {
+                "key": "jspm",
+                "doc_count": 42
+            },
+            {
+                "key": "Bower",
+                "doc_count": 41
+            },
+            {
+                "key": "fusebox",
+                "doc_count": 36
+            },
+            {
+                "key": "Meteor",
+                "doc_count": 34
+            },
+            {
+                "key": "Babel",
+                "doc_count": 32
+            },
+            {
+                "key": "gulp",
+                "doc_count": 24
+            },
+            {
+                "key": "SystemJS",
+                "doc_count": 19
+            },
+            {
+                "key": "gradle",
+                "doc_count": 17
+            },
+            {
+                "key": "StealJS",
+                "doc_count": 11
+            },
+            {
+                "key": "Bazel",
+                "doc_count": 9
+            },
+            {
+                "key": "Webpack",
+                "doc_count": 8
+            },
+            {
+                "key": "ember-cli",
+                "doc_count": 6
+            },
+            {
+                "key": "npm scripts",
+                "doc_count": 6
+            },
+            {
+                "key": "Angular CLI",
+                "doc_count": 5
+            },
+            {
+                "key": "Ember-CLI",
+                "doc_count": 5
+            },
+            {
+                "key": "Ant",
+                "doc_count": 4
+            }
+        ]
     },
     "countries": [
         {
@@ -1992,91 +2078,5 @@
                 "divergence": -5
             }
         }
-    ],
-    "others": {
-        "doc_count_error_upper_bound": 5,
-        "sum_other_doc_count": 576,
-        "buckets": [
-            {
-                "key": "yarn",
-                "doc_count": 1334
-            },
-            {
-                "key": "GNU Make",
-                "doc_count": 124
-            },
-            {
-                "key": "Brunch",
-                "doc_count": 105
-            },
-            {
-                "key": "Broccoli",
-                "doc_count": 99
-            },
-            {
-                "key": "jspm",
-                "doc_count": 42
-            },
-            {
-                "key": "Bower",
-                "doc_count": 41
-            },
-            {
-                "key": "fusebox",
-                "doc_count": 36
-            },
-            {
-                "key": "Meteor",
-                "doc_count": 34
-            },
-            {
-                "key": "Babel",
-                "doc_count": 32
-            },
-            {
-                "key": "gulp",
-                "doc_count": 24
-            },
-            {
-                "key": "SystemJS",
-                "doc_count": 19
-            },
-            {
-                "key": "gradle",
-                "doc_count": 18
-            },
-            {
-                "key": "Bazel",
-                "doc_count": 9
-            },
-            {
-                "key": "Webpack",
-                "doc_count": 9
-            },
-            {
-                "key": "StealJS",
-                "doc_count": 8
-            },
-            {
-                "key": "ember-cli",
-                "doc_count": 7
-            },
-            {
-                "key": "npm scripts",
-                "doc_count": 7
-            },
-            {
-                "key": "Angular CLI",
-                "doc_count": 5
-            },
-            {
-                "key": "Closure Compiler",
-                "doc_count": 5
-            },
-            {
-                "key": "Codekit",
-                "doc_count": 5
-            }
-        ]
-    }
+    ]
 }

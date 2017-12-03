@@ -8,7 +8,7 @@
     "aggs": {
         "Utility Libraries": {
             "doc_count_error_upper_bound": 5,
-            "sum_other_doc_count": 478,
+            "sum_other_doc_count": 473,
             "buckets": [
                 {
                     "key": "lodash",
@@ -40,29 +40,29 @@
                 },
                 {
                     "key": "axios",
-                    "doc_count": 19
+                    "doc_count": 20
                 },
                 {
                     "key": "recompose",
-                    "doc_count": 17
+                    "doc_count": 18
                 },
                 {
                     "key": "React",
                     "doc_count": 12
                 },
                 {
-                    "key": "async",
+                    "key": "Zepto",
                     "doc_count": 12
                 },
                 {
-                    "key": "Zepto",
-                    "doc_count": 9
+                    "key": "async",
+                    "doc_count": 12
                 }
             ]
         },
         "Code Linters": {
             "doc_count_error_upper_bound": 5,
-            "sum_other_doc_count": 293,
+            "sum_other_doc_count": 292,
             "buckets": [
                 {
                     "key": "eslint",
@@ -101,11 +101,11 @@
                     "doc_count": 23
                 },
                 {
-                    "key": "JSCS",
-                    "doc_count": 16
+                    "key": "elm-format",
+                    "doc_count": 17
                 },
                 {
-                    "key": "elm-format",
+                    "key": "JSCS",
                     "doc_count": 16
                 },
                 {
@@ -170,7 +170,7 @@
         },
         "Package Managers": {
             "doc_count_error_upper_bound": 5,
-            "sum_other_doc_count": 139,
+            "sum_other_doc_count": 138,
             "buckets": [
                 {
                     "key": "yarn",
@@ -217,8 +217,8 @@
                     "doc_count": 8
                 },
                 {
-                    "key": "apt",
-                    "doc_count": 4
+                    "key": "Atmosphere",
+                    "doc_count": 3
                 }
             ]
         }

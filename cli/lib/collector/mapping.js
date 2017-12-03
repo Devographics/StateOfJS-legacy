@@ -34,6 +34,9 @@ const ignore = [
     'None',
     'none',
     'no',
+    'No',
+    '.',
+    '?',
 ]
 const cleanupFreeValue = value => (ignore.includes(value) ? null : value)
 
@@ -356,6 +359,29 @@ exports.response = {
         'PhoneGap/Cordova': { type: 'keyword' },
         NativeScript: { type: 'keyword' },
         Electron: { type: 'keyword' },
+        'Other mobile/desktop apps solutions': {
+            type: 'keyword',
+            transform: normalize([
+                [/weex/i, 'Weex'],
+                [/xamarin/i, 'Xamarin'],
+                [/pwa/i, 'PWA'],
+                [/progressive web app/i, 'PWA'],
+                [/nw\.js/i, 'nw.js'],
+                [/nwjs/i, 'nw.js'],
+                [/nw/i, 'nw.js'],
+                [/expo/i, 'Expo'],
+                [/Flutter/i, 'Flutter'],
+                [/appcelerator/i, 'Appcelerator'],
+                [/titanium/i, 'Appcelerator'],
+                [/fuse/i, 'Fuse'],
+                [/cef/i, 'CEF'],
+                [/Chromium Embedded Framework/i, 'CEF'],
+                [/Angular Native/i, 'Angular Native'],
+                [/Elm native/i, 'Elm native'],
+                [/Swift/i, 'Swift'],
+                [/Kotlin/i, 'Kotlin'],
+            ]),
+        },
         'On a scale of one to five pencils, how happy are you with the current state of mobile apps?': {
             type: 'short',
             transform: castNumber,

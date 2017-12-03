@@ -262,7 +262,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 21,
+                "doc_count_error_upper_bound": 23,
                 "sum_other_doc_count": 1004,
                 "buckets": [
                     {
@@ -390,7 +390,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 50,
+                "doc_count_error_upper_bound": 48,
                 "sum_other_doc_count": 2192,
                 "buckets": [
                     {
@@ -518,7 +518,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 54,
+                "doc_count_error_upper_bound": 53,
                 "sum_other_doc_count": 2516,
                 "buckets": [
                     {
@@ -646,8 +646,8 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 5,
-                "sum_other_doc_count": 220,
+                "doc_count_error_upper_bound": 6,
+                "sum_other_doc_count": 219,
                 "buckets": [
                     {
                         "key": "undefined",
@@ -678,11 +678,11 @@
                         "doc_count": 25
                     },
                     {
-                        "key": "Canada",
-                        "doc_count": 23
+                        "key": "Sweden",
+                        "doc_count": 24
                     },
                     {
-                        "key": "Sweden",
+                        "key": "Canada",
                         "doc_count": 23
                     },
                     {
@@ -774,7 +774,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 26,
+                "doc_count_error_upper_bound": 28,
                 "sum_other_doc_count": 1330,
                 "buckets": [
                     {
@@ -1995,7 +1995,7 @@
     ],
     "others": {
         "doc_count_error_upper_bound": 5,
-        "sum_other_doc_count": 467,
+        "sum_other_doc_count": 460,
         "buckets": [
             {
                 "key": "karma",
@@ -2043,26 +2043,26 @@
             },
             {
                 "key": "cypress",
-                "doc_count": 24
+                "doc_count": 23
             },
             {
                 "key": "intern",
-                "doc_count": 22
-            },
-            {
-                "key": "testcafe",
-                "doc_count": 17
+                "doc_count": 23
             },
             {
                 "key": "PhantomJS",
-                "doc_count": 15
+                "doc_count": 16
             },
             {
-                "key": "jest",
-                "doc_count": 12
+                "key": "testcafe",
+                "doc_count": 16
             },
             {
                 "key": "junit",
+                "doc_count": 11
+            },
+            {
+                "key": "jest",
                 "doc_count": 10
             },
             {
@@ -2070,11 +2070,11 @@
                 "doc_count": 6
             },
             {
-                "key": "Mocha",
+                "key": "cljs.test",
                 "doc_count": 5
             },
             {
-                "key": "Nightmare",
+                "key": "Jasmine",
                 "doc_count": 4
             }
         ]

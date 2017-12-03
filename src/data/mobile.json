@@ -262,7 +262,7 @@
                 "average": 9
             },
             "by_location": {
-                "doc_count_error_upper_bound": 21,
+                "doc_count_error_upper_bound": 23,
                 "sum_other_doc_count": 934,
                 "buckets": [
                     {
@@ -554,7 +554,7 @@
                         "doc_count": 17
                     },
                     {
-                        "key": "Italy",
+                        "key": "Poland",
                         "doc_count": 10
                     },
                     {
@@ -646,7 +646,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 17,
+                "doc_count_error_upper_bound": 19,
                 "sum_other_doc_count": 738,
                 "buckets": [
                     {
@@ -774,7 +774,7 @@
                 "average": 7
             },
             "by_location": {
-                "doc_count_error_upper_bound": 27,
+                "doc_count_error_upper_bound": 25,
                 "sum_other_doc_count": 1227,
                 "buckets": [
                     {
@@ -902,6 +902,92 @@
             },
             "doc_count": 13577
         }
+    },
+    "others": {
+        "doc_count_error_upper_bound": 5,
+        "sum_other_doc_count": 365,
+        "buckets": [
+            {
+                "key": "PWA",
+                "doc_count": 147
+            },
+            {
+                "key": "Weex",
+                "doc_count": 133
+            },
+            {
+                "key": "nw.js",
+                "doc_count": 122
+            },
+            {
+                "key": "Xamarin",
+                "doc_count": 110
+            },
+            {
+                "key": "Appcelerator",
+                "doc_count": 32
+            },
+            {
+                "key": "Flutter",
+                "doc_count": 27
+            },
+            {
+                "key": "Expo",
+                "doc_count": 19
+            },
+            {
+                "key": "Fuse",
+                "doc_count": 18
+            },
+            {
+                "key": "Swift",
+                "doc_count": 13
+            },
+            {
+                "key": "CEF",
+                "doc_count": 10
+            },
+            {
+                "key": "Quasar",
+                "doc_count": 10
+            },
+            {
+                "key": "Elm native",
+                "doc_count": 6
+            },
+            {
+                "key": "Kotlin",
+                "doc_count": 5
+            },
+            {
+                "key": "ReactXP",
+                "doc_count": 5
+            },
+            {
+                "key": "Framework7",
+                "doc_count": 4
+            },
+            {
+                "key": "Angular Native",
+                "doc_count": 3
+            },
+            {
+                "key": "Electrino",
+                "doc_count": 3
+            },
+            {
+                "key": "Ionic",
+                "doc_count": 3
+            },
+            {
+                "key": "meh",
+                "doc_count": 3
+            },
+            {
+                "key": "Android",
+                "doc_count": 2
+            }
+        ]
     },
     "countries": [
         {

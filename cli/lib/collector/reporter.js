@@ -1,6 +1,6 @@
 'use strict'
 
-const { maxBy, pick, values } = require('lodash')
+const { maxBy, pick, values, sortBy } = require('lodash')
 const config = require('@ekino/config')
 const elastic = require('./elastic')
 const dto = require('./dto')
@@ -217,6 +217,50 @@ exports.experienceByUsers = async (
 }
 
 /**
+ * Compute aggregations according to number of tools used.
+ *
+ * @param {Array.<string>} tools
+ *
+ * @return {Promise.<Array.<Object>>}
+ */
+exports.distributionByNumberOfToolsUsed = async tools => {
+    const totalScript = `
+        def fields = ['${tools.join('\', \'')}'];
+        
+        def total = 0; for (int i = 0; i < fields.length; i++) {
+            if(doc[fields[i]][0] == "I've USED it before, and WOULD use it again") {
+                total += 1;
+            }
+        }
+        
+        return total;
+    `.trim()
+
+    const result = await elastic.client.search({
+        index: config.get('elastic.index'),
+        size: 0,
+        body: {
+            query: {match_all: {}},
+            aggs:  {
+                by_count: {
+                    terms: {
+                        script: {
+                            lang: 'painless',
+                            source: totalScript
+                        }
+                    }
+                }
+            }
+        }
+    })
+
+    return sortBy(result.aggregations.by_count.buckets.map(bucket => ({
+        ...bucket,
+        key: Number(bucket.key),
+    })), 'key')
+}
+
+/**
  * Retrieve usage (I've USED it before, and WOULD use it again),
  * and compute stats per country.
  *
@@ -314,6 +358,7 @@ exports.frontend = async () => {
     const experienceByUsers = await exports.experienceByUsers(reportConfig.frontend.keys)
     const others = await elastic.termsAgg(reportConfig.frontend.freeform, OTHERS_AGG_SIZE)
     const countries = await exports.distributionByCountry(reportConfig.frontend.keys)
+    const numberOfToolsUsed = await exports.distributionByNumberOfToolsUsed(reportConfig.frontend.keys)
 
     return {
         keys: reportConfig.frontend.keys,
@@ -321,6 +366,7 @@ exports.frontend = async () => {
         experienceByUsers,
         countries,
         others: others.aggregations[reportConfig.frontend.freeform],
+        numberOfToolsUsed,
     }
 }
 
@@ -407,20 +453,22 @@ exports.build = async () => {
         keys: reportConfig.buildTools.keys,
         experience: dto.aggregations(experience.aggregations),
         experienceByUsers,
-        countries,
         others: others.aggregations[reportConfig.buildTools.freeform],
+        countries,
     }
 }
 
 exports.mobile = async () => {
     const experience = await elastic.termsAggs(reportConfig.mobile.keys)
     const experienceByUsers = await exports.experienceByUsers(reportConfig.mobile.keys)
+    const others = await elastic.termsAgg(reportConfig.mobile.freeform, OTHERS_AGG_SIZE)
     const countries = await exports.distributionByCountry(reportConfig.mobile.keys)
 
     return {
         keys: reportConfig.mobile.keys,
         experience: dto.aggregations(experience.aggregations),
         experienceByUsers,
+        others: others.aggregations[reportConfig.mobile.freeform],
         countries,
     }
 }

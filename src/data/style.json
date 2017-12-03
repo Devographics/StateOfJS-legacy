@@ -142,7 +142,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 98,
+                "doc_count_error_upper_bound": 97,
                 "sum_other_doc_count": 4528,
                 "buckets": [
                     {
@@ -270,7 +270,7 @@
                 "average": 7
             },
             "by_location": {
-                "doc_count_error_upper_bound": 37,
+                "doc_count_error_upper_bound": 34,
                 "sum_other_doc_count": 1623,
                 "buckets": [
                     {
@@ -526,7 +526,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 77,
+                "doc_count_error_upper_bound": 76,
                 "sum_other_doc_count": 3733,
                 "buckets": [
                     {
@@ -654,7 +654,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 22,
+                "doc_count_error_upper_bound": 21,
                 "sum_other_doc_count": 981,
                 "buckets": [
                     {
@@ -910,8 +910,8 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 15,
-                "sum_other_doc_count": 603,
+                "doc_count_error_upper_bound": 13,
+                "sum_other_doc_count": 601,
                 "buckets": [
                     {
                         "key": "undefined",
@@ -947,7 +947,7 @@
                     },
                     {
                         "key": "Spain",
-                        "doc_count": 38
+                        "doc_count": 40
                     },
                     {
                         "key": "Australia",
@@ -2290,8 +2290,8 @@
         }
     ],
     "others": {
-        "doc_count_error_upper_bound": 8,
-        "sum_other_doc_count": 999,
+        "doc_count_error_upper_bound": 7,
+        "sum_other_doc_count": 996,
         "buckets": [
             {
                 "key": "PostCSS",
@@ -2354,11 +2354,11 @@
                 "doc_count": 29
             },
             {
-                "key": "styled-components",
-                "doc_count": 28
+                "key": "flexbox",
+                "doc_count": 27
             },
             {
-                "key": "flexbox",
+                "key": "styled-components",
                 "doc_count": 27
             },
             {

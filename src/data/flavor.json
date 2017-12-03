@@ -142,7 +142,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 52,
+                "doc_count_error_upper_bound": 49,
                 "sum_other_doc_count": 2199,
                 "buckets": [
                     {
@@ -399,7 +399,7 @@
             },
             "by_location": {
                 "doc_count_error_upper_bound": 5,
-                "sum_other_doc_count": 239,
+                "sum_other_doc_count": 240,
                 "buckets": [
                     {
                         "key": "United States",
@@ -438,8 +438,8 @@
                         "doc_count": 24
                     },
                     {
-                        "key": "Russia",
-                        "doc_count": 21
+                        "key": "Norway",
+                        "doc_count": 20
                     }
                 ]
             }
@@ -654,7 +654,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 109,
+                "doc_count_error_upper_bound": 115,
                 "sum_other_doc_count": 5291,
                 "buckets": [
                     {
@@ -910,7 +910,7 @@
                 "average": 8
             },
             "by_location": {
-                "doc_count_error_upper_bound": 11,
+                "doc_count_error_upper_bound": 12,
                 "sum_other_doc_count": 549,
                 "buckets": [
                     {
