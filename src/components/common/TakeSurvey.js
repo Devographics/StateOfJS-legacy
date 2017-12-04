@@ -1,6 +1,5 @@
 import React from 'react'
 import bowser from 'bowser'
-import axios from 'axios'
 import ReactGA from 'react-ga'
 
 const getOS = () => {
@@ -58,22 +57,6 @@ export default class TakeSurvey extends React.Component {
     }
 
     componentDidMount() {
-        // const script = document.createElement("script");
-        // script.src = "//platform.twitter.com/widgets.js";
-        // script.async = true;
-        // document.body.appendChild(script);
-
-        // geo data
-        // axios.get('https://freegeoip.net/json/').then(response => {
-        //   // console.log(response)
-        //   this.setState({
-        //     location: response.data.country_name,
-        //     city: response.data.city
-        //   })
-        // }).catch(error => {
-        //   console.log(error)
-        // })
-
         geoip2.city(
             result => {
                 console.log(result.city.names.en, result.country.names.en)

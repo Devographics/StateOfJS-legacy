@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import SectionTitle from './SectionTitle.js'
 import classNames from 'classnames'
 import MarkdownIt from 'markdown-it'
@@ -21,8 +22,8 @@ const TLDRBlock = props => {
 }
 
 TLDRBlock.propTypes = {
-    className: React.PropTypes.string,
-    contents: React.PropTypes.func,
+    className: PropTypes.string,
+    contents: PropTypes.func,
 }
 
 export default TLDRBlock

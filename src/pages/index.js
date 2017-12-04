@@ -62,7 +62,7 @@ export default class Index extends React.Component {
 
                     <div className="footer home-footer">
                         <TextBlock>
-                            <FooterContents />
+                            <p dangerouslySetInnerHTML={{ __html: FooterContents }} />
                         </TextBlock>
                     </div>
                 </div>

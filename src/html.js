@@ -1,15 +1,15 @@
-import React from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import DocumentTitle from 'react-document-title'
 import Helmet from 'react-helmet'
 
 const BUILD_TIME = new Date().getTime()
 
-module.exports = React.createClass({
-    propTypes() {
-        return {
-            title: React.PropTypes.string,
-        }
-    },
+export default class Html extends Component {
+    static propTypes = {
+        title: PropTypes.string,
+    }
+
     render() {
         const title = `State Of JavaScript: ${DocumentTitle.rewind()}`
 
@@ -39,5 +39,5 @@ module.exports = React.createClass({
                 </body>
             </html>
         )
-    },
-})
+    }
+}

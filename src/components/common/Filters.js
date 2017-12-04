@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Filters = ({ handleToggle }) => (
     <div className="filters">
@@ -29,7 +30,7 @@ const Filters = ({ handleToggle }) => (
 )
 
 Filters.propTypes = {
-    handleToggle: React.PropTypes.func,
+    handleToggle: PropTypes.func,
 }
 
 export default Filters

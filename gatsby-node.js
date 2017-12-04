@@ -4,16 +4,11 @@ const fs = require('fs')
 const nav = yaml.safeLoad(fs.readFileSync('./src/data/nav.yaml', 'utf8'))
 
 exports.modifyWebpackConfig = function({ config }) {
-    config.loader('csv', cfg => {
-        cfg.test = /\.csv$/
-        cfg.loader = 'dsv-loader'
-        return cfg
-    })
-
     config.removeLoader('md')
     config.loader('md', cfg => {
         cfg.test = /\.md$/
-        cfg.loader = 'babel-loader!reactdown/webpack'
+        cfg.loader = 'html!markdown'
+
         return cfg
     })
 

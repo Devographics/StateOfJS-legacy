@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import _ from 'lodash'
 import ReactGA from 'react-ga'
 import Link from 'gatsby-link'
@@ -125,7 +126,7 @@ const ResourcesBlock = ({ section, sponsor }) => {
 }
 
 ResourcesBlock.propTypes = {
-    section: React.PropTypes.string,
+    section: PropTypes.string,
 }
 
 export default ResourcesBlock

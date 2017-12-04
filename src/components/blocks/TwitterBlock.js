@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 import TweetWidget from '../common/TweetWidget.js'
@@ -30,8 +31,8 @@ const TwitterBlock = props => {
 }
 
 TwitterBlock.propTypes = {
-    section: React.PropTypes.string,
-    className: React.PropTypes.string,
+    section: PropTypes.string,
+    className: PropTypes.string,
 }
 
 export default TwitterBlock

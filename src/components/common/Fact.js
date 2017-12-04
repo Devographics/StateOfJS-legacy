@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Fact = props => {
     const { line } = props
@@ -7,7 +8,7 @@ const Fact = props => {
 }
 
 Fact.propTypes = {
-    line: React.PropTypes.string,
+    line: PropTypes.string,
 }
 
 export default Fact

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import _ from 'lodash'
 import MarkdownIt from 'markdown-it'
 
@@ -32,7 +33,7 @@ const SponsorsBlock = props => {
 }
 
 SponsorsBlock.propTypes = {
-    section: React.PropTypes.string,
+    section: PropTypes.string,
 }
 
 export default SponsorsBlock

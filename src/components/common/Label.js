@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 const Label = props => {
@@ -19,16 +20,16 @@ const Label = props => {
 }
 
 Label.propTypes = {
-    key: React.PropTypes.string,
-    index: React.PropTypes.number,
-    data: React.PropTypes.array,
-    value: React.PropTypes.any,
-    x: React.PropTypes.number,
-    y: React.PropTypes.number,
-    showPercent: React.PropTypes.bool,
-    total: React.PropTypes.number,
-    highlight: React.PropTypes.any,
-    textAnchor: React.PropTypes.string,
+    key: PropTypes.string,
+    index: PropTypes.number,
+    data: PropTypes.array,
+    value: PropTypes.any,
+    x: PropTypes.number,
+    y: PropTypes.number,
+    showPercent: PropTypes.bool,
+    total: PropTypes.number,
+    highlight: PropTypes.any,
+    textAnchor: PropTypes.string,
 }
 
 export default Label

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import ReactGA from 'react-ga'
 
@@ -67,8 +68,8 @@ export default class TweetWidget extends React.Component {
 }
 
 TweetWidget.propTypes = {
-    section: React.PropTypes.string,
-    text: React.PropTypes.string,
-    url: React.PropTypes.string,
-    hashtag: React.PropTypes.string,
+    section: PropTypes.string,
+    text: PropTypes.string,
+    url: PropTypes.string,
+    hashtag: PropTypes.string,
 }

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import truncate from 'lodash/truncate'
-import { ResponsiveChordCanvas } from 'nivo'
-import { colorRange, colorScale } from '../../constants'
+import { ResponsiveChord as Chord } from 'nivo'
+import { colorScale } from '../../constants'
 import theme from '../../nivoTheme'
 
 export default class AffinityChord extends Component {
@@ -16,7 +16,7 @@ export default class AffinityChord extends Component {
 
         return (
             <div className="chart-wrapper">
-                <ResponsiveChordCanvas
+                <Chord
                     margin={{
                         top: 80,
                         right: 80,

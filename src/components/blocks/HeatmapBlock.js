@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Heatmap from '../heatmap/Heatmap.js'
 
 import SectionTitle from './SectionTitle.js'
@@ -18,10 +19,10 @@ const HeatmapBlock = props => {
 }
 
 HeatmapBlock.propTypes = {
-    title: React.PropTypes.string,
-    contents: React.PropTypes.func,
-    data: React.PropTypes.array,
-    items: React.PropTypes.array,
+    title: PropTypes.string,
+    contents: PropTypes.func,
+    data: PropTypes.array,
+    items: PropTypes.array,
 }
 
 export default HeatmapBlock

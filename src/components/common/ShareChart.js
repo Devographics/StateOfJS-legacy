@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import Sections from '../../data/sections.yaml'
 import ReactGA from 'react-ga'
@@ -173,5 +174,5 @@ export default class ShareChart extends React.Component {
 }
 
 ShareChart.propTypes = {
-    section: React.PropTypes.string,
+    section: PropTypes.string,
 }

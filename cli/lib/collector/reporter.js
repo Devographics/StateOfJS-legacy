@@ -228,7 +228,7 @@ exports.allToolsPairing = async () => {
     const allToolsPairing = await aggregators.toolsPairing(allTools, allTools)
 
     return {
-        chord: charts.chord(allTools, allTools, allToolsPairing),
+        chord: charts.chord(allTools, allToolsPairing),
     }
 }
 
