@@ -19,6 +19,7 @@ Altough the fight is far from settled, *Jest* and *Enzyme* do stand out from the
         keys={testingData.keys}
         experienceData={experienceData}
         numberOfToolsData={numberOfToolsData}
+        happiness={testingData.happiness}
         sponsor="reactforbeginners"
     />
 )

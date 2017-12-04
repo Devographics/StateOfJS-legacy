@@ -7,13 +7,21 @@ import HappinessBlock from '../blocks/HappinessBlock'
 import TextBlock from '../blocks/TextBlock'
 import Meta from '../elements/Meta'
 
-const Results = ({ section, description, keys, experienceData, numberOfToolsData, sponsor }) => (
+const Results = ({
+    section,
+    description,
+    keys,
+    experienceData,
+    numberOfToolsData,
+    happiness,
+    sponsor,
+}) => (
     <div className="template">
         <Meta section={section} subSection="results" />
         <TextBlock text={description} />
         <ResultsBlock data={experienceData} section={section} />
         <NumberOfLibrariesBlock keys={keys} data={numberOfToolsData} section={section} />
-        <HappinessBlock section={section} />
+        <HappinessBlock section={section} value={happiness} />
         <ResourcesBlock section={section} />
     </div>
 )
@@ -33,6 +41,7 @@ Results.propTypes = {
             doc_count: PropTypes.number.isRequired,
         })
     ).isRequired,
+    happiness: PropTypes.number.isRequired,
 }
 
 export default Results

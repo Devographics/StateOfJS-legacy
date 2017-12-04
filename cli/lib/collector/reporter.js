@@ -56,6 +56,9 @@ exports.frontend = async () => {
     const others = await elastic.termsAgg(reportConfig.frontend.freeform, OTHERS_AGG_SIZE)
     const countries = await aggregators.toolsByCountry(reportConfig.frontend.keys)
     const numberOfToolsUsed = await aggregators.numberOfToolsUsed(reportConfig.frontend.keys)
+    const happiness = await aggregators.average(
+        'On a scale of one to five cats, how happy are you with your current solution for the front-end?'
+    )
 
     return {
         keys: reportConfig.frontend.keys,
@@ -64,6 +67,7 @@ exports.frontend = async () => {
         countries,
         others: others.aggregations[reportConfig.frontend.freeform],
         numberOfToolsUsed,
+        happiness: Number(happiness.toPrecision(2)),
     }
 }
 
@@ -72,6 +76,9 @@ exports.flavor = async () => {
     const experienceByUsers = await aggregators.experienceByUsers(reportConfig.flavors.keys)
     const countries = await aggregators.toolsByCountry(reportConfig.flavors.keys)
     const numberOfToolsUsed = await aggregators.numberOfToolsUsed(reportConfig.flavors.keys)
+    const happiness = await aggregators.average(
+        'On a scale of one to five dogs, how happy are you with your current flavor of JavaScript?'
+    )
 
     return {
         keys: reportConfig.flavors.keys,
@@ -79,6 +86,7 @@ exports.flavor = async () => {
         experienceByUsers,
         countries,
         numberOfToolsUsed,
+        happiness: Number(happiness.toPrecision(2)),
     }
 }
 
@@ -88,6 +96,9 @@ exports.state = async () => {
     const others = await elastic.termsAgg(reportConfig.stateManagement.freeform, OTHERS_AGG_SIZE)
     const countries = await aggregators.toolsByCountry(reportConfig.stateManagement.keys)
     const numberOfToolsUsed = await aggregators.numberOfToolsUsed(reportConfig.stateManagement.keys)
+    const happiness = await aggregators.average(
+        'On a scale of one to five thunderbolts, how happy are you with your current solution for state management?'
+    )
 
     return {
         keys: reportConfig.stateManagement.keys,
@@ -96,6 +107,7 @@ exports.state = async () => {
         countries,
         others: others.aggregations[reportConfig.stateManagement.freeform],
         numberOfToolsUsed,
+        happiness: Number(happiness.toPrecision(2)),
     }
 }
 
@@ -105,6 +117,9 @@ exports.style = async () => {
     const others = await elastic.termsAgg(reportConfig.styleManagement.freeform, OTHERS_AGG_SIZE)
     const countries = await aggregators.toolsByCountry(reportConfig.styleManagement.keys)
     const numberOfToolsUsed = await aggregators.numberOfToolsUsed(reportConfig.styleManagement.keys)
+    const happiness = await aggregators.average(
+        'On a scale of one to five lightbulbs, how happy are you with the current state of CSS?'
+    )
 
     return {
         keys: reportConfig.styleManagement.keys,
@@ -113,6 +128,7 @@ exports.style = async () => {
         countries,
         others: others.aggregations[reportConfig.styleManagement.freeform],
         numberOfToolsUsed,
+        happiness: Number(happiness.toPrecision(2)),
     }
 }
 
@@ -122,6 +138,9 @@ exports.backend = async () => {
     const others = await elastic.termsAgg(reportConfig.backend.freeform, OTHERS_AGG_SIZE)
     const countries = await aggregators.toolsByCountry(reportConfig.backend.keys)
     const numberOfToolsUsed = await aggregators.numberOfToolsUsed(reportConfig.backend.keys)
+    const happiness = await aggregators.average(
+        'On a scale of one to five trophies, how happy are you with your current back-end solution?'
+    )
 
     return {
         keys: reportConfig.backend.keys,
@@ -130,6 +149,7 @@ exports.backend = async () => {
         countries,
         others: others.aggregations[reportConfig.backend.freeform],
         numberOfToolsUsed,
+        happiness: Number(happiness.toPrecision(2)),
     }
 }
 
@@ -139,6 +159,9 @@ exports.testing = async () => {
     const others = await elastic.termsAgg(reportConfig.testing.freeform, OTHERS_AGG_SIZE)
     const countries = await aggregators.toolsByCountry(reportConfig.testing.keys)
     const numberOfToolsUsed = await aggregators.numberOfToolsUsed(reportConfig.testing.keys)
+    const happiness = await aggregators.average(
+        'On a scale of one to five severed hands, how happy are you with the current state of JavaScript testing?'
+    )
 
     return {
         keys: reportConfig.testing.keys,
@@ -147,6 +170,7 @@ exports.testing = async () => {
         countries,
         others: others.aggregations[reportConfig.testing.freeform],
         numberOfToolsUsed,
+        happiness: Number(happiness.toPrecision(2)),
     }
 }
 
@@ -156,6 +180,9 @@ exports.build = async () => {
     const others = await elastic.termsAgg(reportConfig.buildTools.freeform, OTHERS_AGG_SIZE)
     const countries = await aggregators.toolsByCountry(reportConfig.buildTools.keys)
     const numberOfToolsUsed = await aggregators.numberOfToolsUsed(reportConfig.buildTools.keys)
+    const happiness = await aggregators.average(
+        'On a scale of one to five droplets, how happy are you with the current state of build tools?'
+    )
 
     return {
         keys: reportConfig.buildTools.keys,
@@ -164,6 +191,7 @@ exports.build = async () => {
         others: others.aggregations[reportConfig.buildTools.freeform],
         countries,
         numberOfToolsUsed,
+        happiness: Number(happiness.toPrecision(2)),
     }
 }
 
@@ -173,6 +201,9 @@ exports.mobile = async () => {
     const others = await elastic.termsAgg(reportConfig.mobile.freeform, OTHERS_AGG_SIZE)
     const countries = await aggregators.toolsByCountry(reportConfig.mobile.keys)
     const numberOfToolsUsed = await aggregators.numberOfToolsUsed(reportConfig.mobile.keys)
+    const happiness = await aggregators.average(
+        'On a scale of one to five pencils, how happy are you with the current state of mobile apps?'
+    )
 
     return {
         keys: reportConfig.mobile.keys,
@@ -181,6 +212,7 @@ exports.mobile = async () => {
         others: others.aggregations[reportConfig.mobile.freeform],
         countries,
         numberOfToolsUsed,
+        happiness: Number(happiness.toPrecision(2)),
     }
 }
 
@@ -188,10 +220,9 @@ exports.allToolsUsage = async () => {
     const allToolsUsage = await aggregators.toolsUsage(allTools)
 
     return {
-        allToolsUsage
+        allToolsUsage,
     }
 }
-
 
 exports.allToolsPairing = async () => {
     const allToolsPairing = await aggregators.toolsPairing(allTools, allTools)

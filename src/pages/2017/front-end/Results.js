@@ -16,6 +16,7 @@ const Results = () => (
         keys={frontendData.keys}
         experienceData={experienceData}
         numberOfToolsData={numberOfToolsData}
+        happiness={frontendData.happiness}
         sponsor="reactforbeginners"
     />
 )

@@ -19,6 +19,7 @@ But as the results show, for now developers still prefer the safety of mainstays
         keys={styleData.keys}
         experienceData={experienceData}
         numberOfToolsData={numberOfToolsData}
+        happiness={styleData.happiness}
         sponsor="reactforbeginners"
     />
 )

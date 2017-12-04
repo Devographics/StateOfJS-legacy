@@ -82,9 +82,7 @@ const ResourcesBlock = ({ section, sponsor }) => {
                                     </a>
                                 </h4>
                                 <h5 className="resource-author">{resource.author}</h5>
-                                <div className="resource-description">
-                                    {resource.description}
-                                </div>
+                                <div className="resource-description">{resource.description}</div>
                             </div>
                             <div className="resource-play">
                                 <a
@@ -99,8 +97,8 @@ const ResourcesBlock = ({ section, sponsor }) => {
                 })}
             </div>
             <div className="resources-sponsored">
-                Thanks to our partners for supporting this project. Check them out for more
-                awesome programming courses!
+                Thanks to our partners for supporting this project. Check them out for more awesome
+                programming courses!
             </div>
         </div>
     )

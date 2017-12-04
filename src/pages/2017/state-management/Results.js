@@ -19,6 +19,7 @@ in the near future.
         keys={stateData.keys}
         experienceData={experienceData}
         numberOfToolsData={numberOfToolsData}
+        happiness={stateData.happiness}
         sponsor="reactforbeginners"
     />
 )

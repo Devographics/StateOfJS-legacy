@@ -15,7 +15,7 @@ const AllToolsBubble = ({ data, colorScale }) => (
             colorBy={d => colorScale(d.percentage)}
             root={{
                 key: 'root',
-                children: data
+                children: data,
             }}
         />
     </div>
@@ -29,7 +29,7 @@ AllToolsBubble.propTypes = {
             percentage: PropTypes.number.isRequired,
         })
     ).isRequired,
-    colorScale: PropTypes.func.isRequired
+    colorScale: PropTypes.func.isRequired,
 }
 
 export default AllToolsBubble

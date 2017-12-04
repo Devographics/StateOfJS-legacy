@@ -18,6 +18,7 @@ although it looks like *Native Apps* will always remain the most reliable soluti
         keys={mobileData.keys}
         experienceData={experienceData}
         numberOfToolsData={numberOfToolsData}
+        happiness={mobileData.happiness}
         sponsor="reactforbeginners"
     />
 )

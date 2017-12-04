@@ -24,7 +24,7 @@ const JavascriptLandscapeBlock = () => (
         <div className="block__contents">
             <div className="block__contents__inner">
                 <Legends legends={legends} modifier="horizontal" />
-                <AllToolsBubble data={allTools.allToolsUsage} colorScale={colorScale}/>
+                <AllToolsBubble data={allTools.allToolsUsage} colorScale={colorScale} />
             </div>
         </div>
     </div>

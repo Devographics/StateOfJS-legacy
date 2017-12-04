@@ -3,19 +3,13 @@ import PropTypes from 'prop-types'
 import HappinessChart from '../charts/HappinessChart'
 
 export default class HappinessBlock extends PureComponent {
-    // static propTypes = {
-    //     keys: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-    //     data: PropTypes.arrayOf(
-    //         PropTypes.shape({
-    //             key: PropTypes.number.isRequired,
-    //             doc_count: PropTypes.number.isRequired,
-    //         })
-    //     ).isRequired,
-    // }
+    static propTypes = {
+        section: PropTypes.string.isRequired,
+        value: PropTypes.number.isRequired,
+    }
 
     render() {
-
-        const { section } = this.props
+        const { section, value } = this.props
 
         return (
             <div className="block block--chart block--happiness">
@@ -23,7 +17,9 @@ export default class HappinessBlock extends PureComponent {
                 <div className="block__description">
                     <p>How happy are developers with the current state of {section} tools?</p>
                 </div>
-                <div><HappinessChart/></div>
+                <div>
+                    <HappinessChart score={value} />
+                </div>
             </div>
         )
     }

@@ -18,6 +18,7 @@ wasn't quite able to capitalize on it.
         keys={backendData.keys}
         experienceData={experienceData}
         numberOfToolsData={numberOfToolsData}
+        happiness={backendData.happiness}
         sponsor="reactforbeginners"
     />
 )

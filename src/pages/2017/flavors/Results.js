@@ -21,6 +21,7 @@ JavaScript space.
         keys={flavorData.keys}
         experienceData={experienceData}
         numberOfToolsData={numberOfToolsData}
+        happiness={flavorData.happiness}
         sponsor="reactforbeginners"
     />
 )

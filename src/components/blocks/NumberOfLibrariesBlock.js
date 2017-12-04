@@ -20,8 +20,10 @@ export default class NumberOfLibrariesBlock extends Component {
             <div className="block block--chart block--numberoflibs">
                 <h3 className="block__title">Number of Libraries Used</h3>
                 <div className="block__description">
-                    <p>How many different libraries are developers using (defined as respondents who picked “have used
-                        before and would use again”)?</p>
+                    <p>
+                        How many different libraries are developers using (defined as respondents
+                        who picked “have used before and would use again”)?
+                    </p>
                 </div>
                 <div style={{ height: '500px' }}>
                     <NumbersOfLibrariesPie keys={keys} data={data} />

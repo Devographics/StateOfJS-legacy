@@ -17,6 +17,7 @@ might end up switching to it without a second thought.`}
         keys={buildData.keys}
         experienceData={experienceData}
         numberOfToolsData={numberOfToolsData}
+        happiness={buildData.happiness}
         sponsor="reactforbeginners"
     />
 )
