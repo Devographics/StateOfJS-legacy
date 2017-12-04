@@ -16,7 +16,7 @@ const HappinessChart = ({ score = 3.75 }) =>
                 )}
             </div>
             <div className="happiness__meter" style={{width: `${(score-1)*25}%`}}>
-                <div className="happiness__target">{score}</div>
+                <div className="happiness__target"><h4>{score}</h4></div>
             </div>
         </div>
     </div>

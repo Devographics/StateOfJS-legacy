@@ -1,6 +1,15 @@
-.resources{
-
+.block--resources{
+  border-top: 1px dashed $border-color;
+  padding: $spacing*3 0 0 0;
+  @include large{
+    padding-left: $spacing*9;
+    padding-right: $spacing*9;
+  }
 }
+
+.resources{
+}
+
 .resources-title, .sponsors-title{
   font-size: $medium-font;
   @include medium-large{

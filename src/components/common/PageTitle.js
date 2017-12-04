@@ -80,7 +80,7 @@ export default class PageTitle extends React.PureComponent {
                                     previousPage.subSection && previousPage.subSection.label
                                 )}
                             >
-                                <span className="pagination__link__symbol">&lt;&lt;</span>
+                                <span className="pagination__link__symbol">&lt;&lt;&nbsp;</span>
                                 <span className="pagination__link__label">
                                     {getTitle(previousPage, true)}
                                 </span>
@@ -102,7 +102,7 @@ export default class PageTitle extends React.PureComponent {
                                 <span className="pagination__link__label">
                                     {getTitle(nextPage, true)}
                                 </span>
-                                <span className="pagination__link__symbol">&gt;&gt;</span>
+                                <span className="pagination__link__symbol">&nbsp;&gt;&gt;</span>
                             </Link>
                         ) : (
                             <span />

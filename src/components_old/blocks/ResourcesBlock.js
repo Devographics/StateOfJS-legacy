@@ -54,55 +54,53 @@ const ResourcesBlock = ({ section, sponsor }) => {
     const sectionResources = _.filter(resources, r => r.section === section)
 
     return (
-        <div className="section section-layout-b">
-            <div className="section-contents-wide resources">
-                <div className="resources-title">
-                    <h2>Recommended Resources</h2>
-                    <span className="resources-sponsor">Presented by {renderSponsor(sponsor)}</span>
-                </div>
-                <div className="resources-list">
-                    {_.map(sectionResources, resource => {
-                        const url = `${
-                            resource.url
-                        }?utm_source=stateofjs&utm_medium=sponsor&utm_campaign=${section}`
+        <div className="block block--resources resources">
+            <div className="resources-title">
+                <h2>Recommended Resources</h2>
+                <span className="resources-sponsor">Presented by {renderSponsor(sponsor)}</span>
+            </div>
+            <div className="resources-list">
+                {_.map(sectionResources, resource => {
+                    const url = `${
+                        resource.url
+                    }?utm_source=stateofjs&utm_medium=sponsor&utm_campaign=${section}`
 
-                        return (
-                            <div key={resource.name} className="resource">
-                                <div className="resource-image">
-                                    <div>
-                                        <img src={`/images/resources/${resource.avatar}`} />
-                                    </div>
-                                </div>
-                                <div className="resource-contents">
-                                    <h4 className="resource-title">
-                                        <a
-                                            onClick={() => trackClick(section, resource, 'text')}
-                                            href={`${url}&utm_content=textlink`}
-                                        >
-                                            {resource.name}
-                                        </a>
-                                    </h4>
-                                    <h5 className="resource-author">{resource.author}</h5>
-                                    <div className="resource-description">
-                                        {resource.description}
-                                    </div>
-                                </div>
-                                <div className="resource-play">
-                                    <a
-                                        onClick={() => trackClick(section, resource, 'play')}
-                                        href={`${url}&utm_content=playlink`}
-                                    >
-                                        <PlaySVG />
-                                    </a>
+                    return (
+                        <div key={resource.name} className="resource">
+                            <div className="resource-image">
+                                <div>
+                                    <img src={`/images/resources/${resource.avatar}`} />
                                 </div>
                             </div>
-                        )
-                    })}
-                </div>
-                <div className="resources-sponsored">
-                    Thanks to our partners for supporting this project. Check them out for more
-                    awesome programming courses!
-                </div>
+                            <div className="resource-contents">
+                                <h4 className="resource-title">
+                                    <a
+                                        onClick={() => trackClick(section, resource, 'text')}
+                                        href={`${url}&utm_content=textlink`}
+                                    >
+                                        {resource.name}
+                                    </a>
+                                </h4>
+                                <h5 className="resource-author">{resource.author}</h5>
+                                <div className="resource-description">
+                                    {resource.description}
+                                </div>
+                            </div>
+                            <div className="resource-play">
+                                <a
+                                    onClick={() => trackClick(section, resource, 'play')}
+                                    href={`${url}&utm_content=playlink`}
+                                >
+                                    <PlaySVG />
+                                </a>
+                            </div>
+                        </div>
+                    )
+                })}
+            </div>
+            <div className="resources-sponsored">
+                Thanks to our partners for supporting this project. Check them out for more
+                awesome programming courses!
             </div>
         </div>
     )

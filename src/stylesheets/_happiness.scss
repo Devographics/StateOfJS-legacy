@@ -58,6 +58,7 @@
 	width: 100px;
 	left: -50px;
 	text-align: center;
+	@include secondary-font;
 }
 
 .happiness__item__label{
@@ -90,4 +91,7 @@
 	justify-content: center;
 	font-size: $medium-font;
 	@include font-bold;
+	h4{
+		margin: 0;
+	}
 }

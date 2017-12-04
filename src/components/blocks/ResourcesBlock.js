@@ -59,8 +59,8 @@ const ResourcesBlock = ({ section, sponsor }) => {
     }
 
     return (
-        <div className="section section-layout-b">
-            <div className="section-contents-wide resources">
+        <div className="block block--resources">
+            <div className="resources">
                 <div className="resources-title">
                     <h2>Recommended Resources</h2>
                     <span className="resources-sponsor">
