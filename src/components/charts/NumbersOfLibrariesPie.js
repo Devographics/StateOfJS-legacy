@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { ResponsivePie } from 'nivo'
 import { scaleLinear } from 'd3-scale'
+import { colorScale } from '../../constants.js'
 
 const margin = {
     top: 40,
@@ -36,11 +37,11 @@ export default class NumbersOfLibrariesPie extends Component {
     render() {
         const { keys, data } = this.props
 
-        const colorScale = scaleLinear()
-            .domain([0, 1, keys.length])
-            .range(['#dadada', '#9688e4', '#ea2149'])
+        // const colorScale = scaleLinear()
+        //     .domain([0, 1, keys.length])
+        //     .range(['#dadada', '#9688e4', '#ea2149'])
 
-        const getColor = ({ id }) => colorScale(Number(id))
+        const getColor = ({ id }) => ['#F4F6F4', ...colorScale][id]
 
         return (
             <ResponsivePie

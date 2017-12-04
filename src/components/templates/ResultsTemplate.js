@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import ResultsBlock from '../blocks/ResultsBlock'
 import NumberOfLibrariesBlock from '../blocks/NumberOfLibrariesBlock'
 import ResourcesBlock from '../blocks/ResourcesBlock'
+import HappinessBlock from '../blocks/HappinessBlock'
 import TextBlock from '../blocks/TextBlock'
 import Meta from '../elements/Meta'
 
@@ -11,7 +12,8 @@ const Results = ({ section, description, keys, experienceData, numberOfToolsData
         <Meta section={section} subSection="results" />
         <TextBlock text={description} />
         <ResultsBlock data={experienceData} section={section} />
-        <NumberOfLibrariesBlock keys={keys} data={numberOfToolsData} />
+        <NumberOfLibrariesBlock keys={keys} data={numberOfToolsData} section={section} />
+        <HappinessBlock section={section} />
         <ResourcesBlock section={section} />
     </div>
 )
