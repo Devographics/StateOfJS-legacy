@@ -3,6 +3,7 @@ import DocumentTitle from 'react-document-title'
 import Link from 'gatsby-link'
 import TextBlock from '../../components/blocks/TextBlock'
 import Newsletter from '../../components/common/Newsletter'
+import JavascriptLandscapeBlock from '../../components/blocks/JavascriptLandscapeBlock'
 
 const intro = `
 A few years back, a JavaScript survey would've been a simple matter. Question 1: are you using jQuery? Question 2: any comments? Boom, done! 
@@ -13,13 +14,13 @@ This is where this survey comes in: we asked over a hundred questions to more th
 
 We believe the result is the most complete picture of the state of JavaScript currently available, and we're excited to share it with you!
 
-
 `
 
 const Introduction = () => (
     <DocumentTitle title="Introduction">
         <div>
             <TextBlock text={intro} />
+            <JavascriptLandscapeBlock />
         </div>
     </DocumentTitle>
 )
