@@ -1,8 +1,18 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "state-of-js",
+  "description": "State of js survey report",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "contributors": [
+    {
+      "name": "Sacha Greif"
+    },
+    {
+      "name": "Michael Rambeau"
+    },
+    {
+      "name": "Raphaël Benitte"
+    }
+  ],
   "engineStrict": true,
   "engines": {
     "node": ">=8.3.0"
@@ -15,9 +25,7 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-1": "^6.24.1",
     "bowser": "^1.7.0",
-    "cheerio": "^0.22.0",
     "classnames": "^2.2.5",
-    "cloudconvert": "^1.1.2",
     "d3-format": "^1.2.0",
     "d3-scale": "^1.0.7",
     "dsv-loader": "^1.1.0",

@@ -13,7 +13,6 @@ import TextBlock from '../components/blocks/TextBlock.js'
 import Comments from '../components/common/Comments.js'
 
 import FooterContents from '../data/footer.md'
-console.log(FooterContents)
 const homeContents = `
 The JavaScript world is richer and messier than ever.
 

@@ -20,7 +20,7 @@ coverage
 .lock-wscript
 
 # Captures
-captures
+static/images/captures
 
 # Builds
 public

@@ -347,7 +347,7 @@ async@^2.0.1, async@^2.4.1:
   dependencies:
     lodash "^4.14.0"
 
-async@^2.1.2, async@^2.1.5:
+async@^2.1.2:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/async/-/async-2.6.0.tgz#61a29abb6fcc026fea77e56d1c6ec53a795951f4"
   dependencies:
@@ -1983,14 +1983,6 @@ clone@^1.0.0:
 clone@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/clone/-/clone-1.0.3.tgz#298d7e2231660f40c003c2ed3140decf3f53085f"
-
-cloudconvert@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/cloudconvert/-/cloudconvert-1.1.2.tgz#be85a65aac4d2cf5df7e3a9b761b09d76de25ed4"
-  dependencies:
-    async "^2.1.5"
-    pause-stream "0.0.11"
-    request "^2.81.0"
 
 co@3.1.0:
   version "3.1.0"
@@ -7471,12 +7463,6 @@ path-type@^2.0.0:
   dependencies:
     pify "^2.0.0"
 
-pause-stream@0.0.11:
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/pause-stream/-/pause-stream-0.0.11.tgz#fe5a34b0cbce12b5aa6a2b403ee2e73b602f1445"
-  dependencies:
-    through "~2.3"
-
 pbkdf2-compat@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/pbkdf2-compat/-/pbkdf2-compat-2.0.1.tgz#b6e0c8fa99494d94e0511575802a59a5c142f288"
@@ -9138,7 +9124,7 @@ request@2, request@2.81.0, request@^2.79.0:
     tunnel-agent "^0.6.0"
     uuid "^3.0.0"
 
-request@^2.58.0, request@^2.67.0, request@^2.74.0, request@^2.81.0, request@^2.83.0:
+request@^2.58.0, request@^2.67.0, request@^2.74.0, request@^2.83.0:
   version "2.83.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.83.0.tgz#ca0b65da02ed62935887808e6f510381034e3356"
   dependencies:
@@ -10334,7 +10320,7 @@ through2@^2.0.0, through2@^2.0.1, through2@~2.0.0:
     readable-stream "^2.1.5"
     xtend "~4.0.1"
 
-through@^2.3.6, through@~2.3:
+through@^2.3.6:
   version "2.3.8"
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
 
