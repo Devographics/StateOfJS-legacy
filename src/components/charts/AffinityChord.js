@@ -15,12 +15,12 @@ export default class AffinityChord extends Component {
         const { keys, matrix } = this.props
 
         return (
-            <div className="chart-wrapper">
+            <div className="chart-wrapper" style={{ height: '800px' }}>
                 <Chord
                     margin={{
-                        top: 80,
+                        top: 100,
                         right: 80,
-                        bottom: 80,
+                        bottom: 100,
                         left: 80,
                     }}
                     colors={colorScale}

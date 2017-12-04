@@ -1,28 +1,53 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import nav from '../../data/nav.yaml'
-import filter from 'lodash/filter'
-
-// const sections = ['flavors', 'frontend', 'state', 'backend', 'testing', 'css', 'build', 'mobile'];
-
-const sections = filter(nav.items, item => item.subPages)
+import classnames from 'classnames'
 
 export default class AffinityToggle extends Component {
-    static propTypes = {}
+    static propTypes = {
+        sections: PropTypes.arrayOf(
+            PropTypes.shape({
+                id: PropTypes.string.isRequired,
+                label: PropTypes.string.isRequired,
+            })
+        ).isRequired,
+        selectedSections: PropTypes.arrayOf(PropTypes.string).isRequired,
+        onChange: PropTypes.func.isRequired,
+        maxNumberOfSections: PropTypes.number.isRequired,
+    }
+
+    handleOptionClick = e => {
+        this.props.onChange(e.target.value)
+    }
 
     render() {
+        const { sections, selectedSections, maxNumberOfSections } = this.props
+
         return (
-            <div className="Chord--toggle">
-                <ul>
-                    {sections.map(section => (
-                        <li key={section.fullLabel}>
-                            <label>
-                                <input type="checkbox" />
-                                {section.fullLabel}
-                            </label>
-                        </li>
-                    ))}
-                </ul>
+            <div className="chord__toggle">
+                {sections.map(section => {
+                    const isChecked = selectedSections.includes(section.id)
+                    const isDisabled = !isChecked && selectedSections.length >= maxNumberOfSections
+
+                    return (
+                        <label
+                            htmlFor={section.id}
+                            key={section.id}
+                            className={classnames('chord__toggle__item', {
+                                'chord__toggle__item--is-disabled': isDisabled,
+                            })}
+                        >
+                            <input
+                                type="checkbox"
+                                id={section.id}
+                                value={section.id}
+                                checked={isChecked}
+                                onChange={this.handleOptionClick}
+                                disabled={isDisabled}
+                            />
+                            {section.label}
+                        </label>
+                    )
+                })}
             </div>
         )
     }

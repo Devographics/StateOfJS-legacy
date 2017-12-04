@@ -1,81 +1,86 @@
-- label: Introduction
+- label:     Introduction
   fullLabel: Introduction
-- label: Connections
+
+- label:     Connections
   fullLabel: JavaScript Connections
-- label: Flavors
+
+- label:     Flavors
   fullLabel: JavaScript Flavors
   subPages:
-  - results
-  # - affinity
-  - developers
-  - worldwide
-- label: Front-end
+    - results
+    - developers
+    - worldwide
+
+- label:     Front-end
   fullLabel: Front-end Frameworks
   subPages:
-  - results
-  - other
-  # - heatmap
-  # - affinity
-  - developers
-  - worldwide
-- label: State Management
+    - results
+    - other
+    - developers
+    - worldwide
+
+- label:     State Management
   fullLabel: State Management Tools
   subPages:
-  - results
-  - other
-  # - affinity
-  - developers
-  - worldwide
-- label: Back-end
+    - results
+    - other
+    - developers
+    - worldwide
+
+- label:     Back-end
   fullLabel: Back-end Frameworks
   subPages:
-  - results
-  - other
-  # - affinity
-  - developers
-  - worldwide
-- label: Testing
+    - results
+    - other
+    - developers
+    - worldwide
+
+- label:     Testing
   fullLabel: Testing Tools
   subPages:
-  - results
-  - other
-  # - affinity
-  - developers
-  - worldwide
-- label: CSS
+    - results
+    - other
+    - developers
+    - worldwide
+
+- label:     CSS
   fullLabel: CSS & Styling
   subPages:
-  - results
-  - other
-  # - affinity
-  - developers
-  - worldwide
-- label: Build Tools
+    - results
+    - other
+    - developers
+    - worldwide
+
+- label:     Build Tools
   fullLabel: Build Tools
   subPages:
-  - results
-  - other
-  # - affinity
-  - developers
-  - worldwide
-- label: Mobile
+    - results
+    - other
+    - developers
+    - worldwide
+
+- label:     Mobile
   fullLabel: Mobile Frameworks
   subPages:
-  - results
-  - other
-  # - affinity
-  - developers
-  - worldwide
-- label: Other Tools
+    - results
+    - other
+    - developers
+    - worldwide
+
+- label:     Other Tools
   fullLabel: Other Tools
-- label: Features
-  fullLabel: Popular Features (Coming Soon…)
+
+- label:      Features
+  fullLabel:  Popular Features (Coming Soon…)
   comingsoon: true
-- label: Opinions
-  fullLabel: Developer Opinions (Coming Soon…)
+
+- label:      Opinions
+  fullLabel:  Developer Opinions (Coming Soon…)
   comingsoon: true
-- label: Conclusion
+
+- label:     Conclusion
   fullLabel: Conclusion
-- label: Support
+
+- label:     Support
   fullLabel: Support Us
-  hide: true
+  hide:      true
