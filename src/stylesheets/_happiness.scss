@@ -27,9 +27,9 @@
 		display: block;
 		content: " ";
 		border-left: 1px solid $border-color;
-		height: 20px;
+		height: 30px;
 		width: 1px;
-		top: -10px;
+		top: -15px;
 	}
 	@include small{
 		.happiness__item__label{
@@ -54,7 +54,7 @@
 
 .happiness__item__index{
 	position: absolute;
-	top: 20px;
+	top: 30px;
 	width: 100px;
 	left: -50px;
 	text-align: center;
@@ -63,7 +63,7 @@
 
 .happiness__item__label{
 	position: absolute;
-	top: -40px;
+	top: -50px;
 	white-space: nowrap;
 	width: 100px;
 	right: -50px;

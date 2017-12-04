@@ -2,7 +2,7 @@ import React from 'react'
 
 import happiness from '../../data/happiness.yaml'
 
-const HappinessChart = ({ score = 3.75 }) => 
+const HappinessChart = ({ score = 3.9 }) => 
     <div className="happiness__wrapper">
         <div className="happiness">
             <div className="happiness__levels">  

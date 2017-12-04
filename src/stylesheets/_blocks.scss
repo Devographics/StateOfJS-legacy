@@ -28,3 +28,9 @@
 	border-bottom: 1px dashed $border-color;
 	margin-bottom: $spacing;
 }
+
+.block__content{
+	p{
+		line-height: 1.5;
+	}
+}
