@@ -20,7 +20,7 @@ const Introduction = () => (
     <DocumentTitle title="Introduction">
         <div>
             <TextBlock text={intro} />
-            <JavascriptLandscapeBlock />
+            {/*<JavascriptLandscapeBlock />*/}
         </div>
     </DocumentTitle>
 )

@@ -5,18 +5,20 @@ import allToolsPairing from '../../data/allToolsPairing.json'
 import keysBySection from '../../data/keysBySection'
 import addParagraphs from '../../helpers/paragraphs'
 import parseBold from '../../helpers/bold'
+import { sectionColors, chordScale } from '../../constants'
+import flatten from 'lodash/flatten'
 
 const { chord: { keys, matrix } } = allToolsPairing
 
 const allSections = [
-    { id: 'backend', label: 'Back-end Frameworks' },
-    { id: 'build', label: 'Build Tools' },
-    { id: 'style', label: 'CSS & Styling' },
     { id: 'flavors', label: 'JavaScript Flavors' },
-    { id: 'frontend', label: 'Front-end Frameworks' },
-    { id: 'mobile', label: 'Mobile Frameworks' },
+    { id: 'frontend', label: 'Front-End Frameworks' },
     { id: 'state', label: 'State Management Tools' },
+    { id: 'backend', label: 'Back-End Frameworks' },
     { id: 'testing', label: 'Testing Tools' },
+    { id: 'style', label: 'CSS & Styling' },
+    { id: 'build', label: 'Build Tools' },
+    { id: 'mobile', label: 'Mobile Frameworks' },
 ]
 
 const MAX_NUMBER_OF_SECTIONS = 3
@@ -26,11 +28,14 @@ How many *React* users also use *Redux*? Do *GraphQL* fans prefer *Webpack*?
 Are *Express* developers also into *Ember*?
 
 This diagram lets you toggle categories on and off to explore the connections
-between the inhabitants of the vast JavaScript ecosystem. You can select up to 3 categories.
+between the inhabitants of the vast JavaScript ecosystem. You can select up to 3 categories at a time.
+
+The size of each section corresponds to the number of respondents who have used each library
+and would be willing to use it again. 
 `
 export default class Connections extends Component {
     state = {
-        sections: ['state', 'frontend', 'flavors'],
+        sections: ['frontend', 'flavors'],
     }
 
     setSections = sections => {
@@ -71,6 +76,10 @@ export default class Connections extends Component {
                 return row.filter((item, index) => keysIndexes.includes(index))
             })
 
+        const colors = flatten(sections.map((section,i) => {
+            return keysBySection[section].map(lib => chordScale[i])
+        }))
+
         return (
             <div className="Section">
                 <div
@@ -84,7 +93,7 @@ export default class Connections extends Component {
                         onChange={this.handleSectionToggle}
                         maxNumberOfSections={MAX_NUMBER_OF_SECTIONS}
                     />
-                    <AffinityChord keys={filteredKeys} matrix={filteredMatrix} />
+                    <AffinityChord colors={colors} keys={filteredKeys} matrix={filteredMatrix} />
                 </div>
             </div>
         )

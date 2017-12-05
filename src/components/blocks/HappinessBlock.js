@@ -15,7 +15,7 @@ export default class HappinessBlock extends PureComponent {
             <div className="block block--chart block--happiness">
                 <h3 className="block__title">Overall Happiness</h3>
                 <div className="block__description">
-                    <p>How happy are developers with the current state of {section} tools?</p>
+                    <p>On a scale of one to five, how happy are developers with the current state of {section} tools?</p>
                 </div>
                 <div>
                     <HappinessChart score={value} />

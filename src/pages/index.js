@@ -12,7 +12,8 @@ import TextBlock from '../components/blocks/TextBlock.js'
 // import Stats from '../components/common/Stats.js'
 import Comments from '../components/common/Comments.js'
 
-import FooterContents from '../data/footer.md'
+// import FooterContents from '../data/footer.md'
+
 const homeContents = `
 The JavaScript world is richer and messier than ever.
 
@@ -62,7 +63,12 @@ export default class Index extends React.Component {
 
                     <div className="footer home-footer">
                         <TextBlock>
-                            <p dangerouslySetInnerHTML={{ __html: FooterContents }} />
+                            <p>Hand-coded in Osaka, Japan by 
+                            <a href="http://sachagreif.com">Sacha Greif</a>, 
+                            <a href="https://twitter.com/benitteraphael">Raphaël Benitte</a>, and 
+                            <a href="https://michaelrambeau.com">Michael Rambeau</a>. 
+                            <a href="mailto:hello@stateofjs.com">Get in touch</a>.
+                            </p>
                         </TextBlock>
                     </div>
                 </div>

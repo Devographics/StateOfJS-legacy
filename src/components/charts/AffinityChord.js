@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import truncate from 'lodash/truncate'
 import { ResponsiveChord as Chord } from 'nivo'
-import { colorScale } from '../../constants'
 import theme from '../../nivoTheme'
 
 export default class AffinityChord extends Component {
@@ -12,7 +11,7 @@ export default class AffinityChord extends Component {
     }
 
     render() {
-        const { keys, matrix } = this.props
+        const { keys, matrix, colors } = this.props
 
         return (
             <div className="chart-wrapper" style={{ height: '800px' }}>
@@ -23,7 +22,7 @@ export default class AffinityChord extends Component {
                         bottom: 100,
                         left: 80,
                     }}
-                    colors={colorScale}
+                    colors={colors}
                     padAngle={0.02}
                     innerRadiusOffset={0.02}
                     keys={keys}

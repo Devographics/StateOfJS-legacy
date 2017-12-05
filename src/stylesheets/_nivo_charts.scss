@@ -119,3 +119,11 @@
         }
     }    
 }
+
+.chord__toggle{
+    padding: $spacing $spacing $spacing/2 $spacing;
+    border: 1px dashed $light-border-color;
+}
+.chord__toggle__item{
+    margin-bottom: $spacing/2;
+}

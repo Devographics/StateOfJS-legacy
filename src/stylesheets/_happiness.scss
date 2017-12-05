@@ -27,9 +27,9 @@
 		display: block;
 		content: " ";
 		border-left: 1px solid $border-color;
-		height: 30px;
+		height: 50px;
 		width: 1px;
-		top: -15px;
+		top: -25px;
 	}
 	@include small{
 		.happiness__item__label{
@@ -63,7 +63,7 @@
 
 .happiness__item__label{
 	position: absolute;
-	top: -50px;
+	top: -60px;
 	white-space: nowrap;
 	width: 100px;
 	right: -50px;
@@ -80,16 +80,16 @@
 
 .happiness__target{
 	position: absolute;
-	top: -30px;
-	right: -35px;
+	top: -25px;
+	right: -30px;
 	border: 7px solid $purple;
 	border-radius: 200px;
-	height: 70px;
-	width: 70px;
+	height: 60px;
+	width: 60px;
 	background: $white;
 	@include flex-center;
 	justify-content: center;
-	font-size: $medium-font;
+	font-size: 0.9rem;
 	@include font-bold;
 	h4{
 		margin: 0;

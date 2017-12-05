@@ -9,7 +9,7 @@ const numberOfToolsData = dto.experience(buildData.numberOfToolsUsed)
 const Results = () => (
     <ResultsTemplate
         section="Build Tools"
-        description={`Apart from *NPM*, *Webpack* is still the kind of build tools. This is no doubt due to 
+        description={`Apart from *NPM*, *Webpack* is still the king of build tools. This is no doubt due to 
 the rise of no-config Webpack wrappers like Create-React-App and Next.js. 
 
 This could prove itself a double-edged sword though: if a better alternative ever comes along, these libraries

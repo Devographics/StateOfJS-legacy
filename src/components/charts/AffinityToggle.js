@@ -30,7 +30,7 @@ export default class AffinityToggle extends Component {
 
                     return (
                         <label
-                            htmlFor={section.id}
+                            htmlFor={section.id+'__check'}
                             key={section.id}
                             className={classnames('chord__toggle__item', {
                                 'chord__toggle__item--is-disabled': isDisabled,
@@ -38,7 +38,7 @@ export default class AffinityToggle extends Component {
                         >
                             <input
                                 type="checkbox"
-                                id={section.id}
+                                id={section.id+'__check'}
                                 value={section.id}
                                 checked={isChecked}
                                 onChange={this.handleOptionClick}
