@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import truncate from 'lodash/truncate'
-import { ResponsiveChord as Chord } from 'nivo'
+import { ResponsiveChord as Chord } from '@nivo/chord'
 import theme from '../../nivoTheme'
 
 export default class AffinityChord extends Component {

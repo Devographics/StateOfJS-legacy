@@ -18,6 +18,10 @@
     "node": ">=8.3.0"
   },
   "dependencies": {
+    "@nivo/bar": "0.32.0",
+    "@nivo/chord": "0.32.0",
+    "@nivo/circle-packing": "0.32.0",
+    "@nivo/pie": "0.32.0",
     "classnames": "^2.2.5",
     "d3-format": "^1.2.0",
     "d3-scale": "^1.0.7",
@@ -32,7 +36,6 @@
     "js-yaml": "^3.10.0",
     "lodash": "^4.17.4",
     "markdown-loader": "^2.0.1",
-    "nivo": "^0.30.0",
     "object-assign": "^4.1.0",
     "path-dirname": "^1.0.2",
     "prop-types": "^15.6.0",

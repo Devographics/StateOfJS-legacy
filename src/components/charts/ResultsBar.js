@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { format } from 'd3-format'
-import { ResponsiveBar } from 'nivo'
+import { ResponsiveBar } from '@nivo/bar'
 import { colors } from '../../constants'
 import theme from '../../nivoTheme'
 

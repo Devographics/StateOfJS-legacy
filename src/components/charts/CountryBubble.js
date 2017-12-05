@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import { ResponsiveBubbleHtml } from 'nivo'
+import { ResponsiveBubbleHtml } from '@nivo/circle-packing'
 import { colors, DIVERGENCE_MAX_OFFSET, DIVERGENCE_COLORS } from '../../constants'
 import { scaleLinear } from 'd3-scale'
 

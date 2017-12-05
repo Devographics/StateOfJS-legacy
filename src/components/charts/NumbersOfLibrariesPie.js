@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { ResponsivePie } from 'nivo'
+import { ResponsivePie } from '@nivo/pie'
 import { scaleLinear } from 'd3-scale'
 import { colorScale } from '../../constants.js'
 

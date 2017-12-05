@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ResponsiveBar } from 'nivo'
+import { ResponsiveBar } from '@nivo/bar'
 import { colorRange } from '../../constants'
 import theme from '../../nivoTheme'
 
