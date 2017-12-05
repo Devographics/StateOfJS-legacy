@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ResponsiveBubbleHtml } from 'nivo'
+import { ResponsiveBubbleHtml } from '@nivo/circle-packing'
 
 const AllToolsBubble = ({ data, colorScale }) => (
     <div className="chart-wrapper" style={{ height: 800 }}>

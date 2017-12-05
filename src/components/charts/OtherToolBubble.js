@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ResponsiveBubble } from 'nivo'
+import { ResponsiveBubble } from '@nivo/circle-packing'
 import { colorRange } from '../../constants'
 import theme from '../../nivoTheme'
 
