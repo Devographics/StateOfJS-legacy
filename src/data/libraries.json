@@ -1,6 +1,6 @@
 {
-  "count": 107,
-  "updated_at": "2017-11-23T08:30:16.913Z",
+  "count": 109,
+  "updated_at": "2017-12-01T13:31:36.620Z",
   "projects": [
     {
       "name": "TypeScript",
@@ -9,7 +9,7 @@
       "homepage": "http://www.typescriptlang.org",
       "slug": "typescript",
       "github": "Microsoft/TypeScript",
-      "stars": 28195
+      "stars": 28450
     },
     {
       "name": "Flow",
@@ -18,7 +18,7 @@
       "homepage": "https://flow.org/",
       "slug": "flow",
       "github": "facebook/flow",
-      "stars": 14321
+      "stars": 14413
     },
     {
       "name": "Elm",
@@ -26,7 +26,7 @@
       "homepage": "http://elm-lang.org/",
       "slug": "elm",
       "github": "elm-lang/elm-compiler",
-      "stars": 4167
+      "stars": 4179
     },
     {
       "name": "ClojureScript",
@@ -34,7 +34,7 @@
       "homepage": "http://clojurescript.org/",
       "slug": "clojurescript",
       "github": "clojure/clojurescript",
-      "stars": 7392
+      "stars": 7413
     },
     {
       "name": "Reason",
@@ -43,7 +43,7 @@
       "homepage": "http://reasonml.github.io",
       "slug": "reason",
       "github": "facebook/reason",
-      "stars": 3811
+      "stars": 3861
     },
     {
       "name": "React",
@@ -52,15 +52,15 @@
       "homepage": "https://reactjs.org",
       "slug": "react",
       "github": "facebook/react",
-      "stars": 81766
+      "stars": 82363
     },
     {
-      "name": "Angular",
+      "name": "Angular 1",
       "description": "AngularJS - HTML enhanced for web apps!",
       "homepage": "https://angularjs.org",
       "slug": "angular-1",
       "github": "angular/angular.js",
-      "stars": 57561
+      "stars": 57615
     },
     {
       "name": "Angular 2",
@@ -68,7 +68,7 @@
       "homepage": "https://angular.io",
       "slug": "angular-2",
       "github": "angular/angular",
-      "stars": 30317
+      "stars": 30585
     },
     {
       "name": "Ember",
@@ -76,16 +76,16 @@
       "homepage": "http://www.emberjs.com",
       "slug": "ember",
       "github": "emberjs/ember.js",
-      "stars": 18444
+      "stars": 18463
     },
     {
-      "name": "Vue",
+      "name": "Vue.js",
       "description":
         "A progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
       "homepage": "http://vuejs.org",
       "slug": "vuejs",
       "github": "vuejs/vue",
-      "stars": 74573
+      "stars": 75328
     },
     {
       "name": "Backbone",
@@ -93,7 +93,7 @@
       "homepage": "http://backbonejs.org",
       "slug": "backbone",
       "github": "jashkenas/backbone",
-      "stars": 26852
+      "stars": 26865
     },
     {
       "name": "Polymer",
@@ -101,7 +101,7 @@
       "homepage": "https://www.polymer-project.org/",
       "slug": "polymer",
       "github": "Polymer/polymer",
-      "stars": 18752
+      "stars": 18797
     },
     {
       "name": "Aurelia",
@@ -110,7 +110,7 @@
       "homepage": "http://aurelia.io/",
       "slug": "aurelia",
       "github": "aurelia/framework",
-      "stars": 10244
+      "stars": 10264
     },
     {
       "name": "Preact",
@@ -119,7 +119,7 @@
       "homepage": "https://preactjs.com",
       "slug": "preact",
       "github": "developit/preact",
-      "stars": 16335
+      "stars": 16427
     },
     {
       "name": "Knockout",
@@ -127,7 +127,7 @@
       "homepage": "http://knockoutjs.com/",
       "slug": "knockout",
       "github": "knockout/knockout",
-      "stars": 8568
+      "stars": 8585
     },
     {
       "name": "jQuery",
@@ -135,7 +135,7 @@
       "homepage": "https://jquery.com/",
       "slug": "jquery",
       "github": "jquery/jquery",
-      "stars": 47156
+      "stars": 47235
     },
     {
       "name": "Cycle.js",
@@ -143,7 +143,7 @@
       "homepage": "http://cycle.js.org",
       "slug": "cyclejs",
       "github": "cyclejs/cyclejs",
-      "stars": 7725
+      "stars": 7752
     },
     {
       "name": "Mithril",
@@ -151,7 +151,7 @@
       "homepage": "http://mithril.js.org",
       "slug": "mithril",
       "github": "MithrilJS/mithril.js",
-      "stars": 8150
+      "stars": 8172
     },
     {
       "name": "Inferno",
@@ -160,7 +160,7 @@
       "homepage": "http://infernojs.org",
       "slug": "inferno",
       "github": "infernojs/inferno",
-      "stars": 11821
+      "stars": 11858
     },
     {
       "name": "Svelte",
@@ -168,7 +168,7 @@
       "homepage": "https://svelte.technology",
       "slug": "svelte",
       "github": "sveltejs/svelte",
-      "stars": 5462
+      "stars": 5523
     },
     {
       "name": "Hyperapp",
@@ -176,15 +176,15 @@
       "homepage": "https://hyperapp.js.org",
       "slug": "hyperapp",
       "github": "hyperapp/hyperapp",
-      "stars": 6790
+      "stars": 6850
     },
     {
       "name": "Choo",
-      "description": ":steam_locomotive::train::train::train: - sturdy 4kb frontend framework",
+      "description": ":steam_locomotive::train: - sturdy 4kb frontend framework",
       "homepage": "https://choo.io/",
       "slug": "choo",
       "github": "choojs/choo",
-      "stars": 4742
+      "stars": 4804
     },
     {
       "name": "Marionette",
@@ -192,7 +192,7 @@
       "homepage": "http://marionettejs.com",
       "slug": "marionette",
       "github": "marionettejs/backbone.marionette",
-      "stars": 7172
+      "stars": 7173
     },
     {
       "name": "Marko",
@@ -200,7 +200,7 @@
       "homepage": "http://markojs.com/",
       "slug": "marko",
       "github": "marko-js/marko",
-      "stars": 5577
+      "stars": 5598
     },
     {
       "name": "Riot",
@@ -208,7 +208,7 @@
       "homepage": "http://riotjs.com",
       "slug": "riotjs",
       "github": "riot/riot",
-      "stars": 12543
+      "stars": 12565
     },
     {
       "name": "Meteor",
@@ -216,7 +216,7 @@
       "homepage": "https://www.meteor.com",
       "slug": "meteor",
       "github": "meteor/meteor",
-      "stars": 38695
+      "stars": 38753
     },
     {
       "name": "Express",
@@ -224,7 +224,7 @@
       "homepage": "https://expressjs.com",
       "slug": "express",
       "github": "expressjs/express",
-      "stars": 35182
+      "stars": 35322
     },
     {
       "name": "Koa",
@@ -232,7 +232,7 @@
       "homepage": "http://koajs.com",
       "slug": "koa",
       "github": "koajs/koa",
-      "stars": 18357
+      "stars": 18501
     },
     {
       "name": "Hapi",
@@ -240,7 +240,7 @@
       "homepage": "hapijs.com",
       "slug": "hapi",
       "github": "hapijs/hapi",
-      "stars": 8662
+      "stars": 8703
     },
     {
       "name": "FeathersJS",
@@ -248,7 +248,7 @@
       "homepage": "https://feathersjs.com",
       "slug": "feathers",
       "github": "feathersjs/feathers",
-      "stars": 7889
+      "stars": 7939
     },
     {
       "name": "Sails",
@@ -256,7 +256,7 @@
       "homepage": "https://sailsjs.com",
       "slug": "sails",
       "github": "balderdashy/sails",
-      "stars": 18059
+      "stars": 18092
     },
     {
       "name": "Loopback",
@@ -265,7 +265,7 @@
       "homepage": "http://loopback.io",
       "slug": "loopback",
       "github": "strongloop/loopback",
-      "stars": 10145
+      "stars": 10186
     },
     {
       "name": "Keystone",
@@ -273,7 +273,7 @@
       "homepage": "http://www.keystonejs.com",
       "slug": "keystone",
       "github": "keystonejs/keystone",
-      "stars": 11393
+      "stars": 11442
     },
     {
       "name": "Node.js",
@@ -281,7 +281,7 @@
       "homepage": "https://nodejs.org",
       "slug": "nodejs",
       "github": "nodejs/node",
-      "stars": 42632
+      "stars": 42969
     },
     {
       "name": "Restify",
@@ -289,7 +289,7 @@
       "homepage": "http://restify.com",
       "slug": "restify",
       "github": "restify/node-restify",
-      "stars": 7495
+      "stars": 7527
     },
     {
       "name": "Adonis",
@@ -298,7 +298,7 @@
       "homepage": "http://adonisjs.com",
       "slug": "adonis",
       "github": "adonisjs/adonis-framework",
-      "stars": 3074
+      "stars": 3139
     },
     {
       "name": "Next.js",
@@ -306,7 +306,7 @@
       "homepage": "https://zeit.co/blog/next4",
       "slug": "nextjs",
       "github": "zeit/next.js",
-      "stars": 19219
+      "stars": 19421
     },
     {
       "name": "Serverless",
@@ -315,7 +315,7 @@
       "homepage": "http://www.serverless.com",
       "slug": "serverless",
       "github": "serverless/serverless",
-      "stars": 20311
+      "stars": 20453
     },
     {
       "name": "Socket.io",
@@ -323,7 +323,7 @@
       "homepage": "http://socket.io",
       "slug": "socketio",
       "github": "socketio/socket.io",
-      "stars": 37348
+      "stars": 37532
     },
     {
       "name": "Micro",
@@ -331,7 +331,7 @@
       "homepage": "https://zeit.co/blog/micro-8",
       "slug": "micro",
       "github": "zeit/micro",
-      "stars": 5452
+      "stars": 5494
     },
     {
       "name": "Kraken",
@@ -339,7 +339,7 @@
       "homepage": "http://krakenjs.com",
       "slug": "kraken",
       "github": "krakenjs/kraken-js",
-      "stars": 4466
+      "stars": 4475
     },
     {
       "name": "Redux",
@@ -347,7 +347,7 @@
       "homepage": "http://redux.js.org",
       "slug": "redux",
       "github": "reactjs/redux",
-      "stars": 35889
+      "stars": 36101
     },
     {
       "name": "MobX",
@@ -355,7 +355,7 @@
       "homepage": "http://mobx.js.org",
       "slug": "mobx",
       "github": "mobxjs/mobx",
-      "stars": 12042
+      "stars": 12159
     },
     {
       "name": "GraphQL",
@@ -364,7 +364,7 @@
       "homepage": "http://facebook.github.io/graphql/",
       "slug": "graphql",
       "github": "facebook/graphql",
-      "stars": 6540
+      "stars": 6595
     },
     {
       "name": "Relay/Relay Modern",
@@ -372,7 +372,7 @@
       "homepage": "https://facebook.github.io/relay/",
       "slug": "relay",
       "github": "facebook/relay",
-      "stars": 9903
+      "stars": 9947
     },
     {
       "name": "Falcor",
@@ -380,7 +380,7 @@
       "homepage": "http://netflix.github.io/falcor",
       "slug": "falcor",
       "github": "Netflix/falcor",
-      "stars": 8268
+      "stars": 8285
     },
     {
       "name": "Apollo",
@@ -389,7 +389,7 @@
       "homepage": "https://www.apollographql.com/client/",
       "slug": "apollo-client",
       "github": "apollographql/apollo-client",
-      "stars": 4884
+      "stars": 4985
     },
     {
       "name": "VueX",
@@ -397,7 +397,7 @@
       "homepage": "https://vuex.vuejs.org",
       "slug": "vuex",
       "github": "vuejs/vuex",
-      "stars": 11187
+      "stars": 11344
     },
     {
       "name": "Flux",
@@ -405,7 +405,7 @@
       "homepage": "http://facebook.github.io/flux/",
       "slug": "flux",
       "github": "facebook/flux",
-      "stars": 14578
+      "stars": 14610
     },
     {
       "name": "PouchDB",
@@ -413,7 +413,7 @@
       "homepage": "https://pouchdb.com/",
       "slug": "pouchdb",
       "github": "pouchdb/pouchdb",
-      "stars": 9740
+      "stars": 9777
     },
     {
       "name": "RxJS",
@@ -421,7 +421,7 @@
       "homepage": "http://reactivex.io",
       "slug": "rxjs",
       "github": "Reactive-Extensions/RxJS",
-      "stars": 17963
+      "stars": 18042
     },
     {
       "name": "Realm",
@@ -429,7 +429,7 @@
       "homepage": "https://realm.io",
       "slug": "realm",
       "github": "realm/realm-js",
-      "stars": 2463
+      "stars": 2476
     },
     {
       "name": "Gun.js",
@@ -437,7 +437,7 @@
       "homepage": "http://gun.js.org/",
       "slug": "gun",
       "github": "amark/gun",
-      "stars": 6774
+      "stars": 6814
     },
     {
       "name": "Cerebral",
@@ -446,7 +446,7 @@
       "homepage": "http://cerebraljs.com",
       "slug": "cerebral",
       "github": "cerebral/cerebral",
-      "stars": 1306
+      "stars": 1312
     },
     {
       "name": "Mocha",
@@ -455,7 +455,7 @@
       "homepage": "https://mochajs.org",
       "slug": "mocha",
       "github": "mochajs/mocha",
-      "stars": 13892
+      "stars": 13972
     },
     {
       "name": "Jasmine",
@@ -463,7 +463,7 @@
       "homepage": "http://jasmine.github.io/",
       "slug": "jasmine",
       "github": "jasmine/jasmine",
-      "stars": 13052
+      "stars": 13077
     },
     {
       "name": "Enzyme",
@@ -471,7 +471,7 @@
       "homepage": "http://airbnb.io/enzyme/",
       "slug": "enzyme",
       "github": "airbnb/enzyme",
-      "stars": 11630
+      "stars": 11724
     },
     {
       "name": "Jest",
@@ -479,7 +479,7 @@
       "homepage": "http://facebook.github.io/jest/",
       "slug": "jest",
       "github": "facebook/jest",
-      "stars": 13600
+      "stars": 13763
     },
     {
       "name": "Tape",
@@ -487,7 +487,7 @@
       "homepage": "",
       "slug": "tape",
       "github": "substack/tape",
-      "stars": 4254
+      "stars": 4271
     },
     {
       "name": "Ava",
@@ -495,7 +495,7 @@
       "homepage": "",
       "slug": "ava",
       "github": "avajs/ava",
-      "stars": 12036
+      "stars": 12103
     },
     {
       "name": "Karma",
@@ -503,7 +503,7 @@
       "homepage": "http://karma-runner.github.io",
       "slug": "karma",
       "github": "karma-runner/karma",
-      "stars": 9206
+      "stars": 9239
     },
     {
       "name": "Chai",
@@ -512,7 +512,7 @@
       "homepage": "http://chaijs.com",
       "slug": "chai",
       "github": "chaijs/chai",
-      "stars": 4763
+      "stars": 4789
     },
     {
       "name": "Nightwatch",
@@ -521,7 +521,7 @@
       "homepage": "http://nightwatchjs.org",
       "slug": "nightwatch",
       "github": "nightwatchjs/nightwatch",
-      "stars": 7451
+      "stars": 7486
     },
     {
       "name": "Tap",
@@ -529,7 +529,7 @@
       "homepage": "http://www.node-tap.org/",
       "slug": "node-tap",
       "github": "tapjs/node-tap",
-      "stars": 1131
+      "stars": 1138
     },
     {
       "name": "cypress",
@@ -537,7 +537,7 @@
       "homepage": "https://www.cypress.io",
       "slug": "cypress",
       "github": "cypress-io/cypress",
-      "stars": 2505
+      "stars": 2576
     },
     {
       "name": "intern",
@@ -545,7 +545,7 @@
       "homepage": "https://theintern.io/",
       "slug": "intern",
       "github": "theintern/intern",
-      "stars": 3878
+      "stars": 3884
     },
     {
       "name": "PhantomJS",
@@ -553,7 +553,7 @@
       "homepage": "http://phantomjs.org",
       "slug": "phantomjs",
       "github": "ariya/phantomjs",
-      "stars": 23846
+      "stars": 23915
     },
     {
       "name": "Nightmare",
@@ -561,7 +561,7 @@
       "homepage": "https://open.segment.com",
       "slug": "nightmare",
       "github": "segmentio/nightmare",
-      "stars": 14190
+      "stars": 14257
     },
     {
       "name": "Sinon",
@@ -569,7 +569,7 @@
       "homepage": "http://sinonjs.org/",
       "slug": "sinonjs",
       "github": "sinonjs/sinon",
-      "stars": 5071
+      "stars": 5113
     },
     {
       "name": "TestCafe",
@@ -577,7 +577,23 @@
       "homepage": "https://devexpress.github.io/testcafe/",
       "slug": "testcafe",
       "github": "DevExpress/testcafe",
-      "stars": 3612
+      "stars": 3646
+    },
+    {
+      "name": "QUnit",
+      "description": "An easy-to-use JavaScript Unit Testing framework.",
+      "homepage": "https://qunitjs.com",
+      "slug": "qunit",
+      "github": "qunitjs/qunit",
+      "stars": 3703
+    },
+    {
+      "name": "Protractor",
+      "description": "E2E test framework for Angular apps",
+      "homepage": "http://www.protractortest.org",
+      "slug": "protractor",
+      "github": "angular/protractor",
+      "stars": 7116
     },
     {
       "name": "SASS/SCSS",
@@ -585,7 +601,7 @@
       "homepage": "https://npmjs.org/package/node-sass",
       "slug": "sass",
       "github": "sass/node-sass",
-      "stars": 4455
+      "stars": 4482
     },
     {
       "name": "Stylus",
@@ -593,7 +609,7 @@
       "homepage": "http://stylus-lang.com/",
       "slug": "stylus",
       "github": "stylus/stylus",
-      "stars": 8627
+      "stars": 8648
     },
     {
       "name": "LESS",
@@ -601,7 +617,7 @@
       "homepage": "http://lesscss.org",
       "slug": "less",
       "github": "less/less.js",
-      "stars": 15223
+      "stars": 15240
     },
     {
       "name": "Bootstrap",
@@ -610,7 +626,7 @@
       "homepage": "http://getbootstrap.com",
       "slug": "bootstrap",
       "github": "twbs/bootstrap",
-      "stars": 118293
+      "stars": 118631
     },
     {
       "name": "Foundation",
@@ -619,7 +635,7 @@
       "homepage": "http://foundation.zurb.com",
       "slug": "foundation",
       "github": "zurb/foundation-sites",
-      "stars": 26661
+      "stars": 26711
     },
     {
       "name": "PostCSS",
@@ -627,7 +643,7 @@
       "homepage": "http://postcss.org/",
       "slug": "postcss",
       "github": "postcss/postcss",
-      "stars": 16572
+      "stars": 16627
     },
     {
       "name": "Bulma",
@@ -635,7 +651,7 @@
       "homepage": "https://bulma.io",
       "slug": "bulma",
       "github": "jgthms/bulma",
-      "stars": 22158
+      "stars": 22361
     },
     {
       "name": "Semantic UI",
@@ -644,7 +660,7 @@
       "homepage": "http://www.semantic-ui.com",
       "slug": "semanticui",
       "github": "Semantic-Org/Semantic-UI",
-      "stars": 38207
+      "stars": 38328
     },
     {
       "name": "Materialize",
@@ -652,7 +668,7 @@
       "homepage": "http://materializecss.com",
       "slug": "materialize-css",
       "github": "Dogfalo/materialize",
-      "stars": 30121
+      "stars": 30230
     },
     {
       "name": "CSS modules",
@@ -660,7 +676,7 @@
       "homepage": "",
       "slug": "css-modules",
       "github": "css-modules/css-modules",
-      "stars": 8428
+      "stars": 8484
     },
     {
       "name": "Material Design",
@@ -668,7 +684,7 @@
       "homepage": "http://getmdl.io",
       "slug": "material-design-lite",
       "github": "google/material-design-lite",
-      "stars": 29058
+      "stars": 29111
     },
     {
       "name": "PureCSS",
@@ -677,7 +693,7 @@
       "homepage": "http://purecss.io/",
       "slug": "purecss",
       "github": "yahoo/pure",
-      "stars": 17799
+      "stars": 17835
     },
     {
       "name": "Material UI",
@@ -685,7 +701,7 @@
       "homepage": "http://www.material-ui.com",
       "slug": "material-ui",
       "github": "mui-org/material-ui",
-      "stars": 30580
+      "stars": 30843
     },
     {
       "name": "UIKit",
@@ -694,7 +710,7 @@
       "homepage": "http://getuikit.com",
       "slug": "uikit",
       "github": "uikit/uikit",
-      "stars": 11047
+      "stars": 11097
     },
     {
       "name": "Tachyons",
@@ -702,7 +718,7 @@
       "homepage": "http://tachyons.io",
       "slug": "tachyons",
       "github": "tachyons-css/tachyons",
-      "stars": 5839
+      "stars": 5910
     },
     {
       "name": "Skeleton",
@@ -711,7 +727,7 @@
       "homepage": "http://www.getskeleton.com",
       "slug": "skeleton",
       "github": "dhg/Skeleton",
-      "stars": 14915
+      "stars": 14957
     },
     {
       "name": "styled-components",
@@ -719,7 +735,7 @@
       "homepage": "http://styled-components.com",
       "slug": "styled-components",
       "github": "styled-components/styled-components",
-      "stars": 11430
+      "stars": 11563
     },
     {
       "name": "CSSnext",
@@ -727,7 +743,7 @@
       "homepage": "http://cssnext.io/",
       "slug": "cssnext",
       "github": "MoOx/postcss-cssnext",
-      "stars": 4746
+      "stars": 4764
     },
     {
       "name": "Webpack",
@@ -736,7 +752,7 @@
       "homepage": "https://webpack.js.org",
       "slug": "webpack",
       "github": "webpack/webpack",
-      "stars": 34108
+      "stars": 34381
     },
     {
       "name": "Grunt",
@@ -744,7 +760,7 @@
       "homepage": "http://gruntjs.com/",
       "slug": "grunt",
       "github": "gruntjs/grunt",
-      "stars": 11641
+      "stars": 11653
     },
     {
       "name": "Gulp",
@@ -752,7 +768,7 @@
       "homepage": "http://gulpjs.com",
       "slug": "gulp",
       "github": "gulpjs/gulp",
-      "stars": 27998
+      "stars": 28061
     },
     {
       "name": "Browserify",
@@ -760,7 +776,7 @@
       "homepage": "http://browserify.org/",
       "slug": "browserify",
       "github": "browserify/browserify",
-      "stars": 11525
+      "stars": 11556
     },
     {
       "name": "NPM",
@@ -768,7 +784,7 @@
       "homepage": "http://www.npmjs.com/",
       "slug": "npm",
       "github": "npm/npm",
-      "stars": 14564
+      "stars": 14644
     },
     {
       "name": "Rollup",
@@ -776,7 +792,7 @@
       "homepage": "http://rollupjs.org",
       "slug": "rollup",
       "github": "rollup/rollup",
-      "stars": 10907
+      "stars": 10979
     },
     {
       "name": "Brunch",
@@ -785,7 +801,7 @@
       "homepage": "http://brunch.io",
       "slug": "brunch",
       "github": "brunch/brunch",
-      "stars": 6243
+      "stars": 6255
     },
     {
       "name": "Broccoli",
@@ -794,7 +810,7 @@
       "homepage": "",
       "slug": "broccoli",
       "github": "broccolijs/broccoli",
-      "stars": 3068
+      "stars": 3070
     },
     {
       "name": "Jspm",
@@ -802,7 +818,7 @@
       "homepage": "https://jspm.io",
       "slug": "jspm",
       "github": "jspm/jspm-cli",
-      "stars": 3623
+      "stars": 3627
     },
     {
       "name": "Fusebox",
@@ -810,7 +826,7 @@
       "homepage": "http://fuse-box.org",
       "slug": "fusebox",
       "github": "fuse-box/fuse-box",
-      "stars": 2927
+      "stars": 2944
     },
     {
       "name": "SystemJS",
@@ -818,7 +834,7 @@
       "homepage": "",
       "slug": "systemjs",
       "github": "systemjs/systemjs",
-      "stars": 8696
+      "stars": 8713
     },
     {
       "name": "StealJS",
@@ -826,7 +842,7 @@
       "homepage": "https://stealjs.com",
       "slug": "steal",
       "github": "stealjs/steal",
-      "stars": 1162
+      "stars": 1163
     },
     {
       "name": "Babel",
@@ -834,7 +850,7 @@
       "homepage": "https://babeljs.io/",
       "slug": "babel",
       "github": "babel/babel",
-      "stars": 24199
+      "stars": 24372
     },
     {
       "name": "React Native",
@@ -842,7 +858,7 @@
       "homepage": "http://facebook.github.io/react-native/",
       "slug": "react-native",
       "github": "facebook/react-native",
-      "stars": 56224
+      "stars": 56589
     },
     {
       "name": "Ionic",
@@ -851,7 +867,7 @@
       "homepage": "https://ionicframework.com/",
       "slug": "ionic",
       "github": "ionic-team/ionic",
-      "stars": 32339
+      "stars": 32483
     },
     {
       "name": "NativeScript",
@@ -860,15 +876,15 @@
       "homepage": "http://www.nativescript.org",
       "slug": "nativescript",
       "github": "NativeScript/NativeScript",
-      "stars": 11749
+      "stars": 11816
     },
     {
       "name": "Electron",
       "description": "Build cross platform desktop apps with JavaScript, HTML, and CSS",
-      "homepage": "https://electron.atom.io",
+      "homepage": "https://electronjs.org",
       "slug": "electron",
       "github": "electron/electron",
-      "stars": 53145
+      "stars": 53444
     },
     {
       "name": "Yarn",
@@ -876,7 +892,7 @@
       "homepage": "https://yarnpkg.com",
       "slug": "yarn",
       "github": "yarnpkg/yarn",
-      "stars": 28725
+      "stars": 28863
     },
     {
       "name": "NPM",
@@ -884,7 +900,7 @@
       "homepage": "http://www.npmjs.com/",
       "slug": "npm",
       "github": "npm/npm",
-      "stars": 14564
+      "stars": 14644
     }
   ]
 }
