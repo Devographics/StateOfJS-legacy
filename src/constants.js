@@ -30,11 +30,7 @@ export const sectionColors = {
     mobile: '#8B8DE8',
 }
 
-export const chordScale = [
-    '#b3b5e6',
-    '#e28194',
-    '#fffec7',
-]
+export const chordScale = ['#b3b5e6', '#e28194', '#fffec7']
 
 export const colorScale = [
     '#8b8de8',

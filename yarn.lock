@@ -9,39 +9,41 @@
     js-yaml "3.x.x"
     lodash "4.x.x"
 
-"@nivo/bar@0.32.0":
-  version "0.32.0"
-  resolved "https://registry.yarnpkg.com/@nivo/bar/-/bar-0.32.0.tgz#4ad5f062a95d0545bf229a451d40e866509c535f"
+"@nivo/bar@0.33.0":
+  version "0.33.0"
+  resolved "https://registry.yarnpkg.com/@nivo/bar/-/bar-0.33.0.tgz#95e60871b381fc14f4980ba22569b2fd7b0ac6b4"
   dependencies:
-    "@nivo/core" "0.32.0"
+    "@nivo/core" "0.33.0"
+    "@nivo/legends" "0.33.0"
     d3-scale "^1.0.6"
     d3-shape "^1.2.0"
     react-motion "^0.5.2"
     recompose "^0.26.0"
 
-"@nivo/chord@0.32.0":
-  version "0.32.0"
-  resolved "https://registry.yarnpkg.com/@nivo/chord/-/chord-0.32.0.tgz#8eb33293689833480fc5b8fe5e54ced560330c98"
+"@nivo/chord@0.33.0":
+  version "0.33.0"
+  resolved "https://registry.yarnpkg.com/@nivo/chord/-/chord-0.33.0.tgz#b9b09c11b7275270f1f6831893790a87087a5eee"
   dependencies:
-    "@nivo/core" "0.32.0"
+    "@nivo/core" "0.33.0"
+    "@nivo/legends" "0.33.0"
     d3-chord "^1.0.4"
     d3-format "^1.2.0"
     d3-shape "^1.2.0"
     react-motion "^0.5.2"
     recompose "^0.26.0"
 
-"@nivo/circle-packing@0.32.0":
-  version "0.32.0"
-  resolved "https://registry.yarnpkg.com/@nivo/circle-packing/-/circle-packing-0.32.0.tgz#fd8ac3f30ce1459eabc2a53689322495890b4857"
+"@nivo/circle-packing@0.33.0":
+  version "0.33.0"
+  resolved "https://registry.yarnpkg.com/@nivo/circle-packing/-/circle-packing-0.33.0.tgz#495bf93bc01e205755855c04b79fc057c430381d"
   dependencies:
-    "@nivo/core" "0.32.0"
+    "@nivo/core" "0.33.0"
     d3-hierarchy "^1.1.5"
     react-motion "^0.5.2"
     recompose "^0.26.0"
 
-"@nivo/core@0.32.0":
-  version "0.32.0"
-  resolved "https://registry.yarnpkg.com/@nivo/core/-/core-0.32.0.tgz#e191b9fbc45416ee32bdf0350957aaeecc439b84"
+"@nivo/core@0.33.0":
+  version "0.33.0"
+  resolved "https://registry.yarnpkg.com/@nivo/core/-/core-0.33.0.tgz#d4797275f8bf28f8e9fcc6f720d78cc354561050"
   dependencies:
     d3-color "^1.0.3"
     d3-format "^1.2.0"
@@ -54,11 +56,18 @@
     react-motion "^0.5.2"
     recompose "^0.26.0"
 
-"@nivo/pie@0.32.0":
-  version "0.32.0"
-  resolved "https://registry.yarnpkg.com/@nivo/pie/-/pie-0.32.0.tgz#8622e3ef3e63c32a5506e4442e465da3ff7da597"
+"@nivo/legends@0.33.0":
+  version "0.33.0"
+  resolved "https://registry.yarnpkg.com/@nivo/legends/-/legends-0.33.0.tgz#8eb5a228b2cfb81dfc464ddb854c266768f039c2"
   dependencies:
-    "@nivo/core" "0.32.0"
+    recompose "^0.26.0"
+
+"@nivo/pie@0.33.0":
+  version "0.33.0"
+  resolved "https://registry.yarnpkg.com/@nivo/pie/-/pie-0.33.0.tgz#7247569875c237aa2c165ba074eb953c52ab42fd"
+  dependencies:
+    "@nivo/core" "0.33.0"
+    "@nivo/legends" "0.33.0"
     d3-shape "^1.2.0"
     react-motion "^0.5.2"
     recompose "^0.26.0"
