@@ -67,7 +67,10 @@ export default class Index extends React.Component {
                     <div className="footer home-footer">
                         <TextBlock>
                             <p>
-                                Hand-coded in Osaka, Japan. <a href="mailto:hello@stateofjs.com">Get in touch</a>.
+                                Hand-coded in Osaka, Japan with <a href="http://nivo.rocks">Nivo</a> & <a href="http://gatsbyjs.org">Gatsby</a>.&nbsp;
+                                <a href="https://github.com/StateOfJS/StateOfJS">Leave an issue</a>
+                                &nbsp;or&nbsp;
+                                <a href="mailto:hello@stateofjs.com">Get in touch</a>.
                             </p>
                         </TextBlock>
                     </div>

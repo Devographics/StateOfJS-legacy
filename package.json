@@ -69,7 +69,9 @@
     "progress": "^2.0.0",
     "puppeteer": "^0.13.0"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
@@ -80,9 +82,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "fmt":
-      "prettier --print-width=100 --tab-width=4 --bracket-spacing --no-semi --trailing-comma es5 --single-quote --color --write \"{src,cli,.storybook,stories,loaders}/**/*.js\" gatsby-*.js",
-    "fmt:check":
-      "prettier --print-width=100 --tab-width=4 --bracket-spacing --no-semi --trailing-comma es5 --single-quote --list-different \"{src,cli,.storybook,stories,loaders}/**/*.js\" gatsby-*.js"
+    "fmt": "prettier --print-width=100 --tab-width=4 --bracket-spacing --no-semi --trailing-comma es5 --single-quote --color --write \"{src,cli,.storybook,stories,loaders}/**/*.js\" gatsby-*.js",
+    "fmt:check": "prettier --print-width=100 --tab-width=4 --bracket-spacing --no-semi --trailing-comma es5 --single-quote --list-different \"{src,cli,.storybook,stories,loaders}/**/*.js\" gatsby-*.js"
   }
 }

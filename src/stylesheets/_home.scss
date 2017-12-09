@@ -310,7 +310,9 @@
 }
 
 .about{
+  @include large{
   margin: 0 180px $spacing*3 180px;
+  }
 }
 
 .about__heading{
@@ -318,12 +320,19 @@
   margin-bottom: $spacing*2;
 }
 .about__authors{
-  display: flex;
+  @include small{
+    text-align: center;
+  }
+  @include medium-large{
+    display: flex;
+  }
 }
 .about__author{
-  margin-right: $spacing*3;
-  &:last-of-type{
-    margin: 0;
+  @include medium-large{
+    margin-right: $spacing*3;
+    &:last-of-type{
+      margin: 0;
+    }
   }
 }
 .about__author__name{

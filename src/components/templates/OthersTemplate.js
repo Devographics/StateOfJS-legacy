@@ -9,9 +9,9 @@ import getPageTitle from '../../helpers/getPageTitle'
 import DocumentTitle from 'react-document-title'
 
 const OthersTemplate = props => (
-	<DocumentTitle title={getPageTitle(props.section, 'others')}>
+	<DocumentTitle title={getPageTitle(props.section, 'other')}>
 	    <div className="template">
-	        <Meta section={props.section} subSection="others" />
+	        <Meta section={props.section} subSection="other" />
 	        <OthersBarBlock {...props} />
 	        <OthersBubbleBlock {...props} />
 	    </div>
