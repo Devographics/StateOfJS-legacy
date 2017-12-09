@@ -6,6 +6,8 @@ import ResourcesBlock from '../blocks/ResourcesBlock'
 import HappinessBlock from '../blocks/HappinessBlock'
 import TextBlock from '../blocks/TextBlock'
 import Meta from '../elements/Meta'
+import getPageTitle from '../../helpers/getPageTitle'
+import DocumentTitle from 'react-document-title'
 
 const Results = ({
     section,
@@ -16,14 +18,16 @@ const Results = ({
     happiness,
     sponsor,
 }) => (
-    <div className="template">
-        <Meta section={section} subSection="results" />
-        <TextBlock text={description} />
-        <ResultsBlock data={experienceData} section={section} />
-        <NumberOfLibrariesBlock keys={keys} data={numberOfToolsData} section={section} />
-        <HappinessBlock section={section} value={happiness} />
-        <ResourcesBlock section={section} />
-    </div>
+    <DocumentTitle title={getPageTitle(section, 'results')}>
+        <div className="template">
+            <Meta section={section} subSection="results" />
+            <TextBlock text={description} />
+            <ResultsBlock data={experienceData} section={section} />
+            <NumberOfLibrariesBlock keys={keys} data={numberOfToolsData} section={section} />
+            <HappinessBlock section={section} value={happiness} />
+            <ResourcesBlock section={section} />
+        </div>
+    </DocumentTitle>
 )
 
 Results.propTypes = {

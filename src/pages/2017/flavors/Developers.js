@@ -2,7 +2,7 @@ import React from 'react'
 import flavorData from '../../../data/flavor.json'
 import DevelopersTemplate from '../../../components/templates/DevelopersTemplate'
 
-const FlavorUsers = () => (
+const FlavorUsers = ({ location }) => (
     <DevelopersTemplate
         title="JavaScript flavors users facts"
         tools={flavorData.keys}

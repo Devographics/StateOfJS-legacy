@@ -69,3 +69,9 @@ a{
     animation-timing-function: linear;
   }
 }
+
+.conclusion__byline{
+  text-align: right;
+  display: block;
+  @include font-bold;
+}

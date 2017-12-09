@@ -308,3 +308,27 @@
     margin-bottom: 5px;
   }
 }
+
+.about{
+  margin: 0 180px $spacing*3 180px;
+}
+
+.about__heading{
+  text-align: center;
+  margin-bottom: $spacing*2;
+}
+.about__authors{
+  display: flex;
+}
+.about__author{
+  margin-right: $spacing*3;
+  &:last-of-type{
+    margin: 0;
+  }
+}
+.about__author__name{
+  margin-bottom: $spacing/4;
+}
+.about__author__bio{
+  font-size: $medium-font;
+}

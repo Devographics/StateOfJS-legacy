@@ -2,6 +2,7 @@
 .newsletter{
   // border: 1px solid $border-color;
   // padding: $spacing/2 $spacing/2;
+  margin-bottom: $spacing*2;
   max-width: 500px;
   form{
     display: flex;
@@ -39,6 +40,9 @@
 .block--newsletter{
   border: 1px solid $border-color;
   padding: $spacing;
+  .newsletter{
+    margin-bottom: 0;
+  }
   .block__title{
     font-size: $large-font;
   }

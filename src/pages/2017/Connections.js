@@ -7,6 +7,8 @@ import addParagraphs from '../../helpers/paragraphs'
 import parseBold from '../../helpers/bold'
 import { sectionColors, chordScale } from '../../constants'
 import flatten from 'lodash/flatten'
+import getPageTitle from '../../helpers/getPageTitle'
+import DocumentTitle from 'react-document-title'
 
 const { chord: { keys, matrix } } = allToolsPairing
 
@@ -81,21 +83,23 @@ export default class Connections extends Component {
         }))
 
         return (
-            <div className="Section">
-                <div
-                    className="block block--text"
-                    dangerouslySetInnerHTML={{ __html: parseBold(addParagraphs(text)) }}
-                />
-                <div className="block block--chart block--connections">
-                    <AffinityToggle
-                        sections={allSections}
-                        selectedSections={sections}
-                        onChange={this.handleSectionToggle}
-                        maxNumberOfSections={MAX_NUMBER_OF_SECTIONS}
+            <DocumentTitle title={getPageTitle('Connections')}>
+                <div className="Section">
+                    <div
+                        className="block block--text"
+                        dangerouslySetInnerHTML={{ __html: parseBold(addParagraphs(text)) }}
                     />
-                    <AffinityChord colors={colors} keys={filteredKeys} matrix={filteredMatrix} />
+                    <div className="block block--chart block--connections">
+                        <AffinityToggle
+                            sections={allSections}
+                            selectedSections={sections}
+                            onChange={this.handleSectionToggle}
+                            maxNumberOfSections={MAX_NUMBER_OF_SECTIONS}
+                        />
+                        <AffinityChord colors={colors} keys={filteredKeys} matrix={filteredMatrix} />
+                    </div>
                 </div>
-            </div>
+            </DocumentTitle>
         )
     }
 }

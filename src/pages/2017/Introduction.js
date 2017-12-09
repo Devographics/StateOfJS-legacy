@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import TextBlock from '../../components/blocks/TextBlock'
 import Newsletter from '../../components/common/Newsletter'
 import JavascriptLandscapeBlock from '../../components/blocks/JavascriptLandscapeBlock'
+import getPageTitle from '../../helpers/getPageTitle'
 
 const intro = `
 A few years back, a JavaScript survey would've been a simple matter. Question 1: are you using jQuery? Question 2: any comments? Boom, done! 
@@ -17,7 +18,7 @@ We believe the result is the most complete picture of the state of JavaScript cu
 `
 
 const Introduction = () => (
-    <DocumentTitle title="Introduction">
+	<DocumentTitle title={getPageTitle('Introduction')}>
         <div>
             <TextBlock text={intro} />
             {/*<JavascriptLandscapeBlock />*/}

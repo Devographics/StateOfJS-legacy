@@ -11,6 +11,7 @@ import Results2016 from '../components/common/Results2016.js'
 import TextBlock from '../components/blocks/TextBlock.js'
 // import Stats from '../components/common/Stats.js'
 import Comments from '../components/common/Comments.js'
+import About from '../components/common/About.js'
 
 // import FooterContents from '../data/footer.md'
 
@@ -61,13 +62,12 @@ export default class Index extends React.Component {
 
                     <Comments />
 
+                    <About />
+
                     <div className="footer home-footer">
                         <TextBlock>
-                            <p>Hand-coded in Osaka, Japan by 
-                            <a href="http://sachagreif.com">Sacha Greif</a>, 
-                            <a href="https://twitter.com/benitteraphael">Raphaël Benitte</a>, and 
-                            <a href="https://michaelrambeau.com">Michael Rambeau</a>. 
-                            <a href="mailto:hello@stateofjs.com">Get in touch</a>.
+                            <p>
+                                Hand-coded in Osaka, Japan. <a href="mailto:hello@stateofjs.com">Get in touch</a>.
                             </p>
                         </TextBlock>
                     </div>

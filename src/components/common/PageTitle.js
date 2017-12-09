@@ -5,15 +5,7 @@ import Link from 'gatsby-link'
 import classNames from 'classnames'
 import { navigateTo } from 'gatsby-link'
 import getPages from '../../helpers/getPages'
-
-const getTitle = ({ section, subSection }, short = false) => {
-    let title = ''
-    title = short ? section.label : section.fullLabel
-    if (subSection) {
-        title += ` – ${short ? subSection.label : subSection.fullLabel}`
-    }
-    return title
-}
+import getTitle from '../../helpers/getTitle'
 
 /*
 <h2 className="page-title">
@@ -41,16 +33,7 @@ export default class PageTitle extends React.PureComponent {
             }
         }
     }
-
-    getPages = () => {
-        const currentPage = getCurrentPage()
-        return {
-            currentPage,
-            previousPage: getPreviousPage(currentPage),
-            nextPage: getNextPage(currentPage),
-        }
-    }
-
+    
     render() {
         const { location, mode } = this.props
 

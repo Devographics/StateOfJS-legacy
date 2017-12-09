@@ -5,7 +5,7 @@ import slugify from './slugify'
 
 const navFiltered = filter(nav, item => !item.hide)
 
-export const getCurrentPage = pathname => {
+export const getCurrentPage = (pathname) => {
     const sectionIndex = _.findIndex(nav, item => pathname.indexOf(slugify(item.label)) !== -1)
     const page = {
         sectionIndex,

@@ -3,6 +3,7 @@ import DocumentTitle from 'react-document-title'
 import Link from 'gatsby-link'
 import TextBlock from '../../components/blocks/TextBlock'
 import Newsletter from '../../components/common/Newsletter'
+import getPageTitle from '../../helpers/getPageTitle'
 
 const text = `
 We asked developers questions about their view of the current JavaScript ecosystem, 
@@ -13,10 +14,12 @@ be sure to notify you.
 `
 
 const Opinions = () => (
-    <div>
-        <TextBlock text={text} />
-        <Newsletter />
-    </div>
+	<DocumentTitle title={getPageTitle('Opinions')}>
+	    <div>
+	        <TextBlock text={text} />
+	        <Newsletter />
+	    </div>
+    </DocumentTitle>
 )
 
 export default Opinions
