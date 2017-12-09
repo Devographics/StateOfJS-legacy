@@ -5,10 +5,15 @@
   margin-bottom: $spacing*2;
   max-width: 500px;
   form{
-    display: flex;
+    @include medium-large{
+      display: flex;
+    }
     margin: 0;
   }
   .email{
+    @include small{
+      margin-bottom: $spacing/2;
+    }
     display: block;
     border-radius: 3px;
     padding: $spacing/2 $spacing/2;
@@ -23,7 +28,10 @@
   }
   .button{
     min-width: 140px;
-    // display: block;
+    display: block;
+    @include small{
+      width: 100%;
+    }
     // border-radius: 10px;
     // padding: 10px 20px;
     // background: $active-color;
