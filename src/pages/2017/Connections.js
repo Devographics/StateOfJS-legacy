@@ -76,9 +76,11 @@ export default class Connections extends Component {
                 return row.filter((item, index) => keysIndexes.includes(index))
             })
 
-        const colors = flatten(sections.map((section,i) => {
-            return keysBySection[section].map(lib => chordScale[i])
-        }))
+        const colors = flatten(
+            sections.map((section, i) => {
+                return keysBySection[section].map(lib => chordScale[i])
+            })
+        )
 
         return (
             <div className="Section">

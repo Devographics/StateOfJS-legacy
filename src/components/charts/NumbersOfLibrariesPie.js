@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { ResponsivePie } from '@nivo/pie'
-import { scaleLinear } from 'd3-scale'
+import { patternLinesDef } from '@nivo/core'
 import { colorScale } from '../../constants.js'
 
 const margin = {
@@ -23,6 +23,20 @@ const getRadialLabel = d => {
     return `Using ${d.id} libraries`
 }
 
+const noneColor = '#d9dbd9'
+const colors = [noneColor, ...colorScale]
+
+const defs = [
+    patternLinesDef('lines', {
+        color: 'inherit',
+        background: 'transparent',
+        rotation: -45,
+        lineWidth: 6,
+        spacing: 10,
+    }),
+]
+const fill = [{ match: { id: '0' }, id: 'lines' }]
+
 export default class NumbersOfLibrariesPie extends Component {
     static propTypes = {
         keys: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
@@ -35,26 +49,30 @@ export default class NumbersOfLibrariesPie extends Component {
     }
 
     render() {
-        const { keys, data } = this.props
+        const { data } = this.props
 
-        // const colorScale = scaleLinear()
-        //     .domain([0, 1, keys.length])
-        //     .range(['#dadada', '#9688e4', '#ea2149'])
+        const getColor = ({ id }) => colors[id]
 
-        const getColor = ({ id }) => ['#F4F6F4', ...colorScale][id]
+        // small values generate artifacts when used with cornerRadius & padAngle
+        // also not that `60` is quite arbitrary and is probably only suited for 2017 results
+        const filteredData = data.filter(d => d.doc_count > 60)
 
         return (
             <ResponsivePie
-                data={data.map(({ key, doc_count }) => ({
+                data={filteredData.map(({ key, doc_count }) => ({
                     id: `${key}`,
                     label: `${key}`,
                     value: doc_count,
                 }))}
                 colorBy={getColor}
+                defs={defs}
+                fill={fill}
+                borderWidth={1}
+                borderColor="inherit"
                 margin={margin}
                 innerRadius={0.6}
-                padAngle={0.6}
-                cornerRadius={3}
+                padAngle={0.7}
+                cornerRadius={2}
                 radialLabelsSkipAngle={10}
                 radialLabel={getRadialLabel}
                 radialLabelsLinkColor="inherit"

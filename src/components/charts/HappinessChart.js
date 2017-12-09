@@ -10,7 +10,9 @@ const HappinessChart = ({ score }) => (
                     <div className="happiness__item" key={index}>
                         <div className="happiness__item__inner">
                             <span className="happiness__item__index">{index + 1}</span>
-                            {(index === 0 || index === 4) && <span className="happiness__item__label">{label}</span>}
+                            {(index === 0 || index === 4) && (
+                                <span className="happiness__item__label">{label}</span>
+                            )}
                         </div>
                     </div>
                 ))}
