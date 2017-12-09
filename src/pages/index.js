@@ -13,6 +13,8 @@ import TextBlock from '../components/blocks/TextBlock.js'
 import Comments from '../components/common/Comments.js'
 import About from '../components/common/About.js'
 
+import Newsletter from '../components/common/Newsletter'
+
 // import FooterContents from '../data/footer.md'
 
 const homeContents = `
@@ -23,6 +25,10 @@ So we collected data from over 20,000 developers, asking them questions on topic
 You'll find out which libraries developers want to learn next, and which have the best satisfaction ratings. And hopefully, get a better understanding of the ever-changing JavaScript ecosystem.
 
 `
+
+const newsletterContents = `
+Leave us your email and we'll let you know when next year's survey comes out. 
+` 
 
 export default class Index extends React.Component {
     render() {
@@ -63,6 +69,11 @@ export default class Index extends React.Component {
                     <Comments />
 
                     <About />
+
+                    <div className="block block--newsletter--home">
+                        <TextBlock title="Stay Tuned" text={newsletterContents} />
+                        <Newsletter />
+                    </div>
 
                     <div className="footer home-footer">
                         <TextBlock>
