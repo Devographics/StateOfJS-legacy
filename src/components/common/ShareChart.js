@@ -140,11 +140,11 @@ export default class ShareChart extends React.Component {
         const { section, subSection } = this.props
         const currentSection = find(nav, { label: section })
 
-        const name = currentSection.label
+        const name = currentSection.fullLabel
         const slug = slugify(section)
-        const link = getPageUrl(slug, subSection)
+        const link = `http://stateofjs.com${getPageUrl(slug, subSection)}`
 
-        const twitterText = `State Of JavaScript Survey Results: ${name} ${link} #stateofjs`
+        const twitterText = `#StateOfJS 2017 Results: ${name} ${link}`
         const subject = 'State Of JavaScript Survey Results'
         const body = `Here are some interesting survey results about ${name.toLowerCase()} libraries: ${
             link
