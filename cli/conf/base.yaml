@@ -9,7 +9,7 @@ type_form:
 
 capture:
   baseUrl:   http://localhost:8000/2017
-  outputDir: ../public/images/captures
+  outputDir: ../static/images/captures
 
   pages:
     - path:     /flavors/results/
