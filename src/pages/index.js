@@ -23,7 +23,12 @@ The JavaScript world is richer and messier than ever.
 So we collected data from over 20,000 developers, asking them questions on topics ranging from front-end frameworks and state management, to build tools and testing libraries.
 
 You'll find out which libraries developers want to learn next, and which have the best satisfaction ratings. And hopefully, get a better understanding of the ever-changing JavaScript ecosystem.
+`
 
+const homeComingSoonContents = `
+We collected data from over 20,000 developers, asking them questions on topics ranging from front-end frameworks to testing libraries and more. 
+
+We're almost ready to release the results to the world. So join us on December 12, 2017 at 5pm PST for a special launch livestream.
 `
 
 const newsletterContents = `
@@ -53,11 +58,16 @@ export default class Index extends React.Component {
                     </div>
 
                     <div className="intro section-border section-narrow">
-                        <TextBlock text={homeContents} />
+                        <TextBlock text={homeComingSoonContents} />
                         <div className="view-results">
+                            <a className="button large-button" href="https://medium.com/@sachagreif/announcing-the-stateofjs-2017-launch-livestream-14e4aeeeec3a">
+                                Learn More
+                            </a>
+                            {/*
                             <Link className="button large-button" to="/2017/introduction/">
                                 View Results
                             </Link>
+                            */}
                         </div>
                     </div>
                     {/*<Stats />*/}
@@ -78,7 +88,7 @@ export default class Index extends React.Component {
                     <div className="footer home-footer">
                         <TextBlock>
                             <p>
-                                Hand-coded in Osaka, Japan with <a href="http://nivo.rocks">Nivo</a> & <a href="http://gatsbyjs.org">Gatsby</a>.&nbsp;
+                                Hand-coded in Osaka, Japan with <a href="http://nivo.rocks">Nivo</a> & <a href="http://gatsbyjs.org">Gatsby</a>. Extra data from <a href="https://bestof.js.org/">BestOfJS</a>.&nbsp;
                                 <a href="https://github.com/StateOfJS/StateOfJS">Leave an issue</a>
                                 &nbsp;or&nbsp;
                                 <a href="mailto:hello@stateofjs.com">Get in touch</a>.

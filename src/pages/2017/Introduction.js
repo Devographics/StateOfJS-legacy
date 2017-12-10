@@ -15,6 +15,7 @@ This is where this survey comes in: we asked over a hundred questions to more th
 
 We believe the result is the most complete picture of the state of JavaScript currently available, and we're excited to share it with you!
 
+P.S. if all this data ever feels overwhelming, I'm sure you'll find a way to <em>console</em> yourself…
 `
 
 const Introduction = () => (
