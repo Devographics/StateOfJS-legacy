@@ -11,7 +11,7 @@ export default class Html extends Component {
     }
 
     render() {
-        const title = `State Of JavaScript: ${DocumentTitle.rewind()}`
+        const title = DocumentTitle.rewind()
 
         let css
         // let head = Helmet.rewind()

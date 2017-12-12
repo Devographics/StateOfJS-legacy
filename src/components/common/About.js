@@ -6,8 +6,8 @@ const About = () =>
     <div className="about">
         <h2 className="about__heading">StateOfJS is Made by:</h2>
         <div className="about__authors">
-            {authors.map(({ name, bio, url }) => 
-                <div className="about__author">
+            {authors.map(({ name, bio, url }, i) => 
+                <div key={i} className="about__author">
                     <h3 className="about__author__name"><a href={url}>{name}</a></h3>
                     <div className="about__author__bio"><ReactMarkdown source={bio}/></div>
                 </div>

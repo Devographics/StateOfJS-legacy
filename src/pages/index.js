@@ -38,7 +38,7 @@ Leave us your email and we'll let you know when next year's survey comes out.
 export default class Index extends React.Component {
     render() {
         return (
-            <DocumentTitle title="The State Of JavaScript">
+            <DocumentTitle title="The State Of JavaScript 2017">
                 <div className="results-container content home">
                     <h1 className="logo">
                         <img src="images/javascript2017.svg" alt="The State Of JavaScript" />
