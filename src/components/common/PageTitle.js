@@ -39,7 +39,8 @@ export default class PageTitle extends React.PureComponent {
 
         const { currentPage, previousPage, nextPage } = getPages(this.props.location.pathname)
 
-        const tabindex = mode === 'title' ? { tabIndex: 0 } : {}
+        // const tabindex = mode === 'title' ? { tabIndex: 0 } : {}
+        const tabindex = {}
 
         return (
             <div

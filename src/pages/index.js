@@ -58,16 +58,11 @@ export default class Index extends React.Component {
                     </div>
 
                     <div className="intro section-border section-narrow">
-                        <TextBlock text={homeComingSoonContents} />
+                        <TextBlock text={homeContents} />
                         <div className="view-results">
-                            <a className="button large-button" href="https://medium.com/@sachagreif/announcing-the-stateofjs-2017-launch-livestream-14e4aeeeec3a">
-                                Learn More
-                            </a>
-                            {/*
                             <Link className="button large-button" to="/2017/introduction/">
                                 View Results
                             </Link>
-                            */}
                         </div>
                     </div>
                     {/*<Stats />*/}
