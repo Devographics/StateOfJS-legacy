@@ -45,7 +45,7 @@ export default class ExperienceBlock extends Component {
                 <div className="block__description">
                     <p>
                         Per-library breakdown of developers according to years of experience
-                        (average value highlighted).
+                        (aggregated value over all libraries highlighted).
                     </p>
                 </div>
                 <div className="block__contents">
