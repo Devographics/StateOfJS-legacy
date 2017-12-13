@@ -119,7 +119,7 @@
             "sum_other_doc_count": 227,
             "buckets": [
                 {
-                    "key": "Visual Studio",
+                    "key": "VS Code",
                     "doc_count": 7983
                 },
                 {
