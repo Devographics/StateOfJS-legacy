@@ -341,3 +341,21 @@
 .about__author__bio{
   font-size: $smallish-font;
 }
+
+.stream{
+  z-index: 1000;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 40px;
+  background: $yellow;
+  @include flex-center;
+  a{
+    display: block;
+    font-weight: bold;
+  font-size: $smallish-font;
+
+  }
+}

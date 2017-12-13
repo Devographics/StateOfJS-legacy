@@ -40,6 +40,11 @@ export default class Index extends React.Component {
         return (
             <DocumentTitle title="The State Of JavaScript 2017">
                 <div className="results-container content home">
+                    <div className="stream">
+                         <a href="https://medium.com/@sachagreif/your-guide-to-the-stateofjs-2017-launch-livestream-7508d5cdb265">
+                            Join our launch livestream, starting at 5pm PST!
+                        </a>
+                    </div>
                     <h1 className="logo">
                         <img src="images/javascript2017.svg" alt="The State Of JavaScript" />
                         {/*<div className="logo-1"/>
