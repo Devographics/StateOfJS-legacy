@@ -70,10 +70,10 @@
       background: $hover-color;
       svg path{
         fill: $active-color;
-        animation-name: blink2;
-        animation-duration: 300ms;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
+        // animation-name: blink2;
+        // animation-duration: 300ms;
+        // animation-iteration-count: infinite;
+        // animation-timing-function: linear;
       }
     }
   }
