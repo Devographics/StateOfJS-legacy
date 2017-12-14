@@ -89,12 +89,13 @@ a{
   }
   &:hover{
     position: relative;
-
-    animation-name: threedee;
-    animation-duration: 200ms;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
+    // color: $hover-color;
+    text-decoration: underline;
+    // animation-name: threedee;
+    // animation-duration: 200ms;
+    // animation-iteration-count: 1;
+    // animation-timing-function: ease-out;
+    // animation-fill-mode: forwards;
 
     // animation-name: blinkfast;
     // animation-duration: 300ms;
