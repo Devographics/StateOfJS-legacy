@@ -4,20 +4,24 @@ import Link from 'gatsby-link'
 import TextBlock from '../../components/blocks/TextBlock'
 import Newsletter from '../../components/common/Newsletter'
 import getPageTitle from '../../helpers/getPageTitle'
+import opinionsData from '../../data/opinions.json'
+import OpinionBar from '../../components/charts/OpinionBar'
 
 const text = `
-We asked developers questions about their view of the current JavaScript ecosystem, 
-but we haven't had time to analyze the data yet :(
-
-If you'd like to know when this section comes out, sign up below and we'll
-be sure to notify you. 
+To find out how developers view the current JavaScript ecosystem, we asked them how much
+they agreed or disagreed with the following opinions. 
 `
 
 const Opinions = () => (
-	<DocumentTitle title={getPageTitle('Opinions')}>
+    <DocumentTitle title={getPageTitle('Opinions')}>
 	    <div>
 	        <TextBlock text={text} />
-	        <Newsletter />
+            {opinionsData.keys.map(opinion => (
+                <div className="block block--chart" key={opinion}>
+                    <h3 className="block__title">“{opinion}”</h3>
+                    <OpinionBar opinion={opinion} />
+                </div>
+            ))}
 	    </div>
     </DocumentTitle>
 )

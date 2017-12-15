@@ -130,6 +130,22 @@ export const featureColors = {
     'Vital feature': '#7d70c7',
 }
 
+export const opinionKeys = [
+    0,
+    1,
+    2,
+    3,
+    4,
+]
+
+export const opinionColors = {
+    0: '#bab3ff',
+    1: '#aa9cf8',
+    2: '#a193f0',
+    3: '#9688e4',
+    4: '#7d70c7',
+}
+
 export const aliases = {
     Vue: 'Vue.JS',
     Angular: 'Angular 1',

@@ -1,23 +1,25 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
-import Link from 'gatsby-link'
-import Newsletter from '../../components/common/Newsletter'
 import TextBlock from '../../components/blocks/TextBlock'
 import getPageTitle from '../../helpers/getPageTitle'
+import featuresData from '../../data/features.json'
+import FeatureBar from '../../components/charts/FeatureBar'
 
 const text = `
-We asked developers questions about the features they value the most in a JavaScript
-app, but we haven't had time to analyze the data yet :(
-
-If you'd like to know when this section comes out, sign up below and we'll
-be sure to notify you. 
+Which features do developers value the most in a JavaScript
+app?
 `
 
 const Features = () => (
     <DocumentTitle title={getPageTitle('Features')}>
 	    <div>
 	        <TextBlock text={text} />
-	        <Newsletter />
+            {featuresData.keys.map(feature => (
+                <div className="block block--chart" key={feature}>
+                    <h3 className="block__title">{feature}</h3>
+                    <FeatureBar feature={feature} />
+                </div>
+            ))}
 	    </div>
     </DocumentTitle>
 )

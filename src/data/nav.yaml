@@ -71,12 +71,10 @@
   fullLabel: Other Tools
 
 - label:      Features
-  fullLabel:  Popular Features (Coming Soon…)
-  comingsoon: true
+  fullLabel:  Popular Features
 
 - label:      Opinions
-  fullLabel:  Developer Opinions (Coming Soon…)
-  comingsoon: true
+  fullLabel:  Developer Opinions
 
 - label:     Conclusion
   fullLabel: Conclusion

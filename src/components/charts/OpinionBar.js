@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ResponsiveBar } from '@nivo/bar'
-import { featureKeys, featureColors, colorRange } from '../../constants'
-import featuresData from '../../data/features.json'
+import { opinionKeys, opinionColors, colorRange } from '../../constants'
+import opinionData from '../../data/opinions.json'
 import theme from '../../nivoTheme'
 
 const containerStyle = { height: 200 }
-const colorBy = d => featureColors[d.indexValue]
+const colorBy = d => opinionColors[d.indexValue]
 const margin = {
     top: 0,
     right: 0,
@@ -19,11 +19,11 @@ const axisLeft = {
 }
 const axisBottom = { format: '.2s' }
 
-const FeatureBar = ({ feature }) => {
-    const data = featureKeys.map(key => {
-        const value = featuresData.aggs[feature][key]
+const OpinionBar = ({ opinion }) => {
+    const data = opinionKeys.map(key => {
+        const value = opinionData.aggs[opinion][key]
 
-        return { id: key, [feature]: value || 0 }
+        return { id: key, [opinion]: value || 0 }
     })
 
     return (
@@ -35,7 +35,7 @@ const FeatureBar = ({ feature }) => {
                 colors={colorRange}
                 colorBy={colorBy}
                 data={data}
-                keys={[feature]}
+                keys={[opinion]}
                 labelsTextColor="inherit:darker(1.6)"
                 enableGridX={false}
                 enableGridY={false}
@@ -49,8 +49,8 @@ const FeatureBar = ({ feature }) => {
     )
 }
 
-FeatureBar.propTypes = {
-    feature: PropTypes.string.isRequired,
+OpinionBar.propTypes = {
+    opinion: PropTypes.string.isRequired,
 }
 
-export default FeatureBar
+export default OpinionBar
