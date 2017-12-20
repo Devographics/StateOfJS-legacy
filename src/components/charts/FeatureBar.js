@@ -28,7 +28,7 @@ const FeatureBar = ({ feature }) => {
         const percent = Math.round(value*100/total)
         return { id: key, [feature]: percent || 0 }
     })
-console.log(data)
+
     return (
         <div style={containerStyle}>
             <ResponsiveBar

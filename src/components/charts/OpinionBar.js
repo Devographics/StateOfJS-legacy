@@ -31,7 +31,6 @@ const OpinionBar = ({ opinion }) => {
         return { id: opinionKeys[key], [opinion]: percent || 0 }
     })
 
-        console.log(data)
     return (
         <div style={containerStyle}>
             <ResponsiveBar
