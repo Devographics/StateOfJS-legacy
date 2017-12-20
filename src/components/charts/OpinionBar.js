@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ResponsiveBar } from '@nivo/bar'
-import { opinionKeys, opinionColors, colorRange } from '../../constants'
+import { opinionKeys, opinionColors, opinionLabels, colorRange } from '../../constants'
 import opinionData from '../../data/opinions.json'
 import theme from '../../nivoTheme'
+import sumObject from '../../helpers/sumObject'
 
 const containerStyle = { height: 200 }
 const colorBy = d => opinionColors[d.indexValue]
@@ -17,15 +18,20 @@ const axisLeft = {
     tickSize: 0,
     tickPadding: 10,
 }
-const axisBottom = { format: '.2s' }
+const axisBottom = { 
+    format: v => opinionLabels[v],
+}
 
 const OpinionBar = ({ opinion }) => {
+
+    const total = sumObject(opinionData.aggs[opinion])
     const data = opinionKeys.map(key => {
         const value = opinionData.aggs[opinion][key]
-
-        return { id: key, [opinion]: value || 0 }
+        const percent = Math.round(value*100/total)
+        return { id: opinionKeys[key], [opinion]: percent || 0 }
     })
 
+        console.log(data)
     return (
         <div style={containerStyle}>
             <ResponsiveBar
@@ -34,6 +40,7 @@ const OpinionBar = ({ opinion }) => {
                 margin={margin}
                 colors={colorRange}
                 colorBy={colorBy}
+                labelFormat={v => `${v}%`}
                 data={data}
                 keys={[opinion]}
                 labelsTextColor="inherit:darker(1.6)"
@@ -41,7 +48,6 @@ const OpinionBar = ({ opinion }) => {
                 enableGridY={false}
                 isInteractive={false}
                 animate={false}
-                axisLeft={axisLeft}
                 axisBottom={axisBottom}
                 theme={theme}
             />

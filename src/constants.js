@@ -2,6 +2,7 @@ export const colors = {
     purpleLight: '#b4addc',
     purple: '#9688e4',
     purpleDark: '#786bc3',
+    otherPurple: '#4500EE',
 
     yellowLight: '#fffec7',
     yellow: '#fbf34c',
@@ -123,28 +124,45 @@ export const featureKeys = [
 ]
 
 export const featureColors = {
-    "I don't know what that is": '#bab3ff',
-    'Not needed': '#aa9cf8',
-    'Nice-to-have, but not important': '#a193f0',
-    'Major feature': '#9688e4',
-    'Vital feature': '#7d70c7',
+    "I don't know what that is": colors.purple,
+    'Not needed': colors.purple,
+    'Nice-to-have, but not important': colors.purple,
+    'Major feature': colors.purple,
+    'Vital feature': colors.purple,
 }
 
 export const opinionKeys = [
-    0,
-    1,
-    2,
-    3,
-    4,
+    '0',
+    '1',
+    '2',
+    '3',
+    '4',
 ]
 
+export const opinionLabels = [
+    'Disagree',
+    '',
+    'Neutral',
+    '',
+    'Agree',
+]
+
+// export const opinionColors = {
+//     0: '#bab3ff',
+//     1: '#aa9cf8',
+//     2: '#a193f0',
+//     3: '#9688e4',
+//     4: '#7d70c7',
+// }
+
 export const opinionColors = {
-    0: '#bab3ff',
-    1: '#aa9cf8',
-    2: '#a193f0',
-    3: '#9688e4',
-    4: '#7d70c7',
+    0: colors.purple,
+    1: colors.purple,
+    2: colors.purple,
+    3: colors.purple,
+    4: colors.purple,
 }
+
 
 export const aliases = {
     Vue: 'Vue.JS',

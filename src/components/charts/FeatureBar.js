@@ -4,6 +4,7 @@ import { ResponsiveBar } from '@nivo/bar'
 import { featureKeys, featureColors, colorRange } from '../../constants'
 import featuresData from '../../data/features.json'
 import theme from '../../nivoTheme'
+import sumObject from '../../helpers/sumObject'
 
 const containerStyle = { height: 200 }
 const colorBy = d => featureColors[d.indexValue]
@@ -17,15 +18,17 @@ const axisLeft = {
     tickSize: 0,
     tickPadding: 10,
 }
-const axisBottom = { format: '.2s' }
+const axisBottom = {  }
 
 const FeatureBar = ({ feature }) => {
+
+    const total = sumObject(featuresData.aggs[feature])
     const data = featureKeys.map(key => {
         const value = featuresData.aggs[feature][key]
-
-        return { id: key, [feature]: value || 0 }
+        const percent = Math.round(value*100/total)
+        return { id: key, [feature]: percent || 0 }
     })
-
+console.log(data)
     return (
         <div style={containerStyle}>
             <ResponsiveBar
@@ -33,6 +36,7 @@ const FeatureBar = ({ feature }) => {
                 padding={0.3}
                 margin={margin}
                 colors={colorRange}
+                labelFormat={v => `${v}%`}
                 colorBy={colorBy}
                 data={data}
                 keys={[feature]}
@@ -44,6 +48,7 @@ const FeatureBar = ({ feature }) => {
                 axisLeft={axisLeft}
                 axisBottom={axisBottom}
                 theme={theme}
+                indexBy="id"
             />
         </div>
     )
