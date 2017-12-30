@@ -12,7 +12,7 @@ const Support = () => (
             </p>
             <p>
                 If you think you could help in any way, please don't hesitate to{' '}
-                <a href="mailto:hello@stateofjs.org">get in touch</a>!
+                <a href="mailto:hello@stateofjs.com">get in touch</a>!
             </p>
         </div>
     </DocumentTitle>
