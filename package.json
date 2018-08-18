@@ -32,12 +32,13 @@
     "gatsby-plugin-google-analytics": "^1.0.12",
     "gatsby-plugin-netlify": "^1.0.11",
     "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-sass": "^1.0.13",
+    "gatsby-plugin-sass": "^1.0.26",
     "gatsby-source-filesystem": "^1.0.0-beta.6",
     "html-loader": "^0.5.1",
     "js-yaml": "^3.10.0",
     "lodash": "^4.17.4",
     "markdown-loader": "^2.0.1",
+    "node-fetch": "^2.2.0",
     "numeral": "^2.0.6",
     "object-assign": "^4.1.0",
     "path-dirname": "^1.0.2",
@@ -51,7 +52,8 @@
     "react-markdown": "^3.1.0",
     "reactdown": "^1.0.0-alpha14",
     "request": "^2.83.0",
-    "request-promise-native": "^1.0.5"
+    "request-promise-native": "^1.0.5",
+    "yamljs": "^0.3.0"
   },
   "devDependencies": {
     "@ekino/config": "^0.3.0",

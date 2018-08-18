@@ -1,0 +1,160 @@
+{
+  "title": "State of JavaScript 2018A",
+  "theme": {
+    "href": "https://api.typeform.com/themes/EenNBm"
+  },
+  "workspace": {
+    "href": "https://api.typeform.com/workspaces/QhHBZg"
+  },
+  "settings": {
+    "is_public": false,
+    "is_trial": true,
+    "language": "en",
+    "progress_bar": "percentage",
+    "show_progress_bar": true,
+    "show_typeform_branding": true,
+    "meta": {
+      "allow_indexing": true,
+      "image": {
+        "href": "https://images.typeform.com/images/BiEynTGZYf8N"
+      }
+    }
+  },
+  "welcome_screens": [
+    {
+      "title": "Thanks for taking this survey! Together, maybe we'll be able to figure out this JavaScript thing once and for all! (yeah right…)\n\nAlso, I know this survey seems long, but it's mostly the same questions repeated a bunch of times for different frameworks and libraries. Most people only take around *10 minutes* to fill it in.",
+      "properties": {
+        "show_button": true,
+        "button_text": "Let's Get This Started"
+      },
+      "attachment": {
+        "type": "image",
+        "href": "https://images.typeform.com/images/titZu3eWne3p"
+      }
+    }
+  ],
+  "thankyou_screens": [
+    {
+      "title": "Thanks for completing this typeform\nNow *create your own* — it's free, easy, & beautiful",
+      "properties": {
+        "show_button": true,
+        "share_icons": false,
+        "button_mode": "redirect",
+        "button_text": "Create a *typeform*",
+        "redirect_url": "https://admin.typeform.com/powered-by?utm_campaign=S5iLk9&utm_source=typeform.com-4189488-Basic&utm_medium=typeform&utm_content=typeform-thankyoubutton&utm_term=EN"
+      },
+      "attachment": {
+        "type": "image",
+        "href": "https://images.typeform.com/images/2dpnUBBkz2VN"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "title": "*How this survey works\n\n*For each technology, framework, or library mentioned, please pick one of the following options:\n\n- You've never heard about it\n- You've heard about it and you *want* to learn it\n- You've heard about it, but *don't want* to learn it (or are *unsure*)\n- You've used it and *want* to use it again\n- You've used it but *don't* *want* to use it again\n\nNote: questions with a \"\\*\" are required.",
+      "properties": {
+        "hide_marks": true
+      },
+      "type": "statement"
+    },
+    {
+      "title": "Front-End",
+      "properties": {
+        "description": "For each technology, pick all the statements that apply.",
+        "fields": [
+          {
+            "title": "React",
+            "ref": "react_basic",
+            "properties": {
+              "randomize": false,
+              "allow_multiple_selection": false,
+              "allow_other_choice": false,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "ref": "react_neverheard",
+                  "label": "I've never heard of it"
+                },
+                {
+                  "ref": "react_interested",
+                  "label": "I've HEARD of it, and WOULD like to learn it"
+                },
+                {
+                  "ref": "react_not_interested",
+                  "label": "I've HEARD of it, and am NOT interested"
+                },
+                {
+                  "ref": "react_would_use_again",
+                  "label": "I've USED it before, and WOULD use it again"
+                },
+                {
+                  "ref": "react_would_not_use_again",
+                  "label": "I've USED it before, and would NOT use it again"
+                }
+              ]
+            },
+            "validations": {
+              "required": true
+            },
+            "type": "multiple_choice"
+          },
+          {
+            "title": "Tell us more about React",
+            "ref": "react_more",
+            "properties": {
+              "randomize": false,
+              "allow_multiple_selection": false,
+              "allow_other_choice": false,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "ref": "react_love",
+                  "label": "I love React"
+                },
+                {
+                  "ref": "react_hate",
+                  "label": "I hate React"
+                }
+              ]
+            },
+            "validations": {
+              "required": true
+            },
+            "type": "multiple_choice"
+          }
+        ]
+      },
+      "type": "group"
+    }
+  ],
+  "logic": [
+    {
+      "type": "field",
+      "ref": "react_basic",
+      "actions": [
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "react_more"
+            }
+          },
+          "condition": {
+            "op": "is",
+            "vars": [
+              {
+                "type": "field",
+                "value": "react_basic"
+              },
+              {
+                "type": "choice",
+                "value": "react_would_use_again"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
