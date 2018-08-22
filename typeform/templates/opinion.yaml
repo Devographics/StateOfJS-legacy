@@ -1,0 +1,13 @@
+---
+title: TITLE
+ref: ID_opinion
+properties:
+  steps: 5
+  start_at_one: false
+  labels: 
+    left: Disagree
+    center: Neutral
+    right: Agree
+validations:
+  required: false
+type: opinion_scale

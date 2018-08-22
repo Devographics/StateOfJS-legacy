@@ -1,0 +1,7 @@
+---
+title: TITLE
+ref: ID_text
+properties: {}
+validations:
+  required: false
+type: long_text

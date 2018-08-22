@@ -61,7 +61,6 @@
       "title": "Flavors",
       "ref": "flavors_section",
       "properties": {
-        "description": "For each technology, pick all the statements that apply.",
         "fields": [
           {
             "title": "Reason",
@@ -570,7 +569,6 @@
       "title": "Front-End",
       "ref": "frontend_section",
       "properties": {
-        "description": "For each technology, pick all the statements that apply.",
         "fields": [
           {
             "title": "React",
@@ -1079,7 +1077,6 @@
       "title": "Data Layer",
       "ref": "datalayer_section",
       "properties": {
-        "description": "For each technology, pick all the statements that apply.",
         "fields": [
           {
             "title": "Redux",
@@ -1468,7 +1465,6 @@
       "title": "Back-end",
       "ref": "backend_section",
       "properties": {
-        "description": "For each technology, pick all the statements that apply.",
         "fields": [
           {
             "title": "Node.js",
@@ -1797,68 +1793,7 @@
       "title": "Node.js",
       "ref": "node.js_section",
       "properties": {
-        "description": "For each technology, pick all the statements that apply.",
         "fields": [
-          {
-            "title": "Node.js",
-            "ref": "node.js_basic",
-            "properties": {
-              "randomize": false,
-              "allow_multiple_selection": false,
-              "allow_other_choice": false,
-              "vertical_alignment": true,
-              "choices": [
-                {
-                  "ref": "node.js_neverheard",
-                  "label": "I've never heard of it"
-                },
-                {
-                  "ref": "node.js_interested",
-                  "label": "I've HEARD of it, and WOULD like to learn it"
-                },
-                {
-                  "ref": "node.js_not_interested",
-                  "label": "I've HEARD of it, and am NOT interested"
-                },
-                {
-                  "ref": "node.js_would_use_again",
-                  "label": "I've USED it before, and WOULD use it again"
-                },
-                {
-                  "ref": "node.js_would_not_use_again",
-                  "label": "I've USED it before, and would NOT use it again"
-                }
-              ]
-            },
-            "validations": {
-              "required": true
-            },
-            "type": "multiple_choice"
-          },
-          {
-            "title": "Tell us more about Node.js",
-            "ref": "node.js_more",
-            "properties": {
-              "randomize": false,
-              "allow_multiple_selection": false,
-              "allow_other_choice": false,
-              "vertical_alignment": true,
-              "choices": [
-                {
-                  "ref": "node.js_love",
-                  "label": "I love Node.js"
-                },
-                {
-                  "ref": "node.js_hate",
-                  "label": "I hate Node.js"
-                }
-              ]
-            },
-            "validations": {
-              "required": true
-            },
-            "type": "multiple_choice"
-          },
           {
             "title": "Next.js",
             "ref": "next.js_basic",
@@ -2006,7 +1941,6 @@
       "title": "Testing",
       "ref": "testing_section",
       "properties": {
-        "description": "For each technology, pick all the statements that apply.",
         "fields": [
           {
             "title": "Mocha",
@@ -2455,7 +2389,6 @@
       "title": "CSS",
       "ref": "css_section",
       "properties": {
-        "description": "For each technology, pick all the statements that apply.",
         "fields": [
           {
             "title": "SASS/SCSS",
@@ -2904,7 +2837,6 @@
       "title": "UI Frameworks",
       "ref": "uiframeworks_section",
       "properties": {
-        "description": "For each technology, pick all the statements that apply.",
         "fields": [
           {
             "title": "Bootstrap",
@@ -3233,7 +3165,6 @@
       "title": "Build Tools",
       "ref": "buildtools_section",
       "properties": {
-        "description": "For each technology, pick all the statements that apply.",
         "fields": [
           {
             "title": "NPM",
@@ -3742,7 +3673,6 @@
       "title": "Mobile & Desktop",
       "ref": "mobile&desktop_section",
       "properties": {
-        "description": "For each technology, pick all the statements that apply.",
         "fields": [
           {
             "title": "Electron",
@@ -4371,7 +4301,6 @@
       "title": "Browser APIs",
       "ref": "browserapis_section",
       "properties": {
-        "description": "For each technology, pick all the statements that apply.",
         "fields": [
           {
             "title": "WebAssembly",
@@ -4940,7 +4869,6 @@
       "title": "Other Languages",
       "ref": "otherlanguages_section",
       "properties": {
-        "description": "For each technology, pick all the statements that apply.",
         "fields": [
           {
             "title": "C",
@@ -5004,7 +4932,7 @@
           },
           {
             "title": "JAVA",
-            "ref": "java_basic",
+            "ref": "javalang_basic",
             "properties": {
               "randomize": false,
               "allow_multiple_selection": false,
@@ -5012,23 +4940,23 @@
               "vertical_alignment": true,
               "choices": [
                 {
-                  "ref": "java_neverheard",
+                  "ref": "javalang_neverheard",
                   "label": "I've never heard of it"
                 },
                 {
-                  "ref": "java_interested",
+                  "ref": "javalang_interested",
                   "label": "I've HEARD of it, and WOULD like to learn it"
                 },
                 {
-                  "ref": "java_not_interested",
+                  "ref": "javalang_not_interested",
                   "label": "I've HEARD of it, and am NOT interested"
                 },
                 {
-                  "ref": "java_would_use_again",
+                  "ref": "javalang_would_use_again",
                   "label": "I've USED it before, and WOULD use it again"
                 },
                 {
-                  "ref": "java_would_not_use_again",
+                  "ref": "javalang_would_not_use_again",
                   "label": "I've USED it before, and would NOT use it again"
                 }
               ]
@@ -5040,7 +4968,7 @@
           },
           {
             "title": "Tell us more about JAVA",
-            "ref": "java_more",
+            "ref": "javalang_more",
             "properties": {
               "randomize": false,
               "allow_multiple_selection": false,
@@ -5048,11 +4976,11 @@
               "vertical_alignment": true,
               "choices": [
                 {
-                  "ref": "java_love",
+                  "ref": "javalang_love",
                   "label": "I love JAVA"
                 },
                 {
-                  "ref": "java_hate",
+                  "ref": "javalang_hate",
                   "label": "I hate JAVA"
                 }
               ]
@@ -5089,7 +5017,6 @@
       "title": "Static Site Generators",
       "ref": "staticsitegenerators_section",
       "properties": {
-        "description": "For each technology, pick all the statements that apply.",
         "fields": [
           {
             "title": "Gatsby.js",
@@ -5173,3642 +5100,475 @@
         ]
       },
       "type": "group"
+    },
+    {
+      "title": "Other Tools",
+      "ref": "othertools_section",
+      "properties": {
+        "fields": [
+          {
+            "title": "Package Managers",
+            "ref": "packagemanagers_multiple",
+            "properties": {
+              "randomize": true,
+              "allow_multiple_selection": true,
+              "allow_other_choice": true,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "label": "NPM"
+                },
+                {
+                  "label": "Yarn"
+                },
+                {
+                  "label": "Bower"
+                }
+              ]
+            },
+            "type": "multiple_choice"
+          },
+          {
+            "title": "Utility Libraries",
+            "ref": "utilitylibraries_multiple",
+            "properties": {
+              "randomize": true,
+              "allow_multiple_selection": true,
+              "allow_other_choice": true,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "label": "jQuery"
+                },
+                {
+                  "label": "Underscore"
+                },
+                {
+                  "label": "Lodash"
+                },
+                {
+                  "label": "Ramda"
+                }
+              ]
+            },
+            "type": "multiple_choice"
+          },
+          {
+            "title": "Text Editors",
+            "ref": "texteditors_multiple",
+            "properties": {
+              "randomize": true,
+              "allow_multiple_selection": true,
+              "allow_other_choice": true,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "label": "VS Code"
+                },
+                {
+                  "label": "Sublime Text"
+                },
+                {
+                  "label": "Atom"
+                },
+                {
+                  "label": "Vim"
+                },
+                {
+                  "label": "Emacs"
+                },
+                {
+                  "label": "Webstorm"
+                }
+              ]
+            },
+            "type": "multiple_choice"
+          },
+          {
+            "title": "Code Linters",
+            "ref": "codelinters_multiple",
+            "properties": {
+              "randomize": true,
+              "allow_multiple_selection": true,
+              "allow_other_choice": true,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "label": "ESLint"
+                },
+                {
+                  "label": "Prettier"
+                },
+                {
+                  "label": "JSHint"
+                },
+                {
+                  "label": "StandardJS"
+                }
+              ]
+            },
+            "type": "multiple_choice"
+          }
+        ]
+      },
+      "type": "group"
+    },
+    {
+      "title": "Opinion Questions",
+      "ref": "opinionquestions_section",
+      "properties": {
+        "fields": [
+          {
+            "title": "JavaScript is moving in the right direction",
+            "ref": "javascriptismovingintherightdirection_opinion",
+            "properties": {
+              "steps": 5,
+              "start_at_one": false,
+              "labels": {
+                "left": "Disagree",
+                "center": "Neutral",
+                "right": "Agree"
+              }
+            },
+            "validations": {
+              "required": false
+            },
+            "type": "opinion_scale"
+          },
+          {
+            "title": "Building JavaScript apps is overly complex right now",
+            "ref": "buildingjavascriptappsisoverlycomplexrightnow_opinion",
+            "properties": {
+              "steps": 5,
+              "start_at_one": false,
+              "labels": {
+                "left": "Disagree",
+                "center": "Neutral",
+                "right": "Agree"
+              }
+            },
+            "validations": {
+              "required": false
+            },
+            "type": "opinion_scale"
+          },
+          {
+            "title": "JavaScript is over-used online",
+            "ref": "javascriptisoverusedonline_opinion",
+            "properties": {
+              "steps": 5,
+              "start_at_one": false,
+              "labels": {
+                "left": "Disagree",
+                "center": "Neutral",
+                "right": "Agree"
+              }
+            },
+            "validations": {
+              "required": false
+            },
+            "type": "opinion_scale"
+          },
+          {
+            "title": "I enjoy building JavaScript apps",
+            "ref": "ienjoybuildingjavascriptapps_opinion",
+            "properties": {
+              "steps": 5,
+              "start_at_one": false,
+              "labels": {
+                "left": "Disagree",
+                "center": "Neutral",
+                "right": "Agree"
+              }
+            },
+            "validations": {
+              "required": false
+            },
+            "type": "opinion_scale"
+          },
+          {
+            "title": "I would like JavaScript to be my main programming language",
+            "ref": "iwouldlikejavascripttobemymainprogramminglanguage_opinion",
+            "properties": {
+              "steps": 5,
+              "start_at_one": false,
+              "labels": {
+                "left": "Disagree",
+                "center": "Neutral",
+                "right": "Agree"
+              }
+            },
+            "validations": {
+              "required": false
+            },
+            "type": "opinion_scale"
+          },
+          {
+            "title": "The JavaScript ecosystem is changing too fast",
+            "ref": "thejavascriptecosystemischangingtoofast_opinion",
+            "properties": {
+              "steps": 5,
+              "start_at_one": false,
+              "labels": {
+                "left": "Disagree",
+                "center": "Neutral",
+                "right": "Agree"
+              }
+            },
+            "validations": {
+              "required": false
+            },
+            "type": "opinion_scale"
+          },
+          {
+            "title": "This survey is too damn long!",
+            "ref": "thissurveyistoodamnlong!_opinion",
+            "properties": {
+              "steps": 5,
+              "start_at_one": false,
+              "labels": {
+                "left": "Disagree",
+                "center": "Neutral",
+                "right": "Agree"
+              }
+            },
+            "validations": {
+              "required": false
+            },
+            "type": "opinion_scale"
+          }
+        ]
+      },
+      "type": "group"
+    },
+    {
+      "title": "About You",
+      "ref": "aboutyou_section",
+      "properties": {
+        "fields": [
+          {
+            "title": "Years of Experience",
+            "ref": "yearsofexperience_multiple",
+            "properties": {
+              "randomize": true,
+              "allow_multiple_selection": false,
+              "allow_other_choice": false,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "label": "Less than one year"
+                },
+                {
+                  "label": "1-2 years"
+                },
+                {
+                  "label": "2-5 years"
+                },
+                {
+                  "label": "5-10 years"
+                },
+                {
+                  "label": "10-20 years"
+                },
+                {
+                  "label": "20+ years"
+                }
+              ],
+              "description": "How long you've been working in the code mines"
+            },
+            "type": "multiple_choice"
+          },
+          {
+            "title": "Company Size",
+            "ref": "companysize_multiple",
+            "properties": {
+              "randomize": true,
+              "allow_multiple_selection": false,
+              "allow_other_choice": false,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "label": "Just me"
+                },
+                {
+                  "label": "1-5 people"
+                },
+                {
+                  "label": "5-10 people"
+                },
+                {
+                  "label": "10-20 people"
+                },
+                {
+                  "label": "20-50 people"
+                },
+                {
+                  "label": "50-100 people"
+                },
+                {
+                  "label": "100-1000 people"
+                },
+                {
+                  "label": "1000+ people"
+                }
+              ]
+            },
+            "type": "multiple_choice"
+          },
+          {
+            "title": "Yearly Salary",
+            "ref": "yearlysalary_multiple",
+            "properties": {
+              "randomize": true,
+              "allow_multiple_selection": false,
+              "allow_other_choice": false,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "label": "I work for free :("
+                },
+                {
+                  "label": "$0-$10k"
+                },
+                {
+                  "label": "$10k-$30k"
+                },
+                {
+                  "label": "$30k-$50k"
+                },
+                {
+                  "label": "$50k-$100k"
+                },
+                {
+                  "label": "$100k-$200k"
+                },
+                {
+                  "label": "$200k+"
+                }
+              ],
+              "description": "In USD"
+            },
+            "type": "multiple_choice"
+          },
+          {
+            "title": "Tabs or Spaces?",
+            "ref": "tabsorspaces?_multiple",
+            "properties": {
+              "randomize": true,
+              "allow_multiple_selection": false,
+              "allow_other_choice": true,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "label": "Tabs for life!"
+                },
+                {
+                  "label": "Spaces rule!"
+                }
+              ]
+            },
+            "type": "multiple_choice"
+          },
+          {
+            "title": "Semicolons: Yes or no?",
+            "ref": "semicolons:yesorno?_multiple",
+            "properties": {
+              "randomize": true,
+              "allow_multiple_selection": false,
+              "allow_other_choice": true,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "label": "Yes, always"
+                },
+                {
+                  "label": "Not if I can avoid it"
+                },
+                {
+                  "label": "It depends on the project"
+                }
+              ]
+            },
+            "type": "multiple_choice"
+          },
+          {
+            "title": "How did you find out about this survey?",
+            "ref": "howdidyoufindoutaboutthissurvey?_text",
+            "properties": {},
+            "validations": {
+              "required": false
+            },
+            "type": "short_text"
+          },
+          {
+            "title": "Your Gender",
+            "ref": "yourgender_multiple",
+            "properties": {
+              "randomize": true,
+              "allow_multiple_selection": false,
+              "allow_other_choice": true,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "label": "Female"
+                },
+                {
+                  "label": "Male"
+                },
+                {
+                  "label": "Non-binary/ third gender"
+                },
+                {
+                  "label": "Prefer not to say"
+                }
+              ]
+            },
+            "type": "multiple_choice"
+          },
+          {
+            "title": "Your Email",
+            "ref": "youremail_email",
+            "properties": {
+              "description": "If you'd like to be notified when survey results are available. Your email won't be used for any other purpose."
+            },
+            "validations": {
+              "required": false
+            },
+            "type": "email"
+          },
+          {
+            "title": "Your Country",
+            "ref": "yourcountry_text",
+            "properties": {},
+            "validations": {
+              "required": false
+            },
+            "type": "short_text"
+          },
+          {
+            "title": "Your City",
+            "ref": "yourcity_text",
+            "properties": {},
+            "validations": {
+              "required": false
+            },
+            "type": "short_text"
+          },
+          {
+            "title": "Other Comments",
+            "ref": "othercomments_text",
+            "properties": {
+              "description": "Things we missed, feedback on the survey, your favorite color, etc."
+            },
+            "validations": {
+              "required": false
+            },
+            "type": "long_text"
+          }
+        ]
+      },
+      "type": "group"
     }
   ],
-  "logic": [
-    {
-      "type": "field",
-      "ref": "reason_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "reason_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "reason_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "reason_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "reason_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "reason_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "clojurescript_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "clojurescript_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "clojurescript_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "clojurescript_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "clojurescript_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "clojurescript_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "elm_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "elm_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "elm_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "elm_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "elm_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "elm_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "flow_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "flow_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "flow_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "flow_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "flow_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "flow_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "typescript_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "typescript_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "typescript_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "typescript_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "typescript_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "typescript_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "es6_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "es6_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "es6_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "es6_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "es6_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "es6_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "purescript_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "purescript_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "purescript_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "purescript_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "purescript_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "purescript_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "javascript_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "javascript_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "javascript_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "javascript_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "javascript_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "javascript_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "react_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "react_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "react_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "react_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "react_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "react_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "angular_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "angular_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "angular_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "angular_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "angular_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "angular_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "ember_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "ember_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "ember_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "ember_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "ember_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "ember_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "polymer_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "polymer_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "polymer_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "polymer_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "polymer_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "polymer_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "vue_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "vue_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "vue_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "vue_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "vue_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "vue_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "preact_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "preact_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "preact_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "preact_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "preact_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "preact_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "riot_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "riot_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "riot_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "riot_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "riot_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "riot_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "inferno_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "inferno_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "inferno_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "inferno_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "inferno_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "inferno_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "redux_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "redux_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "redux_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "redux_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "redux_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "redux_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "graphql_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "graphql_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "graphql_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "graphql_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "graphql_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "graphql_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "relay_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "relay_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "relay_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "relay_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "relay_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "relay_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "apollo_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "apollo_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "apollo_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "apollo_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "apollo_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "apollo_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "firebase_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "firebase_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "firebase_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "firebase_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "firebase_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "firebase_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "vuex_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "vuex_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "vuex_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "vuex_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "vuex_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "vuex_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "node.js_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "node.js_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "node.js_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "node.js_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "node.js_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "node.js_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "rails_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "rails_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "rails_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "rails_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "rails_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "rails_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "php_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "php_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "php_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "php_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "php_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "php_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "java_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "java_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "java_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "java_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "java_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "java_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "dotnet_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "dotnet_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "dotnet_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "dotnet_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "dotnet_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "dotnet_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "node.js_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "node.js_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "node.js_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "node.js_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "node.js_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "node.js_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "next.js_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "next.js_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "next.js_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "next.js_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "next.js_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "next.js_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "meteor_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "meteor_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "meteor_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "meteor_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "meteor_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "meteor_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "mocha_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "mocha_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "mocha_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "mocha_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "mocha_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "mocha_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "jasmine_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "jasmine_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "jasmine_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "jasmine_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "jasmine_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "jasmine_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "jest_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "jest_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "jest_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "jest_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "jest_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "jest_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "enzyme_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "enzyme_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "enzyme_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "enzyme_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "enzyme_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "enzyme_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "tape_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "tape_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "tape_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "tape_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "tape_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "tape_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "karma_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "karma_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "karma_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "karma_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "karma_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "karma_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "qunit_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "qunit_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "qunit_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "qunit_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "qunit_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "qunit_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "sass/scss_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "sass/scss_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "sass/scss_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "sass/scss_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "sass/scss_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "sass/scss_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "plaincss_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "plaincss_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "plaincss_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "plaincss_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "plaincss_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "plaincss_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "less_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "less_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "less_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "less_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "less_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "less_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "cssinjs_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "cssinjs_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "cssinjs_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "cssinjs_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "cssinjs_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "cssinjs_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "stylus_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "stylus_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "stylus_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "stylus_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "stylus_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "stylus_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "atomiccss_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "atomiccss_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "atomiccss_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "atomiccss_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "atomiccss_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "atomiccss_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "tailwindcss_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "tailwindcss_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "tailwindcss_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "tailwindcss_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "tailwindcss_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "tailwindcss_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "bootstrap_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "bootstrap_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "bootstrap_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "bootstrap_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "bootstrap_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "bootstrap_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "foundation_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "foundation_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "foundation_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "foundation_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "foundation_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "foundation_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "antdesign_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "antdesign_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "antdesign_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "antdesign_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "antdesign_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "antdesign_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "materialdesign_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "materialdesign_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "materialdesign_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "materialdesign_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "materialdesign_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "materialdesign_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "semanticui_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "semanticui_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "semanticui_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "semanticui_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "semanticui_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "semanticui_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "npm_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "npm_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "npm_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "npm_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "npm_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "npm_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "yarn_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "yarn_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "yarn_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "yarn_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "yarn_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "yarn_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "webpack_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "webpack_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "webpack_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "webpack_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "webpack_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "webpack_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "parcel_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "parcel_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "parcel_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "parcel_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "parcel_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "parcel_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "gulp_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "gulp_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "gulp_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "gulp_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "gulp_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "gulp_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "browserify_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "browserify_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "browserify_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "browserify_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "browserify_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "browserify_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "grunt_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "grunt_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "grunt_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "grunt_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "grunt_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "grunt_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "rollup_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "rollup_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "rollup_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "rollup_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "rollup_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "rollup_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "electron_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "electron_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "electron_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "electron_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "electron_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "electron_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "reactnative_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "reactnative_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "reactnative_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "reactnative_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "reactnative_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "reactnative_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "phonegap/cordova_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "phonegap/cordova_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "phonegap/cordova_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "phonegap/cordova_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "phonegap/cordova_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "phonegap/cordova_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "nativescript_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "nativescript_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "nativescript_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "nativescript_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "nativescript_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "nativescript_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "ionic_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "ionic_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "ionic_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "ionic_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "ionic_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "ionic_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "nativeapps_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "nativeapps_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "nativeapps_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "nativeapps_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "nativeapps_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "nativeapps_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "pwa_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "pwa_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "pwa_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "pwa_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "pwa_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "pwa_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "weex_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "weex_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "weex_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "weex_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "weex_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "weex_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "flutter_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "flutter_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "flutter_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "flutter_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "flutter_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "flutter_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "haxe_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "haxe_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "haxe_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "haxe_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "haxe_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "haxe_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "webassembly_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "webassembly_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "webassembly_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "webassembly_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "webassembly_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "webassembly_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "serviceworkers_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "serviceworkers_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "serviceworkers_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "serviceworkers_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "serviceworkers_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "serviceworkers_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "webrtc_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "webrtc_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "webrtc_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "webrtc_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "webrtc_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "webrtc_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "webspeechapi_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "webspeechapi_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "webspeechapi_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "webspeechapi_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "webspeechapi_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "webspeechapi_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "webgl_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "webgl_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "webgl_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "webgl_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "webgl_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "webgl_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "webaudioapi_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "webaudioapi_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "webaudioapi_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "webaudioapi_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "webaudioapi_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "webaudioapi_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "webcomponents_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "webcomponents_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "webcomponents_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "webcomponents_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "webcomponents_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "webcomponents_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "webanimationsapi_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "webanimationsapi_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "webanimationsapi_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "webanimationsapi_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "webanimationsapi_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "webanimationsapi_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "webvr_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "webvr_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "webvr_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "webvr_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "webvr_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "webvr_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "c_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "c_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "c_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "c_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "c_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "c_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "java_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "java_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "java_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "java_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "java_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "java_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "gatsby_basic",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "gatsby_more"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "gatsby_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "gatsby_would_use_again"
-                  }
-                ]
-              },
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "gatsby_basic"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "gatsby_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ]
+  "logic": []
 }

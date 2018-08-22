@@ -9,6 +9,8 @@ Flavors:
   - ES6
   - PureScript
   - Plain JavaScript|javascript
+  - Other
+  - Rating
 Front-End:
   - React
   - Angular
@@ -19,6 +21,8 @@ Front-End:
   # - Svelte
   - Riot
   - Inferno
+  - Other
+  - Rating
 Data Layer:
   - Redux
   - GraphQL
@@ -26,16 +30,21 @@ Data Layer:
   - Apollo
   - Firebase
   - VueX
+  - Other
+  - Rating
 Back-end: 
   - Node.js
   - Rails
   - PHP
   - Java
   - .NET|dotnet
+  - Other
+  - Rating
 Node.js: 
-  - Node.js
   - Next.js
   - Meteor
+  - Other
+  - Rating
 Testing: 
   - Mocha
   - Jasmine
@@ -44,6 +53,8 @@ Testing:
   - Tape
   - Karma
   - Qunit
+  - Other
+  - Rating
 CSS: 
   - SASS/SCSS
   - Plain CSS
@@ -52,12 +63,16 @@ CSS:
   - Stylus
   - Atomic CSS
   - Tailwind CSS
+  - Other
+  - Rating
 UI Frameworks:
   - Bootstrap
   - Foundation
   - Ant Design
   - Material Design
   - Semantic UI
+  - Other
+  - Rating
 Build Tools:
   - NPM
   - Yarn
@@ -67,6 +82,8 @@ Build Tools:
   - Browserify
   - Grunt
   - Rollup
+  - Other
+  - Rating
 Mobile & Desktop: 
   - Electron
   - React Native
@@ -78,6 +95,8 @@ Mobile & Desktop:
   - Weex
   - Flutter
   - Haxe
+  - Other
+  - Rating
 Browser APIs:
   - WebAssembly
   - Service Workers
@@ -88,8 +107,131 @@ Browser APIs:
   - Web Components
   - Web Animations API
   - WebVR
+  - Other
+  - Rating
 Other Languages:
   - C
-  - JAVA
+  - JAVA|javalang
+  - Other
+  - Rating
 Static Site Generators:
   - Gatsby.js|gatsby
+  - Other
+  - Rating
+Other Tools:
+  - title: Package Managers
+    template: multiple
+    options: 
+      - NPM
+      - Yarn
+      - Bower
+  - title: Utility Libraries
+    template: multiple
+    options: 
+      - jQuery
+      - Underscore
+      - Lodash
+      - Ramda
+  - title: Text Editors
+    template: multiple
+    options:
+      - VS Code
+      - Sublime Text
+      - Atom
+      - Vim
+      - Emacs
+      - Webstorm
+  - title: Code Linters
+    template: multiple
+    options: 
+      - ESLint
+      - Prettier
+      - JSHint
+      - StandardJS
+Opinion Questions:
+  - title: JavaScript is moving in the right direction
+    template: opinion
+  - title: Building JavaScript apps is overly complex right now
+    template: opinion
+  - title: JavaScript is over-used online
+    template: opinion
+  - title: I enjoy building JavaScript apps
+    template: opinion
+  - title: I would like JavaScript to be my main programming language
+    template: opinion
+  - title: The JavaScript ecosystem is changing too fast
+    template: opinion
+  - title: This survey is too damn long!
+    template: opinion
+About You:
+  - title: Years of Experience
+    description: How long you've been working in the code mines
+    template: multiple
+    allowmultiple: false
+    allowother: false
+    options:
+      - Less than one year
+      - 1-2 years
+      - 2-5 years
+      - 5-10 years
+      - 10-20 years
+      - 20+ years
+  - title: Company Size
+    template: multiple
+    allowmultiple: false
+    allowother: false
+    options:
+      - Just me
+      - 1-5 people
+      - 5-10 people
+      - 10-20 people
+      - 20-50 people
+      - 50-100 people
+      - 100-1000 people
+      - 1000+ people
+  - title: Yearly Salary
+    description: In USD
+    template: multiple
+    allowmultiple: false
+    allowother: false
+    options: 
+      - I work for free :(
+      - $0-$10k
+      - $10k-$30k
+      - $30k-$50k
+      - $50k-$100k
+      - $100k-$200k
+      - $200k+
+  - title: Tabs or Spaces?
+    template: multiple
+    allowmultiple: false
+    options: 
+      - Tabs for life!
+      - Spaces rule!
+  - title: "Semicolons: Yes or no?"
+    template: multiple
+    allowmultiple: false
+    options:
+      - Yes, always
+      - Not if I can avoid it
+      - It depends on the project
+  - title: How did you find out about this survey?
+    template: text
+  - title: Your Gender
+    template: multiple
+    allowmultiple: false
+    options: 
+      - Female
+      - Male
+      - Non-binary/ third gender
+      - Prefer not to say
+  - title: Your Email
+    description: If you'd like to be notified when survey results are available. Your email won't be used for any other purpose.
+    template: email
+  - title: Your Country
+    template: text
+  - title: Your City
+    template: text
+  - title: Other Comments
+    description: Things we missed, feedback on the survey, your favorite color, etc.
+    template: longtext

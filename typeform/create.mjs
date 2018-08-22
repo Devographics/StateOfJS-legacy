@@ -12,12 +12,20 @@ const fetch = require('node-fetch')
 
 const outline = YAML.load('./templates/outline.yaml')
 const survey = YAML.load('./templates/survey.yaml')
-const sectionTemplate = fs.readFileSync('./templates/section.yaml', 'utf8')
-const libraryTemplate = fs.readFileSync('./templates/library.yaml', 'utf8')
-const logicTemplate = fs.readFileSync('./templates/logic.yaml', 'utf8')
-const ratingTemplate = fs.readFileSync('./templates/rating.yaml', 'utf8')
-const otherTemplate = fs.readFileSync('./templates/other.yaml', 'utf8')
+const templates = {
+  section: fs.readFileSync('./templates/section.yaml', 'utf8'),
+  library: fs.readFileSync('./templates/library.yaml', 'utf8'),
+  logic: fs.readFileSync('./templates/logic.yaml', 'utf8'),
+  rating: fs.readFileSync('./templates/rating.yaml', 'utf8'),
+  other: fs.readFileSync('./templates/other.yaml', 'utf8'),
+  multiple: fs.readFileSync('./templates/multiple.yaml', 'utf8'),
+  text: fs.readFileSync('./templates/text.yaml', 'utf8'),
+  longtext: fs.readFileSync('./templates/longtext.yaml', 'utf8'),
+  email: fs.readFileSync('./templates/email.yaml', 'utf8'),
+  opinion: fs.readFileSync('./templates/opinion.yaml', 'utf8'),
+}
 
+// test mode means don't create survey on Typeform
 const isTest = process.argv[2] === '--test'
 
 /*
@@ -45,42 +53,95 @@ Parse a YAML string into JSON while replacing any variables
 */
 const parseYAML = (s, variables) => {
   Object.keys(variables).forEach(v => {
-    // eslint-disable-next-line no-param-reassign
-    s = s.replaceAll(v.toUpperCase(), variables[v])
+    if (typeof variables[v] !== 'undefined') {
+      // eslint-disable-next-line no-param-reassign
+      s = s.replaceAll(v.toUpperCase(), variables[v])
+    }
   })
   return YAML.parse(s)
 }
 
 /*
 
+Take an array of strings and convert it into an array of Typeform-compatible choices
+
+*/
+const convertToChoices = options => options.map(option => ({ label: option }))
+
+/*
+
 1. Generate survey JSON
+
+Note: we treat "library" questions differently in order to avoid having to specify
+their template in the YAML file. Other questions are specified more explicitely.
 
 */
 Object.keys(outline).forEach(sectionName => {
   // get section name and ID and create section object
   const sectionVariables = { name: sectionName, id: makeId(sectionName) }
-  const section = parseYAML(sectionTemplate, sectionVariables)
+  const section = parseYAML(templates.section, sectionVariables)
 
-  outline[sectionName].forEach(library => {
-    const [name, id = makeId(name)] = library.split('|')
-    const libraryVariables = { name, id }
+  outline[sectionName].forEach(question => {
+    if (typeof question === 'object') {
+      /*
 
-    // add library questions to current section
-    const questions = parseYAML(libraryTemplate, libraryVariables)
-    section.properties.fields = section.properties.fields.concat(questions)
+      1a. `question` is an object, parse its template
 
-    // add logic directly to survey.logic
-    const logic = parseYAML(logicTemplate, libraryVariables)
-    survey.logic.push(logic)
+      */
+      // eslint-disable-next-line max-len
+      const { title, id = makeId(title), template, description, options, allowother = true, allowmultiple = true } = question
+      // eslint-disable-next-line max-len
+      const questionJSON = parseYAML(templates[template], { title, id, description, allowother, allowmultiple })
+
+      if (options) {
+        questionJSON.properties.choices = convertToChoices(options)
+      }
+      if (description) {
+        questionJSON.properties.description = description
+      }
+      section.properties.fields.push(questionJSON)
+    } else {
+      /*
+
+      2. `question` is a string, treat it like a library/other/rating question
+
+      */
+      const [name, id = makeId(name)] = question.split('|')
+
+      if (id === 'other') {
+        /*
+
+        2a. "other options" question
+
+        */
+        const other = parseYAML(templates.other, sectionVariables)
+        section.properties.fields.push(other)
+      } else if (id === 'rating') {
+        /*
+
+        2b. "rating" question
+
+        */
+        const rating = parseYAML(templates.rating, sectionVariables)
+        section.properties.fields.push(rating)
+      } else {
+        /*
+
+        2c. "library" question
+
+        */
+        const libraryVariables = { name, id }
+
+        // add library questions to current section
+        const questions = parseYAML(templates.library, libraryVariables)
+        section.properties.fields = section.properties.fields.concat(questions)
+
+        // add logic directly to survey.logic
+        // const logic = parseYAML(templates.logic, libraryVariables)
+        // survey.logic.push(logic)
+      }
+    }
   })
-
-  // Add "other options" question
-  const other = parseYAML(otherTemplate, sectionVariables)
-  section.properties.fields.push(other)
-
-  // Add rating question
-  const rating = parseYAML(ratingTemplate, sectionVariables)
-  section.properties.fields.push(rating)
 
   // add section to survey
   survey.fields.push(section)

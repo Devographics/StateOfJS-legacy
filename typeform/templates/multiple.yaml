@@ -1,0 +1,14 @@
+# the template for a library's questions
+# NAME: Favorite colors
+# ID: favoritecolors
+# OPTIONS: - Red - Blue - Green
+---
+title: TITLE
+ref: ID_multiple
+properties:
+  randomize: true
+  allow_multiple_selection: ALLOWMULTIPLE
+  allow_other_choice: ALLOWOTHER
+  vertical_alignment: true
+  choices: []
+type: multiple_choice

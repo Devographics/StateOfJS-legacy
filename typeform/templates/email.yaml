@@ -1,0 +1,7 @@
+---
+title: TITLE
+ref: ID_email
+properties: {}
+validations:
+  required: false
+type: email
