@@ -1,0 +1,9 @@
+# Template for an "other options" question
+# ID: frontend
+# NAME: Front-End
+---
+title: Other NAME options
+ref: ID_other
+validations:
+  required: false
+type: long_text

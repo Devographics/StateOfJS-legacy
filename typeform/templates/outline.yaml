@@ -1,0 +1,95 @@
+# the survey outline
+---
+Flavors:
+  - Reason
+  - ClojureScript
+  - Elm
+  - Flow
+  - TypeScript
+  - ES6
+  - PureScript
+  - Plain JavaScript|javascript
+Front-End:
+  - React
+  - Angular
+  - Ember
+  - Polymer
+  - Vue.js|vue
+  - Preact
+  # - Svelte
+  - Riot
+  - Inferno
+Data Layer:
+  - Redux
+  - GraphQL
+  - Relay
+  - Apollo
+  - Firebase
+  - VueX
+Back-end: 
+  - Node.js
+  - Rails
+  - PHP
+  - Java
+  - .NET|dotnet
+Node.js: 
+  - Node.js
+  - Next.js
+  - Meteor
+Testing: 
+  - Mocha
+  - Jasmine
+  - Jest
+  - Enzyme
+  - Tape
+  - Karma
+  - Qunit
+CSS: 
+  - SASS/SCSS
+  - Plain CSS
+  - LESS
+  - CSS-in-JS|cssinjs
+  - Stylus
+  - Atomic CSS
+  - Tailwind CSS
+UI Frameworks:
+  - Bootstrap
+  - Foundation
+  - Ant Design
+  - Material Design
+  - Semantic UI
+Build Tools:
+  - NPM
+  - Yarn
+  - Webpack
+  - Parcel
+  - Gulp
+  - Browserify
+  - Grunt
+  - Rollup
+Mobile & Desktop: 
+  - Electron
+  - React Native
+  - PhoneGap/Cordova
+  - NativeScript
+  - Ionic
+  - Native Apps
+  - Progressive Web Apps|pwa
+  - Weex
+  - Flutter
+  - Haxe
+Browser APIs:
+  - WebAssembly
+  - Service Workers
+  - WebRTC
+  - Web Speech API
+  - WebGL
+  - Web Audio API
+  - Web Components
+  - Web Animations API
+  - WebVR
+Other Languages:
+  - C
+  - JAVA
+Static Site Generators:
+  - Gatsby.js|gatsby

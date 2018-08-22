@@ -1,0 +1,11 @@
+# Template for a rating question
+# ID: frontend
+# NAME: Front-End
+---
+title: On a scale of one to five, how happy are you with available NAME options?
+ref: ID_rating
+properties:
+  steps: 5
+validations:
+  required: false
+type: rating

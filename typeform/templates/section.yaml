@@ -1,6 +1,7 @@
 # Template for a survey section
 ---
 title: NAME
+ref: ID_section
 properties:
   description: For each technology, pick all the statements that apply.
   fields: []
