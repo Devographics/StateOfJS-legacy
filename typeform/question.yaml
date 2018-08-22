@@ -1,1 +1,40 @@
+# the template for a library's questions
+# NAME: Vue.js
+# ID: vue
 ---
+- title: NAME
+  ref: ID_basic
+  properties:
+    randomize: false
+    allow_multiple_selection: false
+    allow_other_choice: false
+    vertical_alignment: true
+    choices:
+    - ref: ID_neverheard
+      label: I've never heard of it
+    - ref: ID_interested
+      label: I've HEARD of it, and WOULD like to learn it
+    - ref: ID_not_interested
+      label: I've HEARD of it, and am NOT interested
+    - ref: ID_would_use_again
+      label: I've USED it before, and WOULD use it again
+    - ref: ID_would_not_use_again
+      label: I've USED it before, and would NOT use it again
+  validations:
+    required: true
+  type: multiple_choice
+- title: Tell us more about NAME
+  ref: ID_more
+  properties:
+    randomize: false
+    allow_multiple_selection: false
+    allow_other_choice: false
+    vertical_alignment: true
+    choices:
+    - ref: ID_love
+      label: I love NAME
+    - ref: ID_hate
+      label: I hate NAME
+  validations:
+    required: true
+  type: multiple_choice

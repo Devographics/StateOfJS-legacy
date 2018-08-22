@@ -1,0 +1,34 @@
+# the template for logic fields
+# ID: id for current question
+---
+type: field
+ref: ID_basic
+actions:
+- action: jump
+  details:
+    to:
+      type: field
+      value: ID_more
+  condition:
+    op: or
+    vars:
+    - op: is
+      vars:
+      - type: field
+        value: ID_basic
+      - type: choice
+        value: ID_would_use_again
+    - op: is
+      vars:
+      - type: field
+        value: ID_basic
+      - type: choice
+        value: ID_would_not_use_again
+# note: ideally we wouldn't need this and it would just automatically go to next question
+# - action: jump
+#   details: 
+#     to:
+#       type: field
+#       value: NEXTID_basic
+#     condition:
+#       op: always

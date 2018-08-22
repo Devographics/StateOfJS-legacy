@@ -16,18 +16,18 @@
 }
 
 .pagetitle__inner{
-    text-align: center;
-    z-index: 10;
-    position: relative;
-    @include medium-large{
-      @include flex-center;
-      justify-content: space-between;
-    }
-    .pagetitle__wrapper--title &{
-      padding: $spacing;
-      background: $bg-color;
-    }
+  text-align: center;
+  z-index: 10;
+  position: relative;
+  @include medium-large{
+    @include flex-center;
+    justify-content: space-between;
   }
+  .pagetitle__wrapper--title &{
+    padding: $spacing;
+    background: $bg-color;
+  }
+}
 
 .pagetitle__main{
   margin-bottom: 0;
