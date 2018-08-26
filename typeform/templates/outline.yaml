@@ -9,8 +9,8 @@ Flavors:
   - ES6
   - PureScript
   - Plain JavaScript|javascript
-  - Other
-  - Rating
+  - Other|flavors_other
+  - Rating|flavors_rating
 Front-End:
   - React
   - Angular
@@ -21,8 +21,8 @@ Front-End:
   # - Svelte
   - Riot
   - Inferno
-  - Other
-  - Rating
+  - Other|frontend_other
+  - Rating|frontend_rating
 Data Layer:
   - Redux
   - GraphQL
@@ -30,21 +30,21 @@ Data Layer:
   - Apollo
   - Firebase
   - VueX
-  - Other
-  - Rating
+  - Other|datalayer_other
+  - Rating|datalayer_rating
 Back-end: 
   - Node.js
   - Rails
   - PHP
   - Java
   - .NET|dotnet
-  - Other
-  - Rating
+  - Other|backend_other
+  - Rating|backend_rating
 Node.js: 
   - Next.js
   - Meteor
-  - Other
-  - Rating
+  - Other|node_other
+  - Rating|node_rating
 Testing: 
   - Mocha
   - Jasmine
@@ -53,8 +53,8 @@ Testing:
   - Tape
   - Karma
   - Qunit
-  - Other
-  - Rating
+  - Other|testing_other
+  - Rating|testing_rating
 CSS: 
   - SASS/SCSS
   - Plain CSS
@@ -63,16 +63,16 @@ CSS:
   - Stylus
   - Atomic CSS
   - Tailwind CSS
-  - Other
-  - Rating
+  - Other|css_other
+  - Rating|css_rating
 UI Frameworks:
   - Bootstrap
   - Foundation
   - Ant Design
   - Material Design
   - Semantic UI
-  - Other
-  - Rating
+  - Other|uiframeworks_other
+  - Rating|uiframeworks_rating
 Build Tools:
   - NPM
   - Yarn
@@ -82,9 +82,9 @@ Build Tools:
   - Browserify
   - Grunt
   - Rollup
-  - Other
-  - Rating
-Mobile & Desktop: 
+  - Other|buildtools_other
+  - Rating|buildtools_rating
+Mobile & Desktop|mobiledesktop: 
   - Electron
   - React Native
   - PhoneGap/Cordova
@@ -95,9 +95,9 @@ Mobile & Desktop:
   - Weex
   - Flutter
   - Haxe
-  - Other
-  - Rating
-Browser APIs:
+  - Other|mobiledesktop_other
+  - Rating|mobiledesktop_rating
+Browser APIs|browserapis:
   - WebAssembly
   - Service Workers
   - WebRTC
@@ -107,17 +107,17 @@ Browser APIs:
   - Web Components
   - Web Animations API
   - WebVR
-  - Other
-  - Rating
-Other Languages:
-  - C
+  - Other|browserapis_other
+  - Rating|browserapis_rating
+Other Languages|lang:
+  - C|clang
   - JAVA|javalang
-  - Other
-  - Rating
-Static Site Generators:
+  - Other|lang_other
+  - Rating|lang_rating
+Static Site Generators|ssg:
   - Gatsby.js|gatsby
-  - Other
-  - Rating
+  - Other|ssg_other
+  - Rating|ssg_rating
 Other Tools:
   - title: Package Managers
     template: multiple

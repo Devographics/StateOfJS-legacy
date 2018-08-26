@@ -1,9 +1,9 @@
 # the template for a library's questions
-# NAME: Vue.js
+# TITLE: Vue.js
 # ID: vue
 ---
-- title: NAME
-  ref: ID_basic
+- title: TITLE
+  ref: ID
   properties:
     randomize: false
     allow_multiple_selection: false
@@ -23,7 +23,7 @@
   validations:
     required: true
   type: multiple_choice
-- title: Tell us more about NAME
+- title: Tell us more about TITLE
   ref: ID_more
   properties:
     randomize: false
@@ -32,9 +32,9 @@
     vertical_alignment: true
     choices:
     - ref: ID_love
-      label: I love NAME
+      label: I love TITLE
     - ref: ID_hate
-      label: I hate NAME
+      label: I hate TITLE
   validations:
     required: true
   type: multiple_choice

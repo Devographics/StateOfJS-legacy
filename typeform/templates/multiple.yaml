@@ -1,10 +1,10 @@
 # the template for a library's questions
-# NAME: Favorite colors
+# TITLE: Favorite colors
 # ID: favoritecolors
 # OPTIONS: - Red - Blue - Green
 ---
 title: TITLE
-ref: ID_multiple
+ref: ID
 properties:
   randomize: true
   allow_multiple_selection: ALLOWMULTIPLE

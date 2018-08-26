@@ -1,6 +1,6 @@
 ---
 title: TITLE
-ref: ID_email
+ref: ID
 properties: {}
 validations:
   required: false

@@ -1,8 +1,8 @@
 # Template for a rating question
 # ID: frontend
-# NAME: Front-End
+# TITLE: Front-End
 ---
-title: On a scale of one to five, how happy are you with available NAME options?
+title: On a scale of one to five, how happy are you with available TITLE options?
 ref: ID_rating
 properties:
   steps: 5

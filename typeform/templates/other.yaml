@@ -1,8 +1,8 @@
 # Template for an "other options" question
 # ID: frontend
-# NAME: Front-End
+# TITLE: Front-End
 ---
-title: Other NAME options
+title: Other TITLE options
 ref: ID_other
 validations:
   required: false

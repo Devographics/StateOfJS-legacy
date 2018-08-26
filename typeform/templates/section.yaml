@@ -1,6 +1,6 @@
 # Template for a survey section
 ---
-title: NAME
+title: TITLE
 ref: ID_section
 properties:
   fields: []

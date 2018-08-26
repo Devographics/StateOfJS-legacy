@@ -1,6 +1,6 @@
 ---
 title: TITLE
-ref: ID_opinion
+ref: ID
 properties:
   steps: 5
   start_at_one: false

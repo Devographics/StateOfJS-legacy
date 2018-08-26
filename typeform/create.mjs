@@ -70,18 +70,45 @@ const convertToChoices = options => options.map(option => ({ label: option }))
 
 /*
 
+For any given question ID, figure out the ID of the following question
+
+*/
+const generateQuestionPathsTable = (surveyOutline) => {
+  const paths = []
+  let i = 0
+  Object.keys(surveyOutline).forEach((sectionName, sectionIndex) => {
+    outline[sectionName].forEach((question, questionIndex) => {
+      if (typeof question === 'string') {
+        const [title, id = makeId(title)] = question.split('|')
+        paths[i] = { title, id, path: `${sectionIndex+1}_${questionIndex+1}` }
+      } else {
+        const { title, id = makeId(title) } = question
+        paths[i] = { title, id, path: `${sectionIndex+1}_${questionIndex+1}` }
+      }
+      i++
+    })
+  })
+  return paths
+}
+const pathsTable = generateQuestionPathsTable(outline)
+const getNextQuestion = (id) => {
+  const questionIndex = pathsTable.findIndex(q => q.id === id)
+  return pathsTable[questionIndex+1]
+}
+/*
+
 1. Generate survey JSON
 
 Note: we treat "library" questions differently in order to avoid having to specify
 their template in the YAML file. Other questions are specified more explicitely.
 
 */
-Object.keys(outline).forEach(sectionName => {
+Object.keys(outline).forEach((sectionTitle) => {
   // get section name and ID and create section object
-  const sectionVariables = { name: sectionName, id: makeId(sectionName) }
+  const sectionVariables = { title: sectionTitle, id: makeId(sectionTitle) }
   const section = parseYAML(templates.section, sectionVariables)
 
-  outline[sectionName].forEach(question => {
+  outline[sectionTitle].forEach((question) => {
     if (typeof question === 'object') {
       /*
 
@@ -106,7 +133,8 @@ Object.keys(outline).forEach(sectionName => {
       2. `question` is a string, treat it like a library/other/rating question
 
       */
-      const [name, id = makeId(name)] = question.split('|')
+      const [title, id = makeId(title)] = question.split('|')
+      const nextQuestion = getNextQuestion(id)
 
       if (id === 'other') {
         /*
@@ -130,15 +158,15 @@ Object.keys(outline).forEach(sectionName => {
         2c. "library" question
 
         */
-        const libraryVariables = { name, id }
+        const libraryVariables = { title, id, next: nextQuestion.id }
 
         // add library questions to current section
         const questions = parseYAML(templates.library, libraryVariables)
         section.properties.fields = section.properties.fields.concat(questions)
 
         // add logic directly to survey.logic
-        // const logic = parseYAML(templates.logic, libraryVariables)
-        // survey.logic.push(logic)
+        const logic = parseYAML(templates.logic, libraryVariables)
+        survey.logic.push(logic)
       }
     }
   })
