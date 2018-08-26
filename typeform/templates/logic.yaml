@@ -2,34 +2,55 @@
 # ID: id for current question
 # NEXT: id for whichever question comes next
 ---
-type: field
-ref: ID
-actions:
-  - action: jump
-    details:
-      to:
-        type: field
-        value: ID_more
-    condition:
-      op: or
-      vars:
-      - op: is
+# logic for main library field
+- type: field
+  ref: ID
+  actions:
+    - action: jump
+      details:
+        to:
+          type: field
+          value: ID_love
+      condition:
+        op: or
         vars:
-        - type: field
-          value: ID
-        - type: choice
-          value: ID_would_use_again
-      - op: is
+        - op: is
+          vars:
+          - type: field
+            value: ID
+          - type: choice
+            value: ID_would_use_again
+    - action: jump
+      details:
+        to:
+          type: field
+          value: ID_hate
+      condition:
+        op: or
         vars:
-        - type: field
-          value: ID
-        - type: choice
-          value: ID_would_not_use_again
-  - action: jump
-    details: 
-      to:
-        type: field
-        value: NEXT
-    condition:
-      op: always
-      vars: []
+        - op: is
+          vars:
+          - type: field
+            value: ID
+          - type: choice
+            value: ID_would_not_use_again
+    - action: jump
+      details: 
+        to:
+          type: field
+          value: NEXT
+      condition:
+        op: always
+        vars: []
+# logic for "love" question (always go to next question and skip "hate" question)
+- type: field
+  ref: ID_love
+  actions:
+    - action: jump
+      details: 
+        to:
+          type: field
+          value: NEXT
+      condition:
+        op: always
+        vars: []

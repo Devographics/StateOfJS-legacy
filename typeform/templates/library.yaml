@@ -11,30 +11,89 @@
     vertical_alignment: true
     choices:
     - ref: ID_neverheard
-      label: I've never heard of it
+      label: 🤷 I've never heard of it
     - ref: ID_interested
-      label: I've HEARD of it, and WOULD like to learn it
+      label: ✔️ I've HEARD of it, and WOULD like to learn it
     - ref: ID_not_interested
-      label: I've HEARD of it, and am NOT interested
+      label: 🚫 I've HEARD of it, and am NOT interested
     - ref: ID_would_use_again
-      label: I've USED it before, and WOULD use it again
+      label: 👍 I've USED it before, and WOULD use it again
     - ref: ID_would_not_use_again
-      label: I've USED it before, and would NOT use it again
+      label: 👎 I've USED it before, and would NOT use it again
   validations:
     required: true
   type: multiple_choice
-- title: Tell us more about TITLE
-  ref: ID_more
+- title: What do you *like* 👍 about TITLE?
+  ref: ID_love
   properties:
     randomize: false
-    allow_multiple_selection: false
-    allow_other_choice: false
+    allow_multiple_selection: true
+    allow_other_choice: true
     vertical_alignment: true
     choices:
-    - ref: ID_love
-      label: I love TITLE
-    - ref: ID_hate
-      label: I hate TITLE
+    - ref: ID_love_style
+      label: ⚙️ Elegant programming style & patterns
+    - ref: ID_love_robust
+      label: 🐞 Robust, less error-prone code
+    - ref: ID_love_ecosystem
+      label: 🎁 Rich package ecosystem
+    - ref: ID_love_performance
+      label: ⚡ Fast performance
+    - ref: ID_love_established
+      label: 🏛️ Well-established option
+    - ref: ID_love_learningcurve
+      label: 👶 Easy learning curve
+    - ref: ID_love_tooling
+      label: 🔧 Powerful developer tooling
+    - ref: ID_love_documentation
+      label: 📖 Good documentation
+    - ref: ID_love_team
+      label: 👫 Backed by a great team/company
+    - ref: ID_love_lightweight
+      label: 🎈 Simple & lightweight
+    - ref: ID_love_momentum
+      label: 📈 Growing momentum/popularity
+    - ref: ID_love_fullfeatured
+      label: 🕹️ Full-featured & powerful
+    - ref: ID_love_stable
+      label: ⚖️ Stable & backwards-compatible
   validations:
-    required: true
+    required: false
+  type: multiple_choice
+- title: What do you *dislike* 👎 about TITLE?
+  ref: ID_hate
+  properties:
+    randomize: false
+    allow_multiple_selection: true
+    allow_other_choice: true
+    vertical_alignment: true
+    choices:
+    - ref: ID_hate_style
+      label: ⚙️ Clumsy programming style
+    - ref: ID_hate_robust
+      label: 🐞 Buggy, error-prone code
+    - ref: ID_hate_ecosystem
+      label: 🎁 Small package ecosystem
+    - ref: ID_hate_performance
+      label: ⚡ Poor performance
+    - ref: ID_hate_established
+      label: 🏛️ New untested option
+    - ref: ID_hate_learningcurve
+      label: 👶 Hard learning curve
+    - ref: ID_hate_tooling
+      label: 🔧 Lacking developer tooling
+    - ref: ID_hate_documentation
+      label: 📖 Bad documentation
+    - ref: ID_hate_team
+      label: 👫 Concerns about the team/company
+    - ref: ID_hate_lightweight
+      label: 🎈 Bloated & complex
+    - ref: ID_hate_momentum
+      label: 📉 Diminishing momentum/popularity
+    - ref: ID_hate_fullfeatured
+      label: 🕹️ Limited & lacking in features
+    - ref: ID_hate_stable
+      label: ⚖️ Fast-changing & breaks often
+  validations:
+    required: false
   type: multiple_choice

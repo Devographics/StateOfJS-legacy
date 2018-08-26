@@ -45,11 +45,11 @@ fields:
 
     *For each technology, framework, or library mentioned, please pick one of the following options:
 
-    - You've never heard about it
-    - You've heard about it and you *want* to learn it
-    - You've heard about it, but *don't want* to learn it (or are *unsure*)
-    - You've used it and *want* to use it again
-    - You've used it but *don't* *want* to use it again
+    - 🤷 You've never heard about it
+    - ✔️ You've heard about it and you *want* to learn it
+    - 🚫 You've heard about it, but *don't want* to learn it (or are *unsure*)
+    - 👍 You've used it and *want* to use it again
+    - 👎 You've used it but *don't* *want* to use it again
 
     Note: questions with a "\*" are required.
   properties:

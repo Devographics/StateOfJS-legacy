@@ -76,8 +76,8 @@ For any given question ID, figure out the ID of the following question
 const generateQuestionPathsTable = (surveyOutline) => {
   const paths = []
   let i = 0
-  Object.keys(surveyOutline).forEach((sectionName, sectionIndex) => {
-    outline[sectionName].forEach((question, questionIndex) => {
+  surveyOutline.forEach((section, sectionIndex) => {
+    section.questions.forEach((question, questionIndex) => {
       if (typeof question === 'string') {
         const [title, id = makeId(title)] = question.split('|')
         paths[i] = { title, id, path: `${sectionIndex+1}_${questionIndex+1}` }
@@ -103,12 +103,13 @@ Note: we treat "library" questions differently in order to avoid having to speci
 their template in the YAML file. Other questions are specified more explicitely.
 
 */
-Object.keys(outline).forEach((sectionTitle) => {
+outline.forEach((section) => {
   // get section name and ID and create section object
-  const sectionVariables = { title: sectionTitle, id: makeId(sectionTitle) }
-  const section = parseYAML(templates.section, sectionVariables)
+  const [sectionTitle, sectionId = makeId(sectionTitle)] = section.title.split('|')
+  const sectionVariables = { title: sectionTitle, id: sectionId }
+  const sectionObject = parseYAML(templates.section, sectionVariables)
 
-  outline[sectionTitle].forEach((question) => {
+  section.questions.forEach((question) => {
     if (typeof question === 'object') {
       /*
 
@@ -126,7 +127,7 @@ Object.keys(outline).forEach((sectionTitle) => {
       if (description) {
         questionJSON.properties.description = description
       }
-      section.properties.fields.push(questionJSON)
+      sectionObject.properties.fields.push(questionJSON)
     } else {
       /*
 
@@ -136,22 +137,22 @@ Object.keys(outline).forEach((sectionTitle) => {
       const [title, id = makeId(title)] = question.split('|')
       const nextQuestion = getNextQuestion(id)
 
-      if (id === 'other') {
+      if (id === `${sectionVariables.id}_other`) {
         /*
 
         2a. "other options" question
 
         */
         const other = parseYAML(templates.other, sectionVariables)
-        section.properties.fields.push(other)
-      } else if (id === 'rating') {
+        sectionObject.properties.fields.push(other)
+      } else if (id === `${sectionVariables.id}_rating`) {
         /*
 
         2b. "rating" question
 
         */
         const rating = parseYAML(templates.rating, sectionVariables)
-        section.properties.fields.push(rating)
+        sectionObject.properties.fields.push(rating)
       } else {
         /*
 
@@ -162,17 +163,17 @@ Object.keys(outline).forEach((sectionTitle) => {
 
         // add library questions to current section
         const questions = parseYAML(templates.library, libraryVariables)
-        section.properties.fields = section.properties.fields.concat(questions)
+        sectionObject.properties.fields = sectionObject.properties.fields.concat(questions)
 
-        // add logic directly to survey.logic
+        // add logic templates directly to survey.logic
         const logic = parseYAML(templates.logic, libraryVariables)
-        survey.logic.push(logic)
+        survey.logic = survey.logic.concat(logic)
       }
     }
   })
 
   // add section to survey
-  survey.fields.push(section)
+  survey.fields.push(sectionObject)
 })
 
 /*

@@ -1,237 +1,233 @@
 # the survey outline
 ---
-Flavors:
-  - Reason
-  - ClojureScript
-  - Elm
-  - Flow
-  - TypeScript
-  - ES6
-  - PureScript
-  - Plain JavaScript|javascript
-  - Other|flavors_other
-  - Rating|flavors_rating
-Front-End:
-  - React
-  - Angular
-  - Ember
-  - Polymer
-  - Vue.js|vue
-  - Preact
-  # - Svelte
-  - Riot
-  - Inferno
-  - Other|frontend_other
-  - Rating|frontend_rating
-Data Layer:
-  - Redux
-  - GraphQL
-  - Relay
-  - Apollo
-  - Firebase
-  - VueX
-  - Other|datalayer_other
-  - Rating|datalayer_rating
-Back-end: 
-  - Node.js
-  - Rails
-  - PHP
-  - Java
-  - .NET|dotnet
-  - Other|backend_other
-  - Rating|backend_rating
-Node.js: 
-  - Next.js
-  - Meteor
-  - Other|node_other
-  - Rating|node_rating
-Testing: 
-  - Mocha
-  - Jasmine
-  - Jest
-  - Enzyme
-  - Tape
-  - Karma
-  - Qunit
-  - Other|testing_other
-  - Rating|testing_rating
-CSS: 
-  - SASS/SCSS
-  - Plain CSS
-  - LESS
-  - CSS-in-JS|cssinjs
-  - Stylus
-  - Atomic CSS
-  - Tailwind CSS
-  - Other|css_other
-  - Rating|css_rating
-UI Frameworks:
-  - Bootstrap
-  - Foundation
-  - Ant Design
-  - Material Design
-  - Semantic UI
-  - Other|uiframeworks_other
-  - Rating|uiframeworks_rating
-Build Tools:
-  - NPM
-  - Yarn
-  - Webpack
-  - Parcel
-  - Gulp
-  - Browserify
-  - Grunt
-  - Rollup
-  - Other|buildtools_other
-  - Rating|buildtools_rating
-Mobile & Desktop|mobiledesktop: 
-  - Electron
-  - React Native
-  - PhoneGap/Cordova
-  - NativeScript
-  - Ionic
-  - Native Apps
-  - Progressive Web Apps|pwa
-  - Weex
-  - Flutter
-  - Haxe
-  - Other|mobiledesktop_other
-  - Rating|mobiledesktop_rating
-Browser APIs|browserapis:
-  - WebAssembly
-  - Service Workers
-  - WebRTC
-  - Web Speech API
-  - WebGL
-  - Web Audio API
-  - Web Components
-  - Web Animations API
-  - WebVR
-  - Other|browserapis_other
-  - Rating|browserapis_rating
-Other Languages|lang:
-  - C|clang
-  - JAVA|javalang
-  - Other|lang_other
-  - Rating|lang_rating
-Static Site Generators|ssg:
-  - Gatsby.js|gatsby
-  - Other|ssg_other
-  - Rating|ssg_rating
-Other Tools:
-  - title: Package Managers
-    template: multiple
-    options: 
-      - NPM
-      - Yarn
-      - Bower
-  - title: Utility Libraries
-    template: multiple
-    options: 
-      - jQuery
-      - Underscore
-      - Lodash
-      - Ramda
-  - title: Text Editors
-    template: multiple
-    options:
-      - VS Code
-      - Sublime Text
-      - Atom
-      - Vim
-      - Emacs
-      - Webstorm
-  - title: Code Linters
-    template: multiple
-    options: 
-      - ESLint
-      - Prettier
-      - JSHint
-      - StandardJS
-Opinion Questions:
-  - title: JavaScript is moving in the right direction
-    template: opinion
-  - title: Building JavaScript apps is overly complex right now
-    template: opinion
-  - title: JavaScript is over-used online
-    template: opinion
-  - title: I enjoy building JavaScript apps
-    template: opinion
-  - title: I would like JavaScript to be my main programming language
-    template: opinion
-  - title: The JavaScript ecosystem is changing too fast
-    template: opinion
-  - title: This survey is too damn long!
-    template: opinion
-About You:
-  - title: Years of Experience
-    description: How long you've been working in the code mines
-    template: multiple
-    allowmultiple: false
-    allowother: false
-    options:
-      - Less than one year
-      - 1-2 years
-      - 2-5 years
-      - 5-10 years
-      - 10-20 years
-      - 20+ years
-  - title: Company Size
-    template: multiple
-    allowmultiple: false
-    allowother: false
-    options:
-      - Just me
-      - 1-5 people
-      - 5-10 people
-      - 10-20 people
-      - 20-50 people
-      - 50-100 people
-      - 100-1000 people
-      - 1000+ people
-  - title: Yearly Salary
-    description: In USD
-    template: multiple
-    allowmultiple: false
-    allowother: false
-    options: 
-      - I work for free :(
-      - $0-$10k
-      - $10k-$30k
-      - $30k-$50k
-      - $50k-$100k
-      - $100k-$200k
-      - $200k+
-  - title: Tabs or Spaces?
-    template: multiple
-    allowmultiple: false
-    options: 
-      - Tabs for life!
-      - Spaces rule!
-  - title: "Semicolons: Yes or no?"
-    template: multiple
-    allowmultiple: false
-    options:
-      - Yes, always
-      - Not if I can avoid it
-      - It depends on the project
-  - title: How did you find out about this survey?
-    template: text
-  - title: Your Gender
-    template: multiple
-    allowmultiple: false
-    options: 
-      - Female
-      - Male
-      - Non-binary/ third gender
-      - Prefer not to say
-  - title: Your Email
-    description: If you'd like to be notified when survey results are available. Your email won't be used for any other purpose.
-    template: email
-  - title: Your Country
-    template: text
-  - title: Your City
-    template: text
-  - title: Other Comments
-    description: Things we missed, feedback on the survey, your favorite color, etc.
-    template: longtext
+- title: JavaScript Flavors|flavors
+  questions:
+    - Reason
+    - ClojureScript
+    - Elm
+    - Flow
+    - TypeScript
+    - ES6
+    - PureScript
+    - Plain JavaScript|javascript
+    - Other|flavors_other
+    - Rating|flavors_rating
+- title: Front-End
+  questions:
+    - React
+    - Angular
+    - Ember
+    - Polymer
+    - Vue.js|vue
+    - Preact
+    - Riot
+    - Inferno
+    - Other|frontend_other
+    - Rating|frontend_rating
+# Data Layer:
+#   - Redux
+#   - GraphQL
+#   - Relay
+#   - Apollo
+#   - Firebase
+#   - VueX
+#   - Other|datalayer_other
+#   - Rating|datalayer_rating
+# Back-end: 
+#   - Node.js
+#   - Rails
+#   - PHP
+#   - Java
+#   - .NET|dotnet
+#   - Other|backend_other
+#   - Rating|backend_rating
+# Node.js: 
+#   - Next.js
+#   - Meteor
+#   - Other|node_other
+#   - Rating|node_rating
+# Testing: 
+#   - Mocha
+#   - Jasmine
+#   - Jest
+#   - Enzyme
+#   - Tape
+#   - Karma
+#   - Qunit
+#   - Other|testing_other
+#   - Rating|testing_rating
+# CSS: 
+#   - SASS/SCSS
+#   - Plain CSS
+#   - LESS
+#   - CSS-in-JS|cssinjs
+#   - Stylus
+#   - Atomic CSS
+#   - Tailwind CSS
+#   - Other|css_other
+#   - Rating|css_rating
+# Mobile & Desktop|mobiledesktop: 
+#   - Electron
+#   - React Native
+#   - PhoneGap/Cordova
+#   - NativeScript
+#   - Ionic
+#   - Native Apps
+#   - Progressive Web Apps|pwa
+#   - Weex
+#   - Flutter
+#   - Haxe
+#   - Other|mobiledesktop_other
+#   - Rating|mobiledesktop_rating
+# Other Languages|lang:
+#   - C|clang
+#   - JAVA|javalang
+#   - Other|lang_other
+#   - Rating|lang_rating
+# Static Site Generators|ssg:
+#   - Gatsby.js|gatsby
+#   - Other|ssg_other
+#   - Rating|ssg_rating
+- title: Other Tools
+  questions:
+    - title: Browser APIs
+      template: multiple
+      options:
+        - WebAssembly
+        - Service Workers
+        - WebRTC
+        - Web Speech API
+        - WebGL
+        - Web Audio API
+        - Web Components
+        - Web Animations API
+        - WebVR
+    - title: Build Tools
+      template: multiple
+      options: 
+        - NPM
+        - Yarn
+        - Webpack
+        - Parcel
+        - Gulp
+        - Browserify
+        - Grunt
+        - Rollup
+    - title: Package Managers
+      template: multiple
+      options: 
+        - NPM
+        - Yarn
+        - Bower
+    - title: Utility Libraries
+      template: multiple
+      options: 
+        - jQuery
+        - Underscore
+        - Lodash
+        - Ramda
+    - title: Text Editors
+      template: multiple
+      options:
+        - VS Code
+        - Sublime Text
+        - Atom
+        - Vim
+        - Emacs
+        - Webstorm
+    - title: Code Linters
+      template: multiple
+      options: 
+        - ESLint
+        - Prettier
+        - JSHint
+        - StandardJS
+- title: Opinion Questions
+  questions:
+    - title: JavaScript is moving in the right direction
+      template: opinion
+    - title: Building JavaScript apps is overly complex right now
+      template: opinion
+    - title: JavaScript is over-used online
+      template: opinion
+    - title: I enjoy building JavaScript apps
+      template: opinion
+    - title: I would like JavaScript to be my main programming language
+      template: opinion
+    - title: The JavaScript ecosystem is changing too fast
+      template: opinion
+    - title: This survey is too damn long!
+      template: opinion
+- title: About You
+  questions:
+    - title: Years of Experience
+      description: How long you've been working in the code mines
+      template: multiple
+      allowmultiple: false
+      allowother: false
+      options:
+        - Less than one year
+        - 1-2 years
+        - 2-5 years
+        - 5-10 years
+        - 10-20 years
+        - 20+ years
+    - title: Company Size
+      template: multiple
+      allowmultiple: false
+      allowother: false
+      options:
+        - Just me
+        - 1-5 people
+        - 5-10 people
+        - 10-20 people
+        - 20-50 people
+        - 50-100 people
+        - 100-1000 people
+        - 1000+ people
+    - title: Yearly Salary
+      description: In USD
+      template: multiple
+      allowmultiple: false
+      allowother: false
+      options: 
+        - I work for free :(
+        - $0-$10k
+        - $10k-$30k
+        - $30k-$50k
+        - $50k-$100k
+        - $100k-$200k
+        - $200k+
+    - title: Tabs or Spaces?
+      template: multiple
+      allowmultiple: false
+      options: 
+        - Tabs for life!
+        - Spaces rule!
+    - title: "Semicolons: Yes or no?"
+      template: multiple
+      allowmultiple: false
+      options:
+        - Yes, always
+        - Not if I can avoid it
+        - It depends on the project
+    - title: How did you find out about this survey?
+      template: text
+    - title: Your Gender
+      template: multiple
+      allowmultiple: false
+      options: 
+        - Female
+        - Male
+        - Non-binary/ third gender
+        - Prefer not to say
+    - title: Your Email
+      description: If you'd like to be notified when survey results are available. Your email won't be used for any other purpose.
+      template: email
+    - title: Your Country
+      template: text
+    - title: Your City
+      template: text
+    - title: Other Comments
+      description: Things we missed, feedback on the survey, your favorite color, etc.
+      template: longtext
