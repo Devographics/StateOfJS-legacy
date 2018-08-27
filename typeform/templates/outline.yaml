@@ -1,15 +1,16 @@
 # the survey outline
 ---
-- title: JavaScript Flavors|flavors
+- title: JavaScript Flavors
+  id: flavors 
   questions:
     - Reason
     - ClojureScript
     - Elm
     - Flow
     - TypeScript
-    - ES6
+    - ES6+|es6
     - PureScript
-    - Plain JavaScript|javascript
+    # - Plain JavaScript|javascript
     - Other|flavors_other
     - Rating|flavors_rating
 - title: Front-End
@@ -20,75 +21,79 @@
     - Polymer
     - Vue.js|vue
     - Preact
-    - Riot
-    - Inferno
+    # - Riot
+    # - Inferno
     - Other|frontend_other
     - Rating|frontend_rating
-# Data Layer:
-#   - Redux
-#   - GraphQL
-#   - Relay
-#   - Apollo
-#   - Firebase
-#   - VueX
-#   - Other|datalayer_other
-#   - Rating|datalayer_rating
-# Back-end: 
-#   - Node.js
-#   - Rails
-#   - PHP
-#   - Java
-#   - .NET|dotnet
-#   - Other|backend_other
-#   - Rating|backend_rating
-# Node.js: 
-#   - Next.js
-#   - Meteor
-#   - Other|node_other
-#   - Rating|node_rating
-# Testing: 
-#   - Mocha
-#   - Jasmine
-#   - Jest
-#   - Enzyme
-#   - Tape
-#   - Karma
-#   - Qunit
-#   - Other|testing_other
-#   - Rating|testing_rating
-# CSS: 
-#   - SASS/SCSS
-#   - Plain CSS
-#   - LESS
-#   - CSS-in-JS|cssinjs
-#   - Stylus
-#   - Atomic CSS
-#   - Tailwind CSS
-#   - Other|css_other
-#   - Rating|css_rating
-# Mobile & Desktop|mobiledesktop: 
-#   - Electron
-#   - React Native
-#   - PhoneGap/Cordova
-#   - NativeScript
-#   - Ionic
-#   - Native Apps
-#   - Progressive Web Apps|pwa
-#   - Weex
-#   - Flutter
-#   - Haxe
-#   - Other|mobiledesktop_other
-#   - Rating|mobiledesktop_rating
-# Other Languages|lang:
-#   - C|clang
-#   - JAVA|javalang
-#   - Other|lang_other
-#   - Rating|lang_rating
-# Static Site Generators|ssg:
-#   - Gatsby.js|gatsby
-#   - Other|ssg_other
-#   - Rating|ssg_rating
+- title: Data Layer
+  questions:
+    - Redux
+    - GraphQL
+    - Relay
+    - Apollo
+    - Firebase
+    - VueX
+    - Other|datalayer_other
+    - Rating|datalayer_rating
+- title: Back-end
+  questions:
+    - Node.js
+    - Rails
+    - PHP
+    - Java
+    - .NET|dotnet
+    - Other|backend_other
+    - Rating|backend_rating
+- title: Node.js Back-ends
+  id: nodebackends
+  questions:
+    - Next.js
+    - Nuxt.js
+    - Gatsby.js
+    - Meteor
+    - Express
+    - Koa
+    - Hapi
+    - Other|node_other
+    - Rating|node_rating
+- title: Testing
+  questions:
+    - Mocha
+    - Jasmine
+    - Jest
+    - Enzyme
+    - Tape
+    - Karma
+    - Qunit
+    - Other|testing_other
+    - Rating|testing_rating
+- title: CSS
+  questions:
+    - SASS/SCSS
+    - Plain CSS
+    - LESS
+    - CSS-in-JS|cssinjs
+    - Stylus
+    - Atomic CSS
+    - Tailwind CSS
+    - Other|css_other
+    - Rating|css_rating
+- title: Mobile & Desktop|mobiledesktop
+  questions: 
+    - Electron
+    - React Native
+    - PhoneGap/Cordova
+    - NativeScript
+    - Ionic
+    - Native Apps
+    - Progressive Web Apps|pwa
+    - Weex
+    - Flutter
+    - Haxe
+    - Other|mobiledesktop_other
+    - Rating|mobiledesktop_rating
 - title: Other Tools
+  description: For these tools & technologies, just check the ones that you use. 
   questions:
     - title: Browser APIs
       template: multiple

@@ -105,8 +105,7 @@ their template in the YAML file. Other questions are specified more explicitely.
 */
 outline.forEach((section) => {
   // get section name and ID and create section object
-  const [sectionTitle, sectionId = makeId(sectionTitle)] = section.title.split('|')
-  const sectionVariables = { title: sectionTitle, id: sectionId }
+  const sectionVariables = { ...section, id: section.id || makeId(section.title) }
   const sectionObject = parseYAML(templates.section, sectionVariables)
 
   section.questions.forEach((question) => {

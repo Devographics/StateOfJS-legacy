@@ -3,5 +3,6 @@
 title: TITLE
 ref: ID_section
 properties:
+  description: DESCRIPTION
   fields: []
 type: group
