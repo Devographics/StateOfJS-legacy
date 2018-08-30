@@ -1,6 +1,7 @@
 # the survey outline
 ---
 - title: JavaScript Flavors
+  description: JavaScript variants and languages that compile to JavaScript.
   id: flavors 
   questions:
     - Reason
@@ -14,71 +15,82 @@
     - Other|flavors_other
     - Rating|flavors_rating
 - title: Front-End
-  questions:
+  description: Client-side JavaScript frameworks.
+  questions: 
     - React
     - Angular
     - Ember
     - Polymer
     - Vue.js|vue
     - Preact
+    # - Hyperapp
     # - Riot
     # - Inferno
     - Other|frontend_other
     - Rating|frontend_rating
 - title: Data Layer
+  description: Technologies dealing with managing data on the client (databases excluded).
   questions:
     - Redux
     - GraphQL
     - Relay
     - Apollo
     - Firebase
-    - VueX
+    # - VueX
     - Other|datalayer_other
     - Rating|datalayer_rating
+# - title: Back-end
+#   questions:
+#     - Node.js
+#     - Rails
+#     - PHP
+#     - Java
+#     - .NET|dotnet
+#     - Other|backend_other
+#     - Rating|backend_rating
 - title: Back-end
-  questions:
-    - Node.js
-    - Rails
-    - PHP
-    - Java
-    - .NET|dotnet
-    - Other|backend_other
-    - Rating|backend_rating
-- title: Node.js Back-ends
   id: nodebackends
+  description: If you don't use a Node-based solution on the back-end, please pick "other"
   questions:
-    - Next.js
-    - Nuxt.js
-    - Gatsby.js
+    # - Nuxt.js
     - Meteor
     - Express
+    - Next.js
+    # - Gatsby.js
     - Koa
+    - Sails
     - Hapi
-    - Other|node_other
-    - Rating|node_rating
+    - Loopback
+    - Feathers
+    - Other|nodebackends_other
+    - Rating|nodebackends_rating
 - title: Testing
+  description: Libraries and tools used for testing your code. 
   questions:
+    - Storybook
     - Mocha
     - Jasmine
     - Jest
     - Enzyme
-    - Tape
+    - Ava
     - Karma
-    - Qunit
+    - Cypress
     - Other|testing_other
     - Rating|testing_rating
-- title: CSS
-  questions:
-    - SASS/SCSS
-    - Plain CSS
-    - LESS
-    - CSS-in-JS|cssinjs
-    - Stylus
-    - Atomic CSS
-    - Tailwind CSS
-    - Other|css_other
-    - Rating|css_rating
-- title: Mobile & Desktop|mobiledesktop
+# - title: CSS
+#   questions:
+#     - SASS/SCSS
+#     - Plain CSS
+#     - LESS
+#     - CSS-in-JS|cssinjs
+#     - Stylus
+#     - Atomic CSS
+#     - Tailwind CSS
+#     - Other|css_other
+#     - Rating|css_rating
+- title: Mobile & Desktop
+  id: mobiledesktop
+  description: Tools for running JavaScript on other platforms.
   questions: 
     - Electron
     - React Native
@@ -86,18 +98,37 @@
     - NativeScript
     - Ionic
     - Native Apps
-    - Progressive Web Apps|pwa
     - Weex
-    - Flutter
-    - Haxe
+    # - Flutter
+    # - Haxe
     - Other|mobiledesktop_other
     - Rating|mobiledesktop_rating
 - title: Other Tools
-  description: For these tools & technologies, just check the ones that you use. 
+  description: For these tools & technologies, just check the ones that you use regularly. 
   questions:
+    - title: Other Languages
+      template: multiple
+      description: What other programming languages do you regularly use?
+      options:
+        - PHP
+        - Ruby
+        - Python
+        - Go
+        - Rust
+        - Java
+        - C/C++
+        - Objective-C
+        - Scala
+        - Swift
+        - C#
+        - .NET
+        - Haskell
+        - OCaml
     - title: Browser APIs
       template: multiple
+      description: Which browser APIs have you used before?
       options:
+        - Progressive Web Apps|pwa
         - WebAssembly
         - Service Workers
         - WebRTC
@@ -118,6 +149,7 @@
         - Browserify
         - Grunt
         - Rollup
+        - Meteor
     - title: Package Managers
       template: multiple
       options: 
@@ -131,6 +163,10 @@
         - Underscore
         - Lodash
         - Ramda
+        - Moment
+        - Date-fns
+        - Sugar
+        - Lazy
     - title: Text Editors
       template: multiple
       options:
@@ -140,14 +176,15 @@
         - Vim
         - Emacs
         - Webstorm
-    - title: Code Linters
-      template: multiple
-      options: 
-        - ESLint
-        - Prettier
-        - JSHint
-        - StandardJS
+    # - title: Code Linters
+    #   template: multiple
+    #   options: 
+    #     - ESLint
+    #     - Prettier
+    #     - JSHint
+    #     - StandardJS
 - title: Opinion Questions
+  description: How do you feel about the state of JavaScript?
   questions:
     - title: JavaScript is moving in the right direction
       template: opinion
@@ -164,12 +201,14 @@
     - title: This survey is too damn long!
       template: opinion
 - title: About You
+  description: Let's get to know the real you.
   questions:
     - title: Years of Experience
       description: How long you've been working in the code mines
       template: multiple
       allowmultiple: false
       allowother: false
+      randomize: false
       options:
         - Less than one year
         - 1-2 years
@@ -181,6 +220,7 @@
       template: multiple
       allowmultiple: false
       allowother: false
+      randomize: false
       options:
         - Just me
         - 1-5 people
@@ -195,6 +235,7 @@
       template: multiple
       allowmultiple: false
       allowother: false
+      randomize: false
       options: 
         - I work for free :(
         - $0-$10k

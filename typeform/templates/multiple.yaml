@@ -6,7 +6,7 @@
 title: TITLE
 ref: ID
 properties:
-  randomize: true
+  randomize: RANDOMIZE
   allow_multiple_selection: ALLOWMULTIPLE
   allow_other_choice: ALLOWOTHER
   vertical_alignment: true
