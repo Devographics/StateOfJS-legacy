@@ -7293,7 +7293,7 @@
             "title": "Other Languages",
             "ref": "otherlanguages",
             "properties": {
-              "randomize": "RANDOMIZE",
+              "randomize": true,
               "allow_multiple_selection": true,
               "allow_other_choice": true,
               "vertical_alignment": true,
@@ -7349,7 +7349,7 @@
             "title": "Browser APIs",
             "ref": "browserapis",
             "properties": {
-              "randomize": "RANDOMIZE",
+              "randomize": true,
               "allow_multiple_selection": true,
               "allow_other_choice": true,
               "vertical_alignment": true,
@@ -7393,7 +7393,7 @@
             "title": "Build Tools",
             "ref": "buildtools",
             "properties": {
-              "randomize": "RANDOMIZE",
+              "randomize": true,
               "allow_multiple_selection": true,
               "allow_other_choice": true,
               "vertical_alignment": true,
@@ -7433,7 +7433,7 @@
             "title": "Package Managers",
             "ref": "packagemanagers",
             "properties": {
-              "randomize": "RANDOMIZE",
+              "randomize": true,
               "allow_multiple_selection": true,
               "allow_other_choice": true,
               "vertical_alignment": true,
@@ -7455,7 +7455,7 @@
             "title": "Utility Libraries",
             "ref": "utilitylibraries",
             "properties": {
-              "randomize": "RANDOMIZE",
+              "randomize": true,
               "allow_multiple_selection": true,
               "allow_other_choice": true,
               "vertical_alignment": true,
@@ -7492,7 +7492,7 @@
             "title": "Text Editors",
             "ref": "texteditors",
             "properties": {
-              "randomize": "RANDOMIZE",
+              "randomize": true,
               "allow_multiple_selection": true,
               "allow_other_choice": true,
               "vertical_alignment": true,
@@ -7662,7 +7662,7 @@
             "title": "Years of Experience",
             "ref": "yearsofexperience",
             "properties": {
-              "randomize": "RANDOMIZE",
+              "randomize": false,
               "allow_multiple_selection": false,
               "allow_other_choice": false,
               "vertical_alignment": true,
@@ -7694,7 +7694,7 @@
             "title": "Company Size",
             "ref": "companysize",
             "properties": {
-              "randomize": "RANDOMIZE",
+              "randomize": false,
               "allow_multiple_selection": false,
               "allow_other_choice": false,
               "vertical_alignment": true,
@@ -7731,7 +7731,7 @@
             "title": "Yearly Salary",
             "ref": "yearlysalary",
             "properties": {
-              "randomize": "RANDOMIZE",
+              "randomize": false,
               "allow_multiple_selection": false,
               "allow_other_choice": false,
               "vertical_alignment": true,
@@ -7766,7 +7766,7 @@
             "title": "Tabs or Spaces?",
             "ref": "tabsorspaces?",
             "properties": {
-              "randomize": "RANDOMIZE",
+              "randomize": true,
               "allow_multiple_selection": false,
               "allow_other_choice": true,
               "vertical_alignment": true,
@@ -7785,7 +7785,7 @@
             "title": "Semicolons: Yes or no?",
             "ref": "semicolons:yesorno?",
             "properties": {
-              "randomize": "RANDOMIZE",
+              "randomize": true,
               "allow_multiple_selection": false,
               "allow_other_choice": true,
               "vertical_alignment": true,
@@ -7816,7 +7816,7 @@
             "title": "Your Gender",
             "ref": "yourgender",
             "properties": {
-              "randomize": "RANDOMIZE",
+              "randomize": true,
               "allow_multiple_selection": false,
               "allow_other_choice": true,
               "vertical_alignment": true,

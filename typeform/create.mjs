@@ -118,7 +118,7 @@ outline.forEach((section) => {
       // eslint-disable-next-line max-len
       const { title, id = makeId(title), template, description, options, allowother = true, allowmultiple = true, randomize = true } = question
       // eslint-disable-next-line max-len
-      const questionJSON = parseYAML(templates[template], { title, id, description, allowother, allowmultiple })
+      const questionJSON = parseYAML(templates[template], { title, id, description, allowother, allowmultiple, randomize })
 
       if (options) {
         questionJSON.properties.choices = convertToChoices(options)

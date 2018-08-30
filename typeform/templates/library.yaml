@@ -19,7 +19,8 @@
     - ref: ID_would_use_again
       label: 👍 I've USED it before, and WOULD use it again
     - ref: ID_would_not_use_again
-      label: 👎 I've USED it before, and would NOT use it again
+      # label: 👎 I've USED it before, and would NOT use it again
+      label: 🤮 I've USED it before, and would NOT use it again
   validations:
     required: true
   type: multiple_choice

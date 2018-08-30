@@ -75,6 +75,7 @@
     - Ava
     - Karma
     - Cypress
+    - Puppeteer
     - Other|testing_other
     - Rating|testing_rating
 # - title: CSS
@@ -139,10 +140,11 @@
         - Web Animations API
         - WebVR
     - title: Build Tools
+      description: Which build tool(s) are you currently using?
       template: multiple
       options: 
-        - NPM
-        - Yarn
+        # - NPM
+        # - Yarn
         - Webpack
         - Parcel
         - Gulp
@@ -150,13 +152,15 @@
         - Grunt
         - Rollup
         - Meteor
-    - title: Package Managers
-      template: multiple
-      options: 
-        - NPM
-        - Yarn
-        - Bower
+    # - title: Package Managers
+    #   description: Which package managers are you currently using?
+    #   template: multiple
+    #   options: 
+    #     - NPM
+    #     - Yarn
+    #     - Bower
     - title: Utility Libraries
+      description: Which utility libraries do you regularly use?
       template: multiple
       options: 
         - jQuery
@@ -165,9 +169,10 @@
         - Ramda
         - Moment
         - Date-fns
-        - Sugar
-        - Lazy
+        # - Sugar
+        # - Lazy
     - title: Text Editors
+      description: Which text editor(s) do you regularly use?
       template: multiple
       options:
         - VS Code
@@ -204,7 +209,7 @@
   description: Let's get to know the real you.
   questions:
     - title: Years of Experience
-      description: How long you've been working in the code mines
+      description: How long you've been working in the code mines.
       template: multiple
       allowmultiple: false
       allowother: false
