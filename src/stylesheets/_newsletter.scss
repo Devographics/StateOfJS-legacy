@@ -15,9 +15,8 @@
       margin-bottom: $spacing/2;
     }
     display: block;
-    border-radius: 3px;
     padding: $spacing/2 $spacing/2;
-    border: 1px solid $active-color;
+    border: none;
     margin-right: $spacing/2;
     flex-grow: 1;
     width: 100%;
@@ -61,7 +60,7 @@
 
 .block--newsletter--home{
   text-align: center;
-  border: 1px dashed $border-color;
+  @include border;
   padding: $spacing*1.5;
   @include large{
     margin: 0 250px $spacing*3 250px;

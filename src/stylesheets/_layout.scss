@@ -4,7 +4,7 @@
   }
   @include large{
     padding: $spacing $spacing*4 $spacing*4 $spacing*4;
-    border: 10px solid $active-color;
+    // border: 3px solid $border-color;
     min-height: calc(100vh - 22px);
   }
   &.home-wrapper{
@@ -153,8 +153,8 @@
 }
 .section-narrow{
   @include large{
-    margin-left: $spacing*9;
-    margin-right: $spacing*9;
+    margin-left: $spacing*16;
+    margin-right: $spacing*16;
   }
   .section-contents-wide{
     padding: 0;
@@ -191,7 +191,7 @@
   }
 }
 .section-border{
-  border: 1px solid $border-color;
+  @include border;
   position: relative;
   @include small{
     padding: $spacing $spacing $spacing*2 $spacing;

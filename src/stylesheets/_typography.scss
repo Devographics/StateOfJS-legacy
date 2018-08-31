@@ -27,7 +27,7 @@ $bold: bold;
 }
 
 @mixin primary-font{
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Space Grotesk', 'Roboto Slab', sans-serif;
   @include small{
     font-weight: 400;
   }
@@ -36,7 +36,7 @@ $bold: bold;
   }
 }
 @mixin secondary-font{
-  font-family: 'Space Mono', monospace;
+  font-family: 'Space Grotesk', monospace;
   font-weight: 400;
   // font-style: italic;
 }

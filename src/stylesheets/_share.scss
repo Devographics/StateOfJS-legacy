@@ -29,33 +29,17 @@
   }
 }
 
-@keyframes blink2 {
-  from {
-    fill: $active-color;
-  }
-  50% {
-    fill: $hover-color;
-  }
-  to {
-    fill: $active-color;
-  }
-}
-
 .share-options{
   display: flex;
   align-items:center;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 300px;
   margin: 0 auto;
   a{
     display: block;
     height: 40px;
     width: 40px;
-    padding: 10px;
-    border-radius: 100%;
-    background: $active-color;
     flex-shrink: 0;
-    margin-right: $spacing;
     &:last-child{
       margin-right: 0;
     }
@@ -66,10 +50,10 @@
         fill: $beige;
       }
     }
+    @include segmented;
     &:hover{
-      background: $hover-color;
       svg path{
-        fill: $active-color;
+        fill: $hover-color;
         // animation-name: blink2;
         // animation-duration: 300ms;
         // animation-iteration-count: infinite;

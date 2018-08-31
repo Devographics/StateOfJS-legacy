@@ -1,11 +1,9 @@
 .button{
   background: none;
-  border: 1px solid $border-color;
-  border-radius: 3px;
+  @include border;
   padding: $spacing/2 $spacing;
   cursor: pointer;
   display: block;
-  color: $active-color;
   text-align: center;
   white-space: nowrap;
   @include secondary-font;
@@ -16,9 +14,13 @@
     font-size: $medium-font;
   }
   white-space: nowrap;
+  &, &:link, &:visited{
+    color: $text-color;
+    text-decoration: none;
+  }
   &:hover{
-    background: $hover-color;
-    color: $active-color;
+    color: $hover-color;
+    border-color: $hover-color;
   }
   &.large-button{
     padding: $spacing $spacing;

@@ -17,8 +17,8 @@
 }
 
 .logo{
-  max-width: 700px;
-  margin: 0 auto $spacing*1.5 auto;
+  // max-width: 500px;
+  // margin: 0 auto $spacing*1.5 auto;
   position: relative;
   img{
     display: block;
@@ -159,11 +159,8 @@
     .button{
       margin-bottom: 10px;
       width: 250px;
-      &:link, &:visited{
+      &:link, &:visited, &:active, &:hover{
         background: $bg-color;
-      }
-      &:active, &:hover{
-        background: $hover-color;
       }
       position: relative;
     }
@@ -290,12 +287,17 @@
 .stat-text{
 
 }
-.results-2016{
+.previous-years{
   text-align: center;
   .or{
     margin-bottom: $spacing;
   }
-  .results-2016-link{
+  .previous-years-links{
+    display: flex;
+    justify-content: center;
+  }
+  .previous-years-link{
+    @include segmented;
     @include secondary-font;
     font-size: $large-font;
   }
