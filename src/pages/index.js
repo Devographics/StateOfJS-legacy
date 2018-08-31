@@ -40,11 +40,6 @@ export default class Index extends React.Component {
     return (
       <DocumentTitle title="The State Of JavaScript 2017">
         <div className="results-container content home">
-          <h1 className="logo section-narrow">
-            <img src="images/stateofjs2018.svg" alt="The State Of JavaScript" />
-            {/*<div className="logo-1"/>
-            <div className="logo-2"/>*/}
-          </h1>
 
           {/* <div className="bubbles">
             <h3 className="bubble bubble-great">
