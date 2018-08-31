@@ -12,7 +12,7 @@ $largest-font: 1.5rem;
 
 $light: 100;
 $medium: normal;
-$bold: bold;
+$bold: 600;
 
 @mixin font-light{
   font-weight: $light;

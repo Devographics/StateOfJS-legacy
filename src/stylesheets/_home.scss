@@ -124,12 +124,32 @@
   }
 }
 
+$intropadding: $spacing;
+
 .intro{
   position: relative;
-  padding-bottom: $spacing*3;
+  padding: $intropadding $intropadding*1.5 $intropadding*3 $intropadding*1.5;
   margin-bottom: $spacing*2.5;
+  background: $bg-color;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+
+  strong{
+    // position: absolute;
+    // top: -2px;
+    // left: -2px;
+    @include border;
+    display: block;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 3rem;
+    float: left;
+    margin: -#{$intropadding+2} $intropadding $intropadding/2 -#{$intropadding*1.5+2};
+  }
   p{
     &:first-child{
+      @include font-bold;
       @include small-medium{
         font-size: $large-font;
       }

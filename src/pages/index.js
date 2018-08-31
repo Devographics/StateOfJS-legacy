@@ -18,11 +18,11 @@ import Newsletter from '../components/common/Newsletter';
 // import FooterContents from '../data/footer.md'
 
 const homeContents = `
-The JavaScript world is richer and messier than ever.
+<strong className="dropcap">T</strong>he JavaScript world could use a bit of classification.
 
-So we collected data from over 20,000 developers, asking them questions on topics ranging from front-end frameworks and state management, to build tools and testing libraries.
+In 2017 this survey helped us do just that, by collecting data from over 20,000 developers to identify current and upcoming trends. 
 
-You'll find out which libraries developers want to learn next, and which have the best satisfaction ratings. And hopefully, get a better understanding of the ever-changing JavaScript ecosystem.
+This year, we're asking for your help once more to find out which libraries developers want to learn next, which have the best satisfaction ratings, and much more. 
 `;
 
 const homeComingSoonContents = `
@@ -52,7 +52,7 @@ export default class Index extends React.Component {
             </h3>
           </div> */}
 
-          <div className="intro section-narrow">
+          <div className="intro section-narrow section-border">
             <TextBlock text={homeContents} />
             <div className="take-survey">
               <Link className="button large-button" to="/2017/introduction/">
