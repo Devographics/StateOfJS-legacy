@@ -17,8 +17,9 @@
 }
 
 .logo{
-  // max-width: 500px;
-  // margin: 0 auto $spacing*1.5 auto;
+  pointer-events: all;
+  max-width: 500px;
+  margin: $spacing*3 auto $spacing*1.5 auto;
   position: relative;
   img{
     display: block;

@@ -1,0 +1,73 @@
+import React from 'react';
+import elements from '../../data/periodictable.yaml';
+import shuffle from 'lodash/shuffle';
+
+const multiply = (a, n) => [...Array(n-1).keys()].reduce(x => [x, ...a].flat(), a)
+
+const parseData = data => {
+  const allTools = [];
+  Object.keys(data).forEach(sectionName => {
+    const { color, tools } = data[sectionName];
+    console.log(data[sectionName]);
+    tools.forEach(tool => {
+      const [name, symbol, stars] = tool.split('/');
+      allTools.push({
+        name,
+        symbol,
+        stars,
+        color,
+        sectionName,
+      });
+    });
+  });
+  return [...allTools, ...allTools.reverse(), ...allTools, ...allTools.reverse()];
+};
+
+const PeriodicTable = () => (
+  <div className="periodic-table-wrapper">
+    <div className="periodic-table">
+      {parseData(elements).map(element => (
+        <Element2 {...element} />
+      ))}
+      <div className="periodic-gradient" />
+    </div>
+  </div>
+);
+
+const Element = ({ name, symbol, stars, color }) => (
+  <div className="periodic-element">
+    <div className="periodic-element-stars">{stars}</div>
+    <div className="periodic-element-content" style={{ color }}>
+      <div className="periodic-element-symbol">{symbol}</div>
+      <div className="periodic-element-name">{name}</div>
+    </div>
+  </div>
+);
+
+const Element2 = ({ name, symbol, stars, color }) => (
+  <a className="periodic-element" target="_blank" href={`https://bestofjs.org/projects/${name.toLowerCase().replace('.', '')}`}>
+    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <text className="periodic-element-stars" x="10" y="20" fontSize="14" fill="white">
+        {stars}
+      </text>
+
+      <text
+        className="periodic-element-symbol"
+        x="50"
+        y="60"
+        width="100%"
+        textAnchor="middle"
+        fontSize="24"
+        fill={color}
+      >
+        {symbol}
+      </text>
+
+      <text className="periodic-element-name" x="50" y="80" fontSize="14" fill={color} textAnchor="middle">
+        {name}
+      </text>
+    </svg>
+  </a>
+);
+
+export default PeriodicTable;

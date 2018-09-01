@@ -9,7 +9,13 @@
   // }
 }
 
+.home-layout-wrapper{
+  z-index: 2;
+  position: relative;
+  pointer-events: none;
+}
 .home-layout{
+  pointer-events: all;
   @include small-medium{
     padding: $spacing*3 $spacing $spacing $spacing;
   }
