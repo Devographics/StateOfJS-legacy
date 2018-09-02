@@ -7,15 +7,15 @@ const multiply = (a, n) => [...Array(n - 1).keys()].reduce(x => [x, ...a].flat()
 const parseData = data => {
   data = [ ...data, ...data, ...data, ...data ]
   const allTools = []
-  let i = 0
-  const steps = data.map(s => s.tools).flat().length
+  // let i = 0
+  // const steps = data.map(s => s.tools).flat().length
   data.forEach(section => {
     const { color, tools } = section
 
     tools.forEach(tool => {
-      i++
+      // i++
       const [name, symbol, stars] = tool.split('/')
-      const opacity = 0.6 - ((i / steps)/2)
+      // const opacity = 0.6 - ((i / steps)/2)
 
       allTools.push({
         name,
@@ -23,7 +23,7 @@ const parseData = data => {
         stars,
         color,
         sectionName: section.name,
-        opacity,
+        // opacity,
       })
     })
   })
