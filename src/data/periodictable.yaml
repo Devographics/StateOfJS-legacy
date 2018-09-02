@@ -1,4 +1,4 @@
-flavors:
+- name: flavors
   color: '#F7DF1E'
   tools:
     - TypeScript/Ts/38
@@ -8,7 +8,7 @@ flavors:
     - Elm/Em/4
     - PureScript/Ps/5
 
-frontend:
+- name: frontend
   color: '#72D7D1'
   tools:
     - Vue.js/V/112
@@ -20,14 +20,14 @@ frontend:
     - Hyperapp/Ha/15
     - Inferno/In/13
 
-datalayer:
+- name: datalayer
   color: '#7FD258'
   tools:
     - Redux/Rd/44
     - Relay/Ry/1
     - Apollo/Ap/8
 
-buildtools:
+- name: buildtools
   color: '#9D7CE2'
   tools:
     - Webpack/Wp/44
@@ -36,7 +36,7 @@ buildtools:
     - Parcel/Pc/20
     - Rollup/Ru/14
 
-backend:
+- name: backend
   color: '#E486C4'
   tools:
     - Express/Ex/40
@@ -47,7 +47,7 @@ backend:
     - Sails/Sa/20
     - Loopback/Lb/12
 
-testing:
+- name: testing
   color: '#E49B57'
   tools: 
     - Storybook/Sb/28
@@ -59,7 +59,7 @@ testing:
     - Karma/Ka/10
     - Cypress/Cy/7
 
-mobile:
+- name: mobile
   color: '#2798C8'
   tools: 
     - React Native/Rn/69
@@ -69,7 +69,7 @@ mobile:
     - Weex/We/10
     - Cordova/Cv/2
 
-utilities: 
+- name: utilities
   color: '#FE6A6A'
   tools: 
     - D3/D/78
@@ -77,4 +77,4 @@ utilities:
     - Moment/Mt/38
     - Lodash/Lo/34
     - Underscore/Un/24
-    # - Ramda/Ra/14
+    # - Ramda/Ra/14 

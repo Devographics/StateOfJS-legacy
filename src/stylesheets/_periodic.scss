@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  padding-bottom: 10px; // hide any extra borders, etc. at the bottom
   // opacity: 0.4;
 }
 .periodic-table {
@@ -11,10 +12,8 @@
   grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
   grid-auto-rows: 1fr;
   grid-gap: 0;
-  // border: 1px solid $white;
+  border-top: 1px solid $white;
 
-  border-top: 2px solid $white;
-  border-left: 2px solid $white;
   z-index: 1;
   // &::before {
   //   content: '';
@@ -33,8 +32,11 @@
   display: block;
   opacity: 0.4;
   // border: 1px solid $white;
-  border-bottom: 2px solid $white;
-  border-right: 2px solid $white;
+  // border-bottom: 2px solid $white;
+  // border-right: 2px solid $white;
+  // border: 1px solid $white;
+  border: 2px solid $white;
+  transform: scale(1.03);
   // @include flex-center;
   // position: relative;
   // height: 0;
@@ -44,9 +46,13 @@
     height: 100%;
     display: block;
   }
+  transition: 3000ms linear all;
   &:hover{
-    opacity: 0.9;
-    background: rgba(255,255,255,0.1);
+    opacity: 1;
+    background: rgba(255,255,255,0.15);
+    // z-index: 3;
+    transition: 300ms ease-out all;
+    box-shadow: 0px 0px 12px 0px rgba(255,255,255,0.2);
   }
 }
 
