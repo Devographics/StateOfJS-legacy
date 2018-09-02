@@ -1,0 +1,121 @@
+flavors:
+  color: "#F7DF1E"
+  projects:
+    - symbol: Ts
+      id: typescript
+    - symbol: Fw
+      id: flow
+    - symbol: cs
+      id: clojurescript
+    - symbol: Re
+      id: reason
+    - symbol: Ps
+      id: purescript
+frontend:
+  color: "#72D7D1"
+  projects:
+    - symbol: V
+      id: vuejs
+    - symbol: R
+      id: react
+    - symbol: Ng
+      id: angular
+    - symbol: Bb
+      id: backbone
+    - symbol: Em
+      id: ember
+    - symbol: Pr
+      id: preact
+    - symbol: Ha
+      id: hyperapp
+    - symbol: In
+      id: inferno
+datalayer:
+  color: "#7FD258"
+  projects:
+    - symbol: Rd
+      id: redux
+    - symbol: Ry
+      id: relay
+    - symbol: Ap
+      id: apollo-client
+      name: Apollo
+buildtools:
+  color: "#9D7CE2"
+  projects:
+    - symbol: Wp
+      id: webpack
+    - symbol: Gu
+      id: gulp
+    - symbol: Bb
+      id: babel
+    - symbol: Pc
+      id: parcel
+    - symbol: Ru
+      id: rollup
+backend:
+  color: "#E486C4"
+  projects:
+    - symbol: Ex
+      id: express
+    - symbol: Me
+      id: meteor
+    - symbol: Nx
+      id: nextjs
+    - symbol: G
+      id: gatsby
+    - symbol: Ko
+      id: koa
+    - symbol: Sa
+      id: sails
+    - symbol: Lb
+      id: loopback
+testing:
+  color: "#E49B57"
+  projects:
+    - symbol: Sb
+      id: storybook
+    - symbol: Je
+      id: jest
+    - symbol: Mo
+      id: mocha
+    - symbol: Av
+      id: ava
+    - symbol: Ez
+      id: enzyme
+    - symbol: Ja
+      id: jasmine
+    - symbol: Ka
+      id: karma
+    - symbol: Cy
+      id: cypress
+mobile:
+  color: "#2798C8"
+  projects:
+    - symbol: Rn
+      id: reactnative
+    - symbol: E
+      id: electron
+    - symbol: Io
+      id: ionic
+    - symbol: Ns
+      id: nativescript
+    - symbol: We
+      id: weex
+    #- symbol: Cv
+    #  id: cordova
+utilities:
+  color: "#FE6A6A"
+  projects:
+    - symbol: D
+      id: d3
+    - symbol: Jq
+      id: jquery
+    - symbol: Mt
+      id: moment
+    - symbol: Lo
+      id: lodash
+    - symbol: Un
+      id: underscore
+    - symbol: Ra
+      id: ramda

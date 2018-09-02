@@ -1,17 +1,17 @@
-import React from 'react';
-import DocumentTitle from 'react-document-title';
-import Helmet from 'react-helmet';
+import React from 'react'
+import DocumentTitle from 'react-document-title'
+import Helmet from 'react-helmet'
 
-import HomeLayout from '../components/common/HomeLayout';
-import PageLayout from '../components/common/PageLayout';
-import classNames from 'classnames';
+import HomeLayout from '../components/common/HomeLayout'
+import PageLayout from '../components/common/PageLayout'
+import classNames from 'classnames'
 
 export default class Layout extends React.Component {
   render () {
-    const title = DocumentTitle.peek();
-    const description = 'A short survey about current popular JavaScript technologies.';
-    const url = 'http://stateofjs.com';
-    const image = 'http://stateofjs.com/images/stateofjs2018-logo-light.png';
+    const title = DocumentTitle.peek()
+    const description = 'A short survey about current popular JavaScript technologies.'
+    const url = 'http://stateofjs.com'
+    const image = 'http://stateofjs.com/images/stateofjs2018-logo-light.png'
 
     const meta = [
       { charset: 'utf-8' },
@@ -30,8 +30,8 @@ export default class Layout extends React.Component {
       { name: 'twitter:title', content: title },
       { name: 'twitter:description', content: description },
 
-    //   <script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript" />,
-    ];
+      //   <script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript" />,
+    ]
 
     return (
       <div
@@ -42,7 +42,10 @@ export default class Layout extends React.Component {
         <Helmet meta={meta}>
           <script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript" />
         </Helmet>
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,500" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,500"
+          rel="stylesheet"
+        />
         {this.props.location.pathname === '/' ? (
           <HomeLayout {...this.props}>{this.props.children()}</HomeLayout>
         ) : (
@@ -64,6 +67,20 @@ export default class Layout extends React.Component {
         </div>
         */}
       </div>
-    );
+    )
   }
 }
+
+export const query = graphql`
+  query AllProjects {
+    allProject {
+      edges {
+        node {
+          id
+          stars
+          name
+        }
+      }
+    }
+  }
+`
