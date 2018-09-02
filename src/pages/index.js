@@ -7,6 +7,7 @@ import DocumentTitle from 'react-document-title';
 import '../stylesheets/screen.scss';
 import Share from '../components/common/Share.js';
 import PreviousYears from '../components/common/PreviousYears.js';
+import TakeSurvey from '../components/common/TakeSurvey.js';
 
 import TextBlock from '../components/blocks/TextBlock.js';
 // import Stats from '../components/common/Stats.js'
@@ -54,11 +55,7 @@ export default class Index extends React.Component {
 
           <div className="intro section-narrow section-border">
             <TextBlock text={homeContents} />
-            <div className="take-survey">
-              <Link className="button large-button" to="/2017/introduction/">
-                Take Survey
-              </Link>
-            </div>
+            <TakeSurvey/>
           </div>
           {/*<Stats />*/}
 

@@ -130,7 +130,7 @@ $intropadding: $spacing;
 .intro{
   position: relative;
   padding: $intropadding $intropadding*2 $intropadding*3 $intropadding*2;
-  margin-bottom: $spacing*2.5;
+  margin-bottom: $spacing*7;
   background: $bg-color;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
 
@@ -169,7 +169,7 @@ $intropadding: $spacing;
   }
   .view-results, .take-survey, .leave-email{
     position: absolute;
-    bottom: -45px;
+    bottom: -85px;
     // left: 50%;
     // transform: translateX(-50%);
     display: flex;
