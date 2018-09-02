@@ -76,9 +76,7 @@ export const query = graphql`
     allProject {
       edges {
         node {
-          id
-          stars
-          name
+          ...PeriodicTableFragment
         }
       }
     }

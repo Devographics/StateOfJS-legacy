@@ -30,3 +30,12 @@ PeriodicTableContainer.propTypes = {
 }
 
 export default PeriodicTableContainer
+
+// used in layouts/index.js
+export const periodicTableFragment = graphql`
+  fragment PeriodicTableFragment on Project {
+    id
+    stars
+    name
+  }
+`;
