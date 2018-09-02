@@ -68,12 +68,13 @@ export default class Index extends React.Component {
 
           {/* <Comments /> */}
 
-          <About />
 
-          <div className="block block--newsletter--home">
+          <div className="section block block--newsletter--home">
             <TextBlock title="Stay Tuned" text={newsletterContents} />
             <Newsletter />
           </div>
+
+          <About />
 
           <div className="footer home-footer">
             <TextBlock>

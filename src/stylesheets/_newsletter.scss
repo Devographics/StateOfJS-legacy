@@ -63,7 +63,8 @@
   @include border;
   padding: $spacing*1.5;
   @include large{
-    margin: 0 250px $spacing*3 250px;
+    margin-left: 250px;
+    margin-right: 250px;
   }
   .newsletter{
     max-width: none;

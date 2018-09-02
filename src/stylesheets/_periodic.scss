@@ -5,6 +5,7 @@
   width: 100%;
   padding-bottom: 10px; // hide any extra borders, etc. at the bottom
   height: 100vh;
+  overflow: hidden;
   // opacity: 0.4;
 }
 .periodic-table {
@@ -95,6 +96,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(180deg, rgba(32, 34, 34, 0) 0%, rgb(29, 31, 31) 80%);
+  background: linear-gradient(180deg, rgba(29, 31, 31, 0) 0%, rgb(33, 36, 36) 80%);
   pointer-events: none;
 }

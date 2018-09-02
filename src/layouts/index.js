@@ -46,11 +46,11 @@ export default class Layout extends React.Component {
                         type="text/javascript"
                     />
                 </Helmet>
-                <link
+                {/* <link
                     href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i|Roboto+Slab:300,400,700"
                     rel="stylesheet"
-                />
-
+                /> */}
+                <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,500" rel="stylesheet"></link>
                 {this.props.location.pathname === '/' ? (
                     <HomeLayout {...this.props}>{this.props.children()}</HomeLayout>
                 ) : (

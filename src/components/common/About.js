@@ -3,7 +3,7 @@ import authors from '../../data/authors.yaml'
 import ReactMarkdown from 'react-markdown'
 
 const About = () =>
-    <div className="about">
+    <div className="section about">
         <h2 className="about__heading">StateOfJS is Made by:</h2>
         <div className="about__authors">
             {authors.map(({ name, bio, url }, i) => 

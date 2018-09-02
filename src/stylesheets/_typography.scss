@@ -11,8 +11,8 @@ $larger-font: 1.3rem;
 $largest-font: 1.5rem;
 
 $light: 100;
-$medium: normal;
-$bold: 600;
+$medium: 300;
+$bold: 500;
 
 @mixin font-light{
   font-weight: $light;
@@ -27,18 +27,12 @@ $bold: 600;
 }
 
 @mixin primary-font{
-  font-family: 'Space Grotesk', 'Roboto Slab', sans-serif;
-  @include small{
-    font-weight: 400;
-  }
-  @include medium-large{
-    font-weight: 300;
-  }
+  font-family: 'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif;
+  font-weight: 300;
 }
 @mixin secondary-font{
-  font-family: 'Space Grotesk', monospace;
-  font-weight: 400;
-  // font-style: italic;
+  font-family: 'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif;
+  font-weight: 500;
 }
 
 pre, code{
@@ -46,5 +40,5 @@ pre, code{
 }
 
 strong{
-  font-weight: 700;
+  font-weight: 500;
 }
