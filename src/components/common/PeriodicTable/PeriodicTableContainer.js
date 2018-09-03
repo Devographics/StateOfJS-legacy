@@ -21,7 +21,7 @@ const PeriodicTableContainer = ({ data }) => {
         )
     )
     // Let's duplicate N times data to fill the screen
-    const repeatedElements = repeatArray(elements, 4)
+    const repeatedElements = repeatArray(elements, 3)
     return <PeriodicTable elements={repeatedElements} />
 }
 

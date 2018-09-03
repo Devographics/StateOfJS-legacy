@@ -11,6 +11,13 @@ flavors:
       id: reason
     - symbol: Ps
       id: purescript
+    - symbol: Bb
+      id: babel
+    - symbol: Cs
+      id: coffeescript
+    - symbol: Sc
+      id: scalajs
+
 frontend:
   color: "#72D7D1"
   projects:
@@ -40,6 +47,10 @@ datalayer:
     - symbol: Ap
       id: apollo-client
       name: Apollo
+    - symbol: Mx
+      id: mobx
+    - symbol: Fx
+      id: flux
 buildtools:
   color: "#9D7CE2"
   projects:
@@ -47,8 +58,6 @@ buildtools:
       id: webpack
     - symbol: Gu
       id: gulp
-    - symbol: Bb
-      id: babel
     - symbol: Pc
       id: parcel
     - symbol: Ru
@@ -70,8 +79,10 @@ backend:
       id: sails
     - symbol: Lb
       id: loopback
+    - symbol: Sk
+      id: socketio
 testing:
-  color: "#E49B57"
+  color: "#488352"
   projects:
     - symbol: Sb
       id: storybook
@@ -89,6 +100,14 @@ testing:
       id: karma
     - symbol: Cy
       id: cypress
+    - symbol: Pp
+      id: puppeteer
+    - symbol: Js
+      id: json-server
+    - symbol: Nw
+      id: nwjs
+    - symbol: Nm
+      id: nightmare
 mobile:
   color: "#2798C8"
   projects:
@@ -119,3 +138,53 @@ utilities:
       id: underscore
     - symbol: Ra
       id: ramda
+    - symbol: Ax
+      id: axios
+    - symbol: Th
+      id: threejs
+    - symbol: Ch
+      id: chartjs
+    - symbol: Ec
+      id: echarts
+    - symbol: Pt
+      id: prettier
+    - symbol: Im
+      id: immutable
+    - symbol: An
+      id: animejs
+    - symbol: Md
+      id: modernizr
+      
+ui:
+  color: "#E49B57"
+  projects:
+    - symbol: Bs
+      id: bootstrap
+    - symbol: Su
+      id: semanticui
+    - symbol: Mu
+      id: material-ui
+    - symbol: An
+      id: ant-design
+    - symbol: Et
+      id: element
+    - symbol: Fd
+      id: foundation
+
+ssg:
+  color: "#25A586"
+  projects:
+    - symbol: G
+      id: gatsby
+    - symbol: Hx
+      id: hexo
+    - symbol: Vp
+      id: vuepress
+    - symbol: Ms
+      id: metalsmith
+    - symbol: Rs
+      id: react-static
+    - symbol: Hp
+      id: harp
+    - symbol: Ph
+      id: phenomic
