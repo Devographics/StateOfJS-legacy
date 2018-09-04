@@ -123,7 +123,7 @@
                 },
                 {
                   "ref": "reason_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "reason_love_established",
@@ -295,7 +295,7 @@
                 },
                 {
                   "ref": "clojurescript_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "clojurescript_love_established",
@@ -467,7 +467,7 @@
                 },
                 {
                   "ref": "elm_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "elm_love_established",
@@ -639,7 +639,7 @@
                 },
                 {
                   "ref": "flow_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "flow_love_established",
@@ -811,7 +811,7 @@
                 },
                 {
                   "ref": "typescript_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "typescript_love_established",
@@ -983,7 +983,7 @@
                 },
                 {
                   "ref": "es6_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "es6_love_established",
@@ -1155,7 +1155,7 @@
                 },
                 {
                   "ref": "purescript_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "purescript_love_established",
@@ -1356,7 +1356,7 @@
                 },
                 {
                   "ref": "react_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "react_love_established",
@@ -1528,7 +1528,7 @@
                 },
                 {
                   "ref": "angular_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "angular_love_established",
@@ -1700,7 +1700,7 @@
                 },
                 {
                   "ref": "ember_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "ember_love_established",
@@ -1872,7 +1872,7 @@
                 },
                 {
                   "ref": "polymer_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "polymer_love_established",
@@ -2044,7 +2044,7 @@
                 },
                 {
                   "ref": "vue_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "vue_love_established",
@@ -2216,7 +2216,7 @@
                 },
                 {
                   "ref": "preact_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "preact_love_established",
@@ -2417,7 +2417,7 @@
                 },
                 {
                   "ref": "redux_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "redux_love_established",
@@ -2589,7 +2589,7 @@
                 },
                 {
                   "ref": "graphql_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "graphql_love_established",
@@ -2761,7 +2761,7 @@
                 },
                 {
                   "ref": "relay_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "relay_love_established",
@@ -2933,7 +2933,7 @@
                 },
                 {
                   "ref": "apollo_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "apollo_love_established",
@@ -3105,7 +3105,7 @@
                 },
                 {
                   "ref": "mobx_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "mobx_love_established",
@@ -3306,7 +3306,7 @@
                 },
                 {
                   "ref": "meteor_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "meteor_love_established",
@@ -3478,7 +3478,7 @@
                 },
                 {
                   "ref": "express_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "express_love_established",
@@ -3650,7 +3650,7 @@
                 },
                 {
                   "ref": "next.js_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "next.js_love_established",
@@ -3822,7 +3822,7 @@
                 },
                 {
                   "ref": "koa_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "koa_love_established",
@@ -3994,7 +3994,7 @@
                 },
                 {
                   "ref": "sails_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "sails_love_established",
@@ -4166,7 +4166,7 @@
                 },
                 {
                   "ref": "hapi_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "hapi_love_established",
@@ -4338,7 +4338,7 @@
                 },
                 {
                   "ref": "loopback_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "loopback_love_established",
@@ -4510,7 +4510,7 @@
                 },
                 {
                   "ref": "feathers_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "feathers_love_established",
@@ -4711,7 +4711,7 @@
                 },
                 {
                   "ref": "storybook_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "storybook_love_established",
@@ -4883,7 +4883,7 @@
                 },
                 {
                   "ref": "mocha_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "mocha_love_established",
@@ -5055,7 +5055,7 @@
                 },
                 {
                   "ref": "jasmine_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "jasmine_love_established",
@@ -5227,7 +5227,7 @@
                 },
                 {
                   "ref": "jest_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "jest_love_established",
@@ -5399,7 +5399,7 @@
                 },
                 {
                   "ref": "enzyme_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "enzyme_love_established",
@@ -5571,7 +5571,7 @@
                 },
                 {
                   "ref": "ava_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "ava_love_established",
@@ -5743,7 +5743,7 @@
                 },
                 {
                   "ref": "karma_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "karma_love_established",
@@ -5915,7 +5915,7 @@
                 },
                 {
                   "ref": "cypress_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "cypress_love_established",
@@ -6087,7 +6087,7 @@
                 },
                 {
                   "ref": "puppeteer_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "puppeteer_love_established",
@@ -6288,7 +6288,7 @@
                 },
                 {
                   "ref": "electron_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "electron_love_established",
@@ -6460,7 +6460,7 @@
                 },
                 {
                   "ref": "reactnative_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "reactnative_love_established",
@@ -6632,7 +6632,7 @@
                 },
                 {
                   "ref": "phonegap/cordova_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "phonegap/cordova_love_established",
@@ -6804,7 +6804,7 @@
                 },
                 {
                   "ref": "nativescript_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "nativescript_love_established",
@@ -6976,7 +6976,7 @@
                 },
                 {
                   "ref": "ionic_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "ionic_love_established",
@@ -7148,7 +7148,7 @@
                 },
                 {
                   "ref": "nativeapps_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "nativeapps_love_established",
@@ -7320,7 +7320,7 @@
                 },
                 {
                   "ref": "weex_love_performance",
-                  "label": "⚡ Fast and lightweight"
+                  "label": "⚡ Fast performance"
                 },
                 {
                   "ref": "weex_love_established",

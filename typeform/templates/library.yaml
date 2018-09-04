@@ -38,7 +38,7 @@
     - ref: ID_love_ecosystem
       label: 🎁 Rich package ecosystem
     - ref: ID_love_performance
-      label: ⚡ Fast and lightweight
+      label: ⚡ Fast performance
     - ref: ID_love_established
       label: 🏛️ Well-established option
     - ref: ID_love_learningcurve
