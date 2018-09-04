@@ -35,8 +35,8 @@ frontend:
       id: hyperapp
     - symbol: In
       id: inferno
-    - Symbol: Dv
-      id: dva
+    # - Symbol: Dv
+    #   id: dva
 datalayer:
   color: "#7FD258"
   projects:

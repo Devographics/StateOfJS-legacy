@@ -9,7 +9,7 @@ import classNames from 'classnames'
 export default class Layout extends React.Component {
   render () {
     const title = DocumentTitle.peek()
-    const description = 'A short survey about current popular JavaScript technologies.'
+    const description = 'The annual survey about current popular JavaScript technologies.'
     const url = 'http://stateofjs.com'
     const image = 'http://stateofjs.com/images/stateofjs2018-logo-light.png'
 

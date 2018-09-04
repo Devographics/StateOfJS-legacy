@@ -1,10 +1,10 @@
 {
   "title": "State of JavaScript 2018A",
   "theme": {
-    "href": "https://api.typeform.com/themes/EenNBm"
+    "href": "https://api.typeform.com/themes/jHo1tn"
   },
   "workspace": {
-    "href": "https://api.typeform.com/workspaces/QhHBZg"
+    "href": "https://api.typeform.com/workspaces/KHZnSk"
   },
   "settings": {
     "is_public": false,
@@ -15,21 +15,22 @@
     "show_typeform_branding": true,
     "meta": {
       "allow_indexing": true,
+      "description": "The annual survey about current popular JavaScript technologies",
       "image": {
-        "href": "https://images.typeform.com/images/BiEynTGZYf8N"
+        "href": "https://images.typeform.com/images/z49hZMjx6tBr"
       }
     }
   },
   "welcome_screens": [
     {
-      "title": "Thanks for taking this survey! Together, maybe we'll be able to figure out this JavaScript thing once and for all! (yeah right…)\n\nAlso, I know this survey seems long, but it's mostly the same questions repeated a bunch of times for different frameworks and libraries. Most people only take around *10 minutes* to fill it in.",
+      "title": "Thanks for taking this survey! Together, maybe we'll be able to figure out this JavaScript thing once and for all!\n\nAlso, we know this survey seems long, but it's mostly the same questions repeated for different frameworks and libraries. Most people only take around *10 minutes* to fill it in.",
       "properties": {
         "show_button": true,
         "button_text": "Let's Get This Started"
       },
       "attachment": {
         "type": "image",
-        "href": "https://images.typeform.com/images/titZu3eWne3p"
+        "href": "https://images.typeform.com/images/zV6rWABByCzN"
       }
     }
   ],
@@ -51,7 +52,7 @@
   ],
   "fields": [
     {
-      "title": "*How this survey works\n\n*For each technology, framework, or library mentioned, please pick one of the following options:\n\n- 🤷 You've never heard about it\n- ✔️ You've heard about it and you *want* to learn it\n- 🚫 You've heard about it, but *don't want* to learn it (or are *unsure*)\n- 👍 You've used it and *want* to use it again\n- 👎 You've used it but *don't* *want* to use it again\n\nNote: questions with a \"\\*\" are required.",
+      "title": "*How this survey works\n\n*For each technology, framework, or library mentioned, please pick one of the following options:\n\n- 🤷 You've never heard about it\n- ✅ You've heard about it and you *want* to learn it\n- 🚫 You've heard about it, but *don't want* to learn it (or are *unsure*)\n- 👍 You've used it and *want* to use it again\n- 👎 You've used it but *don't* *want* to use it again\n\nNote: questions with a \"\\*\" are required.",
       "properties": {
         "hide_marks": true
       },
@@ -74,23 +75,23 @@
               "choices": [
                 {
                   "ref": "reason_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "reason_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "reason_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "reason_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "reason_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -122,7 +123,7 @@
                 },
                 {
                   "ref": "reason_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "reason_love_established",
@@ -246,23 +247,23 @@
               "choices": [
                 {
                   "ref": "clojurescript_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "clojurescript_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "clojurescript_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "clojurescript_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "clojurescript_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -294,7 +295,7 @@
                 },
                 {
                   "ref": "clojurescript_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "clojurescript_love_established",
@@ -418,23 +419,23 @@
               "choices": [
                 {
                   "ref": "elm_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "elm_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "elm_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "elm_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "elm_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -466,7 +467,7 @@
                 },
                 {
                   "ref": "elm_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "elm_love_established",
@@ -590,23 +591,23 @@
               "choices": [
                 {
                   "ref": "flow_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "flow_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "flow_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "flow_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "flow_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -638,7 +639,7 @@
                 },
                 {
                   "ref": "flow_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "flow_love_established",
@@ -762,23 +763,23 @@
               "choices": [
                 {
                   "ref": "typescript_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "typescript_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "typescript_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "typescript_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "typescript_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -810,7 +811,7 @@
                 },
                 {
                   "ref": "typescript_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "typescript_love_established",
@@ -934,23 +935,23 @@
               "choices": [
                 {
                   "ref": "es6_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "es6_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "es6_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "es6_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "es6_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -982,7 +983,7 @@
                 },
                 {
                   "ref": "es6_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "es6_love_established",
@@ -1106,23 +1107,23 @@
               "choices": [
                 {
                   "ref": "purescript_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "purescript_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "purescript_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "purescript_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "purescript_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -1154,7 +1155,7 @@
                 },
                 {
                   "ref": "purescript_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "purescript_love_established",
@@ -1307,23 +1308,23 @@
               "choices": [
                 {
                   "ref": "react_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "react_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "react_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "react_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "react_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -1355,7 +1356,7 @@
                 },
                 {
                   "ref": "react_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "react_love_established",
@@ -1479,23 +1480,23 @@
               "choices": [
                 {
                   "ref": "angular_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "angular_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "angular_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "angular_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "angular_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -1527,7 +1528,7 @@
                 },
                 {
                   "ref": "angular_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "angular_love_established",
@@ -1651,23 +1652,23 @@
               "choices": [
                 {
                   "ref": "ember_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "ember_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "ember_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "ember_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "ember_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -1699,7 +1700,7 @@
                 },
                 {
                   "ref": "ember_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "ember_love_established",
@@ -1823,23 +1824,23 @@
               "choices": [
                 {
                   "ref": "polymer_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "polymer_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "polymer_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "polymer_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "polymer_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -1871,7 +1872,7 @@
                 },
                 {
                   "ref": "polymer_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "polymer_love_established",
@@ -1995,23 +1996,23 @@
               "choices": [
                 {
                   "ref": "vue_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "vue_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "vue_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "vue_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "vue_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -2043,7 +2044,7 @@
                 },
                 {
                   "ref": "vue_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "vue_love_established",
@@ -2167,23 +2168,23 @@
               "choices": [
                 {
                   "ref": "preact_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "preact_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "preact_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "preact_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "preact_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -2215,7 +2216,7 @@
                 },
                 {
                   "ref": "preact_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "preact_love_established",
@@ -2355,7 +2356,7 @@
       "title": "Data Layer",
       "ref": "datalayer_section",
       "properties": {
-        "description": "Technologies dealing with managing data on the client (databases excluded).",
+        "description": "Technologies dealing with managing data and state on the client (databases excluded).",
         "fields": [
           {
             "title": "Redux",
@@ -2368,23 +2369,23 @@
               "choices": [
                 {
                   "ref": "redux_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "redux_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "redux_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "redux_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "redux_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -2416,7 +2417,7 @@
                 },
                 {
                   "ref": "redux_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "redux_love_established",
@@ -2540,23 +2541,23 @@
               "choices": [
                 {
                   "ref": "graphql_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "graphql_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "graphql_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "graphql_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "graphql_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -2588,7 +2589,7 @@
                 },
                 {
                   "ref": "graphql_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "graphql_love_established",
@@ -2712,23 +2713,23 @@
               "choices": [
                 {
                   "ref": "relay_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "relay_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "relay_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "relay_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "relay_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -2760,7 +2761,7 @@
                 },
                 {
                   "ref": "relay_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "relay_love_established",
@@ -2884,23 +2885,23 @@
               "choices": [
                 {
                   "ref": "apollo_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "apollo_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "apollo_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "apollo_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "apollo_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -2932,7 +2933,7 @@
                 },
                 {
                   "ref": "apollo_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "apollo_love_established",
@@ -3046,8 +3047,8 @@
             "type": "multiple_choice"
           },
           {
-            "title": "Firebase",
-            "ref": "firebase",
+            "title": "Mobx",
+            "ref": "mobx",
             "properties": {
               "randomize": false,
               "allow_multiple_selection": false,
@@ -3055,24 +3056,24 @@
               "vertical_alignment": true,
               "choices": [
                 {
-                  "ref": "firebase_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "ref": "mobx_neverheard",
+                  "label": "🤷 Never heard of it"
                 },
                 {
-                  "ref": "firebase_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "ref": "mobx_interested",
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
-                  "ref": "firebase_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "ref": "mobx_not_interested",
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
-                  "ref": "firebase_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "ref": "mobx_would_use_again",
+                  "label": "👍 Used it > Would use again"
                 },
                 {
-                  "ref": "firebase_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "ref": "mobx_would_not_use_again",
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -3082,8 +3083,8 @@
             "type": "multiple_choice"
           },
           {
-            "title": "What do you *like* 👍 about Firebase?",
-            "ref": "firebase_love",
+            "title": "What do you *like* 👍 about Mobx?",
+            "ref": "mobx_love",
             "properties": {
               "randomize": false,
               "allow_multiple_selection": true,
@@ -3091,55 +3092,55 @@
               "vertical_alignment": true,
               "choices": [
                 {
-                  "ref": "firebase_love_style",
+                  "ref": "mobx_love_style",
                   "label": "⚙️ Elegant programming style & patterns"
                 },
                 {
-                  "ref": "firebase_love_robust",
+                  "ref": "mobx_love_robust",
                   "label": "🐞 Robust, less error-prone code"
                 },
                 {
-                  "ref": "firebase_love_ecosystem",
+                  "ref": "mobx_love_ecosystem",
                   "label": "🎁 Rich package ecosystem"
                 },
                 {
-                  "ref": "firebase_love_performance",
-                  "label": "⚡ Fast performance"
+                  "ref": "mobx_love_performance",
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
-                  "ref": "firebase_love_established",
+                  "ref": "mobx_love_established",
                   "label": "🏛️ Well-established option"
                 },
                 {
-                  "ref": "firebase_love_learningcurve",
+                  "ref": "mobx_love_learningcurve",
                   "label": "👶 Easy learning curve"
                 },
                 {
-                  "ref": "firebase_love_tooling",
+                  "ref": "mobx_love_tooling",
                   "label": "🔧 Powerful developer tooling"
                 },
                 {
-                  "ref": "firebase_love_documentation",
+                  "ref": "mobx_love_documentation",
                   "label": "📖 Good documentation"
                 },
                 {
-                  "ref": "firebase_love_team",
+                  "ref": "mobx_love_team",
                   "label": "👫 Backed by a great team/company"
                 },
                 {
-                  "ref": "firebase_love_lightweight",
+                  "ref": "mobx_love_lightweight",
                   "label": "🎈 Simple & lightweight"
                 },
                 {
-                  "ref": "firebase_love_momentum",
+                  "ref": "mobx_love_momentum",
                   "label": "📈 Growing momentum/popularity"
                 },
                 {
-                  "ref": "firebase_love_fullfeatured",
+                  "ref": "mobx_love_fullfeatured",
                   "label": "🕹️ Full-featured & powerful"
                 },
                 {
-                  "ref": "firebase_love_stable",
+                  "ref": "mobx_love_stable",
                   "label": "⚖️ Stable & backwards-compatible"
                 }
               ]
@@ -3150,8 +3151,8 @@
             "type": "multiple_choice"
           },
           {
-            "title": "What do you *dislike* 👎 about Firebase?",
-            "ref": "firebase_hate",
+            "title": "What do you *dislike* 👎 about Mobx?",
+            "ref": "mobx_hate",
             "properties": {
               "randomize": false,
               "allow_multiple_selection": true,
@@ -3159,55 +3160,55 @@
               "vertical_alignment": true,
               "choices": [
                 {
-                  "ref": "firebase_hate_style",
+                  "ref": "mobx_hate_style",
                   "label": "⚙️ Clumsy programming style"
                 },
                 {
-                  "ref": "firebase_hate_robust",
+                  "ref": "mobx_hate_robust",
                   "label": "🐞 Buggy, error-prone code"
                 },
                 {
-                  "ref": "firebase_hate_ecosystem",
+                  "ref": "mobx_hate_ecosystem",
                   "label": "🎁 Small package ecosystem"
                 },
                 {
-                  "ref": "firebase_hate_performance",
+                  "ref": "mobx_hate_performance",
                   "label": "⚡ Poor performance"
                 },
                 {
-                  "ref": "firebase_hate_established",
+                  "ref": "mobx_hate_established",
                   "label": "🏛️ New untested option"
                 },
                 {
-                  "ref": "firebase_hate_learningcurve",
+                  "ref": "mobx_hate_learningcurve",
                   "label": "👶 Hard learning curve"
                 },
                 {
-                  "ref": "firebase_hate_tooling",
+                  "ref": "mobx_hate_tooling",
                   "label": "🔧 Lacking developer tooling"
                 },
                 {
-                  "ref": "firebase_hate_documentation",
+                  "ref": "mobx_hate_documentation",
                   "label": "📖 Bad documentation"
                 },
                 {
-                  "ref": "firebase_hate_team",
+                  "ref": "mobx_hate_team",
                   "label": "👫 Concerns about the team/company"
                 },
                 {
-                  "ref": "firebase_hate_lightweight",
+                  "ref": "mobx_hate_lightweight",
                   "label": "🎈 Bloated & complex"
                 },
                 {
-                  "ref": "firebase_hate_momentum",
+                  "ref": "mobx_hate_momentum",
                   "label": "📉 Diminishing momentum/popularity"
                 },
                 {
-                  "ref": "firebase_hate_fullfeatured",
+                  "ref": "mobx_hate_fullfeatured",
                   "label": "🕹️ Limited & lacking in features"
                 },
                 {
-                  "ref": "firebase_hate_stable",
+                  "ref": "mobx_hate_stable",
                   "label": "⚖️ Fast-changing & breaks often"
                 }
               ]
@@ -3257,23 +3258,23 @@
               "choices": [
                 {
                   "ref": "meteor_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "meteor_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "meteor_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "meteor_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "meteor_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -3305,7 +3306,7 @@
                 },
                 {
                   "ref": "meteor_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "meteor_love_established",
@@ -3429,23 +3430,23 @@
               "choices": [
                 {
                   "ref": "express_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "express_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "express_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "express_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "express_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -3477,7 +3478,7 @@
                 },
                 {
                   "ref": "express_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "express_love_established",
@@ -3601,23 +3602,23 @@
               "choices": [
                 {
                   "ref": "next.js_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "next.js_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "next.js_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "next.js_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "next.js_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -3649,7 +3650,7 @@
                 },
                 {
                   "ref": "next.js_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "next.js_love_established",
@@ -3773,23 +3774,23 @@
               "choices": [
                 {
                   "ref": "koa_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "koa_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "koa_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "koa_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "koa_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -3821,7 +3822,7 @@
                 },
                 {
                   "ref": "koa_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "koa_love_established",
@@ -3945,23 +3946,23 @@
               "choices": [
                 {
                   "ref": "sails_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "sails_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "sails_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "sails_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "sails_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -3993,7 +3994,7 @@
                 },
                 {
                   "ref": "sails_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "sails_love_established",
@@ -4117,23 +4118,23 @@
               "choices": [
                 {
                   "ref": "hapi_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "hapi_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "hapi_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "hapi_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "hapi_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -4165,7 +4166,7 @@
                 },
                 {
                   "ref": "hapi_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "hapi_love_established",
@@ -4289,23 +4290,23 @@
               "choices": [
                 {
                   "ref": "loopback_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "loopback_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "loopback_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "loopback_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "loopback_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -4337,7 +4338,7 @@
                 },
                 {
                   "ref": "loopback_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "loopback_love_established",
@@ -4461,23 +4462,23 @@
               "choices": [
                 {
                   "ref": "feathers_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "feathers_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "feathers_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "feathers_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "feathers_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -4509,7 +4510,7 @@
                 },
                 {
                   "ref": "feathers_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "feathers_love_established",
@@ -4662,23 +4663,23 @@
               "choices": [
                 {
                   "ref": "storybook_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "storybook_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "storybook_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "storybook_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "storybook_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -4710,7 +4711,7 @@
                 },
                 {
                   "ref": "storybook_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "storybook_love_established",
@@ -4834,23 +4835,23 @@
               "choices": [
                 {
                   "ref": "mocha_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "mocha_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "mocha_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "mocha_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "mocha_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -4882,7 +4883,7 @@
                 },
                 {
                   "ref": "mocha_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "mocha_love_established",
@@ -5006,23 +5007,23 @@
               "choices": [
                 {
                   "ref": "jasmine_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "jasmine_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "jasmine_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "jasmine_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "jasmine_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -5054,7 +5055,7 @@
                 },
                 {
                   "ref": "jasmine_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "jasmine_love_established",
@@ -5178,23 +5179,23 @@
               "choices": [
                 {
                   "ref": "jest_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "jest_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "jest_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "jest_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "jest_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -5226,7 +5227,7 @@
                 },
                 {
                   "ref": "jest_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "jest_love_established",
@@ -5350,23 +5351,23 @@
               "choices": [
                 {
                   "ref": "enzyme_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "enzyme_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "enzyme_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "enzyme_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "enzyme_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -5398,7 +5399,7 @@
                 },
                 {
                   "ref": "enzyme_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "enzyme_love_established",
@@ -5522,23 +5523,23 @@
               "choices": [
                 {
                   "ref": "ava_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "ava_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "ava_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "ava_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "ava_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -5570,7 +5571,7 @@
                 },
                 {
                   "ref": "ava_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "ava_love_established",
@@ -5694,23 +5695,23 @@
               "choices": [
                 {
                   "ref": "karma_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "karma_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "karma_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "karma_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "karma_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -5742,7 +5743,7 @@
                 },
                 {
                   "ref": "karma_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "karma_love_established",
@@ -5866,23 +5867,23 @@
               "choices": [
                 {
                   "ref": "cypress_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "cypress_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "cypress_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "cypress_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "cypress_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -5914,7 +5915,7 @@
                 },
                 {
                   "ref": "cypress_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "cypress_love_established",
@@ -6028,6 +6029,178 @@
             "type": "multiple_choice"
           },
           {
+            "title": "Puppeteer",
+            "ref": "puppeteer",
+            "properties": {
+              "randomize": false,
+              "allow_multiple_selection": false,
+              "allow_other_choice": false,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "ref": "puppeteer_neverheard",
+                  "label": "🤷 Never heard of it"
+                },
+                {
+                  "ref": "puppeteer_interested",
+                  "label": "✅ Heard of it > Would like to learn"
+                },
+                {
+                  "ref": "puppeteer_not_interested",
+                  "label": "🚫 Heard of it > Not interested"
+                },
+                {
+                  "ref": "puppeteer_would_use_again",
+                  "label": "👍 Used it > Would use again"
+                },
+                {
+                  "ref": "puppeteer_would_not_use_again",
+                  "label": "👎 Used it > Would avoid"
+                }
+              ]
+            },
+            "validations": {
+              "required": true
+            },
+            "type": "multiple_choice"
+          },
+          {
+            "title": "What do you *like* 👍 about Puppeteer?",
+            "ref": "puppeteer_love",
+            "properties": {
+              "randomize": false,
+              "allow_multiple_selection": true,
+              "allow_other_choice": true,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "ref": "puppeteer_love_style",
+                  "label": "⚙️ Elegant programming style & patterns"
+                },
+                {
+                  "ref": "puppeteer_love_robust",
+                  "label": "🐞 Robust, less error-prone code"
+                },
+                {
+                  "ref": "puppeteer_love_ecosystem",
+                  "label": "🎁 Rich package ecosystem"
+                },
+                {
+                  "ref": "puppeteer_love_performance",
+                  "label": "⚡ Fast and lightweight"
+                },
+                {
+                  "ref": "puppeteer_love_established",
+                  "label": "🏛️ Well-established option"
+                },
+                {
+                  "ref": "puppeteer_love_learningcurve",
+                  "label": "👶 Easy learning curve"
+                },
+                {
+                  "ref": "puppeteer_love_tooling",
+                  "label": "🔧 Powerful developer tooling"
+                },
+                {
+                  "ref": "puppeteer_love_documentation",
+                  "label": "📖 Good documentation"
+                },
+                {
+                  "ref": "puppeteer_love_team",
+                  "label": "👫 Backed by a great team/company"
+                },
+                {
+                  "ref": "puppeteer_love_lightweight",
+                  "label": "🎈 Simple & lightweight"
+                },
+                {
+                  "ref": "puppeteer_love_momentum",
+                  "label": "📈 Growing momentum/popularity"
+                },
+                {
+                  "ref": "puppeteer_love_fullfeatured",
+                  "label": "🕹️ Full-featured & powerful"
+                },
+                {
+                  "ref": "puppeteer_love_stable",
+                  "label": "⚖️ Stable & backwards-compatible"
+                }
+              ]
+            },
+            "validations": {
+              "required": false
+            },
+            "type": "multiple_choice"
+          },
+          {
+            "title": "What do you *dislike* 👎 about Puppeteer?",
+            "ref": "puppeteer_hate",
+            "properties": {
+              "randomize": false,
+              "allow_multiple_selection": true,
+              "allow_other_choice": true,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "ref": "puppeteer_hate_style",
+                  "label": "⚙️ Clumsy programming style"
+                },
+                {
+                  "ref": "puppeteer_hate_robust",
+                  "label": "🐞 Buggy, error-prone code"
+                },
+                {
+                  "ref": "puppeteer_hate_ecosystem",
+                  "label": "🎁 Small package ecosystem"
+                },
+                {
+                  "ref": "puppeteer_hate_performance",
+                  "label": "⚡ Poor performance"
+                },
+                {
+                  "ref": "puppeteer_hate_established",
+                  "label": "🏛️ New untested option"
+                },
+                {
+                  "ref": "puppeteer_hate_learningcurve",
+                  "label": "👶 Hard learning curve"
+                },
+                {
+                  "ref": "puppeteer_hate_tooling",
+                  "label": "🔧 Lacking developer tooling"
+                },
+                {
+                  "ref": "puppeteer_hate_documentation",
+                  "label": "📖 Bad documentation"
+                },
+                {
+                  "ref": "puppeteer_hate_team",
+                  "label": "👫 Concerns about the team/company"
+                },
+                {
+                  "ref": "puppeteer_hate_lightweight",
+                  "label": "🎈 Bloated & complex"
+                },
+                {
+                  "ref": "puppeteer_hate_momentum",
+                  "label": "📉 Diminishing momentum/popularity"
+                },
+                {
+                  "ref": "puppeteer_hate_fullfeatured",
+                  "label": "🕹️ Limited & lacking in features"
+                },
+                {
+                  "ref": "puppeteer_hate_stable",
+                  "label": "⚖️ Fast-changing & breaks often"
+                }
+              ]
+            },
+            "validations": {
+              "required": false
+            },
+            "type": "multiple_choice"
+          },
+          {
             "title": "Other Testing options",
             "ref": "testing_other",
             "validations": {
@@ -6067,23 +6240,23 @@
               "choices": [
                 {
                   "ref": "electron_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "electron_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "electron_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "electron_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "electron_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -6115,7 +6288,7 @@
                 },
                 {
                   "ref": "electron_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "electron_love_established",
@@ -6239,23 +6412,23 @@
               "choices": [
                 {
                   "ref": "reactnative_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "reactnative_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "reactnative_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "reactnative_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "reactnative_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -6287,7 +6460,7 @@
                 },
                 {
                   "ref": "reactnative_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "reactnative_love_established",
@@ -6411,23 +6584,23 @@
               "choices": [
                 {
                   "ref": "phonegap/cordova_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "phonegap/cordova_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "phonegap/cordova_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "phonegap/cordova_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "phonegap/cordova_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -6459,7 +6632,7 @@
                 },
                 {
                   "ref": "phonegap/cordova_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "phonegap/cordova_love_established",
@@ -6583,23 +6756,23 @@
               "choices": [
                 {
                   "ref": "nativescript_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "nativescript_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "nativescript_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "nativescript_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "nativescript_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -6631,7 +6804,7 @@
                 },
                 {
                   "ref": "nativescript_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "nativescript_love_established",
@@ -6755,23 +6928,23 @@
               "choices": [
                 {
                   "ref": "ionic_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "ionic_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "ionic_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "ionic_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "ionic_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -6803,7 +6976,7 @@
                 },
                 {
                   "ref": "ionic_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "ionic_love_established",
@@ -6927,23 +7100,23 @@
               "choices": [
                 {
                   "ref": "nativeapps_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "nativeapps_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "nativeapps_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "nativeapps_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "nativeapps_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -6975,7 +7148,7 @@
                 },
                 {
                   "ref": "nativeapps_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "nativeapps_love_established",
@@ -7099,23 +7272,23 @@
               "choices": [
                 {
                   "ref": "weex_neverheard",
-                  "label": "🤷 I've never heard of it"
+                  "label": "🤷 Never heard of it"
                 },
                 {
                   "ref": "weex_interested",
-                  "label": "✔️ I've HEARD of it, and WOULD like to learn it"
+                  "label": "✅ Heard of it > Would like to learn"
                 },
                 {
                   "ref": "weex_not_interested",
-                  "label": "🚫 I've HEARD of it, and am NOT interested"
+                  "label": "🚫 Heard of it > Not interested"
                 },
                 {
                   "ref": "weex_would_use_again",
-                  "label": "👍 I've USED it before, and WOULD use it again"
+                  "label": "👍 Used it > Would use again"
                 },
                 {
                   "ref": "weex_would_not_use_again",
-                  "label": "👎 I've USED it before, and would NOT use it again"
+                  "label": "👎 Used it > Would avoid"
                 }
               ]
             },
@@ -7147,7 +7320,7 @@
                 },
                 {
                   "ref": "weex_love_performance",
-                  "label": "⚡ Fast performance"
+                  "label": "⚡ Fast and lightweight"
                 },
                 {
                   "ref": "weex_love_established",
@@ -7355,7 +7528,7 @@
               "vertical_alignment": true,
               "choices": [
                 {
-                  "label": "Progressive Web Apps|pwa"
+                  "label": "Progressive Web Apps"
                 },
                 {
                   "label": "WebAssembly"
@@ -7399,12 +7572,6 @@
               "vertical_alignment": true,
               "choices": [
                 {
-                  "label": "NPM"
-                },
-                {
-                  "label": "Yarn"
-                },
-                {
                   "label": "Webpack"
                 },
                 {
@@ -7425,29 +7592,8 @@
                 {
                   "label": "Meteor"
                 }
-              ]
-            },
-            "type": "multiple_choice"
-          },
-          {
-            "title": "Package Managers",
-            "ref": "packagemanagers",
-            "properties": {
-              "randomize": true,
-              "allow_multiple_selection": true,
-              "allow_other_choice": true,
-              "vertical_alignment": true,
-              "choices": [
-                {
-                  "label": "NPM"
-                },
-                {
-                  "label": "Yarn"
-                },
-                {
-                  "label": "Bower"
-                }
-              ]
+              ],
+              "description": "Which build tool(s) are you currently using?"
             },
             "type": "multiple_choice"
           },
@@ -7477,14 +7623,9 @@
                 },
                 {
                   "label": "Date-fns"
-                },
-                {
-                  "label": "Sugar"
-                },
-                {
-                  "label": "Lazy"
                 }
-              ]
+              ],
+              "description": "Which utility libraries do you regularly use?"
             },
             "type": "multiple_choice"
           },
@@ -7515,7 +7656,8 @@
                 {
                   "label": "Webstorm"
                 }
-              ]
+              ],
+              "description": "Which text editor(s) do you regularly use?"
             },
             "type": "multiple_choice"
           }
@@ -7686,7 +7828,7 @@
                   "label": "20+ years"
                 }
               ],
-              "description": "How long you've been working in the code mines"
+              "description": "How long you've been working in the code mines."
             },
             "type": "multiple_choice"
           },
@@ -7759,47 +7901,6 @@
                 }
               ],
               "description": "In USD"
-            },
-            "type": "multiple_choice"
-          },
-          {
-            "title": "Tabs or Spaces?",
-            "ref": "tabsorspaces?",
-            "properties": {
-              "randomize": true,
-              "allow_multiple_selection": false,
-              "allow_other_choice": true,
-              "vertical_alignment": true,
-              "choices": [
-                {
-                  "label": "Tabs for life!"
-                },
-                {
-                  "label": "Spaces rule!"
-                }
-              ]
-            },
-            "type": "multiple_choice"
-          },
-          {
-            "title": "Semicolons: Yes or no?",
-            "ref": "semicolons:yesorno?",
-            "properties": {
-              "randomize": true,
-              "allow_multiple_selection": false,
-              "allow_other_choice": true,
-              "vertical_alignment": true,
-              "choices": [
-                {
-                  "label": "Yes, always"
-                },
-                {
-                  "label": "Not if I can avoid it"
-                },
-                {
-                  "label": "It depends on the project"
-                }
-              ]
             },
             "type": "multiple_choice"
           },
@@ -9418,7 +9519,7 @@
           "details": {
             "to": {
               "type": "field",
-              "value": "firebase"
+              "value": "mobx"
             }
           },
           "condition": {
@@ -9437,7 +9538,7 @@
           "details": {
             "to": {
               "type": "field",
-              "value": "firebase"
+              "value": "mobx"
             }
           },
           "condition": {
@@ -9449,14 +9550,14 @@
     },
     {
       "type": "field",
-      "ref": "firebase",
+      "ref": "mobx",
       "actions": [
         {
           "action": "jump",
           "details": {
             "to": {
               "type": "field",
-              "value": "firebase_love"
+              "value": "mobx_love"
             }
           },
           "condition": {
@@ -9467,11 +9568,11 @@
                 "vars": [
                   {
                     "type": "field",
-                    "value": "firebase"
+                    "value": "mobx"
                   },
                   {
                     "type": "choice",
-                    "value": "firebase_would_use_again"
+                    "value": "mobx_would_use_again"
                   }
                 ]
               }
@@ -9483,7 +9584,7 @@
           "details": {
             "to": {
               "type": "field",
-              "value": "firebase_hate"
+              "value": "mobx_hate"
             }
           },
           "condition": {
@@ -9494,11 +9595,11 @@
                 "vars": [
                   {
                     "type": "field",
-                    "value": "firebase"
+                    "value": "mobx"
                   },
                   {
                     "type": "choice",
-                    "value": "firebase_would_not_use_again"
+                    "value": "mobx_would_not_use_again"
                   }
                 ]
               }
@@ -9522,7 +9623,7 @@
     },
     {
       "type": "field",
-      "ref": "firebase_love",
+      "ref": "mobx_love",
       "actions": [
         {
           "action": "jump",
@@ -10982,7 +11083,7 @@
           "details": {
             "to": {
               "type": "field",
-              "value": "testing_other"
+              "value": "puppeteer"
             }
           },
           "condition": {
@@ -10995,6 +11096,98 @@
     {
       "type": "field",
       "ref": "cypress_love",
+      "actions": [
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "puppeteer"
+            }
+          },
+          "condition": {
+            "op": "always",
+            "vars": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "field",
+      "ref": "puppeteer",
+      "actions": [
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "puppeteer_love"
+            }
+          },
+          "condition": {
+            "op": "or",
+            "vars": [
+              {
+                "op": "is",
+                "vars": [
+                  {
+                    "type": "field",
+                    "value": "puppeteer"
+                  },
+                  {
+                    "type": "choice",
+                    "value": "puppeteer_would_use_again"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "puppeteer_hate"
+            }
+          },
+          "condition": {
+            "op": "or",
+            "vars": [
+              {
+                "op": "is",
+                "vars": [
+                  {
+                    "type": "field",
+                    "value": "puppeteer"
+                  },
+                  {
+                    "type": "choice",
+                    "value": "puppeteer_would_not_use_again"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "testing_other"
+            }
+          },
+          "condition": {
+            "op": "always",
+            "vars": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "field",
+      "ref": "puppeteer_love",
       "actions": [
         {
           "action": "jump",

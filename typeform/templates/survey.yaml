@@ -1,9 +1,9 @@
 ---
 title: State of JavaScript 2018A
 theme:
-  href: https://api.typeform.com/themes/EenNBm
+  href: https://api.typeform.com/themes/jHo1tn
 workspace:
-  href: https://api.typeform.com/workspaces/QhHBZg
+  href: https://api.typeform.com/workspaces/KHZnSk
 settings:
   is_public: false
   is_trial: true
@@ -13,19 +13,20 @@ settings:
   show_typeform_branding: true
   meta:
     allow_indexing: true
+    description: The annual survey about current popular JavaScript technologies
     image:
-      href: https://images.typeform.com/images/BiEynTGZYf8N
+      href: https://images.typeform.com/images/z49hZMjx6tBr
 welcome_screens:
 - title: |-
-    Thanks for taking this survey! Together, maybe we'll be able to figure out this JavaScript thing once and for all! (yeah right…)
+    Thanks for taking this survey! Together, maybe we'll be able to figure out this JavaScript thing once and for all!
 
-    Also, I know this survey seems long, but it's mostly the same questions repeated a bunch of times for different frameworks and libraries. Most people only take around *10 minutes* to fill it in.
+    Also, we know this survey seems long, but it's mostly the same questions repeated for different frameworks and libraries. Most people only take around *10 minutes* to fill it in.
   properties:
     show_button: true
     button_text: Let's Get This Started
   attachment:
     type: image
-    href: https://images.typeform.com/images/titZu3eWne3p
+    href: https://images.typeform.com/images/zV6rWABByCzN
 thankyou_screens:
 - title: |-
     Thanks for completing this typeform
@@ -46,7 +47,7 @@ fields:
     *For each technology, framework, or library mentioned, please pick one of the following options:
 
     - 🤷 You've never heard about it
-    - ✔️ You've heard about it and you *want* to learn it
+    - ✅ You've heard about it and you *want* to learn it
     - 🚫 You've heard about it, but *don't want* to learn it (or are *unsure*)
     - 👍 You've used it and *want* to use it again
     - 👎 You've used it but *don't* *want* to use it again

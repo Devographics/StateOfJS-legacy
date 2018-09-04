@@ -11,16 +11,15 @@
     vertical_alignment: true
     choices:
     - ref: ID_neverheard
-      label: 🤷 I've never heard of it
+      label: 🤷 Never heard of it
     - ref: ID_interested
-      label: ✔️ I've HEARD of it, and WOULD like to learn it
+      label: ✅ Heard of it > Would like to learn
     - ref: ID_not_interested
-      label: 🚫 I've HEARD of it, and am NOT interested
+      label: 🚫 Heard of it > Not interested
     - ref: ID_would_use_again
-      label: 👍 I've USED it before, and WOULD use it again
+      label: 👍 Used it > Would use again
     - ref: ID_would_not_use_again
-      # label: 👎 I've USED it before, and would NOT use it again
-      label: 🤮 I've USED it before, and would NOT use it again
+      label: 👎 Used it > Would avoid
   validations:
     required: true
   type: multiple_choice
@@ -39,7 +38,7 @@
     - ref: ID_love_ecosystem
       label: 🎁 Rich package ecosystem
     - ref: ID_love_performance
-      label: ⚡ Fast performance
+      label: ⚡ Fast and lightweight
     - ref: ID_love_established
       label: 🏛️ Well-established option
     - ref: ID_love_learningcurve

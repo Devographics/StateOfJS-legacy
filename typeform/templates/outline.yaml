@@ -29,13 +29,14 @@
     - Other|frontend_other
     - Rating|frontend_rating
 - title: Data Layer
-  description: Technologies dealing with managing data on the client (databases excluded).
+  description: Technologies dealing with managing data and state on the client (databases excluded).
   questions:
     - Redux
     - GraphQL
     - Relay
     - Apollo
-    - Firebase
+    - Mobx
+    # - Firebase
     # - VueX
     - Other|datalayer_other
     - Rating|datalayer_rating
@@ -129,7 +130,7 @@
       template: multiple
       description: Which browser APIs have you used before?
       options:
-        - Progressive Web Apps|pwa
+        - Progressive Web Apps
         - WebAssembly
         - Service Workers
         - WebRTC
@@ -249,19 +250,19 @@
         - $50k-$100k
         - $100k-$200k
         - $200k+
-    - title: Tabs or Spaces?
-      template: multiple
-      allowmultiple: false
-      options: 
-        - Tabs for life!
-        - Spaces rule!
-    - title: "Semicolons: Yes or no?"
-      template: multiple
-      allowmultiple: false
-      options:
-        - Yes, always
-        - Not if I can avoid it
-        - It depends on the project
+    # - title: Tabs or Spaces?
+    #   template: multiple
+    #   allowmultiple: false
+    #   options: 
+    #     - Tabs for life!
+    #     - Spaces rule!
+    # - title: "Semicolons: Yes or no?"
+    #   template: multiple
+    #   allowmultiple: false
+    #   options:
+    #     - Yes, always
+    #     - Not if I can avoid it
+    #     - It depends on the project
     - title: How did you find out about this survey?
       template: text
     - title: Your Gender

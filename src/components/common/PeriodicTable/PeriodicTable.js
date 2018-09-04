@@ -7,7 +7,7 @@ const PeriodicTable = ({ elements }) => (
   <div className="periodic-table-wrapper">
     <div className="periodic-table">
       {elements.map((element, i) => (
-        <Element {...element} key={i} />
+        element.name && <Element {...element} key={i} />
             ))}
       <div className="periodic-gradient" />
     </div>

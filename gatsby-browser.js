@@ -21,17 +21,11 @@ const ascii = `
        +-+-----++                              +----+                        ||            
          +-----+            /\\/\\    -----+                +---+    /\\/\\      ++            
                            / /  /        |   +----+   |   |   |   \\  \\ \\                   
-                           \\/\\ /    +----+   |    |   |       |    \\ /\\/                   
-                              /     |        |    |   |       |     \\                      
-                             /      |        |    |   |       |      \\                     
-                                    +-----   +----+   |       |                            
+                           \\/\\ /    +----+   |    |   |   +---+    \\ /\\/                   
+                              /     |        |    |   |   |   |     \\                      
+                             /      |        |    |   |   |   |      \\                     
+                                    +-----   +----+   |   +---+                            
 
-
-
-
-Will you be wise enough to escape the JavaScript Jungle? Take the challenge to find out!
-
-http://bit.ly/2yVkZNc
 
 `
 exports.onClientEntry = () => {

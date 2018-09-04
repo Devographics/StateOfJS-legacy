@@ -16,13 +16,13 @@
     "meta": {
       "allow_indexing": true,
       "image": {
-        "href": "https://images.typeform.com/images/BiEynTGZYf8N"
+        "href": "https://images.typeform.com/images/zV6rWABByCzN"
       }
     }
   },
   "welcome_screens": [
     {
-      "title": "Thanks for taking this survey! Together, maybe we'll be able to figure out this JavaScript thing once and for all! (yeah right…)\n\nAlso, I know this survey seems long, but it's mostly the same questions repeated a bunch of times for different frameworks and libraries. Most people only take around *10 minutes* to fill it in.",
+      "title": "Thanks for taking this survey! Together, maybe we'll be able to figure out this JavaScript thing once and for all!\n\nAlso, we know this survey seems long, but it's a lot of the same questions repeated for different libraries; and all questions are optional. Most people only take around *10 minutes* to fill it in.",
       "properties": {
         "show_button": true,
         "button_text": "Let's Get This Started"
