@@ -46,7 +46,7 @@ fields:
 
     *For each technology, framework, or library mentioned, please pick one of the following options:
 
-    - 🤷 You've never heard about it
+    - 🤷 You've never heard about it, or are not sure what it is
     - ✅ You've heard about it and you *want* to learn it
     - 🚫 You've heard about it, but *don't want* to learn it (or are *unsure*)
     - 👍 You've used it and *want* to use it again
@@ -56,4 +56,44 @@ fields:
   properties:
     hide_marks: true
   type: statement
+
 logic: []
+
+#  note: rather than test if the value is equal to "undefined" we need to 
+#  test if it's empty. Uncomment when we find a way to do that, until then always show
+#  the country and city fields.
+
+# logic: 
+#   - type: field
+#     ref: youremail
+#     actions:
+#       - action: jump
+#         details: 
+#           to:
+#             type: field
+#             value: yourcountry
+#         condition:
+#           op: equal
+#           vars:
+#             - type: hidden
+#               value: location
+#             - type: constant
+#               value: undefined
+#       - action: jump
+#         details: 
+#           to:
+#             type: field
+#             value: othercomments
+#         condition:
+#           op: always
+#           vars: []
+
+hidden: 
+  - location
+  - device
+  - browser
+  - version
+  - os
+  - city
+  - gaid
+  - referrer

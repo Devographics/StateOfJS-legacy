@@ -52,7 +52,7 @@
   ],
   "fields": [
     {
-      "title": "*How this survey works\n\n*For each technology, framework, or library mentioned, please pick one of the following options:\n\n- 🤷 You've never heard about it\n- ✅ You've heard about it and you *want* to learn it\n- 🚫 You've heard about it, but *don't want* to learn it (or are *unsure*)\n- 👍 You've used it and *want* to use it again\n- 👎 You've used it but *don't* *want* to use it again\n\nNote: questions with a \"\\*\" are required.",
+      "title": "*How this survey works\n\n*For each technology, framework, or library mentioned, please pick one of the following options:\n\n- 🤷 You've never heard about it, or are not sure what it is\n- ✅ You've heard about it and you *want* to learn it\n- 🚫 You've heard about it, but *don't want* to learn it (or are *unsure*)\n- 👍 You've used it and *want* to use it again\n- 👎 You've used it but *don't* *want* to use it again\n\nNote: questions with a \"\\*\" are required.",
       "properties": {
         "hide_marks": true
       },
@@ -7906,7 +7906,7 @@
           },
           {
             "title": "How did you find out about this survey?",
-            "ref": "howdidyoufindoutaboutthissurvey?_text",
+            "ref": "howdidyoufindoutaboutthissurvey?",
             "properties": {},
             "validations": {
               "required": false
@@ -7951,7 +7951,7 @@
           },
           {
             "title": "Your Country",
-            "ref": "yourcountry_text",
+            "ref": "yourcountry",
             "properties": {},
             "validations": {
               "required": false
@@ -7960,7 +7960,7 @@
           },
           {
             "title": "Your City",
-            "ref": "yourcity_text",
+            "ref": "yourcity",
             "properties": {},
             "validations": {
               "required": false
@@ -11848,5 +11848,15 @@
         }
       ]
     }
+  ],
+  "hidden": [
+    "location",
+    "device",
+    "browser",
+    "version",
+    "os",
+    "city",
+    "gaid",
+    "referrer"
   ]
 }
