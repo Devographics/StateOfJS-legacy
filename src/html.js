@@ -28,7 +28,7 @@ export default class Html extends Component {
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <title>{title}</title>
-                    <link rel="shortcut icon" href="/images/favicon2.png" />
+                    <link rel="shortcut icon" href="/images/favicon.png" />
                     {css}
                     {/*head.meta.toComponent()*/}
                     {this.props.headComponents}
