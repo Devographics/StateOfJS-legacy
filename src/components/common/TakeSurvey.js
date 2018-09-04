@@ -2,54 +2,6 @@ import React from 'react';
 import bowser from 'bowser';
 import ReactGA from 'react-ga';
 
-const getOS = () => {
-  const detectedOS = [];
-  const osList = [
-    'mac',
-    'windows',
-    'windowsphone',
-    'linux',
-    'chromeos',
-    'android',
-    'ios',
-    'ipod',
-    'ipad',
-    'iphone',
-    'blackberry',
-    'firefoxos',
-    'webos',
-    'touchpad',
-    'bada',
-    'tizen',
-    'sailfish',
-  ];
-
-  osList.forEach(os => {
-    if (bowser[os]) {
-      detectedOS.push(os);
-    }
-  });
-
-  return detectedOS.join(',');
-};
-
-const getDevice = () => {
-  const detectedDevices = [];
-  const deviceList = ['mobile', 'tablet'];
-
-  deviceList.forEach(device => {
-    if (bowser[device]) {
-      detectedDevices.push(device);
-    }
-  });
-
-  if (detectedDevices.length === 0) {
-    detectedDevices.push('desktop');
-  }
-
-  return detectedDevices.join(',');
-};
-
 export default class TakeSurvey extends React.Component {
   constructor() {
     super();
@@ -64,7 +16,6 @@ export default class TakeSurvey extends React.Component {
       if (typeof geoip2 !== 'undefined') {
         geoip2.city(
           result => {
-            console.log(result.city.names.en, result.country.names.en);
             this.setState({
               location: result.country.names.en,
               city: result.city.names.en,
@@ -86,12 +37,15 @@ export default class TakeSurvey extends React.Component {
       }
     }, 200);
 
+    const browser = bowser.getParser(window.navigator.userAgent);
+    const info = browser.parse().parsedResult;
+
     // browser data
     const browserData = {
-      device: getDevice(),
-      browser: bowser.name,
-      version: bowser.version,
-      os: getOS(),
+      device: info.platform.type,
+      browser: info.browser.name,
+      version: info.browser.version,
+      os: info.os.name,
       referrer: document.referrer,
     };
 
