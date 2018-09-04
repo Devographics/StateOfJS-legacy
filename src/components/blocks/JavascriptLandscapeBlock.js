@@ -17,7 +17,7 @@ const legends = domain.map(key => ({
 
 const JavascriptLandscapeBlock = () => (
     <div className="block block--chart">
-        <h3 className="block__title">2017 Javascript Landscape</h3>
+        <h3 className="block__title">2018 Javascript Landscape</h3>
         <div className="block__description">
             <p>Which tools are used with the most satisfaction?</p>
         </div>

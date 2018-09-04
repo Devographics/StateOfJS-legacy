@@ -39,7 +39,7 @@ Leave us your email and we'll let you know when next year's survey comes out.
 export default class Index extends React.Component {
   render () {
     return (
-      <DocumentTitle title="The State Of JavaScript 2017">
+      <DocumentTitle title="The State Of JavaScript 2018">
         <div className="results-container content home">
           {/* <div className="bubbles">
             <h3 className="bubble bubble-great">

@@ -144,7 +144,7 @@ export default class ShareChart extends React.Component {
         const slug = slugify(section)
         const link = `http://stateofjs.com${getPageUrl(slug, subSection)}`
 
-        const twitterText = `#StateOfJS 2017 Results: ${name} ${link}`
+        const twitterText = `#StateOfJS 2018 Results: ${name} ${link}`
         const subject = 'State Of JavaScript Survey Results'
         const body = `Here are some interesting survey results about ${name.toLowerCase()} libraries: ${
             link
