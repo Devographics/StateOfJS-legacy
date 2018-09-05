@@ -10,7 +10,7 @@
     - Flow
     - TypeScript
     - ES6+|es6
-    - PureScript
+    # - PureScript
     # - Plain JavaScript|javascript
     - Other|flavors_other
     - Rating|flavors_rating
@@ -22,7 +22,7 @@
     - Ember
     - Polymer
     - Vue.js|vue
-    - Preact
+    # - Preact
     # - Hyperapp
     # - Riot
     # - Inferno
@@ -35,7 +35,7 @@
     - GraphQL
     - Relay
     - Apollo
-    - Mobx
+    # - Mobx
     # - Firebase
     # - VueX
     - Other|datalayer_other
@@ -60,8 +60,8 @@
     # - Gatsby.js
     - Koa
     - Sails
-    - Hapi
-    - Loopback
+    # - Hapi
+    # - Loopback
     - Feathers
     - Other|nodebackends_other
     - Rating|nodebackends_rating
@@ -75,7 +75,7 @@
     - Enzyme
     - Ava
     - Karma
-    - Cypress
+    # - Cypress
     - Puppeteer
     - Other|testing_other
     - Rating|testing_rating
@@ -100,7 +100,7 @@
     - NativeScript
     - Ionic
     - Native Apps
-    - Weex
+    # - Weex
     # - Flutter
     # - Haxe
     - Other|mobiledesktop_other

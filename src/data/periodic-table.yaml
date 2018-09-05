@@ -83,6 +83,10 @@ backend:
       id: socketio
     - symbol: Vn
       id: vulcan
+    - symbol: Ha
+      id: hapi
+    - symbol: Fe
+      id: feathers
 testing:
   color: "#488352"
   projects:

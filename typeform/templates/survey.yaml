@@ -52,7 +52,6 @@ fields:
     - 👍 You've used it and *want* to use it again
     - 👎 You've used it but *don't* *want* to use it again
 
-    Note: questions with a "\*" are required.
   properties:
     hide_marks: true
   type: statement

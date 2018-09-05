@@ -11,7 +11,7 @@
     vertical_alignment: true
     choices:
     - ref: ID_neverheard
-      label: 🤷 Never heard of it
+      label: 🤷 Never heard of it/Not sure what it is
     - ref: ID_interested
       label: ✅ Heard of it > Would like to learn
     - ref: ID_not_interested
@@ -21,7 +21,7 @@
     - ref: ID_would_not_use_again
       label: 👎 Used it > Would avoid
   validations:
-    required: true
+    required: false
   type: multiple_choice
 - title: What do you *like* 👍 about TITLE?
   ref: ID_love
