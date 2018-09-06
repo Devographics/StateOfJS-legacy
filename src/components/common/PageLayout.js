@@ -140,7 +140,7 @@ export default class PageLayout extends React.PureComponent {
                     </div>
                     <div className="content">
                         <PageTitle {...this.props} />
-                        {this.props.children}
+                         <p>Redirecting…</p>
                         <PageTitle {...this.props} mode="pagination" />
                     </div>
                 </div>
