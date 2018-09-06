@@ -15,9 +15,14 @@ const PeriodicTableContainer = ({ data }) => {
         const foundProject = findProject(project.id)
         return { ...foundProject, ...project } // the order matters, `project` values (from yaml) override `foundProject` values
     }
+    const sortByStars = (a, b) => {
+        return a.stars > b.stars ? -1 : 1
+    }
     const elements = flatten(
         categories.map(({ color, projects }) =>
-            projects.map(project => ({ ...addBestOfJavaScriptData(project), color }))
+            projects
+                .map(project => ({ ...addBestOfJavaScriptData(project), color }))
+                .sort(sortByStars)
         )
     )
     // Let's duplicate N times data to fill the screen
@@ -33,9 +38,9 @@ export default PeriodicTableContainer
 
 // used in layouts/index.js
 export const periodicTableFragment = graphql`
-  fragment PeriodicTableFragment on Project {
-    id
-    stars
-    name
-  }
-`;
+    fragment PeriodicTableFragment on Project {
+        id
+        stars
+        name
+    }
+`
