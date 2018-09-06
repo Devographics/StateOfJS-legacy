@@ -1986,6 +1986,178 @@
             "type": "multiple_choice"
           },
           {
+            "title": "Preact",
+            "ref": "preact",
+            "properties": {
+              "randomize": false,
+              "allow_multiple_selection": false,
+              "allow_other_choice": false,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "ref": "preact_neverheard",
+                  "label": "🤷 Never heard of it/Not sure what it is"
+                },
+                {
+                  "ref": "preact_interested",
+                  "label": "✅ Heard of it > Would like to learn"
+                },
+                {
+                  "ref": "preact_not_interested",
+                  "label": "🚫 Heard of it > Not interested"
+                },
+                {
+                  "ref": "preact_would_use_again",
+                  "label": "👍 Used it > Would use again"
+                },
+                {
+                  "ref": "preact_would_not_use_again",
+                  "label": "👎 Used it > Would avoid"
+                }
+              ]
+            },
+            "validations": {
+              "required": false
+            },
+            "type": "multiple_choice"
+          },
+          {
+            "title": "What do you *like* 👍 about Preact?",
+            "ref": "preact_love",
+            "properties": {
+              "randomize": false,
+              "allow_multiple_selection": true,
+              "allow_other_choice": true,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "ref": "preact_love_style",
+                  "label": "⚙️ Elegant programming style & patterns"
+                },
+                {
+                  "ref": "preact_love_robust",
+                  "label": "🐞 Robust, less error-prone code"
+                },
+                {
+                  "ref": "preact_love_ecosystem",
+                  "label": "🎁 Rich package ecosystem"
+                },
+                {
+                  "ref": "preact_love_performance",
+                  "label": "⚡ Fast performance"
+                },
+                {
+                  "ref": "preact_love_established",
+                  "label": "🏛️ Well-established option"
+                },
+                {
+                  "ref": "preact_love_learningcurve",
+                  "label": "👶 Easy learning curve"
+                },
+                {
+                  "ref": "preact_love_tooling",
+                  "label": "🔧 Powerful developer tooling"
+                },
+                {
+                  "ref": "preact_love_documentation",
+                  "label": "📖 Good documentation"
+                },
+                {
+                  "ref": "preact_love_team",
+                  "label": "👫 Backed by a great team/company"
+                },
+                {
+                  "ref": "preact_love_lightweight",
+                  "label": "🎈 Simple & lightweight"
+                },
+                {
+                  "ref": "preact_love_momentum",
+                  "label": "📈 Growing momentum/popularity"
+                },
+                {
+                  "ref": "preact_love_fullfeatured",
+                  "label": "🕹️ Full-featured & powerful"
+                },
+                {
+                  "ref": "preact_love_stable",
+                  "label": "⚖️ Stable & backwards-compatible"
+                }
+              ]
+            },
+            "validations": {
+              "required": false
+            },
+            "type": "multiple_choice"
+          },
+          {
+            "title": "What do you *dislike* 👎 about Preact?",
+            "ref": "preact_hate",
+            "properties": {
+              "randomize": false,
+              "allow_multiple_selection": true,
+              "allow_other_choice": true,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "ref": "preact_hate_style",
+                  "label": "⚙️ Clumsy programming style"
+                },
+                {
+                  "ref": "preact_hate_robust",
+                  "label": "🐞 Buggy, error-prone code"
+                },
+                {
+                  "ref": "preact_hate_ecosystem",
+                  "label": "🎁 Small package ecosystem"
+                },
+                {
+                  "ref": "preact_hate_performance",
+                  "label": "⚡ Poor performance"
+                },
+                {
+                  "ref": "preact_hate_established",
+                  "label": "🏛️ New untested option"
+                },
+                {
+                  "ref": "preact_hate_learningcurve",
+                  "label": "👶 Hard learning curve"
+                },
+                {
+                  "ref": "preact_hate_tooling",
+                  "label": "🔧 Lacking developer tooling"
+                },
+                {
+                  "ref": "preact_hate_documentation",
+                  "label": "📖 Bad documentation"
+                },
+                {
+                  "ref": "preact_hate_team",
+                  "label": "👫 Concerns about the team/company"
+                },
+                {
+                  "ref": "preact_hate_lightweight",
+                  "label": "🎈 Bloated & complex"
+                },
+                {
+                  "ref": "preact_hate_momentum",
+                  "label": "📉 Diminishing momentum/popularity"
+                },
+                {
+                  "ref": "preact_hate_fullfeatured",
+                  "label": "🕹️ Limited & lacking in features"
+                },
+                {
+                  "ref": "preact_hate_stable",
+                  "label": "⚖️ Fast-changing & breaks often"
+                }
+              ]
+            },
+            "validations": {
+              "required": false
+            },
+            "type": "multiple_choice"
+          },
+          {
             "title": "Other Front-End options",
             "ref": "frontend_other",
             "validations": {
@@ -2693,6 +2865,178 @@
                 },
                 {
                   "ref": "apollo_hate_stable",
+                  "label": "⚖️ Fast-changing & breaks often"
+                }
+              ]
+            },
+            "validations": {
+              "required": false
+            },
+            "type": "multiple_choice"
+          },
+          {
+            "title": "Mobx",
+            "ref": "mobx",
+            "properties": {
+              "randomize": false,
+              "allow_multiple_selection": false,
+              "allow_other_choice": false,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "ref": "mobx_neverheard",
+                  "label": "🤷 Never heard of it/Not sure what it is"
+                },
+                {
+                  "ref": "mobx_interested",
+                  "label": "✅ Heard of it > Would like to learn"
+                },
+                {
+                  "ref": "mobx_not_interested",
+                  "label": "🚫 Heard of it > Not interested"
+                },
+                {
+                  "ref": "mobx_would_use_again",
+                  "label": "👍 Used it > Would use again"
+                },
+                {
+                  "ref": "mobx_would_not_use_again",
+                  "label": "👎 Used it > Would avoid"
+                }
+              ]
+            },
+            "validations": {
+              "required": false
+            },
+            "type": "multiple_choice"
+          },
+          {
+            "title": "What do you *like* 👍 about Mobx?",
+            "ref": "mobx_love",
+            "properties": {
+              "randomize": false,
+              "allow_multiple_selection": true,
+              "allow_other_choice": true,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "ref": "mobx_love_style",
+                  "label": "⚙️ Elegant programming style & patterns"
+                },
+                {
+                  "ref": "mobx_love_robust",
+                  "label": "🐞 Robust, less error-prone code"
+                },
+                {
+                  "ref": "mobx_love_ecosystem",
+                  "label": "🎁 Rich package ecosystem"
+                },
+                {
+                  "ref": "mobx_love_performance",
+                  "label": "⚡ Fast performance"
+                },
+                {
+                  "ref": "mobx_love_established",
+                  "label": "🏛️ Well-established option"
+                },
+                {
+                  "ref": "mobx_love_learningcurve",
+                  "label": "👶 Easy learning curve"
+                },
+                {
+                  "ref": "mobx_love_tooling",
+                  "label": "🔧 Powerful developer tooling"
+                },
+                {
+                  "ref": "mobx_love_documentation",
+                  "label": "📖 Good documentation"
+                },
+                {
+                  "ref": "mobx_love_team",
+                  "label": "👫 Backed by a great team/company"
+                },
+                {
+                  "ref": "mobx_love_lightweight",
+                  "label": "🎈 Simple & lightweight"
+                },
+                {
+                  "ref": "mobx_love_momentum",
+                  "label": "📈 Growing momentum/popularity"
+                },
+                {
+                  "ref": "mobx_love_fullfeatured",
+                  "label": "🕹️ Full-featured & powerful"
+                },
+                {
+                  "ref": "mobx_love_stable",
+                  "label": "⚖️ Stable & backwards-compatible"
+                }
+              ]
+            },
+            "validations": {
+              "required": false
+            },
+            "type": "multiple_choice"
+          },
+          {
+            "title": "What do you *dislike* 👎 about Mobx?",
+            "ref": "mobx_hate",
+            "properties": {
+              "randomize": false,
+              "allow_multiple_selection": true,
+              "allow_other_choice": true,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "ref": "mobx_hate_style",
+                  "label": "⚙️ Clumsy programming style"
+                },
+                {
+                  "ref": "mobx_hate_robust",
+                  "label": "🐞 Buggy, error-prone code"
+                },
+                {
+                  "ref": "mobx_hate_ecosystem",
+                  "label": "🎁 Small package ecosystem"
+                },
+                {
+                  "ref": "mobx_hate_performance",
+                  "label": "⚡ Poor performance"
+                },
+                {
+                  "ref": "mobx_hate_established",
+                  "label": "🏛️ New untested option"
+                },
+                {
+                  "ref": "mobx_hate_learningcurve",
+                  "label": "👶 Hard learning curve"
+                },
+                {
+                  "ref": "mobx_hate_tooling",
+                  "label": "🔧 Lacking developer tooling"
+                },
+                {
+                  "ref": "mobx_hate_documentation",
+                  "label": "📖 Bad documentation"
+                },
+                {
+                  "ref": "mobx_hate_team",
+                  "label": "👫 Concerns about the team/company"
+                },
+                {
+                  "ref": "mobx_hate_lightweight",
+                  "label": "🎈 Bloated & complex"
+                },
+                {
+                  "ref": "mobx_hate_momentum",
+                  "label": "📉 Diminishing momentum/popularity"
+                },
+                {
+                  "ref": "mobx_hate_fullfeatured",
+                  "label": "🕹️ Limited & lacking in features"
+                },
+                {
+                  "ref": "mobx_hate_stable",
                   "label": "⚖️ Fast-changing & breaks often"
                 }
               ]
@@ -4987,178 +5331,6 @@
                 },
                 {
                   "ref": "karma_hate_stable",
-                  "label": "⚖️ Fast-changing & breaks often"
-                }
-              ]
-            },
-            "validations": {
-              "required": false
-            },
-            "type": "multiple_choice"
-          },
-          {
-            "title": "Puppeteer",
-            "ref": "puppeteer",
-            "properties": {
-              "randomize": false,
-              "allow_multiple_selection": false,
-              "allow_other_choice": false,
-              "vertical_alignment": true,
-              "choices": [
-                {
-                  "ref": "puppeteer_neverheard",
-                  "label": "🤷 Never heard of it/Not sure what it is"
-                },
-                {
-                  "ref": "puppeteer_interested",
-                  "label": "✅ Heard of it > Would like to learn"
-                },
-                {
-                  "ref": "puppeteer_not_interested",
-                  "label": "🚫 Heard of it > Not interested"
-                },
-                {
-                  "ref": "puppeteer_would_use_again",
-                  "label": "👍 Used it > Would use again"
-                },
-                {
-                  "ref": "puppeteer_would_not_use_again",
-                  "label": "👎 Used it > Would avoid"
-                }
-              ]
-            },
-            "validations": {
-              "required": false
-            },
-            "type": "multiple_choice"
-          },
-          {
-            "title": "What do you *like* 👍 about Puppeteer?",
-            "ref": "puppeteer_love",
-            "properties": {
-              "randomize": false,
-              "allow_multiple_selection": true,
-              "allow_other_choice": true,
-              "vertical_alignment": true,
-              "choices": [
-                {
-                  "ref": "puppeteer_love_style",
-                  "label": "⚙️ Elegant programming style & patterns"
-                },
-                {
-                  "ref": "puppeteer_love_robust",
-                  "label": "🐞 Robust, less error-prone code"
-                },
-                {
-                  "ref": "puppeteer_love_ecosystem",
-                  "label": "🎁 Rich package ecosystem"
-                },
-                {
-                  "ref": "puppeteer_love_performance",
-                  "label": "⚡ Fast performance"
-                },
-                {
-                  "ref": "puppeteer_love_established",
-                  "label": "🏛️ Well-established option"
-                },
-                {
-                  "ref": "puppeteer_love_learningcurve",
-                  "label": "👶 Easy learning curve"
-                },
-                {
-                  "ref": "puppeteer_love_tooling",
-                  "label": "🔧 Powerful developer tooling"
-                },
-                {
-                  "ref": "puppeteer_love_documentation",
-                  "label": "📖 Good documentation"
-                },
-                {
-                  "ref": "puppeteer_love_team",
-                  "label": "👫 Backed by a great team/company"
-                },
-                {
-                  "ref": "puppeteer_love_lightweight",
-                  "label": "🎈 Simple & lightweight"
-                },
-                {
-                  "ref": "puppeteer_love_momentum",
-                  "label": "📈 Growing momentum/popularity"
-                },
-                {
-                  "ref": "puppeteer_love_fullfeatured",
-                  "label": "🕹️ Full-featured & powerful"
-                },
-                {
-                  "ref": "puppeteer_love_stable",
-                  "label": "⚖️ Stable & backwards-compatible"
-                }
-              ]
-            },
-            "validations": {
-              "required": false
-            },
-            "type": "multiple_choice"
-          },
-          {
-            "title": "What do you *dislike* 👎 about Puppeteer?",
-            "ref": "puppeteer_hate",
-            "properties": {
-              "randomize": false,
-              "allow_multiple_selection": true,
-              "allow_other_choice": true,
-              "vertical_alignment": true,
-              "choices": [
-                {
-                  "ref": "puppeteer_hate_style",
-                  "label": "⚙️ Clumsy programming style"
-                },
-                {
-                  "ref": "puppeteer_hate_robust",
-                  "label": "🐞 Buggy, error-prone code"
-                },
-                {
-                  "ref": "puppeteer_hate_ecosystem",
-                  "label": "🎁 Small package ecosystem"
-                },
-                {
-                  "ref": "puppeteer_hate_performance",
-                  "label": "⚡ Poor performance"
-                },
-                {
-                  "ref": "puppeteer_hate_established",
-                  "label": "🏛️ New untested option"
-                },
-                {
-                  "ref": "puppeteer_hate_learningcurve",
-                  "label": "👶 Hard learning curve"
-                },
-                {
-                  "ref": "puppeteer_hate_tooling",
-                  "label": "🔧 Lacking developer tooling"
-                },
-                {
-                  "ref": "puppeteer_hate_documentation",
-                  "label": "📖 Bad documentation"
-                },
-                {
-                  "ref": "puppeteer_hate_team",
-                  "label": "👫 Concerns about the team/company"
-                },
-                {
-                  "ref": "puppeteer_hate_lightweight",
-                  "label": "🎈 Bloated & complex"
-                },
-                {
-                  "ref": "puppeteer_hate_momentum",
-                  "label": "📉 Diminishing momentum/popularity"
-                },
-                {
-                  "ref": "puppeteer_hate_fullfeatured",
-                  "label": "🕹️ Limited & lacking in features"
-                },
-                {
-                  "ref": "puppeteer_hate_stable",
                   "label": "⚖️ Fast-changing & breaks often"
                 }
               ]
@@ -7763,7 +7935,7 @@
           "details": {
             "to": {
               "type": "field",
-              "value": "frontend_other"
+              "value": "preact"
             }
           },
           "condition": {
@@ -7776,6 +7948,98 @@
     {
       "type": "field",
       "ref": "vue_love",
+      "actions": [
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "preact"
+            }
+          },
+          "condition": {
+            "op": "always",
+            "vars": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "field",
+      "ref": "preact",
+      "actions": [
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "preact_love"
+            }
+          },
+          "condition": {
+            "op": "or",
+            "vars": [
+              {
+                "op": "is",
+                "vars": [
+                  {
+                    "type": "field",
+                    "value": "preact"
+                  },
+                  {
+                    "type": "choice",
+                    "value": "preact_would_use_again"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "preact_hate"
+            }
+          },
+          "condition": {
+            "op": "or",
+            "vars": [
+              {
+                "op": "is",
+                "vars": [
+                  {
+                    "type": "field",
+                    "value": "preact"
+                  },
+                  {
+                    "type": "choice",
+                    "value": "preact_would_not_use_again"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "frontend_other"
+            }
+          },
+          "condition": {
+            "op": "always",
+            "vars": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "field",
+      "ref": "preact_love",
       "actions": [
         {
           "action": "jump",
@@ -8131,7 +8395,7 @@
           "details": {
             "to": {
               "type": "field",
-              "value": "datalayer_other"
+              "value": "mobx"
             }
           },
           "condition": {
@@ -8144,6 +8408,98 @@
     {
       "type": "field",
       "ref": "apollo_love",
+      "actions": [
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "mobx"
+            }
+          },
+          "condition": {
+            "op": "always",
+            "vars": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "field",
+      "ref": "mobx",
+      "actions": [
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "mobx_love"
+            }
+          },
+          "condition": {
+            "op": "or",
+            "vars": [
+              {
+                "op": "is",
+                "vars": [
+                  {
+                    "type": "field",
+                    "value": "mobx"
+                  },
+                  {
+                    "type": "choice",
+                    "value": "mobx_would_use_again"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "mobx_hate"
+            }
+          },
+          "condition": {
+            "op": "or",
+            "vars": [
+              {
+                "op": "is",
+                "vars": [
+                  {
+                    "type": "field",
+                    "value": "mobx"
+                  },
+                  {
+                    "type": "choice",
+                    "value": "mobx_would_not_use_again"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "action": "jump",
+          "details": {
+            "to": {
+              "type": "field",
+              "value": "datalayer_other"
+            }
+          },
+          "condition": {
+            "op": "always",
+            "vars": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "field",
+      "ref": "mobx_love",
       "actions": [
         {
           "action": "jump",
@@ -9327,98 +9683,6 @@
           "details": {
             "to": {
               "type": "field",
-              "value": "puppeteer"
-            }
-          },
-          "condition": {
-            "op": "always",
-            "vars": []
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "karma_love",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "puppeteer"
-            }
-          },
-          "condition": {
-            "op": "always",
-            "vars": []
-          }
-        }
-      ]
-    },
-    {
-      "type": "field",
-      "ref": "puppeteer",
-      "actions": [
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "puppeteer_love"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "puppeteer"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "puppeteer_would_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
-              "value": "puppeteer_hate"
-            }
-          },
-          "condition": {
-            "op": "or",
-            "vars": [
-              {
-                "op": "is",
-                "vars": [
-                  {
-                    "type": "field",
-                    "value": "puppeteer"
-                  },
-                  {
-                    "type": "choice",
-                    "value": "puppeteer_would_not_use_again"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "action": "jump",
-          "details": {
-            "to": {
-              "type": "field",
               "value": "testing_other"
             }
           },
@@ -9431,7 +9695,7 @@
     },
     {
       "type": "field",
-      "ref": "puppeteer_love",
+      "ref": "karma_love",
       "actions": [
         {
           "action": "jump",

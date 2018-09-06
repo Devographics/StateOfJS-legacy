@@ -22,7 +22,7 @@
     - Ember
     - Polymer
     - Vue.js|vue
-    # - Preact
+    - Preact
     # - Hyperapp
     # - Riot
     # - Inferno
@@ -35,7 +35,7 @@
     - GraphQL
     - Relay
     - Apollo
-    # - Mobx
+    - Mobx
     # - Firebase
     # - VueX
     - Other|datalayer_other
@@ -76,7 +76,7 @@
     - Ava
     - Karma
     # - Cypress
-    - Puppeteer
+    # - Puppeteer
     - Other|testing_other
     - Rating|testing_rating
 # - title: CSS
