@@ -11,7 +11,7 @@ export default class Layout extends React.Component {
     const title = DocumentTitle.peek()
     const description = 'The annual survey about current popular JavaScript technologies.'
     const url = 'http://stateofjs.com'
-    const image = 'http://stateofjs.com/images/stateofjs2018-logo-light.png'
+    const image = 'http://stateofjs.com/images/stateofjs2018-social-media.png'
 
     const meta = [
       { charset: 'utf-8' },
