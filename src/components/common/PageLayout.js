@@ -99,6 +99,11 @@ export default class PageLayout extends React.PureComponent {
         })
     }
 
+    componentDidMount() {
+        const pathname = this.props.location.pathname
+        window.location.href = `https://2017.stateofjs.com${pathname}`;
+    }
+    
     render() {
         const sidebarClassName = this.state.showSidebar ? 'sidebar--shown' : 'sidebar--hidden'
 

@@ -20,6 +20,50 @@ exports.modifyWebpackConfig = function({ config }) {
 
 const slugify = s => s.toLowerCase().replace(' ', '-')
 
+// create redirects to 2017 site
+// exports.createPages = async ({ boundActionCreators }) => {
+//     const { createRedirect } = boundActionCreators
+
+//     createRedirect({
+//         fromPath: `/2017/`,
+//         redirectInBrowser: true,
+//         toPath: `https://2017.stateofjs.com/2017`,
+//     })
+
+//     nav.forEach(item => {
+//         if (item.subPages) {
+//             createRedirect({
+//                 fromPath: `/2017/${slugify(item.label)}/`,
+//                 redirectInBrowser: true,
+//                 isPermanent: true,
+//                 toPath: `https://2017.stateofjs.com/2017/${slugify(item.label)}/${slugify(item.subPages[0])}`,
+//             })
+//             createRedirect({
+//                 fromPath: `/2017/${slugify(item.label)}`,
+//                 redirectInBrowser: true,
+//                 isPermanent: true,
+//                 toPath: `https://2017.stateofjs.com/2017/${slugify(item.label)}/${slugify(item.subPages[0])}`,
+//             })
+
+//             item.subPages.forEach(subpage => {
+//                 createRedirect({
+//                     fromPath: `/2017/${slugify(item.label)}/${subpage}`,
+//                     redirectInBrowser: true,
+//                     isPermanent: true,
+//                     toPath: `https://2017.stateofjs.com/2017/${slugify(item.label)}/${subpage}`,
+//                 })
+//                 createRedirect({
+//                     fromPath: `/2017/${slugify(item.label)}/${subpage}/`,
+//                     redirectInBrowser: true,
+//                     isPermanent: true,
+//                     toPath: `https://2017.stateofjs.com/2017/${slugify(item.label)}/${subpage}`,
+//                 })
+
+//             })
+//         }
+//     })
+// }
+
 exports.createPages = async ({ boundActionCreators }) => {
     const { createRedirect } = boundActionCreators
 
