@@ -35,6 +35,8 @@ frontend:
       id: hyperapp
     - symbol: In
       id: inferno
+    - symbol: Sv
+      id: Svelte
     # - Symbol: Dv
     #   id: dva
 datalayer:
@@ -62,6 +64,8 @@ buildtools:
       id: parcel
     - symbol: Ru
       id: rollup
+    - symbol: Br
+      id: Broccoli
 backend:
   color: "#E486C4"
   projects:
@@ -110,8 +114,6 @@ testing:
       id: puppeteer
     - symbol: Js
       id: json-server
-    - symbol: Nw
-      id: nwjs
     - symbol: Nm
       id: nightmare
 mobile:
@@ -127,6 +129,8 @@ mobile:
       id: nativescript
     - symbol: We
       id: weex
+    - symbol: Nw
+      id: nwjs
     #- symbol: Cv
     #  id: cordova
 utilities:
@@ -160,6 +164,8 @@ utilities:
       id: animejs
     - symbol: Md
       id: modernizr
+    - symbol: Rx
+      id: rxjs
       
 ui:
   color: "#E49B57"

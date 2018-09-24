@@ -29,7 +29,7 @@ This year, we're asking for your help once more to find out which libraries deve
 const homeComingSoonContents = `
 We collected data from over 20,000 developers, asking them questions on topics ranging from front-end frameworks to testing libraries and more. 
 
-We're almost ready to release the results to the world. So join us on December 12, 2017 at 5pm PST for a special launch livestream.
+We're now processing the data. Leave us your email below if you'd like to know as soon as the results are published. 
 `
 
 const newsletterContents = `
@@ -53,8 +53,8 @@ export default class Index extends React.Component {
           </div> */}
 
           <div className="intro section-narrow section-border">
-            <TextBlock text={homeContents} />
-            <TakeSurvey />
+            <TextBlock text={homeComingSoonContents} />
+            {/* <TakeSurvey /> */}
           </div>
           {/* <Stats />*/}
 
