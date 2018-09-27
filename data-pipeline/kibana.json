@@ -1,0 +1,312 @@
+[
+  {
+    "_id": "66ac4dd0-b6c9-11e8-ad07-5fd99d1072b0",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Participation",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":4,\"h\":2,\"i\":\"1\"},\"id\":\"a7347ef0-b6c8-11e8-ad07-5fd99d1072b0\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":4,\"y\":0,\"w\":4,\"h\":2,\"i\":\"2\"},\"id\":\"ece7aa80-b6c8-11e8-ad07-5fd99d1072b0\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":8,\"y\":0,\"w\":4,\"h\":2,\"i\":\"3\"},\"id\":\"f82949d0-b6c8-11e8-ad07-5fd99d1072b0\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":0,\"y\":2,\"w\":4,\"h\":3,\"i\":\"4\"},\"id\":\"b5f9f860-b6c9-11e8-ad07-5fd99d1072b0\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":4,\"y\":2,\"w\":4,\"h\":3,\"i\":\"5\"},\"id\":\"980b16c0-b6cb-11e8-ad07-5fd99d1072b0\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":8,\"y\":2,\"w\":4,\"h\":3,\"i\":\"6\"},\"version\":\"6.1.1\",\"type\":\"visualization\",\"id\":\"27abbc30-b6cc-11e8-ad07-5fd99d1072b0\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":false}",
+      "uiStateJSON": "{\"P-4\":{\"vis\":{\"legendOpen\":false}},\"P-6\":{\"vis\":{\"legendOpen\":false},\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}},\"P-5\":{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-5y",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "7fff76a0-b7cc-11e8-ad07-5fd99d1072b0",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Tools",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":0,\"w\":2,\"h\":3,\"i\":\"3\"},\"id\":\"9c231be0-b7cf-11e8-ad07-5fd99d1072b0\",\"title\":\"React\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":2,\"y\":0,\"w\":2,\"h\":3,\"i\":\"4\"},\"version\":\"6.1.1\",\"type\":\"visualization\",\"id\":\"bb534fc0-b7d0-11e8-ad07-5fd99d1072b0\"}]",
+      "optionsJSON": "{\"darkTheme\":true,\"hidePanelTitles\":true,\"useMargins\":true}",
+      "uiStateJSON": "{\"P-2\":{\"vis\":{\"legendOpen\":false}},\"P-3\":{\"vis\":{\"legendOpen\":false}},\"P-4\":{\"vis\":{\"legendOpen\":false}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "8c422660-b6c8-11e8-ad07-5fd99d1072b0",
+    "_type": "search",
+    "_source": {
+      "title": "2017 survey",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "submitted_at",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"1028e4b0-b6c8-11e8-ad07-5fd99d1072b0\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"survey: '2017'\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "7f1001b0-b6c8-11e8-ad07-5fd99d1072b0",
+    "_type": "search",
+    "_source": {
+      "title": "2016 survey",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "submitted_at",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"1028e4b0-b6c8-11e8-ad07-5fd99d1072b0\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"survey: '2016'\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "995d40a0-b6c8-11e8-ad07-5fd99d1072b0",
+    "_type": "search",
+    "_source": {
+      "title": "2018 survey",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "submitted_at",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"1028e4b0-b6c8-11e8-ad07-5fd99d1072b0\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"survey: '2018'\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ece7aa80-b6c8-11e8-ad07-5fd99d1072b0",
+    "_type": "visualization",
+    "_source": {
+      "title": "2017 participation",
+      "visState": "{\"title\":\"2017 participation\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":48}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"2017\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "8c422660-b6c8-11e8-ad07-5fd99d1072b0",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "f82949d0-b6c8-11e8-ad07-5fd99d1072b0",
+    "_type": "visualization",
+    "_source": {
+      "title": "2018 participation",
+      "visState": "{\"title\":\"2018 participation\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":48}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"2018\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "995d40a0-b6c8-11e8-ad07-5fd99d1072b0",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "a7347ef0-b6c8-11e8-ad07-5fd99d1072b0",
+    "_type": "visualization",
+    "_source": {
+      "title": "2016 participation",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"2016\"},\"schema\":\"metric\",\"type\":\"count\"}],\"params\":{\"addLegend\":false,\"addTooltip\":true,\"metric\":{\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"invertColors\":false,\"labels\":{\"show\":true},\"metricColorMode\":\"None\",\"percentageMode\":false,\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":48,\"labelColor\":false,\"subText\":\"\"},\"useRanges\":false},\"type\":\"metric\"},\"title\":\"2016 participation\",\"type\":\"metric\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "7f1001b0-b6c8-11e8-ad07-5fd99d1072b0",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "980b16c0-b6cb-11e8-ad07-5fd99d1072b0",
+    "_type": "visualization",
+    "_source": {
+      "title": "2017 participation rate",
+      "visState": "{\"title\":\"2017 participation rate\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\",\"defaultYExtents\":false,\"setYExtents\":true,\"max\":3000,\"min\":0},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"participations\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"participations\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"participations\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"submitted_at\",\"interval\":\"d\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"day\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+      "description": "",
+      "savedSearchId": "8c422660-b6c8-11e8-ad07-5fd99d1072b0",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b5f9f860-b6c9-11e8-ad07-5fd99d1072b0",
+    "_type": "visualization",
+    "_source": {
+      "title": "2016 participation rate",
+      "visState": "{\"title\":\"2016 participation rate\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{},\"type\":\"category\"}],\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"participations\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\",\"setYExtents\":true,\"max\":3000,\"min\":0},\"show\":true,\"style\":{},\"title\":{\"text\":\"participations\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"participations\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"submitted_at\",\"interval\":\"d\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"day\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+      "description": "",
+      "savedSearchId": "7f1001b0-b6c8-11e8-ad07-5fd99d1072b0",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "27abbc30-b6cc-11e8-ad07-5fd99d1072b0",
+    "_type": "visualization",
+    "_source": {
+      "title": "2018 participation rate",
+      "visState": "{\"title\":\"2018 participation rate\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\",\"setYExtents\":true,\"max\":3000,\"min\":0},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"participations\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"participations\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"participations\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"submitted_at\",\"interval\":\"d\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"day\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "995d40a0-b6c8-11e8-ad07-5fd99d1072b0",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "da4c91f0-b7cd-11e8-ad07-5fd99d1072b0",
+    "_type": "visualization",
+    "_source": {
+      "title": "tools > react [horizontal]",
+      "visState": "{\"title\":\"tools > react [horizontal]\",\"type\":\"horizontal_bar\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":90,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"area\",\"mode\":\"normal\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"interpolate\":\"linear\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"top\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"survey.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"survey\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"tools.react.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"1028e4b0-b6c8-11e8-ad07-5fd99d1072b0\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "0e322240-b7cf-11e8-ad07-5fd99d1072b0",
+    "_type": "visualization",
+    "_source": {
+      "title": "tools > react [heatmap]",
+      "visState": "{\"title\":\"tools > react [heatmap]\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Greens\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"tools.react.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"survey.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 3,500\":\"rgb(247,252,245)\",\"3,500 - 7,000\":\"rgb(199,233,192)\",\"7,000 - 10,500\":\"rgb(116,196,118)\",\"10,500 - 14,000\":\"rgb(35,139,69)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"1028e4b0-b6c8-11e8-ad07-5fd99d1072b0\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "fb0d3bc0-b7cc-11e8-ad07-5fd99d1072b0",
+    "_type": "visualization",
+    "_source": {
+      "title": "Tool > React > 2018",
+      "visState": "{\"title\":\"Tool > React > 2018\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"top\",\"isDonut\":true,\"labels\":{\"show\":true,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"React\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"tools.react.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"_term\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "995d40a0-b6c8-11e8-ad07-5fd99d1072b0",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "9c231be0-b7cf-11e8-ad07-5fd99d1072b0",
+    "_type": "visualization",
+    "_source": {
+      "title": "tools > react [vertical]",
+      "visState": "{\"title\":\"tools > react [vertical]\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100,\"rotate\":0},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":false,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"survey.keyword\",\"size\":5,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"React\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"tools.react.keyword\",\"size\":5,\"order\":\"asc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"interested\":\"#F2C96D\",\"never_heard\":\"#DEDAF7\",\"not_interested\":\"#F9934E\",\"would_not_use\":\"#E24D42\",\"would_use\":\"#9AC48A\"},\"legendOpen\":true}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"1028e4b0-b6c8-11e8-ad07-5fd99d1072b0\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "bb534fc0-b7d0-11e8-ad07-5fd99d1072b0",
+    "_type": "visualization",
+    "_source": {
+      "title": "tools > ember [vertical]",
+      "visState": "{\"title\":\"tools > ember [vertical]\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"rotate\":0,\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{},\"type\":\"category\"}],\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Count\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":false,\"style\":{},\"title\":{\"text\":\"Count\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"survey.keyword\",\"size\":5,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Ember\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"tools.ember.keyword\",\"size\":5,\"order\":\"asc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"interested\":\"#F2C96D\",\"never_heard\":\"#DEDAF7\",\"not_interested\":\"#F9934E\",\"would_not_use\":\"#E24D42\",\"would_use\":\"#9AC48A\"},\"legendOpen\":true}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"1028e4b0-b6c8-11e8-ad07-5fd99d1072b0\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  }
+]

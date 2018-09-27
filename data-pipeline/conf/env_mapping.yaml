@@ -1,0 +1,4 @@
+TYPEFORM_API_TOKEN: typeform.api_token
+
+ELASTIC_HOST: elastic.host
+ELASTIC_PORT: elastic.port

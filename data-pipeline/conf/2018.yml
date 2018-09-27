@@ -1,0 +1,269 @@
+id: '2018'
+extractor: typeform
+typeform:
+    id: J9gRJf
+    fields:
+        DYKQQkIKz2SD:
+            type: tool
+            tool: reason
+        Go4TWhDKQs6W:
+            type: tool
+            tool: clojure_script
+        IRf3Rgkmmchd:
+            type: tool
+            tool: elm
+        BYNO7O0lVQsd:
+            type: tool
+            tool: flow
+        MRsLOXKyPHug:
+            type: tool
+            tool: typescript
+        boE4mHIiSwE6:
+            type: tool
+            tool: es6
+        Bu13nZgFYn41:
+            type: other_tools
+            section: flavors
+        tG6GyIDRvICd:
+            type: happiness
+            section: flavors
+        JIbJUEu8NQZe:
+            type: tool
+            tool: react
+        RujrkmFbZRK1:
+            type: tool
+            tool: angular_1
+        lkFFbxwu58KI:
+            type: tool
+            tool: ember
+        aFjGNL5r5bqj:
+            type: tool
+            tool: polymer
+        iYsV5f1b98xc:
+            type: tool
+            tool: vue
+        JSN28A0EjEPL:
+            type: tool
+            tool: preact
+        doF88Cqx1g9P:
+            type: other_tools
+            section: frontend
+        uygOQCKWfrgu:
+            type: happiness
+            section: frontend
+        j16c8ycbTSJT:
+            type: tool
+            tool: redux
+        Eg8JuKFN0tgf:
+            type: tool
+            tool: graph_ql
+        Tg4qp4kjiqYR:
+            type: tool
+            tool: relay
+        jl5A0Ct9JNrg:
+            type: tool
+            tool: apollo
+        sNPGhpQhTGTl:
+            type: tool
+            tool: mobx
+        oWcIqu15IDjP:
+            type: other_tools
+            section: data_layer
+        u3diwAiis2Gk:
+            type: happiness
+            section: data_layer
+        GXPJPWbcxu4c:
+            type: tool
+            tool: meteor
+        tDCs8k92wSGi:
+            type: tool
+            tool: express
+        RlQBNe9UEq09:
+            type: tool
+            tool: next_js
+        kYCrccJB6SYM:
+            type: tool
+            tool: koa
+        eaLNSFYDGa88:
+            type: tool
+            tool: sails
+        LxIQ4atOZ2ZZ:
+            type: tool
+            tool: feathers
+        jgadf6KAhURx:
+            type: other_tools
+            section: backend
+        EANeo5VwRonl:
+            type: happiness
+            section: backend
+        t2iShXV2Z8FY:
+            type: tool
+            tool: storybook
+        BjUoI6K8yJSh:
+            type: tool
+            tool: mocha
+        X6RaCCEH7Iqd:
+            type: tool
+            tool: jasmine
+        Fjh9KXrdJnT3:
+            type: tool
+            tool: jest
+        oHGt9YEaHcSj:
+            type: tool
+            tool: enzyme
+        E3YBHRi7L6bm:
+            type: tool
+            tool: ava
+        HZmB069GLqpm:
+            type: tool
+            tool: karma
+        Uzu7ZfHVHWbI:
+            type: other_tools
+            section: testing
+        L9gSqaNL0GN0:
+            type: happiness
+            section: testing
+        t1qvo5E1RoIv:
+            type: tool
+            tool: electron
+        JACHbSIEJ6kA:
+            type: tool
+            tool: react_native
+        VqB583tSYSxU:
+            type: tool
+            tool: phone_gap_cordova
+        Vst6yDXqWzHQ:
+            type: tool
+            tool: native_script
+        xkNca54zNIBt:
+            type: tool
+            tool: ionic
+        Sbh4HhPvShLO:
+            type: tool
+            tool: native_apps
+        cplwO8cN69yT:
+            type: other_tools
+            section: mobile
+        yFLjXCIeJouk:
+            type: happiness
+            section: mobile
+        nUyhAVayYch4:
+            type: years_of_experience
+        IJO3sTKdw5PD:
+            type: company_size
+        xMl4i3D1FWn9:
+            type: salary
+        NA00DD60660P:
+            type: email
+        HJOngcCVYpZi:
+            type: source
+sections:
+    flavors:
+        title: 'JavaScript Flavors'
+        freeform: 'Other JavaScript Flavors options'
+        tools:
+            - reason
+            - clojure_script
+            - elm
+            - flow
+            - typescript
+            - es6
+    frontend:
+        title: Front-End
+        freeform: 'Other Front-End options'
+        tools:
+            - react
+            - angular_1
+            - ember
+            - polymer
+            - vue
+            - preact
+    data_layer:
+        title: 'Data Layer'
+        freeform: 'Other Data Layer options'
+        tools:
+            - redux
+            - graph_ql
+            - relay
+            - apollo
+            - mobx
+    backend:
+        title: Back-end
+        freeform: 'Other Back-end options'
+        tools:
+            - meteor
+            - express
+            - next_js
+            - koa
+            - sails
+            - feathers
+    testing:
+        title: Testing
+        freeform: 'Other Testing options'
+        tools:
+            - storybook
+            - mocha
+            - jasmine
+            - jest
+            - enzyme
+            - ava
+            - karma
+    mobile:
+        title: 'Mobile & Desktop'
+        freeform: 'Other Mobile & Desktop options'
+        tools:
+            - electron
+            - react_native
+            - phone_gap_cordova
+            - native_script
+            - ionic
+            - native_apps
+experience:
+    '👍 Used it > Would use again': would_use
+    '👎 Used it > Would avoid': would_not_use
+    '✅ Heard of it > Would like to learn': interested
+    '🚫 Heard of it > Not interested': not_interested
+    '🤷 Never heard of it/Not sure what it is': never_heard
+tools:
+    - reason
+    - clojure_script
+    - elm
+    - flow
+    - typescript
+    - es6
+    - react
+    - angular_1
+    - ember
+    - polymer
+    - vue
+    - preact
+    - redux
+    - graph_ql
+    - relay
+    - apollo
+    - mobx
+    - meteor
+    - express
+    - next_js
+    - koa
+    - sails
+    - feathers
+    - storybook
+    - mocha
+    - jasmine
+    - jest
+    - enzyme
+    - ava
+    - karma
+    - electron
+    - react_native
+    - phone_gap_cordova
+    - native_script
+    - ionic
+    - native_apps
+userInfo:
+    - years_of_experience
+    - company_size
+    - salary
+    - email
+    - source
