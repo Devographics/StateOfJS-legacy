@@ -13,10 +13,10 @@ const buildApiRequest = params => {
     const options = {
         uri: `${baseUrl}/${formId}`,
         qs: {
-            key: apiKey,
+            key: apiKey
         },
         json: true,
-        headers: {},
+        headers: {}
     }
 
     if (params) {
@@ -40,7 +40,7 @@ exports.fetchAll = async ({ onData }) => {
         total: totalResponses,
         width: 64,
         incomplete: ' ',
-        complete: '◼',
+        complete: '◼'
     })
 
     let fetchedCount = 0
@@ -48,7 +48,7 @@ exports.fetchAll = async ({ onData }) => {
         const responses = await exports.responses({
             offset: i * BATCH_SIZE,
             limit: BATCH_SIZE,
-            completed: 'true',
+            completed: 'true'
         })
 
         await onData(responses)

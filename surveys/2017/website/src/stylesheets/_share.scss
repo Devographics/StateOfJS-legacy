@@ -1,0 +1,85 @@
+.share-wrapper {
+    margin-top: $spacing * 2;
+    position: relative;
+}
+
+.share {
+    @include flex-center;
+}
+
+.share-popup {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%) scale(0.5);
+    transition: all 500ms cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    .share-popup-visible & {
+        opacity: 1;
+        pointer-events: auto;
+        bottom: -110%;
+        transform: translateX(-50%) scale(1);
+    }
+}
+
+@keyframes blink2 {
+    from {
+        fill: $active-color;
+    }
+    50% {
+        fill: $hover-color;
+    }
+    to {
+        fill: $active-color;
+    }
+}
+
+.share-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 0 auto;
+    a {
+        display: block;
+        height: 40px;
+        width: 40px;
+        padding: 10px;
+        border-radius: 100%;
+        background: $active-color;
+        flex-shrink: 0;
+        margin-right: $spacing;
+        &:last-child {
+            margin-right: 0;
+        }
+        svg {
+            height: 100%;
+            width: 100%;
+            path {
+                fill: $beige;
+            }
+        }
+        &:hover {
+            svg path {
+                fill: $active-color;
+            }
+        }
+    }
+}
+
+.home .share-options {
+    max-width: 300px;
+    a {
+        @include small {
+            height: 40px;
+            width: 40px;
+            padding: 10px;
+        }
+        @include medium-large {
+            height: 60px;
+            width: 60px;
+            padding: 15px;
+        }
+    }
+}

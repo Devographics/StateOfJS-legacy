@@ -1,0 +1,6 @@
+baseUrl:   http://localhost:3018/2018
+outputDir: static/images/captures
+
+# Each entry is composed of a `path` (the page the chart appears on)
+# and a `selector` used to limit the capture area
+items: []

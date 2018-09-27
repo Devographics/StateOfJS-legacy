@@ -14,12 +14,12 @@ module.exports = async (tools, experience = `I've USED it before, and WOULD use 
                 (aggs, tool) => ({
                     ...aggs,
                     [tool]: {
-                        filter: { term: { [tool]: experience } },
-                    },
+                        filter: { term: { [tool]: experience } }
+                    }
                 }),
                 {}
-            ),
-        },
+            )
+        }
     })
 
     const total = result.hits.total
@@ -27,7 +27,7 @@ module.exports = async (tools, experience = `I've USED it before, and WOULD use 
         mapValues(result.aggregations, (bucket, key) => ({
             ...bucket,
             key,
-            percentage: Math.round(bucket.doc_count / total * 100),
+            percentage: Math.round((bucket.doc_count / total) * 100)
         }))
     )
 

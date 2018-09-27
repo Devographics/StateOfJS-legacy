@@ -1,0 +1,19 @@
+.worldwide__grid {
+    @include medium-large {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.worldwide__grid__item {
+    @include medium-large {
+        width: 33%;
+        margin-bottom: 30px;
+    }
+}
+
+.worldwide__chart {
+    height: 220px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}

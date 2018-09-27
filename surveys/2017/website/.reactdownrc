@@ -1,0 +1,31 @@
+{
+  directives: {
+    SponsorsBlock: {
+      component:  './src/components/blocks/SponsorsBlock.js',
+    },
+    ViewResults: {
+      component:  './src/components/common/ViewResults.js',
+    },
+    TakeSurvey: {
+      component:  './src/components/common/TakeSurvey.js',
+    },
+    LeaveEmail: {
+      component:  './src/components/common/LeaveEmail.js',
+    },
+    Newsletter: {
+      component:  './src/components/common/Newsletter.js',
+      line: 'optional'
+    },
+    Sections: {
+      component:  './src/components/common/Sections.js',
+    },
+    FilterPoint: {
+      component:  './src/components/stackedbar/FilterPoint.js',
+      line: 'optional'
+    },
+    Fact: {
+      component:  './src/components/common/Fact.js',
+      line: 'optional'
+    }
+  }
+}

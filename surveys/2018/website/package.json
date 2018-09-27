@@ -1,0 +1,15 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "description": "Gatsby hello world starter",
+  "private": true,
+  "scripts": {
+    "dev": "gatsby develop --port 3018",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "gatsby": "^2.0.0",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1"
+  }
+}

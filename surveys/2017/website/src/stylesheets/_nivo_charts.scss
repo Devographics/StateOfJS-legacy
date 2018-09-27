@@ -1,0 +1,131 @@
+.chart-wrapper {
+    font-size: $medium-font;
+    g.xsmall {
+        font-size: 0.6rem;
+    }
+    g.small {
+        font-size: $smaller-font;
+    }
+    g.medium {
+        font-size: $small-font;
+    }
+    g.large,
+    g.xlarge {
+        font-size: $medium-font;
+    }
+}
+
+.chart--bar {
+    font-size: $medium-font;
+}
+
+.block__contents {
+    @include small {
+        overflow-x: scroll;
+        background: rgba(255, 255, 255, 0.5);
+    }
+}
+.block__contents__inner {
+    @include small {
+        padding: 0 $spacing $spacing $spacing;
+        min-width: 800px;
+    }
+}
+.PieRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.PieRow svg {
+    margin-right: 15px;
+}
+
+.Help {
+    font-size: 13px;
+    color: #6f8183;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+.Help svg {
+    color: rgb(150, 136, 228);
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.user-facts-placeholder {
+    @include flex-center;
+    border: dotted 1px $border-color;
+    min-height: 400px;
+    h3 {
+        margin: 0;
+    }
+}
+
+.chord__toggle {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: $medium-font;
+
+    input {
+        margin-right: 7px;
+    }
+
+    &__item {
+        cursor: pointer;
+        width: calc((100% - #{$spacing} * 3) / 4);
+        margin-right: $spacing;
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+        &--is-disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    }
+}
+
+.results-chart-wrapper {
+    padding: 0 $spacing * 3;
+    text {
+        font-size: $small-font;
+    }
+}
+
+.block--numberoflibs {
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.block--othersbubble {
+    .chart-wrapper {
+        @include small {
+            height: 300px;
+        }
+        @include medium-large {
+            height: 600px;
+        }
+    }
+}
+
+.block--connections {
+    .chart-wrapper {
+        @include small {
+            height: 300px;
+        }
+        @include medium-large {
+            height: 600px;
+        }
+    }
+}
+
+.chord__toggle {
+    padding: $spacing $spacing $spacing/2 $spacing;
+    border: 1px dashed $light-border-color;
+}
+.chord__toggle__item {
+    margin-bottom: $spacing/2;
+    font-size: $smallish-font;
+}

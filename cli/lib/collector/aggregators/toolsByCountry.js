@@ -23,8 +23,8 @@ module.exports = async fields => {
                 ...fields.reduce((aggs, field) => {
                     aggs[field] = {
                         filter: {
-                            term: { [field]: "I've USED it before, and WOULD use it again" },
-                        },
+                            term: { [field]: "I've USED it before, and WOULD use it again" }
+                        }
                     }
 
                     return aggs
@@ -34,22 +34,22 @@ module.exports = async fields => {
                     aggs: fields.reduce((aggs, field) => {
                         aggs[field] = {
                             filter: {
-                                term: { [field]: "I've USED it before, and WOULD use it again" },
-                            },
+                                term: { [field]: "I've USED it before, and WOULD use it again" }
+                            }
                         }
 
                         return aggs
-                    }, {}),
-                },
-            },
-        },
+                    }, {})
+                }
+            }
+        }
     })
 
     // compute global percentages to be able to compute divergence afterward
     const total = fields.reduce((t, field) => t + result.aggregations[field].doc_count, 0)
     fields.forEach(field => {
         result.aggregations[field].percentage = Math.round(
-            result.aggregations[field].doc_count / total * 100
+            (result.aggregations[field].doc_count / total) * 100
         )
     })
     helpers.fixBucketsPercentages(values(pick(result.aggregations, fields)))
@@ -59,7 +59,7 @@ module.exports = async fields => {
         const total = fields.reduce((t, field) => t + country[field].doc_count, 0)
 
         fields.forEach(field => {
-            country[field].percentage = Math.round(country[field].doc_count / total * 100)
+            country[field].percentage = Math.round((country[field].doc_count / total) * 100)
         })
         helpers.fixBucketsPercentages(values(pick(country, fields)))
 
