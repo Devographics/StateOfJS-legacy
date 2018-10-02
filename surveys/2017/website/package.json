@@ -1,0 +1,80 @@
+{
+  "name": "state-of-js-2017-website",
+  "description": "State of js 2017 survey report",
+  "version": "1.0.0",
+  "contributors": [
+    {
+      "name": "Sacha Greif"
+    },
+    {
+      "name": "Michael Rambeau"
+    },
+    {
+      "name": "Raphaël Benitte"
+    }
+  ],
+  "engineStrict": true,
+  "engines": {
+    "node": ">=8.3.0"
+  },
+  "dependencies": {
+    "@nivo/bar": "0.33.0",
+    "@nivo/chord": "0.33.0",
+    "@nivo/circle-packing": "0.33.0",
+    "@nivo/core": "0.33.0",
+    "@nivo/pie": "0.33.0",
+    "bowser": "^2.0.0-beta.1",
+    "classnames": "^2.2.5",
+    "d3-format": "^1.2.0",
+    "d3-scale": "^1.0.7",
+    "fs-extra": "^4.0.2",
+    "gatsby": "1.9.277",
+    "gatsby-link": "^1.6.46",
+    "gatsby-plugin-google-analytics": "^1.0.12",
+    "gatsby-plugin-netlify": "^1.0.21",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-source-filesystem": "^1.0.0-beta.6",
+    "html-loader": "^0.5.1",
+    "js-yaml": "^3.10.0",
+    "lodash": "^4.17.4",
+    "markdown-loader": "^2.0.1",
+    "node-fetch": "^2.2.0",
+    "numeral": "^2.0.6",
+    "object-assign": "^4.1.0",
+    "path-dirname": "^1.0.2",
+    "prop-types": "^15.6.0",
+    "react": "16.2.0",
+    "react-document-title": "^2.0.1",
+    "react-dom": "16.2.0",
+    "react-feather": "^1.0.7",
+    "react-ga": "^2.2.0",
+    "react-helmet": "^5.1.3",
+    "react-markdown": "^3.1.0",
+    "reactdown": "^1.0.0-alpha14",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "@ekino/config": "^0.3.0",
+    "chalk": "^2.3.0",
+    "dotenv": "^4.0.0",
+    "elasticsearch": "^14.0.0",
+    "eslint": "^3.3.1",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.13.0",
+    "eslint-plugin-jsx-a11y": "^2.1.0",
+    "eslint-plugin-react": "^6.1.2",
+    "gh-pages": "^0.11.0",
+    "ora": "^1.3.0",
+    "progress": "^2.0.0"
+  },
+  "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "deploy": "gatsby build && gh-pages -d public",
+    "dev": "gatsby develop --port 3017",
+    "typeform": "node --experimental-modules ./typeform/create.mjs"
+  }
+}

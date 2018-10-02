@@ -20,16 +20,17 @@ before_install:
   - "sh -e /etc/init.d/xvfb start"
 
 install:
-  - yarn install
-  # puppeteer's install script downloads Chrome
+  - make install
 
 script:
+  - make fmt_check
+  - make lint
   # too many errors, should be fixed or rules updated
   #- yarn lint
   # ensure the project builds correctly
-  - yarn build
+  #- yarn build
   # starts static server
-  - cd public && python -m SimpleHTTPServer &
-  - sleep 6
+  #- cd public && python -m SimpleHTTPServer &
+  #- sleep 6
   # ensure the capture works (because it relies on selectors)
-  - cd cli && ./cli capture
+  #- cd cli && ./cli capture

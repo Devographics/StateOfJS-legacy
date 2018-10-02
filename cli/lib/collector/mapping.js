@@ -5,7 +5,7 @@ exports.experience = {
     "I've HEARD of it, and am NOT interested": 'heard_not_interested',
     "I've HEARD of it, and WOULD like to learn it": 'heard_would_learn',
     "I've USED it before, and would NOT use it again": 'used_would_not_use',
-    "I've USED it before, and WOULD use it again": 'used_would_use',
+    "I've USED it before, and WOULD use it again": 'used_would_use'
 }
 
 exports.feature = [
@@ -13,7 +13,7 @@ exports.feature = [
     'Not needed',
     'Nice-to-have, but not important',
     'Major feature',
-    'Vital feature',
+    'Vital feature'
 ]
 
 const castNumber = value => Number(value)
@@ -36,7 +36,7 @@ const ignore = [
     'no',
     'No',
     '.',
-    '?',
+    '?'
 ]
 const cleanupFreeValue = value => (ignore.includes(value) ? null : value)
 
@@ -132,12 +132,12 @@ exports.response = {
                 [/feathers/i, 'feathers'],
                 [/angular/i, 'Angular'],
                 [/underscore/i, 'underscore'],
-                [/bootstrap/i, 'Bootstrap'],
-            ]),
+                [/bootstrap/i, 'Bootstrap']
+            ])
         },
         'On a scale of one to five cats, how happy are you with your current solution for the front-end?': {
             type: 'short',
-            transform: castNumber,
+            transform: castNumber
         },
 
         // Flavors
@@ -150,7 +150,7 @@ exports.response = {
         Reason: { type: 'keyword' },
         'On a scale of one to five dogs, how happy are you with your current flavor of JavaScript?': {
             type: 'short',
-            transform: castNumber,
+            transform: castNumber
         },
 
         // State management
@@ -191,12 +191,12 @@ exports.response = {
                 [/mysql/i, 'MySQL'],
                 [/redis/i, 'Redis'],
                 [/ember( |-|\.)?data/i, 'Ember Data'],
-                [/rethink/i, 'RethinkDB'],
-            ]),
+                [/rethink/i, 'RethinkDB']
+            ])
         },
         'On a scale of one to five thunderbolts, how happy are you with your current solution for state management?': {
             type: 'short',
-            transform: castNumber,
+            transform: castNumber
         },
 
         // Back-end solutions
@@ -234,12 +234,12 @@ exports.response = {
                 [/socket\.?io/i, 'socket.io'],
                 [/micro/i, 'micro'],
                 [/firebase/i, 'firebase'],
-                [/haskell/i, 'haskell'],
-            ]),
+                [/haskell/i, 'haskell']
+            ])
         },
         'On a scale of one to five trophies, how happy are you with your current back-end solution?': {
             type: 'short',
-            transform: castNumber,
+            transform: castNumber
         },
 
         // Testing
@@ -269,12 +269,12 @@ exports.response = {
                 [/junit/i, 'junit'],
                 [/jest/i, 'jest'],
                 [/cypress/i, 'cypress'],
-                [/phantom/i, 'PhantomJS'],
-            ]),
+                [/phantom/i, 'PhantomJS']
+            ])
         },
         'On a scale of one to five severed hands, how happy are you with the current state of JavaScript testing?': {
             type: 'short',
-            transform: castNumber,
+            transform: castNumber
         },
 
         // Styling
@@ -314,12 +314,12 @@ exports.response = {
                 [/jss/i, 'JSS'],
                 [/mdl/i, 'mdl'],
                 [/vuetify/i, 'vuetify'],
-                [/materiali(z|s)e/i, 'materialize'],
-            ]),
+                [/materiali(z|s)e/i, 'materialize']
+            ])
         },
         'On a scale of one to five lightbulbs, how happy are you with the current state of CSS?': {
             type: 'short',
-            transform: castNumber,
+            transform: castNumber
         },
 
         // Build
@@ -344,12 +344,12 @@ exports.response = {
                 [/gradle/i, 'gradle'],
                 [/stealjs/i, 'StealJS'],
                 [/gulp/i, 'gulp'],
-                [/babel/i, 'Babel'],
-            ]),
+                [/babel/i, 'Babel']
+            ])
         },
         'On a scale of one to five droplets, how happy are you with the current state of build tools?': {
             type: 'short',
-            transform: castNumber,
+            transform: castNumber
         },
 
         // Mobile
@@ -379,12 +379,12 @@ exports.response = {
                 [/Angular Native/i, 'Angular Native'],
                 [/Elm native/i, 'Elm native'],
                 [/Swift/i, 'Swift'],
-                [/Kotlin/i, 'Kotlin'],
-            ]),
+                [/Kotlin/i, 'Kotlin']
+            ])
         },
         'On a scale of one to five pencils, how happy are you with the current state of mobile apps?': {
             type: 'short',
-            transform: castNumber,
+            transform: castNumber
         },
 
         // Generic tools
@@ -401,8 +401,8 @@ exports.response = {
                 [/meteor/i, 'Meteor'],
                 [/homebrew|brew/i, 'Homebrew'],
                 [/leiningen/i, 'Leiningen'],
-                [/maven/i, 'Maven'],
-            ]),
+                [/maven/i, 'Maven']
+            ])
         },
         'Utility Libraries': {
             type: 'keyword',
@@ -418,8 +418,8 @@ exports.response = {
                 [/recompose/i, 'recompose'],
                 [/^react$/i, 'React'],
                 [/zepto/i, 'Zepto'],
-                [/async/i, 'async'],
-            ]),
+                [/async/i, 'async']
+            ])
         },
         'Text Editors': {
             type: 'keyword',
@@ -435,8 +435,8 @@ exports.response = {
                 [/Visual Studio/, 'Visual Studio'],
                 [/notepad/i, 'Notepad++'],
                 [/netbeans/i, 'Netbeans'],
-                [/coda/i, 'Coda'],
-            ]),
+                [/coda/i, 'Coda']
+            ])
         },
         'Code Linters': {
             type: 'keyword',
@@ -449,8 +449,8 @@ exports.response = {
                 [/standardjs/i, 'StandardJS'],
                 [/jscs/i, 'JSCS'],
                 [/jslint/i, 'JSLint'],
-                [/xo/i, 'XO'],
-            ]),
+                [/xo/i, 'XO']
+            ])
         },
 
         // Features
@@ -466,56 +466,56 @@ exports.response = {
         'Offline Usage': { type: 'keyword' },
         'Other Features': {
             type: 'keyword',
-            transform: cleanupFreeValue,
+            transform: cleanupFreeValue
         },
 
         // Opinions
         'JavaScript is moving in the right direction': {
             type: 'short',
-            transform: castNumber,
+            transform: castNumber
         },
         'Building JavaScript apps is overly complex right now': {
             type: 'short',
-            transform: castNumber,
+            transform: castNumber
         },
         'JavaScript is over-used online': {
             type: 'short',
-            transform: castNumber,
+            transform: castNumber
         },
         'I enjoy building JavaScript apps': {
             type: 'short',
-            transform: castNumber,
+            transform: castNumber
         },
         'I would like JavaScript to be my main programming language': {
             type: 'short',
-            transform: castNumber,
+            transform: castNumber
         },
         'The JavaScript ecosystem is changing too fast': {
             type: 'short',
-            transform: castNumber,
+            transform: castNumber
         },
         'This survey is too damn long!': {
             type: 'short',
-            transform: castNumber,
+            transform: castNumber
         },
 
         'Years of Experience': {
-            type: 'keyword',
+            type: 'keyword'
         },
         'Company Size': {
-            type: 'keyword',
+            type: 'keyword'
         },
         'Yearly Salary': {
-            type: 'keyword',
+            type: 'keyword'
         },
         'Tabs or Spaces?': {
-            type: 'keyword',
+            type: 'keyword'
         },
         'Semicolons: Yes or No?': {
-            type: 'keyword',
-        },
+            type: 'keyword'
+        }
         //'How did you find out about this survey?': {},
         //'Your Email': {},
         //'Other Comments': {},
-    },
+    }
 }

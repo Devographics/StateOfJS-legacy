@@ -5,7 +5,7 @@ const config = require('@ekino/config')
 
 const client = new Client({
     host: `${config.get('elastic.host')}:${config.get('elastic.port')}`,
-    log: config.get('elastic.log'),
+    log: config.get('elastic.log')
 })
 
 const index = config.get('elastic.index')
@@ -25,13 +25,13 @@ exports.bulk = async (type, items) =>
             acc.push({
                 index: {
                     _index: index,
-                    _type: type,
-                },
+                    _type: type
+                }
             })
             acc.push(item)
 
             return acc
-        }, []),
+        }, [])
     })
 
 exports.termsAggs = async (fields, size = 20) =>
@@ -42,11 +42,11 @@ exports.termsAggs = async (fields, size = 20) =>
             query: { match_all: {} },
             aggs: fields.reduce((aggs, field) => {
                 aggs[field] = {
-                    terms: { field, size },
+                    terms: { field, size }
                 }
                 return aggs
-            }, {}),
-        },
+            }, {})
+        }
     })
 
 exports.termsAgg = async (field, size = 20) => exports.termsAggs([field], size)

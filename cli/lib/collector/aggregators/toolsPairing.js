@@ -10,7 +10,7 @@ module.exports = async (
 ) => {
     const rightAggs = righKeys.reduce((aggs, field) => {
         aggs[field] = {
-            filter: { term: { [field]: commonResponse } },
+            filter: { term: { [field]: commonResponse } }
         }
 
         return aggs
@@ -24,12 +24,12 @@ module.exports = async (
             aggs: leftKeys.reduce((aggs, field) => {
                 aggs[field] = {
                     filter: { term: { [field]: commonResponse } },
-                    aggs: rightAggs,
+                    aggs: rightAggs
                 }
 
                 return aggs
-            }, {}),
-        },
+            }, {})
+        }
     })
 
     return result.aggregations

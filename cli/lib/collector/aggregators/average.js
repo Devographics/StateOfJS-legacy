@@ -10,9 +10,9 @@ module.exports = async field => {
         body: {
             query: { match_all: {} },
             aggs: {
-                avg: { avg: { field } },
-            },
-        },
+                avg: { avg: { field } }
+            }
+        }
     })
 
     return result.aggregations.avg.value

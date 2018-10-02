@@ -29,7 +29,7 @@ const types = [
     'allToolsPairing',
     'users',
     'survey',
-    'comments',
+    'comments'
 ]
 const reports = types.reduce((methods, type) => {
     methods[type] = async () => {

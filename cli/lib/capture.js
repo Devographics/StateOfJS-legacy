@@ -1,9 +1,9 @@
 'use strict'
-
 const puppeteer = require('puppeteer')
 const chalk = require('chalk')
 const _ = require('lodash')
 const Path = require('path')
+const { isDirectory } = require('./fs')
 
 const capture = async (page, baseUrl, { path, selector }, outputDir) => {
     const url = `${baseUrl}${path}`
@@ -20,38 +20,32 @@ const capture = async (page, baseUrl, { path, selector }, outputDir) => {
     const clip = await element.boundingBox()
 
     const filename = `${_.snakeCase(_.deburr(path))}.png`
+    const fullPath = Path.join(outputDir, filename)
 
-    await page.screenshot({
-        path: Path.join(outputDir, filename),
-        clip,
-    })
+    await page.screenshot({ path: fullPath, clip })
 
-    console.log(chalk`  {green saved to {white ${filename}}}`)
+    console.log(chalk`  {green saved to {white ${filename}}} {dim (${fullPath})}`)
     console.log('')
 }
 
-module.exports = async config => {
-    console.log(chalk`{yellow Starting capture for ${config.pages.length} page(s)}`)
-    console.log(chalk`  {dim baseUrl:   {white ${config.baseUrl}}}`)
-    console.log(chalk`  {dim outputDir: {white ${config.outputDir}}}`)
+module.exports = async ({ baseUrl, outputDir, items }) => {
+    console.log(chalk`{yellow {white ${items.length}} item(s) to capture}`)
+    console.log(chalk`  {dim baseUrl:   {white ${baseUrl}}}`)
+    console.log(chalk`  {dim outputDir: {white ${outputDir}}}`)
     console.log('')
 
-    try {
-        const browser = await puppeteer.launch()
-        const page = await browser.newPage()
-        await page.setViewport({ width: 1400, height: 4000 })
-
-        for (let pageConfig of config.pages) {
-            await capture(page, config.baseUrl, pageConfig, config.outputDir)
-        }
-
-        await browser.close()
-
-        console.log(chalk`  {green done!}`)
-    } catch (error) {
-        console.log('')
-        console.error(chalk`{red oops, something went wrong :(}`)
-
-        throw error
+    const isDir = await isDirectory(outputDir)
+    if (!isDir) {
+        throw new Error(`'${outputDir}' is not a valid directory`)
     }
+
+    const browser = await puppeteer.launch()
+    const page = await browser.newPage()
+    await page.setViewport({ width: 1400, height: 4000 })
+
+    for (let pageConfig of items) {
+        await capture(page, baseUrl, pageConfig, outputDir)
+    }
+
+    await browser.close()
 }

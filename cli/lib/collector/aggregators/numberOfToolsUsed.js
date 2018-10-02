@@ -34,18 +34,18 @@ module.exports = async tools => {
                     terms: {
                         script: {
                             lang: 'painless',
-                            source: totalScript,
-                        },
-                    },
-                },
-            },
-        },
+                            source: totalScript
+                        }
+                    }
+                }
+            }
+        }
     })
 
     return sortBy(
         result.aggregations.by_count.buckets.map(bucket => ({
             ...bucket,
-            key: Number(bucket.key),
+            key: Number(bucket.key)
         })),
         'key'
     )

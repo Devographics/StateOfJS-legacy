@@ -22,7 +22,7 @@ const featuresKeys = [
     'Dead Code Elimination',
     'Progressive Enhancement',
     'Service Workers',
-    'Offline Usage',
+    'Offline Usage'
 ]
 
 const opinionKeys = [
@@ -32,7 +32,7 @@ const opinionKeys = [
     'I enjoy building JavaScript apps',
     'I would like JavaScript to be my main programming language',
     'The JavaScript ecosystem is changing too fast',
-    'This survey is too damn long!',
+    'This survey is too damn long!'
 ]
 
 const surveyKeys = ['browser', 'city', 'device', 'location', 'os', 'referrer']
@@ -47,7 +47,7 @@ const allTools = [
     'backend',
     'testing',
     'buildTools',
-    'mobile',
+    'mobile'
 ].reduce((all, key) => [...all, ...reportConfig[key].keys], [])
 
 exports.frontend = async () => {
@@ -67,7 +67,7 @@ exports.frontend = async () => {
         countries,
         others: others.aggregations[reportConfig.frontend.freeform],
         numberOfToolsUsed,
-        happiness: Number(happiness.toPrecision(2)),
+        happiness: Number(happiness.toPrecision(2))
     }
 }
 
@@ -86,7 +86,7 @@ exports.flavor = async () => {
         experienceByUsers,
         countries,
         numberOfToolsUsed,
-        happiness: Number(happiness.toPrecision(2)),
+        happiness: Number(happiness.toPrecision(2))
     }
 }
 
@@ -107,7 +107,7 @@ exports.state = async () => {
         countries,
         others: others.aggregations[reportConfig.stateManagement.freeform],
         numberOfToolsUsed,
-        happiness: Number(happiness.toPrecision(2)),
+        happiness: Number(happiness.toPrecision(2))
     }
 }
 
@@ -128,7 +128,7 @@ exports.style = async () => {
         countries,
         others: others.aggregations[reportConfig.styleManagement.freeform],
         numberOfToolsUsed,
-        happiness: Number(happiness.toPrecision(2)),
+        happiness: Number(happiness.toPrecision(2))
     }
 }
 
@@ -149,7 +149,7 @@ exports.backend = async () => {
         countries,
         others: others.aggregations[reportConfig.backend.freeform],
         numberOfToolsUsed,
-        happiness: Number(happiness.toPrecision(2)),
+        happiness: Number(happiness.toPrecision(2))
     }
 }
 
@@ -170,7 +170,7 @@ exports.testing = async () => {
         countries,
         others: others.aggregations[reportConfig.testing.freeform],
         numberOfToolsUsed,
-        happiness: Number(happiness.toPrecision(2)),
+        happiness: Number(happiness.toPrecision(2))
     }
 }
 
@@ -191,7 +191,7 @@ exports.build = async () => {
         others: others.aggregations[reportConfig.buildTools.freeform],
         countries,
         numberOfToolsUsed,
-        happiness: Number(happiness.toPrecision(2)),
+        happiness: Number(happiness.toPrecision(2))
     }
 }
 
@@ -212,7 +212,7 @@ exports.mobile = async () => {
         others: others.aggregations[reportConfig.mobile.freeform],
         countries,
         numberOfToolsUsed,
-        happiness: Number(happiness.toPrecision(2)),
+        happiness: Number(happiness.toPrecision(2))
     }
 }
 
@@ -220,7 +220,7 @@ exports.allToolsUsage = async () => {
     const allToolsUsage = await aggregators.toolsUsage(allTools)
 
     return {
-        allToolsUsage,
+        allToolsUsage
     }
 }
 
@@ -228,7 +228,7 @@ exports.allToolsPairing = async () => {
     const allToolsPairing = await aggregators.toolsPairing(allTools, allTools)
 
     return {
-        chord: charts.chord(allTools, allToolsPairing),
+        chord: charts.chord(allTools, allToolsPairing)
     }
 }
 
@@ -239,7 +239,7 @@ exports.features = async () => {
     return {
         keys: featuresKeys,
         aggs: dto.aggregations(aggs.aggregations),
-        others: others.aggregations['Other Features'],
+        others: others.aggregations['Other Features']
     }
 }
 
@@ -248,7 +248,7 @@ exports.opinion = async () => {
 
     return {
         keys: opinionKeys,
-        aggs: dto.aggregations(aggs.aggregations),
+        aggs: dto.aggregations(aggs.aggregations)
     }
 }
 
@@ -257,7 +257,7 @@ exports.otherTools = async () => {
 
     return {
         keys: otherToolsKeys,
-        aggs: aggs.aggregations,
+        aggs: aggs.aggregations
     }
 }
 
@@ -282,14 +282,14 @@ exports.comments = async () => {
         body: {
             query: {
                 constant_score: {
-                    filter: { exists: { field: 'Other Comments' } },
-                },
-            },
-        },
+                    filter: { exists: { field: 'Other Comments' } }
+                }
+            }
+        }
     })
 
     return result.hits.hits.map(item => ({
         content: item._source['Other Comments'],
-        location: item._source.location,
+        location: item._source.location
     }))
 }

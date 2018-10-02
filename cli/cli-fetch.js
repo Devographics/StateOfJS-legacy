@@ -18,7 +18,7 @@ const run = async () => {
         await elastic.putMapping('response', {
             properties: mapValues(mapping.response.properties, value => {
                 return omit(value, ['transform'])
-            }),
+            })
         })
 
         const result = await typeForm.responses({ limit: 1 })
@@ -30,7 +30,7 @@ const run = async () => {
                     'response',
                     responses.map(response => dto.response(questionById, response))
                 )
-            },
+            }
         })
     } catch (err) {
         console.error(err)

@@ -1,0 +1,23 @@
+- name:   Raphaël Benitte
+  slug:   raphael
+  avatar: https://avatars2.githubusercontent.com/u/488689?v=3&s=400
+  url:    https://github.com/plouc/
+  bio: >
+      Creator of the [Nivo](http://nivo.rocks/) JavaScript data visualization library as well
+      as [Mozaik](http://mozaik.rocks/), a tool for building beautiful dashboards.
+
+- name:   Sacha Greif
+  slug:   sacha
+  avatar: sacha.jpg
+  url:    http://sachagreif.com
+  bio: >
+      Author of [Discover Meteor](http://discovermeteor.com) and creator of
+      [VulcanJS](http://vulcanjs.org), a React+GraphQL open-source framework.
+
+- name:   Michael Rambeau
+  slug:   michaelr
+  avatar: https://avatars2.githubusercontent.com/u/488689?v=3&s=400
+  url:    https://michaelrambeau.com/
+  bio: >
+      Creator of [Best of JavaScript](https://bestofjs.org/), a platform
+      that provides insights and resources about JavaScript libraries.

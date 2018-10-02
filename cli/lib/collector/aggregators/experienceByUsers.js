@@ -11,7 +11,7 @@ const salaryAverages = {
     '$30-50k': 40,
     '$50-$100k': 75,
     '$100k-$200k': 150,
-    '$200k+': 250,
+    '$200k+': 250
 }
 
 const yearsOfExperienceAverages = {
@@ -20,7 +20,7 @@ const yearsOfExperienceAverages = {
     '2-5 years': 3.5,
     '5-10 years': 7.5,
     '10-20 years': 15,
-    '20+ years': 22.5,
+    '20+ years': 22.5
 }
 
 module.exports = async (fields, experience = `I've USED it before, and WOULD use it again`) => {
@@ -35,13 +35,13 @@ module.exports = async (fields, experience = `I've USED it before, and WOULD use
                     aggs: {
                         by_location: { terms: { field: 'location' } },
                         by_salary: { terms: { field: 'Yearly Salary' } },
-                        by_experience: { terms: { field: 'Years of Experience' } },
-                    },
+                        by_experience: { terms: { field: 'Years of Experience' } }
+                    }
                 }
 
                 return aggs
-            }, {}),
-        },
+            }, {})
+        }
     })
 
     const all = await elastic.client.search({
@@ -51,19 +51,19 @@ module.exports = async (fields, experience = `I've USED it before, and WOULD use
             query: {
                 bool: {
                     should: fields.map(field => ({
-                        term: { [field]: experience },
-                    })),
-                },
+                        term: { [field]: experience }
+                    }))
+                }
             },
             aggs: {
                 by_salary: { terms: { field: 'Yearly Salary' } },
-                by_experience: { terms: { field: 'Years of Experience' } },
-            },
-        },
+                by_experience: { terms: { field: 'Years of Experience' } }
+            }
+        }
     })
 
     result.aggregations.Aggregated = Object.assign({}, all.aggregations, {
-        doc_count: all.hits.total,
+        doc_count: all.hits.total
     })
 
     const allFields = ['Aggregated', ...fields]
@@ -75,7 +75,7 @@ module.exports = async (fields, experience = `I've USED it before, and WOULD use
         // compute percentages
         salaryBuckets = salaryBuckets.map(bucket =>
             Object.assign({}, bucket, {
-                percentage: Math.round(bucket.doc_count / total * 100),
+                percentage: Math.round((bucket.doc_count / total) * 100)
             })
         )
         helpers.fixBucketsPercentages(salaryBuckets)
@@ -95,7 +95,7 @@ module.exports = async (fields, experience = `I've USED it before, and WOULD use
         // compute percentages
         yearsOfExperienceBuckets = yearsOfExperienceBuckets.map(bucket =>
             Object.assign({}, bucket, {
-                percentage: Math.round(bucket.doc_count / total * 100),
+                percentage: Math.round((bucket.doc_count / total) * 100)
             })
         )
         helpers.fixBucketsPercentages(yearsOfExperienceBuckets)
