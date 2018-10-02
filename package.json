@@ -17,7 +17,7 @@
   "private": true,
   "engineStrict": true,
   "engines": {
-    "node": ">=8.3.0"
+    "node": "^8.10.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.0",

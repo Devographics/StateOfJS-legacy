@@ -1,0 +1,390 @@
+id: '2017'
+extractor: typeform
+typeform:
+    id: S5iLk9
+    fields:
+        '55569558':
+            type: tool
+            tool: flow
+        '55570167':
+            type: tool
+            tool: polymer
+        '55570222':
+            type: tool
+            tool: aurelia
+        '55570923':
+            type: tool
+            tool: stylus
+        '55571031':
+            type: tool
+            tool: falcor
+        '55571448':
+            type: tool
+            tool: express
+        '55571469':
+            type: tool
+            tool: koa
+        '55571498':
+            type: tool
+            tool: hapi
+        '55571612':
+            type: tool
+            tool: npm
+        '55571695':
+            type: tool
+            tool: rollup
+        '55571740':
+            type: tool
+            tool: reason
+        '55571771':
+            type: tool
+            tool: electron
+        '55571869':
+            type: tool
+            tool: bootstrap
+        '55571871':
+            type: tool
+            tool: foundation
+        '55577990':
+            type: tool
+            tool: ionic
+        '55778171':
+            type: source
+        '55791153':
+            type: tool
+            tool: sails
+        '55791174':
+            type: tool
+            tool: loopback
+        '55791275':
+            type: tool
+            tool: keystone
+        uIGj:
+            type: tool
+            tool: vanilla_js
+        fQxL:
+            type: tool
+            tool: es6
+        O5iI:
+            type: tool
+            tool: typescript
+        Fmdr:
+            type: tool
+            tool: elm
+        Tv09:
+            type: tool
+            tool: clojure_script
+        w2Tu:
+            type: happiness
+            section: flavors
+        ZxUD:
+            type: tool
+            tool: react
+        nPic:
+            type: tool
+            tool: angular_1
+        Fqkn:
+            type: tool
+            tool: angular_2
+        Gk1R:
+            type: tool
+            tool: ember
+        Fxzs:
+            type: tool
+            tool: vue
+        kT0P:
+            type: tool
+            tool: backbone
+        i5QX:
+            type: tool
+            tool: no_frontend_framework
+        f0gX:
+            type: other_tools
+            section: frontend
+        y0kW:
+            type: happiness
+            section: frontend
+        wqZL:
+            type: tool
+            tool: rest
+        vjDD:
+            type: tool
+            tool: redux
+        ug8Y:
+            type: tool
+            tool: mobx
+        prYE:
+            type: tool
+            tool: graph_ql
+        ByoY:
+            type: tool
+            tool: relay
+        WP7G:
+            type: tool
+            tool: apollo
+        NWen:
+            type: tool
+            tool: firebase
+        uR01:
+            type: other_tools
+            section: data_layer
+        CHBd:
+            type: happiness
+            section: data_layer
+        A46m:
+            type: tool
+            tool: meteor
+        uPDA:
+            type: tool
+            tool: feathers
+        QX12:
+            type: other_tools
+            section: backend
+        lUYG:
+            type: happiness
+            section: backend
+        zNoo:
+            type: tool
+            tool: mocha
+        Aqts:
+            type: tool
+            tool: jasmine
+        zasr:
+            type: tool
+            tool: enzyme
+        TJLc:
+            type: tool
+            tool: jest
+        m0hs:
+            type: tool
+            tool: tape
+        BE1m:
+            type: tool
+            tool: ava
+        hCPF:
+            type: other_tools
+            section: testing
+        sAAJ:
+            type: happiness
+            section: testing
+        ViEz:
+            type: tool
+            tool: plain_css
+        C7Sz:
+            type: tool
+            tool: sass
+        YyTC:
+            type: tool
+            tool: less
+        CJjB:
+            type: tool
+            tool: css_in_js
+        Meh3:
+            type: other_tools
+            section: css
+        nZC0:
+            type: happiness
+            section: css
+        Mk8w:
+            type: tool
+            tool: webpack
+        bR7L:
+            type: tool
+            tool: grunt
+        XPBe:
+            type: tool
+            tool: gulp
+        YSvT:
+            type: tool
+            tool: browserify
+        UzYH:
+            type: other_tools
+            section: build
+        Qx46:
+            type: happiness
+            section: build
+        IZ0M:
+            type: tool
+            tool: native_apps
+        Xs6a:
+            type: tool
+            tool: react_native
+        kOzD:
+            type: tool
+            tool: phone_gap_cordova
+        mg07:
+            type: tool
+            tool: native_script
+        uFwz:
+            type: other_tools
+            section: mobile
+        qeuD:
+            type: happiness
+            section: mobile
+        fbQg:
+            type: years_of_experience
+        OoKe:
+            type: company_size
+        jyR0:
+            type: salary
+        Fvkq:
+            type: email
+sections:
+    flavors:
+        title: 'JavaScript Flavor'
+        tools:
+            - vanilla_js
+            - es6
+            - typescript
+            - flow
+            - elm
+            - clojure_script
+            - reason
+    frontend:
+        title: Front-End
+        freeform: 'Other Front-End Frameworks'
+        tools:
+            - react
+            - angular_1
+            - angular_2
+            - ember
+            - vue
+            - backbone
+            - polymer
+            - aurelia
+            - no_frontend_framework
+    data_layer:
+        title: 'Data Layer'
+        freeform: 'Other Data Management Solutions'
+        tools:
+            - rest
+            - redux
+            - mobx
+            - graph_ql
+            - relay
+            - falcor
+            - apollo
+            - firebase
+    backend:
+        title: Back-End
+        freeform: 'Other Back-End Tools'
+        tools:
+            - meteor
+            - express
+            - koa
+            - hapi
+            - feathers
+            - sails
+            - loopback
+            - keystone
+    testing:
+        title: Testing
+        freeform: 'Other testing frameworks'
+        tools:
+            - mocha
+            - jasmine
+            - enzyme
+            - jest
+            - tape
+            - ava
+    css:
+        title: CSS
+        freeform: 'Other CSS solutions'
+        tools:
+            - plain_css
+            - sass
+            - stylus
+            - less
+            - css_in_js
+            - bootstrap
+            - foundation
+    build:
+        title: 'Build Tools'
+        freeform: 'Other build tools'
+        tools:
+            - webpack
+            - grunt
+            - gulp
+            - browserify
+            - npm
+            - rollup
+    mobile:
+        title: 'Mobile & Desktop'
+        freeform: 'Other mobile/desktop apps solutions'
+        tools:
+            - native_apps
+            - react_native
+            - ionic
+            - phone_gap_cordova
+            - native_script
+            - electron
+experience:
+    'I''ve USED it before, and WOULD use it again': would_use
+    'I''ve USED it before, and would NOT use it again': would_not_use
+    'I''ve HEARD of it, and WOULD like to learn it': interested
+    'I''ve HEARD of it, and am NOT interested': not_interested
+    'I''ve never heard of it': never_heard
+tools:
+    - vanilla_js
+    - es6
+    - typescript
+    - flow
+    - elm
+    - clojure_script
+    - reason
+    - react
+    - angular_1
+    - angular_2
+    - ember
+    - vue
+    - backbone
+    - polymer
+    - aurelia
+    - no_frontend_framework
+    - rest
+    - redux
+    - mobx
+    - graph_ql
+    - relay
+    - falcor
+    - apollo
+    - firebase
+    - meteor
+    - express
+    - koa
+    - hapi
+    - feathers
+    - sails
+    - loopback
+    - keystone
+    - mocha
+    - jasmine
+    - enzyme
+    - jest
+    - tape
+    - ava
+    - plain_css
+    - sass
+    - stylus
+    - less
+    - css_in_js
+    - bootstrap
+    - foundation
+    - webpack
+    - grunt
+    - gulp
+    - browserify
+    - npm
+    - rollup
+    - native_apps
+    - react_native
+    - ionic
+    - phone_gap_cordova
+    - native_script
+    - electron
+userInfo:
+    - years_of_experience
+    - company_size
+    - salary
+    - email
+    - source
