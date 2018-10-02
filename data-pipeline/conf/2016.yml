@@ -1,0 +1,352 @@
+id: '2016'
+extractor: typeform
+typeform:
+    id: Mulmxw
+    fields:
+        '28238431':
+            type: tool
+            tool: vanilla_js
+        '28238491':
+            type: years_of_experience
+        '28238492':
+            type: company_size
+        '28238493':
+            type: salary
+        '28238496':
+            type: happiness
+            section: flavors
+        '28238497':
+            type: happiness
+            section: frontend
+        '28238498':
+            type: happiness
+            section: state_management
+        '28238499':
+            type: happiness
+            section: data_layer
+        '28238500':
+            type: happiness
+            section: backend
+        '28238501':
+            type: happiness
+            section: testing
+        '28238502':
+            type: happiness
+            section: css
+        '28238503':
+            type: happiness
+            section: build
+        '28238504':
+            type: happiness
+            section: mobile
+        '28238505':
+            type: other_tools
+            section: frontend
+        '28238506':
+            type: other_tools
+            section: state_management
+        '28238507':
+            type: other_tools
+            section: data_layer
+        '28238508':
+            type: other_tools
+            section: backend
+        '28238509':
+            type: other_tools
+            section: testing
+        '28238510':
+            type: other_tools
+            section: css
+        '28238511':
+            type: other_tools
+            section: build
+        '28238512':
+            type: other_tools
+            section: mobile
+        '28238522':
+            type: email
+        '28238719':
+            type: tool
+            tool: es6
+        '28238720':
+            type: tool
+            tool: coffee_script
+        '28238721':
+            type: tool
+            tool: typescript
+        '28238738':
+            type: tool
+            tool: elm
+        '28238739':
+            type: tool
+            tool: clojure_script
+        '28238773':
+            type: tool
+            tool: no_frontend_framework
+        '28238785':
+            type: tool
+            tool: react
+        '28238795':
+            type: tool
+            tool: angular_1
+        '28238797':
+            type: tool
+            tool: angular_2
+        '28238799':
+            type: tool
+            tool: ember
+        '28238803':
+            type: tool
+            tool: vue
+        '28238804':
+            type: tool
+            tool: backbone
+        '28238860':
+            type: tool
+            tool: redux
+        '28238867':
+            type: tool
+            tool: mobx
+        '28238869':
+            type: tool
+            tool: relay
+        '28238888':
+            type: tool
+            tool: rest
+        '28238894':
+            type: tool
+            tool: firebase
+        '28238899':
+            type: tool
+            tool: graph_ql
+        '28238903':
+            type: tool
+            tool: apollo
+        '28238920':
+            type: tool
+            tool: falcor
+        '28238921':
+            type: tool
+            tool: horizon
+        '28238966':
+            type: tool
+            tool: meteor
+        '28238968':
+            type: tool
+            tool: feathers
+        '28238969':
+            type: tool
+            tool: done
+        '28238971':
+            type: tool
+            tool: mern
+        '28238972':
+            type: tool
+            tool: mean
+        '28238982':
+            type: tool
+            tool: mocha
+        '28239000':
+            type: tool
+            tool: jasmine
+        '28239005':
+            type: tool
+            tool: enzyme
+        '28239015':
+            type: tool
+            tool: cucumber
+        '28239020':
+            type: tool
+            tool: ava
+        '28239049':
+            type: tool
+            tool: jest
+        '28239069':
+            type: tool
+            tool: plain_css
+        '28239074':
+            type: tool
+            tool: sass
+        '28239081':
+            type: tool
+            tool: less
+        '28239083':
+            type: tool
+            tool: css_modules
+        '28239098':
+            type: tool
+            tool: aphrodite
+        '28239116':
+            type: tool
+            tool: webpack
+        '28239129':
+            type: tool
+            tool: bower
+        '28239144':
+            type: tool
+            tool: browserify
+        '28239145':
+            type: tool
+            tool: gulp
+        '28239146':
+            type: tool
+            tool: grunt
+        '28239233':
+            type: tool
+            tool: native_apps
+        '28239235':
+            type: tool
+            tool: cordova
+        '28239238':
+            type: tool
+            tool: react_native
+        '28239249':
+            type: tool
+            tool: phone_gap
+        '28239251':
+            type: tool
+            tool: native_script
+sections:
+    flavors:
+        title: 'JavaScript Flavor'
+        tools:
+            - vanilla_js
+            - es6
+            - coffee_script
+            - typescript
+            - elm
+            - clojure_script
+    frontend:
+        title: Front-End
+        freeform: 'Other Front-End Frameworks'
+        tools:
+            - no_frontend_framework
+            - react
+            - angular_1
+            - angular_2
+            - ember
+            - vue
+            - backbone
+    state_management:
+        title: 'State Management'
+        freeform: 'Other State Management Libraries'
+        tools:
+            - redux
+            - mobx
+            - relay
+    data_layer:
+        title: 'API Layer'
+        freeform: 'Other API layer solutions'
+        tools:
+            - rest
+            - firebase
+            - graph_ql
+            - apollo
+            - falcor
+            - horizon
+    backend:
+        title: Stacks
+        freeform: 'Other stacks'
+        tools:
+            - meteor
+            - feathers
+            - done
+            - mern
+            - mean
+    testing:
+        title: Testing
+        freeform: 'Other testing frameworks'
+        tools:
+            - mocha
+            - jasmine
+            - enzyme
+            - jest
+            - cucumber
+            - ava
+    css:
+        title: CSS
+        freeform: 'Other CSS solutions'
+        tools:
+            - plain_css
+            - sass
+            - less
+            - css_modules
+            - aphrodite
+    build:
+        title: 'Build Tools'
+        freeform: 'Other build tools'
+        tools:
+            - webpack
+            - grunt
+            - gulp
+            - browserify
+            - bower
+    mobile:
+        title: Mobile
+        freeform: 'Other mobile apps solutions'
+        tools:
+            - native_apps
+            - react_native
+            - cordova
+            - phone_gap
+            - native_script
+experience:
+    'I''ve used it before, and would use it again': would_use
+    'I''ve used it before, and would not use it again': would_not_use
+    'I''ve heard of it, and would like to learn it': interested
+    'I''ve heard of it, and am not interested': not_interested
+    'I''ve never heard of it': never_heard
+tools:
+    - vanilla_js
+    - es6
+    - coffee_script
+    - typescript
+    - elm
+    - clojure_script
+    - no_frontend_framework
+    - react
+    - angular_1
+    - angular_2
+    - ember
+    - vue
+    - backbone
+    - redux
+    - mobx
+    - relay
+    - rest
+    - firebase
+    - graph_ql
+    - apollo
+    - falcor
+    - horizon
+    - meteor
+    - feathers
+    - done
+    - mern
+    - mean
+    - mocha
+    - jasmine
+    - enzyme
+    - jest
+    - cucumber
+    - ava
+    - plain_css
+    - sass
+    - less
+    - css_modules
+    - aphrodite
+    - webpack
+    - grunt
+    - gulp
+    - browserify
+    - bower
+    - native_apps
+    - react_native
+    - cordova
+    - phone_gap
+    - native_script
+userInfo:
+    - years_of_experience
+    - company_size
+    - salary
+    - email
