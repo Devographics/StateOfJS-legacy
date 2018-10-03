@@ -2,7 +2,7 @@ import React from 'react'
 import ReactGA from 'react-ga'
 
 const trackShare = (platform, section) => {
-    return event => {
+    return () => {
         ReactGA.event({
             category: platform,
             action: `${section} chart share`

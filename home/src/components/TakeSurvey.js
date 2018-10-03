@@ -12,6 +12,7 @@ export default class TakeSurvey extends React.Component {
         setTimeout(() => {
             // geo tracking
             if (typeof geoip2 !== 'undefined') {
+                // eslint-disable-next-line no-undef
                 geoip2.city(
                     result => {
                         this.setState({
@@ -35,6 +36,7 @@ export default class TakeSurvey extends React.Component {
             }
         }, 200)
 
+        // eslint-disable-next-line no-undef
         const browser = bowser.getParser(window.navigator.userAgent)
         const info = browser.parse().parsedResult
 
@@ -44,6 +46,7 @@ export default class TakeSurvey extends React.Component {
             browser: info.browser.name,
             version: info.browser.version,
             os: info.os.name,
+            // eslint-disable-next-line no-undef
             referrer: document.referrer
         }
 

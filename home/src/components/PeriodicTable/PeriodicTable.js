@@ -4,18 +4,18 @@ import PropTypes from 'prop-types'
 import Element from './Element'
 
 const PeriodicTable = ({ elements }) => (
-  <div className="periodic-table-wrapper">
-    <div className="periodic-table">
-      {elements.map((element, i) => (
-        element.name && <Element {...element} key={i} />
+    <div className="periodic-table-wrapper">
+        <div className="periodic-table">
+            {elements.map((element, i) => (
+                element.name && <Element {...element} key={i} />
             ))}
-      <div className="periodic-gradient" />
+            <div className="periodic-gradient" />
+        </div>
     </div>
-  </div>
 )
 
 PeriodicTable.propTypes = {
-  elements: PropTypes.array.isRequired,
+    elements: PropTypes.array.isRequired,
 }
 
 export default PeriodicTable

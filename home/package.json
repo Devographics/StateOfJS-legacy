@@ -54,5 +54,8 @@
     "build": "gatsby build",
     "deploy": "gatsby build && gh-pages -d public",
     "dev": "gatsby develop"
+  },
+  "devDependencies": {
+    "gatsby-plugin-eslint": "^2.0.1"
   }
 }

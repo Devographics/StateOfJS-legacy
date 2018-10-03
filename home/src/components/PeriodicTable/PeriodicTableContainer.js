@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { flatten, times } from 'lodash'
 
@@ -37,6 +37,7 @@ PeriodicTableContainer.propTypes = {
 export default PeriodicTableContainer
 
 // used in layouts/index.js
+// eslint-disable-next-line no-undef
 export const periodicTableFragment = graphql`
     fragment PeriodicTableFragment on Project {
         id
