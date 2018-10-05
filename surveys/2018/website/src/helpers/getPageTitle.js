@@ -14,7 +14,7 @@ const getPageTitle = (sectionName, subSectionName) => {
         const subSection = sections[subSectionName]
         pageName += ` – ${subSection.fullLabel}`
     }
-    return `The State of JavaScript 2017: ${pageName}`
+    return `The State of JavaScript 2018: ${pageName}`
 }
 
 export default getPageTitle

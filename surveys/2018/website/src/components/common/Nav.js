@@ -16,7 +16,7 @@ const NavItem = ({ label, subPages, path, comingSoon, closeSidebar }) => (
         <h3 className={classNames('nav-page', { 'nav-page-comingsoon': comingSoon })}>
             <Link
                 onClick={closeSidebar}
-                to={`/2017/${slugify(label)}/`}
+                to={`/${slugify(label)}/`}
                 activeClassName="nav-page-active"
             >
                 {label}
@@ -50,7 +50,7 @@ const NavSubItem = ({ parentLabel, label, fullLabel, closeSidebar }) => (
     <Link
         className="nav-subpage"
         activeClassName="nav-subpage-active"
-        to={`/2017/${slugify(parentLabel)}/${slugify(label)}/`}
+        to={`/${slugify(parentLabel)}/${slugify(label)}/`}
         onClick={closeSidebar}
     >
         {fullLabel}{' '}
