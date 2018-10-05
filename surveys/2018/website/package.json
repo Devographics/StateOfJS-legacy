@@ -15,7 +15,7 @@
   ],
   "engineStrict": true,
   "engines": {
-    "node": "^8.10.0"
+    "node": "^8.12.0"
   },
   "dependencies": {
     "@nivo/bar": "0.49.1",
