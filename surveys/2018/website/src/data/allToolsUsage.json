@@ -1,0 +1,289 @@
+{
+    "allToolsUsage": [
+        {
+            "doc_count": 1715,
+            "key": "Backbone",
+            "percentage": 7
+        },
+        {
+            "doc_count": 3381,
+            "key": "PhoneGap/Cordova",
+            "percentage": 14
+        },
+        {
+            "doc_count": 16811,
+            "key": "Plain CSS",
+            "percentage": 71
+        },
+        {
+            "doc_count": 1225,
+            "key": "Elm",
+            "percentage": 5
+        },
+        {
+            "doc_count": 78,
+            "key": "Falcor",
+            "percentage": 0
+        },
+        {
+            "doc_count": 4973,
+            "key": "Grunt",
+            "percentage": 21
+        },
+        {
+            "doc_count": 348,
+            "key": "Aurelia",
+            "percentage": 1
+        },
+        {
+            "doc_count": 17879,
+            "key": "SASS/SCSS",
+            "percentage": 75
+        },
+        {
+            "doc_count": 521,
+            "key": "Relay/Relay Modern",
+            "percentage": 2
+        },
+        {
+            "doc_count": 4262,
+            "key": "Foundation",
+            "percentage": 18
+        },
+        {
+            "doc_count": 1260,
+            "key": "Apollo",
+            "percentage": 5
+        },
+        {
+            "doc_count": 2794,
+            "key": "GraphQL",
+            "percentage": 12
+        },
+        {
+            "doc_count": 1176,
+            "key": "Ava",
+            "percentage": 5
+        },
+        {
+            "doc_count": 11175,
+            "key": "Gulp",
+            "percentage": 47
+        },
+        {
+            "doc_count": 12637,
+            "key": "\"Plain\" JavaScript (ES5)",
+            "percentage": 53
+        },
+        {
+            "doc_count": 1117,
+            "key": "Ember",
+            "percentage": 5
+        },
+        {
+            "doc_count": 2458,
+            "key": "Ionic",
+            "percentage": 10
+        },
+        {
+            "doc_count": 7364,
+            "key": "LESS",
+            "percentage": 31
+        },
+        {
+            "doc_count": 630,
+            "key": "Sails",
+            "percentage": 3
+        },
+        {
+            "doc_count": 2034,
+            "key": "Rollup",
+            "percentage": 9
+        },
+        {
+            "doc_count": 459,
+            "key": "Loopback",
+            "percentage": 2
+        },
+        {
+            "doc_count": 20596,
+            "key": "ES6",
+            "percentage": 87
+        },
+        {
+            "doc_count": 21369,
+            "key": "NPM",
+            "percentage": 90
+        },
+        {
+            "doc_count": 131,
+            "key": "Reason",
+            "percentage": 1
+        },
+        {
+            "doc_count": 4707,
+            "key": "Angular",
+            "percentage": 20
+        },
+        {
+            "doc_count": 2356,
+            "key": "Stylus",
+            "percentage": 10
+        },
+        {
+            "doc_count": 7968,
+            "key": "TypeScript",
+            "percentage": 34
+        },
+        {
+            "doc_count": 20615,
+            "key": "REST API",
+            "percentage": 87
+        },
+        {
+            "doc_count": 6485,
+            "key": "CSS-in-JS",
+            "percentage": 27
+        },
+        {
+            "doc_count": 309,
+            "key": "Keystone",
+            "percentage": 1
+        },
+        {
+            "doc_count": 533,
+            "key": "ClojureScript",
+            "percentage": 2
+        },
+        {
+            "doc_count": 9236,
+            "key": "Jasmine",
+            "percentage": 39
+        },
+        {
+            "doc_count": 4945,
+            "key": "Electron",
+            "percentage": 21
+        },
+        {
+            "doc_count": 14216,
+            "key": "Bootstrap",
+            "percentage": 60
+        },
+        {
+            "doc_count": 2198,
+            "key": "Koa",
+            "percentage": 9
+        },
+        {
+            "doc_count": 1142,
+            "key": "MobX",
+            "percentage": 5
+        },
+        {
+            "doc_count": 4449,
+            "key": "Angular 2",
+            "percentage": 19
+        },
+        {
+            "doc_count": 5857,
+            "key": "Jest",
+            "percentage": 25
+        },
+        {
+            "doc_count": 7933,
+            "key": "Native Apps",
+            "percentage": 33
+        },
+        {
+            "doc_count": 5519,
+            "key": "Firebase",
+            "percentage": 23
+        },
+        {
+            "doc_count": 14541,
+            "key": "Express",
+            "percentage": 61
+        },
+        {
+            "doc_count": 1515,
+            "key": "Tape",
+            "percentage": 6
+        },
+        {
+            "doc_count": 4580,
+            "key": "Enzyme",
+            "percentage": 19
+        },
+        {
+            "doc_count": 5221,
+            "key": "Browserify",
+            "percentage": 22
+        },
+        {
+            "doc_count": 1625,
+            "key": "Meteor",
+            "percentage": 7
+        },
+        {
+            "doc_count": 10725,
+            "key": "Redux",
+            "percentage": 45
+        },
+        {
+            "doc_count": 4647,
+            "key": "Vue",
+            "percentage": 20
+        },
+        {
+            "doc_count": 503,
+            "key": "NativeScript",
+            "percentage": 2
+        },
+        {
+            "doc_count": 1198,
+            "key": "Polymer",
+            "percentage": 5
+        },
+        {
+            "doc_count": 10717,
+            "key": "Mocha",
+            "percentage": 45
+        },
+        {
+            "doc_count": 13669,
+            "key": "React",
+            "percentage": 58
+        },
+        {
+            "doc_count": 447,
+            "key": "FeathersJS",
+            "percentage": 2
+        },
+        {
+            "doc_count": 2389,
+            "key": "Flow",
+            "percentage": 10
+        },
+        {
+            "doc_count": 1567,
+            "key": "Hapi",
+            "percentage": 7
+        },
+        {
+            "doc_count": 9493,
+            "key": "No Front-End Framework",
+            "percentage": 40
+        },
+        {
+            "doc_count": 4760,
+            "key": "React Native",
+            "percentage": 20
+        },
+        {
+            "doc_count": 16485,
+            "key": "Webpack",
+            "percentage": 70
+        }
+    ]
+}

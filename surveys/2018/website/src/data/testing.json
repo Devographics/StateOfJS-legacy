@@ -1,0 +1,2113 @@
+{
+    "keys": [
+        "Mocha",
+        "Jasmine",
+        "Enzyme",
+        "Jest",
+        "Tape",
+        "Ava"
+    ],
+    "experience": {
+        "Tape": {
+            "I've never heard of it": 17425,
+            "I've HEARD of it, and am NOT interested": 2262,
+            "I've HEARD of it, and WOULD like to learn it": 2048,
+            "I've USED it before, and WOULD use it again": 1515,
+            "I've USED it before, and would NOT use it again": 454
+        },
+        "Enzyme": {
+            "I've never heard of it": 13540,
+            "I've USED it before, and WOULD use it again": 4580,
+            "I've HEARD of it, and WOULD like to learn it": 3397,
+            "I've HEARD of it, and am NOT interested": 1917,
+            "I've USED it before, and would NOT use it again": 270
+        },
+        "Jasmine": {
+            "I've USED it before, and WOULD use it again": 9236,
+            "I've HEARD of it, and WOULD like to learn it": 5774,
+            "I've HEARD of it, and am NOT interested": 3293,
+            "I've never heard of it": 3034,
+            "I've USED it before, and would NOT use it again": 2367
+        },
+        "Mocha": {
+            "I've USED it before, and WOULD use it again": 10717,
+            "I've HEARD of it, and WOULD like to learn it": 6591,
+            "I've HEARD of it, and am NOT interested": 2587,
+            "I've never heard of it": 2254,
+            "I've USED it before, and would NOT use it again": 1555
+        },
+        "Ava": {
+            "I've never heard of it": 18029,
+            "I've HEARD of it, and WOULD like to learn it": 2181,
+            "I've HEARD of it, and am NOT interested": 1926,
+            "I've USED it before, and WOULD use it again": 1176,
+            "I've USED it before, and would NOT use it again": 392
+        },
+        "Jest": {
+            "I've never heard of it": 9013,
+            "I've HEARD of it, and WOULD like to learn it": 6470,
+            "I've USED it before, and WOULD use it again": 5857,
+            "I've HEARD of it, and am NOT interested": 1967,
+            "I've USED it before, and would NOT use it again": 397
+        }
+    },
+    "experienceByUsers": {
+        "Tape": {
+            "doc_count": 1515,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 504,
+                        "percentage": 36
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 468,
+                        "percentage": 31
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 225,
+                        "percentage": 15
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 135,
+                        "percentage": 9
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 63,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 49,
+                        "percentage": 3
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 36,
+                        "percentage": 2
+                    }
+                ],
+                "average": 85
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 536,
+                        "percentage": 36
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 402,
+                        "percentage": 27
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 392,
+                        "percentage": 26
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 98,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 68,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 15,
+                        "percentage": 1
+                    }
+                ],
+                "average": 9
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 8,
+                "sum_other_doc_count": 304,
+                "buckets": [
+                    {
+                        "key": "undefined",
+                        "doc_count": 427
+                    },
+                    {
+                        "key": "United States",
+                        "doc_count": 408
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 107
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 57
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 38
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 37
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 35
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 33
+                    },
+                    {
+                        "key": "Sweden",
+                        "doc_count": 32
+                    },
+                    {
+                        "key": "Russia",
+                        "doc_count": 28
+                    }
+                ]
+            }
+        },
+        "Enzyme": {
+            "doc_count": 4580,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 1550,
+                        "percentage": 36
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 1393,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 724,
+                        "percentage": 16
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 455,
+                        "percentage": 10
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 140,
+                        "percentage": 3
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 129,
+                        "percentage": 3
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 94,
+                        "percentage": 2
+                    }
+                ],
+                "average": 85
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 1485,
+                        "percentage": 33
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 1475,
+                        "percentage": 32
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 975,
+                        "percentage": 21
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 414,
+                        "percentage": 9
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 145,
+                        "percentage": 3
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 77,
+                        "percentage": 2
+                    }
+                ],
+                "average": 8
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 23,
+                "sum_other_doc_count": 1004,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 1264
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 1092
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 363
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 179
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 150
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 133
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 111
+                    },
+                    {
+                        "key": "Poland",
+                        "doc_count": 83
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 81
+                    },
+                    {
+                        "key": "Russia",
+                        "doc_count": 81
+                    }
+                ]
+            }
+        },
+        "Jasmine": {
+            "doc_count": 9236,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 3186,
+                        "percentage": 38
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 2413,
+                        "percentage": 26
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 1512,
+                        "percentage": 16
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 1064,
+                        "percentage": 12
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 321,
+                        "percentage": 3
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 300,
+                        "percentage": 3
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 197,
+                        "percentage": 2
+                    }
+                ],
+                "average": 79
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 2936,
+                        "percentage": 32
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 2619,
+                        "percentage": 28
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 2197,
+                        "percentage": 24
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 837,
+                        "percentage": 9
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 482,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 140,
+                        "percentage": 2
+                    }
+                ],
+                "average": 8
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 48,
+                "sum_other_doc_count": 2192,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 2580
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 2132
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 592
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 325
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 277
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 259
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 200
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 190
+                    },
+                    {
+                        "key": "Poland",
+                        "doc_count": 187
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 168
+                    }
+                ]
+            }
+        },
+        "Mocha": {
+            "doc_count": 10717,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 3573,
+                        "percentage": 36
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 2751,
+                        "percentage": 26
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 1704,
+                        "percentage": 16
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 1252,
+                        "percentage": 12
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 474,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 448,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 230,
+                        "percentage": 2
+                    }
+                ],
+                "average": 78
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 3314,
+                        "percentage": 31
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 3160,
+                        "percentage": 29
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 2463,
+                        "percentage": 23
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 1030,
+                        "percentage": 10
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 524,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 199,
+                        "percentage": 2
+                    }
+                ],
+                "average": 8
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 53,
+                "sum_other_doc_count": 2516,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 2903
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 2632
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 698
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 369
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 346
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 296
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 242
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 204
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 193
+                    },
+                    {
+                        "key": "Poland",
+                        "doc_count": 182
+                    }
+                ]
+            }
+        },
+        "Ava": {
+            "doc_count": 1176,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 404,
+                        "percentage": 36
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 312,
+                        "percentage": 27
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 167,
+                        "percentage": 14
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 134,
+                        "percentage": 11
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 66,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 48,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 21,
+                        "percentage": 2
+                    }
+                ],
+                "average": 78
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 409,
+                        "percentage": 35
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 391,
+                        "percentage": 33
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 251,
+                        "percentage": 21
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 77,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 30,
+                        "percentage": 3
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 16,
+                        "percentage": 1
+                    }
+                ],
+                "average": 8
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 6,
+                "sum_other_doc_count": 219,
+                "buckets": [
+                    {
+                        "key": "undefined",
+                        "doc_count": 358
+                    },
+                    {
+                        "key": "United States",
+                        "doc_count": 286
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 86
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 49
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 44
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 31
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 25
+                    },
+                    {
+                        "key": "Sweden",
+                        "doc_count": 24
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 23
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 22
+                    }
+                ]
+            }
+        },
+        "Jest": {
+            "doc_count": 5857,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 1976,
+                        "percentage": 35
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 1551,
+                        "percentage": 26
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 974,
+                        "percentage": 17
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 623,
+                        "percentage": 11
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 230,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 226,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 147,
+                        "percentage": 3
+                    }
+                ],
+                "average": 80
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 1878,
+                        "percentage": 31
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 1861,
+                        "percentage": 32
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 1261,
+                        "percentage": 22
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 527,
+                        "percentage": 9
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 220,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 97,
+                        "percentage": 2
+                    }
+                ],
+                "average": 8
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 28,
+                "sum_other_doc_count": 1330,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 1501
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 1451
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 433
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 241
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 186
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 172
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 145
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 117
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 115
+                    },
+                    {
+                        "key": "Russia",
+                        "doc_count": 114
+                    }
+                ]
+            }
+        },
+        "Aggregated": {
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 5073,
+                        "percentage": 37
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 3715,
+                        "percentage": 24
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 2570,
+                        "percentage": 17
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 1869,
+                        "percentage": 12
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 674,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 668,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 310,
+                        "percentage": 2
+                    }
+                ],
+                "average": 76
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 4738,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 4553,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 3436,
+                        "percentage": 23
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 1478,
+                        "percentage": 10
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 727,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 289,
+                        "percentage": 2
+                    }
+                ],
+                "average": 8
+            },
+            "doc_count": 15269
+        }
+    },
+    "countries": [
+        {
+            "key": "undefined",
+            "doc_count": 5839,
+            "Tape": {
+                "doc_count": 427,
+                "percentage": 5,
+                "divergence": 0
+            },
+            "Enzyme": {
+                "doc_count": 1092,
+                "percentage": 13,
+                "divergence": -1
+            },
+            "Jasmine": {
+                "doc_count": 2132,
+                "percentage": 26,
+                "divergence": -2
+            },
+            "Mocha": {
+                "doc_count": 2632,
+                "percentage": 34,
+                "divergence": 3
+            },
+            "Ava": {
+                "doc_count": 358,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "Jest": {
+                "doc_count": 1451,
+                "percentage": 18,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "United States",
+            "doc_count": 5719,
+            "Tape": {
+                "doc_count": 408,
+                "percentage": 5,
+                "divergence": 0
+            },
+            "Enzyme": {
+                "doc_count": 1264,
+                "percentage": 14,
+                "divergence": 0
+            },
+            "Jasmine": {
+                "doc_count": 2580,
+                "percentage": 29,
+                "divergence": 1
+            },
+            "Mocha": {
+                "doc_count": 2903,
+                "percentage": 32,
+                "divergence": 1
+            },
+            "Ava": {
+                "doc_count": 286,
+                "percentage": 3,
+                "divergence": -1
+            },
+            "Jest": {
+                "doc_count": 1501,
+                "percentage": 17,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "United Kingdom",
+            "doc_count": 1409,
+            "Tape": {
+                "doc_count": 107,
+                "percentage": 5,
+                "divergence": 0
+            },
+            "Enzyme": {
+                "doc_count": 363,
+                "percentage": 16,
+                "divergence": 2
+            },
+            "Jasmine": {
+                "doc_count": 592,
+                "percentage": 26,
+                "divergence": -2
+            },
+            "Mocha": {
+                "doc_count": 698,
+                "percentage": 30,
+                "divergence": -1
+            },
+            "Ava": {
+                "doc_count": 86,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "Jest": {
+                "doc_count": 433,
+                "percentage": 19,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "Germany",
+            "doc_count": 879,
+            "Tape": {
+                "doc_count": 57,
+                "percentage": 5,
+                "divergence": 0
+            },
+            "Enzyme": {
+                "doc_count": 179,
+                "percentage": 15,
+                "divergence": 1
+            },
+            "Jasmine": {
+                "doc_count": 325,
+                "percentage": 27,
+                "divergence": -1
+            },
+            "Mocha": {
+                "doc_count": 369,
+                "percentage": 29,
+                "divergence": -2
+            },
+            "Ava": {
+                "doc_count": 49,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "Jest": {
+                "doc_count": 241,
+                "percentage": 20,
+                "divergence": 2
+            }
+        },
+        {
+            "key": "Canada",
+            "doc_count": 771,
+            "Tape": {
+                "doc_count": 35,
+                "percentage": 3,
+                "divergence": -2
+            },
+            "Enzyme": {
+                "doc_count": 150,
+                "percentage": 15,
+                "divergence": 1
+            },
+            "Jasmine": {
+                "doc_count": 277,
+                "percentage": 27,
+                "divergence": -1
+            },
+            "Mocha": {
+                "doc_count": 346,
+                "percentage": 35,
+                "divergence": 4
+            },
+            "Ava": {
+                "doc_count": 23,
+                "percentage": 2,
+                "divergence": -2
+            },
+            "Jest": {
+                "doc_count": 186,
+                "percentage": 18,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "France",
+            "doc_count": 695,
+            "Tape": {
+                "doc_count": 38,
+                "percentage": 4,
+                "divergence": -1
+            },
+            "Enzyme": {
+                "doc_count": 111,
+                "percentage": 12,
+                "divergence": -2
+            },
+            "Jasmine": {
+                "doc_count": 259,
+                "percentage": 28,
+                "divergence": 0
+            },
+            "Mocha": {
+                "doc_count": 296,
+                "percentage": 32,
+                "divergence": 1
+            },
+            "Ava": {
+                "doc_count": 44,
+                "percentage": 5,
+                "divergence": 1
+            },
+            "Jest": {
+                "doc_count": 172,
+                "percentage": 19,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "India",
+            "doc_count": 500,
+            "Tape": {
+                "doc_count": 12,
+                "percentage": 2,
+                "divergence": -3
+            },
+            "Enzyme": {
+                "doc_count": 64,
+                "percentage": 13,
+                "divergence": -1
+            },
+            "Jasmine": {
+                "doc_count": 152,
+                "percentage": 31,
+                "divergence": 3
+            },
+            "Mocha": {
+                "doc_count": 164,
+                "percentage": 35,
+                "divergence": 4
+            },
+            "Ava": {
+                "doc_count": 11,
+                "percentage": 2,
+                "divergence": -2
+            },
+            "Jest": {
+                "doc_count": 85,
+                "percentage": 17,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "Australia",
+            "doc_count": 492,
+            "Tape": {
+                "doc_count": 37,
+                "percentage": 5,
+                "divergence": 0
+            },
+            "Enzyme": {
+                "doc_count": 133,
+                "percentage": 17,
+                "divergence": 3
+            },
+            "Jasmine": {
+                "doc_count": 200,
+                "percentage": 25,
+                "divergence": -3
+            },
+            "Mocha": {
+                "doc_count": 242,
+                "percentage": 31,
+                "divergence": 0
+            },
+            "Ava": {
+                "doc_count": 31,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "Jest": {
+                "doc_count": 145,
+                "percentage": 18,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Netherlands",
+            "doc_count": 449,
+            "Tape": {
+                "doc_count": 25,
+                "percentage": 4,
+                "divergence": -1
+            },
+            "Enzyme": {
+                "doc_count": 81,
+                "percentage": 14,
+                "divergence": 0
+            },
+            "Jasmine": {
+                "doc_count": 168,
+                "percentage": 28,
+                "divergence": 0
+            },
+            "Mocha": {
+                "doc_count": 193,
+                "percentage": 31,
+                "divergence": 0
+            },
+            "Ava": {
+                "doc_count": 16,
+                "percentage": 3,
+                "divergence": -1
+            },
+            "Jest": {
+                "doc_count": 117,
+                "percentage": 20,
+                "divergence": 2
+            }
+        },
+        {
+            "key": "Brazil",
+            "doc_count": 437,
+            "Tape": {
+                "doc_count": 15,
+                "percentage": 3,
+                "divergence": -2
+            },
+            "Enzyme": {
+                "doc_count": 73,
+                "percentage": 13,
+                "divergence": -1
+            },
+            "Jasmine": {
+                "doc_count": 163,
+                "percentage": 29,
+                "divergence": 1
+            },
+            "Mocha": {
+                "doc_count": 175,
+                "percentage": 31,
+                "divergence": 0
+            },
+            "Ava": {
+                "doc_count": 25,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "Jest": {
+                "doc_count": 115,
+                "percentage": 20,
+                "divergence": 2
+            }
+        },
+        {
+            "key": "Poland",
+            "doc_count": 420,
+            "Tape": {
+                "doc_count": 19,
+                "percentage": 3,
+                "divergence": -2
+            },
+            "Enzyme": {
+                "doc_count": 83,
+                "percentage": 14,
+                "divergence": 0
+            },
+            "Jasmine": {
+                "doc_count": 187,
+                "percentage": 32,
+                "divergence": 4
+            },
+            "Mocha": {
+                "doc_count": 182,
+                "percentage": 31,
+                "divergence": 0
+            },
+            "Ava": {
+                "doc_count": 11,
+                "percentage": 2,
+                "divergence": -2
+            },
+            "Jest": {
+                "doc_count": 109,
+                "percentage": 18,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Spain",
+            "doc_count": 413,
+            "Tape": {
+                "doc_count": 33,
+                "percentage": 5,
+                "divergence": 0
+            },
+            "Enzyme": {
+                "doc_count": 62,
+                "percentage": 10,
+                "divergence": -4
+            },
+            "Jasmine": {
+                "doc_count": 190,
+                "percentage": 31,
+                "divergence": 3
+            },
+            "Mocha": {
+                "doc_count": 204,
+                "percentage": 34,
+                "divergence": 3
+            },
+            "Ava": {
+                "doc_count": 22,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "Jest": {
+                "doc_count": 98,
+                "percentage": 16,
+                "divergence": -2
+            }
+        },
+        {
+            "key": "Russia",
+            "doc_count": 379,
+            "Tape": {
+                "doc_count": 28,
+                "percentage": 6,
+                "divergence": 1
+            },
+            "Enzyme": {
+                "doc_count": 81,
+                "percentage": 16,
+                "divergence": 2
+            },
+            "Jasmine": {
+                "doc_count": 111,
+                "percentage": 22,
+                "divergence": -6
+            },
+            "Mocha": {
+                "doc_count": 153,
+                "percentage": 30,
+                "divergence": -1
+            },
+            "Ava": {
+                "doc_count": 20,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "Jest": {
+                "doc_count": 114,
+                "percentage": 22,
+                "divergence": 4
+            }
+        },
+        {
+            "key": "Sweden",
+            "doc_count": 330,
+            "Tape": {
+                "doc_count": 32,
+                "percentage": 6,
+                "divergence": 1
+            },
+            "Enzyme": {
+                "doc_count": 72,
+                "percentage": 14,
+                "divergence": 0
+            },
+            "Jasmine": {
+                "doc_count": 133,
+                "percentage": 26,
+                "divergence": -2
+            },
+            "Mocha": {
+                "doc_count": 156,
+                "percentage": 30,
+                "divergence": -1
+            },
+            "Ava": {
+                "doc_count": 24,
+                "percentage": 5,
+                "divergence": 1
+            },
+            "Jest": {
+                "doc_count": 99,
+                "percentage": 19,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "Italy",
+            "doc_count": 251,
+            "Tape": {
+                "doc_count": 10,
+                "percentage": 4,
+                "divergence": -1
+            },
+            "Enzyme": {
+                "doc_count": 38,
+                "percentage": 14,
+                "divergence": 0
+            },
+            "Jasmine": {
+                "doc_count": 79,
+                "percentage": 30,
+                "divergence": 2
+            },
+            "Mocha": {
+                "doc_count": 86,
+                "percentage": 32,
+                "divergence": 1
+            },
+            "Ava": {
+                "doc_count": 7,
+                "percentage": 3,
+                "divergence": -1
+            },
+            "Jest": {
+                "doc_count": 45,
+                "percentage": 17,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "Ukraine",
+            "doc_count": 242,
+            "Tape": {
+                "doc_count": 5,
+                "percentage": 2,
+                "divergence": -3
+            },
+            "Enzyme": {
+                "doc_count": 43,
+                "percentage": 14,
+                "divergence": 0
+            },
+            "Jasmine": {
+                "doc_count": 89,
+                "percentage": 30,
+                "divergence": 2
+            },
+            "Mocha": {
+                "doc_count": 103,
+                "percentage": 33,
+                "divergence": 2
+            },
+            "Ava": {
+                "doc_count": 8,
+                "percentage": 3,
+                "divergence": -1
+            },
+            "Jest": {
+                "doc_count": 53,
+                "percentage": 18,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Denmark",
+            "doc_count": 197,
+            "Tape": {
+                "doc_count": 12,
+                "percentage": 6,
+                "divergence": 1
+            },
+            "Enzyme": {
+                "doc_count": 24,
+                "percentage": 12,
+                "divergence": -2
+            },
+            "Jasmine": {
+                "doc_count": 51,
+                "percentage": 26,
+                "divergence": -2
+            },
+            "Mocha": {
+                "doc_count": 66,
+                "percentage": 34,
+                "divergence": 3
+            },
+            "Ava": {
+                "doc_count": 9,
+                "percentage": 5,
+                "divergence": 1
+            },
+            "Jest": {
+                "doc_count": 33,
+                "percentage": 17,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "Mexico",
+            "doc_count": 167,
+            "Tape": {
+                "doc_count": 9,
+                "percentage": 6,
+                "divergence": 1
+            },
+            "Enzyme": {
+                "doc_count": 15,
+                "percentage": 9,
+                "divergence": -5
+            },
+            "Jasmine": {
+                "doc_count": 51,
+                "percentage": 32,
+                "divergence": 4
+            },
+            "Mocha": {
+                "doc_count": 61,
+                "percentage": 37,
+                "divergence": 6
+            },
+            "Ava": {
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": -2
+            },
+            "Jest": {
+                "doc_count": 22,
+                "percentage": 14,
+                "divergence": -4
+            }
+        },
+        {
+            "key": "Belgium",
+            "doc_count": 163,
+            "Tape": {
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": -3
+            },
+            "Enzyme": {
+                "doc_count": 8,
+                "percentage": 4,
+                "divergence": -10
+            },
+            "Jasmine": {
+                "doc_count": 77,
+                "percentage": 41,
+                "divergence": 13
+            },
+            "Mocha": {
+                "doc_count": 65,
+                "percentage": 35,
+                "divergence": 4
+            },
+            "Ava": {
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": -2
+            },
+            "Jest": {
+                "doc_count": 30,
+                "percentage": 16,
+                "divergence": -2
+            }
+        },
+        {
+            "key": "Norway",
+            "doc_count": 150,
+            "Tape": {
+                "doc_count": 10,
+                "percentage": 5,
+                "divergence": 0
+            },
+            "Enzyme": {
+                "doc_count": 30,
+                "percentage": 15,
+                "divergence": 1
+            },
+            "Jasmine": {
+                "doc_count": 53,
+                "percentage": 27,
+                "divergence": -1
+            },
+            "Mocha": {
+                "doc_count": 62,
+                "percentage": 31,
+                "divergence": 0
+            },
+            "Ava": {
+                "doc_count": 7,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "Jest": {
+                "doc_count": 35,
+                "percentage": 18,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Argentina",
+            "doc_count": 145,
+            "Tape": {
+                "doc_count": 8,
+                "percentage": 4,
+                "divergence": -1
+            },
+            "Enzyme": {
+                "doc_count": 19,
+                "percentage": 11,
+                "divergence": -3
+            },
+            "Jasmine": {
+                "doc_count": 56,
+                "percentage": 31,
+                "divergence": 3
+            },
+            "Mocha": {
+                "doc_count": 70,
+                "percentage": 39,
+                "divergence": 8
+            },
+            "Ava": {
+                "doc_count": 5,
+                "percentage": 3,
+                "divergence": -1
+            },
+            "Jest": {
+                "doc_count": 22,
+                "percentage": 12,
+                "divergence": -6
+            }
+        },
+        {
+            "key": "New Zealand",
+            "doc_count": 143,
+            "Tape": {
+                "doc_count": 22,
+                "percentage": 9,
+                "divergence": 4
+            },
+            "Enzyme": {
+                "doc_count": 38,
+                "percentage": 15,
+                "divergence": 1
+            },
+            "Jasmine": {
+                "doc_count": 64,
+                "percentage": 26,
+                "divergence": -2
+            },
+            "Mocha": {
+                "doc_count": 72,
+                "percentage": 29,
+                "divergence": -2
+            },
+            "Ava": {
+                "doc_count": 9,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "Jest": {
+                "doc_count": 42,
+                "percentage": 17,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "Switzerland",
+            "doc_count": 136,
+            "Tape": {
+                "doc_count": 11,
+                "percentage": 6,
+                "divergence": 1
+            },
+            "Enzyme": {
+                "doc_count": 17,
+                "percentage": 9,
+                "divergence": -5
+            },
+            "Jasmine": {
+                "doc_count": 55,
+                "percentage": 31,
+                "divergence": 3
+            },
+            "Mocha": {
+                "doc_count": 55,
+                "percentage": 31,
+                "divergence": 0
+            },
+            "Ava": {
+                "doc_count": 8,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "Jest": {
+                "doc_count": 34,
+                "percentage": 19,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "Finland",
+            "doc_count": 133,
+            "Tape": {
+                "doc_count": 8,
+                "percentage": 4,
+                "divergence": -1
+            },
+            "Enzyme": {
+                "doc_count": 25,
+                "percentage": 14,
+                "divergence": 0
+            },
+            "Jasmine": {
+                "doc_count": 50,
+                "percentage": 27,
+                "divergence": -1
+            },
+            "Mocha": {
+                "doc_count": 69,
+                "percentage": 37,
+                "divergence": 6
+            },
+            "Ava": {
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -3
+            },
+            "Jest": {
+                "doc_count": 31,
+                "percentage": 17,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "Romania",
+            "doc_count": 132,
+            "Tape": {
+                "doc_count": 5,
+                "percentage": 3,
+                "divergence": -2
+            },
+            "Enzyme": {
+                "doc_count": 26,
+                "percentage": 16,
+                "divergence": 2
+            },
+            "Jasmine": {
+                "doc_count": 52,
+                "percentage": 32,
+                "divergence": 4
+            },
+            "Mocha": {
+                "doc_count": 52,
+                "percentage": 32,
+                "divergence": 1
+            },
+            "Ava": {
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -3
+            },
+            "Jest": {
+                "doc_count": 26,
+                "percentage": 16,
+                "divergence": -2
+            }
+        },
+        {
+            "key": "Israel",
+            "doc_count": 126,
+            "Tape": {
+                "doc_count": 8,
+                "percentage": 5,
+                "divergence": 0
+            },
+            "Enzyme": {
+                "doc_count": 21,
+                "percentage": 13,
+                "divergence": -1
+            },
+            "Jasmine": {
+                "doc_count": 57,
+                "percentage": 37,
+                "divergence": 9
+            },
+            "Mocha": {
+                "doc_count": 48,
+                "percentage": 31,
+                "divergence": 0
+            },
+            "Ava": {
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -3
+            },
+            "Jest": {
+                "doc_count": 20,
+                "percentage": 13,
+                "divergence": -5
+            }
+        },
+        {
+            "key": "Austria",
+            "doc_count": 116,
+            "Tape": {
+                "doc_count": 8,
+                "percentage": 5,
+                "divergence": 0
+            },
+            "Enzyme": {
+                "doc_count": 13,
+                "percentage": 9,
+                "divergence": -5
+            },
+            "Jasmine": {
+                "doc_count": 44,
+                "percentage": 30,
+                "divergence": 2
+            },
+            "Mocha": {
+                "doc_count": 52,
+                "percentage": 35,
+                "divergence": 4
+            },
+            "Ava": {
+                "doc_count": 7,
+                "percentage": 5,
+                "divergence": 1
+            },
+            "Jest": {
+                "doc_count": 24,
+                "percentage": 16,
+                "divergence": -2
+            }
+        },
+        {
+            "key": "Ireland",
+            "doc_count": 106,
+            "Tape": {
+                "doc_count": 6,
+                "percentage": 4,
+                "divergence": -1
+            },
+            "Enzyme": {
+                "doc_count": 16,
+                "percentage": 10,
+                "divergence": -4
+            },
+            "Jasmine": {
+                "doc_count": 60,
+                "percentage": 37,
+                "divergence": 9
+            },
+            "Mocha": {
+                "doc_count": 51,
+                "percentage": 32,
+                "divergence": 1
+            },
+            "Ava": {
+                "doc_count": 6,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "Jest": {
+                "doc_count": 21,
+                "percentage": 13,
+                "divergence": -5
+            }
+        },
+        {
+            "key": "Portugal",
+            "doc_count": 105,
+            "Tape": {
+                "doc_count": 2,
+                "percentage": 2,
+                "divergence": -3
+            },
+            "Enzyme": {
+                "doc_count": 16,
+                "percentage": 13,
+                "divergence": -1
+            },
+            "Jasmine": {
+                "doc_count": 40,
+                "percentage": 33,
+                "divergence": 5
+            },
+            "Mocha": {
+                "doc_count": 40,
+                "percentage": 33,
+                "divergence": 2
+            },
+            "Ava": {
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": -2
+            },
+            "Jest": {
+                "doc_count": 21,
+                "percentage": 17,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "Belarus",
+            "doc_count": 104,
+            "Tape": {
+                "doc_count": 8,
+                "percentage": 5,
+                "divergence": 0
+            },
+            "Enzyme": {
+                "doc_count": 24,
+                "percentage": 15,
+                "divergence": 1
+            },
+            "Jasmine": {
+                "doc_count": 46,
+                "percentage": 29,
+                "divergence": 1
+            },
+            "Mocha": {
+                "doc_count": 48,
+                "percentage": 30,
+                "divergence": -1
+            },
+            "Ava": {
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": -2
+            },
+            "Jest": {
+                "doc_count": 31,
+                "percentage": 19,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "Colombia",
+            "doc_count": 97,
+            "Tape": {
+                "doc_count": 5,
+                "percentage": 4,
+                "divergence": -1
+            },
+            "Enzyme": {
+                "doc_count": 21,
+                "percentage": 17,
+                "divergence": 3
+            },
+            "Jasmine": {
+                "doc_count": 35,
+                "percentage": 28,
+                "divergence": 0
+            },
+            "Mocha": {
+                "doc_count": 37,
+                "percentage": 29,
+                "divergence": -2
+            },
+            "Ava": {
+                "doc_count": 10,
+                "percentage": 8,
+                "divergence": 4
+            },
+            "Jest": {
+                "doc_count": 18,
+                "percentage": 14,
+                "divergence": -4
+            }
+        },
+        {
+            "key": "China",
+            "doc_count": 96,
+            "Tape": {
+                "doc_count": 4,
+                "percentage": 4,
+                "divergence": -1
+            },
+            "Enzyme": {
+                "doc_count": 13,
+                "percentage": 13,
+                "divergence": -1
+            },
+            "Jasmine": {
+                "doc_count": 20,
+                "percentage": 20,
+                "divergence": -8
+            },
+            "Mocha": {
+                "doc_count": 35,
+                "percentage": 34,
+                "divergence": 3
+            },
+            "Ava": {
+                "doc_count": 8,
+                "percentage": 8,
+                "divergence": 4
+            },
+            "Jest": {
+                "doc_count": 21,
+                "percentage": 21,
+                "divergence": 3
+            }
+        }
+    ],
+    "others": {
+        "doc_count_error_upper_bound": 5,
+        "sum_other_doc_count": 460,
+        "buckets": [
+            {
+                "key": "karma",
+                "doc_count": 189
+            },
+            {
+                "key": "Qunit",
+                "doc_count": 188
+            },
+            {
+                "key": "chai",
+                "doc_count": 144
+            },
+            {
+                "key": "protractor",
+                "doc_count": 83
+            },
+            {
+                "key": "nightwatch",
+                "doc_count": 49
+            },
+            {
+                "key": "cucumber",
+                "doc_count": 45
+            },
+            {
+                "key": "selenium",
+                "doc_count": 44
+            },
+            {
+                "key": "tap",
+                "doc_count": 32
+            },
+            {
+                "key": "lab",
+                "doc_count": 31
+            },
+            {
+                "key": "sinon",
+                "doc_count": 29
+            },
+            {
+                "key": "elm-test",
+                "doc_count": 28
+            },
+            {
+                "key": "cypress",
+                "doc_count": 23
+            },
+            {
+                "key": "intern",
+                "doc_count": 23
+            },
+            {
+                "key": "PhantomJS",
+                "doc_count": 16
+            },
+            {
+                "key": "testcafe",
+                "doc_count": 16
+            },
+            {
+                "key": "junit",
+                "doc_count": 11
+            },
+            {
+                "key": "jest",
+                "doc_count": 10
+            },
+            {
+                "key": "AVA",
+                "doc_count": 6
+            },
+            {
+                "key": "cljs.test",
+                "doc_count": 5
+            },
+            {
+                "key": "Jasmine",
+                "doc_count": 4
+            }
+        ]
+    },
+    "numberOfToolsUsed": [
+        {
+            "key": 0,
+            "doc_count": 8435
+        },
+        {
+            "key": 1,
+            "doc_count": 4908
+        },
+        {
+            "key": 2,
+            "doc_count": 5616
+        },
+        {
+            "key": 3,
+            "doc_count": 2558
+        },
+        {
+            "key": 4,
+            "doc_count": 1743
+        },
+        {
+            "key": 5,
+            "doc_count": 369
+        },
+        {
+            "key": 6,
+            "doc_count": 75
+        }
+    ],
+    "happiness": 3.2
+}

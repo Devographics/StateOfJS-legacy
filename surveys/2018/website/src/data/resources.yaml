@@ -1,0 +1,31 @@
+- name: ES6 For Everyone
+  section: Flavors
+  url: https://ES6.io/friend/STATEOFJS
+  description: A premium training course to strengthen your core JavaScript skills and master all that ES6 has to offer.
+  author: Wes Bos
+  avatar: wes.jpg
+  image: es6.jpg
+
+- name: React For Beginners
+  section: Front-end
+  url: https://ReactForBeginners.com/friend/STATEOFJS
+  description: Upgrade your JavaScript skills, learn React.js in just a couple of afternoons.
+  author: Wes Bos
+  avatar: wes.jpg
+  image: reactforbeginners.jpg
+
+- name: '#JavaScript30'
+  section: Testing
+  url: https://javascript30.com/friend/STATEOFJS
+  description: '30 Day Vanilla JS Coding Challenge: Build 30 things in 30 days with 30 tutorials'
+  author: Wes Bos
+  avatar: wes.jpg
+  image: javascript30.jpg
+
+- name: Learn Node
+  section: Back-end
+  url: https://learnnode.com/friend/STATEOFJS
+  description: A premium training course to learn to build apps with Node.js, Express, MongoDB, and friends.
+  author: Wes Bos
+  avatar: wes.jpg
+  image: learnnode.jpg

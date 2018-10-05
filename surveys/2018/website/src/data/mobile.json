@@ -1,0 +1,2113 @@
+{
+    "keys": [
+        "Native Apps",
+        "React Native",
+        "Ionic",
+        "PhoneGap/Cordova",
+        "NativeScript",
+        "Electron"
+    ],
+    "experience": {
+        "Native Apps": {
+            "I've HEARD of it, and WOULD like to learn it": 9113,
+            "I've USED it before, and WOULD use it again": 7933,
+            "I've HEARD of it, and am NOT interested": 4123,
+            "I've USED it before, and would NOT use it again": 1316,
+            "I've never heard of it": 1219
+        },
+        "PhoneGap/Cordova": {
+            "I've HEARD of it, and am NOT interested": 9192,
+            "I've USED it before, and would NOT use it again": 4685,
+            "I've USED it before, and WOULD use it again": 3381,
+            "I've HEARD of it, and WOULD like to learn it": 3256,
+            "I've never heard of it": 3190
+        },
+        "Electron": {
+            "I've HEARD of it, and WOULD like to learn it": 11221,
+            "I've USED it before, and WOULD use it again": 4945,
+            "I've never heard of it": 3921,
+            "I've HEARD of it, and am NOT interested": 3231,
+            "I've USED it before, and would NOT use it again": 386
+        },
+        "NativeScript": {
+            "I've never heard of it": 10889,
+            "I've HEARD of it, and am NOT interested": 6624,
+            "I've HEARD of it, and WOULD like to learn it": 5260,
+            "I've USED it before, and WOULD use it again": 503,
+            "I've USED it before, and would NOT use it again": 428
+        },
+        "Ionic": {
+            "I've HEARD of it, and am NOT interested": 8023,
+            "I've never heard of it": 5772,
+            "I've HEARD of it, and WOULD like to learn it": 5090,
+            "I've USED it before, and WOULD use it again": 2458,
+            "I've USED it before, and would NOT use it again": 2361
+        },
+        "React Native": {
+            "I've HEARD of it, and WOULD like to learn it": 13502,
+            "I've USED it before, and WOULD use it again": 4760,
+            "I've HEARD of it, and am NOT interested": 4062,
+            "I've never heard of it": 1017,
+            "I've USED it before, and would NOT use it again": 363
+        }
+    },
+    "experienceByUsers": {
+        "Native Apps": {
+            "doc_count": 7933,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 2490,
+                        "percentage": 34
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 1795,
+                        "percentage": 23
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 1224,
+                        "percentage": 15
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 1021,
+                        "percentage": 13
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 529,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 469,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 182,
+                        "percentage": 2
+                    }
+                ],
+                "average": 72
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 2353,
+                        "percentage": 29
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 2262,
+                        "percentage": 29
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 1869,
+                        "percentage": 24
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 773,
+                        "percentage": 10
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 487,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 164,
+                        "percentage": 2
+                    }
+                ],
+                "average": 8
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 41,
+                "sum_other_doc_count": 1876,
+                "buckets": [
+                    {
+                        "key": "undefined",
+                        "doc_count": 2077
+                    },
+                    {
+                        "key": "United States",
+                        "doc_count": 2016
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 451
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 319
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 262
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 191
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 174
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 162
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 149
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 136
+                    }
+                ]
+            }
+        },
+        "PhoneGap/Cordova": {
+            "doc_count": 3381,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 1063,
+                        "percentage": 34
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 635,
+                        "percentage": 19
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 628,
+                        "percentage": 19
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 518,
+                        "percentage": 15
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 212,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 158,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 59,
+                        "percentage": 2
+                    }
+                ],
+                "average": 67
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 1057,
+                        "percentage": 32
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 909,
+                        "percentage": 27
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 876,
+                        "percentage": 26
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 249,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 244,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 38,
+                        "percentage": 1
+                    }
+                ],
+                "average": 9
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 23,
+                "sum_other_doc_count": 934,
+                "buckets": [
+                    {
+                        "key": "undefined",
+                        "doc_count": 720
+                    },
+                    {
+                        "key": "United States",
+                        "doc_count": 719
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 186
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 170
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 150
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 117
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 90
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 88
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 86
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 68
+                    }
+                ]
+            }
+        },
+        "Electron": {
+            "doc_count": 4945,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 1538,
+                        "percentage": 33
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 1089,
+                        "percentage": 22
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 803,
+                        "percentage": 16
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 633,
+                        "percentage": 13
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 341,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 276,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 124,
+                        "percentage": 3
+                    }
+                ],
+                "average": 72
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 1546,
+                        "percentage": 33
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 1506,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 1146,
+                        "percentage": 23
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 416,
+                        "percentage": 8
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 257,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 56,
+                        "percentage": 1
+                    }
+                ],
+                "average": 8
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 25,
+                "sum_other_doc_count": 1175,
+                "buckets": [
+                    {
+                        "key": "undefined",
+                        "doc_count": 1424
+                    },
+                    {
+                        "key": "United States",
+                        "doc_count": 1115
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 250
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 221
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 190
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 141
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 102
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 92
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 88
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 83
+                    }
+                ]
+            }
+        },
+        "NativeScript": {
+            "doc_count": 503,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 131,
+                        "percentage": 29
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 102,
+                        "percentage": 20
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 91,
+                        "percentage": 18
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 84,
+                        "percentage": 17
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 38,
+                        "percentage": 8
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 35,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 6,
+                        "percentage": 1
+                    }
+                ],
+                "average": 64
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 156,
+                        "percentage": 32
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 132,
+                        "percentage": 26
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 129,
+                        "percentage": 26
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 45,
+                        "percentage": 9
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 31,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 7,
+                        "percentage": 1
+                    }
+                ],
+                "average": 9
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 5,
+                "sum_other_doc_count": 157,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 102
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 92
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 23
+                    },
+                    {
+                        "key": "Bulgaria",
+                        "doc_count": 22
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 21
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 20
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 18
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 17
+                    },
+                    {
+                        "key": "Poland",
+                        "doc_count": 10
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 10
+                    }
+                ]
+            }
+        },
+        "Ionic": {
+            "doc_count": 2458,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 720,
+                        "percentage": 32
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 450,
+                        "percentage": 18
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 437,
+                        "percentage": 18
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 435,
+                        "percentage": 18
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 202,
+                        "percentage": 8
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 127,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 25,
+                        "percentage": 1
+                    }
+                ],
+                "average": 62
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 766,
+                        "percentage": 32
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 733,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 534,
+                        "percentage": 22
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 256,
+                        "percentage": 10
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 124,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 36,
+                        "percentage": 1
+                    }
+                ],
+                "average": 8
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 19,
+                "sum_other_doc_count": 738,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 515
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 468
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 114
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 108
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 107
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 83
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 81
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 76
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 71
+                    },
+                    {
+                        "key": "Italy",
+                        "doc_count": 53
+                    }
+                ]
+            }
+        },
+        "React Native": {
+            "doc_count": 4760,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 1557,
+                        "percentage": 35
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 1072,
+                        "percentage": 23
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 767,
+                        "percentage": 16
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 618,
+                        "percentage": 13
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 282,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 246,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 116,
+                        "percentage": 2
+                    }
+                ],
+                "average": 74
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 1533,
+                        "percentage": 32
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 1416,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 973,
+                        "percentage": 20
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 550,
+                        "percentage": 12
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 182,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 97,
+                        "percentage": 2
+                    }
+                ],
+                "average": 7
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 25,
+                "sum_other_doc_count": 1227,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 1211
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 1140
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 291
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 149
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 149
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 130
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 117
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 108
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 93
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 90
+                    }
+                ]
+            }
+        },
+        "Aggregated": {
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 4228,
+                        "percentage": 34
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 2891,
+                        "percentage": 21
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 2245,
+                        "percentage": 17
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 1860,
+                        "percentage": 14
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 872,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 839,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 282,
+                        "percentage": 2
+                    }
+                ],
+                "average": 70
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 4062,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 4012,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 3076,
+                        "percentage": 23
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 1380,
+                        "percentage": 10
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 722,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 280,
+                        "percentage": 2
+                    }
+                ],
+                "average": 8
+            },
+            "doc_count": 13577
+        }
+    },
+    "others": {
+        "doc_count_error_upper_bound": 5,
+        "sum_other_doc_count": 365,
+        "buckets": [
+            {
+                "key": "PWA",
+                "doc_count": 147
+            },
+            {
+                "key": "Weex",
+                "doc_count": 133
+            },
+            {
+                "key": "nw.js",
+                "doc_count": 122
+            },
+            {
+                "key": "Xamarin",
+                "doc_count": 110
+            },
+            {
+                "key": "Appcelerator",
+                "doc_count": 32
+            },
+            {
+                "key": "Flutter",
+                "doc_count": 27
+            },
+            {
+                "key": "Expo",
+                "doc_count": 19
+            },
+            {
+                "key": "Fuse",
+                "doc_count": 18
+            },
+            {
+                "key": "Swift",
+                "doc_count": 13
+            },
+            {
+                "key": "CEF",
+                "doc_count": 10
+            },
+            {
+                "key": "Quasar",
+                "doc_count": 10
+            },
+            {
+                "key": "Elm native",
+                "doc_count": 6
+            },
+            {
+                "key": "Kotlin",
+                "doc_count": 5
+            },
+            {
+                "key": "ReactXP",
+                "doc_count": 5
+            },
+            {
+                "key": "Framework7",
+                "doc_count": 4
+            },
+            {
+                "key": "Angular Native",
+                "doc_count": 3
+            },
+            {
+                "key": "Electrino",
+                "doc_count": 3
+            },
+            {
+                "key": "Ionic",
+                "doc_count": 3
+            },
+            {
+                "key": "meh",
+                "doc_count": 3
+            },
+            {
+                "key": "Android",
+                "doc_count": 2
+            }
+        ]
+    },
+    "countries": [
+        {
+            "key": "undefined",
+            "doc_count": 5839,
+            "Native Apps": {
+                "doc_count": 2077,
+                "percentage": 35,
+                "divergence": 2
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 720,
+                "percentage": 12,
+                "divergence": -2
+            },
+            "Electron": {
+                "doc_count": 1424,
+                "percentage": 24,
+                "divergence": 3
+            },
+            "NativeScript": {
+                "doc_count": 92,
+                "percentage": 2,
+                "divergence": 0
+            },
+            "Ionic": {
+                "doc_count": 468,
+                "percentage": 8,
+                "divergence": -2
+            },
+            "React Native": {
+                "doc_count": 1140,
+                "percentage": 19,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "United States",
+            "doc_count": 5719,
+            "Native Apps": {
+                "doc_count": 2016,
+                "percentage": 35,
+                "divergence": 2
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 719,
+                "percentage": 13,
+                "divergence": -1
+            },
+            "Electron": {
+                "doc_count": 1115,
+                "percentage": 20,
+                "divergence": -1
+            },
+            "NativeScript": {
+                "doc_count": 102,
+                "percentage": 2,
+                "divergence": 0
+            },
+            "Ionic": {
+                "doc_count": 515,
+                "percentage": 9,
+                "divergence": -1
+            },
+            "React Native": {
+                "doc_count": 1211,
+                "percentage": 21,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "United Kingdom",
+            "doc_count": 1409,
+            "Native Apps": {
+                "doc_count": 451,
+                "percentage": 35,
+                "divergence": 2
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 186,
+                "percentage": 14,
+                "divergence": 0
+            },
+            "Electron": {
+                "doc_count": 250,
+                "percentage": 19,
+                "divergence": -2
+            },
+            "NativeScript": {
+                "doc_count": 21,
+                "percentage": 2,
+                "divergence": 0
+            },
+            "Ionic": {
+                "doc_count": 108,
+                "percentage": 8,
+                "divergence": -2
+            },
+            "React Native": {
+                "doc_count": 291,
+                "percentage": 22,
+                "divergence": 2
+            }
+        },
+        {
+            "key": "Germany",
+            "doc_count": 879,
+            "Native Apps": {
+                "doc_count": 319,
+                "percentage": 33,
+                "divergence": 0
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 170,
+                "percentage": 17,
+                "divergence": 3
+            },
+            "Electron": {
+                "doc_count": 221,
+                "percentage": 22,
+                "divergence": 1
+            },
+            "NativeScript": {
+                "doc_count": 20,
+                "percentage": 2,
+                "divergence": 0
+            },
+            "Ionic": {
+                "doc_count": 107,
+                "percentage": 11,
+                "divergence": 1
+            },
+            "React Native": {
+                "doc_count": 149,
+                "percentage": 15,
+                "divergence": -5
+            }
+        },
+        {
+            "key": "Canada",
+            "doc_count": 771,
+            "Native Apps": {
+                "doc_count": 262,
+                "percentage": 34,
+                "divergence": 1
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 117,
+                "percentage": 16,
+                "divergence": 2
+            },
+            "Electron": {
+                "doc_count": 141,
+                "percentage": 19,
+                "divergence": -2
+            },
+            "NativeScript": {
+                "doc_count": 4,
+                "percentage": 1,
+                "divergence": -1
+            },
+            "Ionic": {
+                "doc_count": 71,
+                "percentage": 10,
+                "divergence": 0
+            },
+            "React Native": {
+                "doc_count": 149,
+                "percentage": 20,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "France",
+            "doc_count": 695,
+            "Native Apps": {
+                "doc_count": 191,
+                "percentage": 25,
+                "divergence": -8
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 150,
+                "percentage": 19,
+                "divergence": 5
+            },
+            "Electron": {
+                "doc_count": 190,
+                "percentage": 24,
+                "divergence": 3
+            },
+            "NativeScript": {
+                "doc_count": 18,
+                "percentage": 2,
+                "divergence": 0
+            },
+            "Ionic": {
+                "doc_count": 114,
+                "percentage": 14,
+                "divergence": 4
+            },
+            "React Native": {
+                "doc_count": 130,
+                "percentage": 16,
+                "divergence": -4
+            }
+        },
+        {
+            "key": "India",
+            "doc_count": 500,
+            "Native Apps": {
+                "doc_count": 174,
+                "percentage": 30,
+                "divergence": -3
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 88,
+                "percentage": 16,
+                "divergence": 2
+            },
+            "Electron": {
+                "doc_count": 83,
+                "percentage": 15,
+                "divergence": -6
+            },
+            "NativeScript": {
+                "doc_count": 23,
+                "percentage": 4,
+                "divergence": 2
+            },
+            "Ionic": {
+                "doc_count": 81,
+                "percentage": 14,
+                "divergence": 4
+            },
+            "React Native": {
+                "doc_count": 117,
+                "percentage": 21,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "Australia",
+            "doc_count": 492,
+            "Native Apps": {
+                "doc_count": 162,
+                "percentage": 34,
+                "divergence": 1
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 63,
+                "percentage": 13,
+                "divergence": -1
+            },
+            "Electron": {
+                "doc_count": 102,
+                "percentage": 21,
+                "divergence": 0
+            },
+            "NativeScript": {
+                "doc_count": 8,
+                "percentage": 2,
+                "divergence": 0
+            },
+            "Ionic": {
+                "doc_count": 38,
+                "percentage": 8,
+                "divergence": -2
+            },
+            "React Native": {
+                "doc_count": 108,
+                "percentage": 22,
+                "divergence": 2
+            }
+        },
+        {
+            "key": "Netherlands",
+            "doc_count": 449,
+            "Native Apps": {
+                "doc_count": 136,
+                "percentage": 31,
+                "divergence": -2
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 68,
+                "percentage": 15,
+                "divergence": 1
+            },
+            "Electron": {
+                "doc_count": 88,
+                "percentage": 20,
+                "divergence": -1
+            },
+            "NativeScript": {
+                "doc_count": 5,
+                "percentage": 1,
+                "divergence": -1
+            },
+            "Ionic": {
+                "doc_count": 51,
+                "percentage": 12,
+                "divergence": 2
+            },
+            "React Native": {
+                "doc_count": 93,
+                "percentage": 21,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "Brazil",
+            "doc_count": 437,
+            "Native Apps": {
+                "doc_count": 149,
+                "percentage": 29,
+                "divergence": -4
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 86,
+                "percentage": 17,
+                "divergence": 3
+            },
+            "Electron": {
+                "doc_count": 92,
+                "percentage": 18,
+                "divergence": -3
+            },
+            "NativeScript": {
+                "doc_count": 17,
+                "percentage": 3,
+                "divergence": 1
+            },
+            "Ionic": {
+                "doc_count": 76,
+                "percentage": 15,
+                "divergence": 5
+            },
+            "React Native": {
+                "doc_count": 90,
+                "percentage": 18,
+                "divergence": -2
+            }
+        },
+        {
+            "key": "Poland",
+            "doc_count": 420,
+            "Native Apps": {
+                "doc_count": 99,
+                "percentage": 30,
+                "divergence": -3
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 50,
+                "percentage": 15,
+                "divergence": 1
+            },
+            "Electron": {
+                "doc_count": 75,
+                "percentage": 23,
+                "divergence": 2
+            },
+            "NativeScript": {
+                "doc_count": 10,
+                "percentage": 3,
+                "divergence": 1
+            },
+            "Ionic": {
+                "doc_count": 40,
+                "percentage": 12,
+                "divergence": 2
+            },
+            "React Native": {
+                "doc_count": 58,
+                "percentage": 17,
+                "divergence": -3
+            }
+        },
+        {
+            "key": "Spain",
+            "doc_count": 413,
+            "Native Apps": {
+                "doc_count": 109,
+                "percentage": 24,
+                "divergence": -9
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 90,
+                "percentage": 21,
+                "divergence": 7
+            },
+            "Electron": {
+                "doc_count": 78,
+                "percentage": 18,
+                "divergence": -3
+            },
+            "NativeScript": {
+                "doc_count": 12,
+                "percentage": 3,
+                "divergence": 1
+            },
+            "Ionic": {
+                "doc_count": 83,
+                "percentage": 19,
+                "divergence": 9
+            },
+            "React Native": {
+                "doc_count": 65,
+                "percentage": 15,
+                "divergence": -5
+            }
+        },
+        {
+            "key": "Russia",
+            "doc_count": 379,
+            "Native Apps": {
+                "doc_count": 85,
+                "percentage": 32,
+                "divergence": -1
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 32,
+                "percentage": 12,
+                "divergence": -2
+            },
+            "Electron": {
+                "doc_count": 54,
+                "percentage": 21,
+                "divergence": 0
+            },
+            "NativeScript": {
+                "doc_count": 6,
+                "percentage": 2,
+                "divergence": 0
+            },
+            "Ionic": {
+                "doc_count": 23,
+                "percentage": 9,
+                "divergence": -1
+            },
+            "React Native": {
+                "doc_count": 63,
+                "percentage": 24,
+                "divergence": 4
+            }
+        },
+        {
+            "key": "Sweden",
+            "doc_count": 330,
+            "Native Apps": {
+                "doc_count": 113,
+                "percentage": 33,
+                "divergence": 0
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 37,
+                "percentage": 11,
+                "divergence": -3
+            },
+            "Electron": {
+                "doc_count": 78,
+                "percentage": 23,
+                "divergence": 2
+            },
+            "NativeScript": {
+                "doc_count": 4,
+                "percentage": 1,
+                "divergence": -1
+            },
+            "Ionic": {
+                "doc_count": 19,
+                "percentage": 6,
+                "divergence": -4
+            },
+            "React Native": {
+                "doc_count": 90,
+                "percentage": 26,
+                "divergence": 6
+            }
+        },
+        {
+            "key": "Italy",
+            "doc_count": 251,
+            "Native Apps": {
+                "doc_count": 77,
+                "percentage": 27,
+                "divergence": -6
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 60,
+                "percentage": 20,
+                "divergence": 6
+            },
+            "Electron": {
+                "doc_count": 60,
+                "percentage": 20,
+                "divergence": -1
+            },
+            "NativeScript": {
+                "doc_count": 10,
+                "percentage": 3,
+                "divergence": 1
+            },
+            "Ionic": {
+                "doc_count": 53,
+                "percentage": 18,
+                "divergence": 8
+            },
+            "React Native": {
+                "doc_count": 37,
+                "percentage": 12,
+                "divergence": -8
+            }
+        },
+        {
+            "key": "Ukraine",
+            "doc_count": 242,
+            "Native Apps": {
+                "doc_count": 54,
+                "percentage": 33,
+                "divergence": 0
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 24,
+                "percentage": 14,
+                "divergence": 0
+            },
+            "Electron": {
+                "doc_count": 30,
+                "percentage": 17,
+                "divergence": -4
+            },
+            "NativeScript": {
+                "doc_count": 6,
+                "percentage": 3,
+                "divergence": 1
+            },
+            "Ionic": {
+                "doc_count": 18,
+                "percentage": 10,
+                "divergence": 0
+            },
+            "React Native": {
+                "doc_count": 40,
+                "percentage": 23,
+                "divergence": 3
+            }
+        },
+        {
+            "key": "Denmark",
+            "doc_count": 197,
+            "Native Apps": {
+                "doc_count": 73,
+                "percentage": 34,
+                "divergence": 1
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 33,
+                "percentage": 15,
+                "divergence": 1
+            },
+            "Electron": {
+                "doc_count": 46,
+                "percentage": 21,
+                "divergence": 0
+            },
+            "NativeScript": {
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": 0
+            },
+            "Ionic": {
+                "doc_count": 22,
+                "percentage": 10,
+                "divergence": 0
+            },
+            "React Native": {
+                "doc_count": 40,
+                "percentage": 18,
+                "divergence": -2
+            }
+        },
+        {
+            "key": "Mexico",
+            "doc_count": 167,
+            "Native Apps": {
+                "doc_count": 71,
+                "percentage": 32,
+                "divergence": -1
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 33,
+                "percentage": 15,
+                "divergence": 1
+            },
+            "Electron": {
+                "doc_count": 32,
+                "percentage": 15,
+                "divergence": -6
+            },
+            "NativeScript": {
+                "doc_count": 8,
+                "percentage": 4,
+                "divergence": 2
+            },
+            "Ionic": {
+                "doc_count": 28,
+                "percentage": 13,
+                "divergence": 3
+            },
+            "React Native": {
+                "doc_count": 47,
+                "percentage": 21,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "Belgium",
+            "doc_count": 163,
+            "Native Apps": {
+                "doc_count": 43,
+                "percentage": 30,
+                "divergence": -3
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 27,
+                "percentage": 19,
+                "divergence": 5
+            },
+            "Electron": {
+                "doc_count": 30,
+                "percentage": 21,
+                "divergence": 0
+            },
+            "NativeScript": {
+                "doc_count": 5,
+                "percentage": 4,
+                "divergence": 2
+            },
+            "Ionic": {
+                "doc_count": 15,
+                "percentage": 11,
+                "divergence": 1
+            },
+            "React Native": {
+                "doc_count": 22,
+                "percentage": 15,
+                "divergence": -5
+            }
+        },
+        {
+            "key": "Norway",
+            "doc_count": 150,
+            "Native Apps": {
+                "doc_count": 49,
+                "percentage": 35,
+                "divergence": 2
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 26,
+                "percentage": 18,
+                "divergence": 4
+            },
+            "Electron": {
+                "doc_count": 26,
+                "percentage": 18,
+                "divergence": -3
+            },
+            "NativeScript": {
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": 0
+            },
+            "Ionic": {
+                "doc_count": 14,
+                "percentage": 10,
+                "divergence": 0
+            },
+            "React Native": {
+                "doc_count": 24,
+                "percentage": 17,
+                "divergence": -3
+            }
+        },
+        {
+            "key": "Argentina",
+            "doc_count": 145,
+            "Native Apps": {
+                "doc_count": 50,
+                "percentage": 29,
+                "divergence": -4
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 28,
+                "percentage": 17,
+                "divergence": 3
+            },
+            "Electron": {
+                "doc_count": 26,
+                "percentage": 16,
+                "divergence": -5
+            },
+            "NativeScript": {
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": 0
+            },
+            "Ionic": {
+                "doc_count": 28,
+                "percentage": 17,
+                "divergence": 7
+            },
+            "React Native": {
+                "doc_count": 32,
+                "percentage": 19,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "New Zealand",
+            "doc_count": 143,
+            "Native Apps": {
+                "doc_count": 45,
+                "percentage": 34,
+                "divergence": 1
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 20,
+                "percentage": 15,
+                "divergence": 1
+            },
+            "Electron": {
+                "doc_count": 20,
+                "percentage": 15,
+                "divergence": -6
+            },
+            "NativeScript": {
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -1
+            },
+            "Ionic": {
+                "doc_count": 13,
+                "percentage": 10,
+                "divergence": 0
+            },
+            "React Native": {
+                "doc_count": 34,
+                "percentage": 25,
+                "divergence": 5
+            }
+        },
+        {
+            "key": "Switzerland",
+            "doc_count": 136,
+            "Native Apps": {
+                "doc_count": 52,
+                "percentage": 35,
+                "divergence": 2
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 24,
+                "percentage": 17,
+                "divergence": 3
+            },
+            "Electron": {
+                "doc_count": 27,
+                "percentage": 19,
+                "divergence": -2
+            },
+            "NativeScript": {
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": -2
+            },
+            "Ionic": {
+                "doc_count": 17,
+                "percentage": 12,
+                "divergence": 2
+            },
+            "React Native": {
+                "doc_count": 25,
+                "percentage": 17,
+                "divergence": -3
+            }
+        },
+        {
+            "key": "Finland",
+            "doc_count": 133,
+            "Native Apps": {
+                "doc_count": 37,
+                "percentage": 33,
+                "divergence": 0
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 18,
+                "percentage": 16,
+                "divergence": 2
+            },
+            "Electron": {
+                "doc_count": 16,
+                "percentage": 15,
+                "divergence": -6
+            },
+            "NativeScript": {
+                "doc_count": 4,
+                "percentage": 4,
+                "divergence": 2
+            },
+            "Ionic": {
+                "doc_count": 12,
+                "percentage": 11,
+                "divergence": 1
+            },
+            "React Native": {
+                "doc_count": 23,
+                "percentage": 21,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "Romania",
+            "doc_count": 132,
+            "Native Apps": {
+                "doc_count": 30,
+                "percentage": 23,
+                "divergence": -10
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 25,
+                "percentage": 20,
+                "divergence": 6
+            },
+            "Electron": {
+                "doc_count": 25,
+                "percentage": 20,
+                "divergence": -1
+            },
+            "NativeScript": {
+                "doc_count": 4,
+                "percentage": 3,
+                "divergence": 1
+            },
+            "Ionic": {
+                "doc_count": 20,
+                "percentage": 16,
+                "divergence": 6
+            },
+            "React Native": {
+                "doc_count": 23,
+                "percentage": 18,
+                "divergence": -2
+            }
+        },
+        {
+            "key": "Israel",
+            "doc_count": 126,
+            "Native Apps": {
+                "doc_count": 33,
+                "percentage": 29,
+                "divergence": -4
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 21,
+                "percentage": 18,
+                "divergence": 4
+            },
+            "Electron": {
+                "doc_count": 17,
+                "percentage": 15,
+                "divergence": -6
+            },
+            "NativeScript": {
+                "doc_count": 2,
+                "percentage": 2,
+                "divergence": 0
+            },
+            "Ionic": {
+                "doc_count": 19,
+                "percentage": 17,
+                "divergence": 7
+            },
+            "React Native": {
+                "doc_count": 22,
+                "percentage": 19,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "Austria",
+            "doc_count": 116,
+            "Native Apps": {
+                "doc_count": 42,
+                "percentage": 32,
+                "divergence": -1
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 22,
+                "percentage": 17,
+                "divergence": 3
+            },
+            "Electron": {
+                "doc_count": 29,
+                "percentage": 23,
+                "divergence": 2
+            },
+            "NativeScript": {
+                "doc_count": 2,
+                "percentage": 2,
+                "divergence": 0
+            },
+            "Ionic": {
+                "doc_count": 15,
+                "percentage": 12,
+                "divergence": 2
+            },
+            "React Native": {
+                "doc_count": 18,
+                "percentage": 14,
+                "divergence": -6
+            }
+        },
+        {
+            "key": "Ireland",
+            "doc_count": 106,
+            "Native Apps": {
+                "doc_count": 36,
+                "percentage": 30,
+                "divergence": -3
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 19,
+                "percentage": 17,
+                "divergence": 3
+            },
+            "Electron": {
+                "doc_count": 17,
+                "percentage": 15,
+                "divergence": -6
+            },
+            "NativeScript": {
+                "doc_count": 4,
+                "percentage": 4,
+                "divergence": 2
+            },
+            "Ionic": {
+                "doc_count": 19,
+                "percentage": 17,
+                "divergence": 7
+            },
+            "React Native": {
+                "doc_count": 19,
+                "percentage": 17,
+                "divergence": -3
+            }
+        },
+        {
+            "key": "Portugal",
+            "doc_count": 105,
+            "Native Apps": {
+                "doc_count": 45,
+                "percentage": 35,
+                "divergence": 2
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 26,
+                "percentage": 19,
+                "divergence": 5
+            },
+            "Electron": {
+                "doc_count": 18,
+                "percentage": 13,
+                "divergence": -8
+            },
+            "NativeScript": {
+                "doc_count": 4,
+                "percentage": 3,
+                "divergence": 1
+            },
+            "Ionic": {
+                "doc_count": 19,
+                "percentage": 14,
+                "divergence": 4
+            },
+            "React Native": {
+                "doc_count": 22,
+                "percentage": 16,
+                "divergence": -4
+            }
+        },
+        {
+            "key": "Belarus",
+            "doc_count": 104,
+            "Native Apps": {
+                "doc_count": 18,
+                "percentage": 29,
+                "divergence": -4
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 12,
+                "percentage": 20,
+                "divergence": 6
+            },
+            "Electron": {
+                "doc_count": 11,
+                "percentage": 18,
+                "divergence": -3
+            },
+            "NativeScript": {
+                "doc_count": 2,
+                "percentage": 3,
+                "divergence": 1
+            },
+            "Ionic": {
+                "doc_count": 3,
+                "percentage": 5,
+                "divergence": -5
+            },
+            "React Native": {
+                "doc_count": 15,
+                "percentage": 25,
+                "divergence": 5
+            }
+        },
+        {
+            "key": "Colombia",
+            "doc_count": 97,
+            "Native Apps": {
+                "doc_count": 24,
+                "percentage": 24,
+                "divergence": -9
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 15,
+                "percentage": 15,
+                "divergence": 1
+            },
+            "Electron": {
+                "doc_count": 18,
+                "percentage": 17,
+                "divergence": -4
+            },
+            "NativeScript": {
+                "doc_count": 5,
+                "percentage": 5,
+                "divergence": 3
+            },
+            "Ionic": {
+                "doc_count": 19,
+                "percentage": 18,
+                "divergence": 8
+            },
+            "React Native": {
+                "doc_count": 22,
+                "percentage": 21,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "China",
+            "doc_count": 96,
+            "Native Apps": {
+                "doc_count": 21,
+                "percentage": 24,
+                "divergence": -9
+            },
+            "PhoneGap/Cordova": {
+                "doc_count": 10,
+                "percentage": 11,
+                "divergence": -3
+            },
+            "Electron": {
+                "doc_count": 23,
+                "percentage": 27,
+                "divergence": 6
+            },
+            "NativeScript": {
+                "doc_count": 1,
+                "percentage": 1,
+                "divergence": -1
+            },
+            "Ionic": {
+                "doc_count": 11,
+                "percentage": 13,
+                "divergence": 3
+            },
+            "React Native": {
+                "doc_count": 21,
+                "percentage": 24,
+                "divergence": 4
+            }
+        }
+    ],
+    "numberOfToolsUsed": [
+        {
+            "key": 0,
+            "doc_count": 10127
+        },
+        {
+            "key": 1,
+            "doc_count": 6689
+        },
+        {
+            "key": 2,
+            "doc_count": 4262
+        },
+        {
+            "key": 3,
+            "doc_count": 1944
+        },
+        {
+            "key": 4,
+            "doc_count": 506
+        },
+        {
+            "key": 5,
+            "doc_count": 145
+        },
+        {
+            "key": 6,
+            "doc_count": 31
+        }
+    ],
+    "happiness": 3.3
+}

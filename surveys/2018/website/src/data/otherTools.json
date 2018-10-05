@@ -1,0 +1,226 @@
+{
+    "keys": [
+        "Package Managers",
+        "Utility Libraries",
+        "Text Editors",
+        "Code Linters"
+    ],
+    "aggs": {
+        "Utility Libraries": {
+            "doc_count_error_upper_bound": 5,
+            "sum_other_doc_count": 473,
+            "buckets": [
+                {
+                    "key": "lodash",
+                    "doc_count": 11431
+                },
+                {
+                    "key": "jQuery",
+                    "doc_count": 4703
+                },
+                {
+                    "key": "Ramda",
+                    "doc_count": 2177
+                },
+                {
+                    "key": "underscore",
+                    "doc_count": 1673
+                },
+                {
+                    "key": "moment",
+                    "doc_count": 171
+                },
+                {
+                    "key": "RxJS",
+                    "doc_count": 95
+                },
+                {
+                    "key": "ImmutableJS",
+                    "doc_count": 49
+                },
+                {
+                    "key": "axios",
+                    "doc_count": 20
+                },
+                {
+                    "key": "recompose",
+                    "doc_count": 18
+                },
+                {
+                    "key": "React",
+                    "doc_count": 12
+                },
+                {
+                    "key": "Zepto",
+                    "doc_count": 12
+                },
+                {
+                    "key": "async",
+                    "doc_count": 12
+                }
+            ]
+        },
+        "Code Linters": {
+            "doc_count_error_upper_bound": 5,
+            "sum_other_doc_count": 292,
+            "buckets": [
+                {
+                    "key": "eslint",
+                    "doc_count": 12362
+                },
+                {
+                    "key": "Prettier",
+                    "doc_count": 4320
+                },
+                {
+                    "key": "JSHint",
+                    "doc_count": 2079
+                },
+                {
+                    "key": "I don't know what that is",
+                    "doc_count": 1321
+                },
+                {
+                    "key": "StandardJS",
+                    "doc_count": 1319
+                },
+                {
+                    "key": "tslint",
+                    "doc_count": 896
+                },
+                {
+                    "key": "Stylelint",
+                    "doc_count": 52
+                },
+                {
+                    "key": "XO",
+                    "doc_count": 36
+                },
+                {
+                    "key": "JSLint",
+                    "doc_count": 23
+                },
+                {
+                    "key": "elm-format",
+                    "doc_count": 17
+                },
+                {
+                    "key": "JSCS",
+                    "doc_count": 16
+                },
+                {
+                    "key": "CoffeeLint",
+                    "doc_count": 6
+                }
+            ]
+        },
+        "Text Editors": {
+            "doc_count_error_upper_bound": 5,
+            "sum_other_doc_count": 227,
+            "buckets": [
+                {
+                    "key": "VS Code",
+                    "doc_count": 7983
+                },
+                {
+                    "key": "Atom",
+                    "doc_count": 4677
+                },
+                {
+                    "key": "Sublime Text",
+                    "doc_count": 3906
+                },
+                {
+                    "key": "WebStorm",
+                    "doc_count": 3647
+                },
+                {
+                    "key": "Vim",
+                    "doc_count": 1789
+                },
+                {
+                    "key": "Emacs",
+                    "doc_count": 390
+                },
+                {
+                    "key": "Notepad++",
+                    "doc_count": 367
+                },
+                {
+                    "key": "Brackets",
+                    "doc_count": 204
+                },
+                {
+                    "key": "IntelliJ",
+                    "doc_count": 183
+                },
+                {
+                    "key": "PHPStorm",
+                    "doc_count": 128
+                },
+                {
+                    "key": "Coda",
+                    "doc_count": 41
+                },
+                {
+                    "key": "Netbeans",
+                    "doc_count": 36
+                }
+            ]
+        },
+        "Package Managers": {
+            "doc_count_error_upper_bound": 5,
+            "sum_other_doc_count": 138,
+            "buckets": [
+                {
+                    "key": "yarn",
+                    "doc_count": 9933
+                },
+                {
+                    "key": "npm",
+                    "doc_count": 7905
+                },
+                {
+                    "key": "Bower",
+                    "doc_count": 4971
+                },
+                {
+                    "key": "Nuget",
+                    "doc_count": 80
+                },
+                {
+                    "key": "Composer",
+                    "doc_count": 58
+                },
+                {
+                    "key": "jspm",
+                    "doc_count": 51
+                },
+                {
+                    "key": "elm-package",
+                    "doc_count": 34
+                },
+                {
+                    "key": "Homebrew",
+                    "doc_count": 22
+                },
+                {
+                    "key": "Maven",
+                    "doc_count": 19
+                },
+                {
+                    "key": "Leiningen",
+                    "doc_count": 15
+                },
+                {
+                    "key": "Meteor",
+                    "doc_count": 8
+                },
+                {
+                    "key": "Atmosphere",
+                    "doc_count": 3
+                }
+            ]
+        }
+    }
+}

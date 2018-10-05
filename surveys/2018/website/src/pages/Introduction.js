@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/common/Layout'
+import DocumentTitle from 'react-document-title'
 import TextBlock from '../components/blocks/TextBlock'
 import getPageTitle from '../helpers/getPageTitle'
 
@@ -15,12 +15,12 @@ We believe the result is the most complete picture of the state of JavaScript cu
 P.S. if all this data ever feels overwhelming, I'm sure you'll find a way to <em>console</em> yourself…
 `
 
-const Introduction = props => (
-    <Layout {...props} title={getPageTitle('Introduction')}>
+const Introduction = () => (
+    <DocumentTitle title={getPageTitle('Introduction')}>
         <div>
             <TextBlock text={intro} />
         </div>
-    </Layout>
+    </DocumentTitle>
 )
 
 export default Introduction

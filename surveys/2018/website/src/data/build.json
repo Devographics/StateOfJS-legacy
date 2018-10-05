@@ -1,0 +1,2113 @@
+{
+    "keys": [
+        "Webpack",
+        "Grunt",
+        "Gulp",
+        "Browserify",
+        "NPM",
+        "Rollup"
+    ],
+    "experience": {
+        "Gulp": {
+            "I've USED it before, and WOULD use it again": 11175,
+            "I've USED it before, and would NOT use it again": 6461,
+            "I've HEARD of it, and am NOT interested": 2961,
+            "I've HEARD of it, and WOULD like to learn it": 2503,
+            "I've never heard of it": 604
+        },
+        "Rollup": {
+            "I've never heard of it": 12865,
+            "I've HEARD of it, and WOULD like to learn it": 5117,
+            "I've HEARD of it, and am NOT interested": 3166,
+            "I've USED it before, and WOULD use it again": 2034,
+            "I've USED it before, and would NOT use it again": 522
+        },
+        "Browserify": {
+            "I've HEARD of it, and am NOT interested": 6926,
+            "I've USED it before, and would NOT use it again": 5798,
+            "I've USED it before, and WOULD use it again": 5221,
+            "I've HEARD of it, and WOULD like to learn it": 3600,
+            "I've never heard of it": 2159
+        },
+        "NPM": {
+            "I've USED it before, and WOULD use it again": 21369,
+            "I've USED it before, and would NOT use it again": 1001,
+            "I've HEARD of it, and WOULD like to learn it": 777,
+            "I've HEARD of it, and am NOT interested": 307,
+            "I've never heard of it": 250
+        },
+        "Webpack": {
+            "I've USED it before, and WOULD use it again": 16485,
+            "I've HEARD of it, and WOULD like to learn it": 4628,
+            "I've HEARD of it, and am NOT interested": 912,
+            "I've never heard of it": 841,
+            "I've USED it before, and would NOT use it again": 838
+        },
+        "Grunt": {
+            "I've USED it before, and would NOT use it again": 10631,
+            "I've HEARD of it, and am NOT interested": 5279,
+            "I've USED it before, and WOULD use it again": 4973,
+            "I've HEARD of it, and WOULD like to learn it": 2090,
+            "I've never heard of it": 731
+        }
+    },
+    "experienceByUsers": {
+        "Gulp": {
+            "doc_count": 11175,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 3538,
+                        "percentage": 35
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 2179,
+                        "percentage": 19
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 2001,
+                        "percentage": 18
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 1665,
+                        "percentage": 15
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 747,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 586,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 166,
+                        "percentage": 1
+                    }
+                ],
+                "average": 67
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 3487,
+                        "percentage": 32
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 3305,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 2353,
+                        "percentage": 21
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 1261,
+                        "percentage": 11
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 488,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 243,
+                        "percentage": 2
+                    }
+                ],
+                "average": 8
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 58,
+                "sum_other_doc_count": 2929,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 2791
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 2568
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 750
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 378
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 368
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 291
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 241
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 240
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 227
+                    },
+                    {
+                        "key": "Poland",
+                        "doc_count": 226
+                    }
+                ]
+            }
+        },
+        "Rollup": {
+            "doc_count": 2034,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 652,
+                        "percentage": 34
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 569,
+                        "percentage": 28
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 300,
+                        "percentage": 15
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 217,
+                        "percentage": 11
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 111,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 82,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 58,
+                        "percentage": 3
+                    }
+                ],
+                "average": 81
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 689,
+                        "percentage": 34
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 590,
+                        "percentage": 29
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 523,
+                        "percentage": 26
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 120,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 91,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 17,
+                        "percentage": 1
+                    }
+                ],
+                "average": 9
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 12,
+                "sum_other_doc_count": 443,
+                "buckets": [
+                    {
+                        "key": "undefined",
+                        "doc_count": 596
+                    },
+                    {
+                        "key": "United States",
+                        "doc_count": 506
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 145
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 75
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 59
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 52
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 41
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 40
+                    },
+                    {
+                        "key": "Sweden",
+                        "doc_count": 35
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 27
+                    }
+                ]
+            }
+        },
+        "Browserify": {
+            "doc_count": 5221,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 1767,
+                        "percentage": 37
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 1122,
+                        "percentage": 21
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 864,
+                        "percentage": 17
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 676,
+                        "percentage": 13
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 282,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 274,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 100,
+                        "percentage": 2
+                    }
+                ],
+                "average": 72
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 1588,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 1577,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 1180,
+                        "percentage": 23
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 506,
+                        "percentage": 10
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 262,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 86,
+                        "percentage": 2
+                    }
+                ],
+                "average": 8
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 26,
+                "sum_other_doc_count": 1204,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 1421
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 1199
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 372
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 189
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 167
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 163
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 125
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 102
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 100
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 99
+                    }
+                ]
+            }
+        },
+        "NPM": {
+            "doc_count": 21369,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 6611,
+                        "percentage": 33
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 4254,
+                        "percentage": 20
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 3664,
+                        "percentage": 17
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 3035,
+                        "percentage": 14
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 1451,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 1419,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 353,
+                        "percentage": 2
+                    }
+                ],
+                "average": 67
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 6514,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 6151,
+                        "percentage": 29
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 4429,
+                        "percentage": 21
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 2536,
+                        "percentage": 12
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 1018,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 645,
+                        "percentage": 3
+                    }
+                ],
+                "average": 8
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 119,
+                "sum_other_doc_count": 5584,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 5234
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 5181
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 1287
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 792
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 696
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 643
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 454
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 418
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 418
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 386
+                    }
+                ]
+            }
+        },
+        "Webpack": {
+            "doc_count": 16485,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 5252,
+                        "percentage": 34
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 3506,
+                        "percentage": 21
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 2831,
+                        "percentage": 17
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 2268,
+                        "percentage": 14
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 987,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 954,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 274,
+                        "percentage": 2
+                    }
+                ],
+                "average": 70
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 5168,
+                        "percentage": 32
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 4901,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 3370,
+                        "percentage": 20
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 1867,
+                        "percentage": 11
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 712,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 415,
+                        "percentage": 3
+                    }
+                ],
+                "average": 8
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 92,
+                "sum_other_doc_count": 4317,
+                "buckets": [
+                    {
+                        "key": "undefined",
+                        "doc_count": 4111
+                    },
+                    {
+                        "key": "United States",
+                        "doc_count": 4026
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 978
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 595
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 512
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 468
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 362
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 324
+                    },
+                    {
+                        "key": "Poland",
+                        "doc_count": 311
+                    },
+                    {
+                        "key": "Russia",
+                        "doc_count": 296
+                    }
+                ]
+            }
+        },
+        "Grunt": {
+            "doc_count": 4973,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 1694,
+                        "percentage": 38
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 1099,
+                        "percentage": 22
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 843,
+                        "percentage": 17
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 621,
+                        "percentage": 12
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 255,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 211,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 106,
+                        "percentage": 2
+                    }
+                ],
+                "average": 74
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 1442,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 1393,
+                        "percentage": 28
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 1202,
+                        "percentage": 24
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 508,
+                        "percentage": 10
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 309,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 100,
+                        "percentage": 2
+                    }
+                ],
+                "average": 8
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 25,
+                "sum_other_doc_count": 1110,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 1468
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 1057
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 362
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 181
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 181
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 123
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 119
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 117
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 89
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 81
+                    }
+                ]
+            }
+        },
+        "Aggregated": {
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 6953,
+                        "percentage": 33
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 4468,
+                        "percentage": 20
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 3856,
+                        "percentage": 17
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 3193,
+                        "percentage": 14
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 1526,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 1488,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 372,
+                        "percentage": 2
+                    }
+                ],
+                "average": 67
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 6822,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 6463,
+                        "percentage": 29
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 4688,
+                        "percentage": 21
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 2674,
+                        "percentage": 12
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 1063,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 670,
+                        "percentage": 3
+                    }
+                ],
+                "average": 8
+            },
+            "doc_count": 22461
+        }
+    },
+    "others": {
+        "doc_count_error_upper_bound": 5,
+        "sum_other_doc_count": 566,
+        "buckets": [
+            {
+                "key": "yarn",
+                "doc_count": 1334
+            },
+            {
+                "key": "GNU Make",
+                "doc_count": 124
+            },
+            {
+                "key": "Brunch",
+                "doc_count": 105
+            },
+            {
+                "key": "Broccoli",
+                "doc_count": 99
+            },
+            {
+                "key": "jspm",
+                "doc_count": 42
+            },
+            {
+                "key": "Bower",
+                "doc_count": 41
+            },
+            {
+                "key": "fusebox",
+                "doc_count": 36
+            },
+            {
+                "key": "Meteor",
+                "doc_count": 34
+            },
+            {
+                "key": "Babel",
+                "doc_count": 32
+            },
+            {
+                "key": "gulp",
+                "doc_count": 24
+            },
+            {
+                "key": "SystemJS",
+                "doc_count": 19
+            },
+            {
+                "key": "gradle",
+                "doc_count": 17
+            },
+            {
+                "key": "StealJS",
+                "doc_count": 11
+            },
+            {
+                "key": "Bazel",
+                "doc_count": 9
+            },
+            {
+                "key": "Webpack",
+                "doc_count": 8
+            },
+            {
+                "key": "ember-cli",
+                "doc_count": 6
+            },
+            {
+                "key": "npm scripts",
+                "doc_count": 6
+            },
+            {
+                "key": "Angular CLI",
+                "doc_count": 5
+            },
+            {
+                "key": "Ember-CLI",
+                "doc_count": 5
+            },
+            {
+                "key": "Ant",
+                "doc_count": 4
+            }
+        ]
+    },
+    "countries": [
+        {
+            "key": "undefined",
+            "doc_count": 5839,
+            "Gulp": {
+                "doc_count": 2568,
+                "percentage": 17,
+                "divergence": -1
+            },
+            "Rollup": {
+                "doc_count": 596,
+                "percentage": 4,
+                "divergence": 1
+            },
+            "Browserify": {
+                "doc_count": 1199,
+                "percentage": 8,
+                "divergence": -1
+            },
+            "NPM": {
+                "doc_count": 5181,
+                "percentage": 36,
+                "divergence": 1
+            },
+            "Webpack": {
+                "doc_count": 4111,
+                "percentage": 28,
+                "divergence": 1
+            },
+            "Grunt": {
+                "doc_count": 1057,
+                "percentage": 7,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "United States",
+            "doc_count": 5719,
+            "Gulp": {
+                "doc_count": 2791,
+                "percentage": 18,
+                "divergence": 0
+            },
+            "Rollup": {
+                "doc_count": 506,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Browserify": {
+                "doc_count": 1421,
+                "percentage": 9,
+                "divergence": 0
+            },
+            "NPM": {
+                "doc_count": 5234,
+                "percentage": 34,
+                "divergence": -1
+            },
+            "Webpack": {
+                "doc_count": 4026,
+                "percentage": 26,
+                "divergence": -1
+            },
+            "Grunt": {
+                "doc_count": 1468,
+                "percentage": 10,
+                "divergence": 2
+            }
+        },
+        {
+            "key": "United Kingdom",
+            "doc_count": 1409,
+            "Gulp": {
+                "doc_count": 750,
+                "percentage": 19,
+                "divergence": 1
+            },
+            "Rollup": {
+                "doc_count": 145,
+                "percentage": 4,
+                "divergence": 1
+            },
+            "Browserify": {
+                "doc_count": 372,
+                "percentage": 10,
+                "divergence": 1
+            },
+            "NPM": {
+                "doc_count": 1287,
+                "percentage": 33,
+                "divergence": -2
+            },
+            "Webpack": {
+                "doc_count": 978,
+                "percentage": 25,
+                "divergence": -2
+            },
+            "Grunt": {
+                "doc_count": 362,
+                "percentage": 9,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "Germany",
+            "doc_count": 879,
+            "Gulp": {
+                "doc_count": 368,
+                "percentage": 17,
+                "divergence": -1
+            },
+            "Rollup": {
+                "doc_count": 75,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Browserify": {
+                "doc_count": 189,
+                "percentage": 9,
+                "divergence": 0
+            },
+            "NPM": {
+                "doc_count": 792,
+                "percentage": 36,
+                "divergence": 1
+            },
+            "Webpack": {
+                "doc_count": 595,
+                "percentage": 27,
+                "divergence": 0
+            },
+            "Grunt": {
+                "doc_count": 181,
+                "percentage": 8,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Canada",
+            "doc_count": 771,
+            "Gulp": {
+                "doc_count": 378,
+                "percentage": 19,
+                "divergence": 1
+            },
+            "Rollup": {
+                "doc_count": 41,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Browserify": {
+                "doc_count": 163,
+                "percentage": 8,
+                "divergence": -1
+            },
+            "NPM": {
+                "doc_count": 696,
+                "percentage": 36,
+                "divergence": 1
+            },
+            "Webpack": {
+                "doc_count": 512,
+                "percentage": 26,
+                "divergence": -1
+            },
+            "Grunt": {
+                "doc_count": 181,
+                "percentage": 9,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "France",
+            "doc_count": 695,
+            "Gulp": {
+                "doc_count": 291,
+                "percentage": 17,
+                "divergence": -1
+            },
+            "Rollup": {
+                "doc_count": 59,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Browserify": {
+                "doc_count": 167,
+                "percentage": 10,
+                "divergence": 1
+            },
+            "NPM": {
+                "doc_count": 643,
+                "percentage": 36,
+                "divergence": 1
+            },
+            "Webpack": {
+                "doc_count": 468,
+                "percentage": 27,
+                "divergence": 0
+            },
+            "Grunt": {
+                "doc_count": 119,
+                "percentage": 7,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "India",
+            "doc_count": 500,
+            "Gulp": {
+                "doc_count": 227,
+                "percentage": 19,
+                "divergence": 1
+            },
+            "Rollup": {
+                "doc_count": 27,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Browserify": {
+                "doc_count": 100,
+                "percentage": 8,
+                "divergence": -1
+            },
+            "NPM": {
+                "doc_count": 418,
+                "percentage": 36,
+                "divergence": 1
+            },
+            "Webpack": {
+                "doc_count": 292,
+                "percentage": 25,
+                "divergence": -2
+            },
+            "Grunt": {
+                "doc_count": 123,
+                "percentage": 10,
+                "divergence": 2
+            }
+        },
+        {
+            "key": "Australia",
+            "doc_count": 492,
+            "Gulp": {
+                "doc_count": 240,
+                "percentage": 18,
+                "divergence": 0
+            },
+            "Rollup": {
+                "doc_count": 52,
+                "percentage": 4,
+                "divergence": 1
+            },
+            "Browserify": {
+                "doc_count": 125,
+                "percentage": 9,
+                "divergence": 0
+            },
+            "NPM": {
+                "doc_count": 454,
+                "percentage": 33,
+                "divergence": -2
+            },
+            "Webpack": {
+                "doc_count": 362,
+                "percentage": 27,
+                "divergence": 0
+            },
+            "Grunt": {
+                "doc_count": 117,
+                "percentage": 9,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "Netherlands",
+            "doc_count": 449,
+            "Gulp": {
+                "doc_count": 241,
+                "percentage": 20,
+                "divergence": 2
+            },
+            "Rollup": {
+                "doc_count": 40,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Browserify": {
+                "doc_count": 102,
+                "percentage": 8,
+                "divergence": -1
+            },
+            "NPM": {
+                "doc_count": 418,
+                "percentage": 35,
+                "divergence": 0
+            },
+            "Webpack": {
+                "doc_count": 324,
+                "percentage": 27,
+                "divergence": 0
+            },
+            "Grunt": {
+                "doc_count": 81,
+                "percentage": 7,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "Brazil",
+            "doc_count": 437,
+            "Gulp": {
+                "doc_count": 202,
+                "percentage": 19,
+                "divergence": 1
+            },
+            "Rollup": {
+                "doc_count": 22,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Browserify": {
+                "doc_count": 90,
+                "percentage": 8,
+                "divergence": -1
+            },
+            "NPM": {
+                "doc_count": 386,
+                "percentage": 37,
+                "divergence": 2
+            },
+            "Webpack": {
+                "doc_count": 284,
+                "percentage": 27,
+                "divergence": 0
+            },
+            "Grunt": {
+                "doc_count": 79,
+                "percentage": 7,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "Poland",
+            "doc_count": 420,
+            "Gulp": {
+                "doc_count": 226,
+                "percentage": 21,
+                "divergence": 3
+            },
+            "Rollup": {
+                "doc_count": 27,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Browserify": {
+                "doc_count": 66,
+                "percentage": 6,
+                "divergence": -3
+            },
+            "NPM": {
+                "doc_count": 379,
+                "percentage": 36,
+                "divergence": 1
+            },
+            "Webpack": {
+                "doc_count": 311,
+                "percentage": 29,
+                "divergence": 2
+            },
+            "Grunt": {
+                "doc_count": 54,
+                "percentage": 5,
+                "divergence": -3
+            }
+        },
+        {
+            "key": "Spain",
+            "doc_count": 413,
+            "Gulp": {
+                "doc_count": 208,
+                "percentage": 19,
+                "divergence": 1
+            },
+            "Rollup": {
+                "doc_count": 27,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Browserify": {
+                "doc_count": 99,
+                "percentage": 9,
+                "divergence": 0
+            },
+            "NPM": {
+                "doc_count": 381,
+                "percentage": 36,
+                "divergence": 1
+            },
+            "Webpack": {
+                "doc_count": 284,
+                "percentage": 26,
+                "divergence": -1
+            },
+            "Grunt": {
+                "doc_count": 89,
+                "percentage": 8,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Russia",
+            "doc_count": 379,
+            "Gulp": {
+                "doc_count": 164,
+                "percentage": 19,
+                "divergence": 1
+            },
+            "Rollup": {
+                "doc_count": 22,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Browserify": {
+                "doc_count": 31,
+                "percentage": 4,
+                "divergence": -5
+            },
+            "NPM": {
+                "doc_count": 333,
+                "percentage": 37,
+                "divergence": 2
+            },
+            "Webpack": {
+                "doc_count": 296,
+                "percentage": 34,
+                "divergence": 7
+            },
+            "Grunt": {
+                "doc_count": 24,
+                "percentage": 3,
+                "divergence": -5
+            }
+        },
+        {
+            "key": "Sweden",
+            "doc_count": 330,
+            "Gulp": {
+                "doc_count": 137,
+                "percentage": 16,
+                "divergence": -2
+            },
+            "Rollup": {
+                "doc_count": 35,
+                "percentage": 4,
+                "divergence": 1
+            },
+            "Browserify": {
+                "doc_count": 71,
+                "percentage": 8,
+                "divergence": -1
+            },
+            "NPM": {
+                "doc_count": 299,
+                "percentage": 36,
+                "divergence": 1
+            },
+            "Webpack": {
+                "doc_count": 249,
+                "percentage": 29,
+                "divergence": 2
+            },
+            "Grunt": {
+                "doc_count": 55,
+                "percentage": 7,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "Italy",
+            "doc_count": 251,
+            "Gulp": {
+                "doc_count": 122,
+                "percentage": 19,
+                "divergence": 1
+            },
+            "Rollup": {
+                "doc_count": 26,
+                "percentage": 4,
+                "divergence": 1
+            },
+            "Browserify": {
+                "doc_count": 52,
+                "percentage": 8,
+                "divergence": -1
+            },
+            "NPM": {
+                "doc_count": 224,
+                "percentage": 37,
+                "divergence": 2
+            },
+            "Webpack": {
+                "doc_count": 154,
+                "percentage": 24,
+                "divergence": -3
+            },
+            "Grunt": {
+                "doc_count": 52,
+                "percentage": 8,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Ukraine",
+            "doc_count": 242,
+            "Gulp": {
+                "doc_count": 120,
+                "percentage": 20,
+                "divergence": 2
+            },
+            "Rollup": {
+                "doc_count": 12,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Browserify": {
+                "doc_count": 32,
+                "percentage": 5,
+                "divergence": -4
+            },
+            "NPM": {
+                "doc_count": 218,
+                "percentage": 38,
+                "divergence": 3
+            },
+            "Webpack": {
+                "doc_count": 185,
+                "percentage": 31,
+                "divergence": 4
+            },
+            "Grunt": {
+                "doc_count": 21,
+                "percentage": 4,
+                "divergence": -4
+            }
+        },
+        {
+            "key": "Denmark",
+            "doc_count": 197,
+            "Gulp": {
+                "doc_count": 114,
+                "percentage": 21,
+                "divergence": 3
+            },
+            "Rollup": {
+                "doc_count": 23,
+                "percentage": 4,
+                "divergence": 1
+            },
+            "Browserify": {
+                "doc_count": 56,
+                "percentage": 11,
+                "divergence": 2
+            },
+            "NPM": {
+                "doc_count": 180,
+                "percentage": 34,
+                "divergence": -1
+            },
+            "Webpack": {
+                "doc_count": 126,
+                "percentage": 24,
+                "divergence": -3
+            },
+            "Grunt": {
+                "doc_count": 33,
+                "percentage": 6,
+                "divergence": -2
+            }
+        },
+        {
+            "key": "Mexico",
+            "doc_count": 167,
+            "Gulp": {
+                "doc_count": 82,
+                "percentage": 20,
+                "divergence": 2
+            },
+            "Rollup": {
+                "doc_count": 4,
+                "percentage": 1,
+                "divergence": -2
+            },
+            "Browserify": {
+                "doc_count": 35,
+                "percentage": 8,
+                "divergence": -1
+            },
+            "NPM": {
+                "doc_count": 147,
+                "percentage": 35,
+                "divergence": 0
+            },
+            "Webpack": {
+                "doc_count": 101,
+                "percentage": 24,
+                "divergence": -3
+            },
+            "Grunt": {
+                "doc_count": 48,
+                "percentage": 12,
+                "divergence": 4
+            }
+        },
+        {
+            "key": "Belgium",
+            "doc_count": 163,
+            "Gulp": {
+                "doc_count": 79,
+                "percentage": 19,
+                "divergence": 1
+            },
+            "Rollup": {
+                "doc_count": 18,
+                "percentage": 4,
+                "divergence": 1
+            },
+            "Browserify": {
+                "doc_count": 35,
+                "percentage": 9,
+                "divergence": 0
+            },
+            "NPM": {
+                "doc_count": 150,
+                "percentage": 37,
+                "divergence": 2
+            },
+            "Webpack": {
+                "doc_count": 100,
+                "percentage": 25,
+                "divergence": -2
+            },
+            "Grunt": {
+                "doc_count": 24,
+                "percentage": 6,
+                "divergence": -2
+            }
+        },
+        {
+            "key": "Norway",
+            "doc_count": 150,
+            "Gulp": {
+                "doc_count": 71,
+                "percentage": 18,
+                "divergence": 0
+            },
+            "Rollup": {
+                "doc_count": 10,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Browserify": {
+                "doc_count": 41,
+                "percentage": 11,
+                "divergence": 2
+            },
+            "NPM": {
+                "doc_count": 136,
+                "percentage": 34,
+                "divergence": -1
+            },
+            "Webpack": {
+                "doc_count": 106,
+                "percentage": 27,
+                "divergence": 0
+            },
+            "Grunt": {
+                "doc_count": 26,
+                "percentage": 7,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "Argentina",
+            "doc_count": 145,
+            "Gulp": {
+                "doc_count": 73,
+                "percentage": 20,
+                "divergence": 2
+            },
+            "Rollup": {
+                "doc_count": 7,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Browserify": {
+                "doc_count": 32,
+                "percentage": 9,
+                "divergence": 0
+            },
+            "NPM": {
+                "doc_count": 130,
+                "percentage": 35,
+                "divergence": 0
+            },
+            "Webpack": {
+                "doc_count": 92,
+                "percentage": 25,
+                "divergence": -2
+            },
+            "Grunt": {
+                "doc_count": 33,
+                "percentage": 9,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "New Zealand",
+            "doc_count": 143,
+            "Gulp": {
+                "doc_count": 68,
+                "percentage": 17,
+                "divergence": -1
+            },
+            "Rollup": {
+                "doc_count": 16,
+                "percentage": 4,
+                "divergence": 1
+            },
+            "Browserify": {
+                "doc_count": 37,
+                "percentage": 9,
+                "divergence": 0
+            },
+            "NPM": {
+                "doc_count": 134,
+                "percentage": 35,
+                "divergence": 0
+            },
+            "Webpack": {
+                "doc_count": 109,
+                "percentage": 28,
+                "divergence": 1
+            },
+            "Grunt": {
+                "doc_count": 26,
+                "percentage": 7,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "Switzerland",
+            "doc_count": 136,
+            "Gulp": {
+                "doc_count": 53,
+                "percentage": 16,
+                "divergence": -2
+            },
+            "Rollup": {
+                "doc_count": 20,
+                "percentage": 6,
+                "divergence": 3
+            },
+            "Browserify": {
+                "doc_count": 19,
+                "percentage": 6,
+                "divergence": -3
+            },
+            "NPM": {
+                "doc_count": 120,
+                "percentage": 37,
+                "divergence": 2
+            },
+            "Webpack": {
+                "doc_count": 94,
+                "percentage": 29,
+                "divergence": 2
+            },
+            "Grunt": {
+                "doc_count": 20,
+                "percentage": 6,
+                "divergence": -2
+            }
+        },
+        {
+            "key": "Finland",
+            "doc_count": 133,
+            "Gulp": {
+                "doc_count": 52,
+                "percentage": 16,
+                "divergence": -2
+            },
+            "Rollup": {
+                "doc_count": 8,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Browserify": {
+                "doc_count": 20,
+                "percentage": 6,
+                "divergence": -3
+            },
+            "NPM": {
+                "doc_count": 120,
+                "percentage": 38,
+                "divergence": 3
+            },
+            "Webpack": {
+                "doc_count": 97,
+                "percentage": 31,
+                "divergence": 4
+            },
+            "Grunt": {
+                "doc_count": 19,
+                "percentage": 6,
+                "divergence": -2
+            }
+        },
+        {
+            "key": "Romania",
+            "doc_count": 132,
+            "Gulp": {
+                "doc_count": 72,
+                "percentage": 19,
+                "divergence": 1
+            },
+            "Rollup": {
+                "doc_count": 8,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Browserify": {
+                "doc_count": 36,
+                "percentage": 10,
+                "divergence": 1
+            },
+            "NPM": {
+                "doc_count": 123,
+                "percentage": 34,
+                "divergence": -1
+            },
+            "Webpack": {
+                "doc_count": 94,
+                "percentage": 25,
+                "divergence": -2
+            },
+            "Grunt": {
+                "doc_count": 38,
+                "percentage": 10,
+                "divergence": 2
+            }
+        },
+        {
+            "key": "Israel",
+            "doc_count": 126,
+            "Gulp": {
+                "doc_count": 50,
+                "percentage": 16,
+                "divergence": -2
+            },
+            "Rollup": {
+                "doc_count": 8,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Browserify": {
+                "doc_count": 20,
+                "percentage": 6,
+                "divergence": -3
+            },
+            "NPM": {
+                "doc_count": 118,
+                "percentage": 37,
+                "divergence": 2
+            },
+            "Webpack": {
+                "doc_count": 96,
+                "percentage": 31,
+                "divergence": 4
+            },
+            "Grunt": {
+                "doc_count": 22,
+                "percentage": 7,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "Austria",
+            "doc_count": 116,
+            "Gulp": {
+                "doc_count": 60,
+                "percentage": 20,
+                "divergence": 2
+            },
+            "Rollup": {
+                "doc_count": 14,
+                "percentage": 5,
+                "divergence": 2
+            },
+            "Browserify": {
+                "doc_count": 18,
+                "percentage": 6,
+                "divergence": -3
+            },
+            "NPM": {
+                "doc_count": 106,
+                "percentage": 34,
+                "divergence": -1
+            },
+            "Webpack": {
+                "doc_count": 83,
+                "percentage": 27,
+                "divergence": 0
+            },
+            "Grunt": {
+                "doc_count": 25,
+                "percentage": 8,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Ireland",
+            "doc_count": 106,
+            "Gulp": {
+                "doc_count": 61,
+                "percentage": 22,
+                "divergence": 4
+            },
+            "Rollup": {
+                "doc_count": 4,
+                "percentage": 1,
+                "divergence": -2
+            },
+            "Browserify": {
+                "doc_count": 20,
+                "percentage": 7,
+                "divergence": -2
+            },
+            "NPM": {
+                "doc_count": 93,
+                "percentage": 35,
+                "divergence": 0
+            },
+            "Webpack": {
+                "doc_count": 61,
+                "percentage": 22,
+                "divergence": -5
+            },
+            "Grunt": {
+                "doc_count": 35,
+                "percentage": 13,
+                "divergence": 5
+            }
+        },
+        {
+            "key": "Portugal",
+            "doc_count": 105,
+            "Gulp": {
+                "doc_count": 51,
+                "percentage": 18,
+                "divergence": 0
+            },
+            "Rollup": {
+                "doc_count": 3,
+                "percentage": 1,
+                "divergence": -2
+            },
+            "Browserify": {
+                "doc_count": 25,
+                "percentage": 9,
+                "divergence": 0
+            },
+            "NPM": {
+                "doc_count": 98,
+                "percentage": 36,
+                "divergence": 1
+            },
+            "Webpack": {
+                "doc_count": 72,
+                "percentage": 26,
+                "divergence": -1
+            },
+            "Grunt": {
+                "doc_count": 29,
+                "percentage": 10,
+                "divergence": 2
+            }
+        },
+        {
+            "key": "Belarus",
+            "doc_count": 104,
+            "Gulp": {
+                "doc_count": 43,
+                "percentage": 17,
+                "divergence": -1
+            },
+            "Rollup": {
+                "doc_count": 7,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Browserify": {
+                "doc_count": 9,
+                "percentage": 4,
+                "divergence": -5
+            },
+            "NPM": {
+                "doc_count": 96,
+                "percentage": 38,
+                "divergence": 3
+            },
+            "Webpack": {
+                "doc_count": 85,
+                "percentage": 34,
+                "divergence": 7
+            },
+            "Grunt": {
+                "doc_count": 10,
+                "percentage": 4,
+                "divergence": -4
+            }
+        },
+        {
+            "key": "Colombia",
+            "doc_count": 97,
+            "Gulp": {
+                "doc_count": 58,
+                "percentage": 22,
+                "divergence": 4
+            },
+            "Rollup": {
+                "doc_count": 7,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Browserify": {
+                "doc_count": 22,
+                "percentage": 8,
+                "divergence": -1
+            },
+            "NPM": {
+                "doc_count": 89,
+                "percentage": 35,
+                "divergence": 0
+            },
+            "Webpack": {
+                "doc_count": 64,
+                "percentage": 24,
+                "divergence": -3
+            },
+            "Grunt": {
+                "doc_count": 22,
+                "percentage": 8,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "China",
+            "doc_count": 96,
+            "Gulp": {
+                "doc_count": 46,
+                "percentage": 18,
+                "divergence": 0
+            },
+            "Rollup": {
+                "doc_count": 13,
+                "percentage": 5,
+                "divergence": 2
+            },
+            "Browserify": {
+                "doc_count": 16,
+                "percentage": 6,
+                "divergence": -3
+            },
+            "NPM": {
+                "doc_count": 87,
+                "percentage": 35,
+                "divergence": 0
+            },
+            "Webpack": {
+                "doc_count": 83,
+                "percentage": 33,
+                "divergence": 6
+            },
+            "Grunt": {
+                "doc_count": 7,
+                "percentage": 3,
+                "divergence": -5
+            }
+        }
+    ],
+    "numberOfToolsUsed": [
+        {
+            "key": 0,
+            "doc_count": 1243
+        },
+        {
+            "key": 1,
+            "doc_count": 2496
+        },
+        {
+            "key": 2,
+            "doc_count": 8113
+        },
+        {
+            "key": 3,
+            "doc_count": 6510
+        },
+        {
+            "key": 4,
+            "doc_count": 3825
+        },
+        {
+            "key": 5,
+            "doc_count": 1397
+        },
+        {
+            "key": 6,
+            "doc_count": 120
+        }
+    ],
+    "happiness": 3.7
+}

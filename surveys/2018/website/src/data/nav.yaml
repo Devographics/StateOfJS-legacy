@@ -1,0 +1,85 @@
+- label:     Introduction
+  fullLabel: Introduction
+  path: "/*"
+
+- label:     Connections
+  fullLabel: JavaScript Connections
+
+- label:     Flavors
+  fullLabel: JavaScript Flavors
+  subPages:
+    - results
+    - developers
+    - worldwide
+
+- label:     Front-end
+  fullLabel: Front-end Frameworks
+  subPages:
+    - results
+    - other
+    - developers
+    - worldwide
+
+- label:     State Management
+  fullLabel: State Management Tools
+  subPages:
+    - results
+    - other
+    - developers
+    - worldwide
+
+- label:     Back-end
+  fullLabel: Back-end Frameworks
+  subPages:
+    - results
+    - other
+    - developers
+    - worldwide
+
+- label:     Testing
+  fullLabel: Testing Tools
+  subPages:
+    - results
+    - other
+    - developers
+    - worldwide
+
+- label:     CSS
+  fullLabel: CSS & Styling
+  subPages:
+    - results
+    - other
+    - developers
+    - worldwide
+
+- label:     Build Tools
+  fullLabel: Build Tools
+  subPages:
+    - results
+    - other
+    - developers
+    - worldwide
+
+- label:     Mobile
+  fullLabel: Mobile & Desktop Frameworks
+  subPages:
+    - results
+    - other
+    - developers
+    - worldwide
+
+- label:     Other Tools
+  fullLabel: Other Tools
+
+- label:      Features
+  fullLabel:  Popular Features
+
+- label:      Opinions
+  fullLabel:  Developer Opinions
+
+- label:     Conclusion
+  fullLabel: Conclusion
+
+- label:     Support
+  fullLabel: Support Us
+  hide:      true

@@ -1,0 +1,3009 @@
+{
+    "keys": [
+        "React",
+        "Angular",
+        "Angular 2",
+        "Ember",
+        "Vue",
+        "Backbone",
+        "Polymer",
+        "Aurelia",
+        "No Framework"
+    ],
+    "experience": {
+        "Backbone": {
+            "I've HEARD of it, and am NOT interested": 12654,
+            "I've USED it before, and would NOT use it again": 5677,
+            "I've HEARD of it, and WOULD like to learn it": 2203,
+            "I've USED it before, and WOULD use it again": 1715,
+            "I've never heard of it": 1455
+        },
+        "No Framework": {
+            "I've USED it before, and WOULD use it again": 9493,
+            "I've USED it before, and would NOT use it again": 5020,
+            "I've never heard of it": 4321,
+            "I've HEARD of it, and am NOT interested": 3542,
+            "I've HEARD of it, and WOULD like to learn it": 1328
+        },
+        "Vue": {
+            "I've HEARD of it, and WOULD like to learn it": 12175,
+            "I've HEARD of it, and am NOT interested": 5132,
+            "I've USED it before, and WOULD use it again": 4647,
+            "I've never heard of it": 1296,
+            "I've USED it before, and would NOT use it again": 454
+        },
+        "Ember": {
+            "I've HEARD of it, and am NOT interested": 15021,
+            "I've HEARD of it, and WOULD like to learn it": 4623,
+            "I've USED it before, and would NOT use it again": 1582,
+            "I've never heard of it": 1361,
+            "I've USED it before, and WOULD use it again": 1117
+        },
+        "Polymer": {
+            "I've HEARD of it, and am NOT interested": 9967,
+            "I've HEARD of it, and WOULD like to learn it": 7009,
+            "I've never heard of it": 4462,
+            "I've USED it before, and WOULD use it again": 1198,
+            "I've USED it before, and would NOT use it again": 1068
+        },
+        "React": {
+            "I've USED it before, and WOULD use it again": 13669,
+            "I've HEARD of it, and WOULD like to learn it": 6361,
+            "I've HEARD of it, and am NOT interested": 2572,
+            "I've USED it before, and would NOT use it again": 1020,
+            "I've never heard of it": 82
+        },
+        "Angular 2": {
+            "I've HEARD of it, and am NOT interested": 10657,
+            "I've HEARD of it, and WOULD like to learn it": 6072,
+            "I've USED it before, and WOULD use it again": 4449,
+            "I've USED it before, and would NOT use it again": 2289,
+            "I've never heard of it": 237
+        },
+        "Angular": {
+            "I've USED it before, and would NOT use it again": 9615,
+            "I've HEARD of it, and am NOT interested": 7622,
+            "I've USED it before, and WOULD use it again": 4707,
+            "I've HEARD of it, and WOULD like to learn it": 1694,
+            "I've never heard of it": 66
+        },
+        "Aurelia": {
+            "I've never heard of it": 11898,
+            "I've HEARD of it, and am NOT interested": 8353,
+            "I've HEARD of it, and WOULD like to learn it": 2834,
+            "I've USED it before, and WOULD use it again": 348,
+            "I've USED it before, and would NOT use it again": 271
+        }
+    },
+    "experienceByUsers": {
+        "Backbone": {
+            "doc_count": 1715,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 553,
+                        "percentage": 35
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 529,
+                        "percentage": 31
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 272,
+                        "percentage": 16
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 170,
+                        "percentage": 10
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 56,
+                        "percentage": 3
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 47,
+                        "percentage": 3
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 41,
+                        "percentage": 2
+                    }
+                ],
+                "average": 85
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 620,
+                        "percentage": 36
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 512,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 379,
+                        "percentage": 22
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 112,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 74,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 12,
+                        "percentage": 1
+                    }
+                ],
+                "average": 10
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 10,
+                "sum_other_doc_count": 332,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 544
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 411
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 111
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 67
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 55
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 47
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 33
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 33
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 32
+                    },
+                    {
+                        "key": "Poland",
+                        "doc_count": 26
+                    }
+                ]
+            }
+        },
+        "No Framework": {
+            "doc_count": 9493,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 3008,
+                        "percentage": 34
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 2001,
+                        "percentage": 21
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 1622,
+                        "percentage": 17
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 1198,
+                        "percentage": 13
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 662,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 554,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 170,
+                        "percentage": 2
+                    }
+                ],
+                "average": 70
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 2791,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 2729,
+                        "percentage": 29
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 2238,
+                        "percentage": 24
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 963,
+                        "percentage": 10
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 522,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 224,
+                        "percentage": 2
+                    }
+                ],
+                "average": 8
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 47,
+                "sum_other_doc_count": 2141,
+                "buckets": [
+                    {
+                        "key": "undefined",
+                        "doc_count": 2502
+                    },
+                    {
+                        "key": "United States",
+                        "doc_count": 2418
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 647
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 360
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 347
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 261
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 192
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 190
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 163
+                    },
+                    {
+                        "key": "Sweden",
+                        "doc_count": 158
+                    }
+                ]
+            }
+        },
+        "Vue": {
+            "doc_count": 4647,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 1440,
+                        "percentage": 33
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 866,
+                        "percentage": 19
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 752,
+                        "percentage": 16
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 691,
+                        "percentage": 15
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 376,
+                        "percentage": 8
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 373,
+                        "percentage": 8
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 56,
+                        "percentage": 1
+                    }
+                ],
+                "average": 60
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 1561,
+                        "percentage": 33
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 1382,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 864,
+                        "percentage": 19
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 550,
+                        "percentage": 12
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 191,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 90,
+                        "percentage": 2
+                    }
+                ],
+                "average": 7
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 28,
+                "sum_other_doc_count": 1238,
+                "buckets": [
+                    {
+                        "key": "undefined",
+                        "doc_count": 1299
+                    },
+                    {
+                        "key": "United States",
+                        "doc_count": 977
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 253
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 167
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 166
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 154
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 105
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 86
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 79
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 77
+                    }
+                ]
+            }
+        },
+        "Ember": {
+            "doc_count": 1117,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 393,
+                        "percentage": 37
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 334,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 171,
+                        "percentage": 15
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 101,
+                        "percentage": 9
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 36,
+                        "percentage": 3
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 31,
+                        "percentage": 3
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 29,
+                        "percentage": 3
+                    }
+                ],
+                "average": 86
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 399,
+                        "percentage": 37
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 300,
+                        "percentage": 27
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 283,
+                        "percentage": 25
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 71,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 49,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 10,
+                        "percentage": 1
+                    }
+                ],
+                "average": 9
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 5,
+                "sum_other_doc_count": 227,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 367
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 293
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 52
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 37
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 25
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 24
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 23
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 19
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 19
+                    },
+                    {
+                        "key": "Sweden",
+                        "doc_count": 19
+                    }
+                ]
+            }
+        },
+        "Polymer": {
+            "doc_count": 1198,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 376,
+                        "percentage": 35
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 290,
+                        "percentage": 24
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 195,
+                        "percentage": 16
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 134,
+                        "percentage": 11
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 80,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 65,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 24,
+                        "percentage": 2
+                    }
+                ],
+                "average": 74
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 374,
+                        "percentage": 32
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 324,
+                        "percentage": 27
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 313,
+                        "percentage": 26
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 89,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 79,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 13,
+                        "percentage": 1
+                    }
+                ],
+                "average": 9
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 6,
+                "sum_other_doc_count": 300,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 281
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 250
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 73
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 52
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 50
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 41
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 41
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 39
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 22
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 21
+                    }
+                ]
+            }
+        },
+        "React": {
+            "doc_count": 13669,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 4466,
+                        "percentage": 34
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 3096,
+                        "percentage": 23
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 2251,
+                        "percentage": 16
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 1726,
+                        "percentage": 13
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 776,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 767,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 246,
+                        "percentage": 2
+                    }
+                ],
+                "average": 72
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 4281,
+                        "percentage": 31
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 4062,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 2740,
+                        "percentage": 20
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 1604,
+                        "percentage": 12
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 538,
+                        "percentage": 4
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 401,
+                        "percentage": 3
+                    }
+                ],
+                "average": 7
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 74,
+                "sum_other_doc_count": 3423,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 3525
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 3393
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 857
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 464
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 446
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 347
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 329
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 259
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 246
+                    },
+                    {
+                        "key": "Russia",
+                        "doc_count": 242
+                    }
+                ]
+            }
+        },
+        "Angular 2": {
+            "doc_count": 4449,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 1355,
+                        "percentage": 34
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 811,
+                        "percentage": 18
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 784,
+                        "percentage": 18
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 725,
+                        "percentage": 16
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 333,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 256,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 58,
+                        "percentage": 1
+                    }
+                ],
+                "average": 63
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 1430,
+                        "percentage": 33
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 1284,
+                        "percentage": 29
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 862,
+                        "percentage": 19
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 550,
+                        "percentage": 12
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 205,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 104,
+                        "percentage": 2
+                    }
+                ],
+                "average": 7
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 30,
+                "sum_other_doc_count": 1333,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 1009
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 917
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 209
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 173
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 160
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 137
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 120
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 118
+                    },
+                    {
+                        "key": "Poland",
+                        "doc_count": 100
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 94
+                    }
+                ]
+            }
+        },
+        "Angular": {
+            "doc_count": 4707,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 1548,
+                        "percentage": 35
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 902,
+                        "percentage": 19
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 796,
+                        "percentage": 17
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 753,
+                        "percentage": 16
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 319,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 226,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 54,
+                        "percentage": 1
+                    }
+                ],
+                "average": 67
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 1470,
+                        "percentage": 31
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 1365,
+                        "percentage": 29
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 972,
+                        "percentage": 21
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 552,
+                        "percentage": 12
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 227,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 107,
+                        "percentage": 2
+                    }
+                ],
+                "average": 8
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 31,
+                "sum_other_doc_count": 1261,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 1246
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 937
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 280
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 158
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 151
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 148
+                    },
+                    {
+                        "key": "France",
+                        "doc_count": 132
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 104
+                    },
+                    {
+                        "key": "Spain",
+                        "doc_count": 101
+                    },
+                    {
+                        "key": "Poland",
+                        "doc_count": 91
+                    }
+                ]
+            }
+        },
+        "Aurelia": {
+            "doc_count": 348,
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 122,
+                        "percentage": 38
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 84,
+                        "percentage": 24
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 59,
+                        "percentage": 17
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 36,
+                        "percentage": 10
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 17,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 12,
+                        "percentage": 3
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 11,
+                        "percentage": 3
+                    }
+                ],
+                "average": 80
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 109,
+                        "percentage": 33
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 108,
+                        "percentage": 31
+                    },
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 85,
+                        "percentage": 24
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 22,
+                        "percentage": 6
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 19,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 4,
+                        "percentage": 1
+                    }
+                ],
+                "average": 9
+            },
+            "by_location": {
+                "doc_count_error_upper_bound": 2,
+                "sum_other_doc_count": 90,
+                "buckets": [
+                    {
+                        "key": "United States",
+                        "doc_count": 94
+                    },
+                    {
+                        "key": "undefined",
+                        "doc_count": 74
+                    },
+                    {
+                        "key": "United Kingdom",
+                        "doc_count": 21
+                    },
+                    {
+                        "key": "Australia",
+                        "doc_count": 12
+                    },
+                    {
+                        "key": "Germany",
+                        "doc_count": 12
+                    },
+                    {
+                        "key": "Netherlands",
+                        "doc_count": 9
+                    },
+                    {
+                        "key": "Sweden",
+                        "doc_count": 9
+                    },
+                    {
+                        "key": "Brazil",
+                        "doc_count": 7
+                    },
+                    {
+                        "key": "Canada",
+                        "doc_count": 7
+                    },
+                    {
+                        "key": "India",
+                        "doc_count": 7
+                    }
+                ]
+            }
+        },
+        "Aggregated": {
+            "by_salary": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "$50-$100k",
+                        "doc_count": 6842,
+                        "percentage": 33
+                    },
+                    {
+                        "key": "$100k-$200k",
+                        "doc_count": 4426,
+                        "percentage": 20
+                    },
+                    {
+                        "key": "$30-50k",
+                        "doc_count": 3739,
+                        "percentage": 17
+                    },
+                    {
+                        "key": "$10-$30k",
+                        "doc_count": 3078,
+                        "percentage": 14
+                    },
+                    {
+                        "key": "I work for free :(",
+                        "doc_count": 1463,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "$0-$10k",
+                        "doc_count": 1436,
+                        "percentage": 7
+                    },
+                    {
+                        "key": "$200k+",
+                        "doc_count": 379,
+                        "percentage": 2
+                    }
+                ],
+                "average": 68
+            },
+            "by_experience": {
+                "doc_count_error_upper_bound": 0,
+                "sum_other_doc_count": 0,
+                "buckets": [
+                    {
+                        "key": "2-5 years",
+                        "doc_count": 6669,
+                        "percentage": 30
+                    },
+                    {
+                        "key": "5-10 years",
+                        "doc_count": 6369,
+                        "percentage": 29
+                    },
+                    {
+                        "key": "10-20 years",
+                        "doc_count": 4625,
+                        "percentage": 21
+                    },
+                    {
+                        "key": "1-2 years",
+                        "doc_count": 2560,
+                        "percentage": 12
+                    },
+                    {
+                        "key": "20+ years",
+                        "doc_count": 1047,
+                        "percentage": 5
+                    },
+                    {
+                        "key": "Less than one year",
+                        "doc_count": 618,
+                        "percentage": 3
+                    }
+                ],
+                "average": 8
+            },
+            "doc_count": 21964
+        }
+    },
+    "countries": [
+        {
+            "key": "undefined",
+            "doc_count": 5839,
+            "Backbone": {
+                "doc_count": 411,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "No Framework": {
+                "doc_count": 2502,
+                "percentage": 25,
+                "divergence": 2
+            },
+            "Vue": {
+                "doc_count": 1299,
+                "percentage": 13,
+                "divergence": 2
+            },
+            "Ember": {
+                "doc_count": 293,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Polymer": {
+                "doc_count": 250,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "React": {
+                "doc_count": 3393,
+                "percentage": 34,
+                "divergence": 1
+            },
+            "Angular 2": {
+                "doc_count": 917,
+                "percentage": 9,
+                "divergence": -2
+            },
+            "Angular": {
+                "doc_count": 937,
+                "percentage": 9,
+                "divergence": -2
+            },
+            "Aurelia": {
+                "doc_count": 74,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "United States",
+            "doc_count": 5719,
+            "Backbone": {
+                "doc_count": 544,
+                "percentage": 5,
+                "divergence": 1
+            },
+            "No Framework": {
+                "doc_count": 2418,
+                "percentage": 23,
+                "divergence": 0
+            },
+            "Vue": {
+                "doc_count": 977,
+                "percentage": 9,
+                "divergence": -2
+            },
+            "Ember": {
+                "doc_count": 367,
+                "percentage": 4,
+                "divergence": 1
+            },
+            "Polymer": {
+                "doc_count": 281,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "React": {
+                "doc_count": 3525,
+                "percentage": 33,
+                "divergence": 0
+            },
+            "Angular 2": {
+                "doc_count": 1009,
+                "percentage": 10,
+                "divergence": -1
+            },
+            "Angular": {
+                "doc_count": 1246,
+                "percentage": 12,
+                "divergence": 1
+            },
+            "Aurelia": {
+                "doc_count": 94,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "United Kingdom",
+            "doc_count": 1409,
+            "Backbone": {
+                "doc_count": 111,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "No Framework": {
+                "doc_count": 647,
+                "percentage": 26,
+                "divergence": 3
+            },
+            "Vue": {
+                "doc_count": 253,
+                "percentage": 10,
+                "divergence": -1
+            },
+            "Ember": {
+                "doc_count": 52,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Polymer": {
+                "doc_count": 73,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "React": {
+                "doc_count": 857,
+                "percentage": 35,
+                "divergence": 2
+            },
+            "Angular 2": {
+                "doc_count": 209,
+                "percentage": 8,
+                "divergence": -3
+            },
+            "Angular": {
+                "doc_count": 280,
+                "percentage": 11,
+                "divergence": 0
+            },
+            "Aurelia": {
+                "doc_count": 21,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Germany",
+            "doc_count": 879,
+            "Backbone": {
+                "doc_count": 67,
+                "percentage": 5,
+                "divergence": 1
+            },
+            "No Framework": {
+                "doc_count": 360,
+                "percentage": 25,
+                "divergence": 2
+            },
+            "Vue": {
+                "doc_count": 167,
+                "percentage": 11,
+                "divergence": 0
+            },
+            "Ember": {
+                "doc_count": 26,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Polymer": {
+                "doc_count": 50,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "React": {
+                "doc_count": 464,
+                "percentage": 31,
+                "divergence": -2
+            },
+            "Angular 2": {
+                "doc_count": 173,
+                "percentage": 12,
+                "divergence": 1
+            },
+            "Angular": {
+                "doc_count": 148,
+                "percentage": 10,
+                "divergence": -1
+            },
+            "Aurelia": {
+                "doc_count": 12,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Canada",
+            "doc_count": 771,
+            "Backbone": {
+                "doc_count": 55,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "No Framework": {
+                "doc_count": 347,
+                "percentage": 25,
+                "divergence": 2
+            },
+            "Vue": {
+                "doc_count": 154,
+                "percentage": 11,
+                "divergence": 0
+            },
+            "Ember": {
+                "doc_count": 37,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Polymer": {
+                "doc_count": 41,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "React": {
+                "doc_count": 446,
+                "percentage": 32,
+                "divergence": -1
+            },
+            "Angular 2": {
+                "doc_count": 137,
+                "percentage": 10,
+                "divergence": -1
+            },
+            "Angular": {
+                "doc_count": 151,
+                "percentage": 11,
+                "divergence": 0
+            },
+            "Aurelia": {
+                "doc_count": 7,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "France",
+            "doc_count": 695,
+            "Backbone": {
+                "doc_count": 47,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "No Framework": {
+                "doc_count": 261,
+                "percentage": 22,
+                "divergence": -1
+            },
+            "Vue": {
+                "doc_count": 166,
+                "percentage": 14,
+                "divergence": 3
+            },
+            "Ember": {
+                "doc_count": 24,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Polymer": {
+                "doc_count": 41,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "React": {
+                "doc_count": 347,
+                "percentage": 29,
+                "divergence": -4
+            },
+            "Angular 2": {
+                "doc_count": 160,
+                "percentage": 14,
+                "divergence": 3
+            },
+            "Angular": {
+                "doc_count": 132,
+                "percentage": 11,
+                "divergence": 0
+            },
+            "Aurelia": {
+                "doc_count": 6,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "India",
+            "doc_count": 500,
+            "Backbone": {
+                "doc_count": 33,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "No Framework": {
+                "doc_count": 131,
+                "percentage": 16,
+                "divergence": -7
+            },
+            "Vue": {
+                "doc_count": 59,
+                "percentage": 7,
+                "divergence": -4
+            },
+            "Ember": {
+                "doc_count": 19,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Polymer": {
+                "doc_count": 22,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "React": {
+                "doc_count": 246,
+                "percentage": 32,
+                "divergence": -1
+            },
+            "Angular 2": {
+                "doc_count": 120,
+                "percentage": 15,
+                "divergence": 4
+            },
+            "Angular": {
+                "doc_count": 158,
+                "percentage": 20,
+                "divergence": 9
+            },
+            "Aurelia": {
+                "doc_count": 7,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Australia",
+            "doc_count": 492,
+            "Backbone": {
+                "doc_count": 22,
+                "percentage": 3,
+                "divergence": -1
+            },
+            "No Framework": {
+                "doc_count": 190,
+                "percentage": 23,
+                "divergence": 0
+            },
+            "Vue": {
+                "doc_count": 77,
+                "percentage": 9,
+                "divergence": -2
+            },
+            "Ember": {
+                "doc_count": 14,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Polymer": {
+                "doc_count": 22,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "React": {
+                "doc_count": 329,
+                "percentage": 40,
+                "divergence": 7
+            },
+            "Angular 2": {
+                "doc_count": 78,
+                "percentage": 9,
+                "divergence": -2
+            },
+            "Angular": {
+                "doc_count": 84,
+                "percentage": 10,
+                "divergence": -1
+            },
+            "Aurelia": {
+                "doc_count": 12,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Netherlands",
+            "doc_count": 449,
+            "Backbone": {
+                "doc_count": 33,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "No Framework": {
+                "doc_count": 192,
+                "percentage": 23,
+                "divergence": 0
+            },
+            "Vue": {
+                "doc_count": 105,
+                "percentage": 13,
+                "divergence": 2
+            },
+            "Ember": {
+                "doc_count": 19,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Polymer": {
+                "doc_count": 39,
+                "percentage": 5,
+                "divergence": 2
+            },
+            "React": {
+                "doc_count": 259,
+                "percentage": 32,
+                "divergence": -1
+            },
+            "Angular 2": {
+                "doc_count": 94,
+                "percentage": 11,
+                "divergence": 0
+            },
+            "Angular": {
+                "doc_count": 73,
+                "percentage": 9,
+                "divergence": -2
+            },
+            "Aurelia": {
+                "doc_count": 9,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Brazil",
+            "doc_count": 437,
+            "Backbone": {
+                "doc_count": 18,
+                "percentage": 2,
+                "divergence": -2
+            },
+            "No Framework": {
+                "doc_count": 163,
+                "percentage": 22,
+                "divergence": -1
+            },
+            "Vue": {
+                "doc_count": 86,
+                "percentage": 12,
+                "divergence": 1
+            },
+            "Ember": {
+                "doc_count": 23,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Polymer": {
+                "doc_count": 14,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "React": {
+                "doc_count": 236,
+                "percentage": 33,
+                "divergence": 0
+            },
+            "Angular 2": {
+                "doc_count": 78,
+                "percentage": 11,
+                "divergence": 0
+            },
+            "Angular": {
+                "doc_count": 104,
+                "percentage": 14,
+                "divergence": 3
+            },
+            "Aurelia": {
+                "doc_count": 7,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Poland",
+            "doc_count": 420,
+            "Backbone": {
+                "doc_count": 26,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "No Framework": {
+                "doc_count": 140,
+                "percentage": 20,
+                "divergence": -3
+            },
+            "Vue": {
+                "doc_count": 74,
+                "percentage": 10,
+                "divergence": -1
+            },
+            "Ember": {
+                "doc_count": 8,
+                "percentage": 1,
+                "divergence": -2
+            },
+            "Polymer": {
+                "doc_count": 20,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "React": {
+                "doc_count": 239,
+                "percentage": 34,
+                "divergence": 1
+            },
+            "Angular 2": {
+                "doc_count": 100,
+                "percentage": 14,
+                "divergence": 3
+            },
+            "Angular": {
+                "doc_count": 91,
+                "percentage": 13,
+                "divergence": 2
+            },
+            "Aurelia": {
+                "doc_count": 7,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Spain",
+            "doc_count": 413,
+            "Backbone": {
+                "doc_count": 32,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "No Framework": {
+                "doc_count": 150,
+                "percentage": 20,
+                "divergence": -3
+            },
+            "Vue": {
+                "doc_count": 79,
+                "percentage": 11,
+                "divergence": 0
+            },
+            "Ember": {
+                "doc_count": 16,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Polymer": {
+                "doc_count": 52,
+                "percentage": 7,
+                "divergence": 4
+            },
+            "React": {
+                "doc_count": 192,
+                "percentage": 25,
+                "divergence": -8
+            },
+            "Angular 2": {
+                "doc_count": 118,
+                "percentage": 16,
+                "divergence": 5
+            },
+            "Angular": {
+                "doc_count": 101,
+                "percentage": 14,
+                "divergence": 3
+            },
+            "Aurelia": {
+                "doc_count": 4,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Russia",
+            "doc_count": 379,
+            "Backbone": {
+                "doc_count": 14,
+                "percentage": 3,
+                "divergence": -1
+            },
+            "No Framework": {
+                "doc_count": 128,
+                "percentage": 23,
+                "divergence": 0
+            },
+            "Vue": {
+                "doc_count": 69,
+                "percentage": 12,
+                "divergence": 1
+            },
+            "Ember": {
+                "doc_count": 6,
+                "percentage": 1,
+                "divergence": -2
+            },
+            "Polymer": {
+                "doc_count": 3,
+                "percentage": 1,
+                "divergence": -2
+            },
+            "React": {
+                "doc_count": 242,
+                "percentage": 43,
+                "divergence": 10
+            },
+            "Angular 2": {
+                "doc_count": 49,
+                "percentage": 9,
+                "divergence": -2
+            },
+            "Angular": {
+                "doc_count": 38,
+                "percentage": 7,
+                "divergence": -4
+            },
+            "Aurelia": {
+                "doc_count": 5,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Sweden",
+            "doc_count": 330,
+            "Backbone": {
+                "doc_count": 14,
+                "percentage": 2,
+                "divergence": -2
+            },
+            "No Framework": {
+                "doc_count": 158,
+                "percentage": 26,
+                "divergence": 3
+            },
+            "Vue": {
+                "doc_count": 58,
+                "percentage": 10,
+                "divergence": -1
+            },
+            "Ember": {
+                "doc_count": 19,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Polymer": {
+                "doc_count": 18,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "React": {
+                "doc_count": 232,
+                "percentage": 38,
+                "divergence": 5
+            },
+            "Angular 2": {
+                "doc_count": 50,
+                "percentage": 8,
+                "divergence": -3
+            },
+            "Angular": {
+                "doc_count": 51,
+                "percentage": 8,
+                "divergence": -3
+            },
+            "Aurelia": {
+                "doc_count": 10,
+                "percentage": 2,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "Italy",
+            "doc_count": 251,
+            "Backbone": {
+                "doc_count": 17,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "No Framework": {
+                "doc_count": 85,
+                "percentage": 21,
+                "divergence": -2
+            },
+            "Vue": {
+                "doc_count": 49,
+                "percentage": 12,
+                "divergence": 1
+            },
+            "Ember": {
+                "doc_count": 4,
+                "percentage": 1,
+                "divergence": -2
+            },
+            "Polymer": {
+                "doc_count": 14,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "React": {
+                "doc_count": 102,
+                "percentage": 26,
+                "divergence": -7
+            },
+            "Angular 2": {
+                "doc_count": 58,
+                "percentage": 14,
+                "divergence": 3
+            },
+            "Angular": {
+                "doc_count": 76,
+                "percentage": 19,
+                "divergence": 8
+            },
+            "Aurelia": {
+                "doc_count": 2,
+                "percentage": 0,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "Ukraine",
+            "doc_count": 242,
+            "Backbone": {
+                "doc_count": 11,
+                "percentage": 3,
+                "divergence": -1
+            },
+            "No Framework": {
+                "doc_count": 77,
+                "percentage": 21,
+                "divergence": -2
+            },
+            "Vue": {
+                "doc_count": 32,
+                "percentage": 9,
+                "divergence": -2
+            },
+            "Ember": {
+                "doc_count": 5,
+                "percentage": 1,
+                "divergence": -2
+            },
+            "Polymer": {
+                "doc_count": 9,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "React": {
+                "doc_count": 135,
+                "percentage": 38,
+                "divergence": 5
+            },
+            "Angular 2": {
+                "doc_count": 55,
+                "percentage": 15,
+                "divergence": 4
+            },
+            "Angular": {
+                "doc_count": 39,
+                "percentage": 11,
+                "divergence": 0
+            },
+            "Aurelia": {
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "Denmark",
+            "doc_count": 197,
+            "Backbone": {
+                "doc_count": 12,
+                "percentage": 3,
+                "divergence": -1
+            },
+            "No Framework": {
+                "doc_count": 91,
+                "percentage": 26,
+                "divergence": 3
+            },
+            "Vue": {
+                "doc_count": 39,
+                "percentage": 11,
+                "divergence": 0
+            },
+            "Ember": {
+                "doc_count": 8,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Polymer": {
+                "doc_count": 10,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "React": {
+                "doc_count": 103,
+                "percentage": 31,
+                "divergence": -2
+            },
+            "Angular 2": {
+                "doc_count": 40,
+                "percentage": 11,
+                "divergence": 0
+            },
+            "Angular": {
+                "doc_count": 46,
+                "percentage": 13,
+                "divergence": 2
+            },
+            "Aurelia": {
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "Mexico",
+            "doc_count": 167,
+            "Backbone": {
+                "doc_count": 14,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "No Framework": {
+                "doc_count": 67,
+                "percentage": 21,
+                "divergence": -2
+            },
+            "Vue": {
+                "doc_count": 35,
+                "percentage": 11,
+                "divergence": 0
+            },
+            "Ember": {
+                "doc_count": 10,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Polymer": {
+                "doc_count": 17,
+                "percentage": 5,
+                "divergence": 2
+            },
+            "React": {
+                "doc_count": 85,
+                "percentage": 26,
+                "divergence": -7
+            },
+            "Angular 2": {
+                "doc_count": 39,
+                "percentage": 12,
+                "divergence": 1
+            },
+            "Angular": {
+                "doc_count": 55,
+                "percentage": 17,
+                "divergence": 6
+            },
+            "Aurelia": {
+                "doc_count": 3,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Belgium",
+            "doc_count": 163,
+            "Backbone": {
+                "doc_count": 4,
+                "percentage": 1,
+                "divergence": -3
+            },
+            "No Framework": {
+                "doc_count": 62,
+                "percentage": 22,
+                "divergence": -1
+            },
+            "Vue": {
+                "doc_count": 34,
+                "percentage": 12,
+                "divergence": 1
+            },
+            "Ember": {
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -2
+            },
+            "Polymer": {
+                "doc_count": 6,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "React": {
+                "doc_count": 74,
+                "percentage": 25,
+                "divergence": -8
+            },
+            "Angular 2": {
+                "doc_count": 52,
+                "percentage": 18,
+                "divergence": 7
+            },
+            "Angular": {
+                "doc_count": 49,
+                "percentage": 17,
+                "divergence": 6
+            },
+            "Aurelia": {
+                "doc_count": 5,
+                "percentage": 2,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "Norway",
+            "doc_count": 150,
+            "Backbone": {
+                "doc_count": 6,
+                "percentage": 2,
+                "divergence": -2
+            },
+            "No Framework": {
+                "doc_count": 64,
+                "percentage": 26,
+                "divergence": 3
+            },
+            "Vue": {
+                "doc_count": 24,
+                "percentage": 10,
+                "divergence": -1
+            },
+            "Ember": {
+                "doc_count": 6,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Polymer": {
+                "doc_count": 9,
+                "percentage": 4,
+                "divergence": 1
+            },
+            "React": {
+                "doc_count": 93,
+                "percentage": 39,
+                "divergence": 6
+            },
+            "Angular 2": {
+                "doc_count": 25,
+                "percentage": 10,
+                "divergence": -1
+            },
+            "Angular": {
+                "doc_count": 15,
+                "percentage": 6,
+                "divergence": -5
+            },
+            "Aurelia": {
+                "doc_count": 3,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Argentina",
+            "doc_count": 145,
+            "Backbone": {
+                "doc_count": 10,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "No Framework": {
+                "doc_count": 43,
+                "percentage": 18,
+                "divergence": -5
+            },
+            "Vue": {
+                "doc_count": 27,
+                "percentage": 11,
+                "divergence": 0
+            },
+            "Ember": {
+                "doc_count": 11,
+                "percentage": 5,
+                "divergence": 2
+            },
+            "Polymer": {
+                "doc_count": 3,
+                "percentage": 1,
+                "divergence": -2
+            },
+            "React": {
+                "doc_count": 73,
+                "percentage": 31,
+                "divergence": -2
+            },
+            "Angular 2": {
+                "doc_count": 27,
+                "percentage": 11,
+                "divergence": 0
+            },
+            "Angular": {
+                "doc_count": 41,
+                "percentage": 17,
+                "divergence": 6
+            },
+            "Aurelia": {
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "New Zealand",
+            "doc_count": 143,
+            "Backbone": {
+                "doc_count": 8,
+                "percentage": 3,
+                "divergence": -1
+            },
+            "No Framework": {
+                "doc_count": 58,
+                "percentage": 22,
+                "divergence": -1
+            },
+            "Vue": {
+                "doc_count": 25,
+                "percentage": 9,
+                "divergence": -2
+            },
+            "Ember": {
+                "doc_count": 11,
+                "percentage": 4,
+                "divergence": 1
+            },
+            "Polymer": {
+                "doc_count": 3,
+                "percentage": 1,
+                "divergence": -2
+            },
+            "React": {
+                "doc_count": 96,
+                "percentage": 36,
+                "divergence": 3
+            },
+            "Angular 2": {
+                "doc_count": 32,
+                "percentage": 12,
+                "divergence": 1
+            },
+            "Angular": {
+                "doc_count": 36,
+                "percentage": 13,
+                "divergence": 2
+            },
+            "Aurelia": {
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "Switzerland",
+            "doc_count": 136,
+            "Backbone": {
+                "doc_count": 10,
+                "percentage": 4,
+                "divergence": 0
+            },
+            "No Framework": {
+                "doc_count": 52,
+                "percentage": 22,
+                "divergence": -1
+            },
+            "Vue": {
+                "doc_count": 28,
+                "percentage": 12,
+                "divergence": 1
+            },
+            "Ember": {
+                "doc_count": 6,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Polymer": {
+                "doc_count": 10,
+                "percentage": 4,
+                "divergence": 1
+            },
+            "React": {
+                "doc_count": 69,
+                "percentage": 28,
+                "divergence": -5
+            },
+            "Angular 2": {
+                "doc_count": 35,
+                "percentage": 15,
+                "divergence": 4
+            },
+            "Angular": {
+                "doc_count": 27,
+                "percentage": 11,
+                "divergence": 0
+            },
+            "Aurelia": {
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Finland",
+            "doc_count": 133,
+            "Backbone": {
+                "doc_count": 11,
+                "percentage": 5,
+                "divergence": 1
+            },
+            "No Framework": {
+                "doc_count": 49,
+                "percentage": 21,
+                "divergence": -2
+            },
+            "Vue": {
+                "doc_count": 33,
+                "percentage": 14,
+                "divergence": 3
+            },
+            "Ember": {
+                "doc_count": 5,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Polymer": {
+                "doc_count": 14,
+                "percentage": 6,
+                "divergence": 3
+            },
+            "React": {
+                "doc_count": 85,
+                "percentage": 37,
+                "divergence": 4
+            },
+            "Angular 2": {
+                "doc_count": 19,
+                "percentage": 8,
+                "divergence": -3
+            },
+            "Angular": {
+                "doc_count": 17,
+                "percentage": 7,
+                "divergence": -4
+            },
+            "Aurelia": {
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": -1
+            }
+        },
+        {
+            "key": "Romania",
+            "doc_count": 132,
+            "Backbone": {
+                "doc_count": 8,
+                "percentage": 3,
+                "divergence": -1
+            },
+            "No Framework": {
+                "doc_count": 55,
+                "percentage": 21,
+                "divergence": -2
+            },
+            "Vue": {
+                "doc_count": 23,
+                "percentage": 9,
+                "divergence": -2
+            },
+            "Ember": {
+                "doc_count": 7,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Polymer": {
+                "doc_count": 10,
+                "percentage": 4,
+                "divergence": 1
+            },
+            "React": {
+                "doc_count": 70,
+                "percentage": 26,
+                "divergence": -7
+            },
+            "Angular 2": {
+                "doc_count": 42,
+                "percentage": 16,
+                "divergence": 5
+            },
+            "Angular": {
+                "doc_count": 41,
+                "percentage": 16,
+                "divergence": 5
+            },
+            "Aurelia": {
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "Israel",
+            "doc_count": 126,
+            "Backbone": {
+                "doc_count": 6,
+                "percentage": 3,
+                "divergence": -1
+            },
+            "No Framework": {
+                "doc_count": 48,
+                "percentage": 21,
+                "divergence": -2
+            },
+            "Vue": {
+                "doc_count": 19,
+                "percentage": 8,
+                "divergence": -3
+            },
+            "Ember": {
+                "doc_count": 1,
+                "percentage": 0,
+                "divergence": -3
+            },
+            "Polymer": {
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -2
+            },
+            "React": {
+                "doc_count": 75,
+                "percentage": 32,
+                "divergence": -1
+            },
+            "Angular 2": {
+                "doc_count": 36,
+                "percentage": 16,
+                "divergence": 5
+            },
+            "Angular": {
+                "doc_count": 41,
+                "percentage": 18,
+                "divergence": 7
+            },
+            "Aurelia": {
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Austria",
+            "doc_count": 116,
+            "Backbone": {
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": -2
+            },
+            "No Framework": {
+                "doc_count": 37,
+                "percentage": 19,
+                "divergence": -4
+            },
+            "Vue": {
+                "doc_count": 22,
+                "percentage": 11,
+                "divergence": 0
+            },
+            "Ember": {
+                "doc_count": 12,
+                "percentage": 6,
+                "divergence": 3
+            },
+            "Polymer": {
+                "doc_count": 6,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "React": {
+                "doc_count": 66,
+                "percentage": 32,
+                "divergence": -1
+            },
+            "Angular 2": {
+                "doc_count": 31,
+                "percentage": 16,
+                "divergence": 5
+            },
+            "Angular": {
+                "doc_count": 19,
+                "percentage": 10,
+                "divergence": -1
+            },
+            "Aurelia": {
+                "doc_count": 1,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Ireland",
+            "doc_count": 106,
+            "Backbone": {
+                "doc_count": 10,
+                "percentage": 6,
+                "divergence": 2
+            },
+            "No Framework": {
+                "doc_count": 40,
+                "percentage": 23,
+                "divergence": 0
+            },
+            "Vue": {
+                "doc_count": 14,
+                "percentage": 8,
+                "divergence": -3
+            },
+            "Ember": {
+                "doc_count": 5,
+                "percentage": 3,
+                "divergence": 0
+            },
+            "Polymer": {
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "React": {
+                "doc_count": 52,
+                "percentage": 29,
+                "divergence": -4
+            },
+            "Angular 2": {
+                "doc_count": 23,
+                "percentage": 13,
+                "divergence": 2
+            },
+            "Angular": {
+                "doc_count": 25,
+                "percentage": 14,
+                "divergence": 3
+            },
+            "Aurelia": {
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "Portugal",
+            "doc_count": 105,
+            "Backbone": {
+                "doc_count": 10,
+                "percentage": 5,
+                "divergence": 1
+            },
+            "No Framework": {
+                "doc_count": 33,
+                "percentage": 17,
+                "divergence": -6
+            },
+            "Vue": {
+                "doc_count": 22,
+                "percentage": 11,
+                "divergence": 0
+            },
+            "Ember": {
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -2
+            },
+            "Polymer": {
+                "doc_count": 9,
+                "percentage": 5,
+                "divergence": 2
+            },
+            "React": {
+                "doc_count": 55,
+                "percentage": 29,
+                "divergence": -4
+            },
+            "Angular 2": {
+                "doc_count": 27,
+                "percentage": 14,
+                "divergence": 3
+            },
+            "Angular": {
+                "doc_count": 33,
+                "percentage": 17,
+                "divergence": 6
+            },
+            "Aurelia": {
+                "doc_count": 1,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Belarus",
+            "doc_count": 104,
+            "Backbone": {
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": -2
+            },
+            "No Framework": {
+                "doc_count": 29,
+                "percentage": 16,
+                "divergence": -7
+            },
+            "Vue": {
+                "doc_count": 12,
+                "percentage": 7,
+                "divergence": -4
+            },
+            "Ember": {
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Polymer": {
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "React": {
+                "doc_count": 66,
+                "percentage": 37,
+                "divergence": 4
+            },
+            "Angular 2": {
+                "doc_count": 33,
+                "percentage": 19,
+                "divergence": 8
+            },
+            "Angular": {
+                "doc_count": 24,
+                "percentage": 14,
+                "divergence": 3
+            },
+            "Aurelia": {
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": 0
+            }
+        },
+        {
+            "key": "Colombia",
+            "doc_count": 97,
+            "Backbone": {
+                "doc_count": 9,
+                "percentage": 5,
+                "divergence": 1
+            },
+            "No Framework": {
+                "doc_count": 30,
+                "percentage": 17,
+                "divergence": -6
+            },
+            "Vue": {
+                "doc_count": 22,
+                "percentage": 12,
+                "divergence": 1
+            },
+            "Ember": {
+                "doc_count": 4,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "Polymer": {
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -2
+            },
+            "React": {
+                "doc_count": 51,
+                "percentage": 28,
+                "divergence": -5
+            },
+            "Angular 2": {
+                "doc_count": 29,
+                "percentage": 16,
+                "divergence": 5
+            },
+            "Angular": {
+                "doc_count": 31,
+                "percentage": 17,
+                "divergence": 6
+            },
+            "Aurelia": {
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": 1
+            }
+        },
+        {
+            "key": "China",
+            "doc_count": 96,
+            "Backbone": {
+                "doc_count": 6,
+                "percentage": 3,
+                "divergence": -1
+            },
+            "No Framework": {
+                "doc_count": 27,
+                "percentage": 15,
+                "divergence": -8
+            },
+            "Vue": {
+                "doc_count": 50,
+                "percentage": 28,
+                "divergence": 17
+            },
+            "Ember": {
+                "doc_count": 2,
+                "percentage": 1,
+                "divergence": -2
+            },
+            "Polymer": {
+                "doc_count": 3,
+                "percentage": 2,
+                "divergence": -1
+            },
+            "React": {
+                "doc_count": 63,
+                "percentage": 35,
+                "divergence": 2
+            },
+            "Angular 2": {
+                "doc_count": 14,
+                "percentage": 8,
+                "divergence": -3
+            },
+            "Angular": {
+                "doc_count": 14,
+                "percentage": 8,
+                "divergence": -3
+            },
+            "Aurelia": {
+                "doc_count": 0,
+                "percentage": 0,
+                "divergence": -1
+            }
+        }
+    ],
+    "others": {
+        "doc_count_error_upper_bound": 10,
+        "sum_other_doc_count": 1121,
+        "buckets": [
+            {
+                "key": "Preact",
+                "doc_count": 446
+            },
+            {
+                "key": "elm",
+                "doc_count": 422
+            },
+            {
+                "key": "Knockout",
+                "doc_count": 289
+            },
+            {
+                "key": "jQuery",
+                "doc_count": 277
+            },
+            {
+                "key": "Cycle.js",
+                "doc_count": 260
+            },
+            {
+                "key": "Meteor",
+                "doc_count": 202
+            },
+            {
+                "key": "Mithril",
+                "doc_count": 171
+            },
+            {
+                "key": "ext.js",
+                "doc_count": 139
+            },
+            {
+                "key": "Inferno",
+                "doc_count": 117
+            },
+            {
+                "key": "Riot",
+                "doc_count": 116
+            },
+            {
+                "key": "om",
+                "doc_count": 78
+            },
+            {
+                "key": "Svelte",
+                "doc_count": 77
+            },
+            {
+                "key": "Choo",
+                "doc_count": 74
+            },
+            {
+                "key": "Bootstrap",
+                "doc_count": 57
+            },
+            {
+                "key": "dojo",
+                "doc_count": 50
+            },
+            {
+                "key": "hyperapp",
+                "doc_count": 45
+            },
+            {
+                "key": "marko",
+                "doc_count": 34
+            },
+            {
+                "key": "marionette",
+                "doc_count": 33
+            },
+            {
+                "key": "vanilla javascript",
+                "doc_count": 31
+            },
+            {
+                "key": "Angular",
+                "doc_count": 27
+            }
+        ]
+    },
+    "numberOfToolsUsed": [
+        {
+            "key": 0,
+            "doc_count": 1740
+        },
+        {
+            "key": 1,
+            "doc_count": 9212
+        },
+        {
+            "key": 2,
+            "doc_count": 7880
+        },
+        {
+            "key": 3,
+            "doc_count": 3500
+        },
+        {
+            "key": 4,
+            "doc_count": 1057
+        },
+        {
+            "key": 5,
+            "doc_count": 263
+        },
+        {
+            "key": 6,
+            "doc_count": 38
+        },
+        {
+            "key": 7,
+            "doc_count": 12
+        },
+        {
+            "key": 8,
+            "doc_count": 2
+        }
+    ],
+    "happiness": 3.8
+}

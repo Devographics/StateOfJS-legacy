@@ -1,0 +1,18 @@
+results:
+  label: Results
+  fullLabel: Results
+heatmap:
+  label: Heatmap
+  fullLabel: Heatmap
+other:
+  label: Other
+  fullLabel: Other Answers
+affinity:
+  label: Affinity
+  fullLabel: Affinity
+developers:
+  label: Developers
+  fullLabel: Developers
+worldwide:
+  label: Worldwide
+  fullLabel: Worldwide Usage
