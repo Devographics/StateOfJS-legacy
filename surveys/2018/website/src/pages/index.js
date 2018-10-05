@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/common/Layout'
 import TextBlock from '../components/blocks/TextBlock'
 import getPageTitle from '../helpers/getPageTitle'
+import '../stylesheets/screen.scss'
 
 const intro = `
 A few years back, a JavaScript survey would've been a simple matter. Question 1: are you using jQuery? Question 2: any comments? Boom, done! 

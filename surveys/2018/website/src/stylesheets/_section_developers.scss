@@ -1,7 +1,9 @@
-.salaries__selector {
-    display: inline-block;
-    border-bottom: 1px dashed $active-color;
-    &:after {
-        content: ' ▾';
-    }
+
+
+.salaries__selector{
+	display: inline-block;
+	border-bottom: 1px dashed $active-color;
+	&:after{
+		content: " ▾"
+	}
 }

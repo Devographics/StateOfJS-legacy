@@ -1,5 +1,5 @@
-$blue: #49b7be;
-$blue2: #49b7be; // mobile
+$blue: #41c7c7;
+$blue2: #49B7BE; // mobile
 $blue-faded: #b3d8da;
 
 $darkblue: #2e3092;
@@ -7,15 +7,15 @@ $darkblue: #2e3092;
 $pink: #ed387a;
 $pink-faded: #e0a4bc;
 
-$red: #e60932;
+$red: #FE6A6A;
 
 $white: white;
 
 $yellow: #fbf34c;
 $yellow-faded: #fffec7;
 
-$purple: #4500ee;
-$purple-faded: #7d7494;
+$purple: #4500EE;
+$purple-faded: #7D7494;
 
 $grey: #e8e8e8;
 $grey2: #dadada;
@@ -36,12 +36,12 @@ $satisfaction-dark: $purple;
 $satisfaction-light: $purple-faded;
 $never-heard: $grey;
 
-$active-color: $purple;
-$secondary-color: $purple-faded;
-$hover-color: $yellow;
-$text-color: $darkgrey;
+$active-color: $blue;
+$secondary-color: $red;
+$hover-color: $red;
+$text-color: $grey;
 $lighter-text-color: $mediumgrey;
 $light-border-color: $grey3;
-$border-color: $mediumgrey;
-$bg-color: #edefed;
+$border-color: $white;
+$bg-color: rgb(33, 36, 36);
 $highlight-color: $yellow-faded;

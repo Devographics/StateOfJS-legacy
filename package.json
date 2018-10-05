@@ -29,5 +29,8 @@
     "prettier": "^1.14.3",
     "puppeteer": "^1.8.0",
     "yamljs": "^0.3.0"
+  },
+  "dependencies": {
+    "node-sass": "^4.9.3"
   }
 }
