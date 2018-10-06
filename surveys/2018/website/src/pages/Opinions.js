@@ -1,9 +1,9 @@
 import React from 'react'
-import DocumentTitle from 'react-document-title'
 import TextBlock from '../components/blocks/TextBlock'
 import getPageTitle from '../helpers/getPageTitle'
 import opinionsData from '../data/opinions.json'
 import OpinionBar from '../components/charts/OpinionBar'
+import Layout from '../components/common/Layout'
 
 const text = `
 To find out how developers view the current JavaScript ecosystem, we asked them how much
@@ -11,7 +11,7 @@ they agreed or disagreed with the following opinions.
 `
 
 const Opinions = () => (
-    <DocumentTitle title={getPageTitle('Opinions')}>
+    <Layout title={getPageTitle('Opinions')}>
         <div>
             <TextBlock text={text} />
             {opinionsData.keys.map(opinion => (
@@ -21,7 +21,7 @@ const Opinions = () => (
                 </div>
             ))}
         </div>
-    </DocumentTitle>
+    </Layout>
 )
 
 export default Opinions

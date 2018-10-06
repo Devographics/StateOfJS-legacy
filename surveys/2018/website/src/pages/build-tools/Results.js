@@ -6,8 +6,9 @@ import * as dto from '../../dto'
 const experienceData = dto.experience(buildData.experience)
 const numberOfToolsData = dto.experience(buildData.numberOfToolsUsed)
 
-const Results = () => (
+const Results = (props) => (
     <ResultsTemplate
+    {...props}
         section="Build Tools"
         description={`Apart from *NPM*, *Webpack* is still the king of build tools. This is no doubt due to 
 the rise of no-config Webpack wrappers like Create-React-App and Next.js. 

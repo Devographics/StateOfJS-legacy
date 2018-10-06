@@ -2,8 +2,9 @@ import React from 'react'
 import buildData from '../../data/build.json'
 import DevelopersTemplate from '../../components/templates/DevelopersTemplate'
 
-const BuildUsers = () => (
+const BuildUsers = (props) => (
     <DevelopersTemplate
+    {...props}
         title="Build tools users facts"
         tools={buildData.keys}
         defaultTool="Webpack"

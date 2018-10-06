@@ -2,15 +2,15 @@ import React from 'react'
 import WorldwideBlock from '../blocks/WorldwideBlock'
 import Meta from '../elements/Meta'
 import getPageTitle from '../../helpers/getPageTitle'
-import DocumentTitle from 'react-document-title'
+import Layout from '../common/Layout'
 
 const WorldwideTemplate = props => (
-    <DocumentTitle title={getPageTitle(props.section, 'worldwide')}>
+    <Layout {...props} title={getPageTitle(props.section, 'worldwide')}>
         <div className="template">
             <Meta section={props.section} subSection="worldwide" />
             <WorldwideBlock {...props} />
         </div>
-    </DocumentTitle>
+    </Layout>
 )
 
 export default WorldwideTemplate

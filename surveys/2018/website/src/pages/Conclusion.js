@@ -1,8 +1,8 @@
 import React from 'react'
-import DocumentTitle from 'react-document-title'
 import TextBlock from '../components/blocks/TextBlock'
 import Newsletter from '../components/common/Newsletter'
 import getPageTitle from '../helpers/getPageTitle'
+import Layout from '../components/common/Layout'
 
 const conclusionText = `
 Believe it or not, we've only just scratched the surface. Each library and tool
@@ -30,7 +30,7 @@ If you'd like to know when we release additional results or announce next year's
 `
 
 const Conclusion = () => (
-    <DocumentTitle title={getPageTitle('Conclusion')}>
+    <Layout title={getPageTitle('Conclusion')}>
         <div>
             <TextBlock text={conclusionText} />
 
@@ -39,7 +39,7 @@ const Conclusion = () => (
                 <Newsletter />
             </div>
         </div>
-    </DocumentTitle>
+    </Layout>
 )
 
 export default Conclusion

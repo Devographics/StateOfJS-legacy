@@ -44,14 +44,6 @@
     - developers
     - worldwide
 
-- label:     CSS
-  fullLabel: CSS & Styling
-  subPages:
-    - results
-    - other
-    - developers
-    - worldwide
-
 - label:     Build Tools
   fullLabel: Build Tools
   subPages:

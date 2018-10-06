@@ -8,7 +8,7 @@ import parseBold from '../helpers/bold'
 import { chordScale } from '../constants'
 import flatten from 'lodash/flatten'
 import getPageTitle from '../helpers/getPageTitle'
-import DocumentTitle from 'react-document-title'
+import Layout from '../components/common/Layout'
 
 const {
     chord: { keys, matrix }
@@ -83,7 +83,7 @@ export default class Connections extends Component {
         )
 
         return (
-            <DocumentTitle title={getPageTitle('Connections')}>
+            <Layout title={getPageTitle('Connections')}>
                 <div className="Section">
                     <div
                         className="block block--text"
@@ -103,7 +103,7 @@ export default class Connections extends Component {
                         />
                     </div>
                 </div>
-            </DocumentTitle>
+            </Layout>
         )
     }
 }

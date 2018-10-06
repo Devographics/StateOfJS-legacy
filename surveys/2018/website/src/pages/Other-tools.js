@@ -3,14 +3,14 @@ import OtherToolBar from '../components/charts/OtherToolBar'
 import otherToolsData from '../data/otherTools.json'
 import TextBlock from '../components/blocks/TextBlock'
 import getPageTitle from '../helpers/getPageTitle'
-import DocumentTitle from 'react-document-title'
+import Layout from '../components/common/Layout'
 
 const text = `
 Other tools that didn't quite fit in any other category. 
 `
 
 const OtherTools = () => (
-    <DocumentTitle title={getPageTitle('Other Tools')}>
+    <Layout title={getPageTitle('Other Tools')}>
         <div className="page">
             <TextBlock text={text} />
             {otherToolsData.keys.map(otherTool => (
@@ -27,7 +27,7 @@ const OtherTools = () => (
                 </div>
             ))}
         </div>
-    </DocumentTitle>
+    </Layout>
 )
 
 export default OtherTools

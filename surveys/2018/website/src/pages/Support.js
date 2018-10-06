@@ -1,8 +1,8 @@
 import React from 'react'
-import DocumentTitle from 'react-document-title'
+import Layout from 'react-document-title'
 
 const Support = () => (
-    <DocumentTitle title="Support">
+    <Layout title="Support">
         <div>
             <p>
                 The State of JavaScript survey is a volunteer project, but in order to make the
@@ -14,7 +14,7 @@ const Support = () => (
                 <a href="mailto:hello@stateofjs.com">get in touch</a>!
             </p>
         </div>
-    </DocumentTitle>
+    </Layout>
 )
 
 export default Support

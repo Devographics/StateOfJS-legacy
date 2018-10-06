@@ -1,7 +1,7 @@
 import React from 'react'
-import DocumentTitle from 'react-document-title'
 import TextBlock from '../components/blocks/TextBlock'
 import getPageTitle from '../helpers/getPageTitle'
+import Layout from '../components/common/Layout'
 
 const intro = `
 A few years back, a JavaScript survey would've been a simple matter. Question 1: are you using jQuery? Question 2: any comments? Boom, done! 
@@ -16,11 +16,11 @@ P.S. if all this data ever feels overwhelming, I'm sure you'll find a way to <em
 `
 
 const Introduction = () => (
-    <DocumentTitle title={getPageTitle('Introduction')}>
+    <Layout title={getPageTitle('Introduction')}>
         <div>
             <TextBlock text={intro} />
         </div>
-    </DocumentTitle>
+    </Layout>
 )
 
 export default Introduction

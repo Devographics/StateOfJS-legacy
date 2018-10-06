@@ -1,9 +1,9 @@
 import React from 'react'
-import DocumentTitle from 'react-document-title'
 import TextBlock from '../components/blocks/TextBlock'
 import getPageTitle from '../helpers/getPageTitle'
 import featuresData from '../data/features.json'
 import FeatureBar from '../components/charts/FeatureBar'
+import Layout from '../components/common/Layout'
 
 const text = `
 Which features do developers value the most in a JavaScript
@@ -11,7 +11,7 @@ app?
 `
 
 const Features = () => (
-    <DocumentTitle title={getPageTitle('Features')}>
+    <Layout title={getPageTitle('Features')}>
         <div>
             <TextBlock text={text} />
             {featuresData.keys.map(feature => (
@@ -21,7 +21,7 @@ const Features = () => (
                 </div>
             ))}
         </div>
-    </DocumentTitle>
+    </Layout>
 )
 
 export default Features

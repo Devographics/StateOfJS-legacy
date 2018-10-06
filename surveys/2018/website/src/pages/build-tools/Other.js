@@ -7,8 +7,9 @@ import buildData from '../../data/build.json'
 const baseTools = dto.othersBase(buildData.experienceByUsers)
 const otherTools = clone(buildData.others.buckets).reverse()
 
-const BuildOthers = () => (
+const BuildOthers = (props) => (
     <OthersTemplate
+    {...props}
         base={baseTools}
         baseKeys={buildData.keys}
         others={otherTools}

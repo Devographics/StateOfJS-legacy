@@ -6,8 +6,9 @@ import * as dto from '../../dto'
 const experienceData = dto.experience(flavorData.experience)
 const numberOfToolsData = dto.experience(flavorData.numberOfToolsUsed)
 
-const Results = () => (
+const Results = (props) => (
     <ResultsTemplate
+        {...props}
         section="Flavors"
         description={`
 When you talk about JavaScript, you're not just talking about a single

@@ -7,10 +7,10 @@ import HappinessBlock from '../blocks/HappinessBlock'
 import TextBlock from '../blocks/TextBlock'
 import Meta from '../elements/Meta'
 import getPageTitle from '../../helpers/getPageTitle'
-import DocumentTitle from 'react-document-title'
+import Layout from '../common/Layout'
 
-const Results = ({ section, description, keys, experienceData, numberOfToolsData, happiness }) => (
-    <DocumentTitle title={getPageTitle(section, 'results')}>
+const Results = ({ section, description, keys, experienceData, numberOfToolsData, happiness, path }) => (
+    <Layout path={path} title={getPageTitle(section, 'results')}>
         <div className="template">
             <Meta section={section} subSection="results" />
             <TextBlock text={description} />
@@ -19,7 +19,7 @@ const Results = ({ section, description, keys, experienceData, numberOfToolsData
             <HappinessBlock section={section} value={happiness} />
             <ResourcesBlock section={section} />
         </div>
-    </DocumentTitle>
+    </Layout>
 )
 
 Results.propTypes = {

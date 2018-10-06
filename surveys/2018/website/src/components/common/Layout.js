@@ -101,7 +101,6 @@ export default class Layout extends PureComponent {
     }
 
     render() {
-
         const title = this.props.title
         const description = 'A short survey about current popular JavaScript technologies.'
         const url = 'http://stateofjs.com'
