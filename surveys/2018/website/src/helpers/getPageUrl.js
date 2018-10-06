@@ -1,7 +1,7 @@
 import slugify from './slugify'
 
 const getPageUrl = (section, subSection) => {
-    let url = `/2017/${slugify(section)}/`
+    let url = `/${slugify(section)}/`
     if (subSection) {
         url += `${slugify(subSection)}/`
     }

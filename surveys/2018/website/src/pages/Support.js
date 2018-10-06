@@ -1,8 +1,8 @@
 import React from 'react'
 import Layout from 'react-document-title'
 
-const Support = () => (
-    <Layout title="Support">
+const Support = (props) => (
+    <Layout {...props} title="Support">
         <div>
             <p>
                 The State of JavaScript survey is a volunteer project, but in order to make the

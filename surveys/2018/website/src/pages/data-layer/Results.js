@@ -8,7 +8,7 @@ const numberOfToolsData = dto.experience(stateData.numberOfToolsUsed)
 
 const Results = () => (
     <ResultsTemplate
-        section="State Management"
+        section="Data Layer"
         description={`
 State Management regroups all solutions used to manage data, both on client and server.
 

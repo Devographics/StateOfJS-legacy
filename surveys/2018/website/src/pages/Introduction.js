@@ -15,8 +15,8 @@ We believe the result is the most complete picture of the state of JavaScript cu
 P.S. if all this data ever feels overwhelming, I'm sure you'll find a way to <em>console</em> yourself…
 `
 
-const Introduction = () => (
-    <Layout title={getPageTitle('Introduction')}>
+const Introduction = (props) => (
+    <Layout {...props} title={getPageTitle('Introduction')}>
         <div>
             <TextBlock text={intro} />
         </div>

@@ -10,8 +10,8 @@ To find out how developers view the current JavaScript ecosystem, we asked them 
 they agreed or disagreed with the following opinions. 
 `
 
-const Opinions = () => (
-    <Layout title={getPageTitle('Opinions')}>
+const Opinions = (props) => (
+    <Layout {...props} title={getPageTitle('Opinions')}>
         <div>
             <TextBlock text={text} />
             {opinionsData.keys.map(opinion => (

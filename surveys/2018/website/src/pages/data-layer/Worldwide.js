@@ -7,7 +7,7 @@ const Worldwide = () => (
         tools={stateData.keys}
         countries={stateData.countries}
         all={stateData.experience}
-        section="State Management"
+        section="Data Layer"
     />
 )
 

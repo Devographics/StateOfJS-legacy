@@ -9,6 +9,7 @@
   fullLabel: JavaScript Flavors
   subPages:
     - results
+    - other
     - developers
     - worldwide
 
@@ -20,8 +21,8 @@
     - developers
     - worldwide
 
-- label:     State Management
-  fullLabel: State Management Tools
+- label:     Data Layer
+  fullLabel: Data Layer Tools
   subPages:
     - results
     - other
@@ -44,14 +45,6 @@
     - developers
     - worldwide
 
-- label:     Build Tools
-  fullLabel: Build Tools
-  subPages:
-    - results
-    - other
-    - developers
-    - worldwide
-
 - label:     Mobile
   fullLabel: Mobile & Desktop Frameworks
   subPages:
@@ -63,11 +56,11 @@
 - label:     Other Tools
   fullLabel: Other Tools
 
-- label:      Features
-  fullLabel:  Popular Features
-
 - label:      Opinions
   fullLabel:  Developer Opinions
+
+- label:      Demographics
+  fullLabel:  Demographics
 
 - label:     Conclusion
   fullLabel: Conclusion

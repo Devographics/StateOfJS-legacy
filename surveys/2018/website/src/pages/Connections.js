@@ -83,7 +83,7 @@ export default class Connections extends Component {
         )
 
         return (
-            <Layout title={getPageTitle('Connections')}>
+            <Layout {...this.props} title={getPageTitle('Connections')}>
                 <div className="Section">
                     <div
                         className="block block--text"

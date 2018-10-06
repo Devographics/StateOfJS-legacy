@@ -9,8 +9,8 @@ const text = `
 Other tools that didn't quite fit in any other category. 
 `
 
-const OtherTools = () => (
-    <Layout title={getPageTitle('Other Tools')}>
+const OtherTools = (props) => (
+    <Layout {...props} title={getPageTitle('Other Tools')}>
         <div className="page">
             <TextBlock text={text} />
             {otherToolsData.keys.map(otherTool => (

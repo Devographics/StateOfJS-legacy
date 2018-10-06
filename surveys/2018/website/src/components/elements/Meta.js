@@ -7,6 +7,7 @@ import getPageUrl from '../../helpers/getPageUrl'
 import nav from '../../data/nav.yaml'
 
 const Meta = ({ section, subSection }) => {
+    console.log(section)
     const currentSection = find(nav, { label: section })
     const sectionSlugA = slugify(section)
     const sectionSlugB = slugify(section, true)

@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import Nav from './Nav'
 import PageTitle from './PageTitle'
 import Logo from './Logo'
+import { Location } from '@reach/router'
 
 const Spacer = () => <div className="pagelayout__spacer" />
 
@@ -130,7 +131,9 @@ export default class Layout extends PureComponent {
         const sidebarClassName = this.state.showSidebar ? 'sidebar--shown' : 'sidebar--hidden'
 
         return (
-            <div className={`pagelayout ${sidebarClassName}`}>
+            <Location>
+                {({ location }) =>
+            (<div className={`pagelayout ${sidebarClassName}`}>
                 <Helmet meta={meta}>
                     <script
                         src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js"
@@ -166,15 +169,17 @@ export default class Layout extends PureComponent {
                         >
                             <Close />
                         </button>
-                        <Nav {...this.props} closeSidebar={this.closeSidebar} />
+                        <Nav {...this.props} path={location.pathname} closeSidebar={this.closeSidebar} />
                     </div>
                     <div className="content">
-                        <PageTitle {...this.props} />
+                        <PageTitle {...this.props} path={location.pathname}/>
                         {this.props.children}
-                        <PageTitle {...this.props} mode="pagination" />
+                        <PageTitle {...this.props} path={location.pathname} mode="pagination" />
                     </div>
                 </div>
-            </div>
+            </div>)
+                }
+            </Location>
         )
     }
 }

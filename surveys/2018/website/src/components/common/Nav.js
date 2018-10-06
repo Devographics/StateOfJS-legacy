@@ -9,7 +9,7 @@ import filter from 'lodash/filter'
 
 const navFiltered = filter(nav, item => !item.hide)
 
-const isActive = (path, label) => path.indexOf(slugify(label)) !== -1
+const isActive = (path, label) => {console.log(path, label, slugify(label), path.indexOf(slugify(label)) !== -1);return path.indexOf(slugify(label)) !== -1}
 
 const NavItem = ({ label, subPages, path, comingSoon, closeSidebar }) => (
     <li>

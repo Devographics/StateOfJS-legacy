@@ -8,7 +8,7 @@ const StateUsers = () => (
         tools={stateData.keys}
         defaultTool="REST API"
         data={stateData.experienceByUsers}
-        section="State Management"
+        section="Data Layer"
     />
 )
 
