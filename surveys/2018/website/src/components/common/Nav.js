@@ -9,21 +9,21 @@ import filter from 'lodash/filter'
 
 const navFiltered = filter(nav, item => !item.hide)
 
-const isActive = (path, label) => {console.log(path, label, slugify(label), path.indexOf(slugify(label)) !== -1);return path.indexOf(slugify(label)) !== -1}
+const isActive = (currentPath, label) => currentPath.indexOf(slugify(label)) !== -1
 
-const NavItem = ({ label, subPages, path, comingSoon, closeSidebar }) => (
+const NavItem = ({ label, subPages, path, comingSoon, closeSidebar, currentPath }) => (
     <li>
         <h3 className={classNames('nav-page', { 'nav-page-comingsoon': comingSoon })}>
             <Link
                 onClick={closeSidebar}
-                to={`/${slugify(label)}/`}
+                to={path === '/' ? path : `/${slugify(label)}/`}
                 activeClassName="nav-page-active"
             >
                 {label}
             </Link>
         </h3>
         <div className="nav-subpages">
-            {isActive(path, label) &&
+            {isActive(currentPath, label) &&
                 subPages &&
                 subPages.map((subPage, i) => (
                     <NavSubItem
@@ -68,7 +68,7 @@ const Nav = ({ path, closeSidebar }) => (
     <div className="nav">
         <ul>
             {navFiltered.map((item, i) => (
-                <NavItem key={i} {...item} path={path} closeSidebar={closeSidebar} />
+                <NavItem key={i} {...item} currentPath={path} closeSidebar={closeSidebar} />
             ))}
         </ul>
     </div>

@@ -12,6 +12,8 @@ export const getCurrentPage = path => {
         sectionIndex,
         section: nav[sectionIndex]
     }
+    console.log(path)
+    console.log(page)
     if (page.section.subPages) {
         const subSectionIndex = findIndex(
             nav[sectionIndex].subPages,

@@ -1,6 +1,6 @@
 - label:     Introduction
   fullLabel: Introduction
-  path: "/*"
+  path: "/"
 
 - label:     Connections
   fullLabel: JavaScript Connections
