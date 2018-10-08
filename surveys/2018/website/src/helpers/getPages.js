@@ -12,7 +12,7 @@ export const getCurrentPage = path => {
         sectionIndex,
         section: nav[sectionIndex]
     }
-    if (page.section.subPages) {
+    if (page.section && page.section.subPages) {
         const subSectionIndex = findIndex(
             nav[sectionIndex].subPages,
             item => path.indexOf(slugify(item)) !== -1

@@ -56,7 +56,6 @@ exports.sourceNodes = async ({ boundActionCreators }) => {
                 .update(JSON.stringify(project))
                 .digest(`hex`),
         },
-        name: project.name,
     }))
     nodes.forEach(node => createNode(node))
 }

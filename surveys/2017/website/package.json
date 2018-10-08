@@ -38,7 +38,7 @@
     "html-loader": "^0.5.1",
     "js-yaml": "^3.10.0",
     "lodash": "^4.17.4",
-    "markdown-loader": "^2.0.1",
+    "markdown-loader": "^4.0.0",
     "node-fetch": "^2.2.0",
     "numeral": "^2.0.6",
     "object-assign": "^4.1.0",
