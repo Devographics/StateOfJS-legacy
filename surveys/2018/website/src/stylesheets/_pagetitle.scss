@@ -1,18 +1,6 @@
 
 .pagetitle{
-  // box-shadow: 10px 10px 0 0 $grey;
-  position: relative;
   font-size: $larger-font;
-  .pagetitle__wrapper--title &{
-    border: 1px solid $border-color;
-    @include crosshatchBg;
-    margin-bottom: $spacing*2;
-  }
-  .pagetitle__wrapper--pagination &{
-    border-top: 1px dashed $border-color;
-    padding-top: $spacing;
-    margin-bottom: $spacing;
-  }
 }
 
 .pagetitle__inner{

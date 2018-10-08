@@ -1,4 +1,5 @@
 $blue: #41c7c7;
+$blueLight: #8be7e7;
 $blue2: #49B7BE; // mobile
 $blue-faded: #b3d8da;
 
@@ -8,6 +9,8 @@ $pink: #ed387a;
 $pink-faded: #e0a4bc;
 
 $red: #FE6A6A;
+$redLight: #f89f9f;
+$redDark: #ca4040;
 
 $white: white;
 
@@ -40,8 +43,9 @@ $active-color: $blue;
 $secondary-color: $red;
 $hover-color: $red;
 $text-color: $grey;
+$text-color-dark: $darkgrey;
 $lighter-text-color: $mediumgrey;
 $light-border-color: $grey3;
-$border-color: $white;
+$border-color: $grey;
 $bg-color: rgb(33, 36, 36);
 $highlight-color: $yellow-faded;

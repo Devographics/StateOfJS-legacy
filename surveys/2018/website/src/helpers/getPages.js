@@ -7,13 +7,11 @@ import sections from '../data/sections.yaml'
 const navFiltered = filter(nav, item => !item.hide)
 
 export const getCurrentPage = path => {
-    const sectionIndex = findIndex(nav, item => path.indexOf(item.path || slugify(item.label)) !== -1)
+    const sectionIndex = findIndex(nav, item => path === item.path || path.indexOf(slugify(item.label)) !== -1)
     const page = {
         sectionIndex,
         section: nav[sectionIndex]
     }
-    console.log(path)
-    console.log(page)
     if (page.section.subPages) {
         const subSectionIndex = findIndex(
             nav[sectionIndex].subPages,

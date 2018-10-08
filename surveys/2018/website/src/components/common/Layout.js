@@ -6,7 +6,7 @@ import PageTitle from './PageTitle'
 import Logo from './Logo'
 import { Location } from '@reach/router'
 
-const Spacer = () => <div className="pagelayout__spacer" />
+// const Spacer = () => <div className="pagelayout__spacer" />
 
 const Close = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -132,53 +132,53 @@ export default class Layout extends PureComponent {
 
         return (
             <Location>
-                {({ location }) =>
-            (<div className={`pagelayout ${sidebarClassName}`}>
-                <Helmet meta={meta}>
-                    <script
-                        src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js"
-                        type="text/javascript"
-                    />
-                </Helmet>
-                <link
-                    href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i|Roboto+Slab:300,400,700"
-                    rel="stylesheet"
-                />
-                <div className="pagelayout__header">
-                    <Spacer />
-                    <h1 className="pagelayout__logo">
-                        <Link to="/">
-                            <Logo width={150} />
-                        </Link>
-                    </h1>
-                    <Spacer />
-                </div>
-                <div className="pagelayout__inner">
-                    <button
-                        className="sidebar__toggle"
-                        onClick={this.openSidebar}
-                    >
-                        <span>
-                            <Menu />
-                        </span>
-                    </button>
-                    <div className={`sidebar ${sidebarClassName}`}>
-                        <button
-                            className="sidebar__close"
-                            onClick={this.closeSidebar}
-                        >
-                            <Close />
-                        </button>
-                        <Nav {...this.props} path={location.pathname} closeSidebar={this.closeSidebar} />
+                {({ location }) => (
+                    <div className={`pagelayout ${sidebarClassName}`}>
+                        <Helmet meta={meta}>
+                            <script
+                                src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js"
+                                type="text/javascript"
+                            />
+                        </Helmet>
+                        <link
+                            href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i|Roboto+Slab:300,400,700"
+                            rel="stylesheet"
+                        />
+                        <div className="pagelayout__inner">
+                            <button className="sidebar__toggle" onClick={this.openSidebar}>
+                                <span>
+                                    <Menu />
+                                </span>
+                            </button>
+                            <div className={`sidebar ${sidebarClassName}`}>
+                                <div className="sidebar__inner">
+                                    <button className="sidebar__close" onClick={this.closeSidebar}>
+                                        <Close />
+                                    </button>
+                                    <h1 className="pagelayout__logo">
+                                        <Link to="/">
+                                            <Logo width={150} />
+                                        </Link>
+                                    </h1>
+                                    <Nav
+                                        {...this.props}
+                                        path={location.pathname}
+                                        closeSidebar={this.closeSidebar}
+                                    />
+                                </div>
+                            </div>
+                            <div className="content">
+                                <PageTitle {...this.props} path={location.pathname} />
+                                {this.props.children}
+                                <PageTitle
+                                    {...this.props}
+                                    path={location.pathname}
+                                    mode="pagination"
+                                />
+                            </div>
+                        </div>
                     </div>
-                    <div className="content">
-                        <PageTitle {...this.props} path={location.pathname}/>
-                        {this.props.children}
-                        <PageTitle {...this.props} path={location.pathname} mode="pagination" />
-                    </div>
-                </div>
-            </div>)
-                }
+                )}
             </Location>
         )
     }

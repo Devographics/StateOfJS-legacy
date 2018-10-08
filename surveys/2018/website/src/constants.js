@@ -9,14 +9,20 @@ export const colors = {
     yellowDark: '#d2b924',
 
     greyLight: '#d8d8d8',
-    greyDark: '#aeaeae'
+    greyDark: '#aeaeae',
+
+    red: '#FE6A6A',
+    redLight: '#f89f9f',
+
+    blue: '#41c7c7',
+    blueLight: '#8be7e7',
 }
 
 export const colorRange = [
-    colors.purple,
-    colors.purpleLight,
-    colors.yellow,
-    colors.yellowLight,
+    colors.red,
+    colors.redLight,
+    colors.blue,
+    colors.blueLight,
     colors.greyLight
 ]
 
@@ -34,13 +40,13 @@ export const sectionColors = {
 export const chordScale = ['#b3b5e6', '#e28194', '#788080']
 
 export const colorScale = [
-    '#8b8de8',
-    '#b3b5e6',
+    '#41c7c7',
+    '#8be7e7',
     '#dedfec',
     '#e4d6d9',
-    '#dc9eaa',
-    '#e28194',
-    '#ea2149'
+    '#f89f9f',
+    '#FE6A6A',
+    '#ca4040'
 ]
 
 export const experience = {
@@ -61,10 +67,10 @@ export const experienceKeys = [
 
 export const experienceColors = {
     "I've never heard of it": colors.greyLight,
-    "I've HEARD of it, and am NOT interested": colors.yellowLight,
-    "I've HEARD of it, and WOULD like to learn it": colors.yellow,
-    "I've USED it before, and WOULD use it again": colors.purple,
-    "I've USED it before, and would NOT use it again": colors.purpleLight
+    "I've HEARD of it, and WOULD like to learn it": colors.blue,
+    "I've HEARD of it, and am NOT interested": colors.blueLight,
+    "I've USED it before, and WOULD use it again": colors.red,
+    "I've USED it before, and would NOT use it again": colors.redLight
 }
 
 export const experienceInterestKeys = [

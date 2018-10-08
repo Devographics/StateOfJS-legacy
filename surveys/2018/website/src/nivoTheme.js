@@ -1,9 +1,9 @@
 export default {
     axis: {
-        textColor: '#344c4c',
+        textColor: '#ffff00',
         fontSize: '11px',
-        tickColor: '#344c4c',
-        legendColor: '#344c4c',
+        tickColor: '#ff0000',
+        legendColor: '#00ff00',
         legendFontSize: '11px'
     },
     grid: {
@@ -14,17 +14,17 @@ export default {
     markers: {
         lineColor: '#000',
         lineStrokeWidth: 1,
-        textColor: '#000',
+        textColor: '#00ffff',
         fontSize: '11px'
     },
     dots: {
-        textColor: '#000',
+        textColor: '#ff00ff',
         fontSize: '11px'
     },
     tooltip: {
         container: {
             background: 'white',
-            color: 'inherit',
+            color: '#333',
             fontSize: '13px',
             borderRadius: 0,
             boxShadow: '0 1px 2px rgba(0, 0, 0, 0.25)',
@@ -41,6 +41,6 @@ export default {
         }
     },
     labels: {
-        textColor: '#000'
+        textColor: '#0000ff'
     }
 }
