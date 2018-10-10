@@ -22,7 +22,16 @@ see: https://www.gatsbyjs.org/docs/migrating-from-v1-to-v2/#change-modifywebpack
 //     return config
 // }
 
-const slugify = s => s.toLowerCase().replace(' ', '-')
+const replaceAll = function(s, search, replacement) {
+    const newString = s.replace(new RegExp(search, 'g'), replacement)
+    return newString
+}
+
+const slugify = (s, dashToUnderscore = false) => {
+    const slug = replaceAll(s.toLowerCase(), ' ', '-')
+    const slugUnderscore = replaceAll(slug, '-', '_')
+    return dashToUnderscore ? slugUnderscore : slug
+}
 
 exports.createPages = async ({ actions }) => {
     const { createRedirect, createPage } = actions

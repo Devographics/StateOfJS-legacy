@@ -1,7 +1,6 @@
 import React from 'react'
 import TextBlock from '../components/blocks/TextBlock'
 import Newsletter from '../components/common/Newsletter'
-import getPageTitle from '../helpers/getPageTitle'
 import Layout from '../components/common/Layout'
 
 const conclusionText = `
@@ -30,7 +29,7 @@ If you'd like to know when we release additional results or announce next year's
 `
 
 const Conclusion = (props) => (
-    <Layout {...props} title={getPageTitle('Conclusion')}>
+    <Layout {...props}>
         <div>
             <TextBlock text={conclusionText} />
 

@@ -2,7 +2,6 @@ import React from 'react'
 import OtherToolBar from '../components/charts/OtherToolBar'
 import otherToolsData from '../data/otherTools.json'
 import TextBlock from '../components/blocks/TextBlock'
-import getPageTitle from '../helpers/getPageTitle'
 import Layout from '../components/common/Layout'
 
 const text = `
@@ -10,7 +9,7 @@ Other tools that didn't quite fit in any other category.
 `
 
 const OtherTools = (props) => (
-    <Layout {...props} title={getPageTitle('Other Tools')}>
+    <Layout {...props}>
         <div className="page">
             <TextBlock text={text} />
             {otherToolsData.keys.map(otherTool => (

@@ -7,7 +7,6 @@ import addParagraphs from '../helpers/paragraphs'
 import parseBold from '../helpers/bold'
 import { chordScale } from '../constants'
 import flatten from 'lodash/flatten'
-import getPageTitle from '../helpers/getPageTitle'
 import Layout from '../components/common/Layout'
 
 const {

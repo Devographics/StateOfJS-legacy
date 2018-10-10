@@ -31,8 +31,7 @@ const Meta = ({ currentPage }) => {
 }
 
 Meta.propTypes = {
-    section: PropTypes.string.isRequired,
-    subSection: PropTypes.string.isRequired
+    currentPage: PropTypes.object.isRequired,
 }
 
 export default withPageData(Meta)

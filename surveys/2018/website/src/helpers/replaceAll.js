@@ -1,7 +1,6 @@
 const replaceAll = function(s, search, replacement) {
-    const target = s
-
-    return target.replace(new RegExp(search, 'g'), replacement)
+    const newString = s.replace(new RegExp(search, 'g'), replacement)
+    return newString
 }
 
 export default replaceAll

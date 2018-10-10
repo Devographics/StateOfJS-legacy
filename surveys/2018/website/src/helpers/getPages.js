@@ -38,7 +38,7 @@ Get current page objectbased on path
 
 */
 export const getCurrentPage = path => {
-    const [ foo, sectionSlug, subSectionSlug, bar ] = path.split('/')
+    const [ /* */, sectionSlug, subSectionSlug, /* */ ] = path.split('/')
     const sectionIndex = nav.findIndex(item => item.path === path || slugify(item.label) === sectionSlug)
     const subSectionIndex = nav[sectionIndex].subPages && nav[sectionIndex].subPages.findIndex(item => slugify(item) === subSectionSlug)
     const page = createPage(sectionIndex, subSectionIndex)
