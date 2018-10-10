@@ -3,64 +3,63 @@ import Link from 'gatsby-link'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
 import nav from '../../data/nav.yaml'
-import sections from '../../data/sections.yaml'
 import slugify from '../../helpers/slugify'
 import filter from 'lodash/filter'
+import { createPage } from '../../helpers/getPages'
 
 const navFiltered = filter(nav, item => !item.hide)
 
-const isActive = (currentPath, label) => currentPath.indexOf(slugify(label)) !== -1
+const isActive = (currentPath, slug) => currentPath.indexOf(slug) !== -1
 
-const NavItem = ({ label, subPages, path, comingSoon, closeSidebar, currentPath }) => (
-    <li>
-        <h3 className={classNames('nav-page', { 'nav-page-comingsoon': comingSoon })}>
-            <Link
-                onClick={closeSidebar}
-                to={path === '/' ? path : `/${slugify(label)}/`}
-                activeClassName="nav-page-active"
-            >
-                {label}
-            </Link>
-        </h3>
-        <div className="nav-subpages">
-            {isActive(currentPath, label) &&
-                subPages &&
-                subPages.map((subPage, i) => (
-                    <NavSubItem
-                        key={i}
-                        parentLabel={label}
-                        label={sections[subPage].label}
-                        fullLabel={sections[subPage].fullLabel}
-                        closeSidebar={closeSidebar}
-                    />
-                ))}
-        </div>
-    </li>
-)
+const NavItem = ({ currentPath, subPages, comingSoon, closeSidebar, index }) => {
+    const page = createPage(index)
+    return (
+        <li>
+            <h3 className={classNames('nav-page', { 'nav-page-comingsoon': comingSoon })}>
+                <Link onClick={closeSidebar} to={page.url} activeClassName="nav-page-active">
+                    {page.section.label}
+                </Link>
+            </h3>
+            <div className="nav-subpages">
+                {isActive(currentPath, page.section.slug) &&
+                    subPages &&
+                    subPages.map((subPageLabel, j) => {
+                        const subPage = createPage(index, j)
+                        return (
+                            <NavSubItem
+                                key={j}
+                                parentLabel={subPage.section.label}
+                                label={subPage.subSection.label}
+                                closeSidebar={closeSidebar}
+                            />
+                        )
+                    })}
+            </div>
+        </li>
+    )
+}
 
 NavItem.propTypes = {
     label: PropTypes.string.isRequired,
     subPages: PropTypes.array,
-    path: PropTypes.string.isRequired,
     comingSoon: PropTypes.bool,
     closeSidebar: PropTypes.func.isRequired
 }
 
-const NavSubItem = ({ parentLabel, label, fullLabel, closeSidebar }) => (
+const NavSubItem = ({ parentLabel, label, closeSidebar }) => (
     <Link
         className="nav-subpage"
         activeClassName="nav-subpage-active"
         to={`/${slugify(parentLabel)}/${slugify(label)}/`}
         onClick={closeSidebar}
     >
-        {fullLabel}{' '}
+        {label}{' '}
     </Link>
 )
 
 NavSubItem.propTypes = {
     parentLabel: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
-    fullLabel: PropTypes.string.isRequired,
     closeSidebar: PropTypes.func.isRequired
 }
 
@@ -68,14 +67,19 @@ const Nav = ({ path, closeSidebar }) => (
     <div className="nav">
         <ul>
             {navFiltered.map((item, i) => (
-                <NavItem key={i} {...item} currentPath={path} closeSidebar={closeSidebar} />
+                <NavItem
+                    key={i}
+                    index={i}
+                    {...item}
+                    currentPath={path}
+                    closeSidebar={closeSidebar}
+                />
             ))}
         </ul>
     </div>
 )
 
 Nav.propTypes = {
-    path: PropTypes.string.isRequired,
     closeSidebar: PropTypes.func.isRequired
 }
 

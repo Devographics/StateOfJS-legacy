@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/common/Layout'
 import TextBlock from '../components/blocks/TextBlock'
-import getPageTitle from '../helpers/getPageTitle'
 import '../stylesheets/screen.scss'
 
 const intro = `
@@ -17,7 +16,7 @@ P.S. if all this data ever feels overwhelming, I'm sure you'll find a way to <em
 `
 
 const Introduction = props => (
-    <Layout {...props} title={getPageTitle('Introduction')}>
+    <Layout {...props}>
         <div>
             <TextBlock text={intro} />
         </div>

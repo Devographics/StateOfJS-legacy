@@ -6,11 +6,10 @@ import ResourcesBlock from '../blocks/ResourcesBlock'
 import HappinessBlock from '../blocks/HappinessBlock'
 import TextBlock from '../blocks/TextBlock'
 import Meta from '../elements/Meta'
-import getPageTitle from '../../helpers/getPageTitle'
 import Layout from '../common/Layout'
 
-const Results = ({ section, description, keys, experienceData, numberOfToolsData, happiness, path }) => (
-    <Layout path={path} title={getPageTitle(section, 'results')}>
+const Results = ({ section, description, keys, experienceData, numberOfToolsData, happiness }) => (
+    <Layout>
         <div className="template">
             <Meta section={section} subSection="results" />
             <TextBlock text={description} />

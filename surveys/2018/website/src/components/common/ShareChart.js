@@ -2,22 +2,21 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import ReactGA from 'react-ga'
-import nav from '../../data/nav.yaml'
-import slugify from '../../helpers/slugify'
 import getPageUrl from '../../helpers/getPageUrl'
-import find from 'lodash/find'
+import withPageData from '../../helpers/withPageData'
+import getPageTitle from '../../helpers/getPageTitle'
 
-const trackShare = (platform, section) => () => {
+const trackShare = (platform, { section, subSection }) => () => {
     ReactGA.event({
         category: platform,
-        action: `${section} chart share`
+        action: `${section.label}/${subSection.label} chart share`
     })
 }
 
-const Twitter = ({ text, section }) => {
+const Twitter = ({ text, page }) => {
     return (
         <a
-            onClick={trackShare('Twitter', section)}
+            onClick={trackShare('Twitter', page)}
             className="resp-sharing-button__link"
             href={`https://twitter.com/intent/tweet/?text=${encodeURIComponent(text)}`}
             target="_blank"
@@ -51,13 +50,13 @@ const Twitter = ({ text, section }) => {
 
 Twitter.propTypes = {
     text: PropTypes.string.isRequired,
-    section: PropTypes.string.isRequired
+    page: PropTypes.object.isRequired
 }
 
-const Facebook = ({ link, section }) => {
+const Facebook = ({ link, page }) => {
     return (
         <a
-            onClick={trackShare('Facebook', section)}
+            onClick={trackShare('Facebook', page)}
             className="resp-sharing-button__link"
             href={`https://facebook.com/sharer/sharer.php?u=${encodeURIComponent(link)}`}
             target="_blank"
@@ -91,13 +90,13 @@ const Facebook = ({ link, section }) => {
 
 Facebook.propTypes = {
     link: PropTypes.string.isRequired,
-    section: PropTypes.string.isRequired
+    page: PropTypes.object.isRequired
 }
 
-const Email = ({ subject, body, section }) => {
+const Email = ({ subject, body, page }) => {
     return (
         <a
-            onClick={trackShare('Email', section)}
+            onClick={trackShare('Email', page)}
             className="resp-sharing-button__link"
             href={`mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
             target="_self"
@@ -129,10 +128,10 @@ const Email = ({ subject, body, section }) => {
 Email.propTypes = {
     subject: PropTypes.string.isRequired,
     body: PropTypes.string.isRequired,
-    section: PropTypes.string.isRequired
+    page: PropTypes.object.isRequired
 }
 
-export default class ShareChart extends Component {
+class ShareChart extends Component {
     static propTypes = {
         section: PropTypes.string.isRequired,
         subSection: PropTypes.string.isRequired
@@ -158,16 +157,13 @@ export default class ShareChart extends Component {
     }
 
     render() {
-        const { section, subSection } = this.props
-        const currentSection = find(nav, { label: section })
+        const { currentPage } = this.props
+        const title = getPageTitle(currentPage)
+        const link = getPageUrl(currentPage, true)
 
-        const name = currentSection.fullLabel
-        const slug = slugify(section)
-        const link = `http://stateofjs.com${getPageUrl(slug, subSection)}`
-
-        const twitterText = `#StateOfJS 2018 Results: ${name} ${link}`
+        const twitterText = `#StateOfJS 2018 Results: ${title} ${link}`
         const subject = 'State Of JavaScript Survey Results'
-        const body = `Here are some interesting survey results about ${name.toLowerCase()} libraries: ${link}`
+        const body = `Here are some interesting survey results (${title}): ${link}`
 
         return (
             <div
@@ -182,12 +178,14 @@ export default class ShareChart extends Component {
                 </div>
                 <div className="share-popup">
                     <div className="share-options">
-                        <Twitter text={twitterText} section={section} />
-                        <Facebook link={link} section={section} />
-                        <Email subject={subject} body={body} section={section} />
+                        <Twitter text={twitterText} page={currentPage} />
+                        <Facebook link={link} page={currentPage} />
+                        <Email subject={subject} body={body} page={currentPage} />
                     </div>
                 </div>
             </div>
         )
     }
 }
+
+export default withPageData(ShareChart)

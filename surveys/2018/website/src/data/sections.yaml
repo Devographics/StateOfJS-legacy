@@ -1,18 +1,31 @@
 results:
   label: Results
   fullLabel: Results
+
+overview:
+  label: Overview
+  fullLabel: Overview
+  
 heatmap:
   label: Heatmap
   fullLabel: Heatmap
+
 other:
   label: Other
-  fullLabel: Other Answers
+  fullLabel: Other Libraries
+
 affinity:
   label: Affinity
   fullLabel: Affinity
+
 developers:
   label: Developers
   fullLabel: Developers
+
 worldwide:
   label: Worldwide
   fullLabel: Worldwide Usage
+
+conclusion:
+  label: Conclusion
+  fullLabel: Conclusion

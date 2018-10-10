@@ -5,8 +5,9 @@ import classNames from 'classnames'
 import { navigateTo } from 'gatsby-link'
 import getPages from '../../helpers/getPages'
 import getTitle from '../../helpers/getTitle'
+import withPageData from '../../helpers/withPageData';
 
-export default class PageTitle extends React.PureComponent {
+class PageTitle extends React.PureComponent {
     handleKeyDown = e => {
         const { previousPage, nextPage } = getPages(this.props.path)
         if (this.props.mode === 'title') {
@@ -29,9 +30,7 @@ export default class PageTitle extends React.PureComponent {
     }
 
     render() {
-        const { mode, path } = this.props
-
-        const { currentPage, previousPage, nextPage } = getPages(path)
+        const { currentPage, previousPage, nextPage, mode } = this.props
 
         const tabindex = {}
 
@@ -52,10 +51,7 @@ export default class PageTitle extends React.PureComponent {
                         {previousPage ? (
                             <Link
                                 className="pagination__link pagination__previous"
-                                to={getPageUrl(
-                                    previousPage.section.label,
-                                    previousPage.subSection && previousPage.subSection.label
-                                )}
+                                to={getPageUrl(previousPage)}
                             >
                                 <span className="pagination__link__symbol">&lt;&lt;&nbsp;</span>
                                 <span className="pagination__link__label">
@@ -71,10 +67,7 @@ export default class PageTitle extends React.PureComponent {
                         {nextPage ? (
                             <Link
                                 className="pagination__link pagination__next"
-                                to={getPageUrl(
-                                    nextPage.section.label,
-                                    nextPage.subSection && nextPage.subSection.label
-                                )}
+                                to={getPageUrl(nextPage)}
                             >
                                 <span className="pagination__link__label">
                                     {getTitle(nextPage, true)}
@@ -94,3 +87,5 @@ export default class PageTitle extends React.PureComponent {
 PageTitle.defaultProps = {
     mode: 'title'
 }
+
+export default withPageData(PageTitle)

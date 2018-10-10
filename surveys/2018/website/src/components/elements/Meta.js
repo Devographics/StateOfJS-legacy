@@ -1,23 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import find from 'lodash/find'
 import Helmet from 'react-helmet'
-import slugify from '../../helpers/slugify'
 import getPageUrl from '../../helpers/getPageUrl'
-import nav from '../../data/nav.yaml'
+import withPageData from '../../helpers/withPageData'
 
-const Meta = ({ section, subSection }) => {
-    console.log(section)
-    const currentSection = find(nav, { label: section })
-    const sectionSlugA = slugify(section)
-    const sectionSlugB = slugify(section, true)
-    const subSectionSlug = subSection
-
-    const url = getPageUrl(sectionSlugA, subSectionSlug)
-    const image = `http://stateofjs.com/images/captures/${sectionSlugB}_${subSectionSlug}.png`
-    const metaTitle = `State Of JavaScript Survey Results: ${currentSection.fullLabel}`
+const Meta = ({ currentPage }) => {
+    const { section, subSection } = currentPage
+    const url = getPageUrl(currentPage, true)
+    const image = `http://stateofjs.com/images/captures/${section.slug}_${subSection.slug}.png`
+    const metaTitle = `State Of JavaScript Survey Results: ${currentPage.title}`
     const metaDescription = `Find out which ${
-        currentSection.label
+        currentPage.label
     } JavaScript tools and frameworks are the most popular.`
 
     const meta = [
@@ -42,4 +35,4 @@ Meta.propTypes = {
     subSection: PropTypes.string.isRequired
 }
 
-export default Meta
+export default withPageData(Meta)

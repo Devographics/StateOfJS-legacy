@@ -1,70 +1,86 @@
-- label:     Introduction
-  fullLabel: Introduction
-  path: "/"
+- label: Introduction
+  path: '/'
 
-- label:     Connections
-  fullLabel: JavaScript Connections
+- label: Connections
 
-- label:     Flavors
-  fullLabel: JavaScript Flavors
+- label: JavaScript Flavors
   subPages:
-    - results
-    - other
-    - developers
-    - worldwide
+      - Overview
+      - Reason
+      - ClojureScript
+      - Elm
+      - Flow
+      - TypeScript
+      - ES6+
+      - Other Libraries
+      - Conclusion
 
-- label:     Front-end
-  fullLabel: Front-end Frameworks
+- label: Front-end Frameworks
   subPages:
-    - results
-    - other
-    - developers
-    - worldwide
+      - Overview
+      - React
+      - Angular
+      - Ember
+      - Polymer
+      - Vue.js
+      - Preact
+      - Other Libraries
+      - Conclusion
 
-- label:     Data Layer
-  fullLabel: Data Layer Tools
+- label: Data Layer
   subPages:
-    - results
-    - other
-    - developers
-    - worldwide
+      - Overview
+      - Redux
+      - GraphQL
+      - Relay
+      - Apollo
+      - Mobx
+      - Other Libraries
+      - Conclusion
 
-- label:     Back-end
-  fullLabel: Back-end Frameworks
+- label: Back-end Frameworks
   subPages:
-    - results
-    - other
-    - developers
-    - worldwide
+      - Overview
+      - Meteor
+      - Express
+      - Next.js
+      - Koa
+      - Sails
+      - Other Libraries
+      - Conclusion
 
-- label:     Testing
-  fullLabel: Testing Tools
+- label: Testing Tools
   subPages:
-    - results
-    - other
-    - developers
-    - worldwide
+      - Overview
+      - Storybook
+      - Mocha
+      - Jasmine
+      - Jest
+      - Enzyme
+      - Ava
+      - Karma
+      - Other Libraries
+      - Conclusion
 
-- label:     Mobile
-  fullLabel: Mobile & Desktop Frameworks
+- label: Mobile & Desktop
   subPages:
-    - results
-    - other
-    - developers
-    - worldwide
+      - Overview
+      - Electron
+      - React Native
+      - PhoneGap/Cordova
+      - NativeScript
+      - Ionic
+      - Native Apps
+      - Other Libraries
+      - Conclusion
 
-- label:     Other Tools
-  fullLabel: Other Tools
+- label: Other Tools
 
-- label:      Opinions
-  fullLabel:  Developer Opinions
+- label: Opinions
 
-- label:      Demographics
-  fullLabel:  Demographics
+- label: Demographics
 
-- label:     Conclusion
-  fullLabel: Conclusion
+- label: Conclusion
 
-- label:     Support
-  fullLabel: Support Us
-  hide:      true
+- label: Support Us
+  hide: true

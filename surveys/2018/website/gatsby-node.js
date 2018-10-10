@@ -1,8 +1,7 @@
 const yaml = require('js-yaml')
 const fs = require('fs')
-
+const path = require(`path`)
 const nav = yaml.safeLoad(fs.readFileSync('./src/data/nav.yaml', 'utf8'))
-
 /*
 
 TODO: use https://www.gatsbyjs.org/docs/actions/#setWebpackConfig
@@ -26,9 +25,23 @@ see: https://www.gatsbyjs.org/docs/migrating-from-v1-to-v2/#change-modifywebpack
 const slugify = s => s.toLowerCase().replace(' ', '-')
 
 exports.createPages = async ({ actions }) => {
-    const { createRedirect } = actions
+    const { createRedirect, createPage } = actions
+
+    const exclusions = ['Introduction', 'Connections', 'Other Tools', 'Opinions', 'Demographics', 'Conclusion', 'Support Us']
 
     nav.forEach(item => {
+
+        if (exclusions.includes(item.label)) {
+            return
+        }
+        
+        const pagePath = `/${slugify(item.label)}/`
+        createPage({
+            path: pagePath,
+            component: path.resolve(`./src/components/templates/OverviewTemplate.js`),
+            context: {}
+        })
+
         if (item.subPages) {
             createRedirect({
                 fromPath: `/${slugify(item.label)}/`,
@@ -39,6 +52,35 @@ exports.createPages = async ({ actions }) => {
                 fromPath: `/${slugify(item.label)}`,
                 redirectInBrowser: true,
                 toPath: `/${slugify(item.label)}/${slugify(item.subPages[0])}`
+            })
+
+            item.subPages.forEach(subPage => {
+                const pagePath = `/${slugify(item.label)}/${slugify(subPage)}`
+                let templateName
+                switch (subPage) {
+
+                    case 'Overview':
+                        templateName = 'Overview'
+                        break
+
+                    case 'Other Libraries':
+                        templateName = 'OtherLibraries'
+                        break
+
+                    case 'Conclusion':
+                        templateName = 'Conclusion'
+                        break
+                    
+                    default:
+                        templateName = 'Library'
+                        break
+
+                }
+                createPage({
+                    path: pagePath,
+                    component: path.resolve(`./src/components/templates/${templateName}Template.js`),
+                    context: {}
+                })
             })
         }
     })
