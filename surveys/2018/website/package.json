@@ -75,7 +75,7 @@
   "scripts": {
     "build": "gatsby build",
     "deploy": "gatsby build && gh-pages -d public",
-    "dev": "gatsby develop --port 3017",
+    "dev": "gatsby develop --port 3018",
     "typeform": "node --experimental-modules ./typeform/create.mjs"
   }
 }

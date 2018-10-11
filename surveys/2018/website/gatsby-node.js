@@ -38,12 +38,7 @@ exports.createPages = async ({ actions }) => {
 
     const exclusions = ['Introduction', 'Connections', 'Other Tools', 'Opinions', 'Demographics', 'Conclusion', 'Support Us']
 
-    nav.forEach(item => {
-
-        if (exclusions.includes(item.label)) {
-            return
-        }
-        
+    nav.filter(item => !exclusions.includes(item.label)).forEach(item => {
         const pagePath = `/${slugify(item.label)}/`
         createPage({
             path: pagePath,
