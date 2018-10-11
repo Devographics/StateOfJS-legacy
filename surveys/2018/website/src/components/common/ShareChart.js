@@ -157,7 +157,7 @@ class ShareChart extends Component {
     render() {
         const { currentPage } = this.props
         const title = currentPage.title
-        const link = currentPage.fullUrl
+        const link = currentPage.url
 
         const twitterText = `#StateOfJS 2018 Results: ${title} ${link}`
         const subject = 'State Of JavaScript Survey Results'

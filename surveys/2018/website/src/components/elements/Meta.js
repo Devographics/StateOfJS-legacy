@@ -5,7 +5,7 @@ import withPageData from '../../helpers/withPageData'
 
 const Meta = ({ currentPage }) => {
     const { section, subSection } = currentPage
-    const url = currentPage.fullUrl
+    const url = currentPage.url
     const image = `http://stateofjs.com/images/captures/${section.slug}_${subSection && subSection.slug}.png`
     const metaTitle = `State Of JavaScript Survey Results: ${currentPage.title}`
     const metaDescription = `Find out which ${currentPage.label} tools and frameworks are the most popular.`

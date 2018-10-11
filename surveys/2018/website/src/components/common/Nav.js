@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import nav from '../../data/nav.yaml'
 import slugify from '../../helpers/slugify'
 import filter from 'lodash/filter'
-import { createPage } from '../../helpers/getPages'
+import { createPage, getAllPages } from '../../helpers/getPages'
 
 const navFiltered = filter(nav, item => !item.hide)
 
@@ -16,7 +16,7 @@ const NavItem = ({ currentPath, subPages, comingSoon, closeSidebar, index }) => 
     return (
         <li>
             <h3 className={classNames('nav-page', { 'nav-page-comingsoon': comingSoon })}>
-                <Link onClick={closeSidebar} to={page.url} activeClassName="nav-page-active">
+                <Link onClick={closeSidebar} to={page.path} activeClassName="nav-page-active">
                     {page.section.label}
                 </Link>
             </h3>
@@ -63,21 +63,23 @@ NavSubItem.propTypes = {
     closeSidebar: PropTypes.func.isRequired
 }
 
-const Nav = ({ path, closeSidebar }) => (
-    <div className="nav">
-        <ul>
-            {navFiltered.map((item, i) => (
-                <NavItem
-                    key={i}
-                    index={i}
-                    {...item}
-                    currentPath={path}
-                    closeSidebar={closeSidebar}
-                />
-            ))}
-        </ul>
-    </div>
-)
+const Nav = ({ path, closeSidebar }) => {
+    return (
+        <div className="nav">
+            <ul>
+                {navFiltered.map((item, i) => (
+                    <NavItem
+                        key={i}
+                        index={i}
+                        {...item}
+                        currentPath={path}
+                        closeSidebar={closeSidebar}
+                    />
+                ))}
+            </ul>
+        </div>
+    )
+}
 
 Nav.propTypes = {
     closeSidebar: PropTypes.func.isRequired
