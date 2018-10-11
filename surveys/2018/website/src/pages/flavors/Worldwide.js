@@ -2,7 +2,7 @@ import React from 'react'
 import flavorData from '../../data/flavor.json'
 import WorldwideTemplate from '../../components/templates/WorldwideTemplate'
 
-const Worldwide = (props) => (
+const Worldwide = props => (
     <WorldwideTemplate
         {...props}
         tools={flavorData.keys}

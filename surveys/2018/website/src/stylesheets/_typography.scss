@@ -1,4 +1,3 @@
-
 $root-size-mobile: 15px;
 $root-size: 17px;
 
@@ -14,31 +13,32 @@ $light: 100;
 $medium: 300;
 $bold: 500;
 
-@mixin font-light{
-  font-weight: $light;
+@mixin font-light {
+    font-weight: $light;
 }
 
-@mixin font-regular{
-  font-weight: $medium;
+@mixin font-regular {
+    font-weight: $medium;
 }
 
-@mixin font-bold{
-  font-weight: $bold;
+@mixin font-bold {
+    font-weight: $bold;
 }
 
-@mixin primary-font{
-  font-family: 'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif;
-  font-weight: 300;
+@mixin primary-font {
+    font-family: 'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif;
+    font-weight: 300;
 }
-@mixin secondary-font{
-  font-family: 'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif;
-  font-weight: 500;
-}
-
-pre, code{
-  @include secondary-font;
+@mixin secondary-font {
+    font-family: 'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif;
+    font-weight: 500;
 }
 
-strong{
-  font-weight: 500;
+pre,
+code {
+    @include secondary-font;
+}
+
+strong {
+    font-weight: 500;
 }

@@ -8,7 +8,7 @@ const text = `
 Other tools that didn't quite fit in any other category. 
 `
 
-const OtherTools = (props) => (
+const OtherTools = props => (
     <Layout {...props}>
         <div className="page">
             <TextBlock text={text} />

@@ -44,7 +44,10 @@ const ResourcesBlock = ({ section }) => {
                                             onClick={() => trackClick(section, resource, 'text')}
                                             href={`${url}&utm_content=textlink`}
                                         >
-                                            <img alt={resource.name} src={`/images/resources/${resource.image}`} />
+                                            <img
+                                                alt={resource.name}
+                                                src={`/images/resources/${resource.image}`}
+                                            />
                                         </a>
                                     </div>
                                 </div>

@@ -46,13 +46,9 @@ exports.createPages = async ({ actions }) => {
         'Support Us'
     ]
 
-    nav.forEach(item => {
-        if (exclusions.includes(item.label)) {
-            return
-        }
+    nav.filter(item => !exclusions.includes(item.label)).forEach(item => {
+        const pagePath = `/${slugify(item.label)}/`
         const sectionSlug = slugify(item.label)
-
-        const pagePath = `/${sectionSlug}/`
         createPage({
             path: pagePath,
             component: path.resolve(`./src/components/templates/OverviewTemplate.js`),
@@ -72,6 +68,8 @@ exports.createPages = async ({ actions }) => {
                 redirectInBrowser: true,
                 toPath: `/${sectionSlug}/${firstSubSectionSlug}`
             })
+
+            let subPageContext = {}
 
             item.subPages.forEach(subPage => {
                 const subSectionSlug = slugify(subPage)
@@ -93,14 +91,19 @@ exports.createPages = async ({ actions }) => {
 
                     default:
                         templateName = 'Library'
+                        subPageContext = {
+                            section: slugify(item.label),
+                            tool: slugify(subPage)
+                        }
                         break
                 }
+
                 createPage({
                     path: pagePath,
                     component: path.resolve(
                         `./src/components/templates/${templateName}Template.js`
                     ),
-                    context: {}
+                    context: subPageContext
                 })
             })
         }

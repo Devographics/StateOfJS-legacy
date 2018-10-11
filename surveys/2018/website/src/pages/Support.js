@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from 'react-document-title'
 
-const Support = (props) => (
+const Support = props => (
     <Layout {...props}>
         <div>
             <p>

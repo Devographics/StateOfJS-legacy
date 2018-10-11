@@ -7,7 +7,7 @@ import backendData from '../../data/backend.json'
 const baseTools = dto.othersBase(backendData.experienceByUsers)
 const otherTools = clone(backendData.others.buckets).reverse()
 
-const BackendOthers = (props) => (
+const BackendOthers = props => (
     <OthersTemplate
         {...props}
         base={baseTools}

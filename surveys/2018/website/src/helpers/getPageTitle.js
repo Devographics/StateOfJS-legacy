@@ -2,7 +2,6 @@ const getPageTitle = ({ section, subSection }, full = false) => {
     let pageTitle = ''
     if (subSection) {
         switch (subSection.label) {
-
             case 'Overview':
                 pageTitle = `${section.label} Overview`
                 break
@@ -14,7 +13,7 @@ const getPageTitle = ({ section, subSection }, full = false) => {
             case 'Conclusion':
                 pageTitle = `${section.label} Conclusion`
                 break
-            
+
             default:
                 pageTitle = subSection.label
                 break

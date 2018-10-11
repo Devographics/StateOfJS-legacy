@@ -35,6 +35,7 @@
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sass": "^2.0.1",
     "gatsby-source-filesystem": "^2.0.1",
+    "gatsby-transformer-yaml": "^2.1.3",
     "html-loader": "^0.5.5",
     "js-yaml": "^3.12.0",
     "lodash": "^4.17.11",
@@ -75,7 +76,7 @@
   "scripts": {
     "build": "gatsby build",
     "deploy": "gatsby build && gh-pages -d public",
-    "dev": "gatsby develop --port 3017",
+    "dev": "gatsby develop --port 3018",
     "typeform": "node --experimental-modules ./typeform/create.mjs"
   }
 }

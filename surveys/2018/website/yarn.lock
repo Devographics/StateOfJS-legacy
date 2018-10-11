@@ -2829,6 +2829,10 @@ css-select@^2.0.0:
     domutils "^1.7.0"
     nth-check "^1.0.1"
 
+css-selector-parser@^1.1.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/css-selector-parser/-/css-selector-parser-1.3.0.tgz#5f1ad43e2d8eefbfdc304fcd39a521664943e3eb"
+
 css-selector-tokenizer@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/css-selector-tokenizer/-/css-selector-tokenizer-0.7.0.tgz#e6988474ae8c953477bf5e7efecfceccd9cf4c86"
@@ -4555,6 +4559,15 @@ gatsby-source-filesystem@^2.0.1:
     valid-url "^1.0.9"
     xstate "^3.1.0"
 
+gatsby-transformer-yaml@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml/-/gatsby-transformer-yaml-2.1.3.tgz#5101aa3e0bff7076ba546aad8e6ba3c37c772d3c"
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    js-yaml "3.11.0"
+    lodash "^4.17.10"
+    unist-util-select "^1.5.0"
+
 gatsby@2.0.18:
   version "2.0.18"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.18.tgz#a07d47b99812a69f49aa5b6a6fcb65b66722beab"
@@ -5913,6 +5926,13 @@ js-tokens@^3.0.0, js-tokens@^3.0.2:
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
+
+js-yaml@3.11.0:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.11.0.tgz#597c1a8bd57152f26d622ce4117851a51f5ebaef"
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
 
 js-yaml@3.x.x, js-yaml@^3.10.0, js-yaml@^3.12.0, js-yaml@^3.5.1, js-yaml@^3.5.2, js-yaml@^3.5.5, js-yaml@^3.9.0, js-yaml@^3.9.1:
   version "3.12.0"
@@ -9797,6 +9817,14 @@ unist-util-remove-position@^1.0.0:
   resolved "https://registry.yarnpkg.com/unist-util-remove-position/-/unist-util-remove-position-1.1.2.tgz#86b5dad104d0bbfbeb1db5f5c92f3570575c12cb"
   dependencies:
     unist-util-visit "^1.1.0"
+
+unist-util-select@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/unist-util-select/-/unist-util-select-1.5.0.tgz#a93c2be8c0f653827803b81331adec2aa24cd933"
+  dependencies:
+    css-selector-parser "^1.1.0"
+    debug "^2.2.0"
+    nth-check "^1.0.1"
 
 unist-util-stringify-position@^1.0.0, unist-util-stringify-position@^1.1.1:
   version "1.1.2"

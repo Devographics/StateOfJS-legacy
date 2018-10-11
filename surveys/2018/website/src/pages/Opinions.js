@@ -9,7 +9,7 @@ To find out how developers view the current JavaScript ecosystem, we asked them 
 they agreed or disagreed with the following opinions. 
 `
 
-const Opinions = (props) => (
+const Opinions = props => (
     <Layout {...props}>
         <div>
             <TextBlock text={text} />
