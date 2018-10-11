@@ -31,7 +31,7 @@ class PageTitle extends React.PureComponent {
 
     render() {
         const { currentPage, previousPage, nextPage, mode } = this.props
-
+        console.log(this.props)
         const tabindex = {}
 
         return (

@@ -8,8 +8,9 @@ import getPageUrl from './getPageUrl'
 Compare two paths with and without trailing slash
 
 */
-export const removeTrailingSlash = s => s.slice(-1) === '/' ? s.slice(0,-1) : s
-export const isSamePath = (p1, p2) => p1 === p2 || removeTrailingSlash(p1) === p2 || p1 === removeTrailingSlash(p2)
+export const removeTrailingSlash = s => (s.slice(-1) === '/' ? s.slice(0, -1) : s)
+export const isSamePath = (p1, p2) =>
+    p1 === p2 || removeTrailingSlash(p1) === p2 || p1 === removeTrailingSlash(p2)
 
 /*
 
@@ -25,7 +26,11 @@ export const createPage = (sectionIndex, subSectionIndex) => {
             slug: slugify(section.label)
         }
     }
-    if (typeof subSectionIndex !== 'undefined' && page.section.subPages && page.section.subPages[subSectionIndex]) {
+    if (
+        typeof subSectionIndex !== 'undefined' &&
+        page.section.subPages &&
+        page.section.subPages[subSectionIndex]
+    ) {
         const subSectionLabel = page.section.subPages[subSectionIndex]
         page.subSection = {
             label: subSectionLabel,
@@ -54,7 +59,7 @@ export const getCurrentPage = path => {
 Get previous page object based on current page
 
 */
-export const getPreviousPage = (page) => {
+export const getPreviousPage = page => {
     const allPages = getAllPages()
     return page.index > 0 && allPages[page.index - 1]
 }
@@ -64,7 +69,7 @@ export const getPreviousPage = (page) => {
 Get next page object based on current page
 
 */
-export const getNextPage = (page) => {
+export const getNextPage = page => {
     const allPages = getAllPages()
     return page.index < allPages.length && allPages[page.index + 1]
 }
@@ -76,16 +81,22 @@ Get current, previous, and next pages
 */
 export const getPrevNextPages = path => {
     const currentPage = getCurrentPage(path)
-    if (currentPage.section.hide) {
-        // page is outside "normal" sidebar nav
-        return { currentPage }
+    if (!currentPage) {
+        console.log('no current page!!')
+        console.log(path)
+        console.log(currentPage)
     } else {
-        const pages = {
-            currentPage,
-            previousPage: getPreviousPage(currentPage),
-            nextPage: getNextPage(currentPage)
+        if (currentPage.section.hide) {
+            // page is outside "normal" sidebar nav
+            return { currentPage }
+        } else {
+            const pages = {
+                currentPage,
+                previousPage: getPreviousPage(currentPage),
+                nextPage: getNextPage(currentPage)
+            }
+            return pages
         }
-        return pages
     }
 }
 
@@ -95,7 +106,6 @@ Get all page objects
 
 */
 export const getAllPages = () => {
-
     const allPages = []
     const navFiltered = nav.filter(item => !item.hide)
 
@@ -103,12 +113,12 @@ export const getAllPages = () => {
         if (section.subPages) {
             section.subPages.forEach((subSection, j) => {
                 const page = createPage(i, j)
-                page.index = i+j
+                page.index = allPages.length
                 allPages.push(page)
             })
         } else {
             const page = createPage(i)
-            page.index = i
+            page.index = allPages.length
             allPages.push(page)
         }
     })

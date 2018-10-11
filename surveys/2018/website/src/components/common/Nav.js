@@ -64,6 +64,7 @@ NavSubItem.propTypes = {
 }
 
 const Nav = ({ path, closeSidebar }) => {
+    console.log(getAllPages())
     return (
         <div className="nav">
             <ul>
