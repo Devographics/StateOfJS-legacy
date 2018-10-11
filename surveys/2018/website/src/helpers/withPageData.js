@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Location } from '@reach/router'
-import getPages from './getPages'
+import getPrevNextPages from './getPages'
 
 function withPageData(WrappedComponent) {
     const hoc = class extends Component {
@@ -9,7 +9,7 @@ function withPageData(WrappedComponent) {
                 <Location>
                     {({ location }) => {
                         const path = location.pathname
-                        const pages = getPages(path)
+                        const pages = getPrevNextPages(path)
                         return <WrappedComponent path={path} {...pages} {...this.props} />
                     }}
                 </Location>

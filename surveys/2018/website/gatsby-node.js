@@ -47,13 +47,7 @@ exports.createPages = async ({ actions }) => {
     ]
 
     nav.filter(item => !exclusions.includes(item.label)).forEach(item => {
-        const pagePath = `/${slugify(item.label)}/`
         const sectionSlug = slugify(item.label)
-        createPage({
-            path: pagePath,
-            component: path.resolve(`./src/components/templates/OverviewTemplate.js`),
-            context: {}
-        })
 
         if (item.subPages) {
 
@@ -61,12 +55,12 @@ exports.createPages = async ({ actions }) => {
             createRedirect({
                 fromPath: `/${sectionSlug}/`,
                 redirectInBrowser: true,
-                toPath: `/${sectionSlug}/${firstSubSectionSlug}`
+                toPath: `/${sectionSlug}/${firstSubSectionSlug}/`
             })
             createRedirect({
                 fromPath: `/${sectionSlug}`,
                 redirectInBrowser: true,
-                toPath: `/${sectionSlug}/${firstSubSectionSlug}`
+                toPath: `/${sectionSlug}/${firstSubSectionSlug}/`
             })
 
             let subPageContext = {}

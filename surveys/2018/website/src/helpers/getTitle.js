@@ -1,4 +1,5 @@
-const getTitle = ({ section, subSection }, short = false) => {
+const getTitle = (page, short = false) => {
+    const { section, subSection } = page
     let title = ''
     title = short ? section.label : section.label
     if (subSection) {
