@@ -21,8 +21,8 @@ export const createPage = (sectionIndex, subSectionIndex) => {
     }
     if (typeof subSectionIndex !== 'undefined' && page.section.subPages) {
         const subSectionLabel = page.section.subPages[subSectionIndex]
-        page.subSection = { 
-            label: subSectionLabel, 
+        page.subSection = {
+            label: subSectionLabel,
             index: subSectionIndex,
             slug: slugify(subSectionLabel)
         }
@@ -38,9 +38,13 @@ Get current page objectbased on path
 
 */
 export const getCurrentPage = path => {
-    const [ /* */, sectionSlug, subSectionSlug, /* */ ] = path.split('/')
-    const sectionIndex = nav.findIndex(item => item.path === path || slugify(item.label) === sectionSlug)
-    const subSectionIndex = nav[sectionIndex].subPages && nav[sectionIndex].subPages.findIndex(item => slugify(item) === subSectionSlug)
+    const [, /* */ sectionSlug, subSectionSlug /* */] = path.split('/')
+    const sectionIndex = nav.findIndex(
+        item => item.path === path || slugify(item.label) === sectionSlug
+    )
+    const subSectionIndex =
+        nav[sectionIndex].subPages &&
+        nav[sectionIndex].subPages.findIndex(item => slugify(item) === subSectionSlug)
     const page = createPage(sectionIndex, subSectionIndex)
     return page
 }
@@ -62,10 +66,12 @@ export const getPreviousPage = ({ section, subSection }) => {
         // 2b. previous page is in another section
         const previousSectionIndex = section.index - 1
         const previousSection = navFiltered[previousSectionIndex]
-        return createPage(previousSectionIndex, previousSection.subPages && previousSection.subPages.length - 1)
+        return createPage(
+            previousSectionIndex,
+            previousSection.subPages && previousSection.subPages.length - 1
+        )
     }
 }
-
 
 /*
 
@@ -86,7 +92,6 @@ export const getNextPage = ({ section, subSection }) => {
         return createPage(nextSectionIndex, 0)
     }
 }
-
 
 /*
 

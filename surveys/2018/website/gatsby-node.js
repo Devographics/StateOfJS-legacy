@@ -36,7 +36,15 @@ const slugify = (s, dashToUnderscore = false) => {
 exports.createPages = async ({ actions }) => {
     const { createRedirect, createPage } = actions
 
-    const exclusions = ['Introduction', 'Connections', 'Other Tools', 'Opinions', 'Demographics', 'Conclusion', 'Support Us']
+    const exclusions = [
+        'Introduction',
+        'Connections',
+        'Other Tools',
+        'Opinions',
+        'Demographics',
+        'Conclusion',
+        'Support Us'
+    ]
 
     nav.filter(item => !exclusions.includes(item.label)).forEach(item => {
         const pagePath = `/${slugify(item.label)}/`
@@ -58,11 +66,12 @@ exports.createPages = async ({ actions }) => {
                 toPath: `/${slugify(item.label)}/${slugify(item.subPages[0])}`
             })
 
+            let subPageContext = {}
+
             item.subPages.forEach(subPage => {
                 const pagePath = `/${slugify(item.label)}/${slugify(subPage)}`
                 let templateName
                 switch (subPage) {
-
                     case 'Overview':
                         templateName = 'Overview'
                         break
@@ -74,16 +83,22 @@ exports.createPages = async ({ actions }) => {
                     case 'Conclusion':
                         templateName = 'Conclusion'
                         break
-                    
+
                     default:
                         templateName = 'Library'
+                        subPageContext = {
+                            section: slugify(item.label),
+                            tool: slugify(subPage)
+                        }
                         break
-
                 }
+
                 createPage({
                     path: pagePath,
-                    component: path.resolve(`./src/components/templates/${templateName}Template.js`),
-                    context: {}
+                    component: path.resolve(
+                        `./src/components/templates/${templateName}Template.js`
+                    ),
+                    context: subPageContext
                 })
             })
         }

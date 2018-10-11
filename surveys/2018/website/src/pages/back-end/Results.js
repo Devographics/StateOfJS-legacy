@@ -6,9 +6,9 @@ import * as dto from '../../dto'
 const experienceData = dto.experience(backendData.experience)
 const numberOfToolsData = dto.experience(backendData.numberOfToolsUsed)
 
-const Results = (props) => (
+const Results = props => (
     <ResultsTemplate
-    {...props}
+        {...props}
         section="Back-end"
         description={`
 Let's face facts: unlike other categories, there are

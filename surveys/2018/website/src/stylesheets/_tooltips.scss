@@ -1,4 +1,3 @@
-
 $tooltip-width: 240px;
 $tooltipDisplay: none;
 
@@ -6,29 +5,28 @@ $tooltipDisplay: none;
   Libraries
 \*————————————————————————————————————————————————————————————————————————————————————————————————————————————————————*/
 
-.others-wrapper{
+.others-wrapper {
     display: flex;
-    .libraries{
+    .libraries {
     }
-    .chart-wrapper{
+    .chart-wrapper {
         flex: 1;
     }
 }
 
-.libraries{
-
+.libraries {
 }
-.libraries__inner{
+.libraries__inner {
     display: flex;
 }
-.libraries__item{
+.libraries__item {
     position: relative;
 }
-.libraries__item__link{
+.libraries__item__link {
     font-size: $smaller-font;
     display: block;
-    &.libraries__item__link--enabled{
-        @include medium-large{
+    &.libraries__item__link--enabled {
+        @include medium-large {
             cursor: pointer;
             color: $active-color;
             @include font-bold;
@@ -36,43 +34,42 @@ $tooltipDisplay: none;
     }
 }
 
-.libraries--vertical{
+.libraries--vertical {
     padding: 50px 0;
     display: flex;
-    .libraries__inner{
+    .libraries__inner {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
     }
-    .libraries__item__link{
+    .libraries__item__link {
         white-space: nowrap;
         text-align: right;
     }
-    .library__tooltip{
-
+    .library__tooltip {
     }
 }
-.libraries--horizontal{
-    @include small{
+.libraries--horizontal {
+    @include small {
         padding: 0 $spacing;
     }
-    @include medium-large{
-        padding: 0 $spacing*3;
+    @include medium-large {
+        padding: 0 $spacing * 3;
     }
-    margin-bottom: $spacing*2;
-    .libraries__inner{
+    margin-bottom: $spacing * 2;
+    .libraries__inner {
         align-items: center;
         justify-content: space-between;
     }
-    .libraries__item{
+    .libraries__item {
         flex: 1;
     }
-    .libraries__item__link{
+    .libraries__item__link {
         text-align: center;
     }
 }
-.library__tooltip{
+.library__tooltip {
     color: $text-color-dark;
     position: absolute;
     top: 30px;
@@ -82,13 +79,13 @@ $tooltipDisplay: none;
     z-index: 100;
     font-size: $small-font;
     display: $tooltipDisplay;
-    .libraries__item:hover &{
+    .libraries__item:hover & {
         display: block;
-        @include small{
+        @include small {
             display: none;
         }
     }
-    .toolip__topzone{
+    .toolip__topzone {
         position: absolute;
         top: -30px;
         left: 50%;
@@ -97,18 +94,19 @@ $tooltipDisplay: none;
         width: 40px;
         z-index: 100;
     }
-    .tooltip__inner{
+    .tooltip__inner {
         border-radius: 3px;
         border: 1px solid $border-color;
         padding: $spacing;
         background: $white;
         position: relative;
 
-        &:after, &:before {
+        &:after,
+        &:before {
             bottom: 100%;
             left: 50%;
             border: solid transparent;
-            content: " ";
+            content: ' ';
             height: 0;
             width: 0;
             position: absolute;
@@ -127,30 +125,30 @@ $tooltipDisplay: none;
             margin-left: -11px;
         }
     }
-    h3{
+    h3 {
         font-size: $medium-font;
         border-bottom: 1px dashed $border-color;
         padding-bottom: $spacing/2;
         margin-bottom: $spacing/2;
         @include flex-center;
         justify-content: space-between;
-        .tooltip__title__stars{
+        .tooltip__title__stars {
             @include flex-center;
             font-size: $smaller-font;
             color: $active-color;
             @include font-regular;
-            path{
+            path {
                 fill: $active-color;
             }
         }
     }
-    p{
+    p {
         margin-bottom: $spacing/2;
     }
-    h4{
+    h4 {
         margin-bottom: $spacing/4;
     }
-    ul{
+    ul {
         padding: 0 0 0 $spacing;
         margin: 0;
     }

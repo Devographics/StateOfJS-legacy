@@ -2,7 +2,7 @@ import React from 'react'
 import backendData from '../../data/backend.json'
 import DevelopersTemplate from '../../components/templates/DevelopersTemplate'
 
-const BackendUsers = (props) => (
+const BackendUsers = props => (
     <DevelopersTemplate
         {...props}
         title="Full-Stack frameworks users facts"

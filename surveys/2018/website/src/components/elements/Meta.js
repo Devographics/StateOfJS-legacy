@@ -31,7 +31,7 @@ const Meta = ({ currentPage }) => {
 }
 
 Meta.propTypes = {
-    currentPage: PropTypes.object.isRequired,
+    currentPage: PropTypes.object.isRequired
 }
 
 export default withPageData(Meta)

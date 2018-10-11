@@ -145,7 +145,7 @@ class ShareChart extends Component {
         }
     }
 
-    toggleOptions = (e) => {
+    toggleOptions = e => {
         e.preventDefault()
         this.setState({
             showOptions: !this.state.showOptions

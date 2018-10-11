@@ -6,8 +6,8 @@ const text = `
 Demographics intro TODO.
 `
 
-const Demographics = (props) => (
-    <Layout {...props} >
+const Demographics = props => (
+    <Layout {...props}>
         <div>
             <TextBlock text={text} />
         </div>

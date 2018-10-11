@@ -2,9 +2,9 @@ import React from 'react'
 import backendData from '../../data/backend.json'
 import WorldwideTemplate from '../../components/templates/WorldwideTemplate'
 
-const Worldwide = (props) => (
+const Worldwide = props => (
     <WorldwideTemplate
-    {...props}
+        {...props}
         tools={backendData.keys}
         countries={backendData.countries}
         all={backendData.experience}

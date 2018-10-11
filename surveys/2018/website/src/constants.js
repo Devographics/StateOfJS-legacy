@@ -15,7 +15,7 @@ export const colors = {
     redLight: '#f89f9f',
 
     blue: '#41c7c7',
-    blueLight: '#8be7e7',
+    blueLight: '#8be7e7'
 }
 
 export const colorRange = [

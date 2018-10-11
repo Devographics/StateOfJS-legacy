@@ -5,7 +5,7 @@ import classNames from 'classnames'
 import { navigateTo } from 'gatsby-link'
 import getPages from '../../helpers/getPages'
 import getTitle from '../../helpers/getTitle'
-import withPageData from '../../helpers/withPageData';
+import withPageData from '../../helpers/withPageData'
 
 class PageTitle extends React.PureComponent {
     handleKeyDown = e => {
