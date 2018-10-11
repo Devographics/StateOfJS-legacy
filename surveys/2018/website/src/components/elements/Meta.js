@@ -1,17 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import getPageUrl from '../../helpers/getPageUrl'
 import withPageData from '../../helpers/withPageData'
 
 const Meta = ({ currentPage }) => {
     const { section, subSection } = currentPage
-    const url = getPageUrl(currentPage, true)
-    const image = `http://stateofjs.com/images/captures/${section.slug}_${subSection.slug}.png`
+    const url = currentPage.fullUrl
+    const image = `http://stateofjs.com/images/captures/${section.slug}_${subSection && subSection.slug}.png`
     const metaTitle = `State Of JavaScript Survey Results: ${currentPage.title}`
-    const metaDescription = `Find out which ${
-        currentPage.label
-    } JavaScript tools and frameworks are the most popular.`
+    const metaDescription = `Find out which ${currentPage.label} tools and frameworks are the most popular.`
 
     const meta = [
         // facebook

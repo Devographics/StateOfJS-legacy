@@ -19,7 +19,7 @@ export const createPage = (sectionIndex, subSectionIndex) => {
             slug: slugify(section.label)
         }
     }
-    if (typeof subSectionIndex !== 'undefined' && page.section.subPages) {
+    if (typeof subSectionIndex !== 'undefined' && page.section.subPages && page.section.subPages[subSectionIndex]) {
         const subSectionLabel = page.section.subPages[subSectionIndex]
         page.subSection = { 
             label: subSectionLabel, 
@@ -28,6 +28,7 @@ export const createPage = (sectionIndex, subSectionIndex) => {
         }
     }
     page.url = getPageUrl(page)
+    page.fullUrl = getPageUrl(page, true)
     page.title = getPageTitle(page)
     return page
 }
@@ -40,7 +41,7 @@ Get current page objectbased on path
 export const getCurrentPage = path => {
     const [ /* */, sectionSlug, subSectionSlug, /* */ ] = path.split('/')
     const sectionIndex = nav.findIndex(item => item.path === path || slugify(item.label) === sectionSlug)
-    const subSectionIndex = nav[sectionIndex].subPages && nav[sectionIndex].subPages.findIndex(item => slugify(item) === subSectionSlug)
+    const subSectionIndex = nav[sectionIndex] && nav[sectionIndex].subPages && nav[sectionIndex].subPages.findIndex(item => slugify(item) === subSectionSlug)
     const page = createPage(sectionIndex, subSectionIndex)
     return page
 }

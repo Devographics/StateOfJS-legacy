@@ -36,15 +36,23 @@ const slugify = (s, dashToUnderscore = false) => {
 exports.createPages = async ({ actions }) => {
     const { createRedirect, createPage } = actions
 
-    const exclusions = ['Introduction', 'Connections', 'Other Tools', 'Opinions', 'Demographics', 'Conclusion', 'Support Us']
+    const exclusions = [
+        'Introduction',
+        'Connections',
+        'Other Tools',
+        'Opinions',
+        'Demographics',
+        'Conclusion',
+        'Support Us'
+    ]
 
     nav.forEach(item => {
-
         if (exclusions.includes(item.label)) {
             return
         }
-        
-        const pagePath = `/${slugify(item.label)}/`
+        const sectionSlug = slugify(item.label)
+
+        const pagePath = `/${sectionSlug}/`
         createPage({
             path: pagePath,
             component: path.resolve(`./src/components/templates/OverviewTemplate.js`),
@@ -52,22 +60,25 @@ exports.createPages = async ({ actions }) => {
         })
 
         if (item.subPages) {
+
+            const firstSubSectionSlug = slugify(item.subPages[0])
             createRedirect({
-                fromPath: `/${slugify(item.label)}/`,
+                fromPath: `/${sectionSlug}/`,
                 redirectInBrowser: true,
-                toPath: `/${slugify(item.label)}/${slugify(item.subPages[0])}`
+                toPath: `/${sectionSlug}/${firstSubSectionSlug}`
             })
             createRedirect({
-                fromPath: `/${slugify(item.label)}`,
+                fromPath: `/${sectionSlug}`,
                 redirectInBrowser: true,
-                toPath: `/${slugify(item.label)}/${slugify(item.subPages[0])}`
+                toPath: `/${sectionSlug}/${firstSubSectionSlug}`
             })
 
             item.subPages.forEach(subPage => {
-                const pagePath = `/${slugify(item.label)}/${slugify(subPage)}`
+                const subSectionSlug = slugify(subPage)
+
+                const pagePath = `/${sectionSlug}/${subSectionSlug}`
                 let templateName
                 switch (subPage) {
-
                     case 'Overview':
                         templateName = 'Overview'
                         break
@@ -79,15 +90,16 @@ exports.createPages = async ({ actions }) => {
                     case 'Conclusion':
                         templateName = 'Conclusion'
                         break
-                    
+
                     default:
                         templateName = 'Library'
                         break
-
                 }
                 createPage({
                     path: pagePath,
-                    component: path.resolve(`./src/components/templates/${templateName}Template.js`),
+                    component: path.resolve(
+                        `./src/components/templates/${templateName}Template.js`
+                    ),
                     context: {}
                 })
             })

@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import ReactGA from 'react-ga'
-import getPageUrl from '../../helpers/getPageUrl'
 import withPageData from '../../helpers/withPageData'
-import getPageTitle from '../../helpers/getPageTitle'
 
 const trackShare = (platform, { section, subSection }) => () => {
     ReactGA.event({
@@ -158,8 +156,8 @@ class ShareChart extends Component {
 
     render() {
         const { currentPage } = this.props
-        const title = getPageTitle(currentPage)
-        const link = getPageUrl(currentPage, true)
+        const title = currentPage.title
+        const link = currentPage.fullUrl
 
         const twitterText = `#StateOfJS 2018 Results: ${title} ${link}`
         const subject = 'State Of JavaScript Survey Results'

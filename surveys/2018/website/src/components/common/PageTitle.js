@@ -2,32 +2,32 @@ import React from 'react'
 import getPageUrl from '../../helpers/getPageUrl'
 import Link from 'gatsby-link'
 import classNames from 'classnames'
-import { navigateTo } from 'gatsby-link'
-import getPages from '../../helpers/getPages'
+// import { navigateTo } from 'gatsby-link'
+// import getPages from '../../helpers/getPages'
 import getTitle from '../../helpers/getTitle'
-import withPageData from '../../helpers/withPageData';
+import withPageData from '../../helpers/withPageData'
 
 class PageTitle extends React.PureComponent {
-    handleKeyDown = e => {
-        const { previousPage, nextPage } = getPages(this.props.path)
-        if (this.props.mode === 'title') {
-            if (e.keyCode === 37) {
-                navigateTo(
-                    getPageUrl(
-                        previousPage.section.label,
-                        previousPage.subSection && previousPage.subSection.label
-                    )
-                )
-            } else if (e.keyCode === 39) {
-                navigateTo(
-                    getPageUrl(
-                        nextPage.section.label,
-                        nextPage.subSection && nextPage.subSection.label
-                    )
-                )
-            }
-        }
-    }
+    // handleKeyDown = e => {
+    //     const { previousPage, nextPage } = getPages(this.props.path)
+    //     if (this.props.mode === 'title') {
+    //         if (e.keyCode === 37) {
+    //             navigateTo(
+    //                 getPageUrl(
+    //                     previousPage.section.label,
+    //                     previousPage.subSection && previousPage.subSection.label
+    //                 )
+    //             )
+    //         } else if (e.keyCode === 39) {
+    //             navigateTo(
+    //                 getPageUrl(
+    //                     nextPage.section.label,
+    //                     nextPage.subSection && nextPage.subSection.label
+    //                 )
+    //             )
+    //         }
+    //     }
+    // }
 
     render() {
         const { currentPage, previousPage, nextPage, mode } = this.props
