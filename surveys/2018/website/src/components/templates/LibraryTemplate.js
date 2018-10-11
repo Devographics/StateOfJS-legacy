@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Meta from '../elements/Meta'
 import Layout from '../common/Layout'
-import TextBlock from '../blocks/TextBlock'
+import ExperienceOverTime from '../blocks/ExperienceOverTime'
 
 const LibraryTemplate = ({ pageContext, data }) => {
     console.log(pageContext, data)
@@ -11,15 +11,18 @@ const LibraryTemplate = ({ pageContext, data }) => {
         <Layout>
             <div className="template">
                 <Meta />
-                <TextBlock text={'library template'} />
                 {data.toolsYaml === null && (
                     <div style={{ color: 'red' }}>
                         No yaml file found for tool: <strong>{pageContext.tool}</strong>
+                        <br/>
+                        <br/>
                     </div>
                 )}
                 {data.toolsYaml !== null && (
                     <div>
-                        Found tool yaml file for: <strong>{pageContext.tool}</strong>
+                        <ExperienceOverTime/>
+                        <h3 className="block__title">Reasons behind like/dislike</h3>
+                        <h3 className="block__title">Country stats</h3>
                     </div>
                 )}
             </div>
