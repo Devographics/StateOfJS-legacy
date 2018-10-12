@@ -176,6 +176,10 @@ class TypeformExtractor {
                 user_info: {},
             }
 
+            if (answers === undefined) {
+                return
+            }
+
             answers.forEach(answer => {
                 const fieldConfig = this.config.typeform.fields[answer.field.id]
                 if (fieldConfig !== undefined) {

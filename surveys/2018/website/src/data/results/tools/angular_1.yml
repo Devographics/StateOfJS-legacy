@@ -1,0 +1,34 @@
+tool_id: angular_1
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        would_not_use: 19605
+        not_interested: 16684
+        would_use: 12778
+        interested: 4914
+        never_heard: 105
+    by_survey:
+        -
+            survey: '2016'
+            would_not_use: 3185
+            not_interested: 2657
+            would_use: 3256
+            interested: 1134
+            never_heard: 18
+        -
+            survey: '2017'
+            would_not_use: 9594
+            not_interested: 7610
+            would_use: 4705
+            interested: 1691
+            never_heard: 66
+        -
+            survey: '2018'
+            would_not_use: 6826
+            not_interested: 6417
+            would_use: 4817
+            interested: 2089
+            never_heard: 21

@@ -1,0 +1,34 @@
+tool_id: graph_ql
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        interested: 31288
+        never_heard: 9423
+        would_use: 7413
+        not_interested: 5434
+        would_not_use: 487
+    by_survey:
+        -
+            survey: '2016'
+            interested: 4508
+            never_heard: 3756
+            would_use: 517
+            not_interested: 1408
+            would_not_use: 61
+        -
+            survey: '2017'
+            interested: 14205
+            never_heard: 4246
+            would_use: 2788
+            not_interested: 2255
+            would_not_use: 172
+        -
+            survey: '2018'
+            interested: 12575
+            never_heard: 1421
+            would_use: 4108
+            not_interested: 1771
+            would_not_use: 254

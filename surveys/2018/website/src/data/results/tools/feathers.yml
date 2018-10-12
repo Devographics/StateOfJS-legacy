@@ -1,0 +1,34 @@
+tool_id: feathers
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        never_heard: 41585
+        not_interested: 7275
+        interested: 3508
+        would_use: 856
+        would_not_use: 383
+    by_survey:
+        -
+            survey: '2016'
+            never_heard: 8188
+            not_interested: 1243
+            interested: 666
+            would_use: 93
+            would_not_use: 60
+        -
+            survey: '2017'
+            never_heard: 18558
+            not_interested: 2819
+            interested: 1665
+            would_use: 446
+            would_not_use: 178
+        -
+            survey: '2018'
+            never_heard: 14839
+            not_interested: 3213
+            interested: 1177
+            would_use: 317
+            would_not_use: 145

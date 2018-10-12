@@ -1,0 +1,26 @@
+tool_id: koa
+appears_in_surveys:
+    - '2017'
+    - '2018'
+experience:
+    all:
+        never_heard: 22455
+        not_interested: 8843
+        interested: 7674
+        would_use: 3685
+        would_not_use: 707
+    by_survey:
+        -
+            survey: '2017'
+            never_heard: 12583
+            not_interested: 4243
+            interested: 4207
+            would_use: 2194
+            would_not_use: 439
+        -
+            survey: '2018'
+            never_heard: 9872
+            not_interested: 4600
+            interested: 3467
+            would_use: 1491
+            would_not_use: 268

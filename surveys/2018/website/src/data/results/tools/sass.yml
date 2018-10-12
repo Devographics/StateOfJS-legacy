@@ -1,0 +1,26 @@
+tool_id: sass
+appears_in_surveys:
+    - '2016'
+    - '2017'
+experience:
+    all:
+        would_use: 25307
+        interested: 3937
+        would_not_use: 2411
+        not_interested: 1903
+        never_heard: 358
+    by_survey:
+        -
+            survey: '2016'
+            would_use: 7454
+            interested: 1264
+            would_not_use: 680
+            not_interested: 739
+            never_heard: 113
+        -
+            survey: '2017'
+            would_use: 17853
+            interested: 2673
+            would_not_use: 1731
+            not_interested: 1164
+            never_heard: 245

@@ -1,0 +1,34 @@
+tool_id: native_apps
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        interested: 18663
+        would_use: 13096
+        not_interested: 12294
+        never_heard: 7328
+        would_not_use: 2433
+    by_survey:
+        -
+            survey: '2016'
+            interested: 3984
+            would_use: 3055
+            not_interested: 2125
+            never_heard: 531
+            would_not_use: 555
+        -
+            survey: '2017'
+            interested: 9092
+            would_use: 7928
+            not_interested: 4118
+            never_heard: 1216
+            would_not_use: 1312
+        -
+            survey: '2018'
+            interested: 5587
+            would_use: 2113
+            not_interested: 6051
+            never_heard: 5581
+            would_not_use: 566

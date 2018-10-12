@@ -1,0 +1,18 @@
+tool_id: cordova
+appears_in_surveys:
+    - '2016'
+experience:
+    all:
+        not_interested: 3099
+        interested: 2094
+        would_use: 2055
+        never_heard: 1533
+        would_not_use: 1469
+    by_survey:
+        -
+            survey: '2016'
+            not_interested: 3099
+            interested: 2094
+            would_use: 2055
+            never_heard: 1533
+            would_not_use: 1469

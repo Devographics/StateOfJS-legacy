@@ -1,0 +1,18 @@
+tool_id: mern
+appears_in_surveys:
+    - '2016'
+experience:
+    all:
+        never_heard: 8290
+        not_interested: 829
+        interested: 623
+        would_use: 436
+        would_not_use: 72
+    by_survey:
+        -
+            survey: '2016'
+            never_heard: 8290
+            not_interested: 829
+            interested: 623
+            would_use: 436
+            would_not_use: 72

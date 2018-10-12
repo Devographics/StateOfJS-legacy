@@ -1,0 +1,34 @@
+tool_id: mocha
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        would_use: 23232
+        interested: 14894
+        not_interested: 6768
+        never_heard: 5429
+        would_not_use: 3542
+    by_survey:
+        -
+            survey: '2016'
+            would_use: 4665
+            interested: 3071
+            not_interested: 1053
+            never_heard: 1153
+            would_not_use: 308
+        -
+            survey: '2017'
+            would_use: 10694
+            interested: 6585
+            not_interested: 2582
+            never_heard: 2254
+            would_not_use: 1551
+        -
+            survey: '2018'
+            would_use: 7873
+            interested: 5238
+            not_interested: 3133
+            never_heard: 2022
+            would_not_use: 1683

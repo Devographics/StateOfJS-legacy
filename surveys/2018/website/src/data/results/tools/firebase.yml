@@ -1,0 +1,26 @@
+tool_id: firebase
+appears_in_surveys:
+    - '2016'
+    - '2017'
+experience:
+    all:
+        interested: 10782
+        not_interested: 7436
+        would_use: 7303
+        never_heard: 7035
+        would_not_use: 1360
+    by_survey:
+        -
+            survey: '2016'
+            interested: 3442
+            not_interested: 2183
+            would_use: 1788
+            never_heard: 2512
+            would_not_use: 325
+        -
+            survey: '2017'
+            interested: 7340
+            not_interested: 5253
+            would_use: 5515
+            never_heard: 4523
+            would_not_use: 1035

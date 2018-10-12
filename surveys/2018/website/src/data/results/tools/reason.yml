@@ -1,1 +1,26 @@
-slug: reason
+tool_id: reason
+appears_in_surveys:
+    - '2017'
+    - '2018'
+experience:
+    all:
+        never_heard: 28778
+        interested: 6822
+        not_interested: 6666
+        would_use: 1245
+        would_not_use: 227
+    by_survey:
+        -
+            survey: '2017'
+            never_heard: 18404
+            interested: 2351
+            not_interested: 2724
+            would_use: 131
+            would_not_use: 56
+        -
+            survey: '2018'
+            never_heard: 10374
+            interested: 4471
+            not_interested: 3942
+            would_use: 1114
+            would_not_use: 171

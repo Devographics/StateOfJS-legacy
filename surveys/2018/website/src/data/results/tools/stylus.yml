@@ -1,0 +1,18 @@
+tool_id: stylus
+appears_in_surveys:
+    - '2017'
+experience:
+    all:
+        never_heard: 9339
+        not_interested: 7497
+        interested: 2548
+        would_use: 2356
+        would_not_use: 1926
+    by_survey:
+        -
+            survey: '2017'
+            never_heard: 9339
+            not_interested: 7497
+            interested: 2548
+            would_use: 2356
+            would_not_use: 1926

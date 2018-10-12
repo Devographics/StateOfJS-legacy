@@ -30,10 +30,10 @@ exports.experiences = async (tools, surveys, config) => {
             [bucket.key]: bucket.doc_count,
         }), {})
 
-        const bySurvey = {}
+        const bySurvey = []
         const appearsInSurveys = surveys.filter(s => config[s].tools.includes(tool))
         appearsInSurveys.forEach(survey => {
-            bySurvey[survey] = toolAgg.buckets.reduce((acc, bucket) => {
+            const entry = toolAgg.buckets.reduce((acc, bucket) => {
                 const subBucket = bucket.survey.buckets.find(b => b.key === survey)
                 if (subBucket === undefined) {
                     return {
@@ -47,12 +47,19 @@ exports.experiences = async (tools, surveys, config) => {
                     [bucket.key]: subBucket.doc_count,
                 }
             }, {})
+            bySurvey.push({
+                survey,
+                ...entry,
+            })
         })
 
         toolsAggs[tool] = {
-            surveys: appearsInSurveys,
-            all,
-            ...bySurvey,
+            tool_id: tool,
+            appears_in_surveys: appearsInSurveys,
+            experience: {
+                all,
+                by_survey: bySurvey,
+            }
         }
     }, {})
 
@@ -121,21 +128,27 @@ exports.experience = async (tools, surveys, config, experienceId) => {
         const byYearsOfExperience = { all: {} }
         yearsOfExperienceRanges.forEach(yearsOfExperienceRange => {
             const bucket = toolAggs.years_of_experience.buckets.find(b => b.key === yearsOfExperienceRange)
-            byYearsOfExperience.all[yearsOfExperienceRange] = bucket.doc_count
+            if (bucket !== undefined) {
+                byYearsOfExperience.all[yearsOfExperienceRange] = bucket.doc_count
+            }
         })
         byYearsOfExperience.all = util.computePercentageForKeys(byYearsOfExperience.all, yearsOfExperienceRanges)
 
         const byCompanySize = { all: {} }
         companySizeRanges.forEach(companySizeRange => {
             const bucket = toolAggs.company_size.buckets.find(b => b.key === companySizeRange)
-            byCompanySize.all[companySizeRange] = bucket.doc_count
+            if (bucket !== undefined) {
+                byCompanySize.all[companySizeRange] = bucket.doc_count
+            }
         })
         byCompanySize.all = util.computePercentageForKeys(byCompanySize.all, companySizeRanges)
 
         const bySalary = { all: {} }
         salaryRanges.forEach(salaryRange => {
             const bucket = toolAggs.salary.buckets.find(b => b.key === salaryRange)
-            bySalary.all[salaryRange] = bucket.doc_count
+            if (bucket !== undefined) {
+                bySalary.all[salaryRange] = bucket.doc_count
+            }
         })
         bySalary.all = util.computePercentageForKeys(bySalary.all, salaryRanges)
 
@@ -144,24 +157,30 @@ exports.experience = async (tools, surveys, config, experienceId) => {
             const yearsOfExperienceAgg = {}
             yearsOfExperienceRanges.forEach(yearsOfExperienceRange => {
                 const bucket = toolAggs.years_of_experience.buckets.find(b => b.key === yearsOfExperienceRange)
-                const surveyBucket = bucket.survey.buckets.find(b => b.key === survey)
-                yearsOfExperienceAgg[yearsOfExperienceRange] = surveyBucket === undefined ? 0 : surveyBucket.doc_count
+                if (bucket !== undefined) {
+                    const surveyBucket = bucket.survey.buckets.find(b => b.key === survey)
+                    yearsOfExperienceAgg[yearsOfExperienceRange] = surveyBucket === undefined ? 0 : surveyBucket.doc_count
+                }
             })
             byYearsOfExperience[survey] = util.computePercentageForKeys(yearsOfExperienceAgg, yearsOfExperienceRanges)
 
             const companySizeAgg = {}
             companySizeRanges.forEach(companySizeRange => {
                 const bucket = toolAggs.company_size.buckets.find(b => b.key === companySizeRange)
-                const surveyBucket = bucket.survey.buckets.find(b => b.key === survey)
-                companySizeAgg[companySizeRange] = surveyBucket === undefined ? 0 : surveyBucket.doc_count
+                if (bucket !== undefined) {
+                    const surveyBucket = bucket.survey.buckets.find(b => b.key === survey)
+                    companySizeAgg[companySizeRange] = surveyBucket === undefined ? 0 : surveyBucket.doc_count
+                }
             })
             byCompanySize[survey] = util.computePercentageForKeys(companySizeAgg, companySizeRanges)
 
             const salaryAgg = {}
             salaryRanges.forEach(salaryRange => {
                 const bucket = toolAggs.salary.buckets.find(b => b.key === salaryRange)
-                const surveyBucket = bucket.survey.buckets.find(b => b.key === survey)
-                salaryAgg[salaryRange] = surveyBucket === undefined ? 0 : surveyBucket.doc_count
+                if (bucket !== undefined) {
+                    const surveyBucket = bucket.survey.buckets.find(b => b.key === survey)
+                    salaryAgg[salaryRange] = surveyBucket === undefined ? 0 : surveyBucket.doc_count
+                }
             })
             bySalary[survey] = util.computePercentageForKeys(salaryAgg, salaryRanges)
         })

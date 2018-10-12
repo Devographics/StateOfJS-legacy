@@ -1,0 +1,18 @@
+tool_id: storybook
+appears_in_surveys:
+    - '2018'
+experience:
+    all:
+        never_heard: 10547
+        interested: 4767
+        would_use: 3085
+        not_interested: 1225
+        would_not_use: 379
+    by_survey:
+        -
+            survey: '2018'
+            never_heard: 10547
+            interested: 4767
+            would_use: 3085
+            not_interested: 1225
+            would_not_use: 379

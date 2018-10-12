@@ -1,0 +1,34 @@
+tool_id: apollo
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        never_heard: 32794
+        interested: 12939
+        not_interested: 4420
+        would_use: 3622
+        would_not_use: 278
+    by_survey:
+        -
+            survey: '2016'
+            never_heard: 8264
+            interested: 1133
+            not_interested: 690
+            would_use: 137
+            would_not_use: 26
+        -
+            survey: '2017'
+            never_heard: 16023
+            interested: 4682
+            not_interested: 1622
+            would_use: 1257
+            would_not_use: 82
+        -
+            survey: '2018'
+            never_heard: 8507
+            interested: 7124
+            not_interested: 2108
+            would_use: 2228
+            would_not_use: 170

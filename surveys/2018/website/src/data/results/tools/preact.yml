@@ -1,0 +1,18 @@
+tool_id: preact
+appears_in_surveys:
+    - '2018'
+experience:
+    all:
+        not_interested: 7446
+        never_heard: 5668
+        interested: 5533
+        would_use: 1251
+        would_not_use: 248
+    by_survey:
+        -
+            survey: '2018'
+            not_interested: 7446
+            never_heard: 5668
+            interested: 5533
+            would_use: 1251
+            would_not_use: 248

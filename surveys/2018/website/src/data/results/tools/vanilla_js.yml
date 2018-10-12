@@ -1,0 +1,26 @@
+tool_id: vanilla_js
+appears_in_surveys:
+    - '2016'
+    - '2017'
+experience:
+    all:
+        would_use: 20684
+        would_not_use: 10418
+        not_interested: 1490
+        interested: 877
+        never_heard: 448
+    by_survey:
+        -
+            survey: '2016'
+            would_use: 8065
+            would_not_use: 1361
+            not_interested: 270
+            interested: 306
+            never_heard: 249
+        -
+            survey: '2017'
+            would_use: 12619
+            would_not_use: 9057
+            not_interested: 1220
+            interested: 571
+            never_heard: 199

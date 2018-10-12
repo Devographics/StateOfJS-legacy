@@ -1,0 +1,34 @@
+tool_id: clojure_script
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        not_interested: 27135
+        never_heard: 14907
+        interested: 10232
+        would_use: 1196
+        would_not_use: 579
+    by_survey:
+        -
+            survey: '2016'
+            not_interested: 4908
+            never_heard: 2850
+            interested: 2197
+            would_use: 197
+            would_not_use: 98
+        -
+            survey: '2017'
+            not_interested: 11296
+            never_heard: 6744
+            interested: 4792
+            would_use: 533
+            would_not_use: 301
+        -
+            survey: '2018'
+            not_interested: 10931
+            never_heard: 5313
+            interested: 3243
+            would_use: 466
+            would_not_use: 180

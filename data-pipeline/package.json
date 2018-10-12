@@ -1,0 +1,11 @@
+{
+  "name": "data-pipeline",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@ekino/config": "^0.3.0",
+    "elasticsearch": "^15.1.1",
+    "node-fetch": "^2.2.0"
+  }
+}

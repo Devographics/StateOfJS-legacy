@@ -1,0 +1,34 @@
+tool_id: relay
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        never_heard: 31766
+        interested: 12092
+        not_interested: 8766
+        would_use: 888
+        would_not_use: 531
+    by_survey:
+        -
+            survey: '2016'
+            never_heard: 6079
+            interested: 2567
+            not_interested: 1381
+            would_use: 155
+            would_not_use: 68
+        -
+            survey: '2017'
+            never_heard: 14300
+            interested: 5653
+            not_interested: 2982
+            would_use: 520
+            would_not_use: 211
+        -
+            survey: '2018'
+            never_heard: 11387
+            interested: 3872
+            not_interested: 4403
+            would_use: 213
+            would_not_use: 252

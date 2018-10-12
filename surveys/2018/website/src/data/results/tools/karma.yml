@@ -1,0 +1,18 @@
+tool_id: karma
+appears_in_surveys:
+    - '2018'
+experience:
+    all:
+        never_heard: 6633
+        not_interested: 4091
+        interested: 3788
+        would_use: 3676
+        would_not_use: 1744
+    by_survey:
+        -
+            survey: '2018'
+            never_heard: 6633
+            not_interested: 4091
+            interested: 3788
+            would_use: 3676
+            would_not_use: 1744

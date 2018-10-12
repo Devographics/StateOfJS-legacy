@@ -1,0 +1,18 @@
+tool_id: foundation
+appears_in_surveys:
+    - '2017'
+experience:
+    all:
+        not_interested: 6554
+        never_heard: 5924
+        would_use: 4254
+        would_not_use: 4212
+        interested: 2722
+    by_survey:
+        -
+            survey: '2017'
+            not_interested: 6554
+            never_heard: 5924
+            would_use: 4254
+            would_not_use: 4212
+            interested: 2722

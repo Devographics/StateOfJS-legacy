@@ -1,0 +1,18 @@
+tool_id: next_js
+appears_in_surveys:
+    - '2018'
+experience:
+    all:
+        never_heard: 7236
+        interested: 6902
+        not_interested: 3621
+        would_use: 1701
+        would_not_use: 226
+    by_survey:
+        -
+            survey: '2018'
+            never_heard: 7236
+            interested: 6902
+            not_interested: 3621
+            would_use: 1701
+            would_not_use: 226

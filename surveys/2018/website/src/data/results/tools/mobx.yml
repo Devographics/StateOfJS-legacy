@@ -1,0 +1,34 @@
+tool_id: mobx
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        never_heard: 29016
+        interested: 11264
+        not_interested: 10565
+        would_use: 2500
+        would_not_use: 703
+    by_survey:
+        -
+            survey: '2016'
+            never_heard: 7272
+            interested: 1669
+            not_interested: 1013
+            would_use: 234
+            would_not_use: 62
+        -
+            survey: '2017'
+            never_heard: 12716
+            interested: 5315
+            not_interested: 4177
+            would_use: 1140
+            would_not_use: 318
+        -
+            survey: '2018'
+            never_heard: 9028
+            interested: 4280
+            not_interested: 5375
+            would_use: 1126
+            would_not_use: 323

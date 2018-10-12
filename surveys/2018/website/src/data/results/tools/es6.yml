@@ -1,0 +1,34 @@
+tool_id: es6
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        would_use: 45436
+        interested: 6217
+        never_heard: 884
+        not_interested: 796
+        would_not_use: 749
+    by_survey:
+        -
+            survey: '2016'
+            would_use: 7475
+            interested: 2200
+            never_heard: 213
+            not_interested: 243
+            would_not_use: 119
+        -
+            survey: '2017'
+            would_use: 20561
+            interested: 2224
+            never_heard: 177
+            not_interested: 267
+            would_not_use: 437
+        -
+            survey: '2018'
+            would_use: 17400
+            interested: 1793
+            never_heard: 494
+            not_interested: 286
+            would_not_use: 193

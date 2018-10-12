@@ -1,0 +1,26 @@
+tool_id: polymer
+appears_in_surveys:
+    - '2017'
+    - '2018'
+experience:
+    all:
+        not_interested: 20340
+        interested: 11646
+        never_heard: 8191
+        would_use: 1830
+        would_not_use: 1827
+    by_survey:
+        -
+            survey: '2017'
+            not_interested: 9944
+            interested: 7000
+            never_heard: 4459
+            would_use: 1195
+            would_not_use: 1068
+        -
+            survey: '2018'
+            not_interested: 10396
+            interested: 4646
+            never_heard: 3732
+            would_use: 635
+            would_not_use: 759

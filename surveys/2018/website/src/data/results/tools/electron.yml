@@ -1,0 +1,26 @@
+tool_id: electron
+appears_in_surveys:
+    - '2017'
+    - '2018'
+experience:
+    all:
+        interested: 21814
+        would_use: 8851
+        not_interested: 6309
+        never_heard: 5696
+        would_not_use: 967
+    by_survey:
+        -
+            survey: '2017'
+            interested: 11197
+            would_use: 4938
+            not_interested: 3225
+            never_heard: 3920
+            would_not_use: 386
+        -
+            survey: '2018'
+            interested: 10617
+            would_use: 3913
+            not_interested: 3084
+            never_heard: 1776
+            would_not_use: 581

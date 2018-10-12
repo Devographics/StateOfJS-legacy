@@ -1,0 +1,26 @@
+tool_id: grunt
+appears_in_surveys:
+    - '2016'
+    - '2017'
+experience:
+    all:
+        would_not_use: 14858
+        would_use: 7801
+        not_interested: 7255
+        interested: 3067
+        never_heard: 935
+    by_survey:
+        -
+            survey: '2016'
+            would_not_use: 4248
+            would_use: 2830
+            not_interested: 1988
+            interested: 978
+            never_heard: 206
+        -
+            survey: '2017'
+            would_not_use: 10610
+            would_use: 4971
+            not_interested: 5267
+            interested: 2089
+            never_heard: 729

@@ -1,0 +1,18 @@
+tool_id: coffee_script
+appears_in_surveys:
+    - '2016'
+experience:
+    all:
+        not_interested: 6202
+        would_not_use: 2449
+        interested: 870
+        would_use: 590
+        never_heard: 139
+    by_survey:
+        -
+            survey: '2016'
+            not_interested: 6202
+            would_not_use: 2449
+            interested: 870
+            would_use: 590
+            never_heard: 139

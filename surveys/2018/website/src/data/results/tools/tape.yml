@@ -1,0 +1,18 @@
+tool_id: tape
+appears_in_surveys:
+    - '2017'
+experience:
+    all:
+        never_heard: 17401
+        not_interested: 2252
+        interested: 2047
+        would_use: 1512
+        would_not_use: 454
+    by_survey:
+        -
+            survey: '2017'
+            never_heard: 17401
+            not_interested: 2252
+            interested: 2047
+            would_use: 1512
+            would_not_use: 454

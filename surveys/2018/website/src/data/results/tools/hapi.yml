@@ -1,0 +1,18 @@
+tool_id: hapi
+appears_in_surveys:
+    - '2017'
+experience:
+    all:
+        never_heard: 13380
+        not_interested: 4651
+        interested: 3479
+        would_use: 1567
+        would_not_use: 589
+    by_survey:
+        -
+            survey: '2017'
+            never_heard: 13380
+            not_interested: 4651
+            interested: 3479
+            would_use: 1567
+            would_not_use: 589
