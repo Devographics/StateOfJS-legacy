@@ -30,7 +30,7 @@ class PageTitle extends React.PureComponent {
     // }
 
     render() {
-        const { currentPage, previousPage, nextPage, mode } = this.props
+        const { currentPage, previousPage, nextPage, mode, title } = this.props
         const tabindex = {}
 
         return (
@@ -61,7 +61,7 @@ class PageTitle extends React.PureComponent {
                             <span />
                         )}
                         {mode === 'title' && (
-                            <h2 className="pagetitle__main">{getTitle(currentPage)}</h2>
+                            <h2 className="pagetitle__main">{title || getTitle(currentPage)}</h2>
                         )}
                         {nextPage ? (
                             <Link

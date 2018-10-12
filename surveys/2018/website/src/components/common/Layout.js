@@ -129,6 +129,7 @@ export default class Layout extends PureComponent {
             <script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript" />
         ]
 
+        const { showPagination = true } = this.props
         const sidebarClassName = this.state.showSidebar ? 'sidebar--shown' : 'sidebar--hidden'
 
         return (
@@ -171,11 +172,11 @@ export default class Layout extends PureComponent {
                             <div className="content">
                                 <PageTitle {...this.props} path={location.pathname} />
                                 {this.props.children}
-                                <PageTitle
+                                {showPagination && <PageTitle
                                     {...this.props}
                                     path={location.pathname}
                                     mode="pagination"
-                                />
+                                />}
                             </div>
                         </div>
                     </div>
