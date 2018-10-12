@@ -71,10 +71,10 @@ const RadarChart = ({ score }) => (
                 {/* ticks */}
                 {Array.from(Array(11).keys()).map(i => 
                     <React.Fragment key={i}>
-                        <rect x={padding - 5} y={padding + height*i/10} width="10" height="2" fill={chartMainColor} />
-                        <text x={padding - 20} y={padding + height*i/10} textAnchor="middle" alignmentBaseline="middle" fill={chartMainColor} className="radar__chart__ticklabel">{`${(10-i)*10}%`}</text>
-                        <rect x={padding + width*i/10} y={padding + height -5} width="2" height="10" fill={chartMainColor} />
-                        <text x={padding + width*i/10} y={padding + height + 20} textAnchor="middle" alignmentBaseline="middle" fill={chartMainColor} className="radar__chart__ticklabel">{`${Math.round(i*getHighestUsage(data))/10}k`}</text>
+                        <rect x={padding - 5 + 1} y={internalPadding - 1 + padding + (height - internalPadding)*i/10} width="10" height="2" fill={chartMainColor} />
+                        <text x={padding - 20 + 1} y={internalPadding - 1 + padding + (height - internalPadding)*i/10} textAnchor="middle" alignmentBaseline="middle" fill={chartMainColor} className="radar__chart__ticklabel">{`${(10-i)*10}%`}</text>
+                        <rect x={padding + (width - internalPadding)*i/10} y={padding + height -5} width="2" height="10" fill={chartMainColor} />
+                        <text x={padding + (width - internalPadding)*i/10} y={padding + height + 20} textAnchor="middle" alignmentBaseline="middle" fill={chartMainColor} className="radar__chart__ticklabel">{`${Math.round(i*getHighestUsage(data))/10}k`}</text>
                     </React.Fragment>  
                 )}
 
