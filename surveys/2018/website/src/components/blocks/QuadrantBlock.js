@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import RadarChart from '../charts/RadarChart'
+import QuadrantChart from '../charts/QuadrantChart'
 
 const legend = [
     [
@@ -17,16 +17,16 @@ const legend = [
     ],
     [
         'Avoid',
-        `Low usage and low satisfaction. Technologies probably best avoided for now.`
+        `Low usage and low satisfaction. Technologies probably best avoided currently.`
     ]
 ]
 
-const RadarBlock = () => (
+const QuadrantBlock = () => (
     <div className="block block--chart block--happiness">
-        <h3 className="block__title">Radar Chart</h3>
+        <h3 className="block__title">Quadrant Chart</h3>
         <div className="block__content block__content--radar">
             <div className="block__chart block__chart--radar">
-                <RadarChart />
+                <QuadrantChart />
             </div>
             <div className="block__description block__description--radar">
                 <p>
@@ -35,9 +35,8 @@ const RadarBlock = () => (
                 </p>
 
                 <p>
-                    Additionally, larger dots mean a higher{' '}
-                    <strong>interest ratio</strong> (developers not yet using a technology but
-                    interested in learning it).
+                    Additionally, each dot shows the technology's{' '}
+                    <strong>interest ratio</strong> (percentage of non-users interested in learning it).
                 </p>
             </div>
         </div>
@@ -59,4 +58,4 @@ const RadarBlock = () => (
 //     score: PropTypes.number.isRequired
 // }
 
-export default RadarBlock
+export default QuadrantBlock

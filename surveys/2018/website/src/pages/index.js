@@ -2,7 +2,6 @@ import { graphql } from 'gatsby'
 import React from 'react'
 import Layout from '../components/common/Layout'
 import TextBlock from '../components/blocks/TextBlock'
-import '../stylesheets/screen.scss'
 
 const Introduction = ({ data }) => (
     <Layout>

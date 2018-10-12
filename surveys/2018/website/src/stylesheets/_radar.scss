@@ -19,10 +19,12 @@
     // @include font-bold;
     text-transform: uppercase;
     letter-spacing: 4px;
+    @include font-regular;
 }
 
 .radar__chart__label {
     font-size: $small-font;
+    @include font-regular;
 }
 .radar__chart__ticklabel {
     font-size: $smaller-font;

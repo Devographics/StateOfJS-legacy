@@ -5,6 +5,7 @@ import Nav from './Nav'
 import PageTitle from './PageTitle'
 import Logo from './Logo'
 import { Location } from '@reach/router'
+import '../../stylesheets/screen.scss'
 
 // const Spacer = () => <div className="pagelayout__spacer" />
 
