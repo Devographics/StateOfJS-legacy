@@ -6,70 +6,70 @@
 - label: JavaScript Flavors
   subPages:
       - Overview
-      - Reason
-      - ClojureScript
-      - Elm
-      - Flow
-      - TypeScript
-      - ES6+
+      - reason
+      - clojurescript
+      - elm
+      - flow
+      - typescript
+      - es6
       - Other Libraries
       - Conclusion
 
 - label: Front-end Frameworks
   subPages:
       - Overview
-      - React
-      - Angular
-      - Ember
-      - Polymer
-      - Vue.js
-      - Preact
+      - react
+      - angular
+      - ember
+      - polymer
+      - vuejs
+      - preact
       - Other Libraries
       - Conclusion
 
 - label: Data Layer
   subPages:
       - Overview
-      - Redux
-      - GraphQL
-      - Relay
-      - Apollo
-      - Mobx
+      - redux
+      - graphql
+      - relay
+      - apollo
+      - mobx
       - Other Libraries
       - Conclusion
 
 - label: Back-end Frameworks
   subPages:
       - Overview
-      - Meteor
-      - Express
-      - Next.js
-      - Koa
-      - Sails
+      - meteor
+      - express
+      - nextjs
+      - koa
+      - sails
       - Other Libraries
       - Conclusion
 
 - label: Testing Tools
   subPages:
       - Overview
-      - Storybook
-      - Mocha
-      - Jasmine
-      - Jest
-      - Enzyme
-      - Ava
-      - Karma
+      - storybook
+      - mocha
+      - jasmine
+      - jest
+      - enzyme
+      - ava
+      - karma
       - Other Libraries
       - Conclusion
 
 - label: Mobile & Desktop
   subPages:
       - Overview
-      - Electron
-      - React Native
-      - Cordova
+      - electron
+      - react-native
+      - cordova
       - NativeScript
-      - Ionic
+      - ionic
       - Native Apps
       - Other Libraries
       - Conclusion

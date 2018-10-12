@@ -8,7 +8,7 @@ typeform:
             tool: reason
         Go4TWhDKQs6W:
             type: tool
-            tool: clojure_script
+            tool: clojurescript
         IRf3Rgkmmchd:
             type: tool
             tool: elm
@@ -41,7 +41,7 @@ typeform:
             tool: polymer
         iYsV5f1b98xc:
             type: tool
-            tool: vue
+            tool: vuejs
         JSN28A0EjEPL:
             type: tool
             tool: preact
@@ -56,7 +56,7 @@ typeform:
             tool: redux
         Eg8JuKFN0tgf:
             type: tool
-            tool: graph_ql
+            tool: graphql
         Tg4qp4kjiqYR:
             type: tool
             tool: relay
@@ -80,7 +80,7 @@ typeform:
             tool: express
         RlQBNe9UEq09:
             type: tool
-            tool: next_js
+            tool: nextjs
         kYCrccJB6SYM:
             type: tool
             tool: koa
@@ -128,7 +128,7 @@ typeform:
             tool: electron
         JACHbSIEJ6kA:
             type: tool
-            tool: react_native
+            tool: react-native
         VqB583tSYSxU:
             type: tool
             tool: phone_gap_cordova
@@ -163,7 +163,7 @@ sections:
         freeform: 'Other JavaScript Flavors options'
         tools:
             - reason
-            - clojure_script
+            - clojurescript
             - elm
             - flow
             - typescript
@@ -176,14 +176,14 @@ sections:
             - angular_1
             - ember
             - polymer
-            - vue
+            - vuejs
             - preact
     data_layer:
         title: 'Data Layer'
         freeform: 'Other Data Layer options'
         tools:
             - redux
-            - graph_ql
+            - graphql
             - relay
             - apollo
             - mobx
@@ -193,7 +193,7 @@ sections:
         tools:
             - meteor
             - express
-            - next_js
+            - nextjs
             - koa
             - sails
             - feathers
@@ -213,7 +213,7 @@ sections:
         freeform: 'Other Mobile & Desktop options'
         tools:
             - electron
-            - react_native
+            - react-native
             - phone_gap_cordova
             - native_script
             - ionic
@@ -226,7 +226,7 @@ experience:
     '🤷 Never heard of it/Not sure what it is': never_heard
 tools:
     - reason
-    - clojure_script
+    - clojurescript
     - elm
     - flow
     - typescript
@@ -235,16 +235,16 @@ tools:
     - angular_1
     - ember
     - polymer
-    - vue
+    - vuejs
     - preact
     - redux
-    - graph_ql
+    - graphql
     - relay
     - apollo
     - mobx
     - meteor
     - express
-    - next_js
+    - nextjs
     - koa
     - sails
     - feathers
@@ -256,7 +256,7 @@ tools:
     - ava
     - karma
     - electron
-    - react_native
+    - react-native
     - phone_gap_cordova
     - native_script
     - ionic

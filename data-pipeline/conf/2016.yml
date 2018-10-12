@@ -70,7 +70,7 @@ typeform:
             tool: es6
         '28238720':
             type: tool
-            tool: coffee_script
+            tool: coffeescript
         '28238721':
             type: tool
             tool: typescript
@@ -79,7 +79,7 @@ typeform:
             tool: elm
         '28238739':
             type: tool
-            tool: clojure_script
+            tool: clojurescript
         '28238773':
             type: tool
             tool: no_frontend_framework
@@ -97,7 +97,7 @@ typeform:
             tool: ember
         '28238803':
             type: tool
-            tool: vue
+            tool: vuejs
         '28238804':
             type: tool
             tool: backbone
@@ -118,7 +118,7 @@ typeform:
             tool: firebase
         '28238899':
             type: tool
-            tool: graph_ql
+            tool: graphql
         '28238903':
             type: tool
             tool: apollo
@@ -136,7 +136,7 @@ typeform:
             tool: feathers
         '28238969':
             type: tool
-            tool: done
+            tool: donejs
         '28238971':
             type: tool
             tool: mern
@@ -154,7 +154,7 @@ typeform:
             tool: enzyme
         '28239015':
             type: tool
-            tool: cucumber
+            tool: cucumberjs
         '28239020':
             type: tool
             tool: ava
@@ -199,7 +199,7 @@ typeform:
             tool: cordova
         '28239238':
             type: tool
-            tool: react_native
+            tool: react-native
         '28239249':
             type: tool
             tool: phone_gap
@@ -212,10 +212,10 @@ sections:
         tools:
             - vanilla_js
             - es6
-            - coffee_script
+            - coffeescript
             - typescript
             - elm
-            - clojure_script
+            - clojurescript
     frontend:
         title: Front-End
         freeform: 'Other Front-End Frameworks'
@@ -225,7 +225,7 @@ sections:
             - angular_1
             - angular_2
             - ember
-            - vue
+            - vuejs
             - backbone
     state_management:
         title: 'State Management'
@@ -240,7 +240,7 @@ sections:
         tools:
             - rest
             - firebase
-            - graph_ql
+            - graphql
             - apollo
             - falcor
             - horizon
@@ -250,7 +250,7 @@ sections:
         tools:
             - meteor
             - feathers
-            - done
+            - donejs
             - mern
             - mean
     testing:
@@ -261,7 +261,7 @@ sections:
             - jasmine
             - enzyme
             - jest
-            - cucumber
+            - cucumberjs
             - ava
     css:
         title: CSS
@@ -286,7 +286,7 @@ sections:
         freeform: 'Other mobile apps solutions'
         tools:
             - native_apps
-            - react_native
+            - react-native
             - cordova
             - phone_gap
             - native_script
@@ -299,36 +299,36 @@ experience:
 tools:
     - vanilla_js
     - es6
-    - coffee_script
+    - coffeescript
     - typescript
     - elm
-    - clojure_script
+    - clojurescript
     - no_frontend_framework
     - react
     - angular_1
     - angular_2
     - ember
-    - vue
+    - vuejs
     - backbone
     - redux
     - mobx
     - relay
     - rest
     - firebase
-    - graph_ql
+    - graphql
     - apollo
     - falcor
     - horizon
     - meteor
     - feathers
-    - done
+    - donejs
     - mern
     - mean
     - mocha
     - jasmine
     - enzyme
     - jest
-    - cucumber
+    - cucumberjs
     - ava
     - plain_css
     - sass
@@ -341,7 +341,7 @@ tools:
     - browserify
     - bower
     - native_apps
-    - react_native
+    - react-native
     - cordova
     - phone_gap
     - native_script
