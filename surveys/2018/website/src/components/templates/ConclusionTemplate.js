@@ -1,3 +1,4 @@
+import { graphql } from 'gatsby'
 import React from 'react'
 import Meta from '../elements/Meta'
 import Layout from '../common/Layout'
