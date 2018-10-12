@@ -10,7 +10,7 @@ const ConclusionTemplate = ({ data }) => (
         <div className="template">
             <Meta />
             <QuadrantBlock />
-            <TextBlock text={data.allFile.edges[0].node.childMarkdownRemark.html} />
+            <TextBlock text={data.file.childMarkdownRemark.html} />
         </div>
     </Layout>
 )
@@ -19,18 +19,9 @@ export default ConclusionTemplate
 
 export const query = graphql`
     query($section: String) {
-        allFile(
-            filter: {
-                internal: { mediaType: { eq: "text/markdown" } }
-                name: { eq: $section }
-            }
-        ) {
-            edges {
-                node {
-                    childMarkdownRemark {
-                        html
-                    }
-                }
+        file(name: { eq: $section }) {
+            childMarkdownRemark {
+                html
             }
         }
     }

@@ -6,7 +6,7 @@ import TextBlock from '../components/blocks/TextBlock'
 const Introduction = ({ data }) => (
     <Layout>
         <div>
-            <TextBlock text={data.allFile.edges[0].node.childMarkdownRemark.html} />
+            <TextBlock text={data.file.childMarkdownRemark.html} />
         </div>
     </Layout>
 )
@@ -15,18 +15,9 @@ export default Introduction
 
 export const query = graphql`
     query {
-        allFile(
-            filter: {
-                internal: { mediaType: { eq: "text/markdown" } }
-                name: { eq: "introduction" }
-            }
-        ) {
-            edges {
-                node {
-                    childMarkdownRemark {
-                        html
-                    }
-                }
+        file(name: {eq: "introduction"}) {
+            childMarkdownRemark {
+                html
             }
         }
     }
