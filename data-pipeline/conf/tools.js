@@ -9,7 +9,7 @@ module.exports = [
         aliases: ['ES6', 'ES6+'],
     },
     {
-        id: 'coffee_script',
+        id: 'coffeescript',
         aliases: ['CoffeeScript'],
     },
     {
@@ -29,7 +29,7 @@ module.exports = [
         aliases: ['Reason'],
     },
     {
-        id: 'clojure_script',
+        id: 'clojurescript',
         aliases: ['ClojureScript'],
     },
     {
@@ -65,7 +65,7 @@ module.exports = [
         aliases: ['Ember'],
     },
     {
-        id: 'vue',
+        id: 'vuejs',
         aliases: ['Vue', 'Vue.js'],
     },
     {
@@ -89,7 +89,7 @@ module.exports = [
         aliases: ['Firebase'],
     },
     {
-        id: 'graph_ql',
+        id: 'graphql',
         aliases: ['GraphQL'],
     },
     {
@@ -113,7 +113,7 @@ module.exports = [
         aliases: ['FeathersJS', 'Feathers'],
     },
     {
-        id: 'done',
+        id: 'donejs',
         aliases: ['DoneJS'],
     },
     {
@@ -141,8 +141,8 @@ module.exports = [
         aliases: ['Jest'],
     },
     {
-        id: 'cucumber',
-        aliases: ['Cucumber'],
+        id: 'cucumberjs',
+        aliases: ['Cucumber', 'Cucumber.js'],
     },
     {
         id: 'ava',
@@ -209,7 +209,7 @@ module.exports = [
         aliases: ['Native Apps'],
     },
     {
-        id: 'react_native',
+        id: 'react-native',
         aliases: ['React Native'],
     },
     {
@@ -281,7 +281,7 @@ module.exports = [
         aliases: ['Rollup'],
     },
     {
-        id: 'next_js',
+        id: 'nextjs',
         aliases: ['Next.js'],
     },
     {
