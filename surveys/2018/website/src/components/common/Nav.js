@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import nav from '../../data/nav.yaml'
 import slugify from '../../helpers/slugify'
 import filter from 'lodash/filter'
-import { createPage, getAllPages } from '../../helpers/getPages'
+import { createPage } from '../../helpers/getPages'
 
 const navFiltered = filter(nav, item => !item.hide)
 

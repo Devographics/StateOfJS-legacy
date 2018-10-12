@@ -19,6 +19,15 @@ module.exports = {
                 //ignore: [`**/\.*`], // ignore files starting with a dot
             }
         },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `content`,
+                path: `${__dirname}/src/content/`
+                //ignore: [`**/\.*`], // ignore files starting with a dot
+            }
+        },
+        `gatsby-transformer-remark`,
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sass',
         'gatsby-plugin-netlify'
