@@ -20,10 +20,7 @@ export default ConclusionTemplate
 export const query = graphql`
     query($section: String) {
         allFile(
-            filter: {
-                internal: { mediaType: { eq: "text/markdown" } }
-                name: { eq: $section }
-            }
+            filter: { internal: { mediaType: { eq: "text/markdown" } }, name: { eq: $section } }
         ) {
             edges {
                 node {

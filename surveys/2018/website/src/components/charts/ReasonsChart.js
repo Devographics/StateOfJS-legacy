@@ -12,23 +12,29 @@ export default class ReasonsChart extends Component {
     render() {
         const { like, dislike } = this.props.reasons
 
-        const dislikeData = reasons.dislike.map(reason => {
-            const match = dislike.find(r => r.id === reason.id)
+        const dislikeData = reasons.dislike
+            .map(reason => {
+                const match = dislike.find(r => r.id === reason.id)
 
-            return {
-                reason: reason.label,
-                count: match !== undefined ? match.count : 0,
-            }
-        }).filter(r => r.count > 0).sort((a, b) => a.count - b.count)
+                return {
+                    reason: reason.label,
+                    count: match !== undefined ? match.count : 0
+                }
+            })
+            .filter(r => r.count > 0)
+            .sort((a, b) => a.count - b.count)
 
-        const likeData = reasons.like.map(reason => {
-            const match = like.find(r => r.id === reason.id)
+        const likeData = reasons.like
+            .map(reason => {
+                const match = like.find(r => r.id === reason.id)
 
-            return {
-                reason: reason.label,
-                count: match !== undefined ? match.count : 0,
-            }
-        }).filter(r => r.count > 0).sort((a, b) => a.count - b.count)
+                return {
+                    reason: reason.label,
+                    count: match !== undefined ? match.count : 0
+                }
+            })
+            .filter(r => r.count > 0)
+            .sort((a, b) => a.count - b.count)
 
         return (
             <div
@@ -36,7 +42,7 @@ export default class ReasonsChart extends Component {
                     display: 'grid',
                     gridTemplateColumns: '1fr 1fr',
                     gridColumnGap: '20px',
-                    gridRowGap: '20px',
+                    gridRowGap: '20px'
                 }}
             >
                 <div style={{ textAlign: 'right' }}>what people disliked about it</div>
@@ -60,12 +66,12 @@ export default class ReasonsChart extends Component {
                             top: verticalMargin,
                             right: innerMargin,
                             bottom: verticalMargin,
-                            left: outerMargin,
+                            left: outerMargin
                         }}
                         axisTop={{}}
                         axisLeft={{
                             tickSize: 0,
-                            tickPadding: 10,
+                            tickPadding: 10
                         }}
                     />
                 </div>
@@ -87,12 +93,12 @@ export default class ReasonsChart extends Component {
                             top: verticalMargin,
                             right: outerMargin,
                             bottom: verticalMargin,
-                            left: innerMargin,
+                            left: innerMargin
                         }}
                         axisTop={{}}
                         axisRight={{
                             tickSize: 0,
-                            tickPadding: 10,
+                            tickPadding: 10
                         }}
                         axisLeft={null}
                     />

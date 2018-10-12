@@ -9,7 +9,7 @@ export default class ExperienceOverTimeChart extends Component {
         return (
             <div
                 style={{
-                    height: 280,
+                    height: 280
                 }}
             >
                 <ResponsiveStream
@@ -21,18 +21,18 @@ export default class ExperienceOverTimeChart extends Component {
                         top: 20,
                         right: 20,
                         bottom: 40,
-                        left: 40,
+                        left: 40
                     }}
                     keys={[
                         'would_use',
                         'would_not_use',
                         'interested',
                         'not_interested',
-                        'never_heard',
+                        'never_heard'
                     ]}
                     data={this.props.experience.map(xp => ({
                         id: xp.survey,
-                        ...xp,
+                        ...xp
                     }))}
                     enableGridX={false}
                     enableGridY={false}
@@ -55,10 +55,10 @@ export default class ExperienceOverTimeChart extends Component {
                     ]}
                     fill={[
                         {
-                            "match": {
-                                "id": "never_heard"
+                            match: {
+                                id: 'never_heard'
                             },
-                            "id": "lines"
+                            id: 'lines'
                         }
                     ]}
                 />

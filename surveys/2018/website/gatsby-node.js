@@ -50,7 +50,6 @@ exports.createPages = async ({ actions }) => {
         const sectionSlug = slugify(item.label)
 
         if (item.subPages) {
-
             const firstSubSectionSlug = slugify(item.subPages[0])
             createRedirect({
                 fromPath: `/${sectionSlug}/`,

@@ -6,7 +6,7 @@ export default class ExperienceOverTimeBlock extends Component {
         return (
             <div className="block">
                 <h3 className="block__title">Results over time</h3>
-                <ExperienceOverTimeChart experience={this.props.experience.by_survey}/>
+                <ExperienceOverTimeChart experience={this.props.experience.by_survey} />
             </div>
         )
     }

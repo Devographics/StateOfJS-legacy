@@ -162,117 +162,117 @@ export const reasons = {
     like: [
         {
             id: 'elegant_programming_style_patterns',
-            label: '⚙️ Elegant programming style & patterns',
+            label: '⚙️ Elegant programming style & patterns'
         },
         {
             id: 'robust_less_error_prone_code',
-            label: '🐞 Robust, less error-prone code',
+            label: '🐞 Robust, less error-prone code'
         },
         {
             id: 'rich_package_ecosystem',
-            label: '🎁 Rich package ecosystem',
+            label: '🎁 Rich package ecosystem'
         },
         {
             id: 'fast_performance',
-            label: '⚡ Fast performance',
+            label: '⚡ Fast performance'
         },
         {
             id: 'well_established_option',
-            label:  '🏛️ Well-established option',
+            label: '🏛️ Well-established option'
         },
         {
             id: 'easy_learning_curve',
-            label: '👶 Easy learning curve',
+            label: '👶 Easy learning curve'
         },
         {
             id: 'powerful_developer_tooling',
-            label: '🔧 Powerful developer tooling',
+            label: '🔧 Powerful developer tooling'
         },
         {
             id: 'good_documentation',
-            label: '📖 Good documentation',
+            label: '📖 Good documentation'
         },
         {
             id: 'backed_by_a_great_team_company',
-            label: '👫 Backed by a great team/company',
+            label: '👫 Backed by a great team/company'
         },
         {
             id: 'simple_lightweight',
-            label: '🎈 Simple & lightweight',
+            label: '🎈 Simple & lightweight'
         },
         {
             id: 'growing_momentum_popularity',
-            label: '📉 Growing momentum/popularity',
+            label: '📉 Growing momentum/popularity'
         },
         {
             id: 'full_featured_powerful',
-            label: '🕹️ Full-featured & powerful',
+            label: '🕹️ Full-featured & powerful'
         },
         {
             id: 'stable_backwards_compatible',
-            label: '⚖️ Stable & backwards-compatible',
+            label: '⚖️ Stable & backwards-compatible'
         },
         {
             id: 'other',
-            label: 'Other',
-        },
+            label: 'Other'
+        }
     ],
     dislike: [
         {
             id: 'clumsy_programming_style',
-            label: 'Clumsy programming style ⚙️',
+            label: 'Clumsy programming style ⚙️'
         },
         {
             id: 'buggy_error_prone_code',
-            label: 'Buggy, error-prone code 🐞',
+            label: 'Buggy, error-prone code 🐞'
         },
         {
             id: 'poor_performance',
-            label: 'Poor performance ⚡',
+            label: 'Poor performance ⚡'
         },
         {
             id: 'small_package_ecosystem',
-            label: 'Small package ecosystem 🎁',
+            label: 'Small package ecosystem 🎁'
         },
         {
             id: 'new_untested_option',
-            label: 'New untested option 🏛️',
+            label: 'New untested option 🏛️'
         },
         {
             id: 'hard_learning_curve',
-            label: 'Hard learning curve 👶',
+            label: 'Hard learning curve 👶'
         },
         {
             id: 'lacking_developer_tooling',
-            label: 'Lacking developer tooling 🔧',
+            label: 'Lacking developer tooling 🔧'
         },
         {
             id: 'bad_documentation',
-            label: 'Bad documentation 📖',
+            label: 'Bad documentation 📖'
         },
         {
             id: 'concerns_about_the_team_company',
-            label: 'Concerns about the team/company 👫',
+            label: 'Concerns about the team/company 👫'
         },
         {
             id: 'bloated_complex',
-            label: 'Bloated & complex 🎈',
+            label: 'Bloated & complex 🎈'
         },
         {
             id: 'diminishing_momentum_popularity',
-            label: 'Diminishing momentum/popularity 📉',
+            label: 'Diminishing momentum/popularity 📉'
         },
         {
             id: 'limited_lacking_in_features',
-            label: 'Limited & lacking in features 🕹️',
+            label: 'Limited & lacking in features 🕹️'
         },
         {
             id: 'fast_changing_breaks_often',
-            label: 'Fast-changing & breaks often ⚖️',
+            label: 'Fast-changing & breaks often ⚖️'
         },
         {
             id: 'other',
-            label: 'Other',
-        },
+            label: 'Other'
+        }
     ]
 }

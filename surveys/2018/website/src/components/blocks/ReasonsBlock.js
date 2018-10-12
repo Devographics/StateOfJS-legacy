@@ -6,7 +6,7 @@ export default class ReasonsBlock extends Component {
         return (
             <div className="block">
                 <h3 className="block__title">Reasons behind like/dislike</h3>
-                <ReasonsChart reasons={this.props.reasons}/>
+                <ReasonsChart reasons={this.props.reasons} />
             </div>
         )
     }
