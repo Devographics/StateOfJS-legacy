@@ -1,0 +1,34 @@
+tool_id: enzyme
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        never_heard: 29923
+        would_use: 9681
+        interested: 8409
+        not_interested: 4972
+        would_not_use: 854
+    by_survey:
+        -
+            survey: '2016'
+            never_heard: 7108
+            would_use: 1075
+            interested: 1405
+            not_interested: 604
+            would_not_use: 58
+        -
+            survey: '2017'
+            never_heard: 13526
+            would_use: 4567
+            interested: 3392
+            not_interested: 1913
+            would_not_use: 268
+        -
+            survey: '2018'
+            never_heard: 9289
+            would_use: 4039
+            interested: 3612
+            not_interested: 2455
+            would_not_use: 528

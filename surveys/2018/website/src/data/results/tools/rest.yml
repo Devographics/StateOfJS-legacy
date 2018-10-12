@@ -1,0 +1,26 @@
+tool_id: rest
+appears_in_surveys:
+    - '2016'
+    - '2017'
+experience:
+    all:
+        would_use: 28674
+        interested: 2671
+        would_not_use: 1116
+        never_heard: 953
+        not_interested: 502
+    by_survey:
+        -
+            survey: '2016'
+            would_use: 8090
+            interested: 924
+            would_not_use: 500
+            never_heard: 444
+            not_interested: 292
+        -
+            survey: '2017'
+            would_use: 20584
+            interested: 1747
+            would_not_use: 616
+            never_heard: 509
+            not_interested: 210

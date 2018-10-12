@@ -1,0 +1,18 @@
+tool_id: keystone
+appears_in_surveys:
+    - '2017'
+experience:
+    all:
+        never_heard: 19670
+        not_interested: 2310
+        interested: 1122
+        would_use: 309
+        would_not_use: 255
+    by_survey:
+        -
+            survey: '2017'
+            never_heard: 19670
+            not_interested: 2310
+            interested: 1122
+            would_use: 309
+            would_not_use: 255

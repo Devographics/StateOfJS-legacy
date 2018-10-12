@@ -1,24 +1,27 @@
 import React, { Component } from 'react'
 import { ResponsiveStream } from '@nivo/stream'
+import theme from '../../nivoTheme'
+
+const colors = [...theme.experienceColors]
 
 export default class ExperienceOverTime extends Component {
     render() {
         return (
             <div
                 style={{
-                    height: 400,
+                    height: 280,
                 }}
             >
                 <ResponsiveStream
-                    //theme={theme}
+                    theme={theme}
                     offsetType="expand"
-                    //colors={theme.salaryColors}
-                    curve="monotoneX"
+                    colors={colors}
+                    curve="linear"
                     margin={{
-                        top: 60,
-                        right: 100,
-                        bottom: 60,
-                        left: 100,
+                        top: 20,
+                        right: 20,
+                        bottom: 40,
+                        left: 40,
                     }}
                     keys={[
                         'would_use',
@@ -27,37 +30,18 @@ export default class ExperienceOverTime extends Component {
                         'not_interested',
                         'never_heard',
                     ]}
-                    data={[
-                        {
-                            would_use: 1,
-                            would_not_use: 0,
-                            interested: .7,
-                            not_interested: 2,
-                            never_heard: .2,
-                        },
-                        {
-                            would_use: 2,
-                            would_not_use: 1,
-                            interested: .9,
-                            not_interested: .2,
-                            never_heard: 1.3,
-                        },
-                        {
-                            would_use: 1.5,
-                            would_not_use: 1.2,
-                            interested: .2,
-                            not_interested: 1.3,
-                            never_heard: .1,
-                        }
-                    ]}
-                    /*
-                    axisTop={{
-                        format: i => `${'$'}${normData[Number(i)].average},000`,
+                    enableGridX={false}
+                    enableGridY={false}
+                    data={this.props.experience.map(xp => ({
+                        id: xp.survey,
+                        ...xp,
+                    }))}
+                    axisLeft={{
+                        format: v => `${v * 100}%`
                     }}
                     axisBottom={{
-                        format: i => normData[Number(i)].id,
+                        format: i => this.props.experience[i].survey
                     }}
-                    */
                 />
             </div>
         )

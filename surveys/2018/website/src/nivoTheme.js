@@ -1,46 +1,69 @@
+import { colors } from './constants'
+
 export default {
+    name: 'dark',
+    background: '#222',
+    experienceColors: [
+        colors.red,
+        colors.redLight,
+        colors.blue,
+        colors.blueLight,
+        colors.greyLight
+    ],
+    salaryColors: ['#8b8de8', '#b3b5e6', '#dedfec', '#e4d6d9', '#dc9eaa', '#e28194', '#ea2149'],
     axis: {
-        textColor: '#ffff00',
-        fontSize: '11px',
-        tickColor: '#ff0000',
-        legendColor: '#00ff00',
-        legendFontSize: '11px'
+        domain: {
+            line: {
+                strokeWidth: 0,
+                stroke: '#bbb',
+            },
+        },
+        ticks: {
+            line: {
+                stroke: '#bbb',
+            },
+            text: {
+                fill: '#bbb',
+            },
+        },
+        legend: {
+            text: {
+                fill: '#eee',
+                fontSize: 12,
+                fontWeight: 500,
+            },
+        },
     },
     grid: {
-        stroke: '#ddd',
-        strokeWidth: 1,
-        strokeDasharray: ''
+        stroke: '#444',
+        line: {
+            stroke: '#444',
+        },
     },
-    markers: {
-        lineColor: '#000',
-        lineStrokeWidth: 1,
-        textColor: '#00ffff',
-        fontSize: '11px'
-    },
-    dots: {
-        textColor: '#ff00ff',
-        fontSize: '11px'
+    legends: {
+        text: {
+            fontSize: 12,
+            fill: '#eee',
+        },
     },
     tooltip: {
         container: {
-            background: 'white',
-            color: '#333',
             fontSize: '13px',
-            borderRadius: 0,
-            boxShadow: '0 1px 2px rgba(0, 0, 0, 0.25)',
-            padding: '5px 9px'
+            background: '#000',
+            color: '#ddd',
         },
-        basic: {
-            whiteSpace: 'pre',
-            display: 'flex',
-            alignItems: 'center'
-        },
-        table: {},
-        tableCell: {
-            padding: '3px 5px'
-        }
     },
     labels: {
-        textColor: '#0000ff'
-    }
+        text: {
+            fill: '#ddd',
+            fontSize: 12,
+            fontWeight: 500,
+        },
+    },
+    dots: {
+        text: {
+            fill: '#bbb',
+            fontSize: 12,
+        },
+    },
 }

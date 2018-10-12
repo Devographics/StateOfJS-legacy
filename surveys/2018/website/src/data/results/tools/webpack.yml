@@ -1,0 +1,26 @@
+tool_id: webpack
+appears_in_surveys:
+    - '2016'
+    - '2017'
+experience:
+    all:
+        would_use: 21510
+        interested: 7569
+        never_heard: 1859
+        not_interested: 1740
+        would_not_use: 1238
+    by_survey:
+        -
+            survey: '2016'
+            would_use: 5051
+            interested: 2947
+            never_heard: 1020
+            not_interested: 830
+            would_not_use: 402
+        -
+            survey: '2017'
+            would_use: 16459
+            interested: 4622
+            never_heard: 839
+            not_interested: 910
+            would_not_use: 836

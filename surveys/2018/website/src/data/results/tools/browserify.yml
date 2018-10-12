@@ -1,0 +1,26 @@
+tool_id: browserify
+appears_in_surveys:
+    - '2016'
+    - '2017'
+experience:
+    all:
+        not_interested: 9332
+        would_use: 8255
+        would_not_use: 7571
+        interested: 5685
+        never_heard: 3073
+    by_survey:
+        -
+            survey: '2016'
+            not_interested: 2420
+            would_use: 3035
+            would_not_use: 1786
+            interested: 2089
+            never_heard: 920
+        -
+            survey: '2017'
+            not_interested: 6912
+            would_use: 5220
+            would_not_use: 5785
+            interested: 3596
+            never_heard: 2153

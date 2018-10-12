@@ -1,0 +1,18 @@
+tool_id: bootstrap
+appears_in_surveys:
+    - '2017'
+experience:
+    all:
+        would_use: 14197
+        would_not_use: 7049
+        not_interested: 1662
+        interested: 610
+        never_heard: 148
+    by_survey:
+        -
+            survey: '2017'
+            would_use: 14197
+            would_not_use: 7049
+            not_interested: 1662
+            interested: 610
+            never_heard: 148

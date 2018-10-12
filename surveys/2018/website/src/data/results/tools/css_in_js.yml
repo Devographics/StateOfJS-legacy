@@ -1,0 +1,18 @@
+tool_id: css_in_js
+appears_in_surveys:
+    - '2017'
+experience:
+    all:
+        would_use: 6475
+        interested: 5438
+        never_heard: 5180
+        not_interested: 4908
+        would_not_use: 1665
+    by_survey:
+        -
+            survey: '2017'
+            would_use: 6475
+            interested: 5438
+            never_heard: 5180
+            not_interested: 4908
+            would_not_use: 1665

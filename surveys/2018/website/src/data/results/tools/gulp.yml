@@ -1,0 +1,26 @@
+tool_id: gulp
+appears_in_surveys:
+    - '2016'
+    - '2017'
+experience:
+    all:
+        would_use: 16875
+        would_not_use: 8267
+        not_interested: 4065
+        interested: 3834
+        never_heard: 875
+    by_survey:
+        -
+            survey: '2016'
+            would_use: 5712
+            would_not_use: 1820
+            not_interested: 1114
+            interested: 1333
+            never_heard: 271
+        -
+            survey: '2017'
+            would_use: 11163
+            would_not_use: 6447
+            not_interested: 2951
+            interested: 2501
+            never_heard: 604

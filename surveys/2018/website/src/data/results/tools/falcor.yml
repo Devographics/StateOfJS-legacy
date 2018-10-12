@@ -1,0 +1,26 @@
+tool_id: falcor
+appears_in_surveys:
+    - '2016'
+    - '2017'
+experience:
+    all:
+        never_heard: 25634
+        interested: 4155
+        not_interested: 3836
+        would_use: 152
+        would_not_use: 139
+    by_survey:
+        -
+            survey: '2016'
+            never_heard: 7355
+            interested: 1668
+            not_interested: 1119
+            would_use: 74
+            would_not_use: 34
+        -
+            survey: '2017'
+            never_heard: 18279
+            interested: 2487
+            not_interested: 2717
+            would_use: 78
+            would_not_use: 105

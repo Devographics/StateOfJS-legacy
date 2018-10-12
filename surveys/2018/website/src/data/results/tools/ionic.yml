@@ -1,0 +1,26 @@
+tool_id: ionic
+appears_in_surveys:
+    - '2017'
+    - '2018'
+experience:
+    all:
+        not_interested: 16515
+        never_heard: 10442
+        interested: 8638
+        would_use: 4123
+        would_not_use: 3923
+    by_survey:
+        -
+            survey: '2017'
+            not_interested: 7998
+            never_heard: 5769
+            interested: 5084
+            would_use: 2458
+            would_not_use: 2357
+        -
+            survey: '2018'
+            not_interested: 8517
+            never_heard: 4673
+            interested: 3554
+            would_use: 1665
+            would_not_use: 1566

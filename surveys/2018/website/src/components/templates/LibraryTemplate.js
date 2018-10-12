@@ -5,7 +5,14 @@ import Layout from '../common/Layout'
 import ExperienceOverTime from '../blocks/ExperienceOverTime'
 
 const LibraryTemplate = ({ pageContext, data }) => {
-    console.log(pageContext, data)
+    //console.log(pageContext, data)
+
+    // this section is skipped if it doesn't appear at least in 2 surveys
+    let shouldDisplayExperienceOverTime = false
+
+    if (data.toolsYaml !== null && data.toolsYaml.appears_in_surveys.length > 1) {
+        shouldDisplayExperienceOverTime = true
+    }
 
     return (
         <Layout>
@@ -18,9 +25,11 @@ const LibraryTemplate = ({ pageContext, data }) => {
                         <br/>
                     </div>
                 )}
+                {shouldDisplayExperienceOverTime && (
+                    <ExperienceOverTime experience={data.toolsYaml.experience}/>
+                )}
                 {data.toolsYaml !== null && (
                     <div>
-                        <ExperienceOverTime/>
                         <h3 className="block__title">Reasons behind like/dislike</h3>
                         <h3 className="block__title">Country stats</h3>
                     </div>
@@ -32,9 +41,26 @@ const LibraryTemplate = ({ pageContext, data }) => {
 
 export const query = graphql`
     query toolBySlug($tool: String!) {
-        toolsYaml(slug: { eq: $tool }) {
-            id
-            slug
+        toolsYaml(tool_id: { eq: $tool }) {
+            tool_id
+            appears_in_surveys
+            experience {
+                all {
+                    would_not_use
+                    not_interested
+                    would_use
+                    interested
+                    never_heard
+                }
+                by_survey {
+                    survey
+                    would_not_use
+                    not_interested
+                    would_use
+                    interested
+                    never_heard
+                }
+            }
         }
     }
 `

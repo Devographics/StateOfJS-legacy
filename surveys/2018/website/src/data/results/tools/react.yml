@@ -1,1 +1,34 @@
-slug: react
+tool_id: react
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        would_use: 31703
+        interested: 13829
+        not_interested: 5606
+        would_not_use: 2775
+        never_heard: 165
+    by_survey:
+        -
+            survey: '2016'
+            would_use: 4996
+            interested: 3616
+            not_interested: 1180
+            would_not_use: 403
+            never_heard: 55
+        -
+            survey: '2017'
+            would_use: 13645
+            interested: 6356
+            not_interested: 2566
+            would_not_use: 1017
+            never_heard: 82
+        -
+            survey: '2018'
+            would_use: 13062
+            interested: 3857
+            not_interested: 1860
+            would_not_use: 1355
+            never_heard: 28

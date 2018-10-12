@@ -1,0 +1,34 @@
+tool_id: ava
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        never_heard: 40653
+        not_interested: 5169
+        interested: 4904
+        would_use: 2364
+        would_not_use: 777
+    by_survey:
+        -
+            survey: '2016'
+            never_heard: 8230
+            not_interested: 573
+            interested: 995
+            would_use: 386
+            would_not_use: 66
+        -
+            survey: '2017'
+            never_heard: 18004
+            not_interested: 1922
+            interested: 2175
+            would_use: 1174
+            would_not_use: 391
+        -
+            survey: '2018'
+            never_heard: 14419
+            not_interested: 2674
+            interested: 1734
+            would_use: 804
+            would_not_use: 320

@@ -1,0 +1,34 @@
+tool_id: react_native
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        interested: 30272
+        not_interested: 10261
+        would_use: 9792
+        never_heard: 2357
+        would_not_use: 1205
+    by_survey:
+        -
+            survey: '2016'
+            interested: 6169
+            not_interested: 1778
+            would_use: 1301
+            never_heard: 881
+            would_not_use: 121
+        -
+            survey: '2017'
+            interested: 13481
+            not_interested: 4055
+            would_use: 4753
+            never_heard: 1015
+            would_not_use: 362
+        -
+            survey: '2018'
+            interested: 10622
+            not_interested: 4428
+            would_use: 3738
+            never_heard: 461
+            would_not_use: 722

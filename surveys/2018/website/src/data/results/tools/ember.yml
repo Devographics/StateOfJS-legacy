@@ -1,0 +1,34 @@
+tool_id: ember
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        not_interested: 34640
+        interested: 9753
+        would_not_use: 3600
+        never_heard: 3277
+        would_use: 2803
+    by_survey:
+        -
+            survey: '2016'
+            not_interested: 6079
+            interested: 2286
+            would_not_use: 759
+            never_heard: 453
+            would_use: 673
+        -
+            survey: '2017'
+            not_interested: 14990
+            interested: 4620
+            would_not_use: 1580
+            never_heard: 1359
+            would_use: 1117
+        -
+            survey: '2018'
+            not_interested: 13571
+            interested: 2847
+            would_not_use: 1261
+            never_heard: 1465
+            would_use: 1013

@@ -1,0 +1,26 @@
+tool_id: phone_gap_cordova
+appears_in_surveys:
+    - '2017'
+    - '2018'
+experience:
+    all:
+        not_interested: 18055
+        would_not_use: 8590
+        never_heard: 5951
+        interested: 5607
+        would_use: 5421
+    by_survey:
+        -
+            survey: '2017'
+            not_interested: 9171
+            would_not_use: 4676
+            never_heard: 3188
+            interested: 3252
+            would_use: 3379
+        -
+            survey: '2018'
+            not_interested: 8884
+            would_not_use: 3914
+            never_heard: 2763
+            interested: 2355
+            would_use: 2042

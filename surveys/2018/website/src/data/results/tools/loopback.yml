@@ -1,0 +1,18 @@
+tool_id: loopback
+appears_in_surveys:
+    - '2017'
+experience:
+    all:
+        never_heard: 18261
+        not_interested: 2955
+        interested: 1479
+        would_not_use: 512
+        would_use: 459
+    by_survey:
+        -
+            survey: '2017'
+            never_heard: 18261
+            not_interested: 2955
+            interested: 1479
+            would_not_use: 512
+            would_use: 459

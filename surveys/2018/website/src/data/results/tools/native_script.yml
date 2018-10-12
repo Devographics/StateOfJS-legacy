@@ -1,0 +1,34 @@
+tool_id: native_script
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        never_heard: 23826
+        not_interested: 15770
+        interested: 12450
+        would_use: 1046
+        would_not_use: 778
+    by_survey:
+        -
+            survey: '2016'
+            never_heard: 5027
+            not_interested: 2487
+            interested: 2380
+            would_use: 208
+            would_not_use: 148
+        -
+            survey: '2017'
+            never_heard: 10877
+            not_interested: 6610
+            interested: 5248
+            would_use: 503
+            would_not_use: 428
+        -
+            survey: '2018'
+            never_heard: 7922
+            not_interested: 6673
+            interested: 4822
+            would_use: 335
+            would_not_use: 202

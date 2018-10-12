@@ -1,0 +1,26 @@
+tool_id: sails
+appears_in_surveys:
+    - '2017'
+    - '2018'
+experience:
+    all:
+        never_heard: 23868
+        not_interested: 12300
+        interested: 4267
+        would_not_use: 1955
+        would_use: 965
+    by_survey:
+        -
+            survey: '2017'
+            never_heard: 13248
+            not_interested: 6262
+            interested: 2429
+            would_not_use: 1097
+            would_use: 630
+        -
+            survey: '2018'
+            never_heard: 10620
+            not_interested: 6038
+            interested: 1838
+            would_not_use: 858
+            would_use: 335

@@ -1,0 +1,34 @@
+tool_id: jasmine
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        would_use: 18981
+        interested: 13560
+        not_interested: 9106
+        never_heard: 7111
+        would_not_use: 5095
+    by_survey:
+        -
+            survey: '2016'
+            would_use: 4078
+            interested: 2820
+            not_interested: 1302
+            never_heard: 1235
+            would_not_use: 815
+        -
+            survey: '2017'
+            would_use: 9214
+            interested: 5769
+            not_interested: 3289
+            never_heard: 3033
+            would_not_use: 2361
+        -
+            survey: '2018'
+            would_use: 5689
+            interested: 4971
+            not_interested: 4515
+            never_heard: 2843
+            would_not_use: 1919

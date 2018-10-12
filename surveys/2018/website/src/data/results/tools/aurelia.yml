@@ -1,0 +1,18 @@
+tool_id: aurelia
+appears_in_surveys:
+    - '2017'
+experience:
+    all:
+        never_heard: 11884
+        not_interested: 8338
+        interested: 2827
+        would_use: 346
+        would_not_use: 271
+    by_survey:
+        -
+            survey: '2017'
+            never_heard: 11884
+            not_interested: 8338
+            interested: 2827
+            would_use: 346
+            would_not_use: 271

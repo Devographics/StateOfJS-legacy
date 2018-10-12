@@ -1,0 +1,18 @@
+tool_id: done
+appears_in_surveys:
+    - '2016'
+experience:
+    all:
+        never_heard: 9043
+        not_interested: 900
+        interested: 241
+        would_not_use: 40
+        would_use: 26
+    by_survey:
+        -
+            survey: '2016'
+            never_heard: 9043
+            not_interested: 900
+            interested: 241
+            would_not_use: 40
+            would_use: 26

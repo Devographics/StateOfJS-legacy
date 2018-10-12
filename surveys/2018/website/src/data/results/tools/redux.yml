@@ -1,0 +1,34 @@
+tool_id: redux
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        would_use: 23642
+        interested: 17640
+        not_interested: 5718
+        never_heard: 3674
+        would_not_use: 3396
+    by_survey:
+        -
+            survey: '2016'
+            would_use: 3436
+            interested: 4205
+            not_interested: 980
+            never_heard: 1375
+            would_not_use: 254
+        -
+            survey: '2017'
+            would_use: 10703
+            interested: 8021
+            not_interested: 2408
+            never_heard: 1465
+            would_not_use: 1069
+        -
+            survey: '2018'
+            would_use: 9503
+            interested: 5414
+            not_interested: 2330
+            never_heard: 834
+            would_not_use: 2073

@@ -1,0 +1,18 @@
+tool_id: aphrodite
+appears_in_surveys:
+    - '2016'
+experience:
+    all:
+        never_heard: 9118
+        interested: 532
+        not_interested: 446
+        would_use: 115
+        would_not_use: 39
+    by_survey:
+        -
+            survey: '2016'
+            never_heard: 9118
+            interested: 532
+            not_interested: 446
+            would_use: 115
+            would_not_use: 39

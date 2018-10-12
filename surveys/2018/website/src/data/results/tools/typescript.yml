@@ -1,0 +1,34 @@
+tool_id: typescript
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        interested: 19545
+        would_use: 19511
+        not_interested: 11424
+        would_not_use: 2898
+        never_heard: 707
+    by_survey:
+        -
+            survey: '2016'
+            interested: 3956
+            would_use: 2134
+            not_interested: 3451
+            would_not_use: 436
+            never_heard: 273
+        -
+            survey: '2017'
+            interested: 8782
+            would_use: 7958
+            not_interested: 5205
+            would_not_use: 1371
+            never_heard: 350
+        -
+            survey: '2018'
+            interested: 6807
+            would_use: 9419
+            not_interested: 2768
+            would_not_use: 1091
+            never_heard: 84

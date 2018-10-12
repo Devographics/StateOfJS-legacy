@@ -1,0 +1,34 @@
+tool_id: meteor
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        not_interested: 25335
+        interested: 11804
+        never_heard: 8577
+        would_not_use: 4244
+        would_use: 3664
+    by_survey:
+        -
+            survey: '2016'
+            not_interested: 4406
+            interested: 2822
+            never_heard: 1153
+            would_not_use: 752
+            would_use: 1117
+        -
+            survey: '2017'
+            not_interested: 11202
+            interested: 5395
+            never_heard: 3485
+            would_not_use: 1959
+            would_use: 1625
+        -
+            survey: '2018'
+            not_interested: 9727
+            interested: 3587
+            never_heard: 3939
+            would_not_use: 1533
+            would_use: 922

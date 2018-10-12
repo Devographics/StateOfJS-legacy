@@ -1,0 +1,26 @@
+tool_id: no_frontend_framework
+appears_in_surveys:
+    - '2016'
+    - '2017'
+experience:
+    all:
+        would_use: 14284
+        would_not_use: 7495
+        never_heard: 5327
+        not_interested: 5006
+        interested: 1804
+    by_survey:
+        -
+            survey: '2016'
+            would_use: 4811
+            would_not_use: 2480
+            never_heard: 1011
+            not_interested: 1471
+            interested: 477
+        -
+            survey: '2017'
+            would_use: 9473
+            would_not_use: 5015
+            never_heard: 4316
+            not_interested: 3535
+            interested: 1327

@@ -1,1 +1,34 @@
-slug: vue
+tool_id: vue
+appears_in_surveys:
+    - '2016'
+    - '2017'
+    - '2018'
+experience:
+    all:
+        interested: 24849
+        not_interested: 12398
+        would_use: 11342
+        never_heard: 4333
+        would_not_use: 1148
+    by_survey:
+        -
+            survey: '2016'
+            interested: 3298
+            not_interested: 3150
+            would_use: 894
+            never_heard: 2777
+            would_not_use: 131
+        -
+            survey: '2017'
+            interested: 12156
+            not_interested: 5126
+            would_use: 4638
+            never_heard: 1293
+            would_not_use: 453
+        -
+            survey: '2018'
+            interested: 9395
+            not_interested: 4122
+            would_use: 5810
+            never_heard: 263
+            would_not_use: 564
