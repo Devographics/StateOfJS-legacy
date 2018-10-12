@@ -4,7 +4,7 @@ import theme from '../../nivoTheme'
 
 const colors = [...theme.experienceColors]
 
-export default class ExperienceOverTime extends Component {
+export default class ExperienceOverTimeChart extends Component {
     render() {
         return (
             <div
@@ -16,7 +16,7 @@ export default class ExperienceOverTime extends Component {
                     theme={theme}
                     offsetType="expand"
                     colors={colors}
-                    curve="linear"
+                    curve="monotoneX"
                     margin={{
                         top: 20,
                         right: 20,
@@ -30,18 +30,37 @@ export default class ExperienceOverTime extends Component {
                         'not_interested',
                         'never_heard',
                     ]}
-                    enableGridX={false}
-                    enableGridY={false}
                     data={this.props.experience.map(xp => ({
                         id: xp.survey,
                         ...xp,
                     }))}
+                    enableGridX={false}
+                    enableGridY={false}
                     axisLeft={{
                         format: v => `${v * 100}%`
                     }}
                     axisBottom={{
                         format: i => this.props.experience[i].survey
                     }}
+                    defs={[
+                        {
+                            id: 'lines',
+                            type: 'patternLines',
+                            background: 'inherit',
+                            color: 'rgba(0, 0, 0, .07)',
+                            rotation: -45,
+                            lineWidth: 3,
+                            spacing: 6
+                        }
+                    ]}
+                    fill={[
+                        {
+                            "match": {
+                                "id": "never_heard"
+                            },
+                            "id": "lines"
+                        }
+                    ]}
                 />
             </div>
         )

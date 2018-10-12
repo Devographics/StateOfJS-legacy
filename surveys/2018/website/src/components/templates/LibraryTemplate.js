@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Meta from '../elements/Meta'
 import Layout from '../common/Layout'
-import ExperienceOverTime from '../blocks/ExperienceOverTime'
+import ExperienceOverTimeBlock from '../blocks/ExperienceOverTimeBlock'
 
 const LibraryTemplate = ({ pageContext, data }) => {
     //console.log(pageContext, data)
@@ -26,7 +26,7 @@ const LibraryTemplate = ({ pageContext, data }) => {
                     </div>
                 )}
                 {shouldDisplayExperienceOverTime && (
-                    <ExperienceOverTime experience={data.toolsYaml.experience}/>
+                    <ExperienceOverTimeBlock experience={data.toolsYaml.experience}/>
                 )}
                 {data.toolsYaml !== null && (
                     <div>

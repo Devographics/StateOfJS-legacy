@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import ExperienceOverTimeChart from '../charts/ExperienceOverTime'
+import ExperienceOverTimeChart from '../charts/ExperienceOverTimeChart'
 
-export default class ExperienceOverTime extends Component {
+export default class ExperienceOverTimeBlock extends Component {
     render() {
         return (
             <div className="block">
