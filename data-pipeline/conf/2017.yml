@@ -73,7 +73,7 @@ typeform:
             tool: elm
         Tv09:
             type: tool
-            tool: clojure_script
+            tool: clojurescript
         w2Tu:
             type: happiness
             section: flavors
@@ -91,7 +91,7 @@ typeform:
             tool: ember
         Fxzs:
             type: tool
-            tool: vue
+            tool: vuejs
         kT0P:
             type: tool
             tool: backbone
@@ -115,7 +115,7 @@ typeform:
             tool: mobx
         prYE:
             type: tool
-            tool: graph_ql
+            tool: graphql
         ByoY:
             type: tool
             tool: relay
@@ -208,7 +208,7 @@ typeform:
             tool: native_apps
         Xs6a:
             type: tool
-            tool: react_native
+            tool: react-native
         kOzD:
             type: tool
             tool: phone_gap_cordova
@@ -238,7 +238,7 @@ sections:
             - typescript
             - flow
             - elm
-            - clojure_script
+            - clojurescript
             - reason
     frontend:
         title: Front-End
@@ -248,7 +248,7 @@ sections:
             - angular_1
             - angular_2
             - ember
-            - vue
+            - vuejs
             - backbone
             - polymer
             - aurelia
@@ -260,7 +260,7 @@ sections:
             - rest
             - redux
             - mobx
-            - graph_ql
+            - graphql
             - relay
             - falcor
             - apollo
@@ -313,7 +313,7 @@ sections:
         freeform: 'Other mobile/desktop apps solutions'
         tools:
             - native_apps
-            - react_native
+            - react-native
             - ionic
             - phone_gap_cordova
             - native_script
@@ -330,13 +330,13 @@ tools:
     - typescript
     - flow
     - elm
-    - clojure_script
+    - clojurescript
     - reason
     - react
     - angular_1
     - angular_2
     - ember
-    - vue
+    - vuejs
     - backbone
     - polymer
     - aurelia
@@ -344,7 +344,7 @@ tools:
     - rest
     - redux
     - mobx
-    - graph_ql
+    - graphql
     - relay
     - falcor
     - apollo
@@ -377,7 +377,7 @@ tools:
     - npm
     - rollup
     - native_apps
-    - react_native
+    - react-native
     - ionic
     - phone_gap_cordova
     - native_script

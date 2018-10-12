@@ -1,4 +1,4 @@
-tool_id: clojure_script
+tool_id: clojurescript
 appears_in_surveys:
     - '2016'
     - '2017'
