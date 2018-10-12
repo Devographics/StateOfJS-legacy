@@ -32,3 +32,84 @@ experience:
             interested: 5923
             not_interested: 1783
             would_not_use: 289
+reasons:
+    like:
+        -
+            id: good_documentation
+            count: 4102
+        -
+            id: well_established_option
+            count: 3719
+        -
+            id: elegant_programming_style_patterns
+            count: 3642
+        -
+            id: easy_learning_curve
+            count: 3635
+        -
+            id: fast_performance
+            count: 3537
+        -
+            id: full_featured_powerful
+            count: 3142
+        -
+            id: backed_by_a_great_team_company
+            count: 2894
+        -
+            id: powerful_developer_tooling
+            count: 2828
+        -
+            id: growing_momentum_popularity
+            count: 2401
+        -
+            id: robust_less_error_prone_code
+            count: 2400
+        -
+            id: simple_lightweight
+            count: 2267
+        -
+            id: rich_package_ecosystem
+            count: 2045
+        -
+            id: stable_backwards_compatible
+            count: 943
+    dislike:
+        -
+            id: clumsy_programming_style
+            count: 110
+        -
+            id: bloated_complex
+            count: 84
+        -
+            id: buggy_error_prone_code
+            count: 75
+        -
+            id: poor_performance
+            count: 63
+        -
+            id: bad_documentation
+            count: 54
+        -
+            id: hard_learning_curve
+            count: 53
+        -
+            id: limited_lacking_in_features
+            count: 41
+        -
+            id: concerns_about_the_team_company
+            count: 35
+        -
+            id: fast_changing_breaks_often
+            count: 29
+        -
+            id: lacking_developer_tooling
+            count: 26
+        -
+            id: new_untested_option
+            count: 15
+        -
+            id: diminishing_momentum_popularity
+            count: 14
+        -
+            id: small_package_ecosystem
+            count: 11

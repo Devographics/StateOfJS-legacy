@@ -32,3 +32,84 @@ experience:
             not_interested: 2108
             would_use: 2228
             would_not_use: 170
+reasons:
+    like:
+        -
+            id: good_documentation
+            count: 1224
+        -
+            id: elegant_programming_style_patterns
+            count: 1206
+        -
+            id: full_featured_powerful
+            count: 1045
+        -
+            id: powerful_developer_tooling
+            count: 1006
+        -
+            id: well_established_option
+            count: 923
+        -
+            id: growing_momentum_popularity
+            count: 897
+        -
+            id: easy_learning_curve
+            count: 796
+        -
+            id: backed_by_a_great_team_company
+            count: 771
+        -
+            id: fast_performance
+            count: 752
+        -
+            id: robust_less_error_prone_code
+            count: 733
+        -
+            id: rich_package_ecosystem
+            count: 678
+        -
+            id: simple_lightweight
+            count: 441
+        -
+            id: stable_backwards_compatible
+            count: 235
+    dislike:
+        -
+            id: bloated_complex
+            count: 72
+        -
+            id: clumsy_programming_style
+            count: 64
+        -
+            id: bad_documentation
+            count: 58
+        -
+            id: hard_learning_curve
+            count: 54
+        -
+            id: buggy_error_prone_code
+            count: 53
+        -
+            id: fast_changing_breaks_often
+            count: 40
+        -
+            id: limited_lacking_in_features
+            count: 34
+        -
+            id: concerns_about_the_team_company
+            count: 32
+        -
+            id: poor_performance
+            count: 27
+        -
+            id: lacking_developer_tooling
+            count: 24
+        -
+            id: new_untested_option
+            count: 15
+        -
+            id: small_package_ecosystem
+            count: 10
+        -
+            id: diminishing_momentum_popularity
+            count: 7

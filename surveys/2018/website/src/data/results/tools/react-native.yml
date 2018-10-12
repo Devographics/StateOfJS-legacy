@@ -32,3 +32,6 @@ experience:
             would_use: 3738
             never_heard: 461
             would_not_use: 722
+reasons:
+    like: []
+    dislike: []

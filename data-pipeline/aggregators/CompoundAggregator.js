@@ -48,8 +48,10 @@ class CompoundAggregator {
 
         const toolsExperiencesAggs = await toolsAggregator.experiences(tools, surveyIds, this.config)
         const toolsExperienceAggs = await toolsAggregator.experience(tools, surveyIds, this.config, experience.WOULD_USE)
+        const toolsReasonsAggs = await toolsAggregator.reasons(tools)
         Object.keys(toolsExperienceAggs).forEach(tool => {
             toolsExperiencesAggs[tool][experience.WOULD_USE] = toolsExperienceAggs[tool]
+            toolsExperiencesAggs[tool].reasons = toolsReasonsAggs[tool]
         })
 
         return toolsExperiencesAggs

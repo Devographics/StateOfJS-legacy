@@ -18,13 +18,11 @@ const outputDir = path.join(__dirname, '..', 'surveys', '2018', 'website', 'src'
 console.log(outputDir)
 
 const fetch = async () => {
-    /*
     console.log(chalk.yellow('initializing elastic index'))
     try {
         await elastic.deleteIndex()
     } catch (err) {}
     await elastic.createIndex()
-    */
 
     for (let survey of surveys) {
         console.log(`\nfetching results for survey: ${survey.id}`)
@@ -37,7 +35,7 @@ const fetch = async () => {
         console.log(`${total} responses to fetch`)
 
         let count = 0
-        await extractor.fetchResults(async (items) => {
+        await extractor.fetchResults(async items => {
             count += items.length
             console.log(`> ${count} of ${total}`)
 
@@ -49,13 +47,13 @@ const fetch = async () => {
 const saveResult = async (file, result) => {
     const yamlFile = path.join(outputDir, `${file}.yml`)
     await writeFile(yamlFile, YAML.stringify(result, 5))
-    console.log(`=> ${yamlFile}`)
+    // console.log(`=> ${yamlFile}`)
 
     return
 
     const jsonFile = path.join(outputDir, `${file}.json`)
     await writeFile(jsonFile, JSON.stringify(result, null, '    '))
-    console.log(`=> ${jsonFile}`)
+    // console.log(`=> ${jsonFile}`)
 }
 
 const aggregate = async () => {

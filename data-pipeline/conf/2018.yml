@@ -6,20 +6,56 @@ typeform:
         DYKQQkIKz2SD:
             type: tool
             tool: reason
+        OsQMv9owmiQl:
+            type: like_reasons
+            tool: reason
+        Vo3ZJ2wi5VaZ:
+            type: dislike_reasons
+            tool: reason
         Go4TWhDKQs6W:
             type: tool
+            tool: clojurescript
+        KiND5OTgMdX2:
+            type: like_reasons
+            tool: clojurescript
+        UUx10HS6W4uM:
+            type: dislike_reasons
             tool: clojurescript
         IRf3Rgkmmchd:
             type: tool
             tool: elm
+        H6hMa14JE4ud:
+            type: like_reasons
+            tool: elm
+        OaCJvLAwWo8m:
+            type: dislike_reasons
+            tool: elm
         BYNO7O0lVQsd:
             type: tool
+            tool: flow
+        OT6Ox0EympHP:
+            type: like_reasons
+            tool: flow
+        heiCBgiDewej:
+            type: dislike_reasons
             tool: flow
         MRsLOXKyPHug:
             type: tool
             tool: typescript
+        GppPkIISWLsN:
+            type: like_reasons
+            tool: typescript
+        VvLW6inP8JcY:
+            type: dislike_reasons
+            tool: typescript
         boE4mHIiSwE6:
             type: tool
+            tool: es6
+        gLTsgxMravMX:
+            type: like_reasons
+            tool: es6
+        NHkSU4f5EhFJ:
+            type: dislike_reasons
             tool: es6
         Bu13nZgFYn41:
             type: other_tools
@@ -30,20 +66,56 @@ typeform:
         JIbJUEu8NQZe:
             type: tool
             tool: react
+        CBLU7bYbshZm:
+            type: like_reasons
+            tool: react
+        E7qZIpDmFInr:
+            type: dislike_reasons
+            tool: react
         RujrkmFbZRK1:
             type: tool
             tool: angular_1
+        MPgeP28502HF:
+            type: like_reasons
+            tool: angular
+        ah7WxKMgMHbU:
+            type: dislike_reasons
+            tool: angular
         lkFFbxwu58KI:
             type: tool
+            tool: ember
+        vyJ3ujzxWtVM:
+            type: like_reasons
+            tool: ember
+        tGX8ouGgDGA4:
+            type: dislike_reasons
             tool: ember
         aFjGNL5r5bqj:
             type: tool
             tool: polymer
+        QfHFx147KouR:
+            type: like_reasons
+            tool: polymer
+        gOpOE8Si8g4J:
+            type: dislike_reasons
+            tool: polymer
         iYsV5f1b98xc:
             type: tool
             tool: vuejs
+        h0QTVJ89u2ma:
+            type: like_reasons
+            tool: vue
+        xBVFgc8IPYpd:
+            type: dislike_reasons
+            tool: vue
         JSN28A0EjEPL:
             type: tool
+            tool: preact
+        kXzA5Jsmmcob:
+            type: like_reasons
+            tool: preact
+        Iy9kZPUdv2gm:
+            type: dislike_reasons
             tool: preact
         doF88Cqx1g9P:
             type: other_tools
@@ -54,17 +126,47 @@ typeform:
         j16c8ycbTSJT:
             type: tool
             tool: redux
+        yqk1SW729sx6:
+            type: like_reasons
+            tool: redux
+        uRZWEV4uw4cN:
+            type: dislike_reasons
+            tool: redux
         Eg8JuKFN0tgf:
             type: tool
+            tool: graphql
+        sjt458oRFpY5:
+            type: like_reasons
+            tool: graphql
+        sqlz0CJpqvis:
+            type: dislike_reasons
             tool: graphql
         Tg4qp4kjiqYR:
             type: tool
             tool: relay
+        f5ApOYkfOKl1:
+            type: like_reasons
+            tool: relay
+        Z82bnprflobv:
+            type: dislike_reasons
+            tool: relay
         jl5A0Ct9JNrg:
             type: tool
             tool: apollo
+        svUGX25P9Dnw:
+            type: like_reasons
+            tool: apollo
+        RirM8wEP2SoO:
+            type: dislike_reasons
+            tool: apollo
         sNPGhpQhTGTl:
             type: tool
+            tool: mobx
+        icEJZKC398Dd:
+            type: like_reasons
+            tool: mobx
+        C6D5Flr3Og59:
+            type: dislike_reasons
             tool: mobx
         oWcIqu15IDjP:
             type: other_tools
@@ -75,20 +177,56 @@ typeform:
         GXPJPWbcxu4c:
             type: tool
             tool: meteor
+        pNPwRkaJuC3U:
+            type: like_reasons
+            tool: meteor
+        ynaZ5V6WXf82:
+            type: dislike_reasons
+            tool: meteor
         tDCs8k92wSGi:
             type: tool
+            tool: express
+        R4bxNsbf6OK8:
+            type: like_reasons
+            tool: express
+        qCQKKok2gaxK:
+            type: dislike_reasons
             tool: express
         RlQBNe9UEq09:
             type: tool
             tool: nextjs
+        vRDzaO1MCtj2:
+            type: like_reasons
+            tool: next.js
+        gQc8tPx3i3k5:
+            type: dislike_reasons
+            tool: next.js
         kYCrccJB6SYM:
             type: tool
+            tool: koa
+        tscByKU4LCEV:
+            type: like_reasons
+            tool: koa
+        RS56h5MjYkQl:
+            type: dislike_reasons
             tool: koa
         eaLNSFYDGa88:
             type: tool
             tool: sails
+        kcdvSKvWBcdO:
+            type: like_reasons
+            tool: sails
+        nY8XfTrrL1ap:
+            type: dislike_reasons
+            tool: sails
         LxIQ4atOZ2ZZ:
             type: tool
+            tool: feathers
+        fvlnV69Zz6v7:
+            type: like_reasons
+            tool: feathers
+        vHm6N3VsZ8UK:
+            type: dislike_reasons
             tool: feathers
         jgadf6KAhURx:
             type: other_tools
@@ -99,23 +237,65 @@ typeform:
         t2iShXV2Z8FY:
             type: tool
             tool: storybook
+        gQlzy13MwUfK:
+            type: like_reasons
+            tool: storybook
+        fKZn1zcUXqQn:
+            type: dislike_reasons
+            tool: storybook
         BjUoI6K8yJSh:
             type: tool
+            tool: mocha
+        y17jeEGYetZb:
+            type: like_reasons
+            tool: mocha
+        ktK7BfNzALLd:
+            type: dislike_reasons
             tool: mocha
         X6RaCCEH7Iqd:
             type: tool
             tool: jasmine
+        Q2RU40Te3ORb:
+            type: like_reasons
+            tool: jasmine
+        M4YZms00yRa1:
+            type: dislike_reasons
+            tool: jasmine
         Fjh9KXrdJnT3:
             type: tool
+            tool: jest
+        XJprtkHRUuha:
+            type: like_reasons
+            tool: jest
+        bGMzDIlFnw1W:
+            type: dislike_reasons
             tool: jest
         oHGt9YEaHcSj:
             type: tool
             tool: enzyme
+        zHIEYm5hsi1I:
+            type: like_reasons
+            tool: enzyme
+        QJ2K97v9XoZs:
+            type: dislike_reasons
+            tool: enzyme
         E3YBHRi7L6bm:
             type: tool
             tool: ava
+        v75vgKFarPSO:
+            type: like_reasons
+            tool: ava
+        DBysXebe4W7o:
+            type: dislike_reasons
+            tool: ava
         HZmB069GLqpm:
             type: tool
+            tool: karma
+        EjbQh5V6VKU4:
+            type: like_reasons
+            tool: karma
+        Jo65euPxuJcf:
+            type: dislike_reasons
             tool: karma
         Uzu7ZfHVHWbI:
             type: other_tools
@@ -126,21 +306,57 @@ typeform:
         t1qvo5E1RoIv:
             type: tool
             tool: electron
+        csfuw8h6shob:
+            type: like_reasons
+            tool: electron
+        WylAWybPluYl:
+            type: dislike_reasons
+            tool: electron
         JACHbSIEJ6kA:
             type: tool
             tool: react-native
+        faf4dIz19DyE:
+            type: like_reasons
+            tool: reactnative
+        rIIYh8BnkFnP:
+            type: dislike_reasons
+            tool: reactnative
         VqB583tSYSxU:
             type: tool
             tool: phone_gap_cordova
+        kV90YEYlVToI:
+            type: like_reasons
+            tool: phonegap/cordova
+        Vievhr88Kot0:
+            type: dislike_reasons
+            tool: phonegap/cordova
         Vst6yDXqWzHQ:
             type: tool
             tool: native_script
+        gNO84FdIrfgk:
+            type: like_reasons
+            tool: nativescript
+        B5p0ecUpP2z4:
+            type: dislike_reasons
+            tool: nativescript
         xkNca54zNIBt:
             type: tool
+            tool: ionic
+        B7CJQxzJmexX:
+            type: like_reasons
+            tool: ionic
+        WQmFh3PyzVt3:
+            type: dislike_reasons
             tool: ionic
         Sbh4HhPvShLO:
             type: tool
             tool: native_apps
+        mA1vAeZ1UFjv:
+            type: like_reasons
+            tool: nativeapps
+        IK9v8fGbukoT:
+            type: dislike_reasons
+            tool: nativeapps
         cplwO8cN69yT:
             type: other_tools
             section: mobile

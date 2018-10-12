@@ -32,3 +32,84 @@ experience:
             not_interested: 5375
             would_use: 1126
             would_not_use: 323
+reasons:
+    like:
+        -
+            id: elegant_programming_style_patterns
+            count: 768
+        -
+            id: easy_learning_curve
+            count: 695
+        -
+            id: fast_performance
+            count: 574
+        -
+            id: simple_lightweight
+            count: 544
+        -
+            id: good_documentation
+            count: 500
+        -
+            id: robust_less_error_prone_code
+            count: 383
+        -
+            id: full_featured_powerful
+            count: 367
+        -
+            id: powerful_developer_tooling
+            count: 243
+        -
+            id: well_established_option
+            count: 233
+        -
+            id: growing_momentum_popularity
+            count: 186
+        -
+            id: stable_backwards_compatible
+            count: 128
+        -
+            id: backed_by_a_great_team_company
+            count: 119
+        -
+            id: rich_package_ecosystem
+            count: 85
+    dislike:
+        -
+            id: clumsy_programming_style
+            count: 170
+        -
+            id: buggy_error_prone_code
+            count: 106
+        -
+            id: bloated_complex
+            count: 75
+        -
+            id: diminishing_momentum_popularity
+            count: 60
+        -
+            id: hard_learning_curve
+            count: 49
+        -
+            id: lacking_developer_tooling
+            count: 46
+        -
+            id: bad_documentation
+            count: 44
+        -
+            id: limited_lacking_in_features
+            count: 36
+        -
+            id: poor_performance
+            count: 34
+        -
+            id: small_package_ecosystem
+            count: 29
+        -
+            id: concerns_about_the_team_company
+            count: 25
+        -
+            id: new_untested_option
+            count: 14
+        -
+            id: fast_changing_breaks_often
+            count: 10

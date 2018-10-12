@@ -32,3 +32,84 @@ experience:
             not_interested: 2330
             never_heard: 834
             would_not_use: 2073
+reasons:
+    like:
+        -
+            id: elegant_programming_style_patterns
+            count: 5640
+        -
+            id: well_established_option
+            count: 5163
+        -
+            id: robust_less_error_prone_code
+            count: 4588
+        -
+            id: good_documentation
+            count: 4293
+        -
+            id: powerful_developer_tooling
+            count: 4167
+        -
+            id: fast_performance
+            count: 3206
+        -
+            id: simple_lightweight
+            count: 2868
+        -
+            id: full_featured_powerful
+            count: 2761
+        -
+            id: rich_package_ecosystem
+            count: 2583
+        -
+            id: backed_by_a_great_team_company
+            count: 2126
+        -
+            id: growing_momentum_popularity
+            count: 1943
+        -
+            id: easy_learning_curve
+            count: 1812
+        -
+            id: stable_backwards_compatible
+            count: 1559
+    dislike:
+        -
+            id: clumsy_programming_style
+            count: 1252
+        -
+            id: bloated_complex
+            count: 1186
+        -
+            id: hard_learning_curve
+            count: 1058
+        -
+            id: diminishing_momentum_popularity
+            count: 290
+        -
+            id: buggy_error_prone_code
+            count: 279
+        -
+            id: bad_documentation
+            count: 249
+        -
+            id: poor_performance
+            count: 199
+        -
+            id: limited_lacking_in_features
+            count: 172
+        -
+            id: concerns_about_the_team_company
+            count: 98
+        -
+            id: lacking_developer_tooling
+            count: 98
+        -
+            id: fast_changing_breaks_often
+            count: 46
+        -
+            id: small_package_ecosystem
+            count: 8
+        -
+            id: new_untested_option
+            count: 8

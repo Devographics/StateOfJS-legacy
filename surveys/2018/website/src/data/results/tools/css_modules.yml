@@ -16,3 +16,6 @@ experience:
             would_use: 2153
             not_interested: 888
             would_not_use: 173
+reasons:
+    like: []
+    dislike: []

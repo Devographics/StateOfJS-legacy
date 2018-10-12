@@ -32,3 +32,84 @@ experience:
             interested: 3243
             would_use: 466
             would_not_use: 180
+reasons:
+    like:
+        -
+            id: elegant_programming_style_patterns
+            count: 433
+        -
+            id: robust_less_error_prone_code
+            count: 263
+        -
+            id: powerful_developer_tooling
+            count: 253
+        -
+            id: full_featured_powerful
+            count: 237
+        -
+            id: stable_backwards_compatible
+            count: 182
+        -
+            id: fast_performance
+            count: 175
+        -
+            id: simple_lightweight
+            count: 141
+        -
+            id: backed_by_a_great_team_company
+            count: 139
+        -
+            id: good_documentation
+            count: 119
+        -
+            id: rich_package_ecosystem
+            count: 114
+        -
+            id: well_established_option
+            count: 107
+        -
+            id: easy_learning_curve
+            count: 69
+        -
+            id: growing_momentum_popularity
+            count: 68
+    dislike:
+        -
+            id: clumsy_programming_style
+            count: 66
+        -
+            id: hard_learning_curve
+            count: 57
+        -
+            id: diminishing_momentum_popularity
+            count: 50
+        -
+            id: lacking_developer_tooling
+            count: 36
+        -
+            id: bloated_complex
+            count: 32
+        -
+            id: bad_documentation
+            count: 28
+        -
+            id: small_package_ecosystem
+            count: 26
+        -
+            id: buggy_error_prone_code
+            count: 22
+        -
+            id: concerns_about_the_team_company
+            count: 20
+        -
+            id: limited_lacking_in_features
+            count: 16
+        -
+            id: poor_performance
+            count: 12
+        -
+            id: new_untested_option
+            count: 7
+        -
+            id: fast_changing_breaks_often
+            count: 4

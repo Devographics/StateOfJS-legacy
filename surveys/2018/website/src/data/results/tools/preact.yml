@@ -16,3 +16,84 @@ experience:
             interested: 5533
             would_use: 1251
             would_not_use: 248
+reasons:
+    like:
+        -
+            id: fast_performance
+            count: 957
+        -
+            id: simple_lightweight
+            count: 921
+        -
+            id: elegant_programming_style_patterns
+            count: 552
+        -
+            id: easy_learning_curve
+            count: 445
+        -
+            id: good_documentation
+            count: 325
+        -
+            id: robust_less_error_prone_code
+            count: 254
+        -
+            id: powerful_developer_tooling
+            count: 195
+        -
+            id: growing_momentum_popularity
+            count: 184
+        -
+            id: well_established_option
+            count: 182
+        -
+            id: rich_package_ecosystem
+            count: 180
+        -
+            id: full_featured_powerful
+            count: 180
+        -
+            id: stable_backwards_compatible
+            count: 157
+        -
+            id: backed_by_a_great_team_company
+            count: 137
+    dislike:
+        -
+            id: limited_lacking_in_features
+            count: 84
+        -
+            id: small_package_ecosystem
+            count: 64
+        -
+            id: concerns_about_the_team_company
+            count: 59
+        -
+            id: diminishing_momentum_popularity
+            count: 54
+        -
+            id: lacking_developer_tooling
+            count: 47
+        -
+            id: buggy_error_prone_code
+            count: 42
+        -
+            id: clumsy_programming_style
+            count: 27
+        -
+            id: bad_documentation
+            count: 26
+        -
+            id: new_untested_option
+            count: 25
+        -
+            id: fast_changing_breaks_often
+            count: 14
+        -
+            id: poor_performance
+            count: 10
+        -
+            id: hard_learning_curve
+            count: 8
+        -
+            id: bloated_complex
+            count: 5

@@ -24,3 +24,6 @@ experience:
             never_heard: 4316
             not_interested: 3535
             interested: 1327
+reasons:
+    like: []
+    dislike: []

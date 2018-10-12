@@ -32,3 +32,84 @@ experience:
             not_interested: 4403
             would_use: 213
             would_not_use: 252
+reasons:
+    like:
+        -
+            id: elegant_programming_style_patterns
+            count: 101
+        -
+            id: backed_by_a_great_team_company
+            count: 81
+        -
+            id: fast_performance
+            count: 74
+        -
+            id: robust_less_error_prone_code
+            count: 67
+        -
+            id: full_featured_powerful
+            count: 67
+        -
+            id: well_established_option
+            count: 56
+        -
+            id: powerful_developer_tooling
+            count: 53
+        -
+            id: good_documentation
+            count: 49
+        -
+            id: growing_momentum_popularity
+            count: 38
+        -
+            id: easy_learning_curve
+            count: 34
+        -
+            id: simple_lightweight
+            count: 23
+        -
+            id: rich_package_ecosystem
+            count: 17
+        -
+            id: stable_backwards_compatible
+            count: 12
+    dislike:
+        -
+            id: hard_learning_curve
+            count: 124
+        -
+            id: bloated_complex
+            count: 104
+        -
+            id: clumsy_programming_style
+            count: 99
+        -
+            id: bad_documentation
+            count: 88
+        -
+            id: diminishing_momentum_popularity
+            count: 56
+        -
+            id: buggy_error_prone_code
+            count: 37
+        -
+            id: lacking_developer_tooling
+            count: 29
+        -
+            id: limited_lacking_in_features
+            count: 28
+        -
+            id: poor_performance
+            count: 23
+        -
+            id: fast_changing_breaks_often
+            count: 22
+        -
+            id: concerns_about_the_team_company
+            count: 22
+        -
+            id: small_package_ecosystem
+            count: 20
+        -
+            id: new_untested_option
+            count: 7

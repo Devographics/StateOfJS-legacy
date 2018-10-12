@@ -11,6 +11,10 @@ export default {
         colors.greyLight
     ],
     salaryColors: ['#8b8de8', '#b3b5e6', '#dedfec', '#e4d6d9', '#dc9eaa', '#e28194', '#ea2149'],
+    reasonsColors: {
+        like: colors.blue,
+        dislike: colors.red,
+    },
     axis: {
         domain: {
             line: {
