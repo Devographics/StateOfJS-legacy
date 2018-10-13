@@ -1,3 +1,5 @@
+const _ = require('lodash')
+
 exports.computeTotalForKeys = (obj, keys) =>
     keys.reduce((acc, key) => acc + obj[key], 0)
 
@@ -21,3 +23,5 @@ exports.computePercentageForKeys = (obj, keys) => {
 
     return obj
 }
+
+exports.slugify = str => _.snakeCase(str).replace(/[^a-z0-9_]/g, '').replace(/^[^a-z0-9]/, '')

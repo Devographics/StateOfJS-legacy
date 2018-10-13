@@ -32,3 +32,84 @@ experience:
             not_interested: 2768
             would_not_use: 1091
             never_heard: 84
+reasons:
+    like:
+        -
+            id: robust_less_error_prone_code
+            count: 7171
+        -
+            id: elegant_programming_style_patterns
+            count: 5644
+        -
+            id: powerful_developer_tooling
+            count: 5218
+        -
+            id: backed_by_a_great_team_company
+            count: 4135
+        -
+            id: good_documentation
+            count: 4118
+        -
+            id: well_established_option
+            count: 4013
+        -
+            id: full_featured_powerful
+            count: 3694
+        -
+            id: growing_momentum_popularity
+            count: 3515
+        -
+            id: easy_learning_curve
+            count: 3176
+        -
+            id: stable_backwards_compatible
+            count: 2370
+        -
+            id: rich_package_ecosystem
+            count: 2214
+        -
+            id: fast_performance
+            count: 1410
+        -
+            id: simple_lightweight
+            count: 1136
+    dislike:
+        -
+            id: clumsy_programming_style
+            count: 552
+        -
+            id: bloated_complex
+            count: 527
+        -
+            id: hard_learning_curve
+            count: 261
+        -
+            id: concerns_about_the_team_company
+            count: 157
+        -
+            id: limited_lacking_in_features
+            count: 117
+        -
+            id: bad_documentation
+            count: 102
+        -
+            id: poor_performance
+            count: 101
+        -
+            id: diminishing_momentum_popularity
+            count: 96
+        -
+            id: buggy_error_prone_code
+            count: 93
+        -
+            id: lacking_developer_tooling
+            count: 82
+        -
+            id: fast_changing_breaks_often
+            count: 74
+        -
+            id: small_package_ecosystem
+            count: 56
+        -
+            id: new_untested_option
+            count: 21

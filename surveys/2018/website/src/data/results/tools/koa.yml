@@ -24,3 +24,84 @@ experience:
             interested: 3467
             would_use: 1491
             would_not_use: 268
+reasons:
+    like:
+        -
+            id: elegant_programming_style_patterns
+            count: 1112
+        -
+            id: simple_lightweight
+            count: 848
+        -
+            id: fast_performance
+            count: 818
+        -
+            id: easy_learning_curve
+            count: 642
+        -
+            id: good_documentation
+            count: 534
+        -
+            id: robust_less_error_prone_code
+            count: 493
+        -
+            id: rich_package_ecosystem
+            count: 383
+        -
+            id: full_featured_powerful
+            count: 367
+        -
+            id: well_established_option
+            count: 362
+        -
+            id: growing_momentum_popularity
+            count: 254
+        -
+            id: powerful_developer_tooling
+            count: 211
+        -
+            id: stable_backwards_compatible
+            count: 206
+        -
+            id: backed_by_a_great_team_company
+            count: 189
+    dislike:
+        -
+            id: diminishing_momentum_popularity
+            count: 90
+        -
+            id: clumsy_programming_style
+            count: 86
+        -
+            id: small_package_ecosystem
+            count: 69
+        -
+            id: bad_documentation
+            count: 52
+        -
+            id: limited_lacking_in_features
+            count: 39
+        -
+            id: hard_learning_curve
+            count: 35
+        -
+            id: lacking_developer_tooling
+            count: 34
+        -
+            id: bloated_complex
+            count: 26
+        -
+            id: new_untested_option
+            count: 25
+        -
+            id: buggy_error_prone_code
+            count: 24
+        -
+            id: concerns_about_the_team_company
+            count: 23
+        -
+            id: fast_changing_breaks_often
+            count: 13
+        -
+            id: poor_performance
+            count: 12

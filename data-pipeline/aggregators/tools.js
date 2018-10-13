@@ -7,7 +7,7 @@ exports.experiences = async (tools, surveys, config) => {
         ...acc,
         [tool]: {
             terms: {
-                field: `tools.${tool}.keyword`,
+                field: `tools.${tool}.opinion.keyword`,
                 size: tools.length,
             },
             aggs: {
@@ -72,7 +72,7 @@ exports.experience = async (tools, surveys, config, experienceId) => {
         [tool]: {
             filter: {
                 term: {
-                    [`tools.${tool}.keyword`]: experienceId,
+                    [`tools.${tool}.opinion.keyword`]: experienceId,
                 }
             },
             aggs: {
@@ -194,4 +194,47 @@ exports.experience = async (tools, surveys, config, experienceId) => {
     })
 
     return aggs
+}
+
+exports.reasons = async (tools) => {
+    const result = await elastic.aggs(tools.reduce((acc, tool) => ({
+        ...acc,
+        [`${tool}_like`]: {
+            terms: {
+                field: `tools.${tool}.like.keyword`,
+                size: 32,
+            },
+        },
+        [`${tool}_dislike`]: {
+            terms: {
+                field: `tools.${tool}.dislike.keyword`,
+                size: 32,
+            },
+        },
+    }), {}))
+
+    const toolsAggs = {}
+    tools.forEach(tool => {
+        console.log(tool)
+        const likeAgg = result.aggregations[`${tool}_like`]
+        const likeReasons = likeAgg.buckets.map(bucket => ({
+            id: util.slugify(bucket.key),
+            count: bucket.doc_count,
+        }))
+
+        const dislikeAgg = result.aggregations[`${tool}_dislike`]
+        const dislikeReasons = dislikeAgg.buckets.map(bucket => ({
+            id: util.slugify(bucket.key),
+            count: bucket.doc_count,
+        }))
+
+        toolsAggs[tool] = {
+            like: likeReasons,
+            dislike: dislikeReasons,
+        }
+    })
+
+    console.log(require('util').inspect(toolsAggs, { depth: null, colors: true }))
+
+    return toolsAggs
 }

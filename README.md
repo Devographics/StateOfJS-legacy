@@ -1,5 +1,7 @@
 # State of JS
 
+[![Travis CI][travis-image]][travis-url]
+
 - [structure](#structure)
 - [development](#development)
     - [requirements](#requirements)
@@ -133,3 +135,6 @@ StateOfJS is Made by:
   a React+GraphQL open-source framework.
 - **Michael Rambeau** Creator of Best of JavaScript, a platform that provides
   insights and resources about JavaScript libraries.
+
+[travis-image]: https://img.shields.io/travis/StateOfJS/StateOfJS.svg?style=flat-square
+[travis-url]: https://travis-ci.org/StateOfJS/StateOfJS

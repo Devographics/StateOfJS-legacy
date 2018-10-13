@@ -32,3 +32,84 @@ experience:
             not_interested: 3133
             never_heard: 2022
             would_not_use: 1683
+reasons:
+    like:
+        -
+            id: well_established_option
+            count: 4067
+        -
+            id: easy_learning_curve
+            count: 3290
+        -
+            id: good_documentation
+            count: 3072
+        -
+            id: elegant_programming_style_patterns
+            count: 2656
+        -
+            id: simple_lightweight
+            count: 2212
+        -
+            id: full_featured_powerful
+            count: 1651
+        -
+            id: robust_less_error_prone_code
+            count: 1627
+        -
+            id: rich_package_ecosystem
+            count: 1562
+        -
+            id: fast_performance
+            count: 1477
+        -
+            id: powerful_developer_tooling
+            count: 1260
+        -
+            id: stable_backwards_compatible
+            count: 989
+        -
+            id: growing_momentum_popularity
+            count: 474
+        -
+            id: backed_by_a_great_team_company
+            count: 289
+    dislike:
+        -
+            id: diminishing_momentum_popularity
+            count: 670
+        -
+            id: clumsy_programming_style
+            count: 484
+        -
+            id: limited_lacking_in_features
+            count: 344
+        -
+            id: bloated_complex
+            count: 303
+        -
+            id: poor_performance
+            count: 247
+        -
+            id: bad_documentation
+            count: 185
+        -
+            id: hard_learning_curve
+            count: 147
+        -
+            id: lacking_developer_tooling
+            count: 146
+        -
+            id: buggy_error_prone_code
+            count: 134
+        -
+            id: concerns_about_the_team_company
+            count: 48
+        -
+            id: small_package_ecosystem
+            count: 38
+        -
+            id: fast_changing_breaks_often
+            count: 21
+        -
+            id: new_untested_option
+            count: 12

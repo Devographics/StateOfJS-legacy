@@ -32,3 +32,84 @@ experience:
             not_interested: 1860
             would_not_use: 1355
             never_heard: 28
+reasons:
+    like:
+        -
+            id: elegant_programming_style_patterns
+            count: 9844
+        -
+            id: rich_package_ecosystem
+            count: 9058
+        -
+            id: well_established_option
+            count: 8875
+        -
+            id: good_documentation
+            count: 8711
+        -
+            id: fast_performance
+            count: 8516
+        -
+            id: powerful_developer_tooling
+            count: 8248
+        -
+            id: backed_by_a_great_team_company
+            count: 7503
+        -
+            id: full_featured_powerful
+            count: 6893
+        -
+            id: growing_momentum_popularity
+            count: 6516
+        -
+            id: robust_less_error_prone_code
+            count: 5621
+        -
+            id: easy_learning_curve
+            count: 5422
+        -
+            id: simple_lightweight
+            count: 4670
+        -
+            id: stable_backwards_compatible
+            count: 3899
+    dislike:
+        -
+            id: clumsy_programming_style
+            count: 880
+        -
+            id: bloated_complex
+            count: 632
+        -
+            id: hard_learning_curve
+            count: 581
+        -
+            id: concerns_about_the_team_company
+            count: 364
+        -
+            id: bad_documentation
+            count: 239
+        -
+            id: fast_changing_breaks_often
+            count: 231
+        -
+            id: buggy_error_prone_code
+            count: 201
+        -
+            id: poor_performance
+            count: 179
+        -
+            id: limited_lacking_in_features
+            count: 179
+        -
+            id: diminishing_momentum_popularity
+            count: 95
+        -
+            id: lacking_developer_tooling
+            count: 90
+        -
+            id: new_untested_option
+            count: 19
+        -
+            id: small_package_ecosystem
+            count: 16

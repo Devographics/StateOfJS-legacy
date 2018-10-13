@@ -24,3 +24,84 @@ experience:
             not_interested: 3942
             would_use: 1114
             would_not_use: 171
+reasons:
+    like:
+        -
+            id: elegant_programming_style_patterns
+            count: 738
+        -
+            id: robust_less_error_prone_code
+            count: 595
+        -
+            id: powerful_developer_tooling
+            count: 383
+        -
+            id: fast_performance
+            count: 347
+        -
+            id: growing_momentum_popularity
+            count: 281
+        -
+            id: good_documentation
+            count: 279
+        -
+            id: full_featured_powerful
+            count: 274
+        -
+            id: backed_by_a_great_team_company
+            count: 266
+        -
+            id: rich_package_ecosystem
+            count: 223
+        -
+            id: easy_learning_curve
+            count: 195
+        -
+            id: simple_lightweight
+            count: 158
+        -
+            id: stable_backwards_compatible
+            count: 157
+        -
+            id: well_established_option
+            count: 129
+    dislike:
+        -
+            id: clumsy_programming_style
+            count: 53
+        -
+            id: bloated_complex
+            count: 49
+        -
+            id: hard_learning_curve
+            count: 48
+        -
+            id: lacking_developer_tooling
+            count: 36
+        -
+            id: fast_changing_breaks_often
+            count: 35
+        -
+            id: bad_documentation
+            count: 35
+        -
+            id: concerns_about_the_team_company
+            count: 33
+        -
+            id: small_package_ecosystem
+            count: 23
+        -
+            id: new_untested_option
+            count: 22
+        -
+            id: diminishing_momentum_popularity
+            count: 21
+        -
+            id: limited_lacking_in_features
+            count: 18
+        -
+            id: poor_performance
+            count: 15
+        -
+            id: buggy_error_prone_code
+            count: 14

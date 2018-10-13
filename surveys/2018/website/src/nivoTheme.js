@@ -11,59 +11,63 @@ export default {
         colors.greyLight
     ],
     salaryColors: ['#8b8de8', '#b3b5e6', '#dedfec', '#e4d6d9', '#dc9eaa', '#e28194', '#ea2149'],
+    reasonsColors: {
+        like: colors.blue,
+        dislike: colors.red
+    },
     axis: {
         domain: {
             line: {
                 strokeWidth: 0,
-                stroke: '#bbb',
-            },
+                stroke: '#bbb'
+            }
         },
         ticks: {
             line: {
-                stroke: '#bbb',
+                stroke: '#bbb'
             },
             text: {
-                fill: '#bbb',
-            },
+                fill: '#bbb'
+            }
         },
         legend: {
             text: {
                 fill: '#eee',
                 fontSize: 12,
-                fontWeight: 500,
-            },
-        },
+                fontWeight: 500
+            }
+        }
     },
     grid: {
         stroke: '#444',
         line: {
-            stroke: '#444',
-        },
+            stroke: '#444'
+        }
     },
     legends: {
         text: {
             fontSize: 12,
-            fill: '#eee',
-        },
+            fill: '#eee'
+        }
     },
     tooltip: {
         container: {
             fontSize: '13px',
             background: '#000',
-            color: '#ddd',
-        },
+            color: '#ddd'
+        }
     },
     labels: {
         text: {
             fill: '#ddd',
             fontSize: 12,
-            fontWeight: 500,
-        },
+            fontWeight: 500
+        }
     },
     dots: {
         text: {
             fill: '#bbb',
-            fontSize: 12,
-        },
-    },
+            fontSize: 12
+        }
+    }
 }

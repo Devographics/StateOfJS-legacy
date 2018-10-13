@@ -41,6 +41,14 @@ class TypeformExtractor {
             })
         }
 
+        const isLikeReasonsField = field => {
+            return field.type === TYPEFORM_FIELD_TYPE_MULTI_CHOICE && field.ref.endsWith('_love')
+        }
+
+        const isDislikeReasonsField = field => {
+            return field.type === TYPEFORM_FIELD_TYPE_MULTI_CHOICE && field.ref.endsWith('_hate')
+        }
+
         this.config.tools = []
         this.config.userInfo = []
 
@@ -75,6 +83,25 @@ class TypeformExtractor {
                     fieldsConfig[field.id] = { type: types.FIELD_TYPE_OTHER_TOOLS, section: sectionId }
                     return
                 }
+
+                if (isLikeReasonsField(field)) {
+                    fieldsConfig[field.id] = {
+                        type: types.FIELD_TYPE_TOOL_LIKE_REASONS,
+                        tool: field.ref.slice(0, -5),
+                    }
+                    return
+                }
+
+                if (isDislikeReasonsField(field)) {
+                    fieldsConfig[field.id] = {
+                        type: types.FIELD_TYPE_TOOL_DISLIKE_REASONS,
+                        tool: field.ref.slice(0, -5),
+                    }
+                    return
+                }
+
+                console.log('OTHER FIELD')
+                console.log(field)
             })
             sectionConfig.tools = sectionTools
 
@@ -182,62 +209,83 @@ class TypeformExtractor {
 
             answers.forEach(answer => {
                 const fieldConfig = this.config.typeform.fields[answer.field.id]
-                if (fieldConfig !== undefined) {
-                    switch (fieldConfig.type) {
-                        case types.FIELD_TYPE_TOOL:
-                            const experience = this.config.experience[answer.choice.label]
-                            if (experience === undefined) {
-                                throw new Error(`Unable to convert answer to experience id: ${answer.choice.label}`)
+
+                if (fieldConfig === undefined) {
+                    // console.log(answer)
+                    return
+                }
+
+                switch (fieldConfig.type) {
+                    case types.FIELD_TYPE_TOOL:
+                        const opinion = this.config.experience[answer.choice.label]
+                        if (opinion === undefined) {
+                            throw new Error(`Unable to convert answer to opinion id: ${answer.choice.label}`)
+                        }
+                        if (normalized.tools[fieldConfig.tool] === undefined) {
+                            normalized.tools[fieldConfig.tool] = {}
+                        }
+                        normalized.tools[fieldConfig.tool].opinion = opinion
+                        return
+
+                    case types.FIELD_TYPE_TOOL_LIKE_REASONS:
+                        if (normalized.tools[fieldConfig.tool] === undefined) {
+                            normalized.tools[fieldConfig.tool] = {}
+                        }
+                        normalized.tools[fieldConfig.tool].like = answer.choices.labels
+                        return
+
+                    case types.FIELD_TYPE_TOOL_DISLIKE_REASONS:
+                        if (normalized.tools[fieldConfig.tool] === undefined) {
+                            normalized.tools[fieldConfig.tool] = {}
+                        }
+                        normalized.tools[fieldConfig.tool].dislike = answer.choices.labels
+                        return
+
+                    case types.FIELD_TYPE_HAPPINESS:
+                        normalized.happiness[fieldConfig.section] = answer.number
+                        return
+
+                    case types.FIELD_TYPE_OTHER_TOOLS:
+                        const value = util.cleanupValue(answer.text)
+                        if (value !== null) {
+                            normalized.other_tools[fieldConfig.section] = {
+                                raw: value,
+                                norm: otherToolsExtractor(value),
                             }
-                            normalized.tools[fieldConfig.tool] = experience
-                            return
+                        }
+                        return
 
-                        case types.FIELD_TYPE_HAPPINESS:
-                            normalized.happiness[fieldConfig.section] = answer.number
-                            return
+                    case types.FIELD_TYPE_YEARS_OF_EXPERIENCE:
+                        const yearsExperienceRange = userInfo.yearsOfExperienceRangeByLabel[answer.choice.label]
+                        if (yearsExperienceRange === undefined) {
+                            throw new Error(`Unknown years of experience range ${answer.choice.label}`)
+                        }
+                        normalized.user_info[types.FIELD_TYPE_YEARS_OF_EXPERIENCE] = yearsExperienceRange.id
+                        return
 
-                        case types.FIELD_TYPE_OTHER_TOOLS:
-                            const value = util.cleanupValue(answer.text)
-                            if (value !== null) {
-                                normalized.other_tools[fieldConfig.section] = {
-                                    raw: value,
-                                    norm: otherToolsExtractor(value),
-                                }
-                            }
-                            return
+                    case types.FIELD_TYPE_COMPANY_SIZE:
+                        const companySize = userInfo.companySizeByLabel[answer.choice.label]
+                        if (companySize === undefined) {
+                            throw new Error(`Unknown company size ${answer.choice.label}`)
+                        }
+                        normalized.user_info[types.FIELD_TYPE_COMPANY_SIZE] = companySize.id
+                        return
 
-                        case types.FIELD_TYPE_YEARS_OF_EXPERIENCE:
-                            const yearsExperienceRange = userInfo.yearsOfExperienceRangeByLabel[answer.choice.label]
-                            if (yearsExperienceRange === undefined) {
-                                throw new Error(`Unknown years of experience range ${answer.choice.label}`)
-                            }
-                            normalized.user_info[types.FIELD_TYPE_YEARS_OF_EXPERIENCE] = yearsExperienceRange.id
-                            return
+                    case types.FIELD_TYPE_SALARY:
+                        const salaryRange = userInfo.salaryRangeByLabel[answer.choice.label]
+                        if (salaryRange === undefined) {
+                            throw new Error(`Unknown salary range ${answer.choice.label}`)
+                        }
+                        normalized.user_info[types.FIELD_TYPE_SALARY] = salaryRange.id
+                        return
 
-                        case types.FIELD_TYPE_COMPANY_SIZE:
-                            const companySize = userInfo.companySizeByLabel[answer.choice.label]
-                            if (companySize === undefined) {
-                                throw new Error(`Unknown company size ${answer.choice.label}`)
-                            }
-                            normalized.user_info[types.FIELD_TYPE_COMPANY_SIZE] = companySize.id
-                            return
+                    case types.FIELD_TYPE_EMAIL:
+                        normalized.user_info[types.FIELD_TYPE_EMAIL] = answer.email
+                        return
 
-                        case types.FIELD_TYPE_SALARY:
-                            const salaryRange = userInfo.salaryRangeByLabel[answer.choice.label]
-                            if (salaryRange === undefined) {
-                                throw new Error(`Unknown salary range ${answer.choice.label}`)
-                            }
-                            normalized.user_info[types.FIELD_TYPE_SALARY] = salaryRange.id
-                            return
-
-                        case types.FIELD_TYPE_EMAIL:
-                            normalized.user_info[types.FIELD_TYPE_EMAIL] = answer.email
-                            return
-
-                        case types.FIELD_TYPE_SOURCE:
-                            normalized.user_info[types.FIELD_TYPE_SOURCE] = answer.text
-                            return
-                    }
+                    case types.FIELD_TYPE_SOURCE:
+                        normalized.user_info[types.FIELD_TYPE_SOURCE] = answer.text
+                        return
                 }
             })
 

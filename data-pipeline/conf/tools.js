@@ -5,7 +5,6 @@ module.exports = [
     },
     {
         id: 'es6',
-        // @todo: do we consider ES6+ equivalent to ES6?
         aliases: ['ES6', 'ES6+'],
     },
     {
