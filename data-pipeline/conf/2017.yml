@@ -76,7 +76,7 @@ typeform:
             tool: clojurescript
         w2Tu:
             type: happiness
-            section: flavors
+            section: javascript_flavors
         ZxUD:
             type: tool
             tool: react
@@ -100,10 +100,10 @@ typeform:
             tool: no_frontend_framework
         f0gX:
             type: other_tools
-            section: frontend
+            section: frontend_frameworks
         y0kW:
             type: happiness
-            section: frontend
+            section: frontend_frameworks
         wqZL:
             type: tool
             tool: rest
@@ -139,10 +139,10 @@ typeform:
             tool: feathers
         QX12:
             type: other_tools
-            section: backend
+            section: backend_frameworks
         lUYG:
             type: happiness
-            section: backend
+            section: backend_frameworks
         zNoo:
             type: tool
             tool: mocha
@@ -230,7 +230,7 @@ typeform:
         Fvkq:
             type: email
 sections:
-    flavors:
+    javascript_flavors:
         title: 'JavaScript Flavor'
         tools:
             - vanilla_js
@@ -240,7 +240,7 @@ sections:
             - elm
             - clojurescript
             - reason
-    frontend:
+    frontend_frameworks:
         title: Front-End
         freeform: 'Other Front-End Frameworks'
         tools:
@@ -265,7 +265,7 @@ sections:
             - falcor
             - apollo
             - firebase
-    backend:
+    backend_frameworks:
         title: Back-End
         freeform: 'Other Back-End Tools'
         tools:

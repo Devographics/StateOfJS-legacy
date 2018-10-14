@@ -59,10 +59,10 @@ typeform:
             tool: es6
         Bu13nZgFYn41:
             type: other_tools
-            section: flavors
+            section: javascript_flavors
         tG6GyIDRvICd:
             type: happiness
-            section: flavors
+            section: javascript_flavors
         JIbJUEu8NQZe:
             type: tool
             tool: react
@@ -119,10 +119,10 @@ typeform:
             tool: preact
         doF88Cqx1g9P:
             type: other_tools
-            section: frontend
+            section: frontend_frameworks
         uygOQCKWfrgu:
             type: happiness
-            section: frontend
+            section: frontend_frameworks
         j16c8ycbTSJT:
             type: tool
             tool: redux
@@ -230,10 +230,10 @@ typeform:
             tool: feathers
         jgadf6KAhURx:
             type: other_tools
-            section: backend
+            section: backend_frameworks
         EANeo5VwRonl:
             type: happiness
-            section: backend
+            section: backend_frameworks
         t2iShXV2Z8FY:
             type: tool
             tool: storybook
@@ -359,10 +359,10 @@ typeform:
             tool: nativeapps
         cplwO8cN69yT:
             type: other_tools
-            section: mobile
+            section: mobile_desktop
         yFLjXCIeJouk:
             type: happiness
-            section: mobile
+            section: mobile_desktop
         nUyhAVayYch4:
             type: years_of_experience
         IJO3sTKdw5PD:
@@ -374,7 +374,7 @@ typeform:
         HJOngcCVYpZi:
             type: source
 sections:
-    flavors:
+    javascript_flavors:
         title: 'JavaScript Flavors'
         freeform: 'Other JavaScript Flavors options'
         tools:
@@ -384,7 +384,7 @@ sections:
             - flow
             - typescript
             - es6
-    frontend:
+    frontend_frameworks:
         title: Front-End
         freeform: 'Other Front-End options'
         tools:
@@ -403,7 +403,7 @@ sections:
             - relay
             - apollo
             - mobx
-    backend:
+    backend_frameworks:
         title: Back-end
         freeform: 'Other Back-end options'
         tools:
@@ -424,7 +424,7 @@ sections:
             - enzyme
             - ava
             - karma
-    mobile:
+    mobile_desktop:
         title: 'Mobile & Desktop'
         freeform: 'Other Mobile & Desktop options'
         tools:

@@ -1,0 +1,138 @@
+section_id: testing
+tools:
+    - storybook
+    - mocha
+    - jasmine
+    - jest
+    - enzyme
+    - ava
+    - karma
+opinions:
+    -
+        survey_id: '2016'
+        tools:
+            -
+                tool_id: mocha
+                would_use: 4665
+                interested: 3071
+                not_interested: 1053
+                never_heard: 1153
+                would_not_use: 308
+            -
+                tool_id: jasmine
+                would_use: 4078
+                interested: 2820
+                not_interested: 1302
+                never_heard: 1235
+                would_not_use: 815
+            -
+                tool_id: jest
+                never_heard: 6545
+                would_use: 482
+                interested: 1701
+                not_interested: 1184
+                would_not_use: 338
+            -
+                tool_id: enzyme
+                never_heard: 7108
+                would_use: 1075
+                interested: 1405
+                not_interested: 604
+                would_not_use: 58
+            -
+                tool_id: ava
+                never_heard: 8230
+                not_interested: 573
+                interested: 995
+                would_use: 386
+                would_not_use: 66
+    -
+        survey_id: '2017'
+        tools:
+            -
+                tool_id: mocha
+                would_use: 10694
+                interested: 6585
+                not_interested: 2582
+                never_heard: 2254
+                would_not_use: 1551
+            -
+                tool_id: jasmine
+                would_use: 9214
+                interested: 5769
+                not_interested: 3289
+                never_heard: 3033
+                would_not_use: 2361
+            -
+                tool_id: jest
+                never_heard: 9006
+                would_use: 5845
+                interested: 6455
+                not_interested: 1964
+                would_not_use: 396
+            -
+                tool_id: enzyme
+                never_heard: 13526
+                would_use: 4567
+                interested: 3392
+                not_interested: 1913
+                would_not_use: 268
+            -
+                tool_id: ava
+                never_heard: 18004
+                not_interested: 1922
+                interested: 2175
+                would_use: 1174
+                would_not_use: 391
+    -
+        survey_id: '2018'
+        tools:
+            -
+                tool_id: storybook
+                never_heard: 10547
+                interested: 4767
+                would_use: 3085
+                not_interested: 1225
+                would_not_use: 379
+            -
+                tool_id: mocha
+                would_use: 7873
+                interested: 5238
+                not_interested: 3133
+                never_heard: 2022
+                would_not_use: 1683
+            -
+                tool_id: jasmine
+                would_use: 5689
+                interested: 4971
+                not_interested: 4515
+                never_heard: 2843
+                would_not_use: 1919
+            -
+                tool_id: jest
+                never_heard: 4047
+                would_use: 7910
+                interested: 5923
+                not_interested: 1783
+                would_not_use: 289
+            -
+                tool_id: enzyme
+                never_heard: 9289
+                would_use: 4039
+                interested: 3612
+                not_interested: 2455
+                would_not_use: 528
+            -
+                tool_id: ava
+                never_heard: 14419
+                not_interested: 2674
+                interested: 1734
+                would_use: 804
+                would_not_use: 320
+            -
+                tool_id: karma
+                never_heard: 6633
+                not_interested: 4091
+                interested: 3788
+                would_use: 3676
+                would_not_use: 1744

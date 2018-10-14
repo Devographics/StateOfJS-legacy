@@ -14,10 +14,10 @@ typeform:
             type: salary
         '28238496':
             type: happiness
-            section: flavors
+            section: javascript_flavors
         '28238497':
             type: happiness
-            section: frontend
+            section: frontend_frameworks
         '28238498':
             type: happiness
             section: state_management
@@ -26,7 +26,7 @@ typeform:
             section: data_layer
         '28238500':
             type: happiness
-            section: backend
+            section: backend_frameworks
         '28238501':
             type: happiness
             section: testing
@@ -41,7 +41,7 @@ typeform:
             section: mobile
         '28238505':
             type: other_tools
-            section: frontend
+            section: frontend_frameworks
         '28238506':
             type: other_tools
             section: state_management
@@ -50,7 +50,7 @@ typeform:
             section: data_layer
         '28238508':
             type: other_tools
-            section: backend
+            section: backend_frameworks
         '28238509':
             type: other_tools
             section: testing
@@ -207,7 +207,7 @@ typeform:
             type: tool
             tool: native_script
 sections:
-    flavors:
+    javascript_flavors:
         title: 'JavaScript Flavor'
         tools:
             - vanilla_js
@@ -216,7 +216,7 @@ sections:
             - typescript
             - elm
             - clojurescript
-    frontend:
+    frontend_frameworks:
         title: Front-End
         freeform: 'Other Front-End Frameworks'
         tools:
@@ -244,7 +244,7 @@ sections:
             - apollo
             - falcor
             - horizon
-    backend:
+    backend_frameworks:
         title: Stacks
         freeform: 'Other stacks'
         tools:

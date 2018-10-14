@@ -1,0 +1,122 @@
+section_id: data_layer
+tools:
+    - redux
+    - graphql
+    - relay
+    - apollo
+    - mobx
+opinions:
+    -
+        survey_id: '2016'
+        tools:
+            -
+                tool_id: redux
+                would_use: 3436
+                interested: 4205
+                not_interested: 980
+                never_heard: 1375
+                would_not_use: 254
+            -
+                tool_id: graphql
+                interested: 4508
+                never_heard: 3756
+                would_use: 517
+                not_interested: 1408
+                would_not_use: 61
+            -
+                tool_id: relay
+                never_heard: 6079
+                interested: 2567
+                not_interested: 1381
+                would_use: 155
+                would_not_use: 68
+            -
+                tool_id: apollo
+                never_heard: 8264
+                interested: 1133
+                not_interested: 690
+                would_use: 137
+                would_not_use: 26
+            -
+                tool_id: mobx
+                never_heard: 7272
+                interested: 1669
+                not_interested: 1013
+                would_use: 234
+                would_not_use: 62
+    -
+        survey_id: '2017'
+        tools:
+            -
+                tool_id: redux
+                would_use: 10703
+                interested: 8021
+                not_interested: 2408
+                never_heard: 1465
+                would_not_use: 1069
+            -
+                tool_id: graphql
+                interested: 14205
+                never_heard: 4246
+                would_use: 2788
+                not_interested: 2255
+                would_not_use: 172
+            -
+                tool_id: relay
+                never_heard: 14300
+                interested: 5653
+                not_interested: 2982
+                would_use: 520
+                would_not_use: 211
+            -
+                tool_id: apollo
+                never_heard: 16023
+                interested: 4682
+                not_interested: 1622
+                would_use: 1257
+                would_not_use: 82
+            -
+                tool_id: mobx
+                never_heard: 12716
+                interested: 5315
+                not_interested: 4177
+                would_use: 1140
+                would_not_use: 318
+    -
+        survey_id: '2018'
+        tools:
+            -
+                tool_id: redux
+                would_use: 9503
+                interested: 5414
+                not_interested: 2330
+                never_heard: 834
+                would_not_use: 2073
+            -
+                tool_id: graphql
+                interested: 12575
+                never_heard: 1421
+                would_use: 4108
+                not_interested: 1771
+                would_not_use: 254
+            -
+                tool_id: relay
+                never_heard: 11387
+                interested: 3872
+                not_interested: 4403
+                would_use: 213
+                would_not_use: 252
+            -
+                tool_id: apollo
+                never_heard: 8507
+                interested: 7124
+                not_interested: 2108
+                would_use: 2228
+                would_not_use: 170
+            -
+                tool_id: mobx
+                never_heard: 9028
+                interested: 4280
+                not_interested: 5375
+                would_use: 1126
+                would_not_use: 323

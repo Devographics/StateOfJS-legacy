@@ -1,6 +1,7 @@
 const fs = require('fs')
 const { promisify } = require('util')
 const path = require('path')
+const _ = require('lodash')
 const YAML = require('yamljs')
 const chalk = require('chalk')
 const TypeformExtractor = require('./extractors/typeform')
@@ -10,12 +11,11 @@ const surveys = require('./conf/surveys')
 const sections = require('./conf/sections')
 const tools = require('./conf/tools')
 
-const writeFile = promisify(fs.writeFile)
-
 const token = 'EjgEahVHbf3ttJhHJuAFJVAnNAbUipmfquAUDCijz6Ly'
+const currentSurvey = '2018'
+const outputDir = path.join(__dirname, '..', 'surveys', currentSurvey, 'website', 'src', 'data', 'results')
 
-const outputDir = path.join(__dirname, '..', 'surveys', '2018', 'website', 'src', 'data', 'results')
-console.log(outputDir)
+const writeFile = promisify(fs.writeFile)
 
 const fetch = async () => {
     console.log(chalk.yellow('initializing elastic index'))
@@ -66,18 +66,11 @@ const aggregate = async () => {
         [surveyId]: YAML.load(`./conf/${surveyId}.yml`),
     }), {})
     const aggregator = new CompoundAggregator(surveyConfigs)
+    const currentSurveyConfig = surveyConfigs[currentSurvey]
 
     console.log('\ncomputing participation')
     const participation = await aggregator.computeParticipation()
     //await saveResult('participation', participation)
-
-    console.log('\ncomputing sections')
-    const sectionAggs = await aggregator.computeSections(sectionIds)
-    //await saveResult('sections', sectionAggs)
-
-    console.log('\ncomputing user info')
-    const userInfo = await aggregator.computeUserInfo()
-    //await saveResult('user_info', userInfo)
 
     console.log('\ncomputing tools')
     const toolsAggs = await aggregator.computeTools(toolIds)
@@ -87,6 +80,46 @@ const aggregate = async () => {
         delete agg.would_use
         await saveResult(path.join('tools', toolId), toolsAggs[toolId])
     })
+
+    console.log('\ncomputing sections')
+    const sectionAggs = await aggregator.computeSections(sectionIds)
+
+    sectionIds.forEach(async sectionId => {
+        const section = sectionAggs.find(s => s.section_id === sectionId)
+        section.opinions = []
+
+        const surveySection = currentSurveyConfig.sections[sectionId]
+        if (surveySection !== undefined) {
+            section.tools = surveySection.tools
+            Object.values(surveyConfigs).forEach(surveyConfig => {
+                const surveySectionOpinions = {
+                    survey_id: surveyConfig.id,
+                    tools: []
+                }
+                surveySection.tools.forEach(toolId => {
+                    const toolAggs = toolsAggs[toolId]
+                    const toolSurveyOpinions = toolAggs.experience.by_survey.find(s => s.survey === surveyConfig.id)
+                    if (toolSurveyOpinions !== undefined) {
+                        surveySectionOpinions.tools.push({
+                            tool_id: toolId,
+                            ..._.omit(toolSurveyOpinions, ['survey']),
+                        })
+                    }
+                })
+                section.opinions.push(surveySectionOpinions)
+            })
+        }
+
+        await saveResult(path.join('sections', sectionId), {
+            section_id: section.section_id,
+            tools: section.tools,
+            opinions: section.opinions,
+        })
+    })
+
+    console.log('\ncomputing user info')
+    const userInfo = await aggregator.computeUserInfo()
+    //await saveResult('user_info', userInfo)
 }
 
 aggregate()

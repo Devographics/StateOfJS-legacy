@@ -71,7 +71,10 @@ exports.createPages = async ({ actions }) => {
                 let templateName
                 switch (subPage) {
                     case 'Overview':
-                        templateName = 'Overview'
+                        templateName = 'SectionOverview'
+                        subPageContext = {
+                            section: slugify(item.label)
+                        }
                         break
 
                     case 'Other Libraries':
@@ -83,7 +86,7 @@ exports.createPages = async ({ actions }) => {
                         break
 
                     default:
-                        templateName = 'Library'
+                        templateName = 'Tool'
                         subPageContext = {
                             section: slugify(item.label),
                             tool: slugify(subPage)

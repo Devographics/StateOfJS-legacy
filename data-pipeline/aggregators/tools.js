@@ -215,7 +215,6 @@ exports.reasons = async (tools) => {
 
     const toolsAggs = {}
     tools.forEach(tool => {
-        console.log(tool)
         const likeAgg = result.aggregations[`${tool}_like`]
         const likeReasons = likeAgg.buckets.map(bucket => ({
             id: util.slugify(bucket.key),
@@ -233,8 +232,6 @@ exports.reasons = async (tools) => {
             dislike: dislikeReasons,
         }
     })
-
-    console.log(require('util').inspect(toolsAggs, { depth: null, colors: true }))
 
     return toolsAggs
 }

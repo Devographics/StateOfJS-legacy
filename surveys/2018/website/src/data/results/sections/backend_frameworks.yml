@@ -1,0 +1,109 @@
+section_id: backend_frameworks
+tools:
+    - meteor
+    - express
+    - nextjs
+    - koa
+    - sails
+    - feathers
+opinions:
+    -
+        survey_id: '2016'
+        tools:
+            -
+                tool_id: meteor
+                not_interested: 4406
+                interested: 2822
+                never_heard: 1153
+                would_not_use: 752
+                would_use: 1117
+            -
+                tool_id: feathers
+                never_heard: 8188
+                not_interested: 1243
+                interested: 666
+                would_use: 93
+                would_not_use: 60
+    -
+        survey_id: '2017'
+        tools:
+            -
+                tool_id: meteor
+                not_interested: 11202
+                interested: 5395
+                never_heard: 3485
+                would_not_use: 1959
+                would_use: 1625
+            -
+                tool_id: express
+                would_use: 14514
+                interested: 3795
+                not_interested: 2271
+                never_heard: 1903
+                would_not_use: 1183
+            -
+                tool_id: koa
+                never_heard: 12583
+                not_interested: 4243
+                interested: 4207
+                would_use: 2194
+                would_not_use: 439
+            -
+                tool_id: sails
+                never_heard: 13248
+                not_interested: 6262
+                interested: 2429
+                would_not_use: 1097
+                would_use: 630
+            -
+                tool_id: feathers
+                never_heard: 18558
+                not_interested: 2819
+                interested: 1665
+                would_use: 446
+                would_not_use: 178
+    -
+        survey_id: '2018'
+        tools:
+            -
+                tool_id: meteor
+                not_interested: 9727
+                interested: 3587
+                never_heard: 3939
+                would_not_use: 1533
+                would_use: 922
+            -
+                tool_id: express
+                would_use: 12764
+                interested: 3216
+                not_interested: 1737
+                never_heard: 1233
+                would_not_use: 768
+            -
+                tool_id: nextjs
+                never_heard: 7236
+                interested: 6902
+                not_interested: 3621
+                would_use: 1701
+                would_not_use: 226
+            -
+                tool_id: koa
+                never_heard: 9872
+                not_interested: 4600
+                interested: 3467
+                would_use: 1491
+                would_not_use: 268
+            -
+                tool_id: sails
+                never_heard: 10620
+                not_interested: 6038
+                interested: 1838
+                would_not_use: 858
+                would_use: 335
+            -
+                tool_id: feathers
+                never_heard: 14839
+                not_interested: 3213
+                interested: 1177
+                would_use: 317
+                would_not_use: 145

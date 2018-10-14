@@ -1,0 +1,123 @@
+section_id: mobile_desktop
+tools:
+    - electron
+    - react-native
+    - phone_gap_cordova
+    - native_script
+    - ionic
+    - native_apps
+opinions:
+    -
+        survey_id: '2016'
+        tools:
+            -
+                tool_id: react-native
+                interested: 6169
+                not_interested: 1778
+                would_use: 1301
+                never_heard: 881
+                would_not_use: 121
+            -
+                tool_id: native_script
+                never_heard: 5027
+                not_interested: 2487
+                interested: 2380
+                would_use: 208
+                would_not_use: 148
+            -
+                tool_id: native_apps
+                interested: 3984
+                would_use: 3055
+                not_interested: 2125
+                never_heard: 531
+                would_not_use: 555
+    -
+        survey_id: '2017'
+        tools:
+            -
+                tool_id: electron
+                interested: 11197
+                would_use: 4938
+                not_interested: 3225
+                never_heard: 3920
+                would_not_use: 386
+            -
+                tool_id: react-native
+                interested: 13481
+                not_interested: 4055
+                would_use: 4753
+                never_heard: 1015
+                would_not_use: 362
+            -
+                tool_id: phone_gap_cordova
+                not_interested: 9171
+                would_not_use: 4676
+                never_heard: 3188
+                interested: 3252
+                would_use: 3379
+            -
+                tool_id: native_script
+                never_heard: 10877
+                not_interested: 6610
+                interested: 5248
+                would_use: 503
+                would_not_use: 428
+            -
+                tool_id: ionic
+                not_interested: 7998
+                never_heard: 5769
+                interested: 5084
+                would_use: 2458
+                would_not_use: 2357
+            -
+                tool_id: native_apps
+                interested: 9092
+                would_use: 7928
+                not_interested: 4118
+                never_heard: 1216
+                would_not_use: 1312
+    -
+        survey_id: '2018'
+        tools:
+            -
+                tool_id: electron
+                interested: 10617
+                would_use: 3913
+                not_interested: 3084
+                never_heard: 1776
+                would_not_use: 581
+            -
+                tool_id: react-native
+                interested: 10622
+                not_interested: 4428
+                would_use: 3738
+                never_heard: 461
+                would_not_use: 722
+            -
+                tool_id: phone_gap_cordova
+                not_interested: 8884
+                would_not_use: 3914
+                never_heard: 2763
+                interested: 2355
+                would_use: 2042
+            -
+                tool_id: native_script
+                never_heard: 7922
+                not_interested: 6673
+                interested: 4822
+                would_use: 335
+                would_not_use: 202
+            -
+                tool_id: ionic
+                not_interested: 8517
+                never_heard: 4673
+                interested: 3554
+                would_use: 1665
+                would_not_use: 1566
+            -
+                tool_id: native_apps
+                interested: 5587
+                would_use: 2113
+                not_interested: 6051
+                never_heard: 5581
+                would_not_use: 566

@@ -38,9 +38,15 @@ class CompoundAggregator {
 
         const happiness = await sectionsAggregator.happiness(sectionIds, surveyIds, this.config)
 
-        return {
-            happiness,
-        }
+        const sections = sectionIds.map(sectionId => {
+            // console.log(happiness[sectionId])
+            return {
+                section_id: sectionId,
+                happiness: happiness[sectionId]
+            }
+        })
+
+        return sections
     }
 
     async computeTools(tools) {

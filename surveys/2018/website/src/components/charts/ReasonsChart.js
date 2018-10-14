@@ -5,8 +5,9 @@ import theme from '../../nivoTheme'
 
 const verticalMargin = 30
 const innerMargin = 5
-const outerMargin = 220
 const barHeight = 26
+const labelsWidth = 260
+const labelsMargin = 14
 
 export default class ReasonsChart extends Component {
     render() {
@@ -37,45 +38,14 @@ export default class ReasonsChart extends Component {
             .sort((a, b) => a.count - b.count)
 
         return (
-            <div
-                style={{
-                    display: 'grid',
-                    gridTemplateColumns: '1fr 1fr',
-                    gridColumnGap: '20px',
-                    gridRowGap: '20px'
-                }}
-            >
-                <div style={{ textAlign: 'right' }}>what people disliked about it</div>
-                <div>what people liked about it</div>
-                <div style={{ height: dislikeData.length * barHeight + verticalMargin * 2 }}>
-                    <ResponsiveBar
-                        layout="horizontal"
-                        enableGridX={true}
-                        enableGridY={false}
-                        enableLabel={false}
-                        labelSkipWidth={36}
-                        reverse={true}
-                        theme={theme}
-                        colors={theme.reasonsColors.dislike}
-                        data={dislikeData}
-                        padding={0.8}
-                        borderRadius={2.5}
-                        keys={['count']}
-                        indexBy="reason"
-                        margin={{
-                            top: verticalMargin,
-                            right: innerMargin,
-                            bottom: verticalMargin,
-                            left: outerMargin
-                        }}
-                        axisTop={{}}
-                        axisLeft={{
-                            tickSize: 0,
-                            tickPadding: 10
-                        }}
-                    />
-                </div>
-                <div style={{ height: likeData.length * barHeight + verticalMargin * 2 }}>
+            <div>
+                <h4>what people liked about it</h4>
+                <div
+                    style={{
+                        height: likeData.length * barHeight + verticalMargin * 2,
+                        marginBottom: 30
+                    }}
+                >
                     <ResponsiveBar
                         layout="horizontal"
                         enableGridX={true}
@@ -91,16 +61,45 @@ export default class ReasonsChart extends Component {
                         indexBy="reason"
                         margin={{
                             top: verticalMargin,
-                            right: outerMargin,
+                            right: labelsMargin + labelsWidth,
                             bottom: verticalMargin,
                             left: innerMargin
                         }}
                         axisTop={{}}
                         axisRight={{
                             tickSize: 0,
-                            tickPadding: 10
+                            tickPadding: labelsMargin
                         }}
                         axisLeft={null}
+                    />
+                </div>
+                <h4>what people disliked about it</h4>
+                <div style={{ height: dislikeData.length * barHeight + verticalMargin * 2 }}>
+                    <ResponsiveBar
+                        layout="horizontal"
+                        enableGridX={true}
+                        enableGridY={false}
+                        enableLabel={false}
+                        labelSkipWidth={36}
+                        theme={theme}
+                        colors={theme.reasonsColors.dislike}
+                        data={dislikeData}
+                        padding={0.8}
+                        borderRadius={2.5}
+                        keys={['count']}
+                        indexBy="reason"
+                        margin={{
+                            top: verticalMargin,
+                            right: labelsMargin + labelsWidth,
+                            bottom: verticalMargin,
+                            left: innerMargin
+                        }}
+                        axisTop={{}}
+                        axisLeft={null}
+                        axisRight={{
+                            tickSize: 0,
+                            tickPadding: labelsMargin
+                        }}
                     />
                 </div>
             </div>

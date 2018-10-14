@@ -1,0 +1,123 @@
+section_id: frontend_frameworks
+tools:
+    - react
+    - angular_1
+    - ember
+    - polymer
+    - vuejs
+    - preact
+opinions:
+    -
+        survey_id: '2016'
+        tools:
+            -
+                tool_id: react
+                would_use: 4996
+                interested: 3616
+                not_interested: 1180
+                would_not_use: 403
+                never_heard: 55
+            -
+                tool_id: angular_1
+                would_not_use: 3185
+                not_interested: 2657
+                would_use: 3256
+                interested: 1134
+                never_heard: 18
+            -
+                tool_id: ember
+                not_interested: 6079
+                interested: 2286
+                would_not_use: 759
+                never_heard: 453
+                would_use: 673
+            -
+                tool_id: vuejs
+                interested: 3298
+                not_interested: 3150
+                would_use: 894
+                never_heard: 2777
+                would_not_use: 131
+    -
+        survey_id: '2017'
+        tools:
+            -
+                tool_id: react
+                would_use: 13645
+                interested: 6356
+                not_interested: 2566
+                would_not_use: 1017
+                never_heard: 82
+            -
+                tool_id: angular_1
+                would_not_use: 9594
+                not_interested: 7610
+                would_use: 4705
+                interested: 1691
+                never_heard: 66
+            -
+                tool_id: ember
+                not_interested: 14990
+                interested: 4620
+                would_not_use: 1580
+                never_heard: 1359
+                would_use: 1117
+            -
+                tool_id: polymer
+                not_interested: 9944
+                interested: 7000
+                never_heard: 4459
+                would_use: 1195
+                would_not_use: 1068
+            -
+                tool_id: vuejs
+                interested: 12156
+                not_interested: 5126
+                would_use: 4638
+                never_heard: 1293
+                would_not_use: 453
+    -
+        survey_id: '2018'
+        tools:
+            -
+                tool_id: react
+                would_use: 13062
+                interested: 3857
+                not_interested: 1860
+                would_not_use: 1355
+                never_heard: 28
+            -
+                tool_id: angular_1
+                would_not_use: 6826
+                not_interested: 6417
+                would_use: 4817
+                interested: 2089
+                never_heard: 21
+            -
+                tool_id: ember
+                not_interested: 13571
+                interested: 2847
+                would_not_use: 1261
+                never_heard: 1465
+                would_use: 1013
+            -
+                tool_id: polymer
+                not_interested: 10396
+                interested: 4646
+                never_heard: 3732
+                would_use: 635
+                would_not_use: 759
+            -
+                tool_id: vuejs
+                interested: 9395
+                not_interested: 4122
+                would_use: 5810
+                never_heard: 263
+                would_not_use: 564
+            -
+                tool_id: preact
+                not_interested: 7446
+                never_heard: 5668
+                interested: 5533
+                would_use: 1251
+                would_not_use: 248

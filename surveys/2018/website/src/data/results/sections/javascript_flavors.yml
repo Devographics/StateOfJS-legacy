@@ -1,0 +1,130 @@
+section_id: javascript_flavors
+tools:
+    - reason
+    - clojurescript
+    - elm
+    - flow
+    - typescript
+    - es6
+opinions:
+    -
+        survey_id: '2016'
+        tools:
+            -
+                tool_id: clojurescript
+                not_interested: 4908
+                never_heard: 2850
+                interested: 2197
+                would_use: 197
+                would_not_use: 98
+            -
+                tool_id: elm
+                not_interested: 2460
+                interested: 3330
+                never_heard: 4041
+                would_use: 351
+                would_not_use: 68
+            -
+                tool_id: typescript
+                interested: 3956
+                would_use: 2134
+                not_interested: 3451
+                would_not_use: 436
+                never_heard: 273
+            -
+                tool_id: es6
+                would_use: 7475
+                interested: 2200
+                never_heard: 213
+                not_interested: 243
+                would_not_use: 119
+    -
+        survey_id: '2017'
+        tools:
+            -
+                tool_id: reason
+                never_heard: 18404
+                interested: 2351
+                not_interested: 2724
+                would_use: 131
+                would_not_use: 56
+            -
+                tool_id: clojurescript
+                not_interested: 11296
+                never_heard: 6744
+                interested: 4792
+                would_use: 533
+                would_not_use: 301
+            -
+                tool_id: elm
+                not_interested: 7063
+                interested: 7914
+                never_heard: 7178
+                would_use: 1222
+                would_not_use: 289
+            -
+                tool_id: flow
+                never_heard: 8733
+                not_interested: 5172
+                interested: 6616
+                would_use: 2382
+                would_not_use: 763
+            -
+                tool_id: typescript
+                interested: 8782
+                would_use: 7958
+                not_interested: 5205
+                would_not_use: 1371
+                never_heard: 350
+            -
+                tool_id: es6
+                would_use: 20561
+                interested: 2224
+                never_heard: 177
+                not_interested: 267
+                would_not_use: 437
+    -
+        survey_id: '2018'
+        tools:
+            -
+                tool_id: reason
+                never_heard: 10374
+                interested: 4471
+                not_interested: 3942
+                would_use: 1114
+                would_not_use: 171
+            -
+                tool_id: clojurescript
+                not_interested: 10931
+                never_heard: 5313
+                interested: 3243
+                would_use: 466
+                would_not_use: 180
+            -
+                tool_id: elm
+                not_interested: 8619
+                interested: 6028
+                never_heard: 4331
+                would_use: 872
+                would_not_use: 316
+            -
+                tool_id: flow
+                never_heard: 4810
+                not_interested: 6962
+                interested: 4878
+                would_use: 2065
+                would_not_use: 1449
+            -
+                tool_id: typescript
+                interested: 6807
+                would_use: 9419
+                not_interested: 2768
+                would_not_use: 1091
+                never_heard: 84
+            -
+                tool_id: es6
+                would_use: 17400
+                interested: 1793
+                never_heard: 494
+                not_interested: 286
+                would_not_use: 193

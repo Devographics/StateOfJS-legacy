@@ -3,7 +3,7 @@
 
 - label: Connections
 
-- label: JavaScript Flavors
+- label: javascript_flavors
   subPages:
       - Overview
       - reason
@@ -15,7 +15,7 @@
       - Other Libraries
       - Conclusion
 
-- label: Front-end Frameworks
+- label: frontend_frameworks
   subPages:
       - Overview
       - react
@@ -27,7 +27,7 @@
       - Other Libraries
       - Conclusion
 
-- label: Data Layer
+- label: data_layer
   subPages:
       - Overview
       - redux
@@ -38,7 +38,7 @@
       - Other Libraries
       - Conclusion
 
-- label: Back-end Frameworks
+- label: backend_frameworks
   subPages:
       - Overview
       - meteor
@@ -50,7 +50,7 @@
       - Other Libraries
       - Conclusion
 
-- label: Testing Tools
+- label: testing
   subPages:
       - Overview
       - storybook
@@ -63,7 +63,7 @@
       - Other Libraries
       - Conclusion
 
-- label: Mobile & Desktop
+- label: mobile_desktop
   subPages:
       - Overview
       - electron

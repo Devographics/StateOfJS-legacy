@@ -9,10 +9,10 @@ module.exports = [
             id: 'Mulmxw',
         },
         sections: {
-            [sections.FLAVORS]: {
+            [sections.JAVASCRIPT_FLAVORS]: {
                 title: 'JavaScript Flavor',
             },
-            [sections.FRONTEND]: {
+            [sections.FRONTEND_FRAMEWORKS]: {
                 title: 'Front-End',
                 freeform: 'Other Front-End Frameworks',
             },
@@ -24,7 +24,7 @@ module.exports = [
                 title: 'API Layer',
                 freeform: 'Other API layer solutions',
             },
-            [sections.BACKEND]: {
+            [sections.BACKEND_FRAMEWORKS]: {
                 title: 'Stacks',
                 freeform: 'Other stacks',
             },
@@ -75,10 +75,10 @@ module.exports = [
             id: 'S5iLk9',
         },
         sections: {
-            [sections.FLAVORS]: {
+            [sections.JAVASCRIPT_FLAVORS]: {
                 title: 'JavaScript Flavor',
             },
-            [sections.FRONTEND]: {
+            [sections.FRONTEND_FRAMEWORKS]: {
                 title: 'Front-End',
                 freeform: 'Other Front-End Frameworks',
             },
@@ -86,7 +86,7 @@ module.exports = [
                 title: 'Data Layer',
                 freeform: 'Other Data Management Solutions',
             },
-            [sections.BACKEND]: {
+            [sections.BACKEND_FRAMEWORKS]: {
                 title: 'Back-End',
                 freeform: 'Other Back-End Tools',
             },
@@ -137,11 +137,11 @@ module.exports = [
             id: 'J9gRJf',
         },
         sections: {
-            [sections.FLAVORS]: {
+            [sections.JAVASCRIPT_FLAVORS]: {
                 title: 'JavaScript Flavors',
                 freeform: 'Other JavaScript Flavors options',
             },
-            [sections.FRONTEND]: {
+            [sections.FRONTEND_FRAMEWORKS]: {
                 title: 'Front-End',
                 freeform: 'Other Front-End options',
             },
@@ -149,7 +149,7 @@ module.exports = [
                 title: 'Data Layer',
                 freeform: 'Other Data Layer options',
             },
-            [sections.BACKEND]: {
+            [sections.BACKEND_FRAMEWORKS]: {
                 title: 'Back-end',
                 freeform: 'Other Back-end options',
             },
@@ -157,7 +157,7 @@ module.exports = [
                 title: 'Testing',
                 freeform: 'Other Testing options',
             },
-            [sections.MOBILE]: {
+            [sections.MOBILE_DESKTOP]: {
                 title: 'Mobile & Desktop',
                 freeform: 'Other Mobile & Desktop options',
             },

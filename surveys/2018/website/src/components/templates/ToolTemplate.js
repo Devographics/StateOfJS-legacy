@@ -6,7 +6,7 @@ import ExperienceOverTimeBlock from '../blocks/ExperienceOverTimeBlock'
 import ReasonsBlock from '../blocks/ReasonsBlock'
 import bestOfJsData from '../../data/bestofjs'
 
-const LibraryTemplate = ({ pageContext, data }) => {
+const ToolTemplate = ({ pageContext, data }) => {
     console.log(pageContext, data)
 
     // this block is skipped if it doesn't appear at least in 2 surveys
@@ -108,4 +108,4 @@ export const query = graphql`
     }
 `
 
-export default LibraryTemplate
+export default ToolTemplate
