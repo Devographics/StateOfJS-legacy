@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { sortBy } from 'lodash'
 import { ResponsiveBar } from '@nivo/bar'
 import theme from '../../nivoTheme'
 
@@ -26,6 +27,8 @@ export default class SectionOpinionsChart extends Component {
             )
         }
 
+        const sortedData = sortBy(surveyData.tools, 'would_use')
+
         return (
             <div style={{ height: 360 }}>
                 <ResponsiveBar
@@ -40,7 +43,7 @@ export default class SectionOpinionsChart extends Component {
                         'never_heard'
                     ]}
                     indexBy="tool_id"
-                    data={surveyData.tools}
+                    data={sortedData}
                     theme={theme}
                     colors={theme.opinionColors}
                     labelFormat=".2s"
