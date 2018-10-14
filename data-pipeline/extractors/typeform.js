@@ -4,6 +4,7 @@ const tools = require('../conf/tools')
 const userInfo = require('../conf/user_info')
 const normalize = require('../conf/normalize')
 const types = require('./fields')
+const geo = require('./geo')
 const util = require('./util')
 
 const TYPEFORM_FIELD_TYPE_MULTI_CHOICE = 'multiple_choice'
@@ -51,6 +52,8 @@ class TypeformExtractor {
 
         this.config.tools = []
         this.config.userInfo = []
+
+        //form.fields.forEach(field => { console.log(field) })
 
         const fieldsConfig = {}
         Object.keys(this.config.sections).forEach(sectionId => {
@@ -158,9 +161,31 @@ class TypeformExtractor {
             }
         }
 
-        aboutField.properties.fields.forEach(field => {
-            console.log(field.title)
-        })
+        const genderField = aboutField.properties.fields.find(field => field.title === 'Your Gender')
+        if (genderField !== undefined) {
+            this.config.userInfo.push(types.FIELD_TYPE_GENDER)
+            this.config.typeform.fields[genderField.id] = {
+                type: types.FIELD_TYPE_GENDER,
+            }
+        }
+
+        const countryField = aboutField.properties.fields.find(field => field.title === 'Your Country')
+        if (countryField !== undefined) {
+            this.config.userInfo.push(types.FIELD_TYPE_COUNTRY)
+            this.config.typeform.fields[countryField.id] = {
+                type: types.FIELD_TYPE_COUNTRY,
+            }
+        }
+
+        const cityField = aboutField.properties.fields.find(field => field.title === 'Your City')
+        if (cityField !== undefined) {
+            this.config.userInfo.push(types.FIELD_TYPE_CITY)
+            this.config.typeform.fields[cityField.id] = {
+                type: types.FIELD_TYPE_CITY,
+            }
+        }
+
+        //aboutField.properties.fields.forEach(field => { console.log(field.title) })
     }
 
     async fetchResponseCount() {
@@ -187,13 +212,14 @@ class TypeformExtractor {
 
         if (response.items.length === 0) return
 
-        onData(this.processResults(response.items))
+        const processedResults = await this.processResults(response.items)
+        onData(processedResults)
 
         await this.fetchResults(onData, { after: last(response.items).token })
     }
 
-    processResults(items) {
-        return items.map(({ answers, ...response }) => {
+    async processResults(items) {
+        return Promise.all(items.map(async ({ answers, ...response }) => {
             const normalized = {
                 survey: this.config.id,
                 ...response,
@@ -207,6 +233,7 @@ class TypeformExtractor {
                 return
             }
 
+            let country
             answers.forEach(answer => {
                 const fieldConfig = this.config.typeform.fields[answer.field.id]
 
@@ -225,25 +252,25 @@ class TypeformExtractor {
                             normalized.tools[fieldConfig.tool] = {}
                         }
                         normalized.tools[fieldConfig.tool].opinion = opinion
-                        return
+                        break
 
                     case types.FIELD_TYPE_TOOL_LIKE_REASONS:
                         if (normalized.tools[fieldConfig.tool] === undefined) {
                             normalized.tools[fieldConfig.tool] = {}
                         }
                         normalized.tools[fieldConfig.tool].like = answer.choices.labels
-                        return
+                        break
 
                     case types.FIELD_TYPE_TOOL_DISLIKE_REASONS:
                         if (normalized.tools[fieldConfig.tool] === undefined) {
                             normalized.tools[fieldConfig.tool] = {}
                         }
                         normalized.tools[fieldConfig.tool].dislike = answer.choices.labels
-                        return
+                        break
 
                     case types.FIELD_TYPE_HAPPINESS:
                         normalized.happiness[fieldConfig.section] = answer.number
-                        return
+                        break
 
                     case types.FIELD_TYPE_OTHER_TOOLS:
                         const value = util.cleanupValue(answer.text)
@@ -253,7 +280,7 @@ class TypeformExtractor {
                                 norm: otherToolsExtractor(value),
                             }
                         }
-                        return
+                        break
 
                     case types.FIELD_TYPE_YEARS_OF_EXPERIENCE:
                         const yearsExperienceRange = userInfo.yearsOfExperienceRangeByLabel[answer.choice.label]
@@ -261,7 +288,7 @@ class TypeformExtractor {
                             throw new Error(`Unknown years of experience range ${answer.choice.label}`)
                         }
                         normalized.user_info[types.FIELD_TYPE_YEARS_OF_EXPERIENCE] = yearsExperienceRange.id
-                        return
+                        break
 
                     case types.FIELD_TYPE_COMPANY_SIZE:
                         const companySize = userInfo.companySizeByLabel[answer.choice.label]
@@ -277,20 +304,41 @@ class TypeformExtractor {
                             throw new Error(`Unknown salary range ${answer.choice.label}`)
                         }
                         normalized.user_info[types.FIELD_TYPE_SALARY] = salaryRange.id
-                        return
+                        break
 
                     case types.FIELD_TYPE_EMAIL:
                         normalized.user_info[types.FIELD_TYPE_EMAIL] = answer.email
-                        return
+                        break
 
                     case types.FIELD_TYPE_SOURCE:
                         normalized.user_info[types.FIELD_TYPE_SOURCE] = answer.text
-                        return
+                        break
+
+                    case types.FIELD_TYPE_COUNTRY:
+                        country = answer.text.trim().toLowerCase()
+                        break
                 }
             })
 
+            let countryInfo
+            if (country) {
+                countryInfo = await geo.getCountryInfo(country)
+            }
+            if (!countryInfo && response.hidden && response.hidden.location) {
+                countryInfo = await geo.getCountryInfo(response.hidden.location)
+            }
+            if (countryInfo) {
+                normalized.user_info[types.FIELD_TYPE_COUNTRY] = countryInfo.name
+                normalized.user_info.region = countryInfo.region
+                normalized.user_info.subregion = countryInfo.subregion
+            } else {
+                normalized.user_info[types.FIELD_TYPE_COUNTRY] = 'undefined'
+                normalized.user_info.region = 'undefined'
+                normalized.user_info.subregion = 'undefined'
+            }
+
             return normalized
-        })
+        }))
     }
 }
 

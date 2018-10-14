@@ -35,7 +35,7 @@ typeform:
             section: css
         '28238503':
             type: happiness
-            section: build
+            section: build_tools
         '28238504':
             type: happiness
             section: mobile
@@ -59,7 +59,7 @@ typeform:
             section: css
         '28238511':
             type: other_tools
-            section: build
+            section: build_tools
         '28238512':
             type: other_tools
             section: mobile
@@ -272,7 +272,7 @@ sections:
             - less
             - css_modules
             - aphrodite
-    build:
+    build_tools:
         title: 'Build Tools'
         freeform: 'Other build tools'
         tools:

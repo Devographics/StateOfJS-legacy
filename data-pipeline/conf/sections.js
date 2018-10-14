@@ -6,7 +6,7 @@ module.exports = {
     BACKEND_FRAMEWORKS: 'backend_frameworks',
     TESTING: 'testing',
     CSS: 'css',
-    BUILD: 'build',
+    BUILD_TOOLS: 'build_tools',
     MOBILE: 'mobile',
     MOBILE_DESKTOP: 'mobile_desktop',
 }

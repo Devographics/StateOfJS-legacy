@@ -7,7 +7,7 @@ import ToolOpinionsOverTimeBlock from '../blocks/ToolOpinionsOverTimeBlock'
 import ReasonsBlock from '../blocks/ReasonsBlock'
 
 const ToolTemplate = ({ pageContext, data }) => {
-    console.log(pageContext, data)
+    // console.log(pageContext, data)
 
     // this block is skipped if it doesn't appear at least in 2 surveys
     let shouldDisplayExperienceOverTime = false
@@ -40,6 +40,8 @@ const ToolTemplate = ({ pageContext, data }) => {
         </Layout>
     )
 }
+
+export default ToolTemplate
 
 export const query = graphql`
     query toolBySlug($tool: String!) {
@@ -76,5 +78,3 @@ export const query = graphql`
         }
     }
 `
-
-export default ToolTemplate

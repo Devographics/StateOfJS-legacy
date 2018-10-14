@@ -3,6 +3,7 @@ const participationAggregator = require('./participation')
 const userInfoAggregator = require('./user_info')
 const sectionsAggregator = require('./sections')
 const toolsAggregator = require('./tools')
+const demographicAggregator = require('./demographic')
 
 class CompoundAggregator {
     constructor(config) {
@@ -61,6 +62,15 @@ class CompoundAggregator {
         })
 
         return toolsExperiencesAggs
+    }
+
+    async computeDemographic() {
+        return {
+            demographics: {
+                by_continent: await demographicAggregator.byContinent(),
+                by_country: await demographicAggregator.byCountry(),
+            }
+        }
     }
 }
 

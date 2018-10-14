@@ -74,7 +74,6 @@ const aggregate = async () => {
 
     console.log('\ncomputing tools')
     const toolsAggs = await aggregator.computeTools(toolIds)
-    //await saveResult(`tools`, toolsAggs)
     Object.keys(toolsAggs).forEach(async toolId => {
         const agg = toolsAggs[toolId]
         delete agg.would_use
@@ -120,6 +119,10 @@ const aggregate = async () => {
     console.log('\ncomputing user info')
     const userInfo = await aggregator.computeUserInfo()
     //await saveResult('user_info', userInfo)
+
+    console.log('\ncomputing demographics')
+    const demographics = await aggregator.computeDemographic()
+    await saveResult('demographics', demographics)
 }
 
 aggregate()

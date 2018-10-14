@@ -1,0 +1,549 @@
+demographics:
+    by_continent:
+        -
+            continent: Europe
+            count: 18800
+            by_survey:
+                - {survey: '2017', count: 9639, salary: {salary_range_50_100: 2758, salary_range_30_50: 2611, salary_range_10_30: 1913, salary_range_100_200: 692, salary_range_work_for_free: 678, salary_range_0_10: 668, salary_range_more_than_200: 71}, company_size: {company_size_100_1000: 1838, company_size_20_50: 1353, company_size_more_than_1000: 1162, company_size_1: 1128, company_size_10_20: 1107, company_size_1_5: 1062, company_size_50_100: 1056, company_size_5_10: 893}}
+                - {survey: '2018', count: 9161, salary: {salary_range_50_100: 2860, salary_range_30_50: 2458, salary_range_10_30: 1759, salary_range_100_200: 752, salary_range_0_10: 549, salary_range_work_for_free: 456, salary_range_more_than_200: 69}, company_size: {company_size_100_1000: 1877, company_size_20_50: 1337, company_size_more_than_1000: 1265, company_size_50_100: 1069, company_size_10_20: 1027, company_size_1: 864, company_size_5_10: 836, company_size_1_5: 807}}
+        -
+            continent: Americas
+            count: 16385
+            by_survey:
+                - {survey: '2017', count: 9340, salary: {salary_range_50_100: 3284, salary_range_100_200: 3156, salary_range_30_50: 769, salary_range_10_30: 649, salary_range_work_for_free: 580, salary_range_0_10: 414, salary_range_more_than_200: 258}, company_size: {company_size_more_than_1000: 1920, company_size_100_1000: 1877, company_size_20_50: 1130, company_size_1: 1049, company_size_50_100: 1039, company_size_1_5: 793, company_size_10_20: 791, company_size_5_10: 698}}
+                - {survey: '2018', count: 7045, salary: {salary_range_100_200: 2750, salary_range_50_100: 2171, salary_range_10_30: 570, salary_range_30_50: 450, salary_range_work_for_free: 330, salary_range_more_than_200: 318, salary_range_0_10: 317}, company_size: {company_size_more_than_1000: 1627, company_size_100_1000: 1574, company_size_50_100: 825, company_size_20_50: 814, company_size_1: 638, company_size_1_5: 532, company_size_10_20: 522, company_size_5_10: 469}}
+        -
+            continent: Asia
+            count: 2396
+            by_survey:
+                - {survey: '2017', count: 1226, salary: {salary_range_10_30: 287, salary_range_0_10: 234, salary_range_50_100: 234, salary_range_30_50: 179, salary_range_work_for_free: 150, salary_range_100_200: 96, salary_range_more_than_200: 11}, company_size: {company_size_1: 188, company_size_20_50: 184, company_size_100_1000: 181, company_size_5_10: 149, company_size_10_20: 137, company_size_50_100: 136, company_size_more_than_1000: 124, company_size_1_5: 117}}
+                - {survey: '2018', count: 1170, salary: {salary_range_0_10: 260, salary_range_10_30: 253, salary_range_50_100: 207, salary_range_30_50: 175, salary_range_work_for_free: 123, salary_range_100_200: 84, salary_range_more_than_200: 17}, company_size: {company_size_20_50: 189, company_size_1: 178, company_size_100_1000: 156, company_size_10_20: 141, company_size_1_5: 132, company_size_more_than_1000: 122, company_size_50_100: 117, company_size_5_10: 113}}
+        -
+            continent: Oceania
+            count: 2162
+            by_survey:
+                - {survey: '2018', count: 1204, salary: {salary_range_100_200: 499, salary_range_50_100: 477, salary_range_30_50: 73, salary_range_more_than_200: 52, salary_range_work_for_free: 47, salary_range_10_30: 18, salary_range_0_10: 13}, company_size: {company_size_100_1000: 263, company_size_more_than_1000: 230, company_size_20_50: 155, company_size_50_100: 141, company_size_10_20: 112, company_size_1_5: 107, company_size_1: 98, company_size_5_10: 90}}
+                - {survey: '2017', count: 958, salary: {salary_range_50_100: 408, salary_range_100_200: 341, salary_range_30_50: 86, salary_range_work_for_free: 66, salary_range_10_30: 19, salary_range_more_than_200: 14, salary_range_0_10: 12}, company_size: {company_size_100_1000: 204, company_size_more_than_1000: 142, company_size_20_50: 117, company_size_1_5: 113, company_size_1: 105, company_size_10_20: 93, company_size_5_10: 93, company_size_50_100: 87}}
+        -
+            continent: Africa
+            count: 1814
+            by_survey:
+                - {survey: '2018', count: 908, salary: {salary_range_0_10: 224, salary_range_10_30: 217, salary_range_30_50: 147, salary_range_50_100: 122, salary_range_work_for_free: 110, salary_range_100_200: 34, salary_range_more_than_200: 9}, company_size: {company_size_more_than_1000: 165, company_size_1: 136, company_size_100_1000: 132, company_size_1_5: 105, company_size_50_100: 92, company_size_10_20: 88, company_size_20_50: 88, company_size_5_10: 87}}
+                - {survey: '2017', count: 906, salary: {salary_range_10_30: 240, salary_range_0_10: 205, salary_range_work_for_free: 128, salary_range_30_50: 121, salary_range_50_100: 115, salary_range_100_200: 39, salary_range_more_than_200: 20}, company_size: {company_size_1: 158, company_size_more_than_1000: 146, company_size_100_1000: 126, company_size_20_50: 105, company_size_1_5: 101, company_size_50_100: 98, company_size_5_10: 81, company_size_10_20: 80}}
+    by_country:
+        -
+            country: 'United States Minor Outlying Islands'
+            count: 8347
+            by_survey:
+                - {survey: '2017', count: 6129, salary: {salary_range_100_200: 2561, salary_range_50_100: 2247, salary_range_work_for_free: 356, salary_range_30_50: 336, salary_range_more_than_200: 218, salary_range_10_30: 135, salary_range_0_10: 108}, company_size: {company_size_more_than_1000: 1442, company_size_100_1000: 1314, company_size_20_50: 696, company_size_50_100: 691, company_size_1: 656, company_size_1_5: 450, company_size_10_20: 447, company_size_5_10: 404}}
+                - {survey: '2018', count: 2218, salary: {salary_range_100_200: 1066, salary_range_50_100: 696, salary_range_more_than_200: 134, salary_range_work_for_free: 115, salary_range_30_50: 67, salary_range_10_30: 45, salary_range_0_10: 28}, company_size: {company_size_more_than_1000: 593, company_size_100_1000: 486, company_size_20_50: 268, company_size_50_100: 266, company_size_1: 193, company_size_10_20: 135, company_size_1_5: 133, company_size_5_10: 111}}
+        -
+            country: 'United States of America'
+            count: 3533
+            by_survey:
+                - {survey: '2018', count: 2712, salary: {salary_range_100_200: 1447, salary_range_50_100: 853, salary_range_more_than_200: 166, salary_range_work_for_free: 90, salary_range_30_50: 69, salary_range_10_30: 28, salary_range_0_10: 16}, company_size: {company_size_more_than_1000: 766, company_size_100_1000: 661, company_size_50_100: 327, company_size_20_50: 257, company_size_1: 211, company_size_1_5: 176, company_size_10_20: 167, company_size_5_10: 144}}
+                - {survey: '2017', count: 821, salary: {salary_range_100_200: 370, salary_range_50_100: 305, salary_range_work_for_free: 47, salary_range_30_50: 29, salary_range_more_than_200: 28, salary_range_0_10: 15, salary_range_10_30: 12}, company_size: {company_size_more_than_1000: 201, company_size_100_1000: 181, company_size_20_50: 103, company_size_50_100: 92, company_size_1: 84, company_size_1_5: 60, company_size_10_20: 59, company_size_5_10: 37}}
+        -
+            country: 'United Kingdom of Great Britain and Northern Ireland'
+            count: 2333
+            by_survey:
+                - {survey: '2017', count: 1567, salary: {salary_range_50_100: 613, salary_range_30_50: 452, salary_range_100_200: 215, salary_range_10_30: 140, salary_range_work_for_free: 63, salary_range_0_10: 24, salary_range_more_than_200: 21}, company_size: {company_size_100_1000: 312, company_size_more_than_1000: 262, company_size_20_50: 196, company_size_50_100: 189, company_size_1_5: 159, company_size_1: 156, company_size_10_20: 153, company_size_5_10: 134}}
+                - {survey: '2018', count: 766, salary: {salary_range_50_100: 328, salary_range_30_50: 174, salary_range_100_200: 136, salary_range_10_30: 50, salary_range_work_for_free: 33, salary_range_more_than_200: 13, salary_range_0_10: 10}, company_size: {company_size_more_than_1000: 146, company_size_100_1000: 131, company_size_20_50: 95, company_size_50_100: 91, company_size_1: 82, company_size_10_20: 76, company_size_1_5: 70, company_size_5_10: 68}}
+        -
+            country: Germany
+            count: 2275
+            by_survey:
+                - {survey: '2017', count: 1211, salary: {salary_range_50_100: 497, salary_range_30_50: 294, salary_range_10_30: 114, salary_range_work_for_free: 97, salary_range_100_200: 91, salary_range_0_10: 72, salary_range_more_than_200: 5}, company_size: {company_size_100_1000: 253, company_size_20_50: 165, company_size_1: 150, company_size_1_5: 138, company_size_10_20: 136, company_size_more_than_1000: 127, company_size_50_100: 122, company_size_5_10: 116}}
+                - {survey: '2018', count: 1064, salary: {salary_range_50_100: 531, salary_range_30_50: 219, salary_range_100_200: 90, salary_range_10_30: 75, salary_range_work_for_free: 59, salary_range_0_10: 42, salary_range_more_than_200: 6}, company_size: {company_size_100_1000: 202, company_size_20_50: 150, company_size_more_than_1000: 146, company_size_50_100: 126, company_size_1: 118, company_size_1_5: 106, company_size_5_10: 101, company_size_10_20: 100}}
+        -
+            country: Canada
+            count: 1877
+            by_survey:
+                - {survey: '2017', count: 1046, salary: {salary_range_50_100: 535, salary_range_100_200: 179, salary_range_30_50: 175, salary_range_work_for_free: 71, salary_range_10_30: 41, salary_range_0_10: 16, salary_range_more_than_200: 6}, company_size: {company_size_100_1000: 167, company_size_20_50: 150, company_size_1: 141, company_size_more_than_1000: 129, company_size_10_20: 127, company_size_50_100: 117, company_size_1_5: 109, company_size_5_10: 102}}
+                - {survey: '2018', count: 831, salary: {salary_range_50_100: 455, salary_range_100_200: 196, salary_range_30_50: 100, salary_range_work_for_free: 35, salary_range_10_30: 19, salary_range_0_10: 9, salary_range_more_than_200: 9}, company_size: {company_size_100_1000: 178, company_size_20_50: 130, company_size_more_than_1000: 124, company_size_50_100: 82, company_size_1: 80, company_size_1_5: 79, company_size_10_20: 78, company_size_5_10: 76}}
+        -
+            country: France
+            count: 1832
+            by_survey:
+                - {survey: '2017', count: 976, salary: {salary_range_30_50: 425, salary_range_50_100: 236, salary_range_10_30: 138, salary_range_work_for_free: 85, salary_range_0_10: 40, salary_range_100_200: 35, salary_range_more_than_200: 3}, company_size: {company_size_100_1000: 172, company_size_1: 145, company_size_20_50: 130, company_size_10_20: 126, company_size_1_5: 112, company_size_5_10: 107, company_size_more_than_1000: 96, company_size_50_100: 87}}
+                - {survey: '2018', count: 856, salary: {salary_range_30_50: 371, salary_range_50_100: 270, salary_range_10_30: 105, salary_range_work_for_free: 45, salary_range_100_200: 27, salary_range_0_10: 18, salary_range_more_than_200: 3}, company_size: {company_size_100_1000: 173, company_size_20_50: 127, company_size_10_20: 114, company_size_1: 110, company_size_50_100: 86, company_size_more_than_1000: 86, company_size_5_10: 81, company_size_1_5: 75}}
+        -
+            country: Australia
+            count: 1818
+            by_survey:
+                - {survey: '2018', count: 1049, salary: {salary_range_100_200: 464, salary_range_50_100: 400, salary_range_more_than_200: 50, salary_range_30_50: 49, salary_range_work_for_free: 42, salary_range_10_30: 16, salary_range_0_10: 10}, company_size: {company_size_100_1000: 230, company_size_more_than_1000: 206, company_size_20_50: 129, company_size_50_100: 120, company_size_10_20: 98, company_size_1_5: 94, company_size_5_10: 84, company_size_1: 82}}
+                - {survey: '2017', count: 769, salary: {salary_range_50_100: 312, salary_range_100_200: 302, salary_range_work_for_free: 53, salary_range_30_50: 52, salary_range_10_30: 18, salary_range_more_than_200: 12, salary_range_0_10: 9}, company_size: {company_size_100_1000: 155, company_size_more_than_1000: 125, company_size_1_5: 98, company_size_1: 86, company_size_20_50: 86, company_size_10_20: 81, company_size_5_10: 76, company_size_50_100: 59}}
+        -
+            country: Ukraine
+            count: 1340
+            by_survey:
+                - {survey: '2018', count: 896, salary: {salary_range_50_100: 257, salary_range_30_50: 229, salary_range_10_30: 153, salary_range_100_200: 109, salary_range_0_10: 81, salary_range_work_for_free: 32, salary_range_more_than_200: 8}, company_size: {company_size_100_1000: 171, company_size_more_than_1000: 138, company_size_20_50: 133, company_size_50_100: 108, company_size_10_20: 105, company_size_1: 82, company_size_1_5: 82, company_size_5_10: 69}}
+                - {survey: '2017', count: 444, salary: {salary_range_30_50: 111, salary_range_50_100: 95, salary_range_10_30: 81, salary_range_0_10: 66, salary_range_work_for_free: 40, salary_range_100_200: 32, salary_range_more_than_200: 3}, company_size: {company_size_100_1000: 82, company_size_more_than_1000: 65, company_size_20_50: 59, company_size_1: 56, company_size_50_100: 55, company_size_10_20: 44, company_size_1_5: 43, company_size_5_10: 34}}
+        -
+            country: 'Russian Federation'
+            count: 1224
+            by_survey:
+                - {survey: '2018', count: 754, salary: {salary_range_10_30: 326, salary_range_0_10: 159, salary_range_30_50: 130, salary_range_50_100: 53, salary_range_work_for_free: 48, salary_range_100_200: 12, salary_range_more_than_200: 3}, company_size: {company_size_100_1000: 143, company_size_50_100: 113, company_size_more_than_1000: 108, company_size_20_50: 102, company_size_5_10: 82, company_size_10_20: 79, company_size_1: 60, company_size_1_5: 57}}
+                - {survey: '2017', count: 470, salary: {salary_range_10_30: 188, salary_range_0_10: 112, salary_range_30_50: 63, salary_range_work_for_free: 44, salary_range_50_100: 38, salary_range_100_200: 7, salary_range_more_than_200: 7}, company_size: {company_size_100_1000: 83, company_size_50_100: 62, company_size_20_50: 61, company_size_more_than_1000: 61, company_size_1: 56, company_size_10_20: 52, company_size_1_5: 51, company_size_5_10: 42}}
+        -
+            country: 'British Indian Ocean Territory'
+            count: 1129
+            by_survey:
+                - {survey: '2017', count: 608, salary: {salary_range_10_30: 187, salary_range_0_10: 115, salary_range_work_for_free: 83, salary_range_50_100: 79, salary_range_30_50: 68, salary_range_100_200: 31, salary_range_more_than_200: 17}, company_size: {company_size_more_than_1000: 131, company_size_100_1000: 98, company_size_1: 91, company_size_50_100: 71, company_size_20_50: 64, company_size_10_20: 53, company_size_5_10: 48, company_size_1_5: 44}}
+                - {survey: '2018', count: 521, salary: {salary_range_10_30: 144, salary_range_0_10: 113, salary_range_30_50: 83, salary_range_50_100: 61, salary_range_work_for_free: 61, salary_range_100_200: 19, salary_range_more_than_200: 7}, company_size: {company_size_more_than_1000: 143, company_size_100_1000: 82, company_size_1: 66, company_size_50_100: 58, company_size_5_10: 44, company_size_10_20: 42, company_size_20_50: 40, company_size_1_5: 39}}
+        -
+            country: Poland
+            count: 1093
+            by_survey:
+                - {survey: '2017', count: 606, salary: {salary_range_10_30: 224, salary_range_30_50: 156, salary_range_50_100: 70, salary_range_0_10: 69, salary_range_work_for_free: 49, salary_range_100_200: 17, salary_range_more_than_200: 4}, company_size: {company_size_100_1000: 136, company_size_20_50: 97, company_size_more_than_1000: 80, company_size_10_20: 75, company_size_50_100: 73, company_size_1: 56, company_size_1_5: 42, company_size_5_10: 42}}
+                - {survey: '2018', count: 487, salary: {salary_range_10_30: 167, salary_range_30_50: 160, salary_range_50_100: 69, salary_range_0_10: 31, salary_range_work_for_free: 27, salary_range_100_200: 16, salary_range_more_than_200: 2}, company_size: {company_size_100_1000: 124, company_size_more_than_1000: 83, company_size_20_50: 76, company_size_10_20: 57, company_size_50_100: 57, company_size_1: 37, company_size_5_10: 26, company_size_1_5: 21}}
+        -
+            country: Netherlands
+            count: 1055
+            by_survey:
+                - {survey: '2017', count: 552, salary: {salary_range_50_100: 191, salary_range_30_50: 178, salary_range_10_30: 80, salary_range_100_200: 42, salary_range_work_for_free: 29, salary_range_0_10: 17, salary_range_more_than_200: 2}, company_size: {company_size_20_50: 107, company_size_100_1000: 79, company_size_1: 73, company_size_10_20: 72, company_size_more_than_1000: 66, company_size_1_5: 53, company_size_50_100: 53, company_size_5_10: 45}}
+                - {survey: '2018', count: 503, salary: {salary_range_50_100: 213, salary_range_30_50: 147, salary_range_10_30: 56, salary_range_100_200: 43, salary_range_work_for_free: 21, salary_range_0_10: 10, salary_range_more_than_200: 3}, company_size: {company_size_20_50: 96, company_size_100_1000: 85, company_size_more_than_1000: 70, company_size_50_100: 58, company_size_10_20: 56, company_size_1: 49, company_size_5_10: 47, company_size_1_5: 39}}
+        -
+            country: Brazil
+            count: 969
+            by_survey:
+                - {survey: '2017', count: 518, salary: {salary_range_10_30: 144, salary_range_0_10: 124, salary_range_50_100: 88, salary_range_30_50: 85, salary_range_work_for_free: 44, salary_range_100_200: 21}, company_size: {company_size_100_1000: 93, company_size_5_10: 67, company_size_10_20: 66, company_size_1: 64, company_size_20_50: 63, company_size_1_5: 62, company_size_more_than_1000: 53, company_size_50_100: 46}}
+                - {survey: '2018', count: 451, salary: {salary_range_10_30: 181, salary_range_0_10: 94, salary_range_30_50: 68, salary_range_50_100: 61, salary_range_work_for_free: 30, salary_range_100_200: 10, salary_range_more_than_200: 1}, company_size: {company_size_100_1000: 104, company_size_more_than_1000: 64, company_size_10_20: 56, company_size_1: 50, company_size_20_50: 45, company_size_50_100: 45, company_size_1_5: 44, company_size_5_10: 41}}
+        -
+            country: Sweden
+            count: 918
+            by_survey:
+                - {survey: '2018', count: 506, salary: {salary_range_50_100: 240, salary_range_30_50: 178, salary_range_100_200: 28, salary_range_work_for_free: 27, salary_range_10_30: 15, salary_range_more_than_200: 3, salary_range_0_10: 2}, company_size: {company_size_100_1000: 128, company_size_20_50: 82, company_size_more_than_1000: 60, company_size_50_100: 53, company_size_10_20: 52, company_size_1: 44, company_size_5_10: 42, company_size_1_5: 41}}
+                - {survey: '2017', count: 412, salary: {salary_range_50_100: 171, salary_range_30_50: 128, salary_range_work_for_free: 43, salary_range_10_30: 25, salary_range_100_200: 22, salary_range_0_10: 8, salary_range_more_than_200: 5}, company_size: {company_size_100_1000: 69, company_size_20_50: 60, company_size_1_5: 59, company_size_1: 55, company_size_more_than_1000: 48, company_size_50_100: 43, company_size_10_20: 42, company_size_5_10: 34}}
+        -
+            country: Spain
+            count: 895
+            by_survey:
+                - {survey: '2017', count: 500, salary: {salary_range_30_50: 197, salary_range_10_30: 152, salary_range_50_100: 82, salary_range_work_for_free: 28, salary_range_0_10: 16, salary_range_100_200: 13, salary_range_more_than_200: 1}, company_size: {company_size_100_1000: 96, company_size_20_50: 66, company_size_50_100: 65, company_size_10_20: 62, company_size_1_5: 62, company_size_more_than_1000: 54, company_size_1: 50, company_size_5_10: 43}}
+                - {survey: '2018', count: 395, salary: {salary_range_30_50: 180, salary_range_10_30: 85, salary_range_50_100: 83, salary_range_100_200: 15, salary_range_work_for_free: 14, salary_range_0_10: 11, salary_range_more_than_200: 2}, company_size: {company_size_100_1000: 89, company_size_more_than_1000: 65, company_size_20_50: 53, company_size_50_100: 53, company_size_10_20: 50, company_size_1_5: 34, company_size_5_10: 28, company_size_1: 22}}
+        -
+            country: Italy
+            count: 585
+            by_survey:
+                - {survey: '2017', count: 313, salary: {salary_range_10_30: 124, salary_range_30_50: 86, salary_range_50_100: 46, salary_range_work_for_free: 26, salary_range_0_10: 18, salary_range_100_200: 10}, company_size: {company_size_1_5: 48, company_size_10_20: 47, company_size_1: 45, company_size_100_1000: 43, company_size_5_10: 35, company_size_20_50: 34, company_size_50_100: 34, company_size_more_than_1000: 26}}
+                - {survey: '2018', count: 272, salary: {salary_range_30_50: 104, salary_range_10_30: 78, salary_range_50_100: 47, salary_range_work_for_free: 17, salary_range_0_10: 14, salary_range_100_200: 6, salary_range_more_than_200: 1}, company_size: {company_size_20_50: 45, company_size_100_1000: 42, company_size_10_20: 41, company_size_5_10: 33, company_size_more_than_1000: 33, company_size_1: 30, company_size_1_5: 25, company_size_50_100: 22}}
+        -
+            country: Denmark
+            count: 440
+            by_survey:
+                - {survey: '2017', count: 242, salary: {salary_range_50_100: 111, salary_range_100_200: 53, salary_range_30_50: 32, salary_range_10_30: 13, salary_range_work_for_free: 13, salary_range_0_10: 10, salary_range_more_than_200: 6}, company_size: {company_size_100_1000: 40, company_size_20_50: 40, company_size_10_20: 30, company_size_5_10: 30, company_size_1: 28, company_size_1_5: 26, company_size_more_than_1000: 26, company_size_50_100: 22}}
+                - {survey: '2018', count: 198, salary: {salary_range_50_100: 107, salary_range_100_200: 43, salary_range_30_50: 13, salary_range_work_for_free: 13, salary_range_10_30: 8, salary_range_0_10: 5, salary_range_more_than_200: 2}, company_size: {company_size_100_1000: 40, company_size_20_50: 33, company_size_more_than_1000: 30, company_size_1: 24, company_size_10_20: 20, company_size_50_100: 20, company_size_5_10: 17, company_size_1_5: 14}}
+        -
+            country: Belgium
+            count: 420
+            by_survey:
+                - {survey: '2017', count: 210, salary: {salary_range_10_30: 61, salary_range_30_50: 60, salary_range_50_100: 46, salary_range_work_for_free: 15, salary_range_0_10: 10, salary_range_100_200: 10, salary_range_more_than_200: 2}, company_size: {company_size_50_100: 39, company_size_20_50: 30, company_size_1: 28, company_size_10_20: 28, company_size_100_1000: 27, company_size_1_5: 20, company_size_more_than_1000: 20, company_size_5_10: 18}}
+                - {survey: '2018', count: 210, salary: {salary_range_30_50: 78, salary_range_10_30: 57, salary_range_50_100: 41, salary_range_100_200: 20, salary_range_work_for_free: 6, salary_range_0_10: 5}, company_size: {company_size_20_50: 45, company_size_10_20: 32, company_size_50_100: 31, company_size_1_5: 22, company_size_5_10: 22, company_size_100_1000: 21, company_size_more_than_1000: 20, company_size_1: 16}}
+        -
+            country: Norway
+            count: 395
+            by_survey:
+                - {survey: '2018', count: 202, salary: {salary_range_50_100: 123, salary_range_100_200: 49, salary_range_30_50: 13, salary_range_10_30: 5, salary_range_work_for_free: 4, salary_range_0_10: 1, salary_range_more_than_200: 1}, company_size: {company_size_100_1000: 55, company_size_more_than_1000: 39, company_size_20_50: 30, company_size_5_10: 22, company_size_50_100: 18, company_size_1_5: 16, company_size_10_20: 13, company_size_1: 7}}
+                - {survey: '2017', count: 193, salary: {salary_range_50_100: 125, salary_range_100_200: 38, salary_range_30_50: 11, salary_range_work_for_free: 8, salary_range_10_30: 4, salary_range_more_than_200: 2}, company_size: {company_size_100_1000: 72, company_size_20_50: 23, company_size_more_than_1000: 23, company_size_50_100: 20, company_size_1_5: 18, company_size_10_20: 15, company_size_1: 12, company_size_5_10: 10}}
+        -
+            country: Finland
+            count: 389
+            by_survey:
+                - {survey: '2018', count: 210, salary: {salary_range_50_100: 99, salary_range_30_50: 61, salary_range_100_200: 16, salary_range_10_30: 12, salary_range_0_10: 6, salary_range_work_for_free: 6, salary_range_more_than_200: 1}, company_size: {company_size_100_1000: 72, company_size_10_20: 29, company_size_20_50: 24, company_size_5_10: 20, company_size_more_than_1000: 19, company_size_1: 16, company_size_50_100: 15, company_size_1_5: 11}}
+                - {survey: '2017', count: 179, salary: {salary_range_50_100: 68, salary_range_30_50: 60, salary_range_10_30: 23, salary_range_100_200: 9, salary_range_0_10: 8, salary_range_work_for_free: 6}, company_size: {company_size_100_1000: 50, company_size_20_50: 27, company_size_5_10: 21, company_size_50_100: 20, company_size_1_5: 18, company_size_10_20: 16, company_size_1: 14, company_size_more_than_1000: 13}}
+        -
+            country: Mexico
+            count: 383
+            by_survey:
+                - {survey: '2017', count: 195, salary: {salary_range_10_30: 77, salary_range_0_10: 36, salary_range_50_100: 32, salary_range_30_50: 24, salary_range_work_for_free: 16, salary_range_100_200: 8, salary_range_more_than_200: 1}, company_size: {company_size_1_5: 29, company_size_1: 27, company_size_20_50: 27, company_size_100_1000: 26, company_size_5_10: 23, company_size_more_than_1000: 23, company_size_10_20: 21, company_size_50_100: 19}}
+                - {survey: '2018', count: 188, salary: {salary_range_10_30: 79, salary_range_30_50: 33, salary_range_0_10: 31, salary_range_50_100: 27, salary_range_work_for_free: 10, salary_range_100_200: 3, salary_range_more_than_200: 2}, company_size: {company_size_100_1000: 41, company_size_20_50: 27, company_size_50_100: 25, company_size_1_5: 21, company_size_10_20: 20, company_size_5_10: 19, company_size_more_than_1000: 18, company_size_1: 17}}
+        -
+            country: Argentina
+            count: 381
+            by_survey:
+                - {survey: '2018', count: 192, salary: {salary_range_10_30: 66, salary_range_0_10: 38, salary_range_30_50: 30, salary_range_50_100: 24, salary_range_100_200: 13, salary_range_work_for_free: 13, salary_range_more_than_200: 1}, company_size: {company_size_100_1000: 33, company_size_20_50: 26, company_size_50_100: 25, company_size_1_5: 24, company_size_more_than_1000: 23, company_size_1: 20, company_size_10_20: 20, company_size_5_10: 20}}
+                - {survey: '2017', count: 189, salary: {salary_range_10_30: 64, salary_range_30_50: 41, salary_range_0_10: 35, salary_range_50_100: 24, salary_range_work_for_free: 10, salary_range_100_200: 6, salary_range_more_than_200: 3}, company_size: {company_size_100_1000: 42, company_size_20_50: 28, company_size_5_10: 26, company_size_10_20: 21, company_size_1_5: 21, company_size_50_100: 18, company_size_more_than_1000: 18, company_size_1: 14}}
+        -
+            country: Switzerland
+            count: 362
+            by_survey:
+                - {survey: '2018', count: 188, salary: {salary_range_50_100: 76, salary_range_100_200: 70, salary_range_work_for_free: 15, salary_range_more_than_200: 7, salary_range_30_50: 6, salary_range_0_10: 4, salary_range_10_30: 4}, company_size: {company_size_100_1000: 39, company_size_1_5: 28, company_size_more_than_1000: 27, company_size_20_50: 26, company_size_5_10: 20, company_size_1: 18, company_size_10_20: 15, company_size_50_100: 13}}
+                - {survey: '2017', count: 174, salary: {salary_range_50_100: 72, salary_range_100_200: 47, salary_range_30_50: 20, salary_range_10_30: 12, salary_range_work_for_free: 9, salary_range_0_10: 5, salary_range_more_than_200: 5}, company_size: {company_size_1_5: 33, company_size_100_1000: 25, company_size_5_10: 24, company_size_more_than_1000: 24, company_size_20_50: 23, company_size_10_20: 17, company_size_50_100: 16, company_size_1: 12}}
+        -
+            country: 'New Zealand'
+            count: 327
+            by_survey:
+                - {survey: '2017', count: 181, salary: {salary_range_50_100: 92, salary_range_100_200: 38, salary_range_30_50: 32, salary_range_work_for_free: 13, salary_range_0_10: 2, salary_range_more_than_200: 2, salary_range_10_30: 1}, company_size: {company_size_100_1000: 49, company_size_20_50: 30, company_size_50_100: 26, company_size_1: 17, company_size_5_10: 16, company_size_1_5: 15, company_size_more_than_1000: 15, company_size_10_20: 12}}
+                - {survey: '2018', count: 146, salary: {salary_range_50_100: 74, salary_range_100_200: 31, salary_range_30_50: 24, salary_range_work_for_free: 4, salary_range_0_10: 3, salary_range_10_30: 2, salary_range_more_than_200: 2}, company_size: {company_size_100_1000: 30, company_size_20_50: 25, company_size_more_than_1000: 23, company_size_50_100: 20, company_size_10_20: 14, company_size_1: 13, company_size_1_5: 13, company_size_5_10: 6}}
+        -
+            country: Romania
+            count: 311
+            by_survey:
+                - {survey: '2017', count: 158, salary: {salary_range_10_30: 70, salary_range_30_50: 30, salary_range_0_10: 24, salary_range_50_100: 12, salary_range_work_for_free: 12, salary_range_100_200: 3, salary_range_more_than_200: 2}, company_size: {company_size_100_1000: 59, company_size_20_50: 22, company_size_50_100: 18, company_size_more_than_1000: 15, company_size_10_20: 14, company_size_1_5: 11, company_size_5_10: 10, company_size_1: 9}}
+                - {survey: '2018', count: 153, salary: {salary_range_10_30: 71, salary_range_30_50: 32, salary_range_0_10: 16, salary_range_50_100: 15, salary_range_work_for_free: 9, salary_range_100_200: 3, salary_range_more_than_200: 2}, company_size: {company_size_100_1000: 54, company_size_20_50: 19, company_size_50_100: 17, company_size_10_20: 15, company_size_more_than_1000: 15, company_size_1: 11, company_size_1_5: 11, company_size_5_10: 10}}
+        -
+            country: Israel
+            count: 307
+            by_survey:
+                - {survey: '2017', count: 159, salary: {salary_range_50_100: 53, salary_range_100_200: 44, salary_range_30_50: 15, salary_range_10_30: 12, salary_range_work_for_free: 12, salary_range_0_10: 11}, company_size: {company_size_100_1000: 25, company_size_50_100: 25, company_size_20_50: 24, company_size_more_than_1000: 23, company_size_1: 18, company_size_1_5: 15, company_size_5_10: 15, company_size_10_20: 14}}
+                - {survey: '2018', count: 148, salary: {salary_range_50_100: 52, salary_range_100_200: 38, salary_range_30_50: 19, salary_range_work_for_free: 16, salary_range_10_30: 6, salary_range_0_10: 5, salary_range_more_than_200: 3}, company_size: {company_size_20_50: 35, company_size_100_1000: 25, company_size_more_than_1000: 22, company_size_1: 20, company_size_10_20: 13, company_size_50_100: 13, company_size_1_5: 10, company_size_5_10: 8}}
+        -
+            country: Austria
+            count: 303
+            by_survey:
+                - {survey: '2017', count: 154, salary: {salary_range_30_50: 53, salary_range_50_100: 51, salary_range_10_30: 25, salary_range_100_200: 10, salary_range_work_for_free: 7, salary_range_0_10: 4}, company_size: {company_size_1_5: 26, company_size_20_50: 25, company_size_10_20: 24, company_size_1: 23, company_size_100_1000: 18, company_size_5_10: 18, company_size_50_100: 11, company_size_more_than_1000: 8}}
+                - {survey: '2018', count: 149, salary: {salary_range_50_100: 58, salary_range_30_50: 46, salary_range_10_30: 15, salary_range_100_200: 10, salary_range_work_for_free: 9, salary_range_0_10: 5, salary_range_more_than_200: 3}, company_size: {company_size_10_20: 25, company_size_100_1000: 22, company_size_20_50: 21, company_size_50_100: 19, company_size_1: 18, company_size_1_5: 18, company_size_5_10: 16, company_size_more_than_1000: 9}}
+        -
+            country: Portugal
+            count: 291
+            by_survey:
+                - {survey: '2017', count: 156, salary: {salary_range_10_30: 76, salary_range_30_50: 32, salary_range_0_10: 20, salary_range_50_100: 15, salary_range_work_for_free: 9}, company_size: {company_size_100_1000: 37, company_size_1_5: 28, company_size_20_50: 21, company_size_5_10: 20, company_size_10_20: 16, company_size_1: 12, company_size_50_100: 12, company_size_more_than_1000: 10}}
+                - {survey: '2018', count: 135, salary: {salary_range_10_30: 68, salary_range_30_50: 27, salary_range_50_100: 18, salary_range_0_10: 10, salary_range_work_for_free: 5, salary_range_more_than_200: 1}, company_size: {company_size_100_1000: 32, company_size_20_50: 22, company_size_1_5: 16, company_size_10_20: 15, company_size_5_10: 13, company_size_more_than_1000: 13, company_size_1: 12, company_size_50_100: 11}}
+        -
+            country: 'South Africa'
+            count: 269
+            by_survey:
+                - {survey: '2018', count: 155, salary: {salary_range_30_50: 48, salary_range_50_100: 42, salary_range_10_30: 31, salary_range_100_200: 12, salary_range_work_for_free: 11, salary_range_0_10: 8, salary_range_more_than_200: 1}, company_size: {company_size_100_1000: 36, company_size_20_50: 27, company_size_50_100: 18, company_size_1: 17, company_size_1_5: 17, company_size_10_20: 15, company_size_5_10: 15, company_size_more_than_1000: 10}}
+                - {survey: '2017', count: 114, salary: {salary_range_30_50: 39, salary_range_50_100: 26, salary_range_10_30: 24, salary_range_0_10: 10, salary_range_work_for_free: 5, salary_range_100_200: 3, salary_range_more_than_200: 3}, company_size: {company_size_20_50: 24, company_size_100_1000: 18, company_size_1_5: 17, company_size_1: 13, company_size_50_100: 13, company_size_more_than_1000: 11, company_size_5_10: 10, company_size_10_20: 7}}
+        -
+            country: Ireland
+            count: 265
+            by_survey:
+                - {survey: '2017', count: 139, salary: {salary_range_50_100: 74, salary_range_30_50: 22, salary_range_100_200: 17, salary_range_10_30: 10, salary_range_0_10: 5, salary_range_work_for_free: 4}, company_size: {company_size_more_than_1000: 44, company_size_10_20: 19, company_size_20_50: 18, company_size_5_10: 16, company_size_100_1000: 14, company_size_1: 9, company_size_1_5: 9, company_size_50_100: 8}}
+                - {survey: '2018', count: 126, salary: {salary_range_50_100: 67, salary_range_100_200: 25, salary_range_30_50: 23, salary_range_10_30: 4, salary_range_work_for_free: 2}, company_size: {company_size_100_1000: 41, company_size_more_than_1000: 34, company_size_20_50: 12, company_size_50_100: 10, company_size_10_20: 9, company_size_1_5: 9, company_size_1: 5, company_size_5_10: 5}}
+        -
+            country: Belarus
+            count: 257
+            by_survey:
+                - {survey: '2018', count: 135, salary: {salary_range_10_30: 50, salary_range_30_50: 30, salary_range_0_10: 27, salary_range_50_100: 13, salary_range_work_for_free: 11, salary_range_100_200: 2, salary_range_more_than_200: 1}, company_size: {company_size_more_than_1000: 34, company_size_100_1000: 32, company_size_20_50: 18, company_size_50_100: 13, company_size_10_20: 11, company_size_5_10: 9, company_size_1: 8, company_size_1_5: 8}}
+                - {survey: '2017', count: 122, salary: {salary_range_10_30: 43, salary_range_0_10: 31, salary_range_30_50: 27, salary_range_50_100: 10, salary_range_work_for_free: 9, salary_range_more_than_200: 1}, company_size: {company_size_more_than_1000: 31, company_size_50_100: 26, company_size_100_1000: 23, company_size_1: 13, company_size_20_50: 10, company_size_10_20: 8, company_size_5_10: 6, company_size_1_5: 4}}
+        -
+            country: Colombia
+            count: 233
+            by_survey:
+                - {survey: '2018', count: 124, salary: {salary_range_10_30: 48, salary_range_0_10: 33, salary_range_30_50: 20, salary_range_50_100: 10, salary_range_work_for_free: 6, salary_range_100_200: 4}, company_size: {company_size_100_1000: 25, company_size_50_100: 19, company_size_more_than_1000: 18, company_size_1_5: 17, company_size_20_50: 13, company_size_10_20: 11, company_size_1: 10, company_size_5_10: 10}}
+                - {survey: '2017', count: 109, salary: {salary_range_10_30: 56, salary_range_0_10: 21, salary_range_30_50: 15, salary_range_50_100: 8, salary_range_work_for_free: 8, salary_range_100_200: 1}, company_size: {company_size_more_than_1000: 25, company_size_100_1000: 17, company_size_1: 14, company_size_20_50: 14, company_size_50_100: 13, company_size_1_5: 10, company_size_5_10: 9, company_size_10_20: 6}}
+        -
+            country: 'Czech Republic'
+            count: 220
+            by_survey:
+                - {survey: '2018', count: 178, salary: {salary_range_10_30: 62, salary_range_30_50: 61, salary_range_50_100: 24, salary_range_work_for_free: 9, salary_range_100_200: 8, salary_range_0_10: 6, salary_range_more_than_200: 2}, company_size: {company_size_100_1000: 40, company_size_more_than_1000: 35, company_size_10_20: 19, company_size_5_10: 19, company_size_50_100: 18, company_size_20_50: 17, company_size_1_5: 15, company_size_1: 14}}
+                - {survey: '2017', count: 42, salary: {salary_range_10_30: 15, salary_range_30_50: 11, salary_range_0_10: 5, salary_range_50_100: 5, salary_range_work_for_free: 1}, company_size: {company_size_1: 7, company_size_5_10: 7, company_size_10_20: 6, company_size_20_50: 6, company_size_more_than_1000: 5, company_size_1_5: 4, company_size_50_100: 4, company_size_100_1000: 3}}
+        -
+            country: Hungary
+            count: 208
+            by_survey:
+                - {survey: '2017', count: 113, salary: {salary_range_10_30: 50, salary_range_30_50: 23, salary_range_work_for_free: 12, salary_range_0_10: 9, salary_range_50_100: 9, salary_range_100_200: 1, salary_range_more_than_200: 1}, company_size: {company_size_1_5: 17, company_size_1: 16, company_size_100_1000: 16, company_size_10_20: 15, company_size_20_50: 15, company_size_5_10: 14, company_size_more_than_1000: 13, company_size_50_100: 6}}
+                - {survey: '2018', count: 95, salary: {salary_range_10_30: 44, salary_range_30_50: 17, salary_range_0_10: 10, salary_range_50_100: 9, salary_range_work_for_free: 6, salary_range_100_200: 3, salary_range_more_than_200: 2}, company_size: {company_size_20_50: 23, company_size_10_20: 14, company_size_1: 13, company_size_1_5: 10, company_size_50_100: 10, company_size_100_1000: 9, company_size_5_10: 8, company_size_more_than_1000: 8}}
+        -
+            country: Indonesia
+            count: 208
+            by_survey:
+                - {survey: '2018', count: 120, salary: {salary_range_0_10: 59, salary_range_10_30: 20, salary_range_work_for_free: 20, salary_range_30_50: 7, salary_range_100_200: 5, salary_range_50_100: 5, salary_range_more_than_200: 2}, company_size: {company_size_1: 28, company_size_1_5: 17, company_size_20_50: 17, company_size_10_20: 16, company_size_100_1000: 14, company_size_5_10: 14, company_size_50_100: 7, company_size_more_than_1000: 7}}
+                - {survey: '2017', count: 88, salary: {salary_range_0_10: 43, salary_range_10_30: 24, salary_range_30_50: 7, salary_range_work_for_free: 6, salary_range_100_200: 3, salary_range_50_100: 3, salary_range_more_than_200: 2}, company_size: {company_size_1: 19, company_size_20_50: 15, company_size_1_5: 12, company_size_100_1000: 11, company_size_5_10: 11, company_size_10_20: 10, company_size_50_100: 7, company_size_more_than_1000: 2}}
+        -
+            country: China
+            count: 193
+            by_survey:
+                - {survey: '2017', count: 118, salary: {salary_range_10_30: 41, salary_range_0_10: 29, salary_range_30_50: 20, salary_range_50_100: 13, salary_range_work_for_free: 11, salary_range_100_200: 1}, company_size: {company_size_20_50: 25, company_size_100_1000: 24, company_size_more_than_1000: 21, company_size_10_20: 15, company_size_50_100: 14, company_size_1: 7, company_size_1_5: 6, company_size_5_10: 5}}
+                - {survey: '2018', count: 75, salary: {salary_range_30_50: 24, salary_range_10_30: 13, salary_range_0_10: 11, salary_range_50_100: 11, salary_range_work_for_free: 9, salary_range_100_200: 3, salary_range_more_than_200: 1}, company_size: {company_size_more_than_1000: 27, company_size_20_50: 10, company_size_50_100: 9, company_size_10_20: 8, company_size_1: 7, company_size_100_1000: 6, company_size_1_5: 4, company_size_5_10: 1}}
+        -
+            country: Greece
+            count: 184
+            by_survey:
+                - {survey: '2017', count: 98, salary: {salary_range_10_30: 43, salary_range_0_10: 14, salary_range_50_100: 14, salary_range_30_50: 11, salary_range_work_for_free: 10, salary_range_100_200: 1}, company_size: {company_size_1: 19, company_size_100_1000: 17, company_size_20_50: 17, company_size_10_20: 11, company_size_50_100: 11, company_size_5_10: 11, company_size_1_5: 9, company_size_more_than_1000: 3}}
+                - {survey: '2018', count: 86, salary: {salary_range_10_30: 38, salary_range_30_50: 19, salary_range_50_100: 14, salary_range_0_10: 10, salary_range_work_for_free: 2, salary_range_100_200: 1, salary_range_more_than_200: 1}, company_size: {company_size_100_1000: 20, company_size_5_10: 13, company_size_10_20: 12, company_size_50_100: 11, company_size_20_50: 10, company_size_1_5: 9, company_size_1: 8, company_size_more_than_1000: 3}}
+        -
+            country: Bulgaria
+            count: 178
+            by_survey:
+                - {survey: '2017', count: 92, salary: {salary_range_10_30: 33, salary_range_50_100: 23, salary_range_30_50: 18, salary_range_0_10: 7, salary_range_work_for_free: 7, salary_range_100_200: 2}, company_size: {company_size_100_1000: 25, company_size_more_than_1000: 16, company_size_1: 11, company_size_1_5: 11, company_size_20_50: 9, company_size_50_100: 8, company_size_10_20: 7, company_size_5_10: 5}}
+                - {survey: '2018', count: 86, salary: {salary_range_10_30: 32, salary_range_30_50: 24, salary_range_50_100: 13, salary_range_work_for_free: 6, salary_range_100_200: 4, salary_range_0_10: 3, salary_range_more_than_200: 1}, company_size: {company_size_100_1000: 19, company_size_50_100: 16, company_size_1_5: 14, company_size_more_than_1000: 14, company_size_20_50: 11, company_size_5_10: 6, company_size_1: 4, company_size_10_20: 2}}
+        -
+            country: Turkey
+            count: 178
+            by_survey:
+                - {survey: '2018', count: 90, salary: {salary_range_0_10: 26, salary_range_10_30: 25, salary_range_work_for_free: 13, salary_range_50_100: 10, salary_range_30_50: 8, salary_range_100_200: 3}, company_size: {company_size_1: 18, company_size_100_1000: 14, company_size_20_50: 14, company_size_5_10: 11, company_size_1_5: 10, company_size_50_100: 10, company_size_10_20: 9, company_size_more_than_1000: 2}}
+                - {survey: '2017', count: 88, salary: {salary_range_10_30: 33, salary_range_50_100: 15, salary_range_30_50: 12, salary_range_work_for_free: 11, salary_range_0_10: 9, salary_range_100_200: 3, salary_range_more_than_200: 2}, company_size: {company_size_100_1000: 17, company_size_20_50: 16, company_size_1_5: 13, company_size_1: 11, company_size_50_100: 11, company_size_10_20: 9, company_size_5_10: 8, company_size_more_than_1000: 1}}
+        -
+            country: Japan
+            count: 165
+            by_survey:
+                - {survey: '2017', count: 90, salary: {salary_range_30_50: 28, salary_range_50_100: 25, salary_range_100_200: 10, salary_range_10_30: 10, salary_range_work_for_free: 7, salary_range_0_10: 3, salary_range_more_than_200: 1}, company_size: {company_size_100_1000: 19, company_size_20_50: 15, company_size_more_than_1000: 14, company_size_5_10: 12, company_size_1: 10, company_size_1_5: 8, company_size_50_100: 6, company_size_10_20: 4}}
+                - {survey: '2018', count: 75, salary: {salary_range_50_100: 30, salary_range_30_50: 24, salary_range_100_200: 6, salary_range_10_30: 6, salary_range_more_than_200: 2, salary_range_work_for_free: 1}, company_size: {company_size_100_1000: 18, company_size_more_than_1000: 13, company_size_20_50: 11, company_size_1: 8, company_size_1_5: 7, company_size_50_100: 6, company_size_5_10: 6, company_size_10_20: 5}}
+        -
+            country: Serbia
+            count: 164
+            by_survey:
+                - {survey: '2018', count: 83, salary: {salary_range_10_30: 29, salary_range_30_50: 21, salary_range_0_10: 18, salary_range_50_100: 8, salary_range_100_200: 3, salary_range_work_for_free: 3}, company_size: {company_size_50_100: 15, company_size_100_1000: 14, company_size_5_10: 14, company_size_1_5: 11, company_size_20_50: 11, company_size_10_20: 10, company_size_1: 6, company_size_more_than_1000: 2}}
+                - {survey: '2017', count: 81, salary: {salary_range_10_30: 29, salary_range_0_10: 22, salary_range_30_50: 13, salary_range_work_for_free: 12, salary_range_50_100: 5}, company_size: {company_size_1: 19, company_size_10_20: 17, company_size_20_50: 14, company_size_100_1000: 9, company_size_5_10: 9, company_size_1_5: 7, company_size_50_100: 4, company_size_more_than_1000: 2}}
+        -
+            country: Philippines
+            count: 160
+            by_survey:
+                - {survey: '2018', count: 87, salary: {salary_range_0_10: 40, salary_range_10_30: 28, salary_range_30_50: 7, salary_range_work_for_free: 7, salary_range_50_100: 3}, company_size: {company_size_1: 15, company_size_1_5: 14, company_size_10_20: 13, company_size_100_1000: 11, company_size_20_50: 9, company_size_5_10: 9, company_size_more_than_1000: 8, company_size_50_100: 7}}
+                - {survey: '2017', count: 73, salary: {salary_range_0_10: 29, salary_range_10_30: 24, salary_range_work_for_free: 11, salary_range_30_50: 4, salary_range_50_100: 4, salary_range_more_than_200: 1}, company_size: {company_size_20_50: 17, company_size_1: 13, company_size_10_20: 11, company_size_5_10: 9, company_size_50_100: 7, company_size_more_than_1000: 7, company_size_1_5: 5, company_size_100_1000: 4}}
+        -
+            country: Singapore
+            count: 141
+            by_survey:
+                - {survey: '2018', count: 76, salary: {salary_range_50_100: 28, salary_range_30_50: 18, salary_range_100_200: 9, salary_range_10_30: 8, salary_range_0_10: 4, salary_range_work_for_free: 4, salary_range_more_than_200: 3}, company_size: {company_size_more_than_1000: 18, company_size_100_1000: 10, company_size_20_50: 9, company_size_5_10: 9, company_size_1_5: 8, company_size_50_100: 8, company_size_1: 7, company_size_10_20: 7}}
+                - {survey: '2017', count: 65, salary: {salary_range_50_100: 28, salary_range_30_50: 11, salary_range_10_30: 7, salary_range_work_for_free: 7, salary_range_0_10: 6, salary_range_100_200: 5}, company_size: {company_size_more_than_1000: 12, company_size_10_20: 11, company_size_100_1000: 10, company_size_1: 8, company_size_50_100: 8, company_size_1_5: 6, company_size_20_50: 6, company_size_5_10: 4}}
+        -
+            country: Croatia
+            count: 128
+            by_survey:
+                - {survey: '2017', count: 69, salary: {salary_range_10_30: 29, salary_range_30_50: 13, salary_range_0_10: 12, salary_range_50_100: 8, salary_range_work_for_free: 5, salary_range_100_200: 1}, company_size: {company_size_10_20: 12, company_size_100_1000: 10, company_size_20_50: 10, company_size_1: 9, company_size_5_10: 8, company_size_1_5: 7, company_size_50_100: 7, company_size_more_than_1000: 4}}
+                - {survey: '2018', count: 59, salary: {salary_range_10_30: 27, salary_range_0_10: 10, salary_range_30_50: 10, salary_range_50_100: 8, salary_range_100_200: 1, salary_range_work_for_free: 1}, company_size: {company_size_10_20: 16, company_size_1_5: 9, company_size_1: 8, company_size_50_100: 7, company_size_100_1000: 6, company_size_20_50: 6, company_size_5_10: 6, company_size_more_than_1000: 1}}
+        -
+            country: Chile
+            count: 125
+            by_survey:
+                - {survey: '2017', count: 76, salary: {salary_range_10_30: 31, salary_range_30_50: 18, salary_range_50_100: 12, salary_range_work_for_free: 7, salary_range_0_10: 4, salary_range_100_200: 3, salary_range_more_than_200: 1}, company_size: {company_size_1_5: 13, company_size_50_100: 13, company_size_10_20: 12, company_size_more_than_1000: 10, company_size_1: 9, company_size_20_50: 9, company_size_100_1000: 5, company_size_5_10: 5}}
+                - {survey: '2018', count: 49, salary: {salary_range_30_50: 16, salary_range_10_30: 12, salary_range_50_100: 10, salary_range_0_10: 6, salary_range_work_for_free: 3, salary_range_more_than_200: 2}, company_size: {company_size_5_10: 12, company_size_1: 7, company_size_100_1000: 6, company_size_10_20: 6, company_size_50_100: 5, company_size_more_than_1000: 5, company_size_1_5: 4, company_size_20_50: 4}}
+        -
+            country: Malaysia
+            count: 121
+            by_survey:
+                - {survey: '2017', count: 74, salary: {salary_range_10_30: 19, salary_range_0_10: 15, salary_range_30_50: 12, salary_range_50_100: 11, salary_range_work_for_free: 11, salary_range_100_200: 6}, company_size: {company_size_1: 18, company_size_5_10: 15, company_size_100_1000: 12, company_size_20_50: 10, company_size_1_5: 6, company_size_50_100: 6, company_size_10_20: 4, company_size_more_than_1000: 3}}
+                - {survey: '2018', count: 47, salary: {salary_range_10_30: 19, salary_range_30_50: 13, salary_range_0_10: 6, salary_range_50_100: 4, salary_range_work_for_free: 3, salary_range_100_200: 1}, company_size: {company_size_1: 9, company_size_100_1000: 7, company_size_10_20: 6, company_size_50_100: 6, company_size_more_than_1000: 6, company_size_1_5: 4, company_size_20_50: 4, company_size_5_10: 4}}
+        -
+            country: 'Korea (Democratic People''s Republic of)'
+            count: 118
+            by_survey:
+                - {survey: '2017', count: 67, salary: {salary_range_50_100: 21, salary_range_30_50: 15, salary_range_work_for_free: 10, salary_range_10_30: 8, salary_range_100_200: 5, salary_range_0_10: 3, salary_range_more_than_200: 3}, company_size: {company_size_1: 11, company_size_20_50: 11, company_size_more_than_1000: 11, company_size_10_20: 10, company_size_100_1000: 7, company_size_1_5: 7, company_size_5_10: 7, company_size_50_100: 3}}
+                - {survey: '2018', count: 51, salary: {salary_range_10_30: 15, salary_range_30_50: 14, salary_range_50_100: 8, salary_range_100_200: 4, salary_range_work_for_free: 3, salary_range_0_10: 1, salary_range_more_than_200: 1}, company_size: {company_size_20_50: 13, company_size_10_20: 8, company_size_50_100: 8, company_size_100_1000: 5, company_size_1_5: 5, company_size_5_10: 4, company_size_more_than_1000: 3, company_size_1: 2}}
+        -
+            country: Nigeria
+            count: 116
+            by_survey:
+                - {survey: '2017', count: 58, salary: {salary_range_0_10: 34, salary_range_10_30: 9, salary_range_work_for_free: 9, salary_range_30_50: 2, salary_range_50_100: 2, salary_range_100_200: 1}, company_size: {company_size_1: 20, company_size_1_5: 11, company_size_20_50: 6, company_size_50_100: 6, company_size_5_10: 6, company_size_10_20: 5, company_size_100_1000: 4}}
+                - {survey: '2018', count: 58, salary: {salary_range_0_10: 34, salary_range_10_30: 10, salary_range_work_for_free: 10, salary_range_30_50: 2, salary_range_50_100: 1}, company_size: {company_size_1_5: 15, company_size_1: 14, company_size_5_10: 8, company_size_10_20: 7, company_size_20_50: 5, company_size_50_100: 4, company_size_100_1000: 3, company_size_more_than_1000: 2}}
+        -
+            country: Taiwan
+            count: 106
+            by_survey:
+                - {survey: '2018', count: 55, salary: {salary_range_10_30: 25, salary_range_30_50: 13, salary_range_work_for_free: 9, salary_range_0_10: 5, salary_range_100_200: 1}, company_size: {company_size_20_50: 12, company_size_1: 8, company_size_100_1000: 8, company_size_10_20: 7, company_size_50_100: 7, company_size_5_10: 6, company_size_1_5: 3, company_size_more_than_1000: 3}}
+                - {survey: '2017', count: 51, salary: {salary_range_10_30: 23, salary_range_work_for_free: 10, salary_range_30_50: 7, salary_range_50_100: 5, salary_range_0_10: 3, salary_range_more_than_200: 1}, company_size: {company_size_100_1000: 10, company_size_1: 9, company_size_5_10: 9, company_size_50_100: 8, company_size_10_20: 4, company_size_1_5: 4, company_size_20_50: 3, company_size_more_than_1000: 2}}
+        -
+            country: Slovakia
+            count: 104
+            by_survey:
+                - {survey: '2018', count: 58, salary: {salary_range_10_30: 21, salary_range_30_50: 13, salary_range_50_100: 12, salary_range_0_10: 6, salary_range_work_for_free: 2, salary_range_more_than_200: 1}, company_size: {company_size_100_1000: 11, company_size_10_20: 10, company_size_20_50: 9, company_size_50_100: 7, company_size_more_than_1000: 7, company_size_1: 6, company_size_5_10: 5, company_size_1_5: 3}}
+                - {survey: '2017', count: 46, salary: {salary_range_10_30: 17, salary_range_work_for_free: 9, salary_range_30_50: 8, salary_range_50_100: 5, salary_range_0_10: 4, salary_range_100_200: 1}, company_size: {company_size_more_than_1000: 8, company_size_1: 7, company_size_5_10: 7, company_size_1_5: 6, company_size_20_50: 6, company_size_100_1000: 4, company_size_10_20: 4, company_size_50_100: 4}}
+        -
+            country: Estonia
+            count: 100
+            by_survey:
+                - {survey: '2018', count: 54, salary: {salary_range_10_30: 19, salary_range_30_50: 19, salary_range_50_100: 7, salary_range_0_10: 3, salary_range_work_for_free: 3}, company_size: {company_size_100_1000: 12, company_size_50_100: 10, company_size_more_than_1000: 7, company_size_10_20: 6, company_size_1_5: 6, company_size_5_10: 5, company_size_20_50: 4, company_size_1: 3}}
+                - {survey: '2017', count: 46, salary: {salary_range_10_30: 21, salary_range_30_50: 13, salary_range_50_100: 6, salary_range_0_10: 2, salary_range_100_200: 2, salary_range_work_for_free: 2}, company_size: {company_size_100_1000: 12, company_size_10_20: 8, company_size_50_100: 8, company_size_20_50: 6, company_size_5_10: 6, company_size_1: 3, company_size_1_5: 2, company_size_more_than_1000: 1}}
+        -
+            country: 'Viet Nam'
+            count: 93
+            by_survey:
+                - {survey: '2017', count: 56, salary: {salary_range_0_10: 19, salary_range_10_30: 19, salary_range_30_50: 9, salary_range_work_for_free: 5, salary_range_100_200: 1}, company_size: {company_size_5_10: 13, company_size_20_50: 9, company_size_50_100: 9, company_size_1: 6, company_size_10_20: 6, company_size_more_than_1000: 6, company_size_100_1000: 5, company_size_1_5: 1}}
+                - {survey: '2018', count: 37, salary: {salary_range_10_30: 16, salary_range_0_10: 12, salary_range_30_50: 4, salary_range_100_200: 1, salary_range_50_100: 1, salary_range_work_for_free: 1}, company_size: {company_size_20_50: 8, company_size_100_1000: 6, company_size_more_than_1000: 5, company_size_1_5: 4, company_size_50_100: 4, company_size_1: 3, company_size_10_20: 3, company_size_5_10: 2}}
+        -
+            country: 'Hong Kong'
+            count: 86
+            by_survey:
+                - {survey: '2017', count: 53, salary: {salary_range_50_100: 24, salary_range_30_50: 9, salary_range_10_30: 8, salary_range_work_for_free: 7, salary_range_0_10: 3, salary_range_100_200: 2}, company_size: {company_size_20_50: 11, company_size_100_1000: 10, company_size_1: 8, company_size_10_20: 7, company_size_5_10: 5, company_size_more_than_1000: 5, company_size_50_100: 4, company_size_1_5: 2}}
+                - {survey: '2018', count: 33, salary: {salary_range_50_100: 9, salary_range_30_50: 8, salary_range_0_10: 5, salary_range_work_for_free: 4, salary_range_10_30: 3, salary_range_100_200: 2}, company_size: {company_size_1: 6, company_size_5_10: 6, company_size_100_1000: 4, company_size_20_50: 4, company_size_1_5: 3, company_size_50_100: 3, company_size_more_than_1000: 3, company_size_10_20: 2}}
+        -
+            country: Egypt
+            count: 79
+            by_survey:
+                - {survey: '2018', count: 48, salary: {salary_range_0_10: 23, salary_range_10_30: 11, salary_range_50_100: 5, salary_range_work_for_free: 3, salary_range_30_50: 2, salary_range_100_200: 1}, company_size: {company_size_10_20: 8, company_size_1: 7, company_size_1_5: 7, company_size_5_10: 7, company_size_50_100: 6, company_size_20_50: 5, company_size_100_1000: 3, company_size_more_than_1000: 1}}
+                - {survey: '2017', count: 31, salary: {salary_range_0_10: 17, salary_range_work_for_free: 4, salary_range_10_30: 3, salary_range_100_200: 2, salary_range_30_50: 2, salary_range_50_100: 1}, company_size: {company_size_1: 7, company_size_10_20: 6, company_size_1_5: 5, company_size_20_50: 5, company_size_5_10: 4, company_size_50_100: 2, company_size_100_1000: 1}}
+        -
+            country: Thailand
+            count: 78
+            by_survey:
+                - {survey: '2017', count: 48, salary: {salary_range_50_100: 12, salary_range_10_30: 9, salary_range_30_50: 9, salary_range_work_for_free: 8, salary_range_0_10: 6, salary_range_100_200: 4}, company_size: {company_size_1: 8, company_size_50_100: 8, company_size_100_1000: 7, company_size_1_5: 7, company_size_more_than_1000: 6, company_size_20_50: 5, company_size_10_20: 4, company_size_5_10: 3}}
+                - {survey: '2018', count: 30, salary: {salary_range_10_30: 11, salary_range_0_10: 4, salary_range_30_50: 4, salary_range_50_100: 4, salary_range_work_for_free: 4, salary_range_more_than_200: 1}, company_size: {company_size_1: 6, company_size_1_5: 6, company_size_50_100: 5, company_size_20_50: 4, company_size_100_1000: 3, company_size_10_20: 3, company_size_more_than_1000: 2, company_size_5_10: 1}}
+        -
+            country: Uruguay
+            count: 74
+            by_survey:
+                - {survey: '2017', count: 37, salary: {salary_range_30_50: 12, salary_range_10_30: 11, salary_range_50_100: 7, salary_range_0_10: 5, salary_range_100_200: 1, salary_range_work_for_free: 1}, company_size: {company_size_50_100: 12, company_size_20_50: 8, company_size_more_than_1000: 7, company_size_10_20: 4, company_size_1_5: 3, company_size_1: 1, company_size_100_1000: 1, company_size_5_10: 1}}
+                - {survey: '2018', count: 37, salary: {salary_range_10_30: 12, salary_range_50_100: 11, salary_range_30_50: 10, salary_range_0_10: 4}, company_size: {company_size_20_50: 8, company_size_50_100: 7, company_size_100_1000: 5, company_size_1: 4, company_size_5_10: 4, company_size_more_than_1000: 4, company_size_1_5: 3, company_size_10_20: 2}}
+        -
+            country: Slovenia
+            count: 72
+            by_survey:
+                - {survey: '2018', count: 38, salary: {salary_range_30_50: 14, salary_range_10_30: 11, salary_range_50_100: 6, salary_range_work_for_free: 4, salary_range_0_10: 2}, company_size: {company_size_1: 9, company_size_20_50: 9, company_size_1_5: 6, company_size_50_100: 6, company_size_100_1000: 3, company_size_10_20: 2, company_size_5_10: 2}}
+                - {survey: '2017', count: 34, salary: {salary_range_10_30: 15, salary_range_30_50: 8, salary_range_0_10: 4, salary_range_work_for_free: 4, salary_range_50_100: 3}, company_size: {company_size_20_50: 9, company_size_1: 8, company_size_1_5: 6, company_size_50_100: 6, company_size_10_20: 3, company_size_100_1000: 1, company_size_5_10: 1}}
+        -
+            country: 'Costa Rica'
+            count: 71
+            by_survey:
+                - {survey: '2017', count: 41, salary: {salary_range_10_30: 12, salary_range_30_50: 10, salary_range_50_100: 9, salary_range_0_10: 5, salary_range_100_200: 2}, company_size: {company_size_100_1000: 10, company_size_20_50: 8, company_size_10_20: 5, company_size_50_100: 5, company_size_5_10: 5, company_size_1: 4, company_size_1_5: 3, company_size_more_than_1000: 1}}
+                - {survey: '2018', count: 30, salary: {salary_range_30_50: 10, salary_range_50_100: 9, salary_range_10_30: 5, salary_range_work_for_free: 3, salary_range_0_10: 2, salary_range_100_200: 1}, company_size: {company_size_20_50: 7, company_size_50_100: 7, company_size_1: 4, company_size_100_1000: 4, company_size_10_20: 3, company_size_more_than_1000: 3, company_size_5_10: 2}}
+        -
+            country: Latvia
+            count: 71
+            by_survey:
+                - {survey: '2017', count: 40, salary: {salary_range_30_50: 16, salary_range_10_30: 11, salary_range_50_100: 8, salary_range_0_10: 2, salary_range_work_for_free: 2, salary_range_100_200: 1}, company_size: {company_size_20_50: 11, company_size_100_1000: 9, company_size_10_20: 4, company_size_1_5: 4, company_size_50_100: 4, company_size_5_10: 3, company_size_more_than_1000: 3, company_size_1: 2}}
+                - {survey: '2018', count: 31, salary: {salary_range_50_100: 10, salary_range_10_30: 8, salary_range_work_for_free: 5, salary_range_30_50: 4, salary_range_0_10: 2, salary_range_100_200: 2}, company_size: {company_size_50_100: 9, company_size_1: 4, company_size_10_20: 4, company_size_1_5: 4, company_size_20_50: 4, company_size_100_1000: 3, company_size_5_10: 3}}
+        -
+            country: Lithuania
+            count: 70
+            by_survey:
+                - {survey: '2018', count: 37, salary: {salary_range_10_30: 15, salary_range_30_50: 10, salary_range_0_10: 6, salary_range_50_100: 5, salary_range_work_for_free: 1}, company_size: {company_size_100_1000: 10, company_size_5_10: 9, company_size_1: 4, company_size_1_5: 4, company_size_50_100: 4, company_size_10_20: 3, company_size_more_than_1000: 2, company_size_20_50: 1}}
+                - {survey: '2017', count: 33, salary: {salary_range_10_30: 10, salary_range_0_10: 8, salary_range_30_50: 6, salary_range_work_for_free: 4, salary_range_50_100: 3, salary_range_100_200: 1}, company_size: {company_size_1: 9, company_size_1_5: 6, company_size_20_50: 6, company_size_100_1000: 5, company_size_10_20: 4, company_size_50_100: 1, company_size_5_10: 1, company_size_more_than_1000: 1}}
+        -
+            country: Pakistan
+            count: 67
+            by_survey:
+                - {survey: '2018', count: 34, salary: {salary_range_0_10: 13, salary_range_10_30: 10, salary_range_50_100: 4, salary_range_work_for_free: 4, salary_range_100_200: 1, salary_range_30_50: 1}, company_size: {company_size_1: 8, company_size_100_1000: 6, company_size_10_20: 5, company_size_5_10: 5, company_size_1_5: 3, company_size_20_50: 3, company_size_50_100: 3}}
+                - {survey: '2017', count: 33, salary: {salary_range_0_10: 10, salary_range_work_for_free: 8, salary_range_10_30: 7, salary_range_50_100: 7, salary_range_30_50: 1}, company_size: {company_size_1: 7, company_size_10_20: 7, company_size_5_10: 6, company_size_1_5: 5, company_size_100_1000: 4, company_size_20_50: 2, company_size_50_100: 2}}
+        -
+            country: Bangladesh
+            count: 62
+            by_survey:
+                - {survey: '2018', count: 41, salary: {salary_range_0_10: 13, salary_range_10_30: 8, salary_range_50_100: 7, salary_range_30_50: 5, salary_range_work_for_free: 5, salary_range_100_200: 1}, company_size: {company_size_20_50: 9, company_size_1: 8, company_size_10_20: 8, company_size_1_5: 6, company_size_100_1000: 3, company_size_5_10: 3, company_size_50_100: 2, company_size_more_than_1000: 1}}
+                - {survey: '2017', count: 21, salary: {salary_range_0_10: 9, salary_range_10_30: 6, salary_range_work_for_free: 5, salary_range_50_100: 1}, company_size: {company_size_5_10: 7, company_size_10_20: 5, company_size_1: 4, company_size_1_5: 3, company_size_20_50: 1, company_size_50_100: 1}}
+        -
+            country: 'Iran (Islamic Republic of)'
+            count: 57
+            by_survey:
+                - {survey: '2018', count: 46, salary: {salary_range_0_10: 17, salary_range_10_30: 10, salary_range_50_100: 8, salary_range_work_for_free: 6, salary_range_30_50: 2}, company_size: {company_size_1_5: 11, company_size_5_10: 10, company_size_100_1000: 6, company_size_10_20: 6, company_size_20_50: 6, company_size_1: 4, company_size_50_100: 3}}
+                - {survey: '2017', count: 11, salary: {salary_range_0_10: 4, salary_range_10_30: 3, salary_range_30_50: 2, salary_range_work_for_free: 2}, company_size: {company_size_50_100: 4, company_size_1_5: 2, company_size_5_10: 2, company_size_1: 1, company_size_100_1000: 1, company_size_10_20: 1}}
+        -
+            country: Peru
+            count: 55
+            by_survey:
+                - {survey: '2018', count: 30, salary: {salary_range_10_30: 10, salary_range_0_10: 7, salary_range_work_for_free: 6, salary_range_30_50: 5, salary_range_50_100: 2}, company_size: {company_size_10_20: 5, company_size_1_5: 5, company_size_20_50: 5, company_size_1: 4, company_size_50_100: 4, company_size_more_than_1000: 3, company_size_100_1000: 2, company_size_5_10: 2}}
+                - {survey: '2017', count: 25, salary: {salary_range_10_30: 12, salary_range_0_10: 6, salary_range_30_50: 3, salary_range_work_for_free: 2, salary_range_50_100: 1}, company_size: {company_size_1_5: 5, company_size_5_10: 5, company_size_100_1000: 4, company_size_1: 3, company_size_20_50: 3, company_size_10_20: 2, company_size_50_100: 2, company_size_more_than_1000: 1}}
+        -
+            country: Iceland
+            count: 54
+            by_survey:
+                - {survey: '2017', count: 37, salary: {salary_range_50_100: 21, salary_range_100_200: 6, salary_range_30_50: 5, salary_range_more_than_200: 1, salary_range_work_for_free: 1}, company_size: {company_size_100_1000: 9, company_size_1_5: 6, company_size_20_50: 6, company_size_50_100: 5, company_size_5_10: 5, company_size_1: 3, company_size_10_20: 2, company_size_more_than_1000: 1}}
+                - {survey: '2018', count: 17, salary: {salary_range_50_100: 11, salary_range_100_200: 6}, company_size: {company_size_100_1000: 6, company_size_10_20: 5, company_size_more_than_1000: 2, company_size_1: 1, company_size_20_50: 1, company_size_50_100: 1, company_size_5_10: 1}}
+        -
+            country: 'Moldova (Republic of)'
+            count: 54
+            by_survey:
+                - {survey: '2018', count: 34, salary: {salary_range_10_30: 21, salary_range_0_10: 8, salary_range_30_50: 2, salary_range_50_100: 1, salary_range_work_for_free: 1}, company_size: {company_size_20_50: 10, company_size_100_1000: 6, company_size_1: 5, company_size_10_20: 4, company_size_1_5: 3, company_size_5_10: 3, company_size_50_100: 2, company_size_more_than_1000: 1}}
+                - {survey: '2017', count: 20, salary: {salary_range_0_10: 9, salary_range_10_30: 6, salary_range_30_50: 3, salary_range_work_for_free: 2}, company_size: {company_size_20_50: 5, company_size_50_100: 5, company_size_10_20: 4, company_size_5_10: 2, company_size_1: 1, company_size_100_1000: 1, company_size_1_5: 1, company_size_more_than_1000: 1}}
+        -
+            country: 'Venezuela (Bolivarian Republic of)'
+            count: 54
+            by_survey:
+                - {survey: '2018', count: 29, salary: {salary_range_0_10: 19, salary_range_work_for_free: 6, salary_range_10_30: 3, salary_range_30_50: 1}, company_size: {company_size_1: 11, company_size_5_10: 8, company_size_10_20: 3, company_size_1_5: 3, company_size_100_1000: 2, company_size_20_50: 1, company_size_50_100: 1}}
+                - {survey: '2017', count: 25, salary: {salary_range_0_10: 12, salary_range_10_30: 7, salary_range_work_for_free: 6}, company_size: {company_size_1_5: 8, company_size_1: 7, company_size_20_50: 5, company_size_10_20: 2, company_size_100_1000: 1, company_size_5_10: 1, company_size_more_than_1000: 1}}
+        -
+            country: 'Dominican Republic'
+            count: 43
+            by_survey:
+                - {survey: '2017', count: 25, salary: {salary_range_10_30: 9, salary_range_0_10: 6, salary_range_30_50: 4, salary_range_50_100: 3, salary_range_work_for_free: 3}, company_size: {company_size_100_1000: 5, company_size_1_5: 5, company_size_20_50: 4, company_size_50_100: 4, company_size_1: 3, company_size_5_10: 2, company_size_10_20: 1, company_size_more_than_1000: 1}}
+                - {survey: '2018', count: 18, salary: {salary_range_10_30: 8, salary_range_30_50: 4, salary_range_0_10: 3, salary_range_50_100: 2, salary_range_100_200: 1}, company_size: {company_size_20_50: 5, company_size_1: 3, company_size_100_1000: 3, company_size_10_20: 3, company_size_5_10: 3, company_size_1_5: 1}}
+        -
+            country: 'Bosnia and Herzegovina'
+            count: 41
+            by_survey:
+                - {survey: '2017', count: 22, salary: {salary_range_10_30: 8, salary_range_0_10: 5, salary_range_work_for_free: 4, salary_range_50_100: 3, salary_range_100_200: 1, salary_range_30_50: 1}, company_size: {company_size_1: 4, company_size_1_5: 4, company_size_5_10: 4, company_size_10_20: 3, company_size_20_50: 3, company_size_50_100: 3, company_size_100_1000: 1}}
+                - {survey: '2018', count: 19, salary: {salary_range_10_30: 6, salary_range_50_100: 4, salary_range_0_10: 3, salary_range_30_50: 3, salary_range_work_for_free: 3}, company_size: {company_size_50_100: 7, company_size_20_50: 4, company_size_1: 3, company_size_1_5: 2, company_size_5_10: 2, company_size_100_1000: 1}}
+        -
+            country: 'Macedonia (the former Yugoslav Republic of)'
+            count: 38
+            by_survey:
+                - {survey: '2017', count: 19, salary: {salary_range_10_30: 10, salary_range_work_for_free: 4, salary_range_0_10: 1, salary_range_100_200: 1, salary_range_30_50: 1, salary_range_50_100: 1}, company_size: {company_size_100_1000: 6, company_size_20_50: 5, company_size_1: 3, company_size_1_5: 3, company_size_10_20: 1, company_size_5_10: 1}}
+                - {survey: '2018', count: 19, salary: {salary_range_10_30: 10, salary_range_0_10: 3, salary_range_30_50: 3, salary_range_50_100: 2, salary_range_work_for_free: 1}, company_size: {company_size_100_1000: 9, company_size_50_100: 4, company_size_more_than_1000: 2, company_size_1: 1, company_size_10_20: 1, company_size_1_5: 1, company_size_5_10: 1}}
+        -
+            country: 'Bolivia (Plurinational State of)'
+            count: 37
+            by_survey:
+                - {survey: '2018', count: 27, salary: {salary_range_10_30: 11, salary_range_work_for_free: 6, salary_range_0_10: 5, salary_range_30_50: 1, salary_range_50_100: 1, salary_range_more_than_200: 1}, company_size: {company_size_100_1000: 9, company_size_5_10: 6, company_size_1: 4, company_size_1_5: 3, company_size_20_50: 2, company_size_10_20: 1, company_size_50_100: 1, company_size_more_than_1000: 1}}
+                - {survey: '2017', count: 10, salary: {salary_range_0_10: 3, salary_range_10_30: 3, salary_range_50_100: 2, salary_range_work_for_free: 2}, company_size: {company_size_1_5: 3, company_size_1: 2, company_size_100_1000: 2, company_size_20_50: 1, company_size_50_100: 1, company_size_5_10: 1}}
+        -
+            country: Morocco
+            count: 37
+            by_survey:
+                - {survey: '2018', count: 22, salary: {salary_range_10_30: 8, salary_range_0_10: 6, salary_range_work_for_free: 5, salary_range_50_100: 3}, company_size: {company_size_1: 7, company_size_20_50: 6, company_size_10_20: 4, company_size_1_5: 3, company_size_100_1000: 1, company_size_5_10: 1}}
+                - {survey: '2017', count: 15, salary: {salary_range_10_30: 5, salary_range_0_10: 3, salary_range_work_for_free: 3, salary_range_30_50: 2, salary_range_50_100: 1}, company_size: {company_size_1: 5, company_size_1_5: 4, company_size_20_50: 2, company_size_50_100: 2, company_size_100_1000: 1, company_size_10_20: 1}}
+        -
+            country: Ecuador
+            count: 36
+            by_survey:
+                - {survey: '2017', count: 19, salary: {salary_range_10_30: 8, salary_range_0_10: 3, salary_range_30_50: 3, salary_range_work_for_free: 3, salary_range_100_200: 1, salary_range_50_100: 1}, company_size: {company_size_more_than_1000: 5, company_size_1: 3, company_size_10_20: 3, company_size_1_5: 3, company_size_20_50: 2, company_size_5_10: 2, company_size_100_1000: 1}}
+                - {survey: '2018', count: 17, salary: {salary_range_10_30: 8, salary_range_0_10: 4, salary_range_30_50: 3, salary_range_work_for_free: 2}, company_size: {company_size_1_5: 6, company_size_1: 3, company_size_100_1000: 3, company_size_10_20: 3, company_size_50_100: 2}}
+        -
+            country: Malta
+            count: 35
+            by_survey:
+                - {survey: '2017', count: 19, salary: {salary_range_30_50: 9, salary_range_50_100: 6, salary_range_10_30: 3, salary_range_100_200: 1}, company_size: {company_size_100_1000: 4, company_size_20_50: 4, company_size_10_20: 3, company_size_more_than_1000: 3, company_size_1_5: 2, company_size_50_100: 2, company_size_1: 1}}
+                - {survey: '2018', count: 16, salary: {salary_range_30_50: 9, salary_range_50_100: 5, salary_range_10_30: 1, salary_range_work_for_free: 1}, company_size: {company_size_100_1000: 6, company_size_5_10: 4, company_size_50_100: 2, company_size_more_than_1000: 2, company_size_10_20: 1, company_size_20_50: 1}}
+        -
+            country: Nepal
+            count: 31
+            by_survey:
+                - {survey: '2018', count: 17, salary: {salary_range_0_10: 10, salary_range_10_30: 5, salary_range_50_100: 1, salary_range_work_for_free: 1}, company_size: {company_size_1_5: 4, company_size_50_100: 4, company_size_100_1000: 2, company_size_10_20: 2, company_size_20_50: 2, company_size_5_10: 2, company_size_1: 1}}
+                - {survey: '2017', count: 14, salary: {salary_range_0_10: 6, salary_range_10_30: 3, salary_range_work_for_free: 2, salary_range_100_200: 1, salary_range_30_50: 1}, company_size: {company_size_1: 3, company_size_100_1000: 2, company_size_1_5: 2, company_size_5_10: 2, company_size_more_than_1000: 2, company_size_10_20: 1, company_size_20_50: 1, company_size_50_100: 1}}
+        -
+            country: 'United Arab Emirates'
+            count: 31
+            by_survey:
+                - {survey: '2017', count: 18, salary: {salary_range_100_200: 7, salary_range_50_100: 4, salary_range_30_50: 2, salary_range_work_for_free: 2, salary_range_10_30: 1, salary_range_more_than_200: 1}, company_size: {company_size_100_1000: 4, company_size_50_100: 4, company_size_5_10: 3, company_size_20_50: 2, company_size_more_than_1000: 2, company_size_1: 1, company_size_10_20: 1, company_size_1_5: 1}}
+                - {survey: '2018', count: 13, salary: {salary_range_100_200: 5, salary_range_more_than_200: 4, salary_range_50_100: 3, salary_range_10_30: 1}, company_size: {company_size_10_20: 3, company_size_20_50: 3, company_size_100_1000: 2, company_size_1: 1, company_size_1_5: 1, company_size_50_100: 1, company_size_5_10: 1, company_size_more_than_1000: 1}}
+        -
+            country: Kenya
+            count: 30
+            by_survey:
+                - {survey: '2018', count: 17, salary: {salary_range_0_10: 8, salary_range_10_30: 3, salary_range_work_for_free: 3, salary_range_30_50: 1, salary_range_50_100: 1}, company_size: {company_size_1: 5, company_size_1_5: 3, company_size_100_1000: 2, company_size_10_20: 2, company_size_5_10: 2, company_size_more_than_1000: 2, company_size_20_50: 1}}
+                - {survey: '2017', count: 13, salary: {salary_range_0_10: 6, salary_range_work_for_free: 4, salary_range_50_100: 2, salary_range_10_30: 1}, company_size: {company_size_1: 4, company_size_1_5: 3, company_size_100_1000: 2, company_size_5_10: 2, company_size_10_20: 1, company_size_20_50: 1}}
+        -
+            country: Kazakhstan
+            count: 27
+            by_survey:
+                - {survey: '2018', count: 15, salary: {salary_range_0_10: 5, salary_range_10_30: 4, salary_range_work_for_free: 3, salary_range_50_100: 2, salary_range_30_50: 1}, company_size: {company_size_20_50: 6, company_size_1: 3, company_size_1_5: 3, company_size_100_1000: 1, company_size_10_20: 1, company_size_50_100: 1}}
+                - {survey: '2017', count: 12, salary: {salary_range_10_30: 8, salary_range_0_10: 3, salary_range_work_for_free: 1}, company_size: {company_size_100_1000: 3, company_size_10_20: 3, company_size_1: 2, company_size_20_50: 2, company_size_more_than_1000: 2}}
+        -
+            country: Tunisia
+            count: 24
+            by_survey:
+                - {survey: '2018', count: 14, salary: {salary_range_0_10: 7, salary_range_work_for_free: 4, salary_range_10_30: 2}, company_size: {company_size_5_10: 5, company_size_1: 4, company_size_10_20: 2, company_size_1_5: 1, company_size_20_50: 1}}
+                - {survey: '2017', count: 10, salary: {salary_range_work_for_free: 7, salary_range_10_30: 2, salary_range_0_10: 1}, company_size: {company_size_1: 5, company_size_10_20: 2, company_size_100_1000: 1, company_size_1_5: 1, company_size_20_50: 1}}
+        -
+            country: Luxembourg
+            count: 23
+            by_survey:
+                - {survey: '2017', count: 12, salary: {salary_range_50_100: 7, salary_range_30_50: 4, salary_range_100_200: 1}, company_size: {company_size_100_1000: 5, company_size_1_5: 2, company_size_20_50: 2, company_size_50_100: 1, company_size_5_10: 1, company_size_more_than_1000: 1}}
+                - {survey: '2018', count: 11, salary: {salary_range_50_100: 7, salary_range_30_50: 4}, company_size: {company_size_100_1000: 2, company_size_10_20: 2, company_size_1_5: 2, company_size_50_100: 2, company_size_1: 1, company_size_5_10: 1, company_size_more_than_1000: 1}}
+        -
+            country: Cyprus
+            count: 22
+            by_survey:
+                - {survey: '2018', count: 12, salary: {salary_range_10_30: 3, salary_range_50_100: 3, salary_range_30_50: 2, salary_range_work_for_free: 2, salary_range_100_200: 1}, company_size: {company_size_1: 2, company_size_1_5: 2, company_size_20_50: 2, company_size_50_100: 2, company_size_100_1000: 1, company_size_5_10: 1, company_size_more_than_1000: 1}}
+                - {survey: '2017', count: 10, salary: {salary_range_30_50: 5, salary_range_10_30: 3, salary_range_100_200: 1, salary_range_50_100: 1}, company_size: {company_size_100_1000: 5, company_size_10_20: 3, company_size_1: 1, company_size_20_50: 1}}
+        -
+            country: 'El Salvador'
+            count: 22
+            by_survey:
+                - {survey: '2017', count: 15, salary: {salary_range_0_10: 7, salary_range_10_30: 6, salary_range_30_50: 1, salary_range_work_for_free: 1}, company_size: {company_size_20_50: 5, company_size_1: 3, company_size_1_5: 3, company_size_50_100: 2, company_size_100_1000: 1, company_size_5_10: 1}}
+                - {survey: '2018', count: 7, salary: {salary_range_0_10: 2, salary_range_10_30: 2, salary_range_30_50: 2, salary_range_work_for_free: 1}, company_size: {company_size_1: 2, company_size_20_50: 2, company_size_10_20: 1, company_size_1_5: 1, company_size_5_10: 1}}
+        -
+            country: Ghana
+            count: 21
+            by_survey:
+                - {survey: '2017', count: 11, salary: {salary_range_0_10: 9, salary_range_work_for_free: 2}, company_size: {company_size_1_5: 5, company_size_1: 3, company_size_50_100: 1, company_size_5_10: 1}}
+                - {survey: '2018', count: 10, salary: {salary_range_0_10: 7, salary_range_10_30: 1, salary_range_30_50: 1, salary_range_work_for_free: 1}, company_size: {company_size_1_5: 6, company_size_1: 1, company_size_10_20: 1, company_size_5_10: 1}}
+        -
+            country: Lebanon
+            count: 20
+            by_survey:
+                - {survey: '2017', count: 10, salary: {salary_range_10_30: 6, salary_range_30_50: 2, salary_range_50_100: 2}, company_size: {company_size_5_10: 3, company_size_1: 2, company_size_10_20: 2, company_size_50_100: 2, company_size_more_than_1000: 1}}
+                - {survey: '2018', count: 10, salary: {salary_range_50_100: 4, salary_range_10_30: 2, salary_range_30_50: 2, salary_range_0_10: 1, salary_range_100_200: 1}, company_size: {company_size_10_20: 3, company_size_5_10: 2, company_size_1: 1, company_size_1_5: 1, company_size_20_50: 1, company_size_50_100: 1}}
+        -
+            country: 'Puerto Rico'
+            count: 20
+            by_survey:
+                - {survey: '2017', count: 13, salary: {salary_range_10_30: 5, salary_range_50_100: 4, salary_range_30_50: 3, salary_range_0_10: 1}, company_size: {company_size_5_10: 4, company_size_1: 2, company_size_10_20: 2, company_size_1_5: 2, company_size_100_1000: 1, company_size_50_100: 1, company_size_more_than_1000: 1}}
+                - {survey: '2018', count: 7, salary: {salary_range_50_100: 3, salary_range_30_50: 2, salary_range_100_200: 1, salary_range_10_30: 1}, company_size: {company_size_1_5: 3, company_size_5_10: 3, company_size_100_1000: 1}}
+        -
+            country: 'Sri Lanka'
+            count: 20
+            by_survey:
+                - {survey: '2017', count: 13, salary: {salary_range_30_50: 6, salary_range_10_30: 5, salary_range_0_10: 1, salary_range_100_200: 1}, company_size: {company_size_5_10: 3, company_size_100_1000: 2, company_size_10_20: 2, company_size_1_5: 2, company_size_50_100: 2, company_size_1: 1, company_size_more_than_1000: 1}}
+                - {survey: '2018', count: 7, salary: {salary_range_50_100: 3, salary_range_0_10: 2, salary_range_10_30: 2}, company_size: {company_size_20_50: 2, company_size_50_100: 2, company_size_10_20: 1, company_size_1_5: 1, company_size_5_10: 1}}

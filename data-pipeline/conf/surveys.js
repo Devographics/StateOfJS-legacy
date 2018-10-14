@@ -36,7 +36,7 @@ module.exports = [
                 title: 'CSS',
                 freeform: 'Other CSS solutions',
             },
-            [sections.BUILD]: {
+            [sections.BUILD_TOOLS]: {
                 title: 'Build Tools',
                 freeform: 'Other build tools',
             },
@@ -98,11 +98,11 @@ module.exports = [
                 title: 'CSS',
                 freeform: 'Other CSS solutions',
             },
-            [sections.BUILD]: {
+            [sections.BUILD_TOOLS]: {
                 title: 'Build Tools',
                 freeform: 'Other build tools',
             },
-            [sections.MOBILE]: {
+            [sections.MOBILE_DESKTOP]: {
                 title: 'Mobile & Desktop',
                 freeform: 'Other mobile/desktop apps solutions',
             },

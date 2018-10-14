@@ -59,6 +59,10 @@ typeform:
         '55791275':
             type: tool
             tool: keystone
+        '56233483':
+            type: country
+        '56233489':
+            type: city
         uIGj:
             type: tool
             tool: vanilla_js
@@ -199,10 +203,10 @@ typeform:
             tool: browserify
         UzYH:
             type: other_tools
-            section: build
+            section: build_tools
         Qx46:
             type: happiness
-            section: build
+            section: build_tools
         IZ0M:
             type: tool
             tool: native_apps
@@ -217,10 +221,10 @@ typeform:
             tool: native_script
         uFwz:
             type: other_tools
-            section: mobile
+            section: mobile_desktop
         qeuD:
             type: happiness
-            section: mobile
+            section: mobile_desktop
         fbQg:
             type: years_of_experience
         OoKe:
@@ -298,7 +302,7 @@ sections:
             - css_in_js
             - bootstrap
             - foundation
-    build:
+    build_tools:
         title: 'Build Tools'
         freeform: 'Other build tools'
         tools:
@@ -308,7 +312,7 @@ sections:
             - browserify
             - npm
             - rollup
-    mobile:
+    mobile_desktop:
         title: 'Mobile & Desktop'
         freeform: 'Other mobile/desktop apps solutions'
         tools:
@@ -388,3 +392,5 @@ userInfo:
     - salary
     - email
     - source
+    - country
+    - city

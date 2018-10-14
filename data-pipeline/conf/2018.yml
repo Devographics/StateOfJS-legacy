@@ -373,6 +373,12 @@ typeform:
             type: email
         HJOngcCVYpZi:
             type: source
+        T1GRpCxG20mK:
+            type: gender
+        p1E19tAJvQvx:
+            type: country
+        RS2W40InH1yo:
+            type: city
 sections:
     javascript_flavors:
         title: 'JavaScript Flavors'
@@ -483,3 +489,6 @@ userInfo:
     - salary
     - email
     - source
+    - gender
+    - country
+    - city
