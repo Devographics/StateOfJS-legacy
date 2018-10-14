@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { format } from 'd3-format'
 import bestOfJsData from '../../data/bestofjs'
 import PeriodicTableElementHtml from '../elements/PeriodicTableElementHtml'
+
+const starsFormatter = format('.2s')
 
 export default class ToolHeaderBlock extends Component {
     static propTypes = {
@@ -25,25 +28,28 @@ export default class ToolHeaderBlock extends Component {
         }
 
         return (
-            <div
-                style={{
-                    display: 'grid',
-                    gridTemplateColumns: '150px auto',
-                    gridColumnGap: 40,
-                    marginBottom: 40
-                }}
-            >
+            <div className="ToolHeader">
                 <div>
                     <PeriodicTableElementHtml size={150} section={section} tool={tool} />
                 </div>
                 <div>
-                    <h2>{project.name}</h2>
-                    <div>{project.stars} stars</div>
+                    <div className="ToolHeader_Header">
+                        <h2 className="ToolHeader_Title">{project.name}</h2>
+                        <div>{starsFormatter(project.stars)} stars</div>
+                    </div>
                     <div>{project.description}</div>
-                    <div>
-                        homepage: {project.homepage}
-                        <br />
-                        github: {project.github}
+                    <div className="ToolHeader_Links">
+                        <a href={project.homepage} target="_blank" rel="noopener noreferrer">
+                            {project.homepage}
+                        </a>
+                        {' | '}
+                        <a
+                            href={`https://github.com/${project.github}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            github
+                        </a>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,18 @@
+.ToolHeader {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-column-gap: $spacing * 2;
+    margin-bottom: $spacing * 2;
+}
+
+.ToolHeader_Header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $spacing * 0.5;
+}
+
+.ToolHeader_Title {
+    margin: 0;
+    padding: 0;
+    align-items: baseline;
+}

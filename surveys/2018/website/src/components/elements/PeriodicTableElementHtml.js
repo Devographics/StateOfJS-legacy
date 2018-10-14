@@ -10,10 +10,10 @@ export default class PeriodicTableElementHtml extends PureComponent {
     }
 
     render() {
-        const { section, tool, size, style, ...rest } = this.props
+        const { tool, size, style, ...rest } = this.props
 
         const layout = computePeriodicTableElement(size)
-        const color = periodicTableData.sections[section]
+        const color = '#41c7c7' //periodicTableData.sections[section]
         const symbol = periodicTableData.tools[tool]
 
         return (
