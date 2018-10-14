@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import Legends from './Legends'
+import React from 'react'
 import { experience } from '../../constants'
 import theme from '../../nivoTheme'
+import Legends from './Legends'
 
 const colors = [...theme.opinionColors].reverse()
 
@@ -16,8 +16,6 @@ const legends = [
     color: colors[i]
 }))
 
-export default class OpinionsLegends extends Component {
-    render() {
-        return <Legends legends={legends} modifier="horizontal" />
-    }
-}
+const OpinionsLegends = () => <Legends legends={legends} modifier="horizontal" />
+
+export default OpinionsLegends

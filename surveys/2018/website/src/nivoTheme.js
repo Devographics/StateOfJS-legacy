@@ -5,6 +5,12 @@ export default {
     background: '#222',
     opinionColors: [colors.red, colors.redLight, colors.blue, colors.blueLight, colors.greyLight],
     salaryColors: ['#8b8de8', '#b3b5e6', '#dedfec', '#e4d6d9', '#dc9eaa', '#e28194', '#ea2149'],
+    genderColors: {
+        female: colors.blue,
+        male: colors.red,
+        'non-binary/ third gender': colors.yellow,
+        other: colors.greyLight
+    },
     reasonsColors: {
         like: colors.blue,
         dislike: colors.red

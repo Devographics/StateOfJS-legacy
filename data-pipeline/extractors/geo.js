@@ -22,6 +22,12 @@ const countriesNormalization = {
 
 let countriesCache = {}
 
+exports.getContinent = (region, subregion) => {
+    if (region !== 'Americas') return region
+    if (subregion === 'South America') return subregion
+    return 'North America'
+}
+
 exports.getCountryInfo = async _country => {
     const country = countriesNormalization[_country] || _country
     const cached = countriesCache[country]
@@ -46,9 +52,8 @@ exports.getCountryInfo = async _country => {
         }
 
         countriesCache[country] = {
-            name: response[0].name,
-            region: response[0].region,
-            subregion: response[0].subregion,
+            country: response[0].name,
+            continent: exports.getContinent(response[0].region, response[0].subregion),
         }
 
         return countriesCache[country]

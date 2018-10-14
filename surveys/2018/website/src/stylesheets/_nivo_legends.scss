@@ -8,7 +8,7 @@
     justify-content: space-between;
     border: 1px dashed $light-border-color;
     border-radius: 3px;
-    padding: $spacing * 1.5;
+    padding: $spacing $spacing * 1.5;
 }
 .Legends__Item {
     margin-left: $spacing * 1.5;

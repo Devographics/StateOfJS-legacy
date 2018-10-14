@@ -341,13 +341,11 @@ class TypeformExtractor {
                 countryInfo = await geo.getCountryInfo(response.hidden.location)
             }
             if (countryInfo) {
-                normalized.user_info[types.FIELD_TYPE_COUNTRY] = countryInfo.name
-                normalized.user_info.region = countryInfo.region
-                normalized.user_info.subregion = countryInfo.subregion
+                normalized.user_info[types.FIELD_TYPE_COUNTRY] = countryInfo.country
+                normalized.user_info.continent = countryInfo.continent
             } else {
                 normalized.user_info[types.FIELD_TYPE_COUNTRY] = 'undefined'
-                normalized.user_info.region = 'undefined'
-                normalized.user_info.subregion = 'undefined'
+                normalized.user_info.continent = 'undefined'
             }
 
             normalizedItems.push(normalized)

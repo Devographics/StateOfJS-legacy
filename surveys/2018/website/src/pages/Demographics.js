@@ -1,20 +1,19 @@
 import React from 'react'
 import TextBlock from '../components/blocks/TextBlock'
 import Layout from '../components/common/Layout'
-import ParticipationMapChart from '../components/charts/ParticipationMapChart'
+import DemographicsGenderBlock from '../components/blocks/DemographicsGenderBlock'
 import { graphql } from 'gatsby'
 
 const text = `
 Demographics intro TODO.
 `
 
-const Demographics = props => {
-    console.log(props.data)
+const Demographics = ({ data, ...rest }) => {
     return (
-        <Layout {...props}>
+        <Layout {...rest}>
             <div>
                 <TextBlock text={text} />
-                <ParticipationMapChart />
+                <DemographicsGenderBlock data={data.resultsYaml.demographics} />
             </div>
         </Layout>
     )
@@ -30,6 +29,11 @@ export const query = graphql`
                     continent
                     by_survey {
                         survey
+                        count
+                        gender {
+                            id
+                            count
+                        }
                         salary {
                             salary_range_work_for_free
                             salary_range_0_10

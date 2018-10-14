@@ -1,6 +1,7 @@
 const ReactGA = require('react-ga')
 ReactGA.initialize('UA-83022212-4')
 
+// eslint-disable-next-line no-unused-vars
 const ascii = `
                                                                                            
                                                   /\\                                       
@@ -29,7 +30,7 @@ const ascii = `
 
 `
 exports.onClientEntry = () => {
-    console.log(ascii)
+    // console.log(ascii)
 }
 
 exports.onRouteUpdate = ({ location }) => {

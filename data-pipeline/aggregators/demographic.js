@@ -6,6 +6,11 @@ const countryAndContinentSubAggs = {
             field: 'survey.keyword',
         },
         aggs: {
+            gender: {
+                terms: {
+                    field: 'user_info.gender.keyword',
+                }
+            },
             salary: {
                 terms: {
                     field: 'user_info.salary.keyword',
@@ -54,7 +59,7 @@ exports.byContinent = async () => {
     const aggs = await elastic.aggs({
         continent: {
             terms: {
-                field: 'user_info.region.keyword',
+                field: 'user_info.continent.keyword',
             },
             aggs: countryAndContinentSubAggs
         }
@@ -66,6 +71,10 @@ exports.byContinent = async () => {
         by_survey: continent.survey.buckets.map(rawSurvey => ({
             survey: rawSurvey.key,
             count: rawSurvey.doc_count,
+            gender: rawSurvey.gender.buckets.map(b => ({
+                id: b.key,
+                count: b.doc_count,
+            })),
             salary: rawSurvey.salary.buckets.reduce((acc, salaryRange) => ({
                 ...acc,
                 [`salary_range_${salaryRange.key}`]: salaryRange.doc_count
