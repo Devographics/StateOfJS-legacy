@@ -17,8 +17,11 @@ export default class SectionOpinionsBlock extends Component {
         return (
             <div className="block">
                 <h3 className="block__title">Libraries Results</h3>
-                <OpinionsLegends />
+                <div className="block__description">
+                    <p>Per-library survey results.</p>
+                </div>
                 <SectionOpinionsChart section={this.props.section} opinions={this.props.opinions} />
+                <OpinionsLegends />
             </div>
         )
     }

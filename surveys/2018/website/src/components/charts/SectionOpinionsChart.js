@@ -35,7 +35,8 @@ export default class SectionOpinionsChart extends Component {
             <div style={{ height: 360 }}>
                 <ResponsiveBar
                     margin={{
-                        bottom: 80
+                        top: 81,
+                        bottom: 30
                     }}
                     keys={[
                         'would_use',
@@ -54,12 +55,12 @@ export default class SectionOpinionsChart extends Component {
                     labelSkipHeight={20}
                     padding={0.6}
                     axisLeft={null}
-                    axisBottom={{
+                    axisTop={{
                         renderTick: tick => {
                             return (
                                 <g
                                     key={tick.key}
-                                    transform={`translate(${tick.x - 30},${tick.y + 14})`}
+                                    transform={`translate(${tick.x - 30},${tick.y - 80})`}
                                 >
                                     <PeriodicTableElementSvg
                                         section={section}
@@ -69,6 +70,9 @@ export default class SectionOpinionsChart extends Component {
                                 </g>
                             )
                         }
+                    }}
+                    axisBottom={{
+                        tickSize: 0
                     }}
                 />
             </div>

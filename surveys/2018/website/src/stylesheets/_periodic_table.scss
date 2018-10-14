@@ -30,6 +30,11 @@
     stroke-width: 1px;
     stroke: #646a6a;
     fill: #212424;
+    cursor: pointer;
+}
+
+.PeriodicTableElementSvg:hover {
+    stroke: #eee;
 }
 
 .PeriodicTableElementSvg_Shadow {
