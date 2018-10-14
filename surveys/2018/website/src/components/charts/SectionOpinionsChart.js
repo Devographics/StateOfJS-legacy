@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { sortBy } from 'lodash'
 import { ResponsiveBar } from '@nivo/bar'
+import { navigate } from 'gatsby'
 import theme from '../../nivoTheme'
 import PeriodicTableElementSvg from '../elements/PeriodicTableElementSvg'
 
@@ -66,13 +67,38 @@ export default class SectionOpinionsChart extends Component {
                                         section={section}
                                         tool={tick.value}
                                         size={60}
+                                        onClick={() => {
+                                            navigate(`${section}/${tick.value}`)
+                                        }}
                                     />
                                 </g>
                             )
                         }
                     }}
                     axisBottom={{
-                        tickSize: 0
+                        tickSize: 0,
+                        tickPadding: 10,
+                        renderTick: tick => {
+                            return (
+                                <g
+                                    key={tick.key}
+                                    transform={`translate(${tick.x},${tick.y + 14})`}
+                                    style={{ cursor: 'pointer' }}
+                                    onClick={() => {
+                                        navigate(`${section}/${tick.value}`)
+                                    }}
+                                >
+                                    <text
+                                        fill="rgb(254, 106, 106)"
+                                        textAnchor="middle"
+                                        alignmentBaseline="hanging"
+                                        style={{ fontSize: '13px' }}
+                                    >
+                                        {tick.value}
+                                    </text>
+                                </g>
+                            )
+                        }
                     }}
                 />
             </div>
