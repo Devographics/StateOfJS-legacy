@@ -18,8 +18,8 @@ const ConclusionTemplate = ({ data }) => (
 export default ConclusionTemplate
 
 export const query = graphql`
-    query($section: String) {
-        file(name: { eq: $section }) {
+    query($name: String) {
+        file(name: { eq: $name }) {
             childMarkdownRemark {
                 html
             }

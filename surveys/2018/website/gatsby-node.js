@@ -83,6 +83,9 @@ exports.createPages = async ({ actions }) => {
 
                     case 'Conclusion':
                         templateName = 'Conclusion'
+                        subPageContext = {
+                            name: `${item.id}_conclusion`,
+                        }
                         break
 
                     default:
