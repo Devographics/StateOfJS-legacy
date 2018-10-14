@@ -73,7 +73,7 @@ exports.createPages = async ({ actions }) => {
                     case 'Overview':
                         templateName = 'SectionOverview'
                         subPageContext = {
-                            section: slugify(item.label)
+                            section: item.id
                         }
                         break
 
@@ -88,7 +88,7 @@ exports.createPages = async ({ actions }) => {
                     default:
                         templateName = 'Tool'
                         subPageContext = {
-                            section: slugify(item.label),
+                            section: item.id,
                             tool: slugify(subPage)
                         }
                         break

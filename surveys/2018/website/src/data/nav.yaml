@@ -1,9 +1,12 @@
-- label: Introduction
+- id: introduction
+  label: Introduction
   path: '/'
 
-- label: Connections
+- id: connections
+  label: Connections
 
-- label: javascript_flavors
+- id: javascript_flavors
+  label: JavaScript Flavors
   subPages:
       - Overview
       - reason
@@ -15,7 +18,8 @@
       - Other Libraries
       - Conclusion
 
-- label: frontend_frameworks
+- id: frontend_frameworks
+  label: Front-end Frameworks
   subPages:
       - Overview
       - react
@@ -27,7 +31,8 @@
       - Other Libraries
       - Conclusion
 
-- label: data_layer
+- id: data_layer
+  label: Data Layer
   subPages:
       - Overview
       - redux
@@ -38,7 +43,8 @@
       - Other Libraries
       - Conclusion
 
-- label: backend_frameworks
+- id: backend_frameworks
+  label: Back-end Frameworks
   subPages:
       - Overview
       - meteor
@@ -50,7 +56,8 @@
       - Other Libraries
       - Conclusion
 
-- label: testing
+- id: testing
+  label: Testing
   subPages:
       - Overview
       - storybook
@@ -63,7 +70,8 @@
       - Other Libraries
       - Conclusion
 
-- label: mobile_desktop
+- id: mobile_desktop
+  label: Mobile & Desktop
   subPages:
       - Overview
       - electron
@@ -75,13 +83,18 @@
       - Other Libraries
       - Conclusion
 
-- label: Other Tools
+- id: other_tools
+  label: Other Tools
 
-- label: Opinions
+- id: opinions
+  label: Opinions
 
-- label: Demographics
+- id: demographics
+  label: Demographics
 
-- label: Conclusion
+- id: conclusion
+  label: Conclusion
 
-- label: Support Us
+- id: support_us
+  label: Support Us
   hide: true
