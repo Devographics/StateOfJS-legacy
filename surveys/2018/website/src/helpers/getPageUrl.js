@@ -1,10 +1,8 @@
-import slugify from './slugify'
-
 const getPageUrl = (page, isAbsolute = false) => {
     const { section, subSection } = page
-    let url = `/${slugify(section.label)}/`
+    let url = `/${section.slug}/`
     if (subSection) {
-        url += `${slugify(subSection.label)}/`
+        url += `${subSection.slug}/`
     }
     return isAbsolute ? `https://stateofjs.com/${url}` : url
 }

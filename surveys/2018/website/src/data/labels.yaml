@@ -1,0 +1,26 @@
+#
+# Please be aware that modifying the section ids
+# here has an impact on the data pipeline as
+# those ids must be updated too.
+# The same goes for tools.
+#
+introduction: Introduction
+connections: Connections
+overview: Overview
+other-libraries: Other Libraries
+conclusion: Conclusion
+other-toolsl: Other Tools
+opinions: Opinions
+demographics: Demographics
+support_us: Support Us
+
+javascript-flavors: JavaScript Flavors
+front-end-frameworks: Front-end Frameworks
+data-layer: Data Layer
+back-end-frameworks: Back-end Frameworks
+testing: Testing
+mobile-and-desktop: Mobile & Desktop
+
+native-apps: Native Apps
+graphql: GraphQL
+es6: ES6

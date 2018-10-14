@@ -1,5 +1,6 @@
 import slugify from './slugify'
 import nav from '../data/nav.yaml'
+import labels from '../data/labels.yaml'
 import getPageTitle from './getPageTitle'
 import getPageUrl from './getPageUrl'
 
@@ -22,8 +23,9 @@ export const createPage = (sectionIndex, subSectionIndex) => {
     const page = {
         section: {
             ...section,
+            label: labels[section.id],
             index: sectionIndex,
-            slug: slugify(section.label)
+            slug: section.id,
         }
     }
     if (
@@ -31,11 +33,12 @@ export const createPage = (sectionIndex, subSectionIndex) => {
         page.section.subPages &&
         page.section.subPages[subSectionIndex]
     ) {
-        const subSectionLabel = page.section.subPages[subSectionIndex]
+        const subSectionId = page.section.subPages[subSectionIndex]
         page.subSection = {
-            label: subSectionLabel,
+            id: subSectionId,
+            slug: slugify(subSectionId),
+            label: labels[subSectionId] || subSectionId,
             index: subSectionIndex,
-            slug: slugify(subSectionLabel)
         }
     }
     // note: if section specifies its own path use that

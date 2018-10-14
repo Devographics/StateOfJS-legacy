@@ -5,14 +5,11 @@
 # The same goes for tools.
 #
 - id: introduction
-  label: Introduction
   path: '/'
 
 - id: connections
-  label: Connections
 
 - id: javascript-flavors
-  label: JavaScript Flavors
   subPages:
       - overview
       - reason
@@ -25,7 +22,6 @@
       - conclusion
 
 - id: front-end-frameworks
-  label: Front-end Frameworks
   subPages:
       - overview
       - react
@@ -38,7 +34,6 @@
       - conclusion
 
 - id: data-layer
-  label: Data Layer
   subPages:
       - overview
       - redux
@@ -50,7 +45,6 @@
       - conclusion
 
 - id: back-end-frameworks
-  label: Back-end Frameworks
   subPages:
       - overview
       - meteor
@@ -63,7 +57,6 @@
       - conclusion
 
 - id: testing
-  label: Testing
   subPages:
       - overview
       - storybook
@@ -77,30 +70,24 @@
       - conclusion
 
 - id: mobile-and-desktop
-  label: Mobile & Desktop
   subPages:
       - overview
       - electron
       - react-native
       - cordova
-      - NativeScript
+      - nativescript
       - ionic
-      - Native Apps
+      - native-apps
       - other-libraries
       - conclusion
 
 - id: other-tools
-  label: Other Tools
 
 - id: opinions
-  label: Opinions
 
 - id: demographics
-  label: Demographics
 
 - id: conclusion
-  label: Conclusion
 
 - id: support_us
-  label: Support Us
   hide: true

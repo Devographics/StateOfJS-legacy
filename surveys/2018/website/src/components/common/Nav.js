@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
 import nav from '../../data/nav.yaml'
-import slugify from '../../helpers/slugify'
 import filter from 'lodash/filter'
 import { createPage } from '../../helpers/getPages'
 
@@ -28,8 +27,7 @@ const NavItem = ({ currentPath, subPages, comingSoon, closeSidebar, index }) => 
                         return (
                             <NavSubItem
                                 key={j}
-                                parentLabel={subPage.section.label}
-                                label={subPage.subSection.label}
+                                page={subPage}
                                 closeSidebar={closeSidebar}
                             />
                         )
@@ -46,16 +44,18 @@ NavItem.propTypes = {
     closeSidebar: PropTypes.func.isRequired
 }
 
-const NavSubItem = ({ parentLabel, label, closeSidebar }) => (
-    <Link
-        className="nav-subpage"
-        activeClassName="nav-subpage-active"
-        to={`/${slugify(parentLabel)}/${slugify(label)}/`}
-        onClick={closeSidebar}
-    >
-        {label}{' '}
-    </Link>
-)
+const NavSubItem = ({ page, closeSidebar }) => {
+    return (
+        <Link
+            className="nav-subpage"
+            activeClassName="nav-subpage-active"
+            to={page.path}
+            onClick={closeSidebar}
+        >
+            {page.subSection.label}{' '}
+        </Link>
+    )
+}
 
 NavSubItem.propTypes = {
     parentLabel: PropTypes.string.isRequired,
