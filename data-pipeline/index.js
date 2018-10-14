@@ -21,7 +21,10 @@ const fetch = async () => {
     console.log(chalk.yellow('initializing elastic index'))
     try {
         await elastic.deleteIndex()
-    } catch (err) {}
+    } catch (err) {
+        // error occurs if the index doesn't exist,
+        // which is the case on init
+    }
     await elastic.createIndex()
 
     for (let survey of surveys) {
@@ -37,7 +40,7 @@ const fetch = async () => {
         let count = 0
         await extractor.fetchResults(async items => {
             count += items.length
-            console.log(`> ${count} of ${total}`)
+            console.log(`> ${count}/${total}`)
 
             await elastic.bulk('response', items)
         })

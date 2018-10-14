@@ -5,15 +5,26 @@ import Layout from '../common/Layout'
 import TextBlock from '../blocks/TextBlock'
 import QuadrantBlock from '../blocks/QuadrantBlock'
 
-const ConclusionTemplate = ({ data }) => (
-    <Layout>
-        <div className="template">
-            <Meta />
-            <QuadrantBlock />
-            <TextBlock text={data.file.childMarkdownRemark.html} />
-        </div>
-    </Layout>
-)
+const ConclusionTemplate = ({ pageContext, data }) => {
+    const content = data.file.childMarkdownRemark ? data.file.childMarkdownRemark.html : undefined
+
+    return (
+        <Layout>
+            <div className="template">
+                <Meta />
+                <QuadrantBlock />
+                {content === undefined && (
+                    <div style={{ color: 'red' }}>
+                        No conclusion found for section: <strong>{pageContext.name}</strong>
+                        <br />
+                        <br />
+                    </div>
+                )}
+                {content !== undefined && <TextBlock text={content} />}
+            </div>
+        </Layout>
+    )
+}
 
 export default ConclusionTemplate
 

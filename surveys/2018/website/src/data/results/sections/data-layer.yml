@@ -1,4 +1,4 @@
-section_id: data_layer
+section_id: data-layer
 tools:
     - redux
     - graphql

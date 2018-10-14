@@ -1,4 +1,4 @@
-section_id: javascript_flavors
+section_id: javascript-flavors
 tools:
     - reason
     - clojurescript

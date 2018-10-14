@@ -14,19 +14,19 @@ typeform:
             type: salary
         '28238496':
             type: happiness
-            section: javascript_flavors
+            section: javascript-flavors
         '28238497':
             type: happiness
-            section: frontend_frameworks
+            section: front-end-frameworks
         '28238498':
             type: happiness
-            section: state_management
+            section: state-management
         '28238499':
             type: happiness
-            section: data_layer
+            section: data-layer
         '28238500':
             type: happiness
-            section: backend_frameworks
+            section: back-end-frameworks
         '28238501':
             type: happiness
             section: testing
@@ -35,22 +35,22 @@ typeform:
             section: css
         '28238503':
             type: happiness
-            section: build_tools
+            section: build-tools
         '28238504':
             type: happiness
             section: mobile
         '28238505':
             type: other_tools
-            section: frontend_frameworks
+            section: front-end-frameworks
         '28238506':
             type: other_tools
-            section: state_management
+            section: state-management
         '28238507':
             type: other_tools
-            section: data_layer
+            section: data-layer
         '28238508':
             type: other_tools
-            section: backend_frameworks
+            section: back-end-frameworks
         '28238509':
             type: other_tools
             section: testing
@@ -59,7 +59,7 @@ typeform:
             section: css
         '28238511':
             type: other_tools
-            section: build_tools
+            section: build-tools
         '28238512':
             type: other_tools
             section: mobile
@@ -207,7 +207,7 @@ typeform:
             type: tool
             tool: native_script
 sections:
-    javascript_flavors:
+    javascript-flavors:
         title: 'JavaScript Flavor'
         tools:
             - vanilla_js
@@ -216,7 +216,7 @@ sections:
             - typescript
             - elm
             - clojurescript
-    frontend_frameworks:
+    front-end-frameworks:
         title: Front-End
         freeform: 'Other Front-End Frameworks'
         tools:
@@ -227,14 +227,14 @@ sections:
             - ember
             - vuejs
             - backbone
-    state_management:
+    state-management:
         title: 'State Management'
         freeform: 'Other State Management Libraries'
         tools:
             - redux
             - mobx
             - relay
-    data_layer:
+    data-layer:
         title: 'API Layer'
         freeform: 'Other API layer solutions'
         tools:
@@ -244,7 +244,7 @@ sections:
             - apollo
             - falcor
             - horizon
-    backend_frameworks:
+    back-end-frameworks:
         title: Stacks
         freeform: 'Other stacks'
         tools:
@@ -272,7 +272,7 @@ sections:
             - less
             - css_modules
             - aphrodite
-    build_tools:
+    build-tools:
         title: 'Build Tools'
         freeform: 'Other build tools'
         tools:

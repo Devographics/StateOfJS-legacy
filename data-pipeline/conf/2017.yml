@@ -80,7 +80,7 @@ typeform:
             tool: clojurescript
         w2Tu:
             type: happiness
-            section: javascript_flavors
+            section: javascript-flavors
         ZxUD:
             type: tool
             tool: react
@@ -104,10 +104,10 @@ typeform:
             tool: no_frontend_framework
         f0gX:
             type: other_tools
-            section: frontend_frameworks
+            section: front-end-frameworks
         y0kW:
             type: happiness
-            section: frontend_frameworks
+            section: front-end-frameworks
         wqZL:
             type: tool
             tool: rest
@@ -131,10 +131,10 @@ typeform:
             tool: firebase
         uR01:
             type: other_tools
-            section: data_layer
+            section: data-layer
         CHBd:
             type: happiness
-            section: data_layer
+            section: data-layer
         A46m:
             type: tool
             tool: meteor
@@ -143,10 +143,10 @@ typeform:
             tool: feathers
         QX12:
             type: other_tools
-            section: backend_frameworks
+            section: back-end-frameworks
         lUYG:
             type: happiness
-            section: backend_frameworks
+            section: back-end-frameworks
         zNoo:
             type: tool
             tool: mocha
@@ -203,10 +203,10 @@ typeform:
             tool: browserify
         UzYH:
             type: other_tools
-            section: build_tools
+            section: build-tools
         Qx46:
             type: happiness
-            section: build_tools
+            section: build-tools
         IZ0M:
             type: tool
             tool: native_apps
@@ -221,10 +221,10 @@ typeform:
             tool: native_script
         uFwz:
             type: other_tools
-            section: mobile_desktop
+            section: mobile-and-desktop
         qeuD:
             type: happiness
-            section: mobile_desktop
+            section: mobile-and-desktop
         fbQg:
             type: years_of_experience
         OoKe:
@@ -234,7 +234,7 @@ typeform:
         Fvkq:
             type: email
 sections:
-    javascript_flavors:
+    javascript-flavors:
         title: 'JavaScript Flavor'
         tools:
             - vanilla_js
@@ -244,7 +244,7 @@ sections:
             - elm
             - clojurescript
             - reason
-    frontend_frameworks:
+    front-end-frameworks:
         title: Front-End
         freeform: 'Other Front-End Frameworks'
         tools:
@@ -257,7 +257,7 @@ sections:
             - polymer
             - aurelia
             - no_frontend_framework
-    data_layer:
+    data-layer:
         title: 'Data Layer'
         freeform: 'Other Data Management Solutions'
         tools:
@@ -269,7 +269,7 @@ sections:
             - falcor
             - apollo
             - firebase
-    backend_frameworks:
+    back-end-frameworks:
         title: Back-End
         freeform: 'Other Back-End Tools'
         tools:
@@ -302,7 +302,7 @@ sections:
             - css_in_js
             - bootstrap
             - foundation
-    build_tools:
+    build-tools:
         title: 'Build Tools'
         freeform: 'Other build tools'
         tools:
@@ -312,7 +312,7 @@ sections:
             - browserify
             - npm
             - rollup
-    mobile_desktop:
+    mobile-and-desktop:
         title: 'Mobile & Desktop'
         freeform: 'Other mobile/desktop apps solutions'
         tools:

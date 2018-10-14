@@ -59,10 +59,10 @@ typeform:
             tool: es6
         Bu13nZgFYn41:
             type: other_tools
-            section: javascript_flavors
+            section: javascript-flavors
         tG6GyIDRvICd:
             type: happiness
-            section: javascript_flavors
+            section: javascript-flavors
         JIbJUEu8NQZe:
             type: tool
             tool: react
@@ -119,10 +119,10 @@ typeform:
             tool: preact
         doF88Cqx1g9P:
             type: other_tools
-            section: frontend_frameworks
+            section: front-end-frameworks
         uygOQCKWfrgu:
             type: happiness
-            section: frontend_frameworks
+            section: front-end-frameworks
         j16c8ycbTSJT:
             type: tool
             tool: redux
@@ -170,10 +170,10 @@ typeform:
             tool: mobx
         oWcIqu15IDjP:
             type: other_tools
-            section: data_layer
+            section: data-layer
         u3diwAiis2Gk:
             type: happiness
-            section: data_layer
+            section: data-layer
         GXPJPWbcxu4c:
             type: tool
             tool: meteor
@@ -230,10 +230,10 @@ typeform:
             tool: feathers
         jgadf6KAhURx:
             type: other_tools
-            section: backend_frameworks
+            section: back-end-frameworks
         EANeo5VwRonl:
             type: happiness
-            section: backend_frameworks
+            section: back-end-frameworks
         t2iShXV2Z8FY:
             type: tool
             tool: storybook
@@ -359,10 +359,10 @@ typeform:
             tool: nativeapps
         cplwO8cN69yT:
             type: other_tools
-            section: mobile_desktop
+            section: mobile-and-desktop
         yFLjXCIeJouk:
             type: happiness
-            section: mobile_desktop
+            section: mobile-and-desktop
         nUyhAVayYch4:
             type: years_of_experience
         IJO3sTKdw5PD:
@@ -380,7 +380,7 @@ typeform:
         RS2W40InH1yo:
             type: city
 sections:
-    javascript_flavors:
+    javascript-flavors:
         title: 'JavaScript Flavors'
         freeform: 'Other JavaScript Flavors options'
         tools:
@@ -390,7 +390,7 @@ sections:
             - flow
             - typescript
             - es6
-    frontend_frameworks:
+    front-end-frameworks:
         title: Front-End
         freeform: 'Other Front-End options'
         tools:
@@ -400,7 +400,7 @@ sections:
             - polymer
             - vuejs
             - preact
-    data_layer:
+    data-layer:
         title: 'Data Layer'
         freeform: 'Other Data Layer options'
         tools:
@@ -409,7 +409,7 @@ sections:
             - relay
             - apollo
             - mobx
-    backend_frameworks:
+    back-end-frameworks:
         title: Back-end
         freeform: 'Other Back-end options'
         tools:
@@ -430,7 +430,7 @@ sections:
             - enzyme
             - ava
             - karma
-    mobile_desktop:
+    mobile-and-desktop:
         title: 'Mobile & Desktop'
         freeform: 'Other Mobile & Desktop options'
         tools:

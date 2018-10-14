@@ -1,0 +1,41 @@
+nav:
+  overview: Overview
+  'other-libraries': Other Libraries
+  Conclusion: Conclusion
+
+opinions:
+    never_heard: I've never heard of it
+    not_interested: I've HEARD of it, and am NOT interested
+    would_learn: I've HEARD of it, and WOULD like to learn it
+    would_use: I've USED it before, and WOULD use it again
+    would_not_use: I've USED it before, and would NOT use it again
+
+reasons:
+    elegant_programming_style_patterns: ⚙️ Elegant programming style & patterns
+    robust_less_error_prone_code: 🐞 Robust, less error-prone code
+    rich_package_ecosystem: 🎁 Rich package ecosystem
+    fast_performance: ⚡ Fast performance
+    well_established_option: 🏛️ Well-established option
+    easy_learning_curve: 👶 Easy learning curve
+    powerful_developer_tooling: 🔧 Powerful developer tooling
+    good_documentation: 📖 Good documentation
+    backed_by_a_great_team_company: 👫 Backed by a great team/company
+    simple_lightweight: 🎈 Simple & lightweight
+    growing_momentum_popularity: 📉 Growing momentum/popularity
+    full_featured_powerful: 🕹️ Full-featured & powerful
+    stable_backwards_compatible: ⚖️ Stable & backwards-compatible
+    clumsy_programming_style: Clumsy programming style ⚙️
+    buggy_error_prone_code: Buggy, error-prone code 🐞
+    poor_performance: Poor performance ⚡
+    small_package_ecosystem: Small package ecosystem 🎁
+    new_untested_option: New untested option 🏛️
+    hard_learning_curve: Hard learning curve 👶
+    lacking_developer_tooling: Lacking developer tooling 🔧
+    bad_documentation: Bad documentation 📖
+    concerns_about_the_team_company: Concerns about the team/company 👫
+    bloated_complex: Bloated & complex 🎈
+    diminishing_momentum_popularity: Diminishing momentum/popularity 📉
+    limited_lacking_in_features: Limited & lacking in features 🕹️
+    fast_changing_breaks_often: Fast-changing & breaks often ⚖️
+    other: Other
+

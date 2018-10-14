@@ -47,44 +47,39 @@ exports.createPages = async ({ actions }) => {
     ]
 
     nav.filter(item => !exclusions.includes(item.label)).forEach(item => {
-        const sectionSlug = slugify(item.label)
-
         if (item.subPages) {
-            const firstSubSectionSlug = slugify(item.subPages[0])
             createRedirect({
-                fromPath: `/${sectionSlug}/`,
+                fromPath: `/${item.id}/`,
                 redirectInBrowser: true,
-                toPath: `/${sectionSlug}/${firstSubSectionSlug}/`
+                toPath: `/${item.id}/${item.subPages[0]}/`
             })
             createRedirect({
-                fromPath: `/${sectionSlug}`,
+                fromPath: `/${item.id}`,
                 redirectInBrowser: true,
-                toPath: `/${sectionSlug}/${firstSubSectionSlug}/`
+                toPath: `/${item.id}/${item.subPages[0]}/`
             })
 
             let subPageContext = {}
 
             item.subPages.forEach(subPage => {
-                const subSectionSlug = slugify(subPage)
-
-                const pagePath = `/${sectionSlug}/${subSectionSlug}`
+                const pagePath = `/${item.id}/${subPage}`
                 let templateName
                 switch (subPage) {
-                    case 'Overview':
+                    case 'overview':
                         templateName = 'SectionOverview'
                         subPageContext = {
                             section: item.id
                         }
                         break
 
-                    case 'Other Libraries':
+                    case 'other-libraries':
                         templateName = 'OtherLibraries'
                         break
 
-                    case 'Conclusion':
+                    case 'conclusion':
                         templateName = 'Conclusion'
                         subPageContext = {
-                            name: `${item.id}_conclusion`,
+                            name: `${item.id}-conclusion`
                         }
                         break
 
@@ -92,7 +87,7 @@ exports.createPages = async ({ actions }) => {
                         templateName = 'Tool'
                         subPageContext = {
                             section: item.id,
-                            tool: slugify(subPage)
+                            tool: subPage
                         }
                         break
                 }

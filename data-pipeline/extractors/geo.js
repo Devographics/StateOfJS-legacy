@@ -1,7 +1,6 @@
 const fetch = require('node-fetch')
 
 const restCountriesApiEndpoint = 'https://restcountries.eu/rest/v2/name/'
-const countriesCache = {}
 
 const countriesNormalization = {
     'the netherlands': 'netherlands',
@@ -21,14 +20,14 @@ const countriesNormalization = {
     'mother russia': 'russia',
 }
 
+let countriesCache = {}
+
 exports.getCountryInfo = async _country => {
     const country = countriesNormalization[_country] || _country
-    /*
     const cached = countriesCache[country]
     if (cached !== undefined) {
         return cached
     }
-    */
 
     try {
         const rawResponse = await fetch(`${restCountriesApiEndpoint}${encodeURIComponent(country)}`, {
@@ -42,19 +41,17 @@ exports.getCountryInfo = async _country => {
             return null
         }
 
-        /*
+        if (Object.keys(countriesCache).length > 3000) {
+            countriesCache = {}
+        }
+
         countriesCache[country] = {
             name: response[0].name,
             region: response[0].region,
             subregion: response[0].subregion,
         }
-        */
 
-        return {
-            name: response[0].name,
-            region: response[0].region,
-            subregion: response[0].subregion,
-        }
+        return countriesCache[country]
     } catch (error) {
         // console.error(`An error occurred while fetching info for country: ${country}`, error)
         return null

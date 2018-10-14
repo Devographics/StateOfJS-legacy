@@ -2,16 +2,16 @@ demographics:
     by_continent:
         -
             continent: Europe
-            count: 18800
+            count: 18801
             by_survey:
                 - {survey: '2017', count: 9639, salary: {salary_range_50_100: 2758, salary_range_30_50: 2611, salary_range_10_30: 1913, salary_range_100_200: 692, salary_range_work_for_free: 678, salary_range_0_10: 668, salary_range_more_than_200: 71}, company_size: {company_size_100_1000: 1838, company_size_20_50: 1353, company_size_more_than_1000: 1162, company_size_1: 1128, company_size_10_20: 1107, company_size_1_5: 1062, company_size_50_100: 1056, company_size_5_10: 893}}
-                - {survey: '2018', count: 9161, salary: {salary_range_50_100: 2860, salary_range_30_50: 2458, salary_range_10_30: 1759, salary_range_100_200: 752, salary_range_0_10: 549, salary_range_work_for_free: 456, salary_range_more_than_200: 69}, company_size: {company_size_100_1000: 1877, company_size_20_50: 1337, company_size_more_than_1000: 1265, company_size_50_100: 1069, company_size_10_20: 1027, company_size_1: 864, company_size_5_10: 836, company_size_1_5: 807}}
+                - {survey: '2018', count: 9162, salary: {salary_range_50_100: 2861, salary_range_30_50: 2458, salary_range_10_30: 1759, salary_range_100_200: 752, salary_range_0_10: 549, salary_range_work_for_free: 456, salary_range_more_than_200: 69}, company_size: {company_size_100_1000: 1878, company_size_20_50: 1337, company_size_more_than_1000: 1265, company_size_50_100: 1069, company_size_10_20: 1027, company_size_1: 864, company_size_5_10: 836, company_size_1_5: 807}}
         -
             continent: Americas
-            count: 16385
+            count: 16384
             by_survey:
                 - {survey: '2017', count: 9340, salary: {salary_range_50_100: 3284, salary_range_100_200: 3156, salary_range_30_50: 769, salary_range_10_30: 649, salary_range_work_for_free: 580, salary_range_0_10: 414, salary_range_more_than_200: 258}, company_size: {company_size_more_than_1000: 1920, company_size_100_1000: 1877, company_size_20_50: 1130, company_size_1: 1049, company_size_50_100: 1039, company_size_1_5: 793, company_size_10_20: 791, company_size_5_10: 698}}
-                - {survey: '2018', count: 7045, salary: {salary_range_100_200: 2750, salary_range_50_100: 2171, salary_range_10_30: 570, salary_range_30_50: 450, salary_range_work_for_free: 330, salary_range_more_than_200: 318, salary_range_0_10: 317}, company_size: {company_size_more_than_1000: 1627, company_size_100_1000: 1574, company_size_50_100: 825, company_size_20_50: 814, company_size_1: 638, company_size_1_5: 532, company_size_10_20: 522, company_size_5_10: 469}}
+                - {survey: '2018', count: 7044, salary: {salary_range_100_200: 2750, salary_range_50_100: 2170, salary_range_10_30: 570, salary_range_30_50: 450, salary_range_work_for_free: 330, salary_range_more_than_200: 318, salary_range_0_10: 317}, company_size: {company_size_more_than_1000: 1627, company_size_100_1000: 1574, company_size_50_100: 825, company_size_20_50: 813, company_size_1: 638, company_size_1_5: 532, company_size_10_20: 522, company_size_5_10: 469}}
         -
             continent: Asia
             count: 2396
@@ -20,9 +20,9 @@ demographics:
                 - {survey: '2018', count: 1170, salary: {salary_range_0_10: 260, salary_range_10_30: 253, salary_range_50_100: 207, salary_range_30_50: 175, salary_range_work_for_free: 123, salary_range_100_200: 84, salary_range_more_than_200: 17}, company_size: {company_size_20_50: 189, company_size_1: 178, company_size_100_1000: 156, company_size_10_20: 141, company_size_1_5: 132, company_size_more_than_1000: 122, company_size_50_100: 117, company_size_5_10: 113}}
         -
             continent: Oceania
-            count: 2162
+            count: 2163
             by_survey:
-                - {survey: '2018', count: 1204, salary: {salary_range_100_200: 499, salary_range_50_100: 477, salary_range_30_50: 73, salary_range_more_than_200: 52, salary_range_work_for_free: 47, salary_range_10_30: 18, salary_range_0_10: 13}, company_size: {company_size_100_1000: 263, company_size_more_than_1000: 230, company_size_20_50: 155, company_size_50_100: 141, company_size_10_20: 112, company_size_1_5: 107, company_size_1: 98, company_size_5_10: 90}}
+                - {survey: '2018', count: 1205, salary: {salary_range_100_200: 499, salary_range_50_100: 478, salary_range_30_50: 73, salary_range_more_than_200: 52, salary_range_work_for_free: 47, salary_range_10_30: 18, salary_range_0_10: 13}, company_size: {company_size_100_1000: 263, company_size_more_than_1000: 230, company_size_20_50: 156, company_size_50_100: 141, company_size_10_20: 112, company_size_1_5: 107, company_size_1: 98, company_size_5_10: 90}}
                 - {survey: '2017', count: 958, salary: {salary_range_50_100: 408, salary_range_100_200: 341, salary_range_30_50: 86, salary_range_work_for_free: 66, salary_range_10_30: 19, salary_range_more_than_200: 14, salary_range_0_10: 12}, company_size: {company_size_100_1000: 204, company_size_more_than_1000: 142, company_size_20_50: 117, company_size_1_5: 113, company_size_1: 105, company_size_10_20: 93, company_size_5_10: 93, company_size_50_100: 87}}
         -
             continent: Africa
@@ -33,22 +33,22 @@ demographics:
     by_country:
         -
             country: 'United States Minor Outlying Islands'
-            count: 8347
+            count: 8345
             by_survey:
                 - {survey: '2017', count: 6129, salary: {salary_range_100_200: 2561, salary_range_50_100: 2247, salary_range_work_for_free: 356, salary_range_30_50: 336, salary_range_more_than_200: 218, salary_range_10_30: 135, salary_range_0_10: 108}, company_size: {company_size_more_than_1000: 1442, company_size_100_1000: 1314, company_size_20_50: 696, company_size_50_100: 691, company_size_1: 656, company_size_1_5: 450, company_size_10_20: 447, company_size_5_10: 404}}
-                - {survey: '2018', count: 2218, salary: {salary_range_100_200: 1066, salary_range_50_100: 696, salary_range_more_than_200: 134, salary_range_work_for_free: 115, salary_range_30_50: 67, salary_range_10_30: 45, salary_range_0_10: 28}, company_size: {company_size_more_than_1000: 593, company_size_100_1000: 486, company_size_20_50: 268, company_size_50_100: 266, company_size_1: 193, company_size_10_20: 135, company_size_1_5: 133, company_size_5_10: 111}}
+                - {survey: '2018', count: 2216, salary: {salary_range_100_200: 1065, salary_range_50_100: 695, salary_range_more_than_200: 134, salary_range_work_for_free: 115, salary_range_30_50: 67, salary_range_10_30: 45, salary_range_0_10: 28}, company_size: {company_size_more_than_1000: 593, company_size_100_1000: 486, company_size_20_50: 267, company_size_50_100: 266, company_size_1: 193, company_size_10_20: 135, company_size_1_5: 132, company_size_5_10: 111}}
         -
             country: 'United States of America'
-            count: 3533
+            count: 3534
             by_survey:
-                - {survey: '2018', count: 2712, salary: {salary_range_100_200: 1447, salary_range_50_100: 853, salary_range_more_than_200: 166, salary_range_work_for_free: 90, salary_range_30_50: 69, salary_range_10_30: 28, salary_range_0_10: 16}, company_size: {company_size_more_than_1000: 766, company_size_100_1000: 661, company_size_50_100: 327, company_size_20_50: 257, company_size_1: 211, company_size_1_5: 176, company_size_10_20: 167, company_size_5_10: 144}}
+                - {survey: '2018', count: 2713, salary: {salary_range_100_200: 1448, salary_range_50_100: 853, salary_range_more_than_200: 166, salary_range_work_for_free: 90, salary_range_30_50: 69, salary_range_10_30: 28, salary_range_0_10: 16}, company_size: {company_size_more_than_1000: 766, company_size_100_1000: 661, company_size_50_100: 327, company_size_20_50: 257, company_size_1: 211, company_size_1_5: 177, company_size_10_20: 167, company_size_5_10: 144}}
                 - {survey: '2017', count: 821, salary: {salary_range_100_200: 370, salary_range_50_100: 305, salary_range_work_for_free: 47, salary_range_30_50: 29, salary_range_more_than_200: 28, salary_range_0_10: 15, salary_range_10_30: 12}, company_size: {company_size_more_than_1000: 201, company_size_100_1000: 181, company_size_20_50: 103, company_size_50_100: 92, company_size_1: 84, company_size_1_5: 60, company_size_10_20: 59, company_size_5_10: 37}}
         -
             country: 'United Kingdom of Great Britain and Northern Ireland'
-            count: 2333
+            count: 2332
             by_survey:
                 - {survey: '2017', count: 1567, salary: {salary_range_50_100: 613, salary_range_30_50: 452, salary_range_100_200: 215, salary_range_10_30: 140, salary_range_work_for_free: 63, salary_range_0_10: 24, salary_range_more_than_200: 21}, company_size: {company_size_100_1000: 312, company_size_more_than_1000: 262, company_size_20_50: 196, company_size_50_100: 189, company_size_1_5: 159, company_size_1: 156, company_size_10_20: 153, company_size_5_10: 134}}
-                - {survey: '2018', count: 766, salary: {salary_range_50_100: 328, salary_range_30_50: 174, salary_range_100_200: 136, salary_range_10_30: 50, salary_range_work_for_free: 33, salary_range_more_than_200: 13, salary_range_0_10: 10}, company_size: {company_size_more_than_1000: 146, company_size_100_1000: 131, company_size_20_50: 95, company_size_50_100: 91, company_size_1: 82, company_size_10_20: 76, company_size_1_5: 70, company_size_5_10: 68}}
+                - {survey: '2018', count: 765, salary: {salary_range_50_100: 327, salary_range_30_50: 174, salary_range_100_200: 136, salary_range_10_30: 50, salary_range_work_for_free: 33, salary_range_more_than_200: 13, salary_range_0_10: 10}, company_size: {company_size_more_than_1000: 146, company_size_100_1000: 131, company_size_20_50: 95, company_size_50_100: 91, company_size_1: 82, company_size_10_20: 76, company_size_1_5: 70, company_size_5_10: 67}}
         -
             country: Germany
             count: 2275
@@ -69,15 +69,15 @@ demographics:
                 - {survey: '2018', count: 856, salary: {salary_range_30_50: 371, salary_range_50_100: 270, salary_range_10_30: 105, salary_range_work_for_free: 45, salary_range_100_200: 27, salary_range_0_10: 18, salary_range_more_than_200: 3}, company_size: {company_size_100_1000: 173, company_size_20_50: 127, company_size_10_20: 114, company_size_1: 110, company_size_50_100: 86, company_size_more_than_1000: 86, company_size_5_10: 81, company_size_1_5: 75}}
         -
             country: Australia
-            count: 1818
+            count: 1819
             by_survey:
-                - {survey: '2018', count: 1049, salary: {salary_range_100_200: 464, salary_range_50_100: 400, salary_range_more_than_200: 50, salary_range_30_50: 49, salary_range_work_for_free: 42, salary_range_10_30: 16, salary_range_0_10: 10}, company_size: {company_size_100_1000: 230, company_size_more_than_1000: 206, company_size_20_50: 129, company_size_50_100: 120, company_size_10_20: 98, company_size_1_5: 94, company_size_5_10: 84, company_size_1: 82}}
+                - {survey: '2018', count: 1050, salary: {salary_range_100_200: 464, salary_range_50_100: 401, salary_range_more_than_200: 50, salary_range_30_50: 49, salary_range_work_for_free: 42, salary_range_10_30: 16, salary_range_0_10: 10}, company_size: {company_size_100_1000: 230, company_size_more_than_1000: 206, company_size_20_50: 130, company_size_50_100: 120, company_size_10_20: 98, company_size_1_5: 94, company_size_5_10: 84, company_size_1: 82}}
                 - {survey: '2017', count: 769, salary: {salary_range_50_100: 312, salary_range_100_200: 302, salary_range_work_for_free: 53, salary_range_30_50: 52, salary_range_10_30: 18, salary_range_more_than_200: 12, salary_range_0_10: 9}, company_size: {company_size_100_1000: 155, company_size_more_than_1000: 125, company_size_1_5: 98, company_size_1: 86, company_size_20_50: 86, company_size_10_20: 81, company_size_5_10: 76, company_size_50_100: 59}}
         -
             country: Ukraine
-            count: 1340
+            count: 1341
             by_survey:
-                - {survey: '2018', count: 896, salary: {salary_range_50_100: 257, salary_range_30_50: 229, salary_range_10_30: 153, salary_range_100_200: 109, salary_range_0_10: 81, salary_range_work_for_free: 32, salary_range_more_than_200: 8}, company_size: {company_size_100_1000: 171, company_size_more_than_1000: 138, company_size_20_50: 133, company_size_50_100: 108, company_size_10_20: 105, company_size_1: 82, company_size_1_5: 82, company_size_5_10: 69}}
+                - {survey: '2018', count: 897, salary: {salary_range_50_100: 258, salary_range_30_50: 229, salary_range_10_30: 153, salary_range_100_200: 109, salary_range_0_10: 81, salary_range_work_for_free: 32, salary_range_more_than_200: 8}, company_size: {company_size_100_1000: 171, company_size_more_than_1000: 138, company_size_20_50: 133, company_size_50_100: 108, company_size_10_20: 105, company_size_1: 82, company_size_1_5: 82, company_size_5_10: 70}}
                 - {survey: '2017', count: 444, salary: {salary_range_30_50: 111, salary_range_50_100: 95, salary_range_10_30: 81, salary_range_0_10: 66, salary_range_work_for_free: 40, salary_range_100_200: 32, salary_range_more_than_200: 3}, company_size: {company_size_100_1000: 82, company_size_more_than_1000: 65, company_size_20_50: 59, company_size_1: 56, company_size_50_100: 55, company_size_10_20: 44, company_size_1_5: 43, company_size_5_10: 34}}
         -
             country: 'Russian Federation'
@@ -117,10 +117,10 @@ demographics:
                 - {survey: '2017', count: 412, salary: {salary_range_50_100: 171, salary_range_30_50: 128, salary_range_work_for_free: 43, salary_range_10_30: 25, salary_range_100_200: 22, salary_range_0_10: 8, salary_range_more_than_200: 5}, company_size: {company_size_100_1000: 69, company_size_20_50: 60, company_size_1_5: 59, company_size_1: 55, company_size_more_than_1000: 48, company_size_50_100: 43, company_size_10_20: 42, company_size_5_10: 34}}
         -
             country: Spain
-            count: 895
+            count: 896
             by_survey:
                 - {survey: '2017', count: 500, salary: {salary_range_30_50: 197, salary_range_10_30: 152, salary_range_50_100: 82, salary_range_work_for_free: 28, salary_range_0_10: 16, salary_range_100_200: 13, salary_range_more_than_200: 1}, company_size: {company_size_100_1000: 96, company_size_20_50: 66, company_size_50_100: 65, company_size_10_20: 62, company_size_1_5: 62, company_size_more_than_1000: 54, company_size_1: 50, company_size_5_10: 43}}
-                - {survey: '2018', count: 395, salary: {salary_range_30_50: 180, salary_range_10_30: 85, salary_range_50_100: 83, salary_range_100_200: 15, salary_range_work_for_free: 14, salary_range_0_10: 11, salary_range_more_than_200: 2}, company_size: {company_size_100_1000: 89, company_size_more_than_1000: 65, company_size_20_50: 53, company_size_50_100: 53, company_size_10_20: 50, company_size_1_5: 34, company_size_5_10: 28, company_size_1: 22}}
+                - {survey: '2018', count: 396, salary: {salary_range_30_50: 180, salary_range_10_30: 85, salary_range_50_100: 84, salary_range_100_200: 15, salary_range_work_for_free: 14, salary_range_0_10: 11, salary_range_more_than_200: 2}, company_size: {company_size_100_1000: 90, company_size_more_than_1000: 65, company_size_20_50: 53, company_size_50_100: 53, company_size_10_20: 50, company_size_1_5: 34, company_size_5_10: 28, company_size_1: 22}}
         -
             country: Italy
             count: 585

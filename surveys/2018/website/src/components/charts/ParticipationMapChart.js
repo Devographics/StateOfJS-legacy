@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { geoMercator, geoPath } from 'd3-geo'
-import countries from '../../data/world_countries'
+import countries from '../../data/geo/world_countries'
 
 export default class ParticipationMapChart extends Component {
     render() {

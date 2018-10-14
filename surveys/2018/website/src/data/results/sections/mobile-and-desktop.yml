@@ -1,4 +1,4 @@
-section_id: mobile_desktop
+section_id: mobile-and-desktop
 tools:
     - electron
     - react-native

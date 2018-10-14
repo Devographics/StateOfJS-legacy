@@ -1,3 +1,9 @@
+#
+# Please be aware that modifying the section ids
+# here has an impact on the data pipeline as
+# those ids must be updated too.
+# The same goes for tools.
+#
 - id: introduction
   label: Introduction
   path: '/'
@@ -5,61 +11,61 @@
 - id: connections
   label: Connections
 
-- id: javascript_flavors
+- id: javascript-flavors
   label: JavaScript Flavors
   subPages:
-      - Overview
+      - overview
       - reason
       - clojurescript
       - elm
       - flow
       - typescript
       - es6
-      - Other Libraries
-      - Conclusion
+      - other-libraries
+      - conclusion
 
-- id: frontend_frameworks
+- id: front-end-frameworks
   label: Front-end Frameworks
   subPages:
-      - Overview
+      - overview
       - react
       - angular
       - ember
       - polymer
       - vuejs
       - preact
-      - Other Libraries
-      - Conclusion
+      - other-libraries
+      - conclusion
 
-- id: data_layer
+- id: data-layer
   label: Data Layer
   subPages:
-      - Overview
+      - overview
       - redux
       - graphql
       - relay
       - apollo
       - mobx
-      - Other Libraries
-      - Conclusion
+      - other-libraries
+      - conclusion
 
-- id: backend_frameworks
+- id: back-end-frameworks
   label: Back-end Frameworks
   subPages:
-      - Overview
+      - overview
       - meteor
       - express
       - nextjs
       - koa
       - sails
       - feathers
-      - Other Libraries
-      - Conclusion
+      - other-libraries
+      - conclusion
 
 - id: testing
   label: Testing
   subPages:
-      - Overview
+      - overview
       - storybook
       - mocha
       - jasmine
@@ -67,23 +73,23 @@
       - enzyme
       - ava
       - karma
-      - Other Libraries
-      - Conclusion
+      - other-libraries
+      - conclusion
 
-- id: mobile_desktop
+- id: mobile-and-desktop
   label: Mobile & Desktop
   subPages:
-      - Overview
+      - overview
       - electron
       - react-native
       - cordova
       - NativeScript
       - ionic
       - Native Apps
-      - Other Libraries
-      - Conclusion
+      - other-libraries
+      - conclusion
 
-- id: other_tools
+- id: other-tools
   label: Other Tools
 
 - id: opinions

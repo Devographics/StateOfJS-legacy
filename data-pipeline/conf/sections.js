@@ -1,13 +1,13 @@
 module.exports = {
-    JAVASCRIPT_FLAVORS: 'javascript_flavors',
-    FRONTEND_FRAMEWORKS: 'frontend_frameworks',
-    STATE_MANAGEMENT: 'state_management',
-    DATA_LAYER: 'data_layer',
-    BACKEND_FRAMEWORKS: 'backend_frameworks',
+    JAVASCRIPT_FLAVORS: 'javascript-flavors',
+    FRONTEND_FRAMEWORKS: 'front-end-frameworks',
+    STATE_MANAGEMENT: 'state-management',
+    DATA_LAYER: 'data-layer',
+    BACKEND_FRAMEWORKS: 'back-end-frameworks',
     TESTING: 'testing',
     CSS: 'css',
-    BUILD_TOOLS: 'build_tools',
+    BUILD_TOOLS: 'build-tools',
     MOBILE: 'mobile',
-    MOBILE_DESKTOP: 'mobile_desktop',
+    MOBILE_DESKTOP: 'mobile-and-desktop',
 }
 

@@ -212,14 +212,23 @@ class TypeformExtractor {
 
         if (response.items.length === 0) return
 
-        const processedResults = await this.processResults(response.items)
-        onData(processedResults)
+        try {
+            const processedResults = await this.processResults(response.items)
+            await onData(processedResults)
 
-        await this.fetchResults(onData, { after: last(response.items).token })
+            await this.fetchResults(onData, { after: last(response.items).token })
+        } catch (error) {
+            console.error('An error occurred while processing typeform results', error)
+        }
     }
 
     async processResults(items) {
-        return Promise.all(items.map(async ({ answers, ...response }) => {
+        const normalizedItems = []
+        for (let i = 0; i < items.length; i++) {
+            const { answers, ...response } = items[i]
+
+            if (answers === undefined) continue
+
             const normalized = {
                 survey: this.config.id,
                 ...response,
@@ -227,10 +236,6 @@ class TypeformExtractor {
                 other_tools: {},
                 happiness: {},
                 user_info: {},
-            }
-
-            if (answers === undefined) {
-                return
             }
 
             let country
@@ -314,6 +319,14 @@ class TypeformExtractor {
                         normalized.user_info[types.FIELD_TYPE_SOURCE] = answer.text
                         break
 
+                    case types.FIELD_TYPE_GENDER:
+                        if (answer.choice.label !== undefined) {
+                            normalized.user_info[types.FIELD_TYPE_GENDER] = answer.choice.label.toLowerCase()
+                        } else {
+                            normalized.user_info[types.FIELD_TYPE_GENDER] = 'other'
+                        }
+                        break
+
                     case types.FIELD_TYPE_COUNTRY:
                         country = answer.text.trim().toLowerCase()
                         break
@@ -337,8 +350,10 @@ class TypeformExtractor {
                 normalized.user_info.subregion = 'undefined'
             }
 
-            return normalized
-        }))
+            normalizedItems.push(normalized)
+        }
+
+        return normalizedItems
     }
 }
 
