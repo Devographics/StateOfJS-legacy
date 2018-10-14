@@ -20,7 +20,12 @@ const SectionOverviewTemplate = ({ pageContext, data }) => {
                         <br />
                     </div>
                 )}
-                {hasEntry && <SectionOpinionsBlock opinions={section.opinions} />}
+                {hasEntry && (
+                    <SectionOpinionsBlock
+                        section={pageContext.section}
+                        opinions={section.opinions}
+                    />
+                )}
                 <HappinessBlock section="section" value={2} />
             </div>
         </Layout>

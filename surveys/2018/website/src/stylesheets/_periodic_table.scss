@@ -1,0 +1,57 @@
+.PeriodicTableElementHtml {
+    border: 1px solid #646a6a;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+    background: #212424;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.PeriodicTableElementHtml_Index {
+    position: absolute;
+    opacity: 0.6;
+    background: #646a6a;
+}
+
+.PeriodicTableElementHtml_Symbol {
+    font-weight: 500;
+}
+
+.PeriodicTableElementHtml_Label {
+    display: block;
+    opacity: 0.6;
+    background: #646a6a;
+}
+
+.PeriodicTableElementSvg {
+    stroke-width: 1px;
+    stroke: #646a6a;
+    fill: #212424;
+}
+
+.PeriodicTableElementSvg_Shadow {
+    fill: rgba(0, 0, 0, 0.35);
+}
+
+.PeriodicTableElementSvg_Index {
+    position: absolute;
+    opacity: 0.6;
+    pointer-events: none;
+    fill: #646a6a;
+}
+
+.PeriodicTableElementSvg_Symbol {
+    font-weight: 500;
+    pointer-events: none;
+    fill: #e8e8e8;
+}
+
+.PeriodicTableElementHtml_Label {
+    display: block;
+    opacity: 0.6;
+    pointer-events: none;
+    background: #646a6a;
+}

@@ -3,9 +3,11 @@ import PropTypes from 'prop-types'
 import { sortBy } from 'lodash'
 import { ResponsiveBar } from '@nivo/bar'
 import theme from '../../nivoTheme'
+import PeriodicTableElementSvg from '../elements/PeriodicTableElementSvg'
 
 export default class SectionOpinionsChart extends Component {
     static propTypes = {
+        section: PropTypes.string.isRequired,
         opinions: PropTypes.arrayOf(
             PropTypes.shape({
                 survey_id: PropTypes.string.isRequired
@@ -14,7 +16,7 @@ export default class SectionOpinionsChart extends Component {
     }
 
     render() {
-        const { opinions } = this.props
+        const { section, opinions } = this.props
         const surveyData = opinions.find(o => o.survey_id === '2018')
 
         if (surveyData === undefined) {
@@ -52,25 +54,22 @@ export default class SectionOpinionsChart extends Component {
                     labelSkipHeight={20}
                     padding={0.6}
                     axisLeft={null}
-                    /*
                     axisBottom={{
                         renderTick: tick => {
                             return (
                                 <g
                                     key={tick.key}
-                                    transform={`translate(${tick.x - 30},${tick.y +
-                                    14})`}
+                                    transform={`translate(${tick.x - 30},${tick.y + 14})`}
                                 >
                                     <PeriodicTableElementSvg
+                                        section={section}
+                                        tool={tick.value}
                                         size={60}
-                                        id={tick.value.slice(0, 2)}
-                                        //color="#72D7D1"
                                     />
                                 </g>
                             )
-                        },
+                        }
                     }}
-                    */
                 />
             </div>
         )
