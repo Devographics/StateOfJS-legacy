@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Meta from '../elements/Meta'
 import Layout from '../common/Layout'
-import ExperienceOverTimeBlock from '../blocks/ExperienceOverTimeBlock'
+import ToolOpinionsOverTimeBlock from '../blocks/ToolOpinionsOverTimeBlock'
 import ReasonsBlock from '../blocks/ReasonsBlock'
 import bestOfJsData from '../../data/bestofjs'
 
@@ -59,7 +59,7 @@ const ToolTemplate = ({ pageContext, data }) => {
                     </div>
                 )}
                 {shouldDisplayExperienceOverTime && (
-                    <ExperienceOverTimeBlock experience={data.toolsYaml.experience} />
+                    <ToolOpinionsOverTimeBlock opinions={data.toolsYaml.experience} />
                 )}
                 {data.toolsYaml !== null && <ReasonsBlock reasons={data.toolsYaml.reasons} />}
                 {data.toolsYaml !== null && (

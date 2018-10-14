@@ -3,13 +3,7 @@ import { colors } from './constants'
 export default {
     name: 'dark',
     background: '#222',
-    experienceColors: [
-        colors.red,
-        colors.redLight,
-        colors.blue,
-        colors.blueLight,
-        colors.greyLight
-    ],
+    opinionColors: [colors.red, colors.redLight, colors.blue, colors.blueLight, colors.greyLight],
     salaryColors: ['#8b8de8', '#b3b5e6', '#dedfec', '#e4d6d9', '#dc9eaa', '#e28194', '#ea2149'],
     reasonsColors: {
         like: colors.blue,

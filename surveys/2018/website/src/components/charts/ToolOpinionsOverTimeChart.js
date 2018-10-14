@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import { ResponsiveStream } from '@nivo/stream'
 import theme from '../../nivoTheme'
 
-const colors = [...theme.experienceColors]
-
-export default class ExperienceOverTimeChart extends Component {
+export default class ToolOpinionsOverTimeChart extends Component {
     render() {
         return (
             <div
@@ -15,7 +13,7 @@ export default class ExperienceOverTimeChart extends Component {
                 <ResponsiveStream
                     theme={theme}
                     offsetType="expand"
-                    colors={colors}
+                    colors={theme.opinionColors}
                     curve="monotoneX"
                     margin={{
                         top: 20,
@@ -30,7 +28,7 @@ export default class ExperienceOverTimeChart extends Component {
                         'not_interested',
                         'never_heard'
                     ]}
-                    data={this.props.experience.map(xp => ({
+                    data={this.props.opinions.map(xp => ({
                         id: xp.survey,
                         ...xp
                     }))}
@@ -40,7 +38,7 @@ export default class ExperienceOverTimeChart extends Component {
                         format: v => `${v * 100}%`
                     }}
                     axisBottom={{
-                        format: i => this.props.experience[i].survey
+                        format: i => this.props.opinions[i].survey
                     }}
                     defs={[
                         {

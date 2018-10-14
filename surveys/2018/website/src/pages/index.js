@@ -15,7 +15,7 @@ export default Introduction
 
 export const query = graphql`
     query {
-        file(name: {eq: "introduction"}) {
+        file(name: { eq: "introduction" }) {
             childMarkdownRemark {
                 html
             }

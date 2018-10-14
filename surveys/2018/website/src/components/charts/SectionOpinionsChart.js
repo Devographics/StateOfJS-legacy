@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 import { ResponsiveBar } from '@nivo/bar'
 import theme from '../../nivoTheme'
 
-const colors = [...theme.experienceColors]
-
 export default class SectionOpinionsChart extends Component {
     static propTypes = {
         opinions: PropTypes.arrayOf(
@@ -44,7 +42,7 @@ export default class SectionOpinionsChart extends Component {
                     indexBy="tool_id"
                     data={surveyData.tools}
                     theme={theme}
-                    colors={colors}
+                    colors={theme.opinionColors}
                     labelFormat=".2s"
                     labelTextColor="inherit:darker(1.6)"
                     labelSkipWidth={32}
