@@ -1,7 +1,24 @@
 nav:
-  overview: Overview
-  'other-libraries': Other Libraries
-  Conclusion: Conclusion
+    introduction: Introduction
+    connections: Connections
+    overview: Overview
+    other-libraries: Other Libraries
+    conclusion: Conclusion
+    other-toolsl: Other Tools
+    opinions: Opinions
+    demographics: Demographics
+    support_us: Support Us
+
+    javascript-flavors: JavaScript Flavors
+    front-end-frameworks: Front-end Frameworks
+    data-layer: Data Layer
+    back-end-frameworks: Back-end Frameworks
+    testing: Testing
+    mobile-and-desktop: Mobile & Desktop
+
+    native-apps: Native Apps
+    graphql: GraphQL
+    es6: ES6
 
 opinions:
     never_heard: I've never heard of it
