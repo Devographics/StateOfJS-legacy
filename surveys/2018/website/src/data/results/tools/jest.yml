@@ -113,3 +113,73 @@ reasons:
         -
             id: small_package_ecosystem
             count: 11
+would_use_by_continent:
+    -
+        survey: '2017'
+        by_continent:
+            -
+                continent: Europe
+                total: 9639
+                count: 2468
+                percentage: 25.6
+            -
+                continent: 'North America'
+                total: 8326
+                count: 2138
+                percentage: 25.7
+            -
+                continent: Asia
+                total: 1226
+                count: 252
+                percentage: 20.6
+            -
+                continent: 'South America'
+                total: 1014
+                count: 215
+                percentage: 21.2
+            -
+                continent: Oceania
+                total: 958
+                count: 271
+                percentage: 28.3
+            -
+                continent: Africa
+                total: 906
+                count: 155
+                percentage: 17.1
+    -
+        survey: '2018'
+        by_continent:
+            -
+                continent: Europe
+                total: 9162
+                count: 3661
+                percentage: 40
+            -
+                continent: 'North America'
+                total: 6077
+                count: 2506
+                percentage: 41.2
+            -
+                continent: Oceania
+                total: 1205
+                count: 508
+                percentage: 42.2
+            -
+                continent: Asia
+                total: 1170
+                count: 411
+                percentage: 35.1
+            -
+                continent: 'South America'
+                total: 967
+                count: 339
+                percentage: 35.1
+            -
+                continent: Africa
+                total: 908
+                count: 231
+                percentage: 25.4
+    -
+        survey: '2016'
+        by_continent: []

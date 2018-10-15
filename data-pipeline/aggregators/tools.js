@@ -196,6 +196,10 @@ exports.experience = async (tools, surveys, config, experienceId) => {
     return aggs
 }
 
+/**
+ * This aggregator computes stats about the reasons
+ * why useres liked/disliked a tool.
+ */
 exports.reasons = async (tools) => {
     const result = await elastic.aggs(tools.reduce((acc, tool) => ({
         ...acc,
@@ -231,6 +235,52 @@ exports.reasons = async (tools) => {
             like: likeReasons,
             dislike: dislikeReasons,
         }
+    })
+
+    return toolsAggs
+}
+
+/**
+ * This aggregator computes stats about opinion (used, would use, interested…)
+ * by continent.
+ */
+exports.opinionByContinent = async (tools, opinion) => {
+    const result = await elastic.aggs(tools.reduce((acc, tool) => ({
+        ...acc,
+        [tool]: {
+            terms: {
+                field: 'survey.keyword',
+            },
+            aggs: {
+                continent: {
+                    terms: {
+                        field: 'user_info.continent.keyword'
+                    },
+                    aggs: {
+                        [opinion]: {
+                            filter: {
+                                term: {
+                                    [`tools.${tool}.opinion.keyword`]: opinion
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+    }), {}))
+
+    const toolsAggs = {}
+    tools.forEach(tool => {
+        toolsAggs[tool] = result.aggregations[tool].buckets.map(surveyBucket => ({
+            survey: surveyBucket.key,
+            by_continent: surveyBucket.continent.buckets.filter(b => b.key !== 'undefined').map(continentBucket => ({
+                continent: continentBucket.key,
+                total: continentBucket.doc_count,
+                count: continentBucket[opinion].doc_count,
+                percentage: Number((continentBucket[opinion].doc_count / continentBucket.doc_count * 100).toFixed(1))
+            }))
+        }))
     })
 
     return toolsAggs

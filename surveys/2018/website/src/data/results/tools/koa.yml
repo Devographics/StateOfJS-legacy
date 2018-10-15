@@ -105,3 +105,73 @@ reasons:
         -
             id: poor_performance
             count: 12
+would_use_by_continent:
+    -
+        survey: '2017'
+        by_continent:
+            -
+                continent: Europe
+                total: 9639
+                count: 921
+                percentage: 9.6
+            -
+                continent: 'North America'
+                total: 8326
+                count: 734
+                percentage: 8.8
+            -
+                continent: Asia
+                total: 1226
+                count: 162
+                percentage: 13.2
+            -
+                continent: 'South America'
+                total: 1014
+                count: 85
+                percentage: 8.4
+            -
+                continent: Oceania
+                total: 958
+                count: 108
+                percentage: 11.3
+            -
+                continent: Africa
+                total: 906
+                count: 44
+                percentage: 4.9
+    -
+        survey: '2018'
+        by_continent:
+            -
+                continent: Europe
+                total: 9162
+                count: 758
+                percentage: 8.3
+            -
+                continent: 'North America'
+                total: 6077
+                count: 396
+                percentage: 6.5
+            -
+                continent: Oceania
+                total: 1205
+                count: 87
+                percentage: 7.2
+            -
+                continent: Asia
+                total: 1170
+                count: 105
+                percentage: 9
+            -
+                continent: 'South America'
+                total: 967
+                count: 54
+                percentage: 5.6
+            -
+                continent: Africa
+                total: 908
+                count: 40
+                percentage: 4.4
+    -
+        survey: '2016'
+        by_continent: []

@@ -5,6 +5,7 @@ import Layout from '../common/Layout'
 import ToolHeaderBlock from '../blocks/ToolHeaderBlock'
 import ToolOpinionsOverTimeBlock from '../blocks/ToolOpinionsOverTimeBlock'
 import ReasonsBlock from '../blocks/ReasonsBlock'
+import ToolOpinionMapBlock from '../blocks/ToolOpinionMapBlock'
 
 const ToolTemplate = ({ pageContext, data }) => {
     // console.log(pageContext, data)
@@ -32,9 +33,10 @@ const ToolTemplate = ({ pageContext, data }) => {
                 )}
                 {data.toolsYaml !== null && <ReasonsBlock reasons={data.toolsYaml.reasons} />}
                 {data.toolsYaml !== null && (
-                    <div>
-                        <h3 className="block__title">Country stats</h3>
-                    </div>
+                    <ToolOpinionMapBlock
+                        tool={pageContext.tool}
+                        data={data.toolsYaml.would_use_by_continent}
+                    />
                 )}
             </div>
         </Layout>
@@ -63,6 +65,13 @@ export const query = graphql`
                     would_use
                     interested
                     never_heard
+                }
+            }
+            would_use_by_continent {
+                survey
+                by_continent {
+                    continent
+                    percentage
                 }
             }
             reasons {

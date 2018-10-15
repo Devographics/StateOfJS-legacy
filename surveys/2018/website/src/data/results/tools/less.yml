@@ -27,3 +27,73 @@ experience:
 reasons:
     like: []
     dislike: []
+would_use_by_continent:
+    -
+        survey: '2017'
+        by_continent:
+            -
+                continent: Europe
+                total: 9639
+                count: 2899
+                percentage: 30.1
+            -
+                continent: 'North America'
+                total: 8326
+                count: 2741
+                percentage: 32.9
+            -
+                continent: Asia
+                total: 1226
+                count: 359
+                percentage: 29.3
+            -
+                continent: 'South America'
+                total: 1014
+                count: 311
+                percentage: 30.7
+            -
+                continent: Oceania
+                total: 958
+                count: 292
+                percentage: 30.5
+            -
+                continent: Africa
+                total: 906
+                count: 243
+                percentage: 26.8
+    -
+        survey: '2018'
+        by_continent:
+            -
+                continent: Europe
+                total: 9162
+                count: 0
+                percentage: 0
+            -
+                continent: 'North America'
+                total: 6077
+                count: 0
+                percentage: 0
+            -
+                continent: Oceania
+                total: 1205
+                count: 0
+                percentage: 0
+            -
+                continent: Asia
+                total: 1170
+                count: 0
+                percentage: 0
+            -
+                continent: 'South America'
+                total: 967
+                count: 0
+                percentage: 0
+            -
+                continent: Africa
+                total: 908
+                count: 0
+                percentage: 0
+    -
+        survey: '2016'
+        by_continent: []

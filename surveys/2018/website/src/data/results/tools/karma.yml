@@ -97,3 +97,73 @@ reasons:
         -
             id: new_untested_option
             count: 14
+would_use_by_continent:
+    -
+        survey: '2017'
+        by_continent:
+            -
+                continent: Europe
+                total: 9639
+                count: 0
+                percentage: 0
+            -
+                continent: 'North America'
+                total: 8326
+                count: 0
+                percentage: 0
+            -
+                continent: Asia
+                total: 1226
+                count: 0
+                percentage: 0
+            -
+                continent: 'South America'
+                total: 1014
+                count: 0
+                percentage: 0
+            -
+                continent: Oceania
+                total: 958
+                count: 0
+                percentage: 0
+            -
+                continent: Africa
+                total: 906
+                count: 0
+                percentage: 0
+    -
+        survey: '2018'
+        by_continent:
+            -
+                continent: Europe
+                total: 9162
+                count: 1736
+                percentage: 18.9
+            -
+                continent: 'North America'
+                total: 6077
+                count: 1184
+                percentage: 19.5
+            -
+                continent: Oceania
+                total: 1205
+                count: 216
+                percentage: 17.9
+            -
+                continent: Asia
+                total: 1170
+                count: 137
+                percentage: 11.7
+            -
+                continent: 'South America'
+                total: 967
+                count: 136
+                percentage: 14.1
+            -
+                continent: Africa
+                total: 908
+                count: 145
+                percentage: 16
+    -
+        survey: '2016'
+        by_continent: []

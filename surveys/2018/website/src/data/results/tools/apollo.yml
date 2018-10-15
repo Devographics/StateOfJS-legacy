@@ -113,3 +113,73 @@ reasons:
         -
             id: diminishing_momentum_popularity
             count: 7
+would_use_by_continent:
+    -
+        survey: '2017'
+        by_continent:
+            -
+                continent: Europe
+                total: 9639
+                count: 512
+                percentage: 5.3
+            -
+                continent: 'North America'
+                total: 8326
+                count: 440
+                percentage: 5.3
+            -
+                continent: Asia
+                total: 1226
+                count: 70
+                percentage: 5.7
+            -
+                continent: 'South America'
+                total: 1014
+                count: 59
+                percentage: 5.8
+            -
+                continent: Oceania
+                total: 958
+                count: 64
+                percentage: 6.7
+            -
+                continent: Africa
+                total: 906
+                count: 27
+                percentage: 3
+    -
+        survey: '2018'
+        by_continent:
+            -
+                continent: Europe
+                total: 9162
+                count: 987
+                percentage: 10.8
+            -
+                continent: 'North America'
+                total: 6077
+                count: 751
+                percentage: 12.4
+            -
+                continent: Oceania
+                total: 1205
+                count: 138
+                percentage: 11.5
+            -
+                continent: Asia
+                total: 1170
+                count: 113
+                percentage: 9.7
+            -
+                continent: 'South America'
+                total: 967
+                count: 99
+                percentage: 10.2
+            -
+                continent: Africa
+                total: 908
+                count: 67
+                percentage: 7.4
+    -
+        survey: '2016'
+        by_continent: []

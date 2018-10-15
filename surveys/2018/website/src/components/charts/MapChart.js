@@ -19,6 +19,7 @@ const continentsFeatures = continents.features.reduce((acc, f) => {
 export default class MapChart extends Component {
     static propTypes = {
         height: PropTypes.number.isRequired,
+        renderOverlay: PropTypes.func,
         renderContinentOverlay: PropTypes.func
     }
 
@@ -90,6 +91,7 @@ export default class MapChart extends Component {
                                 </svg>
                                 <div
                                     style={{
+                                        pointerEvents: 'none',
                                         position: 'absolute',
                                         top: 0,
                                         left: 0,

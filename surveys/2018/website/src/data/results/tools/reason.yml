@@ -105,3 +105,73 @@ reasons:
         -
             id: buggy_error_prone_code
             count: 14
+would_use_by_continent:
+    -
+        survey: '2017'
+        by_continent:
+            -
+                continent: Europe
+                total: 9639
+                count: 43
+                percentage: 0.4
+            -
+                continent: 'North America'
+                total: 8326
+                count: 61
+                percentage: 0.7
+            -
+                continent: Asia
+                total: 1226
+                count: 6
+                percentage: 0.5
+            -
+                continent: 'South America'
+                total: 1014
+                count: 3
+                percentage: 0.3
+            -
+                continent: Oceania
+                total: 958
+                count: 8
+                percentage: 0.8
+            -
+                continent: Africa
+                total: 906
+                count: 2
+                percentage: 0.2
+    -
+        survey: '2018'
+        by_continent:
+            -
+                continent: Europe
+                total: 9162
+                count: 449
+                percentage: 4.9
+            -
+                continent: 'North America'
+                total: 6077
+                count: 246
+                percentage: 4
+            -
+                continent: Oceania
+                total: 1205
+                count: 66
+                percentage: 5.5
+            -
+                continent: Asia
+                total: 1170
+                count: 134
+                percentage: 11.5
+            -
+                continent: 'South America'
+                total: 967
+                count: 55
+                percentage: 5.7
+            -
+                continent: Africa
+                total: 908
+                count: 107
+                percentage: 11.8
+    -
+        survey: '2016'
+        by_continent: []

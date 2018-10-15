@@ -113,3 +113,73 @@ reasons:
         -
             id: fast_changing_breaks_often
             count: 10
+would_use_by_continent:
+    -
+        survey: '2017'
+        by_continent:
+            -
+                continent: Europe
+                total: 9639
+                count: 466
+                percentage: 4.8
+            -
+                continent: 'North America'
+                total: 8326
+                count: 359
+                percentage: 4.3
+            -
+                continent: Asia
+                total: 1226
+                count: 94
+                percentage: 7.7
+            -
+                continent: 'South America'
+                total: 1014
+                count: 36
+                percentage: 3.6
+            -
+                continent: Oceania
+                total: 958
+                count: 63
+                percentage: 6.6
+            -
+                continent: Africa
+                total: 906
+                count: 36
+                percentage: 4
+    -
+        survey: '2018'
+        by_continent:
+            -
+                continent: Europe
+                total: 9162
+                count: 518
+                percentage: 5.7
+            -
+                continent: 'North America'
+                total: 6077
+                count: 305
+                percentage: 5
+            -
+                continent: Oceania
+                total: 1205
+                count: 61
+                percentage: 5.1
+            -
+                continent: Asia
+                total: 1170
+                count: 107
+                percentage: 9.1
+            -
+                continent: 'South America'
+                total: 967
+                count: 50
+                percentage: 5.2
+            -
+                continent: Africa
+                total: 908
+                count: 37
+                percentage: 4.1
+    -
+        survey: '2016'
+        by_continent: []

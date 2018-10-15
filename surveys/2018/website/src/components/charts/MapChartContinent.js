@@ -11,7 +11,7 @@ export default class MapChartContinent extends Component {
     }
 
     handleMouseEnter = () => {
-        this.setState({ color: '#444' })
+        this.setState({ color: '#333' })
     }
 
     handleMouseLeave = () => {
