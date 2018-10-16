@@ -5,17 +5,19 @@
     margin-bottom: $spacing * 2;
 }
 
-.SectionHeader{
+.SectionHeader {
     margin-bottom: $spacing * 2;
 }
 
-.ToolHeader_Header, .SectionHeader__Header {
+.ToolHeader_Header,
+.SectionHeader__Header {
     display: flex;
     justify-content: space-between;
     margin-bottom: $spacing * 0.5;
 }
 
-.ToolHeader_Title, .SectionHeader__Title {
+.ToolHeader_Title,
+.SectionHeader__Title {
     margin: 0;
     padding: 0;
     align-items: baseline;

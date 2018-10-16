@@ -3,7 +3,7 @@ import OthersBarBlock from '../blocks/OthersBarsBlock'
 import OthersBubbleBlock from '../blocks/OthersBubbleBlock'
 import Meta from '../elements/Meta'
 import Layout from '../common/Layout'
-import SectionHeader from  '../elements/SectionHeader'
+import SectionHeader from '../elements/SectionHeader'
 
 const OthersTemplate = props => (
     <Layout {...props}>

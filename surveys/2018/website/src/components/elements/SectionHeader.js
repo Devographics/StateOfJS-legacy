@@ -14,7 +14,7 @@ const SectionHeader = ({ currentPage, showIntro }) => (
         </div> */}
         <div>
             <div className="SectionHeader__Header">
-              <h2 className="SectionHeader__Title">{currentPage.title}</h2>
+                <h2 className="SectionHeader__Title">{currentPage.title}</h2>
             </div>
             {showIntro && <div>{currentPage.intro}</div>}
         </div>

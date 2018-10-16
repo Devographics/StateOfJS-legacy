@@ -2,7 +2,7 @@ import React from 'react'
 import Meta from '../elements/Meta'
 import Layout from '../common/Layout'
 import TextBlock from '../blocks/TextBlock'
-import SectionHeader from  '../elements/SectionHeader'
+import SectionHeader from '../elements/SectionHeader'
 
 const OtherLibrariesTemplate = () => (
     <Layout>

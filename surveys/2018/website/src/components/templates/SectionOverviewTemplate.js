@@ -4,7 +4,7 @@ import Layout from '../common/Layout'
 import SectionOpinionsBlock from '../blocks/SectionOpinionsBlock'
 import HappinessBlock from '../blocks/HappinessBlock'
 import { graphql } from 'gatsby'
-import SectionHeader from  '../elements/SectionHeader'
+import SectionHeader from '../elements/SectionHeader'
 
 const SectionOverviewTemplate = ({ pageContext, data }) => {
     const section = data.sectionsYaml

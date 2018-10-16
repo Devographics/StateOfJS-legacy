@@ -12,12 +12,12 @@
 - id: javascript-flavors
   subPages:
       - overview
-      - reason
-      - clojurescript
-      - elm
-      - flow
-      - typescript
       - es6
+      - typescript
+      - flow
+      - reason
+      - elm
+      - clojurescript
       - other-libraries
       - conclusion
 
@@ -25,11 +25,11 @@
   subPages:
       - overview
       - react
+      - vuejs
       - angular
+      - preact
       - ember
       - polymer
-      - vuejs
-      - preact
       - other-libraries
       - conclusion
 
@@ -38,19 +38,19 @@
       - overview
       - redux
       - graphql
-      - relay
       - apollo
       - mobx
+      - relay
       - other-libraries
       - conclusion
 
 - id: back-end-frameworks
   subPages:
       - overview
-      - meteor
       - express
       - nextjs
       - koa
+      - meteor
       - sails
       - feathers
       - other-libraries
@@ -59,13 +59,13 @@
 - id: testing
   subPages:
       - overview
-      - storybook
+      - jest
       - mocha
       - jasmine
-      - jest
       - enzyme
-      - ava
       - karma
+      - storybook
+      - ava
       - other-libraries
       - conclusion
 
@@ -74,10 +74,10 @@
       - overview
       - electron
       - react-native
-      - cordova
-      - nativescript
-      - ionic
       - native-apps
+      - cordova
+      - ionic
+      - nativescript
       - other-libraries
       - conclusion
 
