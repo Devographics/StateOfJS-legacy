@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import OthersBubble from '../charts/OthersBubble'
-import getWording from '../../helpers/getWording'
 
 export default class OthersBubbleBlock extends Component {
     static propTypes = {

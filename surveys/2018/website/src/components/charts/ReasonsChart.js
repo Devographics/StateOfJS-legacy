@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import { ResponsiveBar } from '@nivo/bar'
 import { reasons } from '../../constants'
 import theme from '../../nivoTheme'
-import getWording from '../../helpers/getWording'
 import BlockTitle from '../elements/BlockTitle'
+import { ResponsiveBar } from '@nivo/bar'
 
 const verticalMargin = 30
 const innerMargin = 5
@@ -43,72 +42,72 @@ export default class ReasonsChart extends Component {
         return (
             <div>
                 <div className="block">
-                <BlockTitle chart="likes" tool={tool} />
-                <div
-                    style={{
-                        height: likeData.length * barHeight + verticalMargin * 2,
-                        marginBottom: 30
-                    }}
-                >
-                    <ResponsiveBar
-                        layout="horizontal"
-                        enableGridX={true}
-                        enableGridY={false}
-                        enableLabel={false}
-                        labelSkipWidth={36}
-                        theme={theme}
-                        colors={theme.reasonsColors.like}
-                        data={likeData}
-                        padding={0.8}
-                        borderRadius={2.5}
-                        keys={['count']}
-                        indexBy="reason"
-                        margin={{
-                            top: verticalMargin,
-                            right: labelsMargin + labelsWidth,
-                            bottom: verticalMargin,
-                            left: innerMargin
+                    <BlockTitle chart="likes" tool={tool} />
+                    <div
+                        style={{
+                            height: likeData.length * barHeight + verticalMargin * 2,
+                            marginBottom: 30
                         }}
-                        axisTop={{}}
-                        axisRight={{
-                            tickSize: 0,
-                            tickPadding: labelsMargin
-                        }}
-                        axisLeft={null}
-                    />
-                </div>
+                    >
+                        <ResponsiveBar
+                            layout="horizontal"
+                            enableGridX={true}
+                            enableGridY={false}
+                            enableLabel={false}
+                            labelSkipWidth={36}
+                            theme={theme}
+                            colors={theme.reasonsColors.like}
+                            data={likeData}
+                            padding={0.8}
+                            borderRadius={2.5}
+                            keys={['count']}
+                            indexBy="reason"
+                            margin={{
+                                top: verticalMargin,
+                                right: labelsMargin + labelsWidth,
+                                bottom: verticalMargin,
+                                left: innerMargin
+                            }}
+                            axisTop={{}}
+                            axisRight={{
+                                tickSize: 0,
+                                tickPadding: labelsMargin
+                            }}
+                            axisLeft={null}
+                        />
+                    </div>
                 </div>
                 <div className="block">
-                <BlockTitle chart="dislikes" tool={tool} />
-                <div style={{ height: dislikeData.length * barHeight + verticalMargin * 2 }}>
-                    <ResponsiveBar
-                        layout="horizontal"
-                        enableGridX={true}
-                        enableGridY={false}
-                        enableLabel={false}
-                        labelSkipWidth={36}
-                        theme={theme}
-                        colors={theme.reasonsColors.dislike}
-                        data={dislikeData}
-                        padding={0.8}
-                        borderRadius={2.5}
-                        keys={['count']}
-                        indexBy="reason"
-                        margin={{
-                            top: verticalMargin,
-                            right: labelsMargin + labelsWidth,
-                            bottom: verticalMargin,
-                            left: innerMargin
-                        }}
-                        axisTop={{}}
-                        axisLeft={null}
-                        axisRight={{
-                            tickSize: 0,
-                            tickPadding: labelsMargin
-                        }}
-                    />
+                    <BlockTitle chart="dislikes" tool={tool} />
+                    <div style={{ height: dislikeData.length * barHeight + verticalMargin * 2 }}>
+                        <ResponsiveBar
+                            layout="horizontal"
+                            enableGridX={true}
+                            enableGridY={false}
+                            enableLabel={false}
+                            labelSkipWidth={36}
+                            theme={theme}
+                            colors={theme.reasonsColors.dislike}
+                            data={dislikeData}
+                            padding={0.8}
+                            borderRadius={2.5}
+                            keys={['count']}
+                            indexBy="reason"
+                            margin={{
+                                top: verticalMargin,
+                                right: labelsMargin + labelsWidth,
+                                bottom: verticalMargin,
+                                left: innerMargin
+                            }}
+                            axisTop={{}}
+                            axisLeft={null}
+                            axisRight={{
+                                tickSize: 0,
+                                tickPadding: labelsMargin
+                            }}
+                        />
+                    </div>
                 </div>
-            </div>
             </div>
         )
     }

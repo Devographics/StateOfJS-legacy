@@ -4,6 +4,7 @@ import { sortBy } from 'lodash'
 import { ResponsiveBar } from '@nivo/bar'
 import { navigate } from 'gatsby'
 import theme from '../../nivoTheme'
+import { getToolName } from '../../helpers/wording'
 import OpinionsLegends from '../elements/OpinionsLegends'
 import PeriodicTableElementSvg from '../elements/PeriodicTableElementSvg'
 
@@ -102,7 +103,7 @@ export default class SectionOpinionsChart extends Component {
                                             alignmentBaseline="hanging"
                                             style={{ fontSize: '13px' }}
                                         >
-                                            {tick.value}
+                                            {getToolName(tick.value)}
                                         </text>
                                     </g>
                                 )

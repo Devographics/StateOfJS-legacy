@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import ReactGA from 'react-ga'
 import withPageData from '../../helpers/withPageData'
-import getWording from '../../helpers/getWording'
+import { getWording } from '../../helpers/wording'
 
 const trackShare = (platform, { section, subSection }) => () => {
     ReactGA.event({

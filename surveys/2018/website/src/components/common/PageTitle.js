@@ -62,13 +62,8 @@ class PageTitle extends React.PureComponent {
                             <h2 className="pagetitle__main">{title || currentPage.title}</h2>
                         )}
                         {nextPage ? (
-                            <Link
-                                className="pagination__link pagination__next"
-                                to={nextPage.path}
-                            >
-                                <span className="pagination__link__label">
-                                    {nextPage.title}
-                                </span>
+                            <Link className="pagination__link pagination__next" to={nextPage.path}>
+                                <span className="pagination__link__label">{nextPage.title}</span>
                                 <span className="pagination__link__symbol">&nbsp;&gt;&gt;</span>
                             </Link>
                         ) : (

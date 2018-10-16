@@ -17,8 +17,6 @@ export default class GenderMapChart extends Component {
                     label: b.id
                 }))
 
-            console.log(genderAgg)
-
             return {
                 ...acc,
                 [continent.continent]: {

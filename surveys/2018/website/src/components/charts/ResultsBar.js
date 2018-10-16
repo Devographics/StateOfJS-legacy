@@ -26,7 +26,7 @@ const margin = {
     bottom: 10,
     left: 0
 }
-const getLabel = d => Math.abs(d.value)
+const getWording = d => Math.abs(d.value)
 const colorBy = d => experienceColors[d.id]
 
 export default class ResultsBar extends Component {
@@ -49,7 +49,7 @@ export default class ResultsBar extends Component {
                         keys={keys}
                         indexBy={indexBy}
                         colorBy={colorBy}
-                        label={getLabel}
+                        label={getWording}
                         labelSkipWidth={32}
                         labelSkipHeight={20}
                         labelFormat=".2s"

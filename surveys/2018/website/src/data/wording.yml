@@ -70,10 +70,10 @@ charts:
     other-tools: Other Tools
     all-libraries: All Libraries
     quadrant: Quadrant Chart
-    results-over-time: "{tool}'s Popularity Over Time"
-    likes: "Most Liked Aspects of {tool}"
-    dislikes: "Most Disliked Aspects of {tool}"
-    tool-map: "{tool} Usage by Country"
+    results-over-time: ${tool}'s Popularity Over Time
+    likes: Most Liked Aspects of ${tool}
+    dislikes: Most Disliked Aspects of ${tool}
+    tool-map: ${tool} Usage by Country
     other-languages: Other Languages
     browser-apis: Browser APIs
     build-tools: Build Tools
