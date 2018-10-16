@@ -20,6 +20,28 @@ nav:
     graphql: GraphQL
     es6: ES6
 
+shortnames: 
+    flavors: Flavors
+    front-end-frameworks: Front-end
+    data-layer: Data Layer
+    back-end-frameworks: Back-end
+    testing: Testing
+    mobile-and-desktop: Mobile & Desktop
+    opinions: Opinions
+    demographics: Demographics
+    conclusion: Conclusion
+
+symbols:
+    flavors: Fv
+    front-end-frameworks: Fe
+    data-layer: Dl
+    back-end-frameworks: Be
+    testing: Te
+    mobile-and-desktop: Mb
+    opinions: Op
+    demographics: Dm
+    conclusion: Cn
+
 opinions:
     legends:
         never_heard: I've never heard of it

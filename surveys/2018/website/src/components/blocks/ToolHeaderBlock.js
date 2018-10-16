@@ -4,6 +4,8 @@ import { format } from 'd3-format'
 import { getToolName } from '../../helpers/wording'
 import bestOfJsData from '../../data/bestofjs'
 import PeriodicTableElementHtml from '../elements/PeriodicTableElementHtml'
+import periodicTableData from '../../data/periodic_table.yml'
+import ranking from '../../data/results/tools_ranking.yml'
 
 const starsFormatter = format('.2s')
 
@@ -21,7 +23,12 @@ export default class ToolHeaderBlock extends Component {
         return (
             <div className="ToolHeader">
                 <div>
-                    <PeriodicTableElementHtml size={150} section={section} tool={tool} />
+                    <PeriodicTableElementHtml
+                        size={150}
+                        name={getToolName(tool)}
+                        symbol={periodicTableData.tools[tool] || '??'}
+                        number={ranking[tool] || '?'}
+                    />
                 </div>
                 <div>
                     <div className="ToolHeader_Header">

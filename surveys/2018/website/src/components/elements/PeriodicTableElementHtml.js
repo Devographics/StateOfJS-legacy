@@ -1,24 +1,19 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import periodicTableData from '../../data/periodic_table.yml'
-import ranking from '../../data/results/tools_ranking.yml'
 import { computePeriodicTableElement } from '../../helpers/periodicTable'
-import { getToolName } from '../../helpers/wording'
 
 export default class PeriodicTableElementHtml extends PureComponent {
     static propTypes = {
-        section: PropTypes.string.isRequired,
-        tool: PropTypes.string.isRequired
+        symbol: PropTypes.string.isRequired,
+        number: PropTypes.number,
+        name: PropTypes.string.isRequired
     }
 
     render() {
-        const { tool, size, style, ...rest } = this.props
+        const { symbol, number, name, size, style, ...rest } = this.props
 
         const layout = computePeriodicTableElement(size)
         const color = '#41c7c7' //periodicTableData.sections[section]
-        const symbol = periodicTableData.tools[tool] || '??'
-        const rank = ranking[tool] || '?'
-
         return (
             <div
                 className="PeriodicTableElementHtml"
@@ -38,7 +33,7 @@ export default class PeriodicTableElementHtml extends PureComponent {
                         left: layout.padding
                     }}
                 >
-                    {rank}
+                    {number}
                 </div>
                 <div
                     className="PeriodicTableElementHtml_Symbol"
@@ -59,7 +54,7 @@ export default class PeriodicTableElementHtml extends PureComponent {
                         height: layout.labelHeight
                     }}
                 >
-                    {getToolName(tool)}
+                    {name}
                 </div>
             </div>
         )
