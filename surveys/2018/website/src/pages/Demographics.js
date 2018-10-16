@@ -3,6 +3,7 @@ import TextBlock from '../components/blocks/TextBlock'
 import Layout from '../components/common/Layout'
 import DemographicsGenderBlock from '../components/blocks/DemographicsGenderBlock'
 import { graphql } from 'gatsby'
+import SectionHeader from '../components/elements/SectionHeader'
 
 const text = `
 Demographics intro TODO.
@@ -12,6 +13,7 @@ const Demographics = ({ data, ...rest }) => {
     return (
         <Layout {...rest}>
             <div>
+                <SectionHeader />
                 <TextBlock text={text} />
                 <DemographicsGenderBlock data={data.resultsYaml.demographics} />
             </div>

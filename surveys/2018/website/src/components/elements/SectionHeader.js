@@ -16,7 +16,7 @@ const SectionHeader = ({ currentPage }) => (
             <div className="SectionHeader__Header">
               <h2 className="SectionHeader__Title">{currentPage.title}</h2>
             </div>
-            <div>Lorem ispum dolor sit amet.</div>
+            <div>{currentPage.intro}</div>
         </div>
     </div>
 )

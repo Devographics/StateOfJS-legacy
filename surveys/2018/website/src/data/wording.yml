@@ -4,7 +4,7 @@ nav:
     overview: Overview
     other-libraries: Other Libraries
     conclusion: Conclusion
-    other-toolsl: Other Tools
+    other-tools: Other Tools
     opinions: Opinions
     demographics: Demographics
     support_us: Support Us
@@ -19,28 +19,6 @@ nav:
     native-apps: Native Apps
     graphql: GraphQL
     es6: ES6
-
-shortnames: 
-    flavors: Flavors
-    front-end-frameworks: Front-end
-    data-layer: Data Layer
-    back-end-frameworks: Back-end
-    testing: Testing
-    mobile-and-desktop: Mobile & Desktop
-    opinions: Opinions
-    demographics: Demographics
-    conclusion: Conclusion
-
-symbols:
-    flavors: Fv
-    front-end-frameworks: Fe
-    data-layer: Dl
-    back-end-frameworks: Be
-    testing: Te
-    mobile-and-desktop: Mb
-    opinions: Op
-    demographics: Dm
-    conclusion: Cn
 
 opinions:
     legends:
@@ -114,3 +92,37 @@ charts:
     salaries-map: Salaries per Country
     experience: Experience
     company-size: Company Size
+
+shortnames: 
+    javascript-flavors: Flavors
+    front-end-frameworks: Front-end
+    data-layer: Data Layer
+    back-end-frameworks: Back-end
+    testing: Testing
+    mobile-and-desktop: Mobile & Desktop
+    opinions: Opinions
+    demographics: Demographics
+    conclusion: Conclusion
+
+symbols:
+    javascript-flavors: Fv
+    front-end-frameworks: Fe
+    data-layer: Dl
+    back-end-frameworks: Be
+    testing: Te
+    mobile-and-desktop: Mb
+    opinions: Op
+    demographics: Dm
+    conclusion: Cn
+
+intros:
+    javascript-flavors: "1 Lorem ipsum dolor"
+    front-end-frameworks: "2 Lorem ipsum dolor"
+    data-layer: "3 Lorem ipsum dolor"
+    back-end-frameworks: "4 Lorem ipsum dolor"
+    testing: "5 Lorem ipsum dolor"
+    mobile-and-desktop: "6 Lorem ipsum dolor"
+    other-tools: "7 Lorem ipsum dolor"
+    opinions: "8 Lorem ipsum dolor"
+    demographics: "9 Lorem ipsum dolor"
+    conclusion: "10 Lorem ipsum dolor"

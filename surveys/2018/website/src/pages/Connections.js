@@ -8,6 +8,7 @@ import parseBold from '../helpers/bold'
 import { chordScale } from '../constants'
 import flatten from 'lodash/flatten'
 import Layout from '../components/common/Layout'
+import SectionHeader from '../components/elements/SectionHeader'
 
 const {
     chord: { keys, matrix }
@@ -84,6 +85,7 @@ export default class Connections extends Component {
         return (
             <Layout {...this.props}>
                 <div className="Section">
+                    <SectionHeader />
                     <div
                         className="block block--text"
                         dangerouslySetInnerHTML={{ __html: parseBold(addParagraphs(text)) }}

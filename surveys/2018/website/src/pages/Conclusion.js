@@ -2,6 +2,7 @@ import React from 'react'
 import TextBlock from '../components/blocks/TextBlock'
 import Newsletter from '../components/common/Newsletter'
 import Layout from '../components/common/Layout'
+import SectionHeader from '../components/elements/SectionHeader'
 
 const conclusionText = `
 Believe it or not, we've only just scratched the surface. Each library and tool
@@ -31,6 +32,7 @@ If you'd like to know when we release additional results or announce next year's
 const Conclusion = props => (
     <Layout {...props}>
         <div>
+            <SectionHeader />
             <TextBlock text={conclusionText} />
 
             <div className="block block--newsletter">

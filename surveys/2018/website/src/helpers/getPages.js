@@ -53,6 +53,7 @@ export const createPage = (sectionIndex, subSectionIndex) => {
     page.url = getPageUrl(page, true)
     page.title = getPageTitle(page)
     page.fullTitle = getPageTitle(page, true)
+    page.intro = getWording(`intros.${page.section.id}`)
     return page
 }
 

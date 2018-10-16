@@ -4,10 +4,9 @@ import Layout from '../common/Layout'
 import SectionOpinionsBlock from '../blocks/SectionOpinionsBlock'
 import HappinessBlock from '../blocks/HappinessBlock'
 import { graphql } from 'gatsby'
-import withPageData from '../../helpers/withPageData'
 import SectionHeader from  '../elements/SectionHeader'
 
-const SectionOverviewTemplate = ({ currentPage, pageContext, data }) => {
+const SectionOverviewTemplate = ({ pageContext, data }) => {
     const section = data.sectionsYaml
     const hasEntry = section !== null
 
@@ -15,7 +14,7 @@ const SectionOverviewTemplate = ({ currentPage, pageContext, data }) => {
         <Layout>
             <div className="template">
                 <Meta />
-                <SectionHeader title={currentPage.title} />
+                <SectionHeader />
                 {!hasEntry && (
                     <div style={{ color: 'red' }}>
                         No entry found for section: <strong>{pageContext.section}</strong>
@@ -54,4 +53,4 @@ export const query = graphql`
     }
 `
 
-export default withPageData(SectionOverviewTemplate)
+export default SectionOverviewTemplate
