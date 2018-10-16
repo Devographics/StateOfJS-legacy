@@ -35,14 +35,18 @@ export default class ReasonsChart extends Component {
 
         return (
             <div>
-                <div className="block">
-                    <BlockTitle chart="likes" tool={tool} />
-                    <ReasonsChartUnit data={likeData} color={theme.reasonsColors.like} />
-                </div>
-                <div className="block">
-                    <BlockTitle chart="dislikes" tool={tool} />
-                    <ReasonsChartUnit data={dislikeData} color={theme.reasonsColors.dislike} />
-                </div>
+                {likeData.length > 0 && (
+                    <div className="block">
+                        <BlockTitle chart="likes" tool={tool} />
+                        <ReasonsChartUnit data={likeData} color={theme.reasonsColors.like} />
+                    </div>
+                )}
+                {dislikeData.length > 0 && (
+                    <div className="block">
+                        <BlockTitle chart="dislikes" tool={tool} />
+                        <ReasonsChartUnit data={dislikeData} color={theme.reasonsColors.dislike} />
+                    </div>
+                )}
             </div>
         )
     }
