@@ -48,7 +48,7 @@ export default class ResultsBlock extends Component {
                     </div>
                 ) : (
                     <div className="block__description">
-                        <p>{getWording('charts.overview.description')}</p>
+                        <p>{getWording('charts.overview_description')}</p>
                     </div>
                 )}
                 <div className="block__contents capture">

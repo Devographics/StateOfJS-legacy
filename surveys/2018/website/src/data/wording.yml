@@ -65,7 +65,7 @@ reasons:
 
 charts:
     overview: Libraries Results
-    overview.description: Per-library survey results.
+    overview_description: Per-library survey results.
     happiness: Overall Happiness
     other-tools: Other Tools
     all-libraries: All Libraries

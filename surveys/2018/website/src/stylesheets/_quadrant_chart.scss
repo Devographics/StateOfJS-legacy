@@ -2,11 +2,9 @@
     display: flex;
 }
 .block__description--radar {
-    font-size: $medium-font;
-    margin-top: $spacing * 2;
 }
 .block__chart--radar {
-    flex: 0 0 700px;
+    flex: 0 0 60%;
 }
 .radar__chart {
     svg {
@@ -30,9 +28,7 @@
     font-size: $smaller-font;
 }
 .radar__chart__quadrants {
-    margin-top: $spacing;
-    border: 1px solid $dark-border-color;
-    padding: $spacing * 2;
+    margin-top: 40px;
 }
 .radar__chart__quadrants__title {
     text-align: center;
@@ -40,7 +36,19 @@
 }
 .radar__chart__quadrants__items {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: $spacing * 2;
-    font-size: $smallish-font;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
+    font-size: $small-font;
+
+    border-top: 1px solid $dark-border-color;
+    border-left: 1px solid $dark-border-color;
+}
+
+.radar__chart__quadrants__item{
+    padding: $spacing;
+    border-bottom: 1px solid $dark-border-color;
+    border-right: 1px solid $dark-border-color;
+    strong{
+        text-transform: uppercase;
+    }
 }
