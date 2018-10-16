@@ -38,7 +38,7 @@ export default class SectionOpinionsChart extends Component {
             <div
                 style={{
                     display: 'grid',
-                    gridTemplateColumns: 'auto 250px',
+                    gridTemplateColumns: 'auto 210px',
                     gridColumnGap: 20
                 }}
             >
@@ -113,6 +113,7 @@ export default class SectionOpinionsChart extends Component {
                 </div>
                 <OpinionsLegends
                     layout="vertical"
+                    withFrame={false}
                     style={{
                         marginTop: 81,
                         marginBottom: 30

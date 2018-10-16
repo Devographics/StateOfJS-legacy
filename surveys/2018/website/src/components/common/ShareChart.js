@@ -131,7 +131,6 @@ Email.propTypes = {
 }
 
 class ShareChart extends Component {
-
     constructor() {
         super()
 

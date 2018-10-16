@@ -14,7 +14,7 @@ export default class HappinessBlock extends PureComponent {
 
         return (
             <div className="block block--chart block--happiness">
-                <BlockTitle chart="happiness"/>
+                <BlockTitle chart="happiness" />
                 <div className="block__description">
                     <p>
                         On a scale of one to five, how happy are developers with the current state

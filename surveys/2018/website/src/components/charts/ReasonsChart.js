@@ -2,13 +2,7 @@ import React, { Component } from 'react'
 import { reasons } from '../../constants'
 import theme from '../../nivoTheme'
 import BlockTitle from '../elements/BlockTitle'
-import { ResponsiveBar } from '@nivo/bar'
-
-const verticalMargin = 30
-const innerMargin = 5
-const barHeight = 26
-const labelsWidth = 260
-const labelsMargin = 14
+import ReasonsChartUnit from './ReasonsChartUnit'
 
 export default class ReasonsChart extends Component {
     render() {
@@ -43,70 +37,11 @@ export default class ReasonsChart extends Component {
             <div>
                 <div className="block">
                     <BlockTitle chart="likes" tool={tool} />
-                    <div
-                        style={{
-                            height: likeData.length * barHeight + verticalMargin * 2,
-                            marginBottom: 30
-                        }}
-                    >
-                        <ResponsiveBar
-                            layout="horizontal"
-                            enableGridX={true}
-                            enableGridY={false}
-                            enableLabel={false}
-                            labelSkipWidth={36}
-                            theme={theme}
-                            colors={theme.reasonsColors.like}
-                            data={likeData}
-                            padding={0.8}
-                            borderRadius={2.5}
-                            keys={['count']}
-                            indexBy="reason"
-                            margin={{
-                                top: verticalMargin,
-                                right: labelsMargin + labelsWidth,
-                                bottom: verticalMargin,
-                                left: innerMargin
-                            }}
-                            axisTop={{}}
-                            axisRight={{
-                                tickSize: 0,
-                                tickPadding: labelsMargin
-                            }}
-                            axisLeft={null}
-                        />
-                    </div>
+                    <ReasonsChartUnit data={likeData} color={theme.reasonsColors.like} />
                 </div>
                 <div className="block">
                     <BlockTitle chart="dislikes" tool={tool} />
-                    <div style={{ height: dislikeData.length * barHeight + verticalMargin * 2 }}>
-                        <ResponsiveBar
-                            layout="horizontal"
-                            enableGridX={true}
-                            enableGridY={false}
-                            enableLabel={false}
-                            labelSkipWidth={36}
-                            theme={theme}
-                            colors={theme.reasonsColors.dislike}
-                            data={dislikeData}
-                            padding={0.8}
-                            borderRadius={2.5}
-                            keys={['count']}
-                            indexBy="reason"
-                            margin={{
-                                top: verticalMargin,
-                                right: labelsMargin + labelsWidth,
-                                bottom: verticalMargin,
-                                left: innerMargin
-                            }}
-                            axisTop={{}}
-                            axisLeft={null}
-                            axisRight={{
-                                tickSize: 0,
-                                tickPadding: labelsMargin
-                            }}
-                        />
-                    </div>
+                    <ReasonsChartUnit data={dislikeData} color={theme.reasonsColors.dislike} />
                 </div>
             </div>
         )

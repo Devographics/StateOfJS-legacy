@@ -9,7 +9,7 @@ export default class ToolOpinionsOverTimeChart extends Component {
             <div
                 style={{
                     display: 'grid',
-                    gridTemplateColumns: 'auto 250px',
+                    gridTemplateColumns: 'auto 210px',
                     gridColumnGap: 20
                 }}
             >
@@ -72,6 +72,7 @@ export default class ToolOpinionsOverTimeChart extends Component {
                 </div>
                 <OpinionsLegends
                     layout="vertical"
+                    withFrame={false}
                     style={{
                         marginTop: 10,
                         marginBottom: 40

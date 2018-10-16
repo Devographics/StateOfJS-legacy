@@ -41,7 +41,7 @@ export default class ResultsBlock extends Component {
 
         return (
             <div className="block block--chart block--results">
-                <BlockTitle chart='overview'/>
+                <BlockTitle chart="overview" />
                 {description ? (
                     <div className="block__description">
                         <p>{description}</p>

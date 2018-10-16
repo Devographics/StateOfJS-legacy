@@ -16,7 +16,7 @@ export default class SectionOpinionsBlock extends Component {
     render() {
         return (
             <div className="block">
-                <BlockTitle chart="overview"/>
+                <BlockTitle chart="overview" />
                 <div className="block__description">
                     <p>Per-library survey results.</p>
                 </div>

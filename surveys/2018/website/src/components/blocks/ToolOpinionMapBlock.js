@@ -9,7 +9,7 @@ export default class ToolOpinionMapBlock extends Component {
 
         return (
             <div className="block">
-                <BlockTitle chart="tool-map" tool={tool}/>
+                <BlockTitle chart="tool-map" tool={tool} />
                 <div className="block block--text">
                     Percentage of developers who <OpinionsSelector /> <strong>{tool}</strong> for
                     each continent.
