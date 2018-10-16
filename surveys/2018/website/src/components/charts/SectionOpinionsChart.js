@@ -32,7 +32,7 @@ export default class SectionOpinionsChart extends Component {
             )
         }
 
-        const sortedData = sortBy(surveyData.tools, 'would_use')
+        const sortedData = sortBy(surveyData.tools, 'would_use').reverse()
 
         return (
             <div

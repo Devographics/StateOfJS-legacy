@@ -13,7 +13,7 @@
 .PeriodicTableElementHtml_Index {
     position: absolute;
     opacity: 0.6;
-    background: #646a6a;
+    line-height: 1em;
 }
 
 .PeriodicTableElementHtml_Symbol {
@@ -52,7 +52,7 @@
     position: absolute;
     opacity: 0.6;
     pointer-events: none;
-    fill: #646a6a;
+    fill: white;
 }
 
 .PeriodicTableElementSvg_Symbol {

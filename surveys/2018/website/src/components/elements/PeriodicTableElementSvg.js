@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import periodicTableData from '../../data/periodic_table.yml'
+import ranking from '../../data/results/tools_ranking.yml'
 import { computePeriodicTableElement } from '../../helpers/periodicTable'
 import { getToolName } from '../../helpers/wording'
 
@@ -16,6 +17,7 @@ export default class PeriodicTableElementSvg extends PureComponent {
         const layout = computePeriodicTableElement(size)
         const color = '#41c7c7' // periodicTableData.sections[section]
         const symbol = periodicTableData.tools[tool] || '??'
+        const rank = ranking[tool] || '?'
 
         return (
             <g>
@@ -36,13 +38,18 @@ export default class PeriodicTableElementSvg extends PureComponent {
                     }}
                     {...rest}
                 />
-                <rect
+                <text
                     className="PeriodicTableElementSvg_Index"
-                    width={layout.indexSize}
-                    height={layout.indexSize}
-                    y={layout.padding}
+                    textAnchor="start"
+                    alignmentBaseline="baseline"
+                    y={layout.padding + layout.indexFontSize}
                     x={layout.padding}
-                />
+                    style={{
+                        fontSize: layout.indexFontSize
+                    }}
+                >
+                    {rank}
+                </text>
                 <text
                     className="PeriodicTableElementSvg_Symbol"
                     x={layout.centerX}

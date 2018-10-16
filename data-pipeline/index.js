@@ -83,6 +83,26 @@ const aggregate = async () => {
         await saveResult(path.join('tools', toolId), toolsAggs[toolId])
     })
 
+    console.log('\ncomputing tools ranking by section')
+    const toolsRanking = Object.keys(currentSurveyConfig.sections).reduce((acc0, sectionId) => {
+        const { tools: sectionTools } = currentSurveyConfig.sections[sectionId]
+        const rankedSectionTools = sectionTools.map(toolId => {
+            return {
+                tool: toolId,
+                count: toolsAggs[toolId].experience.by_survey.find(s => s.survey === currentSurveyConfig.id).would_use
+            }
+        }).sort((a, b) => b.count - a.count)
+
+        return {
+            ...acc0,
+            ...rankedSectionTools.reduce((acc1, tool, i) => ({
+                ...acc1,
+                [tool.tool]: i + 1,
+            }), {})
+        }
+    }, {})
+    await saveResult('tools_ranking', toolsRanking)
+
     console.log('\ncomputing sections')
     const sectionAggs = await aggregator.computeSections(sectionIds)
 
