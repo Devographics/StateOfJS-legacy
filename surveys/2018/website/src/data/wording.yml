@@ -1,6 +1,9 @@
 tools: 
     es6: ES6
     angular: Angular
+    apollo: Apollo
+    cordova: Cordova
+
 
 nav:
     introduction: Introduction

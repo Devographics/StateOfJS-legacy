@@ -159,7 +159,7 @@ export default class Layout extends PureComponent {
                                     </button>
                                     <h1 className="pagelayout__logo">
                                         <Link to="/">
-                                            <Logo width={150} />
+                                            <Logo />
                                         </Link>
                                     </h1>
                                     <Nav

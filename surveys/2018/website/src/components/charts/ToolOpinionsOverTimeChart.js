@@ -25,7 +25,7 @@ export default class ToolOpinionsOverTimeChart extends Component {
                         curve="monotoneX"
                         margin={{
                             top: 10,
-                            right: 20,
+                            right: 40,
                             bottom: 40,
                             left: 40
                         }}
@@ -43,6 +43,10 @@ export default class ToolOpinionsOverTimeChart extends Component {
                         enableGridX={false}
                         enableGridY={false}
                         axisLeft={{
+                            format: v => `${v * 100}%`,
+                            tickValues: [0, 0.25, 0.5, 0.75, 1]
+                        }} 
+                        axisRight={{
                             format: v => `${v * 100}%`,
                             tickValues: [0, 0.25, 0.5, 0.75, 1]
                         }}

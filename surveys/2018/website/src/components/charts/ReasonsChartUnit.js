@@ -6,7 +6,7 @@ import theme from '../../nivoTheme'
 const verticalMargin = 30
 const innerMargin = 10
 const barHeight = 30
-const labelsWidth = 290
+const labelsWidth = 400
 
 class ReasonLabel extends Component {
     handleMouseEnter = () => {
