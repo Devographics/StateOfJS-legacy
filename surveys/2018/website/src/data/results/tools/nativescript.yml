@@ -1,4 +1,4 @@
-tool_id: native_script
+tool_id: nativescript
 appears_in_surveys:
     - '2016'
     - '2017'
@@ -33,8 +33,86 @@ experience:
             would_use: 335
             would_not_use: 202
 reasons:
-    like: []
-    dislike: []
+    like:
+        -
+            id: elegant_programming_style_patterns
+            count: 173
+        -
+            id: good_documentation
+            count: 167
+        -
+            id: fast_performance
+            count: 165
+        -
+            id: easy_learning_curve
+            count: 147
+        -
+            id: full_featured_powerful
+            count: 146
+        -
+            id: powerful_developer_tooling
+            count: 145
+        -
+            id: rich_package_ecosystem
+            count: 126
+        -
+            id: growing_momentum_popularity
+            count: 117
+        -
+            id: backed_by_a_great_team_company
+            count: 115
+        -
+            id: robust_less_error_prone_code
+            count: 96
+        -
+            id: well_established_option
+            count: 94
+        -
+            id: simple_lightweight
+            count: 66
+        -
+            id: stable_backwards_compatible
+            count: 65
+    dislike:
+        -
+            id: poor_performance
+            count: 62
+        -
+            id: buggy_error_prone_code
+            count: 62
+        -
+            id: clumsy_programming_style
+            count: 60
+        -
+            id: limited_lacking_in_features
+            count: 59
+        -
+            id: bad_documentation
+            count: 54
+        -
+            id: small_package_ecosystem
+            count: 53
+        -
+            id: lacking_developer_tooling
+            count: 50
+        -
+            id: concerns_about_the_team_company
+            count: 44
+        -
+            id: bloated_complex
+            count: 43
+        -
+            id: hard_learning_curve
+            count: 43
+        -
+            id: diminishing_momentum_popularity
+            count: 39
+        -
+            id: fast_changing_breaks_often
+            count: 22
+        -
+            id: new_untested_option
+            count: 19
 would_use_by_continent:
     -
         survey: '2017'

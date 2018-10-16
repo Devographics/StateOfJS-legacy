@@ -3,9 +3,9 @@ tools:
     - electron
     - react-native
     - phone_gap_cordova
-    - native_script
+    - nativescript
     - ionic
-    - native_apps
+    - native-apps
 opinions:
     -
         survey_id: '2016'
@@ -18,14 +18,14 @@ opinions:
                 never_heard: 881
                 would_not_use: 121
             -
-                tool_id: native_script
+                tool_id: nativescript
                 never_heard: 5027
                 not_interested: 2487
                 interested: 2380
                 would_use: 208
                 would_not_use: 148
             -
-                tool_id: native_apps
+                tool_id: native-apps
                 interested: 3984
                 would_use: 3055
                 not_interested: 2125
@@ -56,7 +56,7 @@ opinions:
                 interested: 3252
                 would_use: 3379
             -
-                tool_id: native_script
+                tool_id: nativescript
                 never_heard: 10877
                 not_interested: 6610
                 interested: 5248
@@ -70,7 +70,7 @@ opinions:
                 would_use: 2458
                 would_not_use: 2357
             -
-                tool_id: native_apps
+                tool_id: native-apps
                 interested: 9092
                 would_use: 7928
                 not_interested: 4118
@@ -101,7 +101,7 @@ opinions:
                 interested: 2355
                 would_use: 2042
             -
-                tool_id: native_script
+                tool_id: nativescript
                 never_heard: 7922
                 not_interested: 6673
                 interested: 4822
@@ -115,7 +115,7 @@ opinions:
                 would_use: 1665
                 would_not_use: 1566
             -
-                tool_id: native_apps
+                tool_id: native-apps
                 interested: 5587
                 would_use: 2113
                 not_interested: 6051

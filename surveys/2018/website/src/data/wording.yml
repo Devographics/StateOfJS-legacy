@@ -23,9 +23,12 @@ nav:
     testing: Testing
     mobile-and-desktop: Mobile & Desktop
 
-    native-apps: Native Apps
-    graphql: GraphQL
-    es6: ES6
+tools:
+  angular: Angular
+  native-apps: Native Apps
+  graphql: GraphQL
+  es6: ES6
+
 
 opinions:
     legends:

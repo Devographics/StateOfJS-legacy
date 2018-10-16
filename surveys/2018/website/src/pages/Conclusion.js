@@ -32,7 +32,7 @@ If you'd like to know when we release additional results or announce next year's
 const Conclusion = props => (
     <Layout {...props}>
         <div>
-            <SectionHeader showIntro={false}/>
+            <SectionHeader showIntro={false} />
             <TextBlock text={conclusionText} />
 
             <div className="block block--newsletter">
