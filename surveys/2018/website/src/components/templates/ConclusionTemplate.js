@@ -4,6 +4,7 @@ import Meta from '../elements/Meta'
 import Layout from '../common/Layout'
 import TextBlock from '../blocks/TextBlock'
 import QuadrantBlock from '../blocks/QuadrantBlock'
+import SectionHeader from '../elements/SectionHeader'
 
 const ConclusionTemplate = ({ pageContext, data }) => {
     const content = data.file.childMarkdownRemark ? data.file.childMarkdownRemark.html : undefined
@@ -12,6 +13,7 @@ const ConclusionTemplate = ({ pageContext, data }) => {
         <Layout>
             <div className="template">
                 <Meta />
+                <SectionHeader />
                 <QuadrantBlock />
                 {content === undefined && (
                     <div style={{ color: 'red' }}>

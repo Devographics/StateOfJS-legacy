@@ -1,3 +1,7 @@
+tools: 
+    es6: ES6
+    angular: Angular
+
 nav:
     introduction: Introduction
     connections: Connections
@@ -116,13 +120,32 @@ symbols:
     conclusion: Cn
 
 intros:
-    javascript-flavors: "1 Lorem ipsum dolor"
-    front-end-frameworks: "2 Lorem ipsum dolor"
-    data-layer: "3 Lorem ipsum dolor"
-    back-end-frameworks: "4 Lorem ipsum dolor"
-    testing: "5 Lorem ipsum dolor"
-    mobile-and-desktop: "6 Lorem ipsum dolor"
-    other-tools: "7 Lorem ipsum dolor"
-    opinions: "8 Lorem ipsum dolor"
-    demographics: "9 Lorem ipsum dolor"
-    conclusion: "10 Lorem ipsum dolor"
+    javascript-flavors: >
+        As JavaScript matures, developers are starting to look
+        beyond its borders and create various languages and dialects that
+        compile to JavaScript. 
+    front-end-frameworks: >
+        The front-end remains the key battleground for JavaScript. But now
+        that the dust has cleared, it's starting to look like only two
+        combattants are left standing…
+    data-layer: >
+        The data layer regroups all the technologies used to transmit and manage data. 
+        It's a vast category where many approaches compete to make a tricky problem more
+        approachable.
+    back-end-frameworks: >
+        JavaScript on the back-end hasn't seen any major breakthroughs in recent years. 
+        But compared to the rest of the ecosystem's frenetic pace,
+        many will say that this is a blessing, not a curse. 
+    testing: >
+        Testing, testing… Is this thing on? Sorry, I Jest, but I would never want to make a Mocha-ry 
+        of this section. That would be Jasmine (“just mean”? get it?), and that's bad Karma.
+    mobile-and-desktop: >
+        “Any application that can be written in JavaScript, will eventually be written in JavaScript.”
+        Don't say you weren't warned when it turns out your smart toaster is burning your bread because NPM is down. 
+    other-tools: >
+        Other tools that didn't quite fit in any other category.
+    opinions: >
+        To find out how developers view the current JavaScript ecosystem, 
+        we asked them how much they agreed or disagreed with the following opinions.
+    demographics: >
+        We wanted to learn more about our survey respondents. 

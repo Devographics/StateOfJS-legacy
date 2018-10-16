@@ -1,19 +1,13 @@
 import React from 'react'
 import OtherToolBar from '../components/charts/OtherToolBar'
 import otherToolsData from '../data/otherTools.json'
-import TextBlock from '../components/blocks/TextBlock'
 import Layout from '../components/common/Layout'
 import SectionHeader from '../components/elements/SectionHeader'
-
-const text = `
-Other tools that didn't quite fit in any other category. 
-`
 
 const OtherTools = props => (
     <Layout {...props}>
         <div className="page">
             <SectionHeader />
-            <TextBlock text={text} />
             {otherToolsData.keys.map(otherTool => (
                 <div className="block block--chart" key={otherTool}>
                     <h3 className="block__title">{otherTool}</h3>
