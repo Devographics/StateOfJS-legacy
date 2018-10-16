@@ -3,6 +3,7 @@ import { scaleLinear } from 'd3-scale'
 import Legends from '../elements/Legends'
 import AllToolsBubble from '../charts/AllToolsBubble'
 import allTools from '../../data/allToolsUsage.json'
+import getWording from '../../helpers/getWording'
 
 const domain = [0, 25, 50, 75, 100]
 

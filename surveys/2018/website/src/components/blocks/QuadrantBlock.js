@@ -1,5 +1,6 @@
 import React from 'react'
 import QuadrantChart from '../charts/QuadrantChart'
+import getWording from '../../helpers/getWording'
 
 const legend = [
     ['Assess', 'Low usage but high satisfaction. Technologies worth keeping an eye on.'],
@@ -13,7 +14,7 @@ const legend = [
 
 const QuadrantBlock = () => (
     <div className="block block--chart block--happiness">
-        <h3 className="block__title">Quadrant Chart</h3>
+        <h3 className="block__title">{getWording('charts', 'quadrant')}</h3>
         <div className="block__content block__content--radar">
             <div className="block__chart block__chart--radar">
                 <QuadrantChart />

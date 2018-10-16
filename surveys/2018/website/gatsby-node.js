@@ -23,20 +23,8 @@ see: https://www.gatsbyjs.org/docs/migrating-from-v1-to-v2/#change-modifywebpack
 //     return config
 // }
 
-const replaceAll = function(s, search, replacement) {
-    const newString = s.replace(new RegExp(search, 'g'), replacement)
-    return newString
-}
-
-const slugify = (s, dashToUnderscore = false) => {
-    const slug = replaceAll(s.toLowerCase(), ' ', '-')
-    const slugUnderscore = replaceAll(slug, '-', '_')
-    return dashToUnderscore ? slugUnderscore : slug
-}
-
 exports.createPages = async ({ actions }) => {
     const { createRedirect, createPage } = actions
-
 
     nav.forEach(item => {
         if (item.subPages) {
@@ -118,14 +106,15 @@ exports.createPages = async ({ actions }) => {
 
             */
             const pageCharts = charts[item.id]
-            pageCharts && pageCharts.forEach(chart => {
-                const pagePath = `/${item.id}/${chart}`
-                createPage({
-                    path: pagePath,
-                    component: path.resolve(`./src/components/templates/ShareChartTemplate.js`),
-                    context: { section: item.id, chart }
+            pageCharts &&
+                pageCharts.forEach(chart => {
+                    const pagePath = `/${item.id}/${chart}`
+                    createPage({
+                        path: pagePath,
+                        component: path.resolve(`./src/components/templates/ShareChartTemplate.js`),
+                        context: { section: item.id, chart }
+                    })
                 })
-            })
         }
     })
 }

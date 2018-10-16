@@ -5,6 +5,7 @@ import YearsOfExperienceBar from '../charts/YearsOfExperienceBar'
 import { yearsOfExperienceKeys, colorScale } from '../../constants'
 import Legends from '../elements/Legends'
 import Averages from '../elements/Averages'
+import getWording from '../../helpers/getWording'
 
 const legends = yearsOfExperienceKeys.map((key, index) => ({
     label: key,

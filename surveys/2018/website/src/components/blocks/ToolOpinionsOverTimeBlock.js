@@ -1,13 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ToolOpinionsOverTimeChart from '../charts/ToolOpinionsOverTimeChart'
+import getWording from '../../helpers/getWording'
 
-export default class ToolOpinionsOverTimeBlock extends Component {
-    render() {
-        return (
-            <div className="block">
-                <h3 className="block__title">Results over time</h3>
-                <ToolOpinionsOverTimeChart opinions={this.props.opinions.by_survey} />
-            </div>
-        )
-    }
-}
+const ToolOpinionsOverTimeBlock = ({ opinions, tool }) => (
+    <div className="block">
+        <h3 className="block__title">{getWording('charts', 'results-over-time', { tool })}</h3>
+        <ToolOpinionsOverTimeChart opinions={opinions.by_survey} />
+    </div>
+)
+
+export default ToolOpinionsOverTimeBlock

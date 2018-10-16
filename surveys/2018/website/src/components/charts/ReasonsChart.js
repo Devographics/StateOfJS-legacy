@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { ResponsiveBar } from '@nivo/bar'
 import { reasons } from '../../constants'
 import theme from '../../nivoTheme'
+import getWording from '../../helpers/getWording'
 
 const verticalMargin = 30
 const innerMargin = 5
@@ -11,6 +12,7 @@ const labelsMargin = 14
 
 export default class ReasonsChart extends Component {
     render() {
+        const { tool } = this.props
         const { like, dislike } = this.props.reasons
 
         const dislikeData = reasons.dislike
@@ -39,7 +41,8 @@ export default class ReasonsChart extends Component {
 
         return (
             <div>
-                <h4>what people liked about it</h4>
+                <div className="block">
+                <h3 className="block__title">{getWording('charts', 'likes', { tool })}</h3>
                 <div
                     style={{
                         height: likeData.length * barHeight + verticalMargin * 2,
@@ -73,7 +76,9 @@ export default class ReasonsChart extends Component {
                         axisLeft={null}
                     />
                 </div>
-                <h4>what people disliked about it</h4>
+                </div>
+                <div className="block">
+                <h3 className="block__title">{getWording('charts', 'dislikes', { tool })}</h3>
                 <div style={{ height: dislikeData.length * barHeight + verticalMargin * 2 }}>
                     <ResponsiveBar
                         layout="horizontal"
@@ -102,6 +107,7 @@ export default class ReasonsChart extends Component {
                         }}
                     />
                 </div>
+            </div>
             </div>
         )
     }

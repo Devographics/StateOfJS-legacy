@@ -65,11 +65,12 @@ reasons:
 
 charts:
     overview: Libraries Results
+    overview.description: Per-library survey results.
     happiness: Overall Happiness
     other-tools: Other Tools
     all-libraries: All Libraries
-    quadrants: Quadrant Chart
-    results-evolution: "{tool}'s Popularity Over Time"
+    quadrant: Quadrant Chart
+    results-over-time: "{tool}'s Popularity Over Time"
     likes: "Most Liked Aspects of {tool}"
     dislikes: "Most Disliked Aspects of {tool}"
     tool-map: "{tool} Usage by Country"

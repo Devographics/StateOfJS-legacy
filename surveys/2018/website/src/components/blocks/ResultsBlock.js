@@ -6,6 +6,7 @@ import { sortDataBy } from '../../sorts'
 import ShareChart from '../common/ShareChart'
 import { experience, experienceColors } from '../../constants'
 import Legends from '../elements/Legends'
+import getWording from '../../helpers/getWording'
 
 const legends = [
     experience.never_heard,
@@ -39,14 +40,14 @@ export default class ResultsBlock extends Component {
 
         return (
             <div className="block block--chart block--results">
-                <h3 className="block__title">Libraries Results</h3>
+                <h3 className="block__title">{getWording('charts', 'overview')}</h3>
                 {description ? (
                     <div className="block__description">
                         <p>{description}</p>
                     </div>
                 ) : (
                     <div className="block__description">
-                        <p>Per-library survey results.</p>
+                        <p>{getWording('charts', 'overview.description')}</p>
                     </div>
                 )}
                 <div className="block__contents capture">

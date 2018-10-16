@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import SectionOpinionsChart from '../charts/SectionOpinionsChart'
+import getWording from '../../helpers/getWording'
 
 export default class SectionOpinionsBlock extends Component {
     static propTypes = {

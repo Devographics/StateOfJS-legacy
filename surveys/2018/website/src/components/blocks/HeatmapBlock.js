@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Heatmap from '../heatmap/Heatmap.js'
+import getWording from '../../helpers/getWording'
 
 import SectionTitle from './SectionTitle.js'
 

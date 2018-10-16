@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import HappinessChart from '../charts/HappinessChart'
+import getWording from '../../helpers/getWording'
 
 export default class HappinessBlock extends PureComponent {
     static propTypes = {

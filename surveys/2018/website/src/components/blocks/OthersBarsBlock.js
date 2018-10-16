@@ -4,6 +4,7 @@ import OthersBar from '../charts/OthersBar'
 import Libraries from '../elements/Libraries'
 import reverse from 'lodash/reverse'
 import ShareChart from '../common/ShareChart'
+import getWording from '../../helpers/getWording'
 
 export default class OthersBarsBlock extends Component {
     state = {
