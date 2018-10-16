@@ -7,6 +7,7 @@ import ShareChart from '../common/ShareChart'
 import { experience, experienceColors } from '../../constants'
 import Legends from '../elements/Legends'
 import getWording from '../../helpers/getWording'
+import BlockTitle from '../elements/BlockTitle'
 
 const legends = [
     experience.never_heard,
@@ -40,7 +41,7 @@ export default class ResultsBlock extends Component {
 
         return (
             <div className="block block--chart block--results">
-                <h3 className="block__title">{getWording('charts', 'overview')}</h3>
+                <BlockTitle chart='overview'/>
                 {description ? (
                     <div className="block__description">
                         <p>{description}</p>

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import ReactGA from 'react-ga'
 import withPageData from '../../helpers/withPageData'
+import getWording from '../../helpers/getWording'
 
 const trackShare = (platform, { section, subSection }) => () => {
     ReactGA.event({
@@ -15,7 +16,7 @@ const Twitter = ({ text, page }) => {
     return (
         <a
             onClick={trackShare('Twitter', page)}
-            className="resp-sharing-button__link"
+            className="share__link--twitter share__link"
             href={`https://twitter.com/intent/tweet/?text=${encodeURIComponent(text)}`}
             target="_blank"
             rel="noopener noreferrer"
@@ -55,7 +56,7 @@ const Facebook = ({ link, page }) => {
     return (
         <a
             onClick={trackShare('Facebook', page)}
-            className="resp-sharing-button__link"
+            className="share__link--facebook share__link"
             href={`https://facebook.com/sharer/sharer.php?u=${encodeURIComponent(link)}`}
             target="_blank"
             rel="noopener noreferrer"
@@ -95,7 +96,7 @@ const Email = ({ subject, body, page }) => {
     return (
         <a
             onClick={trackShare('Email', page)}
-            className="resp-sharing-button__link"
+            className="share__link--email share__link"
             href={`mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
             target="_self"
             aria-label=""
@@ -130,10 +131,6 @@ Email.propTypes = {
 }
 
 class ShareChart extends Component {
-    static propTypes = {
-        section: PropTypes.string.isRequired,
-        subSection: PropTypes.string.isRequired
-    }
 
     constructor() {
         super()
@@ -155,9 +152,10 @@ class ShareChart extends Component {
     }
 
     render() {
-        const { currentPage } = this.props
-        const title = currentPage.title
-        const link = currentPage.url
+        const { currentPage, chart, className } = this.props
+        const wordingProperties = currentPage.subSection && { tool: currentPage.subSection.id }
+        const title = `${currentPage.title} – ${getWording('charts', chart, wordingProperties)}`
+        const link = `${currentPage.url}${chart}`
 
         const twitterText = `#StateOfJS 2018 Results: ${title} ${link}`
         const subject = 'State Of JavaScript Survey Results'
@@ -165,13 +163,13 @@ class ShareChart extends Component {
 
         return (
             <div
-                className={classNames('share-wrapper', {
+                className={classNames(className, 'share-wrapper', {
                     'share-popup-visible': this.state.showOptions
                 })}
             >
                 <div className="share">
                     <div className="share-button button" onClick={this.toggleOptions}>
-                        Share This Chart
+                        Share
                     </div>
                 </div>
                 <div className="share-popup">

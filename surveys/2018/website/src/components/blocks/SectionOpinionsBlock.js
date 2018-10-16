@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import SectionOpinionsChart from '../charts/SectionOpinionsChart'
-import getWording from '../../helpers/getWording'
+import BlockTitle from '../elements/BlockTitle'
 
 export default class SectionOpinionsBlock extends Component {
     static propTypes = {
@@ -16,7 +16,7 @@ export default class SectionOpinionsBlock extends Component {
     render() {
         return (
             <div className="block">
-                <h3 className="block__title">Libraries Results</h3>
+                <BlockTitle chart="overview"/>
                 <div className="block__description">
                     <p>Per-library survey results.</p>
                 </div>

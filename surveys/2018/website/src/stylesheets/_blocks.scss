@@ -25,4 +25,12 @@
     padding-bottom: $spacing/2;
     border-bottom: 1px dashed $border-color;
     margin-bottom: $spacing;
+    display: flex;
+    align-items: center;
+}
+.block__title__text{
+    margin-bottom: 0;
+}
+.block__title__share{
+    margin-left: $spacing/2;
 }

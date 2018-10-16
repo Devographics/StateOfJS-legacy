@@ -1,30 +1,39 @@
 .share-wrapper {
-    margin-top: $spacing * 2;
     position: relative;
 }
 .share {
     @include flex-center;
 }
 .share-button {
+    padding: 3px 7px;
+    font-size: $smaller-font;
+    color: $darker-text-color;
+    border-color: $darker-text-color;
 }
 .share-popup {
-    opacity: 0;
     pointer-events: none;
     position: absolute;
-    left: 50%;
-    bottom: 0px;
-    transform: translateX(-50%) scale(0.5);
+    left: 0%;
+    bottom: 3px;
+}
+
+.share__link {
     transition: all 500ms cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    transform: scale(0.8);
+    opacity: 0;
+
     .share-popup-visible & {
         opacity: 1;
         pointer-events: auto;
-        bottom: -110%;
-        transform: translateX(-50%) scale(1);
-    }
-    .share-options {
-        a {
-            // height: 24px;
-            // width: 24px;
+        // left: 120%;
+        &.share__link--twitter {
+            transform: translateX(280%) scale(1);
+        }
+        &.share__link--facebook {
+            transform: translateX(320%) scale(1);
+        }
+        &.share__link--email {
+            transform: translateX(390%) scale(1);
         }
     }
 }
@@ -37,8 +46,8 @@
     margin: 0 auto;
     a {
         display: block;
-        height: 40px;
-        width: 40px;
+        height: 24px;
+        width: 24px;
         flex-shrink: 0;
         &:last-child {
             margin-right: 0;

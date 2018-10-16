@@ -1,10 +1,10 @@
 import React from 'react'
 import ToolOpinionsOverTimeChart from '../charts/ToolOpinionsOverTimeChart'
-import getWording from '../../helpers/getWording'
+import BlockTitle from '../elements/BlockTitle'
 
 const ToolOpinionsOverTimeBlock = ({ opinions, tool }) => (
     <div className="block">
-        <h3 className="block__title">{getWording('charts', 'results-over-time', { tool })}</h3>
+        <BlockTitle chart="results-over-time" tool={tool}/>
         <ToolOpinionsOverTimeChart opinions={opinions.by_survey} />
     </div>
 )

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import OpinionsSelector from '../elements/OpinionsSelector'
+import BlockTitle from '../elements/BlockTitle'
 import ToolOpinionMapChart from '../charts/ToolOpinionMapChart'
-import getWording from '../../helpers/getWording'
 
 export default class ToolOpinionMapBlock extends Component {
     render() {
@@ -9,7 +9,7 @@ export default class ToolOpinionMapBlock extends Component {
 
         return (
             <div className="block">
-                <h3 className="block__title">{getWording('charts', 'tool-map', { tool })}</h3>
+                <BlockTitle chart="tool-map" tool={tool}/>
                 <div className="block block--text">
                     Percentage of developers who <OpinionsSelector /> <strong>{tool}</strong> for
                     each continent.

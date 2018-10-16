@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import HappinessChart from '../charts/HappinessChart'
-import getWording from '../../helpers/getWording'
+import BlockTitle from '../elements/BlockTitle'
 
 export default class HappinessBlock extends PureComponent {
     static propTypes = {
@@ -14,7 +14,7 @@ export default class HappinessBlock extends PureComponent {
 
         return (
             <div className="block block--chart block--happiness">
-                <h3 className="block__title">Overall Happiness</h3>
+                <BlockTitle chart="happiness"/>
                 <div className="block__description">
                     <p>
                         On a scale of one to five, how happy are developers with the current state
