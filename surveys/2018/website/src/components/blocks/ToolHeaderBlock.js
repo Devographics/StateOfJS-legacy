@@ -16,7 +16,7 @@ export default class ToolHeaderBlock extends Component {
     }
 
     render() {
-        const { section, tool } = this.props
+        const { tool } = this.props
 
         const project = bestOfJsData.projects.find(p => p.slug === tool)
 
