@@ -38,7 +38,7 @@ typeform:
             section: build-tools
         '28238504':
             type: happiness
-            section: mobile
+            section: mobile-and-desktop
         '28238505':
             type: other_tools
             section: front-end-frameworks
@@ -62,7 +62,7 @@ typeform:
             section: build-tools
         '28238512':
             type: other_tools
-            section: mobile
+            section: mobile-and-desktop
         '28238522':
             type: email
         '28238719':
@@ -193,7 +193,7 @@ typeform:
             tool: grunt
         '28239233':
             type: tool
-            tool: native_apps
+            tool: native-apps
         '28239235':
             type: tool
             tool: cordova
@@ -205,7 +205,7 @@ typeform:
             tool: phone_gap
         '28239251':
             type: tool
-            tool: native_script
+            tool: nativescript
 sections:
     javascript-flavors:
         title: 'JavaScript Flavor'
@@ -281,15 +281,15 @@ sections:
             - gulp
             - browserify
             - bower
-    mobile:
+    mobile-and-desktop:
         title: Mobile
         freeform: 'Other mobile apps solutions'
         tools:
-            - native_apps
+            - native-apps
             - react-native
             - cordova
             - phone_gap
-            - native_script
+            - nativescript
 experience:
     'I''ve used it before, and would use it again': would_use
     'I''ve used it before, and would not use it again': would_not_use
@@ -340,11 +340,11 @@ tools:
     - gulp
     - browserify
     - bower
-    - native_apps
+    - native-apps
     - react-native
     - cordova
     - phone_gap
-    - native_script
+    - nativescript
 userInfo:
     - years_of_experience
     - company_size

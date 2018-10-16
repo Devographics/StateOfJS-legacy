@@ -332,7 +332,7 @@ typeform:
             tool: phonegap/cordova
         Vst6yDXqWzHQ:
             type: tool
-            tool: native_script
+            tool: nativescript
         gNO84FdIrfgk:
             type: like_reasons
             tool: nativescript
@@ -350,7 +350,7 @@ typeform:
             tool: ionic
         Sbh4HhPvShLO:
             type: tool
-            tool: native_apps
+            tool: native-apps
         mA1vAeZ1UFjv:
             type: like_reasons
             tool: nativeapps
@@ -437,9 +437,9 @@ sections:
             - electron
             - react-native
             - phone_gap_cordova
-            - native_script
+            - nativescript
             - ionic
-            - native_apps
+            - native-apps
 experience:
     '👍 Used it > Would use again': would_use
     '👎 Used it > Would avoid': would_not_use
@@ -480,9 +480,9 @@ tools:
     - electron
     - react-native
     - phone_gap_cordova
-    - native_script
+    - nativescript
     - ionic
-    - native_apps
+    - native-apps
 userInfo:
     - years_of_experience
     - company_size

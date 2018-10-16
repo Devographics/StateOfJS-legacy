@@ -7,7 +7,7 @@ import SectionHeader from '../components/elements/SectionHeader'
 const Introduction = ({ data }) => (
     <Layout>
         <div>
-            <SectionHeader showIntro={false}/>
+            <SectionHeader showIntro={false} />
             <TextBlock text={data.file.childMarkdownRemark.html} />
         </div>
     </Layout>

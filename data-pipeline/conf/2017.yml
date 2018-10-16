@@ -209,7 +209,7 @@ typeform:
             section: build-tools
         IZ0M:
             type: tool
-            tool: native_apps
+            tool: native-apps
         Xs6a:
             type: tool
             tool: react-native
@@ -218,7 +218,7 @@ typeform:
             tool: phone_gap_cordova
         mg07:
             type: tool
-            tool: native_script
+            tool: nativescript
         uFwz:
             type: other_tools
             section: mobile-and-desktop
@@ -316,11 +316,11 @@ sections:
         title: 'Mobile & Desktop'
         freeform: 'Other mobile/desktop apps solutions'
         tools:
-            - native_apps
+            - native-apps
             - react-native
             - ionic
             - phone_gap_cordova
-            - native_script
+            - nativescript
             - electron
 experience:
     'I''ve USED it before, and WOULD use it again': would_use
@@ -380,11 +380,11 @@ tools:
     - browserify
     - npm
     - rollup
-    - native_apps
+    - native-apps
     - react-native
     - ionic
     - phone_gap_cordova
-    - native_script
+    - nativescript
     - electron
 userInfo:
     - years_of_experience

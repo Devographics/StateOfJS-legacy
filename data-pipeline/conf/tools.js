@@ -204,7 +204,7 @@ module.exports = [
         aliases: ['Bower'],
     },
     {
-        id: 'native_apps',
+        id: 'native-apps',
         aliases: ['Native Apps'],
     },
     {
@@ -224,7 +224,7 @@ module.exports = [
         aliases: ['PhoneGap/Cordova'],
     },
     {
-        id: 'native_script',
+        id: 'nativescript',
         aliases: ['NativeScript'],
     },
     {

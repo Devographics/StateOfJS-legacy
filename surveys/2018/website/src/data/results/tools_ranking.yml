@@ -30,7 +30,7 @@ storybook: 6
 ava: 7
 electron: 1
 react-native: 2
-native_apps: 3
+native-apps: 3
 phone_gap_cordova: 4
 ionic: 5
-native_script: 6
+nativescript: 6
