@@ -2,6 +2,7 @@ const yaml = require('js-yaml')
 const fs = require('fs')
 const path = require(`path`)
 const nav = yaml.safeLoad(fs.readFileSync('./src/data/nav.yaml', 'utf8'))
+const charts = yaml.safeLoad(fs.readFileSync('./src/data/charts.yml', 'utf8'))
 /*
 
 TODO: use https://www.gatsbyjs.org/docs/actions/#setWebpackConfig
@@ -64,16 +65,19 @@ exports.createPages = async ({ actions }) => {
             item.subPages.forEach(subPage => {
                 const pagePath = `/${item.id}/${subPage}`
                 let templateName
+                let pageCharts = []
                 switch (subPage) {
                     case 'overview':
                         templateName = 'SectionOverview'
                         subPageContext = {
                             section: item.id
                         }
+                        pageCharts = pageCharts.concat(charts.overview)
                         break
 
                     case 'other-libraries':
                         templateName = 'OtherLibraries'
+                        pageCharts = pageCharts.concat(charts['other-libraries'])
                         break
 
                     case 'conclusion':
@@ -81,6 +85,7 @@ exports.createPages = async ({ actions }) => {
                         subPageContext = {
                             name: `${item.id}-conclusion`
                         }
+                        pageCharts = pageCharts.concat(charts.conclusion)
                         break
 
                     default:
@@ -89,6 +94,7 @@ exports.createPages = async ({ actions }) => {
                             section: item.id,
                             tool: subPage
                         }
+                        pageCharts = pageCharts.concat(charts.tool)
                         break
                 }
 
@@ -98,6 +104,23 @@ exports.createPages = async ({ actions }) => {
                         `./src/components/templates/${templateName}Template.js`
                     ),
                     context: subPageContext
+                })
+
+                /*
+
+                Create one third-level page per chart for sharing
+
+                */
+                console.log(pageCharts)
+                pageCharts.forEach(chart => {
+                    const pagePath = `/${item.id}/${subPage}/${chart}`
+                    createPage({
+                        path: pagePath,
+                        component: path.resolve(
+                            `./src/components/templates/ShareChartTemplate.js`
+                        ),
+                        context: { ...subPageContext, chart }
+                    })
                 })
             })
         }

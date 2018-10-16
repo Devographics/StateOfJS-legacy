@@ -1,10 +1,8 @@
 import React from 'react'
-import getPageUrl from '../../helpers/getPageUrl'
 import Link from 'gatsby-link'
 import classNames from 'classnames'
 // import { navigateTo } from 'gatsby-link'
 // import getPages from '../../helpers/getPages'
-import getTitle from '../../helpers/getTitle'
 import withPageData from '../../helpers/withPageData'
 
 class PageTitle extends React.PureComponent {
@@ -50,26 +48,26 @@ class PageTitle extends React.PureComponent {
                         {previousPage ? (
                             <Link
                                 className="pagination__link pagination__previous"
-                                to={getPageUrl(previousPage)}
+                                to={previousPage.path}
                             >
                                 <span className="pagination__link__symbol">&lt;&lt;&nbsp;</span>
                                 <span className="pagination__link__label">
-                                    {getTitle(previousPage, true)}
+                                    {previousPage.title}
                                 </span>
                             </Link>
                         ) : (
                             <span />
                         )}
                         {mode === 'title' && (
-                            <h2 className="pagetitle__main">{title || getTitle(currentPage)}</h2>
+                            <h2 className="pagetitle__main">{title || currentPage.title}</h2>
                         )}
                         {nextPage ? (
                             <Link
                                 className="pagination__link pagination__next"
-                                to={getPageUrl(nextPage)}
+                                to={nextPage.path}
                             >
                                 <span className="pagination__link__label">
-                                    {getTitle(nextPage, true)}
+                                    {nextPage.title}
                                 </span>
                                 <span className="pagination__link__symbol">&nbsp;&gt;&gt;</span>
                             </Link>

@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import classNames from 'classnames'
-import PropTypes from 'prop-types'
 import nav from '../../data/nav.yaml'
 import filter from 'lodash/filter'
 import { createPage } from '../../helpers/getPages'
@@ -37,13 +36,6 @@ const NavItem = ({ currentPath, subPages, comingSoon, closeSidebar, index }) => 
     )
 }
 
-NavItem.propTypes = {
-    label: PropTypes.string.isRequired,
-    subPages: PropTypes.array,
-    comingSoon: PropTypes.bool,
-    closeSidebar: PropTypes.func.isRequired
-}
-
 const NavSubItem = ({ page, closeSidebar }) => {
     return (
         <Link
@@ -55,12 +47,6 @@ const NavSubItem = ({ page, closeSidebar }) => {
             {page.subSection.label}{' '}
         </Link>
     )
-}
-
-NavSubItem.propTypes = {
-    parentLabel: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    closeSidebar: PropTypes.func.isRequired
 }
 
 const Nav = ({ path, closeSidebar }) => {
@@ -79,10 +65,6 @@ const Nav = ({ path, closeSidebar }) => {
             </ul>
         </div>
     )
-}
-
-Nav.propTypes = {
-    closeSidebar: PropTypes.func.isRequired
 }
 
 export default Nav

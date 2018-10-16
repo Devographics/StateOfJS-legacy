@@ -3,19 +3,19 @@ const getPageTitle = ({ section, subSection }, full = false) => {
     if (subSection) {
         switch (subSection.label) {
             case 'Overview':
-                pageTitle = `${section.label} Overview`
+                pageTitle = `${section.label} – Overview`
                 break
 
             case 'Other Libraries':
-                pageTitle = `Other ${section.label} Libraries`
+                pageTitle = `${section.label} – Other Libraries`
                 break
 
             case 'Conclusion':
-                pageTitle = `${section.label} Conclusion`
+                pageTitle = `${section.label} – Conclusion`
                 break
 
             default:
-                pageTitle = subSection.label
+                pageTitle = `${section.label} - ${subSection.label}`
                 break
         }
     } else {

@@ -1,0 +1,35 @@
+overview: 
+  - overview
+  - happiness
+other-libraries: 
+  - other-tools
+  - all-libraries
+conclusion: 
+  - quadrants
+tool: 
+  - results-evolution
+  - likes
+  - dislikes
+  - tool-map
+
+other-tools: 
+  - other-languages
+  - browser-apis
+  - build-tools
+  - utility-libraries
+  - text-editors
+opinions: 
+  - right-direction
+  - overly-complex
+  - overused
+  - enjoy
+  - main-language
+  - changing-fast
+  - too-long
+demographics: 
+  - countries
+  - gender
+  - salaries
+  - salaries-map
+  - experience
+  - company-size

@@ -2,14 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import withPageData from '../../helpers/withPageData'
+import getImageUrl from '../../helpers/getImageUrl'
 
-const Meta = ({ currentPage }) => {
-    const { section, subSection } = currentPage
-    const url = currentPage.url
-    const image = `http://stateofjs.com/images/captures/${section.slug}_${subSection &&
-        subSection.slug}.png`
-    const metaTitle = `State Of JavaScript Survey Results: ${currentPage.title}`
-    const metaDescription = `Find out which ${
+const Meta = ({ currentPage, properties = {} }) => {
+    const url = properties.url || currentPage.url
+    const image = properties.image || getImageUrl(currentPage)
+    const metaTitle = properties.title || `State Of JavaScript Survey Results: ${currentPage.title}`
+    const metaDescription = properties.description || `Find out which ${
         currentPage.label
     } tools and frameworks are the most popular.`
 

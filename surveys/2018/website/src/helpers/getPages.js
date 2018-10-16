@@ -3,15 +3,21 @@ import nav from '../data/nav.yaml'
 import wording from '../data/wording.yml'
 import getPageTitle from './getPageTitle'
 import getPageUrl from './getPageUrl'
+import compact from 'lodash/compact'
+import take from 'lodash/take'
 
 /*
 
-Compare two paths with and without trailing slash
+Compare two paths based on their first n segments
 
 */
 export const removeTrailingSlash = s => (s.slice(-1) === '/' ? s.slice(0, -1) : s)
-export const isSamePath = (p1, p2) =>
-    p1 === p2 || removeTrailingSlash(p1) === p2 || p1 === removeTrailingSlash(p2)
+export const splitCompactTake = (s, n) => take(compact(s.split('/')), n)
+export const isSamePath = (p1, p2, n) => {
+    const a1 = splitCompactTake(p1, n)
+    const a2 = splitCompactTake(p2, n)
+    return a1.toString() === a2.toString()
+}
 
 /*
 
@@ -45,16 +51,17 @@ export const createPage = (sectionIndex, subSectionIndex) => {
     page.path = section.path || getPageUrl(page)
     page.url = getPageUrl(page, true)
     page.title = getPageTitle(page)
+    page.fullTitle = getPageTitle(page, true)
     return page
 }
 
 /*
 
-Get current page objectbased on path
+Get current page objectbased on path (comparing first 2 segments)
 
 */
 export const getCurrentPage = path => {
-    return getAllPages().find(p => isSamePath(p.path, path))
+    return getAllPages().find(p => isSamePath(p.path, path, 2))
 }
 
 /*

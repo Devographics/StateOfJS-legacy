@@ -56,3 +56,31 @@ reasons:
     fast_changing_breaks_often: Fast-changing & breaks often ⚖️
     other: Other
 
+charts:
+    overview: Libraries Results
+    happiness: Overall Happiness
+    other-tools: Other Tools
+    all-libraries: All Libraries
+    quadrants: Quadrant Chart
+    results-evolution: "{tool}'s Popularity Over Time"
+    likes: "Most Liked Aspects of {tool}"
+    dislikes: "Most Disliked Aspects of {tool}"
+    tool-map: "{tool} Usage by Country"
+    other-languages: Other Languages
+    browser-apis: Browser APIs
+    build-tools: Build Tools
+    utility-libraries: Utility Libraries
+    text-editors: Text Editors
+    right-direction: JavaScript is moving in the right direction
+    overly-complex: Building JavaScript apps is overly complex right now
+    overused: JavaScript is over-used online
+    enjoy: I enjoy building JavaScript apps
+    main-language: I would like JavaScript to be my main programming language
+    changing-fast: The JavaScript ecosystem is changing too fast
+    too-long: This survey is too damn long!
+    countries: Responses per Country
+    gender: Gender Breakdown
+    salaries: Salaries
+    salaries-map: Salaries per Country
+    experience: Experience
+    company-size: Company Size

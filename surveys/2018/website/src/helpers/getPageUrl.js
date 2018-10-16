@@ -4,7 +4,7 @@ const getPageUrl = (page, isAbsolute = false) => {
     if (subSection) {
         url += `${subSection.slug}/`
     }
-    return isAbsolute ? `https://stateofjs.com/${url}` : url
+    return isAbsolute ? `https://2018.stateofjs.com${url}` : url
 }
 
 export default getPageUrl
