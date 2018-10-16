@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import _ from 'lodash'
 import ReactGA from 'react-ga'
 import Link from 'gatsby-link'
-import getWording from '../../helpers/getWording'
 
 import resources from '../../../src/data/resources.yaml'
 

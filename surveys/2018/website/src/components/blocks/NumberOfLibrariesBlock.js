@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import NumbersOfLibrariesPie from '../charts/NumbersOfLibrariesPie'
-import getWording from '../../helpers/getWording'
 
 export default class NumberOfLibrariesBlock extends Component {
     static propTypes = {

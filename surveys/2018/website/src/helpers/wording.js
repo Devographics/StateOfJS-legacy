@@ -1,11 +1,13 @@
-import { get } from 'lodash'
+import { get, template } from 'lodash'
 import wording from '../data/wording.yml'
 import bestOfJsData from '../data/bestofjs'
 
-export const getLabel = id => {
+export const getWording = (id, values) => {
     const label = get(wording, id)
 
-    return label !== undefined ? label : `![${id}]`
+    if (label === undefined) return `![${id}]`
+    if (values === undefined) return label
+    return template(label)(values)
 }
 
 export const getToolName = toolId => {
@@ -14,5 +16,5 @@ export const getToolName = toolId => {
         return bestOfJsProject.name
     }
 
-    return getLabel(`tools.${toolId}`)
+    return getWording(`tools.${toolId}`)
 }

@@ -1,14 +1,8 @@
 import React, { Component } from 'react'
-import { ResponsiveBar } from '@nivo/bar'
 import { reasons } from '../../constants'
 import theme from '../../nivoTheme'
-import getWording from '../../helpers/getWording'
-
-const verticalMargin = 30
-const innerMargin = 5
-const barHeight = 26
-const labelsWidth = 260
-const labelsMargin = 14
+import { getWording } from '../../helpers/wording'
+import ReasonsChartUnit from './ReasonsChartUnit'
 
 export default class ReasonsChart extends Component {
     render() {
@@ -42,72 +36,13 @@ export default class ReasonsChart extends Component {
         return (
             <div>
                 <div className="block">
-                <h3 className="block__title">{getWording('charts', 'likes', { tool })}</h3>
-                <div
-                    style={{
-                        height: likeData.length * barHeight + verticalMargin * 2,
-                        marginBottom: 30
-                    }}
-                >
-                    <ResponsiveBar
-                        layout="horizontal"
-                        enableGridX={true}
-                        enableGridY={false}
-                        enableLabel={false}
-                        labelSkipWidth={36}
-                        theme={theme}
-                        colors={theme.reasonsColors.like}
-                        data={likeData}
-                        padding={0.8}
-                        borderRadius={2.5}
-                        keys={['count']}
-                        indexBy="reason"
-                        margin={{
-                            top: verticalMargin,
-                            right: labelsMargin + labelsWidth,
-                            bottom: verticalMargin,
-                            left: innerMargin
-                        }}
-                        axisTop={{}}
-                        axisRight={{
-                            tickSize: 0,
-                            tickPadding: labelsMargin
-                        }}
-                        axisLeft={null}
-                    />
-                </div>
+                    <h3 className="block__title">{getWording('charts.likes', { tool })}</h3>
+                    <ReasonsChartUnit data={likeData} color={theme.reasonsColors.like} />
                 </div>
                 <div className="block">
-                <h3 className="block__title">{getWording('charts', 'dislikes', { tool })}</h3>
-                <div style={{ height: dislikeData.length * barHeight + verticalMargin * 2 }}>
-                    <ResponsiveBar
-                        layout="horizontal"
-                        enableGridX={true}
-                        enableGridY={false}
-                        enableLabel={false}
-                        labelSkipWidth={36}
-                        theme={theme}
-                        colors={theme.reasonsColors.dislike}
-                        data={dislikeData}
-                        padding={0.8}
-                        borderRadius={2.5}
-                        keys={['count']}
-                        indexBy="reason"
-                        margin={{
-                            top: verticalMargin,
-                            right: labelsMargin + labelsWidth,
-                            bottom: verticalMargin,
-                            left: innerMargin
-                        }}
-                        axisTop={{}}
-                        axisLeft={null}
-                        axisRight={{
-                            tickSize: 0,
-                            tickPadding: labelsMargin
-                        }}
-                    />
+                    <h3 className="block__title">{getWording('charts.dislikes', { tool })}</h3>
+                    <ReasonsChartUnit data={dislikeData} color={theme.reasonsColors.dislike} />
                 </div>
-            </div>
             </div>
         )
     }

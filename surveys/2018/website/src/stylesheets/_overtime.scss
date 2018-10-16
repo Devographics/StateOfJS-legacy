@@ -1,16 +1,16 @@
-.overtime__content{
-  display: flex;
+.overtime__content {
+    display: flex;
 }
 
-.overtime__chart{
-  height: 280px;
-  flex: 0 0 500px;
-  max-width: 500px;
-  margin-right: $spacing*2;
+.overtime__chart {
+    height: 280px;
+    flex: 0 0 500px;
+    max-width: 500px;
+    margin-right: $spacing * 2;
 }
 
-.overtime__legend{
-  .Legends__Inner{
-    height: 100%;
-  }
+.overtime__legend {
+    .Legends__Inner {
+        height: 100%;
+    }
 }

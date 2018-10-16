@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { toolOpinionKeys } from '../../constants'
 import theme from '../../nivoTheme'
-import { getLabel } from '../../helpers/wording'
+import { getWording } from '../../helpers/wording'
 import Legends from './Legends'
 
 const colors = [...theme.opinionColors].reverse()
@@ -21,7 +21,7 @@ export default class OpinionsLegends extends Component {
 
         const legends = toolOpinionKeys.map((id, i) => ({
             id,
-            label: getLabel(
+            label: getWording(
                 useShortLabels === true ? `opinions.legends_short.${id}` : `opinions.legends.${id}`
             ),
             color: colors[i]

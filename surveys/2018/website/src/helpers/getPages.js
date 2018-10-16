@@ -62,7 +62,10 @@ Get current page object based on path
 
 */
 export const getCurrentPage = path => {
-    return getAllPages().find(p => isSamePath(p.path, path, 2)) || getAllPages().find(p => isSamePath(p.path, path, 1))
+    return (
+        getAllPages().find(p => isSamePath(p.path, path, 2)) ||
+        getAllPages().find(p => isSamePath(p.path, path, 1))
+    )
 }
 
 /*

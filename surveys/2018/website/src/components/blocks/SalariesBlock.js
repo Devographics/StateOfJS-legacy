@@ -6,7 +6,6 @@ import { salaryKeys, colorScale } from '../../constants'
 import Legends from '../elements/Legends'
 import Averages from '../elements/Averages'
 import ShareChart from '../common/ShareChart'
-import getWording from '../../helpers/getWording'
 
 const legends = salaryKeys.map((key, index) => ({
     label: key,

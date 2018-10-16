@@ -15,7 +15,7 @@ export default class PeriodicTableElementSvg extends PureComponent {
 
         const layout = computePeriodicTableElement(size)
         const color = '#41c7c7' // periodicTableData.sections[section]
-        const symbol = periodicTableData.tools[tool]
+        const symbol = periodicTableData.tools[tool] || '??'
 
         return (
             <g>
