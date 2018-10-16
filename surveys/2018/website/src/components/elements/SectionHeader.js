@@ -2,7 +2,7 @@ import React from 'react'
 // import PeriodicTableElementHtml from '../elements/PeriodicTableElementHtml'
 import withPageData from '../../helpers/withPageData'
 
-const SectionHeader = ({ currentPage }) => (
+const SectionHeader = ({ currentPage, showIntro }) => (
     <div className="SectionHeader">
         {/* <div>
             <PeriodicTableElementHtml
@@ -16,7 +16,7 @@ const SectionHeader = ({ currentPage }) => (
             <div className="SectionHeader__Header">
               <h2 className="SectionHeader__Title">{currentPage.title}</h2>
             </div>
-            <div>{currentPage.intro}</div>
+            {showIntro && <div>{currentPage.intro}</div>}
         </div>
     </div>
 )
