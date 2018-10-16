@@ -1,21 +1,42 @@
-import React from 'react'
-import { experience } from '../../constants'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { toolOpinionKeys } from '../../constants'
 import theme from '../../nivoTheme'
+import wording from '../../data/wording.yml'
 import Legends from './Legends'
 
 const colors = [...theme.opinionColors].reverse()
 
-const legends = [
-    experience.never_heard,
-    experience.not_interested,
-    experience.would_learn,
-    experience.would_not_use,
-    experience.would_use
-].map((key, i) => ({
-    label: key,
-    color: colors[i]
-}))
+export default class OpinionsLegends extends Component {
+    static propTypes = {
+        useShortLabels: PropTypes.bool.isRequired
+    }
 
-const OpinionsLegends = () => <Legends legends={legends} modifier="horizontal" />
+    static defaultProps = {
+        useShortLabels: true
+    }
 
-export default OpinionsLegends
+    render() {
+        const { useShortLabels, ...rest } = this.props
+
+        const labels = useShortLabels ? wording.opinions.legends_short : wording.opinions.legends
+        const legends = toolOpinionKeys.map((id, i) => ({
+            id,
+            label: labels[id],
+            color: colors[i]
+        }))
+
+        return (
+            <Legends
+                legends={legends}
+                itemStyle={{
+                    padding: '3px 5px'
+                }}
+                chipStyle={{
+                    borderRadius: '1px'
+                }}
+                {...rest}
+            />
+        )
+    }
+}

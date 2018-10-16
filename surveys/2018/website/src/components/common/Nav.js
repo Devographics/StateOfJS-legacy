@@ -23,13 +23,7 @@ const NavItem = ({ currentPath, subPages, comingSoon, closeSidebar, index }) => 
                     subPages &&
                     subPages.map((subPageLabel, j) => {
                         const subPage = createPage(index, j)
-                        return (
-                            <NavSubItem
-                                key={j}
-                                page={subPage}
-                                closeSidebar={closeSidebar}
-                            />
-                        )
+                        return <NavSubItem key={j} page={subPage} closeSidebar={closeSidebar} />
                     })}
             </div>
         </li>

@@ -31,7 +31,7 @@ export const createPage = (sectionIndex, subSectionIndex) => {
             ...section,
             label: wording.nav[section.id],
             index: sectionIndex,
-            slug: section.id,
+            slug: section.id
         }
     }
     if (
@@ -44,7 +44,7 @@ export const createPage = (sectionIndex, subSectionIndex) => {
             id: subSectionId,
             slug: slugify(subSectionId),
             label: wording.nav[subSectionId] || subSectionId,
-            index: subSectionIndex,
+            index: subSectionIndex
         }
     }
     // note: if section specifies its own path use that

@@ -7,7 +7,6 @@ module.exports = {
     TESTING: 'testing',
     CSS: 'css',
     BUILD_TOOLS: 'build-tools',
-    MOBILE: 'mobile',
     MOBILE_DESKTOP: 'mobile-and-desktop',
 }
 

@@ -1,41 +1,39 @@
 .Legends {
     font-size: 12px;
+}
+
+.Legends--horizontal {
+    display: grid;
+    grid-column-gap: $spacing;
     margin: $spacing 0;
 }
 
-.Legends__Inner {
+.Legends--vertical {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    border: 1px dashed $light-border-color;
-    border-radius: 3px;
-    padding: $spacing $spacing * 1.5;
-}
-.Legends__Item {
-    margin-left: $spacing * 1.5;
-    display: inline-flex;
-    align-items: center;
-    flex: 1;
 }
 
-.Legends__Item:first-child {
-    margin-left: 0;
+.Legends--withFrame {
+    border: 1px dashed $light-border-color;
+    border-radius: 3px;
+}
+
+.Legends--horizontal.Legends--withFrame {
+    padding: $spacing $spacing * 1.5;
+}
+
+.Legends--vertical.Legends--withFrame {
+    padding: $spacing;
+}
+
+.Legends__Item {
+    display: flex;
+    align-items: center;
 }
 
 .Legends__Item__Chip {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    margin-right: 9px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-}
-
-/*————————————————————————————————————————————————————————————————————————————————————————————————————————————————————*\
-  Vertical mode
-\*————————————————————————————————————————————————————————————————————————————————————————————————————————————————————*/
-.Legends--vertical .Legends__Inner {
-    flex-direction: column;
-}
-
-.Legends--vertical .Legends__Item {
-    margin-left: 0;
+    display: block;
+    margin-right: 12px;
+    flex-shrink: 0;
 }
