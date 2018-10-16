@@ -57,11 +57,12 @@ export const createPage = (sectionIndex, subSectionIndex) => {
 
 /*
 
-Get current page objectbased on path (comparing first 2 segments)
+Get current page object based on path
+(comparing first two segments first, and then falling back to comparing only first segment)
 
 */
 export const getCurrentPage = path => {
-    return getAllPages().find(p => isSamePath(p.path, path, 2))
+    return getAllPages().find(p => isSamePath(p.path, path, 2)) || getAllPages().find(p => isSamePath(p.path, path, 1))
 }
 
 /*

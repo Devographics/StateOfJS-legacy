@@ -37,17 +37,8 @@ const slugify = (s, dashToUnderscore = false) => {
 exports.createPages = async ({ actions }) => {
     const { createRedirect, createPage } = actions
 
-    const exclusions = [
-        'Introduction',
-        'Connections',
-        'Other Tools',
-        'Opinions',
-        'Demographics',
-        'Conclusion',
-        'Support Us'
-    ]
 
-    nav.filter(item => !exclusions.includes(item.label)).forEach(item => {
+    nav.forEach(item => {
         if (item.subPages) {
             createRedirect({
                 fromPath: `/${item.id}/`,
@@ -108,19 +99,31 @@ exports.createPages = async ({ actions }) => {
 
                 /*
 
-                Create one third-level page per chart for sharing
+                Create a third-level page for each chart for sharing
 
                 */
-                console.log(pageCharts)
                 pageCharts.forEach(chart => {
                     const pagePath = `/${item.id}/${subPage}/${chart}`
                     createPage({
                         path: pagePath,
-                        component: path.resolve(
-                            `./src/components/templates/ShareChartTemplate.js`
-                        ),
+                        component: path.resolve(`./src/components/templates/ShareChartTemplate.js`),
                         context: { ...subPageContext, chart }
                     })
+                })
+            })
+        } else {
+            /*
+    
+            Create sharing pages for other sections
+
+            */
+            const pageCharts = charts[item.id]
+            pageCharts && pageCharts.forEach(chart => {
+                const pagePath = `/${item.id}/${chart}`
+                createPage({
+                    path: pagePath,
+                    component: path.resolve(`./src/components/templates/ShareChartTemplate.js`),
+                    context: { section: item.id, chart }
                 })
             })
         }
