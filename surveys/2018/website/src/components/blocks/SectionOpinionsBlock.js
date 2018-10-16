@@ -20,7 +20,18 @@ export default class SectionOpinionsBlock extends Component {
                 <div className="block__description">
                     <p>Per-library survey results.</p>
                 </div>
-                <SectionOpinionsChart section={this.props.section} opinions={this.props.opinions} />
+                <div
+                    style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'auto 220px',
+                        gridColumnGap: 20
+                    }}
+                >
+                    <SectionOpinionsChart
+                        section={this.props.section}
+                        opinions={this.props.opinions}
+                    />
+                </div>
                 <OpinionsLegends />
             </div>
         )

@@ -50,6 +50,14 @@ export const colorScale = [
     '#ca4040'
 ]
 
+export const toolOpinionKeys = [
+    'never_heard',
+    'not_interested',
+    'would_learn',
+    'would_not_use',
+    'would_use'
+]
+
 export const experience = {
     never_heard: `I've never heard of it`,
     not_interested: `I've HEARD of it, and am NOT interested`,

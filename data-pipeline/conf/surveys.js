@@ -40,7 +40,7 @@ module.exports = [
                 title: 'Build Tools',
                 freeform: 'Other build tools',
             },
-            [sections.MOBILE]: {
+            [sections.MOBILE_DESKTOP]: {
                 title: 'Mobile',
                 freeform: 'Other mobile apps solutions',
             },

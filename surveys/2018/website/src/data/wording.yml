@@ -21,11 +21,18 @@ nav:
     es6: ES6
 
 opinions:
-    never_heard: I've never heard of it
-    not_interested: I've HEARD of it, and am NOT interested
-    would_learn: I've HEARD of it, and WOULD like to learn it
-    would_use: I've USED it before, and WOULD use it again
-    would_not_use: I've USED it before, and would NOT use it again
+    legends:
+        never_heard: I've never heard of it
+        not_interested: I've HEARD of it, and am NOT interested
+        would_learn: I've HEARD of it, and WOULD like to learn it
+        would_use: I've USED it before, and WOULD use it again
+        would_not_use: I've USED it before, and would NOT use it again
+    legends_short:
+        never_heard: never heard of it
+        not_interested: heard of it, not interested
+        would_learn: heard of it, would like to learn
+        would_use: used it, would use again
+        would_not_use: used it, would not use again
 
 reasons:
     elegant_programming_style_patterns: ⚙️ Elegant programming style & patterns
