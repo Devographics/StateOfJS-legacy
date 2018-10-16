@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import OpinionsLegends from '../elements/OpinionsLegends'
 import SectionOpinionsChart from '../charts/SectionOpinionsChart'
 
 export default class SectionOpinionsBlock extends Component {
@@ -20,19 +19,7 @@ export default class SectionOpinionsBlock extends Component {
                 <div className="block__description">
                     <p>Per-library survey results.</p>
                 </div>
-                <div
-                    style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'auto 220px',
-                        gridColumnGap: 20
-                    }}
-                >
-                    <SectionOpinionsChart
-                        section={this.props.section}
-                        opinions={this.props.opinions}
-                    />
-                </div>
-                <OpinionsLegends />
+                <SectionOpinionsChart section={this.props.section} opinions={this.props.opinions} />
             </div>
         )
     }
