@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import periodicTableData from '../../data/periodic_table.yml'
 import { computePeriodicTableElement } from '../../helpers/periodicTable'
+import { getToolName } from '../../helpers/wording'
 
 export default class PeriodicTableElementSvg extends PureComponent {
     static propTypes = {
@@ -42,17 +43,10 @@ export default class PeriodicTableElementSvg extends PureComponent {
                     y={layout.padding}
                     x={layout.padding}
                 />
-                <rect
-                    className="PeriodicTableElementSvg_Index"
-                    width={layout.labelWidth}
-                    height={layout.labelHeight}
-                    x={layout.symbolX - layout.labelWidth / 2}
-                    y={layout.symbolY + size / 6}
-                />
                 <text
                     className="PeriodicTableElementSvg_Symbol"
-                    x={layout.symbolX}
-                    y={layout.symbolY + size / 14}
+                    x={layout.centerX}
+                    y={layout.symbolY + layout.symbolHeight}
                     textAnchor="middle"
                     alignmentBaseline="baseline"
                     style={{
@@ -61,6 +55,18 @@ export default class PeriodicTableElementSvg extends PureComponent {
                     }}
                 >
                     {symbol}
+                </text>
+                <text
+                    className="PeriodicTableElementSvg_Label"
+                    x={layout.centerX}
+                    y={layout.labelY + layout.labelHeight}
+                    textAnchor="middle"
+                    alignmentBaseline="baseline"
+                    style={{
+                        fontSize: layout.labelFontSize
+                    }}
+                >
+                    {getToolName(tool)}
                 </text>
             </g>
         )

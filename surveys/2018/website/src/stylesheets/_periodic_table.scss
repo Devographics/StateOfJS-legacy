@@ -17,13 +17,20 @@
 }
 
 .PeriodicTableElementHtml_Symbol {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 1em;
     font-weight: 500;
 }
 
 .PeriodicTableElementHtml_Label {
+    position: absolute;
+    width: 100%;
     display: block;
+    line-height: 1em;
+    text-align: center;
     opacity: 0.6;
-    background: #646a6a;
 }
 
 .PeriodicTableElementSvg {
@@ -51,12 +58,9 @@
 .PeriodicTableElementSvg_Symbol {
     font-weight: 500;
     pointer-events: none;
-    fill: #e8e8e8;
 }
 
-.PeriodicTableElementHtml_Label {
-    display: block;
+.PeriodicTableElementSvg_Label {
     opacity: 0.6;
-    pointer-events: none;
-    background: #646a6a;
+    fill: white;
 }
