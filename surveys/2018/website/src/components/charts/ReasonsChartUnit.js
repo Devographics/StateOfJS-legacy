@@ -4,10 +4,48 @@ import { ResponsiveBar } from '@nivo/bar'
 import theme from '../../nivoTheme'
 
 const verticalMargin = 30
-const innerMargin = 5
-const barHeight = 26
-const labelsWidth = 260
-const labelsMargin = 14
+const innerMargin = 10
+const barHeight = 30
+const labelsWidth = 290
+
+class ReasonLabel extends Component {
+    handleMouseEnter = () => {
+        const { onMouseEnter, value } = this.props
+        onMouseEnter(value)
+    }
+
+    handleMouseLeave = () => {
+        this.props.onMouseLeave()
+    }
+
+    render() {
+        const { y, value, current } = this.props
+
+        let textColor = '#e8e8e8'
+        if (current !== null && current !== value) {
+            textColor = '#666'
+        }
+
+        return (
+            <g transform={`translate(${-labelsWidth},${y})`}>
+                <text fill={textColor} style={{ fontSize: 14 }} alignmentBaseline="middle">
+                    {value}
+                </text>
+                <rect
+                    y={barHeight * -0.5}
+                    width={labelsWidth}
+                    height={barHeight}
+                    opacity={0}
+                    style={{
+                        cursor: 'pointer'
+                    }}
+                    onMouseEnter={this.handleMouseEnter}
+                    onMouseLeave={this.handleMouseLeave}
+                />
+            </g>
+        )
+    }
+}
 
 export default class ReasonsChartUnit extends Component {
     static propTypes = {
@@ -15,8 +53,21 @@ export default class ReasonsChartUnit extends Component {
         color: PropTypes.string.isRequired
     }
 
+    state = {
+        current: null
+    }
+
+    setCurrent = current => {
+        this.setState({ current })
+    }
+
+    resetCurrent = () => {
+        this.setState({ current: null })
+    }
+
     render() {
         const { data, color } = this.props
+        const { current } = this.state
 
         return (
             <div
@@ -30,9 +81,13 @@ export default class ReasonsChartUnit extends Component {
                     enableGridX={true}
                     enableGridY={false}
                     enableLabel={false}
-                    labelSkipWidth={36}
+                    reverse={false}
+                    enableLabels={false}
                     theme={theme}
-                    colors={color}
+                    colorBy={d => {
+                        if (current === null) return color
+                        return d.indexValue === current ? color : 'rgba(255, 255, 255, .15)'
+                    }}
                     data={data}
                     padding={0.8}
                     borderRadius={2.5}
@@ -40,16 +95,23 @@ export default class ReasonsChartUnit extends Component {
                     indexBy="reason"
                     margin={{
                         top: verticalMargin,
-                        right: labelsMargin + labelsWidth,
+                        right: innerMargin,
                         bottom: verticalMargin,
-                        left: innerMargin
+                        left: labelsWidth
                     }}
                     axisTop={{}}
-                    axisRight={{
+                    axisLeft={{
                         tickSize: 0,
-                        tickPadding: labelsMargin
+                        tickPadding: 0,
+                        renderTick: d => (
+                            <ReasonLabel
+                                {...d}
+                                current={current}
+                                onMouseEnter={this.setCurrent}
+                                onMouseLeave={this.resetCurrent}
+                            />
+                        )
                     }}
-                    axisLeft={null}
                 />
             </div>
         )
