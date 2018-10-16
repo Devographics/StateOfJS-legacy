@@ -5,6 +5,7 @@ import getPageTitle from './getPageTitle'
 import getPageUrl from './getPageUrl'
 import compact from 'lodash/compact'
 import take from 'lodash/take'
+import { getWording, getToolName } from './wording'
 
 /*
 
@@ -43,7 +44,7 @@ export const createPage = (sectionIndex, subSectionIndex) => {
         page.subSection = {
             id: subSectionId,
             slug: slugify(subSectionId),
-            label: wording.nav[subSectionId] || subSectionId,
+            label: getWording(`nav.${subSectionId}`, {}, getToolName(subSectionId)),
             index: subSectionIndex
         }
     }

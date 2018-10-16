@@ -2,10 +2,10 @@ import { get, template } from 'lodash'
 import wording from '../data/wording.yml'
 import bestOfJsData from '../data/bestofjs'
 
-export const getWording = (id, values) => {
+export const getWording = (id, values, fallback = `![${id}]`) => {
     const label = get(wording, id)
 
-    if (label === undefined) return `![${id}]`
+    if (label === undefined) return fallback
     if (values === undefined) return label
     return template(label)(values)
 }
