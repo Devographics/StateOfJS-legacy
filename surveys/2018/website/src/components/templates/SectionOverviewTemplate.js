@@ -14,7 +14,7 @@ const SectionOverviewTemplate = ({ pageContext, data }) => {
         <Layout>
             <div className="template">
                 <Meta />
-                <SectionHeader />
+                <SectionHeader showIntro={true} />
                 {!hasEntry && (
                     <div style={{ color: 'red' }}>
                         No entry found for section: <strong>{pageContext.section}</strong>

@@ -33,11 +33,11 @@ opinions:
         would_use: I've USED it before, and WOULD use it again
         would_not_use: I've USED it before, and would NOT use it again
     legends_short:
-        never_heard: never heard of it
-        not_interested: heard of it, not interested
-        would_learn: heard of it, would like to learn
-        would_use: used it, would use again
-        would_not_use: used it, would not use again
+        never_heard: Never heard of it
+        not_interested: Heard of it, not interested
+        would_learn: Heard of it, would like to learn
+        would_use: Used it, would use again
+        would_not_use: Used it, would not use again
 
 reasons:
     elegant_programming_style_patterns: ⚙️ Elegant programming style & patterns
@@ -142,7 +142,8 @@ intros:
         of this section. That would be Jasmine (“just mean”? get it?), and that's bad Karma.
     mobile-and-desktop: >
         “Any application that can be written in JavaScript, will eventually be written in JavaScript.”
-        Don't say you weren't warned when it turns out your smart toaster is burning your bread because NPM is down. 
+        JavaScript is not limited to the browser anymore, and it's only
+        a matter of time until your smart toaster burns your bread because NPM is down. 
     other-tools: >
         Other tools that didn't quite fit in any other category.
     opinions: >

@@ -2,7 +2,7 @@ import React from 'react'
 // import PeriodicTableElementHtml from '../elements/PeriodicTableElementHtml'
 import withPageData from '../../helpers/withPageData'
 
-const SectionHeader = ({ currentPage, showIntro = true }) => (
+const SectionHeader = ({ currentPage, showIntro = false }) => (
     <div className="SectionHeader">
         {/* <div>
             <PeriodicTableElementHtml
