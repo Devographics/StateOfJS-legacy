@@ -12,98 +12,59 @@ opinions:
         tools:
             -
                 tool_id: meteor
-                not_interested: 4406
-                interested: 2822
-                never_heard: 1153
-                would_not_use: 752
-                would_use: 1117
+                counts: {not_interested: 4406, interested: 2822, never_heard: 1153, would_not_use: 752, would_use: 1117}
+                percentages: {not_interested: 43, interested: 27.5, never_heard: 11.2, would_not_use: 7.3, would_use: 10.9}
             -
                 tool_id: feathers
-                never_heard: 8188
-                not_interested: 1243
-                interested: 666
-                would_use: 93
-                would_not_use: 60
+                counts: {never_heard: 8188, not_interested: 1243, interested: 666, would_use: 93, would_not_use: 60}
+                percentages: {never_heard: 79.9, not_interested: 12.1, interested: 6.5, would_use: 0.9, would_not_use: 0.6}
     -
         survey_id: '2017'
         tools:
             -
                 tool_id: meteor
-                not_interested: 11202
-                interested: 5395
-                never_heard: 3485
-                would_not_use: 1959
-                would_use: 1625
+                counts: {not_interested: 11202, interested: 5395, never_heard: 3485, would_not_use: 1959, would_use: 1625}
+                percentages: {not_interested: 47.3, interested: 22.8, never_heard: 14.7, would_not_use: 8.3, would_use: 6.9}
             -
                 tool_id: express
-                would_use: 14514
-                interested: 3795
-                not_interested: 2271
-                never_heard: 1903
-                would_not_use: 1183
+                counts: {would_use: 14514, interested: 3795, not_interested: 2271, never_heard: 1903, would_not_use: 1183}
+                percentages: {would_use: 61.3, interested: 16, not_interested: 9.6, never_heard: 8, would_not_use: 5}
             -
                 tool_id: koa
-                never_heard: 12583
-                not_interested: 4243
-                interested: 4207
-                would_use: 2194
-                would_not_use: 439
+                counts: {never_heard: 12583, not_interested: 4243, interested: 4207, would_use: 2194, would_not_use: 439}
+                percentages: {never_heard: 53.2, not_interested: 17.9, interested: 17.8, would_use: 9.3, would_not_use: 1.9}
             -
                 tool_id: sails
-                never_heard: 13248
-                not_interested: 6262
-                interested: 2429
-                would_not_use: 1097
-                would_use: 630
+                counts: {never_heard: 13248, not_interested: 6262, interested: 2429, would_not_use: 1097, would_use: 630}
+                percentages: {never_heard: 56, not_interested: 26.5, interested: 10.3, would_not_use: 4.6, would_use: 2.7}
             -
                 tool_id: feathers
-                never_heard: 18558
-                not_interested: 2819
-                interested: 1665
-                would_use: 446
-                would_not_use: 178
+                counts: {never_heard: 18558, not_interested: 2819, interested: 1665, would_use: 446, would_not_use: 178}
+                percentages: {never_heard: 78.4, not_interested: 11.9, interested: 7, would_use: 1.9, would_not_use: 0.8}
     -
         survey_id: '2018'
         tools:
             -
                 tool_id: meteor
-                not_interested: 9727
-                interested: 3587
-                never_heard: 3939
-                would_not_use: 1533
-                would_use: 922
+                counts: {not_interested: 9727, interested: 3587, never_heard: 3939, would_not_use: 1533, would_use: 922}
+                percentages: {not_interested: 49.4, interested: 18.2, never_heard: 20, would_not_use: 7.8, would_use: 4.7}
             -
                 tool_id: express
-                would_use: 12764
-                interested: 3216
-                not_interested: 1737
-                never_heard: 1233
-                would_not_use: 768
+                counts: {would_use: 12764, interested: 3216, not_interested: 1737, never_heard: 1233, would_not_use: 768}
+                percentages: {would_use: 64.7, interested: 16.3, not_interested: 8.8, never_heard: 6.3, would_not_use: 3.9}
             -
                 tool_id: nextjs
-                never_heard: 7236
-                interested: 6902
-                not_interested: 3621
-                would_use: 1701
-                would_not_use: 226
+                counts: {never_heard: 7236, interested: 6902, not_interested: 3621, would_use: 1701, would_not_use: 226}
+                percentages: {never_heard: 36.8, interested: 35.1, not_interested: 18.4, would_use: 8.6, would_not_use: 1.1}
             -
                 tool_id: koa
-                never_heard: 9872
-                not_interested: 4600
-                interested: 3467
-                would_use: 1491
-                would_not_use: 268
+                counts: {never_heard: 9872, not_interested: 4600, interested: 3467, would_use: 1491, would_not_use: 268}
+                percentages: {never_heard: 50.1, not_interested: 23.4, interested: 17.6, would_use: 7.6, would_not_use: 1.4}
             -
                 tool_id: sails
-                never_heard: 10620
-                not_interested: 6038
-                interested: 1838
-                would_not_use: 858
-                would_use: 335
+                counts: {never_heard: 10620, not_interested: 6038, interested: 1838, would_not_use: 858, would_use: 335}
+                percentages: {never_heard: 53.9, not_interested: 30.7, interested: 9.3, would_not_use: 4.4, would_use: 1.7}
             -
                 tool_id: feathers
-                never_heard: 14839
-                not_interested: 3213
-                interested: 1177
-                would_use: 317
-                would_not_use: 145
+                counts: {never_heard: 14839, not_interested: 3213, interested: 1177, would_use: 317, would_not_use: 145}
+                percentages: {never_heard: 75.4, not_interested: 16.3, interested: 6, would_use: 1.6, would_not_use: 0.7}

@@ -11,11 +11,18 @@ experience:
     by_survey:
         -
             survey: '2017'
-            never_heard: 13380
-            not_interested: 4651
-            interested: 3479
-            would_use: 1567
-            would_not_use: 589
+            counts:
+                never_heard: 13380
+                not_interested: 4651
+                interested: 3479
+                would_use: 1567
+                would_not_use: 589
+            percentages:
+                never_heard: 56.5
+                not_interested: 19.7
+                interested: 14.7
+                would_use: 6.6
+                would_not_use: 2.5
 reasons:
     like: []
     dislike: []

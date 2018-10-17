@@ -11,11 +11,18 @@ experience:
     by_survey:
         -
             survey: '2016'
-            not_interested: 6202
-            would_not_use: 2449
-            interested: 870
-            would_use: 590
-            never_heard: 139
+            counts:
+                not_interested: 6202
+                would_not_use: 2449
+                interested: 870
+                would_use: 590
+                never_heard: 139
+            percentages:
+                not_interested: 60.5
+                would_not_use: 23.9
+                interested: 8.5
+                would_use: 5.8
+                never_heard: 1.4
 reasons:
     like: []
     dislike: []

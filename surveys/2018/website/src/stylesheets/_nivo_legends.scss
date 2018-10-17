@@ -30,6 +30,11 @@
 .Legends__Item {
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.Legends__Item:hover {
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .Legends__Item__Chip {

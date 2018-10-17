@@ -29,13 +29,13 @@ opinions:
     legends:
         never_heard: I've never heard of it
         not_interested: I've HEARD of it, and am NOT interested
-        would_learn: I've HEARD of it, and WOULD like to learn it
+        interested: I've HEARD of it, and WOULD like to learn it
         would_use: I've USED it before, and WOULD use it again
         would_not_use: I've USED it before, and would NOT use it again
     legends_short:
         never_heard: Never heard of it
         not_interested: Heard of it, not interested
-        would_learn: Heard of it, would like to learn
+        interested: Heard of it, would like to learn
         would_use: Used it, would use again
         would_not_use: Used it, would not use again
 

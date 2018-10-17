@@ -13,126 +13,75 @@ opinions:
         tools:
             -
                 tool_id: mocha
-                would_use: 4665
-                interested: 3071
-                not_interested: 1053
-                never_heard: 1153
-                would_not_use: 308
+                counts: {would_use: 4665, interested: 3071, not_interested: 1053, never_heard: 1153, would_not_use: 308}
+                percentages: {would_use: 45.5, interested: 30, not_interested: 10.3, never_heard: 11.2, would_not_use: 3}
             -
                 tool_id: jasmine
-                would_use: 4078
-                interested: 2820
-                not_interested: 1302
-                never_heard: 1235
-                would_not_use: 815
+                counts: {would_use: 4078, interested: 2820, not_interested: 1302, never_heard: 1235, would_not_use: 815}
+                percentages: {would_use: 39.8, interested: 27.5, not_interested: 12.7, never_heard: 12, would_not_use: 8}
             -
                 tool_id: jest
-                never_heard: 6545
-                would_use: 482
-                interested: 1701
-                not_interested: 1184
-                would_not_use: 338
+                counts: {never_heard: 6545, would_use: 482, interested: 1701, not_interested: 1184, would_not_use: 338}
+                percentages: {never_heard: 63.9, would_use: 4.7, interested: 16.6, not_interested: 11.6, would_not_use: 3.3}
             -
                 tool_id: enzyme
-                never_heard: 7108
-                would_use: 1075
-                interested: 1405
-                not_interested: 604
-                would_not_use: 58
+                counts: {never_heard: 7108, would_use: 1075, interested: 1405, not_interested: 604, would_not_use: 58}
+                percentages: {never_heard: 69.3, would_use: 10.5, interested: 13.7, not_interested: 5.9, would_not_use: 0.6}
             -
                 tool_id: ava
-                never_heard: 8230
-                not_interested: 573
-                interested: 995
-                would_use: 386
-                would_not_use: 66
+                counts: {never_heard: 8230, not_interested: 573, interested: 995, would_use: 386, would_not_use: 66}
+                percentages: {never_heard: 80.3, not_interested: 5.6, interested: 9.7, would_use: 3.8, would_not_use: 0.6}
     -
         survey_id: '2017'
         tools:
             -
                 tool_id: mocha
-                would_use: 10694
-                interested: 6585
-                not_interested: 2582
-                never_heard: 2254
-                would_not_use: 1551
+                counts: {would_use: 10694, interested: 6585, not_interested: 2582, never_heard: 2254, would_not_use: 1551}
+                percentages: {would_use: 45.2, interested: 27.8, not_interested: 10.9, never_heard: 9.5, would_not_use: 6.6}
             -
                 tool_id: jasmine
-                would_use: 9214
-                interested: 5769
-                not_interested: 3289
-                never_heard: 3033
-                would_not_use: 2361
+                counts: {would_use: 9214, interested: 5769, not_interested: 3289, never_heard: 3033, would_not_use: 2361}
+                percentages: {would_use: 38.9, interested: 24.4, not_interested: 13.9, never_heard: 12.8, would_not_use: 10}
             -
                 tool_id: jest
-                never_heard: 9006
-                would_use: 5845
-                interested: 6455
-                not_interested: 1964
-                would_not_use: 396
+                counts: {never_heard: 9006, would_use: 5845, interested: 6455, not_interested: 1964, would_not_use: 396}
+                percentages: {never_heard: 38.1, would_use: 24.7, interested: 27.3, not_interested: 8.3, would_not_use: 1.7}
             -
                 tool_id: enzyme
-                never_heard: 13526
-                would_use: 4567
-                interested: 3392
-                not_interested: 1913
-                would_not_use: 268
+                counts: {never_heard: 13526, would_use: 4567, interested: 3392, not_interested: 1913, would_not_use: 268}
+                percentages: {never_heard: 57.2, would_use: 19.3, interested: 14.3, not_interested: 8.1, would_not_use: 1.1}
             -
                 tool_id: ava
-                never_heard: 18004
-                not_interested: 1922
-                interested: 2175
-                would_use: 1174
-                would_not_use: 391
+                counts: {never_heard: 18004, not_interested: 1922, interested: 2175, would_use: 1174, would_not_use: 391}
+                percentages: {never_heard: 76.1, not_interested: 8.1, interested: 9.2, would_use: 5, would_not_use: 1.7}
     -
         survey_id: '2018'
         tools:
             -
                 tool_id: storybook
-                never_heard: 10547
-                interested: 4767
-                would_use: 3085
-                not_interested: 1225
-                would_not_use: 379
+                counts: {never_heard: 10547, interested: 4767, would_use: 3085, not_interested: 1225, would_not_use: 379}
+                percentages: {never_heard: 52.7, interested: 23.8, would_use: 15.4, not_interested: 6.1, would_not_use: 1.9}
             -
                 tool_id: mocha
-                would_use: 7873
-                interested: 5238
-                not_interested: 3133
-                never_heard: 2022
-                would_not_use: 1683
+                counts: {would_use: 7873, interested: 5238, not_interested: 3133, never_heard: 2022, would_not_use: 1683}
+                percentages: {would_use: 39.5, interested: 26.3, not_interested: 15.7, never_heard: 10.1, would_not_use: 8.4}
             -
                 tool_id: jasmine
-                would_use: 5689
-                interested: 4971
-                not_interested: 4515
-                never_heard: 2843
-                would_not_use: 1919
+                counts: {would_use: 5689, interested: 4971, not_interested: 4515, never_heard: 2843, would_not_use: 1919}
+                percentages: {would_use: 28.5, interested: 24.9, not_interested: 22.6, never_heard: 14.3, would_not_use: 9.6}
             -
                 tool_id: jest
-                never_heard: 4047
-                would_use: 7910
-                interested: 5923
-                not_interested: 1783
-                would_not_use: 289
+                counts: {never_heard: 4047, would_use: 7910, interested: 5923, not_interested: 1783, would_not_use: 289}
+                percentages: {never_heard: 20.3, would_use: 39.6, interested: 29.7, not_interested: 8.9, would_not_use: 1.4}
             -
                 tool_id: enzyme
-                never_heard: 9289
-                would_use: 4039
-                interested: 3612
-                not_interested: 2455
-                would_not_use: 528
+                counts: {never_heard: 9289, would_use: 4039, interested: 3612, not_interested: 2455, would_not_use: 528}
+                percentages: {never_heard: 46.6, would_use: 20.3, interested: 18.1, not_interested: 12.3, would_not_use: 2.7}
             -
                 tool_id: ava
-                never_heard: 14419
-                not_interested: 2674
-                interested: 1734
-                would_use: 804
-                would_not_use: 320
+                counts: {never_heard: 14419, not_interested: 2674, interested: 1734, would_use: 804, would_not_use: 320}
+                percentages: {never_heard: 72.3, not_interested: 13.4, interested: 8.7, would_use: 4, would_not_use: 1.6}
             -
                 tool_id: karma
-                never_heard: 6633
-                not_interested: 4091
-                interested: 3788
-                would_use: 3676
-                would_not_use: 1744
+                counts: {never_heard: 6633, not_interested: 4091, interested: 3788, would_use: 3676, would_not_use: 1744}
+                percentages: {never_heard: 33.3, not_interested: 20.5, interested: 19, would_use: 18.4, would_not_use: 8.7}

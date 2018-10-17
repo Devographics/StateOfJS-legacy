@@ -42,11 +42,20 @@ export const query = graphql`
                 survey_id
                 tools {
                     tool_id
-                    would_use
-                    would_not_use
-                    interested
-                    not_interested
-                    never_heard
+                    counts {
+                        would_not_use
+                        not_interested
+                        would_use
+                        interested
+                        never_heard
+                    }
+                    percentages {
+                        would_not_use
+                        not_interested
+                        would_use
+                        interested
+                        never_heard
+                    }
                 }
             }
         }

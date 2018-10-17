@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import LegendsItem from './LegendsItem'
 
 export default class Legends extends Component {
     static propTypes = {
@@ -16,7 +17,10 @@ export default class Legends extends Component {
         modifier: PropTypes.string,
         style: PropTypes.object.isRequired,
         itemStyle: PropTypes.object.isRequired,
-        chipStyle: PropTypes.object.isRequired
+        chipStyle: PropTypes.object.isRequired,
+        onMouseEnter: PropTypes.func,
+        onMouseLeave: PropTypes.func,
+        onClick: PropTypes.func
     }
 
     static defaultProps = {
@@ -29,7 +33,18 @@ export default class Legends extends Component {
     }
 
     render() {
-        const { layout, withFrame, legends, chipSize, style, itemStyle, chipStyle } = this.props
+        const {
+            layout,
+            withFrame,
+            legends,
+            chipSize,
+            style,
+            itemStyle,
+            chipStyle,
+            onMouseEnter,
+            onMouseLeave,
+            onClick
+        } = this.props
 
         const classNames = ['Legends', `Legends--${layout}`]
         if (withFrame === true) {
@@ -43,19 +58,19 @@ export default class Legends extends Component {
 
         return (
             <div className={classNames.join(' ')} style={rootStyle}>
-                {legends.map(({ label, color }) => (
-                    <div key={label} className="Legends__Item" style={{ ...itemStyle }}>
-                        <span
-                            className="Legends__Item__Chip"
-                            style={{
-                                width: chipSize,
-                                height: chipSize,
-                                background: color,
-                                ...chipStyle
-                            }}
-                        />
-                        {label}
-                    </div>
+                {legends.map(({ id, label, color }) => (
+                    <LegendsItem
+                        key={id}
+                        id={id}
+                        label={label}
+                        color={color}
+                        style={itemStyle}
+                        chipSize={chipSize}
+                        chipStyle={chipStyle}
+                        onMouseEnter={onMouseEnter}
+                        onMouseLeave={onMouseLeave}
+                        onClick={onClick}
+                    />
                 ))}
             </div>
         )

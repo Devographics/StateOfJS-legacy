@@ -5,8 +5,6 @@ import theme from '../../nivoTheme'
 import { getWording } from '../../helpers/wording'
 import Legends from './Legends'
 
-const colors = [...theme.opinionColors].reverse()
-
 export default class OpinionsLegends extends Component {
     static propTypes = {
         useShortLabels: PropTypes.bool.isRequired
@@ -19,13 +17,17 @@ export default class OpinionsLegends extends Component {
     render() {
         const { useShortLabels, ...rest } = this.props
 
-        const legends = toolOpinionKeys.map((id, i) => ({
-            id,
-            label: getWording(
-                useShortLabels === true ? `opinions.legends_short.${id}` : `opinions.legends.${id}`
-            ),
-            color: colors[i]
-        }))
+        const legends = toolOpinionKeys
+            .map(id => ({
+                id,
+                label: getWording(
+                    useShortLabels === true
+                        ? `opinions.legends_short.${id}`
+                        : `opinions.legends.${id}`
+                ),
+                color: theme.opinionColors[id]
+            }))
+            .reverse()
 
         return (
             <Legends

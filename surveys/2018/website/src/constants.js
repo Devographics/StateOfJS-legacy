@@ -51,45 +51,11 @@ export const colorScale = [
 ]
 
 export const toolOpinionKeys = [
-    'never_heard',
-    'not_interested',
-    'would_learn',
+    'would_use',
     'would_not_use',
-    'would_use'
-]
-
-export const experience = {
-    never_heard: `I've never heard of it`,
-    not_interested: `I've HEARD of it, and am NOT interested`,
-    would_learn: `I've HEARD of it, and WOULD like to learn it`,
-    would_use: `I've USED it before, and WOULD use it again`,
-    would_not_use: `I've USED it before, and would NOT use it again`
-}
-
-export const experienceKeys = [
-    `I've never heard of it`,
-    `I've HEARD of it, and am NOT interested`,
-    `I've HEARD of it, and WOULD like to learn it`,
-    `I've USED it before, and WOULD use it again`,
-    `I've USED it before, and would NOT use it again`
-]
-
-export const experienceColors = {
-    "I've never heard of it": colors.greyLight,
-    "I've HEARD of it, and WOULD like to learn it": colors.blue,
-    "I've HEARD of it, and am NOT interested": colors.blueLight,
-    "I've USED it before, and WOULD use it again": colors.red,
-    "I've USED it before, and would NOT use it again": colors.redLight
-}
-
-export const experienceInterestKeys = [
-    `I've HEARD of it, and WOULD like to learn it`,
-    `I've HEARD of it, and am NOT interested`
-]
-
-export const experienceSatisfactionKeys = [
-    `I've USED it before, and WOULD use it again`,
-    `I've USED it before, and would NOT use it again`
+    'interested',
+    'not_interested',
+    'never_heard'
 ]
 
 export const salaryKeys = [

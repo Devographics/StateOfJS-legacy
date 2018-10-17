@@ -33,7 +33,8 @@ exports.experiences = async (tools, surveys, config) => {
         const bySurvey = []
         const appearsInSurveys = surveys.filter(s => config[s].tools.includes(tool))
         appearsInSurveys.forEach(survey => {
-            const entry = toolAgg.buckets.reduce((acc, bucket) => {
+            let total = 0
+            const counts = toolAgg.buckets.reduce((acc, bucket) => {
                 const subBucket = bucket.survey.buckets.find(b => b.key === survey)
                 if (subBucket === undefined) {
                     return {
@@ -42,14 +43,23 @@ exports.experiences = async (tools, surveys, config) => {
                     }
                 }
 
+                total += subBucket.doc_count
+
                 return {
                     ...acc,
                     [bucket.key]: subBucket.doc_count,
                 }
             }, {})
+
+            const percentages = Object.entries(counts).reduce((acc, d) => ({
+                ...acc,
+                [d[0]]: Math.round(d[1] / total * 1000) / 10,
+            }), {})
+
             bySurvey.push({
                 survey,
-                ...entry,
+                counts,
+                percentages,
             })
         })
 

@@ -12,112 +12,67 @@ opinions:
         tools:
             -
                 tool_id: react
-                would_use: 4996
-                interested: 3616
-                not_interested: 1180
-                would_not_use: 403
-                never_heard: 55
+                counts: {would_use: 4996, interested: 3616, not_interested: 1180, would_not_use: 403, never_heard: 55}
+                percentages: {would_use: 48.7, interested: 35.3, not_interested: 11.5, would_not_use: 3.9, never_heard: 0.5}
             -
                 tool_id: angular_1
-                would_not_use: 3185
-                not_interested: 2657
-                would_use: 3256
-                interested: 1134
-                never_heard: 18
+                counts: {would_not_use: 3185, not_interested: 2657, would_use: 3256, interested: 1134, never_heard: 18}
+                percentages: {would_not_use: 31.1, not_interested: 25.9, would_use: 31.8, interested: 11.1, never_heard: 0.2}
             -
                 tool_id: ember
-                not_interested: 6079
-                interested: 2286
-                would_not_use: 759
-                never_heard: 453
-                would_use: 673
+                counts: {not_interested: 6079, interested: 2286, would_not_use: 759, never_heard: 453, would_use: 673}
+                percentages: {not_interested: 59.3, interested: 22.3, would_not_use: 7.4, never_heard: 4.4, would_use: 6.6}
             -
                 tool_id: vuejs
-                interested: 3298
-                not_interested: 3150
-                would_use: 894
-                never_heard: 2777
-                would_not_use: 131
+                counts: {interested: 3298, not_interested: 3150, would_use: 894, never_heard: 2777, would_not_use: 131}
+                percentages: {interested: 32.2, not_interested: 30.7, would_use: 8.7, never_heard: 27.1, would_not_use: 1.3}
     -
         survey_id: '2017'
         tools:
             -
                 tool_id: react
-                would_use: 13645
-                interested: 6356
-                not_interested: 2566
-                would_not_use: 1017
-                never_heard: 82
+                counts: {would_use: 13645, interested: 6356, not_interested: 2566, would_not_use: 1017, never_heard: 82}
+                percentages: {would_use: 57.7, interested: 26.9, not_interested: 10.8, would_not_use: 4.3, never_heard: 0.3}
             -
                 tool_id: angular_1
-                would_not_use: 9594
-                not_interested: 7610
-                would_use: 4705
-                interested: 1691
-                never_heard: 66
+                counts: {would_not_use: 9594, not_interested: 7610, would_use: 4705, interested: 1691, never_heard: 66}
+                percentages: {would_not_use: 40.5, not_interested: 32.2, would_use: 19.9, interested: 7.1, never_heard: 0.3}
             -
                 tool_id: ember
-                not_interested: 14990
-                interested: 4620
-                would_not_use: 1580
-                never_heard: 1359
-                would_use: 1117
+                counts: {not_interested: 14990, interested: 4620, would_not_use: 1580, never_heard: 1359, would_use: 1117}
+                percentages: {not_interested: 63.3, interested: 19.5, would_not_use: 6.7, never_heard: 5.7, would_use: 4.7}
             -
                 tool_id: polymer
-                not_interested: 9944
-                interested: 7000
-                never_heard: 4459
-                would_use: 1195
-                would_not_use: 1068
+                counts: {not_interested: 9944, interested: 7000, never_heard: 4459, would_use: 1195, would_not_use: 1068}
+                percentages: {not_interested: 42, interested: 29.6, never_heard: 18.8, would_use: 5, would_not_use: 4.5}
             -
                 tool_id: vuejs
-                interested: 12156
-                not_interested: 5126
-                would_use: 4638
-                never_heard: 1293
-                would_not_use: 453
+                counts: {interested: 12156, not_interested: 5126, would_use: 4638, never_heard: 1293, would_not_use: 453}
+                percentages: {interested: 51.4, not_interested: 21.7, would_use: 19.6, never_heard: 5.5, would_not_use: 1.9}
     -
         survey_id: '2018'
         tools:
             -
                 tool_id: react
-                would_use: 13062
-                interested: 3857
-                not_interested: 1860
-                would_not_use: 1355
-                never_heard: 28
+                counts: {would_use: 13062, interested: 3857, not_interested: 1860, would_not_use: 1355, never_heard: 28}
+                percentages: {would_use: 64.8, interested: 19.1, not_interested: 9.2, would_not_use: 6.7, never_heard: 0.1}
             -
                 tool_id: angular_1
-                would_not_use: 6826
-                not_interested: 6417
-                would_use: 4817
-                interested: 2089
-                never_heard: 21
+                counts: {would_not_use: 6826, not_interested: 6417, would_use: 4817, interested: 2089, never_heard: 21}
+                percentages: {would_not_use: 33.8, not_interested: 31.8, would_use: 23.9, interested: 10.4, never_heard: 0.1}
             -
                 tool_id: ember
-                not_interested: 13571
-                interested: 2847
-                would_not_use: 1261
-                never_heard: 1465
-                would_use: 1013
+                counts: {not_interested: 13571, interested: 2847, would_not_use: 1261, never_heard: 1465, would_use: 1013}
+                percentages: {not_interested: 67.3, interested: 14.1, would_not_use: 6.3, never_heard: 7.3, would_use: 5}
             -
                 tool_id: polymer
-                not_interested: 10396
-                interested: 4646
-                never_heard: 3732
-                would_use: 635
-                would_not_use: 759
+                counts: {not_interested: 10396, interested: 4646, never_heard: 3732, would_use: 635, would_not_use: 759}
+                percentages: {not_interested: 51.5, interested: 23, never_heard: 18.5, would_use: 3.1, would_not_use: 3.8}
             -
                 tool_id: vuejs
-                interested: 9395
-                not_interested: 4122
-                would_use: 5810
-                never_heard: 263
-                would_not_use: 564
+                counts: {interested: 9395, not_interested: 4122, would_use: 5810, never_heard: 263, would_not_use: 564}
+                percentages: {interested: 46.6, not_interested: 20.5, would_use: 28.8, never_heard: 1.3, would_not_use: 2.8}
             -
                 tool_id: preact
-                not_interested: 7446
-                never_heard: 5668
-                interested: 5533
-                would_use: 1251
-                would_not_use: 248
+                counts: {not_interested: 7446, never_heard: 5668, interested: 5533, would_use: 1251, would_not_use: 248}
+                percentages: {not_interested: 37, never_heard: 28.1, interested: 27.5, would_use: 6.2, would_not_use: 1.2}
