@@ -86,10 +86,10 @@ typeform:
             tool: react
         nPic:
             type: tool
-            tool: angular_1
+            tool: angular
         Fqkn:
             type: tool
-            tool: angular_2
+            tool: angular
         Gk1R:
             type: tool
             tool: ember
@@ -215,7 +215,7 @@ typeform:
             tool: react-native
         kOzD:
             type: tool
-            tool: phone_gap_cordova
+            tool: phonegap-cordova
         mg07:
             type: tool
             tool: nativescript
@@ -249,8 +249,8 @@ sections:
         freeform: 'Other Front-End Frameworks'
         tools:
             - react
-            - angular_1
-            - angular_2
+            - angular
+            - angular
             - ember
             - vuejs
             - backbone
@@ -319,7 +319,7 @@ sections:
             - native-apps
             - react-native
             - ionic
-            - phone_gap_cordova
+            - phonegap-cordova
             - nativescript
             - electron
 experience:
@@ -337,8 +337,8 @@ tools:
     - clojurescript
     - reason
     - react
-    - angular_1
-    - angular_2
+    - angular
+    - angular
     - ember
     - vuejs
     - backbone
@@ -383,7 +383,7 @@ tools:
     - native-apps
     - react-native
     - ionic
-    - phone_gap_cordova
+    - phonegap-cordova
     - nativescript
     - electron
 userInfo:

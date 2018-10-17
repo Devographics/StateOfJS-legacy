@@ -88,10 +88,10 @@ typeform:
             tool: react
         '28238795':
             type: tool
-            tool: angular_1
+            tool: angular
         '28238797':
             type: tool
-            tool: angular_2
+            tool: angular
         '28238799':
             type: tool
             tool: ember
@@ -202,7 +202,7 @@ typeform:
             tool: react-native
         '28239249':
             type: tool
-            tool: phone_gap
+            tool: phonegap
         '28239251':
             type: tool
             tool: nativescript
@@ -222,8 +222,8 @@ sections:
         tools:
             - no_frontend_framework
             - react
-            - angular_1
-            - angular_2
+            - angular
+            - angular
             - ember
             - vuejs
             - backbone
@@ -288,7 +288,7 @@ sections:
             - native-apps
             - react-native
             - cordova
-            - phone_gap
+            - phonegap
             - nativescript
 experience:
     'I''ve used it before, and would use it again': would_use
@@ -305,8 +305,8 @@ tools:
     - clojurescript
     - no_frontend_framework
     - react
-    - angular_1
-    - angular_2
+    - angular
+    - angular
     - ember
     - vuejs
     - backbone
@@ -343,7 +343,7 @@ tools:
     - native-apps
     - react-native
     - cordova
-    - phone_gap
+    - phonegap
     - nativescript
 userInfo:
     - years_of_experience

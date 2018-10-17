@@ -59,15 +59,16 @@ tools:
   karma: Ka
   cypress: Cy
   puppeteer: Pp
-  'json-server': Js
+  json-server: Js
   nightmare: Nm
-  'react-native': Rn
+  react-native: Rn
   electron: E
   ionic: Io
   nativescript: Ns
   weex: We
   nwjs: Nw
   cordova: Cv
+  phonegap-cordova: Cv
   d3: D
   jquery: Jq
   moment: Mt
@@ -80,6 +81,7 @@ tools:
   polymer: Po
   elm: El
   es6: E6
+  native-apps: Na
 
 utilities:
   color: "#FE6A6A"

@@ -54,8 +54,86 @@ experience:
                 never_heard: 28
                 would_not_use: 2.8
 reasons:
-    like: []
-    dislike: []
+    like:
+        -
+            id: fast_performance
+            count: 1560
+        -
+            id: well_established_option
+            count: 1236
+        -
+            id: full_featured_powerful
+            count: 1139
+        -
+            id: powerful_developer_tooling
+            count: 1006
+        -
+            id: good_documentation
+            count: 910
+        -
+            id: robust_less_error_prone_code
+            count: 835
+        -
+            id: rich_package_ecosystem
+            count: 747
+        -
+            id: backed_by_a_great_team_company
+            count: 720
+        -
+            id: stable_backwards_compatible
+            count: 687
+        -
+            id: elegant_programming_style_patterns
+            count: 637
+        -
+            id: simple_lightweight
+            count: 192
+        -
+            id: easy_learning_curve
+            count: 144
+        -
+            id: growing_momentum_popularity
+            count: 141
+    dislike:
+        -
+            id: hard_learning_curve
+            count: 298
+        -
+            id: bloated_complex
+            count: 242
+        -
+            id: clumsy_programming_style
+            count: 223
+        -
+            id: diminishing_momentum_popularity
+            count: 129
+        -
+            id: buggy_error_prone_code
+            count: 84
+        -
+            id: fast_changing_breaks_often
+            count: 63
+        -
+            id: concerns_about_the_team_company
+            count: 49
+        -
+            id: bad_documentation
+            count: 43
+        -
+            id: lacking_developer_tooling
+            count: 41
+        -
+            id: limited_lacking_in_features
+            count: 28
+        -
+            id: small_package_ecosystem
+            count: 25
+        -
+            id: poor_performance
+            count: 5
+        -
+            id: new_untested_option
+            count: 2
 would_use_by_continent:
     -
         survey: '2017'

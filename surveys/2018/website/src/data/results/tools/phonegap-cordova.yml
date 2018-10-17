@@ -1,4 +1,4 @@
-tool_id: phone_gap_cordova
+tool_id: phonegap-cordova
 appears_in_surveys:
     - '2017'
     - '2018'
@@ -39,8 +39,86 @@ experience:
                 interested: 11.8
                 would_use: 10.2
 reasons:
-    like: []
-    dislike: []
+    like:
+        -
+            id: well_established_option
+            count: 1015
+        -
+            id: rich_package_ecosystem
+            count: 798
+        -
+            id: easy_learning_curve
+            count: 737
+        -
+            id: good_documentation
+            count: 652
+        -
+            id: full_featured_powerful
+            count: 553
+        -
+            id: powerful_developer_tooling
+            count: 500
+        -
+            id: simple_lightweight
+            count: 300
+        -
+            id: backed_by_a_great_team_company
+            count: 271
+        -
+            id: stable_backwards_compatible
+            count: 257
+        -
+            id: elegant_programming_style_patterns
+            count: 252
+        -
+            id: fast_performance
+            count: 204
+        -
+            id: robust_less_error_prone_code
+            count: 164
+        -
+            id: growing_momentum_popularity
+            count: 128
+    dislike:
+        -
+            id: poor_performance
+            count: 2370
+        -
+            id: buggy_error_prone_code
+            count: 1563
+        -
+            id: diminishing_momentum_popularity
+            count: 1544
+        -
+            id: clumsy_programming_style
+            count: 1410
+        -
+            id: bloated_complex
+            count: 1157
+        -
+            id: limited_lacking_in_features
+            count: 922
+        -
+            id: bad_documentation
+            count: 769
+        -
+            id: lacking_developer_tooling
+            count: 735
+        -
+            id: hard_learning_curve
+            count: 623
+        -
+            id: concerns_about_the_team_company
+            count: 334
+        -
+            id: fast_changing_breaks_often
+            count: 316
+        -
+            id: small_package_ecosystem
+            count: 292
+        -
+            id: new_untested_option
+            count: 64
 would_use_by_continent:
     -
         survey: '2017'

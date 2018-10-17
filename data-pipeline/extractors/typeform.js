@@ -32,6 +32,13 @@ class TypeformExtractor {
         return rawResponse.json()
     }
 
+    getToolId(toolName) {
+        let tool = tools.find(t => t.id === toolName || t.aliases.includes(toolName))
+        if (tool) return tool.id
+
+        throw new Error(`no tool found for '${toolName}'`)
+    }
+
     async enhanceConfig() {
         const form = await this.fetchForm()
 
@@ -66,14 +73,10 @@ class TypeformExtractor {
             const sectionTools = []
             sectionField.properties.fields.forEach(field => {
                 if (isExperienceField(field)) {
-                    const tool = tools.find(t => t.aliases.includes(field.title))
-                    if (tool === undefined) {
-                        throw new Error(`no tool found for field ${field.title} (${JSON.stringify(field)})`)
-                    }
-
-                    fieldsConfig[field.id] = { type: types.FIELD_TYPE_TOOL, tool: tool.id }
-                    sectionTools.push(tool.id)
-                    this.config.tools.push(tool.id)
+                    const toolId = this.getToolId(field.title)
+                    fieldsConfig[field.id] = { type: types.FIELD_TYPE_TOOL, tool: toolId }
+                    sectionTools.push(toolId)
+                    this.config.tools.push(toolId)
                     return
                 }
 
@@ -90,7 +93,7 @@ class TypeformExtractor {
                 if (isLikeReasonsField(field)) {
                     fieldsConfig[field.id] = {
                         type: types.FIELD_TYPE_TOOL_LIKE_REASONS,
-                        tool: field.ref.slice(0, -5),
+                        tool: this.getToolId(field.ref.slice(0, -5)),
                     }
                     return
                 }
@@ -98,7 +101,7 @@ class TypeformExtractor {
                 if (isDislikeReasonsField(field)) {
                     fieldsConfig[field.id] = {
                         type: types.FIELD_TYPE_TOOL_DISLIKE_REASONS,
-                        tool: field.ref.slice(0, -5),
+                        tool: this.getToolId(field.ref.slice(0, -5))
                     }
                     return
                 }

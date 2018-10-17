@@ -74,7 +74,7 @@ typeform:
             tool: react
         RujrkmFbZRK1:
             type: tool
-            tool: angular_1
+            tool: angular
         MPgeP28502HF:
             type: like_reasons
             tool: angular
@@ -104,10 +104,10 @@ typeform:
             tool: vuejs
         h0QTVJ89u2ma:
             type: like_reasons
-            tool: vue
+            tool: vuejs
         xBVFgc8IPYpd:
             type: dislike_reasons
-            tool: vue
+            tool: vuejs
         JSN28A0EjEPL:
             type: tool
             tool: preact
@@ -197,10 +197,10 @@ typeform:
             tool: nextjs
         vRDzaO1MCtj2:
             type: like_reasons
-            tool: next.js
+            tool: nextjs
         gQc8tPx3i3k5:
             type: dislike_reasons
-            tool: next.js
+            tool: nextjs
         kYCrccJB6SYM:
             type: tool
             tool: koa
@@ -317,19 +317,19 @@ typeform:
             tool: react-native
         faf4dIz19DyE:
             type: like_reasons
-            tool: reactnative
+            tool: react-native
         rIIYh8BnkFnP:
             type: dislike_reasons
-            tool: reactnative
+            tool: react-native
         VqB583tSYSxU:
             type: tool
-            tool: phone_gap_cordova
+            tool: phonegap-cordova
         kV90YEYlVToI:
             type: like_reasons
-            tool: phonegap/cordova
+            tool: phonegap-cordova
         Vievhr88Kot0:
             type: dislike_reasons
-            tool: phonegap/cordova
+            tool: phonegap-cordova
         Vst6yDXqWzHQ:
             type: tool
             tool: nativescript
@@ -353,10 +353,10 @@ typeform:
             tool: native-apps
         mA1vAeZ1UFjv:
             type: like_reasons
-            tool: nativeapps
+            tool: native-apps
         IK9v8fGbukoT:
             type: dislike_reasons
-            tool: nativeapps
+            tool: native-apps
         cplwO8cN69yT:
             type: other_tools
             section: mobile-and-desktop
@@ -395,7 +395,7 @@ sections:
         freeform: 'Other Front-End options'
         tools:
             - react
-            - angular_1
+            - angular
             - ember
             - polymer
             - vuejs
@@ -436,7 +436,7 @@ sections:
         tools:
             - electron
             - react-native
-            - phone_gap_cordova
+            - phonegap-cordova
             - nativescript
             - ionic
             - native-apps
@@ -454,7 +454,7 @@ tools:
     - typescript
     - es6
     - react
-    - angular_1
+    - angular
     - ember
     - polymer
     - vuejs
@@ -479,7 +479,7 @@ tools:
     - karma
     - electron
     - react-native
-    - phone_gap_cordova
+    - phonegap-cordova
     - nativescript
     - ionic
     - native-apps

@@ -5,7 +5,7 @@ flow: 4
 typescript: 5
 es6: 6
 react: 1
-angular_1: 2
+angular: 2
 ember: 3
 polymer: 4
 vuejs: 5
@@ -30,7 +30,7 @@ ava: 6
 karma: 7
 electron: 1
 react-native: 2
-phone_gap_cordova: 3
+phonegap-cordova: 3
 nativescript: 4
 ionic: 5
 native-apps: 6

@@ -24,8 +24,86 @@ experience:
                 would_use: 8.6
                 would_not_use: 1.1
 reasons:
-    like: []
-    dislike: []
+    like:
+        -
+            id: elegant_programming_style_patterns
+            count: 926
+        -
+            id: fast_performance
+            count: 909
+        -
+            id: easy_learning_curve
+            count: 875
+        -
+            id: good_documentation
+            count: 850
+        -
+            id: backed_by_a_great_team_company
+            count: 684
+        -
+            id: full_featured_powerful
+            count: 647
+        -
+            id: growing_momentum_popularity
+            count: 595
+        -
+            id: simple_lightweight
+            count: 576
+        -
+            id: powerful_developer_tooling
+            count: 547
+        -
+            id: well_established_option
+            count: 475
+        -
+            id: rich_package_ecosystem
+            count: 419
+        -
+            id: robust_less_error_prone_code
+            count: 398
+        -
+            id: stable_backwards_compatible
+            count: 195
+    dislike:
+        -
+            id: bloated_complex
+            count: 88
+        -
+            id: clumsy_programming_style
+            count: 84
+        -
+            id: bad_documentation
+            count: 60
+        -
+            id: limited_lacking_in_features
+            count: 60
+        -
+            id: buggy_error_prone_code
+            count: 52
+        -
+            id: hard_learning_curve
+            count: 38
+        -
+            id: poor_performance
+            count: 35
+        -
+            id: lacking_developer_tooling
+            count: 28
+        -
+            id: fast_changing_breaks_often
+            count: 22
+        -
+            id: concerns_about_the_team_company
+            count: 22
+        -
+            id: small_package_ecosystem
+            count: 16
+        -
+            id: new_untested_option
+            count: 12
+        -
+            id: diminishing_momentum_popularity
+            count: 7
 would_use_by_continent:
     -
         survey: '2017'

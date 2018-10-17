@@ -75,7 +75,7 @@
       - electron
       - react-native
       - native-apps
-      - cordova
+      - phonegap-cordova
       - ionic
       - nativescript
       - other-libraries

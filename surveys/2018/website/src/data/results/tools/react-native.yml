@@ -54,8 +54,86 @@ experience:
                 never_heard: 2.3
                 would_not_use: 3.6
 reasons:
-    like: []
-    dislike: []
+    like:
+        -
+            id: rich_package_ecosystem
+            count: 2008
+        -
+            id: elegant_programming_style_patterns
+            count: 2001
+        -
+            id: backed_by_a_great_team_company
+            count: 1781
+        -
+            id: good_documentation
+            count: 1779
+        -
+            id: powerful_developer_tooling
+            count: 1751
+        -
+            id: well_established_option
+            count: 1679
+        -
+            id: growing_momentum_popularity
+            count: 1633
+        -
+            id: easy_learning_curve
+            count: 1568
+        -
+            id: fast_performance
+            count: 1375
+        -
+            id: full_featured_powerful
+            count: 1350
+        -
+            id: robust_less_error_prone_code
+            count: 846
+        -
+            id: simple_lightweight
+            count: 602
+        -
+            id: stable_backwards_compatible
+            count: 399
+    dislike:
+        -
+            id: buggy_error_prone_code
+            count: 345
+        -
+            id: poor_performance
+            count: 277
+        -
+            id: clumsy_programming_style
+            count: 260
+        -
+            id: limited_lacking_in_features
+            count: 241
+        -
+            id: fast_changing_breaks_often
+            count: 225
+        -
+            id: bloated_complex
+            count: 223
+        -
+            id: hard_learning_curve
+            count: 223
+        -
+            id: bad_documentation
+            count: 208
+        -
+            id: lacking_developer_tooling
+            count: 195
+        -
+            id: concerns_about_the_team_company
+            count: 144
+        -
+            id: small_package_ecosystem
+            count: 97
+        -
+            id: diminishing_momentum_popularity
+            count: 96
+        -
+            id: new_untested_option
+            count: 77
 would_use_by_continent:
     -
         survey: '2017'

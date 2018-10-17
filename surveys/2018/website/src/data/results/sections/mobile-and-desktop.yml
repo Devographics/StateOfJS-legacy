@@ -2,7 +2,7 @@ section_id: mobile-and-desktop
 tools:
     - electron
     - react-native
-    - phone_gap_cordova
+    - phonegap-cordova
     - nativescript
     - ionic
     - native-apps
@@ -34,7 +34,7 @@ opinions:
                 counts: {interested: 13481, not_interested: 4055, would_use: 4753, never_heard: 1015, would_not_use: 362}
                 percentages: {interested: 57, not_interested: 17.1, would_use: 20.1, never_heard: 4.3, would_not_use: 1.5}
             -
-                tool_id: phone_gap_cordova
+                tool_id: phonegap-cordova
                 counts: {not_interested: 9171, would_not_use: 4676, never_heard: 3188, interested: 3252, would_use: 3379}
                 percentages: {not_interested: 38.8, would_not_use: 19.8, never_heard: 13.5, interested: 13.7, would_use: 14.3}
             -
@@ -61,7 +61,7 @@ opinions:
                 counts: {interested: 10622, not_interested: 4428, would_use: 3738, never_heard: 461, would_not_use: 722}
                 percentages: {interested: 53.2, not_interested: 22.2, would_use: 18.7, never_heard: 2.3, would_not_use: 3.6}
             -
-                tool_id: phone_gap_cordova
+                tool_id: phonegap-cordova
                 counts: {not_interested: 8884, would_not_use: 3914, never_heard: 2763, interested: 2355, would_use: 2042}
                 percentages: {not_interested: 44.5, would_not_use: 19.6, never_heard: 13.8, interested: 11.8, would_use: 10.2}
             -

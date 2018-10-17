@@ -52,12 +52,14 @@ module.exports = [
         aliases: ['Polymer'],
     },
     {
-        id: 'angular_1',
-        aliases: ['Angular'],
+        id: 'angular',
+        aliases: [
+            'Angular', 'Angular 2',
+        ]
     },
     {
-        id: 'angular_2',
-        aliases: ['Angular 2'],
+        id: 'angular_1',
+        aliases: ['Angular 1'],
     },
     {
         id: 'ember',
@@ -65,7 +67,7 @@ module.exports = [
     },
     {
         id: 'vuejs',
-        aliases: ['Vue', 'Vue.js'],
+        aliases: ['vue', 'Vue', 'Vue.js'],
     },
     {
         id: 'backbone',
@@ -205,23 +207,23 @@ module.exports = [
     },
     {
         id: 'native-apps',
-        aliases: ['Native Apps'],
+        aliases: ['Native Apps', 'nativeapps'],
     },
     {
         id: 'react-native',
-        aliases: ['React Native'],
+        aliases: ['React Native', 'reactnative'],
     },
     {
         id: 'cordova',
         aliases: ['Cordova'],
     },
     {
-        id: 'phone_gap',
+        id: 'phonegap',
         aliases: ['PhoneGap'],
     },
     {
-        id: 'phone_gap_cordova',
-        aliases: ['PhoneGap/Cordova'],
+        id: 'phonegap-cordova',
+        aliases: ['PhoneGap/Cordova', 'phonegap/cordova'],
     },
     {
         id: 'nativescript',
@@ -281,7 +283,7 @@ module.exports = [
     },
     {
         id: 'nextjs',
-        aliases: ['Next.js'],
+        aliases: ['next.js', 'Next.js'],
     },
     {
         id: 'storybook',

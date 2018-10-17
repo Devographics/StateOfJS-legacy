@@ -54,8 +54,86 @@ experience:
                 never_heard: 1.3
                 would_not_use: 2.8
 reasons:
-    like: []
-    dislike: []
+    like:
+        -
+            id: easy_learning_curve
+            count: 4731
+        -
+            id: elegant_programming_style_patterns
+            count: 4522
+        -
+            id: good_documentation
+            count: 4349
+        -
+            id: simple_lightweight
+            count: 4091
+        -
+            id: fast_performance
+            count: 4006
+        -
+            id: growing_momentum_popularity
+            count: 3460
+        -
+            id: powerful_developer_tooling
+            count: 3059
+        -
+            id: full_featured_powerful
+            count: 2767
+        -
+            id: rich_package_ecosystem
+            count: 2612
+        -
+            id: well_established_option
+            count: 2309
+        -
+            id: robust_less_error_prone_code
+            count: 2132
+        -
+            id: backed_by_a_great_team_company
+            count: 1923
+        -
+            id: stable_backwards_compatible
+            count: 1342
+    dislike:
+        -
+            id: clumsy_programming_style
+            count: 355
+        -
+            id: limited_lacking_in_features
+            count: 127
+        -
+            id: concerns_about_the_team_company
+            count: 125
+        -
+            id: buggy_error_prone_code
+            count: 102
+        -
+            id: bloated_complex
+            count: 100
+        -
+            id: small_package_ecosystem
+            count: 91
+        -
+            id: lacking_developer_tooling
+            count: 87
+        -
+            id: hard_learning_curve
+            count: 66
+        -
+            id: bad_documentation
+            count: 60
+        -
+            id: diminishing_momentum_popularity
+            count: 52
+        -
+            id: new_untested_option
+            count: 44
+        -
+            id: fast_changing_breaks_often
+            count: 37
+        -
+            id: poor_performance
+            count: 36
 would_use_by_continent:
     -
         survey: '2017'

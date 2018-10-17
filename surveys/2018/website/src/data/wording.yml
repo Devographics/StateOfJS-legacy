@@ -21,9 +21,9 @@ tools:
   native-apps: Native Apps
   graphql: GraphQL
   es6: ES6
-  cordova: Cordova
-  phone_gap_cordova: Cordova
-
+  phonegap-cordova: Cordova
+  storybook: StoryBook
+  apollo: Apollo
 
 opinions:
     legends:
