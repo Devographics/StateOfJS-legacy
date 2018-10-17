@@ -15,15 +15,11 @@ const Dot = ({ x, y, data, color, current }) => {
     return (
         <g transform={`translate(${x},${y})`}>
             <rect
-                fill={color}
-                x={-20}
+                fill={"rgba(255,255,255,0.7)"}
+                x={-23}
                 y={-11}
-                rx={2}
-                ry={2}
-                width={40}
+                width={46}
                 height={22}
-                stroke="#212424"
-                strokeWidth={2}
                 r={16}
             />
             <text
@@ -95,7 +91,7 @@ export default class ToolOpinionsOverTimeChart extends Component {
 
         const key = toolOpinionKeys[keyIndex]
         if (current !== null && current !== key) {
-            return '#212424'
+            return `${theme.opinionColors[key]}33`
         }
 
         return theme.opinionColors[key]
