@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Logo = ({ width = "100%" }) => (
+const Logo = ({ width = '100%' }) => (
     <svg width={width} viewBox="0 0 492 296" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="99" y="99" width="98" height="98" fill="#2E2E2E" stroke="#fff" strokeWidth="2" />
         <path
