@@ -59,10 +59,12 @@ export default class Connections extends Component {
     render() {
         const { sections } = this.state
 
-        const sectionsKeys = sections.reduce(
-            (agg, section) => [...agg, ...keysBySection[section]],
-            []
-        )
+        const sectionsKeys = sections.reduce((agg, section) => {
+            const sectionKey = keysBySection[section]
+            if (sectionKey === undefined) return agg
+
+            return [...agg, ...sectionKey]
+        }, [])
 
         const keysIndexes = keys
             .map((key, index) => ({ key, index }))
@@ -78,7 +80,10 @@ export default class Connections extends Component {
 
         const colors = flatten(
             sections.map((section, i) => {
-                return keysBySection[section].map(() => chordScale[i])
+                const sectionKey = keysBySection[section]
+                if (sectionKey === undefined) return []
+
+                return sectionKey.map(() => chordScale[i])
             })
         )
 

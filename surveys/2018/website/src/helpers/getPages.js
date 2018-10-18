@@ -101,6 +101,8 @@ export const getPrevNextPages = path => {
         console.log('no current page!!')
         console.log(path)
         console.log(currentPage)
+
+        return {}
     } else {
         if (currentPage.section.hide) {
             // page is outside "normal" sidebar nav

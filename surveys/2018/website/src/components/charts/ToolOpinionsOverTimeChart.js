@@ -4,7 +4,7 @@ import theme from '../../nivoTheme'
 import { toolOpinionKeys } from '../../constants'
 import OpinionsLegends from '../elements/OpinionsLegends'
 
-const Dot = ({ x, y, data, color, current }) => {
+const Dot = ({ x, y, data, current }) => {
     if (current !== null && data.key !== current) {
         return null
     }
@@ -14,14 +14,7 @@ const Dot = ({ x, y, data, color, current }) => {
 
     return (
         <g transform={`translate(${x},${y})`}>
-            <rect
-                fill={"rgba(255,255,255,0.7)"}
-                x={-23}
-                y={-11}
-                width={46}
-                height={22}
-                r={16}
-            />
+            <rect fill={'rgba(255,255,255,0.7)'} x={-23} y={-11} width={46} height={22} r={16} />
             <text
                 x={15}
                 fill="#212424"

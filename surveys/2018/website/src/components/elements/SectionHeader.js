@@ -4,20 +4,24 @@ import withPageData from '../../helpers/withPageData'
 
 const SectionHeader = ({ currentPage, showIntro = false }) => (
     <div className="SectionHeader">
-        {/* <div>
+        {/*
+        <div>
             <PeriodicTableElementHtml
                 size={150}
                 name={currentPage.section.label}
                 symbol={"Fe"}
                 number={7}
             />
-        </div> */}
-        <div>
-            <div className="SectionHeader__Header">
-                <h2 className="SectionHeader__Title">{currentPage.title}</h2>
-            </div>
-            {showIntro && <div>{currentPage.intro}</div>}
         </div>
+        */}
+        {currentPage && (
+            <div>
+                <div className="SectionHeader__Header">
+                    <h2 className="SectionHeader__Title">{currentPage.title}</h2>
+                </div>
+                {showIntro && <div>{currentPage.intro}</div>}
+            </div>
+        )}
     </div>
 )
 

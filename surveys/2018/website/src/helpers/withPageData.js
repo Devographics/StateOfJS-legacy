@@ -10,6 +10,7 @@ function withPageData(WrappedComponent) {
                     {({ location }) => {
                         const path = location.pathname
                         const pages = getPrevNextPages(path)
+
                         return <WrappedComponent path={path} {...pages} {...this.props} />
                     }}
                 </Location>
@@ -17,6 +18,7 @@ function withPageData(WrappedComponent) {
         }
     }
     hoc.displayName = `withPageData(${WrappedComponent.displayName})`
+
     return hoc
 }
 
