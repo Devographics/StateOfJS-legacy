@@ -24,8 +24,8 @@ const Demographics = ({ data, ...rest }) => {
 export default Demographics
 
 export const query = graphql`
-    query demographics {
-        resultsYaml {
+    query {
+        resultsYaml(demographics: { by_continent: { elemMatch: { continent: { ne: null } } } }) {
             demographics {
                 by_continent {
                     continent

@@ -1,3 +1,5 @@
+const ignoreFiles = ['**/charts.yml', '**/nav.yaml', '**/wording.yml']
+
 module.exports = {
     siteMetadata: {
         title: `The State Of JavaScript`
@@ -8,14 +10,16 @@ module.exports = {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'pages',
-                path: `${__dirname}/src/pages/`
+                path: `${__dirname}/src/pages/`,
+                ignore: ignoreFiles
             }
         },
         {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `data`,
-                path: `${__dirname}/src/data/`
+                path: `${__dirname}/src/data/`,
+                ignore: ignoreFiles
                 //ignore: [`**/\.*`], // ignore files starting with a dot
             }
         },
@@ -23,7 +27,8 @@ module.exports = {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `content`,
-                path: `${__dirname}/src/content/`
+                path: `${__dirname}/src/content/`,
+                ignore: ignoreFiles
                 //ignore: [`**/\.*`], // ignore files starting with a dot
             }
         },
