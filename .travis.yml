@@ -25,10 +25,8 @@ install:
 script:
   - make fmt_check
   - make lint
-  # too many errors, should be fixed or rules updated
-  #- yarn lint
-  # ensure the project builds correctly
-  #- yarn build
+  - make survey_install_2018
+  - make survey_build_2018
   # starts static server
   #- cd public && python -m SimpleHTTPServer &
   #- sleep 6
