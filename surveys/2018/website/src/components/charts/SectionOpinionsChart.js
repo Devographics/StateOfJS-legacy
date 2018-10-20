@@ -45,7 +45,7 @@ export default class SectionOpinionsChart extends Component {
     getColor = ({ id }) => {
         const { current } = this.state
         if (current !== null && current !== id) {
-            return '#212424'
+            return `${theme.opinionColors[id]}33`
         }
 
         return theme.opinionColors[id]

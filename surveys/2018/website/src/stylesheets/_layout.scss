@@ -59,17 +59,6 @@
     margin: $spacing * 2 $spacing * 4;
 }
 
-.pagetitle__wrapper {
-    padding: $spacing;
-    @include border;
-    margin-bottom: $spacing * 2;
-}
-.pagetitle__wrapper--title {
-    // border-bottom: 2px solid $border-color;
-}
-.pagetitle__wrapper--pagination {
-    // border-top: 2px solid $border-color;
-}
 
 .template {
 }

@@ -28,11 +28,16 @@ const ToolTemplate = ({ pageContext, data }) => {
                     </div>
                 )}
                 <ToolHeaderBlock section={pageContext.section} tool={pageContext.tool} />
-                {shouldDisplayExperienceOverTime && (
+                {shouldDisplayExperienceOverTime ? (
                     <ToolOpinionsOverTimeBlock
                         tool={pageContext.tool}
                         opinions={data.toolsYaml.experience}
                     />
+                ) : (
+                    <p className="tool-over-time-no-data">
+                        Sorry, we don't have enough data to display the evolution of this library's
+                        popularity over time.
+                    </p>
                 )}
                 {data.toolsYaml !== null && (
                     <ReasonsBlock tool={pageContext.tool} reasons={data.toolsYaml.reasons} />

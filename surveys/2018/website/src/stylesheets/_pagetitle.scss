@@ -1,3 +1,15 @@
+.pagetitle__wrapper{
+    border-top: 1px solid $dark-border-color;
+    border-bottom: 1px solid $dark-border-color;
+    margin-bottom: $spacing * 2;
+}
+.pagetitle__wrapper--title {
+    // border-bottom: 2px solid $border-color;
+}
+.pagetitle__wrapper--pagination {
+    // border-top: 2px solid $border-color;
+}
+
 .pagetitle {
     font-size: $larger-font;
 }
@@ -32,14 +44,20 @@
 }
 
 .pagination__link {
+    padding: $spacing;
     display: block;
     @include secondary-font;
     white-space: nowrap;
+    flex: 0 0 50%;
+    border-right: 1px solid $dark-border-color;
     @include small {
         font-size: $small-font;
     }
     @include medium-large {
         font-size: $medium-font;
+    }
+    &:hover{
+        background: rgba(255,255,255,0.1);
     }
 }
 
@@ -60,16 +78,20 @@
     }
     @include large {
         text-align: left;
-        margin-right: $spacing;
+        // margin-right: $spacing;
     }
 }
 
 .pagination__next {
+    border: none;
     @include small-medium {
         text-align: center;
     }
     @include large {
         text-align: right;
-        margin-left: $spacing;
+        // margin-left: $spacing;
+    }
+    span + &{
+        border-left: 1px solid $dark-border-color;
     }
 }

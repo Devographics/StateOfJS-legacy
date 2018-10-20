@@ -28,7 +28,7 @@ class PageTitle extends React.PureComponent {
     // }
 
     render() {
-        const { currentPage, previousPage, nextPage, mode, title } = this.props
+        const { currentPage, previousPage, nextPage, mode, title, position } = this.props
         const tabindex = {}
 
         return (
@@ -40,7 +40,10 @@ class PageTitle extends React.PureComponent {
                     `pagetitle__wrapper`,
                     mode === 'pagination'
                         ? 'pagetitle__wrapper--pagination'
-                        : 'pagetitle__wrapper--title'
+                        : 'pagetitle__wrapper--title',
+                    position === 'top'
+                        ? 'pagetitle__wrapper--top'
+                        : 'pagetitle__wrapper--bottom',
                 )}
             >
                 <div className="pagetitle">

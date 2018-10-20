@@ -170,9 +170,9 @@ export default class Layout extends PureComponent {
                                 </div>
                             </div>
                             <div className="content">
-                                <PageTitle {...this.props} mode="pagination" />
+                                <PageTitle {...this.props} mode="pagination" position="top" />
                                 {this.props.children}
-                                {showPagination && <PageTitle {...this.props} mode="pagination" />}
+                                {showPagination && <PageTitle {...this.props} mode="pagination" position="bottom" />}
                             </div>
                         </div>
                     </div>
