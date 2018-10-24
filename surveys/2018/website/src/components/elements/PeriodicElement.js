@@ -19,7 +19,7 @@ const PeriodicElement = ({
         viewBox={`0 0 ${size} ${size}`}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="PeriodicTableElementSvg"
+        className="PeriodicTableElement"
         onClick={() => {
             if (path) {
                 navigate(path)
@@ -31,11 +31,11 @@ const PeriodicElement = ({
             y="0"
             width={size}
             height={size}
-            className={`PeriodicTableElementSvg_Frame PeriodicTableElementSvg_Frame--${mode}`}
+            className={`PeriodicTableElement_Frame PeriodicTableElement_Frame--${mode}`}
         />
 
         <text
-            className="PeriodicTableElementHtml_Number"
+            className="PeriodicTableElement_Number"
             x={size * 0.1}
             y={size * 0.2}
             fontSize={size * 0.14}
@@ -45,7 +45,7 @@ const PeriodicElement = ({
         </text>
 
         <text
-            className="PeriodicTableElementSvg_Symbol"
+            className="PeriodicTableElement_Symbol"
             x={size * 0.5}
             y={size * 0.55}
             width="100%"
@@ -57,7 +57,7 @@ const PeriodicElement = ({
         </text>
 
         <text
-            className="PeriodicTableElementSvg_Label"
+            className="PeriodicTableElement_Label"
             x={size * 0.5}
             y={size * 0.78}
             fontSize={size * 0.14}
