@@ -10,7 +10,7 @@
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.PeriodicTableElementHtml_Index {
+.PeriodicTableElementHtml_Number {
     position: absolute;
     opacity: 0.6;
     line-height: 1em;
@@ -33,22 +33,23 @@
     opacity: 0.6;
 }
 
-.PeriodicTableElementSvg {
+.PeriodicTableElementSvg_Frame {
     stroke-width: 1px;
     stroke: #646a6a;
     fill: #212424;
-    cursor: pointer;
-}
-
-.PeriodicTableElementSvg:hover {
-    stroke: #eee;
+    &--chart{
+        cursor: pointer;
+        &:hover {
+            stroke: #eee;
+        }
+    }
 }
 
 .PeriodicTableElementSvg_Shadow {
     fill: rgba(0, 0, 0, 0.35);
 }
 
-.PeriodicTableElementSvg_Index {
+.PeriodicTableElementSvg_Number {
     position: absolute;
     opacity: 0.6;
     pointer-events: none;
@@ -58,6 +59,7 @@
 .PeriodicTableElementSvg_Symbol {
     font-weight: 500;
     pointer-events: none;
+    color: $active-color;
 }
 
 .PeriodicTableElementSvg_Label {

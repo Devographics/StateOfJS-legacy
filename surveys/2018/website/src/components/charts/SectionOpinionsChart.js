@@ -6,7 +6,9 @@ import { navigate } from 'gatsby'
 import theme from '../../nivoTheme'
 import { getToolName } from '../../helpers/wording'
 import OpinionsLegends from '../elements/OpinionsLegends'
-import PeriodicTableElementSvg from '../elements/PeriodicTableElementSvg'
+import PeriodicElement from '../elements/PeriodicElement'
+import ranking from '../../data/results/tools_ranking.yml'
+import periodicTableData from '../../data/periodic_table.yml'
 
 const patterns = [
     {
@@ -112,13 +114,15 @@ export default class SectionOpinionsChart extends Component {
                                         key={tick.key}
                                         transform={`translate(${tick.x - 30},${tick.y - 80})`}
                                     >
-                                        <PeriodicTableElementSvg
+                                        <PeriodicElement
+                                            mode="chart"
                                             section={section}
                                             tool={tick.value}
+                                            symbol={periodicTableData.tools[tick.value] || '??'}
+                                            name={getToolName(tick.value)}
                                             size={60}
-                                            onClick={() => {
-                                                navigate(`${section}/${tick.value}`)
-                                            }}
+                                            number={ranking[tick.value]}
+                                            path={`${section}/${tick.value}`}
                                         />
                                     </g>
                                 )
@@ -138,7 +142,7 @@ export default class SectionOpinionsChart extends Component {
                                         }}
                                     >
                                         <text
-                                            fill="rgb(254, 106, 106)"
+                                            fill="#41c7c7"
                                             textAnchor="middle"
                                             alignmentBaseline="hanging"
                                             style={{ fontSize: '13px' }}

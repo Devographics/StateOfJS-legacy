@@ -13,7 +13,6 @@ export default class PeriodicTableElementHtml extends PureComponent {
         const { symbol, number, name, size, style, ...rest } = this.props
 
         const layout = computePeriodicTableElement(size)
-        const color = '#41c7c7' //periodicTableData.sections[section]
         return (
             <div
                 className="PeriodicTableElementHtml"
@@ -25,7 +24,7 @@ export default class PeriodicTableElementHtml extends PureComponent {
                 {...rest}
             >
                 <div
-                    className="PeriodicTableElementHtml_Index"
+                    className="PeriodicTableElementHtml_Number"
                     style={{
                         fontSize: layout.indexFontSize,
                         height: layout.indexFontSize,
@@ -41,7 +40,6 @@ export default class PeriodicTableElementHtml extends PureComponent {
                         top: layout.symbolY,
                         height: layout.symbolHeight,
                         fontSize: layout.symbolFontSize,
-                        color
                     }}
                 >
                     {symbol}

@@ -1,10 +1,15 @@
 .ToolHeader {
-    display: grid;
-    grid-template-columns: 150px auto;
-    grid-column-gap: $spacing * 1.5;
+    display: flex;
     margin-bottom: $spacing * 2;
+    .PeriodicTableElementHtml{
+        width: 100%;
+    }
 }
-
+.ToolHeader__Element{
+    margin-right: $spacing;
+    flex-shrink: 1;
+    flex-basis: 150px;
+}
 .SectionHeader {
     margin-bottom: $spacing * 2;
 }
