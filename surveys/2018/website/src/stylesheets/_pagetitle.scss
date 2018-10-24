@@ -84,6 +84,7 @@
         padding: 0 $spacing/2;
         height: 100%;
         @include flex-center;
+        border-right: 1px solid $dark-border-color;
     }
     @include medium-large {
         display: none;
