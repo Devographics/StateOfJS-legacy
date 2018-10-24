@@ -130,7 +130,8 @@
     font-size: $smallish-font;
 }
 
-.OverTime__Chart, .Overview__Chart {
+.OverTime__Chart,
+.Overview__Chart {
     @include small {
     }
     @include medium_large {
@@ -141,8 +142,23 @@
 }
 
 .Overview__Chart {
-    .Legends{
+    .Legends {
         margin-top: 81px;
         margin-bottom: 30px;
+    }
+}
+
+.OpinionSelector {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: none;
+    color: $blue;
+    border-bottom: 1px dashed $blue;
+    border-radius: 0;
+
+    &:focus {
+        outline: transparent;
+        border-bottom-style: solid;
     }
 }

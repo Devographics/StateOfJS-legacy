@@ -1,14 +1,32 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { getWording, getToolName } from '../../helpers/wording'
 import ShareChart from '../common/ShareChart'
 
-const BlockTitle = ({ chart, tool }) => (
-    <div className="block__title">
-        <h3 className="block__title__text">
-            {getWording(`charts.${chart}`, { tool: getToolName(tool) })}
-        </h3>
-        <ShareChart className="block__title__share" chart={chart} />
-    </div>
-)
+class BlockTitle extends Component {
+
+    state = {
+        showOptions: false
+    }
+
+    toggleClass = () => {
+        this.setState({
+            showOptions: !this.state.showOptions
+        })
+    }
+
+    render() {
+        const { chart, tool } = this.props
+        const { showOptions } = this.state
+
+        return (
+            <div className={`Block__Title Block__Title--${showOptions ? 'open' : 'closed'}`}>
+                <h3 className="Block__Title__Text">
+                    {getWording(`charts.${chart}`, { tool: getToolName(tool) })}
+                </h3>
+                <ShareChart className="Block__Title__Share" chart={chart} toggleClass={this.toggleClass} />
+            </div>
+        )
+    }
+}
 
 export default BlockTitle

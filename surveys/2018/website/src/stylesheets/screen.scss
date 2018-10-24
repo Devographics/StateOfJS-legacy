@@ -25,19 +25,16 @@ Elements
 */
 @import '_nav.scss';
 @import '_blocks.scss';
-@import '_averages.scss';
-@import '_tooltips.scss';
+// @import '_averages.scss';
+// @import '_tooltips.scss';
 @import '_share.scss';
 @import '_resources.scss';
 @import '_pagetitle.scss';
 @import '_newsletter.scss';
-@import '_worldwide.scss';
-@import '_happiness.scss';
 @import '_footer.scss';
-@import '_section_developers.scss';
+// @import '_section_developers.scss';
 @import '_periodic_table.scss';
 @import '_tool_header.scss';
-@import '_opinion_selector.scss';
 
 /*
 
@@ -49,3 +46,6 @@ Charts
 @import '_filters.scss';
 @import '_legends.scss';
 @import '_quadrant_chart.scss';
+@import '_happiness.scss';
+
+// @import '_worldwide.scss';

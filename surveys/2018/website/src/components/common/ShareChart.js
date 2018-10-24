@@ -141,6 +141,8 @@ class ShareChart extends Component {
 
     toggleOptions = e => {
         e.preventDefault()
+        // toggle parent component's class
+        this.props.toggleClass && this.props.toggleClass()
         this.setState({
             showOptions: !this.state.showOptions
         })
