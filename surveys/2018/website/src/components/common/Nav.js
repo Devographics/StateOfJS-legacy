@@ -4,6 +4,7 @@ import classNames from 'classnames'
 import nav from '../../data/nav.yaml'
 import filter from 'lodash/filter'
 import { createPage } from '../../helpers/getPages'
+import withPageData from '../../helpers/withPageData'
 
 const navFiltered = filter(nav, item => !item.hide)
 
@@ -61,4 +62,4 @@ const Nav = ({ path, closeSidebar }) => {
     )
 }
 
-export default Nav
+export default withPageData(Nav)

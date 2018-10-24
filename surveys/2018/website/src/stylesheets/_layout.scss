@@ -1,13 +1,3 @@
-.outer-wrapper {
-    // @include small-medium{
-    //   padding: $spacing;
-    // }
-    // @include large{
-    //   padding: $spacing $spacing*4 $spacing*4 $spacing*4;
-    //   // border: 3px solid $border-color;
-    //   min-height: calc(100vh - 22px);
-    // }
-}
 
 .pagelayout {
     &.sidebar--shown {
@@ -53,10 +43,14 @@
     }
 }
 
-.content {
+.pagelayout__content {
     flex: 1;
-    // @include border;
-    margin: $spacing * 2 $spacing * 4;
+    @include small{
+        margin: $spacing;
+    }
+    @include medium-large{
+        margin: $spacing * 2 $spacing * 4;
+    }
 }
 
 

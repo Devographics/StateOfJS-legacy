@@ -30,7 +30,8 @@ export const createPage = (sectionIndex, subSectionIndex) => {
     const page = {
         section: {
             ...section,
-            label: wording.nav[section.id],
+            label: getWording(`nav.${section.id}`),
+            shortLabel: getWording(`shortnames.${section.id}`),
             index: sectionIndex,
             slug: section.id
         }
@@ -51,8 +52,9 @@ export const createPage = (sectionIndex, subSectionIndex) => {
     // note: if section specifies its own path use that
     page.path = section.path || getPageUrl(page)
     page.url = getPageUrl(page, true)
+    page.shortTitle = getPageTitle(page, 'short')
     page.title = getPageTitle(page)
-    page.fullTitle = getPageTitle(page, true)
+    page.fullTitle = getPageTitle(page, 'full')
     page.intro = getWording(`intros.${page.section.id}`)
     return page
 }

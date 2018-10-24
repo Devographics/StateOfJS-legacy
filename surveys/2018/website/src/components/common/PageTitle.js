@@ -41,9 +41,7 @@ class PageTitle extends React.PureComponent {
                     mode === 'pagination'
                         ? 'pagetitle__wrapper--pagination'
                         : 'pagetitle__wrapper--title',
-                    position === 'top'
-                        ? 'pagetitle__wrapper--top'
-                        : 'pagetitle__wrapper--bottom',
+                    position === 'top' ? 'pagetitle__wrapper--top' : 'pagetitle__wrapper--bottom'
                 )}
             >
                 <div className="pagetitle">
@@ -54,19 +52,24 @@ class PageTitle extends React.PureComponent {
                                 to={previousPage.path}
                             >
                                 <span className="pagination__link__symbol">&lt;&lt;&nbsp;</span>
-                                <span className="pagination__link__label">
+                                <span className="pagination__link__label pagination__link__label--full">
                                     {previousPage.title}
+                                </span>
+                                <span className="pagination__link__label pagination__link__label--short">
+                                    {previousPage.shortTitle}
                                 </span>
                             </Link>
                         ) : (
                             <span />
                         )}
-                        {mode === 'title' && (
-                            <h2 className="pagetitle__main">{title || currentPage.title}</h2>
-                        )}
                         {nextPage ? (
                             <Link className="pagination__link pagination__next" to={nextPage.path}>
-                                <span className="pagination__link__label">{nextPage.title}</span>
+                                <span className="pagination__link__label pagination__link__label--full">
+                                    {nextPage.title}
+                                </span>
+                                <span className="pagination__link__label pagination__link__label--short">
+                                    {nextPage.shortTitle}
+                                </span>
                                 <span className="pagination__link__symbol">&nbsp;&gt;&gt;</span>
                             </Link>
                         ) : (
