@@ -1,12 +1,12 @@
 import React from 'react'
 import Meta from '../elements/Meta'
 import Layout from '../common/Layout'
-import SectionOpinionsBlock from '../blocks/SectionOpinionsBlock'
+import OverviewBlock from '../blocks/OverviewBlock'
 import HappinessBlock from '../blocks/HappinessBlock'
 import { graphql } from 'gatsby'
 import SectionHeader from '../elements/SectionHeader'
 
-const SectionOverviewTemplate = ({ pageContext, data }) => {
+const OverviewTemplate = ({ pageContext, data }) => {
     const section = data.sectionsYaml
     const hasEntry = section !== null
 
@@ -23,7 +23,7 @@ const SectionOverviewTemplate = ({ pageContext, data }) => {
                     </div>
                 )}
                 {hasEntry && (
-                    <SectionOpinionsBlock
+                    <OverviewBlock
                         section={pageContext.section}
                         opinions={section.opinions}
                     />
@@ -62,4 +62,4 @@ export const query = graphql`
     }
 `
 
-export default SectionOverviewTemplate
+export default OverviewTemplate

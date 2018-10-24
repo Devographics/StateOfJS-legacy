@@ -130,7 +130,7 @@
     font-size: $smallish-font;
 }
 
-.OverTime__Chart, .SectionOpinions__Chart {
+.OverTime__Chart, .Overview__Chart {
     @include small {
     }
     @include medium_large {
@@ -140,7 +140,7 @@
     }
 }
 
-.SectionOpinions__Chart {
+.Overview__Chart {
     .Legends{
         margin-top: 81px;
         margin-bottom: 30px;

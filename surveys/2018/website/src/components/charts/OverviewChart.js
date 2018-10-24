@@ -22,7 +22,7 @@ const patterns = [
     }
 ]
 
-export default class SectionOpinionsChart extends Component {
+export default class OverviewChart extends Component {
     static propTypes = {
         section: PropTypes.string.isRequired,
         opinions: PropTypes.arrayOf(
@@ -77,7 +77,7 @@ export default class SectionOpinionsChart extends Component {
 
         return (
             <div
-                className="SectionOpinions__Chart"
+                className="Overview__Chart"
             >
                 <div style={{ height: 360 }}>
                     <ResponsiveBar

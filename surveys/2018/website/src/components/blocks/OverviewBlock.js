@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import SectionOpinionsChart from '../charts/SectionOpinionsChart'
+import OverviewChart from '../charts/OverviewChart'
 import BlockTitle from '../elements/BlockTitle'
 
-export default class SectionOpinionsBlock extends Component {
+export default class OverviewBlock extends Component {
     static propTypes = {
         section: PropTypes.string.isRequired,
         opinions: PropTypes.arrayOf(
@@ -15,12 +15,12 @@ export default class SectionOpinionsBlock extends Component {
 
     render() {
         return (
-            <div className="block">
+            <div className="Overview__Block block">
                 <BlockTitle chart="overview" />
-                <div className="block__description">
+                <div className="Overview__Block__Description block__description">
                     <p>Per-library survey results.</p>
                 </div>
-                <SectionOpinionsChart section={this.props.section} opinions={this.props.opinions} />
+                <OverviewChart section={this.props.section} opinions={this.props.opinions} />
             </div>
         )
     }

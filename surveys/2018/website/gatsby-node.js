@@ -47,7 +47,7 @@ exports.createPages = async ({ actions }) => {
                 let pageCharts = []
                 switch (subPage) {
                     case 'overview':
-                        templateName = 'SectionOverview'
+                        templateName = 'Overview'
                         subPageContext = {
                             section: item.id
                         }
