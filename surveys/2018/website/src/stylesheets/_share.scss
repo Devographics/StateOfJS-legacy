@@ -26,13 +26,13 @@
         pointer-events: auto;
         @include small{
             &.share__link--twitter {
-                transform: translateX(-400%) scale(1);
+                transform: translateX(-580%) scale(1);
             }
             &.share__link--facebook {
-                transform: translateX(-380%) scale(1);
+                transform: translateX(-480%) scale(1);
             }
             &.share__link--email {
-                transform: translateX(-340%) scale(1);
+                transform: translateX(-360%) scale(1);
             }
 
         }

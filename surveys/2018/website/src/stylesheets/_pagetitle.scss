@@ -12,8 +12,17 @@
     text-align: center;
     z-index: 10;
     position: relative;
-    @include flex-center;
-    justify-content: space-between;
+    display: grid;
+
+    .pagetitle__wrapper--top &{
+        grid-template-columns: 1fr 50px 1fr;
+
+    }
+    .pagetitle__wrapper--bottom &{
+        grid-template-columns: 1fr 1fr;
+
+    }
+
     .pagetitle__wrapper--title & {
         padding: $spacing;
         background: $bg-color;
@@ -25,7 +34,8 @@
     display: block;
     @include secondary-font;
     white-space: nowrap;
-    flex: 0 0 50%;
+    // flex-grow: 1;
+    // flex-basis: 50%;
     border-right: 1px solid $dark-border-color;
     @include small {
         font-size: $small-font;
@@ -69,4 +79,35 @@
     span + & {
         border-left: 1px solid $dark-border-color;
     }
+}
+
+.PageTitle__Sidebar__Toggle {
+    padding: 0 $spacing/2;
+    height: 100%;
+    @include flex-center;
+
+}
+
+.Sidebar__Toggle {
+    // flex-grow: 0;
+    border: none;
+    background: $bg-color;
+    padding: 0;
+
+    svg {
+        display: block;
+        width: 100%;
+        height: auto;
+        stroke: $active-color;
+    }
+    @include small {
+        display: block;
+    }
+    @include medium-large {
+        display: none;
+    }
+}
+.Hamburger {
+    fill: $white;
+    stroke: $white;
 }

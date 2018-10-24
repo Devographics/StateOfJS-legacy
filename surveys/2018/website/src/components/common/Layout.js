@@ -1,85 +1,8 @@
 import React, { PureComponent } from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
-import Nav from './Nav'
 import PageTitle from './PageTitle'
-import Logo from './Logo'
 import '../../stylesheets/screen.scss'
-
-// const Spacer = () => <div className="pagelayout__spacer" />
-
-const Close = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <g id="Outline_Icons_1_">
-            <g
-                fill="none"
-                stroke="#000"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeMiterlimit="10"
-                id="Outline_Icons"
-            >
-                <line x1=".5" y1=".5" x2="23.5" y2="23.5" />
-                <line x1="23.5" y1=".5" x2=".5" y2="23.5" />
-            </g>
-        </g>
-        <rect fill="none" width="24" height="24" id="Invisible_Shape" />
-    </svg>
-)
-
-const Menu = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <g id="Outline_Icons_1_">
-            <g id="Outline_Icons">
-                <line
-                    fill="none"
-                    stroke="#000"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeMiterlimit="10"
-                    x1="19"
-                    y1="5.5"
-                    x2="4.043"
-                    y2="5.5"
-                />
-                <line
-                    fill="none"
-                    stroke="#000"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeMiterlimit="10"
-                    x1="19"
-                    y1="9.5"
-                    x2="4.043"
-                    y2="9.5"
-                />
-                <line
-                    fill="none"
-                    stroke="#000"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeMiterlimit="10"
-                    x1="19"
-                    y1="13.5"
-                    x2="4.043"
-                    y2="13.5"
-                />
-                <line
-                    fill="none"
-                    stroke="#000"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeMiterlimit="10"
-                    x1="19"
-                    y1="17.5"
-                    x2="4.043"
-                    y2="17.5"
-                />
-            </g>
-        </g>
-        <rect fill="none" width="24" height="24" id="Invisible_Shape" />
-    </svg>
-)
+import Sidebar from './Sidebar'
 
 export default class Layout extends PureComponent {
     constructor() {
@@ -87,6 +10,12 @@ export default class Layout extends PureComponent {
         this.state = {
             showSidebar: false
         }
+    }
+
+    toggleSidebar = () => {
+        this.setState({
+            showSidebar: !this.state.showSidebar
+        })
     }
 
     openSidebar = () => {
@@ -129,7 +58,7 @@ export default class Layout extends PureComponent {
         ]
 
         const { showPagination = true } = this.props
-        const sidebarClassName = this.state.showSidebar ? 'sidebar--shown' : 'sidebar--hidden'
+        const sidebarClassName = this.state.showSidebar ? 'Sidebar--shown' : 'Sidebar--hidden'
 
         return (
             <div className={`pagelayout ${sidebarClassName}`}>
@@ -144,29 +73,12 @@ export default class Layout extends PureComponent {
                     rel="stylesheet"
                 />
                 <div className="pagelayout__inner">
-                    <button className="sidebar__toggle" onClick={this.openSidebar}>
-                        <span>
-                            <Menu />
-                        </span>
-                    </button>
-                    <div className={`sidebar ${sidebarClassName}`}>
-                        <div className="sidebar__inner">
-                            <button className="sidebar__close" onClick={this.closeSidebar}>
-                                <Close />
-                            </button>
-                            <h1 className="pagelayout__logo">
-                                <Link to="/">
-                                    <Logo />
-                                </Link>
-                            </h1>
-                            <Nav {...this.props} closeSidebar={this.closeSidebar} />
-                        </div>
-                    </div>
+                    <Sidebar {...this.props} sidebarClassName={sidebarClassName} closeSidebar={this.closeSidebar}/>
                     <div className="pagelayout__content">
-                        <PageTitle {...this.props} mode="pagination" position="top" />
+                        <PageTitle {...this.props} toggleSidebar={this.toggleSidebar} mode="pagination" position="top" />
                         {this.props.children}
                         {showPagination && (
-                            <PageTitle {...this.props} mode="pagination" position="bottom" />
+                            <PageTitle {...this.props} toggleSidebar={this.toggleSidebar} mode="pagination" position="bottom" />
                         )}
                     </div>
                 </div>

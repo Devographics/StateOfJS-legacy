@@ -4,6 +4,7 @@ import classNames from 'classnames'
 // import { navigateTo } from 'gatsby-link'
 // import getPages from '../../helpers/getPages'
 import withPageData from '../../helpers/withPageData'
+import Hamburger from './Hamburger'
 
 class PageTitle extends React.PureComponent {
     // handleKeyDown = e => {
@@ -28,7 +29,15 @@ class PageTitle extends React.PureComponent {
     // }
 
     render() {
-        const { currentPage, previousPage, nextPage, mode, title, position } = this.props
+        const {
+            currentPage,
+            previousPage,
+            nextPage,
+            mode,
+            title,
+            position,
+            toggleSidebar
+        } = this.props
         const tabindex = {}
 
         return (
@@ -41,7 +50,7 @@ class PageTitle extends React.PureComponent {
                     mode === 'pagination'
                         ? 'pagetitle__wrapper--pagination'
                         : 'pagetitle__wrapper--title',
-                    position === 'top' ? 'pagetitle__wrapper--top' : 'pagetitle__wrapper--bottom'
+                    `pagetitle__wrapper--${position}`
                 )}
             >
                 <div className="pagetitle">
@@ -62,6 +71,13 @@ class PageTitle extends React.PureComponent {
                         ) : (
                             <span />
                         )}
+                        {position === 'top' && <span className="PageTitle__Sidebar__Toggle">
+                            <button className="Sidebar__Toggle" onClick={toggleSidebar}>
+                                <span>
+                                    <Hamburger />
+                                </span>
+                            </button>
+                        </span>}
                         {nextPage ? (
                             <Link className="pagination__link pagination__next" to={nextPage.path}>
                                 <span className="pagination__link__label pagination__link__label--full">

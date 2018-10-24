@@ -15,7 +15,7 @@ const getPageTitle = ({ section, subSection }, mode = 'normal') => {
                 break
 
             case 'Other Libraries':
-                pageTitle = mode === 'short' ? 'Other Libraries' : `${section.label} – Other Libraries`
+                pageTitle = mode === 'short' ? 'Other' : `${section.label} – Other Libraries`
                 break
 
             case 'Conclusion':

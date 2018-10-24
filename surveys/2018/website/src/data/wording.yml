@@ -108,6 +108,7 @@ shortnames:
     opinions: Opinions
     demographics: Demographics
     conclusion: Conclusion
+    other-libraries: Other
 
 symbols:
     javascript-flavors: Fv

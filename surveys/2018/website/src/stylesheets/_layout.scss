@@ -1,10 +1,4 @@
 
-.pagelayout {
-    &.sidebar--shown {
-        overflow: hidden;
-        position: fixed;
-    }
-}
 
 .results-container {
     pointer-events: none;
@@ -57,63 +51,6 @@
 .template {
 }
 
-.sidebar {
-    position: relative;
-
-    @include small {
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: $bg-color;
-        z-index: 1000;
-        text-align: center;
-        overflow-y: scroll;
-        padding: 0 0 $spacing * 2 0;
-        &.sidebar--hidden {
-            display: none;
-        }
-    }
-    @include medium-large {
-        min-width: 200px;
-        max-width: 300px;
-        margin-right: $spacing * 2;
-    }
-}
-
-.sidebar__inner {
-    padding: $spacing * 1.5;
-}
-.sidebar__toggle {
-    position: absolute;
-    top: 40px;
-    right: 20px;
-    background: $bg-color;
-    padding: 0 0 0 $spacing/2;
-    span {
-        display: block;
-        border: 1px solid $border-color;
-        border-radius: 3px;
-        padding: 3px;
-    }
-    svg {
-        display: block;
-    }
-    @include small {
-        display: block;
-    }
-    @include medium-large {
-        display: none;
-    }
-}
-
-.sidebar__close {
-    margin: $spacing 0;
-    display: block;
-    @include medium-large {
-        display: none;
-    }
-}
 
 .section {
     @include small {
