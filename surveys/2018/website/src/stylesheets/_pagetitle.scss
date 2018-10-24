@@ -13,12 +13,12 @@
     z-index: 10;
     position: relative;
     display: grid;
+    grid-template-columns: 1fr 1fr;
 
-    .pagetitle__wrapper--top & {
-        grid-template-columns: 1fr 50px 1fr;
-    }
-    .pagetitle__wrapper--bottom & {
-        grid-template-columns: 1fr 1fr;
+    @include small {
+        .pagetitle__wrapper--top & {
+            grid-template-columns: 1fr 50px 1fr;
+        }
     }
 
     .pagetitle__wrapper--title & {
@@ -74,15 +74,20 @@
 .pagination__next {
     border: none;
     text-align: right;
-    span + & {
+    span + span + & {
         border-left: 1px solid $dark-border-color;
     }
 }
 
 .PageTitle__Sidebar__Toggle {
-    padding: 0 $spacing/2;
-    height: 100%;
-    @include flex-center;
+    @include small {
+        padding: 0 $spacing/2;
+        height: 100%;
+        @include flex-center;
+    }
+    @include medium-large {
+        display: none;
+    }
 }
 
 .Sidebar__Toggle {

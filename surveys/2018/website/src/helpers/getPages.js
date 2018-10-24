@@ -1,6 +1,5 @@
 import slugify from './slugify'
 import nav from '../data/nav.yaml'
-import wording from '../data/wording.yml'
 import getPageTitle from './getPageTitle'
 import getPageUrl from './getPageUrl'
 import compact from 'lodash/compact'
