@@ -62,6 +62,7 @@ exports.createPages = async ({ actions }) => {
                     case 'conclusion':
                         templateName = 'Conclusion'
                         subPageContext = {
+                            section: item.id,
                             name: `${item.id}-conclusion`
                         }
                         pageCharts = pageCharts.concat(charts.conclusion)

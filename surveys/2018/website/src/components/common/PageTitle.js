@@ -30,11 +30,11 @@ class PageTitle extends React.PureComponent {
 
     render() {
         const {
-            currentPage,
+            // currentPage,
             previousPage,
             nextPage,
             mode,
-            title,
+            // title,
             position,
             toggleSidebar
         } = this.props

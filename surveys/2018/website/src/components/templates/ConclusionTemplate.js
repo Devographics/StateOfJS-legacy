@@ -8,13 +8,14 @@ import SectionHeader from '../elements/SectionHeader'
 
 const ConclusionTemplate = ({ pageContext, data }) => {
     const content = data.file.childMarkdownRemark ? data.file.childMarkdownRemark.html : undefined
+    const opinions = data.opinions.opinions.find(o => o.survey_id === '2018')
 
     return (
         <Layout>
             <div className="template">
                 <Meta />
                 <SectionHeader />
-                <QuadrantBlock />
+                <QuadrantBlock tools={opinions.tools} />
                 {content === undefined && (
                     <div style={{ color: 'red' }}>
                         No conclusion found for section: <strong>{pageContext.name}</strong>
@@ -31,10 +32,25 @@ const ConclusionTemplate = ({ pageContext, data }) => {
 export default ConclusionTemplate
 
 export const query = graphql`
-    query($name: String) {
+    query($name: String, $section: String) {
         file(name: { eq: $name }) {
             childMarkdownRemark {
                 html
+            }
+        }
+        opinions: sectionsYaml(section_id: { eq: $section }) {
+            opinions {
+                survey_id
+                tools {
+                    tool_id
+                    counts {
+                        would_use
+                        would_not_use
+                        interested
+                        not_interested
+                        never_heard
+                    }
+                }
             }
         }
     }

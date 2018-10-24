@@ -1,222 +1,282 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import { scaleLinear } from 'd3-scale'
+import { format } from 'd3-format'
+import QuadrantChartNode from './QuadrantChartNode'
 
-// const chartBackgroundColor = '#41C7C7'
-const chartBackgroundColor = '#fe6a6a'
-const chartMainColor = '#E8E8E8'
-const width = 400
-const height = 300
-const padding = 60
-const paddingRight = 0 // extra padding to accomodate labels
-const internalPadding = 20
-const minRadius = 8
-const maxRadius = 25
-/*
-
-u: usage (0 to n, in thousands of users)
-s: satisfaction (0 to 100)
-i: interest ratio (0 to 100)
-
-*/
-const data = [
-    { u: 3.4, s: 80, i: 81, label: 'React' },
-    { u: 3.1, s: 90, i: 37, label: 'Vue.js' },
-    { u: 5.78, s: 50, i: 2, label: 'Angular' }
-]
-
-const getHighestUsage = data => Math.max.apply(null, data.map(p => p.u))
-
-const convertPoint = point => {
-    const restrictedWidth = width - internalPadding * 2
-    const highestUsage = getHighestUsage(data)
-    point.x = padding + internalPadding + (point.u * restrictedWidth) / highestUsage
-    point.y = height + padding - (point.s * height) / 100
-    point.labelY = point.y
-    point.r = (point.i * (maxRadius - minRadius)) / 100 + minRadius
-    point.labelX = point.x + point.r + 5
-    return point
+const styles = {
+    labelsColor: '#E8E8E8',
+    ticksColor: '#E8E8E8',
+    tickLineWidth: 1,
+    circlesColor: '#E8E8E8',
+    quadrantsBackground: '#fe6a6a'
 }
 
-const QuadrantChart = () => (
-    <div className="Quadrants__Wrapper">
-        <div className="Quadrants__Chart">
-            <svg
-                width="100%"
-                viewBox={`0 0 ${width + padding * 2 + paddingRight} ${height + padding * 2}`}
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                {/* quadrants */}
-                <rect
-                    x={padding + 1}
-                    y={padding}
-                    width={width / 2}
-                    height={height / 2}
-                    fill={chartBackgroundColor}
-                    fillOpacity="0.5"
-                />
-                <rect
-                    x={width / 2 + padding + 1}
-                    y={padding}
-                    width={width / 2}
-                    height={height / 2}
-                    fill={chartBackgroundColor}
-                />
-                <rect
-                    x={padding + 1}
-                    y={height / 2 + padding}
-                    width={width / 2}
-                    height={height / 2}
-                    fill={chartBackgroundColor}
-                    fillOpacity="0.2"
-                />
-                <rect
-                    x={width / 2 + padding + 1}
-                    y={height / 2 + padding}
-                    width={width / 2}
-                    height={height / 2}
-                    fill={chartBackgroundColor}
-                    fillOpacity="0.5"
-                />
+const dimensions = {
+    width: 400,
+    height: 300,
+    margin: {
+        top: 60,
+        right: 60,
+        bottom: 60,
+        left: 70
+    },
+    padding: {
+        top: 0,
+        right: 20,
+        bottom: 0,
+        left: 20
+    },
+    circle: {
+        minRadius: 8,
+        maxRadius: 25
+    }
+}
 
-                {/* quadrant labels */}
-                <text
-                    textAnchor="middle"
-                    alignmentBaseline="middle"
-                    x={width * 0.25 + padding}
-                    y={height * 0.25 + padding}
-                    fill={chartMainColor}
-                    className="Quadrants__Chart__quadrant"
-                    fillOpacity="0.6"
-                >
-                    Assess
-                </text>
-                <text
-                    textAnchor="middle"
-                    alignmentBaseline="middle"
-                    x={width * 0.25 + padding}
-                    y={height * 0.75 + padding}
-                    fill={chartMainColor}
-                    className="Quadrants__Chart__quadrant"
-                    fillOpacity="0.6"
-                >
-                    Avoid
-                </text>
-                <text
-                    textAnchor="middle"
-                    alignmentBaseline="middle"
-                    x={width * 0.75 + padding}
-                    y={height * 0.25 + padding}
-                    fill={chartMainColor}
-                    className="Quadrants__Chart__quadrant"
-                    fillOpacity="0.7"
-                >
-                    Adopt
-                </text>
-                <text
-                    textAnchor="middle"
-                    alignmentBaseline="middle"
-                    x={width * 0.75 + padding}
-                    y={height * 0.75 + padding}
-                    fill={chartMainColor}
-                    className="Quadrants__Chart__quadrant"
-                    fillOpacity="0.6"
-                >
-                    Analyze
-                </text>
+const xFormatter = format('.02s')
 
-                {/* points */}
-                {data.map(convertPoint).map(({ x, y, i, r, label, labelX, labelY }, j) => (
-                    <React.Fragment key={j}>
-                        <circle cx={x} cy={y} r={r} fill={chartMainColor} fillOpacity="0.9" />
-                        <text
-                            fontSize={Math.max(8, r * 0.7)}
-                            textAnchor="middle"
-                            alignmentBaseline="central"
-                            x={x}
-                            y={y}
-                            fontWeight="normal"
-                            fill={'#333'}
-                            className="Quadrants__Chart__value"
-                        >
-                            {i}%
-                        </text>
-                        <text
-                            alignmentBaseline="central"
-                            x={labelX}
-                            y={labelY}
-                            fill={chartMainColor}
-                            className="Quadrants__Chart__label"
-                        >
-                            {label}
-                        </text>
-                    </React.Fragment>
-                ))}
+const mapData = opinions =>
+    opinions.map(({ tool_id, counts }) => {
+        const totalUsage = counts.would_use + counts.would_not_use
+        const totalInterest = counts.interested + counts.not_interested
 
-                {/* ticks */}
-                {Array.from(Array(11).keys()).map(i => (
-                    <React.Fragment key={i}>
+        return {
+            id: tool_id,
+            // u: usage (0 to n, in thousands of users)
+            u: totalUsage,
+            // s: satisfaction (0 to 100)
+            s: Math.round((counts.would_use / totalUsage) * 100),
+            // i: interest ratio (0 to 100)
+            i: Math.round((counts.interested / totalInterest) * 100)
+        }
+    })
+
+const QuadrantChart = ({ tools }) => {
+    const data = mapData(tools)
+
+    const innerWidth = dimensions.width - dimensions.padding.left - dimensions.padding.right
+    const innerHeight = dimensions.height - dimensions.padding.top - dimensions.padding.bottom
+
+    const outerWidth = dimensions.margin.left + dimensions.width + dimensions.margin.right
+    const outerHeight = dimensions.margin.top + dimensions.height + dimensions.margin.bottom
+
+    const halfWidth = dimensions.width / 2
+    const halfHeight = dimensions.height / 2
+
+    const xScale = scaleLinear()
+        .domain([0, Math.max(...data.map(d => d.u))])
+        .range([0, innerWidth])
+        .nice()
+    const xTicks = xScale.ticks(7)
+
+    const yScale = scaleLinear()
+        .domain([0, 100])
+        .range([innerHeight, 0])
+    const yTicks = yScale.ticks(11)
+
+    const radiusScale = scaleLinear()
+        .domain([0, 100])
+        .range([dimensions.circle.minRadius, dimensions.circle.maxRadius])
+
+    return (
+        <div className="Quadrants__Wrapper">
+            <div className="Quadrants__Chart">
+                <svg
+                    width="100%"
+                    viewBox={`0 0 ${outerWidth} ${outerHeight}`}
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <g transform={`translate(${dimensions.margin.left},${dimensions.margin.top})`}>
+                        {/* quadrants */}
                         <rect
-                            x={padding - 5 + 1}
-                            y={padding - 1 + (height * i) / 10}
-                            width="10"
-                            height="2"
-                            fill={chartMainColor}
+                            width={halfWidth}
+                            height={halfHeight}
+                            fill={styles.quadrantsBackground}
+                            fillOpacity="0.5"
                         />
+                        <rect
+                            x={halfWidth}
+                            width={halfWidth}
+                            height={halfHeight}
+                            fill={styles.quadrantsBackground}
+                        />
+                        <rect
+                            y={halfHeight}
+                            width={halfWidth}
+                            height={halfHeight}
+                            fill={styles.quadrantsBackground}
+                            fillOpacity="0.2"
+                        />
+                        <rect
+                            x={halfWidth}
+                            y={halfHeight}
+                            width={halfWidth}
+                            height={halfHeight}
+                            fill={styles.quadrantsBackground}
+                            fillOpacity="0.5"
+                        />
+
+                        {/* quadrant labels */}
                         <text
-                            x={padding - 20 + 1}
-                            y={padding - 1 + (height * i) / 10}
                             textAnchor="middle"
                             alignmentBaseline="middle"
-                            fill={chartMainColor}
-                            className="Quadrants__Chart__ticklabel"
-                        >{`${(10 - i) * 10}%`}</text>
-                        <rect
-                            x={padding + ((width - internalPadding) * i) / 10}
-                            y={padding + height - 5}
-                            width="2"
-                            height="10"
-                            fill={chartMainColor}
-                        />
+                            x={dimensions.width * 0.25}
+                            y={dimensions.height * 0.25}
+                            fill={styles.labelsColor}
+                            className="Quadrants__Chart__quadrant"
+                            fillOpacity="0.6"
+                        >
+                            Assess
+                        </text>
                         <text
-                            x={padding + ((width - internalPadding) * i) / 10}
-                            y={padding + height + 20}
                             textAnchor="middle"
                             alignmentBaseline="middle"
-                            fill={chartMainColor}
-                            className="Quadrants__Chart__ticklabel"
-                        >{`${Math.round(i * getHighestUsage(data)) / 10}k`}</text>
-                    </React.Fragment>
-                ))}
+                            x={dimensions.width * 0.25}
+                            y={dimensions.height * 0.75}
+                            fill={styles.labelsColor}
+                            className="Quadrants__Chart__quadrant"
+                            fillOpacity="0.6"
+                        >
+                            Avoid
+                        </text>
+                        <text
+                            textAnchor="middle"
+                            alignmentBaseline="middle"
+                            x={dimensions.width * 0.75}
+                            y={dimensions.height * 0.25}
+                            fill={styles.labelsColor}
+                            className="Quadrants__Chart__quadrant"
+                            fillOpacity="0.7"
+                        >
+                            Adopt
+                        </text>
+                        <text
+                            textAnchor="middle"
+                            alignmentBaseline="middle"
+                            x={dimensions.width * 0.75}
+                            y={dimensions.height * 0.75}
+                            fill={styles.labelsColor}
+                            className="Quadrants__Chart__quadrant"
+                            fillOpacity="0.6"
+                        >
+                            Analyze
+                        </text>
 
-                {/* axis labels */}
-                <text
-                    textAnchor="middle"
-                    alignmentBaseline="middle"
-                    transform={`rotate(270 ${10} ${padding + height / 2})`}
-                    x={10}
-                    y={padding + height / 2}
-                    fill={chartMainColor}
-                    className="Quadrants__Chart__legend"
-                >
-                    Satisfaction %
-                </text>
-                <text
-                    textAnchor="middle"
-                    alignmentBaseline="middle"
-                    x={width / 2 + padding}
-                    y={height + padding + padding - 10}
-                    fill={chartMainColor}
-                    className="Quadrants__Chart__legend"
-                >
-                    Users
-                </text>
-            </svg>
+                        {/* points */}
+                        <g
+                            transform={`translate(${dimensions.padding.left},${
+                                dimensions.padding.top
+                            })`}
+                        >
+                            {data.map(d => (
+                                <QuadrantChartNode
+                                    key={d.id}
+                                    data={d}
+                                    x={xScale(d.u)}
+                                    y={yScale(d.s)}
+                                    r={radiusScale(d.i)}
+                                    styles={styles}
+                                />
+                            ))}
+                        </g>
+
+                        {/* x axis ticks */}
+                        <g transform={`translate(${dimensions.padding.left},${dimensions.height})`}>
+                            {xTicks.map(d => {
+                                const x = xScale(d)
+
+                                return (
+                                    <g key={d} transform={`translate(${x},0)`}>
+                                        <line
+                                            fill="none"
+                                            stroke={styles.ticksColor}
+                                            strokeWidth={styles.tickLineWidth}
+                                            y1={0}
+                                            y2={5}
+                                        />
+                                        <text
+                                            y={10}
+                                            textAnchor="middle"
+                                            alignmentBaseline="hanging"
+                                            className="Quadrants__Chart__ticklabel"
+                                            fill={styles.labelsColor}
+                                        >
+                                            {xFormatter(d)}
+                                        </text>
+                                    </g>
+                                )
+                            })}
+                        </g>
+
+                        {/* y axis ticks */}
+                        <g transform={`translate(0,${dimensions.padding.top})`}>
+                            {yTicks.map(d => {
+                                const y = yScale(d)
+
+                                return (
+                                    <g key={d} transform={`translate(0,${y})`}>
+                                        <line
+                                            fill="none"
+                                            stroke={styles.ticksColor}
+                                            strokeWidth={styles.tickLineWidth}
+                                            x1={-5}
+                                            x2={0}
+                                        />
+                                        <text
+                                            x={-10}
+                                            textAnchor="end"
+                                            alignmentBaseline="middle"
+                                            className="Quadrants__Chart__ticklabel"
+                                            fill={styles.labelsColor}
+                                        >
+                                            {d}%
+                                        </text>
+                                    </g>
+                                )
+                            })}
+                        </g>
+
+                        {/* axis labels */}
+                        <text
+                            textAnchor="middle"
+                            alignmentBaseline="baseline"
+                            transform={`translate(${-50},${halfHeight}) rotate(270)`}
+                            fill={styles.labelsColor}
+                            className="Quadrants__Chart__legend"
+                        >
+                            Satisfaction %
+                        </text>
+                        <text
+                            textAnchor="middle"
+                            alignmentBaseline="hanging"
+                            x={halfWidth}
+                            y={dimensions.height + 30}
+                            fill={styles.labelsColor}
+                            className="Quadrants__Chart__legend"
+                        >
+                            Users
+                        </text>
+                    </g>
+                </svg>
+            </div>
         </div>
-    </div>
-)
+    )
+}
 
-// RadarChart.propTypes = {
-//     score: PropTypes.number.isRequired
-// }
+QuadrantChart.propTypes = {
+    tools: PropTypes.arrayOf(
+        PropTypes.shape({
+            tool_id: PropTypes.string.isRequired,
+            counts: PropTypes.shape({
+                would_use: PropTypes.number.isRequired,
+                would_not_use: PropTypes.number.isRequired,
+                interested: PropTypes.number.isRequired,
+                not_interested: PropTypes.number.isRequired,
+                never_heard: PropTypes.number.isRequired
+            }).isRequired
+        })
+    ).isRequired
+}
 
 export default QuadrantChart

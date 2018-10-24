@@ -34,6 +34,9 @@ Chart
         margin-top: -20px;
     }
 }
+.Quadrants__Chart__value {
+    letter-spacing: 0.2em;
+}
 .Quadrants__Chart__label {
     font-size: $small-font;
     @include font-regular;
