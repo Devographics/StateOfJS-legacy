@@ -1,18 +1,23 @@
-.block__content--radar {
-    display: flex;
-}
-.block__description--radar {
-}
-.block__chart--radar {
-    flex: 0 0 60%;
-}
-.radar__chart {
-    svg {
-        display: block;
-        margin-top: -20px;
+/*
+
+Block
+
+*/
+.Quadrants__Block__Content {
+    @include small{
+
+    }
+    @include medium-large{
+        display: flex;
     }
 }
-.radar__chart__quadrant {
+.Quadrants__Block__Chart {
+    @include small{
+
+    }
+    @include medium-large{
+        flex: 0 0 60%;
+    }
     font-size: $large-font;
     // @include font-bold;
     text-transform: uppercase;
@@ -20,31 +25,41 @@
     @include font-regular;
 }
 
-.radar__chart__label {
+/*
+
+Chart
+
+*/
+.Quadrants__Chart {
+    svg {
+        display: block;
+        margin-top: -20px;
+    }
+}
+.Quadrants__Chart__label {
     font-size: $small-font;
     @include font-regular;
 }
-.radar__chart__ticklabel {
+.Quadrants__Chart__ticklabel {
     font-size: $smaller-font;
 }
-.radar__chart__quadrants {
+.Quadrants__Chart__Legend {
     margin-top: 40px;
 }
-.radar__chart__quadrants__title {
+.Quadrants__Chart__Legend__Title {
     text-align: center;
     display: none;
 }
-.radar__chart__quadrants__items {
+.Quadrants__Chart__Legend__Items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0;
     font-size: $small-font;
-
     border-top: 1px solid $dark-border-color;
     border-left: 1px solid $dark-border-color;
 }
 
-.radar__chart__quadrants__item {
+.Quadrants__Chart__Legend__Item {
     padding: $spacing;
     border-bottom: 1px solid $dark-border-color;
     border-right: 1px solid $dark-border-color;

@@ -13,11 +13,11 @@ const legend = [
 ]
 
 const QuadrantLegend = () => (
-    <div className="radar__chart__quadrants">
-        <h3 className="radar__chart__quadrants__title">Four Quadrants</h3>
-        <div className="radar__chart__quadrants__items">
+    <div className="Quadrants__Chart__Legend">
+        <h3 className="Quadrants__Chart__Legend__Title">Four Quadrants</h3>
+        <div className="Quadrants__Chart__Legend__Items">
             {legend.map(([label, description]) => (
-                <div className="radar__chart__quadrants__item" key={label}>
+                <div className="Quadrants__Chart__Legend__Item" key={label}>
                     <strong>{label}</strong>: {description}
                 </div>
             ))}
@@ -26,10 +26,10 @@ const QuadrantLegend = () => (
 )
 
 const QuadrantBlock = () => (
-    <div className="block block--chart block--happiness">
+    <div className="Quadrants__Block block block--chart block--quadrant">
         <BlockTitle chart="quadrant" />
 
-        <div className="block__description block__description--radar">
+        <div className="Quadrants__Block__Description block__description block__description--quadrant">
             <p>
                 This chart shows each technology&apos;s <strong>satisfaction ratio</strong> over its{' '}
                 <strong>total usage</strong>.
@@ -39,8 +39,8 @@ const QuadrantBlock = () => (
                 (percentage of non-users interested in learning it).
             </p>
         </div>
-        <div className="block__content block__content--radar">
-            <div className="block__chart block__chart--radar">
+        <div className="Quadrants__Block__Content block__content block__content--quadrant">
+            <div className="Quadrants__Block__Chart block__chart block__chart--quadrant">
                 <QuadrantChart />
             </div>
             <QuadrantLegend />

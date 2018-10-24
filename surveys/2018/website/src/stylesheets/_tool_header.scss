@@ -1,11 +1,11 @@
 .ToolHeader {
     display: flex;
     margin-bottom: $spacing * 2;
-    .PeriodicTableElementHtml{
+    .PeriodicTableElementHtml {
         width: 100%;
     }
 }
-.ToolHeader__Element{
+.ToolHeader__Element {
     margin-right: $spacing;
     flex-shrink: 1;
     flex-basis: 150px;
@@ -26,6 +26,11 @@
     margin: 0;
     padding: 0;
     align-items: baseline;
-    font-size: 2rem;
     line-height: 1;
+    @include small {
+        font-size: 1.5rem;
+    }
+    @include medium-large {
+        font-size: 2rem;
+    }
 }

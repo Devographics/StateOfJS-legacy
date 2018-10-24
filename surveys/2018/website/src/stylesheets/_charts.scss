@@ -129,3 +129,20 @@
     margin-bottom: $spacing/2;
     font-size: $smallish-font;
 }
+
+.OverTime__Chart, .SectionOpinions__Chart {
+    @include small {
+    }
+    @include medium_large {
+        display: grid;
+        grid-template-columns: auto 210px;
+        column-gap: 20px;
+    }
+}
+
+.SectionOpinions__Chart {
+    .Legends{
+        margin-top: 81px;
+        margin-bottom: 30px;
+    }
+}

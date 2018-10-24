@@ -44,7 +44,7 @@ export default class ToolHeaderBlock extends Component {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    {project.homepage}
+                                    homepage
                                 </a>
                                 {' | '}
                                 <a

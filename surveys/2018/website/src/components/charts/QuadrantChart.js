@@ -37,8 +37,8 @@ const convertPoint = point => {
 }
 
 const QuadrantChart = () => (
-    <div className="radar__wrapper">
-        <div className="radar__chart">
+    <div className="Quadrants__Wrapper">
+        <div className="Quadrants__Chart">
             <svg
                 width="100%"
                 viewBox={`0 0 ${width + padding * 2 + paddingRight} ${height + padding * 2}`}
@@ -85,7 +85,7 @@ const QuadrantChart = () => (
                     x={width * 0.25 + padding}
                     y={height * 0.25 + padding}
                     fill={chartMainColor}
-                    className="radar__chart__quadrant"
+                    className="Quadrants__Chart__quadrant"
                     fillOpacity="0.6"
                 >
                     Assess
@@ -96,7 +96,7 @@ const QuadrantChart = () => (
                     x={width * 0.25 + padding}
                     y={height * 0.75 + padding}
                     fill={chartMainColor}
-                    className="radar__chart__quadrant"
+                    className="Quadrants__Chart__quadrant"
                     fillOpacity="0.6"
                 >
                     Avoid
@@ -107,7 +107,7 @@ const QuadrantChart = () => (
                     x={width * 0.75 + padding}
                     y={height * 0.25 + padding}
                     fill={chartMainColor}
-                    className="radar__chart__quadrant"
+                    className="Quadrants__Chart__quadrant"
                     fillOpacity="0.7"
                 >
                     Adopt
@@ -118,7 +118,7 @@ const QuadrantChart = () => (
                     x={width * 0.75 + padding}
                     y={height * 0.75 + padding}
                     fill={chartMainColor}
-                    className="radar__chart__quadrant"
+                    className="Quadrants__Chart__quadrant"
                     fillOpacity="0.6"
                 >
                     Analyze
@@ -136,7 +136,7 @@ const QuadrantChart = () => (
                             y={y}
                             fontWeight="normal"
                             fill={'#333'}
-                            className="radar__chart__value"
+                            className="Quadrants__Chart__value"
                         >
                             {i}%
                         </text>
@@ -145,7 +145,7 @@ const QuadrantChart = () => (
                             x={labelX}
                             y={labelY}
                             fill={chartMainColor}
-                            className="radar__chart__label"
+                            className="Quadrants__Chart__label"
                         >
                             {label}
                         </text>
@@ -168,7 +168,7 @@ const QuadrantChart = () => (
                             textAnchor="middle"
                             alignmentBaseline="middle"
                             fill={chartMainColor}
-                            className="radar__chart__ticklabel"
+                            className="Quadrants__Chart__ticklabel"
                         >{`${(10 - i) * 10}%`}</text>
                         <rect
                             x={padding + ((width - internalPadding) * i) / 10}
@@ -183,7 +183,7 @@ const QuadrantChart = () => (
                             textAnchor="middle"
                             alignmentBaseline="middle"
                             fill={chartMainColor}
-                            className="radar__chart__ticklabel"
+                            className="Quadrants__Chart__ticklabel"
                         >{`${Math.round(i * getHighestUsage(data)) / 10}k`}</text>
                     </React.Fragment>
                 ))}
@@ -196,7 +196,7 @@ const QuadrantChart = () => (
                     x={10}
                     y={padding + height / 2}
                     fill={chartMainColor}
-                    className="radar__chart__legend"
+                    className="Quadrants__Chart__legend"
                 >
                     Satisfaction %
                 </text>
@@ -206,7 +206,7 @@ const QuadrantChart = () => (
                     x={width / 2 + padding}
                     y={height + padding + padding - 10}
                     fill={chartMainColor}
-                    className="radar__chart__legend"
+                    className="Quadrants__Chart__legend"
                 >
                     Users
                 </text>

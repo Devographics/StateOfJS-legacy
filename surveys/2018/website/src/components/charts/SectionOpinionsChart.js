@@ -77,11 +77,7 @@ export default class SectionOpinionsChart extends Component {
 
         return (
             <div
-                style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'auto 210px',
-                    gridColumnGap: 20
-                }}
+                className="SectionOpinions__Chart"
             >
                 <div style={{ height: 360 }}>
                     <ResponsiveBar
@@ -169,10 +165,6 @@ export default class SectionOpinionsChart extends Component {
                     withFrame={false}
                     onMouseEnter={this.setCurrent}
                     onMouseLeave={this.resetCurrent}
-                    style={{
-                        marginTop: 81,
-                        marginBottom: 30
-                    }}
                 />
             </div>
         )

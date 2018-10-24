@@ -1,23 +1,31 @@
+/*
+
+Variables
+
+*/
 @import '_normalize.scss';
 @import '_colors.scss';
 @import '_variables.scss';
 @import '_breakpoints.scss';
 @import '_typography.scss';
 
+/*
+
+Global
+
+*/
 @import '_global.scss';
 @import '_layout.scss';
-
 @import '_buttons.scss';
 
-@import '_nav.scss';
-// @import '_home.scss';
+/*
 
+Elements
+
+*/
+@import '_nav.scss';
 @import '_blocks.scss';
 @import '_averages.scss';
-@import '_quadrant_chart.scss';
-@import '_nivo_charts.scss';
-@import '_nivo_filters.scss';
-@import '_nivo_legends.scss';
 @import '_tooltips.scss';
 @import '_share.scss';
 @import '_resources.scss';
@@ -30,3 +38,14 @@
 @import '_periodic_table.scss';
 @import '_tool_header.scss';
 @import '_opinion_selector.scss';
+
+/*
+
+Charts
+
+*/
+
+@import '_charts.scss';
+@import '_filters.scss';
+@import '_legends.scss';
+@import '_quadrant_chart.scss';

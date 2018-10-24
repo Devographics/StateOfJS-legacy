@@ -107,11 +107,7 @@ export default class ToolOpinionsOverTimeChart extends Component {
 
         return (
             <div
-                style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'auto 210px',
-                    gridColumnGap: 20
-                }}
+            className="OverTime__Chart"
             >
                 <div
                     style={{

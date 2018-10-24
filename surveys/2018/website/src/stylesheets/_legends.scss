@@ -12,6 +12,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include small{
+        margin-top: $spacing;
+        border: 1px solid $dark-border-color;
+        padding: $spacing;
+    }
+    @include medium{
+
+    }
 }
 
 .Legends--withFrame {
