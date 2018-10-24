@@ -14,13 +14,11 @@
     position: relative;
     display: grid;
 
-    .pagetitle__wrapper--top &{
+    .pagetitle__wrapper--top & {
         grid-template-columns: 1fr 50px 1fr;
-
     }
-    .pagetitle__wrapper--bottom &{
+    .pagetitle__wrapper--bottom & {
         grid-template-columns: 1fr 1fr;
-
     }
 
     .pagetitle__wrapper--title & {
@@ -85,7 +83,6 @@
     padding: 0 $spacing/2;
     height: 100%;
     @include flex-center;
-
 }
 
 .Sidebar__Toggle {

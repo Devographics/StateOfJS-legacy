@@ -73,12 +73,26 @@ export default class Layout extends PureComponent {
                     rel="stylesheet"
                 />
                 <div className="pagelayout__inner">
-                    <Sidebar {...this.props} sidebarClassName={sidebarClassName} closeSidebar={this.closeSidebar}/>
+                    <Sidebar
+                        {...this.props}
+                        sidebarClassName={sidebarClassName}
+                        closeSidebar={this.closeSidebar}
+                    />
                     <div className="pagelayout__content">
-                        <PageTitle {...this.props} toggleSidebar={this.toggleSidebar} mode="pagination" position="top" />
+                        <PageTitle
+                            {...this.props}
+                            toggleSidebar={this.toggleSidebar}
+                            mode="pagination"
+                            position="top"
+                        />
                         {this.props.children}
                         {showPagination && (
-                            <PageTitle {...this.props} toggleSidebar={this.toggleSidebar} mode="pagination" position="bottom" />
+                            <PageTitle
+                                {...this.props}
+                                toggleSidebar={this.toggleSidebar}
+                                mode="pagination"
+                                position="bottom"
+                            />
                         )}
                     </div>
                 </div>

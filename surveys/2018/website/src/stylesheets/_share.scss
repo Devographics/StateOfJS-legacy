@@ -24,7 +24,7 @@
     .share-popup-visible & {
         opacity: 1;
         pointer-events: auto;
-        @include small{
+        @include small {
             &.share__link--twitter {
                 transform: translateX(-580%) scale(1);
             }
@@ -34,19 +34,18 @@
             &.share__link--email {
                 transform: translateX(-360%) scale(1);
             }
-
         }
-        @include medium-large{
-        &.share__link--twitter {
-            transform: translateX(280%) scale(1);
+        @include medium-large {
+            &.share__link--twitter {
+                transform: translateX(280%) scale(1);
+            }
+            &.share__link--facebook {
+                transform: translateX(320%) scale(1);
+            }
+            &.share__link--email {
+                transform: translateX(390%) scale(1);
+            }
         }
-        &.share__link--facebook {
-            transform: translateX(320%) scale(1);
-        }
-        &.share__link--email {
-            transform: translateX(390%) scale(1);
-        }
-    }
     }
 }
 

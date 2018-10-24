@@ -3,7 +3,6 @@ import { getWording, getToolName } from '../../helpers/wording'
 import ShareChart from '../common/ShareChart'
 
 class BlockTitle extends Component {
-
     state = {
         showOptions: false
     }
@@ -23,7 +22,11 @@ class BlockTitle extends Component {
                 <h3 className="Block__Title__Text">
                     {getWording(`charts.${chart}`, { tool: getToolName(tool) })}
                 </h3>
-                <ShareChart className="Block__Title__Share" chart={chart} toggleClass={this.toggleClass} />
+                <ShareChart
+                    className="Block__Title__Share"
+                    chart={chart}
+                    toggleClass={this.toggleClass}
+                />
             </div>
         )
     }

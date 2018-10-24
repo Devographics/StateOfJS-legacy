@@ -23,10 +23,7 @@ const OverviewTemplate = ({ pageContext, data }) => {
                     </div>
                 )}
                 {hasEntry && (
-                    <OverviewBlock
-                        section={pageContext.section}
-                        opinions={section.opinions}
-                    />
+                    <OverviewBlock section={pageContext.section} opinions={section.opinions} />
                 )}
                 <HappinessBlock section="section" value={2} />
             </div>

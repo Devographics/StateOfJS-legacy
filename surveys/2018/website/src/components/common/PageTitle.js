@@ -71,13 +71,15 @@ class PageTitle extends React.PureComponent {
                         ) : (
                             <span />
                         )}
-                        {position === 'top' && <span className="PageTitle__Sidebar__Toggle">
-                            <button className="Sidebar__Toggle" onClick={toggleSidebar}>
-                                <span>
-                                    <Hamburger />
-                                </span>
-                            </button>
-                        </span>}
+                        {position === 'top' && (
+                            <span className="PageTitle__Sidebar__Toggle">
+                                <button className="Sidebar__Toggle" onClick={toggleSidebar}>
+                                    <span>
+                                        <Hamburger />
+                                    </span>
+                                </button>
+                            </span>
+                        )}
                         {nextPage ? (
                             <Link className="pagination__link pagination__next" to={nextPage.path}>
                                 <span className="pagination__link__label pagination__link__label--full">

@@ -106,9 +106,7 @@ export default class ToolOpinionsOverTimeChart extends Component {
         }
 
         return (
-            <div
-            className="OverTime__Chart"
-            >
+            <div className="OverTime__Chart">
                 <div
                     style={{
                         height: 300

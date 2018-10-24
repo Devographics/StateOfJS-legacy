@@ -1,115 +1,111 @@
-
 .Sidebar {
-  position: relative;
+    position: relative;
 
-  @include small {
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: $bg-color;
-      z-index: 1000;
-      text-align: center;
-      overflow-y: scroll;
-      padding: 0 0 $spacing * 2 0;
-      &.Sidebar--hidden {
-          display: none;
-      }
-      &.Sidebar--shown {
-        overflow: hidden;
+    @include small {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $bg-color;
+        z-index: 1000;
+        text-align: center;
         overflow-y: scroll;
-        position: fixed;
-      }
-  }
-  @include medium-large {
-      min-width: 200px;
-      max-width: 300px;
-      margin-right: $spacing * 2;
-  }
-
+        padding: 0 0 $spacing * 2 0;
+        &.Sidebar--hidden {
+            display: none;
+        }
+        &.Sidebar--shown {
+            overflow: hidden;
+            overflow-y: scroll;
+            position: fixed;
+        }
+    }
+    @include medium-large {
+        min-width: 200px;
+        max-width: 300px;
+        margin-right: $spacing * 2;
+    }
 }
-
 
 .Sidebar__Inner {
-  padding: $spacing * 1.5;
+    padding: $spacing * 1.5;
 }
-
 
 .Sidebar__Close {
-  position: absolute;
-  top: $spacing;
-  right: $spacing;
-  margin: 0;
-  padding: 0;
-  display: block;
-  line-height: 1;
-  background: none;
-  border: none;
-  @include medium-large {
-      display: none;
-  }
-  svg{
-    stroke: $active-color;
-  }
+    position: absolute;
+    top: $spacing;
+    right: $spacing;
+    margin: 0;
+    padding: 0;
+    display: block;
+    line-height: 1;
+    background: none;
+    border: none;
+    @include medium-large {
+        display: none;
+    }
+    svg {
+        stroke: $active-color;
+    }
 }
 
-.Sidebar__Logo{
-  @include small{
-    max-width: 200px;
-    margin: 0 auto;
-    margin-bottom: $spacing;
-  }
+.Sidebar__Logo {
+    @include small {
+        max-width: 200px;
+        margin: 0 auto;
+        margin-bottom: $spacing;
+    }
 }
 
 .nav {
-  position: sticky;
-  top: $spacing * 3;
-  ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-  }
-  li {
-      margin-bottom: $spacing/2;
-  }
+    position: sticky;
+    top: $spacing * 3;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        margin-bottom: $spacing/2;
+    }
 }
 
 .nav-page {
-  white-space: nowrap;
-  font-size: $large-font;
-  margin: 0;
+    white-space: nowrap;
+    font-size: $large-font;
+    margin: 0;
 }
 
 .nav-page-active {
-  @include font-bold;
-  &:before {
-      content: '> ';
-  }
+    @include font-bold;
+    &:before {
+        content: '> ';
+    }
 }
 
 .nav-page-comingsoon {
-  opacity: 0.35;
+    opacity: 0.35;
 }
 
 .nav-subpages {
-  padding-left: $spacing;
-  margin-top: $spacing/2;
+    padding-left: $spacing;
+    margin-top: $spacing/2;
 }
 
 .nav-subpage {
-  display: block;
-  margin-right: $spacing/2;
-  font-size: $medium-font;
-  &,
-  &:link,
-  &:visited {
-      color: $text-color;
-  }
+    display: block;
+    margin-right: $spacing/2;
+    font-size: $medium-font;
+    &,
+    &:link,
+    &:visited {
+        color: $text-color;
+    }
 }
 
 .nav-subpage-active {
-  @include font-bold;
-  &:before {
-      content: '> ';
-  }
+    @include font-bold;
+    &:before {
+        content: '> ';
+    }
 }

@@ -1,5 +1,3 @@
-
-
 .results-container {
     pointer-events: none;
     & > div {
@@ -39,18 +37,16 @@
 
 .pagelayout__content {
     flex: 1;
-    @include small{
+    @include small {
         margin: $spacing;
     }
-    @include medium-large{
+    @include medium-large {
         margin: $spacing * 2 $spacing * 4;
     }
 }
 
-
 .template {
 }
-
 
 .section {
     @include small {

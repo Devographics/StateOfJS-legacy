@@ -4,18 +4,16 @@ Block
 
 */
 .Quadrants__Block__Content {
-    @include small{
-
+    @include small {
     }
-    @include medium-large{
+    @include medium-large {
         display: flex;
     }
 }
 .Quadrants__Block__Chart {
-    @include small{
-
+    @include small {
     }
-    @include medium-large{
+    @include medium-large {
         flex: 0 0 60%;
     }
     font-size: $large-font;

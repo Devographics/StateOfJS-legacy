@@ -11,7 +11,10 @@ const getPageTitle = ({ section, subSection }, mode = 'normal') => {
     if (subSection) {
         switch (subSection.label) {
             case 'Overview':
-                pageTitle = mode === 'short' ? section.shortLabel || section.label : `${section.label} – Overview`
+                pageTitle =
+                    mode === 'short'
+                        ? section.shortLabel || section.label
+                        : `${section.label} – Overview`
                 break
 
             case 'Other Libraries':
@@ -23,7 +26,8 @@ const getPageTitle = ({ section, subSection }, mode = 'normal') => {
                 break
 
             default:
-                pageTitle = mode === 'short' ? subSection.label : `${section.label} - ${subSection.label}`
+                pageTitle =
+                    mode === 'short' ? subSection.label : `${section.label} - ${subSection.label}`
                 break
         }
     } else {

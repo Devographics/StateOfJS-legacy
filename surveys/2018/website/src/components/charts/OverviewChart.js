@@ -76,9 +76,7 @@ export default class OverviewChart extends Component {
         ).reverse()
 
         return (
-            <div
-                className="Overview__Chart"
-            >
+            <div className="Overview__Chart">
                 <div style={{ height: 360 }}>
                     <ResponsiveBar
                         margin={{

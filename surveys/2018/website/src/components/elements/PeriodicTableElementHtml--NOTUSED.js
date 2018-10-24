@@ -39,7 +39,7 @@ export default class PeriodicTableElementHtml extends PureComponent {
                     style={{
                         top: layout.symbolY,
                         height: layout.symbolHeight,
-                        fontSize: layout.symbolFontSize,
+                        fontSize: layout.symbolFontSize
                     }}
                 >
                     {symbol}
