@@ -8,7 +8,7 @@ const TextBlock = ({ text, title, children }) => {
     } else {
         return (
             <div className="block block--text">
-                {title && <h3 className="block__title">{title}</h3>}
+                {title && <h3 className="Block__Title block__title">{title}</h3>}
                 {text && (
                     <div
                         className="block__content"

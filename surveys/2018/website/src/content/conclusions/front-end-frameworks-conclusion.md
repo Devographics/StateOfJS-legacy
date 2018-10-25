@@ -1,1 +1,3 @@
-blabla front-end frameworks
+Once again the front-end space is all about **React** and **Vue**. Vue's story in particular is worth considering: two years ago, 27% of respondents had never even heard of the library. Today, that fraction has fallen to just 1.3%! So while React still has a much larger share of the market, Vue's meteoric rise certainly shows no sign of stopping. In fact, Vue has already overtaken its rival for certain metrics such as total GitHub stars. 
+
+The other story of those past couple years is the fall of **Angular**. While it still ranks very high in terms of raw usage, it has a fairly disappointing 41% satisfaction ratio. So while it probably isn't going anywhere thanks to its large user base, it's hard to see how it will ever regain its place atop the front-end throne. 

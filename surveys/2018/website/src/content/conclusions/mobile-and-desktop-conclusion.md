@@ -1,1 +1,3 @@
-blabla mobile desktop
+As JavaScript expands beyond the boundaries of the browser, we see a familiar pattern play out: yesterday's dominant tool, **Cordova**, now suffers from a pretty poor satisfaction ratio; while **React Native** is doing much better and fast catching up. 
+
+**Electron** is also worth mentioning, as its adoption by major players such as [Slack](https://slack.com) or [Atom](https://atom.io/) has let to notable performance improvements in recent years. 

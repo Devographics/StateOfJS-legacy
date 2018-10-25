@@ -23,7 +23,7 @@ const ConclusionTemplate = ({ pageContext, data }) => {
                         <br />
                     </div>
                 )}
-                {content !== undefined && <TextBlock text={content} />}
+                {content !== undefined && <TextBlock title="Conclusion" text={content} />}
             </div>
         </Layout>
     )
