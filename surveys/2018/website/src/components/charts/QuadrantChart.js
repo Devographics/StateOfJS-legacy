@@ -51,15 +51,17 @@ const mapData = opinions =>
         }
     })
 
-const detectCollision = (collisionPositions, x1, y1, d) => {
+const collisionDistance = 40
+
+const detectCollision = (collisionPositions, x1, y1) => {
     let collisionData = false
     for (let i = 0; i < collisionPositions.length; i++) {
         const [x2, y2] = collisionPositions[i]
         const dx = Math.abs(x1 - x2)
         const dy = Math.abs(y1 - y2)
-        console.log(x1, y1, dx, dy, dx < d && dy < d, '\n')
+        console.log(x1, y1, dx, dy, dx < collisionDistance && dy < collisionDistance, '\n')
 
-        if (dx < d && dy < d) {
+        if (dx < collisionDistance && dy < collisionDistance) {
             collisionData = { dx, dy }
             break
         }
@@ -213,7 +215,7 @@ const QuadrantChart = ({ tools }) => {
                                     y={yScale(d.s)}
                                     r={radiusScale(d.i)}
                                     styles={styles}
-                                    collisionData={detectCollision(collisionPositions, xScale(d.u), yScale(d.s), 20)}
+                                    collisionData={detectCollision(collisionPositions, xScale(d.u), yScale(d.s))}
                                 />
                             ))}
                         </g>

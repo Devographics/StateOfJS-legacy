@@ -61,7 +61,7 @@ const QuadrantChartNode = ({ data, id, x, y, collisionData }) => {
             name={getToolName(id)}
             number={`${data.s}%`}
             fire={data.i > 50}
-            size={50}
+            size={55}
             hoverCoords={getHoverCoords(collisionData)}
         />
     )
