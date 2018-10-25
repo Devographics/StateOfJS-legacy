@@ -7,8 +7,8 @@ import theme from '../../nivoTheme'
 const OthersBar = ({ data }) => (
     <ResponsiveBar
         data={data}
-        indexBy="key"
-        keys={['doc_count']}
+        indexBy="name"
+        keys={['count']}
         layout="horizontal"
         padding={0.4}
         colors={colorRange}
@@ -19,9 +19,16 @@ const OthersBar = ({ data }) => (
             top: 30,
             right: 10,
             bottom: 30,
-            left: 20
+            left: 200
         }}
-        axisLeft={null}
+        axisLeft={{
+            "orient": "left",
+            "tickSize": 5,
+            "tickPadding": 5,
+            "tickRotation": 0,
+            "legendPosition": "center",
+            "legendOffset": -40
+        }}
         axisTop={{
             format: '.2s'
         }}

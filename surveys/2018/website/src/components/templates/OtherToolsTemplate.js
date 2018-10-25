@@ -4,6 +4,7 @@ import Meta from '../elements/Meta'
 import Layout from '../common/Layout'
 import TextBlock from '../blocks/TextBlock'
 import SectionHeader from '../elements/SectionHeader'
+import OthersBarsBlock from '../blocks/OthersBarsBlock'
 
 const OtherToolsTemplate = ({ data }) => {
     const otherTools = data.sectionsYaml.other_tools.find(ot => ot.survey_id === '2018').tools
@@ -15,6 +16,7 @@ const OtherToolsTemplate = ({ data }) => {
                 <Meta />
                 <SectionHeader />
                 <TextBlock text={'Other Tools template'} />
+                <OthersBarsBlock others={otherTools} baseKeys={otherTools.map(({ name }) => name)} />
             </div>
         </Layout>
     )
