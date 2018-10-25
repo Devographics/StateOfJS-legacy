@@ -27,7 +27,6 @@ const PeriodicElement = ({
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className={`PeriodicTableElement ${className}`}
-        transform="translate(295 115)"
         onClick={() => {
             if (path) {
                 navigate(path)
