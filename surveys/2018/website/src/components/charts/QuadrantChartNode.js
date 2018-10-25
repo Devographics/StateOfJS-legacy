@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { getToolName } from '../../helpers/wording'
 import PeriodicElement from '../elements/PeriodicElement'
