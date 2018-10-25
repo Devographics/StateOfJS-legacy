@@ -1,3 +1,190 @@
 section_id: build-tools
 tools: null
 opinions: []
+other_tools:
+    -
+        survey_id: '2017'
+        tools:
+            -
+                name: yarn
+                count: 1333
+            -
+                name: 'GNU Make'
+                count: 128
+            -
+                name: Broccoli
+                count: 121
+            -
+                name: Brunch
+                count: 113
+            -
+                name: om
+                count: 62
+            -
+                name: Fuse
+                count: 57
+            -
+                name: Bower
+                count: 49
+            -
+                name: jspm
+                count: 49
+            -
+                name: npm
+                count: 49
+            -
+                name: Babel
+                count: 41
+            -
+                name: fusebox
+                count: 37
+            -
+                name: Meteor
+                count: 35
+            -
+                name: gulp
+                count: 27
+            -
+                name: SystemJS
+                count: 26
+            -
+                name: Leiningen
+                count: 18
+            -
+                name: gradle
+                count: 18
+            -
+                name: Angular
+                count: 16
+            -
+                name: laravel
+                count: 14
+            -
+                name: elm
+                count: 13
+            -
+                name: elm-package
+                count: 13
+            -
+                name: StealJS
+                count: 11
+            -
+                name: Maven
+                count: 9
+            -
+                name: elixir
+                count: 9
+            -
+                name: clojure
+                count: 7
+            -
+                name: AVA
+                count: 5
+            -
+                name: java
+                count: 5
+            -
+                name: nw.js
+                count: 5
+            -
+                name: Composer
+                count: 4
+            -
+                name: 'Visual Studio'
+                count: 4
+            -
+                name: pnpm
+                count: 4
+    -
+        survey_id: '2016'
+        tools:
+            -
+                name: npm
+                count: 436
+            -
+                name: Broccoli
+                count: 100
+            -
+                name: jspm
+                count: 94
+            -
+                name: 'GNU Make'
+                count: 69
+            -
+                name: Brunch
+                count: 63
+            -
+                name: om
+                count: 45
+            -
+                name: SystemJS
+                count: 40
+            -
+                name: Babel
+                count: 15
+            -
+                name: Meteor
+                count: 14
+            -
+                name: Bower
+                count: 10
+            -
+                name: Node.js
+                count: 10
+            -
+                name: gulp
+                count: 9
+            -
+                name: Leiningen
+                count: 6
+            -
+                name: elm
+                count: 6
+            -
+                name: elm-package
+                count: 6
+            -
+                name: Maven
+                count: 5
+            -
+                name: Rails
+                count: 5
+            -
+                name: elixir
+                count: 4
+            -
+                name: .NET
+                count: 3
+            -
+                name: clojure
+                count: 3
+            -
+                name: gradle
+                count: 3
+            -
+                name: AVA
+                count: 2
+            -
+                name: Angular
+                count: 2
+            -
+                name: Composer
+                count: 2
+            -
+                name: StealJS
+                count: 2
+            -
+                name: 'Sublime Text'
+                count: 2
+            -
+                name: 'Visual Studio'
+                count: 2
+            -
+                name: java
+                count: 2
+            -
+                name: micro
+                count: 2
+            -
+                name: Homebrew
+                count: 1

@@ -75,3 +75,283 @@ opinions:
                 tool_id: mobx
                 counts: {never_heard: 9028, interested: 4280, not_interested: 5375, would_use: 1126, would_not_use: 323}
                 percentages: {never_heard: 44.8, interested: 21.3, not_interested: 26.7, would_use: 5.6, would_not_use: 1.6}
+other_tools:
+    -
+        survey_id: '2017'
+        tools:
+            -
+                name: VueX
+                count: 358
+            -
+                name: MongoDB
+                count: 165
+            -
+                name: 'Ember Data'
+                count: 61
+            -
+                name: Flux
+                count: 56
+            -
+                name: om
+                count: 52
+            -
+                name: PouchDB
+                count: 51
+            -
+                name: Meteor
+                count: 42
+            -
+                name: NgRx
+                count: 41
+            -
+                name: graph.cool
+                count: 40
+            -
+                name: RxJS
+                count: 37
+            -
+                name: MySQL
+                count: 35
+            -
+                name: Parse
+                count: 34
+            -
+                name: CouchDB
+                count: 30
+            -
+                name: RethinkDB
+                count: 24
+            -
+                name: realm
+                count: 22
+            -
+                name: Redis
+                count: 19
+            -
+                name: elm
+                count: 18
+            -
+                name: elm-package
+                count: 18
+            -
+                name: Gun.js
+                count: 15
+            -
+                name: cerebral
+                count: 14
+            -
+                name: GraphQL
+                count: 13
+            -
+                name: feathers
+                count: 11
+            -
+                name: Atom
+                count: 10
+            -
+                name: axios
+                count: 10
+            -
+                name: .NET
+                count: 9
+            -
+                name: Contentful
+                count: 9
+            -
+                name: couchbase
+                count: 9
+            -
+                name: ext.js
+                count: 9
+            -
+                name: horizon
+                count: 9
+            -
+                name: AVA
+                count: 8
+    -
+        survey_id: '2018'
+        tools:
+            -
+                name: VueX
+                count: 719
+            -
+                name: 'Ember Data'
+                count: 161
+            -
+                name: NgRx
+                count: 96
+            -
+                name: RxJS
+                count: 66
+            -
+                name: ext.js
+                count: 60
+            -
+                name: om
+                count: 34
+            -
+                name: Flux
+                count: 29
+            -
+                name: Meteor
+                count: 24
+            -
+                name: MongoDB
+                count: 17
+            -
+                name: elm
+                count: 16
+            -
+                name: elm-package
+                count: 16
+            -
+                name: cerebral
+                count: 12
+            -
+                name: firebase
+                count: 12
+            -
+                name: clojure
+                count: 11
+            -
+                name: PouchDB
+                count: 10
+            -
+                name: Atom
+                count: 6
+            -
+                name: AVA
+                count: 5
+            -
+                name: MySQL
+                count: 5
+            -
+                name: Node.js
+                count: 5
+            -
+                name: java
+                count: 5
+            -
+                name: micro
+                count: 5
+            -
+                name: 'vanilla javascript'
+                count: 5
+            -
+                name: Cycle.js
+                count: 4
+            -
+                name: d3
+                count: 4
+            -
+                name: 'atomic design'
+                count: 3
+            -
+                name: datomic
+                count: 3
+            -
+                name: feathers
+                count: 3
+            -
+                name: hyperapp
+                count: 3
+            -
+                name: CouchDB
+                count: 2
+            -
+                name: GraphQL
+                count: 2
+    -
+        survey_id: '2016'
+        tools:
+            -
+                name: Meteor
+                count: 36
+            -
+                name: om
+                count: 32
+            -
+                name: .NET
+                count: 30
+            -
+                name: Parse
+                count: 24
+            -
+                name: feathers
+                count: 18
+            -
+                name: django
+                count: 12
+            -
+                name: Rails
+                count: 9
+            -
+                name: ext.js
+                count: 8
+            -
+                name: socket.io
+                count: 8
+            -
+                name: PouchDB
+                count: 7
+            -
+                name: restify
+                count: 7
+            -
+                name: CouchDB
+                count: 6
+            -
+                name: 'Ember Data'
+                count: 6
+            -
+                name: serverless
+                count: 6
+            -
+                name: AVA
+                count: 5
+            -
+                name: MongoDB
+                count: 5
+            -
+                name: Node.js
+                count: 5
+            -
+                name: java
+                count: 5
+            -
+                name: Angular
+                count: 4
+            -
+                name: hoodie
+                count: 4
+            -
+                name: Atom
+                count: 3
+            -
+                name: 'atomic design'
+                count: 3
+            -
+                name: couchbase
+                count: 3
+            -
+                name: datomic
+                count: 3
+            -
+                name: kinto
+                count: 3
+            -
+                name: laravel
+                count: 3
+            -
+                name: PHP
+                count: 2
+            -
+                name: adonis
+                count: 2
+            -
+                name: d3
+                count: 2
+            -
+                name: deployd
+                count: 2

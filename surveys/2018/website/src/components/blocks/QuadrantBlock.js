@@ -34,8 +34,8 @@ const QuadrantBlock = ({ tools }) => (
                 <strong>total usage</strong>.
             </p>
             <p>
-Additionally, technologies that have an <strong>interest ratio</strong>{' '}
-                (percentage of non-users interested in learning it) over 50% are displayed as “on fire”.
+                Additionally, technologies that have an <strong>interest ratio</strong> (percentage
+                of non-users interested in learning it) over 50% are displayed as “on fire”.
             </p>
         </div>
         <div className="Quadrants__Block__Content block__content block__content--quadrant">

@@ -68,3 +68,283 @@ opinions:
                 tool_id: feathers
                 counts: {never_heard: 14839, not_interested: 3213, interested: 1177, would_use: 317, would_not_use: 145}
                 percentages: {never_heard: 75.4, not_interested: 16.3, interested: 6, would_use: 1.6, would_not_use: 0.7}
+other_tools:
+    -
+        survey_id: '2017'
+        tools:
+            -
+                name: Node.js
+                count: 151
+            -
+                name: Rails
+                count: 141
+            -
+                name: .NET
+                count: 139
+            -
+                name: AVA
+                count: 107
+            -
+                name: java
+                count: 107
+            -
+                name: PHP
+                count: 98
+            -
+                name: restify
+                count: 77
+            -
+                name: django
+                count: 68
+            -
+                name: elixir
+                count: 57
+            -
+                name: adonis
+                count: 56
+            -
+                name: laravel
+                count: 56
+            -
+                name: python
+                count: 47
+            -
+                name: om
+                count: 40
+            -
+                name: ext.js
+                count: 38
+            -
+                name: golang
+                count: 33
+            -
+                name: next.js
+                count: 32
+            -
+                name: micro
+                count: 30
+            -
+                name: serverless
+                count: 29
+            -
+                name: socket.io
+                count: 28
+            -
+                name: clojure
+                count: 24
+            -
+                name: firebase
+                count: 19
+            -
+                name: MongoDB
+                count: 16
+            -
+                name: GraphQL
+                count: 13
+            -
+                name: haskell
+                count: 13
+            -
+                name: horizon
+                count: 13
+            -
+                name: Kraken
+                count: 11
+            -
+                name: graph.cool
+                count: 11
+            -
+                name: trails
+                count: 11
+            -
+                name: CouchDB
+                count: 8
+            -
+                name: Parse
+                count: 7
+    -
+        survey_id: '2018'
+        tools:
+            -
+                name: .NET
+                count: 132
+            -
+                name: adonis
+                count: 116
+            -
+                name: Rails
+                count: 91
+            -
+                name: AVA
+                count: 71
+            -
+                name: java
+                count: 71
+            -
+                name: Node.js
+                count: 63
+            -
+                name: restify
+                count: 53
+            -
+                name: PHP
+                count: 50
+            -
+                name: python
+                count: 45
+            -
+                name: firebase
+                count: 41
+            -
+                name: laravel
+                count: 39
+            -
+                name: elixir
+                count: 35
+            -
+                name: django
+                count: 32
+            -
+                name: clojure
+                count: 31
+            -
+                name: micro
+                count: 31
+            -
+                name: golang
+                count: 27
+            -
+                name: om
+                count: 27
+            -
+                name: serverless
+                count: 26
+            -
+                name: haskell
+                count: 11
+            -
+                name: Scala
+                count: 10
+            -
+                name: ext.js
+                count: 10
+            -
+                name: scala
+                count: 10
+            -
+                name: GraphQL
+                count: 9
+            -
+                name: 'vanilla javascript'
+                count: 8
+            -
+                name: Parse
+                count: 5
+            -
+                name: next.js
+                count: 5
+            -
+                name: Kotlin
+                count: 4
+            -
+                name: MongoDB
+                count: 4
+            -
+                name: elm
+                count: 3
+            -
+                name: elm-package
+                count: 3
+    -
+        survey_id: '2016'
+        tools:
+            -
+                name: Angular
+                count: 33
+            -
+                name: MongoDB
+                count: 29
+            -
+                name: om
+                count: 28
+            -
+                name: Rails
+                count: 23
+            -
+                name: .NET
+                count: 22
+            -
+                name: elixir
+                count: 16
+            -
+                name: Node.js
+                count: 14
+            -
+                name: RethinkDB
+                count: 12
+            -
+                name: elm
+                count: 12
+            -
+                name: elm-package
+                count: 12
+            -
+                name: django
+                count: 7
+            -
+                name: python
+                count: 7
+            -
+                name: AVA
+                count: 6
+            -
+                name: MySQL
+                count: 6
+            -
+                name: clojure
+                count: 6
+            -
+                name: ext.js
+                count: 6
+            -
+                name: java
+                count: 6
+            -
+                name: Cycle.js
+                count: 5
+            -
+                name: golang
+                count: 5
+            -
+                name: jQuery
+                count: 5
+            -
+                name: Meteor
+                count: 4
+            -
+                name: PHP
+                count: 4
+            -
+                name: serverless
+                count: 4
+            -
+                name: CouchDB
+                count: 3
+            -
+                name: adonis
+                count: 3
+            -
+                name: couchbase
+                count: 3
+            -
+                name: trails
+                count: 3
+            -
+                name: Flux
+                count: 2
+            -
+                name: Redis
+                count: 2
+            -
+                name: durandal
+                count: 2

@@ -58,3 +58,43 @@ exports.happiness = async (sections, surveys, config) => {
 
     return happinessAggs
 }
+
+exports.otherTools = async (sections) => {
+    const aggs = await elastic.aggs({
+        surveys: {
+            terms: {
+                field: 'survey.keyword',
+            },
+            aggs: sections.reduce((acc, section) => ({
+                ...acc,
+                [section]: {
+                    terms: {
+                        field: `other_tools.${section}.norm.keyword`,
+                        size: 30,
+                    },
+                },
+            }), {}),
+        },
+    })
+
+    const otherToolsAggs = {}
+    sections.forEach(sectionId => {
+        const bySurvey = []
+        aggs.aggregations.surveys.buckets.map(survey => {
+            const sectionAggs = survey[sectionId]
+            if (sectionAggs === undefined || sectionAggs.buckets.length === 0) {
+                return
+            }
+            bySurvey.push({
+                survey_id: survey.key,
+                tools: sectionAggs.buckets.map(b => ({
+                    name: b.key,
+                    count: b.doc_count,
+                }))
+            })
+        })
+        otherToolsAggs[sectionId] = bySurvey
+    })
+
+    return otherToolsAggs
+}

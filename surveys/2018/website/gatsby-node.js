@@ -55,7 +55,7 @@ exports.createPages = async ({ actions }) => {
                         break
 
                     case 'other-libraries':
-                        templateName = 'OtherLibraries'
+                        templateName = 'OtherTools'
                         pageCharts = pageCharts.concat(charts['other-libraries'])
                         break
 

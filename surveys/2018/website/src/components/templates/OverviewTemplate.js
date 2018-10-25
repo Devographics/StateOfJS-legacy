@@ -1,9 +1,9 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import Meta from '../elements/Meta'
 import Layout from '../common/Layout'
 import OverviewBlock from '../blocks/OverviewBlock'
 import HappinessBlock from '../blocks/HappinessBlock'
-import { graphql } from 'gatsby'
 import SectionHeader from '../elements/SectionHeader'
 
 const OverviewTemplate = ({ pageContext, data }) => {

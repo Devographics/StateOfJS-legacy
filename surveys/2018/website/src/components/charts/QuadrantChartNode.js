@@ -1,9 +1,8 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { getToolName } from '../../helpers/wording'
 import PeriodicElement from '../elements/PeriodicElement'
 import periodicTableData from '../../data/periodic_table.yml'
-
 
 /*
 
@@ -15,7 +14,7 @@ const hoverDistance = 40
 const getHoverCoords = ({ dx, dy }) => {
     return {
         dx: dx < 0 ? hoverDistance : -hoverDistance,
-        dy: dy < 0 ? hoverDistance : -hoverDistance,
+        dy: dy < 0 ? hoverDistance : -hoverDistance
     }
 }
 
@@ -49,7 +48,6 @@ const getHoverCoords = ({ dx, dy }) => {
 // }
 
 const QuadrantChartNode = ({ data, id, x, y, collisionData }) => {
-
     return (
         <PeriodicElement
             className={`Quadrants__Chart__PeriodicTableElement ${
