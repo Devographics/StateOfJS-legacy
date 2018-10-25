@@ -16,11 +16,6 @@ Block
     @include medium-large {
         flex: 0 0 60%;
     }
-    font-size: $large-font;
-    // @include font-bold;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    @include font-regular;
 }
 
 /*
@@ -34,18 +29,19 @@ Chart
         margin-top: -20px;
     }
 }
-.Quadrants__Chart__value {
-    letter-spacing: 0.2em;
-}
-.Quadrants__Chart__label {
-    font-size: $small-font;
+.Quadrants__Chart__QuadrantLabel {
+    font-size: $large-font;
+    // @include font-bold;
+    letter-spacing: 4px;
     @include font-regular;
+    text-transform: uppercase;
 }
-.Quadrants__Chart__ticklabel {
+.Quadrants__Chart__TickLabel {
     font-size: $smaller-font;
 }
 .Quadrants__Chart__Legend {
     margin-top: 40px;
+    text-transform: uppercase;
 }
 .Quadrants__Chart__Legend__Title {
     text-align: center;
@@ -66,5 +62,42 @@ Chart
     border-right: 1px solid $dark-border-color;
     strong {
         text-transform: uppercase;
+    }
+}
+
+/*
+
+Circular Node (not used)
+
+*/
+
+.Quadrants__Chart__Value {
+    letter-spacing: 0.2em;
+}
+.Quadrants__Chart__Label {
+    font-size: $small-font;
+    @include font-regular;
+}
+
+/*
+
+Symbol Node
+
+*/
+
+.Quadrants__Chart {
+    .PeriodicTableElement_Frame {
+        stroke: $white;
+    }
+}
+.Quadrants__Chart__PeriodicTableElement {
+    &--collision {
+        overflow: visible !important;
+        .PeriodicTableElement_Container {
+            transition: all 500ms cubic-bezier(0.87, -0.41, 0.19, 1.44);
+            &:hover {
+                transform: translateX(var(--dx)) translateY(var(--dy));
+            }
+        }
     }
 }

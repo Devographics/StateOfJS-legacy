@@ -22,6 +22,8 @@ So what will the future bring? Will typed JavaScript become mainstream? Will Gra
 over the world? Will JavaScript "flavors" like Reason or Elm become the default 
 way of coding? There's only one way to find out: tune in next year for #StateOfJS 2018!
 
+Fire gif credit: http://animal-jam-roleplay.wikia.com/wiki/File:Pixel-fire-gif-1.gif
+
 <span class="conclusion__byline">– Sacha, Raphaël, and Michael</span>
 `
 

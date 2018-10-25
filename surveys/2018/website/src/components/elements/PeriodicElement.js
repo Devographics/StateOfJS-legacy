@@ -5,27 +5,36 @@ import { navigate } from 'gatsby'
 const defaultColor = '#41c7c7'
 
 const PeriodicElement = ({
+    className,
     name,
     symbol,
     number,
     color = defaultColor,
     mode = 'standalone',
     size = 100,
-    path
+    path,
+    x,
+    y,
+    fire = false,
+    hoverCoords = {},
 }) => (
     <svg
         width={size}
         height={size}
+        x={x}
+        y={y}
         viewBox={`0 0 ${size} ${size}`}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="PeriodicTableElement"
+        className={`PeriodicTableElement ${className}`}
+        transform='translate(295 115)'
         onClick={() => {
             if (path) {
                 navigate(path)
             }
         }}
     >
+    <g className="PeriodicTableElement_Container" style={{'--dx': `${hoverCoords.dx}px`, '--dy': `${hoverCoords.dy}px`}}>
         <rect
             x="0"
             y="0"
@@ -33,6 +42,8 @@ const PeriodicElement = ({
             height={size}
             className={`PeriodicTableElement_Frame PeriodicTableElement_Frame--${mode}`}
         />
+
+        {fire && <image xlinkHref="/images/pixel-fire.gif" x="10%" height={size} width={size} opacity="0.4"/>}
 
         <text
             className="PeriodicTableElement_Number"
@@ -66,6 +77,7 @@ const PeriodicElement = ({
         >
             {name}
         </text>
+        </g>
     </svg>
 )
 

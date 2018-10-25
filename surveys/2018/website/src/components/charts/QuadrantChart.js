@@ -124,7 +124,7 @@ const QuadrantChart = ({ tools }) => {
                             x={dimensions.width * 0.25}
                             y={dimensions.height * 0.25}
                             fill={styles.labelsColor}
-                            className="Quadrants__Chart__quadrant"
+                            className="Quadrants__Chart__QuadrantLabel"
                             fillOpacity="0.6"
                         >
                             Assess
@@ -135,7 +135,7 @@ const QuadrantChart = ({ tools }) => {
                             x={dimensions.width * 0.25}
                             y={dimensions.height * 0.75}
                             fill={styles.labelsColor}
-                            className="Quadrants__Chart__quadrant"
+                            className="Quadrants__Chart__QuadrantLabel"
                             fillOpacity="0.6"
                         >
                             Avoid
@@ -146,7 +146,7 @@ const QuadrantChart = ({ tools }) => {
                             x={dimensions.width * 0.75}
                             y={dimensions.height * 0.25}
                             fill={styles.labelsColor}
-                            className="Quadrants__Chart__quadrant"
+                            className="Quadrants__Chart__QuadrantLabel"
                             fillOpacity="0.7"
                         >
                             Adopt
@@ -157,7 +157,7 @@ const QuadrantChart = ({ tools }) => {
                             x={dimensions.width * 0.75}
                             y={dimensions.height * 0.75}
                             fill={styles.labelsColor}
-                            className="Quadrants__Chart__quadrant"
+                            className="Quadrants__Chart__QuadrantLabel"
                             fillOpacity="0.6"
                         >
                             Analyze
@@ -170,8 +170,24 @@ const QuadrantChart = ({ tools }) => {
                             })`}
                         >
                             {data.map(d => (
+                                // <PeriodicElement 
+                                //     className="Quadrants__Chart__PeriodicTableElement Quadrants__Chart__PeriodicTableElement--move"
+                                //     key={d.id}
+                                //     data={d}
+                                //     x={xScale(d.u)}
+                                //     y={yScale(d.s)}
+                                //     r={radiusScale(d.i)}
+                                //     styles={styles}
+                                //     symbol={periodicTableData.tools[d.id]}
+                                //     name={getToolName(d.id)}
+                                //     number={`${d.s}%`}
+                                //     fire={d.i > 50}
+                                //     size={50}
+                                //     hasCollision={detectCollision(xScale(d.u), yScale(d.s), 10)}
+                                // />
                                 <QuadrantChartNode
                                     key={d.id}
+                                    id={d.id}
                                     data={d}
                                     x={xScale(d.u)}
                                     y={yScale(d.s)}
@@ -199,7 +215,7 @@ const QuadrantChart = ({ tools }) => {
                                             y={10}
                                             textAnchor="middle"
                                             alignmentBaseline="hanging"
-                                            className="Quadrants__Chart__ticklabel"
+                                            className="Quadrants__Chart__TickLabel"
                                             fill={styles.labelsColor}
                                         >
                                             {xFormatter(d)}
@@ -227,7 +243,7 @@ const QuadrantChart = ({ tools }) => {
                                             x={-10}
                                             textAnchor="end"
                                             alignmentBaseline="middle"
-                                            className="Quadrants__Chart__ticklabel"
+                                            className="Quadrants__Chart__TickLabel"
                                             fill={styles.labelsColor}
                                         >
                                             {d}%
@@ -243,7 +259,7 @@ const QuadrantChart = ({ tools }) => {
                             alignmentBaseline="baseline"
                             transform={`translate(${-50},${halfHeight}) rotate(270)`}
                             fill={styles.labelsColor}
-                            className="Quadrants__Chart__legend"
+                            className="Quadrants__Chart__Legend"
                         >
                             Satisfaction %
                         </text>
@@ -253,7 +269,7 @@ const QuadrantChart = ({ tools }) => {
                             x={halfWidth}
                             y={dimensions.height + 30}
                             fill={styles.labelsColor}
-                            className="Quadrants__Chart__legend"
+                            className="Quadrants__Chart__Legend"
                         >
                             Users
                         </text>
