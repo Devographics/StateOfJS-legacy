@@ -76,3 +76,268 @@ opinions:
                 tool_id: native-apps
                 counts: {interested: 5587, would_use: 2113, not_interested: 6051, never_heard: 5581, would_not_use: 566}
                 percentages: {interested: 28.1, would_use: 10.6, not_interested: 30.4, never_heard: 28, would_not_use: 2.8}
+other_tools:
+    -
+        survey_id: '2017'
+        tools:
+            -
+                name: PWA
+                count: 148
+            -
+                name: Weex
+                count: 133
+            -
+                name: nw.js
+                count: 124
+            -
+                name: Xamarin
+                count: 110
+            -
+                name: Appcelerator
+                count: 33
+            -
+                name: Flutter
+                count: 29
+            -
+                name: quasar
+                count: 27
+            -
+                name: om
+                count: 23
+            -
+                name: Expo
+                count: 21
+            -
+                name: Fuse
+                count: 21
+            -
+                name: Swift
+                count: 15
+            -
+                name: elm
+                count: 11
+            -
+                name: elm-package
+                count: 11
+            -
+                name: AVA
+                count: 10
+            -
+                name: java
+                count: 10
+            -
+                name: CEF
+                count: 9
+            -
+                name: Kotlin
+                count: 9
+            -
+                name: Angular
+                count: 8
+            -
+                name: 'Elm native'
+                count: 6
+            -
+                name: .NET
+                count: 4
+            -
+                name: ext.js
+                count: 4
+            -
+                name: haxe
+                count: 4
+            -
+                name: 'Angular Native'
+                count: 3
+            -
+                name: Meteor
+                count: 3
+            -
+                name: lab
+                count: 3
+            -
+                name: 'GNU Make'
+                count: 2
+            -
+                name: Node.js
+                count: 2
+            -
+                name: 'Visual Studio'
+                count: 2
+            -
+                name: clojure
+                count: 2
+            -
+                name: jQuery
+                count: 2
+    -
+        survey_id: '2018'
+        tools:
+            -
+                name: Flutter
+                count: 230
+            -
+                name: PWA
+                count: 202
+            -
+                name: Weex
+                count: 49
+            -
+                name: Xamarin
+                count: 40
+            -
+                name: nw.js
+                count: 39
+            -
+                name: Appcelerator
+                count: 25
+            -
+                name: quasar
+                count: 18
+            -
+                name: om
+                count: 15
+            -
+                name: Expo
+                count: 12
+            -
+                name: Kotlin
+                count: 9
+            -
+                name: AVA
+                count: 7
+            -
+                name: java
+                count: 7
+            -
+                name: Fuse
+                count: 5
+            -
+                name: haxe
+                count: 5
+            -
+                name: Swift
+                count: 4
+            -
+                name: 'vanilla javascript'
+                count: 4
+            -
+                name: Meteor
+                count: 3
+            -
+                name: clojure
+                count: 3
+            -
+                name: CEF
+                count: 2
+            -
+                name: Reason
+                count: 2
+            -
+                name: elm
+                count: 2
+            -
+                name: elm-package
+                count: 2
+            -
+                name: ext.js
+                count: 2
+            -
+                name: .NET
+                count: 1
+            -
+                name: Angular
+                count: 1
+            -
+                name: 'Elm native'
+                count: 1
+            -
+                name: Emacs
+                count: 1
+            -
+                name: 'GNU Make'
+                count: 1
+            -
+                name: Netbeans
+                count: 1
+            -
+                name: PHP
+                count: 1
+    -
+        survey_id: '2016'
+        tools:
+            -
+                name: Xamarin
+                count: 86
+            -
+                name: Appcelerator
+                count: 48
+            -
+                name: PWA
+                count: 42
+            -
+                name: Weex
+                count: 14
+            -
+                name: om
+                count: 13
+            -
+                name: Fuse
+                count: 11
+            -
+                name: Meteor
+                count: 11
+            -
+                name: AVA
+                count: 9
+            -
+                name: java
+                count: 9
+            -
+                name: Swift
+                count: 7
+            -
+                name: jQuery
+                count: 6
+            -
+                name: Flutter
+                count: 5
+            -
+                name: .NET
+                count: 3
+            -
+                name: Expo
+                count: 3
+            -
+                name: 'GNU Make'
+                count: 3
+            -
+                name: Kotlin
+                count: 2
+            -
+                name: elm
+                count: 2
+            -
+                name: elm-package
+                count: 2
+            -
+                name: haxe
+                count: 2
+            -
+                name: nw.js
+                count: 2
+            -
+                name: quasar
+                count: 2
+            -
+                name: Angular
+                count: 1
+            -
+                name: Rails
+                count: 1
+            -
+                name: XO
+                count: 1
+            -
+                name: intern
+                count: 1

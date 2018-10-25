@@ -85,3 +85,274 @@ opinions:
                 tool_id: karma
                 counts: {never_heard: 6633, not_interested: 4091, interested: 3788, would_use: 3676, would_not_use: 1744}
                 percentages: {never_heard: 33.3, not_interested: 20.5, interested: 19, would_use: 18.4, would_not_use: 8.7}
+other_tools:
+    -
+        survey_id: '2017'
+        tools:
+            -
+                name: karma
+                count: 194
+            -
+                name: Qunit
+                count: 187
+            -
+                name: chai
+                count: 155
+            -
+                name: protractor
+                count: 101
+            -
+                name: nightwatch
+                count: 57
+            -
+                name: cucumber
+                count: 55
+            -
+                name: om
+                count: 51
+            -
+                name: sinon
+                count: 50
+            -
+                name: selenium
+                count: 48
+            -
+                name: elm
+                count: 33
+            -
+                name: elm-package
+                count: 33
+            -
+                name: tap
+                count: 32
+            -
+                name: lab
+                count: 31
+            -
+                name: elm-test
+                count: 28
+            -
+                name: cypress
+                count: 26
+            -
+                name: intern
+                count: 25
+            -
+                name: PhantomJS
+                count: 22
+            -
+                name: testcafe
+                count: 19
+            -
+                name: junit
+                count: 16
+            -
+                name: clojure
+                count: 13
+            -
+                name: jest
+                count: 13
+            -
+                name: AVA
+                count: 6
+            -
+                name: PHP
+                count: 6
+            -
+                name: laravel
+                count: 4
+            -
+                name: java
+                count: 3
+            -
+                name: 'vanilla javascript'
+                count: 3
+            -
+                name: Angular
+                count: 2
+            -
+                name: Meteor
+                count: 1
+            -
+                name: Scala
+                count: 1
+            -
+                name: StandardJS
+                count: 1
+    -
+        survey_id: '2018'
+        tools:
+            -
+                name: cypress
+                count: 382
+            -
+                name: tap
+                count: 198
+            -
+                name: Qunit
+                count: 170
+            -
+                name: chai
+                count: 70
+            -
+                name: testcafe
+                count: 45
+            -
+                name: protractor
+                count: 44
+            -
+                name: selenium
+                count: 43
+            -
+                name: nightwatch
+                count: 33
+            -
+                name: om
+                count: 33
+            -
+                name: sinon
+                count: 31
+            -
+                name: cucumber
+                count: 30
+            -
+                name: lab
+                count: 22
+            -
+                name: elm
+                count: 20
+            -
+                name: elm-package
+                count: 20
+            -
+                name: intern
+                count: 19
+            -
+                name: jest
+                count: 15
+            -
+                name: elm-test
+                count: 13
+            -
+                name: clojure
+                count: 9
+            -
+                name: junit
+                count: 5
+            -
+                name: PhantomJS
+                count: 4
+            -
+                name: AVA
+                count: 3
+            -
+                name: Node.js
+                count: 3
+            -
+                name: 'vanilla javascript'
+                count: 3
+            -
+                name: java
+                count: 2
+            -
+                name: karma
+                count: 2
+            -
+                name: Angular
+                count: 1
+            -
+                name: Gun.js
+                count: 1
+            -
+                name: JSLint
+                count: 1
+            -
+                name: PHP
+                count: 1
+            -
+                name: Parse
+                count: 1
+    -
+        survey_id: '2016'
+        tools:
+            -
+                name: tap
+                count: 289
+            -
+                name: Qunit
+                count: 128
+            -
+                name: karma
+                count: 77
+            -
+                name: chai
+                count: 49
+            -
+                name: protractor
+                count: 47
+            -
+                name: nightwatch
+                count: 28
+            -
+                name: selenium
+                count: 28
+            -
+                name: sinon
+                count: 25
+            -
+                name: intern
+                count: 23
+            -
+                name: lab
+                count: 19
+            -
+                name: om
+                count: 19
+            -
+                name: cypress
+                count: 12
+            -
+                name: PhantomJS
+                count: 6
+            -
+                name: elm
+                count: 5
+            -
+                name: elm-package
+                count: 5
+            -
+                name: junit
+                count: 5
+            -
+                name: elm-test
+                count: 3
+            -
+                name: Node.js
+                count: 2
+            -
+                name: clojure
+                count: 2
+            -
+                name: jest
+                count: 2
+            -
+                name: Angular
+                count: 1
+            -
+                name: Broccoli
+                count: 1
+            -
+                name: 'GNU Make'
+                count: 1
+            -
+                name: PHP
+                count: 1
+            -
+                name: Scala
+                count: 1
+            -
+                name: jQuery
+                count: 1
+            -
+                name: scala
+                count: 1

@@ -80,3 +80,97 @@ opinions:
                 tool_id: es6
                 counts: {would_use: 17400, interested: 1793, never_heard: 494, not_interested: 286, would_not_use: 193}
                 percentages: {would_use: 86.3, interested: 8.9, never_heard: 2.4, not_interested: 1.4, would_not_use: 1}
+other_tools:
+    -
+        survey_id: '2018'
+        tools:
+            -
+                name: React
+                count: 50
+            -
+                name: Angular
+                count: 41
+            -
+                name: Kotlin
+                count: 33
+            -
+                name: Babel
+                count: 31
+            -
+                name: Scala
+                count: 29
+            -
+                name: om
+                count: 29
+            -
+                name: scala
+                count: 29
+            -
+                name: 'vanilla javascript'
+                count: 29
+            -
+                name: Node.js
+                count: 21
+            -
+                name: AVA
+                count: 20
+            -
+                name: java
+                count: 20
+            -
+                name: jQuery
+                count: 12
+            -
+                name: haxe
+                count: 11
+            -
+                name: Meteor
+                count: 6
+            -
+                name: Reason
+                count: 6
+            -
+                name: RxJS
+                count: 6
+            -
+                name: elixir
+                count: 6
+            -
+                name: elm
+                count: 6
+            -
+                name: elm-package
+                count: 6
+            -
+                name: Ramda
+                count: 4
+            -
+                name: Svelte
+                count: 4
+            -
+                name: clojure
+                count: 4
+            -
+                name: adonis
+                count: 3
+            -
+                name: eslint
+                count: 3
+            -
+                name: ext.js
+                count: 3
+            -
+                name: .NET
+                count: 2
+            -
+                name: Appcelerator
+                count: 2
+            -
+                name: 'GNU Make'
+                count: 2
+            -
+                name: Knockout
+                count: 2
+            -
+                name: Prettier
+                count: 2

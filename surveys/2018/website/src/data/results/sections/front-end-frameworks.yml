@@ -76,3 +76,283 @@ opinions:
                 tool_id: preact
                 counts: {not_interested: 7446, never_heard: 5668, interested: 5533, would_use: 1251, would_not_use: 248}
                 percentages: {not_interested: 37, never_heard: 28.1, interested: 27.5, would_use: 6.2, would_not_use: 1.2}
+other_tools:
+    -
+        survey_id: '2017'
+        tools:
+            -
+                name: Preact
+                count: 443
+            -
+                name: elm
+                count: 437
+            -
+                name: elm-package
+                count: 437
+            -
+                name: Cycle.js
+                count: 304
+            -
+                name: Knockout
+                count: 296
+            -
+                name: jQuery
+                count: 284
+            -
+                name: Meteor
+                count: 221
+            -
+                name: Mithril
+                count: 201
+            -
+                name: Inferno
+                count: 197
+            -
+                name: Riot
+                count: 153
+            -
+                name: ext.js
+                count: 152
+            -
+                name: Svelte
+                count: 122
+            -
+                name: om
+                count: 116
+            -
+                name: Choo
+                count: 106
+            -
+                name: hyperapp
+                count: 84
+            -
+                name: Bootstrap
+                count: 66
+            -
+                name: dojo
+                count: 64
+            -
+                name: marko
+                count: 50
+            -
+                name: next.js
+                count: 37
+            -
+                name: marionette
+                count: 35
+            -
+                name: moon
+                count: 35
+            -
+                name: 'vanilla javascript'
+                count: 35
+            -
+                name: reagent
+                count: 34
+            -
+                name: d3
+                count: 33
+            -
+                name: Angular
+                count: 30
+            -
+                name: canjs
+                count: 25
+            -
+                name: glimmer
+                count: 23
+            -
+                name: AVA
+                count: 22
+            -
+                name: Kendo
+                count: 22
+            -
+                name: RxJS
+                count: 21
+    -
+        survey_id: '2018'
+        tools:
+            -
+                name: Svelte
+                count: 190
+            -
+                name: hyperapp
+                count: 134
+            -
+                name: Mithril
+                count: 111
+            -
+                name: om
+                count: 102
+            -
+                name: jQuery
+                count: 89
+            -
+                name: 'vanilla javascript'
+                count: 87
+            -
+                name: Inferno
+                count: 79
+            -
+                name: Meteor
+                count: 75
+            -
+                name: Cycle.js
+                count: 73
+            -
+                name: Knockout
+                count: 50
+            -
+                name: Angular
+                count: 49
+            -
+                name: ext.js
+                count: 49
+            -
+                name: elm
+                count: 48
+            -
+                name: elm-package
+                count: 48
+            -
+                name: Riot
+                count: 45
+            -
+                name: marko
+                count: 35
+            -
+                name: Choo
+                count: 32
+            -
+                name: dojo
+                count: 28
+            -
+                name: next.js
+                count: 22
+            -
+                name: marionette
+                count: 21
+            -
+                name: reagent
+                count: 21
+            -
+                name: Reason
+                count: 19
+            -
+                name: AVA
+                count: 17
+            -
+                name: canjs
+                count: 17
+            -
+                name: java
+                count: 17
+            -
+                name: glimmer
+                count: 15
+            -
+                name: RxJS
+                count: 10
+            -
+                name: React
+                count: 7
+            -
+                name: d3
+                count: 7
+            -
+                name: Bootstrap
+                count: 6
+    -
+        survey_id: '2016'
+        tools:
+            -
+                name: Knockout
+                count: 222
+            -
+                name: Meteor
+                count: 211
+            -
+                name: Cycle.js
+                count: 168
+            -
+                name: jQuery
+                count: 127
+            -
+                name: Mithril
+                count: 116
+            -
+                name: Riot
+                count: 116
+            -
+                name: ext.js
+                count: 78
+            -
+                name: om
+                count: 64
+            -
+                name: marionette
+                count: 45
+            -
+                name: Choo
+                count: 43
+            -
+                name: elm
+                count: 34
+            -
+                name: elm-package
+                count: 34
+            -
+                name: Inferno
+                count: 28
+            -
+                name: dojo
+                count: 28
+            -
+                name: Bootstrap
+                count: 27
+            -
+                name: ampersand
+                count: 25
+            -
+                name: Kendo
+                count: 20
+            -
+                name: Preact
+                count: 19
+            -
+                name: durandal
+                count: 18
+            -
+                name: React
+                count: 13
+            -
+                name: reagent
+                count: 12
+            -
+                name: canjs
+                count: 10
+            -
+                name: d3
+                count: 10
+            -
+                name: RxJS
+                count: 9
+            -
+                name: Node.js
+                count: 8
+            -
+                name: AVA
+                count: 7
+            -
+                name: java
+                count: 7
+            -
+                name: ThreeJS
+                count: 6
+            -
+                name: mootools
+                count: 5
+            -
+                name: underscore
+                count: 5

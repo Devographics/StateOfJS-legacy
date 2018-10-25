@@ -1,3 +1,190 @@
 section_id: css
 tools: null
 opinions: []
+other_tools:
+    -
+        survey_id: '2017'
+        tools:
+            -
+                name: PostCSS
+                count: 573
+            -
+                name: Bulma
+                count: 509
+            -
+                name: 'semantic UI'
+                count: 503
+            -
+                name: materialize
+                count: 312
+            -
+                name: 'CSS modules'
+                count: 244
+            -
+                name: om
+                count: 219
+            -
+                name: 'material design'
+                count: 131
+            -
+                name: ext.js
+                count: 99
+            -
+                name: skeleton
+                count: 91
+            -
+                name: bourbon
+                count: 70
+            -
+                name: PureCSS
+                count: 67
+            -
+                name: CSSnext
+                count: 65
+            -
+                name: BEM
+                count: 51
+            -
+                name: uikit
+                count: 49
+            -
+                name: elm
+                count: 42
+            -
+                name: elm-package
+                count: 42
+            -
+                name: Angular
+                count: 39
+            -
+                name: flexbox
+                count: 34
+            -
+                name: milligram
+                count: 33
+            -
+                name: mdl
+                count: 29
+            -
+                name: Atom
+                count: 19
+            -
+                name: 'atomic design'
+                count: 19
+            -
+                name: vuetify
+                count: 12
+            -
+                name: 'Material UI'
+                count: 11
+            -
+                name: glamor
+                count: 8
+            -
+                name: radium
+                count: 8
+            -
+                name: Bootstrap
+                count: 7
+            -
+                name: JSS
+                count: 7
+            -
+                name: Meteor
+                count: 6
+            -
+                name: aphrodite
+                count: 6
+    -
+        survey_id: '2016'
+        tools:
+            -
+                name: Stylus
+                count: 402
+            -
+                name: PostCSS
+                count: 351
+            -
+                name: Bootstrap
+                count: 48
+            -
+                name: om
+                count: 46
+            -
+                name: BEM
+                count: 43
+            -
+                name: ext.js
+                count: 39
+            -
+                name: radium
+                count: 31
+            -
+                name: CSSnext
+                count: 26
+            -
+                name: JSS
+                count: 25
+            -
+                name: Atom
+                count: 11
+            -
+                name: glamor
+                count: 11
+            -
+                name: 'atomic design'
+                count: 10
+            -
+                name: bourbon
+                count: 8
+            -
+                name: 'CSS modules'
+                count: 6
+            -
+                name: elm
+                count: 6
+            -
+                name: elm-package
+                count: 6
+            -
+                name: 'semantic UI'
+                count: 4
+            -
+                name: Bulma
+                count: 3
+            -
+                name: 'GNU Make'
+                count: 3
+            -
+                name: flexbox
+                count: 3
+            -
+                name: AVA
+                count: 2
+            -
+                name: PureCSS
+                count: 2
+            -
+                name: ThreeJS
+                count: 2
+            -
+                name: gulp
+                count: 2
+            -
+                name: jQuery
+                count: 2
+            -
+                name: java
+                count: 2
+            -
+                name: materialize
+                count: 2
+            -
+                name: Angular
+                count: 1
+            -
+                name: PHP
+                count: 1
+            -
+                name: PhantomJS
+                count: 1

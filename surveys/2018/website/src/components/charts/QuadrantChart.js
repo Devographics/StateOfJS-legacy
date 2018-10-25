@@ -215,7 +215,11 @@ const QuadrantChart = ({ tools }) => {
                                     y={yScale(d.s)}
                                     r={radiusScale(d.i)}
                                     styles={styles}
-                                    collisionData={detectCollision(collisionPositions, xScale(d.u), yScale(d.s))}
+                                    collisionData={detectCollision(
+                                        collisionPositions,
+                                        xScale(d.u),
+                                        yScale(d.s)
+                                    )}
                                 />
                             ))}
                         </g>

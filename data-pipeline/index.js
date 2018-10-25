@@ -136,6 +136,7 @@ const aggregate = async () => {
             section_id: section.section_id,
             tools: section.tools,
             opinions: section.opinions,
+            other_tools: section.otherTools,
         })
     })
 
