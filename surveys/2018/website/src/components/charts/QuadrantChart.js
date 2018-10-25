@@ -51,6 +51,24 @@ const mapData = opinions =>
         }
     })
 
+const detectCollision = (collisionPositions, x1, y1, d) => {
+    let collisionData = false
+    for (let i = 0; i < collisionPositions.length; i++) {
+        const [x2, y2] = collisionPositions[i]
+        const dx = Math.abs(x1 - x2)
+        const dy = Math.abs(y1 - y2)
+        console.log(x1, y1, dx, dy, dx < d && dy < d, '\n')
+
+        if (dx < d && dy < d) {
+            collisionData = { dx, dy }
+            break
+        }
+    }
+
+    collisionPositions.push([x1, y1])
+    return collisionData
+}
+
 const QuadrantChart = ({ tools }) => {
     const data = mapData(tools)
 
@@ -77,6 +95,8 @@ const QuadrantChart = ({ tools }) => {
     const radiusScale = scaleLinear()
         .domain([0, 100])
         .range([dimensions.circle.minRadius, dimensions.circle.maxRadius])
+
+    const collisionPositions = []
 
     return (
         <div className="Quadrants__Wrapper">
@@ -170,7 +190,7 @@ const QuadrantChart = ({ tools }) => {
                             })`}
                         >
                             {data.map(d => (
-                                // <PeriodicElement 
+                                // <PeriodicElement
                                 //     className="Quadrants__Chart__PeriodicTableElement Quadrants__Chart__PeriodicTableElement--move"
                                 //     key={d.id}
                                 //     data={d}
@@ -193,6 +213,7 @@ const QuadrantChart = ({ tools }) => {
                                     y={yScale(d.s)}
                                     r={radiusScale(d.i)}
                                     styles={styles}
+                                    collisionData={detectCollision(collisionPositions, xScale(d.u), yScale(d.s), 20)}
                                 />
                             ))}
                         </g>

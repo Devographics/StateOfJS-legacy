@@ -92,10 +92,11 @@ Symbol Node
 }
 .Quadrants__Chart__PeriodicTableElement {
     &--collision {
-        overflow: visible !important;
-        .PeriodicTableElement_Container {
+        .PeriodicTableElement_Container{
             transition: all 500ms cubic-bezier(0.87, -0.41, 0.19, 1.44);
-            &:hover {
+        }
+        &:hover {
+            .PeriodicTableElement_Container {
                 transform: translateX(var(--dx)) translateY(var(--dy));
             }
         }

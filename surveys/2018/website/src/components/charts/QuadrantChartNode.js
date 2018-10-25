@@ -4,24 +4,6 @@ import { getToolName } from '../../helpers/wording'
 import PeriodicElement from '../elements/PeriodicElement'
 import periodicTableData from '../../data/periodic_table.yml'
 
-const collisionPositions = []
-const detectCollision = (x1, y1, d) => {
-    let collisionData = false
-    for (let i = 0; i < collisionPositions.length; i++) {
-        const [x2, y2] = collisionPositions[i]
-        const dx = Math.abs(x1 - x2)
-        const dy = Math.abs(y1 - y2)
-        console.log(x1, y1, dx, dy, dx < d && dy < d, '\n')
-
-        if (dx < d && dy < d) {
-            collisionData = { dx, dy }
-            break
-        }
-    }
-
-    collisionPositions.push([x1, y1])
-    return collisionData
-}
 
 /*
 
@@ -29,7 +11,7 @@ Take x and y distances, and return distances we want
 to move the element by to avoid collision
 
 */
-const hoverDistance = 30
+const hoverDistance = 40
 const getHoverCoords = ({ dx, dy }) => {
     return {
         dx: dx < 0 ? hoverDistance : -hoverDistance,
@@ -66,8 +48,7 @@ const getHoverCoords = ({ dx, dy }) => {
 //     )
 // }
 
-const QuadrantChartNode = ({ data, id, x, y }) => {
-    const collisionData = detectCollision(x, y, 20)
+const QuadrantChartNode = ({ data, id, x, y, collisionData }) => {
 
     return (
         <PeriodicElement
