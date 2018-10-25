@@ -152,33 +152,6 @@ other_tools:
             -
                 name: jest
                 count: 13
-            -
-                name: AVA
-                count: 6
-            -
-                name: PHP
-                count: 6
-            -
-                name: laravel
-                count: 4
-            -
-                name: java
-                count: 3
-            -
-                name: 'vanilla javascript'
-                count: 3
-            -
-                name: Angular
-                count: 2
-            -
-                name: Meteor
-                count: 1
-            -
-                name: Scala
-                count: 1
-            -
-                name: StandardJS
-                count: 1
     -
         survey_id: '2018'
         tools:
@@ -233,45 +206,6 @@ other_tools:
             -
                 name: elm-test
                 count: 13
-            -
-                name: clojure
-                count: 9
-            -
-                name: junit
-                count: 5
-            -
-                name: PhantomJS
-                count: 4
-            -
-                name: AVA
-                count: 3
-            -
-                name: Node.js
-                count: 3
-            -
-                name: 'vanilla javascript'
-                count: 3
-            -
-                name: java
-                count: 2
-            -
-                name: karma
-                count: 2
-            -
-                name: Angular
-                count: 1
-            -
-                name: Gun.js
-                count: 1
-            -
-                name: JSLint
-                count: 1
-            -
-                name: PHP
-                count: 1
-            -
-                name: Parse
-                count: 1
     -
         survey_id: '2016'
         tools:
@@ -311,48 +245,3 @@ other_tools:
             -
                 name: cypress
                 count: 12
-            -
-                name: PhantomJS
-                count: 6
-            -
-                name: elm
-                count: 5
-            -
-                name: elm-package
-                count: 5
-            -
-                name: junit
-                count: 5
-            -
-                name: elm-test
-                count: 3
-            -
-                name: Node.js
-                count: 2
-            -
-                name: clojure
-                count: 2
-            -
-                name: jest
-                count: 2
-            -
-                name: Angular
-                count: 1
-            -
-                name: Broccoli
-                count: 1
-            -
-                name: 'GNU Make'
-                count: 1
-            -
-                name: PHP
-                count: 1
-            -
-                name: Scala
-                count: 1
-            -
-                name: jQuery
-                count: 1
-            -
-                name: scala
-                count: 1

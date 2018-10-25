@@ -70,7 +70,8 @@ exports.otherTools = async (sections) => {
                 [section]: {
                     terms: {
                         field: `other_tools.${section}.norm.keyword`,
-                        size: 30,
+                        size: 50,
+                        min_doc_count: 10,
                     },
                 },
             }), {}),

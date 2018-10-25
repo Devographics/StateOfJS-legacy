@@ -170,6 +170,24 @@ other_tools:
             -
                 name: RxJS
                 count: 21
+            -
+                name: java
+                count: 18
+            -
+                name: clojure
+                count: 15
+            -
+                name: durandal
+                count: 15
+            -
+                name: React
+                count: 12
+            -
+                name: Reason
+                count: 12
+            -
+                name: ampersand
+                count: 12
     -
         survey_id: '2018'
         tools:
@@ -254,15 +272,6 @@ other_tools:
             -
                 name: RxJS
                 count: 10
-            -
-                name: React
-                count: 7
-            -
-                name: d3
-                count: 7
-            -
-                name: Bootstrap
-                count: 6
     -
         survey_id: '2016'
         tools:
@@ -335,24 +344,3 @@ other_tools:
             -
                 name: d3
                 count: 10
-            -
-                name: RxJS
-                count: 9
-            -
-                name: Node.js
-                count: 8
-            -
-                name: AVA
-                count: 7
-            -
-                name: java
-                count: 7
-            -
-                name: ThreeJS
-                count: 6
-            -
-                name: mootools
-                count: 5
-            -
-                name: underscore
-                count: 5

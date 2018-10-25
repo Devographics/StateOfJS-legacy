@@ -156,12 +156,6 @@ other_tools:
             -
                 name: trails
                 count: 11
-            -
-                name: CouchDB
-                count: 8
-            -
-                name: Parse
-                count: 7
     -
         survey_id: '2018'
         tools:
@@ -231,30 +225,6 @@ other_tools:
             -
                 name: scala
                 count: 10
-            -
-                name: GraphQL
-                count: 9
-            -
-                name: 'vanilla javascript'
-                count: 8
-            -
-                name: Parse
-                count: 5
-            -
-                name: next.js
-                count: 5
-            -
-                name: Kotlin
-                count: 4
-            -
-                name: MongoDB
-                count: 4
-            -
-                name: elm
-                count: 3
-            -
-                name: elm-package
-                count: 3
     -
         survey_id: '2016'
         tools:
@@ -288,63 +258,3 @@ other_tools:
             -
                 name: elm-package
                 count: 12
-            -
-                name: django
-                count: 7
-            -
-                name: python
-                count: 7
-            -
-                name: AVA
-                count: 6
-            -
-                name: MySQL
-                count: 6
-            -
-                name: clojure
-                count: 6
-            -
-                name: ext.js
-                count: 6
-            -
-                name: java
-                count: 6
-            -
-                name: Cycle.js
-                count: 5
-            -
-                name: golang
-                count: 5
-            -
-                name: jQuery
-                count: 5
-            -
-                name: Meteor
-                count: 4
-            -
-                name: PHP
-                count: 4
-            -
-                name: serverless
-                count: 4
-            -
-                name: CouchDB
-                count: 3
-            -
-                name: adonis
-                count: 3
-            -
-                name: couchbase
-                count: 3
-            -
-                name: trails
-                count: 3
-            -
-                name: Flux
-                count: 2
-            -
-                name: Redis
-                count: 2
-            -
-                name: durandal
-                count: 2
