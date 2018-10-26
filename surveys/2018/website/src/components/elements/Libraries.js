@@ -65,13 +65,7 @@ const Tooltip = ({ library, variant }) => {
             <div className="toolip__topzone" />
             <div className="tooltip__inner">
                 <h3 className="tooltip__title">
-                    {library.homepage ? (
-                        <a className="tooltip__title__homepage" href={library.homepage}>
-                            {library.name}
-                        </a>
-                    ) : (
-                        <span className="tooltip__title__homepage">{library.name}</span>
-                    )}
+                    <span className="tooltip__title__homepage">{library.name}</span>
                     <a className="tooltip__title__stars" href={githubUrl}>
                         <StarTotal value={library.stars.toLocaleString()} />
                         <StarIcon />
@@ -112,7 +106,7 @@ const Libraries = ({ data, variant = 'horizontal' }) => (
     <div className={`libraries libraries--${variant} libraries--${data.length}-items`}>
         <div className="libraries__inner" style={{ padding: paddingFormula(data.length) }}>
             {data.map(result => {
-                const key = result.name
+                const key = result.name || result.key
                 const libraryName = aliases[key] ? aliases[key] : key
                 const library = find(
                     libraries.projects,

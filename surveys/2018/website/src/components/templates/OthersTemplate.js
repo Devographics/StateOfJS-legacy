@@ -1,5 +1,5 @@
 import React from 'react'
-import OthersBarBlock from '../blocks/OthersBarsBlock'
+import BarBlock from '../blocks/BarBlock'
 import OthersBubbleBlock from '../blocks/OthersBubbleBlock'
 import Meta from '../elements/Meta'
 import Layout from '../common/Layout'
@@ -10,7 +10,7 @@ const OthersTemplate = props => (
         <div className="template">
             <Meta section={props.section} subSection="other" />
             <SectionHeader />
-            <OthersBarBlock {...props} />
+            <BarBlock {...props} />
             <OthersBubbleBlock {...props} />
         </div>
     </Layout>

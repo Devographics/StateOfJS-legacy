@@ -2,12 +2,13 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Meta from '../elements/Meta'
 import Layout from '../common/Layout'
-import TextBlock from '../blocks/TextBlock'
 import SectionHeader from '../elements/SectionHeader'
-import OthersBarsBlock from '../blocks/OthersBarsBlock'
+import BarBlock from '../blocks/BarBlock'
 
 const OtherToolsTemplate = ({ data }) => {
-    const otherTools = data.sectionsYaml.other_tools.find(ot => ot.survey_id === '2018').tools
+    const otherTools = data.sectionsYaml.other_tools.find(ot => ot.survey_id === '2018').tools.reverse()
+    // const others = _others.filter(({ key }) => !baseKeys.includes(key))
+
     console.log(otherTools)
 
     return (
@@ -15,7 +16,11 @@ const OtherToolsTemplate = ({ data }) => {
             <div className="template">
                 <Meta />
                 <SectionHeader />
-                <OthersBarsBlock others={otherTools} baseKeys={otherTools.map(({ name }) => name)} />
+                <BarBlock
+                    chart="other-tools"
+                    description="Other tools mentioned by survey respondents, ranked by mention count."
+                    data={otherTools}
+                />
             </div>
         </Layout>
     )

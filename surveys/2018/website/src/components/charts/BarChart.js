@@ -4,9 +4,9 @@ import { ResponsiveBar } from '@nivo/bar'
 import { colorRange } from '../../constants'
 import theme from '../../nivoTheme'
 
-const OthersBar = ({ data }) => (
+const BarChart = ({ data }) => (
     <ResponsiveBar
-        data={data}
+        data={data.reverse()}
         indexBy="name"
         keys={['count']}
         layout="horizontal"
@@ -28,8 +28,8 @@ const OthersBar = ({ data }) => (
     />
 )
 
-OthersBar.propTypes = {
+BarChart.propTypes = {
     data: PropTypes.array.isRequired
 }
 
-export default OthersBar
+export default BarChart
