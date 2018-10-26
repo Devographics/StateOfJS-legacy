@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import numeral from 'numeral'
 import find from 'lodash/find'
 import classNames from 'classnames'
-import libraries from '../../data/libraries.json'
+import libraries from '../../data/bestofjs.json'
 import { aliases } from '../../constants'
 import paddingFormula from '../../helpers/paddingFormula'
 
@@ -65,9 +65,13 @@ const Tooltip = ({ library, variant }) => {
             <div className="toolip__topzone" />
             <div className="tooltip__inner">
                 <h3 className="tooltip__title">
-                    <a className="tooltip__title__homepage" href={library.homepage}>
-                        {library.name}
-                    </a>
+                    {library.homepage ? (
+                        <a className="tooltip__title__homepage" href={library.homepage}>
+                            {library.name}
+                        </a>
+                    ) : (
+                        <span className="tooltip__title__homepage">{library.name}</span>
+                    )}
                     <a className="tooltip__title__stars" href={githubUrl}>
                         <StarTotal value={library.stars.toLocaleString()} />
                         <StarIcon />
@@ -78,15 +82,21 @@ const Tooltip = ({ library, variant }) => {
                 </p>
                 <h4>Learn More</h4>
                 <ul>
-                    <li>
-                        <a href={library.homepage}>Homepage</a>
-                    </li>
-                    <li>
-                        <a href={githubUrl}>GitHub</a>
-                    </li>
-                    <li>
-                        <a href={bestofjsUrl}>BestOfJS</a>
-                    </li>
+                    {library.homepage && (
+                        <li>
+                            <a href={library.homepage}>Homepage</a>
+                        </li>
+                    )}
+                    {githubUrl && (
+                        <li>
+                            <a href={githubUrl}>GitHub</a>
+                        </li>
+                    )}
+                    {bestofjsUrl && (
+                        <li>
+                            <a href={bestofjsUrl}>BestOfJS</a>
+                        </li>
+                    )}
                 </ul>
             </div>
         </div>
@@ -102,11 +112,14 @@ const Libraries = ({ data, variant = 'horizontal' }) => (
     <div className={`libraries libraries--${variant} libraries--${data.length}-items`}>
         <div className="libraries__inner" style={{ padding: paddingFormula(data.length) }}>
             {data.map(result => {
-                const key = result.tool || result.key
+                const key = result.name
                 const libraryName = aliases[key] ? aliases[key] : key
                 const library = find(
                     libraries.projects,
-                    project => project.name.toLowerCase() === libraryName.toLowerCase()
+                    project =>
+                        project.name &&
+                        project.name.toLowerCase() === libraryName &&
+                        libraryName.toLowerCase()
                 )
 
                 if (library) {

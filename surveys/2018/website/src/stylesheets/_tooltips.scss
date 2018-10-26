@@ -47,8 +47,6 @@ $tooltipDisplay: none;
         white-space: nowrap;
         text-align: right;
     }
-    .library__tooltip {
-    }
 }
 .libraries--horizontal {
     @include small {
@@ -79,6 +77,7 @@ $tooltipDisplay: none;
     z-index: 100;
     font-size: $small-font;
     display: $tooltipDisplay;
+    @include font-regular;
     .libraries__item:hover & {
         display: block;
         @include small {
@@ -95,10 +94,8 @@ $tooltipDisplay: none;
         z-index: 100;
     }
     .tooltip__inner {
-        border-radius: 3px;
-        border: 1px solid $border-color;
         padding: $spacing;
-        background: $white;
+        background: $lightgrey;
         position: relative;
 
         &:after,

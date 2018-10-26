@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import OthersBar from '../charts/OthersBar'
-// import Libraries from '../elements/Libraries'
+import Libraries from '../elements/Libraries'
 import reverse from 'lodash/reverse'
-import ShareChart from '../common/ShareChart'
+import BlockTitle from '../elements/BlockTitle'
 
 export default class OthersBarsBlock extends Component {
     state = {
@@ -20,17 +20,19 @@ export default class OthersBarsBlock extends Component {
         const { baseKeys, others: _others } = this.props
 
         const others = _others.filter(({ key }) => !baseKeys.includes(key))
+        const reversedOthers = reverse(others)
 
         return (
             <div className="block block--chart block--othersbar">
-                <h3 className="block__title">Top Mentions</h3>
+                <BlockTitle chart="other-tools" />
+
                 <div className="block__description">
-                    <p>Tools mentioned the most in &quot;Other&quot; answer.</p>
+                    <p>Other tools mentioned by survey respondents, ranked by mention count.</p>
                 </div>
                 <div className="capture others-wrapper">
-                    {/* <Libraries data={reverse([...others])} variant="vertical" /> */}
+                    <Libraries data={reversedOthers} variant="vertical" />
                     <div className="chart-wrapper" style={{ height: 800 }}>
-                        <OthersBar data={reverse(others)} />
+                        <OthersBar data={reversedOthers} />
                     </div>
                 </div>
             </div>

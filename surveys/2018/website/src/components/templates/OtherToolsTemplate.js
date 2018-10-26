@@ -15,7 +15,6 @@ const OtherToolsTemplate = ({ data }) => {
             <div className="template">
                 <Meta />
                 <SectionHeader />
-                <TextBlock text={'Other Tools template'} />
                 <OthersBarsBlock others={otherTools} baseKeys={otherTools.map(({ name }) => name)} />
             </div>
         </Layout>
