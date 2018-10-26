@@ -15,10 +15,10 @@ graphql: 2
 relay: 3
 apollo: 4
 mobx: 5
-meteor: 1
-express: 2
-nextjs: 3
-koa: 4
+express: 1
+nextjs: 2
+koa: 3
+meteor: 4
 sails: 5
 feathers: 6
 storybook: 1

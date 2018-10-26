@@ -27,7 +27,7 @@ export default class ToolHeaderBlock extends Component {
                         tool={tool}
                         name={getToolName(tool)}
                         symbol={periodicTableData.tools[tool] || '??'}
-                        number={ranking[tool] || '?'}
+                        number={`#${ranking[tool]}` || '?'}
                     />
                 </div>
                 <div className="ToolHeader__Content">
@@ -38,22 +38,21 @@ export default class ToolHeaderBlock extends Component {
                     {project && (
                         <Fragment>
                             <div>{project.description}</div>
-                            <div className="ToolHeader_Links">
-                                <a
+                            <div className="ToolHeader__Links">
+                                {project.homepage && <a className="ToolHeader__Link button button--small"
                                     href={project.homepage}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    homepage
-                                </a>
-                                {' | '}
-                                <a
+                                    Homepage
+                                </a>}
+                                {project.github && <a className="ToolHeader__Link button button--small"
                                     href={`https://github.com/${project.github}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    github
-                                </a>
+                                    GitHub
+                                </a>}
                             </div>
                         </Fragment>
                     )}

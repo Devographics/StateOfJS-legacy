@@ -8,7 +8,7 @@
 .ToolHeader__Element {
     margin-right: $spacing;
     flex-shrink: 1;
-    flex-basis: 150px;
+    flex-basis: 120px;
 }
 .SectionHeader {
     margin-bottom: $spacing * 2;
@@ -33,4 +33,17 @@
     @include medium-large {
         font-size: 2rem;
     }
+}
+
+.ToolHeader__Content{
+    flex: 1;
+}
+
+.ToolHeader__Links{
+    display: flex;
+    align-items: center;
+    margin-top: $spacing/2;
+}
+.ToolHeader__Link{
+    margin-right: $spacing/2;
 }

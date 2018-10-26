@@ -11,7 +11,7 @@ const PeriodicElement = ({
     number,
     color = defaultColor,
     mode = 'standalone',
-    size = 100,
+    size,
     path,
     x,
     y,
@@ -19,11 +19,11 @@ const PeriodicElement = ({
     hoverCoords = {}
 }) => (
     <svg
-        width={size}
-        height={size}
+        width={size || "100%"}
+        height={size || "auto"}
         x={x}
         y={y}
-        viewBox={`0 0 ${size} ${size}`}
+        viewBox={`0 0 100 100`}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className={`PeriodicTableElement ${className}`}
@@ -37,8 +37,8 @@ const PeriodicElement = ({
         <rect
             x="0"
             y="0"
-            width={size}
-            height={size}
+            width="100"
+            height="100"
             className="PeriodicTableElement_Placeholder"
             fill="red"
             fillOpacity="0"
@@ -50,8 +50,8 @@ const PeriodicElement = ({
             <rect
                 x="0"
                 y="0"
-                width={size}
-                height={size}
+                width="100"
+                height="100"
                 className={`PeriodicTableElement_Frame PeriodicTableElement_Frame--${mode}`}
             />
 
@@ -59,17 +59,17 @@ const PeriodicElement = ({
                 <image
                     xlinkHref="/images/pixel-fire.gif"
                     x="10%"
-                    height={size}
-                    width={size}
+                    height="100"
+                    width="100"
                     opacity="0.4"
                 />
             )}
 
             <text
                 className="PeriodicTableElement_Number"
-                x={size * 0.1}
-                y={size * 0.2}
-                fontSize={size * 0.14}
+                x={100 * 0.1}
+                y={100 * 0.2}
+                fontSize={100 * 0.14}
                 fill="white"
             >
                 {number}
@@ -77,11 +77,11 @@ const PeriodicElement = ({
 
             <text
                 className="PeriodicTableElement_Symbol"
-                x={size * 0.5}
-                y={size * 0.55}
+                x={100 * 0.5}
+                y={100 * 0.55}
                 width="100%"
                 textAnchor="middle"
-                fontSize={size * 0.36}
+                fontSize={100 * 0.36}
                 fill={color}
             >
                 {symbol}
@@ -89,9 +89,9 @@ const PeriodicElement = ({
 
             <text
                 className="PeriodicTableElement_Label"
-                x={size * 0.5}
-                y={size * 0.78}
-                fontSize={size * 0.14}
+                x={100 * 0.5}
+                y={100 * 0.78}
+                fontSize={100 * 0.14}
                 fill={color}
                 textAnchor="middle"
             >

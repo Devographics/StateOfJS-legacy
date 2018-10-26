@@ -10,7 +10,7 @@ Take x and y distances, and return distances we want
 to move the element by to avoid collision
 
 */
-const hoverDistance = 40
+const hoverDistance = 60
 const getHoverCoords = ({ dx, dy }) => {
     return {
         dx: dx < 0 ? hoverDistance : -hoverDistance,
