@@ -32,20 +32,22 @@
 .pagelayout__inner {
     @include medium-large {
         display: flex;
+        justify-content: space-around;
     }
 }
 
 .pagelayout__content {
     flex: 1;
     @include small {
-        margin: $spacing;
+        // margin: $spacing;
     }
     @include medium-large {
-        margin: $spacing * 2 $spacing * 4;
+        // margin: $spacing * 2 $spacing * 4;
     }
 }
 
-.template {
+.pagelayout__main {
+    padding: $spacing*3;
 }
 
 .section {

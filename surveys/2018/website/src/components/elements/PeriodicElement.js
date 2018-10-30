@@ -20,7 +20,7 @@ const PeriodicElement = ({
 }) => (
     <svg
         width={size || "100%"}
-        height={size || "auto"}
+        height={size}
         x={x}
         y={y}
         viewBox={`0 0 100 100`}

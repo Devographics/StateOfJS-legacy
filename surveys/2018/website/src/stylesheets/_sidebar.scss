@@ -1,6 +1,5 @@
 .Sidebar {
-    position: relative;
-
+    flex: 0 0 270px;
     @include small {
         top: 0;
         bottom: 0;
@@ -20,15 +19,18 @@
             position: fixed;
         }
     }
-    @include medium-large {
-        min-width: 200px;
-        max-width: 300px;
-        margin-right: $spacing * 2;
-    }
+}
+
+
+.Sidebar__Fixed {
+    position: fixed;
+    width: 270px;    
 }
 
 .Sidebar__Inner {
     padding: $spacing * 1.5;
+    border-right: 1px solid $dark-border-color;
+
 }
 
 .Sidebar__Close {
@@ -50,10 +52,15 @@
 }
 
 .Sidebar__Logo {
+    margin: 0;
     @include small {
         max-width: 200px;
         margin: 0 auto;
         margin-bottom: $spacing;
+    }
+    a, img, svg {
+        display: block;
+        width: 100%;
     }
 }
 
@@ -66,13 +73,13 @@
         padding: 0;
     }
     li {
-        margin-bottom: $spacing/2;
+        margin-bottom: $spacing/1.5;
     }
 }
 
 .nav-page {
     white-space: nowrap;
-    font-size: $large-font;
+    font-size: $smallish-font;
     margin: 0;
 }
 
@@ -95,7 +102,7 @@
 .nav-subpage {
     display: block;
     margin-right: $spacing/2;
-    font-size: $medium-font;
+    font-size: $smallish-font;
     &,
     &:link,
     &:visited {

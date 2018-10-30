@@ -1,7 +1,6 @@
 .pagetitle__wrapper {
     border-top: 1px solid $dark-border-color;
     border-bottom: 1px solid $dark-border-color;
-    margin-bottom: $spacing * 2;
 }
 
 .pagetitle {
@@ -80,12 +79,10 @@
 }
 
 .PageTitle__Sidebar__Toggle {
-    @include small {
-        padding: 0 $spacing/2;
-        height: 100%;
-        @include flex-center;
-        border-right: 1px solid $dark-border-color;
-    }
+    padding: 0 $spacing/2;
+    height: 100%;
+    @include flex-center;
+    border-right: 1px solid $dark-border-color;
     @include medium-large {
         display: none;
     }
@@ -96,15 +93,12 @@
     border: none;
     background: $bg-color;
     padding: 0;
-
+    display: block;
     svg {
         display: block;
         width: 100%;
         height: auto;
         stroke: $active-color;
-    }
-    @include small {
-        display: block;
     }
     @include medium-large {
         display: none;
