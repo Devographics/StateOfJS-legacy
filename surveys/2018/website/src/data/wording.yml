@@ -97,7 +97,7 @@ charts:
     salaries-map: Salaries per Country
     experience: Experience
     company-size: Company Size
-    participation-breakdown: Participation breakdown
+    participation-by-country: Participation by country
     salary-per-country: Average salary per country
 
 shortnames: 

@@ -30,7 +30,7 @@ exports.byCountry = async () => {
         country: {
             terms: {
                 size: 200,
-                min_doc_count: 20,
+                min_doc_count: 1,
                 field: 'user_info.country.keyword',
             },
             aggs: countryAndContinentSubAggs
@@ -86,3 +86,40 @@ exports.byContinent = async () => {
         }))
     }))
 }
+
+exports.participationByLocation = async (locationType) => {
+    const result = await elastic.aggs({
+        by_survey: {
+            terms: {
+                field: 'survey.keyword',
+            },
+            aggs: {
+                location: {
+                    terms: {
+                        field: `user_info.${locationType}.keyword`,
+                        size: 200,
+                    },
+                },
+            }
+        },
+    })
+
+    return result.aggregations.by_survey.buckets.map(surveyBucket => {
+        const total = surveyBucket.doc_count
+
+        return {
+            survey: surveyBucket.key,
+            total,
+            by_country: surveyBucket.location.buckets.map(locationBucket => {
+                return {
+                    country: locationBucket.key,
+                    count: locationBucket.doc_count,
+                    percentage: Number((locationBucket.doc_count / total * 100).toFixed(2))
+                }
+            })
+        }
+    })
+}
+
+exports.participationByContinent = async () => exports.participationByLocation('continent')
+exports.participationByCountry = async () => exports.participationByLocation('country')

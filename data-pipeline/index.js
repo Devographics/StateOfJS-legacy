@@ -146,7 +146,7 @@ const aggregate = async () => {
 
     console.log('\ncomputing demographics')
     const demographics = await aggregator.computeDemographic()
-    await saveResult('demographics', demographics)
+    await saveResult('demographics/demographics', demographics)
 }
 
 aggregate()

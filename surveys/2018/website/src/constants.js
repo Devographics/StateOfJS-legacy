@@ -10,6 +10,7 @@ export const colors = {
 
     greyLight: '#d8d8d8',
     greyDark: '#aeaeae',
+    warmGrey: '#e4d6d9',
 
     redLight: '#f89f9f',
     red: '#FE6A6A',
@@ -26,17 +27,6 @@ export const colorRange = [
     colors.blueLight,
     colors.greyLight
 ]
-
-export const sectionColors = {
-    flavors: 'red',
-    frontend: '#7D7494',
-    state: '#FBF34C',
-    backend: '#49B7BE',
-    testing: '#84E56C',
-    style: '#E0A4BC',
-    build: '#D96A2B',
-    mobile: '#8B8DE8'
-}
 
 export const chordScale = ['#b3b5e6', '#e28194', '#788080']
 

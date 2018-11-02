@@ -71,10 +71,9 @@ class CompoundAggregator {
 
     async computeDemographic() {
         return {
-            demographics: {
-                by_continent: await demographicAggregator.byContinent(),
-                by_country: await demographicAggregator.byCountry(),
-            }
+            by_continent: await demographicAggregator.byContinent(),
+            by_country: await demographicAggregator.byCountry(),
+            participation: await demographicAggregator.participationByCountry(),
         }
     }
 }
