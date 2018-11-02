@@ -1,4 +1,7 @@
 .Sidebar {
+    // background: $light-bg-color;
+    border-right: 1px solid $dark-border-color;
+    border-bottom: 1px solid $dark-border-color;
     flex: 0 0 270px;
     @include small {
         top: 0;
@@ -29,7 +32,6 @@
 
 .Sidebar__Inner {
     padding: $spacing * 1.5;
-    border-right: 1px solid $dark-border-color;
 
 }
 

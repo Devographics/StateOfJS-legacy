@@ -28,6 +28,12 @@
     &--small{
         font-size: $small-font;
         padding: $spacing/4 $spacing/2;
+        &:link{
+            color: $darker-text-color;
+        }
+        &:hover{
+            color: $secondary-color;
+        }
     }
     &.large-button {
         padding: $spacing $spacing;

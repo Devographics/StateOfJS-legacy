@@ -7,7 +7,7 @@ $spacing: 20px;
 }
 
 @mixin border {
-    border: 2px solid $border-color;
+    border: 1px solid $border-color;
 }
 
 @mixin clearfix {

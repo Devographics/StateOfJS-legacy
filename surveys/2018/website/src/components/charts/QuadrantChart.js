@@ -59,7 +59,6 @@ const detectCollision = (collisionPositions, x1, y1) => {
         const [x2, y2] = collisionPositions[i]
         const dx = Math.abs(x1 - x2)
         const dy = Math.abs(y1 - y2)
-        console.log(x1, y1, dx, dy, dx < collisionDistance && dy < collisionDistance, '\n')
 
         if (dx < collisionDistance && dy < collisionDistance) {
             collisionData = { dx, dy }
