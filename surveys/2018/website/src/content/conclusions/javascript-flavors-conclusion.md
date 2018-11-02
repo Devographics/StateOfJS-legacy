@@ -1,6 +1,6 @@
-The idea that you can write your code in a language that compiles down to JavaScript may seem obvious now, but it's easy to forget how innovative it really is. 
+The idea that you can write your code in a language or language variant that compiles down to JavaScript may seem obvious now, but it's easy to forget how innovative it really is. 
 
-For the longest time CoffeeScript was the lone proponent of that strategy, but today it's been overtaken by **ES6** and its descendants, **TypeScript**, **Flow**, and even languages with very different syntaxes such as **Elm** and **Reason**. 
+For the longest time CoffeeScript was the lone proponent of that strategy, but today it's been overtaken by **ES6** and its follow-ups, **TypeScript**, **Flow**, and even languages with very different syntaxes such as **Elm** and **Reason**. 
 
 And there's good reasons to think that this is the future of JavaScript as a whole. With projects like [Web Assembly](https://webassembly.org/) arriving on the scene, writing code directly in JavaScript might soon seem as quaint as writing in Assembly today. 
 
