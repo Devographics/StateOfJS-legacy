@@ -6,7 +6,9 @@ import SectionHeader from '../elements/SectionHeader'
 import BarBlock from '../blocks/BarBlock'
 
 const OtherToolsTemplate = ({ data }) => {
-    const otherTools = data.sectionsYaml.other_tools.find(ot => ot.survey_id === '2018').tools.reverse()
+    const otherTools = data.sectionsYaml.other_tools
+        .find(ot => ot.survey_id === '2018')
+        .tools.reverse()
     // const others = _others.filter(({ key }) => !baseKeys.includes(key))
 
     console.log(otherTools)

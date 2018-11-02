@@ -1,10 +1,9 @@
 /**
- * This file defines a set of rules which can be applied
+ * Defines a set of rules which can be applied
  * in order to standardize tool names, it's mostly involved
  * to extract things from the "other tools" questions.
  */
-
-module.exports = [
+exports.toolsNormalizers = [
     [/preact/i, 'Preact'],
     [/elm/i, 'elm'],
     [/cycle/i, 'Cycle.js'],

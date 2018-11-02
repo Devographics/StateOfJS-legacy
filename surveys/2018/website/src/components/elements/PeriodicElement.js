@@ -19,7 +19,7 @@ const PeriodicElement = ({
     hoverCoords = {}
 }) => (
     <svg
-        width={size || "100%"}
+        width={size || '100%'}
         height={size}
         x={x}
         y={y}

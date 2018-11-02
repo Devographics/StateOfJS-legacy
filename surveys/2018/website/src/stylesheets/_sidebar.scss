@@ -24,15 +24,13 @@
     }
 }
 
-
 .Sidebar__Fixed {
     position: fixed;
-    width: 270px;    
+    width: 270px;
 }
 
 .Sidebar__Inner {
     padding: $spacing * 1.5;
-
 }
 
 .Sidebar__Close {
@@ -60,7 +58,9 @@
         margin: 0 auto;
         margin-bottom: $spacing;
     }
-    a, img, svg {
+    a,
+    img,
+    svg {
         display: block;
         width: 100%;
     }

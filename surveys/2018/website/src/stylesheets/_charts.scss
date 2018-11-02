@@ -162,3 +162,12 @@
         border-bottom-style: solid;
     }
 }
+
+.ToolsUsageByCountry__Chart,
+.SalaryPerCountry__Chart {
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.ToolUsageByCountry__Tooltip {
+}

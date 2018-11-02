@@ -35,15 +35,15 @@
     }
 }
 
-.ToolHeader__Content{
+.ToolHeader__Content {
     flex: 1;
 }
 
-.ToolHeader__Links{
+.ToolHeader__Links {
     display: flex;
     align-items: center;
     margin-top: $spacing/2;
 }
-.ToolHeader__Link{
+.ToolHeader__Link {
     margin-right: $spacing/2;
 }

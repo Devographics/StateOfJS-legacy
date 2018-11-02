@@ -1,9 +1,11 @@
 import React from 'react'
 import TextBlock from '../components/blocks/TextBlock'
 import Layout from '../components/common/Layout'
-import DemographicsGenderBlock from '../components/blocks/DemographicsGenderBlock'
+import GenderBreakdownBlock from '../components/blocks/GenderBreakdownBlock'
 import { graphql } from 'gatsby'
 import SectionHeader from '../components/elements/SectionHeader'
+import ParticipationBreakdownBlock from '../components/blocks/ParticipationBreakdownBlock'
+import SalaryPerCountryBlock from '../components/blocks/SalaryPerCountryBlock'
 
 const text = `
 Demographics intro TODO.
@@ -15,7 +17,9 @@ const Demographics = ({ data, ...rest }) => {
             <div>
                 <SectionHeader />
                 <TextBlock text={text} />
-                <DemographicsGenderBlock data={data.resultsYaml.demographics} />
+                <ParticipationBreakdownBlock />
+                <GenderBreakdownBlock data={data.resultsYaml.demographics} />
+                <SalaryPerCountryBlock />
             </div>
         </Layout>
     )

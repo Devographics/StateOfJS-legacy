@@ -17,13 +17,13 @@ nav:
     mobile-and-desktop: Mobile & Desktop
 
 tools:
-  angular: Angular
-  native-apps: Native Apps
-  graphql: GraphQL
-  es6: ES6
-  phonegap-cordova: Cordova
-  storybook: StoryBook
-  apollo: Apollo
+    angular: Angular
+    native-apps: Native Apps
+    graphql: GraphQL
+    es6: ES6
+    phonegap-cordova: Cordova
+    storybook: StoryBook
+    apollo: Apollo
 
 opinions:
     legends:
@@ -78,7 +78,7 @@ charts:
     results-over-time: ${tool}'s Popularity Over Time
     likes: Most Liked Aspects of ${tool}
     dislikes: Most Disliked Aspects of ${tool}
-    tool-map: ${tool} Usage by Country
+    tool-usage-by-country: ${tool} Usage by Country
     other-languages: Other Languages
     browser-apis: Browser APIs
     build-tools: Build Tools
@@ -97,6 +97,8 @@ charts:
     salaries-map: Salaries per Country
     experience: Experience
     company-size: Company Size
+    participation-breakdown: Participation breakdown
+    salary-per-country: Average salary per country
 
 shortnames: 
     javascript-flavors: Flavors

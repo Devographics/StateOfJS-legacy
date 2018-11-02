@@ -5,7 +5,7 @@ import Layout from '../common/Layout'
 import ToolHeaderBlock from '../blocks/ToolHeaderBlock'
 import ToolOpinionsOverTimeBlock from '../blocks/ToolOpinionsOverTimeBlock'
 import ReasonsBlock from '../blocks/ReasonsBlock'
-import ToolOpinionMapBlock from '../blocks/ToolOpinionMapBlock'
+import ToolUsageByCountryBlock from '../blocks/ToolUsageByCountryBlock'
 
 const ToolTemplate = ({ pageContext, data }) => {
     // console.log(pageContext, data)
@@ -16,17 +16,12 @@ const ToolTemplate = ({ pageContext, data }) => {
         shouldDisplayExperienceOverTime = true
     }
 
+    const wouldUseByCountryData = data.toolsYaml.would_use_by_country.find(d => d.survey === '2018')
+
     return (
         <Layout>
             <div className="template">
                 <Meta />
-                {data.toolsYaml === null && (
-                    <div style={{ color: 'red' }}>
-                        No yaml file found for tool: <strong>{pageContext.tool}</strong>
-                        <br />
-                        <br />
-                    </div>
-                )}
                 <ToolHeaderBlock section={pageContext.section} tool={pageContext.tool} />
                 {shouldDisplayExperienceOverTime ? (
                     <ToolOpinionsOverTimeBlock
@@ -35,19 +30,12 @@ const ToolTemplate = ({ pageContext, data }) => {
                     />
                 ) : (
                     <p className="tool-over-time-no-data">
-                        Sorry, we don't have enough data to display the evolution of this library's
-                        popularity over time.
+                        Sorry, we don&apos;t have enough data to display the evolution of this
+                        library's popularity over time.
                     </p>
                 )}
-                {data.toolsYaml !== null && (
-                    <ReasonsBlock tool={pageContext.tool} reasons={data.toolsYaml.reasons} />
-                )}
-                {data.toolsYaml !== null && (
-                    <ToolOpinionMapBlock
-                        tool={pageContext.tool}
-                        data={data.toolsYaml.would_use_by_continent}
-                    />
-                )}
+                <ReasonsBlock tool={pageContext.tool} reasons={data.toolsYaml.reasons} />
+                <ToolUsageByCountryBlock tool={pageContext.tool} data={wouldUseByCountryData} />
             </div>
         </Layout>
     )
@@ -79,11 +67,15 @@ export const query = graphql`
                     }
                 }
             }
-            would_use_by_continent {
+            would_use_by_country {
                 survey
-                by_continent {
-                    continent
+                percentage
+                buckets {
+                    country
+                    total
+                    count
                     percentage
+                    delta_from_average
                 }
             }
             reasons {

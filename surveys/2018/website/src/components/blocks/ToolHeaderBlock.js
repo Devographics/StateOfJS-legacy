@@ -39,20 +39,26 @@ export default class ToolHeaderBlock extends Component {
                         <Fragment>
                             <div>{project.description}</div>
                             <div className="ToolHeader__Links">
-                                {project.homepage && <a className="ToolHeader__Link button button--small"
-                                    href={project.homepage}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Homepage
-                                </a>}
-                                {project.github && <a className="ToolHeader__Link button button--small"
-                                    href={`https://github.com/${project.github}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    GitHub
-                                </a>}
+                                {project.homepage && (
+                                    <a
+                                        className="ToolHeader__Link button button--small"
+                                        href={project.homepage}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Homepage
+                                    </a>
+                                )}
+                                {project.github && (
+                                    <a
+                                        className="ToolHeader__Link button button--small"
+                                        href={`https://github.com/${project.github}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        GitHub
+                                    </a>
+                                )}
                             </div>
                         </Fragment>
                     )}

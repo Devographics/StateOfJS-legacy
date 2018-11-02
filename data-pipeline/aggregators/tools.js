@@ -208,7 +208,7 @@ exports.experience = async (tools, surveys, config, experienceId) => {
 
 /**
  * This aggregator computes stats about the reasons
- * why useres liked/disliked a tool.
+ * why users liked/disliked a tool.
  */
 exports.reasons = async (tools) => {
     const result = await elastic.aggs(tools.reduce((acc, tool) => ({
@@ -250,11 +250,7 @@ exports.reasons = async (tools) => {
     return toolsAggs
 }
 
-/**
- * This aggregator computes stats about opinion (used, would use, interested…)
- * by continent.
- */
-exports.opinionByContinent = async (tools, opinion) => {
+exports.opinionByLocation = async (tools, opinion, locationType) => {
     const result = await elastic.aggs(tools.reduce((acc, tool) => ({
         ...acc,
         [tool]: {
@@ -262,36 +258,60 @@ exports.opinionByContinent = async (tools, opinion) => {
                 field: 'survey.keyword',
             },
             aggs: {
-                continent: {
+                location: {
                     terms: {
-                        field: 'user_info.continent.keyword'
+                        field: `user_info.${locationType}.keyword`,
+                        size: 200,
+                        min_doc_count: 10,
                     },
                     aggs: {
                         [opinion]: {
                             filter: {
                                 term: {
-                                    [`tools.${tool}.opinion.keyword`]: opinion
+                                    [`tools.${tool}.opinion.keyword`]: opinion,
                                 }
                             }
                         }
                     }
-                }
+                },
+                [opinion]: {
+                    filter: {
+                        term: {
+                            [`tools.${tool}.opinion.keyword`]: opinion,
+                        }
+                    }
+                },
             }
         },
     }), {}))
 
     const toolsAggs = {}
     tools.forEach(tool => {
-        toolsAggs[tool] = result.aggregations[tool].buckets.map(surveyBucket => ({
-            survey: surveyBucket.key,
-            by_continent: surveyBucket.continent.buckets.filter(b => b.key !== 'undefined').map(continentBucket => ({
-                continent: continentBucket.key,
-                total: continentBucket.doc_count,
-                count: continentBucket[opinion].doc_count,
-                percentage: Number((continentBucket[opinion].doc_count / continentBucket.doc_count * 100).toFixed(1))
-            }))
-        }))
+        toolsAggs[tool] = result.aggregations[tool].buckets.map(surveyBucket => {
+            const surveyPercentAverage = Number((surveyBucket[opinion].doc_count / surveyBucket.doc_count * 100).toFixed(1))
+
+            return {
+                survey: surveyBucket.key,
+                total: surveyBucket.doc_count,
+                percentage: surveyPercentAverage,
+                buckets: surveyBucket.location.buckets.filter(b => b.key !== 'undefined').map(locationBucket => {
+                    const locationPercentage = Number((locationBucket[opinion].doc_count / locationBucket.doc_count * 100).toFixed(1))
+                    const deltaFromAverage = Number((locationPercentage - surveyPercentAverage).toFixed(1))
+
+                    return {
+                        [locationType]: locationBucket.key,
+                        total: locationBucket.doc_count,
+                        count: locationBucket[opinion].doc_count,
+                        percentage: locationPercentage,
+                        delta_from_average: deltaFromAverage,
+                    }
+                })
+            }
+        })
     })
 
     return toolsAggs
 }
+
+exports.opinionByContinent = async (tools, opinion) => exports.opinionByLocation(tools, opinion, 'continent')
+exports.opinionByCountry = async (tools, opinion) => exports.opinionByLocation(tools, opinion, 'country')

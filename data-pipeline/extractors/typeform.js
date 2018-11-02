@@ -2,7 +2,7 @@ const { last } = require('lodash')
 const fetch = require('node-fetch')
 const tools = require('../conf/tools')
 const userInfo = require('../conf/user_info')
-const normalize = require('../conf/normalize')
+const { toolsNormalizers } = require('../conf/normalize')
 const types = require('./fields')
 const geo = require('./geo')
 const util = require('./util')
@@ -12,7 +12,7 @@ const TYPEFORM_FIELD_TYPE_RATING = 'rating'
 
 const BATCH_SIZE = 1000
 
-const otherToolsExtractor = util.extractToolsFromText(normalize)
+const otherToolsExtractor = util.extractToolsFromText(toolsNormalizers)
 
 class TypeformExtractor {
     constructor(config, {

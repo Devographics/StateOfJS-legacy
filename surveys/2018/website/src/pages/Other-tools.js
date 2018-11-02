@@ -13,10 +13,7 @@ const OtherTools = props => (
                 console.log(data)
                 return (
                     <div className="Block Block--chart block block--chart" key={otherTool}>
-                        <BarBlock 
-                            data={data} 
-                            title={otherTool}
-                        />
+                        <BarBlock data={data} title={otherTool} />
                     </div>
                 )
             })}

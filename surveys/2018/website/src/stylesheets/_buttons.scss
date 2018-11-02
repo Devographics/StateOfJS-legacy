@@ -25,13 +25,13 @@
         color: $hover-color;
         border-color: $hover-color;
     }
-    &--small{
+    &--small {
         font-size: $small-font;
         padding: $spacing/4 $spacing/2;
-        &:link{
+        &:link {
             color: $darker-text-color;
         }
-        &:hover{
+        &:hover {
             color: $secondary-color;
         }
     }

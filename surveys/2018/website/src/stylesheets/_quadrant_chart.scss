@@ -86,13 +86,12 @@ Symbol Node
 */
 
 .Quadrants__Chart {
-    .PeriodicTableElement{
+    .PeriodicTableElement {
         overflow: visible !important;
     }
     .PeriodicTableElement_Frame {
         stroke: $white;
         fill: $light-bg-color;
-
     }
 }
 .Quadrants__Chart__PeriodicTableElement {

@@ -58,10 +58,12 @@ class CompoundAggregator {
         const toolsExperienceAggs = await toolsAggregator.experience(tools, surveyIds, this.config, experience.WOULD_USE)
         const toolsReasonsAggs = await toolsAggregator.reasons(tools)
         const toolsWouldUseByContinentAggs = await toolsAggregator.opinionByContinent(tools, experience.WOULD_USE)
+        const toolsWouldUseByCountryAggs = await toolsAggregator.opinionByCountry(tools, experience.WOULD_USE)
         Object.keys(toolsExperienceAggs).forEach(tool => {
             toolsExperiencesAggs[tool][experience.WOULD_USE] = toolsExperienceAggs[tool]
             toolsExperiencesAggs[tool].reasons = toolsReasonsAggs[tool]
             toolsExperiencesAggs[tool][`${experience.WOULD_USE}_by_continent`] = toolsWouldUseByContinentAggs[tool]
+            toolsExperiencesAggs[tool][`${experience.WOULD_USE}_by_country`] = toolsWouldUseByCountryAggs[tool]
         })
 
         return toolsExperiencesAggs

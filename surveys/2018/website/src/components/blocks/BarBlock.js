@@ -13,7 +13,7 @@ export default class BarBlock extends Component {
         description: PropTypes.string,
         title: PropTypes.string,
         chart: PropTypes.string,
-        data: PropTypes.array.isRequired,
+        data: PropTypes.array.isRequired
     }
 
     render() {
