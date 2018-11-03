@@ -171,3 +171,38 @@
 
 .ToolUsageByCountry__Tooltip {
 }
+
+.Bar__Chart {
+    svg {
+        overflow: visible;
+    }
+}
+
+.Bar__Tick{
+    z-index: 1000;
+}
+
+.Bar__Tooltip__Wrapper {
+    overflow: visible;
+    display: none;
+    z-index: 1000;
+    .Bar__Tick:hover & {
+        display: block;
+    }
+}
+
+.Bar__Tick__Label {
+    fill: $text-color;
+    font-size: $small-font;
+    cursor: default;
+    &--hoverable {
+        cursor: pointer;
+        @include font-bold;
+        fill: $active-color;
+    }
+}
+
+.Tooltip{
+
+    z-index: 1000;
+}

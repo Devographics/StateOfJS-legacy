@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { ResponsiveBar } from '@nivo/bar'
 import theme from '../../nivoTheme'
+import { barChartProps } from '../../constants'
 
 const verticalMargin = 30
 const innerMargin = 10
@@ -77,26 +78,17 @@ export default class ReasonsChartUnit extends Component {
                 }}
             >
                 <ResponsiveBar
-                    layout="horizontal"
-                    enableGridX={true}
-                    enableGridY={false}
-                    enableLabel={false}
-                    reverse={false}
-                    enableLabels={false}
+                    {...barChartProps}
                     theme={theme}
                     colorBy={d => {
                         if (current === null) return color
                         return d.indexValue === current ? color : 'rgba(255, 255, 255, .15)'
                     }}
                     data={data}
-                    padding={0.8}
-                    borderRadius={2.5}
                     keys={['count']}
                     indexBy="reason"
-                    margin={{
-                        top: verticalMargin,
-                        right: innerMargin,
-                        bottom: verticalMargin,
+                    margin= {{
+                        ...barChartProps,
                         left: labelsWidth
                     }}
                     axisTop={{}}

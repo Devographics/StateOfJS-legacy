@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import BarChart from '../charts/BarChart'
-import Libraries from '../elements/Libraries'
 import BlockTitle from '../elements/BlockTitle'
 
 export default class BarBlock extends Component {
@@ -27,10 +26,7 @@ export default class BarBlock extends Component {
                     <p>{description}</p>
                 </div>
                 <div className="capture others-wrapper">
-                    <Libraries data={data} variant="vertical" />
-                    <div className="chart-wrapper" style={{ height: 800 }}>
-                        <BarChart data={data} />
-                    </div>
+                    <BarChart data={data} />
                 </div>
             </div>
         )

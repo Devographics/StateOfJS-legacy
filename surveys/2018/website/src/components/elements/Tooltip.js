@@ -1,11 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import numeral from 'numeral'
-import find from 'lodash/find'
 import classNames from 'classnames'
-import libraries from '../../data/bestofjs.json'
-import { aliases } from '../../constants'
-import paddingFormula from '../../helpers/paddingFormula'
 
 const StarIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
@@ -27,11 +23,11 @@ const Description = ({ text, showEmojis }) => {
     const emoji = () => {
         const size = 20
         return `<img
-      align="absmiddle"
-      width="${size}"
-      height=${size}
-      src="https://assets-cdn.github.com/images/icons/emoji/$2.png"
-    />`
+    align="absmiddle"
+    width="${size}"
+    height=${size}
+    src="https://assets-cdn.github.com/images/icons/emoji/$2.png"
+  />`
     }
     const replacedBy = showEmojis ? emoji() : ''
     const result = text.replace(/(:([a-z_\d]+):)/g, replacedBy).trim()
@@ -57,6 +53,7 @@ const Tooltip = ({ library, variant }) => {
     return (
         <div
             className={classNames(
+                'Tooltip',
                 'library__tooltip',
                 { 'arrow-top': variant === 'horizontal' },
                 { 'arrow-right': variant === 'vertical' }
@@ -78,17 +75,17 @@ const Tooltip = ({ library, variant }) => {
                 <ul>
                     {library.homepage && (
                         <li>
-                            <a href={library.homepage}>Homepage</a>
+                            <a className="Tooltip__Link" href={library.homepage}>Homepage</a>
                         </li>
                     )}
                     {githubUrl && (
                         <li>
-                            <a href={githubUrl}>GitHub</a>
+                            <a className="Tooltip__Link" href={githubUrl}>GitHub</a>
                         </li>
                     )}
                     {bestofjsUrl && (
                         <li>
-                            <a href={bestofjsUrl}>BestOfJS</a>
+                            <a className="Tooltip__Link" href={bestofjsUrl}>BestOfJS</a>
                         </li>
                     )}
                 </ul>
@@ -102,44 +99,4 @@ Tooltip.propTypes = {
     variant: PropTypes.string
 }
 
-const Libraries = ({ data, variant = 'horizontal' }) => (
-    <div className={`libraries libraries--${variant} libraries--${data.length}-items`}>
-        <div className="libraries__inner" style={{ padding: paddingFormula(data.length) }}>
-            {data.map(result => {
-                const key = result.name || result.key
-                const libraryName = aliases[key] ? aliases[key] : key
-                const library = find(
-                    libraries.projects,
-                    project =>
-                        project.name &&
-                        project.name.toLowerCase() === libraryName &&
-                        libraryName.toLowerCase()
-                )
-
-                if (library) {
-                    return (
-                        <div key={libraryName} className="libraries__item">
-                            <span className="libraries__item__link libraries__item__link--enabled">
-                                {libraryName}
-                            </span>
-                            <Tooltip library={library} variant={variant} />
-                        </div>
-                    )
-                } else {
-                    return (
-                        <div key={libraryName} className="libraries__item">
-                            <span className="libraries__item__link">{libraryName}</span>
-                        </div>
-                    )
-                }
-            })}
-        </div>
-    </div>
-)
-
-Libraries.propTypes = {
-    data: PropTypes.array.isRequired,
-    variant: PropTypes.string
-}
-
-export default Libraries
+export default Tooltip

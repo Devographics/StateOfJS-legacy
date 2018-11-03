@@ -1,5 +1,5 @@
 $tooltip-width: 240px;
-$tooltipDisplay: none;
+$tooltipDisplay: block;
 
 /*————————————————————————————————————————————————————————————————————————————————————————————————————————————————————*\
   Libraries
@@ -70,10 +70,10 @@ $tooltipDisplay: none;
 }
 .library__tooltip {
     color: $text-color-inverted;
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    margin-left: -$tooltip-width/2;
+    // position: absolute;
+    // top: 30px;
+    // left: 50%;
+    // margin-left: -$tooltip-width/2;
     width: $tooltip-width;
     z-index: 100;
     font-size: $small-font;
@@ -150,4 +150,8 @@ $tooltipDisplay: none;
         padding: 0 0 0 $spacing;
         margin: 0;
     }
+}
+
+.Tooltip__Link{
+    @include font-bold;
 }
