@@ -7,10 +7,12 @@ import countries from '../../data/geo/world_countries'
 import theme from '../../nivoTheme'
 import ResponsiveGeoMap from './geo/ResponsiveGeoMapCanvas'
 import ToolUsageByCountryMapChartTooltip from './ToolUsageByCountryMapChartTooltip'
+import { getToolName } from '../../helpers/wording'
 
 const colorScale = scaleQuantize()
     .domain([-10, 10])
     .range(['#41c7c7', '#8be7e7', '#e4d6d9', '#FE6A6A', '#ca4040'])
+
 const legendValues = [10, 5, 0, -5, -10]
 
 const renderBackground = (ctx, props) => {
@@ -19,20 +21,27 @@ const renderBackground = (ctx, props) => {
 }
 
 const renderLegend = (ctx, props) => {
+    const { average, tool } = props
+    // only keep legend values where the displayed value is positive
+    const positiveLegendValues = legendValues.filter(value => average + value >= -5)
     ctx.save()
-    ctx.translate(20, props.outerHeight - legendValues.length * 20 - 20)
+    ctx.translate(20, props.outerHeight - positiveLegendValues.length * 20 - 20)
 
     ctx.font = `11px 'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif`
     ctx.textAlign = 'start'
     ctx.textBaseline = 'middle'
 
-    legendValues.forEach((value, i) => {
+    ctx.fillStyle = '#cfcfcf'
+    ctx.fillText('Percentage of', 0, -35)
+    ctx.fillText(`happy ${getToolName(tool)} users:`, 0, -18)
+
+    positiveLegendValues.forEach((value, i) => {
         const x = 0
         const y = i * 20
         const color = colorScale(value)
         const range = colorScale
             .invertExtent(color)
-            .map(value => `${value > 0 ? '+' : ''}${value}%`)
+            .map(value => `${Math.max(0, Math.round(average + value))}%`)
 
         ctx.fillStyle = color
         ctx.strokeStyle = '#000000'
@@ -83,6 +92,8 @@ class ToolUsageByCountryMapChart extends Component {
                     layers={[renderBackground, 'features', renderLegend]}
                     theme={theme}
                     tooltip={renderTooltip}
+                    average={this.props.average}
+                    tool={this.props.tool}
                 />
             </div>
         )

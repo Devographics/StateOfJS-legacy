@@ -11,12 +11,11 @@ export default class ToolUsageByCountryBlock extends Component {
             <div className="block">
                 <BlockTitle chart="tool-usage-by-country" tool={tool} />
                 <div className="block block--text">
-                    For an average of <strong>{data.percentage}%</strong> of developers who used{' '}
-                    <strong>{getToolName(tool)}</strong> and would use it again, this map shows the
-                    delta from this average for each country where at least 10 persons took the
-                    survey.
+                    On average, <strong>{data.percentage}%</strong> of respondents have used <strong>{getToolName(tool)}</strong>{' '}
+                    and would be happy to use it again. Countries where this ratio is higher are shown in red, those where it's lower
+                    are displayed in blue (countries with fewer than 20 total survey respondents are omitted). 
                 </div>
-                <ToolUsageByCountryMapChart data={data} />
+                <ToolUsageByCountryMapChart data={data} tool={tool} average={data.percentage}/>
             </div>
         )
     }

@@ -13,9 +13,10 @@ const ToolUsageByCountryMapChartTooltip = ({ feature: { properties, data } }) =>
         <Fragment>
             <strong>{properties.name}</strong>
             <br />
-            {data.percentage}%{delta}
+            {data.count} users
             <br />
-            {data.count}/{data.total} users
+            {data.percentage}% of respondents
+            <br />
         </Fragment>
     )
 }
