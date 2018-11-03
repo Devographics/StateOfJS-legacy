@@ -262,7 +262,7 @@ exports.opinionByLocation = async (tools, opinion, locationType) => {
                     terms: {
                         field: `user_info.${locationType}.keyword`,
                         size: 200,
-                        min_doc_count: 10,
+                        min_doc_count: 20,
                     },
                     aggs: {
                         [opinion]: {

@@ -15,6 +15,7 @@ export const colors = {
     redLight: '#f89f9f',
     red: '#FE6A6A',
     redDark: '#ca4040',
+    redDarker: '#a22528',
 
     blue: '#41c7c7',
     blueLight: '#8be7e7'
