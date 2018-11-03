@@ -8,9 +8,14 @@ import { colors } from '../../constants'
 import ResponsiveGeoMap from './geo/ResponsiveGeoMapCanvas'
 import ParticipationByCountryMapChartTooltip from './ParticipationByCountryMapChartTooltip'
 
+const legendWidth = 10
+const legendHeight = 100
+
+const colorRange = [colors.redLight, colors.red, colors.redDark, colors.redDarker]
+const colorDomain = [0, 2, 4, 24]
 const colorScale = scaleLinear()
-    .domain([0, 2, 4])
-    .range([colors.redLight, colors.red, colors.redDark])
+    .domain(colorDomain)
+    .range(colorRange)
     .nice()
     .clamp(true)
 
@@ -23,27 +28,27 @@ const renderBackground = (ctx, props) => {
 
 const renderLegend = (ctx, props) => {
     ctx.save()
-    ctx.translate(20, props.outerHeight - 120)
+    ctx.translate(20, props.outerHeight - legendHeight - 20)
 
     ctx.font = `11px 'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif`
     ctx.textAlign = 'start'
     ctx.textBaseline = 'middle'
 
-    const gradient = ctx.createLinearGradient(0, 0, 0, 100)
-    gradient.addColorStop(0, colors.redDark)
-    gradient.addColorStop(0.5, colors.red)
+    const gradient = ctx.createLinearGradient(0, 0, 0, legendHeight)
+    gradient.addColorStop(0, colors.redDarker)
+    gradient.addColorStop(0.33, colors.redDark)
+    gradient.addColorStop(0.66, colors.red)
     gradient.addColorStop(1, colors.redLight)
 
     ctx.fillStyle = gradient
     ctx.strokeStyle = '#000000'
     ctx.lineWidth = 1
-    ctx.fillRect(0, 0, 12, 100)
-    ctx.strokeRect(0, 0, 12, 100)
+    ctx.fillRect(0, 0, legendWidth, legendHeight)
+    ctx.strokeRect(0, 0, legendWidth, legendHeight)
 
     ctx.fillStyle = '#cfcfcf'
-    ctx.fillText('4% and behond', 20, 0)
-    ctx.fillText('2%', 20, 50)
-    ctx.fillText('0%', 20, 100)
+    ctx.fillText(`${Math.max(...colorDomain)}%`, legendWidth + 6, 0)
+    ctx.fillText(`${Math.min(...colorDomain)}%`, legendWidth + 6, legendHeight)
 
     ctx.restore()
 }
