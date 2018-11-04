@@ -27,10 +27,7 @@ const ToolTemplate = ({ pageContext, data }) => {
                 <Meta />
                 <ToolHeaderBlock section={section} tool={tool} />
                 {shouldDisplayExperienceOverTime ? (
-                    <ToolOpinionsOverTimeBlock
-                        tool={tool}
-                        opinions={data.toolsYaml.experience}
-                    />
+                    <ToolOpinionsOverTimeBlock tool={tool} opinions={data.toolsYaml.experience} />
                 ) : (
                     <p className="tool-over-time-no-data">
                         Sorry, we don&apos;t have enough data to display the evolution of this

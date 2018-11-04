@@ -22,11 +22,13 @@ class BlockTitle extends Component {
                 <h3 className="Block__Title__Text">
                     {title || getWording(`charts.${chart}`, { tool: getToolName(tool) })}
                 </h3>
-                {chart && <ShareChart
-                    className="Block__Title__Share"
-                    chart={chart}
-                    toggleClass={this.toggleClass}
-                />}
+                {chart && (
+                    <ShareChart
+                        className="Block__Title__Share"
+                        chart={chart}
+                        toggleClass={this.toggleClass}
+                    />
+                )}
             </div>
         )
     }

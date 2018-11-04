@@ -1,6 +1,5 @@
 .block--resources {
     // border-top: 1px dashed $border-color;
-
 }
 
 .resources {
@@ -33,7 +32,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-  grid-gap: $spacing;
+    grid-gap: $spacing;
 }
 .sponsors-list {
     margin-bottom: $spacing;
@@ -66,7 +65,7 @@
         z-index: 10;
         border: 2px solid $border-color;
     }
-    a{
+    a {
         display: block;
         width: 100%;
         padding-bottom: 70%;

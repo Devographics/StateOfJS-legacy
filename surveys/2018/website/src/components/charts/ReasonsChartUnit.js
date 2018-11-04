@@ -87,7 +87,7 @@ export default class ReasonsChartUnit extends Component {
                     data={data}
                     keys={['count']}
                     indexBy="reason"
-                    margin= {{
+                    margin={{
                         ...barChartProps,
                         left: labelsWidth
                     }}

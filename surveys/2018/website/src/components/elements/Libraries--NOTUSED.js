@@ -7,7 +7,6 @@ import libraries from '../../data/bestofjs.json'
 import { aliases } from '../../constants'
 import paddingFormula from '../../helpers/paddingFormula'
 
-
 const Libraries = ({ data, variant = 'horizontal' }) => (
     <div className={`libraries libraries--${variant} libraries--${data.length}-items`}>
         <div className="libraries__inner" style={{ padding: paddingFormula(data.length) }}>

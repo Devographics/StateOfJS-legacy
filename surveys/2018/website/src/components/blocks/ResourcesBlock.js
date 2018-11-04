@@ -23,7 +23,7 @@ const ResourcesBlock = ({ tool }) => {
     return (
         <div className="block block--resources">
             <div className="resources">
-            <BlockTitle title="Recommended Resources" />
+                <BlockTitle title="Recommended Resources" />
 
                 {/* <div className="resources-title">
                     <h2>Recommended Resources</h2>
@@ -44,7 +44,11 @@ const ResourcesBlock = ({ tool }) => {
                                         <a
                                             onClick={() => trackClick(tool, resource, 'text')}
                                             href={`${url}&utm_content=textlink`}
-                                            style={{ backgroundImage: `url(/images/resources/${resource.image})`}}
+                                            style={{
+                                                backgroundImage: `url(/images/resources/${
+                                                    resource.image
+                                                })`
+                                            }}
                                             title={resource.name}
                                         />
                                     </div>

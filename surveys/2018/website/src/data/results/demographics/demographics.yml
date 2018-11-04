@@ -3464,3 +3464,36 @@ participation:
                 country: undefined
                 count: 10251
                 percentage: 100
+gender:
+    -
+        survey: '2017'
+        total: 23666
+        by_gender: []
+    -
+        survey: '2018'
+        total: 20252
+        by_gender:
+            -
+                gender: male
+                count: 18278
+                percentage: 90.25
+            -
+                gender: female
+                count: 931
+                percentage: 4.6
+            -
+                gender: 'prefer not to say'
+                count: 569
+                percentage: 2.81
+            -
+                gender: 'non-binary/ third gender'
+                count: 142
+                percentage: 0.7
+            -
+                gender: other
+                count: 62
+                percentage: 0.31
+    -
+        survey: '2016'
+        total: 10251
+        by_gender: []

@@ -75,17 +75,23 @@ const Tooltip = ({ library, variant }) => {
                 <ul>
                     {library.homepage && (
                         <li>
-                            <a className="Tooltip__Link" href={library.homepage}>Homepage</a>
+                            <a className="Tooltip__Link" href={library.homepage}>
+                                Homepage
+                            </a>
                         </li>
                     )}
                     {githubUrl && (
                         <li>
-                            <a className="Tooltip__Link" href={githubUrl}>GitHub</a>
+                            <a className="Tooltip__Link" href={githubUrl}>
+                                GitHub
+                            </a>
                         </li>
                     )}
                     {bestofjsUrl && (
                         <li>
-                            <a className="Tooltip__Link" href={bestofjsUrl}>BestOfJS</a>
+                            <a className="Tooltip__Link" href={bestofjsUrl}>
+                                BestOfJS
+                            </a>
                         </li>
                     )}
                 </ul>
