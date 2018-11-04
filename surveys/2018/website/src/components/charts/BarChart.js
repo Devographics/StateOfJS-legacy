@@ -8,7 +8,8 @@ import libraries from '../../data/bestofjs.json'
 import { aliases, barChartProps } from '../../constants'
 
 const tooltipWidth = 240
-const marginWidth = 5
+const marginWidth = 10
+const barHeight = 40
 
 const TickLabel = ({ label, active }) => (
     <text
@@ -60,7 +61,7 @@ const TickItem = tick => {
 }
 
 const BarChart = ({ data }) => (
-    <div className="Bar__Chart chart-wrapper" style={{ height: 800 }}>
+    <div className="Bar__Chart chart-wrapper" style={{ height: data.length * barHeight }}>
         <ResponsiveBar
             {...barChartProps}
             data={data}

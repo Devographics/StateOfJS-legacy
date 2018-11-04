@@ -6,6 +6,8 @@ import ToolHeaderBlock from '../blocks/ToolHeaderBlock'
 import ToolOpinionsOverTimeBlock from '../blocks/ToolOpinionsOverTimeBlock'
 import ReasonsBlock from '../blocks/ReasonsBlock'
 import ToolUsageByCountryBlock from '../blocks/ToolUsageByCountryBlock'
+import SponsorsBlock from '../blocks/SponsorsBlock'
+import ResourcesBlock from '../blocks/ResourcesBlock'
 
 const ToolTemplate = ({ pageContext, data }) => {
     // console.log(pageContext, data)
@@ -17,15 +19,16 @@ const ToolTemplate = ({ pageContext, data }) => {
     }
 
     const wouldUseByCountryData = data.toolsYaml.would_use_by_country.find(d => d.survey === '2018')
+    const { tool, section } = pageContext
 
     return (
         <Layout>
             <div className="template">
                 <Meta />
-                <ToolHeaderBlock section={pageContext.section} tool={pageContext.tool} />
+                <ToolHeaderBlock section={section} tool={tool} />
                 {shouldDisplayExperienceOverTime ? (
                     <ToolOpinionsOverTimeBlock
-                        tool={pageContext.tool}
+                        tool={tool}
                         opinions={data.toolsYaml.experience}
                     />
                 ) : (
@@ -34,8 +37,10 @@ const ToolTemplate = ({ pageContext, data }) => {
                         library's popularity over time.
                     </p>
                 )}
-                <ReasonsBlock tool={pageContext.tool} reasons={data.toolsYaml.reasons} />
-                <ToolUsageByCountryBlock tool={pageContext.tool} data={wouldUseByCountryData} />
+                <ReasonsBlock tool={tool} reasons={data.toolsYaml.reasons} />
+                {/* <SponsorsBlock tool={tool} /> */}
+                <ResourcesBlock tool={tool} />
+                <ToolUsageByCountryBlock tool={tool} data={wouldUseByCountryData} />
             </div>
         </Layout>
     )

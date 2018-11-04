@@ -52,6 +52,7 @@ ol {
 
 a {
     text-decoration: none;
+    @include font-bold;
     &,
     &:link,
     &:visited,

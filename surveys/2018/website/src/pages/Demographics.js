@@ -7,11 +7,8 @@ import SectionHeader from '../components/elements/SectionHeader'
 import ParticipationByCountryBlock from '../components/blocks/ParticipationByCountryBlock'
 import SalaryPerCountryBlock from '../components/blocks/SalaryPerCountryBlock'
 
-const text = `
-Demographics intro TODO.
-`
-
 const Demographics = ({ data, ...rest }) => {
+    console.log(data)
     const participationData = data.demographicsYaml.participation.find(s => s.survey === '2018')
         .by_country
 
@@ -19,7 +16,7 @@ const Demographics = ({ data, ...rest }) => {
         <Layout {...rest}>
             <div>
                 <SectionHeader />
-                <TextBlock text={text} />
+                <TextBlock text={data.file.childMarkdownRemark.html} />
                 <ParticipationByCountryBlock data={participationData} />
                 {/*<GenderBreakdownBlock data={data.resultsYaml.demographics} />*/}
                 <SalaryPerCountryBlock />
@@ -41,6 +38,11 @@ export const query = graphql`
                     count
                     percentage
                 }
+            }
+        }
+        file(name: { eq: "demographics-introduction" }) {
+            childMarkdownRemark {
+                html
             }
         }
     }

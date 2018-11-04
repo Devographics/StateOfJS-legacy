@@ -1,14 +1,16 @@
-- name: egghead.io
+- tool: react
+  name: egghead.io
   url: http://egghead.io
   image: egghead.svg
   description: >
-    There are a lot of programming resources out there, but in my opinion none cover the JavaScript
-    ecosystem as well as egghead.io. Strongly recommended, whether you want to
-    learn the basics or stay up to date!
-- name: Wes Bos
+      There are a lot of programming resources out there, but in my opinion none cover the JavaScript
+      ecosystem as well as egghead.io. Strongly recommended, whether you want to
+      learn the basics or stay up to date!
+- tool: vue.js
+  name: Wes Bos
   url: http://wesbos.com/
   image: wesbos.jpg
   description: >
-    Wes Bos is known for consistently putting out approachable, informative content.
-    His [React](https://reactforbeginners.com/) and [ES6](https://es6.io/) courses
-    in particular have been a huge help for levelling up my own JavaScript knowledge. 
+      Wes Bos is known for consistently putting out approachable, informative content.
+      His [React](https://reactforbeginners.com/) and [ES6](https://es6.io/) courses
+      in particular have been a huge help for levelling up my own JavaScript knowledge.

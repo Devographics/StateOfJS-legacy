@@ -1,5 +1,5 @@
 - name: ES6 For Everyone
-  section: Flavors
+  tool: es6
   url: https://ES6.io/friend/STATEOFJS
   description: A premium training course to strengthen your core JavaScript skills and master all that ES6 has to offer.
   author: Wes Bos
@@ -7,15 +7,23 @@
   image: es6.jpg
 
 - name: React For Beginners
-  section: Front-end
+  tool: react
   url: https://ReactForBeginners.com/friend/STATEOFJS
   description: Upgrade your JavaScript skills, learn React.js in just a couple of afternoons.
   author: Wes Bos
   avatar: wes.jpg
   image: reactforbeginners.jpg
 
+- name: Advanced React
+  tool: react
+  url: https://advancedreact.com/friend/STATEOFJS
+  description: Join 10,393 others learning to build Full Stack JavaScript Apps with React.js and GraphQL.
+  author: Wes Bos
+  avatar: wes.jpg
+  image: advancedreact.jpg
+
 - name: '#JavaScript30'
-  section: Testing
+  tool: es6
   url: https://javascript30.com/friend/STATEOFJS
   description: '30 Day Vanilla JS Coding Challenge: Build 30 things in 30 days with 30 tutorials'
   author: Wes Bos
@@ -23,9 +31,26 @@
   image: javascript30.jpg
 
 - name: Learn Node
-  section: Back-end
+  tool: express
   url: https://learnnode.com/friend/STATEOFJS
   description: A premium training course to learn to build apps with Node.js, Express, MongoDB, and friends.
   author: Wes Bos
   avatar: wes.jpg
   image: learnnode.jpg
+
+- name: GraphQL Guide
+  tool: graphql
+  url: https://learnnode.com/friend/STATEOFJS
+  description: GraphQL is the best way to fetch data for your app, and the GraphQL Guide is the best way to learn how.
+  author: Wes Bos
+  avatar: wes.jpg
+  image: graphql.jpg
+
+
+- name: Learn Storybook
+  tool: storybook
+  url: https://learnnode.com/friend/STATEOFJS
+  description: Learn Storybook to create bulletproof UI components, along the way you’ll build an app UI from scratch.
+  author: Wes Bos
+  avatar: wes.jpg
+  image: learnstorybook.png

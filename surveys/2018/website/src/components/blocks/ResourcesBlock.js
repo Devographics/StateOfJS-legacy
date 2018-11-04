@@ -1,21 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import _ from 'lodash'
 import ReactGA from 'react-ga'
 import Link from 'gatsby-link'
+import resources from '../../data/resources.yaml'
+import BlockTitle from '../elements/BlockTitle'
 
-import resources from '../../../src/data/resources.yaml'
-
-const trackClick = (section, resource, label) => {
+const trackClick = (tool, resource, label) => {
     ReactGA.event({
         category: 'Sponsor Clicks',
-        action: `${section}: ${resource.name}`,
+        action: `${tool}: ${resource.name}`,
         label
     })
 }
 
-const ResourcesBlock = ({ section }) => {
-    const sectionResources = _.filter(resources, r => r.section === section)
+const ResourcesBlock = ({ tool }) => {
+    const sectionResources = resources.filter(r => r.tool === tool)
 
     if (!sectionResources.length) {
         return null
@@ -24,37 +23,36 @@ const ResourcesBlock = ({ section }) => {
     return (
         <div className="block block--resources">
             <div className="resources">
-                <div className="resources-title">
+            <BlockTitle title="Recommended Resources" />
+
+                {/* <div className="resources-title">
                     <h2>Recommended Resources</h2>
                     <span className="resources-sponsor">
                         Presented by <a href="http://wesbos.com/">Wes Bos</a>
                     </span>
-                </div>
+                </div> */}
                 <div className="resources-list">
-                    {_.map(sectionResources, resource => {
+                    {sectionResources.map(resource => {
                         const url = `${
                             resource.url
-                        }?utm_source=stateofjs&utm_medium=sponsor&utm_campaign=${section}`
+                        }?utm_source=stateofjs&utm_medium=sponsor&utm_campaign=${tool}`
 
                         return (
                             <div key={resource.name} className="resource">
                                 <div className="resource-image">
                                     <div>
                                         <a
-                                            onClick={() => trackClick(section, resource, 'text')}
+                                            onClick={() => trackClick(tool, resource, 'text')}
                                             href={`${url}&utm_content=textlink`}
-                                        >
-                                            <img
-                                                alt={resource.name}
-                                                src={`/images/resources/${resource.image}`}
-                                            />
-                                        </a>
+                                            style={{ backgroundImage: `url(/images/resources/${resource.image})`}}
+                                            title={resource.name}
+                                        />
                                     </div>
                                 </div>
                                 <div className="resource-contents">
                                     <h4 className="resource-title">
                                         <a
-                                            onClick={() => trackClick(section, resource, 'text')}
+                                            onClick={() => trackClick(tool, resource, 'text')}
                                             href={`${url}&utm_content=textlink`}
                                         >
                                             {resource.name}
