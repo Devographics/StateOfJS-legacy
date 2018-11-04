@@ -123,3 +123,36 @@ exports.participationByLocation = async (locationType) => {
 
 exports.participationByContinent = async () => exports.participationByLocation('continent')
 exports.participationByCountry = async () => exports.participationByLocation('country')
+
+exports.genderBreakdown = async () => {
+    const result = await elastic.aggs({
+        by_survey: {
+            terms: {
+                field: 'survey.keyword',
+            },
+            aggs: {
+                gender: {
+                    terms: {
+                        field: 'user_info.gender.keyword',
+                    },
+                },
+            }
+        },
+    })
+
+    return result.aggregations.by_survey.buckets.map(surveyBucket => {
+        const total = surveyBucket.doc_count
+
+        return {
+            survey: surveyBucket.key,
+            total,
+            by_gender: surveyBucket.gender.buckets.map(genderBucket => {
+                return {
+                    gender: genderBucket.key,
+                    count: genderBucket.doc_count,
+                    percentage: Number((genderBucket.doc_count / total * 100).toFixed(2))
+                }
+            })
+        }
+    })
+}

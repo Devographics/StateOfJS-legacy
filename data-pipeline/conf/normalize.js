@@ -3,7 +3,7 @@
  * in order to standardize tool names, it's mostly involved
  * to extract things from the "other tools" questions.
  */
-exports.toolsNormalizers = [
+exports.toolNormalizers = [
     [/preact/i, 'Preact'],
     [/elm/i, 'elm'],
     [/cycle/i, 'Cycle.js'],
@@ -220,4 +220,91 @@ exports.toolsNormalizers = [
     [/jscs/i, 'JSCS'],
     [/jslint/i, 'JSLint'],
     [/xo/i, 'XO'],
+]
+
+exports.sourceNormalizers = [
+    // twitter
+    [/twii?t/i, 'twitter'],
+    [/twee?t/i, 'twitter'],
+
+    // email
+    [/e?mail/i, 'email'],
+    [/e-mail/i, 'email'],
+    [/subscribed/i, 'email'],
+    [/subscription/i, 'email'],
+    // assuming people who did it before fall into the 'email' category
+    [/(previous|last|every) (year|survey)/i, 'email'],
+    [/it before/i, 'email'],
+
+    // stateofjs
+    [/state ?of ?js/i, 'stateofjs'],
+
+    // bestofjs
+    [/best ?of ?\.?js/i, 'bestofjs'],
+
+    // js weekly
+    [/javascript ?weekly/i, 'js_weekly'],
+    [/js ?weekly/i, 'js_weekly'],
+
+    // ionic newsletter
+    [/ionic/i, 'ionic_newsletter'],
+
+    // freecodecamp
+    [/free ?code ?camp/i, 'freecodecamp'],
+
+    // newsletter
+    [/newsletter/i, 'newsletter'],
+
+    // reddit
+    [/redd?it/i, 'reddit'],
+    [/r3dd1t/i, 'reddit'],
+    [/\/?r\/(javascript|clojure|reactjs|angular|webdev|programming)/i, 'reddit'],
+    [/\/?r\/clojure/i, 'reddit'],
+
+    // hacker news
+    [/hacker ?news/i, 'hn'],
+    [/hacknews/i, 'hn'],
+    [/hckrnews/i, 'hn'],
+    [/hn/i, 'hn'],
+    [/ycombinator/i, 'hn'],
+
+    // medium
+    [/med(iu|ui)m/i, 'medium'],
+
+    // work
+    [/work/i, 'work'],
+    [/cto/i, 'work'],
+    [/coworkers?/i, 'work'],
+    [/co workers?/i, 'work'],
+    [/co-workers?/i, 'work'],
+    [/coll?ea?gu?a?es?/i, 'work'],
+    [/fellow/i, 'work'],
+    [/company/i, 'work'],
+
+    // post
+    [/post/i, 'post'],
+    [/blog/i, 'post'],
+    [/article/i, 'post'],
+
+    // wesbos
+    [/we(s|b) ?br?o(s|z)/i, 'wesbos'],
+    [/wes the bos/i, 'wesbos'],
+    [/^wes$/i, 'wesbos'],
+
+    // codrops
+    [/codrops/i, 'codrops'],
+    [/codedrops/i, 'codrops'],
+    [/tympanus/i, 'codrops'],
+
+    // elm slack
+    [/elm/i, 'elm_slack'],
+
+    // facebook
+    [/facebook/i, 'facebook'],
+    [/fb/i, 'facebook'],
+
+    [/slack/i, 'slack'],
+    [/telegram/i, 'telegram'],
+    [/friends?/i, 'friend'],
+    [/slashdot/i, 'slashdot'],
 ]

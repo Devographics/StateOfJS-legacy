@@ -2,7 +2,7 @@ const { last } = require('lodash')
 const fetch = require('node-fetch')
 const tools = require('../conf/tools')
 const userInfo = require('../conf/user_info')
-const { toolsNormalizers } = require('../conf/normalize')
+const { toolNormalizers, sourceNormalizers } = require('../conf/normalize')
 const types = require('./fields')
 const geo = require('./geo')
 const util = require('./util')
@@ -12,7 +12,8 @@ const TYPEFORM_FIELD_TYPE_RATING = 'rating'
 
 const BATCH_SIZE = 1000
 
-const otherToolsExtractor = util.extractToolsFromText(toolsNormalizers)
+const otherToolsExtractor = util.multiNormalizer(toolNormalizers)
+const sourceNormalizer = util.uniNormalizer(sourceNormalizers)
 
 class TypeformExtractor {
     constructor(config, {
@@ -319,7 +320,10 @@ class TypeformExtractor {
                         break
 
                     case types.FIELD_TYPE_SOURCE:
-                        normalized.user_info[types.FIELD_TYPE_SOURCE] = answer.text
+                        normalized.user_info[types.FIELD_TYPE_SOURCE] = {
+                            raw: answer.text.trim().toLowerCase(),
+                            norm: sourceNormalizer(answer.text.trim().toLowerCase())
+                        }
                         break
 
                     case types.FIELD_TYPE_GENDER:

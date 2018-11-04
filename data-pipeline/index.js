@@ -149,4 +149,4 @@ const aggregate = async () => {
     await saveResult('demographics/demographics', demographics)
 }
 
-aggregate()
+fetch()

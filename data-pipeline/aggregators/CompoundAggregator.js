@@ -74,6 +74,7 @@ class CompoundAggregator {
             by_continent: await demographicAggregator.byContinent(),
             by_country: await demographicAggregator.byCountry(),
             participation: await demographicAggregator.participationByCountry(),
+            gender: await demographicAggregator.genderBreakdown(),
         }
     }
 }
