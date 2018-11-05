@@ -24,13 +24,14 @@ const ResourcesBlock = ({ tool }) => {
         <div className="block block--resources">
             <div className="resources">
                 <BlockTitle title="Recommended Resources" />
-
-                {/* <div className="resources-title">
+                {/*
+                <div className="resources-title">
                     <h2>Recommended Resources</h2>
                     <span className="resources-sponsor">
                         Presented by <a href="http://wesbos.com/">Wes Bos</a>
                     </span>
-                </div> */}
+                </div>
+                */}
                 <div className="resources-list">
                     {sectionResources.map(resource => {
                         const url = `${
@@ -41,6 +42,7 @@ const ResourcesBlock = ({ tool }) => {
                             <div key={resource.name} className="resource">
                                 <div className="resource-image">
                                     <div>
+                                        {/* eslint-disable-next-line */}
                                         <a
                                             onClick={() => trackClick(tool, resource, 'text')}
                                             href={`${url}&utm_content=textlink`}

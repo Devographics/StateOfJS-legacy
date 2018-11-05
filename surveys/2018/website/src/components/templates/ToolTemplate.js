@@ -6,7 +6,7 @@ import ToolHeaderBlock from '../blocks/ToolHeaderBlock'
 import ToolOpinionsOverTimeBlock from '../blocks/ToolOpinionsOverTimeBlock'
 import ReasonsBlock from '../blocks/ReasonsBlock'
 import ToolUsageByCountryBlock from '../blocks/ToolUsageByCountryBlock'
-import SponsorsBlock from '../blocks/SponsorsBlock'
+// import SponsorsBlock from '../blocks/SponsorsBlock'
 import ResourcesBlock from '../blocks/ResourcesBlock'
 
 const ToolTemplate = ({ pageContext, data }) => {

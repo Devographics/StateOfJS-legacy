@@ -2,13 +2,6 @@ import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
 const ToolUsageByCountryMapChartTooltip = ({ feature: { properties, data } }) => {
-    let delta = ''
-    if (data.delta_from_average > 0) {
-        delta = ` (+${data.delta_from_average}%)`
-    } else if (data.delta_from_average < 0) {
-        delta = ` (${data.delta_from_average})%`
-    }
-
     return (
         <Fragment>
             <strong>{properties.name}</strong>

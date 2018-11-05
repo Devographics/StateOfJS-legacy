@@ -34,6 +34,7 @@ exports.globalOpinions = async () => {
                     by_choice: surveyBucket.choices.buckets.map(bucket => ({
                         choice: bucket.key,
                         count: bucket.doc_count,
+                        percentage: Number((bucket.doc_count / total * 100).toFixed(1))
                     }))
                 }
             })

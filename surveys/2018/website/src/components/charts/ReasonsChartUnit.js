@@ -5,7 +5,6 @@ import theme from '../../nivoTheme'
 import { barChartProps } from '../../constants'
 
 const verticalMargin = 30
-const innerMargin = 10
 const barHeight = 30
 const labelsWidth = 400
 

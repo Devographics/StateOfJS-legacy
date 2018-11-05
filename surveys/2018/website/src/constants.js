@@ -103,18 +103,6 @@ export const featureColors = {
     'Vital feature': colors.purple
 }
 
-export const opinionKeys = ['0', '1', '2', '3', '4']
-
-export const opinionLabels = ['Disagree', '', 'Neutral', '', 'Agree']
-
-export const opinionColors = {
-    0: colors.purple,
-    1: colors.purple,
-    2: colors.purple,
-    3: colors.purple,
-    4: colors.purple
-}
-
 export const aliases = {
     Vue: 'Vue.JS',
     Angular: 'Angular 1',
@@ -242,6 +230,16 @@ export const reasons = {
         }
     ]
 }
+
+export const globalOpinionSubjects = [
+    'js_moving_in_right_direction',
+    'building_js_apps_overly_complex',
+    'js_over_used_online',
+    'enjoy_building_js_apps',
+    'would_like_js_to_be_main_lang',
+    'js_ecosystem_changing_to_fast',
+    'survey_too_long'
+]
 
 export const verticalMargin = 30
 export const innerMargin = 10

@@ -50,22 +50,6 @@ const margin = {
     left: 20
 }
 
-const customTheme = {
-    ...theme,
-    axis: {
-        ticks: {
-            line: {
-                strokeWidth: 2,
-                stroke: '#e8e8e8'
-            },
-            text: {
-                fontSize: 16,
-                fill: '#e8e8e8'
-            }
-        }
-    }
-}
-
 export default class ToolOpinionsOverTimeChart extends Component {
     state = {
         current: null
@@ -113,7 +97,10 @@ export default class ToolOpinionsOverTimeChart extends Component {
                     }}
                 >
                     <ResponsiveStream
-                        theme={customTheme}
+                        theme={{
+                            ...theme,
+                            axis: theme.streamTimelineAxis
+                        }}
                         offsetType="expand"
                         colors={this.getLayerColor}
                         curve="monotoneX"

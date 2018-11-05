@@ -10,6 +10,13 @@ export default {
         not_interested: colors.blueLight,
         never_heard: colors.greyLight
     },
+    opinionScaleColors: [
+        colors.blue,
+        colors.blueLight,
+        colors.greyLight,
+        colors.redLight,
+        colors.red
+    ],
     salaryColors: ['#8b8de8', '#b3b5e6', '#dedfec', '#e4d6d9', '#dc9eaa', '#e28194', '#ea2149'],
     genderColors: {
         female: colors.blue,
@@ -41,6 +48,18 @@ export default {
                 fill: '#eee',
                 fontSize: 12,
                 fontWeight: 500
+            }
+        }
+    },
+    streamTimelineAxis: {
+        ticks: {
+            line: {
+                strokeWidth: 2,
+                stroke: '#e8e8e8'
+            },
+            text: {
+                fontSize: 16,
+                fill: '#e8e8e8'
             }
         }
     },

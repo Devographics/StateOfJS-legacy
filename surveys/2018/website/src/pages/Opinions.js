@@ -1,25 +1,31 @@
 import React from 'react'
-import opinionsData from '../data/opinions.json'
-import OpinionBar from '../components/charts/OpinionBar'
+import keyBy from 'lodash/keyBy'
+import { graphql } from 'gatsby'
 import Layout from '../components/common/Layout'
 import SectionHeader from '../components/elements/SectionHeader'
-import { graphql } from 'gatsby'
 import TextBlock from '../components/blocks/TextBlock'
+import OpinionBlock from '../components/blocks/OpinionBlock'
+import { globalOpinionSubjects } from '../constants'
 
-const Opinions = ({ data, ...rest }) => (
-    <Layout {...rest}>
-        <div>
-            <SectionHeader />
-            <TextBlock text={data.file.childMarkdownRemark.html} />
-            {opinionsData.keys.map(opinion => (
-                <div className="block block--chart" key={opinion}>
-                    <h3 className="block__title">“{opinion}”</h3>
-                    <OpinionBar opinion={opinion} />
-                </div>
-            ))}
-        </div>
-    </Layout>
-)
+const Opinions = ({ data, ...rest }) => {
+    const opinions = keyBy(data.opinions.edges.map(e => e.node), 'subject')
+
+    return (
+        <Layout {...rest}>
+            <div>
+                <SectionHeader />
+                <TextBlock text={data.file.childMarkdownRemark.html} />
+                {globalOpinionSubjects.map(subject => (
+                    <OpinionBlock
+                        key={subject}
+                        subject={subject}
+                        data={opinions[subject].by_survey}
+                    />
+                ))}
+            </div>
+        </Layout>
+    )
+}
 
 export default Opinions
 
@@ -28,6 +34,22 @@ export const query = graphql`
         file(name: { eq: "opinions-introduction" }) {
             childMarkdownRemark {
                 html
+            }
+        }
+        opinions: allGlobalOpinionsYaml {
+            edges {
+                node {
+                    subject
+                    by_survey {
+                        survey
+                        total
+                        by_choice {
+                            choice
+                            count
+                            percentage
+                        }
+                    }
+                }
             }
         }
     }
