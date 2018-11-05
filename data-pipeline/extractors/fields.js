@@ -9,6 +9,7 @@ exports.FIELD_TYPE_HAPPINESS = 'happiness'
 exports.FIELD_TYPE_OTHER_TOOLS = 'other_tools'
 exports.FIELD_TYPE_TOOL_LIKE_REASONS = 'like_reasons'
 exports.FIELD_TYPE_TOOL_DISLIKE_REASONS = 'dislike_reasons'
+exports.FIELD_GLOBAL_OPINION = 'global_opinion'
 
 // user info
 exports.FIELD_TYPE_YEARS_OF_EXPERIENCE = 'years_of_experience'

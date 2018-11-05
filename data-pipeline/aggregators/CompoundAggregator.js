@@ -1,25 +1,13 @@
 const experience = require('../conf/experience')
-const participationAggregator = require('./participation')
 const userInfoAggregator = require('./user_info')
 const sectionsAggregator = require('./sections')
 const toolsAggregator = require('./tools')
 const demographicAggregator = require('./demographic')
+const globalOpinionsAggregator = require('./global_opinions')
 
 class CompoundAggregator {
     constructor(config) {
         this.config = config
-    }
-
-    async computeParticipation() {
-        const surveyIds = Object.keys(this.config)
-
-        const participation = await participationAggregator.participation(surveyIds)
-        const byLocation = await participationAggregator.participationByLocation(surveyIds)
-
-        return {
-            participation,
-            byLocation,
-        }
     }
 
     async computeUserInfo() {
@@ -76,6 +64,10 @@ class CompoundAggregator {
             participation: await demographicAggregator.participationByCountry(),
             gender: await demographicAggregator.genderBreakdown(),
         }
+    }
+
+    async computeGlobalOpinions() {
+        return globalOpinionsAggregator.globalOpinions()
     }
 }
 

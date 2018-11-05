@@ -71,10 +71,6 @@ const aggregate = async () => {
     const aggregator = new CompoundAggregator(surveyConfigs)
     const currentSurveyConfig = surveyConfigs[currentSurvey]
 
-    console.log('\ncomputing participation')
-    const participation = await aggregator.computeParticipation()
-    //await saveResult('participation', participation)
-
     console.log('\ncomputing tools')
     const toolsAggs = await aggregator.computeTools(toolIds)
     Object.keys(toolsAggs).forEach(async toolId => {
@@ -147,6 +143,10 @@ const aggregate = async () => {
     console.log('\ncomputing demographics')
     const demographics = await aggregator.computeDemographic()
     await saveResult('demographics/demographics', demographics)
+
+    console.log('\ncomputing global opinions')
+    const globalOpinions = await aggregator.computeGlobalOpinions()
+    await saveResult('global_opinions/global_opinions', globalOpinions)
 }
 
-fetch()
+aggregate()

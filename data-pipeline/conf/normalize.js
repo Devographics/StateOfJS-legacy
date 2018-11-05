@@ -1,3 +1,13 @@
+exports.globalOpinionsSubjectNormalizers = {
+    'JavaScript is moving in the right direction': 'js_moving_in_right_direction',
+    'Building JavaScript apps is overly complex right now': 'building_js_apps_overly_complex',
+    'JavaScript is over-used online': 'js_over_used_online',
+    'I enjoy building JavaScript apps': 'enjoy_building_js_apps',
+    'I would like JavaScript to be my main programming language': 'would_like_js_to_be_main_lang',
+    'The JavaScript ecosystem is changing too fast': 'js_ecosystem_changing_to_fast',
+    'This survey is too damn long!': 'survey_too_long',
+}
+
 /**
  * Defines a set of rules which can be applied
  * in order to standardize tool names, it's mostly involved

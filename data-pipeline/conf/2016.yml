@@ -63,6 +63,27 @@ typeform:
         '28238512':
             type: other_tools
             section: mobile-and-desktop
+        '28238515':
+            type: global_opinion
+            subject: js_moving_in_right_direction
+        '28238516':
+            type: global_opinion
+            subject: building_js_apps_overly_complex
+        '28238517':
+            type: global_opinion
+            subject: js_over_used_online
+        '28238518':
+            type: global_opinion
+            subject: enjoy_building_js_apps
+        '28238519':
+            type: global_opinion
+            subject: would_like_js_to_be_main_lang
+        '28238520':
+            type: global_opinion
+            subject: js_ecosystem_changing_to_fast
+        '28238521':
+            type: global_opinion
+            subject: survey_too_long
         '28238522':
             type: email
         '28238719':

@@ -120,7 +120,6 @@ exports.participationByLocation = async (locationType) => {
         }
     })
 }
-
 exports.participationByContinent = async () => exports.participationByLocation('continent')
 exports.participationByCountry = async () => exports.participationByLocation('country')
 

@@ -2,7 +2,7 @@ const { last } = require('lodash')
 const fetch = require('node-fetch')
 const tools = require('../conf/tools')
 const userInfo = require('../conf/user_info')
-const { toolNormalizers, sourceNormalizers } = require('../conf/normalize')
+const { globalOpinionsSubjectNormalizers, toolNormalizers, sourceNormalizers } = require('../conf/normalize')
 const types = require('./fields')
 const geo = require('./geo')
 const util = require('./util')
@@ -61,9 +61,25 @@ class TypeformExtractor {
         this.config.tools = []
         this.config.userInfo = []
 
-        //form.fields.forEach(field => { console.log(field) })
+        //form.fields.forEach(field => { console.log(field.title) })
 
         const fieldsConfig = {}
+
+        const globalOpinionsField = form.fields.find(field => field.title === 'Opinion Questions')
+        if (globalOpinionsField === undefined) {
+            throw new Error('unable to find global opinions field')
+        }
+        globalOpinionsField.properties.fields.forEach(field => {
+            const subject = globalOpinionsSubjectNormalizers[field.title]
+            if (subject === undefined) {
+                throw new Error(`unable to find global opinion subject from field title: ${field.title}`)
+            }
+            fieldsConfig[field.id] = {
+                type: types.FIELD_GLOBAL_OPINION,
+                subject
+            }
+        })
+
         Object.keys(this.config.sections).forEach(sectionId => {
             const sectionConfig = this.config.sections[sectionId]
             const sectionField = form.fields.find(field => field.title === sectionConfig.title)
@@ -239,6 +255,7 @@ class TypeformExtractor {
                 tools: {},
                 other_tools: {},
                 happiness: {},
+                global_opinions: {},
                 user_info: {},
             }
 
@@ -337,6 +354,10 @@ class TypeformExtractor {
                     case types.FIELD_TYPE_COUNTRY:
                         country = answer.text.trim().toLowerCase()
                         break
+
+                    case types.FIELD_GLOBAL_OPINION:
+                        normalized.global_opinions[fieldConfig.subject] = answer.number
+                        break    
                 }
             })
 
