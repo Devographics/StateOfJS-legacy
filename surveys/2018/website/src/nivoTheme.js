@@ -2,7 +2,7 @@ import { colors } from './constants'
 
 export default {
     name: 'dark',
-    background: '#222',
+    background: '#212424',
     opinionColors: {
         would_use: colors.red,
         would_not_use: colors.redLight,

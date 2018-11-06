@@ -4,6 +4,7 @@ const sectionsAggregator = require('./sections')
 const toolsAggregator = require('./tools')
 const demographicAggregator = require('./demographic')
 const globalOpinionsAggregator = require('./global_opinions')
+const connectionsAggregator = require('./connections')
 
 class CompoundAggregator {
     constructor(config) {
@@ -68,6 +69,10 @@ class CompoundAggregator {
 
     async computeGlobalOpinions() {
         return globalOpinionsAggregator.globalOpinions()
+    }
+
+    async computeConnections(currentSurveyId) {
+        return connectionsAggregator.computeToolsMatrixForSurveyAndOpinion(this.config[currentSurveyId].sections, currentSurveyId, experience.WOULD_USE)
     }
 }
 

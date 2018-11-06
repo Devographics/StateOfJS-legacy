@@ -62,29 +62,6 @@
     }
 }
 
-.chord__toggle {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: $medium-font;
-
-    input {
-        margin-right: 7px;
-    }
-
-    &__item {
-        cursor: pointer;
-        width: calc((100% - #{$spacing} * 3) / 4);
-        margin-right: $spacing;
-        &:nth-child(4n) {
-            margin-right: 0;
-        }
-        &--is-disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-    }
-}
-
 .results-chart-wrapper {
     padding: 0 $spacing * 3;
     text {
@@ -119,15 +96,6 @@
             height: 600px;
         }
     }
-}
-
-.chord__toggle {
-    padding: $spacing $spacing $spacing/2 $spacing;
-    border: 1px dashed $light-border-color;
-}
-.chord__toggle__item {
-    margin-bottom: $spacing/2;
-    font-size: $smallish-font;
 }
 
 .OverTime__Chart,

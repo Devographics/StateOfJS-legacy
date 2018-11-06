@@ -7,10 +7,16 @@ export default class LegendsItem extends Component {
         color: PropTypes.string.isRequired,
         label: PropTypes.string.isRequired,
         style: PropTypes.object.isRequired,
+        chipSize: PropTypes.number.isRequired,
         chipStyle: PropTypes.object.isRequired,
         onMouseEnter: PropTypes.func,
         onMouseLeave: PropTypes.func,
         onClick: PropTypes.func
+    }
+
+    static defaultProps = {
+        style: {},
+        chipStyle: {}
     }
 
     handleMouseEnter = () => {

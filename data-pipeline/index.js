@@ -147,6 +147,10 @@ const aggregate = async () => {
     console.log('\ncomputing global opinions')
     const globalOpinions = await aggregator.computeGlobalOpinions()
     await saveResult('global_opinions/global_opinions', globalOpinions)
+
+    console.log('\ncomputing connections')
+    const connections = await aggregator.computeConnections(currentSurvey)
+    await saveResult('connections/connections', connections)
 }
 
 aggregate()

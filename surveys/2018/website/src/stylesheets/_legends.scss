@@ -50,3 +50,15 @@
     margin-right: 12px;
     flex-shrink: 0;
 }
+
+.Legends--connections {
+    padding: $spacing / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @include medium {
+    }
+}
+
+.Legends--connections .Legends__Item {
+    padding: $spacing / 2;
+}

@@ -18,6 +18,7 @@ export const colors = {
     redDark: '#ca4040',
     redDarker: '#a22528',
 
+    blueDark: '#008888',
     blue: '#41c7c7',
     blueLight: '#8be7e7'
 }
@@ -30,7 +31,14 @@ export const colorRange = [
     colors.greyLight
 ]
 
-export const chordScale = ['#b3b5e6', '#e28194', '#788080']
+export const chordScale = [
+    colors.blue,
+    colors.red,
+    colors.blueLight,
+    colors.redLight,
+    colors.blueDark,
+    colors.redDark
+]
 
 export const colorScale = [
     '#41c7c7',
