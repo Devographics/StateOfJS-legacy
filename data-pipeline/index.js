@@ -72,7 +72,7 @@ const aggregate = async () => {
     const currentSurveyConfig = surveyConfigs[currentSurvey]
 
     console.log('\ncomputing tools')
-    const toolsAggs = await aggregator.computeTools(toolIds)
+    const toolsAggs = await aggregator.computeTools(toolIds, currentSurvey)
     Object.keys(toolsAggs).forEach(async toolId => {
         const agg = toolsAggs[toolId]
         delete agg.would_use

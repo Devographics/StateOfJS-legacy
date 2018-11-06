@@ -134,911 +134,609 @@ reasons:
         -
             id: fast_changing_breaks_often
             count: 11
-would_use_by_continent:
-    -
-        survey: '2017'
-        total: 23666
-        percentage: 5
-        buckets:
-            -
-                continent: Europe
-                total: 9639
-                count: 511
-                percentage: 5.3
-                delta_from_average: 0.3
-            -
-                continent: 'North America'
-                total: 8326
-                count: 412
-                percentage: 4.9
-                delta_from_average: -0.1
-            -
-                continent: Asia
-                total: 1226
-                count: 52
-                percentage: 4.2
-                delta_from_average: -0.8
-            -
-                continent: 'South America'
-                total: 1014
-                count: 48
-                percentage: 4.7
-                delta_from_average: -0.3
-            -
-                continent: Oceania
-                total: 958
-                count: 62
-                percentage: 6.5
-                delta_from_average: 1.5
-            -
-                continent: Africa
-                total: 906
-                count: 18
-                percentage: 2
-                delta_from_average: -3
-    -
-        survey: '2018'
-        total: 20252
-        percentage: 4
-        buckets:
-            -
-                continent: Europe
-                total: 9162
-                count: 378
-                percentage: 4.1
-                delta_from_average: 0.1
-            -
-                continent: 'North America'
-                total: 6077
-                count: 251
-                percentage: 4.1
-                delta_from_average: 0.1
-            -
-                continent: Oceania
-                total: 1205
-                count: 46
-                percentage: 3.8
-                delta_from_average: -0.2
-            -
-                continent: Asia
-                total: 1170
-                count: 44
-                percentage: 3.8
-                delta_from_average: -0.2
-            -
-                continent: 'South America'
-                total: 967
-                count: 34
-                percentage: 3.5
-                delta_from_average: -0.5
-            -
-                continent: Africa
-                total: 908
-                count: 17
-                percentage: 1.9
-                delta_from_average: -2.1
-    -
-        survey: '2016'
-        total: 10251
-        percentage: 3.8
-        buckets: []
 would_use_by_country:
+    survey: '2018'
+    total: 20252
+    percentage: 4
+    buckets:
+        -
+            country: USA
+            total: 4929
+            count: 206
+            percentage: 4.2
+            delta_from_average: 0.2
+        -
+            country: Germany
+            total: 1064
+            count: 57
+            percentage: 5.4
+            delta_from_average: 1.4
+        -
+            country: Australia
+            total: 1050
+            count: 41
+            percentage: 3.9
+            delta_from_average: -0.1
+        -
+            country: Ukraine
+            total: 897
+            count: 35
+            percentage: 3.9
+            delta_from_average: -0.1
+        -
+            country: France
+            total: 856
+            count: 40
+            percentage: 4.7
+            delta_from_average: 0.7
+        -
+            country: Canada
+            total: 831
+            count: 33
+            percentage: 4
+            delta_from_average: 0
+        -
+            country: England
+            total: 765
+            count: 38
+            percentage: 5
+            delta_from_average: 1
+        -
+            country: Russia
+            total: 754
+            count: 28
+            percentage: 3.7
+            delta_from_average: -0.3
+        -
+            country: India
+            total: 521
+            count: 12
+            percentage: 2.3
+            delta_from_average: -1.7
+        -
+            country: Sweden
+            total: 506
+            count: 28
+            percentage: 5.5
+            delta_from_average: 1.5
+        -
+            country: Netherlands
+            total: 503
+            count: 18
+            percentage: 3.6
+            delta_from_average: -0.4
+        -
+            country: Poland
+            total: 487
+            count: 16
+            percentage: 3.3
+            delta_from_average: -0.7
+        -
+            country: Brazil
+            total: 451
+            count: 19
+            percentage: 4.2
+            delta_from_average: 0.2
+        -
+            country: Spain
+            total: 396
+            count: 12
+            percentage: 3
+            delta_from_average: -1
+        -
+            country: Italy
+            total: 272
+            count: 11
+            percentage: 4
+            delta_from_average: 0
+        -
+            country: Belgium
+            total: 210
+            count: 6
+            percentage: 2.9
+            delta_from_average: -1.1
+        -
+            country: Finland
+            total: 210
+            count: 3
+            percentage: 1.4
+            delta_from_average: -2.6
+        -
+            country: Norway
+            total: 202
+            count: 12
+            percentage: 5.9
+            delta_from_average: 1.9
+        -
+            country: Denmark
+            total: 198
+            count: 11
+            percentage: 5.6
+            delta_from_average: 1.6
+        -
+            country: Argentina
+            total: 192
+            count: 2
+            percentage: 1
+            delta_from_average: -3
+        -
+            country: Mexico
+            total: 188
+            count: 5
+            percentage: 2.7
+            delta_from_average: -1.3
+        -
+            country: Switzerland
+            total: 188
+            count: 11
+            percentage: 5.9
+            delta_from_average: 1.9
+        -
+            country: 'Czech Republic'
+            total: 178
+            count: 7
+            percentage: 3.9
+            delta_from_average: -0.1
+        -
+            country: 'South Africa'
+            total: 155
+            count: 3
+            percentage: 1.9
+            delta_from_average: -2.1
+        -
+            country: Romania
+            total: 153
+            count: 5
+            percentage: 3.3
+            delta_from_average: -0.7
+        -
+            country: Austria
+            total: 149
+            count: 7
+            percentage: 4.7
+            delta_from_average: 0.7
+        -
+            country: Israel
+            total: 148
+            count: 5
+            percentage: 3.4
+            delta_from_average: -0.6
+        -
+            country: 'New Zealand'
+            total: 146
+            count: 5
+            percentage: 3.4
+            delta_from_average: -0.6
+        -
+            country: Belarus
+            total: 135
+            count: 4
+            percentage: 3
+            delta_from_average: -1
+        -
+            country: Portugal
+            total: 135
+            count: 3
+            percentage: 2.2
+            delta_from_average: -1.8
+        -
+            country: Ireland
+            total: 126
+            count: 6
+            percentage: 4.8
+            delta_from_average: 0.8
+        -
+            country: Colombia
+            total: 124
+            count: 9
+            percentage: 7.3
+            delta_from_average: 3.3
+        -
+            country: Indonesia
+            total: 120
+            count: 4
+            percentage: 3.3
+            delta_from_average: -0.7
+        -
+            country: Hungary
+            total: 95
+            count: 5
+            percentage: 5.3
+            delta_from_average: 1.3
+        -
+            country: Turkey
+            total: 90
+            count: 1
+            percentage: 1.1
+            delta_from_average: -2.9
+        -
+            country: Philippines
+            total: 87
+            count: 1
+            percentage: 1.1
+            delta_from_average: -2.9
+        -
+            country: Bulgaria
+            total: 86
+            count: 0
+            percentage: 0
+            delta_from_average: -4
+        -
+            country: Greece
+            total: 86
+            count: 1
+            percentage: 1.2
+            delta_from_average: -2.8
+        -
+            country: Serbia
+            total: 83
+            count: 2
+            percentage: 2.4
+            delta_from_average: -1.6
+        -
+            country: Singapore
+            total: 76
+            count: 9
+            percentage: 11.8
+            delta_from_average: 7.8
+        -
+            country: China
+            total: 75
+            count: 6
+            percentage: 8
+            delta_from_average: 4
+        -
+            country: Japan
+            total: 75
+            count: 2
+            percentage: 2.7
+            delta_from_average: -1.3
+        -
+            country: Croatia
+            total: 59
+            count: 1
+            percentage: 1.7
+            delta_from_average: -2.3
+        -
+            country: Nigeria
+            total: 58
+            count: 1
+            percentage: 1.7
+            delta_from_average: -2.3
+        -
+            country: Slovakia
+            total: 58
+            count: 0
+            percentage: 0
+            delta_from_average: -4
+        -
+            country: Taiwan
+            total: 55
+            count: 2
+            percentage: 3.6
+            delta_from_average: -0.4
+        -
+            country: Estonia
+            total: 54
+            count: 1
+            percentage: 1.9
+            delta_from_average: -2.1
+        -
+            country: Korea
+            total: 51
+            count: 3
+            percentage: 5.9
+            delta_from_average: 1.9
+        -
+            country: Chile
+            total: 49
+            count: 2
+            percentage: 4.1
+            delta_from_average: 0.1
+        -
+            country: Egypt
+            total: 48
+            count: 0
+            percentage: 0
+            delta_from_average: -4
+        -
+            country: Malaysia
+            total: 47
+            count: 1
+            percentage: 2.1
+            delta_from_average: -1.9
+        -
+            country: Iran
+            total: 46
+            count: 4
+            percentage: 8.7
+            delta_from_average: 4.7
+        -
+            country: Bangladesh
+            total: 41
+            count: 0
+            percentage: 0
+            delta_from_average: -4
+        -
+            country: Slovenia
+            total: 38
+            count: 2
+            percentage: 5.3
+            delta_from_average: 1.3
+        -
+            country: Lithuania
+            total: 37
+            count: 4
+            percentage: 10.8
+            delta_from_average: 6.8
+        -
+            country: Uruguay
+            total: 37
+            count: 0
+            percentage: 0
+            delta_from_average: -4
+        -
+            country: Vietnam
+            total: 37
+            count: 2
+            percentage: 5.4
+            delta_from_average: 1.4
+        -
+            country: Moldova
+            total: 34
+            count: 1
+            percentage: 2.9
+            delta_from_average: -1.1
+        -
+            country: Pakistan
+            total: 34
+            count: 1
+            percentage: 2.9
+            delta_from_average: -1.1
+        -
+            country: 'Hong Kong'
+            total: 33
+            count: 1
+            percentage: 3
+            delta_from_average: -1
+        -
+            country: Latvia
+            total: 31
+            count: 1
+            percentage: 3.2
+            delta_from_average: -0.8
+        -
+            country: 'Costa Rica'
+            total: 30
+            count: 0
+            percentage: 0
+            delta_from_average: -4
+        -
+            country: Peru
+            total: 30
+            count: 1
+            percentage: 3.3
+            delta_from_average: -0.7
+        -
+            country: Thailand
+            total: 30
+            count: 0
+            percentage: 0
+            delta_from_average: -4
+        -
+            country: Venezuela
+            total: 29
+            count: 1
+            percentage: 3.4
+            delta_from_average: -0.6
+        -
+            country: Bolivia
+            total: 27
+            count: 0
+            percentage: 0
+            delta_from_average: -4
+        -
+            country: Morocco
+            total: 22
+            count: 0
+            percentage: 0
+            delta_from_average: -4
+pairing:
     -
-        survey: '2017'
-        total: 23666
-        percentage: 5
-        buckets:
+        section: javascript-flavors
+        tools:
             -
-                country: USA
-                total: 6950
-                count: 365
-                percentage: 5.3
-                delta_from_average: 0.3
-            -
-                country: England
-                total: 1567
-                count: 103
-                percentage: 6.6
-                delta_from_average: 1.6
-            -
-                country: Germany
-                total: 1211
-                count: 76
-                percentage: 6.3
-                delta_from_average: 1.3
-            -
-                country: Canada
-                total: 1046
-                count: 40
-                percentage: 3.8
-                delta_from_average: -1.2
-            -
-                country: France
-                total: 976
+                tool: reason
+                total: 1114
                 count: 61
-                percentage: 6.3
-                delta_from_average: 1.3
+                score: 0.05
             -
-                country: Australia
-                total: 769
-                count: 50
-                percentage: 6.5
-                delta_from_average: 1.5
+                tool: clojurescript
+                total: 466
+                count: 23
+                score: 0.05
             -
-                country: India
-                total: 608
-                count: 15
-                percentage: 2.5
-                delta_from_average: -2.5
+                tool: elm
+                total: 872
+                count: 77
+                score: 0.09
             -
-                country: Poland
-                total: 606
-                count: 20
-                percentage: 3.3
-                delta_from_average: -1.7
+                tool: flow
+                total: 2065
+                count: 176
+                score: 0.09
             -
-                country: Netherlands
-                total: 552
-                count: 26
-                percentage: 4.7
-                delta_from_average: -0.3
+                tool: typescript
+                total: 9419
+                count: 404
+                score: 0.04
             -
-                country: Brazil
-                total: 518
-                count: 30
-                percentage: 5.8
-                delta_from_average: 0.8
-            -
-                country: Spain
-                total: 500
-                count: 27
-                percentage: 5.4
-                delta_from_average: 0.4
-            -
-                country: Russia
-                total: 470
-                count: 30
-                percentage: 6.4
-                delta_from_average: 1.4
-            -
-                country: Ukraine
-                total: 444
-                count: 19
-                percentage: 4.3
-                delta_from_average: -0.7
-            -
-                country: Sweden
-                total: 412
-                count: 30
-                percentage: 7.3
-                delta_from_average: 2.3
-            -
-                country: Italy
-                total: 313
-                count: 12
-                percentage: 3.8
-                delta_from_average: -1.2
-            -
-                country: Denmark
-                total: 242
-                count: 13
-                percentage: 5.4
-                delta_from_average: 0.4
-            -
-                country: Belgium
-                total: 210
-                count: 6
-                percentage: 2.9
-                delta_from_average: -2.1
-            -
-                country: Mexico
-                total: 195
-                count: 6
-                percentage: 3.1
-                delta_from_average: -1.9
-            -
-                country: Norway
-                total: 193
-                count: 13
-                percentage: 6.7
-                delta_from_average: 1.7
-            -
-                country: Argentina
-                total: 189
-                count: 5
-                percentage: 2.6
-                delta_from_average: -2.4
-            -
-                country: 'New Zealand'
-                total: 181
-                count: 12
-                percentage: 6.6
-                delta_from_average: 1.6
-            -
-                country: Finland
-                total: 179
-                count: 7
-                percentage: 3.9
-                delta_from_average: -1.1
-            -
-                country: Switzerland
-                total: 174
-                count: 10
-                percentage: 5.7
-                delta_from_average: 0.7
-            -
-                country: Israel
-                total: 159
-                count: 3
-                percentage: 1.9
-                delta_from_average: -3.1
-            -
-                country: Romania
-                total: 158
-                count: 3
-                percentage: 1.9
-                delta_from_average: -3.1
-            -
-                country: Portugal
-                total: 156
-                count: 10
-                percentage: 6.4
-                delta_from_average: 1.4
-            -
-                country: Austria
-                total: 154
-                count: 10
-                percentage: 6.5
-                delta_from_average: 1.5
-            -
-                country: Ireland
-                total: 139
-                count: 6
-                percentage: 4.3
-                delta_from_average: -0.7
-            -
-                country: Belarus
-                total: 122
-                count: 5
-                percentage: 4.1
-                delta_from_average: -0.9
-            -
-                country: China
-                total: 118
-                count: 10
-                percentage: 8.5
-                delta_from_average: 3.5
-            -
-                country: 'South Africa'
-                total: 114
-                count: 2
-                percentage: 1.8
-                delta_from_average: -3.2
-            -
-                country: Hungary
-                total: 113
-                count: 2
-                percentage: 1.8
-                delta_from_average: -3.2
-            -
-                country: Colombia
-                total: 109
-                count: 10
-                percentage: 9.2
-                delta_from_average: 4.2
-            -
-                country: Greece
-                total: 98
-                count: 3
-                percentage: 3.1
-                delta_from_average: -1.9
-            -
-                country: Bulgaria
-                total: 92
-                count: 1
-                percentage: 1.1
-                delta_from_average: -3.9
-            -
-                country: Japan
-                total: 90
-                count: 0
-                percentage: 0
-                delta_from_average: -5
-            -
-                country: Indonesia
-                total: 88
-                count: 8
-                percentage: 9.1
-                delta_from_average: 4.1
-            -
-                country: Turkey
-                total: 88
-                count: 6
-                percentage: 6.8
-                delta_from_average: 1.8
-            -
-                country: Serbia
-                total: 81
-                count: 1
-                percentage: 1.2
-                delta_from_average: -3.8
-            -
-                country: Chile
-                total: 76
-                count: 1
-                percentage: 1.3
-                delta_from_average: -3.7
-            -
-                country: Malaysia
-                total: 74
-                count: 4
-                percentage: 5.4
-                delta_from_average: 0.4
-            -
-                country: Philippines
-                total: 73
-                count: 1
-                percentage: 1.4
-                delta_from_average: -3.6
-            -
-                country: Croatia
-                total: 69
-                count: 1
-                percentage: 1.4
-                delta_from_average: -3.6
-            -
-                country: Korea
-                total: 67
-                count: 2
-                percentage: 3
-                delta_from_average: -2
-            -
-                country: Singapore
-                total: 65
-                count: 4
-                percentage: 6.2
-                delta_from_average: 1.2
-            -
-                country: Nigeria
-                total: 58
-                count: 0
-                percentage: 0
-                delta_from_average: -5
-            -
-                country: Vietnam
-                total: 56
-                count: 2
-                percentage: 3.6
-                delta_from_average: -1.4
-            -
-                country: 'Hong Kong'
-                total: 53
-                count: 5
-                percentage: 9.4
-                delta_from_average: 4.4
-            -
-                country: Taiwan
-                total: 51
-                count: 1
-                percentage: 2
-                delta_from_average: -3
-            -
-                country: Thailand
-                total: 48
-                count: 2
-                percentage: 4.2
-                delta_from_average: -0.8
-            -
-                country: Estonia
-                total: 46
-                count: 3
-                percentage: 6.5
-                delta_from_average: 1.5
-            -
-                country: Slovakia
-                total: 46
-                count: 2
-                percentage: 4.3
-                delta_from_average: -0.7
-            -
-                country: 'Czech Republic'
-                total: 42
-                count: 4
-                percentage: 9.5
-                delta_from_average: 4.5
-            -
-                country: 'Costa Rica'
-                total: 41
-                count: 0
-                percentage: 0
-                delta_from_average: -5
-            -
-                country: Latvia
-                total: 40
-                count: 1
-                percentage: 2.5
-                delta_from_average: -2.5
-            -
-                country: Iceland
-                total: 37
-                count: 2
-                percentage: 5.4
-                delta_from_average: 0.4
-            -
-                country: Uruguay
-                total: 37
-                count: 1
-                percentage: 2.7
-                delta_from_average: -2.3
-            -
-                country: Slovenia
-                total: 34
-                count: 2
-                percentage: 5.9
-                delta_from_average: 0.9
-            -
-                country: Lithuania
-                total: 33
-                count: 1
-                percentage: 3
-                delta_from_average: -2
-            -
-                country: Pakistan
-                total: 33
-                count: 0
-                percentage: 0
-                delta_from_average: -5
-            -
-                country: Egypt
-                total: 31
-                count: 1
-                percentage: 3.2
-                delta_from_average: -1.8
-            -
-                country: 'Dominican Republic'
-                total: 25
-                count: 0
-                percentage: 0
-                delta_from_average: -5
-            -
-                country: Peru
-                total: 25
-                count: 0
-                percentage: 0
-                delta_from_average: -5
-            -
-                country: Venezuela
-                total: 25
-                count: 1
-                percentage: 4
-                delta_from_average: -1
-            -
-                country: 'Bosnia and Herzegovina'
-                total: 22
-                count: 0
-                percentage: 0
-                delta_from_average: -5
-            -
-                country: Bangladesh
-                total: 21
-                count: 1
-                percentage: 4.8
-                delta_from_average: -0.2
-            -
-                country: Moldova
-                total: 20
-                count: 0
-                percentage: 0
-                delta_from_average: -5
+                tool: es6
+                total: 17400
+                count: 767
+                score: 0.04
     -
-        survey: '2018'
-        total: 20252
-        percentage: 4
-        buckets:
+        section: front-end-frameworks
+        tools:
             -
-                country: USA
-                total: 4929
+                tool: react
+                total: 13062
+                count: 614
+                score: 0.05
+            -
+                tool: angular
+                total: 4817
+                count: 92
+                score: 0.02
+            -
+                tool: ember
+                total: 1013
+                count: 43
+                score: 0.04
+            -
+                tool: polymer
+                total: 635
+                count: 42
+                score: 0.07
+            -
+                tool: vuejs
+                total: 5810
+                count: 312
+                score: 0.05
+            -
+                tool: preact
+                total: 1251
+                count: 174
+                score: 0.14
+    -
+        section: data-layer
+        tools:
+            -
+                tool: redux
+                total: 9503
+                count: 451
+                score: 0.05
+            -
+                tool: graphql
+                total: 4108
+                count: 297
+                score: 0.07
+            -
+                tool: relay
+                total: 213
+                count: 19
+                score: 0.09
+            -
+                tool: apollo
+                total: 2228
+                count: 169
+                score: 0.08
+            -
+                tool: mobx
+                total: 1126
+                count: 80
+                score: 0.07
+    -
+        section: back-end-frameworks
+        tools:
+            -
+                tool: meteor
+                total: 922
+                count: 28
+                score: 0.03
+            -
+                tool: express
+                total: 12764
+                count: 652
+                score: 0.05
+            -
+                tool: nextjs
+                total: 1701
+                count: 171
+                score: 0.1
+            -
+                tool: koa
+                total: 1491
                 count: 206
-                percentage: 4.2
-                delta_from_average: 0.2
-            -
-                country: Germany
-                total: 1064
-                count: 57
-                percentage: 5.4
-                delta_from_average: 1.4
-            -
-                country: Australia
-                total: 1050
-                count: 41
-                percentage: 3.9
-                delta_from_average: -0.1
-            -
-                country: Ukraine
-                total: 897
-                count: 35
-                percentage: 3.9
-                delta_from_average: -0.1
-            -
-                country: France
-                total: 856
-                count: 40
-                percentage: 4.7
-                delta_from_average: 0.7
-            -
-                country: Canada
-                total: 831
-                count: 33
-                percentage: 4
-                delta_from_average: 0
-            -
-                country: England
-                total: 765
-                count: 38
-                percentage: 5
-                delta_from_average: 1
-            -
-                country: Russia
-                total: 754
-                count: 28
-                percentage: 3.7
-                delta_from_average: -0.3
-            -
-                country: India
-                total: 521
-                count: 12
-                percentage: 2.3
-                delta_from_average: -1.7
-            -
-                country: Sweden
-                total: 506
-                count: 28
-                percentage: 5.5
-                delta_from_average: 1.5
-            -
-                country: Netherlands
-                total: 503
-                count: 18
-                percentage: 3.6
-                delta_from_average: -0.4
-            -
-                country: Poland
-                total: 487
-                count: 16
-                percentage: 3.3
-                delta_from_average: -0.7
-            -
-                country: Brazil
-                total: 451
-                count: 19
-                percentage: 4.2
-                delta_from_average: 0.2
-            -
-                country: Spain
-                total: 396
-                count: 12
-                percentage: 3
-                delta_from_average: -1
-            -
-                country: Italy
-                total: 272
-                count: 11
-                percentage: 4
-                delta_from_average: 0
-            -
-                country: Belgium
-                total: 210
-                count: 6
-                percentage: 2.9
-                delta_from_average: -1.1
-            -
-                country: Finland
-                total: 210
-                count: 3
-                percentage: 1.4
-                delta_from_average: -2.6
-            -
-                country: Norway
-                total: 202
-                count: 12
-                percentage: 5.9
-                delta_from_average: 1.9
-            -
-                country: Denmark
-                total: 198
-                count: 11
-                percentage: 5.6
-                delta_from_average: 1.6
-            -
-                country: Argentina
-                total: 192
-                count: 2
-                percentage: 1
-                delta_from_average: -3
-            -
-                country: Mexico
-                total: 188
-                count: 5
-                percentage: 2.7
-                delta_from_average: -1.3
-            -
-                country: Switzerland
-                total: 188
-                count: 11
-                percentage: 5.9
-                delta_from_average: 1.9
-            -
-                country: 'Czech Republic'
-                total: 178
-                count: 7
-                percentage: 3.9
-                delta_from_average: -0.1
-            -
-                country: 'South Africa'
-                total: 155
-                count: 3
-                percentage: 1.9
-                delta_from_average: -2.1
-            -
-                country: Romania
-                total: 153
-                count: 5
-                percentage: 3.3
-                delta_from_average: -0.7
-            -
-                country: Austria
-                total: 149
-                count: 7
-                percentage: 4.7
-                delta_from_average: 0.7
-            -
-                country: Israel
-                total: 148
-                count: 5
-                percentage: 3.4
-                delta_from_average: -0.6
-            -
-                country: 'New Zealand'
-                total: 146
-                count: 5
-                percentage: 3.4
-                delta_from_average: -0.6
-            -
-                country: Belarus
-                total: 135
-                count: 4
-                percentage: 3
-                delta_from_average: -1
-            -
-                country: Portugal
-                total: 135
-                count: 3
-                percentage: 2.2
-                delta_from_average: -1.8
-            -
-                country: Ireland
-                total: 126
-                count: 6
-                percentage: 4.8
-                delta_from_average: 0.8
-            -
-                country: Colombia
-                total: 124
-                count: 9
-                percentage: 7.3
-                delta_from_average: 3.3
-            -
-                country: Indonesia
-                total: 120
-                count: 4
-                percentage: 3.3
-                delta_from_average: -0.7
-            -
-                country: Hungary
-                total: 95
-                count: 5
-                percentage: 5.3
-                delta_from_average: 1.3
-            -
-                country: Turkey
-                total: 90
-                count: 1
-                percentage: 1.1
-                delta_from_average: -2.9
-            -
-                country: Philippines
-                total: 87
-                count: 1
-                percentage: 1.1
-                delta_from_average: -2.9
-            -
-                country: Bulgaria
-                total: 86
-                count: 0
-                percentage: 0
-                delta_from_average: -4
-            -
-                country: Greece
-                total: 86
-                count: 1
-                percentage: 1.2
-                delta_from_average: -2.8
-            -
-                country: Serbia
-                total: 83
-                count: 2
-                percentage: 2.4
-                delta_from_average: -1.6
-            -
-                country: Singapore
-                total: 76
-                count: 9
-                percentage: 11.8
-                delta_from_average: 7.8
-            -
-                country: China
-                total: 75
-                count: 6
-                percentage: 8
-                delta_from_average: 4
-            -
-                country: Japan
-                total: 75
-                count: 2
-                percentage: 2.7
-                delta_from_average: -1.3
-            -
-                country: Croatia
-                total: 59
-                count: 1
-                percentage: 1.7
-                delta_from_average: -2.3
-            -
-                country: Nigeria
-                total: 58
-                count: 1
-                percentage: 1.7
-                delta_from_average: -2.3
-            -
-                country: Slovakia
-                total: 58
-                count: 0
-                percentage: 0
-                delta_from_average: -4
-            -
-                country: Taiwan
-                total: 55
-                count: 2
-                percentage: 3.6
-                delta_from_average: -0.4
-            -
-                country: Estonia
-                total: 54
-                count: 1
-                percentage: 1.9
-                delta_from_average: -2.1
-            -
-                country: Korea
-                total: 51
-                count: 3
-                percentage: 5.9
-                delta_from_average: 1.9
-            -
-                country: Chile
-                total: 49
-                count: 2
-                percentage: 4.1
-                delta_from_average: 0.1
-            -
-                country: Egypt
-                total: 48
-                count: 0
-                percentage: 0
-                delta_from_average: -4
-            -
-                country: Malaysia
-                total: 47
-                count: 1
-                percentage: 2.1
-                delta_from_average: -1.9
-            -
-                country: Iran
-                total: 46
-                count: 4
-                percentage: 8.7
-                delta_from_average: 4.7
-            -
-                country: Bangladesh
-                total: 41
-                count: 0
-                percentage: 0
-                delta_from_average: -4
-            -
-                country: Slovenia
-                total: 38
-                count: 2
-                percentage: 5.3
-                delta_from_average: 1.3
-            -
-                country: Lithuania
-                total: 37
-                count: 4
-                percentage: 10.8
-                delta_from_average: 6.8
-            -
-                country: Uruguay
-                total: 37
-                count: 0
-                percentage: 0
-                delta_from_average: -4
-            -
-                country: Vietnam
-                total: 37
-                count: 2
-                percentage: 5.4
-                delta_from_average: 1.4
-            -
-                country: Moldova
-                total: 34
-                count: 1
-                percentage: 2.9
-                delta_from_average: -1.1
-            -
-                country: Pakistan
-                total: 34
-                count: 1
-                percentage: 2.9
-                delta_from_average: -1.1
-            -
-                country: 'Hong Kong'
-                total: 33
-                count: 1
-                percentage: 3
-                delta_from_average: -1
-            -
-                country: Latvia
-                total: 31
-                count: 1
-                percentage: 3.2
-                delta_from_average: -0.8
-            -
-                country: 'Costa Rica'
-                total: 30
-                count: 0
-                percentage: 0
-                delta_from_average: -4
-            -
-                country: Peru
-                total: 30
-                count: 1
-                percentage: 3.3
-                delta_from_average: -0.7
-            -
-                country: Thailand
-                total: 30
-                count: 0
-                percentage: 0
-                delta_from_average: -4
-            -
-                country: Venezuela
-                total: 29
-                count: 1
-                percentage: 3.4
-                delta_from_average: -0.6
-            -
-                country: Bolivia
-                total: 27
-                count: 0
-                percentage: 0
-                delta_from_average: -4
-            -
-                country: Morocco
-                total: 22
-                count: 0
-                percentage: 0
-                delta_from_average: -4
+                score: 0.14
+            -
+                tool: sails
+                total: 335
+                count: 13
+                score: 0.04
+            -
+                tool: feathers
+                total: 317
+                count: 29
+                score: 0.09
     -
-        survey: '2016'
-        total: 10251
-        percentage: 3.8
-        buckets: []
+        section: testing
+        tools:
+            -
+                tool: storybook
+                total: 3085
+                count: 231
+                score: 0.07
+            -
+                tool: mocha
+                total: 7873
+                count: 402
+                score: 0.05
+            -
+                tool: jasmine
+                total: 5689
+                count: 215
+                score: 0.04
+            -
+                tool: jest
+                total: 7910
+                count: 494
+                score: 0.06
+            -
+                tool: enzyme
+                total: 4039
+                count: 260
+                score: 0.06
+            -
+                tool: ava
+                total: 804
+                count: 804
+                score: 1
+            -
+                tool: karma
+                total: 3676
+                count: 146
+                score: 0.04
+    -
+        section: mobile-and-desktop
+        tools:
+            -
+                tool: electron
+                total: 3913
+                count: 292
+                score: 0.07
+            -
+                tool: react-native
+                total: 3738
+                count: 196
+                score: 0.05
+            -
+                tool: phonegap-cordova
+                total: 2042
+                count: 51
+                score: 0.02
+            -
+                tool: nativescript
+                total: 335
+                count: 11
+                score: 0.03
+            -
+                tool: ionic
+                total: 1665
+                count: 49
+                score: 0.03
+            -
+                tool: native-apps
+                total: 2113
+                count: 112
+                score: 0.05

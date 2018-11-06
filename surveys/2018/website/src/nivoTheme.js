@@ -15,7 +15,7 @@ export default {
         colors.redLight,
         colors.greyLight,
         colors.blueLight,
-        colors.blue,
+        colors.blue
     ],
     salaryColors: ['#8b8de8', '#b3b5e6', '#dedfec', '#e4d6d9', '#dc9eaa', '#e28194', '#ea2149'],
     genderColors: {

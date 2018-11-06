@@ -39,19 +39,19 @@ class CompoundAggregator {
         return sections
     }
 
-    async computeTools(tools) {
+    async computeTools(tools, currentSurveyId) {
         const surveyIds = Object.keys(this.config)
 
+        const toolsPairing = await toolsAggregator.toolsPairingByOpinionForSurvey(this.config[currentSurveyId].tools, experience.WOULD_USE, this.config[currentSurveyId].sections, currentSurveyId)
         const toolsExperiencesAggs = await toolsAggregator.experiences(tools, surveyIds, this.config)
         const toolsExperienceAggs = await toolsAggregator.experience(tools, surveyIds, this.config, experience.WOULD_USE)
         const toolsReasonsAggs = await toolsAggregator.reasons(tools)
-        const toolsWouldUseByContinentAggs = await toolsAggregator.opinionByContinent(tools, experience.WOULD_USE)
         const toolsWouldUseByCountryAggs = await toolsAggregator.opinionByCountry(tools, experience.WOULD_USE)
         Object.keys(toolsExperienceAggs).forEach(tool => {
             toolsExperiencesAggs[tool][experience.WOULD_USE] = toolsExperienceAggs[tool]
             toolsExperiencesAggs[tool].reasons = toolsReasonsAggs[tool]
-            toolsExperiencesAggs[tool][`${experience.WOULD_USE}_by_continent`] = toolsWouldUseByContinentAggs[tool]
-            toolsExperiencesAggs[tool][`${experience.WOULD_USE}_by_country`] = toolsWouldUseByCountryAggs[tool]
+            toolsExperiencesAggs[tool][`${experience.WOULD_USE}_by_country`] = toolsWouldUseByCountryAggs[tool].find(d => d.survey === currentSurveyId)
+            toolsExperiencesAggs[tool].pairing = toolsPairing[tool]
         })
 
         return toolsExperiencesAggs

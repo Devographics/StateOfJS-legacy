@@ -315,3 +315,94 @@ exports.opinionByLocation = async (tools, opinion, locationType) => {
 
 exports.opinionByContinent = async (tools, opinion) => exports.opinionByLocation(tools, opinion, 'continent')
 exports.opinionByCountry = async (tools, opinion) => exports.opinionByLocation(tools, opinion, 'country')
+
+/**
+ * Compute tools best pairing to be able to find
+ * some kind of prefered stack when using it.
+ */
+exports.toolsPairingByOpinionForSurvey = async (tools, opinion, _sections, surveyId) => {
+    const sections = Object.entries(_sections).map(section => ({
+        section: section[0],
+        tools: section[1].tools
+    }))
+
+    const surveyQuery = {
+        bool: {
+            must: [{
+                term: {
+                    'survey.keyword': {
+                        value: surveyId,
+                    },
+                },
+            }],
+        },
+    }
+
+    const toolsTotalOpinionResult = await elastic.search({
+        size: 0,
+        body: {
+            query: surveyQuery,
+            aggs: tools.reduce((acc, tool) => ({
+                ...acc,
+                [tool]: {
+                    filter: {
+                        term: {
+                            [`tools.${tool}.opinion.keyword`]: opinion,
+                        },
+                    },
+                },
+            }), {}),
+        },
+    })
+    const toolsTotalOpinion = toolsTotalOpinionResult.aggregations
+
+    const body = {
+        query: surveyQuery,
+        aggs: tools.reduce((acc, tool) => {
+            return {
+                ...acc,
+                [tool]: {
+                    filter: {
+                        term: {
+                            [`tools.${tool}.opinion.keyword`]: opinion,
+                        }
+                    },
+                    aggs: tools.reduce((acc1, tool) => ({
+                        ...acc1,
+                        [tool]: {
+                            filter: {
+                                term: {
+                                    [`tools.${tool}.opinion.keyword`]: opinion,
+                                }
+                            }
+                        }
+                    }), {})
+                }
+            }
+        }, {}),
+    }
+
+    const result = await elastic.search({ size: 0, body })
+
+    return Object.keys(result.aggregations).reduce((acc, tool) => {
+        const toolAggs = result.aggregations[tool]
+        const toolSections = sections.map(section => {
+            const sectionTools = section.tools.map(t => ({
+                tool: t,
+                total: toolsTotalOpinion[t].doc_count,
+                count: toolAggs[t].doc_count,
+                score: Number((toolAggs[t].doc_count / toolsTotalOpinion[t].doc_count).toFixed(2)),
+            }))
+
+            return {
+                section: section.section,
+                tools: sectionTools,
+            }
+        })
+
+        return {
+            ...acc,
+            [tool]: toolSections,
+        }
+    }, {})
+}

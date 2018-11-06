@@ -18,7 +18,7 @@ const ToolTemplate = ({ pageContext, data }) => {
         shouldDisplayExperienceOverTime = true
     }
 
-    const wouldUseByCountryData = data.toolsYaml.would_use_by_country.find(d => d.survey === '2018')
+    const wouldUseByCountryData = data.toolsYaml.would_use_by_country
     const { tool, section } = pageContext
 
     return (
