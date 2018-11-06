@@ -12,6 +12,8 @@ const margin = {
     left: 20
 }
 
+const keys = [4, 3, 2, 1, 0]
+
 export default class OpinionOverTimeChart extends Component {
     static propTypes = {
         data: PropTypes.arrayOf(PropTypes.shape({})).isRequired
@@ -64,7 +66,7 @@ export default class OpinionOverTimeChart extends Component {
                         colors={this.getLayerColor}
                         curve="monotoneX"
                         margin={margin}
-                        keys={[0, 1, 2, 3, 4].map(k => getWording(`opinion_scale.${k}`))}
+                        keys={keys.map(k => getWording(`opinion_scale.${k}`))}
                         data={data}
                         enableGridX={false}
                         enableGridY={false}
@@ -80,6 +82,7 @@ export default class OpinionOverTimeChart extends Component {
                     withFrame={false}
                     onMouseEnter={this.setCurrent}
                     onMouseLeave={this.resetCurrent}
+                    keys={keys}
                     style={{
                         marginTop: margin.top,
                         marginBottom: margin.bottom

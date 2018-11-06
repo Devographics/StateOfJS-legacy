@@ -11,11 +11,11 @@ export default {
         never_heard: colors.greyLight
     },
     opinionScaleColors: [
-        colors.blue,
-        colors.blueLight,
-        colors.greyLight,
+        colors.red,
         colors.redLight,
-        colors.red
+        colors.greyLight,
+        colors.blueLight,
+        colors.blue,
     ],
     salaryColors: ['#8b8de8', '#b3b5e6', '#dedfec', '#e4d6d9', '#dc9eaa', '#e28194', '#ea2149'],
     genderColors: {

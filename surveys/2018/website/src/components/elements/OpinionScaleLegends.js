@@ -3,15 +3,17 @@ import theme from '../../nivoTheme'
 import { getWording } from '../../helpers/wording'
 import Legends from './Legends'
 
+// note: legend is rendered in opposite order as chart
+const getReverseIndex = (keys, index) => keys.length - 1 - index
+
 export default class OpinionScaleLegends extends Component {
     render() {
-        const legends = [0, 1, 2, 3, 4]
+        const legends = this.props.keys
             .map(id => ({
                 id,
-                label: getWording(`opinion_scale.${id}`),
+                label: getWording(`opinion_scale.${getReverseIndex(this.props.keys, id)}`),
                 color: theme.opinionScaleColors[id]
             }))
-            .reverse()
 
         return (
             <Legends
