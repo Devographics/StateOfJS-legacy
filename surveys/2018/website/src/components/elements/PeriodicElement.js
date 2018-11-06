@@ -9,6 +9,8 @@ const PeriodicElement = ({
     name,
     symbol,
     number,
+    background,
+    borderColor,
     color = defaultColor,
     mode = 'standalone',
     size,
@@ -33,7 +35,10 @@ const PeriodicElement = ({
             }
         }}
     >
-        {/* Placeholder used so that cursor doesn't leave hover zone when hovering */}
+        {/*
+        Placeholder used so that cursor doesn't
+        leave hover zone when hovering
+        */}
         <rect
             x="0"
             y="0"
@@ -53,8 +58,10 @@ const PeriodicElement = ({
                 width="100"
                 height="100"
                 className={`PeriodicTableElement_Frame PeriodicTableElement_Frame--${mode}`}
+                style={{
+                    fill: background
+                }}
             />
-
             {fire && (
                 <image
                     xlinkHref="/images/pixel-fire.gif"
@@ -64,7 +71,6 @@ const PeriodicElement = ({
                     opacity="0.4"
                 />
             )}
-
             <text
                 className="PeriodicTableElement_Number"
                 x={100 * 0.1}
@@ -74,7 +80,6 @@ const PeriodicElement = ({
             >
                 {number}
             </text>
-
             <text
                 className="PeriodicTableElement_Symbol"
                 x={100 * 0.5}
@@ -86,7 +91,6 @@ const PeriodicElement = ({
             >
                 {symbol}
             </text>
-
             <text
                 className="PeriodicTableElement_Label"
                 x={100 * 0.5}
@@ -103,7 +107,8 @@ const PeriodicElement = ({
 
 PeriodicElement.propTypes = {
     name: PropTypes.string.isRequired,
-    symbol: PropTypes.string.isRequired
+    symbol: PropTypes.string.isRequired,
+    background: PropTypes.string
 }
 
 export default PeriodicElement

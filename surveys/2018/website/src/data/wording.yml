@@ -106,6 +106,7 @@ charts:
     opinion-would_like_js_to_be_main_lang: I would like JavaScript to be my main programming language
     opinion-js_ecosystem_changing_to_fast: The JavaScript ecosystem is changing too fast
     opinion-survey_too_long: This survey is too damn long!
+    tool-pairing: Which tools developers use along with ${tool}?
 
 shortnames: 
     javascript-flavors: Flavors

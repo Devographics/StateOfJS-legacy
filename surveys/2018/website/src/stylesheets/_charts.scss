@@ -205,3 +205,14 @@
 .Tooltip {
     z-index: 1000;
 }
+
+.ToolPairing__HeatMapChart {
+    display: grid;
+    align-items: center;
+    font-size: $medium-font;
+}
+
+.ToolPairing__HeatMapChart__Section {
+    grid-column-start: 1;
+    @include font-bold;
+}

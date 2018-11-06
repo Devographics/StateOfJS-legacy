@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Meta from '../elements/Meta'
 import Layout from '../common/Layout'
@@ -6,6 +7,7 @@ import ToolHeaderBlock from '../blocks/ToolHeaderBlock'
 import ToolOpinionsOverTimeBlock from '../blocks/ToolOpinionsOverTimeBlock'
 import ReasonsBlock from '../blocks/ReasonsBlock'
 import ToolUsageByCountryBlock from '../blocks/ToolUsageByCountryBlock'
+import ToolPairingBlock from '../blocks/ToolPairingBlock'
 // import SponsorsBlock from '../blocks/SponsorsBlock'
 import ResourcesBlock from '../blocks/ResourcesBlock'
 
@@ -14,11 +16,11 @@ const ToolTemplate = ({ pageContext, data }) => {
 
     // this block is skipped if it doesn't appear at least in 2 surveys
     let shouldDisplayExperienceOverTime = false
-    if (data.toolsYaml !== null && data.toolsYaml.appears_in_surveys.length > 1) {
+    if (data.tool.appears_in_surveys.length > 1) {
         shouldDisplayExperienceOverTime = true
     }
 
-    const wouldUseByCountryData = data.toolsYaml.would_use_by_country
+    const wouldUseByCountryData = data.tool.would_use_by_country
     const { tool, section } = pageContext
 
     return (
@@ -27,27 +29,48 @@ const ToolTemplate = ({ pageContext, data }) => {
                 <Meta />
                 <ToolHeaderBlock section={section} tool={tool} />
                 {shouldDisplayExperienceOverTime ? (
-                    <ToolOpinionsOverTimeBlock tool={tool} opinions={data.toolsYaml.experience} />
+                    <ToolOpinionsOverTimeBlock tool={tool} opinions={data.tool.experience} />
                 ) : (
                     <p className="tool-over-time-no-data">
                         Sorry, we don&apos;t have enough data to display the evolution of this
                         library's popularity over time.
                     </p>
                 )}
-                <ReasonsBlock tool={tool} reasons={data.toolsYaml.reasons} />
+                <ReasonsBlock tool={tool} reasons={data.tool.reasons} />
                 {/* <SponsorsBlock tool={tool} /> */}
                 <ResourcesBlock tool={tool} />
+                <ToolPairingBlock tool={tool} data={data.tool.pairing} />
                 <ToolUsageByCountryBlock tool={tool} data={wouldUseByCountryData} />
             </div>
         </Layout>
     )
 }
 
+ToolTemplate.propTypes = {
+    data: PropTypes.shape({
+        tool: PropTypes.shape({
+            appears_in_surveys: PropTypes.arrayOf(PropTypes.string).isRequired,
+            experience: PropTypes.shape({}).isRequired,
+            pairing: PropTypes.arrayOf(
+                PropTypes.shape({
+                    section: PropTypes.string.isRequired,
+                    tools: PropTypes.arrayOf(
+                        PropTypes.shape({
+                            tool: PropTypes.string.isRequired,
+                            score: PropTypes.number.isRequired
+                        })
+                    ).isRequired
+                })
+            ).isRequired
+        }).isRequired
+    }).isRequired
+}
+
 export default ToolTemplate
 
 export const query = graphql`
     query toolBySlug($tool: String!) {
-        toolsYaml(tool_id: { eq: $tool }) {
+        tool: toolsYaml(tool_id: { eq: $tool }) {
             tool_id
             appears_in_surveys
             experience {
@@ -67,6 +90,15 @@ export const query = graphql`
                         interested
                         never_heard
                     }
+                }
+            }
+            pairing {
+                section
+                tools {
+                    tool
+                    total
+                    count
+                    score
                 }
             }
             would_use_by_country {

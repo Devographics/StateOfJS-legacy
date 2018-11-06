@@ -549,7 +549,7 @@ pairing:
                 tool: reason
                 total: 1114
                 count: 27
-                score: 0.02
+                score: 0.08
             -
                 tool: clojurescript
                 total: 466
@@ -559,22 +559,22 @@ pairing:
                 tool: elm
                 total: 872
                 count: 6
-                score: 0.01
+                score: 0.02
             -
                 tool: flow
                 total: 2065
                 count: 18
-                score: 0.01
+                score: 0.05
             -
                 tool: typescript
                 total: 9419
                 count: 243
-                score: 0.03
+                score: 0.73
             -
                 tool: es6
                 total: 17400
                 count: 289
-                score: 0.02
+                score: 0.86
     -
         section: front-end-frameworks
         tools:
@@ -582,32 +582,32 @@ pairing:
                 tool: react
                 total: 13062
                 count: 118
-                score: 0.01
+                score: 0.35
             -
                 tool: angular
                 total: 4817
                 count: 194
-                score: 0.04
+                score: 0.58
             -
                 tool: ember
                 total: 1013
                 count: 14
-                score: 0.01
+                score: 0.04
             -
                 tool: polymer
                 total: 635
                 count: 23
-                score: 0.04
+                score: 0.07
             -
                 tool: vuejs
                 total: 5810
                 count: 168
-                score: 0.03
+                score: 0.5
             -
                 tool: preact
                 total: 1251
                 count: 19
-                score: 0.02
+                score: 0.06
     -
         section: data-layer
         tools:
@@ -615,12 +615,12 @@ pairing:
                 tool: redux
                 total: 9503
                 count: 108
-                score: 0.01
+                score: 0.32
             -
                 tool: graphql
                 total: 4108
                 count: 73
-                score: 0.02
+                score: 0.22
             -
                 tool: relay
                 total: 213
@@ -630,12 +630,12 @@ pairing:
                 tool: apollo
                 total: 2228
                 count: 45
-                score: 0.02
+                score: 0.13
             -
                 tool: mobx
                 total: 1126
                 count: 19
-                score: 0.02
+                score: 0.06
     -
         section: back-end-frameworks
         tools:
@@ -643,22 +643,22 @@ pairing:
                 tool: meteor
                 total: 922
                 count: 29
-                score: 0.03
+                score: 0.09
             -
                 tool: express
                 total: 12764
                 count: 219
-                score: 0.02
+                score: 0.65
             -
                 tool: nextjs
                 total: 1701
                 count: 28
-                score: 0.02
+                score: 0.08
             -
                 tool: koa
                 total: 1491
                 count: 27
-                score: 0.02
+                score: 0.08
             -
                 tool: sails
                 total: 335
@@ -676,37 +676,37 @@ pairing:
                 tool: storybook
                 total: 3085
                 count: 25
-                score: 0.01
+                score: 0.07
             -
                 tool: mocha
                 total: 7873
                 count: 141
-                score: 0.02
+                score: 0.42
             -
                 tool: jasmine
                 total: 5689
                 count: 118
-                score: 0.02
+                score: 0.35
             -
                 tool: jest
                 total: 7910
                 count: 92
-                score: 0.01
+                score: 0.27
             -
                 tool: enzyme
                 total: 4039
                 count: 28
-                score: 0.01
+                score: 0.08
             -
                 tool: ava
                 total: 804
                 count: 11
-                score: 0.01
+                score: 0.03
             -
                 tool: karma
                 total: 3676
                 count: 100
-                score: 0.03
+                score: 0.3
     -
         section: mobile-and-desktop
         tools:
@@ -714,17 +714,17 @@ pairing:
                 tool: electron
                 total: 3913
                 count: 104
-                score: 0.03
+                score: 0.31
             -
                 tool: react-native
                 total: 3738
                 count: 72
-                score: 0.02
+                score: 0.21
             -
                 tool: phonegap-cordova
                 total: 2042
                 count: 60
-                score: 0.03
+                score: 0.18
             -
                 tool: nativescript
                 total: 335
@@ -734,9 +734,9 @@ pairing:
                 tool: ionic
                 total: 1665
                 count: 68
-                score: 0.04
+                score: 0.2
             -
                 tool: native-apps
                 total: 2113
                 count: 56
-                score: 0.03
+                score: 0.17

@@ -13,7 +13,7 @@ const OtherTools = ({ data, ...rest }) => (
             <TextBlock text={data.file.childMarkdownRemark.html} />
             {otherToolsData.keys.map(otherTool => {
                 const data = otherToolsData.aggs[otherTool].buckets
-                console.log(data)
+
                 return (
                     <div className="Block Block--chart block block--chart" key={otherTool}>
                         <BarBlock data={data} title={otherTool} />

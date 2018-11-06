@@ -67,3 +67,12 @@
     fill: white;
     pointer-events: none;
 }
+
+.ToolPairing__HeatMapChart__PeriodicElement .PeriodicTableElement_Frame {
+    stroke: $bg-color;
+}
+
+.ToolPairing__HeatMapChart__PeriodicElement .PeriodicTableElement_Number,
+.ToolPairing__HeatMapChart__PeriodicElement .PeriodicTableElement_Label {
+    fill: $bg-color;
+}

@@ -386,12 +386,13 @@ exports.toolsPairingByOpinionForSurvey = async (tools, opinion, _sections, surve
 
     return Object.keys(result.aggregations).reduce((acc, tool) => {
         const toolAggs = result.aggregations[tool]
+        const toolTotal = toolAggs.doc_count
         const toolSections = sections.map(section => {
             const sectionTools = section.tools.map(t => ({
                 tool: t,
                 total: toolsTotalOpinion[t].doc_count,
                 count: toolAggs[t].doc_count,
-                score: Number((toolAggs[t].doc_count / toolsTotalOpinion[t].doc_count).toFixed(2)),
+                score: Number((toolAggs[t].doc_count / toolTotal).toFixed(2)),
             }))
 
             return {
