@@ -5,7 +5,7 @@ import ToolPairingHeatMapChart from '../charts/ToolPairingHeatMapChart'
 
 const ToolPairingBlock = ({ tool, data }) => {
     return (
-        <div className="block">
+        <div className="ToolPairing__Block block">
             <BlockTitle chart="tool-pairing" tool={tool} />
             <ToolPairingHeatMapChart tool={tool} data={data} />
         </div>

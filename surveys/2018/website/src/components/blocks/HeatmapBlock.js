@@ -6,7 +6,7 @@ import SectionTitle from './SectionTitle.js'
 
 const HeatmapBlock = props => {
     return (
-        <div className="section section-layout-b">
+        <div className="Heatmap__Block section section-layout-b">
             {props.title ? <SectionTitle title={props.title} /> : null}
             <div className="section-inner">
                 <Heatmap {...props} width={600} height={600} />

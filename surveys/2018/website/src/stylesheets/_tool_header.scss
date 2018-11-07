@@ -1,14 +1,26 @@
 .ToolHeader {
-    display: flex;
+    @include medium-large{
+        display: flex;
+    }
     margin-bottom: $spacing * 2;
     .PeriodicTableElementHtml {
         width: 100%;
     }
 }
 .ToolHeader__Element {
-    margin-right: $spacing;
-    flex-shrink: 1;
-    flex-basis: 120px;
+    svg{
+        display: block;
+    }
+    @include small{
+        margin-bottom: $spacing/4;
+        
+    }
+
+    @include medium-large{
+        flex-shrink: 1;
+        flex-basis: 120px;
+        margin-right: $spacing;
+    }
 }
 .SectionHeader {
     margin-bottom: $spacing * 2;
@@ -28,13 +40,20 @@
     align-items: baseline;
     line-height: 1;
     @include small {
+        font-size: 1.3rem;
+    }
+    @include medium{
         font-size: 1.5rem;
     }
-    @include medium-large {
+    @include large {
         font-size: 2rem;
     }
 }
-
+.ToolHeader__Title{
+    @include small{
+        display: none;
+    }
+}
 .ToolHeader__Content {
     flex: 1;
 }
@@ -49,7 +68,7 @@
 }
 
 .ToolHeader__Stars{
-    @include small{
+    @include small-medium{
         display: none;
     }
 }

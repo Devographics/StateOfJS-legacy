@@ -5,6 +5,7 @@ import { getWording, getToolName } from '../../helpers/wording'
 import periodicTableData from '../../data/periodic_table.yml'
 import { colors } from '../../constants'
 import PeriodicElement from '../elements/PeriodicElement'
+import ChartContainer from '../elements/ChartContainer'
 
 const CELL_SIZE = 46
 
@@ -21,30 +22,32 @@ const ToolPairingHeatMapChart = ({ data }) => {
     }
 
     return (
-        <div className="ToolPairing__HeatMapChart" style={style}>
-            {data.map(section => {
-                return (
-                    <Fragment key={section.section}>
-                        <div className="ToolPairing__HeatMapChart__Section">
-                            {getWording(`nav.${section.section}`)}
-                        </div>
-                        {section.tools.map((sectionTool, i) => (
-                            <PeriodicElement
-                                key={sectionTool.tool}
-                                className="ToolPairing__HeatMapChart__PeriodicElement"
-                                background={colorScale(sectionTool.score)}
-                                borderColor="#212424"
-                                color="#212424"
-                                tool={sectionTool.tool}
-                                name={getToolName(sectionTool.tool)}
-                                symbol={periodicTableData.tools[sectionTool.tool]}
-                                number={i}
-                            />
-                        ))}
-                    </Fragment>
-                )
-            })}
-        </div>
+        <ChartContainer>
+            <div className="ToolPairing__HeatMapChart" style={style}>
+                {data.map(section => {
+                    return (
+                        <Fragment key={section.section}>
+                            <div className="ToolPairing__HeatMapChart__Section">
+                                {getWording(`nav.${section.section}`)}
+                            </div>
+                            {section.tools.map((sectionTool, i) => (
+                                <PeriodicElement
+                                    key={sectionTool.tool}
+                                    className="ToolPairing__HeatMapChart__PeriodicElement"
+                                    background={colorScale(sectionTool.score)}
+                                    borderColor="#212424"
+                                    color="#212424"
+                                    tool={sectionTool.tool}
+                                    name={getToolName(sectionTool.tool)}
+                                    symbol={periodicTableData.tools[sectionTool.tool]}
+                                    number={i}
+                                />
+                            ))}
+                        </Fragment>
+                    )
+                })}
+            </div>
+        </ChartContainer>
     )
 }
 

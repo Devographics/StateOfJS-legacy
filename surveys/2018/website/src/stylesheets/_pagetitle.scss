@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @include small {
+    @include small-medium {
         .pagetitle__wrapper--top & {
             grid-template-columns: 1fr 50px 1fr;
         }
@@ -36,10 +36,12 @@
     // flex-grow: 1;
     // flex-basis: 50%;
     border-right: 1px solid $dark-border-color;
-    @include small {
+    @include small-medium {
         font-size: $smaller-font;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
-    @include medium-large {
+    @include large {
         font-size: $medium-font;
     }
     &:hover {
@@ -48,10 +50,10 @@
 }
 
 .pagination__link__label {
-    @include small {
+    @include small-medium {
         display: inline-block;
     }
-    @include medium-large {
+    @include large {
         .pagetitle__wrapper--title & {
             display: none;
         }
@@ -68,6 +70,12 @@
     }
 }
 
+.pagination__link__symbol{
+    @include small{
+        display: none;
+    }
+}
+
 .pagination__previous {
     text-align: left;
 }
@@ -75,17 +83,19 @@
 .pagination__next {
     border: none;
     text-align: right;
-    span + span + & {
-        border-left: 1px solid $dark-border-color;
-    }
 }
 
 .PageTitle__Sidebar__Toggle {
-    padding: 0 $spacing/2;
-    height: 100%;
-    @include flex-center;
-    border-right: 1px solid $dark-border-color;
-    @include medium-large {
+    @include small-medium {
+        padding: 0 $spacing/2;
+        height: 100%;
+        @include flex-center;
+        border-right: 1px solid $dark-border-color;
+        span + & {
+            border-left: 1px solid $dark-border-color;
+        }
+    }
+    @include large {
         display: none;
     }
 }
@@ -103,7 +113,7 @@
         height: auto;
         stroke: $active-color;
     }
-    @include medium-large {
+    @include large {
         display: none;
     }
 }

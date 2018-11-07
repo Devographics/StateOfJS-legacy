@@ -53,19 +53,48 @@ reasons:
     growing_momentum_popularity: 📉 Growing momentum/popularity
     full_featured_powerful: 🕹️ Full-featured & powerful
     stable_backwards_compatible: ⚖️ Stable & backwards-compatible
-    clumsy_programming_style: Clumsy programming style ⚙️
-    buggy_error_prone_code: Buggy, error-prone code 🐞
-    poor_performance: Poor performance ⚡
-    small_package_ecosystem: Small package ecosystem 🎁
-    new_untested_option: New untested option 🏛️
-    hard_learning_curve: Hard learning curve 👶
-    lacking_developer_tooling: Lacking developer tooling 🔧
-    bad_documentation: Bad documentation 📖
-    concerns_about_the_team_company: Concerns about the team/company 👫
-    bloated_complex: Bloated & complex 🎈
-    diminishing_momentum_popularity: Diminishing momentum/popularity 📉
-    limited_lacking_in_features: Limited & lacking in features 🕹️
-    fast_changing_breaks_often: Fast-changing & breaks often ⚖️
+    clumsy_programming_style: ⚙️ Clumsy programming style
+    buggy_error_prone_code: 🐞 Buggy, error-prone code 
+    poor_performance: ⚡ Poor performance 
+    small_package_ecosystem: 🎁 Small package ecosystem 
+    new_untested_option: 🏛️ New untested option 
+    hard_learning_curve: 👶 Hard learning curve 
+    lacking_developer_tooling: 🔧 Lacking developer tooling 
+    bad_documentation: 📖 Bad documentation 
+    concerns_about_the_team_company: 👫 Concerns about the team/company 
+    bloated_complex: 🎈 Bloated & complex 
+    diminishing_momentum_popularity: 📉 Diminishing momentum/popularity 
+    limited_lacking_in_features: 🕹️ Limited & lacking in features 
+    fast_changing_breaks_often: ⚖️ Fast-changing & breaks often 
+    other: Other
+
+reasons_short:
+    elegant_programming_style_patterns: ⚙️ Programming style
+    robust_less_error_prone_code: 🐞 Robust code
+    rich_package_ecosystem: 🎁 Package ecosystem
+    fast_performance: ⚡ Fast performance
+    well_established_option: 🏛️ Well-established
+    easy_learning_curve: 👶 Easy to learn
+    powerful_developer_tooling: 🔧 Tooling
+    good_documentation: 📖 Good documentation
+    backed_by_a_great_team_company: 👫 Great team/company
+    simple_lightweight: 🎈 Lightweight
+    growing_momentum_popularity: 📉 Momentum
+    full_featured_powerful: 🕹️ Full-featured
+    stable_backwards_compatible: ⚖️ Stable
+    clumsy_programming_style: ⚙️ Clumsy style
+    buggy_error_prone_code: 🐞 Buggy code 
+    poor_performance: ⚡ Poor performance 
+    small_package_ecosystem: 🎁 Few packages
+    new_untested_option: 🏛️ New & untested 
+    hard_learning_curve: 👶 Hard to learn
+    lacking_developer_tooling: 🔧 Lacking tooling 
+    bad_documentation: 📖 Bad documentation 
+    concerns_about_the_team_company: 👫 Bad team/company 
+    bloated_complex: 🎈 Bloated & complex 
+    diminishing_momentum_popularity: 📉 Low momentum
+    limited_lacking_in_features: 🕹️ Limited
+    fast_changing_breaks_often: ⚖️ Fast-changing
     other: Other
 
 charts:

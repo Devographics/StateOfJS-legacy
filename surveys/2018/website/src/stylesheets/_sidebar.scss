@@ -2,7 +2,7 @@
     // background: $light-bg-color;
     border-right: 1px solid $dark-border-color;
     border-bottom: 1px solid $dark-border-color;
-    @include small {
+    @include small-medium {
         top: 0;
         bottom: 0;
         left: 0;
@@ -26,7 +26,7 @@
 .Sidebar__Fixed {
     display: flex;
     flex-direction: column;
-    @include medium-large {
+    @include large {
         height: 100vh;
         width: $sidebar_width;
         position: fixed;
@@ -55,7 +55,7 @@
     }
     @include flex-center;
     width: 100%;
-    @include medium-large {
+    @include large {
         display: none;
     }
     svg {
@@ -126,16 +126,16 @@
     }
 }
 .Logo--desktop{
-    @include small{
+    @include small-medium{
         display: none;
     }
 }
 .Logo--mobile{
-    @include small{
+    @include small-medium{
         display: grid;
         grid-template-columns: 4fr 1fr;
     }
-    @include medium-large{
+    @include large{
         display: none;
     }
 }

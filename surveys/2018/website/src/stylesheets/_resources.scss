@@ -29,10 +29,12 @@
     }
 }
 .resources-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    @include large {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
-    grid-gap: $spacing;
+        grid-gap: $spacing;
+    }
 }
 .sponsors-list {
     margin-bottom: $spacing;

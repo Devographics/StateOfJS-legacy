@@ -33,7 +33,7 @@ $sidebar_width: 270px;
 
 .pagelayout__inner {
     min-height: 100vh;
-    @include medium-large {
+    @include large {
         display: grid;
         grid-template-columns: $sidebar_width 1fr;
     }
@@ -43,19 +43,13 @@ $sidebar_width: 270px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @include small {
-        // margin: $spacing;
-    }
-    @include medium-large {
-        // margin: $spacing * 2 $spacing * 4;
-    }
 }
 
 .pagelayout__main {
-    @include small{
+    @include small-medium{
         padding: $spacing;
     }
-    @include medium-large{
+    @include large{
         padding: $spacing * 3;
     }
 }

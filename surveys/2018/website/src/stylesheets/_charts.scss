@@ -100,19 +100,58 @@
 
 .OverTime__Chart,
 .Overview__Chart {
-    @include small {
-    }
-    @include medium_large {
+    @include large {
         display: grid;
         grid-template-columns: auto 210px;
         column-gap: 20px;
     }
 }
 
+.Chart__Container__Outer {
+    position: relative;
+}
+.Chart__Container {
+    overflow-x: scroll;
+    svg {
+        display: block;
+    }
+}
+.Chart__Container__Inner {
+    @include small-medium {
+        min-width: 600px;
+        padding-bottom: $spacing;
+    }
+}
+.Chart__Container__Indicator {
+    position: absolute;
+    @include flex-center;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    z-index: 100;
+    svg {
+        display: block;
+        stroke: $grey;
+        opacity: 0.2;
+        overflow: visible;
+    }
+    &--left {
+        left: 10px;
+    }
+    &--right {
+        right: 10px;
+    }
+}
+
 .Overview__Chart {
     .Legends {
-        margin-top: 81px;
-        margin-bottom: 30px;
+        @include small-medium {
+            margin-top: $spacing;
+        }
+        @include large {
+            margin-top: 81px;
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -134,7 +173,7 @@
 .ToolsUsageByCountry__Chart,
 .SalaryPerCountry__Chart {
     height: 500px;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
 }
 
 .ToolUsageByCountry__Tooltip {
@@ -183,4 +222,17 @@
 .ToolPairing__HeatMapChart__Section {
     grid-column-start: 1;
     @include font-bold;
+}
+
+.Reasons__Chart__Unit{
+    &--mobile{
+        @include large{
+            display: none;
+        }
+    }
+    &--desktop{
+        @include small-medium{
+            display: none;
+        }
+    }
 }

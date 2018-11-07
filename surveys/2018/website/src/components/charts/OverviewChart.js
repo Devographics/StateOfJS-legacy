@@ -7,6 +7,7 @@ import theme from '../../nivoTheme'
 import { getToolName } from '../../helpers/wording'
 import OpinionsLegends from '../elements/OpinionsLegends'
 import PeriodicElement from '../elements/PeriodicElement'
+import ChartContainer from '../elements/ChartContainer'
 import ranking from '../../data/results/tools_ranking.yml'
 import periodicTableData from '../../data/periodic_table.yml'
 
@@ -77,7 +78,7 @@ export default class OverviewChart extends Component {
 
         return (
             <div className="Overview__Chart">
-                <div style={{ height: 360 }}>
+                <ChartContainer height={360}>
                     <ResponsiveBar
                         margin={{
                             top: 81,
@@ -157,7 +158,8 @@ export default class OverviewChart extends Component {
                             }
                         ]}
                     />
-                </div>
+                </ChartContainer>
+
                 <OpinionsLegends
                     layout="vertical"
                     withFrame={false}

@@ -125,55 +125,68 @@ export const reasons = {
     like: [
         {
             id: 'elegant_programming_style_patterns',
-            label: '⚙️ Elegant programming style & patterns'
+            label: '⚙️ Elegant programming style & patterns',
+            labelShort: '⚙️ Programming style'
         },
         {
             id: 'robust_less_error_prone_code',
-            label: '🐞 Robust, less error-prone code'
+            label: '🐞 Robust, less error-prone code',
+            labelShort: '🐞 Robust code'
         },
         {
             id: 'rich_package_ecosystem',
-            label: '🎁 Rich package ecosystem'
+            label: '🎁 Rich package ecosystem',
+            labelShort: '🎁 Package ecosystem'
         },
         {
             id: 'fast_performance',
-            label: '⚡ Fast performance'
+            label: '⚡ Fast performance',
+            labelShort: '⚡ Fast performance'
         },
         {
             id: 'well_established_option',
-            label: '🏛️ Well-established option'
+            label: '🏛️ Well-established option',
+            labelShort: '🏛️ Well-established'
         },
         {
             id: 'easy_learning_curve',
-            label: '👶 Easy learning curve'
+            label: '👶 Easy learning curve',
+            labelShort: '👶 Easy to learn'
         },
         {
             id: 'powerful_developer_tooling',
-            label: '🔧 Powerful developer tooling'
+            label: '🔧 Powerful developer tooling',
+            labelShort: '🔧 Tooling',
         },
         {
             id: 'good_documentation',
-            label: '📖 Good documentation'
+            label: '📖 Good documentation',
+            labelShort: '📖 Documentation'
         },
         {
             id: 'backed_by_a_great_team_company',
-            label: '👫 Backed by a great team/company'
+            label: '👫 Backed by a great team/company',
+            labelShort: '👫 Team/company'
         },
         {
             id: 'simple_lightweight',
-            label: '🎈 Simple & lightweight'
+            label: '🎈 Simple & lightweight',
+            labelShort: '🎈 Lightweight'
         },
         {
             id: 'growing_momentum_popularity',
-            label: '📉 Growing momentum/popularity'
+            label: '📉 Growing momentum/popularity',
+            labelShort: '📉 Momentum'
         },
         {
             id: 'full_featured_powerful',
-            label: '🕹️ Full-featured & powerful'
+            label: '🕹️ Full-featured & powerful',
+            labelShort: '🕹️ Full-featured'
         },
         {
             id: 'stable_backwards_compatible',
-            label: '⚖️ Stable & backwards-compatible'
+            label: '⚖️ Stable & backwards-compatible',
+            labelShort: '⚖️ Stability'
         },
         {
             id: 'other',
@@ -183,55 +196,68 @@ export const reasons = {
     dislike: [
         {
             id: 'clumsy_programming_style',
-            label: 'Clumsy programming style ⚙️'
+            label: '️⚙️ Clumsy programming style',
+            labelShort: '⚙️ Clumsy'
         },
         {
             id: 'buggy_error_prone_code',
-            label: 'Buggy, error-prone code 🐞'
+            label: '🐞 Buggy, error-prone code',
+            labelShort: '🐞 Buggy code'
         },
         {
             id: 'poor_performance',
-            label: 'Poor performance ⚡'
+            label: '⚡ Poor performance',
+            labelShort: '⚡ Poor performance'
         },
         {
             id: 'small_package_ecosystem',
-            label: 'Small package ecosystem 🎁'
+            label: '🎁 Small package ecosystem',
+            labelShort: '🎁 Few packages'
         },
         {
             id: 'new_untested_option',
-            label: 'New untested option 🏛️'
+            label: '🏛️ New untested option',
+            labelShort: '🏛️ New & untested'
         },
         {
             id: 'hard_learning_curve',
-            label: 'Hard learning curve 👶'
+            label: '👶 Hard learning curve',
+            labelShort: '👶 Hard to learn'
         },
         {
             id: 'lacking_developer_tooling',
-            label: 'Lacking developer tooling 🔧'
+            label: '🔧 Lacking developer tooling',
+            labelShort: '🔧 Lacking tooling'
         },
         {
             id: 'bad_documentation',
-            label: 'Bad documentation 📖'
+            label: '📖 Bad documentation',
+            labelShort: '📖 Bad documentation'
         },
         {
             id: 'concerns_about_the_team_company',
-            label: 'Concerns about the team/company 👫'
+            label: '👫 Concerns about the team/company',
+            labelShort: '👫 Bad team/company'
         },
         {
             id: 'bloated_complex',
-            label: 'Bloated & complex 🎈'
+            label: '🎈 Bloated & complex',
+            labelShort: '🎈 Bloated & complex'
         },
         {
             id: 'diminishing_momentum_popularity',
-            label: 'Diminishing momentum/popularity 📉'
+            label: '📉 Diminishing momentum/popularity',
+            labelShort: '📉 Low momentum'
         },
         {
             id: 'limited_lacking_in_features',
-            label: 'Limited & lacking in features 🕹️'
+            label: '🕹️ Limited & lacking in features',
+            labelShort: '🕹️ Limited'
         },
         {
             id: 'fast_changing_breaks_often',
-            label: 'Fast-changing & breaks often ⚖️'
+            label: '⚖️ Fast-changing & breaks often',
+            labelShort: '⚖️ Fast-changing'
         },
         {
             id: 'other',

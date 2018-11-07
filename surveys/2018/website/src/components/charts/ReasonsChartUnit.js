@@ -3,10 +3,12 @@ import PropTypes from 'prop-types'
 import { ResponsiveBar } from '@nivo/bar'
 import theme from '../../nivoTheme'
 import { barChartProps } from '../../constants'
+import { getWording } from '../../helpers/wording'
 
 const verticalMargin = 30
 const barHeight = 30
-const labelsWidth = 400
+const fullLabelsWidth = 400
+const shortLabelsWidth = 180
 
 class ReasonLabel extends Component {
     handleMouseEnter = () => {
@@ -19,17 +21,17 @@ class ReasonLabel extends Component {
     }
 
     render() {
-        const { y, value, current } = this.props
+        const { y, value, current, isMobile = false, labelsWidth } = this.props
 
         let textColor = '#e8e8e8'
         if (current !== null && current !== value) {
             textColor = '#666'
         }
-
+        const fontSize = isMobile ? 12 : 14
         return (
             <g transform={`translate(${-labelsWidth},${y})`}>
-                <text fill={textColor} style={{ fontSize: 14 }} alignmentBaseline="middle">
-                    {value}
+                <text fill={textColor} style={{ fontSize }} alignmentBaseline="middle">
+                    {getWording(`${isMobile ? 'reasons_short' : 'reasons'}.${value}`)}
                 </text>
                 <rect
                     y={barHeight * -0.5}
@@ -65,12 +67,22 @@ export default class ReasonsChartUnit extends Component {
         this.setState({ current: null })
     }
 
+    isMobile = () => this.props.variant === 'mobile'
+
     render() {
         const { data, color } = this.props
         const { current } = this.state
+        const labelsWidth = this.isMobile() ? shortLabelsWidth : fullLabelsWidth
 
         return (
             <div
+                className={`
+                Reasons__Chart__Unit
+                ${
+                    this.isMobile()
+                        ? 'Reasons__Chart__Unit--mobile'
+                        : 'Reasons__Chart__Unit--desktop'
+                }`}
                 style={{
                     height: data.length * barHeight + verticalMargin * 2,
                     marginBottom: 30
@@ -85,7 +97,7 @@ export default class ReasonsChartUnit extends Component {
                     }}
                     data={data}
                     keys={['count']}
-                    indexBy="reason"
+                    indexBy="id"
                     margin={{
                         ...barChartProps,
                         left: labelsWidth
@@ -100,6 +112,8 @@ export default class ReasonsChartUnit extends Component {
                                 current={current}
                                 onMouseEnter={this.setCurrent}
                                 onMouseLeave={this.resetCurrent}
+                                isMobile={this.isMobile()}
+                                labelsWidth={labelsWidth}
                             />
                         )
                     }}
