@@ -51,13 +51,19 @@ Chart
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 0;
-    font-size: $small-font;
     border-top: 1px solid $dark-border-color;
     border-left: 1px solid $dark-border-color;
 }
 
 .Quadrants__Chart__Legend__Item {
-    padding: $spacing;
+    @include small {
+        padding: $spacing/2;
+        font-size: $smaller-font;
+    }
+    @include medium-large {
+        padding: $spacing;
+        font-size: $small-font;
+    }
     border-bottom: 1px solid $dark-border-color;
     border-right: 1px solid $dark-border-color;
     strong {

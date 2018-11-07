@@ -73,7 +73,7 @@ const IndicatorRight = () => (
     </span>
 )
 
-const ChartContainer = ({ children, height = 360 }) => (
+const ChartContainer = ({ children, height }) => (
     <div className="Chart__Container__Outer">
         <div className="Chart__Container">
             <div className="Chart__Container__Inner" style={{ height }}>

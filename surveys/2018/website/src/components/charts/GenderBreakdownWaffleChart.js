@@ -23,7 +23,7 @@ export default class GenderBreakdownWaffleChart extends Component {
         return (
             <Fragment>
                 <GenderLegends />
-                <div style={{ height: 260 }}>
+                <div className="GenderBreakdown__Chart" style={{ height: 260 }}>
                     <ResponsiveWaffleCanvas
                         total={total}
                         rows={32}

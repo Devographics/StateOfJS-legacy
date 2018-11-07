@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { reasons } from '../../constants'
 import theme from '../../nivoTheme'
 import BlockTitle from '../elements/BlockTitle'
@@ -42,7 +42,7 @@ export default class ReasonsChart extends Component {
         const { likeData, dislikeData } = this.getData()
 
         return (
-            <div>
+            <Fragment>
                 {likeData.length > 0 && (
                     <div className="block">
                         <BlockTitle chart="likes" tool={tool} />
@@ -65,7 +65,7 @@ export default class ReasonsChart extends Component {
                         />
                     </div>
                 )}
-            </div>
+            </Fragment>
         )
     }
 }

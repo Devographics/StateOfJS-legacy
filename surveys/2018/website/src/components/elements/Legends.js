@@ -52,9 +52,6 @@ export default class Legends extends Component {
         }
 
         const rootStyle = { ...style }
-        if (layout === 'horizontal') {
-            rootStyle.gridTemplateColumns = '1fr '.repeat(legends.length).trim()
-        }
 
         return (
             <div className={classNames.join(' ')} style={rootStyle}>
