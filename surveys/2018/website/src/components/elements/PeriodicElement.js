@@ -106,7 +106,7 @@ const PeriodicElement = ({
 )
 
 PeriodicElement.propTypes = {
-    name: PropTypes.string.isRequired,
+    name: PropTypes.string,
     symbol: PropTypes.string.isRequired,
     background: PropTypes.string
 }

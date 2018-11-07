@@ -1,4 +1,4 @@
-I'm writing these lines somewhere high above Russia, because as it turns out there's people willing to fly me halfway across the world just so they can hear me talk about the very data presented here. In my book, that's a pretty good measure of how popular this survey has become, and by extension how fast the JavaScript ecosystem keeps growing.
+I'm writing these lines somewhere high above Russia, because as it turns out there's people willing to fly me halfway across the world just so they can hear me talk about the very data presented here. If you ask me, that's a pretty good measure of how popular this survey has become, and by extension how fast the JavaScript ecosystem keeps growing.
 
 After all, if JavaScript never changed, there would be no need to do this survey every year. We'd just put up a landing page with a big “see previous year” link and call it a day. 
 
