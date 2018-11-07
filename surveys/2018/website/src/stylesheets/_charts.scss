@@ -111,7 +111,9 @@
     position: relative;
 }
 .Chart__Container {
-    overflow-x: scroll;
+    @include small-medium {
+        overflow-x: scroll;
+    }
     svg {
         display: block;
     }
@@ -123,23 +125,28 @@
     }
 }
 .Chart__Container__Indicator {
-    position: absolute;
-    @include flex-center;
-    top: 0;
-    bottom: 0;
-    width: 20px;
-    z-index: 100;
-    svg {
-        display: block;
-        stroke: $grey;
-        opacity: 0.2;
-        overflow: visible;
+    @include small-medium {
+        position: absolute;
+        @include flex-center;
+        top: 0;
+        bottom: 0;
+        width: 20px;
+        z-index: 100;
+        svg {
+            display: block;
+            stroke: $grey;
+            opacity: 0.2;
+            overflow: visible;
+        }
+        &--left {
+            left: 10px;
+        }
+        &--right {
+            right: 10px;
+        }
     }
-    &--left {
-        left: 10px;
-    }
-    &--right {
-        right: 10px;
+    @include large {
+        display: none;
     }
 }
 
@@ -224,15 +231,27 @@
     @include font-bold;
 }
 
-.Reasons__Chart__Unit{
-    &--mobile{
-        @include large{
+.Reasons__Chart__Unit {
+    &--mobile {
+        @include large {
             display: none;
         }
     }
-    &--desktop{
-        @include small-medium{
+    &--desktop {
+        @include small-medium {
             display: none;
         }
+    }
+}
+
+.tool-over-time-no-data {
+    font-style: italic;
+    @include border2;
+    color: $text-color-dark;
+    @include small {
+        padding: $spacing;
+    }
+    @include medium-large {
+        padding: $spacing * 1.5;
     }
 }

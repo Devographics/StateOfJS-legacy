@@ -1,24 +1,11 @@
-After all is said and done, it looks like 2018 was mostly 
+After all is said and done, it looks like 2018 was mostly a continuation of the trends we already observed [last year](http://2017.stateofjs.com).
 
+That's bad news for us, because we can't come out with a big scoop on how React's days are numbered, or the next big thing is this new state management library created by a 17-year-old Vietnamese high-schooler in her spare time. 
 
+But that's great news for you, because it means you can spend less time worrying about what to use, and more time actually using it!
 
-Believe it or not, we've only just scratched the surface. Each library and tool
-mentioned here could easily be further sub-divided into lists of plugins, packages, 
-add-ons, and other extensions. 
+Things might get shaken up again in 2019 though. While all is currently calm on the front-end front, the question of how you get data from the database to the client is far from settled, and GraphQL is sure to start making bigger and bigger waves in that area. As GraphQL-tailored solutions emerge for both the back-end and the state management layer, we might soon feel the JavaScript ground shifting beneath our feet once more.
 
-There's also more we could do with the data we already have. For example, we've yet to analyze
-the results we collected on which app features devs value the most, and their opinions
-about the general state of the language. We'll work on these extra results in the coming weeks and 
-let you know as soon as they're ready. 
-
-In any case, just like last year our overall conclusion remains the same: JavaScript keeps
-improving and evolving at an ever-increasing pace. This is a bit scary, but it's also exciting: after all, you know that learning JavaScript
-is never going to get boring!
-
-So what will the future bring? Will typed JavaScript become mainstream? Will GraphQL really take 
-over the world? Will JavaScript "flavors" like Reason or Elm become the default 
-way of coding? There's only one way to find out: tune in next year for #StateOfJS 2018!
-
-Fire gif credit: http://animal-jam-roleplay.wikia.com/wiki/File:Pixel-fire-gif-1.gif
+But for now, no need to panic. There's never been a better time to be a JavaScript developer than now, and I'm willing to bet that 2019 will make that even clearer!
 
 <span class="conclusion__byline">– Sacha, Raphaël, and Michael</span>

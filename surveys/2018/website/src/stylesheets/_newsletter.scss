@@ -13,6 +13,7 @@
         @include small {
             margin-bottom: $spacing/2;
         }
+        @include font-regular;
         display: block;
         padding: $spacing/2 $spacing/2;
         border: none;

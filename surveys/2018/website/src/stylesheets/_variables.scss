@@ -10,6 +10,10 @@ $spacing: 20px;
     border: 1px solid $border-color;
 }
 
+@mixin border2 {
+    border: 1px solid $dark-border-color;
+}
+
 @mixin clearfix {
     &:after {
         content: '';

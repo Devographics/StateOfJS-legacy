@@ -31,7 +31,7 @@ const ToolTemplate = ({ pageContext, data }) => {
                 {shouldDisplayExperienceOverTime ? (
                     <ToolOpinionsOverTimeBlock tool={tool} opinions={data.tool.experience} />
                 ) : (
-                    <p className="tool-over-time-no-data">
+                    <p className="block tool-over-time-no-data">
                         Sorry, we don&apos;t have enough data to display the evolution of this
                         library's popularity over time.
                     </p>

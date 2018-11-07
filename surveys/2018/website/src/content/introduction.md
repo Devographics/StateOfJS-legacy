@@ -1,9 +1,43 @@
-A few years back, a JavaScript survey would've been a simple matter. Question 1: are you using jQuery? Question 2: any comments? Boom, done! 
+I'm writing these lines somewhere high above Russia, because as it turns out there's people willing to fly me halfway across the world just so they can hear me talk about the very data presented here. In my book, that's a pretty good measure of how popular this survey has become, and by extension how fast the JavaScript ecosystem keeps growing.
 
-But as we all know, things have changed. The JavaScript ecosystem is richer than ever, and even the most experienced developer can start to hesitate when considering the multitude of options available at every stage. 
+After all, if JavaScript never changed, there would be no need to do this survey every year. We'd just put up a landing page with a big “see previous year” link and call it a day. 
 
-This is where this survey comes in: we asked over a hundred questions to more than 28,000 developers all over the world, covering topics going from front-end libraries all the way to back-end frameworks.
+But JavaScript *is* changing, and so here we are again. Me high above Russia in a cramped airplane seat, you rocking back in your office chair and getting ready to dig through dozens of charts, visualizations, and assorted graphs. 
 
-We believe the result is the most complete picture of the state of JavaScript currently available, and we're excited to share it with you!
+### What's New
 
-P.S. if all this data ever feels overwhelming, I'm sure you'll find a way to *console* yourself…
+The survey itself has been changing too. You might notice the **new, darker color theme**. Yes, dark themes are trendy (we’ll let it go for this time Apple, but please stop copying us) but we’re also hoping it makes the charts pop more. 
+
+Also, there will be **no CSS section** this year. CSS is such a vast topic it would almost merit a survey of its own, so rather than do things halfway we decided to focus on JavaSript this time. 
+
+Since we were cutting down on the number of questions, we decided to make each of them more detailed by asking **follow-up questions** to figure out the reasons why people were using (or not using) a given library. You'll find those in the “likes” and “dislikes” charts. 
+
+And since we now had more data, we decided to give each tool and library their **own individual result page**. 
+
+We also made **every chart shareable** through a little bit of [Gatsby](https://gatsbyjs.org) black magic to generate dedicated meta tags. So if a chart –whether bar or pie– catches your eye, don't be shy; and share that guy!
+
+Finally, since we now have 3 years of data, we tried to incorporate **historical trends over time** in the charts whenever possible. 
+
+### Resources
+
+We figure a lot of you are checking out this survey to help you figure out what to learn next. So we've included links to useful JavaScript resources throughout the survey to help point you in the right direction. 
+
+Full disclosure: some of them are paid sponsorships, but no matter what they're all high quality resources from people we know and respect who have decided to support our project. 
+
+### Team
+
+The State of JavaScript Survey is created and maintained by:
+
+- [Sacha Greif](http://sachagreif.com) (me!): Design, writing, coding
+- [Raphael Benitte](http://nivo.rocks): Data analysis, visualizations
+- [Michael Rambeau](http://bestofjs.org/): Writing, additional stats
+
+Be sure to check out my React/GraphQL JavaScript framework, [Vulcan.js](http://vulcanjs.org), Raphael's React data visualization library [Nivo.js](http://nivo.rocks), and Michael's JavaScript library directory [Best of JS](http://bestofjs.org).
+
+### Other Credits
+
+The site is set in IBM Plex Mono. Fire gif borrowed from [Animal Jam](http://animal-jam-roleplay.wikia.com/wiki/File:Pixel-fire-gif-1.gif).
+
+And now, let's see what JavaScript has been up to this year!
+
+<span class="conclusion__byline">– Sacha</span>

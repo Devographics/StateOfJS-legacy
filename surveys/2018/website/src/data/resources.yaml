@@ -40,8 +40,8 @@
 
 - name: GraphQL Guide
   tool: graphql
-  url: https://learnnode.com/friend/STATEOFJS
-  description: GraphQL is the best way to fetch data for your app, and the GraphQL Guide is the best way to learn how.
+  url: https://graphql.guide/?utm_source=stateofjs&utm_medium=partner&utm_campaign=2018
+  description: The complete guide to GraphQL and Apollo. From John Resig, the creator of jQuery.
   author: Wes Bos
   avatar: wes.jpg
   image: graphql.jpg

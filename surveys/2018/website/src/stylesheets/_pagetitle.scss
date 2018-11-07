@@ -83,6 +83,11 @@
 .pagination__next {
     border: none;
     text-align: right;
+    @include large{
+        span + span + & {
+            border-left: 1px solid $dark-border-color;
+        }
+    }
 }
 
 .PageTitle__Sidebar__Toggle {

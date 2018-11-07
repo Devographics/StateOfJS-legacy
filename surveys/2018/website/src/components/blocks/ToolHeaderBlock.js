@@ -21,7 +21,7 @@ export default class ToolHeaderBlock extends Component {
         const project = bestOfJsData.projects.find(p => p.slug === tool)
 
         return (
-            <div className="ToolHeader">
+            <div className="Block ToolHeader">
                 <div className="ToolHeader__Element">
                     <PeriodicElement
                         tool={tool}
