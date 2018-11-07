@@ -2,7 +2,6 @@
     // background: $light-bg-color;
     border-right: 1px solid $dark-border-color;
     border-bottom: 1px solid $dark-border-color;
-    flex: 0 0 270px;
     @include small {
         top: 0;
         bottom: 0;
@@ -25,44 +24,42 @@
 }
 
 .Sidebar__Fixed {
-    position: fixed;
-    width: 270px;
+    display: flex;
+    flex-direction: column;
+    @include medium-large {
+        height: 100vh;
+        width: $sidebar_width;
+        position: fixed;
+    }
 }
 
 .Sidebar__Inner {
     padding: $spacing * 1.5;
+    overflow-y: scroll;
 }
 
 .Sidebar__Close {
-    position: absolute;
-    top: $spacing;
-    right: $spacing;
+    // position: absolute;
+    // top: $spacing;
+    // right: $spacing;
     margin: 0;
     padding: 0;
-    display: block;
-    line-height: 1;
-    background: none;
-    border: none;
+    border: 1px solid $dark-border-color;
+    border-right: none;
+    // display: block;
+    // line-height: 1;
+    button{
+        background: none;
+        cursor: pointer;
+        border: none;
+    }
+    @include flex-center;
+    width: 100%;
     @include medium-large {
         display: none;
     }
     svg {
         stroke: $active-color;
-    }
-}
-
-.Sidebar__Logo {
-    margin: 0;
-    @include small {
-        max-width: 200px;
-        margin: 0 auto;
-        margin-bottom: $spacing;
-    }
-    a,
-    img,
-    svg {
-        display: block;
-        width: 100%;
     }
 }
 
@@ -117,5 +114,28 @@
     @include font-bold;
     &:before {
         content: '> ';
+    }
+}
+
+.Logo__Wrapper{
+    margin: 0;
+}
+.Logo {
+    &, svg{
+        display: block;
+    }
+}
+.Logo--desktop{
+    @include small{
+        display: none;
+    }
+}
+.Logo--mobile{
+    @include small{
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+    @include medium-large{
+        display: none;
     }
 }

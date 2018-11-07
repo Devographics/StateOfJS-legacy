@@ -14,14 +14,14 @@
     margin-bottom: $spacing * 2;
 }
 
-.ToolHeader_Header,
+.ToolHeader__Header,
 .SectionHeader__Header {
     display: flex;
     justify-content: space-between;
     margin-bottom: $spacing * 0.5;
 }
 
-.ToolHeader_Title,
+.ToolHeader__Title,
 .SectionHeader__Title {
     margin: 0;
     padding: 0;
@@ -46,4 +46,10 @@
 }
 .ToolHeader__Link {
     margin-right: $spacing/2;
+}
+
+.ToolHeader__Stars{
+    @include small{
+        display: none;
+    }
 }

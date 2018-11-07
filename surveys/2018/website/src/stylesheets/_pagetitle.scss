@@ -37,7 +37,7 @@
     // flex-basis: 50%;
     border-right: 1px solid $dark-border-color;
     @include small {
-        font-size: $small-font;
+        font-size: $smaller-font;
     }
     @include medium-large {
         font-size: $medium-font;
@@ -96,6 +96,7 @@
     background: $bg-color;
     padding: 0;
     display: block;
+    cursor: pointer;
     svg {
         display: block;
         width: 100%;

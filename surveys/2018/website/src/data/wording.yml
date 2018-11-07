@@ -108,7 +108,8 @@ charts:
     opinion-survey_too_long: This survey is too damn long!
     tool-pairing: Which tools developers use along with ${tool}?
 
-shortnames: 
+shortnames:
+    introduction: Intro
     javascript-flavors: Flavors
     front-end-frameworks: Front-end
     data-layer: Data Layer
