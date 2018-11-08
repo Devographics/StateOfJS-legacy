@@ -11,17 +11,21 @@ Config:
 - velocity:             How fast the elements move (higher = faster)
 - frictionCoefficient:  How fast the elements slow down after a boost (lower = stronger friction)
 - initialMultiplier:    How much to accelerate elements after a boost (higher = faster)
+- velocityVariance:     How much initial velocities can vary (higher = more variance)
 
 */
 const elementSize = 100
 const interval = 10
-const velocity = 1.4
+const velocity = 1.1
 const returnVelocity = 10 // lower = faster
 const frictionCoefficient = 5 // lower = stronger friction
 const initialMultiplier = 10 // higher = faster
+const velocityVariance = 1.1
 
-const keep2Decimals = x => Math.round(x * 100) /100
-
+// https://stackoverflow.com/a/18358056/649299
+function roundToTwo(num) {    
+    return +(Math.round(num + "e+2")  + "e-2")
+}
 /*
 
 Note: x and y coordinates are plotted on a 5 by 3 grid
@@ -125,14 +129,15 @@ class Home extends Component {
     */
     getAngle = () => {
         const angle = getRandomAngle()
-        const baseXSpeed = keep2Decimals(Math.cos(angle) * velocity)
-        const baseYSpeed = keep2Decimals(Math.sin(angle) * velocity)
+        const randomVelocity = velocity + roundToTwo(Math.random() * velocityVariance)
+        const baseXSpeed = roundToTwo(Math.cos(angle) * randomVelocity)
+        const baseYSpeed = roundToTwo(Math.sin(angle) * randomVelocity)
         return {
             angle,
             baseXSpeed,
             baseYSpeed,
-            xSpeed: baseXSpeed*initialMultiplier,
-            ySpeed: baseYSpeed*initialMultiplier
+            xSpeed: baseXSpeed * initialMultiplier,
+            ySpeed: baseYSpeed * initialMultiplier
         }
     }
 
@@ -146,7 +151,7 @@ class Home extends Component {
         Object.keys(positions).forEach(symbol => {
             newPositions[symbol] = {
                 ...positions[symbol],
-                ...this.getAngle(),
+                ...this.getAngle()
             }
         })
         return newPositions
@@ -182,8 +187,8 @@ class Home extends Component {
                 then divide that by friction coefficient to get velocity delta
 
                 */
-                let xSpeedDelta = keep2Decimals((xSpeed - baseXSpeed) / frictionCoefficient)
-                let ySpeedDelta = keep2Decimals((ySpeed - baseYSpeed) / frictionCoefficient)
+                let xSpeedDelta = roundToTwo((xSpeed - baseXSpeed) / frictionCoefficient)
+                let ySpeedDelta = roundToTwo((ySpeed - baseYSpeed) / frictionCoefficient)
                 /*
 
                 If delta gets too low, stop calculating it
@@ -288,7 +293,7 @@ class Home extends Component {
                                 x={positions[symbol].x}
                                 y={positions[symbol].y}
                                 symbol={symbol}
-                                // name={`${keep2Decimals(positions[symbol].xSpeed)}, ${keep2Decimals(positions[symbol].ySpeed)}`}
+                                // name={`${roundToTwo(positions[symbol].xSpeed)}, ${roundToTwo(positions[symbol].ySpeed)}`}
                                 size={elementSize}
                             />
                         ))}
