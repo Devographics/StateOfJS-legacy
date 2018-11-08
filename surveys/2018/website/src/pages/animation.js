@@ -214,11 +214,11 @@ class Home extends Component {
                 Note: we also reverse the base speed to avoid messing up the delta calculations above
 
                 */
-                if (x <= 0 + elementSize || x >= width - elementSize) {
+                if (x <= 0 || x >= width - elementSize) {
                     xSpeed = -xSpeed
                     baseXSpeed = -baseXSpeed
                 }
-                if (y <= 0 + elementSize || y >= height - elementSize) {
+                if (y <= 0 || y >= height - elementSize) {
                     ySpeed = -ySpeed
                     baseYSpeed = -baseYSpeed
                 }
