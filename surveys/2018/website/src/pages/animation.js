@@ -18,13 +18,13 @@ const elementSize = 100
 const interval = 10
 const velocity = 1.1
 const returnVelocity = 10 // lower = faster
-const frictionCoefficient = 5 // lower = stronger friction
+const frictionCoefficient = 2.5 // lower = stronger friction
 const initialMultiplier = 10 // higher = faster
 const velocityVariance = 1.1
 
 // https://stackoverflow.com/a/18358056/649299
-function roundToTwo(num) {    
-    return +(Math.round(num + "e+2")  + "e-2")
+function roundToTwo(num) {
+    return +(Math.round(num + 'e+2') + 'e-2')
 }
 /*
 
@@ -186,9 +186,12 @@ class Home extends Component {
                 Calculate difference between current velocity and target velocity and
                 then divide that by friction coefficient to get velocity delta
 
+                Note: friction is squared or cubed to emphasize the decceleration
+                
                 */
-                let xSpeedDelta = roundToTwo((xSpeed - baseXSpeed) / frictionCoefficient)
-                let ySpeedDelta = roundToTwo((ySpeed - baseYSpeed) / frictionCoefficient)
+                const friction = Math.pow(frictionCoefficient, 3)
+                let xSpeedDelta = roundToTwo((xSpeed - baseXSpeed) / friction)
+                let ySpeedDelta = roundToTwo((ySpeed - baseYSpeed) / friction)
                 /*
 
                 If delta gets too low, stop calculating it
