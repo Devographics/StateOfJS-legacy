@@ -61,13 +61,14 @@ const saveResult = async (file, result) => {
 
 const aggregate = async () => {
     const surveyIds = surveys.map(survey => survey.id)
-    const toolIds = tools.map(tool => tool.id)
-    const sectionIds = Object.values(sections)
-
     const surveyConfigs = surveyIds.reduce((acc, surveyId) => ({
         ...acc,
         [surveyId]: YAML.load(`./conf/${surveyId}.yml`),
     }), {})
+
+    const toolIds = surveyConfigs[currentSurvey].tools
+    const sectionIds = Object.keys(surveyConfigs[currentSurvey].sections)
+
     const aggregator = new CompoundAggregator(surveyConfigs)
     const currentSurveyConfig = surveyConfigs[currentSurvey]
 

@@ -40,62 +40,87 @@ opinions:
         would_not_use: Used it, would not use again
 
 reasons:
-    elegant_programming_style_patterns: ⚙️ Elegant programming style & patterns
-    robust_less_error_prone_code: 🐞 Robust, less error-prone code
-    rich_package_ecosystem: 🎁 Rich package ecosystem
-    fast_performance: ⚡ Fast performance
-    well_established_option: 🏛️ Well-established option
-    easy_learning_curve: 👶 Easy learning curve
-    powerful_developer_tooling: 🔧 Powerful developer tooling
-    good_documentation: 📖 Good documentation
-    backed_by_a_great_team_company: 👫 Backed by a great team/company
-    simple_lightweight: 🎈 Simple & lightweight
-    growing_momentum_popularity: 📉 Growing momentum/popularity
-    full_featured_powerful: 🕹️ Full-featured & powerful
-    stable_backwards_compatible: ⚖️ Stable & backwards-compatible
-    clumsy_programming_style: ⚙️ Clumsy programming style
-    buggy_error_prone_code: 🐞 Buggy, error-prone code 
-    poor_performance: ⚡ Poor performance 
-    small_package_ecosystem: 🎁 Small package ecosystem 
-    new_untested_option: 🏛️ New untested option 
-    hard_learning_curve: 👶 Hard learning curve 
-    lacking_developer_tooling: 🔧 Lacking developer tooling 
-    bad_documentation: 📖 Bad documentation 
-    concerns_about_the_team_company: 👫 Concerns about the team/company 
-    bloated_complex: 🎈 Bloated & complex 
-    diminishing_momentum_popularity: 📉 Diminishing momentum/popularity 
-    limited_lacking_in_features: 🕹️ Limited & lacking in features 
-    fast_changing_breaks_often: ⚖️ Fast-changing & breaks often 
-    other: Other
-
-reasons_short:
-    elegant_programming_style_patterns: ⚙️ Programming style
-    robust_less_error_prone_code: 🐞 Robust code
-    rich_package_ecosystem: 🎁 Package ecosystem
-    fast_performance: ⚡ Fast performance
-    well_established_option: 🏛️ Well-established
-    easy_learning_curve: 👶 Easy to learn
-    powerful_developer_tooling: 🔧 Tooling
-    good_documentation: 📖 Good documentation
-    backed_by_a_great_team_company: 👫 Great team/company
-    simple_lightweight: 🎈 Lightweight
-    growing_momentum_popularity: 📉 Momentum
-    full_featured_powerful: 🕹️ Full-featured
-    stable_backwards_compatible: ⚖️ Stable
-    clumsy_programming_style: ⚙️ Clumsy style
-    buggy_error_prone_code: 🐞 Buggy code 
-    poor_performance: ⚡ Poor performance 
-    small_package_ecosystem: 🎁 Few packages
-    new_untested_option: 🏛️ New & untested 
-    hard_learning_curve: 👶 Hard to learn
-    lacking_developer_tooling: 🔧 Lacking tooling 
-    bad_documentation: 📖 Bad documentation 
-    concerns_about_the_team_company: 👫 Bad team/company 
-    bloated_complex: 🎈 Bloated & complex 
-    diminishing_momentum_popularity: 📉 Low momentum
-    limited_lacking_in_features: 🕹️ Limited
-    fast_changing_breaks_often: ⚖️ Fast-changing
-    other: Other
+    elegant_programming_style_patterns:
+        long: ⚙️ Elegant programming style & patterns
+        short: ⚙️ Programming style
+    robust_less_error_prone_code:
+        long: 🐞 Robust, less error-prone code
+        short: 🐞 Robust code
+    rich_package_ecosystem:
+        long: 🎁 Rich package ecosystem
+        short: 🎁 Package ecosystem
+    fast_performance:
+        long: ⚡ Fast performance
+        short: ⚡ Fast performance
+    well_established_option:
+        long: 🏛️ Well-established option
+        short: 🏛️ Well-established
+    easy_learning_curve:
+        long: 👶 Easy learning curve
+        short: 👶 Easy to learn
+    powerful_developer_tooling:
+        long: 🔧 Powerful developer tooling
+        short: 🔧 Tooling
+    good_documentation:
+        long: 📖 Good documentation
+        short: 📖 Documentation
+    backed_by_a_great_team_company:
+        long: 👫 Backed by a great team/company
+        short: 👫 Team/company
+    simple_lightweight:
+        long: 🎈 Simple & lightweight
+        short: 🎈 Lightweight
+    growing_momentum_popularity:
+        long: 📉 Growing momentum/popularity
+        short: 📉 Momentum
+    full_featured_powerful:
+        long: 🕹️ Full-featured & powerful
+        short: 🕹️ Full-featured
+    stable_backwards_compatible:
+        long: ⚖️ Stable & backwards-compatible
+        short: ⚖️ Stability
+    clumsy_programming_style:
+        long: ⚙️ Clumsy programming style
+        short: ⚙️ Clumsy
+    buggy_error_prone_code:
+        long: 🐞 Buggy, error-prone code
+        short: 🐞 Buggy code
+    poor_performance:
+        long: ⚡ Poor performance
+        short: ⚡ Poor performance
+    small_package_ecosystem:
+        long: 🎁 Small package ecosystem
+        short: 🎁 Few packages
+    new_untested_option:
+        long: 🏛️ New untested option
+        short: 🏛️ New & untested
+    hard_learning_curve:
+        long: 👶 Hard learning curve
+        short: 👶 Hard to learn
+    lacking_developer_tooling:
+        long: 🔧 Lacking developer tooling
+        short: 🔧 Lacking tooling
+    bad_documentation:
+        long: 📖 Bad documentation
+        short: 📖 Bad documentation
+    concerns_about_the_team_company:
+        long: 👫 Concerns about the team/company
+        short: 👫 Bad team/company
+    bloated_complex:
+        long: 🎈 Bloated & complex
+        short: 🎈 Bloated & complex
+    diminishing_momentum_popularity:
+        long: 📉 Diminishing momentum/popularity
+        short: 📉 Low momentum
+    limited_lacking_in_features:
+        long: 🕹️ Limited & lacking in features
+        short: 🕹️ Limited
+    fast_changing_breaks_often:
+        long: ⚖️ Fast-changing & breaks often
+        short: ⚖️ Fast-changing
+    other:
+        long: Other
+        short: Other
 
 charts:
     overview: Libraries Results

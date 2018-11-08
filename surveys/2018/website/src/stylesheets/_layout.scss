@@ -46,10 +46,10 @@ $sidebar_width: 270px;
 }
 
 .pagelayout__main {
-    @include small-medium{
+    @include small-medium {
         padding: $spacing;
     }
-    @include large{
+    @include large {
         padding: $spacing * 3;
     }
 }

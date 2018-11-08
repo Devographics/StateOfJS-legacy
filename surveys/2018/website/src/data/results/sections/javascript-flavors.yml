@@ -85,40 +85,40 @@ other_tools:
         survey_id: '2018'
         tools:
             -
-                name: React
+                name: coffeescript
+                count: 181
+            -
+                name: react
                 count: 50
             -
-                name: Angular
-                count: 41
-            -
-                name: Kotlin
+                name: kotlin
                 count: 33
             -
-                name: Babel
+                name: babel
                 count: 31
             -
-                name: Scala
-                count: 29
-            -
-                name: om
-                count: 29
+                name: vuejs
+                count: 31
             -
                 name: scala
                 count: 29
             -
-                name: 'vanilla javascript'
+                name: vanilla-js
                 count: 29
             -
-                name: Node.js
+                name: nodejs
                 count: 21
             -
-                name: AVA
-                count: 20
+                name: typescript
+                count: 18
             -
-                name: java
-                count: 20
+                name: angular
+                count: 17
             -
-                name: jQuery
+                name: ember
+                count: 14
+            -
+                name: jquery
                 count: 12
             -
                 name: haxe

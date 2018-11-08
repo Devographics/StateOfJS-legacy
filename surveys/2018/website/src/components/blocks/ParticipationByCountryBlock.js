@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import BlockTitle from '../elements/BlockTitle'
 import ParticipationByCountryMapChart from '../charts/ParticipationByCountryMapChart'
-import ChartContainer from '../elements/ChartContainer';
+import ChartContainer from '../elements/ChartContainer'
 
 export default class ParticipationByCountryBlock extends Component {
     render() {

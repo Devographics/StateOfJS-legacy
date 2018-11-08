@@ -81,101 +81,104 @@ other_tools:
         survey_id: '2017'
         tools:
             -
-                name: PWA
-                count: 148
+                name: pwa
+                count: 151
             -
-                name: Weex
+                name: weex
                 count: 133
             -
-                name: nw.js
-                count: 124
-            -
-                name: Xamarin
+                name: xamarin
                 count: 110
             -
-                name: Appcelerator
+                name: nwjs
+                count: 35
+            -
+                name: appcelerator
                 count: 33
             -
-                name: Flutter
+                name: flutter
                 count: 29
             -
                 name: quasar
                 count: 27
             -
-                name: om
-                count: 23
-            -
-                name: Expo
+                name: expo
                 count: 21
             -
-                name: Fuse
+                name: fuse
                 count: 21
             -
-                name: Swift
+                name: swift
                 count: 15
+            -
+                name: electron
+                count: 13
             -
                 name: elm
                 count: 11
             -
-                name: elm-package
-                count: 11
-            -
-                name: AVA
-                count: 10
-            -
-                name: java
+                name: elm-native
                 count: 10
     -
         survey_id: '2018'
         tools:
             -
-                name: Flutter
+                name: flutter
                 count: 230
             -
-                name: PWA
-                count: 202
+                name: pwa
+                count: 203
             -
-                name: Weex
+                name: weex
                 count: 49
             -
-                name: Xamarin
+                name: xamarin
                 count: 40
             -
-                name: nw.js
-                count: 39
-            -
-                name: Appcelerator
+                name: appcelerator
                 count: 25
             -
                 name: quasar
                 count: 18
             -
-                name: om
-                count: 15
+                name: react-native
+                count: 16
             -
-                name: Expo
+                name: expo
                 count: 12
+            -
+                name: nativescript
+                count: 11
+            -
+                name: nwjs
+                count: 10
     -
         survey_id: '2016'
         tools:
             -
-                name: Xamarin
+                name: ionic
+                count: 320
+            -
+                name: xamarin
                 count: 86
             -
-                name: Appcelerator
+                name: appcelerator
                 count: 48
             -
-                name: PWA
-                count: 42
+                name: pwa
+                count: 44
             -
-                name: Weex
+                name: weex
                 count: 14
             -
-                name: om
-                count: 13
+                name: cordova
+                count: 12
             -
-                name: Fuse
+                name: fuse
                 count: 11
             -
-                name: Meteor
+                name: meteor
                 count: 11
+            -
+                name: react-native
+                count: 10

@@ -73,22 +73,16 @@ other_tools:
         survey_id: '2017'
         tools:
             -
-                name: Node.js
+                name: nodejs
                 count: 151
             -
-                name: Rails
-                count: 141
+                name: rails
+                count: 145
             -
-                name: .NET
+                name: .net
                 count: 139
             -
-                name: AVA
-                count: 107
-            -
-                name: java
-                count: 107
-            -
-                name: PHP
+                name: php
                 count: 98
             -
                 name: restify
@@ -109,17 +103,11 @@ other_tools:
                 name: python
                 count: 47
             -
-                name: om
-                count: 40
-            -
-                name: ext.js
-                count: 38
-            -
                 name: golang
                 count: 33
             -
-                name: next.js
-                count: 32
+                name: nextjs
+                count: 33
             -
                 name: micro
                 count: 30
@@ -127,19 +115,22 @@ other_tools:
                 name: serverless
                 count: 29
             -
-                name: socket.io
+                name: socketio
                 count: 28
             -
-                name: clojure
+                name: java
+                count: 26
+            -
+                name: clojurescript
                 count: 24
             -
                 name: firebase
                 count: 19
             -
-                name: MongoDB
+                name: mongodb
                 count: 16
             -
-                name: GraphQL
+                name: graphql
                 count: 13
             -
                 name: haskell
@@ -148,40 +139,43 @@ other_tools:
                 name: horizon
                 count: 13
             -
-                name: Kraken
+                name: graph.cool
                 count: 11
             -
-                name: graph.cool
+                name: kraken
                 count: 11
             -
                 name: trails
                 count: 11
+            -
+                name: express
+                count: 10
     -
         survey_id: '2018'
         tools:
             -
-                name: .NET
+                name: hapi
+                count: 349
+            -
+                name: .net
                 count: 132
             -
                 name: adonis
                 count: 116
             -
-                name: Rails
+                name: loopback
+                count: 97
+            -
+                name: rails
                 count: 91
             -
-                name: AVA
-                count: 71
-            -
-                name: java
-                count: 71
-            -
-                name: Node.js
+                name: nodejs
                 count: 63
             -
                 name: restify
                 count: 53
             -
-                name: PHP
+                name: php
                 count: 50
             -
                 name: python
@@ -199,7 +193,7 @@ other_tools:
                 name: django
                 count: 32
             -
-                name: clojure
+                name: clojurescript
                 count: 31
             -
                 name: micro
@@ -208,20 +202,23 @@ other_tools:
                 name: golang
                 count: 27
             -
-                name: om
-                count: 27
-            -
                 name: serverless
                 count: 26
             -
-                name: haskell
+                name: java
+                count: 20
+            -
+                name: apollo
+                count: 13
+            -
+                name: keystone
+                count: 12
+            -
+                name: express
                 count: 11
             -
-                name: Scala
-                count: 10
-            -
-                name: ext.js
-                count: 10
+                name: haskell
+                count: 11
             -
                 name: scala
                 count: 10
@@ -229,32 +226,44 @@ other_tools:
         survey_id: '2016'
         tools:
             -
-                name: Angular
-                count: 33
+                name: express
+                count: 54
             -
-                name: MongoDB
+                name: sails
+                count: 46
+            -
+                name: mongodb
                 count: 29
             -
-                name: om
-                count: 28
-            -
-                name: Rails
+                name: rails
                 count: 23
             -
-                name: .NET
+                name: .net
                 count: 22
+            -
+                name: ember
+                count: 17
+            -
+                name: redux
+                count: 17
             -
                 name: elixir
                 count: 16
             -
-                name: Node.js
+                name: hapi
                 count: 14
             -
-                name: RethinkDB
-                count: 12
+                name: nodejs
+                count: 14
+            -
+                name: koa
+                count: 13
             -
                 name: elm
                 count: 12
             -
-                name: elm-package
+                name: rethinkdb
                 count: 12
+            -
+                name: mean
+                count: 10

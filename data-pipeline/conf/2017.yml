@@ -86,7 +86,7 @@ typeform:
             subject: survey_too_long
         uIGj:
             type: tool
-            tool: vanilla_js
+            tool: vanilla-js
         fQxL:
             type: tool
             tool: es6
@@ -122,7 +122,7 @@ typeform:
             tool: backbone
         i5QX:
             type: tool
-            tool: no_frontend_framework
+            tool: no-frontend-framework
         f0gX:
             type: other_tools
             section: front-end-frameworks
@@ -194,7 +194,7 @@ typeform:
             section: testing
         ViEz:
             type: tool
-            tool: plain_css
+            tool: plain-css
         C7Sz:
             type: tool
             tool: sass
@@ -203,7 +203,7 @@ typeform:
             tool: less
         CJjB:
             type: tool
-            tool: css_in_js
+            tool: css-in-js
         Meh3:
             type: other_tools
             section: css
@@ -258,7 +258,7 @@ sections:
     javascript-flavors:
         title: 'JavaScript Flavor'
         tools:
-            - vanilla_js
+            - vanilla-js
             - es6
             - typescript
             - flow
@@ -277,7 +277,7 @@ sections:
             - backbone
             - polymer
             - aurelia
-            - no_frontend_framework
+            - no-frontend-framework
     data-layer:
         title: 'Data Layer'
         freeform: 'Other Data Management Solutions'
@@ -316,11 +316,11 @@ sections:
         title: CSS
         freeform: 'Other CSS solutions'
         tools:
-            - plain_css
+            - plain-css
             - sass
             - stylus
             - less
-            - css_in_js
+            - css-in-js
             - bootstrap
             - foundation
     build-tools:
@@ -350,7 +350,7 @@ experience:
     'I''ve HEARD of it, and am NOT interested': not_interested
     'I''ve never heard of it': never_heard
 tools:
-    - vanilla_js
+    - vanilla-js
     - es6
     - typescript
     - flow
@@ -365,7 +365,7 @@ tools:
     - backbone
     - polymer
     - aurelia
-    - no_frontend_framework
+    - no-frontend-framework
     - rest
     - redux
     - mobx
@@ -388,11 +388,11 @@ tools:
     - jest
     - tape
     - ava
-    - plain_css
+    - plain-css
     - sass
     - stylus
     - less
-    - css_in_js
+    - css-in-js
     - bootstrap
     - foundation
     - webpack

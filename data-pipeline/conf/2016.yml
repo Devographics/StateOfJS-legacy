@@ -5,7 +5,7 @@ typeform:
     fields:
         '28238431':
             type: tool
-            tool: vanilla_js
+            tool: vanilla-js
         '28238491':
             type: years_of_experience
         '28238492':
@@ -103,7 +103,7 @@ typeform:
             tool: clojurescript
         '28238773':
             type: tool
-            tool: no_frontend_framework
+            tool: no-frontend-framework
         '28238785':
             type: tool
             tool: react
@@ -184,7 +184,7 @@ typeform:
             tool: jest
         '28239069':
             type: tool
-            tool: plain_css
+            tool: plain-css
         '28239074':
             type: tool
             tool: sass
@@ -193,7 +193,7 @@ typeform:
             tool: less
         '28239083':
             type: tool
-            tool: css_modules
+            tool: css-modules
         '28239098':
             type: tool
             tool: aphrodite
@@ -231,7 +231,7 @@ sections:
     javascript-flavors:
         title: 'JavaScript Flavor'
         tools:
-            - vanilla_js
+            - vanilla-js
             - es6
             - coffeescript
             - typescript
@@ -241,7 +241,7 @@ sections:
         title: Front-End
         freeform: 'Other Front-End Frameworks'
         tools:
-            - no_frontend_framework
+            - no-frontend-framework
             - react
             - angular
             - angular
@@ -288,10 +288,10 @@ sections:
         title: CSS
         freeform: 'Other CSS solutions'
         tools:
-            - plain_css
+            - plain-css
             - sass
             - less
-            - css_modules
+            - css-modules
             - aphrodite
     build-tools:
         title: 'Build Tools'
@@ -318,13 +318,13 @@ experience:
     'I''ve heard of it, and am not interested': not_interested
     'I''ve never heard of it': never_heard
 tools:
-    - vanilla_js
+    - vanilla-js
     - es6
     - coffeescript
     - typescript
     - elm
     - clojurescript
-    - no_frontend_framework
+    - no-frontend-framework
     - react
     - angular
     - angular
@@ -351,10 +351,10 @@ tools:
     - jest
     - cucumberjs
     - ava
-    - plain_css
+    - plain-css
     - sass
     - less
-    - css_modules
+    - css-modules
     - aphrodite
     - webpack
     - grunt

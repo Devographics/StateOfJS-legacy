@@ -131,6 +131,41 @@ export const globalOpinionSubjects = [
     'survey_too_long'
 ]
 
+export const reasons = {
+    like: [
+        'elegant_programming_style_patterns',
+        'robust_less_error_prone_code',
+        'rich_package_ecosystem',
+        'fast_performance',
+        'well_established_option',
+        'easy_learning_curve',
+        'powerful_developer_tooling',
+        'good_documentation',
+        'backed_by_a_great_team_company',
+        'simple_lightweight',
+        'growing_momentum_popularity',
+        'full_featured_powerful',
+        'stable_backwards_compatible',
+        'other'
+    ],
+    dislike: [
+        'clumsy_programming_style',
+        'buggy_error_prone_code',
+        'poor_performance',
+        'small_package_ecosystem',
+        'new_untested_option',
+        'hard_learning_curve',
+        'lacking_developer_tooling',
+        'bad_documentation',
+        'concerns_about_the_team_company',
+        'bloated_complex',
+        'diminishing_momentum_popularity',
+        'limited_lacking_in_features',
+        'fast_changing_breaks_often',
+        'other'
+    ]
+}
+
 export const verticalMargin = 30
 export const innerMargin = 10
 export const barHeight = 30

@@ -1,5 +1,5 @@
 import { get, template } from 'lodash'
-import wording from '../data/wording.yml'
+import wording from '../i18n/en-US/translations.yml'
 import bestOfJsData from '../data/bestofjs'
 
 export const getWording = (id, values, fallback = `![${id}]`) => {

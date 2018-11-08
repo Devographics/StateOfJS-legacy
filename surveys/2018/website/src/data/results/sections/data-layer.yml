@@ -80,73 +80,76 @@ other_tools:
         survey_id: '2017'
         tools:
             -
-                name: VueX
+                name: vuex
                 count: 358
             -
-                name: MongoDB
+                name: mongodb
                 count: 165
             -
-                name: 'Ember Data'
+                name: ember
                 count: 61
             -
-                name: Flux
+                name: ember-data
+                count: 61
+            -
+                name: flux
                 count: 56
             -
-                name: om
-                count: 52
-            -
-                name: PouchDB
+                name: pouchdb
                 count: 51
             -
-                name: Meteor
+                name: meteor
                 count: 42
             -
-                name: NgRx
+                name: ngrx
                 count: 41
             -
                 name: graph.cool
                 count: 40
             -
-                name: RxJS
+                name: rxjs
                 count: 37
             -
-                name: MySQL
+                name: mysql
                 count: 35
             -
-                name: Parse
+                name: parse
                 count: 34
             -
-                name: CouchDB
+                name: couchdb
                 count: 30
             -
-                name: RethinkDB
+                name: rethinkdb
                 count: 24
             -
                 name: realm
                 count: 22
             -
-                name: Redis
+                name: redux
+                count: 20
+            -
+                name: redis
                 count: 19
             -
                 name: elm
                 count: 18
             -
-                name: elm-package
-                count: 18
-            -
-                name: Gun.js
+                name: gunjs
                 count: 15
             -
                 name: cerebral
                 count: 14
             -
-                name: GraphQL
+                name: graphql
                 count: 13
+            -
+                name: mobx
+                count: 12
             -
                 name: feathers
                 count: 11
             -
-                name: Atom
+                name: atom
                 count: 10
             -
                 name: axios
@@ -155,38 +158,41 @@ other_tools:
         survey_id: '2018'
         tools:
             -
-                name: VueX
+                name: vuex
                 count: 719
             -
-                name: 'Ember Data'
+                name: ember
                 count: 161
             -
-                name: NgRx
+                name: ember-data
+                count: 161
+            -
+                name: ngrx
                 count: 96
             -
-                name: RxJS
+                name: rxjs
                 count: 66
             -
-                name: ext.js
-                count: 60
-            -
-                name: om
+                name: mobx
                 count: 34
             -
-                name: Flux
+                name: redux
+                count: 30
+            -
+                name: flux
                 count: 29
             -
-                name: Meteor
+                name: meteor
                 count: 24
             -
-                name: MongoDB
+                name: mongodb
                 count: 17
             -
                 name: elm
                 count: 16
             -
-                name: elm-package
-                count: 16
+                name: falcor
+                count: 15
             -
                 name: cerebral
                 count: 12
@@ -194,26 +200,29 @@ other_tools:
                 name: firebase
                 count: 12
             -
-                name: clojure
+                name: clojurescript
                 count: 11
             -
-                name: PouchDB
+                name: pouchdb
                 count: 10
     -
         survey_id: '2016'
         tools:
             -
-                name: Meteor
+                name: meteor
                 count: 36
             -
-                name: om
-                count: 32
-            -
-                name: .NET
+                name: .net
                 count: 30
             -
-                name: Parse
+                name: express
                 count: 24
+            -
+                name: parse
+                count: 24
+            -
+                name: loopback
+                count: 21
             -
                 name: feathers
                 count: 18

@@ -2,7 +2,7 @@ const { last } = require('lodash')
 const fetch = require('node-fetch')
 const tools = require('../conf/tools')
 const userInfo = require('../conf/user_info')
-const { globalOpinionsSubjectNormalizers, toolNormalizers, sourceNormalizers } = require('../conf/normalize')
+const { globalOpinionsSubjectNormalizers, sourceNormalizers } = require('../conf/normalize')
 const types = require('./fields')
 const geo = require('./geo')
 const util = require('./util')
@@ -12,7 +12,8 @@ const TYPEFORM_FIELD_TYPE_RATING = 'rating'
 
 const BATCH_SIZE = 1000
 
-const otherToolsExtractor = util.multiNormalizer(toolNormalizers)
+const toolNormalizer = util.uniNormalizer(tools)
+const otherToolsExtractor = util.multiNormalizer(tools)
 const sourceNormalizer = util.uniNormalizer(sourceNormalizers)
 
 class TypeformExtractor {
@@ -31,13 +32,6 @@ class TypeformExtractor {
             headers: { authorization: `bearer ${this.apiToken}` },
         })
         return rawResponse.json()
-    }
-
-    getToolId(toolName) {
-        let tool = tools.find(t => t.id === toolName || t.aliases.includes(toolName))
-        if (tool) return tool.id
-
-        throw new Error(`no tool found for '${toolName}'`)
     }
 
     async enhanceConfig() {
@@ -90,7 +84,7 @@ class TypeformExtractor {
             const sectionTools = []
             sectionField.properties.fields.forEach(field => {
                 if (isExperienceField(field)) {
-                    const toolId = this.getToolId(field.title)
+                    const toolId = toolNormalizer(field.title)
                     fieldsConfig[field.id] = { type: types.FIELD_TYPE_TOOL, tool: toolId }
                     sectionTools.push(toolId)
                     this.config.tools.push(toolId)
@@ -110,7 +104,7 @@ class TypeformExtractor {
                 if (isLikeReasonsField(field)) {
                     fieldsConfig[field.id] = {
                         type: types.FIELD_TYPE_TOOL_LIKE_REASONS,
-                        tool: this.getToolId(field.ref.slice(0, -5)),
+                        tool: toolNormalizer(field.ref.slice(0, -5)),
                     }
                     return
                 }
@@ -118,7 +112,7 @@ class TypeformExtractor {
                 if (isDislikeReasonsField(field)) {
                     fieldsConfig[field.id] = {
                         type: types.FIELD_TYPE_TOOL_DISLIKE_REASONS,
-                        tool: this.getToolId(field.ref.slice(0, -5))
+                        tool: toolNormalizer(field.ref.slice(0, -5))
                     }
                     return
                 }

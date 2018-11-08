@@ -33,7 +33,11 @@ export default class ToolHeaderBlock extends Component {
                 <div className="ToolHeader__Content">
                     <div className="ToolHeader__Header">
                         <h2 className="ToolHeader__Title">{getToolName(tool)}</h2>
-                        {project && <div className="ToolHeader__Stars">{starsFormatter(project.stars)} stars</div>}
+                        {project && (
+                            <div className="ToolHeader__Stars">
+                                {starsFormatter(project.stars)} stars
+                            </div>
+                        )}
                     </div>
                     {project && (
                         <Fragment>

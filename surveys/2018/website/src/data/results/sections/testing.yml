@@ -93,7 +93,7 @@ other_tools:
                 name: karma
                 count: 194
             -
-                name: Qunit
+                name: qunit
                 count: 187
             -
                 name: chai
@@ -105,11 +105,8 @@ other_tools:
                 name: nightwatch
                 count: 57
             -
-                name: cucumber
+                name: cucumberjs
                 count: 55
-            -
-                name: om
-                count: 51
             -
                 name: sinon
                 count: 50
@@ -120,34 +117,34 @@ other_tools:
                 name: elm
                 count: 33
             -
-                name: elm-package
-                count: 33
-            -
-                name: tap
-                count: 32
-            -
-                name: lab
-                count: 31
-            -
                 name: elm-test
                 count: 28
             -
                 name: cypress
                 count: 26
             -
-                name: intern
-                count: 25
+                name: tap
+                count: 24
             -
-                name: PhantomJS
+                name: phantomjs
                 count: 22
             -
                 name: testcafe
                 count: 19
             -
+                name: intern
+                count: 18
+            -
+                name: mocha
+                count: 18
+            -
                 name: junit
                 count: 16
             -
-                name: clojure
+                name: lab
+                count: 16
+            -
+                name: clojurescript
                 count: 13
             -
                 name: jest
@@ -159,11 +156,11 @@ other_tools:
                 name: cypress
                 count: 382
             -
-                name: tap
-                count: 198
-            -
-                name: Qunit
+                name: qunit
                 count: 170
+            -
+                name: tape
+                count: 167
             -
                 name: chai
                 count: 70
@@ -180,29 +177,26 @@ other_tools:
                 name: nightwatch
                 count: 33
             -
-                name: om
-                count: 33
-            -
                 name: sinon
                 count: 31
             -
-                name: cucumber
+                name: cucumberjs
                 count: 30
             -
-                name: lab
+                name: tap
                 count: 22
             -
                 name: elm
                 count: 20
             -
-                name: elm-package
-                count: 20
-            -
-                name: intern
-                count: 19
-            -
                 name: jest
                 count: 15
+            -
+                name: ember
+                count: 14
+            -
+                name: intern
+                count: 14
             -
                 name: elm-test
                 count: 13
@@ -210,10 +204,10 @@ other_tools:
         survey_id: '2016'
         tools:
             -
-                name: tap
-                count: 289
+                name: tape
+                count: 257
             -
-                name: Qunit
+                name: qunit
                 count: 128
             -
                 name: karma
@@ -231,17 +225,17 @@ other_tools:
                 name: selenium
                 count: 28
             -
+                name: tap
+                count: 26
+            -
                 name: sinon
                 count: 25
             -
                 name: intern
-                count: 23
-            -
-                name: lab
-                count: 19
-            -
-                name: om
-                count: 19
+                count: 13
             -
                 name: cypress
                 count: 12
+            -
+                name: mocha
+                count: 11

@@ -31,7 +31,7 @@ class ReasonLabel extends Component {
         return (
             <g transform={`translate(${-labelsWidth},${y})`}>
                 <text fill={textColor} style={{ fontSize }} alignmentBaseline="middle">
-                    {getWording(`${isMobile ? 'reasons_short' : 'reasons'}.${value}`)}
+                    {getWording(`reasons.${value}.${isMobile ? 'short' : 'long'}`)}
                 </text>
                 <rect
                     y={barHeight * -0.5}
