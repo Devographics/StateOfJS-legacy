@@ -2,55 +2,52 @@
   tool: es6
   url: https://ES6.io/friend/STATEOFJS
   description: A premium training course to strengthen your core JavaScript skills and master all that ES6 has to offer.
-  author: Wes Bos
-  avatar: wes.jpg
   image: es6.jpg
 
 - name: React For Beginners
   tool: react
   url: https://ReactForBeginners.com/friend/STATEOFJS
   description: Upgrade your JavaScript skills, learn React.js in just a couple of afternoons.
-  author: Wes Bos
-  avatar: wes.jpg
   image: reactforbeginners.jpg
 
 - name: Advanced React
   tool: react
   url: https://advancedreact.com/friend/STATEOFJS
   description: Join 10,393 others learning to build Full Stack JavaScript Apps with React.js and GraphQL.
-  author: Wes Bos
-  avatar: wes.jpg
   image: advancedreact.jpg
 
 - name: '#JavaScript30'
   tool: es6
   url: https://javascript30.com/friend/STATEOFJS
   description: '30 Day Vanilla JS Coding Challenge: Build 30 things in 30 days with 30 tutorials'
-  author: Wes Bos
-  avatar: wes.jpg
   image: javascript30.jpg
 
 - name: Learn Node
   tool: express
   url: https://learnnode.com/friend/STATEOFJS
   description: A premium training course to learn to build apps with Node.js, Express, MongoDB, and friends.
-  author: Wes Bos
-  avatar: wes.jpg
   image: learnnode.jpg
 
 - name: GraphQL Guide
   tool: graphql
   url: https://graphql.guide/?utm_source=stateofjs&utm_medium=partner&utm_campaign=2018
   description: The complete guide to GraphQL and Apollo. From John Resig, the creator of jQuery.
-  author: Wes Bos
-  avatar: wes.jpg
   image: graphql.jpg
 
-
-- name: Learn Storybook
+- name: Learn Storybook Tutorial
   tool: storybook
-  url: https://learnnode.com/friend/STATEOFJS
-  description: Learn Storybook to create bulletproof UI components, along the way you’ll build an app UI from scratch.
-  author: Wes Bos
-  avatar: wes.jpg
-  image: learnstorybook.png
+  url: https://www.learnstorybook.com/?utm_source=stateofjs2018&utm_campaign=stateofjs2018
+  description: Get a free 9-chapter tutorial that teaches Storybook best practices as you build a UI from scratch.
+  image: sojs2018-lsb.jpg
+
+- name: Component-Driven Development
+  tool: storybook
+  url: https://blog.hichroma.com/component-driven-development-ce1109d56c8e?utm_source=stateofjs2018&utm_campaign=stateofjs2018
+  description: Learn how to speed up development in Storybook by building UIs from the “bottom up” starting at components and ending with screens.
+  image: sojs2018-cdd.jpg
+
+- name: Visual Testing Handbook
+  tool: jest
+  url: https://www.chromaticqa.com/book/visual-testing-handbook?utm_source=stateofjs2018&utm_campaign=stateofjs2018
+  description: Get a free 31-page handbook that gives you an overview of visual testing, a pragmatic yet precise way to verify the look of UI components.
+  image: sojs2018-visual-testing-handbook.jpg

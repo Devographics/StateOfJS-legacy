@@ -276,7 +276,7 @@ class Home extends Component {
                         onMouseEnter={this.stopAnimation}
                         onMouseLeave={this.restartAnimation}
                         className="LogoAnimation__Button button"
-                        to="/"
+                        to="/introduction"
                     >
                         Start
                     </Link>
