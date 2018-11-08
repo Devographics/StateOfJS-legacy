@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import PeriodicElement from '../components/elements/PeriodicElement'
+import '../stylesheets/screen.scss'
+import Link from 'gatsby-link'
 
 /*
 
@@ -266,17 +268,18 @@ class Home extends Component {
     }
 
     render() {
-        const { initPositions, positions, height, width, ready, stopped } = this.state
+        const { positions, height, width, ready } = this.state
         return (
             <div className="LogoAnimation__Wrapper" id="LogoAnimation__Wrapper">
                 <div className="LogoAnimation__Inner">
-                    <a
+                    <Link
                         onMouseEnter={this.stopAnimation}
                         onMouseLeave={this.restartAnimation}
                         className="LogoAnimation__Button button"
+                        to="/"
                     >
                         Start
-                    </a>
+                    </Link>
                 </div>
                 {ready && (
                     <svg
