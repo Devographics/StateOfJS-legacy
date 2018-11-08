@@ -1,292 +1,990 @@
+/**
+ * Defines a set of rules which can be applied
+ * in order to standardize tool names, it's mostly involved
+ * to extract things from the "other tools" questions.
+ * 
+ * ⚠️ ORDER MATTERS
+ */
 module.exports = [
-    {
-        id: 'vanilla_js',
-        aliases: ['Good Old Plain JavaScript', '"Plain" JavaScript (ES5)'],
-    },
-    {
-        id: 'es6',
-        aliases: ['ES6', 'ES6+'],
-    },
-    {
-        id: 'coffeescript',
-        aliases: ['CoffeeScript'],
-    },
-    {
-        id: 'typescript',
-        aliases: ['TypeScript'],
-    },
-    {
-        id: 'flow',
-        aliases: ['Flow'],
-    },
-    {
-        id: 'elm',
-        aliases: ['Elm'],
-    },
-    {
-        id: 'reason',
-        aliases: ['Reason'],
-    },
-    {
-        id: 'clojurescript',
-        aliases: ['ClojureScript'],
-    },
-    {
-        id: 'no_frontend_framework',
-        aliases: ['No Front-End Framework'],
-    },
-    {
-        id: 'react',
-        aliases: ['React'],
-    },
-    {
-        id: 'preact',
-        aliases: ['Preact'],
-    },
-    {
-        id: 'aurelia',
-        aliases: ['Aurelia'],
-    },
-    {
-        id: 'polymer',
-        aliases: ['Polymer'],
-    },
-    {
-        id: 'angular',
-        aliases: [
-            'Angular', 'Angular 2',
-        ]
-    },
-    {
-        id: 'angular_1',
-        aliases: ['Angular 1'],
-    },
-    {
-        id: 'ember',
-        aliases: ['Ember'],
-    },
-    {
-        id: 'vuejs',
-        aliases: ['vue', 'Vue', 'Vue.js'],
-    },
-    {
-        id: 'backbone',
-        aliases: ['Backbone'],
-    },
-    {
-        id: 'redux',
-        aliases: ['Redux'],
-    },
-    {
-        id: 'mobx',
-        aliases: ['MobX', 'Mobx'],
-    },
-    {
-        id: 'rest',
-        aliases: ['REST API', 'Custom REST API'],
-    },
-    {
-        id: 'firebase',
-        aliases: ['Firebase'],
-    },
-    {
-        id: 'graphql',
-        aliases: ['GraphQL'],
-    },
-    {
-        id: 'apollo',
-        aliases: ['Apollo'],
-    },
-    {
-        id: 'falcor',
-        aliases: ['Falcor'],
-    },
-    {
-        id: 'horizon',
-        aliases: ['Horizon'],
-    },
-    {
-        id: 'meteor',
-        aliases: ['Meteor'],
-    },
-    {
-        id: 'feathers',
-        aliases: ['FeathersJS', 'Feathers'],
-    },
-    {
-        id: 'donejs',
-        aliases: ['DoneJS'],
-    },
-    {
-        id: 'mern',
-        aliases: ['MERN'],
-    },
-    {
-        id: 'mean',
-        aliases: ['MEAN'],
-    },
-    {
-        id: 'mocha',
-        aliases: ['Mocha'],
-    },
-    {
-        id: 'jasmine',
-        aliases: ['Jasmine'],
-    },
-    {
-        id: 'enzyme',
-        aliases: ['Enzyme'],
-    },
-    {
-        id: 'jest',
-        aliases: ['Jest'],
-    },
-    {
-        id: 'cucumberjs',
-        aliases: ['Cucumber', 'Cucumber.js'],
-    },
-    {
-        id: 'ava',
-        aliases: ['Ava'],
-    },
-    {
-        id: 'tape',
-        aliases: ['Tape'],
-    },
-    {
-        id: 'karma',
-        aliases: ['Karma'],
-    },
-    {
-        id: 'plain_css',
-        aliases: ['Plain CSS'],
-    },
-    {
-        id: 'sass',
-        aliases: ['SASS/SCSS'],
-    },
-    {
-        id: 'less',
-        aliases: ['LESS'],
-    },
-    {
-        id: 'stylus',
-        aliases: ['Stylus'],
-    },
-    {
-        id: 'css_modules',
-        aliases: ['CSS Modules'],
-    },
-    {
-        id: 'css_in_js',
-        aliases: ['CSS-in-JS'],
-    },
-    {
-        id: 'aphrodite',
-        aliases: ['Aphrodite'],
-    },
-    {
-        id: 'webpack',
-        aliases: ['Webpack'],
-    },
-    {
-        id: 'grunt',
-        aliases: ['Grunt'],
-    },
-    {
-        id: 'gulp',
-        aliases: ['Gulp'],
-    },
-    {
-        id: 'browserify',
-        aliases: ['Browserify'],
-    },
-    {
-        id: 'bower',
-        aliases: ['Bower'],
-    },
-    {
-        id: 'native-apps',
-        aliases: ['Native Apps', 'nativeapps'],
-    },
-    {
-        id: 'react-native',
-        aliases: ['React Native', 'reactnative'],
-    },
-    {
-        id: 'cordova',
-        aliases: ['Cordova'],
-    },
-    {
-        id: 'phonegap',
-        aliases: ['PhoneGap'],
-    },
-    {
-        id: 'phonegap-cordova',
-        aliases: ['PhoneGap/Cordova', 'phonegap/cordova'],
-    },
-    {
-        id: 'nativescript',
-        aliases: ['NativeScript'],
-    },
-    {
-        id: 'express',
-        aliases: ['Express'],
-    },
-    {
-        id: 'koa',
-        aliases: ['Koa'],
-    },
-    {
-        id: 'hapi',
-        aliases: ['Hapi'],
-    },
-    {
-        id: 'relay',
-        aliases: ['Relay', 'Relay/Relay Modern'],
-    },
-    {
-        id: 'sails',
-        aliases: ['Sails'],
-    },
-    {
-        id: 'loopback',
-        aliases: ['Loopback'],
-    },
-    {
-        id: 'keystone',
-        aliases: ['Keystone'],
-    },
-    {
-        id: 'electron',
-        aliases: ['Electron'],
-    },
-    {
-        id: 'ionic',
-        aliases: ['Ionic'],
-    },
-    {
-        id: 'bootstrap',
-        aliases: ['Bootstrap'],
-    },
-    {
-        id: 'foundation',
-        aliases: ['Foundation'],
-    },
-    {
-        id: 'npm',
-        aliases: ['NPM'],
-    },
-    {
-        id: 'rollup',
-        aliases: ['Rollup'],
-    },
-    {
-        id: 'nextjs',
-        aliases: ['next.js', 'Next.js'],
-    },
-    {
-        id: 'storybook',
-        aliases: ['Storybook'],
-    },
+    [
+        /(Good Old Plain JavaScript|"Plain" JavaScript \(ES5\)|vanilla)/i,
+        'vanilla-js',
+    ],
+    [
+        /es6/i,
+        'es6',
+    ],
+    [
+        /coffeescript/i,
+        'coffeescript',
+    ],
+    [
+        /typescript/i,
+        'typescript',
+    ],
+    [
+        /flow/i,
+        'flow',
+    ],
+    [
+        /elm-test/i,
+        'elm-test',
+    ],
+    [
+        /elm( |-)?native/i,
+        'elm-native',
+    ],
+    [
+        /elm/i,
+        'elm',
+    ],
+    [
+        /reason/i,
+        'reason',
+    ],
+    [
+        /clojure/i,
+        'clojurescript',
+    ],
+    [
+        /No Front-End Framework/i,
+        'no-frontend-framework',
+    ],
+    [
+        /preact/i,
+        'preact',
+    ],
+    [
+        /^react$/i,
+        'react',
+    ],
+    [
+        /aurelia/i,
+        'aurelia',
+    ],
+    [
+        /polymer/i,
+        'polymer',
+    ],
+    [
+        /^angular$/i,
+        'angular',
+    ],
+    [
+        /angular ?2/i,
+        'angular',
+    ],
+    [
+        /angular ?1/i,
+        'angular-1',
+    ],
+    [
+        /angular( |-)?native/i,
+        'angular-native',
+    ],
+    [
+        /ember/i,
+        'ember',
+    ],
+    [
+        /ember( |-|\.)?data/i,
+        'ember-data',
+    ],
+    [
+        /^vue(\.js)?$/i,
+        'vuejs',
+    ],
+    [
+        /backbone/i,
+        'backbone',
+    ],
+    [
+        /redux/i,
+        'redux',
+    ],
+    [
+        /mobx/i,
+        'mobx',
+    ],
+    [
+        /rest( |-)?api/i,
+        'rest',
+    ],
+    [
+        /restify/i,
+        'restify',
+    ],
+    [
+        /firebase/i,
+        'firebase',
+    ],
+    [
+        /graphql/i,
+        'graphql',
+    ],
+    [
+        /apollo/i,
+        'apollo',
+    ],
+    [
+        /falcor/i,
+        'falcor',
+    ],
+    [
+        /horizon/i,
+        'horizon',
+    ],
+    [
+        /(meteor|blaze)/i,
+        'meteor',
+    ],
+    [
+        /feathers/i,
+        'feathers',
+    ],
+    [
+        /donejs/i,
+        'donejs',
+    ],
+    [
+        /mern/i,
+        'mern',
+    ],
+    [
+        /mean/i,
+        'mean',
+    ],
+    [
+        /mocha/i,
+        'mocha',
+    ],
+    [
+        /jasmine/i,
+        'jasmine',
+    ],
+    [
+        /enzyme/i,
+        'enzyme',
+    ],
+    [
+        /jest/i,
+        'jest',
+    ],
+    [
+        /cucumber/i,
+        'cucumberjs',
+    ],
+    [
+        /^ava$/i,
+        'ava',
+    ],
+    [
+        /^java$/i,
+        'java',
+    ],
+    [
+        /tape/i,
+        'tape',
+    ],
+    [
+        /karma/i,
+        'karma',
+    ],
+    [
+        /plain( |-|\.)css/i,
+        'plain-css',
+    ],
+    [
+        /css( |-|_|\.)?modules/i,
+        'css-modules',
+    ],
+    [
+        /css( |-|_|\.)?next/i,
+        'cssnext',
+    ],
+    [
+        /pure( |-|_|\.)?css/i,
+        'purecss',
+    ],
+    [
+        /post( |-|_|\.)?css/i,
+        'postcss'
+    ],
+    [
+        /css( |-|_)?in( |-|_)?js/i,
+        'css-in-js',
+    ],
+    [
+        /s(a|c)ss/i,
+        'sass',
+    ],
+    [
+        /^less$/i,
+        'less',
+    ],
+    [
+        /stylus/i,
+        'stylus',
+    ],
+    [
+        /aphrodite/i,
+        'aphrodite',
+    ],
+    [
+        /webpack/i,
+        'webpack',
+    ],
+    [
+        /grunt/i,
+        'grunt',
+    ],
+    [
+        /gulp/i,
+        'gulp',
+    ],
+    [
+        /browserify/i,
+        'browserify',
+    ],
+    [
+        /bower/i,
+        'bower',
+    ],
+    [
+        /native( |-|_)?apps/i,
+        'native-apps',
+    ],
+    [
+        /react( |-|_)?native/i,
+        'react-native',
+    ],
+    [
+        /phonegap\/cordova/i,
+        'phonegap-cordova',
+    ],
+    [
+        /cordova/i,
+        'cordova',
+    ],
+    [
+        /phonegap/i,
+        'phonegap',
+    ],
+    [
+        /native( |-|_)?script/i,
+        'nativescript',
+    ],
+    [
+        /express/i,
+        'express',
+    ],
+    [
+        /koa/i,
+        'koa',
+    ],
+    [
+        /hapi/i,
+        'hapi',
+    ],
+    [
+        /relay/i,
+        'relay',
+    ],
+    [
+        /sails/i,
+        'sails',
+    ],
+    [
+        /loopback/i,
+        'loopback',
+    ],
+    [
+        /keystone/i,
+        'keystone',
+    ],
+    [
+        /electron/i,
+        'electron',
+    ],
+    [
+        /ionic/i,
+        'ionic',
+    ],
+    [
+        /bootstrap/i,
+        'bootstrap',
+    ],
+    [
+        /foundation/i,
+        'foundation',
+    ],
+    [
+        /npm/i,
+        'npm',
+    ],
+    [
+        /rollup/i,
+        'rollup',
+    ],
+    [
+        /next(\.| |-|_)?js/i,
+        'nextjs',
+    ],
+    [
+        /storybook/i,
+        'storybook',
+    ],
+    [
+        /cycle( |-|_|\.)js/i,
+        'cyclejs',
+    ],
+    [
+        /knockout/i,
+        'Knockout',
+    ],
+    [
+        /jquery/i,
+        'jquery',
+    ],
+    [
+        /mithril/i,
+        'mithril',
+    ],
+    [
+        /inferno/i,
+        'inferno',
+    ],
+    [
+        /riot/i,
+        'riotjs',
+    ],
+    [
+        /^ext\.?(js)?$/i,
+        'extjs'
+    ],
+    [
+        /svelte/i,
+        'svelte',
+    ],
+    [
+        /^om$/i,
+        'om',
+    ],
+    [
+        /choo/i,
+        'choo',
+    ],
+    [
+        /hyperapp/i,
+        'hyperapp',
+    ],
+    [
+        /dojo/i,
+        'dojo',
+    ],
+    [
+        /alkali/i,
+        'alkali',
+    ],
+    [
+        /marionette/i,
+        'marionette',
+    ],
+    [
+        /kendo/i,
+        'kendo',
+    ],
+    [
+        /marko/i,
+        'marko',
+    ],
+    [
+        /reagent/i,
+        'reagent',
+    ],
+    [
+        /haxe/i,
+        'haxe',
+    ],
+    [
+        /ampersand/i,
+        'ampersand',
+    ],
+    [
+        /rxjs/i,
+        'rxjs',
+    ],
+    [
+        /canjs/i,
+        'canjs',
+    ],
+    [
+        /prototype/i,
+        'prototype',
+    ],
+    [
+        /mootools/i,
+        'mootools',
+    ],
+    [
+        /glimmer/i,
+        'glimmer',
+    ],
+    [
+        /durandal/i,
+        'durandal',
+    ],
+    [
+        /moon/i,
+        'moon',
+    ],
+    [
+        /batman/i,
+        'batman',
+    ],
+    [
+        /flight/i,
+        'flight',
+    ],
+    [
+        /scala/i,
+        'scala',
+    ],
+    [
+        /webix/i,
+        'webix',
+    ],
+    [
+        /enyo/i,
+        'enyo',
+    ],
+    [
+        /quasar/i,
+        'quasar',
+    ],
+    [
+        /d3/i,
+        'd3',
+    ],
+    [
+        /three/i,
+        'threejs',
+    ],
+    [
+        /cerebral/i,
+        'cerebral',
+    ],
+    [
+        /underscore/i,
+        'underscore',
+    ],
+    [
+        /vuex/i,
+        'vuex',
+    ],
+    [
+        /flux/i,
+        'flux',
+    ],
+    [
+        /pouch/i,
+        'pouchdb',
+    ],
+    [
+        /ngrx/i,
+        'ngrx',
+    ],
+    [
+        /graph\.?cool/i,
+        'graph.cool',
+    ],
+    [
+        /parse/i,
+        'parse',
+    ],
+    [
+        /realm/i,
+        'realm',
+    ],
+    [
+        /gun/i,
+        'gunjs',
+    ],
+    [
+        /couchbase/i,
+        'couchbase',
+    ],
+    [
+        /datomic/i,
+        'datomic',
+    ],
+    [
+        /deployd/i,
+        'deployd',
+    ],
+    [
+        /hood\.?ie/i,
+        'hoodie',
+    ],
+    [
+        /kinvey/i,
+        'kinvey',
+    ],
+    [
+        /kinto/i,
+        'kinto',
+    ],
+    [
+        /mongo/i,
+        'mongodb',
+    ],
+    [
+        /contentful/i,
+        'contentful',
+    ],
+    [
+        /mysql/i,
+        'mysql',
+    ],
+    [
+        /redis/i,
+        'redis',
+    ],
+    [
+        /rethink/i,
+        'rethinkdb',
+    ],
+    [
+        /^node$|node\.?js|node js/i,
+        'nodejs',
+    ],
+    [
+        /asp\. ?net|c#|\.net|dotnet/i,
+        '.net',
+    ],
+    [
+        /django/i,
+        'django',
+    ],
+    [
+        /ror|rails|ruby on rails/i,
+        'rails',
+    ],
+    [
+        /php/i,
+        'php',
+    ],
+    [
+        /adonis/i,
+        'adonis',
+    ],
+    [
+        /python/i,
+        'python',
+    ],
+    [
+        /^go$|golang/i,
+        'golang',
+    ],
+    [
+        /laravel/i,
+        'laravel',
+    ],
+    [
+        /elixir/i,
+        'elixir',
+    ],
+    [
+        /couchdb/i,
+        'couchdb',
+    ],
+    [
+        /trails/i,
+        'trails',
+    ],
+    [
+        /kraken/i,
+        'kraken',
+    ],
+    [
+        /serverless/i,
+        'serverless',
+    ],
+    [
+        /socket\.?io/i,
+        'socketio',
+    ],
+    [
+        /micro/i,
+        'micro',
+    ],
+    [
+        /haskell/i,
+        'haskell',
+    ],
+    [
+        /qunit/i,
+        'qunit',
+    ],
+    [
+        /chai/i,
+        'chai',
+    ],
+    [
+        /protractor/i,
+        'protractor',
+    ],
+    [
+        /selenium/i,
+        'selenium',
+    ],
+    [
+        /nightwatch/i,
+        'nightwatch',
+    ],
+    [
+        /^tap$/i,
+        'tap',
+    ],
+    [
+        /sinon/i,
+        'sinon',
+    ],
+    [
+        /^intern$/i,
+        'intern',
+    ],
+    [
+        /^lab$/i,
+        'lab',
+    ],
+    [
+        /testcafe/i,
+        'testcafe',
+    ],
+    [
+        /junit/i,
+        'junit',
+    ],
+    [
+        /cypress/i,
+        'cypress',
+    ],
+    [
+        /phantom/i,
+        'phantomjs',
+    ],
+    [
+        /^atomic/i,
+        'atomic design',
+    ],
+    [
+        /bem/i,
+        'bem',
+    ],
+    [
+        /bulma/i,
+        'bulma',
+    ],
+    [
+        /semantic/i,
+        'semanticui',
+    ],
+    [
+        /tach\.+on/i,
+        'tachyons',
+    ],
+    [/material design/i, 'material design'],
+    [
+        /skeleton/i,
+        'skeleton',
+    ],
+    [
+        /material(\.| |-|_)?ui/i,
+        'material-ui',
+    ],
+    [
+        /styled(\.| |-|_)?components/i,
+        'styled components',
+    ],
+    [
+        /bourbon/i,
+        'bourbon',
+    ],
+    [
+        /mill?igram/i,
+        'milligram',
+    ],
+    [
+        /uikit/i,
+        'uikit',
+    ],
+    [
+        /flexbox/i,
+        'flexbox',
+    ],
+    [
+        /topocoat/i,
+        'topocoat',
+    ],
+    [
+        /glamor/i,
+        'glamor',
+    ],
+    [
+        /radium/i,
+        'radium',
+    ],
+    [
+        /styletron/i,
+        'styletron',
+    ],
+    [
+        /jss/i,
+        'jss',
+    ],
+    [
+        /mdl/i,
+        'mdl',
+    ],
+    [
+        /vuetify/i,
+        'vuetify',
+    ],
+    [
+        /materiali(z|s)e/i,
+        'materialize',
+    ],
+    [
+        /brunch/i,
+        'brunch',
+    ],
+    [
+        /make/i,
+        'make',
+    ],
+    [
+        /broccoli|brocolli/i,
+        'broccoli',
+    ],
+    [
+        /fusebox/i,
+        'fusebox',
+    ],
+    [
+        /systemjs/i,
+        'systemjs',
+    ],
+    [
+        /gradle/i,
+        'gradle',
+    ],
+    [
+        /stealjs/i,
+        'stealjs',
+    ],
+    [
+        /babel/i,
+        'babel',
+    ],
+    [
+        /weex/i,
+        'weex',
+    ],
+    [
+        /xamarin/i,
+        'xamarin',
+    ],
+    [
+        /pwa/i,
+        'pwa',
+    ],
+    [
+        /progressive( |-|_)?web( |-|_)?app/i,
+        'pwa',
+    ],
+    [
+        /^nw(js)$/i,
+        'nwjs',
+    ],
+    [
+        /expo/i,
+        'expo',
+    ],
+    [
+        /flutter/i,
+        'flutter',
+    ],
+    [
+        /(appcelerator|titanium)/i,
+        'appcelerator',
+    ],
+    [
+        /fuse/i,
+        'fuse',
+    ],
+    [
+        /^cef$/i,
+        'cef',
+    ],
+    [
+        /chromium embedded framework/i,
+        'cef',
+    ],
+    [
+        /swift/i,
+        'swift',
+    ],
+    [
+        /kotlin/i,
+        'kotlin',
+    ],
+    [
+        /yarn/i,
+        'yarn',
+    ],
+    [
+        /nuget/i,
+        'nuget',
+    ],
+    [
+        /composer/i,
+        'composer',
+    ],
+    [
+        /jspm/i,
+        'jspm',
+    ],
+    [
+        /pnpm/i,
+        'pnpm',
+    ],
+    [
+        /homebrew|brew/i,
+        'homebrew',
+    ],
+    [
+        /leiningen/i,
+        'leiningen',
+    ],
+    [
+        /maven/i,
+        'maven',
+    ],
+    [
+        /immutable/i,
+        'Immutable',
+    ],
+    [
+        /lodash/i,
+        'lodash',
+    ],
+    [
+        /moment/i,
+        'moment',
+    ],
+    [
+        /ramda/i,
+        'ramda',
+    ],
+    [
+        /axios/i,
+        'axios',
+    ],
+    [
+        /recompose/i,
+        'recompose',
+    ],
+    [
+        /zepto/i,
+        'zepto',
+    ],
+    [
+        /async/i,
+        'async',
+    ],
+    [
+        /atom/i,
+        'atom',
+    ],
+    [
+        /webstorm/i,
+        'webstorm',
+    ],
+    [
+        /phpstorm/i,
+        'phpstorm',
+    ],
+    [
+        /intellij/i,
+        'intellij',
+    ],
+    [
+        /sublime/i,
+        'sublime-text',
+    ],
+    [
+        /vim/i,
+        'vim',
+    ],
+    [
+        /emacs/i,
+        'emacs',
+    ],
+    [
+        /brackets/i,
+        'brackets',
+    ],
+    [
+        /(visual studio|vs code|vscode|visualstudio)/i,
+        'visual-studio',
+    ],
+    [
+        /notepad/i,
+        'notepad++',
+    ],
+    [
+        /netbeans/i,
+        'netbeans',
+    ],
+    [
+        /coda/i,
+        'coda',
+    ],
+    [
+        /prettier/i,
+        'prettier',
+    ],
+    [
+        /eslint/i,
+        'eslint',
+    ],
+    [
+        /tslint/i,
+        'tslint',
+    ],
+    [
+        /stylelint/i,
+        'stylelint',
+    ],
+    [
+        /jshint/i,
+        'jshint',
+    ],
+    [
+        /standardjs/i,
+        'standardjs',
+    ],
+    [
+        /jscs/i,
+        'jscs',
+    ],
+    [
+        /jslint/i,
+        'jslint',
+    ],
+    [
+        /xo/i,
+        'xo',
+    ],
 ]
