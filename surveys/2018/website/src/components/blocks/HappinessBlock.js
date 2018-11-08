@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import HappinessChart from '../charts/HappinessChart'
 import BlockTitle from '../elements/BlockTitle'
 import withPageData from '../../helpers/withPageData'
+import { getWording } from '../../helpers/wording'
 
 class HappinessBlock extends PureComponent {
     static propTypes = {
@@ -18,8 +19,7 @@ class HappinessBlock extends PureComponent {
                 <BlockTitle chart="happiness" />
                 <div className="block__description">
                     <p>
-                        On a scale of one to five, how happy are developers with the current state
-                        of {currentPage.section.label} tools?
+                        {getWording('block_intro.happiness', { section: currentPage.section.label })}
                     </p>
                 </div>
                 <div>

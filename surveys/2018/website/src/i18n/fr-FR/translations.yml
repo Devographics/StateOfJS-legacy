@@ -1,21 +1,21 @@
-share: Share
+share: Partager
 
 nav:
     introduction: Introduction
-    connections: Connections
-    overview: Overview
-    other-libraries: Other Libraries
+    connections: Connexions
+    overview: Aperçu
+    other-libraries: Autres Librairies
     conclusion: Conclusion
-    other-tools: Other Tools
+    other-tools: Autres Outils
     opinions: Opinions
-    demographics: Demographics
-    support_us: Support Us
+    demographics: Démographie
+    support_us: Nous Supporter
 
-    javascript-flavors: JavaScript Flavors
-    front-end-frameworks: Front-end Frameworks
-    data-layer: Data Layer
-    back-end-frameworks: Back-end Frameworks
-    testing: Testing
+    javascript-flavors: Langages
+    front-end-frameworks: Frameworks Front-end
+    data-layer: Gestion de données
+    back-end-frameworks: Frameworks Back-end
+    testing: Tests
     mobile-and-desktop: Mobile & Desktop
 
 tools:
@@ -29,63 +29,63 @@ tools:
 
 block_intro:
     happiness: >
-        On a scale of one to five, how happy are developers
-        with the current state of ${section} tools?
+        Sur une échelle de 1 à 5, comment les développeurs
+        perçoivent-ils l'état actuel des ${section} ?
 
 opinions:
     legends:
-        never_heard: I've never heard of it
-        not_interested: I've HEARD of it, and am NOT interested
-        interested: I've HEARD of it, and WOULD like to learn it
+        never_heard: Je n'en ai jamais entendu parlé
+        not_interested: J'en ai entendu parlé, mais je ne suis pas intéressé
+        interested: J'en ai entendu parlé et je souhaiterais apprendre
         would_use: I've USED it before, and WOULD use it again
         would_not_use: I've USED it before, and would NOT use it again
     legends_short:
-        never_heard: Never heard of it
-        not_interested: Heard of it, not interested
-        interested: Heard of it, would like to learn
+        never_heard: Jamais entendu parlé
+        not_interested: Entendu parlé, pas intéressé
+        interested: Entendu parlé, souhaiterai apprendre
         would_use: Used it, would use again
         would_not_use: Used it, would not use again
 
 reasons:
     elegant_programming_style_patterns:
-        long: ⚙️ Elegant programming style & patterns
-        short: ⚙️ Programming style
+        long: ⚙️ Style de programmation élégant
+        short: ⚙️ Style de programmation
     robust_less_error_prone_code:
-        long: 🐞 Robust, less error-prone code
-        short: 🐞 Robust code
+        long: 🐞 Robuste, code moins sujet aux erreurs
+        short: 🐞 Robustesse du code
     rich_package_ecosystem:
-        long: 🎁 Rich package ecosystem
-        short: 🎁 Package ecosystem
+        long: 🎁 Un ecosystème riche
+        short: 🎁 Ecosystème
     fast_performance:
-        long: ⚡ Fast performance
-        short: ⚡ Fast performance
+        long: ⚡ Bonnes performances
+        short: ⚡ Bonnes performances
     well_established_option:
-        long: 🏛️ Well-established option
-        short: 🏛️ Well-established
+        long: 🏛️ Option bien établie
+        short: 🏛️ Bien établi
     easy_learning_curve:
-        long: 👶 Easy learning curve
-        short: 👶 Easy to learn
+        long: 👶 Courbe d'apprentissage aisée
+        short: 👶 Facile à appréhender
     powerful_developer_tooling:
-        long: 🔧 Powerful developer tooling
-        short: 🔧 Tooling
+        long: 🔧 Outillage puissant
+        short: 🔧 Outillage
     good_documentation:
-        long: 📖 Good documentation
+        long: 📖 Bonne documentation
         short: 📖 Documentation
     backed_by_a_great_team_company:
         long: 👫 Backed by a great team/company
         short: 👫 Team/company
     simple_lightweight:
-        long: 🎈 Simple & lightweight
-        short: 🎈 Lightweight
+        long: 🎈 Simple & léger
+        short: 🎈 Léger
     growing_momentum_popularity:
         long: 📉 Growing momentum/popularity
         short: 📉 Momentum
     full_featured_powerful:
-        long: 🕹️ Full-featured & powerful
-        short: 🕹️ Full-featured
+        long: 🕹️ Complet & puissant
+        short: 🕹️ Complet & puissant
     stable_backwards_compatible:
-        long: ⚖️ Stable & backwards-compatible
-        short: ⚖️ Stability
+        long: ⚖️ Stable & rétro compatible
+        short: ⚖️ Stabilité
     clumsy_programming_style:
         long: ⚙️ Clumsy programming style
         short: ⚙️ Clumsy
@@ -93,23 +93,23 @@ reasons:
         long: 🐞 Buggy, error-prone code
         short: 🐞 Buggy code
     poor_performance:
-        long: ⚡ Poor performance
-        short: ⚡ Poor performance
+        long: ⚡ Mauvaises performances
+        short: ⚡ Mauvaises performances
     small_package_ecosystem:
-        long: 🎁 Small package ecosystem
-        short: 🎁 Few packages
+        long: 🎁 Ecosystème restreint
+        short: 🎁 Ecosystème restreint
     new_untested_option:
-        long: 🏛️ New untested option
-        short: 🏛️ New & untested
+        long: 🏛️ Nouvelle option non éprouvée
+        short: 🏛️ Nouveau & non éprouvé
     hard_learning_curve:
-        long: 👶 Hard learning curve
-        short: 👶 Hard to learn
+        long: 👶 Courbe d'apprentissage difficile
+        short: 👶 Difficile à appréhender
     lacking_developer_tooling:
-        long: 🔧 Lacking developer tooling
-        short: 🔧 Lacking tooling
+        long: 🔧 Outillage limité
+        short: 🔧 Outillage limité
     bad_documentation:
-        long: 📖 Bad documentation
-        short: 📖 Bad documentation
+        long: 📖 Mauvaise documentation
+        short: 📖 Mauvaise documentation
     concerns_about_the_team_company:
         long: 👫 Concerns about the team/company
         short: 👫 Bad team/company
@@ -117,42 +117,42 @@ reasons:
         long: 🎈 Bloated & complex
         short: 🎈 Bloated & complex
     diminishing_momentum_popularity:
-        long: 📉 Diminishing momentum/popularity
-        short: 📉 Low momentum
+        long: 📉 Popularité/adoption en baisse
+        short: 📉 Faible popularité
     limited_lacking_in_features:
-        long: 🕹️ Limited & lacking in features
-        short: 🕹️ Limited
+        long: 🕹️ Limité, manque de fonctionnalités
+        short: 🕹️ Limité
     fast_changing_breaks_often:
         long: ⚖️ Fast-changing & breaks often
         short: ⚖️ Fast-changing
     other:
-        long: Other
-        short: Other
+        long: Autre
+        short: Autre
 
 charts:
-    overview: Libraries Results
-    overview_description: Per-library survey results.
+    overview: Résultats pour toutes les librairies
+    overview_description: Résultats par libraire.
     happiness: Overall Happiness
-    other-tools: Other Tools
-    all-libraries: All Libraries
+    other-tools: Autres Outils
+    all-libraries: Toutes les librairies
     quadrant: Quadrant Chart
-    results-over-time: ${tool}'s Popularity Over Time
-    likes: Most Liked Aspects of ${tool}
-    dislikes: Most Disliked Aspects of ${tool}
-    tool-usage-by-country: ${tool} Usage by Country
-    other-languages: Other Languages
-    browser-apis: Browser APIs
+    results-over-time: Évolution de la popularité de ${tool}
+    likes: Les points les plus appréciés concernant ${tool}
+    dislikes: Les points les plus critiqués concernant ${tool}
+    tool-usage-by-country: Utilisation de ${tool} par pays
+    other-languages: Autres Langages
+    browser-apis: APIs navigateur
     build-tools: Build Tools
-    utility-libraries: Utility Libraries
-    text-editors: Text Editors
-    countries: Responses per Country
+    utility-libraries: Librairies Utilitaires
+    text-editors: Éditeurs de texte
+    countries: Réponses par pays
     gender: Gender Breakdown
     salaries: Salaries
     salaries-map: Salaries per Country
     experience: Experience
     company-size: Company Size
-    participation-by-country: Participation by country
-    salary-per-country: Average salary per country
+    participation-by-country: Participation par pays
+    salary-per-country: Salaire moyen par pays
     opinion-js_moving_in_right_direction: JavaScript is moving in the right direction
     opinion-building_js_apps_overly_complex: Building JavaScript apps is overly complex right now
     opinion-js_over_used_online: JavaScript is over-used online
@@ -160,15 +160,15 @@ charts:
     opinion-would_like_js_to_be_main_lang: I would like JavaScript to be my main programming language
     opinion-js_ecosystem_changing_to_fast: The JavaScript ecosystem is changing too fast
     opinion-survey_too_long: This survey is too damn long!
-    tool-pairing: Which tools developers use along with ${tool}?
+    tool-pairing: Quels sont les outils communément utilisés avec ${tool} ?
 
 shortnames:
     introduction: Intro
-    javascript-flavors: Flavors
+    javascript-flavors: Langages
     front-end-frameworks: Front-end
     data-layer: Data Layer
     back-end-frameworks: Back-end
-    testing: Testing
+    testing: Tests
     mobile-and-desktop: Mobile & Desktop
     opinions: Opinions
     demographics: Demographics
@@ -188,9 +188,9 @@ symbols:
 
 intros:
     javascript-flavors: >
-        As JavaScript matures, developers are starting to look
-        beyond its borders and create various languages and dialects that
-        compile to JavaScript. 
+        Tandis que JavaScript évolue, de plus en plus de développeurs
+        commencent à voir au delà de ses limites et crééent de nombreux
+        langages/dialectes qui compilent en JavaScript.
     front-end-frameworks: >
         The front-end remains the key battleground for JavaScript. But now
         that the dust has cleared, it's starting to look like only two
@@ -200,9 +200,9 @@ intros:
         It's a vast category where many approaches compete to make a tricky problem more
         approachable.
     back-end-frameworks: >
-        JavaScript on the back-end hasn't seen any major breakthroughs in recent years. 
-        But compared to the rest of the ecosystem's frenetic pace,
-        many will say that this is a blessing, not a curse. 
+        Côté back-end, JavaScript n'a pas connu de changement majeurs ces dernières années.
+        Comparé au rythme frénétique auquel évolue le reste de son écosystème,
+        beaucoup diront que c'est un soulagement.
     testing: >
         Testing, testing… Is this thing on? Sorry, I Jest, but I would never want to make a Mocha-ry 
         of this section. That would be Jasmine (“just mean”? get it?), and that's bad Karma.

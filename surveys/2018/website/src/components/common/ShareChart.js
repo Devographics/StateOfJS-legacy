@@ -170,7 +170,7 @@ class ShareChart extends Component {
             >
                 <div className="share">
                     <div className="share-button button" onClick={this.toggleOptions}>
-                        Share
+                        {getWording('share')}
                     </div>
                 </div>
                 <div className="share-popup">
