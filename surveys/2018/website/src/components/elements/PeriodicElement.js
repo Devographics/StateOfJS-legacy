@@ -83,7 +83,7 @@ const PeriodicElement = ({
             <text
                 className="PeriodicTableElement_Symbol"
                 x={100 * 0.5}
-                y={100 * 0.55}
+                y={name ? 100 * 0.55 : 100 * 0.6}
                 width="100%"
                 textAnchor="middle"
                 fontSize={100 * 0.36}

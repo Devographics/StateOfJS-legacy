@@ -1,11 +1,32 @@
 import React, { Component } from 'react'
 import PeriodicElement from '../components/elements/PeriodicElement'
 
-const elementSize = 100
-const interval = 10 // lower = faster
-const velocity = 1.4 // higher = faster
-const returnVelocity = 10 // lower = faster
+/*
 
+Config: 
+
+- elementSize:          Size of an individual element tile
+- interval:             How often the animation's tick should be updated (in ms). 
+                        Lower values will results in faster animations
+- velocity:             How fast the elements move (higher = faster)
+- frictionCoefficient:  How fast the elements slow down after a boost (lower = stronger friction)
+- initialMultiplier:    How much to accelerate elements after a boost (higher = faster)
+
+*/
+const elementSize = 100
+const interval = 10
+const velocity = 1.4
+const returnVelocity = 10 // lower = faster
+const frictionCoefficient = 5 // lower = stronger friction
+const initialMultiplier = 10 // higher = faster
+
+const keep2Decimals = x => Math.round(x * 100) /100
+
+/*
+
+Note: x and y coordinates are plotted on a 5 by 3 grid
+
+*/
 const logoElements = [
     {
         x: 0,
@@ -75,6 +96,11 @@ class Home extends Component {
         stopped: false
     }
 
+    /*
+
+    Get initial positions given the container's height and width
+
+    */
     getInitPositions = (height, width) => {
         const positions = {}
         const origin = {
@@ -82,51 +108,116 @@ class Home extends Component {
             y: height / 2 - (elementSize * 3) / 2
         }
         logoElements.forEach(({ x, y, symbol }) => {
-            const angle = getRandomAngle()
             positions[symbol] = {
                 x: origin.x + x * elementSize,
                 y: origin.y + y * elementSize,
-                angle,
-                xSpeed: Math.cos(angle) * velocity,
-                ySpeed: Math.sin(angle) * velocity
+                ...this.getAngle()
             }
         })
         return positions
     }
 
-    getRandomAngles = positions => {
+    /*
+
+    Get a random angle along with x and y velocities
+    (add multiplier which will then get scaled down to simulate friction)
+
+    */
+    getAngle = () => {
+        const angle = getRandomAngle()
+        const baseXSpeed = keep2Decimals(Math.cos(angle) * velocity)
+        const baseYSpeed = keep2Decimals(Math.sin(angle) * velocity)
+        return {
+            angle,
+            baseXSpeed,
+            baseYSpeed,
+            xSpeed: baseXSpeed*initialMultiplier,
+            ySpeed: baseYSpeed*initialMultiplier
+        }
+    }
+
+    /*
+
+    Reset all angles and velocities to new random values
+
+    */
+    resetAngles = positions => {
         const newPositions = {}
         Object.keys(positions).forEach(symbol => {
-            const angle = getRandomAngle()
             newPositions[symbol] = {
                 ...positions[symbol],
-                angle,
-                xSpeed: Math.cos(angle) * velocity,
-                ySpeed: Math.sin(angle) * velocity
+                ...this.getAngle(),
             }
         })
         return newPositions
     }
 
+    /*
+
+    Compute latest positions
+
+    */
     computePositions = positions => {
         const { height, width, initPositions, stopped } = this.state
         const newPositions = {}
         Object.keys(positions).forEach(symbol => {
-            let { x, y, xSpeed, ySpeed, angle } = positions[symbol]
+            let { x, y, xSpeed, ySpeed, angle, baseXSpeed, baseYSpeed } = positions[symbol]
             if (stopped) {
+                /*
+
+                The animation is stopped, return to original positions
+
+                */
                 xSpeed = (initPositions[symbol].x - x) / returnVelocity
                 ySpeed = (initPositions[symbol].y - y) / returnVelocity
             } else {
+                /*
+
+                The animation is live, bounce around
+
+                */
+                /*
+
+                Calculate difference between current velocity and target velocity and
+                then divide that by friction coefficient to get velocity delta
+
+                */
+                let xSpeedDelta = keep2Decimals((xSpeed - baseXSpeed) / frictionCoefficient)
+                let ySpeedDelta = keep2Decimals((ySpeed - baseYSpeed) / frictionCoefficient)
+                /*
+
+                If delta gets too low, stop calculating it
+
+                */
+                if (Math.abs(xSpeedDelta) < 0.01) xSpeedDelta = 0
+                if (Math.abs(ySpeedDelta) < 0.01) ySpeedDelta = 0
+                /*
+
+                Take out delta from directional speed to slow down movement
+
+                */
+                xSpeed -= xSpeedDelta
+                ySpeed -= ySpeedDelta
+
+                /*
+
+                Bounce at the edges.
+                
+                Note: we also reverse the base speed to avoid messing up the delta calculations above
+
+                */
                 if (x <= 0 + elementSize || x >= width - elementSize) {
                     xSpeed = -xSpeed
+                    baseXSpeed = -baseXSpeed
                 }
                 if (y <= 0 + elementSize || y >= height - elementSize) {
                     ySpeed = -ySpeed
+                    baseYSpeed = -baseYSpeed
                 }
             }
             x += xSpeed
             y += ySpeed
-            newPositions[symbol] = { x, y, xSpeed, ySpeed, angle }
+            newPositions[symbol] = { baseXSpeed, baseYSpeed, x, y, xSpeed, ySpeed, angle }
         })
         return newPositions
     }
@@ -162,7 +253,7 @@ class Home extends Component {
     restartAnimation = () => {
         this.setState(({ positions }) => ({
             stopped: false,
-            positions: this.getRandomAngles(positions)
+            positions: this.resetAngles(positions)
         }))
     }
 
@@ -189,15 +280,15 @@ class Home extends Component {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                     >
-                        {logoElements.map(({ symbol }) => (
+                        {logoElements.map(({ symbol }, i) => (
                             <PeriodicElement
                                 key={symbol}
+                                number={i}
                                 className={`LogoAnimation__Element LogoAnimation__Element--${symbol}`}
                                 x={positions[symbol].x}
                                 y={positions[symbol].y}
                                 symbol={symbol}
-                                // name={positions[symbol].angle}
-                                number={null}
+                                // name={`${keep2Decimals(positions[symbol].xSpeed)}, ${keep2Decimals(positions[symbol].ySpeed)}`}
                                 size={elementSize}
                             />
                         ))}
