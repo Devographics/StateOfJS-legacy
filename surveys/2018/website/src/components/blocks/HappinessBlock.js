@@ -19,7 +19,9 @@ class HappinessBlock extends PureComponent {
                 <BlockTitle chart="happiness" />
                 <div className="block__description">
                     <p>
-                        {getWording('block_intro.happiness', { section: currentPage.section.label })}
+                        {getWording('block_intro.happiness', {
+                            section: currentPage.section.label
+                        })}
                     </p>
                 </div>
                 <div>

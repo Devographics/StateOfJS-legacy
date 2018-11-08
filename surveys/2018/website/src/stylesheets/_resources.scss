@@ -32,7 +32,7 @@
     @include large {
         display: grid;
         grid-template-columns: auto auto;
-        grid-gap: $spacing*2;
+        grid-gap: $spacing * 2;
     }
 }
 .sponsors-list {
