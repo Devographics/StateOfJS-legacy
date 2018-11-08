@@ -5,16 +5,15 @@ import BlockTitle from '../elements/BlockTitle'
 import ReasonsChartUnit from './ReasonsChartUnit'
 
 export default class ReasonsChart extends Component {
-
     getData = () => {
         const { like, dislike } = this.props.reasons
 
         const dislikeData = reasons.dislike
             .map(reason => {
-                const match = dislike.find(r => r.id === reason.id)
+                const match = dislike.find(r => r.id === reason)
 
                 return {
-                    id: reason.id,
+                    id: reason,
                     count: match !== undefined ? match.count : 0
                 }
             })
@@ -23,10 +22,10 @@ export default class ReasonsChart extends Component {
 
         const likeData = reasons.like
             .map(reason => {
-                const match = like.find(r => r.id === reason.id)
+                const match = like.find(r => r.id === reason)
 
                 return {
-                    id: reason.id,
+                    id: reason,
                     count: match !== undefined ? match.count : 0
                 }
             })
@@ -38,7 +37,6 @@ export default class ReasonsChart extends Component {
 
     render() {
         const { tool } = this.props
-
         const { likeData, dislikeData } = this.getData()
 
         return (

@@ -1,5 +1,5 @@
 .ToolHeader {
-    @include medium-large{
+    @include medium-large {
         display: flex;
     }
     .PeriodicTableElementHtml {
@@ -7,15 +7,14 @@
     }
 }
 .ToolHeader__Element {
-    svg{
+    svg {
         display: block;
     }
-    @include small{
+    @include small {
         margin-bottom: $spacing/4;
-        
     }
 
-    @include medium-large{
+    @include medium-large {
         flex-shrink: 1;
         flex-basis: 120px;
         margin-right: $spacing;
@@ -41,15 +40,15 @@
     @include small {
         font-size: 1.3rem;
     }
-    @include medium{
+    @include medium {
         font-size: 1.5rem;
     }
     @include large {
         font-size: 2rem;
     }
 }
-.ToolHeader__Title{
-    @include small{
+.ToolHeader__Title {
+    @include small {
         display: none;
     }
 }
@@ -66,8 +65,8 @@
     margin-right: $spacing/2;
 }
 
-.ToolHeader__Stars{
-    @include small-medium{
+.ToolHeader__Stars {
+    @include small-medium {
         display: none;
     }
 }

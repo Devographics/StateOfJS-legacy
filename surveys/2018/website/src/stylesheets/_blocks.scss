@@ -1,12 +1,13 @@
-.Block, .block {
-    @include small{
-        margin-bottom: $spacing*2;
+.Block,
+.block {
+    @include small {
+        margin-bottom: $spacing * 2;
     }
-    @include medium-large{
+    @include medium-large {
         margin-bottom: $spacing * 4;
     }
-    &:last-child{
-    	margin: 0;
+    &:last-child {
+        margin: 0;
     }
 }
 

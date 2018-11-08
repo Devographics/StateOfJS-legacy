@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import BlockTitle from '../elements/BlockTitle'
 import SalaryPerCountryMap from '../charts/SalaryPerCountryMap'
-import ChartContainer from '../elements/ChartContainer';
+import ChartContainer from '../elements/ChartContainer'
 
 export default class SalaryPerCountryBlock extends Component {
     render() {

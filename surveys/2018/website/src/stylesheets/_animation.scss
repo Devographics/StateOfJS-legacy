@@ -1,47 +1,46 @@
-
 .LogoAnimation__Wrapper {
-  height: 100vh;
-  width: 100%;
-  position: relative;
+    height: 100vh;
+    width: 100%;
+    position: relative;
 }
-.LogoAnimation__Inner{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  @include flex-center;
+.LogoAnimation__Inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    @include flex-center;
 }
 .LogoAnimation {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 .LogoAnimation__Element {
-  &--St,
-  &--At,
-  &--E,
-  &--Of {
-      .PeriodicTableElement_Symbol {
-          fill: $text-color;
-      }
-  }
-  &--Ja,
-  &--Va,
-  &--Sc,
-  &--Ri,
-  &--Pt {
-      .PeriodicTableElement_Symbol {
-          fill: $blue;
-      }
-  }
-  &--20,
-  &--18 {
-      .PeriodicTableElement_Symbol {
-          fill: $red;
-      }
-  }
+    &--St,
+    &--At,
+    &--E,
+    &--Of {
+        .PeriodicTableElement_Symbol {
+            fill: $text-color;
+        }
+    }
+    &--Ja,
+    &--Va,
+    &--Sc,
+    &--Ri,
+    &--Pt {
+        .PeriodicTableElement_Symbol {
+            fill: $blue;
+        }
+    }
+    &--20,
+    &--18 {
+        .PeriodicTableElement_Symbol {
+            fill: $red;
+        }
+    }
 }
 
-.LogoAnimation__Button{
-  font-size: 2rem;
+.LogoAnimation__Button {
+    font-size: 2rem;
 }

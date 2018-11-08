@@ -48,7 +48,7 @@
     border-right: none;
     // display: block;
     // line-height: 1;
-    button{
+    button {
         background: none;
         cursor: pointer;
         border: none;
@@ -117,25 +117,26 @@
     }
 }
 
-.Logo__Wrapper{
+.Logo__Wrapper {
     margin: 0;
 }
 .Logo {
-    &, svg{
+    &,
+    svg {
         display: block;
     }
 }
-.Logo--desktop{
-    @include small-medium{
+.Logo--desktop {
+    @include small-medium {
         display: none;
     }
 }
-.Logo--mobile{
-    @include small-medium{
+.Logo--mobile {
+    @include small-medium {
         display: grid;
         grid-template-columns: 4fr 1fr;
     }
-    @include large{
+    @include large {
         display: none;
     }
 }

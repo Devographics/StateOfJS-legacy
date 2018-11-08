@@ -20,7 +20,7 @@ const returnVelocity = 10 // lower = faster
 const frictionCoefficient = 5 // lower = stronger friction
 const initialMultiplier = 10 // higher = faster
 
-const keep2Decimals = x => Math.round(x * 100) /100
+const keep2Decimals = x => Math.round(x * 100) / 100
 
 /*
 
@@ -131,8 +131,8 @@ class Home extends Component {
             angle,
             baseXSpeed,
             baseYSpeed,
-            xSpeed: baseXSpeed*initialMultiplier,
-            ySpeed: baseYSpeed*initialMultiplier
+            xSpeed: baseXSpeed * initialMultiplier,
+            ySpeed: baseYSpeed * initialMultiplier
         }
     }
 
@@ -146,7 +146,7 @@ class Home extends Component {
         Object.keys(positions).forEach(symbol => {
             newPositions[symbol] = {
                 ...positions[symbol],
-                ...this.getAngle(),
+                ...this.getAngle()
             }
         })
         return newPositions
