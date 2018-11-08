@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import PeriodicElement from '../components/elements/PeriodicElement'
+import PeriodicElement from './PeriodicElement'
 import Link from 'gatsby-link'
 
 /*
