@@ -84,7 +84,7 @@
     border: none;
     text-align: right;
     @include large {
-        span + span + & {
+        span + span + &, .pagetitle__wrapper--bottom span+& {
             border-left: 1px solid $dark-border-color;
         }
     }

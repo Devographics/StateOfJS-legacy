@@ -40,4 +40,6 @@ The site is set in IBM Plex Mono. Fire gif borrowed from [Animal Jam](http://ani
 
 And now, let's see what JavaScript has been up to this year!
 
-<span class="conclusion__byline">– Sacha</span>
+P.S. We put a lot of work and care into this year's site, so please don't go clicking around breaking things!
+
+<span class="conclusion__byline">– Sacha, Raphaël, and Michael</span>

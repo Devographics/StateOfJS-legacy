@@ -4,8 +4,9 @@ import PageTitle from './PageTitle'
 import '../../stylesheets/screen.scss'
 import Sidebar from './Sidebar'
 import Animation from '../elements/Animation'
+import withPageData from '../../helpers/withPageData'
 
-export default class Layout extends PureComponent {
+class Layout extends PureComponent {
     constructor() {
         super()
         this.state = {
@@ -39,7 +40,7 @@ export default class Layout extends PureComponent {
     }
 
     render() {
-        const title = this.props.title
+        const title = this.props.currentPage.fullTitle
         const description = 'A short survey about current popular JavaScript technologies.'
         const url = 'http://stateofjs.com'
         const image = 'http://stateofjs.com/images/javascript2017-white.png'
@@ -72,6 +73,7 @@ export default class Layout extends PureComponent {
         return (
             <div className={`pagelayout ${sidebarClassName} PageLayout--${showAnim ? 'anim' : ''}`}>
                 <Helmet meta={meta}>
+                    <title>{title}</title>
                     <script
                         src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js"
                         type="text/javascript"
@@ -112,3 +114,5 @@ export default class Layout extends PureComponent {
         )
     }
 }
+
+export default withPageData(Layout)
