@@ -3,12 +3,14 @@ import Helmet from 'react-helmet'
 import PageTitle from './PageTitle'
 import '../../stylesheets/screen.scss'
 import Sidebar from './Sidebar'
+import Animation from '../elements/Animation'
 
 export default class Layout extends PureComponent {
     constructor() {
         super()
         this.state = {
-            showSidebar: false
+            showSidebar: false,
+            showAnim: false
         }
     }
 
@@ -27,6 +29,12 @@ export default class Layout extends PureComponent {
     closeSidebar = () => {
         this.setState({
             showSidebar: false
+        })
+    }
+
+    showAnim = () => {
+        this.setState({
+            showAnim: true
         })
     }
 
@@ -58,10 +66,11 @@ export default class Layout extends PureComponent {
         ]
 
         const { showPagination = true } = this.props
+        const { showAnim } = this.state
         const sidebarClassName = this.state.showSidebar ? 'Sidebar--shown' : 'Sidebar--hidden'
 
         return (
-            <div className={`pagelayout ${sidebarClassName}`}>
+            <div className={`pagelayout ${sidebarClassName} PageLayout--${showAnim ? 'anim' : ''}`}>
                 <Helmet meta={meta}>
                     <script
                         src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js"
@@ -72,11 +81,14 @@ export default class Layout extends PureComponent {
                     href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i|Roboto+Slab:300,400,700"
                     rel="stylesheet"
                 />
+                {this.state.showAnim && <Animation showStart={false} variant="simple" size={70} />}
+
                 <div className="pagelayout__inner">
                     <Sidebar
                         {...this.props}
                         sidebarClassName={sidebarClassName}
                         closeSidebar={this.closeSidebar}
+                        showAnim={this.showAnim}
                     />
                     <div className="pagelayout__content">
                         <PageTitle

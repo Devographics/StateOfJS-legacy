@@ -2,6 +2,13 @@
     height: 100vh;
     width: 100%;
     position: relative;
+    &--simple{
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        position: fixed;
+        pointer-events: none;
+    }
 }
 .LogoAnimation__Inner {
     position: absolute;
@@ -44,3 +51,4 @@
 .LogoAnimation__Button {
     font-size: 2rem;
 }
+

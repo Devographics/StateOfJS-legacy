@@ -130,6 +130,9 @@
     @include small-medium {
         display: none;
     }
+    .PageLayout--anim &{
+        visibility: hidden;
+    }
 }
 .Logo--mobile {
     @include small-medium {

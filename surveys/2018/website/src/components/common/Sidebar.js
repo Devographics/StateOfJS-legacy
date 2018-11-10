@@ -20,7 +20,7 @@ const Close = () => (
     </svg>
 )
 
-const Sidebar = ({ sidebarClassName, closeSidebar, rest }) => (
+const Sidebar = ({ sidebarClassName, closeSidebar, rest, showAnim }) => (
     <div className={`Sidebar ${sidebarClassName}`}>
         <div className="Sidebar__Fixed">
             <h1 className="Logo__Wrapper">
@@ -32,9 +32,9 @@ const Sidebar = ({ sidebarClassName, closeSidebar, rest }) => (
                         </button>
                     </span>
                 </span>
-                <Link to="/" className="Logo Logo--desktop">
+                <div onClick={showAnim} className="Logo Logo--desktop">
                     <Logo />
-                </Link>
+                </div>
             </h1>
             <div className="Sidebar__Inner">
                 <Nav {...rest} closeSidebar={closeSidebar} />

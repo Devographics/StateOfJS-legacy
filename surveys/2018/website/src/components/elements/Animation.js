@@ -32,7 +32,7 @@ function roundToTwo(num) {
 Note: x and y coordinates are plotted on a 5 by 3 grid
 
 */
-const logoElements = [
+const fullLogo = [
     {
         x: 0,
         y: 0,
@@ -90,6 +90,33 @@ const logoElements = [
     }
 ]
 
+const simpleLogo = [
+    {
+        x: 0,
+        y: 0,
+        symbol: 'St',
+        number: 1,
+    },
+    {
+        x: 1,
+        y: 0,
+        symbol: 'Js',
+        number: 2,
+    },
+    {
+        x: 2,
+        y: 0,
+        symbol: '20',
+        number: 3,
+    },
+    {
+        x: 4,
+        y: 0,
+        symbol: '18',
+        number: 4,
+    }
+]
+
 const getRandomAngle = () => {
     return Math.round(Math.random() * 360)
 }
@@ -101,6 +128,20 @@ class Animation extends Component {
         stopped: false
     }
 
+    getLogoElements = () => {
+        const { variant = 'full' } = this.props
+        return variant === 'full' ? fullLogo : simpleLogo
+    }
+
+    getOrigin = (height, width) => {
+        const { variant = 'full' } = this.props
+        const topLeft = { x: 1, y: 1 }
+        const center = {
+            x: width / 2 - (elementSize * 5) / 2,
+            y: height / 2 - (elementSize * 3) / 2
+        }
+        return variant === 'full' ? center : topLeft
+    }
     /*
 
     Get initial positions given the container's height and width
@@ -108,11 +149,8 @@ class Animation extends Component {
     */
     getInitPositions = (height, width) => {
         const positions = {}
-        const origin = {
-            x: width / 2 - (elementSize * 5) / 2,
-            y: height / 2 - (elementSize * 3) / 2
-        }
-        logoElements.forEach(({ x, y, symbol }) => {
+        const origin = this.getOrigin(height, width)
+        this.getLogoElements().forEach(({ x, y, symbol }) => {
             positions[symbol] = {
                 x: origin.x + x * elementSize,
                 y: origin.y + y * elementSize,
@@ -267,19 +305,25 @@ class Animation extends Component {
     }
 
     render() {
+        const { variant = 'full', size = elementSize } = this.props
         const { positions, height, width, ready } = this.state
         return (
-            <div className="LogoAnimation__Wrapper" id="LogoAnimation__Wrapper">
-                <div className="LogoAnimation__Inner">
-                    <Link
-                        onMouseEnter={this.stopAnimation}
-                        onMouseLeave={this.restartAnimation}
-                        className="LogoAnimation__Button button"
-                        to="/introduction"
-                    >
-                        Start
-                    </Link>
-                </div>
+            <div
+                className={`LogoAnimation__Wrapper LogoAnimation__Wrapper--${variant}`}
+                id="LogoAnimation__Wrapper"
+            >
+                {variant === 'full' && (
+                    <div className="LogoAnimation__Inner">
+                        <Link
+                            onMouseEnter={this.stopAnimation}
+                            onMouseLeave={this.restartAnimation}
+                            className="LogoAnimation__Button button"
+                            to="/introduction"
+                        >
+                            Start
+                        </Link>
+                    </div>
+                )}
                 {ready && (
                     <svg
                         className="LogoAnimation"
@@ -290,16 +334,16 @@ class Animation extends Component {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                     >
-                        {logoElements.map(({ symbol }, i) => (
+                        {this.getLogoElements().map(({ symbol, number }, i) => (
                             <PeriodicElement
                                 key={symbol}
-                                number={i}
+                                number={number || i}
                                 className={`LogoAnimation__Element LogoAnimation__Element--${symbol}`}
                                 x={positions[symbol].x}
                                 y={positions[symbol].y}
                                 symbol={symbol}
                                 // name={`${roundToTwo(positions[symbol].xSpeed)}, ${roundToTwo(positions[symbol].ySpeed)}`}
-                                size={elementSize}
+                                size={size}
                             />
                         ))}
                     </svg>
