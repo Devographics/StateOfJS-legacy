@@ -11,7 +11,8 @@
         display: block;
     }
     @include small {
-        margin-bottom: $spacing/4;
+        max-width: 150px;
+        margin: 0 auto $spacing/4 auto;
     }
 
     @include medium-large {

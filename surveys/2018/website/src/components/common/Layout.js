@@ -67,22 +67,18 @@ class Layout extends PureComponent {
         ]
 
         const { showPagination = true } = this.props
-        const { showAnim } = this.state
-        const sidebarClassName = this.state.showSidebar ? 'Sidebar--shown' : 'Sidebar--hidden'
+        const { showAnim, showSidebar } = this.state
+        const sidebarClassName = showSidebar ? 'Sidebar--shown' : 'Sidebar--hidden'
 
         return (
-            <div className={`pagelayout ${sidebarClassName} PageLayout--${showAnim ? 'anim' : ''}`}>
+            <div className={`pagelayout PageLayout--${showSidebar ? 'sidebar' : 'nosidebar'} PageLayout--${showAnim ? 'anim' : 'noanim'}`}>
                 <Helmet meta={meta}>
                     <title>{title}</title>
-                    <script
-                        src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js"
-                        type="text/javascript"
+                    <link
+                        href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,400,400i,600"
+                        rel="stylesheet"
                     />
                 </Helmet>
-                <link
-                    href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i|Roboto+Slab:300,400,700"
-                    rel="stylesheet"
-                />
                 {this.state.showAnim && <Animation showStart={false} variant="simple" size={70} />}
 
                 <div className="pagelayout__inner">

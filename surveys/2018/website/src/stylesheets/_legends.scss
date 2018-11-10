@@ -1,8 +1,12 @@
 .Legends {
     font-size: 12px;
+    display: grid;
+    grid-gap: $spacing;
     @include small-medium {
         grid-template-columns: 1fr 1fr;
-        grid-gap: $spacing;
+    }
+    @include large {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -28,6 +32,7 @@
 .Legends--withFrame {
     border: 1px dashed $light-border-color;
     border-radius: 3px;
+    padding: $spacing;
 }
 
 .Legends--horizontal.Legends--withFrame {
@@ -55,12 +60,12 @@
     flex-shrink: 0;
 }
 
-.Legends--connections {
-    padding: $spacing / 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+// .Legends--connections {
+//     padding: $spacing / 2;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+// }
 
-.Legends--connections .Legends__Item {
-    padding: $spacing / 2;
-}
+// .Legends--connections .Legends__Item {
+//     padding: $spacing / 2;
+// }

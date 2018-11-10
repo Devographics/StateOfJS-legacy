@@ -1,3 +1,8 @@
+.PageLayout--sidebar{
+    overflow: hidden;
+    height: 100vh;
+}
+
 .Sidebar {
     // background: $light-bg-color;
     border-right: 1px solid $dark-border-color;
@@ -26,10 +31,11 @@
 .Sidebar__Fixed {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    position: fixed;
+
     @include large {
-        height: 100vh;
         width: $sidebar_width;
-        position: fixed;
     }
 }
 
@@ -138,6 +144,10 @@
     @include small-medium {
         display: grid;
         grid-template-columns: 4fr 1fr;
+        svg{
+            display: block;
+            width: 100%;
+        }
     }
     @include large {
         display: none;
