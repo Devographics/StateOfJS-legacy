@@ -1,20 +1,26 @@
 import React from 'react'
-import Layout from 'react-document-title'
+import Layout from '../components/common/Layout'
+import { graphql } from 'gatsby'
+import TextBlock from '../components/blocks/TextBlock'
+import SectionHeader from '../components/elements/SectionHeader'
 
-const Support = props => (
-    <Layout {...props}>
-        <div>
-            <p>
-                The State of JavaScript survey is a volunteer project, but in order to make the
-                project sustainable we&quot;re always looking for partners who can help support us,
-                either financially or by helping us spread the word.
-            </p>
-            <p>
-                If you think you could help in any way, please don&quot;t hesitate to{' '}
-                <a href="mailto:hello@stateofjs.com">get in touch</a>!
-            </p>
-        </div>
+const title = 'Support Us'
+
+const Support = ({ data }) => (
+    <Layout title={title}>
+        <SectionHeader currentPage={{ title }} showIntro={false} />
+        <TextBlock text={data.file.childMarkdownRemark.html} />
     </Layout>
 )
 
 export default Support
+
+export const query = graphql`
+    query {
+        file(name: { eq: "support" }) {
+            childMarkdownRemark {
+                html
+            }
+        }
+    }
+`

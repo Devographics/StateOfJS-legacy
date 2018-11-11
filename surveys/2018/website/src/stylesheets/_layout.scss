@@ -42,10 +42,10 @@ $sidebar_width: 270px;
 .pagelayout__content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .pagelayout__main {
+    flex-grow: 1;
     @include small-medium {
         padding: $spacing;
     }

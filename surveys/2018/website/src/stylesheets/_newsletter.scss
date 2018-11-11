@@ -44,9 +44,9 @@
     }
 }
 
-.block--newsletter {
-    border: 1px solid $border-color;
-    padding: $spacing;
+.Block--Newsletter {
+    @include border2;
+    padding: $spacing*1.5;
     .newsletter {
         margin-bottom: 0;
     }
@@ -58,6 +58,12 @@
     }
 }
 
+.Newsletter__Heading{
+    margin-bottom: $spacing/2;
+}
+.Newsletter__Description{
+    margin-bottom: $spacing;
+}
 .block--newsletter--home {
     text-align: center;
     @include border;

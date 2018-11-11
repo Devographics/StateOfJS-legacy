@@ -40,7 +40,7 @@ class Layout extends PureComponent {
     }
 
     render() {
-        const title = this.props.currentPage.fullTitle
+        const title = this.props.title || this.props.currentPage && this.props.currentPage.fullTitle
         const description = 'A short survey about current popular JavaScript technologies.'
         const url = 'http://stateofjs.com'
         const image = 'http://stateofjs.com/images/javascript2017-white.png'

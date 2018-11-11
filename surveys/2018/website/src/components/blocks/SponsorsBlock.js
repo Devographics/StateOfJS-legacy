@@ -1,32 +1,25 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import _ from 'lodash'
-import MarkdownIt from 'markdown-it'
-
 import sponsors from '../../data/sponsors.yaml'
-
-const md = new MarkdownIt()
+import Link from 'gatsby-link'
 
 const SponsorsBlock = () => (
-    <div className="sponsors-list">
-        {_.map(sponsors, sponsor => (
-            <div className="sponsor" key={sponsor.name}>
-                <div className="sponsor-image">
-                    <div>
-                        <img src={`/images/sponsors/${sponsor.image}`} />
+    <div className="Sponsors__Wrapper">
+        <div className="Sponsors">
+            <h3 className="Sponsors__Heading">Our 2018 Partners:</h3>
+            <div className="Sponsors__Items">
+                {sponsors.map(({ name, image, url }) => (
+                    <div className="Sponsors__Item" key={name}>
+                        <a href={url}>
+                            <img title={name} src={`/images/sponsors/${image}`} />
+                        </a>
                     </div>
-                </div>
-                <div className="sponsor-contents">
-                    <h4 className="sponsor-title">
-                        <a href={sponsor.url}>{sponsor.name}</a>
-                    </h4>
-                    <div
-                        className="sponsor-description"
-                        dangerouslySetInnerHTML={{ __html: md.render(sponsor.description) }}
-                    />
-                </div>
+                ))}
             </div>
-        ))}
+        </div>
+        <Link className="Sponsors__Support" to="/support">
+            Become a partner
+        </Link>
     </div>
 )
 

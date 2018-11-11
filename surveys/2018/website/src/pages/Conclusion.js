@@ -1,13 +1,10 @@
 import React from 'react'
 import TextBlock from '../components/blocks/TextBlock'
-import Newsletter from '../components/common/Newsletter'
+import NewsletterBlock from '../components/blocks/NewsletterBlock'
 import Layout from '../components/common/Layout'
 import SectionHeader from '../components/elements/SectionHeader'
 import { graphql } from 'gatsby'
 
-const newsletterText = `
-If you'd like to know when we release additional results or announce next year's edition, just leave us your email below:
-`
 
 const Conclusion = ({ data, rest }) => (
     <Layout {...rest}>
@@ -15,10 +12,7 @@ const Conclusion = ({ data, rest }) => (
             <SectionHeader showIntro={false} />
             <TextBlock text={data.file.childMarkdownRemark.html} />
 
-            <div className="block block--newsletter">
-                <TextBlock title="Stay Tuned" text={newsletterText} />
-                <Newsletter />
-            </div>
+            <NewsletterBlock />
         </div>
     </Layout>
 )
