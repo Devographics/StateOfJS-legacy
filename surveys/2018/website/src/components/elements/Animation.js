@@ -95,25 +95,25 @@ const simpleLogo = [
         x: 0,
         y: 0,
         symbol: 'St',
-        number: 1,
+        number: 1
     },
     {
         x: 1,
         y: 0,
         symbol: 'Js',
-        number: 2,
+        number: 2
     },
     {
         x: 2,
         y: 0,
         symbol: '20',
-        number: 3,
+        number: 3
     },
     {
         x: 4,
         y: 0,
         symbol: '18',
-        number: 4,
+        number: 4
     }
 ]
 

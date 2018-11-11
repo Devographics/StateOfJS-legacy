@@ -4,8 +4,8 @@
     margin-top: $spacing * 3;
 }
 .Sponsors__Heading {
-  text-align: center;
-  margin-bottom: $spacing;
+    text-align: center;
+    margin-bottom: $spacing;
 }
 .Sponsors__Items {
     @include flex-center;
@@ -32,13 +32,15 @@
     }
 }
 
-.Sponsors__Support{
-  font-size: $smallish-font;
-  text-align: center;
-  display: block;
-  margin-top: $spacing/2;
-  @include font-regular;
-  &, &:link, &:visited{
-    color: $darker-text-color;
-  }
+.Sponsors__Support {
+    font-size: $smallish-font;
+    text-align: center;
+    display: block;
+    margin-top: $spacing/2;
+    @include font-regular;
+    &,
+    &:link,
+    &:visited {
+        color: $darker-text-color;
+    }
 }

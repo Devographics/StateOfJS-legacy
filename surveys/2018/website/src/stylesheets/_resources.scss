@@ -38,7 +38,7 @@
 .sponsors-list {
     margin-bottom: $spacing;
 }
-.resource{
+.resource {
     // border: 1px solid $border-color;
     // border-radius: 3px;
     margin-bottom: $spacing;
@@ -47,7 +47,7 @@
         display: flex;
     }
 }
-.resource-image{
+.resource-image {
     @include crosshatchBg;
     @include small {
         width: 60px;
@@ -79,10 +79,10 @@
         border: 3px solid white;
     }
 }
-.resource-contents{
+.resource-contents {
     flex: 1;
 }
-.resource-title{
+.resource-title {
     margin-bottom: 0;
 }
 .sponsor-title {

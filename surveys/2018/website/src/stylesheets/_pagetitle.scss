@@ -83,7 +83,8 @@
 .pagination__next {
     border: none;
     text-align: right;
-    span + span + &, .pagetitle__wrapper--bottom span+& {
+    span + span + &,
+    .pagetitle__wrapper--bottom span + & {
         border-left: 1px solid $dark-border-color;
     }
 }
