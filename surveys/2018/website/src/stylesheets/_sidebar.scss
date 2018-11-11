@@ -42,6 +42,9 @@
 .Sidebar__Inner {
     padding: $spacing * 1.5;
     overflow-y: scroll;
+    @include small{
+        padding-bottom: $spacing*4;
+    }
 }
 
 .Sidebar__Close {
