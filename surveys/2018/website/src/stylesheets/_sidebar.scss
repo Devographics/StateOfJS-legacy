@@ -108,7 +108,7 @@
     display: block;
     margin-right: $spacing/2;
     font-size: $smallish-font;
-    @include font-light;
+    @include font-regular;
     &,
     &:link,
     &:visited {

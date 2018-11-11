@@ -75,7 +75,7 @@ class Layout extends PureComponent {
                 <Helmet meta={meta}>
                     <title>{title}</title>
                     <link
-                        href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,400,400i,600"
+                        href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,600"
                         rel="stylesheet"
                     />
                 </Helmet>
