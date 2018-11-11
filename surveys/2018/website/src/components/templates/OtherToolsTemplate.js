@@ -6,9 +6,8 @@ import SectionHeader from '../elements/SectionHeader'
 import BarBlock from '../blocks/BarBlock'
 
 const OtherToolsTemplate = ({ data }) => {
-    const otherTools = data.sectionsYaml.other_tools
-        .find(ot => ot.survey_id === '2018')
-        .tools.reverse()
+    const surveyData = data.sectionsYaml.other_tools.find(ot => ot.survey_id === '2018')
+    const otherTools = [...surveyData.tools].reverse()
 
     return (
         <Layout>

@@ -46,7 +46,7 @@
 
 .Block--Newsletter {
     @include border2;
-    padding: $spacing*1.5;
+    padding: $spacing * 1.5;
     .newsletter {
         margin-bottom: 0;
     }
@@ -58,10 +58,10 @@
     }
 }
 
-.Newsletter__Heading{
+.Newsletter__Heading {
     margin-bottom: $spacing/2;
 }
-.Newsletter__Description{
+.Newsletter__Description {
     margin-bottom: $spacing;
 }
 .block--newsletter--home {

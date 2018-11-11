@@ -40,7 +40,8 @@ class Layout extends PureComponent {
     }
 
     render() {
-        const title = this.props.title || this.props.currentPage && this.props.currentPage.fullTitle
+        const title =
+            this.props.title || (this.props.currentPage && this.props.currentPage.fullTitle)
         const description = 'A short survey about current popular JavaScript technologies.'
         const url = 'http://stateofjs.com'
         const image = 'http://stateofjs.com/images/javascript2017-white.png'
@@ -71,7 +72,11 @@ class Layout extends PureComponent {
         const sidebarClassName = showSidebar ? 'Sidebar--shown' : 'Sidebar--hidden'
 
         return (
-            <div className={`pagelayout PageLayout--${showSidebar ? 'sidebar' : 'nosidebar'} PageLayout--${showAnim ? 'anim' : 'noanim'}`}>
+            <div
+                className={`pagelayout PageLayout--${
+                    showSidebar ? 'sidebar' : 'nosidebar'
+                } PageLayout--${showAnim ? 'anim' : 'noanim'}`}
+            >
                 <Helmet meta={meta}>
                     <title>{title}</title>
                     <link

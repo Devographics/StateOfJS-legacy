@@ -1,4 +1,4 @@
-.PageLayout--sidebar{
+.PageLayout--sidebar {
     overflow: hidden;
     height: 100vh;
 }
@@ -139,7 +139,7 @@
     @include small-medium {
         display: none;
     }
-    .PageLayout--anim &{
+    .PageLayout--anim & {
         visibility: hidden;
     }
 }
@@ -147,7 +147,7 @@
     @include small-medium {
         display: grid;
         grid-template-columns: 4fr 1fr;
-        svg{
+        svg {
             display: block;
             width: 100%;
         }
