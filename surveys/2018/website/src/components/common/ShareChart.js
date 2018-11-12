@@ -5,17 +5,18 @@ import ReactGA from 'react-ga'
 import withPageData from '../../helpers/withPageData'
 import { getWording } from '../../helpers/wording'
 
-const trackShare = (platform, { section, subSection }) => () => {
+export const trackShare = (platform, page = {}, chart = '') => () => {
+    const { section, subSection } = page
     ReactGA.event({
         category: platform,
-        action: `${section.label}/${subSection.label} chart share`
+        action: page && chart ? `${section.label}/${subSection.label}/${chart} share` : `site share`
     })
 }
 
-const Twitter = ({ text, page }) => {
+export const Twitter = ({ text, page, chart }) => {
     return (
         <a
-            onClick={trackShare('Twitter', page)}
+            onClick={trackShare('Twitter', page, chart)}
             className="share__link--twitter share__link"
             href={`https://twitter.com/intent/tweet/?text=${encodeURIComponent(text)}`}
             target="_blank"
@@ -52,10 +53,10 @@ Twitter.propTypes = {
     page: PropTypes.object.isRequired
 }
 
-const Facebook = ({ link, page }) => {
+export const Facebook = ({ link, page, chart }) => {
     return (
         <a
-            onClick={trackShare('Facebook', page)}
+            onClick={trackShare('Facebook', page, chart)}
             className="share__link--facebook share__link"
             href={`https://facebook.com/sharer/sharer.php?u=${encodeURIComponent(link)}`}
             target="_blank"
@@ -92,10 +93,10 @@ Facebook.propTypes = {
     page: PropTypes.object.isRequired
 }
 
-const Email = ({ subject, body, page }) => {
+export const Email = ({ subject, body, page, chart }) => {
     return (
         <a
-            onClick={trackShare('Email', page)}
+            onClick={trackShare('Email', page, chart)}
             className="share__link--email share__link"
             href={`mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
             target="_self"
@@ -160,7 +161,7 @@ class ShareChart extends Component {
 
         const twitterText = `#StateOfJS 2018 Results: ${title} ${link}`
         const subject = 'State Of JavaScript Survey Results'
-        const body = `Here are some interesting survey results (${title}): ${link}`
+        const body = `Here are some interesting JavaScript survey results (${title}): ${link}`
 
         return (
             <div
@@ -175,9 +176,9 @@ class ShareChart extends Component {
                 </div>
                 <div className="share-popup">
                     <div className="share-options">
-                        <Twitter text={twitterText} page={currentPage} />
-                        <Facebook link={link} page={currentPage} />
-                        <Email subject={subject} body={body} page={currentPage} />
+                        <Twitter text={twitterText} page={currentPage} chart={chart} />
+                        <Facebook link={link} page={currentPage} chart={chart} />
+                        <Email subject={subject} body={body} page={currentPage} chart={chart} />
                     </div>
                 </div>
             </div>

@@ -33,7 +33,9 @@
     flex-direction: column;
     height: 100vh;
     position: fixed;
-
+    @include small-medium{
+        width: 100%;
+    }
     @include large {
         width: $sidebar_width;
     }
@@ -42,6 +44,7 @@
 .Sidebar__Inner {
     padding: $spacing * 1.5;
     overflow-y: scroll;
+    flex-grow: 1;
     @include small{
         padding-bottom: $spacing*4;
     }

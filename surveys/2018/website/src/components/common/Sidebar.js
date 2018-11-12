@@ -1,7 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import Nav from './Nav'
 import Logo from './Logo'
+import ShareSite from './ShareSite'
 
 const Close = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -38,6 +38,9 @@ const Sidebar = ({ sidebarClassName, closeSidebar, rest, showAnim }) => (
             </h1>
             <div className="Sidebar__Inner">
                 <Nav {...rest} closeSidebar={closeSidebar} />
+            </div>
+            <div className="Sidebar__Footer">
+                <ShareSite/>
             </div>
         </div>
     </div>
