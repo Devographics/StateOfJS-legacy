@@ -34,7 +34,7 @@ const NavItem = ({ currentPath, subPages, comingSoon, closeSidebar, index }) => 
 const NavSubItem = ({ page, closeSidebar }) => {
     return (
         <Link
-            className="nav-subpage"
+            className={`nav-subpage nav-subpage--${page.subSection.id}`}
             activeClassName="nav-subpage-active"
             to={page.path}
             onClick={closeSidebar}

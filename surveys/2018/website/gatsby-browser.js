@@ -1,5 +1,5 @@
 const ReactGA = require('react-ga')
-ReactGA.initialize('UA-83022212-4')
+ReactGA.initialize('UA-83022212-5')
 
 // eslint-disable-next-line no-unused-vars
 const ascii = `

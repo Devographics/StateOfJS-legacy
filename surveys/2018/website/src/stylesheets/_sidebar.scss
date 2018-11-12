@@ -87,7 +87,7 @@
 
 .nav-page {
     white-space: nowrap;
-    font-size: $smallish-font;
+    font-size: $medium-font;
     margin: 0;
 }
 
@@ -109,7 +109,7 @@
 
 .nav-subpage {
     display: block;
-    margin-right: $spacing/2;
+    // margin-right: $spacing/2;
     font-size: $smallish-font;
     @include font-regular;
     &,
@@ -126,6 +126,16 @@
     }
 }
 
+.nav-subpage--overview{
+    border-bottom: 1px dashed $dark-border-color;
+    padding-bottom: $spacing/3;
+    margin-bottom: $spacing/3;
+}
+.nav-subpage--other-libraries{
+    border-top: 1px dashed $dark-border-color;
+    padding-top: $spacing/3;
+    margin-top: $spacing/3;
+}
 .Logo__Wrapper {
     margin: 0;
 }
