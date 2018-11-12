@@ -77,155 +77,32 @@ opinions:
                 percentages: {never_heard: 44.8, interested: 21.3, not_interested: 26.7, would_use: 5.6, would_not_use: 1.6}
 other_tools:
     -
-        survey_id: '2017'
-        tools:
-            -
-                name: vuex
-                count: 358
-            -
-                name: mongodb
-                count: 165
-            -
-                name: ember
-                count: 61
-            -
-                name: ember-data
-                count: 61
-            -
-                name: flux
-                count: 56
-            -
-                name: pouchdb
-                count: 51
-            -
-                name: meteor
-                count: 42
-            -
-                name: ngrx
-                count: 41
-            -
-                name: graph.cool
-                count: 40
-            -
-                name: rxjs
-                count: 37
-            -
-                name: mysql
-                count: 35
-            -
-                name: parse
-                count: 34
-            -
-                name: couchdb
-                count: 30
-            -
-                name: rethinkdb
-                count: 24
-            -
-                name: realm
-                count: 22
-            -
-                name: redux
-                count: 20
-            -
-                name: redis
-                count: 19
-            -
-                name: elm
-                count: 18
-            -
-                name: gunjs
-                count: 15
-            -
-                name: cerebral
-                count: 14
-            -
-                name: graphql
-                count: 13
-            -
-                name: mobx
-                count: 12
-            -
-                name: feathers
-                count: 11
-            -
-                name: atom
-                count: 10
-            -
-                name: axios
-                count: 10
+        name: vuex
+        count: 719
     -
-        survey_id: '2018'
-        tools:
-            -
-                name: vuex
-                count: 719
-            -
-                name: ember
-                count: 161
-            -
-                name: ember-data
-                count: 161
-            -
-                name: ngrx
-                count: 96
-            -
-                name: rxjs
-                count: 66
-            -
-                name: mobx
-                count: 34
-            -
-                name: redux
-                count: 30
-            -
-                name: flux
-                count: 29
-            -
-                name: meteor
-                count: 24
-            -
-                name: mongodb
-                count: 17
-            -
-                name: elm
-                count: 16
-            -
-                name: falcor
-                count: 15
-            -
-                name: cerebral
-                count: 12
-            -
-                name: firebase
-                count: 12
-            -
-                name: clojurescript
-                count: 11
-            -
-                name: pouchdb
-                count: 10
+        name: ember-data
+        count: 161
     -
-        survey_id: '2016'
-        tools:
-            -
-                name: meteor
-                count: 36
-            -
-                name: .net
-                count: 30
-            -
-                name: express
-                count: 24
-            -
-                name: parse
-                count: 24
-            -
-                name: loopback
-                count: 21
-            -
-                name: feathers
-                count: 18
-            -
-                name: django
-                count: 12
+        name: ngrx
+        count: 96
+    -
+        name: rxjs
+        count: 66
+    -
+        name: flux
+        count: 29
+    -
+        name: mongodb
+        count: 17
+    -
+        name: falcor
+        count: 15
+    -
+        name: cerebral
+        count: 12
+    -
+        name: firebase
+        count: 12
+    -
+        name: pouchdb
+        count: 10

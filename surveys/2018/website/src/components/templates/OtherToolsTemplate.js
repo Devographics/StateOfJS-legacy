@@ -6,8 +6,7 @@ import SectionHeader from '../elements/SectionHeader'
 import BarBlock from '../blocks/BarBlock'
 
 const OtherToolsTemplate = ({ data }) => {
-    const surveyData = data.sectionsYaml.other_tools.find(ot => ot.survey_id === '2018')
-    const otherTools = [...surveyData.tools].reverse()
+    const otherTools = [...data.section.other_tools].reverse()
 
     return (
         <Layout>
@@ -26,14 +25,11 @@ const OtherToolsTemplate = ({ data }) => {
 
 export const query = graphql`
     query sectionOtherTools($section: String!) {
-        sectionsYaml(section_id: { eq: $section }) {
+        section: sectionsYaml(section_id: { eq: $section }) {
             section_id
             other_tools {
-                survey_id
-                tools {
-                    name
-                    count
-                }
+                name
+                count
             }
         }
     }

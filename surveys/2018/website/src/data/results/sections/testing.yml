@@ -87,155 +87,41 @@ opinions:
                 percentages: {never_heard: 33.3, not_interested: 20.5, interested: 19, would_use: 18.4, would_not_use: 8.7}
 other_tools:
     -
-        survey_id: '2017'
-        tools:
-            -
-                name: karma
-                count: 194
-            -
-                name: qunit
-                count: 187
-            -
-                name: chai
-                count: 155
-            -
-                name: protractor
-                count: 101
-            -
-                name: nightwatch
-                count: 57
-            -
-                name: cucumberjs
-                count: 55
-            -
-                name: sinon
-                count: 50
-            -
-                name: selenium
-                count: 48
-            -
-                name: elm
-                count: 33
-            -
-                name: elm-test
-                count: 28
-            -
-                name: cypress
-                count: 26
-            -
-                name: tap
-                count: 24
-            -
-                name: phantomjs
-                count: 22
-            -
-                name: testcafe
-                count: 19
-            -
-                name: intern
-                count: 18
-            -
-                name: mocha
-                count: 18
-            -
-                name: junit
-                count: 16
-            -
-                name: lab
-                count: 16
-            -
-                name: clojurescript
-                count: 13
-            -
-                name: jest
-                count: 13
+        name: cypress
+        count: 382
     -
-        survey_id: '2018'
-        tools:
-            -
-                name: cypress
-                count: 382
-            -
-                name: qunit
-                count: 170
-            -
-                name: tape
-                count: 167
-            -
-                name: chai
-                count: 70
-            -
-                name: testcafe
-                count: 45
-            -
-                name: protractor
-                count: 44
-            -
-                name: selenium
-                count: 43
-            -
-                name: nightwatch
-                count: 33
-            -
-                name: sinon
-                count: 31
-            -
-                name: cucumberjs
-                count: 30
-            -
-                name: tap
-                count: 22
-            -
-                name: elm
-                count: 20
-            -
-                name: jest
-                count: 15
-            -
-                name: ember
-                count: 14
-            -
-                name: intern
-                count: 14
-            -
-                name: elm-test
-                count: 13
+        name: qunit
+        count: 170
     -
-        survey_id: '2016'
-        tools:
-            -
-                name: tape
-                count: 257
-            -
-                name: qunit
-                count: 128
-            -
-                name: karma
-                count: 77
-            -
-                name: chai
-                count: 49
-            -
-                name: protractor
-                count: 47
-            -
-                name: nightwatch
-                count: 28
-            -
-                name: selenium
-                count: 28
-            -
-                name: tap
-                count: 26
-            -
-                name: sinon
-                count: 25
-            -
-                name: intern
-                count: 13
-            -
-                name: cypress
-                count: 12
-            -
-                name: mocha
-                count: 11
+        name: tape
+        count: 167
+    -
+        name: chai
+        count: 70
+    -
+        name: testcafe
+        count: 45
+    -
+        name: protractor
+        count: 44
+    -
+        name: selenium
+        count: 43
+    -
+        name: nightwatch
+        count: 33
+    -
+        name: sinon
+        count: 31
+    -
+        name: cucumberjs
+        count: 30
+    -
+        name: tap
+        count: 22
+    -
+        name: intern
+        count: 14
+    -
+        name: elm-test
+        count: 13

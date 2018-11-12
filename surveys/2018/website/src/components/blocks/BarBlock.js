@@ -21,7 +21,6 @@ export default class BarBlock extends Component {
         return (
             <div className="block block--chart block--othersbar">
                 <BlockTitle chart={chart} title={title} />
-
                 <div className="block__description">
                     <p>{description}</p>
                 </div>

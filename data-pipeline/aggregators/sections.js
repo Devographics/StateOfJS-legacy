@@ -1,23 +1,28 @@
 const elastic = require('../loaders/elastic')
 
 exports.happiness = async (sections, surveys, config) => {
-    const aggs = await elastic.aggs(sections.reduce((acc, section) => ({
-        ...acc,
-        [section]: {
-            terms: {
-                field: `happiness.${section}`,
-                size: sections.length,
-            },
-            aggs: {
-                survey: {
+    const aggs = await elastic.aggs(
+        sections.reduce(
+            (acc, section) => ({
+                ...acc,
+                [section]: {
                     terms: {
-                        field: 'survey.keyword',
-                        size: surveys.length,
+                        field: `happiness.${section}`,
+                        size: sections.length
                     },
-                },
-            },
-        },
-    }), {}))
+                    aggs: {
+                        survey: {
+                            terms: {
+                                field: 'survey.keyword',
+                                size: surveys.length
+                            }
+                        }
+                    }
+                }
+            }),
+            {}
+        )
+    )
 
     const happinessAggs = {}
     Object.keys(aggs.aggregations).forEach(section => {
@@ -26,7 +31,7 @@ exports.happiness = async (sections, surveys, config) => {
         const all = sectionAgg.buckets.reduce((acc, bucket) => {
             return {
                 ...acc,
-                [bucket.key]: bucket.doc_count,
+                [bucket.key]: bucket.doc_count
             }
         }, {})
 
@@ -38,13 +43,13 @@ exports.happiness = async (sections, surveys, config) => {
                 if (subBucket === undefined) {
                     return {
                         ...acc,
-                        [bucket.key]: 0,
+                        [bucket.key]: 0
                     }
                 }
 
                 return {
                     ...acc,
-                    [bucket.key]: subBucket.doc_count,
+                    [bucket.key]: subBucket.doc_count
                 }
             }, {})
         })
@@ -52,50 +57,65 @@ exports.happiness = async (sections, surveys, config) => {
         happinessAggs[section] = {
             surveys: appearsInSurveys,
             all,
-            ...bySurvey,
+            ...bySurvey
         }
     })
 
     return happinessAggs
 }
 
-exports.otherTools = async (sections) => {
-    const aggs = await elastic.aggs({
-        surveys: {
-            terms: {
-                field: 'survey.keyword',
-            },
-            aggs: sections.reduce((acc, section) => ({
-                ...acc,
-                [section]: {
-                    terms: {
-                        field: `other_tools.${section}.norm.keyword`,
-                        size: 50,
-                        min_doc_count: 10,
+/**
+ * Compute other tools for each sections
+ * for a given survey, tools which are already part
+ * of the survey's selected tools are excluded.
+ */
+exports.otherToolsForSurvey = async surveyConfig => {
+    const sections = Object.keys(surveyConfig.sections)
+    const { tools } = surveyConfig
+
+    const body = {
+        query: {
+            bool: {
+                must: [
+                    {
+                        term: {
+                            'survey.keyword': surveyConfig.id,
+                        },
                     },
-                },
-            }), {}),
+                ],
+            },
         },
+        aggs: sections.reduce((acc, section) => ({
+            ...acc,
+            [section]: {
+                terms: {
+                    field: `other_tools.${section}.norm.keyword`,
+                    size: 100,
+                    min_doc_count: 10,
+                    exclude: tools,
+                },
+            },
+        }), {}),
+    }
+
+    const result = await elastic.search({
+        size: 0,
+        body,
     })
 
+    console.log(require('util').inspect(result.aggregations, { depth: null, colors: true }))
+
     const otherToolsAggs = {}
-    sections.forEach(sectionId => {
-        const bySurvey = []
-        aggs.aggregations.surveys.buckets.map(survey => {
-            const sectionAggs = survey[sectionId]
-            if (sectionAggs === undefined || sectionAggs.buckets.length === 0) {
-                return
+    for (let section in result.aggregations) {
+        const sectionAggs = result.aggregations[section]
+        console.log(sectionAggs)
+        otherToolsAggs[section] = sectionAggs.buckets.map(bucket => {
+            return {
+                name: bucket.key,
+                count: bucket.doc_count,
             }
-            bySurvey.push({
-                survey_id: survey.key,
-                tools: sectionAggs.buckets.map(b => ({
-                    name: b.key,
-                    count: b.doc_count,
-                }))
-            })
         })
-        otherToolsAggs[sectionId] = bySurvey
-    })
+    }
 
     return otherToolsAggs
 }

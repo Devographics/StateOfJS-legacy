@@ -23,11 +23,12 @@ class CompoundAggregator {
         }
     }
 
-    async computeSections(sectionIds) {
+    async computeSections(sectionIds, currentSurveyId) {
         const surveyIds = Object.keys(this.config)
+        const currentSurveyConfig = this.config[currentSurveyId]
 
         const happiness = await sectionsAggregator.happiness(sectionIds, surveyIds, this.config)
-        const otherTools = await sectionsAggregator.otherTools(sectionIds)
+        const otherTools = await sectionsAggregator.otherToolsForSurvey(currentSurveyConfig)
 
         const sections = sectionIds.map(sectionId => {
             return {

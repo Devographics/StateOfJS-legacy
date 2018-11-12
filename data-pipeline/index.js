@@ -101,7 +101,7 @@ const aggregate = async () => {
     await saveResult('tools_ranking', toolsRanking)
 
     console.log('\ncomputing sections')
-    const sectionAggs = await aggregator.computeSections(sectionIds)
+    const sectionAggs = await aggregator.computeSections(sectionIds, currentSurvey)
 
     sectionIds.forEach(async sectionId => {
         const section = sectionAggs.find(s => s.section_id === sectionId)
