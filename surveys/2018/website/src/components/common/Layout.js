@@ -79,6 +79,7 @@ class Layout extends PureComponent {
             >
                 <Helmet meta={meta}>
                     <title>{title}</title>
+                    <link rel="shortcut icon" href="/images/favicon.png" />
                     <link
                         href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,600"
                         rel="stylesheet"

@@ -7,7 +7,7 @@ That's where the State of JavaScript survey comes in: this year, we surveyed ove
 Just like JavaScript, the survey itself has been changing too. Here's what's new this year.
 
 - You might notice the **new, darker color theme**. Yes, dark themes are trendy (we’ll let it go this time Apple, but please stop copying us) but we’re also hoping it makes the charts more readable. 
-- Also, there will be **no CSS section** this year. CSS is such a vast topic it would almost merit a survey of its own, so rather than do things halfway we decided to focus on JavaSript this time. 
+- Also, there will be **no CSS section** this year. CSS is such a vast topic it would almost merit a survey of its own, so rather than do things halfway we decided to focus on JavaScript this time. 
 - Since we were cutting down on the number of questions, we decided to make each of them more detailed by asking **follow-up questions** to figure out the reasons why people were using (or not using) a given library. You'll find those in the “likes” and “dislikes” charts. 
 - And since we now had more data, we decided to give each tool and library their **own individual result page**. 
 - We also made **every chart shareable**, so don't hesitate to tweet or share any data that catches your eye. 
