@@ -27,7 +27,7 @@ export default class GenderBreakdownBlock extends Component {
         const { data } = this.props
 
         return (
-            <div className="block">
+            <div className="block" id="gender-breakdown">
                 <h3 className="block__title">{getWording('charts.gender')}</h3>
                 <TextBlock text={introText} />
                 <GenderBreakdownWaffleChart total={data.total} data={data.by_gender} />

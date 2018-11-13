@@ -15,7 +15,7 @@ export default class OverviewBlock extends Component {
 
     render() {
         return (
-            <div className="Overview__Block block">
+            <div className="Overview__Block block" id="overview">
                 <BlockTitle chart="overview" />
                 <div className="Overview__Block__Description block__description">
                     <p>Per-library survey results.</p>
