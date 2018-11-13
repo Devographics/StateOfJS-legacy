@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@nivo/bar": "0.51.1",
-    "@nivo/chord": "0.51.0",
+    "@nivo/chord": "0.51.2",
     "@nivo/circle-packing": "0.51.0",
     "@nivo/core": "0.51.0",
     "@nivo/pie": "0.51.0",

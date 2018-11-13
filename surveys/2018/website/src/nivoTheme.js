@@ -86,7 +86,8 @@ export default {
         text: {
             fill: '#ddd',
             fontSize: 12,
-            fontWeight: 500
+            fontWeight: 500,
+            fontFamily: `'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif`
         }
     },
     dots: {

@@ -730,10 +730,10 @@
     react-motion "^0.5.2"
     recompose "^0.26.0"
 
-"@nivo/chord@0.51.0":
-  version "0.51.0"
-  resolved "https://registry.yarnpkg.com/@nivo/chord/-/chord-0.51.0.tgz#896affcdc0db9c9216ea4275a928c5a83b897ace"
-  integrity sha512-HQSmXUN9XLAw7Iz3RfRMpPP2mFtvYuMGrsGNptNWgyrQEA/l8mmN8X2jykeUgIsBNvc4hyj7cl41aF2KIluONA==
+"@nivo/chord@0.51.2":
+  version "0.51.2"
+  resolved "https://registry.yarnpkg.com/@nivo/chord/-/chord-0.51.2.tgz#b744e014d82a86f9ec295f24cd38d1cdad3b462a"
+  integrity sha512-L7ZThl8+jshIt3YhYNxUXSam4ealssP5AZz7O6hed2lJ9svyAUL9Eb5/iQcbefB6Cn8n9R4ImNpnT5kvWDUwAQ==
   dependencies:
     "@nivo/core" "0.51.0"
     "@nivo/legends" "0.51.0"
