@@ -1,65 +1,21 @@
-const fs = require('fs')
-const { promisify } = require('util')
+'use strict'
 const path = require('path')
 const _ = require('lodash')
 const YAML = require('yamljs')
-const chalk = require('chalk')
-const TypeformExtractor = require('./extractors/typeform')
-const CompoundAggregator = require('./aggregators/CompoundAggregator')
-const elastic = require('./loaders/elastic')
+const config = require('@ekino/config')
+const { writeFile } = require('./lib/fs')
+const CompoundAggregator = require('./lib/data-pipeline/aggregators/CompoundAggregator')
 const surveys = require('./conf/surveys')
-const sections = require('./conf/sections')
-const tools = require('./conf/tools')
 
-const token = 'EjgEahVHbf3ttJhHJuAFJVAnNAbUipmfquAUDCijz6Ly'
 const currentSurvey = '2018'
-const outputDir = path.join(__dirname, '..', 'surveys', currentSurvey, 'website', 'src', 'data', 'results')
-
-const writeFile = promisify(fs.writeFile)
-
-const fetch = async () => {
-    console.log(chalk.yellow('initializing elastic index'))
-    try {
-        await elastic.deleteIndex()
-    } catch (err) {
-        // error occurs if the index doesn't exist,
-        // which is the case on init
-    }
-    await elastic.createIndex()
-
-    for (let survey of surveys) {
-        console.log(`\nfetching results for survey: ${survey.id}`)
-        const extractor = new TypeformExtractor(survey, { apiToken: token })
-
-        await extractor.enhanceConfig()
-        await writeFile(`./conf/${survey.id}.yml`, YAML.stringify(extractor.config, 10))
-
-        const total = await extractor.fetchResponseCount()
-        console.log(`${total} responses to fetch`)
-
-        let count = 0
-        await extractor.fetchResults(async items => {
-            count += items.length
-            console.log(`> ${count}/${total}`)
-
-            await elastic.bulk('response', items)
-        })
-    }
-}
+const outputDir = config.get('dataOutputDir')
 
 const saveResult = async (file, result) => {
     const yamlFile = path.join(outputDir, `${file}.yml`)
     await writeFile(yamlFile, YAML.stringify(result, 5))
-    // console.log(`=> ${yamlFile}`)
-
-    return
-
-    const jsonFile = path.join(outputDir, `${file}.json`)
-    await writeFile(jsonFile, JSON.stringify(result, null, '    '))
-    // console.log(`=> ${jsonFile}`)
 }
 
-const aggregate = async () => {
+const run = async () => {
     const surveyIds = surveys.map(survey => survey.id)
     const surveyConfigs = surveyIds.reduce((acc, surveyId) => ({
         ...acc,
@@ -138,10 +94,6 @@ const aggregate = async () => {
         })
     })
 
-    console.log('\ncomputing user info')
-    const userInfo = await aggregator.computeUserInfo()
-    //await saveResult('user_info', userInfo)
-
     console.log('\ncomputing demographics')
     const demographics = await aggregator.computeDemographic()
     await saveResult('demographics/demographics', demographics)
@@ -159,4 +111,4 @@ const aggregate = async () => {
     await saveResult('other_tools/other_tools', otherTools)
 }
 
-aggregate()
+run()

@@ -1,5 +1,5 @@
 const elastic = require('../loaders/elastic')
-const { globalOpinionsSubjectNormalizers } = require('../conf/normalize')
+const { globalOpinionsSubjectNormalizers } = require('../../../conf/normalize')
 
 const subjects = Object.values(globalOpinionsSubjectNormalizers)
 

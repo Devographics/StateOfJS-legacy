@@ -11,7 +11,7 @@ require('dotenv').load({
 program
     .version('0.0.1')
     .command('fetch', 'fetch data from type form')
-    .command('report <type>', 'compute report for given section')
+    .command('aggregate', 'compute aggregations from previously fetched results')
     .command('capture <survey>', 'capture screenshots for a survey')
     .parse(process.argv)
 

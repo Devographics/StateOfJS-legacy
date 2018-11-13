@@ -1,4 +1,4 @@
-const experience = require('../conf/experience')
+const experience = require('../../../conf/experience')
 const userInfoAggregator = require('./user_info')
 const sectionsAggregator = require('./sections')
 const toolsAggregator = require('./tools')

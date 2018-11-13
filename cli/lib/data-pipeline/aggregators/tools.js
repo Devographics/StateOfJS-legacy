@@ -1,5 +1,5 @@
 const elastic = require('../loaders/elastic')
-const personalInfo = require('../conf/user_info')
+const personalInfo = require('../../../conf/user_info')
 const util = require('./util')
 
 exports.experiences = async (tools, surveys, config) => {
