@@ -6,4 +6,8 @@ The survey confirms that **Mocha** is still the most used unit testing framework
 
 This shows that developers really appreciate the efforts made by Facebook to provide a a full-featured testing framework that can be used to test both front-end (it was intended to test React components, in the beginning) and back-end code, without requiring configuration.
 
-**Storybook** got the second highest satisfaction rate of the category. It's not a testing framework per se, but a solution to let developers test their components in isolation. It was first intended for React developers but it now supports **Vue.js**, **Angular**, and more; and comes with a lot of handy plugins to customize its functionalities.
+In the "Single Page application" era, web applications are becoming more and more complex, with more and more logic implemented in the client side. The survey shows clearly that developers use a lot of tools to test their applications.
+
+The spectrum of testing is wide: unit tests, integration tests, end-to-end tests but also "visual testing", as we can see with the success of **Storybook** (the second highest satisfaction rate of the category).
+
+The future of testing may include more solutions to make automated tests in the browser, a project like [Cypress](https://www.cypress.io/) may be included in the next year survey and we may see more tools based on [Puppeteer](https://pptr.dev/).
