@@ -2,6 +2,10 @@ import React, { Component, Fragment } from 'react'
 import { ResponsiveWaffleCanvas } from '@nivo/waffle'
 import GenderLegends from '../elements/GendersLegends'
 import theme from '../../nivoTheme'
+import ChartRatioContainer from '../elements/ChartRatioContainer'
+
+const rows = 32
+const columns = 128
 
 export default class GenderBreakdownWaffleChart extends Component {
     render() {
@@ -23,16 +27,18 @@ export default class GenderBreakdownWaffleChart extends Component {
         return (
             <Fragment>
                 <GenderLegends />
-                <div className="GenderBreakdown__Chart" style={{ height: 260 }}>
-                    <ResponsiveWaffleCanvas
-                        total={total}
-                        rows={32}
-                        columns={128}
-                        data={chartData}
-                        fillDirection="left"
-                        theme={theme}
-                        colors={colors}
-                    />
+                <div className="GenderBreakdown__Chart">
+                    <ChartRatioContainer ratio={rows / columns} maxHeight={260}>
+                        <ResponsiveWaffleCanvas
+                            total={total}
+                            rows={rows}
+                            columns={columns}
+                            data={chartData}
+                            fillDirection="left"
+                            theme={theme}
+                            colors={colors}
+                        />
+                    </ChartRatioContainer>
                 </div>
             </Fragment>
         )

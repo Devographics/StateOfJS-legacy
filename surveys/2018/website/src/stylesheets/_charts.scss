@@ -89,12 +89,7 @@
 
 .block--connections {
     .chart-wrapper {
-        @include small {
-            height: 300px;
-        }
-        @include medium-large {
-            height: 600px;
-        }
+        margin-top: $spacing;
     }
 }
 

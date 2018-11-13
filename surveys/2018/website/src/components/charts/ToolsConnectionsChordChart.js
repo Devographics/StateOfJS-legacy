@@ -4,6 +4,7 @@ import truncate from 'lodash/truncate'
 import { ResponsiveChordCanvas as Chord } from '@nivo/chord'
 import { getToolName } from '../../helpers/wording'
 import theme from '../../nivoTheme'
+import ChartRatioContainer from '../elements/ChartRatioContainer';
 
 export default class ToolsConnectionsChordChart extends Component {
     static propTypes = {
@@ -16,7 +17,8 @@ export default class ToolsConnectionsChordChart extends Component {
         const { keys, matrix, getColor } = this.props
 
         return (
-            <div className="chart-wrapper" style={{ height: '800px' }}>
+            <div className="chart-wrapper">
+                <ChartRatioContainer ratio={1}>
                 <Chord
                     margin={{
                         top: 100,
@@ -36,6 +38,7 @@ export default class ToolsConnectionsChordChart extends Component {
                     animate={false}
                     theme={theme}
                 />
+                </ChartRatioContainer>
             </div>
         )
     }
