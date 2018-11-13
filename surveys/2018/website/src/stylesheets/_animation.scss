@@ -49,5 +49,15 @@
 }
 
 .LogoAnimation__Button {
-    font-size: 2rem;
+    height: 100%;
+    @include flex-center;
+    @include small {
+        font-size: 1.6rem;
+    }
+    @include medium {
+        font-size: 1.8rem;
+    }
+    @include large {
+        font-size: 2rem;
+    }
 }

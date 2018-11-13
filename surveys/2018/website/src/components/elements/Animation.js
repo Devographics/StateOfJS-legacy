@@ -15,13 +15,15 @@ Config:
 - velocityVariance:     How much initial velocities can vary (higher = more variance)
 
 */
-const elementSize = 100
+const maxSize = 100
 const interval = 10
 const velocity = 1.1
 const returnVelocity = 10 // lower = faster
 const frictionCoefficient = 2.5 // lower = stronger friction
 const initialMultiplier = 10 // higher = faster
 const velocityVariance = 1.1
+const buttonWidth = 200
+const buttonHeight = 80
 
 // https://stackoverflow.com/a/18358056/649299
 function roundToTwo(num) {
@@ -135,13 +137,33 @@ class Animation extends Component {
 
     getOrigin = (height, width) => {
         const { variant = 'full' } = this.props
+        const size = this.getSize(width)
         const topLeft = { x: 1, y: 1 }
         const center = {
-            x: width / 2 - (elementSize * 5) / 2,
-            y: height / 2 - (elementSize * 3) / 2
+            x: width / 2 - (size * 5) / 2,
+            y: height / 2 - (size * 3) / 2
         }
         return variant === 'full' ? center : topLeft
     }
+
+    /*
+
+    For full logo, calculate ideal size for a single element
+    Size = usable area / 5 (since the grid is 5 elements wide)
+
+    */
+    getSize = (width) => {
+        const { size } = this.props
+        if (size) {
+            // size is fixed
+            return size
+        } else {
+            const padding = 20
+            const dynamicSize = (width - padding * 2) / 5
+            return Math.min(dynamicSize, maxSize)
+        }
+    }
+
     /*
 
     Get initial positions given the container's height and width
@@ -150,10 +172,12 @@ class Animation extends Component {
     getInitPositions = (height, width) => {
         const positions = {}
         const origin = this.getOrigin(height, width)
+        const size = this.getSize(width)
+
         this.getLogoElements().forEach(({ x, y, symbol }) => {
             positions[symbol] = {
-                x: origin.x + x * elementSize,
-                y: origin.y + y * elementSize,
+                x: origin.x + x * size,
+                y: origin.y + y * size,
                 ...this.getAngle()
             }
         })
@@ -203,6 +227,7 @@ class Animation extends Component {
     */
     computePositions = positions => {
         const { height, width, initPositions, stopped } = this.state
+        const size = this.getSize(width)
         const newPositions = {}
         Object.keys(positions).forEach(symbol => {
             let { x, y, xSpeed, ySpeed, angle, baseXSpeed, baseYSpeed } = positions[symbol]
@@ -253,11 +278,11 @@ class Animation extends Component {
                 Note: we also reverse the base speed to avoid messing up the delta calculations above
 
                 */
-                if (x <= 0 || x >= width - elementSize) {
+                if (x <= 0 || x >= width - size) {
                     xSpeed = -xSpeed
                     baseXSpeed = -baseXSpeed
                 }
-                if (y <= 0 || y >= height - elementSize) {
+                if (y <= 0 || y >= height - size) {
                     ySpeed = -ySpeed
                     baseYSpeed = -baseYSpeed
                 }
@@ -305,14 +330,16 @@ class Animation extends Component {
     }
 
     render() {
-        const { variant = 'full', size = elementSize } = this.props
+        const { variant = 'full' } = this.props
         const { positions, height, width, ready } = this.state
+        const size = width && this.getSize(width)
         return (
             <div
                 className={`LogoAnimation__Wrapper LogoAnimation__Wrapper--${variant}`}
                 id="LogoAnimation__Wrapper"
+                style={{ height: '100vh', width: '100%' }}
             >
-                {variant === 'full' && (
+                {/* {variant === 'full' && (
                     <div className="LogoAnimation__Inner">
                         <Link
                             onMouseEnter={this.stopAnimation}
@@ -323,7 +350,7 @@ class Animation extends Component {
                             Start
                         </Link>
                     </div>
-                )}
+                )} */}
                 {ready && (
                     <svg
                         className="LogoAnimation"
@@ -346,6 +373,21 @@ class Animation extends Component {
                                 size={size}
                             />
                         ))}
+                        <foreignObject
+                            x={width / 2 - (size * 3) / 2}
+                            y={height / 2 + (size * 3) / 2 + 40}
+                            width={size * 3}
+                            height={size}
+                        >
+                            <Link
+                                onMouseEnter={this.stopAnimation}
+                                onMouseLeave={this.restartAnimation}
+                                className="LogoAnimation__Button button"
+                                to="/introduction"
+                            >
+                                <span>Start</span>
+                            </Link>
+                        </foreignObject>
                     </svg>
                 )}
             </div>
