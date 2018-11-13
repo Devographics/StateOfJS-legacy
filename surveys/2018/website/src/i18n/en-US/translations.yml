@@ -205,6 +205,13 @@ reasons:
         long: Other
         short: Other
 
+other_tools:
+    other_languages: Other Languages
+    browser_apis: Browser APIs
+    build_tools: Build Tools
+    utility_libraries: Utility Libraries
+    text_editors: Text Editors
+
 charts:
     overview: Libraries Results
     overview_description: Per-library survey results.
