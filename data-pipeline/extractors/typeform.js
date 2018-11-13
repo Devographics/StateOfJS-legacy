@@ -54,10 +54,24 @@ class TypeformExtractor {
 
         this.config.tools = []
         this.config.userInfo = []
+        this.config.otherTools = []
 
-        //form.fields.forEach(field => { console.log(field.title) })
+        // form.fields.forEach(field => { console.log(field.title) })
 
         const fieldsConfig = {}
+
+        const otherToolsField = form.fields.find(field => field.title === 'Other Tools')
+        // this section does not exist for 2016
+        if (otherToolsField !== undefined) {
+            otherToolsField.properties.fields.forEach(field => {
+                const topic = field.title.toLowerCase().replace(/ /g, '_')
+                this.config.otherTools.push(topic)
+                fieldsConfig[field.id] = {
+                    type: types.FIELD_TYPE_OTHER_TOOLS,
+                    topic,
+                }
+            })
+        }
 
         const globalOpinionsField = form.fields.find(field => field.title === 'Opinion Questions')
         if (globalOpinionsField === undefined) {
@@ -69,7 +83,7 @@ class TypeformExtractor {
                 throw new Error(`unable to find global opinion subject from field title: ${field.title}`)
             }
             fieldsConfig[field.id] = {
-                type: types.FIELD_GLOBAL_OPINION,
+                type: types.FIELD_TYPE_GLOBAL_OPINION,
                 subject
             }
         })
@@ -97,7 +111,7 @@ class TypeformExtractor {
                 }
 
                 if (field.title === sectionConfig.freeform) {
-                    fieldsConfig[field.id] = { type: types.FIELD_TYPE_OTHER_TOOLS, section: sectionId }
+                    fieldsConfig[field.id] = { type: types.FIELD_TYPE_SECTION_OTHER_TOOLS, section: sectionId }
                     return
                 }
 
@@ -116,9 +130,6 @@ class TypeformExtractor {
                     }
                     return
                 }
-
-                console.log('OTHER FIELD')
-                console.log(field)
             })
             sectionConfig.tools = sectionTools
 
@@ -247,6 +258,7 @@ class TypeformExtractor {
                 survey: this.config.id,
                 ...response,
                 tools: {},
+                sections_other_tools: {},
                 other_tools: {},
                 happiness: {},
                 global_opinions: {},
@@ -256,10 +268,40 @@ class TypeformExtractor {
             let country
             answers.forEach(answer => {
                 const fieldConfig = this.config.typeform.fields[answer.field.id]
-
                 if (fieldConfig === undefined) {
-                    // console.log(answer)
+                    // console.log('UNKNOWN', answer)
                     return
+                }
+
+                if (fieldConfig.type === types.FIELD_TYPE_OTHER_TOOLS) {
+                    let otherTools = []
+                    if (answer.choice !== undefined) {
+                        if (answer.choice.label !== undefined) {
+                            otherTools.push(toolNormalizer(answer.choice.label))
+                        }
+                        if (answer.choice.other !== undefined) {
+                            otherTools = [
+                                ...otherTools,
+                                ...otherToolsExtractor(answer.choice.other),
+                            ]
+                        }
+                    }
+                    if (answer.choices !== undefined) {
+                        if (answer.choices.labels !== undefined) {
+                            otherTools = answer.choices.labels.map(tool => toolNormalizer(tool))
+                        }
+                        if (answer.choices.label) {
+                            otherTools.push()
+                        }
+                        if (answer.choices.other !== undefined) {
+                            otherTools = [
+                                ...otherTools,
+                                ...otherToolsExtractor(answer.choices.other),
+                            ]
+                        }
+                    }
+
+                    normalized.other_tools[fieldConfig.topic] = otherTools
                 }
 
                 switch (fieldConfig.type) {
@@ -292,10 +334,10 @@ class TypeformExtractor {
                         normalized.happiness[fieldConfig.section] = answer.number
                         break
 
-                    case types.FIELD_TYPE_OTHER_TOOLS:
+                    case types.FIELD_TYPE_SECTION_OTHER_TOOLS:
                         const value = util.cleanupValue(answer.text)
                         if (value !== null) {
-                            normalized.other_tools[fieldConfig.section] = {
+                            normalized.sections_other_tools[fieldConfig.section] = {
                                 raw: value,
                                 norm: otherToolsExtractor(value),
                             }
@@ -349,7 +391,7 @@ class TypeformExtractor {
                         country = answer.text.trim().toLowerCase()
                         break
 
-                    case types.FIELD_GLOBAL_OPINION:
+                    case types.FIELD_TYPE_GLOBAL_OPINION:
                         normalized.global_opinions[fieldConfig.subject] = answer.number
                         break    
                 }

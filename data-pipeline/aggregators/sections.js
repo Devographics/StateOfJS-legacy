@@ -89,7 +89,7 @@ exports.otherToolsForSurvey = async surveyConfig => {
             ...acc,
             [section]: {
                 terms: {
-                    field: `other_tools.${section}.norm.keyword`,
+                    field: `sections_other_tools.${section}.norm.keyword`,
                     size: 100,
                     min_doc_count: 10,
                     exclude: tools,
@@ -103,12 +103,9 @@ exports.otherToolsForSurvey = async surveyConfig => {
         body,
     })
 
-    console.log(require('util').inspect(result.aggregations, { depth: null, colors: true }))
-
     const otherToolsAggs = {}
     for (let section in result.aggregations) {
         const sectionAggs = result.aggregations[section]
-        console.log(sectionAggs)
         otherToolsAggs[section] = sectionAggs.buckets.map(bucket => {
             return {
                 name: bucket.key,

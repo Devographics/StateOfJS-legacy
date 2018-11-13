@@ -559,8 +559,12 @@ module.exports = [
         'nodejs',
     ],
     [
-        /asp\. ?net|c#|\.net|dotnet/i,
+        /asp\. ?net|\.net|dotnet/i,
         '.net',
+    ],
+    [
+        /c#/i,
+        'C#',
     ],
     [
         /django/i,
@@ -836,10 +840,6 @@ module.exports = [
         'swift',
     ],
     [
-        /kotlin/i,
-        'kotlin',
-    ],
-    [
         /yarn/i,
         'yarn',
     ],
@@ -873,7 +873,7 @@ module.exports = [
     ],
     [
         /immutable/i,
-        'Immutable',
+        'immutable',
     ],
     [
         /lodash/i,
@@ -984,7 +984,139 @@ module.exports = [
         'jslint',
     ],
     [
-        /xo/i,
+        /^xo$/i,
         'xo',
+    ],
+    [
+        /date(-|_)?fns/i,
+        'date-fns',
+    ],
+    [
+        /objective(-|_)?c/i,
+        'objective-c',
+    ],
+    [
+        /parcel/i,
+        'parcel',
+    ],
+    [
+        /rust/i,
+        'rust',
+    ],
+    [
+        /service(-|_)?workers/i,
+        'service-workers',
+    ],
+    [
+        /ocaml/i,
+        'ocaml',
+    ],
+    [
+        /nano/i,
+        'nano',
+    ],
+    [
+        /kotlin/i,
+        'kotlin',
+    ],
+    [
+        /^r$/i,
+        'r',
+    ],
+    [
+        /pycharm/i,
+        'pycharm',
+    ],
+    [
+        /erlang/i,
+        'erlang',
+    ],
+    [
+        /bash/i,
+        'bash',
+    ],
+    [
+        /delphi/i,
+        'delphi',
+    ],
+    [
+        /perl/i,
+        'perl',
+    ],
+    [
+        /lisp/i,
+        'lisp',
+    ],
+    [
+        /purescript/i,
+        'purescript',
+    ],
+    [
+        /websockets/i,
+        'websockets',
+    ],
+    [
+        /luxon/i,
+        'luxon',
+    ],
+    [
+        /fbelt/i,
+        'fbelt',
+    ],
+    [
+        /bbedit/i,
+        'bbedit',
+    ],
+    [
+        /dart/i,
+        'dart',
+    ],
+    [
+        /lua/i,
+        'lua',
+    ],
+    [
+        /webgl/i,
+        'webgl',
+    ],
+    [
+        /webrtc/i,
+        'webrtc',
+    ],
+    [
+        /webvr/i,
+        'webvr',
+    ],
+    [
+        /web( )?audio( )?api/i,
+        'web-audio-api',
+    ],
+    [
+        /web( )?speech( )?api/i,
+        'web-speech-api',
+    ],
+    [
+        /web( )?components/i,
+        'web-components',
+    ],
+    [
+        /web( )?animation(s)?( )?api/i,
+        'web-animations-api',
+    ],
+    [
+        /web( )?assembly/i,
+        'web-assembly',
+    ],
+    [
+        /service( )?workers/i,
+        'service-workers',
+    ],
+    [
+        /C\/C\+\+/i,
+        'c-cplusplus',
+    ],
+    [
+        /ruby/i,
+        'ruby',
     ],
 ]

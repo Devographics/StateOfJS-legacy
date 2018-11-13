@@ -6,10 +6,11 @@
 // tools
 exports.FIELD_TYPE_TOOL = 'tool'
 exports.FIELD_TYPE_HAPPINESS = 'happiness'
-exports.FIELD_TYPE_OTHER_TOOLS = 'other_tools'
+exports.FIELD_TYPE_SECTION_OTHER_TOOLS = 'section_other_tools'
 exports.FIELD_TYPE_TOOL_LIKE_REASONS = 'like_reasons'
 exports.FIELD_TYPE_TOOL_DISLIKE_REASONS = 'dislike_reasons'
-exports.FIELD_GLOBAL_OPINION = 'global_opinion'
+exports.FIELD_TYPE_GLOBAL_OPINION = 'global_opinion'
+exports.FIELD_TYPE_OTHER_TOOLS = 'other_tools'
 
 // user info
 exports.FIELD_TYPE_YEARS_OF_EXPERIENCE = 'years_of_experience'

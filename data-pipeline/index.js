@@ -152,6 +152,10 @@ const aggregate = async () => {
     console.log('\ncomputing connections')
     const connections = await aggregator.computeConnections(currentSurvey)
     await saveResult('connections/connections', connections)
+
+    console.log('\ncomputing other tools')
+    const otherTools = await aggregator.computeOtherTools(currentSurvey)
+    await saveResult('other_tools/other_tools', otherTools)
 }
 
 aggregate()

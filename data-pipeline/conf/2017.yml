@@ -48,6 +48,15 @@ typeform:
         '55577990':
             type: tool
             tool: ionic
+        '55677233':
+            type: other_tools
+            topic: code_linters
+        '55677344':
+            type: other_tools
+            topic: utility_libraries
+        '55680622':
+            type: other_tools
+            topic: package_managers
         '55778171':
             type: source
         '55791153':
@@ -63,6 +72,9 @@ typeform:
             type: country
         '56233489':
             type: city
+        Gwo0:
+            type: other_tools
+            topic: text_editors
         p6If:
             type: global_opinion
             subject: js_moving_in_right_direction
@@ -124,7 +136,7 @@ typeform:
             type: tool
             tool: no-frontend-framework
         f0gX:
-            type: other_tools
+            type: section_other_tools
             section: front-end-frameworks
         y0kW:
             type: happiness
@@ -151,7 +163,7 @@ typeform:
             type: tool
             tool: firebase
         uR01:
-            type: other_tools
+            type: section_other_tools
             section: data-layer
         CHBd:
             type: happiness
@@ -163,7 +175,7 @@ typeform:
             type: tool
             tool: feathers
         QX12:
-            type: other_tools
+            type: section_other_tools
             section: back-end-frameworks
         lUYG:
             type: happiness
@@ -187,7 +199,7 @@ typeform:
             type: tool
             tool: ava
         hCPF:
-            type: other_tools
+            type: section_other_tools
             section: testing
         sAAJ:
             type: happiness
@@ -205,7 +217,7 @@ typeform:
             type: tool
             tool: css-in-js
         Meh3:
-            type: other_tools
+            type: section_other_tools
             section: css
         nZC0:
             type: happiness
@@ -223,7 +235,7 @@ typeform:
             type: tool
             tool: browserify
         UzYH:
-            type: other_tools
+            type: section_other_tools
             section: build-tools
         Qx46:
             type: happiness
@@ -241,7 +253,7 @@ typeform:
             type: tool
             tool: nativescript
         uFwz:
-            type: other_tools
+            type: section_other_tools
             section: mobile-and-desktop
         qeuD:
             type: happiness
@@ -415,3 +427,8 @@ userInfo:
     - source
     - country
     - city
+otherTools:
+    - package_managers
+    - utility_libraries
+    - text_editors
+    - code_linters

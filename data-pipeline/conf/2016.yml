@@ -40,28 +40,28 @@ typeform:
             type: happiness
             section: mobile-and-desktop
         '28238505':
-            type: other_tools
+            type: section_other_tools
             section: front-end-frameworks
         '28238506':
-            type: other_tools
+            type: section_other_tools
             section: state-management
         '28238507':
-            type: other_tools
+            type: section_other_tools
             section: data-layer
         '28238508':
-            type: other_tools
+            type: section_other_tools
             section: back-end-frameworks
         '28238509':
-            type: other_tools
+            type: section_other_tools
             section: testing
         '28238510':
-            type: other_tools
+            type: section_other_tools
             section: css
         '28238511':
-            type: other_tools
+            type: section_other_tools
             section: build-tools
         '28238512':
-            type: other_tools
+            type: section_other_tools
             section: mobile-and-desktop
         '28238515':
             type: global_opinion
@@ -371,3 +371,4 @@ userInfo:
     - company_size
     - salary
     - email
+otherTools: []

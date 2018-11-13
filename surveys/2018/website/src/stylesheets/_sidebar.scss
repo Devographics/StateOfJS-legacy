@@ -44,9 +44,8 @@
 .Sidebar__Inner {
     padding: $spacing * 1.5;
     overflow-y: scroll;
-    flex-grow: 1;
-    @include small{
-        padding-bottom: $spacing*4;
+    @include small {
+        padding-bottom: $spacing * 4;
     }
 }
 

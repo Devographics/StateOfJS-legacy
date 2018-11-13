@@ -82,8 +82,14 @@ opinions:
                 percentages: {would_use: 86.3, interested: 8.9, never_heard: 2.4, not_interested: 1.4, would_not_use: 1}
 other_tools:
     -
+        name: purescript
+        count: 186
+    -
         name: coffeescript
         count: 181
+    -
+        name: dart
+        count: 54
     -
         name: kotlin
         count: 33

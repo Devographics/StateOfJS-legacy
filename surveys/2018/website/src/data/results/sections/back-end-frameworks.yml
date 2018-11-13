@@ -73,11 +73,11 @@ other_tools:
         name: hapi
         count: 349
     -
-        name: .net
-        count: 132
-    -
         name: adonis
         count: 116
+    -
+        name: .net
+        count: 115
     -
         name: loopback
         count: 97
@@ -103,6 +103,9 @@ other_tools:
         name: laravel
         count: 39
     -
+        name: ruby
+        count: 36
+    -
         name: elixir
         count: 35
     -
@@ -118,10 +121,16 @@ other_tools:
         name: serverless
         count: 26
     -
+        name: 'C#'
+        count: 23
+    -
         name: java
         count: 20
     -
         name: keystone
+        count: 12
+    -
+        name: rust
         count: 12
     -
         name: haskell

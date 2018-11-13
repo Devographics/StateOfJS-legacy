@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import sponsors from '../../data/sponsors.yaml'
 import Link from 'gatsby-link'
+import sponsors from '../../data/sponsors.yaml'
 
 const SponsorsBlock = () => (
     <div className="Sponsors__Wrapper">
@@ -11,7 +11,7 @@ const SponsorsBlock = () => (
                 {sponsors.map(({ name, image, url }) => (
                     <div className="Sponsors__Item" key={name}>
                         <a href={url}>
-                            <img title={name} src={`/images/sponsors/${image}`} />
+                            <img title={name} alt="" src={`/images/sponsors/${image}`} />
                         </a>
                     </div>
                 ))}

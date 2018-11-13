@@ -3,6 +3,21 @@ extractor: typeform
 typeform:
     id: J9gRJf
     fields:
+        kHsnuaxtvkB7:
+            type: other_tools
+            topic: other_languages
+        ScaXLCCuVDYU:
+            type: other_tools
+            topic: browser_apis
+        xPpGhdmzMswP:
+            type: other_tools
+            topic: build_tools
+        X233Bl9R4ZPq:
+            type: other_tools
+            topic: utility_libraries
+        JwvJO7F9djHR:
+            type: other_tools
+            topic: text_editors
         oNBJ7LgvRhCg:
             type: global_opinion
             subject: js_moving_in_right_direction
@@ -79,7 +94,7 @@ typeform:
             type: dislike_reasons
             tool: es6
         Bu13nZgFYn41:
-            type: other_tools
+            type: section_other_tools
             section: javascript-flavors
         tG6GyIDRvICd:
             type: happiness
@@ -139,7 +154,7 @@ typeform:
             type: dislike_reasons
             tool: preact
         doF88Cqx1g9P:
-            type: other_tools
+            type: section_other_tools
             section: front-end-frameworks
         uygOQCKWfrgu:
             type: happiness
@@ -190,7 +205,7 @@ typeform:
             type: dislike_reasons
             tool: mobx
         oWcIqu15IDjP:
-            type: other_tools
+            type: section_other_tools
             section: data-layer
         u3diwAiis2Gk:
             type: happiness
@@ -250,7 +265,7 @@ typeform:
             type: dislike_reasons
             tool: feathers
         jgadf6KAhURx:
-            type: other_tools
+            type: section_other_tools
             section: back-end-frameworks
         EANeo5VwRonl:
             type: happiness
@@ -319,7 +334,7 @@ typeform:
             type: dislike_reasons
             tool: karma
         Uzu7ZfHVHWbI:
-            type: other_tools
+            type: section_other_tools
             section: testing
         L9gSqaNL0GN0:
             type: happiness
@@ -379,7 +394,7 @@ typeform:
             type: dislike_reasons
             tool: native-apps
         cplwO8cN69yT:
-            type: other_tools
+            type: section_other_tools
             section: mobile-and-desktop
         yFLjXCIeJouk:
             type: happiness
@@ -513,3 +528,9 @@ userInfo:
     - gender
     - country
     - city
+otherTools:
+    - other_languages
+    - browser_apis
+    - build_tools
+    - utility_libraries
+    - text_editors
