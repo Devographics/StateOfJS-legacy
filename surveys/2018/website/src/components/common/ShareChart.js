@@ -50,7 +50,7 @@ export const Twitter = ({ text, page, chart }) => {
 
 Twitter.propTypes = {
     text: PropTypes.string.isRequired,
-    page: PropTypes.object.isRequired
+    page: PropTypes.object
 }
 
 export const Facebook = ({ link, page, chart }) => {
@@ -90,7 +90,7 @@ export const Facebook = ({ link, page, chart }) => {
 
 Facebook.propTypes = {
     link: PropTypes.string.isRequired,
-    page: PropTypes.object.isRequired
+    page: PropTypes.object
 }
 
 export const Email = ({ subject, body, page, chart }) => {
@@ -128,7 +128,7 @@ export const Email = ({ subject, body, page, chart }) => {
 Email.propTypes = {
     subject: PropTypes.string.isRequired,
     body: PropTypes.string.isRequired,
-    page: PropTypes.object.isRequired
+    page: PropTypes.object
 }
 
 class ShareChart extends Component {

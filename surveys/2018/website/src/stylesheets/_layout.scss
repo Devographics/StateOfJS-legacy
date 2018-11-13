@@ -47,10 +47,10 @@ $sidebar_width: 270px;
 .pagelayout__main {
     flex-grow: 1;
     @include small-medium {
-        padding: $spacing;
+        padding: $spacing $spacing $spacing*4 $spacing;
     }
     @include large {
-        padding: $spacing * 3;
+        padding: $spacing * 3 $spacing * 3 $spacing * 7 $spacing * 3;
     }
 }
 
