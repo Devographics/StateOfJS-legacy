@@ -6,6 +6,79 @@ tools:
     - flow
     - typescript
     - es6
+happiness:
+    -
+        survey: '2016'
+        scores:
+            -
+                score: 3
+                count: 5102
+                percentage: 49.8
+            -
+                score: 4
+                count: 2580
+                percentage: 25.2
+            -
+                score: 2
+                count: 1986
+                percentage: 19.4
+            -
+                score: 1
+                count: 378
+                percentage: 3.7
+            -
+                score: 0
+                count: 160
+                percentage: 1.6
+        average: 2.9
+    -
+        survey: '2017'
+        scores:
+            -
+                score: 3
+                count: 10523
+                percentage: 44.5
+            -
+                score: 4
+                count: 7447
+                percentage: 31.5
+            -
+                score: 2
+                count: 4233
+                percentage: 17.9
+            -
+                score: 1
+                count: 979
+                percentage: 4.1
+            -
+                score: 0
+                count: 365
+                percentage: 1.5
+        average: 3
+    -
+        survey: '2018'
+        scores:
+            -
+                score: 3
+                count: 8806
+                percentage: 43.5
+            -
+                score: 4
+                count: 7600
+                percentage: 37.5
+            -
+                score: 2
+                count: 2567
+                percentage: 12.7
+            -
+                score: 1
+                count: 324
+                percentage: 1.6
+            -
+                score: 0
+                count: 237
+                percentage: 1.2
+        average: 3.2
 opinions:
     -
         survey_id: '2016'

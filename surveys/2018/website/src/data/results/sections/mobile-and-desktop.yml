@@ -6,6 +6,79 @@ tools:
     - nativescript
     - ionic
     - native-apps
+happiness:
+    -
+        survey: '2016'
+        scores:
+            -
+                score: 2
+                count: 3812
+                percentage: 37.2
+            -
+                score: 3
+                count: 2278
+                percentage: 22.2
+            -
+                score: 1
+                count: 1529
+                percentage: 14.9
+            -
+                score: 4
+                count: 929
+                percentage: 9.1
+            -
+                score: 0
+                count: 811
+                percentage: 7.9
+        average: 2.1
+    -
+        survey: '2017'
+        scores:
+            -
+                score: 2
+                count: 9091
+                percentage: 38.4
+            -
+                score: 3
+                count: 6882
+                percentage: 29.1
+            -
+                score: 1
+                count: 2840
+                percentage: 12
+            -
+                score: 4
+                count: 2425
+                percentage: 10.2
+            -
+                score: 0
+                count: 1342
+                percentage: 5.7
+        average: 2.3
+    -
+        survey: '2018'
+        scores:
+            -
+                score: 3
+                count: 6489
+                percentage: 32
+            -
+                score: 2
+                count: 6304
+                percentage: 31.1
+            -
+                score: 4
+                count: 3778
+                percentage: 18.7
+            -
+                score: 1
+                count: 1622
+                percentage: 8
+            -
+                score: 0
+                count: 540
+                percentage: 2.7
+        average: 2.6
 opinions:
     -
         survey_id: '2016'

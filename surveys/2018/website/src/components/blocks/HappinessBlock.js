@@ -8,11 +8,17 @@ import { getWording } from '../../helpers/wording'
 class HappinessBlock extends PureComponent {
     static propTypes = {
         section: PropTypes.string.isRequired,
-        value: PropTypes.number.isRequired
+        data: PropTypes.arrayOf(
+            PropTypes.shape({
+                survey: PropTypes.string.isRequired,
+                average: PropTypes.number.isRequired
+            })
+        ).isRequired
     }
 
     render() {
-        const { currentPage, value } = this.props
+        const { currentPage, data } = this.props
+        const surveyData = data.find(d => d.survey === '2018')
 
         return (
             <div className="block block--chart block--happiness">
@@ -25,7 +31,7 @@ class HappinessBlock extends PureComponent {
                     </p>
                 </div>
                 <div>
-                    <HappinessChart score={value} />
+                    <HappinessChart score={surveyData.average} />
                 </div>
             </div>
         )

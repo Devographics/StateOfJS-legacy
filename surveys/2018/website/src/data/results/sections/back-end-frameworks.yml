@@ -6,6 +6,79 @@ tools:
     - koa
     - sails
     - feathers
+happiness:
+    -
+        survey: '2016'
+        scores:
+            -
+                score: 2
+                count: 3181
+                percentage: 31
+            -
+                score: 3
+                count: 2725
+                percentage: 26.6
+            -
+                score: 4
+                count: 1407
+                percentage: 13.7
+            -
+                score: 1
+                count: 1145
+                percentage: 11.2
+            -
+                score: 0
+                count: 870
+                percentage: 8.5
+        average: 2.3
+    -
+        survey: '2017'
+        scores:
+            -
+                score: 3
+                count: 8054
+                percentage: 34
+            -
+                score: 2
+                count: 7274
+                percentage: 30.7
+            -
+                score: 4
+                count: 4237
+                percentage: 17.9
+            -
+                score: 1
+                count: 2236
+                percentage: 9.4
+            -
+                score: 0
+                count: 1147
+                percentage: 4.8
+        average: 2.5
+    -
+        survey: '2018'
+        scores:
+            -
+                score: 3
+                count: 7110
+                percentage: 35.1
+            -
+                score: 2
+                count: 5267
+                percentage: 26
+            -
+                score: 4
+                count: 4832
+                percentage: 23.9
+            -
+                score: 1
+                count: 1107
+                percentage: 5.5
+            -
+                score: 0
+                count: 540
+                percentage: 2.7
+        average: 2.8
 opinions:
     -
         survey_id: '2016'

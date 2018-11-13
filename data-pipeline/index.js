@@ -132,6 +132,7 @@ const aggregate = async () => {
         await saveResult(path.join('sections', sectionId), {
             section_id: section.section_id,
             tools: section.tools,
+            happiness: section.happiness,
             opinions: section.opinions,
             other_tools: section.otherTools,
         })

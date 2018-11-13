@@ -5,6 +5,79 @@ tools:
     - relay
     - apollo
     - mobx
+happiness:
+    -
+        survey: '2016'
+        scores:
+            -
+                score: 2
+                count: 3477
+                percentage: 33.9
+            -
+                score: 3
+                count: 3086
+                percentage: 30.1
+            -
+                score: 4
+                count: 1537
+                percentage: 15
+            -
+                score: 1
+                count: 1093
+                percentage: 10.7
+            -
+                score: 0
+                count: 597
+                percentage: 5.8
+        average: 2.4
+    -
+        survey: '2017'
+        scores:
+            -
+                score: 3
+                count: 8208
+                percentage: 34.7
+            -
+                score: 2
+                count: 8083
+                percentage: 34.2
+            -
+                score: 4
+                count: 3573
+                percentage: 15.1
+            -
+                score: 1
+                count: 2466
+                percentage: 10.4
+            -
+                score: 0
+                count: 959
+                percentage: 4.1
+        average: 2.5
+    -
+        survey: '2018'
+        scores:
+            -
+                score: 3
+                count: 7385
+                percentage: 36.5
+            -
+                score: 2
+                count: 5807
+                percentage: 28.7
+            -
+                score: 4
+                count: 4747
+                percentage: 23.4
+            -
+                score: 1
+                count: 1067
+                percentage: 5.3
+            -
+                score: 0
+                count: 391
+                percentage: 1.9
+        average: 2.8
 opinions:
     -
         survey_id: '2016'

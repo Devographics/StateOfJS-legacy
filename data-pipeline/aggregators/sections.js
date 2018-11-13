@@ -7,18 +7,18 @@ exports.happiness = async (sections, surveys, config) => {
                 ...acc,
                 [section]: {
                     terms: {
-                        field: `happiness.${section}`,
-                        size: sections.length
+                        field: 'survey.keyword',
+                        size: surveys.length,
                     },
                     aggs: {
-                        survey: {
+                        scores: {
                             terms: {
-                                field: 'survey.keyword',
-                                size: surveys.length
-                            }
-                        }
-                    }
-                }
+                                field: `happiness.${section}`,
+                                size: 5,
+                            },
+                        },
+                    },
+                },
             }),
             {}
         )
@@ -28,37 +28,27 @@ exports.happiness = async (sections, surveys, config) => {
     Object.keys(aggs.aggregations).forEach(section => {
         const sectionAgg = aggs.aggregations[section]
 
-        const all = sectionAgg.buckets.reduce((acc, bucket) => {
-            return {
-                ...acc,
-                [bucket.key]: bucket.doc_count
-            }
-        }, {})
-
-        const bySurvey = {}
+        const bySurvey = []
         const appearsInSurveys = surveys.filter(s => config[s].sections[section] !== undefined)
         appearsInSurveys.forEach(survey => {
-            bySurvey[survey] = sectionAgg.buckets.reduce((acc, bucket) => {
-                const subBucket = bucket.survey.buckets.find(b => b.key === survey)
-                if (subBucket === undefined) {
-                    return {
-                        ...acc,
-                        [bucket.key]: 0
-                    }
-                }
+            const surveyBucket = sectionAgg.buckets.find(b => b.key === survey)
+            const scores = surveyBucket.scores.buckets.map(bucket => ({
+                score: bucket.key,
+                count: bucket.doc_count,
+                percentage: Number((bucket.doc_count / surveyBucket.doc_count * 100).toFixed(1))
+            }))
+            const responseCount = scores.reduce((total, score) => total + score.count, 0)
+            const totalScore = scores.reduce((total, score) => total + score.count * score.score, 0)
+            const average = Number((totalScore / responseCount).toFixed(1))
 
-                return {
-                    ...acc,
-                    [bucket.key]: subBucket.doc_count
-                }
-            }, {})
+            bySurvey.push({
+                survey,
+                scores,
+                average, 
+            })
         })
 
-        happinessAggs[section] = {
-            surveys: appearsInSurveys,
-            all,
-            ...bySurvey
-        }
+        happinessAggs[section] = bySurvey
     })
 
     return happinessAggs

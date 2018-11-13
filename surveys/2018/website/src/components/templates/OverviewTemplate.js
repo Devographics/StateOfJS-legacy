@@ -6,26 +6,14 @@ import OverviewBlock from '../blocks/OverviewBlock'
 import HappinessBlock from '../blocks/HappinessBlock'
 import SectionHeader from '../elements/SectionHeader'
 
-const OverviewTemplate = ({ pageContext, data }) => {
-    const section = data.sectionsYaml
-    const hasEntry = section !== null
-
+const OverviewTemplate = ({ pageContext, data: { section } }) => {
     return (
         <Layout>
             <div className="template">
                 <Meta />
                 <SectionHeader showIntro={true} />
-                {!hasEntry && (
-                    <div style={{ color: 'red' }}>
-                        No entry found for section: <strong>{pageContext.section}</strong>
-                        <br />
-                        <br />
-                    </div>
-                )}
-                {hasEntry && (
-                    <OverviewBlock section={pageContext.section} opinions={section.opinions} />
-                )}
-                <HappinessBlock section="section" value={2} />
+                <OverviewBlock section={pageContext.section} opinions={section.opinions} />
+                <HappinessBlock section="section" data={section.happiness} />
             </div>
         </Layout>
     )
@@ -33,7 +21,7 @@ const OverviewTemplate = ({ pageContext, data }) => {
 
 export const query = graphql`
     query sectionById($section: String!) {
-        sectionsYaml(section_id: { eq: $section }) {
+        section: sectionsYaml(section_id: { eq: $section }) {
             section_id
             opinions {
                 survey_id
@@ -54,6 +42,10 @@ export const query = graphql`
                         never_heard
                     }
                 }
+            }
+            happiness {
+                survey
+                average
             }
         }
     }

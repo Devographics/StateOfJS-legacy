@@ -331,7 +331,8 @@ class TypeformExtractor {
                         break
 
                     case types.FIELD_TYPE_HAPPINESS:
-                        normalized.happiness[fieldConfig.section] = answer.number
+                        // starts at 1, make it starts at 0
+                        normalized.happiness[fieldConfig.section] = Number(answer.number) - 1
                         break
 
                     case types.FIELD_TYPE_SECTION_OTHER_TOOLS:

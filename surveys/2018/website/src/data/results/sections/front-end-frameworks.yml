@@ -6,6 +6,79 @@ tools:
     - polymer
     - vuejs
     - preact
+happiness:
+    -
+        survey: '2016'
+        scores:
+            -
+                score: 3
+                count: 4318
+                percentage: 42.1
+            -
+                score: 2
+                count: 2718
+                percentage: 26.5
+            -
+                score: 4
+                count: 2254
+                percentage: 22
+            -
+                score: 1
+                count: 645
+                percentage: 6.3
+            -
+                score: 0
+                count: 199
+                percentage: 1.9
+        average: 2.8
+    -
+        survey: '2017'
+        scores:
+            -
+                score: 3
+                count: 11103
+                percentage: 46.9
+            -
+                score: 2
+                count: 5764
+                percentage: 24.4
+            -
+                score: 4
+                count: 4570
+                percentage: 19.3
+            -
+                score: 1
+                count: 1452
+                percentage: 6.1
+            -
+                score: 0
+                count: 556
+                percentage: 2.3
+        average: 2.8
+    -
+        survey: '2018'
+        scores:
+            -
+                score: 4
+                count: 9892
+                percentage: 48.8
+            -
+                score: 3
+                count: 7588
+                percentage: 37.5
+            -
+                score: 2
+                count: 1877
+                percentage: 9.3
+            -
+                score: 1
+                count: 340
+                percentage: 1.7
+            -
+                score: 0
+                count: 170
+                percentage: 0.8
+        average: 3.3
 opinions:
     -
         survey_id: '2016'
