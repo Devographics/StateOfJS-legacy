@@ -28,6 +28,7 @@ class ReasonLabel extends Component {
             textColor = '#666'
         }
         const fontSize = isMobile ? 12 : 14
+
         return (
             <g transform={`translate(${-labelsWidth},${y})`}>
                 <text fill={textColor} style={{ fontSize }} alignmentBaseline="middle">
@@ -48,6 +49,14 @@ class ReasonLabel extends Component {
         )
     }
 }
+
+const Tooltip = ({ indexValue, value }) => (
+    <span>
+        {getWording(`reasons.${indexValue}.short`)}
+        :&nbsp;
+        <strong>{value}</strong>
+    </span>
+)
 
 export default class ReasonsChartUnit extends Component {
     static propTypes = {
@@ -102,6 +111,7 @@ export default class ReasonsChartUnit extends Component {
                         ...barChartProps,
                         left: labelsWidth
                     }}
+                    tooltip={Tooltip}
                     axisTop={{}}
                     axisLeft={{
                         tickSize: 0,
