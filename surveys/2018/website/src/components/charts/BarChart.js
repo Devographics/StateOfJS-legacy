@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ResponsiveBar } from '@nivo/bar'
+import { BasicTooltip } from '@nivo/core'
 import { colorRange } from '../../constants'
 import theme from '../../nivoTheme'
 import Tooltip from '../elements/Tooltip'
@@ -58,6 +59,14 @@ const TickItem = tick => {
     }
 }
 
+const BarTooltip = ({ indexValue, value }) => (
+    <span>
+        {getToolName(indexValue)}
+        :&nbsp;
+        <strong>{value}</strong>
+    </span>
+)
+
 const BarChart = ({ data }) => (
     <div className="Bar__Chart chart-wrapper" style={{ height: data.length * barHeight }}>
         <ResponsiveBar
@@ -73,6 +82,7 @@ const BarChart = ({ data }) => (
             axisLeft={{
                 renderTick: TickItem
             }}
+            tooltip={BarTooltip}
         />
     </div>
 )
