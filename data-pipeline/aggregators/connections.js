@@ -70,7 +70,10 @@ exports.computeToolsMatrixForSurveyAndOpinion = async (
 
     const matrix = tools.map(tool => {
         const toolAggs = result.aggregations[tool.tool]
-        return tools.map(t => toolAggs[t.tool].doc_count)
+        return tools.map(t => {
+            if (tool.tool === t.tool) return 0
+            return toolAggs[t.tool].doc_count
+        })
     })
 
     const data = {

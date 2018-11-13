@@ -182,7 +182,7 @@
 }
 
 .Bar__Chart {
-    &>div>div>svg {
+    & > div > div > svg {
         overflow: visible;
         box-sizing: content-box;
         border-bottom: 180px solid transparent;
