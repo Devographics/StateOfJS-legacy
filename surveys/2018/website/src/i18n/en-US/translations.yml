@@ -26,6 +26,82 @@ tools:
     phonegap-cordova: Cordova
     storybook: Storybook
     apollo: Apollo
+    purescript: PureScript
+    coffeescript: CoffeeScript
+    dart: Dart
+    kotlin: Kotlin
+    scala: Scala
+    vanilla-js: Vanilla JS
+    haxe: Haxe
+    knockout: Knockout
+    Knockout: Knockout
+    dojo: Dojo
+    web-components: Web Components
+    reagent: Reagent
+    canjs: CanJS
+    extjs: Ext JS
+    web-assembly: WebAssembly
+    glimmer: glimmer
+    ember-data: ember-data
+    mongodb: MongoDB
+    firebase: Firebase 
+    ngrx: ngrx
+    dotnet: .NET
+    rails: Rails
+    php: PHP
+    python: Python
+    laravel: Laravel
+    ruby: Ruby
+    elixir: Elixir
+    django: Django
+    golang: Go
+    C#: C#
+    java: Java
+    rust: Rust
+    haskell: Haskell
+    selenium: Selenium
+    sinon: Sinon.js
+    cucumberjs: CucumberJS
+    tap: tap
+    elm-test: elm-test
+    flutter: Flutter
+    pwa: Progressive Web Apps
+    weex: weex
+    xamarin: xamarin
+    appcelerator: Appcelerator
+    quasar: Quasar
+    expo: Expo
+    nwjs: NW.js
+    c-cplusplus: C/C++
+    swift: Swift
+    objective-c: Objective-C
+    ocaml: OCaml
+    webgl: WebGL
+    service-workers: Service Workers
+    webrtc: WebRTC
+    webvr: WebVR
+    web-animations-api: Web Animations API
+    web-audio-api: Web Audio API
+    web-speech-api: Web Speech API
+    parcel: Parcel
+    make: Make
+    lodash: lodash
+    moment: moment
+    underscore: underscore
+    date-fns: Date-fns
+    ramda: Ramda
+    luxon: luxon
+    visual-studio: VS Code
+    sublime-text: Sublime Text
+    webstorm: WebStorm
+    atom: Atom
+    emacs: emacs
+    intellij: IntelliJ
+    phpstorm: PhpStorm
+    notepad++: notepad++
+    brackets: Brackets
+    nano: nano
+    pycharm: PyCharm
 
 block_intro:
     happiness: >

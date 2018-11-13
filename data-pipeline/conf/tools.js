@@ -560,7 +560,7 @@ module.exports = [
     ],
     [
         /asp\. ?net|\.net|dotnet/i,
-        '.net',
+        'dotnet',
     ],
     [
         /c#/i,

@@ -39,7 +39,6 @@ class Layout extends PureComponent {
     }
 
     render() {
-       
         const { showPagination = true } = this.props
         const { showAnim, showSidebar } = this.state
         const sidebarClassName = showSidebar ? 'Sidebar--shown' : 'Sidebar--hidden'
@@ -50,7 +49,7 @@ class Layout extends PureComponent {
                     showSidebar ? 'sidebar' : 'nosidebar'
                 } PageLayout--${showAnim ? 'anim' : 'noanim'}`}
             >
-                <Head/>
+                <Head />
                 {this.state.showAnim && <Animation showStart={false} variant="simple" size={70} />}
 
                 <div className="pagelayout__inner">

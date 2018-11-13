@@ -4,9 +4,7 @@ import withPageData from '../../helpers/withPageData'
 
 const Head = ({ title, currentPage }) => {
     const pageTitle =
-        title ||
-        (currentPage && currentPage.fullTitle) ||
-        'The State of JavaScript 2018'
+        title || (currentPage && currentPage.fullTitle) || 'The State of JavaScript 2018'
     const description = 'A short survey about current popular JavaScript technologies.'
     const url = 'http://stateofjs.com'
     const image = 'http://stateofjs.com/images/javascript2017-white.png'

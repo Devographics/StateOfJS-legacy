@@ -149,7 +149,7 @@ other_tools:
         name: adonis
         count: 116
     -
-        name: .net
+        name: dotnet
         count: 115
     -
         name: loopback

@@ -112,12 +112,6 @@ export const featureColors = {
     'Vital feature': colors.purple
 }
 
-export const aliases = {
-    Vue: 'Vue.JS',
-    Angular: 'Angular 1',
-    'No Front-End Framework': 'No Framework'
-}
-
 export const DIVERGENCE_MAX_OFFSET = 15
 export const DIVERGENCE_COLORS = ['#8b8de8', '#dadada', '#ea2149']
 

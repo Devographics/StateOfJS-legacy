@@ -2,7 +2,7 @@ import { get, template } from 'lodash'
 import wording from '../i18n/en-US/translations.yml'
 import bestOfJsData from '../data/bestofjs'
 
-export const getWording = (id, values, fallback = `![${id}]`) => {
+export const getWording = (id, values, fallback = id) => {
     const label = get(wording, id)
 
     if (label === undefined) return fallback

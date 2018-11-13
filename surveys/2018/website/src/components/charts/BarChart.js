@@ -5,7 +5,8 @@ import { colorRange } from '../../constants'
 import theme from '../../nivoTheme'
 import Tooltip from '../elements/Tooltip'
 import libraries from '../../data/bestofjs.json'
-import { aliases, barChartProps } from '../../constants'
+import { barChartProps } from '../../constants'
+import { getToolName } from '../../helpers/wording'
 
 const tooltipWidth = 240
 const marginWidth = 10
@@ -23,12 +24,9 @@ const TickLabel = ({ label, active }) => (
 )
 
 const TickItem = tick => {
-    const key = tick.key
-    const libraryName = aliases[key] ? aliases[key] : key
-    const library = libraries.projects.find(
-        project =>
-            project.name && project.name.toLowerCase() === libraryName && libraryName.toLowerCase()
-    )
+    const { key } = tick
+    const libraryName = getToolName(key)
+    const library = libraries.projects.find(project => project.slug === key)
     const labelWidth = key.length * 7
     const tickProps = {
         className: 'Bar__Tick',
@@ -39,7 +37,7 @@ const TickItem = tick => {
     if (!library) {
         return (
             <g {...tickProps}>
-                <TickLabel label={key} />
+                <TickLabel label={libraryName} />
             </g>
         )
     } else {
@@ -54,7 +52,7 @@ const TickItem = tick => {
                 >
                     <Tooltip library={library} />
                 </foreignObject>
-                <TickLabel label={key} active={true} />
+                <TickLabel label={libraryName} active={true} />
             </g>
         )
     }
