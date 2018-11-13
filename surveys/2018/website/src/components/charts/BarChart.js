@@ -83,6 +83,7 @@ const BarChart = ({ data }) => (
                 renderTick: TickItem
             }}
             tooltip={BarTooltip}
+            layers={['grid', 'bars', 'axes', 'markers', 'legends']}
         />
     </div>
 )
