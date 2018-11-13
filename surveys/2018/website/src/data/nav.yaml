@@ -6,6 +6,8 @@
 #
 - id: introduction
 
+- id: demographics
+
 - id: connections
 
 - id: javascript-flavors
@@ -83,8 +85,6 @@
 - id: other-tools
 
 - id: opinions
-
-- id: demographics
 
 - id: conclusion
 
