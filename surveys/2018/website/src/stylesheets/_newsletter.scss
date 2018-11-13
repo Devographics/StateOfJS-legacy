@@ -40,7 +40,7 @@
         outline: none;
         border-color: $secondary-color;
     }
-    .Newsletter--loading &{
+    .Newsletter--loading & {
         background: $grey2;
     }
 }
@@ -61,16 +61,16 @@
     //   background: $secondary-color;
     // }
 }
-.Newsletter__Hidden{
+.Newsletter__Hidden {
     display: none;
 }
-.Newsletter__Error{
+.Newsletter__Error {
     border: 1px solid $red;
     padding: $spacing;
     color: $red;
     margin-bottom: $spacing;
 }
-.Newsletter__Success{
+.Newsletter__Success {
     @include border;
     padding: $spacing;
 }

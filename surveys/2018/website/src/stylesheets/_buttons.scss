@@ -1,4 +1,5 @@
-.Button, .button {
+.Button,
+.button {
     background: none;
     @include border;
     padding: $spacing/2 $spacing;

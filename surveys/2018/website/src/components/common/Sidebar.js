@@ -40,7 +40,7 @@ const Sidebar = ({ sidebarClassName, closeSidebar, rest, showAnim }) => (
                 <Nav {...rest} closeSidebar={closeSidebar} />
             </div>
             <div className="Sidebar__Footer">
-                <ShareSite/>
+                <ShareSite />
             </div>
         </div>
     </div>

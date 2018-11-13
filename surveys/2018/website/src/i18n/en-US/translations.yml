@@ -224,3 +224,10 @@ opinion_scale:
     2: Neutral
     3: Agree
     4: Strongly Agree
+
+happiness:
+    0: Unhappy
+    1: Unhappy
+    2: Neutral
+    3: Happy
+    4: Happy    

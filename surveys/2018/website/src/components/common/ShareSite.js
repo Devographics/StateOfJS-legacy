@@ -8,7 +8,7 @@ const body = `Here are some interesting JavaScript survey results: ${link}`
 
 const ShareSite = () => (
     <div className="ShareSite">
-        <Twitter text={twitterText}/>
+        <Twitter text={twitterText} />
         <Facebook link={link} />
         <Email subject={subject} body={body} />
     </div>
