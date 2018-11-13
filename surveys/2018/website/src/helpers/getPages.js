@@ -99,10 +99,6 @@ Get current, previous, and next pages
 export const getPrevNextPages = path => {
     const currentPage = getCurrentPage(path)
     if (!currentPage) {
-        console.log('no current page!!')
-        console.log(path)
-        console.log(currentPage)
-
         return {}
     } else {
         if (currentPage.section.hide) {
