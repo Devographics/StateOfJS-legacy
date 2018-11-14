@@ -56,7 +56,7 @@ class Award extends Component {
                             key={tool}
                             className={`Awards__RunnerUps__Item Awards__RunnerUps__Item--${i}`}
                         >
-                            {i + 2}. {getToolName(tool)} ({figure})
+                            {i + 2}. {getToolName(tool)} {figure && `(${figure})`}
                         </div>
                     ))}
                 </div>

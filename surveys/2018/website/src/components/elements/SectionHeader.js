@@ -19,7 +19,7 @@ const SectionHeader = ({ currentPage, showIntro = false }) => (
                 <div className="SectionHeader__Header">
                     <h2 className="SectionHeader__Title">{currentPage.title}</h2>
                 </div>
-                {showIntro && <div>{currentPage.intro}</div>}
+                {showIntro && <div dangerouslySetInnerHTML={{ __html: currentPage.intro }} />}
             </div>
         )}
     </div>

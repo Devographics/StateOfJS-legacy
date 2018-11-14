@@ -83,6 +83,7 @@ tools:
   es6: E6
   native-apps: Na
   vuex: Vx
+  visual-studio: Vs
 
 utilities:
   color: "#FE6A6A"

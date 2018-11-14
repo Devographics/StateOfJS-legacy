@@ -24,22 +24,22 @@
 
 @keyframes burst {
     from {
-        box-shadow: 0px 0px 0px 0px rgba(254, 106, 106, 0) ;
+        box-shadow: 0px 0px 0px 0px rgba(254, 106, 106, 0);
     }
     50% {
         box-shadow: 0px 0px 30px 30px rgba(254, 255, 106, 0.9);
     }
     to {
-        box-shadow: 0px 0px 60px 60px rgba(254, 106, 106, 0) ;
+        box-shadow: 0px 0px 60px 60px rgba(254, 106, 106, 0);
     }
 }
 
-
 .Awards__Block {
+    margin: $spacing * 4 $spacing * 3 $spacing * 3 $spacing * 3;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: $spacing * 4;
-    grid-row-gap: $spacing * 4;
+    grid-template-columns: 1fr 1fr;
+    column-gap: $spacing * 8;
+    row-gap: $spacing * 3;
 }
 
 .Award {
@@ -47,6 +47,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    // background: $light-bg-color;
+    // padding: $spacing*2;
 }
 
 .Award__Heading {
@@ -57,6 +59,7 @@
 .Award__Description {
     margin-bottom: $spacing;
     font-size: $smallish-font;
+    color: $text-color-dark;
 }
 
 .Award__Element__Container {
@@ -116,6 +119,11 @@
     &--back {
         transform: rotateY(180deg);
     }
+    &--front {
+        .PeriodicTableElement_Symbol {
+            fill: $text-color;
+        }
+    }
 }
 
 .Award__Comment {
@@ -124,8 +132,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    p{
-      margin-bottom: $spacing/2;
+    p {
+        margin-bottom: $spacing/2;
     }
     .Award--hide & {
         opacity: 0;
@@ -135,8 +143,8 @@
     }
 }
 
-.Award__Share{
-  margin-bottom: $spacing;
+.Award__Share {
+    margin-bottom: $spacing;
 }
 .Awards__RunnerUps__Heading {
     transition: ease-in opacity 500ms 1000ms;

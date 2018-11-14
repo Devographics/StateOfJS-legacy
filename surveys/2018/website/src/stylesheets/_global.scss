@@ -93,3 +93,7 @@ a {
     display: block;
     @include font-bold;
 }
+
+.note{
+    color: $text-color-dark;
+}
