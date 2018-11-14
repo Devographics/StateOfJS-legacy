@@ -10,6 +10,7 @@ nav:
     opinions: Opinions
     demographics: Demographics
     support_us: Support Us
+    awards: Awards
 
     javascript-flavors: JavaScript Flavors
     front-end-frameworks: Front-end Frameworks
@@ -246,7 +247,9 @@ charts:
     opinion-js_ecosystem_changing_to_fast: The JavaScript ecosystem is changing too fast
     opinion-survey_too_long: This survey is too damn long!
     tool-pairing: Which tools do developers use along with ${tool}?
-
+    highest-satisfaction: With a 96.6% satisfaction ratio, Jest was the most liked technology this year
+    highest-interest: Find out which technology had the highest satisfaction ratio in 2018
+    
 shortnames:
     introduction: Intro
     javascript-flavors: Flavors
@@ -302,6 +305,9 @@ intros:
         we asked them how much they agreed or disagreed with the following opinions.
     demographics: >
         We wanted to learn more about our survey respondents. 
+    awards: >
+        Join us for the first ever State of JS awards! Can you guess which technologies took gold
+        in each category?
 
 opinion_scale:
     0: Strongly Disagree

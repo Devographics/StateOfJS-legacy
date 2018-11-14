@@ -504,7 +504,7 @@
             "stars": 1268
         },
         {
-            "name": "cypress",
+            "name": "Cypress",
             "description": "Fast, easy and reliable testing for anything that runs in a browser.",
             "homepage": "https://www.cypress.io",
             "slug": "cypress",

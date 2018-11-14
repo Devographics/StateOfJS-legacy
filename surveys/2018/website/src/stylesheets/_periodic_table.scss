@@ -57,7 +57,7 @@
 }
 
 .PeriodicTableElement_Symbol {
-    font-weight: 500;
+    @include font-bold;
     pointer-events: none;
     color: $active-color;
 }

@@ -33,3 +33,9 @@ demographics:
   - salaries-map
   - experience
   - company-size
+
+awards: 
+  - highest-satisfaction
+  - highest-interest
+  - most-mentioned
+  - biggest-improvement

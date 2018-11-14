@@ -16,7 +16,7 @@ class ShareChartTemplate extends Component {
         const { currentPage, pageContext } = this.props
         const { chart } = pageContext
         const wordingValues = currentPage.subSection && { tool: currentPage.subSection.label }
-        const title = getWording(`charts.${chart}`, wordingValues)
+        const title = getWording(`charts.${chart}`, wordingValues) + ' #StateOfJS'
         const description = getWording(`charts.${chart}`, wordingValues)
         const metaProperties = {
             url: `${currentPage.url}${chart}`,
@@ -28,7 +28,7 @@ class ShareChartTemplate extends Component {
         return (
             <div className="template">
                 <Meta properties={metaProperties} />
-                {currentPage && <Redirect to={`${currentPage.path}#${chart}`} noThrow />}
+                {/* {currentPage && <Redirect to={`${currentPage.path}#${chart}`} noThrow />} */}
                 Redirecting…
             </div>
         )

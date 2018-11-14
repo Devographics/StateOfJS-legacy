@@ -166,3 +166,13 @@ items:
   - path: /mobile-and-desktop/nativescript/
     selector: '#results-over-time'
     filename: mobile-and-desktop-nativescript-results-over-time
+
+  - path: /awards/highest-satisfaction
+    selector: '#highest-satisfaction'
+    filename: 'highest-satisfaction'
+  - path: /awards/highest-interest
+    selector: '#highest-interest'
+    filename: 'highest-interest'
+  - path: /awards/most-improved
+    selector: '#most-improved'
+    filename: 'most-improved'

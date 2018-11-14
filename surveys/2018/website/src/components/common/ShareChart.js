@@ -154,14 +154,14 @@ class ShareChart extends Component {
     }
 
     render() {
-        const { currentPage, chart, className } = this.props
+        const { currentPage, chart = '', className, title } = this.props
         const wordingProperties = currentPage.subSection && { tool: currentPage.subSection.label }
-        const title = getWording(`charts.${chart}`, wordingProperties)
+        const shareTitle = title || getWording(`charts.${chart}`, wordingProperties)
         const link = `${currentPage.url}${chart}`
 
-        const twitterText = `#StateOfJS 2018 Results: ${title} ${link}`
+        const twitterText = `#StateOfJS 2018: ${shareTitle} ${link}`
         const subject = 'State Of JavaScript Survey Results'
-        const body = `Here are some interesting JavaScript survey results (${title}): ${link}`
+        const body = `Here are some interesting JavaScript survey results (${shareTitle}): ${link}`
 
         return (
             <div

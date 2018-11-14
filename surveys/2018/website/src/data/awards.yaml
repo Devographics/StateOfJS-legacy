@@ -1,0 +1,58 @@
+- heading: Highest Satisfaction
+  description: Awarded to the library with the highest percentage of satisfied users.
+  comment: With **96.6%** of satisfied users Vue is by far the most greatest library this year.
+  tool: jest
+  runnerups:
+    - tool: express
+      figure: 94.3%
+    - tool: graphql
+      figure: 94%
+- heading: Highest Interest
+  description: Awarded to the technology developers are most interested in learning. 
+  comment: With over **87.7%** of satisfied users Vue is by far the most greatest library this year.
+  tool: graphql
+  runnerups:
+    - tool: storybook
+      figure: 79.6%
+    - tool: apollo
+      figure: 77.1%
+- heading: Most Mentioned
+  description: Awarded to the library mentioned the most in the “other libraries” answer. 
+  comment: Vuex collected **719** mentions, making it the most submitted freeform answer by far.
+  tool: vuex
+  runnerups:
+    - tool: cypress
+      figure: 382 mentions
+    - tool: hapi
+      figure: 349 mentions
+
+## fake data:
+
+- heading: Biggest Improvement
+  description: Awarded to the library whose satisfaction ratio improved the most compared to last year.
+  comment: With over **98%** of satisfied users Vue is by far the most greatest library this year.
+  tool: react
+  runnerups:
+    - tool: react
+      figure: 55%
+    - tool: vuejs
+      figure: 55%
+- heading: Most Mentioned
+  description: Awarded to the library mentioned the most in the “other libraries” answer. 
+  comment: Vuex collected **719** mentions, making it the most submitted freeform answer by far.
+  tool: vuex
+  runnerups:
+    - tool: cypress
+      figure: 382 mentions
+    - tool: hapi
+      figure: 349 mentions
+
+- heading: Most Mentioned
+  description: Awarded to the library mentioned the most in the “other libraries” answer. 
+  comment: Vuex collected **719** mentions, making it the most submitted freeform answer by far.
+  tool: vuex
+  runnerups:
+    - tool: cypress
+      figure: 382 mentions
+    - tool: hapi
+      figure: 349 mentions

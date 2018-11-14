@@ -38,14 +38,7 @@ class HappinessBlock extends PureComponent {
                         })}
                     </p>
                 </div>
-                <HappinessChart score={surveyData.average} />
-                <div className="block__description">
-                    <p>
-                        {getWording('block_intro.happiness_trend', {
-                            section: currentPage.section.label
-                        })}
-                    </p>
-                </div>
+                {/* <HappinessChart score={surveyData.average} /> */}
                 <HappinessTrendChart data={data} />
             </div>
         )

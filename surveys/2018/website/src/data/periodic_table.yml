@@ -82,6 +82,7 @@ tools:
   elm: El
   es6: E6
   native-apps: Na
+  vuex: Vx
 
 utilities:
   color: "#FE6A6A"

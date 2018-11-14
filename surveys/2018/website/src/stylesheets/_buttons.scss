@@ -25,6 +25,7 @@
     &:hover {
         color: $hover-color;
         border-color: $hover-color;
+        text-decoration: none;
     }
     &--small {
         font-size: $small-font;
