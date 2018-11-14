@@ -4,16 +4,16 @@ exports.salary = async () => {
     const result = await elastic.aggs({
         salary: {
             terms: {
-                field: 'user_info.salary.keyword',
+                field: 'user_info.salary.keyword'
             },
             aggs: {
                 survey: {
                     terms: {
-                        field: 'survey.keyword',
-                    },
-                },
-            },
-        },
+                        field: 'survey.keyword'
+                    }
+                }
+            }
+        }
     })
 
     const aggs = { all: {} }
@@ -34,16 +34,16 @@ exports.yearsOfExperience = async () => {
     const result = await elastic.aggs({
         years_of_experience: {
             terms: {
-                field: 'user_info.years_of_experience.keyword',
+                field: 'user_info.years_of_experience.keyword'
             },
             aggs: {
                 survey: {
                     terms: {
-                        field: 'survey.keyword',
-                    },
-                },
-            },
-        },
+                        field: 'survey.keyword'
+                    }
+                }
+            }
+        }
     })
 
     const aggs = { all: {} }
@@ -64,16 +64,16 @@ exports.companySize = async () => {
     const result = await elastic.aggs({
         company_size: {
             terms: {
-                field: 'user_info.company_size.keyword',
+                field: 'user_info.company_size.keyword'
             },
             aggs: {
                 survey: {
                     terms: {
-                        field: 'survey.keyword',
-                    },
-                },
-            },
-        },
+                        field: 'survey.keyword'
+                    }
+                }
+            }
+        }
     })
 
     const aggs = { all: {} }

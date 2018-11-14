@@ -17,10 +17,13 @@ const saveResult = async (file, result) => {
 
 const run = async () => {
     const surveyIds = surveys.map(survey => survey.id)
-    const surveyConfigs = surveyIds.reduce((acc, surveyId) => ({
-        ...acc,
-        [surveyId]: YAML.load(`./conf/${surveyId}.yml`),
-    }), {})
+    const surveyConfigs = surveyIds.reduce(
+        (acc, surveyId) => ({
+            ...acc,
+            [surveyId]: YAML.load(`./conf/${surveyId}.yml`)
+        }),
+        {}
+    )
 
     const toolIds = surveyConfigs[currentSurvey].tools
     const sectionIds = Object.keys(surveyConfigs[currentSurvey].sections)
@@ -39,19 +42,26 @@ const run = async () => {
     console.log('\ncomputing tools ranking by section')
     const toolsRanking = Object.keys(currentSurveyConfig.sections).reduce((acc0, sectionId) => {
         const { tools: sectionTools } = currentSurveyConfig.sections[sectionId]
-        const rankedSectionTools = sectionTools.map(toolId => {
-            return {
-                tool: toolId,
-                count: toolsAggs[toolId].experience.by_survey.find(s => s.survey === currentSurveyConfig.id).would_use
-            }
-        }).sort((a, b) => b.count - a.count)
+        const rankedSectionTools = sectionTools
+            .map(toolId => {
+                return {
+                    tool: toolId,
+                    count: toolsAggs[toolId].experience.by_survey.find(
+                        s => s.survey === currentSurveyConfig.id
+                    ).would_use
+                }
+            })
+            .sort((a, b) => b.count - a.count)
 
         return {
             ...acc0,
-            ...rankedSectionTools.reduce((acc1, tool, i) => ({
-                ...acc1,
-                [tool.tool]: i + 1,
-            }), {})
+            ...rankedSectionTools.reduce(
+                (acc1, tool, i) => ({
+                    ...acc1,
+                    [tool.tool]: i + 1
+                }),
+                {}
+            )
         }
     }, {})
     await saveResult('tools_ranking', toolsRanking)
@@ -73,11 +83,13 @@ const run = async () => {
                 }
                 surveySection.tools.forEach(toolId => {
                     const toolAggs = toolsAggs[toolId]
-                    const toolSurveyOpinions = toolAggs.experience.by_survey.find(s => s.survey === surveyConfig.id)
+                    const toolSurveyOpinions = toolAggs.experience.by_survey.find(
+                        s => s.survey === surveyConfig.id
+                    )
                     if (toolSurveyOpinions !== undefined) {
                         surveySectionOpinions.tools.push({
                             tool_id: toolId,
-                            ..._.omit(toolSurveyOpinions, ['survey']),
+                            ..._.omit(toolSurveyOpinions, ['survey'])
                         })
                     }
                 })
@@ -90,7 +102,7 @@ const run = async () => {
             tools: section.tools,
             happiness: section.happiness,
             opinions: section.opinions,
-            other_tools: section.otherTools,
+            other_tools: section.otherTools
         })
     })
 

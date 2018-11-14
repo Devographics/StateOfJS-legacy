@@ -17,22 +17,24 @@ const run = async () => {
             // which is the case on init
         }
         await elastic.createIndex()
-    
+
         for (let survey of surveys) {
             console.log(`\nfetching results for survey: ${survey.id}`)
-            const extractor = new TypeformExtractor(survey, { apiToken: config.get('typeform.token') })
-    
+            const extractor = new TypeformExtractor(survey, {
+                apiToken: config.get('typeform.token')
+            })
+
             await extractor.enhanceConfig()
             await writeFile(`./conf/${survey.id}.yml`, YAML.stringify(extractor.config, 10))
-    
+
             const total = await extractor.fetchResponseCount()
             console.log(`${total} responses to fetch`)
-    
+
             let count = 0
             await extractor.fetchResults(async items => {
                 count += items.length
                 console.log(`> ${count}/${total}`)
-    
+
                 await elastic.bulk('response', items)
             })
         }

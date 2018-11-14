@@ -1,7 +1,6 @@
 const _ = require('lodash')
 
-exports.computeTotalForKeys = (obj, keys) =>
-    keys.reduce((acc, key) => acc + obj[key], 0)
+exports.computeTotalForKeys = (obj, keys) => keys.reduce((acc, key) => acc + obj[key], 0)
 
 exports.computePercentageForKeys = (obj, keys) => {
     obj.total = exports.computeTotalForKeys(obj, keys)
@@ -16,7 +15,7 @@ exports.computePercentageForKeys = (obj, keys) => {
     let totalPercentage = 0
     keys.forEach(key => {
         const val = obj[key]
-        const percent = Math.round(val / obj.total * 100)
+        const percent = Math.round((val / obj.total) * 100)
         obj[key] = { val, percent }
         totalPercentage += percent
     })
@@ -24,4 +23,7 @@ exports.computePercentageForKeys = (obj, keys) => {
     return obj
 }
 
-exports.slugify = str => _.snakeCase(str).replace(/[^a-z0-9_]/g, '').replace(/^[^a-z0-9]/, '')
+exports.slugify = str =>
+    _.snakeCase(str)
+        .replace(/[^a-z0-9_]/g, '')
+        .replace(/^[^a-z0-9]/, '')

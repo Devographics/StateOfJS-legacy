@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import HappinessChart from '../charts/HappinessChart'
+import HappinessTrendChart from '../charts/HappinessTrendChart'
 import BlockTitle from '../elements/BlockTitle'
 import withPageData from '../../helpers/withPageData'
 import { getWording } from '../../helpers/wording'
@@ -11,7 +12,14 @@ class HappinessBlock extends PureComponent {
         data: PropTypes.arrayOf(
             PropTypes.shape({
                 survey: PropTypes.string.isRequired,
-                average: PropTypes.number.isRequired
+                average: PropTypes.number.isRequired,
+                scores: PropTypes.arrayOf(
+                    PropTypes.shape({
+                        score: PropTypes.number.isRequired,
+                        count: PropTypes.number.isRequired,
+                        percentage: PropTypes.number.isRequired
+                    })
+                ).isRequired
             })
         ).isRequired
     }
@@ -30,9 +38,15 @@ class HappinessBlock extends PureComponent {
                         })}
                     </p>
                 </div>
-                <div>
-                    <HappinessChart score={surveyData.average} />
+                <HappinessChart score={surveyData.average} />
+                <div className="block__description">
+                    <p>
+                        {getWording('block_intro.happiness_trend', {
+                            section: currentPage.section.label
+                        })}
+                    </p>
                 </div>
+                <HappinessTrendChart data={data} />
             </div>
         )
     }

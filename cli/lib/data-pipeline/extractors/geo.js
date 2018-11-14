@@ -8,7 +8,7 @@ const restCountriesApiEndpoint = 'https://restcountries.eu/rest/v2/name/'
 const countriesPreNormalization = {
     'the netherlands': 'netherlands',
     'united stated': 'united states',
-    'england': 'united kingdom',
+    england: 'united kingdom',
     'u.k.': 'united kingdom',
     'the united kingdom': 'united kingdom',
     'us of a': 'united states',
@@ -16,11 +16,11 @@ const countriesPreNormalization = {
     'u.s.a': 'united states',
     'south korea': 'korea',
     'new zeland': 'new zealand',
-    'newzealand': 'new zealand',
+    newzealand: 'new zealand',
     'england, uk': 'united kingdom',
     'united kindgom': 'united kingdom',
     'unites states': 'united states',
-    'mother russia': 'russia',
+    'mother russia': 'russia'
 }
 
 /**
@@ -35,11 +35,11 @@ const countriesPostNormalization = {
     'Venezuela (Bolivarian Republic of)': 'Venezuela',
     'Moldova (Republic of)': 'Moldova',
     'British Indian Ocean Territory': 'India',
-    'Korea (Democratic People\'s Republic of)': 'Korea',
+    "Korea (Democratic People's Republic of)": 'Korea',
     'Viet Nam': 'Vietnam',
     'Iran (Islamic Republic of)': 'Iran',
     'Tanzania, United Republic of': 'Tanzania',
-    'United Kingdom of Great Britain and Northern Ireland': 'England',
+    'United Kingdom of Great Britain and Northern Ireland': 'England'
 }
 
 let countriesCache = {}
@@ -58,9 +58,12 @@ exports.getCountryInfo = async _country => {
     }
 
     try {
-        const rawResponse = await fetch(`${restCountriesApiEndpoint}${encodeURIComponent(country)}`, {
-            method: 'GET',
-        })
+        const rawResponse = await fetch(
+            `${restCountriesApiEndpoint}${encodeURIComponent(country)}`,
+            {
+                method: 'GET'
+            }
+        )
         const response = await rawResponse.json()
         if ((response.status && response.status === 404) || response.length === 0) {
             // console.warn(`No info available for country: ${country}`)
@@ -75,7 +78,7 @@ exports.getCountryInfo = async _country => {
 
         countriesCache[country] = {
             country: countriesPostNormalization[response[0].name] || response[0].name,
-            continent: exports.getContinent(response[0].region, response[0].subregion),
+            continent: exports.getContinent(response[0].region, response[0].subregion)
         }
 
         return countriesCache[country]

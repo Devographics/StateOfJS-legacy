@@ -3,5 +3,5 @@ module.exports = {
     WOULD_NOT_USE: 'would_not_use',
     INTERESTED: 'interested',
     NOT_INTERESTED: 'not_interested',
-    NEVER_HEARD: 'never_heard',
+    NEVER_HEARD: 'never_heard'
 }

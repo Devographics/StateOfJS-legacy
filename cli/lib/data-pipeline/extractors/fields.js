@@ -30,5 +30,5 @@ exports.userInfoFields = [
     exports.FIELD_TYPE_SOURCE,
     exports.FIELD_TYPE_GENDER,
     exports.FIELD_TYPE_COUNTRY,
-    exports.FIELD_TYPE_CITY,
+    exports.FIELD_TYPE_CITY
 ]

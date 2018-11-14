@@ -20,7 +20,7 @@ class CompoundAggregator {
         return {
             salary,
             companySize,
-            yearsOfExperience,
+            yearsOfExperience
         }
     }
 
@@ -30,12 +30,13 @@ class CompoundAggregator {
 
         const happiness = await sectionsAggregator.happiness(sectionIds, surveyIds, this.config)
         const otherTools = await sectionsAggregator.otherToolsForSurvey(currentSurveyConfig)
+        // const numberOfToolsUsed = await sectionsAggregator.toolsBySimilarOpinionForSurvey(currentSurveyConfig.sections, experience.WOULD_USE, currentSurveyId)
 
         const sections = sectionIds.map(sectionId => {
             return {
                 section_id: sectionId,
                 happiness: happiness[sectionId],
-                otherTools: otherTools[sectionId],
+                otherTools: otherTools[sectionId]
             }
         })
 
@@ -45,15 +46,34 @@ class CompoundAggregator {
     async computeTools(tools, currentSurveyId) {
         const surveyIds = Object.keys(this.config)
 
-        const toolsPairing = await toolsAggregator.toolsPairingByOpinionForSurvey(this.config[currentSurveyId].tools, experience.WOULD_USE, this.config[currentSurveyId].sections, currentSurveyId)
-        const toolsExperiencesAggs = await toolsAggregator.experiences(tools, surveyIds, this.config)
-        const toolsExperienceAggs = await toolsAggregator.experience(tools, surveyIds, this.config, experience.WOULD_USE)
+        const toolsPairing = await toolsAggregator.toolsPairingByOpinionForSurvey(
+            this.config[currentSurveyId].tools,
+            experience.WOULD_USE,
+            this.config[currentSurveyId].sections,
+            currentSurveyId
+        )
+        const toolsExperiencesAggs = await toolsAggregator.experiences(
+            tools,
+            surveyIds,
+            this.config
+        )
+        const toolsExperienceAggs = await toolsAggregator.experience(
+            tools,
+            surveyIds,
+            this.config,
+            experience.WOULD_USE
+        )
         const toolsReasonsAggs = await toolsAggregator.reasons(tools)
-        const toolsWouldUseByCountryAggs = await toolsAggregator.opinionByCountry(tools, experience.WOULD_USE)
+        const toolsWouldUseByCountryAggs = await toolsAggregator.opinionByCountry(
+            tools,
+            experience.WOULD_USE
+        )
         Object.keys(toolsExperienceAggs).forEach(tool => {
             toolsExperiencesAggs[tool][experience.WOULD_USE] = toolsExperienceAggs[tool]
             toolsExperiencesAggs[tool].reasons = toolsReasonsAggs[tool]
-            toolsExperiencesAggs[tool][`${experience.WOULD_USE}_by_country`] = toolsWouldUseByCountryAggs[tool].find(d => d.survey === currentSurveyId)
+            toolsExperiencesAggs[tool][
+                `${experience.WOULD_USE}_by_country`
+            ] = toolsWouldUseByCountryAggs[tool].find(d => d.survey === currentSurveyId)
             toolsExperiencesAggs[tool].pairing = toolsPairing[tool]
         })
 
@@ -65,7 +85,7 @@ class CompoundAggregator {
             by_continent: await demographicAggregator.byContinent(),
             by_country: await demographicAggregator.byCountry(),
             participation: await demographicAggregator.participationByCountry(),
-            gender: await demographicAggregator.genderBreakdown(),
+            gender: await demographicAggregator.genderBreakdown()
         }
     }
 
@@ -74,7 +94,11 @@ class CompoundAggregator {
     }
 
     async computeConnections(currentSurveyId) {
-        return connectionsAggregator.computeToolsMatrixForSurveyAndOpinion(this.config[currentSurveyId].sections, currentSurveyId, experience.WOULD_USE)
+        return connectionsAggregator.computeToolsMatrixForSurveyAndOpinion(
+            this.config[currentSurveyId].sections,
+            currentSurveyId,
+            experience.WOULD_USE
+        )
     }
 
     async computeOtherTools(currentSurveyId) {

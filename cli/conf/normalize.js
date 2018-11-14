@@ -5,7 +5,7 @@ exports.globalOpinionsSubjectNormalizers = {
     'I enjoy building JavaScript apps': 'enjoy_building_js_apps',
     'I would like JavaScript to be my main programming language': 'would_like_js_to_be_main_lang',
     'The JavaScript ecosystem is changing too fast': 'js_ecosystem_changing_to_fast',
-    'This survey is too damn long!': 'survey_too_long',
+    'This survey is too damn long!': 'survey_too_long'
 }
 
 exports.sourceNormalizers = [
@@ -92,5 +92,5 @@ exports.sourceNormalizers = [
     [/slack/i, 'slack'],
     [/telegram/i, 'telegram'],
     [/friends?/i, 'friend'],
-    [/slashdot/i, 'slashdot'],
+    [/slashdot/i, 'slashdot']
 ]
