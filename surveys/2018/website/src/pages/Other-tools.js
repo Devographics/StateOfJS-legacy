@@ -8,7 +8,7 @@ import TextBlock from '../components/blocks/TextBlock'
 
 const OtherTools = ({ data, ...rest }) => {
     const topics = data.topics.edges.map(({ node }) => node)
-
+    const projects = data.allProject.edges.map(({ node }) => node)
     return (
         <Layout {...rest}>
             <div className="page">
@@ -27,6 +27,7 @@ const OtherTools = ({ data, ...rest }) => {
                             <BarBlock
                                 data={data}
                                 title={getWording(`other_tools.${topic.topic}`)}
+                                projects={projects}
                             />
                         </div>
                     )
@@ -53,6 +54,18 @@ export const query = graphql`
                         tool
                         count
                     }
+                }
+            }
+        }
+        allProject {
+            edges {
+                node {
+                    id,
+                    name,
+                    stars,
+                    github,
+                    description,
+                    homepage
                 }
             }
         }

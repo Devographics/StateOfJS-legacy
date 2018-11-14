@@ -178,7 +178,7 @@ other_tools:
         name: cyclejs
         count: 57
     -
-        name: Knockout
+        name: knockout
         count: 50
     -
         name: riotjs

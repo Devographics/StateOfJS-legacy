@@ -12,12 +12,12 @@ export default class BarBlock extends Component {
         description: PropTypes.string,
         title: PropTypes.string,
         chart: PropTypes.string,
-        data: PropTypes.array.isRequired
+        data: PropTypes.array.isRequired,
+        projects: PropTypes.array.isRequired
     }
 
     render() {
-        const { title, data, chart, description } = this.props
-
+        const { title, data, chart, description, projects } = this.props
         return (
             <div className="block block--chart block--othersbar">
                 <BlockTitle chart={chart} title={title} />
@@ -25,7 +25,7 @@ export default class BarBlock extends Component {
                     <p>{description}</p>
                 </div>
                 <div className="capture others-wrapper">
-                    <BarChart data={data} />
+                    <BarChart data={data} projects={projects} />
                 </div>
             </div>
         )

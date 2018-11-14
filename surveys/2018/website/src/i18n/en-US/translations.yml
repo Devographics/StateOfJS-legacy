@@ -34,7 +34,6 @@ tools:
     vanilla-js: Vanilla JS
     haxe: Haxe
     knockout: Knockout
-    Knockout: Knockout
     dojo: Dojo
     web-components: Web Components
     reagent: Reagent
@@ -60,9 +59,9 @@ tools:
     rust: Rust
     haskell: Haskell
     selenium: Selenium
-    sinon: Sinon.js
+    sinonjs: Sinon.js
     cucumberjs: CucumberJS
-    tap: tap
+    node-tap: tap
     elm-test: elm-test
     flutter: Flutter
     pwa: Progressive Web Apps

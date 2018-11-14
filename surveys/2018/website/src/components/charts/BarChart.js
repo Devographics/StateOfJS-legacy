@@ -4,7 +4,6 @@ import { ResponsiveBar } from '@nivo/bar'
 import { colorRange } from '../../constants'
 import theme from '../../nivoTheme'
 import Tooltip from '../elements/Tooltip'
-import libraries from '../../data/bestofjs.json'
 import { barChartProps } from '../../constants'
 import { getToolName } from '../../helpers/wording'
 
@@ -23,10 +22,11 @@ const TickLabel = ({ label, active }) => (
     </text>
 )
 
-const TickItem = tick => {
+
+const TickItem = projects => tick => {
     const { key } = tick
     const libraryName = getToolName(key)
-    const library = libraries.projects.find(project => project.slug === key)
+    const library = projects.find(project => project.id === key)
     const labelWidth = key.length * 7
     const tickProps = {
         className: 'Bar__Tick',
@@ -66,7 +66,7 @@ const BarTooltip = ({ indexValue, value }) => (
     </span>
 )
 
-const BarChart = ({ data }) => (
+const BarChart = ({ data, projects }) => (
     <div className="Bar__Chart chart-wrapper" style={{ height: data.length * barHeight }}>
         <ResponsiveBar
             {...barChartProps}
@@ -79,7 +79,7 @@ const BarChart = ({ data }) => (
                 format: '.2s'
             }}
             axisLeft={{
-                renderTick: TickItem
+                renderTick: TickItem(projects)
             }}
             tooltip={BarTooltip}
             layers={['grid', 'bars', 'axes', 'markers', 'legends']}
@@ -88,7 +88,8 @@ const BarChart = ({ data }) => (
 )
 
 BarChart.propTypes = {
-    data: PropTypes.array.isRequired
+    data: PropTypes.array.isRequired,
+    projects: PropTypes.array.isRequired
 }
 
 export default BarChart

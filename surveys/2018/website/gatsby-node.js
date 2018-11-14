@@ -3,6 +3,10 @@ const fs = require('fs')
 const path = require(`path`)
 const nav = yaml.safeLoad(fs.readFileSync('./src/data/nav.yaml', 'utf8'))
 const charts = yaml.safeLoad(fs.readFileSync('./src/data/charts.yml', 'utf8'))
+
+const bestofjsNameToSlug = require('../../../home/src/helpers/bestofjs-slugify')
+const got = require('got')
+const crypto = require('crypto')
 /*
 
 TODO: use https://www.gatsbyjs.org/docs/actions/#setWebpackConfig
@@ -145,4 +149,38 @@ exports.onCreatePage = ({ page, actions }) => {
 
         resolve()
     })
+}
+
+/*
+Add `Project` nodes to the application GraphQL data store
+See `allProject` query on http://localhost:8000/___graphql
+We fetch about 500 projects from Best of JavaScript
+*/
+exports.sourceNodes = async ({ boundActionCreators }) => {
+    const { createNode } = boundActionCreators
+    const url = 'https://bestofjs-api-v2.firebaseapp.com/projects.json'
+    console.log('Loading Best of JavaScript projects from', url);
+    const data = await got(url, { json: true }).then(r => r.body)
+    const { projects } = data
+    const sortedProjects = projects
+        .filter(project => project.stars >= 1000)
+        .sort((a, b) => (a.stars > b.stars ? -1 : 1))
+    const nodes = sortedProjects.map(project => ({
+        id: bestofjsNameToSlug(project.name),
+        name: project.name,
+        stars: project.stars,
+        github: project.full_name,
+        description: project.description,
+        homepage: project.url,
+        parent: null,
+        children: [],
+        internal: {
+            type: `Project`,
+            contentDigest: crypto
+                .createHash(`md5`)
+                .update(JSON.stringify(project))
+                .digest(`hex`),
+        },
+    }))
+    nodes.forEach(node => createNode(node))
 }

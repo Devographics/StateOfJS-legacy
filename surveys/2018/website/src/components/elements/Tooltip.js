@@ -48,7 +48,7 @@ HtmlDescription.propTypes = {
 
 const Tooltip = ({ library, variant }) => {
     const githubUrl = `https://github.com/${library.github}`
-    const bestofjsUrl = `https://bestofjs.org/projects/${library.slug}`
+    const bestofjsUrl = `https://bestofjs.org/projects/${library.id}`
 
     return (
         <div
