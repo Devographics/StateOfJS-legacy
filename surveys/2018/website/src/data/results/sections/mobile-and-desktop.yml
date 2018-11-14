@@ -85,70 +85,220 @@ opinions:
         tools:
             -
                 tool_id: react-native
-                counts: {interested: 6169, not_interested: 1778, would_use: 1301, never_heard: 881, would_not_use: 121}
-                percentages: {interested: 60.2, not_interested: 17.3, would_use: 12.7, never_heard: 8.6, would_not_use: 1.2}
+                counts:
+                    interested: 6169
+                    not_interested: 1778
+                    would_use: 1301
+                    never_heard: 881
+                    would_not_use: 121
+                percentages:
+                    interested: 60.2
+                    not_interested: 17.3
+                    would_use: 12.7
+                    never_heard: 8.6
+                    would_not_use: 1.2
             -
                 tool_id: nativescript
-                counts: {never_heard: 5027, not_interested: 2487, interested: 2380, would_use: 208, would_not_use: 148}
-                percentages: {never_heard: 49, not_interested: 24.3, interested: 23.2, would_use: 2, would_not_use: 1.4}
+                counts:
+                    never_heard: 5027
+                    not_interested: 2487
+                    interested: 2380
+                    would_use: 208
+                    would_not_use: 148
+                percentages:
+                    never_heard: 49
+                    not_interested: 24.3
+                    interested: 23.2
+                    would_use: 2
+                    would_not_use: 1.4
             -
                 tool_id: native-apps
-                counts: {interested: 3984, would_use: 3055, not_interested: 2125, never_heard: 531, would_not_use: 555}
-                percentages: {interested: 38.9, would_use: 29.8, not_interested: 20.7, never_heard: 5.2, would_not_use: 5.4}
+                counts:
+                    interested: 3984
+                    would_use: 3055
+                    not_interested: 2125
+                    never_heard: 531
+                    would_not_use: 555
+                percentages:
+                    interested: 38.9
+                    would_use: 29.8
+                    not_interested: 20.7
+                    never_heard: 5.2
+                    would_not_use: 5.4
     -
         survey_id: '2017'
         tools:
             -
                 tool_id: electron
-                counts: {interested: 11197, would_use: 4938, not_interested: 3225, never_heard: 3920, would_not_use: 386}
-                percentages: {interested: 47.3, would_use: 20.9, not_interested: 13.6, never_heard: 16.6, would_not_use: 1.6}
+                counts:
+                    interested: 11197
+                    would_use: 4938
+                    not_interested: 3225
+                    never_heard: 3920
+                    would_not_use: 386
+                percentages:
+                    interested: 47.3
+                    would_use: 20.9
+                    not_interested: 13.6
+                    never_heard: 16.6
+                    would_not_use: 1.6
             -
                 tool_id: react-native
-                counts: {interested: 13481, not_interested: 4055, would_use: 4753, never_heard: 1015, would_not_use: 362}
-                percentages: {interested: 57, not_interested: 17.1, would_use: 20.1, never_heard: 4.3, would_not_use: 1.5}
+                counts:
+                    interested: 13481
+                    not_interested: 4055
+                    would_use: 4753
+                    never_heard: 1015
+                    would_not_use: 362
+                percentages:
+                    interested: 57
+                    not_interested: 17.1
+                    would_use: 20.1
+                    never_heard: 4.3
+                    would_not_use: 1.5
             -
                 tool_id: phonegap-cordova
-                counts: {not_interested: 9171, would_not_use: 4676, never_heard: 3188, interested: 3252, would_use: 3379}
-                percentages: {not_interested: 38.8, would_not_use: 19.8, never_heard: 13.5, interested: 13.7, would_use: 14.3}
+                counts:
+                    not_interested: 9171
+                    would_not_use: 4676
+                    never_heard: 3188
+                    interested: 3252
+                    would_use: 3379
+                percentages:
+                    not_interested: 38.8
+                    would_not_use: 19.8
+                    never_heard: 13.5
+                    interested: 13.7
+                    would_use: 14.3
             -
                 tool_id: nativescript
-                counts: {never_heard: 10877, not_interested: 6610, interested: 5248, would_use: 503, would_not_use: 428}
-                percentages: {never_heard: 46, not_interested: 27.9, interested: 22.2, would_use: 2.1, would_not_use: 1.8}
+                counts:
+                    never_heard: 10877
+                    not_interested: 6610
+                    interested: 5248
+                    would_use: 503
+                    would_not_use: 428
+                percentages:
+                    never_heard: 46
+                    not_interested: 27.9
+                    interested: 22.2
+                    would_use: 2.1
+                    would_not_use: 1.8
             -
                 tool_id: ionic
-                counts: {not_interested: 7998, never_heard: 5769, interested: 5084, would_use: 2458, would_not_use: 2357}
-                percentages: {not_interested: 33.8, never_heard: 24.4, interested: 21.5, would_use: 10.4, would_not_use: 10}
+                counts:
+                    not_interested: 7998
+                    never_heard: 5769
+                    interested: 5084
+                    would_use: 2458
+                    would_not_use: 2357
+                percentages:
+                    not_interested: 33.8
+                    never_heard: 24.4
+                    interested: 21.5
+                    would_use: 10.4
+                    would_not_use: 10
             -
                 tool_id: native-apps
-                counts: {interested: 9092, would_use: 7928, not_interested: 4118, never_heard: 1216, would_not_use: 1312}
-                percentages: {interested: 38.4, would_use: 33.5, not_interested: 17.4, never_heard: 5.1, would_not_use: 5.5}
+                counts:
+                    interested: 9092
+                    would_use: 7928
+                    not_interested: 4118
+                    never_heard: 1216
+                    would_not_use: 1312
+                percentages:
+                    interested: 38.4
+                    would_use: 33.5
+                    not_interested: 17.4
+                    never_heard: 5.1
+                    would_not_use: 5.5
     -
         survey_id: '2018'
         tools:
             -
                 tool_id: electron
-                counts: {interested: 10617, would_use: 3913, not_interested: 3084, never_heard: 1776, would_not_use: 581}
-                percentages: {interested: 53.2, would_use: 19.6, not_interested: 15.4, never_heard: 8.9, would_not_use: 2.9}
+                counts:
+                    interested: 10617
+                    would_use: 3913
+                    not_interested: 3084
+                    never_heard: 1776
+                    would_not_use: 581
+                percentages:
+                    interested: 53.2
+                    would_use: 19.6
+                    not_interested: 15.4
+                    never_heard: 8.9
+                    would_not_use: 2.9
             -
                 tool_id: react-native
-                counts: {interested: 10622, not_interested: 4428, would_use: 3738, never_heard: 461, would_not_use: 722}
-                percentages: {interested: 53.2, not_interested: 22.2, would_use: 18.7, never_heard: 2.3, would_not_use: 3.6}
+                counts:
+                    interested: 10622
+                    not_interested: 4428
+                    would_use: 3738
+                    never_heard: 461
+                    would_not_use: 722
+                percentages:
+                    interested: 53.2
+                    not_interested: 22.2
+                    would_use: 18.7
+                    never_heard: 2.3
+                    would_not_use: 3.6
             -
                 tool_id: phonegap-cordova
-                counts: {not_interested: 8884, would_not_use: 3914, never_heard: 2763, interested: 2355, would_use: 2042}
-                percentages: {not_interested: 44.5, would_not_use: 19.6, never_heard: 13.8, interested: 11.8, would_use: 10.2}
+                counts:
+                    not_interested: 8884
+                    would_not_use: 3914
+                    never_heard: 2763
+                    interested: 2355
+                    would_use: 2042
+                percentages:
+                    not_interested: 44.5
+                    would_not_use: 19.6
+                    never_heard: 13.8
+                    interested: 11.8
+                    would_use: 10.2
             -
                 tool_id: nativescript
-                counts: {never_heard: 7922, not_interested: 6673, interested: 4822, would_use: 335, would_not_use: 202}
-                percentages: {never_heard: 39.7, not_interested: 33.4, interested: 24.2, would_use: 1.7, would_not_use: 1}
+                counts:
+                    never_heard: 7922
+                    not_interested: 6673
+                    interested: 4822
+                    would_use: 335
+                    would_not_use: 202
+                percentages:
+                    never_heard: 39.7
+                    not_interested: 33.4
+                    interested: 24.2
+                    would_use: 1.7
+                    would_not_use: 1
             -
                 tool_id: ionic
-                counts: {not_interested: 8517, never_heard: 4673, interested: 3554, would_use: 1665, would_not_use: 1566}
-                percentages: {not_interested: 42.6, never_heard: 23.4, interested: 17.8, would_use: 8.3, would_not_use: 7.8}
+                counts:
+                    not_interested: 8517
+                    never_heard: 4673
+                    interested: 3554
+                    would_use: 1665
+                    would_not_use: 1566
+                percentages:
+                    not_interested: 42.6
+                    never_heard: 23.4
+                    interested: 17.8
+                    would_use: 8.3
+                    would_not_use: 7.8
             -
                 tool_id: native-apps
-                counts: {interested: 5587, would_use: 2113, not_interested: 6051, never_heard: 5581, would_not_use: 566}
-                percentages: {interested: 28.1, would_use: 10.6, not_interested: 30.4, never_heard: 28, would_not_use: 2.8}
+                counts:
+                    interested: 5587
+                    would_use: 2113
+                    not_interested: 6051
+                    never_heard: 5581
+                    would_not_use: 566
+                percentages:
+                    interested: 28.1
+                    would_use: 10.6
+                    not_interested: 30.4
+                    never_heard: 28
+                    would_not_use: 2.8
 other_tools:
     -
         name: flutter

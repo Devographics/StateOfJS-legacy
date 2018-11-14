@@ -84,70 +84,220 @@ opinions:
         tools:
             -
                 tool_id: redux
-                counts: {would_use: 3436, interested: 4205, not_interested: 980, never_heard: 1375, would_not_use: 254}
-                percentages: {would_use: 33.5, interested: 41, not_interested: 9.6, never_heard: 13.4, would_not_use: 2.5}
+                counts:
+                    would_use: 3436
+                    interested: 4205
+                    not_interested: 980
+                    never_heard: 1375
+                    would_not_use: 254
+                percentages:
+                    would_use: 33.5
+                    interested: 41
+                    not_interested: 9.6
+                    never_heard: 13.4
+                    would_not_use: 2.5
             -
                 tool_id: graphql
-                counts: {interested: 4508, never_heard: 3756, would_use: 517, not_interested: 1408, would_not_use: 61}
-                percentages: {interested: 44, never_heard: 36.6, would_use: 5, not_interested: 13.7, would_not_use: 0.6}
+                counts:
+                    interested: 4508
+                    never_heard: 3756
+                    would_use: 517
+                    not_interested: 1408
+                    would_not_use: 61
+                percentages:
+                    interested: 44
+                    never_heard: 36.6
+                    would_use: 5
+                    not_interested: 13.7
+                    would_not_use: 0.6
             -
                 tool_id: relay
-                counts: {never_heard: 6079, interested: 2567, not_interested: 1381, would_use: 155, would_not_use: 68}
-                percentages: {never_heard: 59.3, interested: 25, not_interested: 13.5, would_use: 1.5, would_not_use: 0.7}
+                counts:
+                    never_heard: 6079
+                    interested: 2567
+                    not_interested: 1381
+                    would_use: 155
+                    would_not_use: 68
+                percentages:
+                    never_heard: 59.3
+                    interested: 25
+                    not_interested: 13.5
+                    would_use: 1.5
+                    would_not_use: 0.7
             -
                 tool_id: apollo
-                counts: {never_heard: 8264, interested: 1133, not_interested: 690, would_use: 137, would_not_use: 26}
-                percentages: {never_heard: 80.6, interested: 11.1, not_interested: 6.7, would_use: 1.3, would_not_use: 0.3}
+                counts:
+                    never_heard: 8264
+                    interested: 1133
+                    not_interested: 690
+                    would_use: 137
+                    would_not_use: 26
+                percentages:
+                    never_heard: 80.6
+                    interested: 11.1
+                    not_interested: 6.7
+                    would_use: 1.3
+                    would_not_use: 0.3
             -
                 tool_id: mobx
-                counts: {never_heard: 7272, interested: 1669, not_interested: 1013, would_use: 234, would_not_use: 62}
-                percentages: {never_heard: 70.9, interested: 16.3, not_interested: 9.9, would_use: 2.3, would_not_use: 0.6}
+                counts:
+                    never_heard: 7272
+                    interested: 1669
+                    not_interested: 1013
+                    would_use: 234
+                    would_not_use: 62
+                percentages:
+                    never_heard: 70.9
+                    interested: 16.3
+                    not_interested: 9.9
+                    would_use: 2.3
+                    would_not_use: 0.6
     -
         survey_id: '2017'
         tools:
             -
                 tool_id: redux
-                counts: {would_use: 10703, interested: 8021, not_interested: 2408, never_heard: 1465, would_not_use: 1069}
-                percentages: {would_use: 45.2, interested: 33.9, not_interested: 10.2, never_heard: 6.2, would_not_use: 4.5}
+                counts:
+                    would_use: 10703
+                    interested: 8021
+                    not_interested: 2408
+                    never_heard: 1465
+                    would_not_use: 1069
+                percentages:
+                    would_use: 45.2
+                    interested: 33.9
+                    not_interested: 10.2
+                    never_heard: 6.2
+                    would_not_use: 4.5
             -
                 tool_id: graphql
-                counts: {interested: 14205, never_heard: 4246, would_use: 2788, not_interested: 2255, would_not_use: 172}
-                percentages: {interested: 60, never_heard: 17.9, would_use: 11.8, not_interested: 9.5, would_not_use: 0.7}
+                counts:
+                    interested: 14205
+                    never_heard: 4246
+                    would_use: 2788
+                    not_interested: 2255
+                    would_not_use: 172
+                percentages:
+                    interested: 60
+                    never_heard: 17.9
+                    would_use: 11.8
+                    not_interested: 9.5
+                    would_not_use: 0.7
             -
                 tool_id: relay
-                counts: {never_heard: 14300, interested: 5653, not_interested: 2982, would_use: 520, would_not_use: 211}
-                percentages: {never_heard: 60.4, interested: 23.9, not_interested: 12.6, would_use: 2.2, would_not_use: 0.9}
+                counts:
+                    never_heard: 14300
+                    interested: 5653
+                    not_interested: 2982
+                    would_use: 520
+                    would_not_use: 211
+                percentages:
+                    never_heard: 60.4
+                    interested: 23.9
+                    not_interested: 12.6
+                    would_use: 2.2
+                    would_not_use: 0.9
             -
                 tool_id: apollo
-                counts: {never_heard: 16023, interested: 4682, not_interested: 1622, would_use: 1257, would_not_use: 82}
-                percentages: {never_heard: 67.7, interested: 19.8, not_interested: 6.9, would_use: 5.3, would_not_use: 0.3}
+                counts:
+                    never_heard: 16023
+                    interested: 4682
+                    not_interested: 1622
+                    would_use: 1257
+                    would_not_use: 82
+                percentages:
+                    never_heard: 67.7
+                    interested: 19.8
+                    not_interested: 6.9
+                    would_use: 5.3
+                    would_not_use: 0.3
             -
                 tool_id: mobx
-                counts: {never_heard: 12716, interested: 5315, not_interested: 4177, would_use: 1140, would_not_use: 318}
-                percentages: {never_heard: 53.7, interested: 22.5, not_interested: 17.6, would_use: 4.8, would_not_use: 1.3}
+                counts:
+                    never_heard: 12716
+                    interested: 5315
+                    not_interested: 4177
+                    would_use: 1140
+                    would_not_use: 318
+                percentages:
+                    never_heard: 53.7
+                    interested: 22.5
+                    not_interested: 17.6
+                    would_use: 4.8
+                    would_not_use: 1.3
     -
         survey_id: '2018'
         tools:
             -
                 tool_id: redux
-                counts: {would_use: 9503, interested: 5414, not_interested: 2330, never_heard: 834, would_not_use: 2073}
-                percentages: {would_use: 47.2, interested: 26.9, not_interested: 11.6, never_heard: 4.1, would_not_use: 10.3}
+                counts:
+                    would_use: 9503
+                    interested: 5414
+                    not_interested: 2330
+                    never_heard: 834
+                    would_not_use: 2073
+                percentages:
+                    would_use: 47.2
+                    interested: 26.9
+                    not_interested: 11.6
+                    never_heard: 4.1
+                    would_not_use: 10.3
             -
                 tool_id: graphql
-                counts: {interested: 12575, never_heard: 1421, would_use: 4108, not_interested: 1771, would_not_use: 254}
-                percentages: {interested: 62.5, never_heard: 7.1, would_use: 20.4, not_interested: 8.8, would_not_use: 1.3}
+                counts:
+                    interested: 12575
+                    never_heard: 1421
+                    would_use: 4108
+                    not_interested: 1771
+                    would_not_use: 254
+                percentages:
+                    interested: 62.5
+                    never_heard: 7.1
+                    would_use: 20.4
+                    not_interested: 8.8
+                    would_not_use: 1.3
             -
                 tool_id: relay
-                counts: {never_heard: 11387, interested: 3872, not_interested: 4403, would_use: 213, would_not_use: 252}
-                percentages: {never_heard: 56.6, interested: 19.2, not_interested: 21.9, would_use: 1.1, would_not_use: 1.3}
+                counts:
+                    never_heard: 11387
+                    interested: 3872
+                    not_interested: 4403
+                    would_use: 213
+                    would_not_use: 252
+                percentages:
+                    never_heard: 56.6
+                    interested: 19.2
+                    not_interested: 21.9
+                    would_use: 1.1
+                    would_not_use: 1.3
             -
                 tool_id: apollo
-                counts: {never_heard: 8507, interested: 7124, not_interested: 2108, would_use: 2228, would_not_use: 170}
-                percentages: {never_heard: 42.2, interested: 35.4, not_interested: 10.5, would_use: 11.1, would_not_use: 0.8}
+                counts:
+                    never_heard: 8507
+                    interested: 7124
+                    not_interested: 2108
+                    would_use: 2228
+                    would_not_use: 170
+                percentages:
+                    never_heard: 42.2
+                    interested: 35.4
+                    not_interested: 10.5
+                    would_use: 11.1
+                    would_not_use: 0.8
             -
                 tool_id: mobx
-                counts: {never_heard: 9028, interested: 4280, not_interested: 5375, would_use: 1126, would_not_use: 323}
-                percentages: {never_heard: 44.8, interested: 21.3, not_interested: 26.7, would_use: 5.6, would_not_use: 1.6}
+                counts:
+                    never_heard: 9028
+                    interested: 4280
+                    not_interested: 5375
+                    would_use: 1126
+                    would_not_use: 323
+                percentages:
+                    never_heard: 44.8
+                    interested: 21.3
+                    not_interested: 26.7
+                    would_use: 5.6
+                    would_not_use: 1.6
 other_tools:
     -
         name: vuex

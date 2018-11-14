@@ -12,18 +12,6 @@ class CompoundAggregator {
         this.config = config
     }
 
-    async computeUserInfo() {
-        const salary = await userInfoAggregator.salary()
-        const companySize = await userInfoAggregator.companySize()
-        const yearsOfExperience = await userInfoAggregator.yearsOfExperience()
-
-        return {
-            salary,
-            companySize,
-            yearsOfExperience
-        }
-    }
-
     async computeSections(sectionIds, currentSurveyId) {
         const surveyIds = Object.keys(this.config)
         const currentSurveyConfig = this.config[currentSurveyId]
@@ -80,10 +68,12 @@ class CompoundAggregator {
         return toolsExperiencesAggs
     }
 
-    async computeDemographic() {
+    async computeDemographic(currentSurveyId) {
         return {
-            by_continent: await demographicAggregator.byContinent(),
-            by_country: await demographicAggregator.byCountry(),
+            by_country: await demographicAggregator.salaryAndCompanySizeAndYearsOfExperienceByLocationForSurvey(
+                'country',
+                currentSurveyId
+            ),
             participation: await demographicAggregator.participationByCountry(),
             gender: await demographicAggregator.genderBreakdown()
         }

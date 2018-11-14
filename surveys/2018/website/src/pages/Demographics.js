@@ -20,7 +20,7 @@ const Demographics = ({ data, ...rest }) => {
                 <TextBlock text={data.file.childMarkdownRemark.html} />
                 <ParticipationByCountryBlock data={participationData} />
                 <GenderBreakdownBlock data={genderData} />
-                <SalaryPerCountryBlock />
+                <SalaryPerCountryBlock data={data.stats.by_country} />
             </div>
         </Layout>
     )
@@ -54,6 +54,14 @@ Demographics.propTypes = {
                         })
                     ).isRequired
                 })
+            ).isRequired,
+            by_country: PropTypes.arrayOf(
+                PropTypes.shape({
+                    country: PropTypes.string.isRequired,
+                    salary: PropTypes.shape({
+                        average: PropTypes.number.isRequired
+                    }).isRequired
+                })
             ).isRequired
         }).isRequired
     }).isRequired
@@ -80,6 +88,13 @@ export const query = graphql`
                     gender
                     count
                     percentage
+                }
+            }
+            by_country {
+                country
+                total
+                salary {
+                    average
                 }
             }
         }
