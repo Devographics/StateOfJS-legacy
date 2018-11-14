@@ -104,6 +104,13 @@ tools:
     nano: nano
     pycharm: PyCharm
 
+tools_descriptions:
+    angular: >
+        Angular is a TypeScript-based open-source front-end web application platform. Note that from
+        this year on, we will not be making a distinction between Angular and Angular.js.
+    es6: >
+        ES6 and its descendants are the newer versions of JavaScript, usually run through Babel.
+
 block_intro:
     happiness: >
         On a scale of one to five, how happy are developers

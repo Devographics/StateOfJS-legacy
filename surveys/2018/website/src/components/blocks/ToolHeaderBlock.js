@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { format } from 'd3-format'
-import { getToolName } from '../../helpers/wording'
+import { getToolName, getWording } from '../../helpers/wording'
 import bestOfJsData from '../../data/bestofjs'
 import PeriodicElement from '../elements/PeriodicElement'
 import periodicTableData from '../../data/periodic_table.yml'
@@ -18,7 +18,7 @@ export default class ToolHeaderBlock extends Component {
     render() {
         const { tool } = this.props
 
-        const project = bestOfJsData.projects.find(p => p.slug === tool)
+        const project = bestOfJsData.projects.find(p => p.slug === tool) || { description: getWording(`tools_descriptions.${tool}`) }
 
         return (
             <div className="Block ToolHeader">
@@ -33,39 +33,37 @@ export default class ToolHeaderBlock extends Component {
                 <div className="ToolHeader__Content">
                     <div className="ToolHeader__Header">
                         <h2 className="ToolHeader__Title">{getToolName(tool)}</h2>
-                        {project && (
+                        {project.stars && (
                             <div className="ToolHeader__Stars">
                                 {starsFormatter(project.stars)} stars
                             </div>
                         )}
                     </div>
-                    {project && (
-                        <Fragment>
-                            <div>{project.description}</div>
-                            <div className="ToolHeader__Links">
-                                {project.homepage && (
-                                    <a
-                                        className="ToolHeader__Link button button--small"
-                                        href={project.homepage}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        Homepage
-                                    </a>
-                                )}
-                                {project.github && (
-                                    <a
-                                        className="ToolHeader__Link button button--small"
-                                        href={`https://github.com/${project.github}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        GitHub
-                                    </a>
-                                )}
-                            </div>
-                        </Fragment>
-                    )}
+                    <Fragment>
+                        <div>{project.description}</div>
+                        <div className="ToolHeader__Links">
+                            {project.homepage && (
+                                <a
+                                    className="ToolHeader__Link button button--small"
+                                    href={project.homepage}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Homepage
+                                </a>
+                            )}
+                            {project.github && (
+                                <a
+                                    className="ToolHeader__Link button button--small"
+                                    href={`https://github.com/${project.github}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    GitHub
+                                </a>
+                            )}
+                        </div>
+                    </Fragment>
                 </div>
             </div>
         )

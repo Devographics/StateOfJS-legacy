@@ -13,6 +13,8 @@ Just like JavaScript, the survey itself has been changing too. Here's what's new
 - We also made **every chart shareable**, so don't hesitate to tweet or share any data that catches your eye. 
 - Finally, since we now have 3 years of data, we tried to incorporate **historical trends over time** in the charts whenever possible. 
 
+Note: there's still some data (salaries, experience, company size, etc.) that we weren't able to analyze in time, so you can look forward to a second data drop a few weeks from now!
+
 ### Resources
 
 We figure a lot of you are checking out this survey to help you figure out what to learn next. So we've included links to useful JavaScript resources throughout the survey to help point you in the right direction. 
@@ -37,7 +39,7 @@ Be sure to check out my React/GraphQL JavaScript framework, [Vulcan.js](http://v
 
 ### Credits & Stuff
 
-The site is set in IBM Plex Mono. Fire gif borrowed from [Animal Jam](http://animal-jam-roleplay.wikia.com/wiki/File:Pixel-fire-gif-1.gif). Questions? Feedback? [Get in touch!](mailto:hello@stateofjs.com)
+The site is set in IBM Plex Mono. Fire gif borrowed from [Animal Jam](http://animal-jam-roleplay.wikia.com/wiki/File:Pixel-fire-gif-1.gif). Questions? Feedback? Want access to the raw data? [Get in touch!](mailto:hello@stateofjs.com)
 
 And now, let's see what JavaScript has been up to this year!
 
