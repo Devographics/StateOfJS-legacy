@@ -19,6 +19,7 @@ const verticalAxis = {
         if (d.value === 5) text = '🙂'
         return (
             <text
+                key={d.key}
                 style={{ fontSize: 24 }}
                 x={d.x + d.textX}
                 y={d.y}
