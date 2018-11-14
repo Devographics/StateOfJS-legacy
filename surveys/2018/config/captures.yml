@@ -1,6 +1,168 @@
-baseUrl:   http://localhost:3018/2018
+baseUrl:   http://localhost:3018
 outputDir: static/images/captures
 
 # Each entry is composed of a `path` (the page the chart appears on)
 # and a `selector` used to limit the capture area
-items: []
+items:
+  - path: /demographics/
+    selector: '#participation-by-country'
+    filename: participation-by-country
+  - path: /demographics/
+    selector: '#gender-breakdown'
+    filename: gender-breakdown  
+
+  # reason clojurescript elm
+  # flow typescript es6
+  - path: /javascript-flavors/overview/
+    selector: '#overview'
+    filename: javascript-flavors-overview
+  - path: /javascript-flavors/overview/
+    selector: '#happiness'
+    filename: javascript-flavors-happiness
+  - path: /javascript-flavors/es6/
+    selector: '#results-over-time'
+    filename: javascript-flavors-es6-results-over-time  
+  - path: /javascript-flavors/typescript/
+    selector: '#results-over-time'
+    filename: javascript-flavors-typescript-results-over-time  
+  - path: /javascript-flavors/flow/
+    selector: '#results-over-time'
+    filename: javascript-flavors-flow-results-over-time 
+  - path: /javascript-flavors/reason/
+    selector: '#results-over-time'
+    filename: javascript-flavors-reason-results-over-time 
+  - path: /javascript-flavors/elm/
+    selector: '#results-over-time'
+    filename: javascript-flavors-elm-results-over-time 
+  - path: /javascript-flavors/clojurescript/
+    selector: '#results-over-time'
+    filename: javascript-flavors-clojurescript-results-over-time 
+
+  # react angular ember
+  # polymer vuejs preact
+  - path: /front-end-frameworks/overview/
+    selector: '#overview'
+    filename: front-end-frameworks-overview
+  - path: /front-end-frameworks/overview/
+    selector: '#happiness'
+    filename: front-end-frameworks-happiness
+  - path: /front-end-frameworks/react/
+    selector: '#results-over-time'
+    filename: front-end-frameworks-react-results-over-time   
+  - path: /front-end-frameworks/vuejs/
+    selector: '#results-over-time'
+    filename: front-end-frameworks-vuejs-results-over-time   
+  - path: /front-end-frameworks/angular/
+    selector: '#results-over-time'
+    filename: front-end-frameworks-angular-results-over-time   
+  - path: /front-end-frameworks/ember/
+    selector: '#results-over-time'
+    filename: front-end-frameworks-ember-results-over-time   
+  - path: /front-end-frameworks/polymer/
+    selector: '#results-over-time'
+    filename: front-end-frameworks-polymer-results-over-time   
+  - path: /front-end-frameworks/polymer/
+    selector: '#results-over-time'
+    filename: front-end-frameworks-polymer-results-over-time   
+
+  # redux graphql relay
+  # apollo mobx
+  - path: /data-layer/overview/
+    selector: '#overview'
+    filename: data-layer-overview
+  - path: /data-layer/overview/
+    selector: '#happiness'
+    filename: data-layer-happiness
+  - path: /data-layer/redux/
+    selector: '#results-over-time'
+    filename: data-layer-redux-results-over-time   
+  - path: /data-layer/graphql/
+    selector: '#results-over-time'
+    filename: data-layer-graphql-results-over-time   
+  - path: /data-layer/apollo/
+    selector: '#results-over-time'
+    filename: data-layer-apollo-results-over-time   
+  - path: /data-layer/mobx/
+    selector: '#results-over-time'
+    filename: data-layer-mobx-results-over-time   
+  - path: /data-layer/relay/
+    selector: '#results-over-time'
+    filename: data-layer-relay-results-over-time   
+
+  # meteor express nextjs
+  # koa sails feathers
+  - path: /back-end-frameworks/overview/
+    selector: '#overview'
+    filename: back-end-frameworks-overview
+  - path: /back-end-frameworks/overview/
+    selector: '#happiness'
+    filename: back-end-frameworks-happiness
+  - path: /back-end-frameworks/express/
+    selector: '#results-over-time'
+    filename: back-end-frameworks-express-results-over-time
+  - path: /back-end-frameworks/koa/
+    selector: '#results-over-time'
+    filename: back-end-frameworks-koa-results-over-time
+  - path: /back-end-frameworks/meteor/
+    selector: '#results-over-time'
+    filename: back-end-frameworks-meteor-results-over-time
+  - path: /back-end-frameworks/sails/
+    selector: '#results-over-time'
+    filename: back-end-frameworks-sails-results-over-time
+  - path: /back-end-frameworks/feathers/
+    selector: '#results-over-time'
+    filename: back-end-frameworks-feathers-results-over-time
+
+  # storybook mocha jasmine
+  # jest enzyme ava  karma
+  - path: /testing/overview/
+    selector: '#overview'
+    filename: testing-overview   
+  - path: /testing/overview/
+    selector: '#happiness'
+    filename: testing-happiness
+  - path: /testing/jest/
+    selector: '#results-over-time'
+    filename: testing-jest-results-over-time
+  - path: /testing/mocha/
+    selector: '#results-over-time'
+    filename: testing-mocha-results-over-time
+  - path: /testing/jasmine/
+    selector: '#results-over-time'
+    filename: testing-jasmine-results-over-time
+  - path: /testing/enzyme/
+    selector: '#results-over-time'
+    filename: testing-enzyme-results-over-time
+  - path: /testing/ava/
+    selector: '#results-over-time'
+    filename: testing-ava-results-over-time
+  - path: /testing/ava/
+    selector: '#results-over-time'
+    filename: testing-ava-results-over-time
+
+  # electron react-native phonegap-cordova
+  # nativescript ionic native-apps
+  - path: /mobile-and-desktop/overview/
+    selector: '#overview'
+    filename: mobile-and-desktop
+  - path: /mobile-and-desktop/overview/
+    selector: '#happiness'
+    filename: mobile-and-desktop-happiness
+  - path: /mobile-and-desktop/electron/
+    selector: '#results-over-time'
+    filename: mobile-and-desktop-electron-results-over-time
+  - path: /mobile-and-desktop/react-native/
+    selector: '#results-over-time'
+    filename: mobile-and-desktop-react-native-results-over-time
+  - path: /mobile-and-desktop/native-apps/
+    selector: '#results-over-time'
+    filename: mobile-and-desktop-native-apps-results-over-time
+  - path: /mobile-and-desktop/phonegap-cordova/
+    selector: '#results-over-time'
+    filename: mobile-and-desktop-phonegap-cordova-results-over-time
+  - path: /mobile-and-desktop/ionic/
+    selector: '#results-over-time'
+    filename: mobile-and-desktop-ionic-results-over-time
+  - path: /mobile-and-desktop/nativescript/
+    selector: '#results-over-time'
+    filename: mobile-and-desktop-nativescript-results-over-time

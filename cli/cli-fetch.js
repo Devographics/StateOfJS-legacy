@@ -1,37 +1,41 @@
 'use strict'
-
 const chalk = require('chalk')
-const mapValues = require('lodash/mapValues')
-const omit = require('lodash/omit')
-const typeForm = require('./lib/collector/type_form')
-const dto = require('./lib/collector/dto')
-const elastic = require('./lib/collector/elastic')
-const mapping = require('./lib/collector/mapping')
+const YAML = require('yamljs')
+const config = require('@ekino/config')
+const { writeFile } = require('./lib/fs')
+const elastic = require('./lib/data-pipeline/loaders/elastic')
+const TypeformExtractor = require('./lib/data-pipeline/extractors/typeform')
+const surveys = require('./conf/surveys')
 
 const run = async () => {
     try {
-        console.log(chalk.yellow('Initializing elastic index'))
+        console.log(chalk.yellow('initializing elastic index'))
         try {
             await elastic.deleteIndex()
-        } catch (err) {}
+        } catch (err) {
+            // error occurs if the index doesn't exist,
+            // which is the case on init
+        }
         await elastic.createIndex()
-        await elastic.putMapping('response', {
-            properties: mapValues(mapping.response.properties, value => {
-                return omit(value, ['transform'])
+    
+        for (let survey of surveys) {
+            console.log(`\nfetching results for survey: ${survey.id}`)
+            const extractor = new TypeformExtractor(survey, { apiToken: config.get('typeform.token') })
+    
+            await extractor.enhanceConfig()
+            await writeFile(`./conf/${survey.id}.yml`, YAML.stringify(extractor.config, 10))
+    
+            const total = await extractor.fetchResponseCount()
+            console.log(`${total} responses to fetch`)
+    
+            let count = 0
+            await extractor.fetchResults(async items => {
+                count += items.length
+                console.log(`> ${count}/${total}`)
+    
+                await elastic.bulk('response', items)
             })
-        })
-
-        const result = await typeForm.responses({ limit: 1 })
-        const questionById = dto.questionById(result.questions)
-
-        await typeForm.fetchAll({
-            onData: async ({ responses }) => {
-                await elastic.bulk(
-                    'response',
-                    responses.map(response => dto.response(questionById, response))
-                )
-            }
-        })
+        }
     } catch (err) {
         console.error(err)
         process.exit(1)

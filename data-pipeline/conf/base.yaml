@@ -1,5 +1,0 @@
-elastic:
-  host:  localhost
-  port:  9200
-  log:   warning
-  index: soj

@@ -6,7 +6,7 @@ import ChartContainer from '../elements/ChartContainer'
 export default class ParticipationByCountryBlock extends Component {
     render() {
         return (
-            <div className="block">
+            <div className="block" id="participation-by-country">
                 <BlockTitle chart="participation-by-country" />
                 <ChartContainer>
                     <ParticipationByCountryMapChart data={this.props.data} />

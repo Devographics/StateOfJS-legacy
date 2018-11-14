@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ResponsiveBar } from '@nivo/bar'
-import { BasicTooltip } from '@nivo/core'
 import { colorRange } from '../../constants'
 import theme from '../../nivoTheme'
 import Tooltip from '../elements/Tooltip'
@@ -83,6 +82,7 @@ const BarChart = ({ data }) => (
                 renderTick: TickItem
             }}
             tooltip={BarTooltip}
+            layers={['grid', 'bars', 'axes', 'markers', 'legends']}
         />
     </div>
 )

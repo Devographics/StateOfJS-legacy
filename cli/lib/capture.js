@@ -1,11 +1,10 @@
 'use strict'
 const puppeteer = require('puppeteer')
 const chalk = require('chalk')
-const _ = require('lodash')
 const Path = require('path')
 const { isDirectory } = require('./fs')
 
-const capture = async (page, baseUrl, { path, selector }, outputDir) => {
+const capture = async (page, baseUrl, { path, selector, filename: _filename }, outputDir) => {
     const url = `${baseUrl}${path}`
 
     console.log(chalk`{yellow Capturing {white ${path}}} {dim (selector: ${selector})}`)
@@ -18,8 +17,12 @@ const capture = async (page, baseUrl, { path, selector }, outputDir) => {
     }
 
     const clip = await element.boundingBox()
+    clip.x = clip.x - 20
+    clip.y = clip.y - 20
+    clip.width = clip.width + 40
+    clip.height = clip.height + 40
 
-    const filename = `${_.snakeCase(_.deburr(path))}.png`
+    const filename = `${_filename}.png`
     const fullPath = Path.join(outputDir, filename)
 
     await page.screenshot({ path: fullPath, clip })
@@ -39,9 +42,9 @@ module.exports = async ({ baseUrl, outputDir, items }) => {
         throw new Error(`'${outputDir}' is not a valid directory`)
     }
 
-    const browser = await puppeteer.launch()
+    const browser = await puppeteer.launch({ headless: false, slowMo: 250 })
     const page = await browser.newPage()
-    await page.setViewport({ width: 1400, height: 4000 })
+    await page.setViewport({ width: 1400, height: 10000 })
 
     for (let pageConfig of items) {
         await capture(page, baseUrl, pageConfig, outputDir)

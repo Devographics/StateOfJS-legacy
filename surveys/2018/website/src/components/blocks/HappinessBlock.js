@@ -21,7 +21,7 @@ class HappinessBlock extends PureComponent {
         const surveyData = data.find(d => d.survey === '2018')
 
         return (
-            <div className="block block--chart block--happiness">
+            <div className="block block--chart block--happiness" id="happiness">
                 <BlockTitle chart="happiness" />
                 <div className="block__description">
                     <p>
