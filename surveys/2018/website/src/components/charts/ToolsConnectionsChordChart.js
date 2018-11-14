@@ -18,7 +18,7 @@ export default class ToolsConnectionsChordChart extends Component {
 
         return (
             <div className="chart-wrapper">
-                <ChartRatioContainer ratio={1}>
+                <ChartRatioContainer ratio={1} maxHeight={800}>
                     <Chord
                         margin={{
                             top: 100,

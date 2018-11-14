@@ -1,1 +1,3 @@
-The JavaScript ecosystem isn't limited to big-name libraries and frameworks. There's also all these small utilites we use every day, to say nothing of the bundlers we use to package up our code, and the text editors we write said code with. 
+The JavaScript ecosystem isn't limited to libraries and frameworks. There's also all these small utilites we use every day, to say nothing of the bundlers we use to package up our code, and the text editors we write said code with. 
+
+In addition, we also wanted to know which new browser APIs were gaining traction; and yes, as crazy as it might sound it turns out some of us also use languages that *aren’t* JavaScript! 

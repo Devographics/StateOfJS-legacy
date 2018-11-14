@@ -69,11 +69,11 @@ export default class ToolsConnectionsBlock extends Component {
 
         return (
             <div className="block block--chart block--connections">
-                <ToolsConnectionsLegends
+                {/* <ToolsConnectionsLegends
                     sections={data.indexesBySection.map(s => s.section)}
                     selectedSections={selectedSections}
                     onChange={this.handleSectionToggle}
-                />
+                /> */}
                 <ToolsConnectionsChordChart
                     getColor={getColor}
                     keys={toolKeys}

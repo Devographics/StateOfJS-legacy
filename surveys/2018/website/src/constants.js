@@ -31,13 +31,22 @@ export const colorRange = [
     colors.greyLight
 ]
 
+// export const chordScale = [
+//     colors.blue,
+//     colors.red,
+//     colors.blueLight,
+//     colors.redLight,
+//     colors.blueDark,
+//     colors.redDark
+// ]
+
 export const chordScale = [
-    colors.blue,
     colors.red,
-    colors.blueLight,
-    colors.redLight,
-    colors.blueDark,
-    colors.redDark
+    colors.red,
+    colors.red,
+    colors.red,
+    colors.red,
+    colors.red
 ]
 
 export const colorScale = [
