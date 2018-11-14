@@ -781,6 +781,22 @@
     lodash "^4.17.4"
     recompose "^0.26.0"
 
+"@nivo/line@^0.51.0":
+  version "0.51.0"
+  resolved "https://registry.yarnpkg.com/@nivo/line/-/line-0.51.0.tgz#4d16a2a2b843103764dd74ee7832ca85f9b311fc"
+  integrity sha512-emkRrcSaAFtbHjkEva5fEwEFCh7i18/F+y1QpWf7QoMpeYH0k7DahNfz7V+EzuCZeZASubR3xOR25O9eADzzUw==
+  dependencies:
+    "@nivo/axes" "0.51.0"
+    "@nivo/core" "0.51.0"
+    "@nivo/legends" "0.51.0"
+    "@nivo/scales" "0.51.0"
+    d3-format "^1.3.2"
+    d3-scale "^2.1.2"
+    d3-shape "^1.2.2"
+    lodash "^4.17.4"
+    react-motion "^0.5.2"
+    recompose "^0.26.0"
+
 "@nivo/pie@0.51.0":
   version "0.51.0"
   resolved "https://registry.yarnpkg.com/@nivo/pie/-/pie-0.51.0.tgz#a355a7523a69f091658481456ca96f41fd3fea3c"
@@ -792,6 +808,15 @@
     lodash "^4.17.4"
     react-motion "^0.5.2"
     recompose "^0.26.0"
+
+"@nivo/scales@0.51.0":
+  version "0.51.0"
+  resolved "https://registry.yarnpkg.com/@nivo/scales/-/scales-0.51.0.tgz#e6d5306a9d1fb675f463ce6195cae78347394ebe"
+  integrity sha512-Rnmsvv5c5s3D6UPdVWGNmpPp9+runSDg16PVIlXjr0PSM8nm4fjwJCGI5x6rxt1rQ2LFSUVcIuWDfBCnnaQb6Q==
+  dependencies:
+    d3-scale "^2.1.2"
+    d3-time-format "^2.1.3"
+    lodash "^4.17.4"
 
 "@nivo/stream@0.51.0":
   version "0.51.0"

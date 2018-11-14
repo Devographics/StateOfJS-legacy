@@ -1,5 +1,3 @@
-
-
 const ignore = [
     ' ',
     '\n',
@@ -18,7 +16,7 @@ const ignore = [
     'no',
     'No',
     '.',
-    '?',
+    '?'
 ]
 exports.cleanupValue = value => (ignore.includes(value) ? null : value)
 

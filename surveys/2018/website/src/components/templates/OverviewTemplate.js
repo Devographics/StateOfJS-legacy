@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Meta from '../elements/Meta'
 import Layout from '../common/Layout'
@@ -17,6 +18,27 @@ const OverviewTemplate = ({ pageContext, data: { section } }) => {
             </div>
         </Layout>
     )
+}
+
+OverviewTemplate.propTypes = {
+    data: PropTypes.shape({
+        section: PropTypes.shape({
+            section_id: PropTypes.string.isRequired,
+            happiness: PropTypes.arrayOf(
+                PropTypes.shape({
+                    survey: PropTypes.string.isRequired,
+                    average: PropTypes.number.isRequired,
+                    scores: PropTypes.arrayOf(
+                        PropTypes.shape({
+                            score: PropTypes.number.isRequired,
+                            count: PropTypes.number.isRequired,
+                            percentage: PropTypes.number.isRequired
+                        })
+                    ).isRequired
+                })
+            ).isRequired
+        }).isRequired
+    }).isRequired
 }
 
 export const query = graphql`
@@ -46,6 +68,11 @@ export const query = graphql`
             happiness {
                 survey
                 average
+                scores {
+                    score
+                    count
+                    percentage
+                }
             }
         }
     }

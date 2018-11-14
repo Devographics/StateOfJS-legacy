@@ -107,6 +107,8 @@ block_intro:
     happiness: >
         On a scale of one to five, how happy are developers
         with the current state of ${section} tools?
+    happiness_trend: >
+        How does happiness about ${section} evolved over time?
 
 opinions:
     legends:

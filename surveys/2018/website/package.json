@@ -22,6 +22,7 @@
     "@nivo/chord": "0.51.2",
     "@nivo/circle-packing": "0.51.0",
     "@nivo/core": "0.51.0",
+    "@nivo/line": "^0.51.0",
     "@nivo/pie": "0.51.0",
     "@nivo/stream": "0.51.0",
     "@nivo/waffle": "0.51.0",

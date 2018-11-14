@@ -6,44 +6,44 @@ module.exports = [
         id: '2016',
         extractor: 'typeform',
         typeform: {
-            id: 'Mulmxw',
+            id: 'Mulmxw'
         },
         sections: {
             [sections.JAVASCRIPT_FLAVORS]: {
-                title: 'JavaScript Flavor',
+                title: 'JavaScript Flavor'
             },
             [sections.FRONTEND_FRAMEWORKS]: {
                 title: 'Front-End',
-                freeform: 'Other Front-End Frameworks',
+                freeform: 'Other Front-End Frameworks'
             },
             [sections.STATE_MANAGEMENT]: {
                 title: 'State Management',
-                freeform: 'Other State Management Libraries',
+                freeform: 'Other State Management Libraries'
             },
             [sections.DATA_LAYER]: {
                 title: 'API Layer',
-                freeform: 'Other API layer solutions',
+                freeform: 'Other API layer solutions'
             },
             [sections.BACKEND_FRAMEWORKS]: {
                 title: 'Stacks',
-                freeform: 'Other stacks',
+                freeform: 'Other stacks'
             },
             [sections.TESTING]: {
                 title: 'Testing',
-                freeform: 'Other testing frameworks',
+                freeform: 'Other testing frameworks'
             },
             [sections.CSS]: {
                 title: 'CSS',
-                freeform: 'Other CSS solutions',
+                freeform: 'Other CSS solutions'
             },
             [sections.BUILD_TOOLS]: {
                 title: 'Build Tools',
-                freeform: 'Other build tools',
+                freeform: 'Other build tools'
             },
             [sections.MOBILE_DESKTOP]: {
                 title: 'Mobile',
-                freeform: 'Other mobile apps solutions',
-            },
+                freeform: 'Other mobile apps solutions'
+            }
         },
         experience: {
             // "id": "36475866",
@@ -65,47 +65,47 @@ module.exports = [
             // "id": "36475863",
             // "ref": "39101cc5e2ab0e13",
             // "label": "I've never heard of it"
-            [`I've never heard of it`]: experience.NEVER_HEARD,
-        },
+            [`I've never heard of it`]: experience.NEVER_HEARD
+        }
     },
     {
         id: '2017',
         extractor: 'typeform',
         typeform: {
-            id: 'S5iLk9',
+            id: 'S5iLk9'
         },
         sections: {
             [sections.JAVASCRIPT_FLAVORS]: {
-                title: 'JavaScript Flavor',
+                title: 'JavaScript Flavor'
             },
             [sections.FRONTEND_FRAMEWORKS]: {
                 title: 'Front-End',
-                freeform: 'Other Front-End Frameworks',
+                freeform: 'Other Front-End Frameworks'
             },
             [sections.DATA_LAYER]: {
                 title: 'Data Layer',
-                freeform: 'Other Data Management Solutions',
+                freeform: 'Other Data Management Solutions'
             },
             [sections.BACKEND_FRAMEWORKS]: {
                 title: 'Back-End',
-                freeform: 'Other Back-End Tools',
+                freeform: 'Other Back-End Tools'
             },
             [sections.TESTING]: {
                 title: 'Testing',
-                freeform: 'Other testing frameworks',
+                freeform: 'Other testing frameworks'
             },
             [sections.CSS]: {
                 title: 'CSS',
-                freeform: 'Other CSS solutions',
+                freeform: 'Other CSS solutions'
             },
             [sections.BUILD_TOOLS]: {
                 title: 'Build Tools',
-                freeform: 'Other build tools',
+                freeform: 'Other build tools'
             },
             [sections.MOBILE_DESKTOP]: {
                 title: 'Mobile & Desktop',
-                freeform: 'Other mobile/desktop apps solutions',
-            },
+                freeform: 'Other mobile/desktop apps solutions'
+            }
         },
         experience: {
             // "id": "LD42",
@@ -127,40 +127,40 @@ module.exports = [
             // "id": "oHQz",
             // "ref": "65e0ff66df43887d",
             // "label": "I've never heard of it"
-            [`I've never heard of it`]: experience.NEVER_HEARD,
-        },
+            [`I've never heard of it`]: experience.NEVER_HEARD
+        }
     },
     {
         id: '2018',
         extractor: 'typeform',
         typeform: {
-            id: 'J9gRJf',
+            id: 'J9gRJf'
         },
         sections: {
             [sections.JAVASCRIPT_FLAVORS]: {
                 title: 'JavaScript Flavors',
-                freeform: 'Other JavaScript Flavors options',
+                freeform: 'Other JavaScript Flavors options'
             },
             [sections.FRONTEND_FRAMEWORKS]: {
                 title: 'Front-End',
-                freeform: 'Other Front-End options',
+                freeform: 'Other Front-End options'
             },
             [sections.DATA_LAYER]: {
                 title: 'Data Layer',
-                freeform: 'Other Data Layer options',
+                freeform: 'Other Data Layer options'
             },
             [sections.BACKEND_FRAMEWORKS]: {
                 title: 'Back-end',
-                freeform: 'Other Back-end options',
+                freeform: 'Other Back-end options'
             },
             [sections.TESTING]: {
                 title: 'Testing',
-                freeform: 'Other Testing options',
+                freeform: 'Other Testing options'
             },
             [sections.MOBILE_DESKTOP]: {
                 title: 'Mobile & Desktop',
-                freeform: 'Other Mobile & Desktop options',
-            },
+                freeform: 'Other Mobile & Desktop options'
+            }
         },
         experience: {
             // "id": "o61WWiggrPn1",
@@ -182,7 +182,7 @@ module.exports = [
             // "id": "m0FxGuXDhc5A",
             // "ref": "reason_neverheard",
             // "label": "🤷 Never heard of it/Not sure what it is"
-            [`🤷 Never heard of it/Not sure what it is`]: experience.NEVER_HEARD,
-        },
-    },
+            [`🤷 Never heard of it/Not sure what it is`]: experience.NEVER_HEARD
+        }
+    }
 ]

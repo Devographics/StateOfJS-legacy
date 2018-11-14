@@ -3,17 +3,17 @@ const elastic = require('../loaders/elastic')
 const countryAndContinentSubAggs = {
     survey: {
         terms: {
-            field: 'survey.keyword',
+            field: 'survey.keyword'
         },
         aggs: {
             gender: {
                 terms: {
-                    field: 'user_info.gender.keyword',
+                    field: 'user_info.gender.keyword'
                 }
             },
             salary: {
                 terms: {
-                    field: 'user_info.salary.keyword',
+                    field: 'user_info.salary.keyword'
                 }
             },
             company_size: {
@@ -31,7 +31,7 @@ exports.byCountry = async () => {
             terms: {
                 size: 200,
                 min_doc_count: 1,
-                field: 'user_info.country.keyword',
+                field: 'user_info.country.keyword'
             },
             aggs: countryAndContinentSubAggs
         }
@@ -43,14 +43,20 @@ exports.byCountry = async () => {
         by_survey: country.survey.buckets.map(rawSurvey => ({
             survey: rawSurvey.key,
             count: rawSurvey.doc_count,
-            salary: rawSurvey.salary.buckets.reduce((acc, salaryRange) => ({
-                ...acc,
-                [`salary_range_${salaryRange.key}`]: salaryRange.doc_count
-            }), {}),
-            company_size: rawSurvey.company_size.buckets.reduce((acc, companySize) => ({
-                ...acc,
-                [`company_size_${companySize.key}`]: companySize.doc_count
-            }), {})
+            salary: rawSurvey.salary.buckets.reduce(
+                (acc, salaryRange) => ({
+                    ...acc,
+                    [`salary_range_${salaryRange.key}`]: salaryRange.doc_count
+                }),
+                {}
+            ),
+            company_size: rawSurvey.company_size.buckets.reduce(
+                (acc, companySize) => ({
+                    ...acc,
+                    [`company_size_${companySize.key}`]: companySize.doc_count
+                }),
+                {}
+            )
         }))
     }))
 }
@@ -59,49 +65,57 @@ exports.byContinent = async () => {
     const aggs = await elastic.aggs({
         continent: {
             terms: {
-                field: 'user_info.continent.keyword',
+                field: 'user_info.continent.keyword'
             },
             aggs: countryAndContinentSubAggs
         }
     })
 
-    return aggs.aggregations.continent.buckets.filter(b => b.key !== 'undefined').map(continent => ({
-        continent: continent.key,
-        count: continent.doc_count,
-        by_survey: continent.survey.buckets.map(rawSurvey => ({
-            survey: rawSurvey.key,
-            count: rawSurvey.doc_count,
-            gender: rawSurvey.gender.buckets.map(b => ({
-                id: b.key,
-                count: b.doc_count,
-            })),
-            salary: rawSurvey.salary.buckets.reduce((acc, salaryRange) => ({
-                ...acc,
-                [`salary_range_${salaryRange.key}`]: salaryRange.doc_count
-            }), {}),
-            company_size: rawSurvey.company_size.buckets.reduce((acc, companySize) => ({
-                ...acc,
-                [`company_size_${companySize.key}`]: companySize.doc_count
-            }), {})
+    return aggs.aggregations.continent.buckets
+        .filter(b => b.key !== 'undefined')
+        .map(continent => ({
+            continent: continent.key,
+            count: continent.doc_count,
+            by_survey: continent.survey.buckets.map(rawSurvey => ({
+                survey: rawSurvey.key,
+                count: rawSurvey.doc_count,
+                gender: rawSurvey.gender.buckets.map(b => ({
+                    id: b.key,
+                    count: b.doc_count
+                })),
+                salary: rawSurvey.salary.buckets.reduce(
+                    (acc, salaryRange) => ({
+                        ...acc,
+                        [`salary_range_${salaryRange.key}`]: salaryRange.doc_count
+                    }),
+                    {}
+                ),
+                company_size: rawSurvey.company_size.buckets.reduce(
+                    (acc, companySize) => ({
+                        ...acc,
+                        [`company_size_${companySize.key}`]: companySize.doc_count
+                    }),
+                    {}
+                )
+            }))
         }))
-    }))
 }
 
-exports.participationByLocation = async (locationType) => {
+exports.participationByLocation = async locationType => {
     const result = await elastic.aggs({
         by_survey: {
             terms: {
-                field: 'survey.keyword',
+                field: 'survey.keyword'
             },
             aggs: {
                 location: {
                     terms: {
                         field: `user_info.${locationType}.keyword`,
-                        size: 200,
-                    },
-                },
+                        size: 200
+                    }
+                }
             }
-        },
+        }
     })
 
     return result.aggregations.by_survey.buckets.map(surveyBucket => {
@@ -114,7 +128,7 @@ exports.participationByLocation = async (locationType) => {
                 return {
                     country: locationBucket.key,
                     count: locationBucket.doc_count,
-                    percentage: Number((locationBucket.doc_count / total * 100).toFixed(2))
+                    percentage: Number(((locationBucket.doc_count / total) * 100).toFixed(2))
                 }
             })
         }
@@ -127,16 +141,16 @@ exports.genderBreakdown = async () => {
     const result = await elastic.aggs({
         by_survey: {
             terms: {
-                field: 'survey.keyword',
+                field: 'survey.keyword'
             },
             aggs: {
                 gender: {
                     terms: {
-                        field: 'user_info.gender.keyword',
-                    },
-                },
+                        field: 'user_info.gender.keyword'
+                    }
+                }
             }
-        },
+        }
     })
 
     return result.aggregations.by_survey.buckets.map(surveyBucket => {
@@ -149,7 +163,7 @@ exports.genderBreakdown = async () => {
                 return {
                     gender: genderBucket.key,
                     count: genderBucket.doc_count,
-                    percentage: Number((genderBucket.doc_count / total * 100).toFixed(2))
+                    percentage: Number(((genderBucket.doc_count / total) * 100).toFixed(2))
                 }
             })
         }
