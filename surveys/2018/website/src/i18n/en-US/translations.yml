@@ -322,3 +322,12 @@ happiness:
     2: Neutral
     3: Happy
     4: Happy    
+
+salary_range:
+    work-for-free: work for free
+    0-10: $0k-$10k
+    10-30: $10k-$30k
+    30-50: $30k-$50k
+    50-100: $50k-$100k
+    100-200: $100k-$200k
+    more-than-200: $200k+   

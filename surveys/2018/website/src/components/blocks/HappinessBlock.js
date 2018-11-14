@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import HappinessChart from '../charts/HappinessChart'
 import HappinessTrendChart from '../charts/HappinessTrendChart'
 import BlockTitle from '../elements/BlockTitle'
 import withPageData from '../../helpers/withPageData'
@@ -26,7 +25,6 @@ class HappinessBlock extends PureComponent {
 
     render() {
         const { currentPage, data } = this.props
-        const surveyData = data.find(d => d.survey === '2018')
 
         return (
             <div className="block block--chart block--happiness" id="happiness">
@@ -38,7 +36,6 @@ class HappinessBlock extends PureComponent {
                         })}
                     </p>
                 </div>
-                {/* <HappinessChart score={surveyData.average} /> */}
                 <HappinessTrendChart data={data} />
             </div>
         )

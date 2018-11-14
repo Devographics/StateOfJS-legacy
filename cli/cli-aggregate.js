@@ -12,7 +12,7 @@ const outputDir = config.get('dataOutputDir')
 
 const saveResult = async (file, result) => {
     const yamlFile = path.join(outputDir, `${file}.yml`)
-    await writeFile(yamlFile, YAML.stringify(result, 5))
+    await writeFile(yamlFile, YAML.stringify(result, 10))
 }
 
 const run = async () => {
@@ -107,7 +107,7 @@ const run = async () => {
     })
 
     console.log('\ncomputing demographics')
-    const demographics = await aggregator.computeDemographic()
+    const demographics = await aggregator.computeDemographic(currentSurvey)
     await saveResult('demographics/demographics', demographics)
 
     console.log('\ncomputing global opinions')

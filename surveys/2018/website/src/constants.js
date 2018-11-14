@@ -58,25 +58,15 @@ export const toolOpinionKeys = [
     'never_heard'
 ]
 
-export const salaryKeys = [
-    'I work for free :(',
-    '$0-$10k',
-    '$10-$30k',
-    '$30-50k',
-    '$50-$100k',
-    '$100k-$200k',
-    '$200k+'
+export const salaryRanges = [
+    'work-for-free',
+    '0-10',
+    '10-30',
+    '30-50',
+    '50-100',
+    '100-200',
+    'more-than-200'
 ]
-
-export const salaryShortKeys = {
-    'I work for free :(': 'free',
-    '$0-$10k': '0~10k',
-    '$10-$30k': '10~30k',
-    '$30-50k': '30~50k',
-    '$50-$100k': '50~100k',
-    '$100k-$200k': '100~200k',
-    '$200k+': '>200k'
-}
 
 export const yearsOfExperienceKeys = [
     'Less than one year',

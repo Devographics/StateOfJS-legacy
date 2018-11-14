@@ -6,11 +6,11 @@ import GenderBreakdownBlock from '../components/blocks/GenderBreakdownBlock'
 import { graphql } from 'gatsby'
 import SectionHeader from '../components/elements/SectionHeader'
 import ParticipationByCountryBlock from '../components/blocks/ParticipationByCountryBlock'
+import SalariesBlock from '../components/blocks/SalariesBlock'
 import SalaryPerCountryBlock from '../components/blocks/SalaryPerCountryBlock'
 
 const Demographics = ({ data, ...rest }) => {
     const participationData = data.stats.participation.find(s => s.survey === '2018').by_country
-
     const genderData = data.stats.gender.find(s => s.survey === '2018')
 
     return (
@@ -20,7 +20,8 @@ const Demographics = ({ data, ...rest }) => {
                 <TextBlock text={data.file.childMarkdownRemark.html} />
                 <ParticipationByCountryBlock data={participationData} />
                 <GenderBreakdownBlock data={genderData} />
-                <SalaryPerCountryBlock />
+                <SalariesBlock data={data.stats.salary} />
+                <SalaryPerCountryBlock data={data.stats.by_country} />
             </div>
         </Layout>
     )
@@ -54,6 +55,27 @@ Demographics.propTypes = {
                         })
                     ).isRequired
                 })
+            ).isRequired,
+            by_country: PropTypes.arrayOf(
+                PropTypes.shape({
+                    country: PropTypes.string.isRequired,
+                    salary: PropTypes.shape({
+                        average: PropTypes.number.isRequired
+                    }).isRequired
+                })
+            ).isRequired,
+            salary: PropTypes.arrayOf(
+                PropTypes.shape({
+                    survey: PropTypes.string.isRequired,
+                    average: PropTypes.number.isRequired,
+                    ranges: PropTypes.arrayOf(
+                        PropTypes.shape({
+                            range: PropTypes.string.isRequired,
+                            count: PropTypes.number.isRequired,
+                            percentage: PropTypes.number.isRequired
+                        })
+                    ).isRequired
+                })
             ).isRequired
         }).isRequired
     }).isRequired
@@ -78,6 +100,22 @@ export const query = graphql`
                 total
                 by_gender {
                     gender
+                    count
+                    percentage
+                }
+            }
+            by_country {
+                country
+                total
+                salary {
+                    average
+                }
+            }
+            salary {
+                survey
+                average
+                ranges {
+                    range
                     count
                     percentage
                 }
