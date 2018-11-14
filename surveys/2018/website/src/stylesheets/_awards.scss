@@ -35,14 +35,21 @@
 }
 
 .Awards__Block {
-    margin: $spacing * 4 $spacing * 3 $spacing * 3 $spacing * 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: $spacing * 8;
-    row-gap: $spacing * 3;
+    @include large{
+        margin: $spacing * 4 $spacing * 3 $spacing * 3 $spacing * 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: $spacing * 8;
+        row-gap: $spacing * 3;
+
+    }
 }
 
 .Award {
+
+    @include small-medium{
+        margin-bottom: $spacing*3;
+    }
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -102,6 +109,8 @@
         }
     }
     .Award--show & {
+
+        cursor: default;
         transform: rotateY(540deg) scale(1);
 
         animation-name: burst;

@@ -12,7 +12,7 @@ class Award extends Component {
     }
 
     handleClick = () => {
-        this.setState({ show: !this.state.show })
+        this.setState({ show: true })
     }
 
     render() {
