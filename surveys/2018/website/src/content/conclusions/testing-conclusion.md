@@ -8,6 +8,6 @@ This shows that developers really appreciate the efforts made by Facebook to pro
 
 In the "Single Page application" era, web applications are becoming more and more complex, with more and more logic implemented in the client side. The survey shows clearly that developers use a lot of tools to test their applications.
 
-The spectrum of testing is wide: unit tests, integration tests, end-to-end tests but also "visual testing", as we can see with the success of **Storybook** (the second highest satisfaction rate of the category).
+The spectrum of testing is wide: unit tests, integration tests, end-to-end tests but also "visual testing", as we can see with the success of **Storybook** (the second highest satisfaction rate of the category), a great tool to develop components in isolation.
 
-The future of testing may include more solutions to make automated tests in the browser, a project like [Cypress](https://www.cypress.io/) may be included in the next year survey and we may see more tools based on [Puppeteer](https://pptr.dev/).
+The future of testing may include solutions to make automated tests in the browser simpler, like [Cypress](https://www.cypress.io/) does for example and we may see more tools based on [Puppeteer](https://pptr.dev/).
