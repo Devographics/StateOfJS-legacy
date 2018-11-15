@@ -18,7 +18,9 @@ export default class ToolHeaderBlock extends Component {
     render() {
         const { tool } = this.props
 
-        const project = bestOfJsData.projects.find(p => p.slug === tool) || { description: getWording(`tools_descriptions.${tool}`) }
+        const project = bestOfJsData.projects.find(p => p.slug === tool) || {
+            description: getWording(`tools_descriptions.${tool}`)
+        }
 
         return (
             <div className="Block ToolHeader">

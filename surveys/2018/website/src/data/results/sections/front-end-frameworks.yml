@@ -369,3 +369,583 @@ other_tools:
     -
         name: rxjs
         count: 10
+usage_users_info:
+    by_salary:
+        -
+            tool: react
+            total: 13062
+            ranges:
+                -
+                    range: 50-100
+                    count: 4055
+                    percentage: 31
+                -
+                    range: 100-200
+                    count: 2986
+                    percentage: 22.9
+                -
+                    range: 30-50
+                    count: 2159
+                    percentage: 16.5
+                -
+                    range: 10-30
+                    count: 1781
+                    percentage: 13.6
+                -
+                    range: 0-10
+                    count: 808
+                    percentage: 6.2
+                -
+                    range: work-for-free
+                    count: 589
+                    percentage: 4.5
+                -
+                    range: more-than-200
+                    count: 335
+                    percentage: 2.6
+        -
+            tool: angular
+            total: 4817
+            ranges:
+                -
+                    range: 50-100
+                    count: 1397
+                    percentage: 29
+                -
+                    range: 100-200
+                    count: 913
+                    percentage: 19
+                -
+                    range: 30-50
+                    count: 913
+                    percentage: 19
+                -
+                    range: 10-30
+                    count: 792
+                    percentage: 16.4
+                -
+                    range: 0-10
+                    count: 374
+                    percentage: 7.8
+                -
+                    range: work-for-free
+                    count: 182
+                    percentage: 3.8
+                -
+                    range: more-than-200
+                    count: 100
+                    percentage: 2.1
+        -
+            tool: ember
+            total: 1013
+            ranges:
+                -
+                    range: 100-200
+                    count: 367
+                    percentage: 36.2
+                -
+                    range: 50-100
+                    count: 317
+                    percentage: 31.3
+                -
+                    range: 30-50
+                    count: 128
+                    percentage: 12.6
+                -
+                    range: 10-30
+                    count: 68
+                    percentage: 6.7
+                -
+                    range: 0-10
+                    count: 42
+                    percentage: 4.1
+                -
+                    range: more-than-200
+                    count: 39
+                    percentage: 3.8
+                -
+                    range: work-for-free
+                    count: 20
+                    percentage: 2
+        -
+            tool: polymer
+            total: 635
+            ranges:
+                -
+                    range: 50-100
+                    count: 197
+                    percentage: 31
+                -
+                    range: 100-200
+                    count: 175
+                    percentage: 27.6
+                -
+                    range: 30-50
+                    count: 101
+                    percentage: 15.9
+                -
+                    range: 10-30
+                    count: 71
+                    percentage: 11.2
+                -
+                    range: work-for-free
+                    count: 30
+                    percentage: 4.7
+                -
+                    range: more-than-200
+                    count: 24
+                    percentage: 3.8
+                -
+                    range: 0-10
+                    count: 22
+                    percentage: 3.5
+        -
+            tool: vuejs
+            total: 5810
+            ranges:
+                -
+                    range: 50-100
+                    count: 1685
+                    percentage: 29
+                -
+                    range: 30-50
+                    count: 1104
+                    percentage: 19
+                -
+                    range: 10-30
+                    count: 992
+                    percentage: 17.1
+                -
+                    range: 100-200
+                    count: 989
+                    percentage: 17
+                -
+                    range: 0-10
+                    count: 473
+                    percentage: 8.1
+                -
+                    range: work-for-free
+                    count: 327
+                    percentage: 5.6
+                -
+                    range: more-than-200
+                    count: 86
+                    percentage: 1.5
+        -
+            tool: preact
+            total: 1251
+            ranges:
+                -
+                    range: 50-100
+                    count: 444
+                    percentage: 35.5
+                -
+                    range: 100-200
+                    count: 314
+                    percentage: 25.1
+                -
+                    range: 30-50
+                    count: 191
+                    percentage: 15.3
+                -
+                    range: 10-30
+                    count: 124
+                    percentage: 9.9
+                -
+                    range: work-for-free
+                    count: 60
+                    percentage: 4.8
+                -
+                    range: 0-10
+                    count: 48
+                    percentage: 3.8
+                -
+                    range: more-than-200
+                    count: 37
+                    percentage: 3
+    by_company_size:
+        -
+            tool: react
+            total: 13062
+            ranges:
+                -
+                    range: 100-1000
+                    count: 2851
+                    percentage: 21.8
+                -
+                    range: more-than-1000
+                    count: 2379
+                    percentage: 18.2
+                -
+                    range: 20-50
+                    count: 1771
+                    percentage: 13.6
+                -
+                    range: 50-100
+                    count: 1577
+                    percentage: 12.1
+                -
+                    range: 10-20
+                    count: 1248
+                    percentage: 9.6
+                -
+                    range: '1'
+                    count: 1119
+                    percentage: 8.6
+                -
+                    range: 5-10
+                    count: 1022
+                    percentage: 7.8
+                -
+                    range: 1-5
+                    count: 981
+                    percentage: 7.5
+        -
+            tool: angular
+            total: 4817
+            ranges:
+                -
+                    range: 100-1000
+                    count: 1100
+                    percentage: 22.8
+                -
+                    range: more-than-1000
+                    count: 1005
+                    percentage: 20.9
+                -
+                    range: 20-50
+                    count: 622
+                    percentage: 12.9
+                -
+                    range: 50-100
+                    count: 573
+                    percentage: 11.9
+                -
+                    range: 10-20
+                    count: 448
+                    percentage: 9.3
+                -
+                    range: '1'
+                    count: 361
+                    percentage: 7.5
+                -
+                    range: 5-10
+                    count: 341
+                    percentage: 7.1
+                -
+                    range: 1-5
+                    count: 329
+                    percentage: 6.8
+        -
+            tool: ember
+            total: 1013
+            ranges:
+                -
+                    range: 100-1000
+                    count: 204
+                    percentage: 20.1
+                -
+                    range: more-than-1000
+                    count: 153
+                    percentage: 15.1
+                -
+                    range: 20-50
+                    count: 151
+                    percentage: 14.9
+                -
+                    range: 50-100
+                    count: 144
+                    percentage: 14.2
+                -
+                    range: 5-10
+                    count: 119
+                    percentage: 11.7
+                -
+                    range: 1-5
+                    count: 92
+                    percentage: 9.1
+                -
+                    range: 10-20
+                    count: 87
+                    percentage: 8.6
+                -
+                    range: '1'
+                    count: 55
+                    percentage: 5.4
+        -
+            tool: polymer
+            total: 635
+            ranges:
+                -
+                    range: more-than-1000
+                    count: 162
+                    percentage: 25.5
+                -
+                    range: 100-1000
+                    count: 135
+                    percentage: 21.3
+                -
+                    range: 20-50
+                    count: 72
+                    percentage: 11.3
+                -
+                    range: 50-100
+                    count: 72
+                    percentage: 11.3
+                -
+                    range: '1'
+                    count: 61
+                    percentage: 9.6
+                -
+                    range: 10-20
+                    count: 46
+                    percentage: 7.2
+                -
+                    range: 1-5
+                    count: 46
+                    percentage: 7.2
+                -
+                    range: 5-10
+                    count: 34
+                    percentage: 5.4
+        -
+            tool: vuejs
+            total: 5810
+            ranges:
+                -
+                    range: 100-1000
+                    count: 1075
+                    percentage: 18.5
+                -
+                    range: 20-50
+                    count: 837
+                    percentage: 14.4
+                -
+                    range: more-than-1000
+                    count: 780
+                    percentage: 13.4
+                -
+                    range: 50-100
+                    count: 672
+                    percentage: 11.6
+                -
+                    range: 10-20
+                    count: 657
+                    percentage: 11.3
+                -
+                    range: '1'
+                    count: 620
+                    percentage: 10.7
+                -
+                    range: 1-5
+                    count: 584
+                    percentage: 10.1
+                -
+                    range: 5-10
+                    count: 540
+                    percentage: 9.3
+        -
+            tool: preact
+            total: 1251
+            ranges:
+                -
+                    range: 100-1000
+                    count: 281
+                    percentage: 22.5
+                -
+                    range: more-than-1000
+                    count: 231
+                    percentage: 18.5
+                -
+                    range: 20-50
+                    count: 172
+                    percentage: 13.7
+                -
+                    range: 50-100
+                    count: 141
+                    percentage: 11.3
+                -
+                    range: 10-20
+                    count: 131
+                    percentage: 10.5
+                -
+                    range: '1'
+                    count: 110
+                    percentage: 8.8
+                -
+                    range: 5-10
+                    count: 100
+                    percentage: 8
+                -
+                    range: 1-5
+                    count: 74
+                    percentage: 5.9
+    by_years_of_experience:
+        -
+            tool: react
+            total: 13062
+            ranges:
+                -
+                    range: 2-5
+                    count: 3821
+                    percentage: 29.3
+                -
+                    range: 5-10
+                    count: 3811
+                    percentage: 29.2
+                -
+                    range: 10-20
+                    count: 2970
+                    percentage: 22.7
+                -
+                    range: 1-2
+                    count: 1369
+                    percentage: 10.5
+                -
+                    range: more-than-20
+                    count: 702
+                    percentage: 5.4
+                -
+                    range: less-than-1
+                    count: 298
+                    percentage: 2.3
+        -
+            tool: angular
+            total: 4817
+            ranges:
+                -
+                    range: 2-5
+                    count: 1408
+                    percentage: 29.2
+                -
+                    range: 5-10
+                    count: 1391
+                    percentage: 28.9
+                -
+                    range: 10-20
+                    count: 1125
+                    percentage: 23.4
+                -
+                    range: 1-2
+                    count: 449
+                    percentage: 9.3
+                -
+                    range: more-than-20
+                    count: 329
+                    percentage: 6.8
+                -
+                    range: less-than-1
+                    count: 86
+                    percentage: 1.8
+        -
+            tool: ember
+            total: 1013
+            ranges:
+                -
+                    range: 5-10
+                    count: 348
+                    percentage: 34.4
+                -
+                    range: 10-20
+                    count: 339
+                    percentage: 33.5
+                -
+                    range: 2-5
+                    count: 198
+                    percentage: 19.5
+                -
+                    range: more-than-20
+                    count: 76
+                    percentage: 7.5
+                -
+                    range: 1-2
+                    count: 41
+                    percentage: 4
+                -
+                    range: less-than-1
+                    count: 3
+                    percentage: 0.3
+        -
+            tool: polymer
+            total: 635
+            ranges:
+                -
+                    range: 10-20
+                    count: 210
+                    percentage: 33.1
+                -
+                    range: 5-10
+                    count: 183
+                    percentage: 28.8
+                -
+                    range: 2-5
+                    count: 138
+                    percentage: 21.7
+                -
+                    range: more-than-20
+                    count: 70
+                    percentage: 11
+                -
+                    range: 1-2
+                    count: 23
+                    percentage: 3.6
+                -
+                    range: less-than-1
+                    count: 5
+                    percentage: 0.8
+        -
+            tool: vuejs
+            total: 5810
+            ranges:
+                -
+                    range: 2-5
+                    count: 1817
+                    percentage: 31.3
+                -
+                    range: 5-10
+                    count: 1647
+                    percentage: 28.3
+                -
+                    range: 10-20
+                    count: 1290
+                    percentage: 22.2
+                -
+                    range: 1-2
+                    count: 572
+                    percentage: 9.8
+                -
+                    range: more-than-20
+                    count: 359
+                    percentage: 6.2
+                -
+                    range: less-than-1
+                    count: 98
+                    percentage: 1.7
+        -
+            tool: preact
+            total: 1251
+            ranges:
+                -
+                    range: 5-10
+                    count: 470
+                    percentage: 37.6
+                -
+                    range: 10-20
+                    count: 328
+                    percentage: 26.2
+                -
+                    range: 2-5
+                    count: 313
+                    percentage: 25
+                -
+                    range: 1-2
+                    count: 68
+                    percentage: 5.4
+                -
+                    range: more-than-20
+                    count: 58
+                    percentage: 4.6
+                -
+                    range: less-than-1
+                    count: 8
+                    percentage: 0.6

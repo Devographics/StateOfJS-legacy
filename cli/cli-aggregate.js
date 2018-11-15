@@ -102,7 +102,8 @@ const run = async () => {
             tools: section.tools,
             happiness: section.happiness,
             opinions: section.opinions,
-            other_tools: section.otherTools
+            other_tools: section.otherTools,
+            usage_users_info: section.usageUsersInfo
         })
     })
 

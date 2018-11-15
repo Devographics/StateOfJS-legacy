@@ -18,17 +18,18 @@ class CompoundAggregator {
 
         const happiness = await sectionsAggregator.happiness(sectionIds, surveyIds, this.config)
         const otherTools = await sectionsAggregator.otherToolsForSurvey(currentSurveyConfig)
+        const toolsUserInfoDistribution = await sectionsAggregator.toolsOpinionUserInfoDistribution(
+            currentSurveyConfig,
+            experience.WOULD_USE
+        )
         // const numberOfToolsUsed = await sectionsAggregator.toolsBySimilarOpinionForSurvey(currentSurveyConfig.sections, experience.WOULD_USE, currentSurveyId)
 
-        const sections = sectionIds.map(sectionId => {
-            return {
-                section_id: sectionId,
-                happiness: happiness[sectionId],
-                otherTools: otherTools[sectionId]
-            }
-        })
-
-        return sections
+        return sectionIds.map(sectionId => ({
+            section_id: sectionId,
+            happiness: happiness[sectionId],
+            otherTools: otherTools[sectionId],
+            usageUsersInfo: toolsUserInfoDistribution[sectionId]
+        }))
     }
 
     async computeTools(tools, currentSurveyId) {

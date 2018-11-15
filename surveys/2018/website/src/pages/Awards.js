@@ -9,8 +9,6 @@ const Awards = ({ data, rest }) => (
         <div>
             <SectionHeader showIntro={true} />
             <AwardsBlock />
-
-
         </div>
     </Layout>
 )

@@ -40,14 +40,7 @@ export const colorRange = [
 //     colors.redDark
 // ]
 
-export const chordScale = [
-    colors.red,
-    colors.red,
-    colors.red,
-    colors.red,
-    colors.red,
-    colors.red
-]
+export const chordScale = [colors.red, colors.red, colors.red, colors.red, colors.red, colors.red]
 
 export const colorScale = [
     '#41c7c7',

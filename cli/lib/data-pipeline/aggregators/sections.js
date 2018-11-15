@@ -268,3 +268,101 @@ exports.otherToolsForSurvey = async surveyConfig => {
 
     return otherToolsAggs
 }
+
+exports.toolsOpinionUserInfoDistribution = async (surveyConfig, opinion) => {
+    const { tools } = surveyConfig
+
+    const result = await elastic.search({
+        size: 0,
+        body: {
+            query: {
+                bool: {
+                    must: [
+                        {
+                            term: {
+                                'survey.keyword': surveyConfig.id
+                            }
+                        }
+                    ]
+                }
+            },
+            aggs: tools.reduce(
+                (acc, tool) => ({
+                    ...acc,
+                    [tool]: {
+                        filter: {
+                            term: {
+                                [`tools.${tool}.opinion.keyword`]: opinion
+                            }
+                        },
+                        aggs: {
+                            salary: {
+                                terms: {
+                                    field: `user_info.salary.keyword`
+                                }
+                            },
+                            company_size: {
+                                terms: {
+                                    field: `user_info.company_size.keyword`
+                                }
+                            },
+                            years_of_experience: {
+                                terms: {
+                                    field: `user_info.years_of_experience.keyword`
+                                }
+                            }
+                        }
+                    }
+                }),
+                {}
+            )
+        }
+    })
+
+    return Object.keys(surveyConfig.sections).reduce((acc, sectionId) => {
+        const section = surveyConfig.sections[sectionId]
+
+        const by_salary = []
+        const by_company_size = []
+        const by_years_of_experience = []
+        section.tools.forEach(tool => {
+            const toolAggs = result.aggregations[tool]
+            by_salary.push({
+                tool,
+                total: toolAggs.doc_count,
+                ranges: toolAggs.salary.buckets.map(bucket => ({
+                    range: bucket.key.replace(/_/g, '-'),
+                    count: bucket.doc_count,
+                    percentage: Number(((bucket.doc_count / toolAggs.doc_count) * 100).toFixed(1))
+                }))
+            })
+            by_company_size.push({
+                tool,
+                total: toolAggs.doc_count,
+                ranges: toolAggs.company_size.buckets.map(bucket => ({
+                    range: bucket.key.replace(/_/g, '-'),
+                    count: bucket.doc_count,
+                    percentage: Number(((bucket.doc_count / toolAggs.doc_count) * 100).toFixed(1))
+                }))
+            })
+            by_years_of_experience.push({
+                tool,
+                total: toolAggs.doc_count,
+                ranges: toolAggs.years_of_experience.buckets.map(bucket => ({
+                    range: bucket.key.replace(/_/g, '-'),
+                    count: bucket.doc_count,
+                    percentage: Number(((bucket.doc_count / toolAggs.doc_count) * 100).toFixed(1))
+                }))
+            })
+        })
+
+        return {
+            ...acc,
+            [sectionId]: {
+                by_salary,
+                by_company_size,
+                by_years_of_experience
+            }
+        }
+    }, {})
+}

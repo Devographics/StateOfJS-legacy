@@ -152,7 +152,7 @@ class Animation extends Component {
     Size = usable area / 5 (since the grid is 5 elements wide)
 
     */
-    getSize = (width) => {
+    getSize = width => {
         const { size } = this.props
         if (size) {
             // size is fixed

@@ -53,7 +53,6 @@ export default class SalariesBarChart extends Component {
             >
                 <ResponsiveBar
                     theme={theme}
-                    offsetType="expand"
                     colors={[colors.blue]}
                     margin={margin}
                     padding={0.4}
@@ -65,6 +64,7 @@ export default class SalariesBarChart extends Component {
                     labelTextColor="#111"
                     enableGridX={false}
                     enableGridY={true}
+                    gridYValues={[0, 5, 10, 15, 20, 25, 30]}
                     axisRight={verticalAxis}
                     axisLeft={verticalAxis}
                     axisBottom={horizontalAxis}

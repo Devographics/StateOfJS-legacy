@@ -329,3 +329,487 @@ other_tools:
     -
         name: pouchdb
         count: 10
+usage_users_info:
+    by_salary:
+        -
+            tool: redux
+            total: 9503
+            ranges:
+                -
+                    range: 50-100
+                    count: 3046
+                    percentage: 32.1
+                -
+                    range: 100-200
+                    count: 2189
+                    percentage: 23
+                -
+                    range: 30-50
+                    count: 1629
+                    percentage: 17.1
+                -
+                    range: 10-30
+                    count: 1361
+                    percentage: 14.3
+                -
+                    range: 0-10
+                    count: 513
+                    percentage: 5.4
+                -
+                    range: work-for-free
+                    count: 321
+                    percentage: 3.4
+                -
+                    range: more-than-200
+                    count: 213
+                    percentage: 2.2
+        -
+            tool: graphql
+            total: 4108
+            ranges:
+                -
+                    range: 50-100
+                    count: 1316
+                    percentage: 32
+                -
+                    range: 100-200
+                    count: 1098
+                    percentage: 26.7
+                -
+                    range: 30-50
+                    count: 644
+                    percentage: 15.7
+                -
+                    range: 10-30
+                    count: 443
+                    percentage: 10.8
+                -
+                    range: 0-10
+                    count: 211
+                    percentage: 5.1
+                -
+                    range: work-for-free
+                    count: 162
+                    percentage: 3.9
+                -
+                    range: more-than-200
+                    count: 149
+                    percentage: 3.6
+        -
+            tool: relay
+            total: 213
+            ranges:
+                -
+                    range: 100-200
+                    count: 77
+                    percentage: 36.2
+                -
+                    range: 50-100
+                    count: 60
+                    percentage: 28.2
+                -
+                    range: 10-30
+                    count: 23
+                    percentage: 10.8
+                -
+                    range: 30-50
+                    count: 21
+                    percentage: 9.9
+                -
+                    range: more-than-200
+                    count: 15
+                    percentage: 7
+                -
+                    range: 0-10
+                    count: 8
+                    percentage: 3.8
+                -
+                    range: work-for-free
+                    count: 3
+                    percentage: 1.4
+        -
+            tool: apollo
+            total: 2228
+            ranges:
+                -
+                    range: 50-100
+                    count: 697
+                    percentage: 31.3
+                -
+                    range: 100-200
+                    count: 596
+                    percentage: 26.8
+                -
+                    range: 30-50
+                    count: 367
+                    percentage: 16.5
+                -
+                    range: 10-30
+                    count: 253
+                    percentage: 11.4
+                -
+                    range: 0-10
+                    count: 118
+                    percentage: 5.3
+                -
+                    range: work-for-free
+                    count: 75
+                    percentage: 3.4
+                -
+                    range: more-than-200
+                    count: 74
+                    percentage: 3.3
+        -
+            tool: mobx
+            total: 1126
+            ranges:
+                -
+                    range: 50-100
+                    count: 321
+                    percentage: 28.5
+                -
+                    range: 100-200
+                    count: 278
+                    percentage: 24.7
+                -
+                    range: 30-50
+                    count: 187
+                    percentage: 16.6
+                -
+                    range: 10-30
+                    count: 164
+                    percentage: 14.6
+                -
+                    range: 0-10
+                    count: 68
+                    percentage: 6
+                -
+                    range: work-for-free
+                    count: 50
+                    percentage: 4.4
+                -
+                    range: more-than-200
+                    count: 28
+                    percentage: 2.5
+    by_company_size:
+        -
+            tool: redux
+            total: 9503
+            ranges:
+                -
+                    range: 100-1000
+                    count: 2205
+                    percentage: 23.2
+                -
+                    range: more-than-1000
+                    count: 1804
+                    percentage: 19
+                -
+                    range: 20-50
+                    count: 1321
+                    percentage: 13.9
+                -
+                    range: 50-100
+                    count: 1209
+                    percentage: 12.7
+                -
+                    range: 10-20
+                    count: 927
+                    percentage: 9.8
+                -
+                    range: 5-10
+                    count: 708
+                    percentage: 7.5
+                -
+                    range: '1'
+                    count: 635
+                    percentage: 6.7
+                -
+                    range: 1-5
+                    count: 630
+                    percentage: 6.6
+        -
+            tool: graphql
+            total: 4108
+            ranges:
+                -
+                    range: 100-1000
+                    count: 838
+                    percentage: 20.4
+                -
+                    range: more-than-1000
+                    count: 726
+                    percentage: 17.7
+                -
+                    range: 20-50
+                    count: 597
+                    percentage: 14.5
+                -
+                    range: 50-100
+                    count: 466
+                    percentage: 11.3
+                -
+                    range: 10-20
+                    count: 427
+                    percentage: 10.4
+                -
+                    range: '1'
+                    count: 352
+                    percentage: 8.6
+                -
+                    range: 1-5
+                    count: 348
+                    percentage: 8.5
+                -
+                    range: 5-10
+                    count: 331
+                    percentage: 8.1
+        -
+            tool: relay
+            total: 213
+            ranges:
+                -
+                    range: more-than-1000
+                    count: 57
+                    percentage: 26.8
+                -
+                    range: 100-1000
+                    count: 45
+                    percentage: 21.1
+                -
+                    range: 20-50
+                    count: 26
+                    percentage: 12.2
+                -
+                    range: 10-20
+                    count: 24
+                    percentage: 11.3
+                -
+                    range: 50-100
+                    count: 21
+                    percentage: 9.9
+                -
+                    range: 1-5
+                    count: 15
+                    percentage: 7
+                -
+                    range: 5-10
+                    count: 12
+                    percentage: 5.6
+                -
+                    range: '1'
+                    count: 10
+                    percentage: 4.7
+        -
+            tool: apollo
+            total: 2228
+            ranges:
+                -
+                    range: 100-1000
+                    count: 442
+                    percentage: 19.8
+                -
+                    range: 20-50
+                    count: 346
+                    percentage: 15.5
+                -
+                    range: more-than-1000
+                    count: 339
+                    percentage: 15.2
+                -
+                    range: 50-100
+                    count: 259
+                    percentage: 11.6
+                -
+                    range: 10-20
+                    count: 247
+                    percentage: 11.1
+                -
+                    range: 1-5
+                    count: 205
+                    percentage: 9.2
+                -
+                    range: 5-10
+                    count: 194
+                    percentage: 8.7
+                -
+                    range: '1'
+                    count: 181
+                    percentage: 8.1
+        -
+            tool: mobx
+            total: 1126
+            ranges:
+                -
+                    range: 100-1000
+                    count: 254
+                    percentage: 22.6
+                -
+                    range: 50-100
+                    count: 170
+                    percentage: 15.1
+                -
+                    range: more-than-1000
+                    count: 167
+                    percentage: 14.8
+                -
+                    range: 20-50
+                    count: 150
+                    percentage: 13.3
+                -
+                    range: 10-20
+                    count: 106
+                    percentage: 9.4
+                -
+                    range: 5-10
+                    count: 100
+                    percentage: 8.9
+                -
+                    range: '1'
+                    count: 93
+                    percentage: 8.3
+                -
+                    range: 1-5
+                    count: 77
+                    percentage: 6.8
+    by_years_of_experience:
+        -
+            tool: redux
+            total: 9503
+            ranges:
+                -
+                    range: 5-10
+                    count: 2889
+                    percentage: 30.4
+                -
+                    range: 2-5
+                    count: 2851
+                    percentage: 30
+                -
+                    range: 10-20
+                    count: 2123
+                    percentage: 22.3
+                -
+                    range: 1-2
+                    count: 930
+                    percentage: 9.8
+                -
+                    range: more-than-20
+                    count: 482
+                    percentage: 5.1
+                -
+                    range: less-than-1
+                    count: 176
+                    percentage: 1.9
+        -
+            tool: graphql
+            total: 4108
+            ranges:
+                -
+                    range: 5-10
+                    count: 1230
+                    percentage: 29.9
+                -
+                    range: 2-5
+                    count: 1200
+                    percentage: 29.2
+                -
+                    range: 10-20
+                    count: 1063
+                    percentage: 25.9
+                -
+                    range: 1-2
+                    count: 312
+                    percentage: 7.6
+                -
+                    range: more-than-20
+                    count: 241
+                    percentage: 5.9
+                -
+                    range: less-than-1
+                    count: 46
+                    percentage: 1.1
+        -
+            tool: relay
+            total: 213
+            ranges:
+                -
+                    range: 5-10
+                    count: 66
+                    percentage: 31
+                -
+                    range: 10-20
+                    count: 60
+                    percentage: 28.2
+                -
+                    range: 2-5
+                    count: 60
+                    percentage: 28.2
+                -
+                    range: 1-2
+                    count: 13
+                    percentage: 6.1
+                -
+                    range: more-than-20
+                    count: 11
+                    percentage: 5.2
+                -
+                    range: less-than-1
+                    count: 1
+                    percentage: 0.5
+        -
+            tool: apollo
+            total: 2228
+            ranges:
+                -
+                    range: 2-5
+                    count: 680
+                    percentage: 30.5
+                -
+                    range: 5-10
+                    count: 671
+                    percentage: 30.1
+                -
+                    range: 10-20
+                    count: 549
+                    percentage: 24.6
+                -
+                    range: 1-2
+                    count: 180
+                    percentage: 8.1
+                -
+                    range: more-than-20
+                    count: 114
+                    percentage: 5.1
+                -
+                    range: less-than-1
+                    count: 24
+                    percentage: 1.1
+        -
+            tool: mobx
+            total: 1126
+            ranges:
+                -
+                    range: 2-5
+                    count: 337
+                    percentage: 29.9
+                -
+                    range: 5-10
+                    count: 313
+                    percentage: 27.8
+                -
+                    range: 10-20
+                    count: 288
+                    percentage: 25.6
+                -
+                    range: 1-2
+                    count: 93
+                    percentage: 8.3
+                -
+                    range: more-than-20
+                    count: 77
+                    percentage: 6.8
+                -
+                    range: less-than-1
+                    count: 11
+                    percentage: 1

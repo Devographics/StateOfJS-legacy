@@ -341,3 +341,583 @@ other_tools:
     -
         name: scala
         count: 10
+usage_users_info:
+    by_salary:
+        -
+            tool: meteor
+            total: 922
+            ranges:
+                -
+                    range: 50-100
+                    count: 311
+                    percentage: 33.7
+                -
+                    range: 100-200
+                    count: 189
+                    percentage: 20.5
+                -
+                    range: 30-50
+                    count: 156
+                    percentage: 16.9
+                -
+                    range: 10-30
+                    count: 124
+                    percentage: 13.4
+                -
+                    range: 0-10
+                    count: 54
+                    percentage: 5.9
+                -
+                    range: work-for-free
+                    count: 43
+                    percentage: 4.7
+                -
+                    range: more-than-200
+                    count: 24
+                    percentage: 2.6
+        -
+            tool: express
+            total: 12764
+            ranges:
+                -
+                    range: 50-100
+                    count: 3859
+                    percentage: 30.2
+                -
+                    range: 100-200
+                    count: 2940
+                    percentage: 23
+                -
+                    range: 30-50
+                    count: 2112
+                    percentage: 16.5
+                -
+                    range: 10-30
+                    count: 1762
+                    percentage: 13.8
+                -
+                    range: 0-10
+                    count: 776
+                    percentage: 6.1
+                -
+                    range: work-for-free
+                    count: 683
+                    percentage: 5.4
+                -
+                    range: more-than-200
+                    count: 313
+                    percentage: 2.5
+        -
+            tool: nextjs
+            total: 1701
+            ranges:
+                -
+                    range: 50-100
+                    count: 555
+                    percentage: 32.6
+                -
+                    range: 100-200
+                    count: 376
+                    percentage: 22.1
+                -
+                    range: 30-50
+                    count: 285
+                    percentage: 16.8
+                -
+                    range: 10-30
+                    count: 244
+                    percentage: 14.3
+                -
+                    range: 0-10
+                    count: 98
+                    percentage: 5.8
+                -
+                    range: work-for-free
+                    count: 68
+                    percentage: 4
+                -
+                    range: more-than-200
+                    count: 43
+                    percentage: 2.5
+        -
+            tool: koa
+            total: 1491
+            ranges:
+                -
+                    range: 50-100
+                    count: 435
+                    percentage: 29.2
+                -
+                    range: 100-200
+                    count: 363
+                    percentage: 24.3
+                -
+                    range: 30-50
+                    count: 253
+                    percentage: 17
+                -
+                    range: 10-30
+                    count: 216
+                    percentage: 14.5
+                -
+                    range: 0-10
+                    count: 72
+                    percentage: 4.8
+                -
+                    range: work-for-free
+                    count: 60
+                    percentage: 4
+                -
+                    range: more-than-200
+                    count: 46
+                    percentage: 3.1
+        -
+            tool: sails
+            total: 335
+            ranges:
+                -
+                    range: 50-100
+                    count: 95
+                    percentage: 28.4
+                -
+                    range: 100-200
+                    count: 71
+                    percentage: 21.2
+                -
+                    range: 30-50
+                    count: 63
+                    percentage: 18.8
+                -
+                    range: 10-30
+                    count: 57
+                    percentage: 17
+                -
+                    range: 0-10
+                    count: 18
+                    percentage: 5.4
+                -
+                    range: work-for-free
+                    count: 15
+                    percentage: 4.5
+                -
+                    range: more-than-200
+                    count: 2
+                    percentage: 0.6
+        -
+            tool: feathers
+            total: 317
+            ranges:
+                -
+                    range: 50-100
+                    count: 95
+                    percentage: 30
+                -
+                    range: 100-200
+                    count: 61
+                    percentage: 19.2
+                -
+                    range: 30-50
+                    count: 61
+                    percentage: 19.2
+                -
+                    range: 10-30
+                    count: 43
+                    percentage: 13.6
+                -
+                    range: 0-10
+                    count: 24
+                    percentage: 7.6
+                -
+                    range: work-for-free
+                    count: 14
+                    percentage: 4.4
+                -
+                    range: more-than-200
+                    count: 6
+                    percentage: 1.9
+    by_company_size:
+        -
+            tool: meteor
+            total: 922
+            ranges:
+                -
+                    range: 100-1000
+                    count: 162
+                    percentage: 17.6
+                -
+                    range: more-than-1000
+                    count: 133
+                    percentage: 14.4
+                -
+                    range: 1-5
+                    count: 124
+                    percentage: 13.4
+                -
+                    range: '1'
+                    count: 113
+                    percentage: 12.3
+                -
+                    range: 20-50
+                    count: 109
+                    percentage: 11.8
+                -
+                    range: 5-10
+                    count: 96
+                    percentage: 10.4
+                -
+                    range: 50-100
+                    count: 91
+                    percentage: 9.9
+                -
+                    range: 10-20
+                    count: 88
+                    percentage: 9.5
+        -
+            tool: express
+            total: 12764
+            ranges:
+                -
+                    range: 100-1000
+                    count: 2689
+                    percentage: 21.1
+                -
+                    range: more-than-1000
+                    count: 2350
+                    percentage: 18.4
+                -
+                    range: 20-50
+                    count: 1680
+                    percentage: 13.2
+                -
+                    range: 50-100
+                    count: 1471
+                    percentage: 11.5
+                -
+                    range: 10-20
+                    count: 1236
+                    percentage: 9.7
+                -
+                    range: '1'
+                    count: 1229
+                    percentage: 9.6
+                -
+                    range: 1-5
+                    count: 1026
+                    percentage: 8
+                -
+                    range: 5-10
+                    count: 989
+                    percentage: 7.7
+        -
+            tool: nextjs
+            total: 1701
+            ranges:
+                -
+                    range: 100-1000
+                    count: 348
+                    percentage: 20.5
+                -
+                    range: more-than-1000
+                    count: 266
+                    percentage: 15.6
+                -
+                    range: 20-50
+                    count: 257
+                    percentage: 15.1
+                -
+                    range: 50-100
+                    count: 184
+                    percentage: 10.8
+                -
+                    range: 10-20
+                    count: 182
+                    percentage: 10.7
+                -
+                    range: 5-10
+                    count: 160
+                    percentage: 9.4
+                -
+                    range: 1-5
+                    count: 151
+                    percentage: 8.9
+                -
+                    range: '1'
+                    count: 140
+                    percentage: 8.2
+        -
+            tool: koa
+            total: 1491
+            ranges:
+                -
+                    range: 100-1000
+                    count: 315
+                    percentage: 21.1
+                -
+                    range: more-than-1000
+                    count: 258
+                    percentage: 17.3
+                -
+                    range: 20-50
+                    count: 223
+                    percentage: 15
+                -
+                    range: 50-100
+                    count: 197
+                    percentage: 13.2
+                -
+                    range: 10-20
+                    count: 154
+                    percentage: 10.3
+                -
+                    range: 1-5
+                    count: 115
+                    percentage: 7.7
+                -
+                    range: 5-10
+                    count: 114
+                    percentage: 7.6
+                -
+                    range: '1'
+                    count: 106
+                    percentage: 7.1
+        -
+            tool: sails
+            total: 335
+            ranges:
+                -
+                    range: 100-1000
+                    count: 63
+                    percentage: 18.8
+                -
+                    range: more-than-1000
+                    count: 57
+                    percentage: 17
+                -
+                    range: 50-100
+                    count: 54
+                    percentage: 16.1
+                -
+                    range: 20-50
+                    count: 40
+                    percentage: 11.9
+                -
+                    range: 10-20
+                    count: 36
+                    percentage: 10.7
+                -
+                    range: 5-10
+                    count: 35
+                    percentage: 10.4
+                -
+                    range: 1-5
+                    count: 29
+                    percentage: 8.7
+                -
+                    range: '1'
+                    count: 18
+                    percentage: 5.4
+        -
+            tool: feathers
+            total: 317
+            ranges:
+                -
+                    range: 100-1000
+                    count: 55
+                    percentage: 17.4
+                -
+                    range: 1-5
+                    count: 53
+                    percentage: 16.7
+                -
+                    range: 20-50
+                    count: 47
+                    percentage: 14.8
+                -
+                    range: 10-20
+                    count: 41
+                    percentage: 12.9
+                -
+                    range: more-than-1000
+                    count: 32
+                    percentage: 10.1
+                -
+                    range: 50-100
+                    count: 29
+                    percentage: 9.1
+                -
+                    range: '1'
+                    count: 28
+                    percentage: 8.8
+                -
+                    range: 5-10
+                    count: 28
+                    percentage: 8.8
+    by_years_of_experience:
+        -
+            tool: meteor
+            total: 922
+            ranges:
+                -
+                    range: 5-10
+                    count: 275
+                    percentage: 29.8
+                -
+                    range: 2-5
+                    count: 257
+                    percentage: 27.9
+                -
+                    range: 10-20
+                    count: 242
+                    percentage: 26.2
+                -
+                    range: more-than-20
+                    count: 83
+                    percentage: 9
+                -
+                    range: 1-2
+                    count: 55
+                    percentage: 6
+                -
+                    range: less-than-1
+                    count: 7
+                    percentage: 0.8
+        -
+            tool: express
+            total: 12764
+            ranges:
+                -
+                    range: 5-10
+                    count: 3732
+                    percentage: 29.2
+                -
+                    range: 2-5
+                    count: 3718
+                    percentage: 29.1
+                -
+                    range: 10-20
+                    count: 2998
+                    percentage: 23.5
+                -
+                    range: 1-2
+                    count: 1235
+                    percentage: 9.7
+                -
+                    range: more-than-20
+                    count: 789
+                    percentage: 6.2
+                -
+                    range: less-than-1
+                    count: 235
+                    percentage: 1.8
+        -
+            tool: nextjs
+            total: 1701
+            ranges:
+                -
+                    range: 2-5
+                    count: 543
+                    percentage: 31.9
+                -
+                    range: 5-10
+                    count: 525
+                    percentage: 30.9
+                -
+                    range: 10-20
+                    count: 390
+                    percentage: 22.9
+                -
+                    range: 1-2
+                    count: 146
+                    percentage: 8.6
+                -
+                    range: more-than-20
+                    count: 72
+                    percentage: 4.2
+                -
+                    range: less-than-1
+                    count: 18
+                    percentage: 1.1
+        -
+            tool: koa
+            total: 1491
+            ranges:
+                -
+                    range: 5-10
+                    count: 489
+                    percentage: 32.8
+                -
+                    range: 2-5
+                    count: 413
+                    percentage: 27.7
+                -
+                    range: 10-20
+                    count: 381
+                    percentage: 25.6
+                -
+                    range: 1-2
+                    count: 111
+                    percentage: 7.4
+                -
+                    range: more-than-20
+                    count: 82
+                    percentage: 5.5
+                -
+                    range: less-than-1
+                    count: 11
+                    percentage: 0.7
+        -
+            tool: sails
+            total: 335
+            ranges:
+                -
+                    range: 5-10
+                    count: 111
+                    percentage: 33.1
+                -
+                    range: 2-5
+                    count: 104
+                    percentage: 31
+                -
+                    range: 10-20
+                    count: 79
+                    percentage: 23.6
+                -
+                    range: more-than-20
+                    count: 22
+                    percentage: 6.6
+                -
+                    range: 1-2
+                    count: 15
+                    percentage: 4.5
+                -
+                    range: less-than-1
+                    count: 1
+                    percentage: 0.3
+        -
+            tool: feathers
+            total: 317
+            ranges:
+                -
+                    range: 2-5
+                    count: 94
+                    percentage: 29.7
+                -
+                    range: 10-20
+                    count: 92
+                    percentage: 29
+                -
+                    range: 5-10
+                    count: 82
+                    percentage: 25.9
+                -
+                    range: 1-2
+                    count: 25
+                    percentage: 7.9
+                -
+                    range: more-than-20
+                    count: 18
+                    percentage: 5.7
+                -
+                    range: less-than-1
+                    count: 3
+                    percentage: 0.9
