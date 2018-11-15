@@ -163,7 +163,7 @@ exports.sourceNodes = async ({ boundActionCreators }) => {
     const data = await got(url, { json: true }).then(r => r.body)
     const { projects } = data
     const sortedProjects = projects
-        .filter(project => project.stars >= 1000)
+        .filter(project => project.stars >= 100)
         .sort((a, b) => (a.stars > b.stars ? -1 : 1))
     const nodes = sortedProjects.map(project => ({
         id: bestofjsNameToSlug(project.name),
