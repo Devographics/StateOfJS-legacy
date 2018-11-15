@@ -1,14 +1,5 @@
 const elastic = require('../loaders/elastic')
-
-const salaryRangeAverages = {
-    work_for_free: 0,
-    '0_10': 5,
-    '10_30': 20,
-    '30_50': 40,
-    '50_100': 75,
-    '100_200': 150,
-    more_than_200: 250
-}
+const constants = require('../../../conf/constants')
 
 exports.salaryAndCompanySizeAndYearsOfExperienceByLocationForSurvey = async (
     locationType,
@@ -62,7 +53,7 @@ exports.salaryAndCompanySizeAndYearsOfExperienceByLocationForSurvey = async (
         .map(locationBucket => {
             const total = locationBucket.doc_count
             const salaryTotal = locationBucket.salary.buckets.reduce((t, bucket) => {
-                return t + salaryRangeAverages[bucket.key] * bucket.doc_count
+                return t + constants.salaryRangeAverages[bucket.key] * bucket.doc_count
             }, 0)
 
             return {
@@ -168,7 +159,7 @@ exports.salary = async () => {
     return result.aggregations.by_survey.buckets.map(surveyBucket => {
         const total = surveyBucket.doc_count
         const salaryTotal = surveyBucket.salary.buckets.reduce((t, bucket) => {
-            return t + salaryRangeAverages[bucket.key] * bucket.doc_count
+            return t + constants.salaryRangeAverages[bucket.key] * bucket.doc_count
         }, 0)
 
         return {

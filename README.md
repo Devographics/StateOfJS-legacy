@@ -129,10 +129,10 @@ make survey_build_2018
 
 StateOfJS is Made by:
 
-- **Raphaël Benitte** Creator of the Nivo JavaScript data visualization library
-  as well as Mozaik, a tool for building beautiful dashboards.
 - **Sacha Greif** Author of Discover Meteor and creator of VulcanJS,
   a React+GraphQL open-source framework.
+- **Raphaël Benitte** Creator of the Nivo JavaScript data visualization library
+  as well as Mozaik, a tool for building beautiful dashboards.
 - **Michael Rambeau** Creator of Best of JavaScript, a platform that provides
   insights and resources about JavaScript libraries.
 

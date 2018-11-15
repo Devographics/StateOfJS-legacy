@@ -334,6 +334,7 @@ usage_users_info:
         -
             tool: redux
             total: 9503
+            average: 74.2
             ranges:
                 -
                     range: 50-100
@@ -366,6 +367,7 @@ usage_users_info:
         -
             tool: graphql
             total: 4108
+            average: 81.9
             ranges:
                 -
                     range: 50-100
@@ -398,6 +400,7 @@ usage_users_info:
         -
             tool: relay
             total: 213
+            average: 99.2
             ranges:
                 -
                     range: 100-200
@@ -430,6 +433,7 @@ usage_users_info:
         -
             tool: apollo
             total: 2228
+            average: 81
             ranges:
                 -
                     range: 50-100
@@ -462,6 +466,7 @@ usage_users_info:
         -
             tool: mobx
             total: 1126
+            average: 74.5
             ranges:
                 -
                     range: 50-100
@@ -495,6 +500,7 @@ usage_users_info:
         -
             tool: redux
             total: 9503
+            average: 429
             ranges:
                 -
                     range: 100-1000
@@ -531,6 +537,7 @@ usage_users_info:
         -
             tool: graphql
             total: 4108
+            average: 393
             ranges:
                 -
                     range: 100-1000
@@ -567,6 +574,7 @@ usage_users_info:
         -
             tool: relay
             total: 213
+            average: 532
             ranges:
                 -
                     range: more-than-1000
@@ -603,6 +611,7 @@ usage_users_info:
         -
             tool: apollo
             total: 2228
+            average: 354
             ranges:
                 -
                     range: 100-1000
@@ -639,6 +648,7 @@ usage_users_info:
         -
             tool: mobx
             total: 1126
+            average: 365
             ranges:
                 -
                     range: 100-1000
@@ -676,6 +686,7 @@ usage_users_info:
         -
             tool: redux
             total: 9503
+            average: 8
             ranges:
                 -
                     range: 5-10
@@ -704,6 +715,7 @@ usage_users_info:
         -
             tool: graphql
             total: 4108
+            average: 8.6
             ranges:
                 -
                     range: 5-10
@@ -732,6 +744,7 @@ usage_users_info:
         -
             tool: relay
             total: 213
+            average: 8.8
             ranges:
                 -
                     range: 5-10
@@ -760,6 +773,7 @@ usage_users_info:
         -
             tool: apollo
             total: 2228
+            average: 8.3
             ranges:
                 -
                     range: 2-5
@@ -788,6 +802,7 @@ usage_users_info:
         -
             tool: mobx
             total: 1126
+            average: 8.6
             ranges:
                 -
                     range: 2-5

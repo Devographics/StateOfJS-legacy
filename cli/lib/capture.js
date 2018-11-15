@@ -31,10 +31,10 @@ const capture = async (page, baseUrl, { path, selector, filename: _filename }, o
     console.log('')
 }
 
-const getPageConfig = ({sectionId, pageId, chartId}) => ({
+const getPageConfig = ({ sectionId, pageId, chartId }) => ({
     path: pageId ? `/${sectionId}/${pageId}/` : `/${sectionId}/`,
     selector: `#${chartId}`,
-    filename: pageId ? `${sectionId}_${pageId}_${chartId}` : `${sectionId}_${chartId}`,
+    filename: pageId ? `${sectionId}_${pageId}_${chartId}` : `${sectionId}_${chartId}`
 })
 
 module.exports = async ({ baseUrl, outputDir, nav, charts }) => {

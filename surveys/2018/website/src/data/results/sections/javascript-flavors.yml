@@ -349,6 +349,7 @@ usage_users_info:
         -
             tool: reason
             total: 1114
+            average: 65
             ranges:
                 -
                     range: 50-100
@@ -381,6 +382,7 @@ usage_users_info:
         -
             tool: clojurescript
             total: 466
+            average: 91.1
             ranges:
                 -
                     range: 50-100
@@ -413,6 +415,7 @@ usage_users_info:
         -
             tool: elm
             total: 872
+            average: 83.6
             ranges:
                 -
                     range: 50-100
@@ -445,6 +448,7 @@ usage_users_info:
         -
             tool: flow
             total: 2065
+            average: 80.6
             ranges:
                 -
                     range: 50-100
@@ -477,6 +481,7 @@ usage_users_info:
         -
             tool: typescript
             total: 9419
+            average: 72
             ranges:
                 -
                     range: 50-100
@@ -509,6 +514,7 @@ usage_users_info:
         -
             tool: es6
             total: 17400
+            average: 71.1
             ranges:
                 -
                     range: 50-100
@@ -542,6 +548,7 @@ usage_users_info:
         -
             tool: reason
             total: 1114
+            average: 432
             ranges:
                 -
                     range: more-than-1000
@@ -578,6 +585,7 @@ usage_users_info:
         -
             tool: clojurescript
             total: 466
+            average: 447
             ranges:
                 -
                     range: 100-1000
@@ -614,6 +622,7 @@ usage_users_info:
         -
             tool: elm
             total: 872
+            average: 415
             ranges:
                 -
                     range: 100-1000
@@ -650,6 +659,7 @@ usage_users_info:
         -
             tool: flow
             total: 2065
+            average: 432
             ranges:
                 -
                     range: 100-1000
@@ -686,6 +696,7 @@ usage_users_info:
         -
             tool: typescript
             total: 9419
+            average: 428
             ranges:
                 -
                     range: 100-1000
@@ -722,6 +733,7 @@ usage_users_info:
         -
             tool: es6
             total: 17400
+            average: 395
             ranges:
                 -
                     range: 100-1000
@@ -759,6 +771,7 @@ usage_users_info:
         -
             tool: reason
             total: 1114
+            average: 8.2
             ranges:
                 -
                     range: 5-10
@@ -787,6 +800,7 @@ usage_users_info:
         -
             tool: clojurescript
             total: 466
+            average: 10.1
             ranges:
                 -
                     range: 10-20
@@ -815,6 +829,7 @@ usage_users_info:
         -
             tool: elm
             total: 872
+            average: 9.1
             ranges:
                 -
                     range: 5-10
@@ -843,6 +858,7 @@ usage_users_info:
         -
             tool: flow
             total: 2065
+            average: 8.1
             ranges:
                 -
                     range: 5-10
@@ -871,6 +887,7 @@ usage_users_info:
         -
             tool: typescript
             total: 9419
+            average: 8.5
             ranges:
                 -
                     range: 5-10
@@ -899,6 +916,7 @@ usage_users_info:
         -
             tool: es6
             total: 17400
+            average: 8.3
             ranges:
                 -
                     range: 5-10

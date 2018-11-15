@@ -41,7 +41,10 @@ const QuadrantBlock = ({ tools }) => (
             </p>
         </div>
         <div className="Quadrants__Block__Content block__content block__content--quadrant">
-            <div className="Quadrants__Block__Chart block__chart block__chart--quadrant" id={chartId}>
+            <div
+                className="Quadrants__Block__Chart block__chart block__chart--quadrant"
+                id={chartId}
+            >
                 <QuadrantChart tools={tools} />
             </div>
             <QuadrantLegend />
