@@ -339,18 +339,6 @@ class Animation extends Component {
                 id="LogoAnimation__Wrapper"
                 style={{ height: '100vh', width: '100%' }}
             >
-                {/* {variant === 'full' && (
-                    <div className="LogoAnimation__Inner">
-                        <Link
-                            onMouseEnter={this.stopAnimation}
-                            onMouseLeave={this.restartAnimation}
-                            className="LogoAnimation__Button button"
-                            to="/introduction"
-                        >
-                            Start
-                        </Link>
-                    </div>
-                )} */}
                 {ready && (
                     <svg
                         className="LogoAnimation"
@@ -373,21 +361,23 @@ class Animation extends Component {
                                 size={size}
                             />
                         ))}
-                        <foreignObject
-                            x={width / 2 - (size * 3) / 2}
-                            y={height / 2 + (size * 3) / 2 + 40}
-                            width={size * 3}
-                            height={size}
-                        >
-                            <Link
-                                onMouseEnter={this.stopAnimation}
-                                onMouseLeave={this.restartAnimation}
-                                className="LogoAnimation__Button button"
-                                to="/introduction"
+                        {variant === 'full' && (
+                            <foreignObject
+                                x={width / 2 - (size * 3) / 2}
+                                y={height / 2 + (size * 3) / 2 + 40}
+                                width={size * 3}
+                                height={size}
                             >
-                                <span>Start</span>
-                            </Link>
-                        </foreignObject>
+                                <Link
+                                    onMouseEnter={this.stopAnimation}
+                                    onMouseLeave={this.restartAnimation}
+                                    className="LogoAnimation__Button button"
+                                    to="/introduction"
+                                >
+                                    <span>Start</span>
+                                </Link>
+                            </foreignObject>
+                        )}
                     </svg>
                 )}
             </div>
