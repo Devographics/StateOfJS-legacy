@@ -10,16 +10,19 @@ demographics:
 overview: 
   - overview
   - happiness
+
 other-libraries: 
   - other-tools
   - all-libraries
+
 conclusion: 
   - quadrants
+
 tool: 
-  - results-evolution
+  - results-over-time
   - likes
   - dislikes
-  - tool-map
+  - tool-usage-by-country
 
 other-tools: 
   - other-languages
@@ -27,6 +30,7 @@ other-tools:
   - build-tools
   - utility-libraries
   - text-editors
+  
 opinions: 
   - right-direction
   - overly-complex

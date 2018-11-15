@@ -290,7 +290,7 @@ intros:
     front-end-frameworks: >
         The front-end remains the key battleground for JavaScript. But now
         that the dust has cleared, it's starting to look like only two
-        combattants are left standing…
+        combatants are left standing…
     data-layer: >
         The data layer regroups all the technologies used to transmit and manage data. 
         It's a vast category where many approaches compete to make a tricky problem more

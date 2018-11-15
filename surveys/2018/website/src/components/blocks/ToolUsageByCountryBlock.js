@@ -11,7 +11,7 @@ export default class ToolUsageByCountryBlock extends Component {
         const { tool, data } = this.props
 
         return (
-            <div className="ToolUsageByCountry__Block block">
+            <div className="ToolUsageByCountry__Block block" id={chartId}>
                 <BlockTitle chartId={chartId} tool={tool} />
                 <div className="block block--text">
                     On average, <strong>{data.percentage}%</strong> of respondents have used{' '}

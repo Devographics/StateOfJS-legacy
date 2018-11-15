@@ -6,6 +6,6 @@ But that's great news for you, because it means you can spend less time worrying
 
 Things might get shaken up again in 2019 though. While all is currently calm on the front-end front, the question of how you get data from the database to the client is far from settled, and GraphQL is sure to start making bigger and bigger waves in that area. As GraphQL-tailored solutions emerge for both the back-end and the state management layer, we might soon feel the JavaScript ground shifting beneath our feet once more.
 
-But for now, no need to panic. There's never been a better time to be a JavaScript developer than now, and I'm willing to bet that 2019 will make that even clearer!
+But for now, no need to panic. There's never been a better time to be a JavaScript developer than now, and we're willing to bet that 2019 will make that even clearer!
 
 <span class="conclusion__byline">– Sacha, Raphaël, and Michael</span>
