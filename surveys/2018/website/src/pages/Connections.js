@@ -10,9 +10,6 @@ const text = `
 How many *React* users also use *Redux*? Do *GraphQL* fans prefer *Jest*? 
 Are *Express* developers also into *Ember*?
 
-This diagram lets you toggle categories on and off to explore the connections
-between the inhabitants of the vast JavaScript ecosystem.
-
 The size of each section corresponds to the number of respondents who have used each library
 and would be willing to use it again. 
 `

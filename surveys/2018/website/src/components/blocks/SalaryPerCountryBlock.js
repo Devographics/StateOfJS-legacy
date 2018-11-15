@@ -4,6 +4,8 @@ import BlockTitle from '../elements/BlockTitle'
 import SalaryPerCountryMapChart from '../charts/SalaryPerCountryMapChart'
 import ChartContainer from '../elements/ChartContainer'
 
+const chartId = 'salary-per-country'
+
 export default class SalaryPerCountryBlock extends Component {
     static propTypes = {
         data: PropTypes.arrayOf(
@@ -18,8 +20,8 @@ export default class SalaryPerCountryBlock extends Component {
 
     render() {
         return (
-            <div className="block">
-                <BlockTitle chart="salary-per-country" />
+            <div className="block" id={chartId}>
+                <BlockTitle chartId={chartId} />
                 <ChartContainer>
                     <SalaryPerCountryMapChart data={this.props.data} />
                 </ChartContainer>

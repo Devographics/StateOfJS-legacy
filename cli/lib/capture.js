@@ -31,8 +31,14 @@ const capture = async (page, baseUrl, { path, selector, filename: _filename }, o
     console.log('')
 }
 
-module.exports = async ({ baseUrl, outputDir, items }) => {
-    console.log(chalk`{yellow {white ${items.length}} item(s) to capture}`)
+const getPageConfig = ({sectionId, pageId, chartId}) => ({
+    path: pageId ? `/${sectionId}/${pageId}/` : `/${sectionId}/`,
+    selector: `#${chartId}`,
+    filename: pageId ? `${sectionId}_${pageId}_${chartId}` : `${sectionId}_${chartId}`,
+})
+
+module.exports = async ({ baseUrl, outputDir, nav, charts }) => {
+    console.log(chalk`{yellow {white ${nav.length}} section(s) to capture}`)
     console.log(chalk`  {dim baseUrl:   {white ${baseUrl}}}`)
     console.log(chalk`  {dim outputDir: {white ${outputDir}}}`)
     console.log('')
@@ -42,13 +48,39 @@ module.exports = async ({ baseUrl, outputDir, items }) => {
         throw new Error(`'${outputDir}' is not a valid directory`)
     }
 
-    const browser = await puppeteer.launch({ headless: false, slowMo: 250 })
-    const page = await browser.newPage()
-    await page.setViewport({ width: 1400, height: 10000 })
+    // const browser = await puppeteer.launch({ headless: false, slowMo: 250 })
+    // const page = await browser.newPage()
+    // await page.setViewport({ width: 1400, height: 10000 })
 
-    for (let pageConfig of items) {
-        await capture(page, baseUrl, pageConfig, outputDir)
+    for (let section of nav) {
+        const sectionId = section.id
+
+        console.log(chalk`  {dim section: {blue ${sectionId}}}`)
+
+        if (section.subPages) {
+            for (let pageId of section.subPages) {
+                console.log(chalk`    {dim page: {green ${pageId}}}`)
+
+                const pageCharts = charts[pageId] || charts.tool
+                for (let chartId of pageCharts) {
+                    const pageConfig = getPageConfig({ sectionId, pageId, chartId })
+                    console.log(chalk`      {dim filename: {white ${pageConfig.filename}}}`)
+
+                    // await capture(page, baseUrl, pageConfig, outputDir)
+                }
+            }
+        } else {
+            const pageCharts = charts[section.id]
+            if (pageCharts) {
+                for (let chartId of pageCharts) {
+                    const pageConfig = getPageConfig({ sectionId, chartId })
+                    console.log(chalk`      {dim filename: {white ${pageConfig.filename}}}`)
+
+                    // await capture(page, baseUrl, pageConfig, outputDir)
+                }
+            }
+        }
     }
 
-    await browser.close()
+    // await browser.close()
 }

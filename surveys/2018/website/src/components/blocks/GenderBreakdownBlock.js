@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { getWording } from '../../helpers/wording'
-import TextBlock from './TextBlock'
 import GenderBreakdownWaffleChart from '../charts/GenderBreakdownWaffleChart'
+import BlockTitle from '../elements/BlockTitle'
 
-const introText = `
-This chart shows the gender people selected.
-`
+const chartId = 'gender-breakdown'
 
 export default class GenderBreakdownBlock extends Component {
     static propTypes = {
@@ -27,9 +25,8 @@ export default class GenderBreakdownBlock extends Component {
         const { data } = this.props
 
         return (
-            <div className="block" id="gender-breakdown">
-                <h3 className="block__title">{getWording('charts.gender')}</h3>
-                <TextBlock text={introText} />
+            <div className="Block Block--gender Gender__Block" id={chartId}>
+                <BlockTitle chartId={chartId} />
                 <GenderBreakdownWaffleChart total={data.total} data={data.by_gender} />
             </div>
         )

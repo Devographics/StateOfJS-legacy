@@ -4,6 +4,8 @@ import BlockTitle from '../elements/BlockTitle'
 import ChartContainer from '../elements/ChartContainer'
 import SalariesBarChart from '../charts/SalariesBarChart'
 
+const chartId = 'salaries'
+
 export default class SalariesBlock extends Component {
     static propTypes = {
         data: PropTypes.arrayOf(
@@ -25,8 +27,8 @@ export default class SalariesBlock extends Component {
         const chartData = this.props.data.find(d => d.survey === '2018').ranges
 
         return (
-            <div className="block">
-                <BlockTitle chart="salaries" />
+            <div className="block" id={chartId}>
+                <BlockTitle chartId={chartId} />
                 <ChartContainer>
                     <SalariesBarChart data={chartData} />
                 </ChartContainer>

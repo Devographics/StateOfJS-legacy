@@ -11,21 +11,21 @@ export default class BarBlock extends Component {
     static propTypes = {
         description: PropTypes.string,
         title: PropTypes.string,
-        chart: PropTypes.string,
+        chartId: PropTypes.string,
         data: PropTypes.array.isRequired
     }
 
     render() {
-        const { title, data, chart, description } = this.props
+        const { title, data, chartId, description } = this.props
 
         return (
-            <div className="block block--chart block--othersbar">
-                <BlockTitle chart={chart} title={title} />
+            <div className="block block--chart block--othersbar" id={chartId}>
+                <BlockTitle chartId={chartId} title={title} />
                 <div className="block__description">
                     <p>{description}</p>
                 </div>
                 <div className="capture others-wrapper">
-                    <BarChart data={data} />
+                    <BarChart data={data}/>
                 </div>
             </div>
         )

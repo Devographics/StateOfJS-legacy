@@ -5,6 +5,8 @@ import BlockTitle from '../elements/BlockTitle'
 import withPageData from '../../helpers/withPageData'
 import { getWording } from '../../helpers/wording'
 
+const chartId = 'happiness'
+
 class HappinessBlock extends PureComponent {
     static propTypes = {
         section: PropTypes.string.isRequired,
@@ -27,8 +29,8 @@ class HappinessBlock extends PureComponent {
         const { currentPage, data } = this.props
 
         return (
-            <div className="block block--chart block--happiness" id="happiness">
-                <BlockTitle chart="happiness" />
+            <div className="Block Block--happiness Happiness__Block" id={chartId}>
+                <BlockTitle chartId={chartId} />
                 <div className="block__description">
                     <p>
                         {getWording('block_intro.happiness', {

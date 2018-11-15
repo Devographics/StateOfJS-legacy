@@ -26,9 +26,13 @@ const run = async () => {
     try {
         console.log(chalk`{yellow starting capture for {white ${survey}} survey}`)
 
-        const config = YAML.load(path.join(surveyDir, 'config', 'captures.yml'))
+        const config = YAML.load(path.join(surveyDir, 'config', 'config.yml'))
+        const charts = YAML.load(path.join(surveyDir, 'config', 'charts.yml'))
+        const nav = YAML.load(path.join(surveyDir, 'config', 'nav.yml'))
         await capture({
             ...config,
+            nav,
+            charts,
             outputDir: path.join(surveyDir, 'website', config.outputDir)
         })
     } catch (err) {

@@ -24,11 +24,11 @@ class ShareChartTemplate extends Component {
             title,
             description
         }
-
+        console.log(metaProperties)
         return (
             <div className="template">
                 <Meta properties={metaProperties} />
-                {/* {currentPage && <Redirect to={`${currentPage.path}#${chart}`} noThrow />} */}
+                {currentPage && <Redirect to={`${currentPage.path}#${chart}`} noThrow />}
                 Redirecting…
             </div>
         )

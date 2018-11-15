@@ -48,7 +48,7 @@
     - tool: vuejs
       figure: 55%
 
-- heading: Biggest Improvement # fake data
+- heading: Most Improved # fake data
   description: Awarded to the library whose satisfaction ratio improved the most this year.
   comment: With over **98%** of satisfied users Vue is by far the most greatest library this year.
   tool: react

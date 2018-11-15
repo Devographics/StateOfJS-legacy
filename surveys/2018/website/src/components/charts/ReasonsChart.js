@@ -38,12 +38,14 @@ export default class ReasonsChart extends Component {
     render() {
         const { tool } = this.props
         const { likeData, dislikeData } = this.getData()
+        const chartIdLikes = 'likes'
+        const chartIdDislikes = 'dislikes'
 
         return (
             <Fragment>
                 {likeData.length > 0 && (
-                    <div className="block">
-                        <BlockTitle chart="likes" tool={tool} />
+                    <div className="Block Block--likes block" id={chartIdLikes}>
+                        <BlockTitle chartId={chartIdLikes} tool={tool} />
                         <ReasonsChartUnit data={likeData} color={theme.reasonsColors.like} />
                         <ReasonsChartUnit
                             data={likeData}
@@ -53,8 +55,8 @@ export default class ReasonsChart extends Component {
                     </div>
                 )}
                 {dislikeData.length > 0 && (
-                    <div className="block">
-                        <BlockTitle chart="dislikes" tool={tool} />
+                    <div className="Block Block--dislikes block" id={chartIdDislikes}>
+                        <BlockTitle chartId={chartIdDislikes} tool={tool} />
                         <ReasonsChartUnit data={dislikeData} color={theme.reasonsColors.dislike} />
                         <ReasonsChartUnit
                             data={dislikeData}

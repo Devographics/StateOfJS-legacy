@@ -18,8 +18,10 @@ class Award extends Component {
     render() {
         const { heading, description, tool, comment, runnerups } = this.props
         const { show } = this.state
+        const chartId = slugify(heading)
+
         return (
-            <div className={`Award Award--${show ? 'show' : 'hide'}`} id={slugify(heading)}>
+            <div className={`Award Award--${show ? 'show' : 'hide'}`} id={chartId}>
                 <h3 className="Award__Heading">{heading}</h3>
                 <div className="Award__Description">{description}</div>
                 <div className="Award__Element__Container">
@@ -45,7 +47,7 @@ class Award extends Component {
                     <ReactMarkdown source={comment} />
                     <ShareChart
                         title={`${heading} Award`}
-                        chart={slugify(heading)}
+                        chartId={chartId}
                         className="Award__Share"
                     />
                 </div>

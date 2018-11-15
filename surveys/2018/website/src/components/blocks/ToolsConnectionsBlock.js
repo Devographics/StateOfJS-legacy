@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ToolsConnectionsChordChart from '../charts/ToolsConnectionsChordChart'
-import ToolsConnectionsLegends from '../elements/ToolsConnectionsLegends'
+// import ToolsConnectionsLegends from '../elements/ToolsConnectionsLegends'
 import { chordScale } from '../../constants'
+import BlockTitle from '../elements/BlockTitle'
+
+const chartId = 'connections'
 
 export default class ToolsConnectionsBlock extends Component {
     static propTypes = {
@@ -68,12 +71,14 @@ export default class ToolsConnectionsBlock extends Component {
         }
 
         return (
-            <div className="block block--chart block--connections">
+            <div className="Block Block--chart Block--connections" id={chartId}>
                 {/* <ToolsConnectionsLegends
                     sections={data.indexesBySection.map(s => s.section)}
                     selectedSections={selectedSections}
                     onChange={this.handleSectionToggle}
                 /> */}
+                <BlockTitle chartId={chartId} />
+
                 <ToolsConnectionsChordChart
                     getColor={getColor}
                     keys={toolKeys}

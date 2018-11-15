@@ -14,7 +14,7 @@ const OtherToolsTemplate = ({ data }) => {
                 <Meta />
                 <SectionHeader />
                 <BarBlock
-                    chart="other-tools"
+                    chartId="other-tools"
                     description="Other tools mentioned by survey respondents, ranked by mention count."
                     data={otherTools}
                 />

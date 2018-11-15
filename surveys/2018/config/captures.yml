@@ -6,10 +6,10 @@ outputDir: static/images/captures
 items:
   - path: /demographics/
     selector: '#participation-by-country'
-    filename: participation-by-country
+    filename: demographics-participation-by-country
   - path: /demographics/
     selector: '#gender-breakdown'
-    filename: gender-breakdown  
+    filename: demographics-gender-breakdown  
 
   # reason clojurescript elm
   # flow typescript es6
@@ -167,12 +167,27 @@ items:
     selector: '#results-over-time'
     filename: mobile-and-desktop-nativescript-results-over-time
 
-  - path: /awards/highest-satisfaction
+  - path: /awards/
     selector: '#highest-satisfaction'
-    filename: 'highest-satisfaction'
-  - path: /awards/highest-interest
+    filename: 'award-highest-satisfaction'
+  - path: /awards/
     selector: '#highest-interest'
-    filename: 'highest-interest'
-  - path: /awards/most-improved
+    filename: 'award-highest-interest'
+  - path: /awards/
+    selector: '#most-used'
+    filename: 'most-used'
+  - path: /awards/
+    selector: '#most-mentioned'
+    filename: 'award-most-mentioned'
+  - path: /awards/
+    selector: '#most-dominant'
+    filename: 'award-most-dominant'
+  - path: /awards/
     selector: '#most-improved'
-    filename: 'most-improved'
+    filename: 'award-most-improved'
+  - path: /awards/
+    selector: '#prediction-award'
+    filename: 'award-prediction-award'
+  - path: /awards/
+    selector: '#special-award'
+    filename: 'award-special-award'

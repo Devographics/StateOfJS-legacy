@@ -79,7 +79,7 @@ class ToolUsageByCountryMapChart extends Component {
 
     render() {
         return (
-            <div className="ToolsUsageByCountry__Chart">
+            <div className="ToolsUsageByCountry__Chart" id={this.props.chartId}>
                 <ResponsiveGeoMap
                     features={this.props.features}
                     projectionType="mercator"

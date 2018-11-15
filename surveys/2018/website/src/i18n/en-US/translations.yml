@@ -113,8 +113,8 @@ tools_descriptions:
 
 block_intro:
     happiness: >
-        On a scale of one to five, how happy are developers
-        with the current state of ${section} tools?
+        On a scale of one (very unhappy) to five (very happy), how happy are developers
+        with the current overall state of this category?
     happiness_trend: >
         How does happiness about ${section} evolved over time?
 
@@ -239,13 +239,13 @@ charts:
     utility-libraries: Utility Libraries
     text-editors: Text Editors
     countries: Responses per Country
-    gender: Gender Breakdown
+    gender-breakdown: Gender Breakdown
     salaries: Salaries
     salaries-map: Salaries per Country
     experience: Experience
     company-size: Company Size
-    participation-by-country: Participation by country
-    salary-per-country: Average salary per country
+    participation-by-country: Participation by Country
+    salary-per-country: Average Salary per Country
     opinion-js_moving_in_right_direction: JavaScript is moving in the right direction
     opinion-building_js_apps_overly_complex: Building JavaScript apps is overly complex right now
     opinion-js_over_used_online: JavaScript is over-used online
@@ -253,10 +253,11 @@ charts:
     opinion-would_like_js_to_be_main_lang: I would like JavaScript to be my main programming language
     opinion-js_ecosystem_changing_to_fast: The JavaScript ecosystem is changing too fast
     opinion-survey_too_long: This survey is too damn long!
-    tool-pairing: Which tools do developers use along with ${tool}?
+    tool-pairing: Which Tools Are Used Alongside ${tool}?
     highest-satisfaction: With a 96.6% satisfaction ratio, Jest was the most liked technology this year
     highest-interest: Find out which technology had the highest satisfaction ratio in 2018
-    
+    connections: Connections Between Technologies
+
 shortnames:
     introduction: Intro
     javascript-flavors: Flavors

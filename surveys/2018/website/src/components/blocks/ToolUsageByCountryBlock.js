@@ -4,13 +4,15 @@ import { getToolName } from '../../helpers/wording'
 import ToolUsageByCountryMapChart from '../charts/ToolUsageByCountryMapChart'
 import ChartContainer from '../elements/ChartContainer'
 
+const chartId = 'tool-usage-by-country'
+
 export default class ToolUsageByCountryBlock extends Component {
     render() {
         const { tool, data } = this.props
 
         return (
             <div className="ToolUsageByCountry__Block block">
-                <BlockTitle chart="tool-usage-by-country" tool={tool} />
+                <BlockTitle chartId={chartId} tool={tool} />
                 <div className="block block--text">
                     On average, <strong>{data.percentage}%</strong> of respondents have used{' '}
                     <strong>{getToolName(tool)}</strong> and would be happy to use it again.
@@ -19,7 +21,7 @@ export default class ToolUsageByCountryBlock extends Component {
                     omitted).
                 </div>
                 <ChartContainer height={'auto'}>
-                    <ToolUsageByCountryMapChart data={data} tool={tool} average={data.percentage} />
+                    <ToolUsageByCountryMapChart chartId={chartId} data={data} tool={tool} average={data.percentage} />
                 </ChartContainer>
             </div>
         )

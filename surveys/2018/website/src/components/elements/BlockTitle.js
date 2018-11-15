@@ -14,18 +14,18 @@ class BlockTitle extends Component {
     }
 
     render() {
-        const { title, chart, tool } = this.props
+        const { title, chartId, tool } = this.props
         const { showOptions } = this.state
 
         return (
             <div className={`Block__Title Block__Title--${showOptions ? 'open' : 'closed'}`}>
                 <h3 className="Block__Title__Text">
-                    {title || getWording(`charts.${chart}`, { tool: getToolName(tool) })}
+                    {title || getWording(`charts.${chartId}`, { tool: getToolName(tool) })}
                 </h3>
-                {chart && (
+                {chartId && (
                     <ShareChart
                         className="Block__Title__Share"
-                        chart={chart}
+                        chartId={chartId}
                         toggleClass={this.toggleClass}
                     />
                 )}
