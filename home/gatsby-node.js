@@ -1,6 +1,9 @@
 const bestofjsNameToSlug = require('./src/helpers/bestofjs-slugify')
 const got = require('got')
 const crypto = require('crypto')
+const yaml = require('js-yaml')
+const fs = require('fs')
+const redirects = yaml.safeLoad(fs.readFileSync('./src/data/redirects.yaml', 'utf8'))
 
 /**
  * Fix case for pages path, it's not obvious on OSX which is case insensitive,
@@ -12,8 +15,19 @@ const crypto = require('crypto')
  * Implement the Gatsby API “onCreatePage”.
  * This is called after every page is created.
  */
-exports.onCreatePage = ({ page, boundActionCreators }) => {
-    const { createPage, deletePage } = boundActionCreators
+exports.onCreatePage = ({ actions, page }) => {
+    const { createPage, deletePage, createRedirect } = actions
+
+    redirects.forEach(url => {
+        console.log(`/2017/${url}`)
+
+        createRedirect({
+            fromPath: `/2017/${url}`,
+            redirectInBrowser: true,
+            isPermanent: true,
+            toPath: `https://2017.stateofjs.com/2017/${url}`
+        })
+    })
 
     return new Promise(resolve => {
         const newPage = Object.assign({}, page, {
@@ -29,14 +43,13 @@ exports.onCreatePage = ({ page, boundActionCreators }) => {
     })
 }
 
-
 /*
 Add `Project` nodes to the application GraphQL data store
 See `allProject` query on http://localhost:8000/___graphql
 We fetch about 500 projects from Best of JavaScript
 */
-exports.sourceNodes = async ({ boundActionCreators }) => {
-    const { createNode } = boundActionCreators
+exports.sourceNodes = async ({ actions }) => {
+    const { createNode } = actions
     const url = 'https://bestofjs-api-v2.firebaseapp.com/projects.json'
     const data = await got(url, { json: true }).then(r => r.body)
     const { projects } = data
@@ -54,8 +67,8 @@ exports.sourceNodes = async ({ boundActionCreators }) => {
             contentDigest: crypto
                 .createHash(`md5`)
                 .update(JSON.stringify(project))
-                .digest(`hex`),
-        },
+                .digest(`hex`)
+        }
     }))
     nodes.forEach(node => createNode(node))
 }

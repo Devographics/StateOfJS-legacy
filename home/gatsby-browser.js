@@ -1,4 +1,4 @@
-import ReactGA from 'react-ga'
+const ReactGA = require('react-ga')
 ReactGA.initialize('UA-83022212-4')
 
 const ascii = `
