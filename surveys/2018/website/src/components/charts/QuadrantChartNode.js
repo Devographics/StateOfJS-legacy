@@ -18,36 +18,7 @@ const getHoverCoords = ({ dx, dy }) => {
     }
 }
 
-// const QuadrantChartNode = ({ data, x, y, r, styles }) => {
-//     return (
-//         <Fragment>
-//             <circle cx={x} cy={y} r={r} fill={styles.circlesColor} fillOpacity="0.9" />
-//             <text
-//                 fontSize={Math.max(8, r * 0.7)}
-//                 textAnchor="middle"
-//                 alignmentBaseline="central"
-//                 x={x}
-//                 y={y}
-//                 fontWeight="normal"
-//                 fill={'#333'}
-//                 className="Quadrants__Chart__Value"
-//             >
-//                 {data.i}%
-//             </text>
-//             <text
-//                 alignmentBaseline="central"
-//                 x={x + r + 5}
-//                 y={y}
-//                 fill={styles.labelsColor}
-//                 className="Quadrants__Chart__Label"
-//             >
-//                 {getToolName(data.id)}
-//             </text>
-//         </Fragment>
-//     )
-// }
-
-const QuadrantChartNode = ({ data, id, x, y, collisionData }) => {
+const QuadrantChartNode = ({ data, id, x, y, collisionData, projects }) => {
     return (
         <PeriodicElement
             className={`Quadrants__Chart__PeriodicTableElement ${
@@ -56,7 +27,7 @@ const QuadrantChartNode = ({ data, id, x, y, collisionData }) => {
             x={x}
             y={y}
             symbol={periodicTableData.tools[id]}
-            name={getToolName(id)}
+            name={getToolName(id, projects)}
             number={`${data.s}%`}
             fire={data.i > 50}
             size={55}
@@ -78,7 +49,8 @@ QuadrantChartNode.propTypes = {
     styles: PropTypes.shape({
         circlesColor: PropTypes.string.isRequired,
         labelsColor: PropTypes.string.isRequired
-    }).isRequired
+    }).isRequired,
+    projects: PropTypes.array.isRequired
 }
 
 export default QuadrantChartNode

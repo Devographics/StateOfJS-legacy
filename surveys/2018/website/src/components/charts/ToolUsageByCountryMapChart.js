@@ -20,7 +20,7 @@ const renderBackground = (ctx, props) => {
     ctx.fillRect(0, 0, props.outerWidth, props.outerHeight)
 }
 
-const renderLegend = (ctx, props) => {
+const renderLegend = projects => (ctx, props) => {
     const { average, tool } = props
     // only keep legend values where the displayed value is positive
     const positiveLegendValues = legendValues.filter(value => average + value >= -5)
@@ -33,7 +33,7 @@ const renderLegend = (ctx, props) => {
 
     ctx.fillStyle = '#cfcfcf'
     ctx.fillText('Percentage of', 0, -35)
-    ctx.fillText(`happy ${getToolName(tool)} users:`, 0, -18)
+    ctx.fillText(`happy ${getToolName(tool, projects)} users:`, 0, -18)
 
     positiveLegendValues.forEach((value, i) => {
         const x = 0
@@ -74,10 +74,12 @@ class ToolUsageByCountryMapChart extends Component {
                     delta_from_average: PropTypes.number.isRequired
                 })
             ).isRequired
-        }).isRequired
+        }).isRequired,
+        projects: PropTypes.array.isRequired
     }
 
     render() {
+        const {projects} = this.props
         return (
             <div className="ToolsUsageByCountry__Chart">
                 <ResponsiveGeoMap
@@ -89,7 +91,7 @@ class ToolUsageByCountryMapChart extends Component {
                     borderWidth={0.5}
                     borderColor="#111111"
                     onMouseMove={this.setFeature}
-                    layers={[renderBackground, 'features', renderLegend]}
+                    layers={[renderBackground, 'features', renderLegend(projects)]}
                     theme={theme}
                     tooltip={renderTooltip}
                     average={this.props.average}

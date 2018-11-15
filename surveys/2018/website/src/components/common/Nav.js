@@ -10,8 +10,8 @@ const navFiltered = filter(nav, item => !item.hide)
 
 const isActive = (currentPath, slug) => currentPath.indexOf(slug) !== -1
 
-const NavItem = ({ currentPath, subPages, comingSoon, closeSidebar, index }) => {
-    const page = createPage(index)
+const NavItem = ({ currentPath, subPages, comingSoon, closeSidebar, index, projects }) => {
+    const page = createPage(index, undefined, projects)
     return (
         <li>
             <h3 className={classNames('nav-page', { 'nav-page-comingsoon': comingSoon })}>
@@ -44,7 +44,7 @@ const NavSubItem = ({ page, closeSidebar }) => {
     )
 }
 
-const Nav = ({ path, closeSidebar }) => {
+const Nav = ({ path, closeSidebar, projects }) => {
     return (
         <div className="nav">
             <ul>
@@ -55,6 +55,7 @@ const Nav = ({ path, closeSidebar }) => {
                         {...item}
                         currentPath={path}
                         closeSidebar={closeSidebar}
+                        projects={projects}
                     />
                 ))}
             </ul>

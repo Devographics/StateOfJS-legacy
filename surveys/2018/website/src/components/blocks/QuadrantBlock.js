@@ -25,9 +25,9 @@ const QuadrantLegend = () => (
     </div>
 )
 
-const QuadrantBlock = ({ tools }) => (
+const QuadrantBlock = (props) => (
     <div className="Quadrants__Block block block--chart block--quadrant">
-        <BlockTitle chart="quadrant" />
+        <BlockTitle {...props} chart="quadrant" />
         <div className="Quadrants__Block__Description block__description block__description--quadrant">
             <p>
                 This chart shows each technology&apos;s <strong>satisfaction ratio</strong> over its{' '}
@@ -40,7 +40,7 @@ const QuadrantBlock = ({ tools }) => (
         </div>
         <div className="Quadrants__Block__Content block__content block__content--quadrant">
             <div className="Quadrants__Block__Chart block__chart block__chart--quadrant">
-                <QuadrantChart tools={tools} />
+                <QuadrantChart {...props} />
             </div>
             <QuadrantLegend />
         </div>

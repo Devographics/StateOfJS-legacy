@@ -7,7 +7,7 @@ export default class SalaryPerCountryBlock extends Component {
     render() {
         return (
             <div className="block">
-                <BlockTitle chart="salary-per-country" />
+                <BlockTitle {...this.props} chart="salary-per-country" />
                 <ChartContainer>
                     <SalaryPerCountryMap />
                 </ChartContainer>

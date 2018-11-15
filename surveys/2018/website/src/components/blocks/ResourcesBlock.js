@@ -13,7 +13,7 @@ const trackClick = (tool, resource, label) => {
     })
 }
 
-const ResourcesBlock = ({ tool }) => {
+const ResourcesBlock = ({ tool, projects }) => {
     const sectionResources = resources.filter(r => r.tool === tool)
 
     if (!sectionResources.length) {
@@ -23,7 +23,7 @@ const ResourcesBlock = ({ tool }) => {
     return (
         <div className="block block--resources">
             <div className="resources">
-                <BlockTitle title="Recommended Resources" />
+                <BlockTitle title="Recommended Resources" projects={projects} />
                 {/*
                 <div className="resources-title">
                     <h2>Recommended Resources</h2>

@@ -10,11 +10,12 @@ export default class ToolsConnectionsChordChart extends Component {
     static propTypes = {
         keys: PropTypes.arrayOf(PropTypes.string).isRequired,
         matrix: PropTypes.arrayOf(PropTypes.array).isRequired,
-        getColor: PropTypes.func.isRequired
+        getColor: PropTypes.func.isRequired,
+        projects: PropTypes.array.isRequired
     }
 
     render() {
-        const { keys, matrix, getColor } = this.props
+        const { keys, matrix, getColor, projects } = this.props
 
         return (
             <div className="chart-wrapper">
@@ -33,7 +34,7 @@ export default class ToolsConnectionsChordChart extends Component {
                         matrix={matrix}
                         labelRotation={-90}
                         ribbonHoverOthersOpacity={0.1}
-                        label={d => truncate(getToolName(d.id), { length: 12 })}
+                        label={d => truncate(getToolName(d.id, projects), { length: 12 })}
                         labelTextColor="inherit:brighter(1.6)"
                         animate={false}
                         theme={theme}

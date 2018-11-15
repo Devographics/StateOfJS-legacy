@@ -25,7 +25,7 @@ const TickLabel = ({ label, active }) => (
 
 const TickItem = projects => tick => {
     const { key } = tick
-    const libraryName = getToolName(key)
+    const libraryName = getToolName(key, projects)
     const library = projects.find(project => project.id === key)
     const labelWidth = key.length * 7
     const tickProps = {
@@ -58,9 +58,9 @@ const TickItem = projects => tick => {
     }
 }
 
-const BarTooltip = ({ indexValue, value }) => (
+const BarTooltip = projects => ({ indexValue, value }) => (
     <span>
-        {getToolName(indexValue)}
+        {getToolName(indexValue, projects)}
         :&nbsp;
         <strong>{value}</strong>
     </span>
@@ -81,7 +81,7 @@ const BarChart = ({ data, projects }) => (
             axisLeft={{
                 renderTick: TickItem(projects)
             }}
-            tooltip={BarTooltip}
+            tooltip={BarTooltip(projects)}
             layers={['grid', 'bars', 'axes', 'markers', 'legends']}
         />
     </div>

@@ -41,7 +41,7 @@ export default class ToolsConnectionsBlock extends Component {
     }
 
     render() {
-        const { data } = this.props
+        const { data, projects } = this.props
         const { sections: selectedSections } = this.state
 
         const toolIndexes = selectedSections.reduce((acc, section) => {
@@ -78,6 +78,7 @@ export default class ToolsConnectionsBlock extends Component {
                     getColor={getColor}
                     keys={toolKeys}
                     matrix={filteredMatrix}
+                    projects={projects}
                 />
             </div>
         )

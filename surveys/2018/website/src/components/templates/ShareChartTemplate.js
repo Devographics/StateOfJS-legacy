@@ -1,11 +1,6 @@
 import React, { Component } from 'react'
-// import { graphql } from 'gatsby'
+
 import Meta from '../elements/Meta'
-// import Layout from '../common/Layout'
-// import ToolHeaderBlock from '../blocks/ToolHeaderBlock'
-// import ToolOpinionsOverTimeBlock from '../blocks/ToolOpinionsOverTimeBlock'
-// import ReasonsBlock from '../blocks/ReasonsBlock'
-// import ToolOpinionMapBlock from '../blocks/ToolOpinionMapBlock'
 import withPageData from '../../helpers/withPageData'
 import getImageUrl from '../../helpers/getImageUrl'
 import { getWording } from '../../helpers/wording'

@@ -20,7 +20,7 @@ export default class BarBlock extends Component {
         const { title, data, chart, description, projects } = this.props
         return (
             <div className="block block--chart block--othersbar">
-                <BlockTitle chart={chart} title={title} />
+                <BlockTitle chart={chart} title={title} projects={projects} />
                 <div className="block__description">
                     <p>{description}</p>
                 </div>

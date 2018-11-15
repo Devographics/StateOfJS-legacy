@@ -25,12 +25,12 @@ class HappinessBlock extends PureComponent {
     }
 
     render() {
-        const { currentPage, data } = this.props
+        const { currentPage, data, projects } = this.props
         const surveyData = data.find(d => d.survey === '2018')
 
         return (
             <div className="block block--chart block--happiness" id="happiness">
-                <BlockTitle chart="happiness" />
+                <BlockTitle chart="happiness" projects={projects} />
                 <div className="block__description">
                     <p>
                         {getWording('block_intro.happiness', {

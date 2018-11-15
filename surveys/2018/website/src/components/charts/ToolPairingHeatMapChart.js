@@ -12,7 +12,7 @@ const colorScale = scaleLinear()
     .domain([0, 0.2, 1])
     .range([colors.redLighter, colors.redLight, colors.red])
 
-const ToolPairingHeatMapChart = ({ data }) => {
+const ToolPairingHeatMapChart = ({ data, projects }) => {
     const maxSectionTools = Math.max(...data.map(d => d.tools.length))
 
     const style = {
@@ -36,7 +36,7 @@ const ToolPairingHeatMapChart = ({ data }) => {
                                 borderColor="#212424"
                                 color="#212424"
                                 tool={sectionTool.tool}
-                                name={getToolName(sectionTool.tool)}
+                                name={getToolName(sectionTool.tool, projects)}
                                 symbol={periodicTableData.tools[sectionTool.tool]}
                                 number={i}
                             />

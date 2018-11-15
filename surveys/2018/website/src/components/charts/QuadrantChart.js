@@ -70,7 +70,7 @@ const detectCollision = (collisionPositions, x1, y1) => {
     return collisionData
 }
 
-const QuadrantChart = ({ tools }) => {
+const QuadrantChart = ({ tools, projects }) => {
     const data = mapData(tools)
 
     const innerWidth = dimensions.width - dimensions.padding.left - dimensions.padding.right
@@ -191,21 +191,6 @@ const QuadrantChart = ({ tools }) => {
                             })`}
                         >
                             {data.map(d => (
-                                // <PeriodicElement
-                                //     className="Quadrants__Chart__PeriodicTableElement Quadrants__Chart__PeriodicTableElement--move"
-                                //     key={d.id}
-                                //     data={d}
-                                //     x={xScale(d.u)}
-                                //     y={yScale(d.s)}
-                                //     r={radiusScale(d.i)}
-                                //     styles={styles}
-                                //     symbol={periodicTableData.tools[d.id]}
-                                //     name={getToolName(d.id)}
-                                //     number={`${d.s}%`}
-                                //     fire={d.i > 50}
-                                //     size={50}
-                                //     hasCollision={detectCollision(xScale(d.u), yScale(d.s), 10)}
-                                // />
                                 <QuadrantChartNode
                                     key={d.id}
                                     id={d.id}
@@ -219,6 +204,7 @@ const QuadrantChart = ({ tools }) => {
                                         xScale(d.u),
                                         yScale(d.s)
                                     )}
+                                    projects={projects}
                                 />
                             ))}
                         </g>

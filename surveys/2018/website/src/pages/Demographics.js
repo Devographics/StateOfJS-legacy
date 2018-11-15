@@ -10,11 +10,11 @@ import SalaryPerCountryBlock from '../components/blocks/SalaryPerCountryBlock'
 
 const Demographics = ({ data, ...rest }) => {
     const participationData = data.stats.participation.find(s => s.survey === '2018').by_country
-
     const genderData = data.stats.gender.find(s => s.survey === '2018')
+    const projects = data.allProject.edges.map(({ node }) => node)
 
     return (
-        <Layout {...rest}>
+        <Layout projects={projects} {...rest}>
             <div>
                 <SectionHeader />
                 <TextBlock text={data.file.childMarkdownRemark.html} />
@@ -86,6 +86,18 @@ export const query = graphql`
         file(name: { eq: "demographics-introduction" }) {
             childMarkdownRemark {
                 html
+            }
+        }
+        allProject {
+            edges {
+                node {
+                    id,
+                    name,
+                    stars,
+                    github,
+                    description,
+                    homepage
+                }
             }
         }
     }

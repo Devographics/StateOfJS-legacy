@@ -7,14 +7,15 @@ import OverviewBlock from '../blocks/OverviewBlock'
 import HappinessBlock from '../blocks/HappinessBlock'
 import SectionHeader from '../elements/SectionHeader'
 
-const OverviewTemplate = ({ pageContext, data: { section } }) => {
+const OverviewTemplate = ({ pageContext, data: { section, allProject } }) => {
+    const projects = allProject.edges.map(({ node }) => node)
     return (
         <Layout>
             <div className="template">
                 <Meta />
                 <SectionHeader showIntro={true} />
-                <OverviewBlock section={pageContext.section} opinions={section.opinions} />
-                <HappinessBlock section="section" data={section.happiness} />
+                <OverviewBlock section={pageContext.section} opinions={section.opinions} projects={projects} />
+                <HappinessBlock section="section" data={section.happiness} projects={projects} />
             </div>
         </Layout>
     )
@@ -72,6 +73,18 @@ export const query = graphql`
                     score
                     count
                     percentage
+                }
+            }
+        }
+        allProject {
+            edges {
+                node {
+                    id,
+                    name,
+                    stars,
+                    github,
+                    description,
+                    homepage
                 }
             }
         }

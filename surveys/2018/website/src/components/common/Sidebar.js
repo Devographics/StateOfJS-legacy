@@ -20,7 +20,7 @@ const Close = () => (
     </svg>
 )
 
-const Sidebar = ({ sidebarClassName, closeSidebar, rest, showAnim }) => (
+const Sidebar = ({ sidebarClassName, closeSidebar, showAnim, ...rest }) => (
     <div className={`Sidebar ${sidebarClassName}`}>
         <div className="Sidebar__Fixed">
             <h1 className="Logo__Wrapper">

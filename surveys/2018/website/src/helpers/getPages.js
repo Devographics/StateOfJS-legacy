@@ -24,7 +24,7 @@ export const isSamePath = (p1, p2, n) => {
 Take a section index and a subsection index and return a full page object
 
 */
-export const createPage = (sectionIndex, subSectionIndex) => {
+export const createPage = (sectionIndex, subSectionIndex, projects) => {
     const section = nav[sectionIndex]
     const page = {
         section: {
@@ -44,7 +44,7 @@ export const createPage = (sectionIndex, subSectionIndex) => {
         page.subSection = {
             id: subSectionId,
             slug: slugify(subSectionId),
-            label: getWording(`nav.${subSectionId}`, {}, getToolName(subSectionId)),
+            label: getWording(`nav.${subSectionId}`, {}, getToolName(subSectionId, projects)),
             index: subSectionIndex
         }
     }

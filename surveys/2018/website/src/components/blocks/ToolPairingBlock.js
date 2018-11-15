@@ -4,12 +4,13 @@ import BlockTitle from '../elements/BlockTitle'
 import ToolPairingHeatMapChart from '../charts/ToolPairingHeatMapChart'
 import ChartContainer from '../elements/ChartContainer'
 
-const ToolPairingBlock = ({ tool, data }) => {
+const ToolPairingBlock = (props) => {
+    const {tool, projects} = props
     return (
         <div className="ToolPairing__Block block">
-            <BlockTitle chart="tool-pairing" tool={tool} />
+            <BlockTitle chart="tool-pairing" tool={tool} projects={projects} />
             <ChartContainer>
-                <ToolPairingHeatMapChart tool={tool} data={data} />
+                <ToolPairingHeatMapChart {...props} />
             </ChartContainer>
         </div>
     )

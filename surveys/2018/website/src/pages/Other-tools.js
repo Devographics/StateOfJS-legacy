@@ -10,7 +10,7 @@ const OtherTools = ({ data, ...rest }) => {
     const topics = data.topics.edges.map(({ node }) => node)
     const projects = data.allProject.edges.map(({ node }) => node)
     return (
-        <Layout {...rest}>
+        <Layout projects={projects} {...rest}>
             <div className="page">
                 <SectionHeader />
                 <TextBlock text={data.file.childMarkdownRemark.html} />

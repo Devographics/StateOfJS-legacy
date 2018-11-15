@@ -9,9 +9,10 @@ import { globalOpinionSubjects } from '../constants'
 
 const Opinions = ({ data, ...rest }) => {
     const opinions = keyBy(data.opinions.edges.map(e => e.node), 'subject')
+    const projects = data.allProject.edges.map(({ node }) => node)
 
     return (
-        <Layout {...rest}>
+        <Layout projects={projects} {...rest}>
             <div>
                 <SectionHeader />
                 <TextBlock text={data.file.childMarkdownRemark.html} />
@@ -20,6 +21,7 @@ const Opinions = ({ data, ...rest }) => {
                         key={subject}
                         subject={subject}
                         data={opinions[subject].by_survey}
+                        projects={projects}
                     />
                 ))}
             </div>
@@ -49,6 +51,18 @@ export const query = graphql`
                             percentage
                         }
                     }
+                }
+            }
+        }
+        allProject {
+            edges {
+                node {
+                    id,
+                    name,
+                    stars,
+                    github,
+                    description,
+                    homepage
                 }
             }
         }

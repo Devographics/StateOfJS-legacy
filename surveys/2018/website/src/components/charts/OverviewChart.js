@@ -30,7 +30,8 @@ export default class OverviewChart extends Component {
             PropTypes.shape({
                 survey_id: PropTypes.string.isRequired
             })
-        ).isRequired
+        ).isRequired,
+        projects: PropTypes.array.isRequired
     }
 
     state = {
@@ -55,7 +56,7 @@ export default class OverviewChart extends Component {
     }
 
     render() {
-        const { section, opinions } = this.props
+        const { section, opinions, projects } = this.props
 
         const surveyData = opinions.find(o => o.survey_id === '2018')
         if (surveyData === undefined) {
@@ -114,7 +115,7 @@ export default class OverviewChart extends Component {
                                             section={section}
                                             tool={tick.value}
                                             symbol={periodicTableData.tools[tick.value] || '??'}
-                                            name={getToolName(tick.value)}
+                                            name={getToolName(tick.value, projects)}
                                             size={60}
                                             number={ranking[tick.value]}
                                             path={`${section}/${tick.value}`}
@@ -142,7 +143,7 @@ export default class OverviewChart extends Component {
                                             alignmentBaseline="hanging"
                                             style={{ fontSize: '13px' }}
                                         >
-                                            {getToolName(tick.value)}
+                                            {getToolName(tick.value, projects)}
                                         </text>
                                     </g>
                                 )

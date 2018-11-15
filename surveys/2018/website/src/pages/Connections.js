@@ -16,15 +16,17 @@ between the inhabitants of the vast JavaScript ecosystem.
 The size of each section corresponds to the number of respondents who have used each library
 and would be willing to use it again. 
 `
-const Connections = ({ data: { connections }, ...rest }) => (
-    <Layout {...rest}>
+const Connections = ({ data: { connections, allProject }, ...rest }) => {
+    const projects = allProject.edges.map(({ node }) => node)
+    return(
+    <Layout projects={projects} {...rest}>
         <div className="Section">
             <SectionHeader />
             <TextBlock text={text} />
-            <ToolsConnectionsBlock data={connections} />
+            <ToolsConnectionsBlock data={connections} projects={projects} />
         </div>
     </Layout>
-)
+)}
 
 Connections.propTypes = {
     data: PropTypes.shape({
@@ -51,6 +53,18 @@ export const query = graphql`
             indexesBySection {
                 section
                 indexes
+            }
+        }
+        allProject {
+            edges {
+                node {
+                    id,
+                    name,
+                    stars,
+                    github,
+                    description,
+                    homepage
+                }
             }
         }
     }

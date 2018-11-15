@@ -22,12 +22,12 @@ const ToolTemplate = ({ pageContext, data }) => {
 
     const wouldUseByCountryData = data.tool.would_use_by_country
     const { tool, section } = pageContext
-
+    const projects = data.allProject.edges.map(({ node }) => node)
     return (
-        <Layout>
+        <Layout projects={projects}>
             <div className="template">
                 <Meta />
-                <ToolHeaderBlock section={section} tool={tool} />
+                <ToolHeaderBlock section={section} tool={tool} projects={projects} />
                 {shouldDisplayExperienceOverTime ? (
                     <ToolOpinionsOverTimeBlock tool={tool} opinions={data.tool.experience} />
                 ) : (
@@ -39,8 +39,8 @@ const ToolTemplate = ({ pageContext, data }) => {
                 <ReasonsBlock tool={tool} reasons={data.tool.reasons} />
                 {/* <SponsorsBlock tool={tool} /> */}
                 <ResourcesBlock tool={tool} />
-                <ToolPairingBlock tool={tool} data={data.tool.pairing} />
-                <ToolUsageByCountryBlock tool={tool} data={wouldUseByCountryData} />
+                <ToolPairingBlock tool={tool} data={data.tool.pairing} projects={projects}/>
+                <ToolUsageByCountryBlock tool={tool} data={wouldUseByCountryData} projects={projects} />
             </div>
         </Layout>
     )
@@ -120,6 +120,18 @@ export const query = graphql`
                 dislike {
                     id
                     count
+                }
+            }
+        }
+        allProject {
+            edges {
+                node {
+                    id,
+                    name,
+                    stars,
+                    github,
+                    description,
+                    homepage
                 }
             }
         }

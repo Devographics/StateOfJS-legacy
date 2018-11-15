@@ -22,7 +22,7 @@ export default class OpinionBlock extends Component {
     }
 
     render() {
-        const { subject, data } = this.props
+        const { subject, data, projects } = this.props
 
         const chartData = data.map(d => {
             return d.by_choice.reduce(
@@ -36,7 +36,7 @@ export default class OpinionBlock extends Component {
 
         return (
             <div className="block">
-                <BlockTitle chart={`opinion-${subject}`} />
+                <BlockTitle chart={`opinion-${subject}`} projects={projects} />
                 <OpinionOverTimeChart data={chartData} />
             </div>
         )

@@ -16,11 +16,11 @@ export default class OverviewBlock extends Component {
     render() {
         return (
             <div className="Overview__Block block" id="overview">
-                <BlockTitle chart="overview" />
+                <BlockTitle chart="overview" projects={this.props.projects}/>
                 <div className="Overview__Block__Description block__description">
                     <p>Per-library survey results.</p>
                 </div>
-                <OverviewChart section={this.props.section} opinions={this.props.opinions} />
+                <OverviewChart {...this.props} />
             </div>
         )
     }
