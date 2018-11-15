@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { getWording } from '../../helpers/wording'
 import GenderBreakdownWaffleChart from '../charts/GenderBreakdownWaffleChart'
 import BlockTitle from '../elements/BlockTitle'
 

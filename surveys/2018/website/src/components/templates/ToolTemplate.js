@@ -11,7 +11,7 @@ import ToolPairingBlock from '../blocks/ToolPairingBlock'
 // import SponsorsBlock from '../blocks/SponsorsBlock'
 import ResourcesBlock from '../blocks/ResourcesBlock'
 
-const ToolTemplate = ({ pageContext, data }) => {
+const ToolTemplate = ({ pageContext, data, ...rest }) => {
     // console.log(pageContext, data)
 
     // this block is skipped if it doesn't appear at least in 2 surveys
@@ -24,7 +24,7 @@ const ToolTemplate = ({ pageContext, data }) => {
     const { tool, section } = pageContext
 
     return (
-        <Layout>
+        <Layout {...rest}>
             <div className="template">
                 <Meta />
                 <ToolHeaderBlock section={section} tool={tool} />

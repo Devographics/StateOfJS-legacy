@@ -346,6 +346,7 @@ usage_users_info:
         -
             tool: meteor
             total: 922
+            average: 72.3
             ranges:
                 -
                     range: 50-100
@@ -378,6 +379,7 @@ usage_users_info:
         -
             tool: express
             total: 12764
+            average: 73
             ranges:
                 -
                     range: 50-100
@@ -410,6 +412,7 @@ usage_users_info:
         -
             tool: nextjs
             total: 1701
+            average: 73.8
             ranges:
                 -
                     range: 50-100
@@ -442,6 +445,7 @@ usage_users_info:
         -
             tool: koa
             total: 1491
+            average: 76
             ranges:
                 -
                     range: 50-100
@@ -474,6 +478,7 @@ usage_users_info:
         -
             tool: sails
             total: 335
+            average: 65.7
             ranges:
                 -
                     range: 50-100
@@ -506,6 +511,7 @@ usage_users_info:
         -
             tool: feathers
             total: 317
+            average: 66.9
             ranges:
                 -
                     range: 50-100
@@ -539,6 +545,7 @@ usage_users_info:
         -
             tool: meteor
             total: 922
+            average: 327
             ranges:
                 -
                     range: 100-1000
@@ -575,6 +582,7 @@ usage_users_info:
         -
             tool: express
             total: 12764
+            average: 408
             ranges:
                 -
                     range: 100-1000
@@ -611,6 +619,7 @@ usage_users_info:
         -
             tool: nextjs
             total: 1701
+            average: 363
             ranges:
                 -
                     range: 100-1000
@@ -647,6 +656,7 @@ usage_users_info:
         -
             tool: koa
             total: 1491
+            average: 393
             ranges:
                 -
                     range: 100-1000
@@ -683,6 +693,7 @@ usage_users_info:
         -
             tool: sails
             total: 335
+            average: 378
             ranges:
                 -
                     range: 100-1000
@@ -719,6 +730,7 @@ usage_users_info:
         -
             tool: feathers
             total: 317
+            average: 262
             ranges:
                 -
                     range: 100-1000
@@ -756,6 +768,7 @@ usage_users_info:
         -
             tool: meteor
             total: 922
+            average: 9.3
             ranges:
                 -
                     range: 5-10
@@ -784,6 +797,7 @@ usage_users_info:
         -
             tool: express
             total: 12764
+            average: 8.3
             ranges:
                 -
                     range: 5-10
@@ -812,6 +826,7 @@ usage_users_info:
         -
             tool: nextjs
             total: 1701
+            average: 8
             ranges:
                 -
                     range: 2-5
@@ -840,6 +855,7 @@ usage_users_info:
         -
             tool: koa
             total: 1491
+            average: 8.6
             ranges:
                 -
                     range: 5-10
@@ -868,6 +884,7 @@ usage_users_info:
         -
             tool: sails
             total: 335
+            average: 8.7
             ranges:
                 -
                     range: 5-10
@@ -896,6 +913,7 @@ usage_users_info:
         -
             tool: feathers
             total: 317
+            average: 8.7
             ranges:
                 -
                     range: 2-5

@@ -25,7 +25,7 @@ export default class BarBlock extends Component {
                     <p>{description}</p>
                 </div>
                 <div className="capture others-wrapper">
-                    <BarChart data={data}/>
+                    <BarChart data={data} />
                 </div>
             </div>
         )

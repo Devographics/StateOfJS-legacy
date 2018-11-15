@@ -329,6 +329,7 @@ usage_users_info:
         -
             tool: electron
             total: 3913
+            average: 73.9
             ranges:
                 -
                     range: 50-100
@@ -361,6 +362,7 @@ usage_users_info:
         -
             tool: react-native
             total: 3738
+            average: 72.6
             ranges:
                 -
                     range: 50-100
@@ -393,6 +395,7 @@ usage_users_info:
         -
             tool: phonegap-cordova
             total: 2042
+            average: 71.1
             ranges:
                 -
                     range: 50-100
@@ -425,6 +428,7 @@ usage_users_info:
         -
             tool: nativescript
             total: 335
+            average: 61.1
             ranges:
                 -
                     range: 50-100
@@ -457,6 +461,7 @@ usage_users_info:
         -
             tool: ionic
             total: 1665
+            average: 63.1
             ranges:
                 -
                     range: 50-100
@@ -489,6 +494,7 @@ usage_users_info:
         -
             tool: native-apps
             total: 2113
+            average: 84.1
             ranges:
                 -
                     range: 50-100
@@ -522,6 +528,7 @@ usage_users_info:
         -
             tool: electron
             total: 3913
+            average: 369
             ranges:
                 -
                     range: 100-1000
@@ -558,6 +565,7 @@ usage_users_info:
         -
             tool: react-native
             total: 3738
+            average: 336
             ranges:
                 -
                     range: 100-1000
@@ -594,6 +602,7 @@ usage_users_info:
         -
             tool: phonegap-cordova
             total: 2042
+            average: 325
             ranges:
                 -
                     range: 100-1000
@@ -630,6 +639,7 @@ usage_users_info:
         -
             tool: nativescript
             total: 335
+            average: 347
             ranges:
                 -
                     range: 100-1000
@@ -666,6 +676,7 @@ usage_users_info:
         -
             tool: ionic
             total: 1665
+            average: 339
             ranges:
                 -
                     range: 100-1000
@@ -702,6 +713,7 @@ usage_users_info:
         -
             tool: native-apps
             total: 2113
+            average: 405
             ranges:
                 -
                     range: 100-1000
@@ -739,6 +751,7 @@ usage_users_info:
         -
             tool: electron
             total: 3913
+            average: 8.9
             ranges:
                 -
                     range: 5-10
@@ -767,6 +780,7 @@ usage_users_info:
         -
             tool: react-native
             total: 3738
+            average: 7.8
             ranges:
                 -
                     range: 2-5
@@ -795,6 +809,7 @@ usage_users_info:
         -
             tool: phonegap-cordova
             total: 2042
+            average: 10.5
             ranges:
                 -
                     range: 10-20
@@ -823,6 +838,7 @@ usage_users_info:
         -
             tool: nativescript
             total: 335
+            average: 9
             ranges:
                 -
                     range: 2-5
@@ -851,6 +867,7 @@ usage_users_info:
         -
             tool: ionic
             total: 1665
+            average: 9
             ranges:
                 -
                     range: 2-5
@@ -879,6 +896,7 @@ usage_users_info:
         -
             tool: native-apps
             total: 2113
+            average: 10.1
             ranges:
                 -
                     range: 10-20

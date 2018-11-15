@@ -374,6 +374,7 @@ usage_users_info:
         -
             tool: react
             total: 13062
+            average: 73.6
             ranges:
                 -
                     range: 50-100
@@ -406,6 +407,7 @@ usage_users_info:
         -
             tool: angular
             total: 4817
+            average: 66.6
             ranges:
                 -
                     range: 50-100
@@ -438,6 +440,7 @@ usage_users_info:
         -
             tool: ember
             total: 1013
+            average: 94
             ranges:
                 -
                     range: 100-200
@@ -470,6 +473,7 @@ usage_users_info:
         -
             tool: polymer
             total: 635
+            average: 82.8
             ranges:
                 -
                     range: 50-100
@@ -502,6 +506,7 @@ usage_users_info:
         -
             tool: vuejs
             total: 5810
+            average: 62.4
             ranges:
                 -
                     range: 50-100
@@ -534,6 +539,7 @@ usage_users_info:
         -
             tool: preact
             total: 1251
+            average: 79.9
             ranges:
                 -
                     range: 50-100
@@ -567,6 +573,7 @@ usage_users_info:
         -
             tool: react
             total: 13062
+            average: 409
             ranges:
                 -
                     range: 100-1000
@@ -603,6 +610,7 @@ usage_users_info:
         -
             tool: angular
             total: 4817
+            average: 454
             ranges:
                 -
                     range: 100-1000
@@ -639,6 +647,7 @@ usage_users_info:
         -
             tool: ember
             total: 1013
+            average: 356
             ranges:
                 -
                     range: 100-1000
@@ -675,6 +684,7 @@ usage_users_info:
         -
             tool: polymer
             total: 635
+            average: 514
             ranges:
                 -
                     range: more-than-1000
@@ -711,6 +721,7 @@ usage_users_info:
         -
             tool: vuejs
             total: 5810
+            average: 320
             ranges:
                 -
                     range: 100-1000
@@ -747,6 +758,7 @@ usage_users_info:
         -
             tool: preact
             total: 1251
+            average: 416
             ranges:
                 -
                     range: 100-1000
@@ -784,6 +796,7 @@ usage_users_info:
         -
             tool: react
             total: 13062
+            average: 8
             ranges:
                 -
                     range: 2-5
@@ -812,6 +825,7 @@ usage_users_info:
         -
             tool: angular
             total: 4817
+            average: 8.4
             ranges:
                 -
                     range: 2-5
@@ -840,6 +854,7 @@ usage_users_info:
         -
             tool: ember
             total: 1013
+            average: 10
             ranges:
                 -
                     range: 5-10
@@ -868,6 +883,7 @@ usage_users_info:
         -
             tool: polymer
             total: 635
+            average: 10.4
             ranges:
                 -
                     range: 10-20
@@ -896,6 +912,7 @@ usage_users_info:
         -
             tool: vuejs
             total: 5810
+            average: 8.1
             ranges:
                 -
                     range: 2-5
@@ -924,6 +941,7 @@ usage_users_info:
         -
             tool: preact
             total: 1251
+            average: 8.8
             ranges:
                 -
                     range: 5-10

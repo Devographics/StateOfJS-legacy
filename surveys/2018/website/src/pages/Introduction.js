@@ -5,8 +5,8 @@ import TextBlock from '../components/blocks/TextBlock'
 import SponsorsBlock from '../components/blocks/SponsorsBlock'
 import SectionHeader from '../components/elements/SectionHeader'
 
-const Introduction = ({ data }) => (
-    <Layout>
+const Introduction = ({ data, ...rest }) => (
+    <Layout {...rest}>
         <div>
             <SectionHeader showIntro={false} />
             <TextBlock text={data.file.childMarkdownRemark.html} />

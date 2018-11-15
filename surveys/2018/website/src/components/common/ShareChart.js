@@ -9,7 +9,8 @@ export const trackShare = (platform, page = {}, chartId = '') => () => {
     const { section, subSection } = page
     ReactGA.event({
         category: platform,
-        action: page && chartId ? `${section.label}/${subSection.label}/${chartId} share` : `site share`
+        action:
+            page && chartId ? `${section.label}/${subSection.label}/${chartId} share` : `site share`
     })
 }
 

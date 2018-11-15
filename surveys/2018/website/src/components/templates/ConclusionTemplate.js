@@ -6,12 +6,12 @@ import TextBlock from '../blocks/TextBlock'
 import QuadrantBlock from '../blocks/QuadrantBlock'
 import SectionHeader from '../elements/SectionHeader'
 
-const ConclusionTemplate = ({ pageContext, data }) => {
+const ConclusionTemplate = ({ pageContext, data, ...rest }) => {
     const content = data.file.childMarkdownRemark ? data.file.childMarkdownRemark.html : undefined
     const opinions = data.opinions.opinions.find(o => o.survey_id === '2018')
 
     return (
-        <Layout>
+        <Layout {...rest}>
             <div className="template">
                 <Meta />
                 <SectionHeader />

@@ -22,8 +22,8 @@ const returnVelocity = 10 // lower = faster
 const frictionCoefficient = 2.5 // lower = stronger friction
 const initialMultiplier = 10 // higher = faster
 const velocityVariance = 1.1
-const buttonWidth = 200
-const buttonHeight = 80
+// const buttonWidth = 200
+// const buttonHeight = 80
 
 // https://stackoverflow.com/a/18358056/649299
 function roundToTwo(num) {

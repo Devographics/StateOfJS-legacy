@@ -5,11 +5,11 @@ import Layout from '../common/Layout'
 import SectionHeader from '../elements/SectionHeader'
 import BarBlock from '../blocks/BarBlock'
 
-const OtherToolsTemplate = ({ data }) => {
+const OtherToolsTemplate = ({ data, ...rest }) => {
     const otherTools = [...data.section.other_tools].reverse()
 
     return (
-        <Layout>
+        <Layout {...rest}>
             <div className="template">
                 <Meta />
                 <SectionHeader />

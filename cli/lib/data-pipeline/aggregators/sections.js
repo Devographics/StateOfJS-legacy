@@ -1,4 +1,5 @@
 const elastic = require('../loaders/elastic')
+const constants = require('../../../conf/constants')
 
 exports.toolBySimilarOpinionForSurvey = async (tools, opinion, survey) => {
     const max = await elastic.search({
@@ -325,33 +326,52 @@ exports.toolsOpinionUserInfoDistribution = async (surveyConfig, opinion) => {
         const by_salary = []
         const by_company_size = []
         const by_years_of_experience = []
+
         section.tools.forEach(tool => {
             const toolAggs = result.aggregations[tool]
+            const total = toolAggs.doc_count
+
+            const salaryTotal = toolAggs.salary.buckets.reduce((t, bucket) => {
+                return t + constants.salaryRangeAverages[bucket.key] * bucket.doc_count
+            }, 0)
+            const companySizeTotal = toolAggs.company_size.buckets.reduce((t, bucket) => {
+                return t + constants.companySizeAverages[bucket.key] * bucket.doc_count
+            }, 0)
+            const yearsOfExperienceTotal = toolAggs.years_of_experience.buckets.reduce(
+                (t, bucket) => {
+                    return t + constants.yearsOfExperienceAverages[bucket.key] * bucket.doc_count
+                },
+                0
+            )
+
             by_salary.push({
                 tool,
-                total: toolAggs.doc_count,
+                total,
+                average: Number((salaryTotal / total).toFixed(1)),
                 ranges: toolAggs.salary.buckets.map(bucket => ({
                     range: bucket.key.replace(/_/g, '-'),
                     count: bucket.doc_count,
-                    percentage: Number(((bucket.doc_count / toolAggs.doc_count) * 100).toFixed(1))
+                    percentage: Number(((bucket.doc_count / total) * 100).toFixed(1))
                 }))
             })
             by_company_size.push({
                 tool,
-                total: toolAggs.doc_count,
+                total,
+                average: Math.round(companySizeTotal / total),
                 ranges: toolAggs.company_size.buckets.map(bucket => ({
                     range: bucket.key.replace(/_/g, '-'),
                     count: bucket.doc_count,
-                    percentage: Number(((bucket.doc_count / toolAggs.doc_count) * 100).toFixed(1))
+                    percentage: Number(((bucket.doc_count / total) * 100).toFixed(1))
                 }))
             })
             by_years_of_experience.push({
                 tool,
-                total: toolAggs.doc_count,
+                total,
+                average: Number((yearsOfExperienceTotal / total).toFixed(1)),
                 ranges: toolAggs.years_of_experience.buckets.map(bucket => ({
                     range: bucket.key.replace(/_/g, '-'),
                     count: bucket.doc_count,
-                    percentage: Number(((bucket.doc_count / toolAggs.doc_count) * 100).toFixed(1))
+                    percentage: Number(((bucket.doc_count / total) * 100).toFixed(1))
                 }))
             })
         })

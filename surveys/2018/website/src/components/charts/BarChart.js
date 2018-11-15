@@ -67,7 +67,11 @@ const BarTooltip = ({ indexValue, value }) => (
 )
 
 const BarChart = ({ data, chartId }) => (
-    <div className="Bar__Chart chart-wrapper" id={chartId} style={{ height: data.length * barHeight }}>
+    <div
+        className="Bar__Chart chart-wrapper"
+        id={chartId}
+        style={{ height: data.length * barHeight }}
+    >
         <ResponsiveBar
             {...barChartProps}
             data={data}

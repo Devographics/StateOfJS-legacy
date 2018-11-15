@@ -21,7 +21,12 @@ export default class ToolUsageByCountryBlock extends Component {
                     omitted).
                 </div>
                 <ChartContainer height={'auto'}>
-                    <ToolUsageByCountryMapChart chartId={chartId} data={data} tool={tool} average={data.percentage} />
+                    <ToolUsageByCountryMapChart
+                        chartId={chartId}
+                        data={data}
+                        tool={tool}
+                        average={data.percentage}
+                    />
                 </ChartContainer>
             </div>
         )

@@ -253,3 +253,79 @@
         padding: $spacing * 1.5;
     }
 }
+
+.ToolsSubAggsHeatMapChart {
+    display: grid;
+    align-items: center;
+}
+
+.ToolsSubAggsHeatMapChart__Heading {
+    font-size: 14px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ToolsSubAggsHeatMapChart__AverageHeading {
+    font-size: 14px;
+    font-weight: 600;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 1px dashed $dark-border-color;
+}
+
+.ToolsSubAggsHeatMapChart__AverageCell {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    color: $blue;
+}
+.ToolsSubAggsHeatMapChart__AverageCell--first {
+    border-left: 1px solid $border-color;
+}
+.ToolsSubAggsHeatMapChart__AverageCell--lowest {
+    &:before {
+        content: '';
+        position: absolute;
+        left: calc(50% - 5px);
+        bottom: 10px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid $blue;
+    }
+}
+.ToolsSubAggsHeatMapChart__AverageCell--highest {
+    &:before {
+        content: '';
+        position: absolute;
+        left: calc(50% - 5px);
+        top: 11px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid $blue;
+    }
+}
+
+.ToolsSubAggsHeatMapChart__Cell {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: $bg-color;
+    border-left: 1px solid $bg-color;
+}
+.ToolsSubAggsHeatMapChart__Cell--first {
+    border-left: 0;
+}

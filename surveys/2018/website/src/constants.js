@@ -70,23 +70,18 @@ export const salaryRanges = [
     'more-than-200'
 ]
 
-export const yearsOfExperienceKeys = [
-    'Less than one year',
-    '1-2 years',
-    '2-5 years',
-    '5-10 years',
-    '10-20 years',
-    '20+ years'
+export const companySizes = [
+    '1',
+    '1-5',
+    '5-10',
+    '10-20',
+    '20-50',
+    '50-100',
+    '100-1000',
+    'more-than-1000'
 ]
 
-export const yearsOfExperienceShortKeys = {
-    'Less than one year': '<1',
-    '1-2 years': '1~2',
-    '2-5 years': '2~5',
-    '5-10 years': '5~10',
-    '10-20 years': '10~20',
-    '20+ years': '>20'
-}
+export const yearsOfExperience = ['less-than-1', '1-2', '2-5', '5-10', '10-20', 'more-than-20']
 
 export const featureKeys = [
     "I don't know what that is",
