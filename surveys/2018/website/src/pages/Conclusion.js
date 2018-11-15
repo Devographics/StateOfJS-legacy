@@ -5,7 +5,7 @@ import Layout from '../components/common/Layout'
 import SectionHeader from '../components/elements/SectionHeader'
 import { graphql } from 'gatsby'
 
-const Conclusion = ({ data, rest }) => (
+const Conclusion = ({ data, ...rest }) => (
     <Layout {...rest}>
         <div>
             <SectionHeader showIntro={false} />

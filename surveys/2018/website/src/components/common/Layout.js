@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react'
-import PageTitle from './PageTitle'
+import classNames from 'classnames'
 import '../../stylesheets/screen.scss'
-import Sidebar from './Sidebar'
 import Animation from '../elements/Animation'
+import PageTitle from './PageTitle'
+import Sidebar from './Sidebar'
 import Head from './Head'
 
 class Layout extends PureComponent {
@@ -39,18 +40,24 @@ class Layout extends PureComponent {
     }
 
     render() {
-        const { showPagination = true } = this.props
+        const { showPagination = true, location } = this.props
         const { showAnim, showSidebar } = this.state
         const sidebarClassName = showSidebar ? 'Sidebar--shown' : 'Sidebar--hidden'
+        const isCapturing = location && location.search && location.search.indexOf('capture') !== -1
 
         return (
             <div
-                className={`pagelayout PageLayout--${
-                    showSidebar ? 'sidebar' : 'nosidebar'
-                } PageLayout--${showAnim ? 'anim' : 'noanim'}`}
+                className={classNames('pageLayout', {
+                    'PageLayout--sidebar': showSidebar,
+                    'PageLayout--nosidebar': !showSidebar,
+                    'PageLayout--anim': showAnim,
+                    'PageLayout--noanim': !showAnim,
+                    capture: isCapturing,
+                    nocapture: !isCapturing
+                })}
             >
                 <Head />
-                {this.state.showAnim && <Animation showStart={false} variant="simple" size={70} />}
+                {showAnim && <Animation showStart={false} variant="simple" size={70} />}
 
                 <div className="pagelayout__inner">
                     <Sidebar

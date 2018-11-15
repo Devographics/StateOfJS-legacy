@@ -4,7 +4,7 @@ import Layout from '../components/common/Layout'
 import SectionHeader from '../components/elements/SectionHeader'
 import { graphql } from 'gatsby'
 
-const Awards = ({ data, rest }) => (
+const Awards = ({ data, ...rest }) => (
     <Layout {...rest}>
         <div>
             <SectionHeader showIntro={true} />

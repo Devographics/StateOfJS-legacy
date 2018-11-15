@@ -9,8 +9,8 @@ import HappinessBlock from '../blocks/HappinessBlock'
 import SectionHeader from '../elements/SectionHeader'
 import ToolsSubAggsDistributionBlock from '../blocks/ToolsSubAggsDistributionBlock'
 
-const OverviewTemplate = ({ pageContext, data: { section } }) => (
-    <Layout>
+const OverviewTemplate = ({ pageContext, data: { section }, ...rest }) => (
+    <Layout {...rest}>
         <div className="template">
             <Meta />
             <SectionHeader showIntro={true} />
