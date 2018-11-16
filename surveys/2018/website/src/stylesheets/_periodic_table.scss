@@ -72,6 +72,10 @@
     stroke: $bg-color;
 }
 
+.ToolPairing__HeatMapChart__PeriodicElement .PeriodicTableElement_Symbol {
+    fill: rgba(0,0,0,0.5);
+}
+
 .ToolPairing__HeatMapChart__PeriodicElement .PeriodicTableElement_Number,
 .ToolPairing__HeatMapChart__PeriodicElement .PeriodicTableElement_Label {
     fill: $bg-color;

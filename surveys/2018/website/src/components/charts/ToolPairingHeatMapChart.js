@@ -16,7 +16,7 @@ const ToolPairingHeatMapChart = ({ data }) => {
     const maxSectionTools = Math.max(...data.map(d => d.tools.length))
 
     const style = {
-        gridTemplateColumns: `400px${` ${CELL_SIZE}px`.repeat(maxSectionTools)}`,
+        gridTemplateColumns: `auto ${` ${CELL_SIZE}px`.repeat(maxSectionTools)}`,
         gridTemplateRows: `${CELL_SIZE}px `.repeat(data.length)
     }
 
@@ -34,7 +34,6 @@ const ToolPairingHeatMapChart = ({ data }) => {
                                 className="ToolPairing__HeatMapChart__PeriodicElement"
                                 background={colorScale(sectionTool.score)}
                                 borderColor="#212424"
-                                color="#212424"
                                 tool={sectionTool.tool}
                                 name={getToolName(sectionTool.tool)}
                                 symbol={periodicTableData.tools[sectionTool.tool]}

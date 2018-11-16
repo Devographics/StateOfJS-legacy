@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import BlockTitle from '../elements/BlockTitle'
 import ToolsSubAggsHeatMapChart from '../charts/ToolsSubAggsHeatMapChart'
 import { getWording } from '../../helpers/wording'
+import ChartContainer from '../elements/ChartContainer'
 
 export default class ToolsSubAggsDistributionBlock extends Component {
     static propTypes = {
@@ -31,14 +32,16 @@ export default class ToolsSubAggsDistributionBlock extends Component {
 
         return (
             <div className="block block--chart" id={chartId}>
-                <BlockTitle chartId={chartId} values={{ sectionName }}/>
-                <ToolsSubAggsHeatMapChart
-                    keys={keys}
-                    i18nNamespace={aggsType}
-                    averageLabel={getWording(`tools_${aggsType}_average`)}
-                    formatValue={formatValue}
-                    data={data}
-                />
+                <BlockTitle chartId={chartId} values={{ sectionName }} />
+                <ChartContainer>
+                    <ToolsSubAggsHeatMapChart
+                        keys={keys}
+                        i18nNamespace={aggsType}
+                        averageLabel={getWording(`tools_${aggsType}_average`)}
+                        formatValue={formatValue}
+                        data={data}
+                    />
+                </ChartContainer>
             </div>
         )
     }

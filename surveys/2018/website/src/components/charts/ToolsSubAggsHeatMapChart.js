@@ -59,7 +59,7 @@ export default class ToolsSubAggsHeatMapChart extends Component {
             .range([colors.redLighter, colors.redLight, colors.red])
 
         const style = {
-            maxWidth: CELL_SIZE * columns + 320,
+            // maxWidth: CELL_SIZE * columns + 320,
             gridTemplateColumns: `auto${` ${CELL_SIZE}px`.repeat(columns)}`,
             gridTemplateRows: `${CELL_SIZE}px${' 38px'.repeat(rows)} ${CELL_SIZE}px`
         }

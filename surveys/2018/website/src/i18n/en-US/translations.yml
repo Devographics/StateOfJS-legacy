@@ -393,7 +393,7 @@ happiness:
     4: Happy    
 
 salary_range:
-    work-for-free: work for free
+    work-for-free: I work for free
     0-10: $0k-$10k
     10-30: $10k-$30k
     30-50: $30k-$50k
@@ -402,19 +402,19 @@ salary_range:
     more-than-200: $200k+   
 
 company_size:
-    1: one employee
-    1-5: from 1 to 5 employees
-    5-10: from 5 to 10 employees
-    10-20: from 10 to 20 employees
-    20-50: from 20 to 50 employees
-    50-100: from 50 to 100 employees
-    100-1000: from 100 to 1000 employees
-    more-than-1000: more than 1000 employees
+    1: One employee
+    1-5: 1 to 5 employees
+    5-10: 5 to 10 employees
+    10-20: 10 to 20 employees
+    20-50: 20 to 50 employees
+    50-100: 50 to 100 employees
+    100-1000: 100 to 1000 employees
+    more-than-1000: More than 1000 employees
 
 years_of_experience:
-    less-than-1: less than one year
-    1-2: from 1 to 2 years
-    2-5: from 2 to 5 years
-    5-10: from 5 to 10 years
-    10-20: from 10 to 20 years
-    more-than-20: more than 20 years
+    less-than-1: Less than one year
+    1-2: 1 to 2 years
+    2-5: 2 to 5 years
+    5-10: 5 to 10 years
+    10-20: 10 to 20 years
+    more-than-20: More than 20 years

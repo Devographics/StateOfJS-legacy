@@ -259,16 +259,17 @@
     align-items: center;
 }
 
-.ToolsSubAggsHeatMapChart__Heading {
+.ToolsSubAggsHeatMapChart__Heading, .ToolPairing__HeatMapChart__Section {
     font-size: 14px;
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: center;    
+    border-top: 1px dashed $dark-border-color;
 }
 
 .ToolsSubAggsHeatMapChart__AverageHeading {
     font-size: 14px;
-    font-weight: 600;
+    @include font-bold;
     height: 100%;
     display: flex;
     align-items: center;
