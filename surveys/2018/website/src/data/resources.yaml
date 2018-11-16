@@ -16,6 +16,12 @@
   description: Join 10,393 others learning to build Full Stack JavaScript Apps with React.js and GraphQL.
   image: advancedreact.jpg
 
+- name: Vue.js Black Friday Offer
+  tool: vuejs
+  url: https://vueschool.io/?utm_source=State%20of%20JavaScript&utm_medium=banner&utm_campaign=Black%20Friday
+  description: Learn Vue.js from core members and industry experts with Vue School’s top-notch courses and over 200 lessons for $58 per year.
+  image: vueschool.jpg
+
 - name: '#JavaScript30'
   tool: es6
   url: https://javascript30.com/friend/STATEOFJS
