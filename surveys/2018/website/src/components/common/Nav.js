@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import classNames from 'classnames'
-import nav from '../../data/nav.yaml'
+import nav from '../../../../config/nav.yml'
 import filter from 'lodash/filter'
 import { createPage } from '../../helpers/getPages'
 import withPageData from '../../helpers/withPageData'

@@ -18,11 +18,12 @@ export default class OpinionBlock extends Component {
                     })
                 ).isRequired
             })
-        ).isRequired
+        ).isRequired,
+        chartId: PropTypes.string.isRequired
     }
 
     render() {
-        const { subject, data } = this.props
+        const { data, chartId } = this.props
 
         const chartData = data.map(d => {
             return d.by_choice.reduce(
@@ -35,8 +36,8 @@ export default class OpinionBlock extends Component {
         })
 
         return (
-            <div className="block">
-                <BlockTitle chart={`opinion-${subject}`} />
+            <div className="block" id={chartId}>
+                <BlockTitle chartId={chartId} />
                 <OpinionOverTimeChart data={chartData} />
             </div>
         )

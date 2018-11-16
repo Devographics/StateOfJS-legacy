@@ -4,11 +4,9 @@ import { getToolName } from '../../helpers/wording'
 import ToolUsageByCountryMapChart from '../charts/ToolUsageByCountryMapChart'
 import ChartContainer from '../elements/ChartContainer'
 
-const chartId = 'tool-usage-by-country'
-
 export default class ToolUsageByCountryBlock extends Component {
     render() {
-        const { tool, data } = this.props
+        const { tool, data, chartId } = this.props
 
         return (
             <div className="ToolUsageByCountry__Block block" id={chartId}>

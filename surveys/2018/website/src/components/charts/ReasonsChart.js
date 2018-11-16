@@ -36,10 +36,8 @@ export default class ReasonsChart extends Component {
     }
 
     render() {
-        const { tool } = this.props
+        const { tool, chartIdLikes, chartIdDislikes } = this.props
         const { likeData, dislikeData } = this.getData()
-        const chartIdLikes = 'likes'
-        const chartIdDislikes = 'dislikes'
 
         return (
             <Fragment>

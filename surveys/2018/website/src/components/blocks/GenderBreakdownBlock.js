@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 import GenderBreakdownWaffleChart from '../charts/GenderBreakdownWaffleChart'
 import BlockTitle from '../elements/BlockTitle'
 
-const chartId = 'gender-breakdown'
-
 export default class GenderBreakdownBlock extends Component {
     static propTypes = {
         data: PropTypes.shape({
@@ -17,11 +15,12 @@ export default class GenderBreakdownBlock extends Component {
                     percentage: PropTypes.number.isRequired
                 })
             ).isRequired
-        })
+        }),
+        chartId: PropTypes.string.isRequired
     }
 
     render() {
-        const { data } = this.props
+        const { data, chartId } = this.props
 
         return (
             <div className="Block Block--gender Gender__Block" id={chartId}>

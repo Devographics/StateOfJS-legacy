@@ -1,8 +1,8 @@
 const yaml = require('js-yaml')
 const fs = require('fs')
 const path = require(`path`)
-const nav = yaml.safeLoad(fs.readFileSync('./src/data/nav.yaml', 'utf8'))
-const charts = yaml.safeLoad(fs.readFileSync('./src/data/charts.yml', 'utf8'))
+const nav = yaml.safeLoad(fs.readFileSync('../config/nav.yml', 'utf8'))
+const charts = yaml.safeLoad(fs.readFileSync('../config/charts.yml', 'utf8'))
 /*
 
 TODO: use https://www.gatsbyjs.org/docs/actions/#setWebpackConfig

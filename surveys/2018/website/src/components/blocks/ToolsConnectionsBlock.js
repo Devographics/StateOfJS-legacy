@@ -5,8 +5,6 @@ import ToolsConnectionsChordChart from '../charts/ToolsConnectionsChordChart'
 import { chordScale } from '../../constants'
 import BlockTitle from '../elements/BlockTitle'
 
-const chartId = 'connections'
-
 export default class ToolsConnectionsBlock extends Component {
     static propTypes = {
         data: PropTypes.shape({
@@ -18,7 +16,8 @@ export default class ToolsConnectionsBlock extends Component {
                     indexes: PropTypes.arrayOf(PropTypes.number).isRequired
                 })
             ).isRequired
-        }).isRequired
+        }).isRequired,
+        chartId: PropTypes.string.isRequired
     }
 
     constructor(props) {
@@ -44,7 +43,7 @@ export default class ToolsConnectionsBlock extends Component {
     }
 
     render() {
-        const { data } = this.props
+        const { data, chartId } = this.props
         const { sections: selectedSections } = this.state
 
         const toolIndexes = selectedSections.reduce((acc, section) => {

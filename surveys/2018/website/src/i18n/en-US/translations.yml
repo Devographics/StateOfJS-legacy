@@ -278,9 +278,9 @@ charts:
     tool-pairing: Which Tools Are Used Alongside ${tool}?
     highest-satisfaction: With a 96.6% satisfaction ratio, Jest was the most liked technology this year
     highest-interest: Find out which technology had the highest satisfaction ratio in 2018
-    tools_salary_range: Salary Breakdown
-    tools_company_size: Company Size Breakdown
-    tools_years_of_experience: Years Of Experience Breakdown
+    tools-salary-range: Salary Breakdown
+    tools-company-size: Company Size Breakdown
+    tools-years-of-experience: Years Of Experience Breakdown
 
     connections: Connections Between Technologies
 

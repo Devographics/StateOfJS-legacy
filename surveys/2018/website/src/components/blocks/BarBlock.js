@@ -11,7 +11,7 @@ export default class BarBlock extends Component {
     static propTypes = {
         description: PropTypes.string,
         title: PropTypes.string,
-        chartId: PropTypes.string,
+        chartId: PropTypes.string.isRequired,
         data: PropTypes.array.isRequired
     }
 

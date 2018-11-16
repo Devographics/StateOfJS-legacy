@@ -4,8 +4,6 @@ import BlockTitle from '../elements/BlockTitle'
 import SalaryPerCountryMapChart from '../charts/SalaryPerCountryMapChart'
 import ChartContainer from '../elements/ChartContainer'
 
-const chartId = 'salary-per-country'
-
 export default class SalaryPerCountryBlock extends Component {
     static propTypes = {
         data: PropTypes.arrayOf(
@@ -15,13 +13,14 @@ export default class SalaryPerCountryBlock extends Component {
                     average: PropTypes.number.isRequired
                 }).isRequired
             })
-        ).isRequired
+        ).isRequired,
+        chartId: PropTypes.string.isRequired
     }
 
     render() {
         return (
-            <div className="block" id={chartId}>
-                <BlockTitle chartId={chartId} />
+            <div className="block" id={this.props.chartId}>
+                <BlockTitle chartId={this.props.chartId} />
                 <ChartContainer>
                     <SalaryPerCountryMapChart data={this.props.data} />
                 </ChartContainer>

@@ -1,44 +1,51 @@
 
 demographics: 
-  - countries
-  - gender
+  - participation-by-country
+  - gender-breakdown
   - salaries
-  - salaries-map
-  - experience
-  - company-size
+  - salary-per-country
+
   
+connections: 
+  - connections
+
+# section overview
 overview: 
   - overview
+  - tools-salary-range
+  - tools-company-size
+  - tools-years-of-experience
   - happiness
 
-other-libraries: 
-  - other-tools
-  - all-libraries
-
-conclusion: 
-  - quadrants
-
+# single tool page
 tool: 
   - results-over-time
   - likes
   - dislikes
   - tool-usage-by-country
 
+other-libraries: 
+  - other-tools
+
+conclusion: 
+  - quadrants
+
+
 other-tools: 
-  - other-languages
-  - browser-apis
-  - build-tools
-  - utility-libraries
-  - text-editors
+  - other_languages
+  - browser_apis
+  - build_tools
+  - utility_libraries
+  - text_editors
   
 opinions: 
-  - right-direction
-  - overly-complex
-  - overused
-  - enjoy
-  - main-language
-  - changing-fast
-  - too-long
+  - opinion-js_moving_in_right_direction
+  - opinion-building_js_apps_overly_complex
+  - opinion-js_over_used_online
+  - opinion-enjoy_building_js_apps
+  - opinion-would_like_js_to_be_main_lang
+  - opinion-js_ecosystem_changing_to_fast
+  - opinion-survey_too_long
 
 awards: 
   - highest-satisfaction

@@ -48,25 +48,21 @@ module.exports = async ({ baseUrl, outputDir, nav, charts }) => {
         throw new Error(`'${outputDir}' is not a valid directory`)
     }
 
-    // const browser = await puppeteer.launch({ headless: false, slowMo: 250 })
-    // const page = await browser.newPage()
-    // await page.setViewport({ width: 1400, height: 10000 })
+    const browser = await puppeteer.launch({ headless: false, slowMo: 250 })
+    const page = await browser.newPage()
+    await page.setViewport({ width: 1400, height: 10000 })
 
     for (let section of nav) {
         const sectionId = section.id
-
         console.log(chalk`  {dim section: {blue ${sectionId}}}`)
-
         if (section.subPages) {
             for (let pageId of section.subPages) {
                 console.log(chalk`    {dim page: {green ${pageId}}}`)
-
                 const pageCharts = charts[pageId] || charts.tool
                 for (let chartId of pageCharts) {
                     const pageConfig = getPageConfig({ sectionId, pageId, chartId })
                     console.log(chalk`      {dim filename: {white ${pageConfig.filename}}}`)
-
-                    // await capture(page, baseUrl, pageConfig, outputDir)
+                    await capture(page, baseUrl, pageConfig, outputDir)
                 }
             }
         } else {
@@ -75,12 +71,11 @@ module.exports = async ({ baseUrl, outputDir, nav, charts }) => {
                 for (let chartId of pageCharts) {
                     const pageConfig = getPageConfig({ sectionId, chartId })
                     console.log(chalk`      {dim filename: {white ${pageConfig.filename}}}`)
-
-                    // await capture(page, baseUrl, pageConfig, outputDir)
+                    await capture(page, baseUrl, pageConfig, outputDir)
                 }
             }
         }
     }
 
-    // await browser.close()
+    await browser.close()
 }

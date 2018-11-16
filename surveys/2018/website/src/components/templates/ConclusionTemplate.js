@@ -15,7 +15,7 @@ const ConclusionTemplate = ({ pageContext, data, ...rest }) => {
             <div className="template">
                 <Meta />
                 <SectionHeader />
-                <QuadrantBlock tools={opinions.tools} />
+                <QuadrantBlock tools={opinions.tools} chartId="quadrants"/>
                 {content === undefined && (
                     <div style={{ color: 'red' }}>
                         No conclusion found for section: <strong>{pageContext.name}</strong>

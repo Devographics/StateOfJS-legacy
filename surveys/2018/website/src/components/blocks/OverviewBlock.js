@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 import OverviewChart from '../charts/OverviewChart'
 import BlockTitle from '../elements/BlockTitle'
 
-const chartId = 'overview'
-
 export default class OverviewBlock extends Component {
     static propTypes = {
         section: PropTypes.string.isRequired,
@@ -17,8 +15,8 @@ export default class OverviewBlock extends Component {
 
     render() {
         return (
-            <div className="Overview__Block block" id={chartId}>
-                <BlockTitle chartId={chartId} />
+            <div className="Overview__Block block" id={this.props.chartId}>
+                <BlockTitle chartId={this.props.chartId} />
                 <div className="Overview__Block__Description block__description">
                     <p>Per-library survey results.</p>
                 </div>

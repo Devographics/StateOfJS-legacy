@@ -20,6 +20,7 @@ const Opinions = ({ data, ...rest }) => {
                         key={subject}
                         subject={subject}
                         data={opinions[subject].by_survey}
+                        chartId={`opinion-${subject}`}
                     />
                 ))}
             </div>

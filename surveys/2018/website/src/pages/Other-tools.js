@@ -27,6 +27,7 @@ const OtherTools = ({ data, ...rest }) => {
                             <BarBlock
                                 data={data}
                                 title={getWording(`other_tools.${topic.topic}`)}
+                                chartId={topic.topic}
                             />
                         </div>
                     )

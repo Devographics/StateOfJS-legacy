@@ -4,9 +4,7 @@ import BlockTitle from '../elements/BlockTitle'
 import ToolPairingHeatMapChart from '../charts/ToolPairingHeatMapChart'
 import ChartContainer from '../elements/ChartContainer'
 
-const chartId = 'tool-pairing'
-
-const ToolPairingBlock = ({ tool, data }) => {
+const ToolPairingBlock = ({ tool, data, chartId }) => {
     return (
         <div className="ToolPairing__Block block" id={chartId}>
             <BlockTitle chartId={chartId} tool={tool} />

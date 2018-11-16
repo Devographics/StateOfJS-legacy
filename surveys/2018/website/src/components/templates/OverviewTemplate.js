@@ -14,11 +14,11 @@ const OverviewTemplate = ({ pageContext, data: { section }, ...rest }) => (
         <div className="template">
             <Meta />
             <SectionHeader showIntro={true} />
-            <OverviewBlock section={pageContext.section} opinions={section.opinions} />
-            <HappinessBlock section="section" data={section.happiness} />
+            <OverviewBlock section={pageContext.section} opinions={section.opinions} chartId="overview"/>
             <ToolsSubAggsDistributionBlock
                 section={pageContext.section}
                 aggsType="salary_range"
+                chartId="tools-salary-range"
                 keys={salaryRanges}
                 formatValue={v => `$${v}k`}
                 data={section.usage_users_info.by_salary}
@@ -26,16 +26,20 @@ const OverviewTemplate = ({ pageContext, data: { section }, ...rest }) => (
             <ToolsSubAggsDistributionBlock
                 section={pageContext.section}
                 aggsType="company_size"
+                chartId="tools-company-size"
                 keys={companySizes}
                 data={section.usage_users_info.by_company_size}
             />
             <ToolsSubAggsDistributionBlock
                 section={pageContext.section}
                 aggsType="years_of_experience"
+                chartId="tools-years-of-experience"
                 keys={yearsOfExperience}
                 formatValue={v => `${v}yrs`}
                 data={section.usage_users_info.by_years_of_experience}
             />
+            <HappinessBlock section="section" data={section.happiness} chartId="happiness" />
+
         </div>
     </Layout>
 )

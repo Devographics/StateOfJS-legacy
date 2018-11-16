@@ -1,4 +1,4 @@
-const ignoreFiles = ['**/charts.yml', '**/nav.yaml', '**/wording.yml']
+const ignoreFiles = ['**/wording.yml']
 
 module.exports = {
     siteMetadata: {

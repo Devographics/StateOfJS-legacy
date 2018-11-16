@@ -25,9 +25,7 @@ const QuadrantLegend = () => (
     </div>
 )
 
-const chartId = 'quadrant'
-
-const QuadrantBlock = ({ tools }) => (
+const QuadrantBlock = ({ tools, chartId }) => (
     <div className="Quadrants__Block block block--chart block--quadrant">
         <BlockTitle chartId={chartId} />
         <div className="Quadrants__Block__Description block__description block__description--quadrant">
