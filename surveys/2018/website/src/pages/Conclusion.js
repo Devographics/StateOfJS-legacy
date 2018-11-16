@@ -11,7 +11,8 @@ const Conclusion = ({ data, ...rest }) => (
             <SectionHeader showIntro={false} />
 
             <TextBlock text={data.file.childMarkdownRemark.html} />
-
+            {/* hack to avoid error when capturing */}
+            <div id="quadrants"/>
             <NewsletterBlock />
         </div>
     </Layout>

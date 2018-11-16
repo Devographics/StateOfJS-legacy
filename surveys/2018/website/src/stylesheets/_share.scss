@@ -1,5 +1,8 @@
 .share-wrapper {
     position: relative;
+    .capture &{
+        display: none;
+    }
 }
 .share {
     @include flex-center;

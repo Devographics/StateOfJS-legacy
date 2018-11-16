@@ -106,14 +106,15 @@
             animation-duration: 1200ms;
         }
     }
-    .Award--show & {
-        cursor: default;
-        transform: rotateY(540deg) scale(1);
-
+    .Award--show &{
         animation-name: burst;
         animation-duration: 500ms;
         animation-iteration-count: 1;
         animation-timing-function: ease-out;
+    }
+    .Award--show &, .capture & {
+        cursor: default;
+        transform: rotateY(540deg) scale(1);
     }
 }
 
@@ -144,7 +145,7 @@
     .Award--hide & {
         opacity: 0;
     }
-    .Award--show & {
+    .Award--show &, .capture & {
         opacity: 1;
     }
 }
@@ -156,7 +157,7 @@
     transition: ease-in opacity 500ms 1000ms;
     opacity: 0;
     margin-bottom: 0;
-    .Award--show & {
+    .Award--show &, .capture & {
         opacity: 1;
     }
 }
@@ -164,7 +165,7 @@
 .Awards__RunnerUps__Item {
     opacity: 0;
     font-size: $smallish-font;
-    .Award--show & {
+    .Award--show &, .capture & {
         opacity: 1;
     }
     &--0 {

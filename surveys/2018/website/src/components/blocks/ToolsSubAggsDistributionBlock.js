@@ -30,7 +30,7 @@ export default class ToolsSubAggsDistributionBlock extends Component {
         const { section, aggsType, formatValue, keys, data, chartId } = this.props
 
         return (
-            <div className="block block--chart">
+            <div className="block block--chart" id={chartId}>
                 <BlockTitle chartId={chartId} />
                 <div className="block__description">
                     <p>
