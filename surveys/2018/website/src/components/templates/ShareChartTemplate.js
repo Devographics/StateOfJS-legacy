@@ -17,14 +17,13 @@ class ShareChartTemplate extends Component {
         const { chart } = pageContext
         const wordingValues = currentPage.subSection && { tool: currentPage.subSection.label }
         const title = getWording(`charts.${chart}`, wordingValues) + ' #StateOfJS'
-        const description = getWording(`charts.${chart}`, wordingValues)
+        const description = getWording(`charts_descriptions.${chart}`, wordingValues, title)
         const metaProperties = {
             url: `${currentPage.url}${chart}`,
             image: getImageUrl(currentPage, chart),
             title,
             description
         }
-        console.log(metaProperties)
         return (
             <div className="template">
                 <Meta properties={metaProperties} />

@@ -156,7 +156,8 @@ class ShareChart extends Component {
 
     render() {
         const { currentPage, chartId = '', className, title, values } = this.props
-        const wordingProperties = values || currentPage.subSection && { tool: currentPage.subSection.label }
+        const wordingProperties =
+            values || (currentPage.subSection && { tool: currentPage.subSection.label })
         const shareTitle = title || getWording(`charts.${chartId}`, wordingProperties)
         const link = `${currentPage.url}${chartId}`
 
