@@ -8,7 +8,11 @@ export const getWording = (id, values, fallback = id) => {
     if (label === undefined) return fallback
     if (values === undefined) return label
 
-    return template(label)(values)
+    try {
+        return template(label)(values)
+    } catch (error) {
+        return label
+    }
 }
 
 export const getToolName = toolId => {
