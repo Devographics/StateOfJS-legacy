@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import numeral from 'numeral'
 import classNames from 'classnames'
 
 const StarIcon = () => (
@@ -10,9 +9,7 @@ const StarIcon = () => (
 )
 
 const StarTotal = ({ value }) => {
-    const digits = value > 1000 && value < 10000 ? '0.0' : '0'
-
-    return <span>{numeral(value).format(`${digits}a`)}</span>
+    return <span>{value}</span>
 }
 
 StarTotal.propTypes = {

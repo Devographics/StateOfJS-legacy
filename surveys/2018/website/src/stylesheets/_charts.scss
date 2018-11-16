@@ -267,6 +267,9 @@
     border-top: 1px dashed $dark-border-color;
 }
 
+.ToolPairing__HeatMapChart__Section:last-of-type{
+    border-bottom: 1px dashed $dark-border-color;
+}
 .ToolsSubAggsHeatMapChart__AverageHeading {
     font-size: 14px;
     @include font-bold;
