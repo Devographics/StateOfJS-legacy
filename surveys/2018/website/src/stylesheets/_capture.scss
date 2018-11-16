@@ -14,6 +14,9 @@
       height: 500px;
       justify-content: center;
     }
+    .Quadrants__Block__Content{
+        display: block;
+    }
 
     #connections {
         width: 1000px;
@@ -46,6 +49,11 @@
     #quadrants {
         height: 577px;
         width: 577px;
+        @include flex-center;
+        flex-direction: column;
+        .Quadrants__Wrapper{
+            width: 100%;
+        }
     }
     #tool-pairing {
         width: 880px;
