@@ -1,16 +1,16 @@
 .capture {
-    // .pagelayout__inner{
-    //   display: block;
-    // }
-    // .Sidebar{
-    //   display: none !important;
-    // }
+    .pagelayout__inner{
+      display: block;
+    }
+    .Sidebar{
+      display: none !important;
+    }
 
     .Awards__Block{
       display: block;
     }
     .Award{
-      width: 500px;
+      width: 1000px;
       height: 500px;
       justify-content: center;
     }
@@ -48,18 +48,19 @@
     }
     #quadrants {
         height: 577px;
-        width: 577px;
+        width: 1154px;
         @include flex-center;
         flex-direction: column;
         .Quadrants__Wrapper{
-            width: 100%;
+            width: 50%;
+            margin: auto auto;
         }
     }
     #tool-pairing {
         width: 880px;
     }
     #tool-usage-by-country {
-        width: 1000px;
+        width: 1428;
     }
     #tools-salary-range {
         width: 1140px;

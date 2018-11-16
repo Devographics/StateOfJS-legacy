@@ -22,6 +22,7 @@ tool:
   - results-over-time
   - likes
   - dislikes
+  - tool-pairing
   - tool-usage-by-country
 
 other-libraries: 
