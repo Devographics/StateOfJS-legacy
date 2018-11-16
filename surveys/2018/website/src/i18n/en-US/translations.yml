@@ -115,31 +115,6 @@ tools_descriptions:
     es6: >
         ES6 and its descendants are the newer versions of JavaScript, usually run through Babel.
 
-block_intro:
-    happiness: >
-        On a scale of one (very unhappy) to five (very happy), how happy are developers
-        with the current overall state of this category?
-    happiness_trend: >
-        How does happiness about ${section} evolved over time?
-    tools_salary_range: >
-        Salary breakdown for the developers who used and are willing to use
-        the tools we picked for ${section}. 
-
-        Each cell shows the percentage of users in a given salary range,
-        darker means higher usage.
-    tools_company_size: >
-        Company size breakdown for the developers who used and are willing to use
-        the tools we picked for ${section}.    
-        
-        Each cell shows the percentage of users in a given company size range,
-        darker means higher usage.
-    tools_years_of_experience: >
-        Years of experience breakdown for the developers who used and are willing to use
-        the tools we picked for ${section}.
-
-        Each cell shows the percentage of users in a given years of experience range,
-        darker means higher usage.
-
 opinions:
     legends:
         never_heard: I've never heard of it
@@ -283,6 +258,53 @@ charts:
     tools-years-of-experience: Years Of Experience Breakdown
     connections: Connections Between Technologies
 
+charts_descriptions: 
+    overview: >
+        Overall ${sectionName} results.
+    happiness: >
+        On a scale of one (very unhappy) to five (very happy), how happy are developers
+        with the current overall state of this category?
+    tools-salary-range: >
+        Salary breakdown for the developers who used and are willing to use
+        the tools we picked for ${sectionName}. 
+
+
+        Each cell shows the percentage of users in a given salary range,
+        darker means higher usage.
+    tools-company-size: >
+        Company size breakdown for the developers who used and are willing to use
+        the tools we picked for ${sectionName}.    
+        
+
+        Each cell shows the percentage of users in a given company size range,
+        darker means higher usage.
+    tools-years-of-experience: >
+        Years of experience breakdown for the developers who used and are willing to use
+        the tools we picked for ${sectionName}.
+
+
+        Each cell shows the percentage of users in a given years of experience range,
+        darker means higher usage.
+
+    quadrants: >
+        This chart shows each technology’s **satisfaction ratio** over its **total usage**.
+
+
+        Additionally, technologies that have an **interest ratio** 
+        (percentage of non-users interested in learning it) over 50% are displayed as “on fire”.
+    
+    tool-usage-by-country: >
+
+        On average, **${percentage}%** of respondents have used **${tool}** and 
+        would be happy to use it again.
+        
+        
+        Countries where this ratio is higher are shown in red, those where it's lower
+        are displayed in blue (countries with fewer than 20 total survey respondents are
+        omitted).
+    other-tools: >
+        Other tools mentioned by survey respondents, ranked by mention count.
+        
 fullcharts:
     overview: ${sectionName} Overall Results
     other-tools: Other ${sectionName} Answers

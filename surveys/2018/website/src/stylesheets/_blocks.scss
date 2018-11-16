@@ -11,8 +11,8 @@
     }
 }
 
-.block__description {
-    margin-bottom: $spacing;
+.Block__Description, .block__description {
+    margin-bottom: $spacing*2;
     p {
         &:last-child {
             margin: 0;

@@ -18,9 +18,6 @@ export default class OverviewBlock extends Component {
         return (
             <div className="Overview__Block block" id={chartId}>
                 <BlockTitle chartId={chartId} values={{ sectionName }} />
-                <div className="Overview__Block__Description block__description">
-                    <p>Per-library survey results.</p>
-                </div>
                 <OverviewChart section={section} opinions={opinions} />
             </div>
         )

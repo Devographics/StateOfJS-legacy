@@ -17,7 +17,6 @@ const OtherToolsTemplate = ({ data, pageContext }) => {
                 <BarBlock
                     chartId="other-tools"
                     values={{ sectionName: getWording(`nav.${pageContext.section}`) }}
-                    description="Other tools mentioned by survey respondents, ranked by mention count."
                     data={otherTools}
                 />
             </div>

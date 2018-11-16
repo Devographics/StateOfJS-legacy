@@ -27,18 +27,11 @@ export default class ToolsSubAggsDistributionBlock extends Component {
     }
 
     render() {
-        const { section, sectionName, aggsType, formatValue, keys, data, chartId } = this.props
+        const { sectionName, aggsType, formatValue, keys, data, chartId } = this.props
 
         return (
             <div className="block block--chart" id={chartId}>
                 <BlockTitle chartId={chartId} values={{ sectionName }}/>
-                <div className="block__description">
-                    <p>
-                        {getWording(`block_intro.tools_${aggsType}`, {
-                            section: getWording(`nav.${section}`)
-                        })}
-                    </p>
-                </div>
                 <ToolsSubAggsHeatMapChart
                     keys={keys}
                     i18nNamespace={aggsType}

@@ -21,9 +21,6 @@ export default class BarBlock extends Component {
         return (
             <div className="block block--chart block--othersbar" id={chartId}>
                 <BlockTitle chartId={chartId} values={values}/>
-                <div className="block__description">
-                    <p>{description}</p>
-                </div>
                 <div className="capture others-wrapper">
                     <BarChart data={data} />
                 </div>

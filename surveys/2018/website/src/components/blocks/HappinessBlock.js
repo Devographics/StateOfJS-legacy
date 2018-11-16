@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import HappinessTrendChart from '../charts/HappinessTrendChart'
 import BlockTitle from '../elements/BlockTitle'
 import withPageData from '../../helpers/withPageData'
-import { getWording } from '../../helpers/wording'
 
 const chartId = 'happiness'
 
@@ -26,18 +25,11 @@ class HappinessBlock extends PureComponent {
     }
 
     render() {
-        const { currentPage, data, sectionName } = this.props
+        const { data, sectionName } = this.props
 
         return (
             <div className="Block Block--happiness Happiness__Block" id={chartId}>
                 <BlockTitle chartId={chartId} values={{ sectionName }}/>
-                <div className="block__description">
-                    <p>
-                        {getWording('block_intro.happiness', {
-                            section: currentPage.section.label
-                        })}
-                    </p>
-                </div>
                 <HappinessTrendChart data={data} />
             </div>
         )

@@ -10,14 +10,10 @@ export default class ToolUsageByCountryBlock extends Component {
 
         return (
             <div className="ToolUsageByCountry__Block block" id={chartId}>
-                <BlockTitle chartId={chartId} values={{ tool: getToolName(tool) }} />
-                <div className="block block--text">
-                    On average, <strong>{data.percentage}%</strong> of respondents have used{' '}
-                    <strong>{getToolName(tool)}</strong> and would be happy to use it again.
-                    Countries where this ratio is higher are shown in red, those where it's lower
-                    are displayed in blue (countries with fewer than 20 total survey respondents are
-                    omitted).
-                </div>
+                <BlockTitle
+                    chartId={chartId}
+                    values={{ percentage: data.percentage, tool: getToolName(tool) }}
+                />
                 <ChartContainer height={'auto'}>
                     <ToolUsageByCountryMapChart
                         chartId={chartId}

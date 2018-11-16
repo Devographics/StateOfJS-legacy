@@ -28,16 +28,6 @@ const QuadrantLegend = () => (
 const QuadrantBlock = ({ tools, chartId, values }) => (
     <div className="Quadrants__Block block block--chart block--quadrant">
         <BlockTitle chartId={chartId} values={values} />
-        <div className="Quadrants__Block__Description block__description block__description--quadrant">
-            <p>
-                This chart shows each technology&apos;s <strong>satisfaction ratio</strong> over its{' '}
-                <strong>total usage</strong>.
-            </p>
-            <p>
-                Additionally, technologies that have an <strong>interest ratio</strong> (percentage
-                of non-users interested in learning it) over 50% are displayed as “on fire”.
-            </p>
-        </div>
         <div className="Quadrants__Block__Content block__content block__content--quadrant">
             <div
                 className="Quadrants__Block__Chart block__chart block__chart--quadrant"
