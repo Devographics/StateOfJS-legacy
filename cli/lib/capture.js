@@ -32,7 +32,7 @@ const capture = async (page, baseUrl, { path, selector, filename: _filename }, o
 }
 
 const getPageConfig = ({ sectionId, pageId, chartId }) => ({
-    path: pageId ? `/${sectionId}/${pageId}/` : `/${sectionId}/`,
+    path: pageId ? `/${sectionId}/${pageId}/?capture` : `/${sectionId}/?capture`,
     selector: `#${chartId}`,
     filename: pageId ? `${sectionId}_${pageId}_${chartId}` : `${sectionId}_${chartId}`
 })
