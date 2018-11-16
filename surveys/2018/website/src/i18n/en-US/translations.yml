@@ -212,18 +212,11 @@ reasons:
         long: Other
         short: Other
 
-other_tools:
-    other_languages: Other Languages
-    browser_apis: Browser APIs
-    build_tools: Build Tools
-    utility_libraries: Utility Libraries
-    text_editors: Text Editors
-
 charts:
     overview: Overall Results
     overview_description: Per-library survey results.
     happiness: Overall Happiness
-    other-tools: Other Answers
+    other-tools: Other Libraries
     all-libraries: All Libraries
     quadrants: Quadrant Chart
     results-over-time: ${tool}'s Popularity Over Time
@@ -257,6 +250,11 @@ charts:
     tools-company-size: Company Size Breakdown
     tools-years-of-experience: Years Of Experience Breakdown
     connections: Connections Between Technologies
+    other_languages: Other Languages
+    browser_apis: Browser APIs
+    build_tools: Build Tools
+    utility_libraries: Utility Libraries
+    text_editors: Text Editors
 
 charts_descriptions: 
     overview: >
@@ -265,26 +263,33 @@ charts_descriptions:
         On a scale of one (very unhappy) to five (very happy), how happy are developers
         with the current overall state of this category?
     tools-salary-range: >
-        Salary breakdown for the developers who used and are willing to use
-        the tools we picked for ${sectionName}. 
-
-
+        Salary breakdown for developers who picked “used it, would use again” for a given option. 
+        
+        
         Each cell shows the percentage of users in a given salary range,
         darker means higher usage.
     tools-company-size: >
-        Company size breakdown for the developers who used and are willing to use
-        the tools we picked for ${sectionName}.    
+        Company size breakdown for developers who picked “used it, would use again” for a given option.  
         
 
         Each cell shows the percentage of users in a given company size range,
         darker means higher usage.
     tools-years-of-experience: >
-        Years of experience breakdown for the developers who used and are willing to use
-        the tools we picked for ${sectionName}.
+        Years of experience breakdown for developers who picked “used it, would use again” for a given option. 
 
 
         Each cell shows the percentage of users in a given years of experience range,
         darker means higher usage.
+
+    likes: >
+        Most liked aspects of ${tool} among developers who picked “used it and would use again”.
+    
+    dislikes: >
+        Most disliked aspects of ${tool} among developers who picked “used it and would *not* use again”.
+    
+    tool-pairing : >
+        Libraries most likely to be used by developers who picked “used it and would use again” for ${tool}. 
+        Darker color means a stronger correlation. 
 
     quadrants: >
         This chart shows each technology’s **satisfaction ratio** over its **total usage**.
@@ -303,7 +308,7 @@ charts_descriptions:
         are displayed in blue (countries with fewer than 20 total survey respondents are
         omitted).
     other-tools: >
-        Other tools mentioned by survey respondents, ranked by mention count.
+        Other answers mentioned by survey respondents, ranked by mention count.
         
 fullcharts:
     overview: ${sectionName} Overall Results

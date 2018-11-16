@@ -11,7 +11,8 @@ Just like JavaScript, the survey itself has been changing too. Here's what's new
 - Since we were cutting down on the number of questions, we decided to make each of them more detailed by asking **follow-up questions** to figure out the reasons why people were using (or not using) a given library. You'll find those in the “likes” and “dislikes” charts. 
 - And since we now had more data, we decided to give each tool and library their **own individual result page**. 
 - We also made **every chart shareable**, so don't hesitate to tweet or share any data that catches your eye. 
-- Finally, since we now have 3 years of data, we tried to incorporate **historical trends over time** in the charts whenever possible. 
+- Since we now have 3 years of data, we tried to incorporate **historical trends over time** in the charts whenever possible. 
+- Finally, be sure to check out our new **Awards** section! We had a lot of fun making it, and we hope you like it too.
 
 Note: there's still some data (salaries, experience, company size, etc.) that we weren't able to analyze in time, so you can look forward to a second data drop a few weeks from now!
 

@@ -19,9 +19,9 @@ const Demographics = ({ data, ...rest }) => {
                 <SectionHeader />
                 <TextBlock text={data.file.childMarkdownRemark.html} />
                 <ParticipationByCountryBlock data={participationData} chartId="participation-by-country" />
-                <GenderBreakdownBlock data={genderData} chartId="gender-breakdown"/>
                 <SalariesBlock data={data.stats.salary} chartId="salaries"/>
                 <SalaryPerCountryBlock data={data.stats.by_country} chartId="salary-per-country"/>
+                <GenderBreakdownBlock data={genderData} chartId="gender-breakdown"/>
             </div>
         </Layout>
     )
