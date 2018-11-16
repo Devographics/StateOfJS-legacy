@@ -5,6 +5,7 @@ import Animation from '../elements/Animation'
 import PageTitle from './PageTitle'
 import Sidebar from './Sidebar'
 import Head from './Head'
+import withPageData from '../../helpers/withPageData'
 
 class Layout extends PureComponent {
     constructor() {
@@ -89,4 +90,4 @@ class Layout extends PureComponent {
     }
 }
 
-export default Layout
+export default withPageData(Layout)
