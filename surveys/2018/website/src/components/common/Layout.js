@@ -41,14 +41,13 @@ class Layout extends PureComponent {
     }
 
     render() {
-        const { showPagination = true, location } = this.props
+        const { showPagination = true, location, currentPage } = this.props
         const { showAnim, showSidebar } = this.state
         const sidebarClassName = showSidebar ? 'Sidebar--shown' : 'Sidebar--hidden'
         const isCapturing = location && location.search && location.search.indexOf('capture') !== -1
-
         return (
             <div
-                className={classNames('pageLayout', {
+                className={classNames('pageLayout', `PageLayout--${currentPage.section.id}`, {
                     'PageLayout--sidebar': showSidebar,
                     'PageLayout--nosidebar': !showSidebar,
                     'PageLayout--anim': showAnim,

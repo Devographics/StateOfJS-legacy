@@ -23,13 +23,12 @@ const OtherTools = ({ data, ...rest }) => {
                         .reverse()
 
                     return (
-                        <div className="Block Block--chart block block--chart" key={topic.topic}>
-                            <BarBlock
-                                data={data}
-                                title={getWording(`other_tools.${topic.topic}`)}
-                                chartId={topic.topic}
-                            />
-                        </div>
+                        <BarBlock
+                            key={topic.topic}
+                            data={data}
+                            title={getWording(`other_tools.${topic.topic}`)}
+                            chartId={topic.topic}
+                        />
                     )
                 })}
             </div>

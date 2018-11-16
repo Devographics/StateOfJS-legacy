@@ -16,7 +16,7 @@ export default class OverviewBlock extends Component {
     render() {
         const { chartId, section, opinions, sectionName } = this.props
         return (
-            <div className="Overview__Block block" id={chartId}>
+            <div className="Block Overview__Block block" id={chartId}>
                 <BlockTitle chartId={chartId} values={{ sectionName }} />
                 <OverviewChart section={section} opinions={opinions} />
             </div>
