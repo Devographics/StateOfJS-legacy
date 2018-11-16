@@ -10,7 +10,7 @@ import SectionHeader from '../elements/SectionHeader'
 const OverviewTemplate = ({ pageContext, data: { section, allProject } }) => {
     const projects = allProject.edges.map(({ node }) => node)
     return (
-        <Layout>
+        <Layout projects={projects}>
             <div className="template">
                 <Meta />
                 <SectionHeader showIntro={true} />

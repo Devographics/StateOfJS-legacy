@@ -23,7 +23,7 @@ const NavItem = ({ currentPath, subPages, comingSoon, closeSidebar, index, proje
                 {isActive(currentPath, page.section.slug) &&
                     subPages &&
                     subPages.map((subPageLabel, j) => {
-                        const subPage = createPage(index, j)
+                        const subPage = createPage(index, j, projects)
                         return <NavSubItem key={j} page={subPage} closeSidebar={closeSidebar} />
                     })}
             </div>

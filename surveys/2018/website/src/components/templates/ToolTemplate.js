@@ -29,16 +29,16 @@ const ToolTemplate = ({ pageContext, data }) => {
                 <Meta />
                 <ToolHeaderBlock section={section} tool={tool} projects={projects} />
                 {shouldDisplayExperienceOverTime ? (
-                    <ToolOpinionsOverTimeBlock tool={tool} opinions={data.tool.experience} />
+                    <ToolOpinionsOverTimeBlock tool={tool} opinions={data.tool.experience} projects={projects}/>
                 ) : (
                     <p className="block tool-over-time-no-data">
                         Sorry, we don&apos;t have enough data to display the evolution of this
                         library's popularity over time.
                     </p>
                 )}
-                <ReasonsBlock tool={tool} reasons={data.tool.reasons} />
+                <ReasonsBlock tool={tool} reasons={data.tool.reasons} projects={projects} />
                 {/* <SponsorsBlock tool={tool} /> */}
-                <ResourcesBlock tool={tool} />
+                <ResourcesBlock tool={tool} projects={projects} />
                 <ToolPairingBlock tool={tool} data={data.tool.pairing} projects={projects}/>
                 <ToolUsageByCountryBlock tool={tool} data={wouldUseByCountryData} projects={projects} />
             </div>
