@@ -40,6 +40,12 @@
             opacity: 0.2;
         }
     }
+    .nocapture &--full{
+        display: none;
+    }
+    .capture &--short{
+        display: none;
+    }
 }
 .Block__Title__Share {
     margin-left: $spacing/2;

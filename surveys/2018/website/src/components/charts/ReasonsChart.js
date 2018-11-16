@@ -3,6 +3,7 @@ import { reasons } from '../../constants'
 import theme from '../../nivoTheme'
 import BlockTitle from '../elements/BlockTitle'
 import ReasonsChartUnit from './ReasonsChartUnit'
+import { getToolName } from '../../helpers/wording'
 
 export default class ReasonsChart extends Component {
     getData = () => {
@@ -43,7 +44,7 @@ export default class ReasonsChart extends Component {
             <Fragment>
                 {likeData.length > 0 && (
                     <div className="Block Block--likes block" id={chartIdLikes}>
-                        <BlockTitle chartId={chartIdLikes} tool={tool} />
+                        <BlockTitle chartId={chartIdLikes} values={{ tool: getToolName(tool) }} />
                         <ReasonsChartUnit data={likeData} color={theme.reasonsColors.like} />
                         <ReasonsChartUnit
                             data={likeData}
@@ -54,7 +55,10 @@ export default class ReasonsChart extends Component {
                 )}
                 {dislikeData.length > 0 && (
                     <div className="Block Block--dislikes block" id={chartIdDislikes}>
-                        <BlockTitle chartId={chartIdDislikes} tool={tool} />
+                        <BlockTitle
+                            chartId={chartIdDislikes}
+                            values={{ tool: getToolName(tool) }}
+                        />
                         <ReasonsChartUnit data={dislikeData} color={theme.reasonsColors.dislike} />
                         <ReasonsChartUnit
                             data={dislikeData}

@@ -10,7 +10,7 @@ export default class ToolUsageByCountryBlock extends Component {
 
         return (
             <div className="ToolUsageByCountry__Block block" id={chartId}>
-                <BlockTitle chartId={chartId} tool={tool} />
+                <BlockTitle chartId={chartId} values={{ tool: getToolName(tool) }} />
                 <div className="block block--text">
                     On average, <strong>{data.percentage}%</strong> of respondents have used{' '}
                     <strong>{getToolName(tool)}</strong> and would be happy to use it again.

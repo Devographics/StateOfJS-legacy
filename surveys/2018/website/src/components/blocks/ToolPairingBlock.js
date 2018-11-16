@@ -3,11 +3,12 @@ import PropTypes from 'prop-types'
 import BlockTitle from '../elements/BlockTitle'
 import ToolPairingHeatMapChart from '../charts/ToolPairingHeatMapChart'
 import ChartContainer from '../elements/ChartContainer'
+import { getToolName } from '../../helpers/wording'
 
 const ToolPairingBlock = ({ tool, data, chartId }) => {
     return (
         <div className="ToolPairing__Block block" id={chartId}>
-            <BlockTitle chartId={chartId} tool={tool} />
+            <BlockTitle chartId={chartId} values={{ tool: getToolName(tool) }} />
             <ChartContainer>
                 <ToolPairingHeatMapChart tool={tool} data={data} />
             </ChartContainer>

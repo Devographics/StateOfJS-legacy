@@ -14,13 +14,14 @@ export default class OverviewBlock extends Component {
     }
 
     render() {
+        const { chartId, section, opinions, sectionName } = this.props
         return (
-            <div className="Overview__Block block" id={this.props.chartId}>
-                <BlockTitle chartId={this.props.chartId} />
+            <div className="Overview__Block block" id={chartId}>
+                <BlockTitle chartId={chartId} values={{ sectionName }} />
                 <div className="Overview__Block__Description block__description">
                     <p>Per-library survey results.</p>
                 </div>
-                <OverviewChart section={this.props.section} opinions={this.props.opinions} />
+                <OverviewChart section={section} opinions={opinions} />
             </div>
         )
     }

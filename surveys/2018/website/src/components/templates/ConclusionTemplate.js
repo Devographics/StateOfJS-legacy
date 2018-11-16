@@ -5,6 +5,7 @@ import Layout from '../common/Layout'
 import TextBlock from '../blocks/TextBlock'
 import QuadrantBlock from '../blocks/QuadrantBlock'
 import SectionHeader from '../elements/SectionHeader'
+import { getWording } from '../../helpers/wording'
 
 const ConclusionTemplate = ({ pageContext, data, ...rest }) => {
     const content = data.file.childMarkdownRemark ? data.file.childMarkdownRemark.html : undefined
@@ -15,7 +16,11 @@ const ConclusionTemplate = ({ pageContext, data, ...rest }) => {
             <div className="template">
                 <Meta />
                 <SectionHeader />
-                <QuadrantBlock tools={opinions.tools} chartId="quadrants"/>
+                <QuadrantBlock
+                    tools={opinions.tools}
+                    chartId="quadrants"
+                    values={{ sectionName: getWording(`nav.${pageContext.section}`) }}
+                />
                 {content === undefined && (
                     <div style={{ color: 'red' }}>
                         No conclusion found for section: <strong>{pageContext.name}</strong>

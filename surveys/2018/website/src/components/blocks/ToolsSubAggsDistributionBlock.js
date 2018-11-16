@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { getWording } from '../../helpers/wording'
 import BlockTitle from '../elements/BlockTitle'
 import ToolsSubAggsHeatMapChart from '../charts/ToolsSubAggsHeatMapChart'
+import { getWording } from '../../helpers/wording'
 
 export default class ToolsSubAggsDistributionBlock extends Component {
     static propTypes = {
@@ -27,11 +27,11 @@ export default class ToolsSubAggsDistributionBlock extends Component {
     }
 
     render() {
-        const { section, aggsType, formatValue, keys, data, chartId } = this.props
+        const { section, sectionName, aggsType, formatValue, keys, data, chartId } = this.props
 
         return (
             <div className="block block--chart" id={chartId}>
-                <BlockTitle chartId={chartId} />
+                <BlockTitle chartId={chartId} values={{ sectionName }}/>
                 <div className="block__description">
                     <p>
                         {getWording(`block_intro.tools_${aggsType}`, {

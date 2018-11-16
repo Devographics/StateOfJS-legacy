@@ -245,12 +245,12 @@ other_tools:
     text_editors: Text Editors
 
 charts:
-    overview: Libraries Results
+    overview: Overall Results
     overview_description: Per-library survey results.
     happiness: Overall Happiness
-    other-tools: Other Tools
+    other-tools: Other Answers
     all-libraries: All Libraries
-    quadrant: Quadrant Chart
+    quadrants: Quadrant Chart
     results-over-time: ${tool}'s Popularity Over Time
     likes: Most Liked Aspects of ${tool}
     dislikes: Most Disliked Aspects of ${tool}
@@ -281,8 +281,16 @@ charts:
     tools-salary-range: Salary Breakdown
     tools-company-size: Company Size Breakdown
     tools-years-of-experience: Years Of Experience Breakdown
-
     connections: Connections Between Technologies
+
+fullcharts:
+    overview: ${sectionName} Overall Results
+    other-tools: Other ${sectionName} Answers
+    tools-salary-range: ${sectionName} Salary Breakdown
+    tools-company-size: ${sectionName} Company Size Breakdown
+    tools-years-of-experience: ${sectionName} Years Of Experience Breakdown
+    happiness: ${sectionName} Overall Happiness
+    quadrants: ${sectionName} Quadrant Chart
 
 shortnames:
     introduction: Intro

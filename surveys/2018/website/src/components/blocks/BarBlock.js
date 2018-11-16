@@ -16,11 +16,11 @@ export default class BarBlock extends Component {
     }
 
     render() {
-        const { title, data, chartId, description } = this.props
+        const { data, chartId, description, values } = this.props
 
         return (
             <div className="block block--chart block--othersbar" id={chartId}>
-                <BlockTitle chartId={chartId} title={title} />
+                <BlockTitle chartId={chartId} values={values}/>
                 <div className="block__description">
                     <p>{description}</p>
                 </div>

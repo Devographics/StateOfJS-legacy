@@ -4,17 +4,19 @@ import Meta from '../elements/Meta'
 import Layout from '../common/Layout'
 import SectionHeader from '../elements/SectionHeader'
 import BarBlock from '../blocks/BarBlock'
+import { getWording } from '../../helpers/wording'
 
-const OtherToolsTemplate = ({ data, ...rest }) => {
+const OtherToolsTemplate = ({ data, pageContext }) => {
     const otherTools = [...data.section.other_tools].reverse()
 
     return (
-        <Layout {...rest}>
+        <Layout>
             <div className="template">
                 <Meta />
                 <SectionHeader />
                 <BarBlock
                     chartId="other-tools"
+                    values={{ sectionName: getWording(`nav.${pageContext.section}`) }}
                     description="Other tools mentioned by survey respondents, ranked by mention count."
                     data={otherTools}
                 />
