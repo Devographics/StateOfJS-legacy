@@ -4,3 +4,6 @@
 - name: Ekino
   url: https://www.ekino.com/en/
   image: ekino_logo.svg
+- name: ZensHome
+  url: https://zenshome.jp
+  image: zenshome-inverted.svg
