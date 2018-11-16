@@ -152,7 +152,7 @@
     topic: text_editors
     tools:
         -
-            tool: visual-studio
+            tool: vs-code
             count: 14492
         -
             tool: sublime-text
