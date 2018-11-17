@@ -140,16 +140,23 @@ exports.genderBreakdown = async () => {
     })
 }
 
-exports.salary = async () => {
+/**
+ * A generic function used to aggregate user info by survey.
+ * Currently supporting:
+ * - salary
+ * - years_of_experience
+ * - company_size
+ */
+exports.userInfoAggs = async (aggType, averages) => {
     const result = await elastic.aggs({
         by_survey: {
             terms: {
                 field: 'survey.keyword'
             },
             aggs: {
-                salary: {
+                [aggType]: {
                     terms: {
-                        field: 'user_info.salary.keyword'
+                        field: `user_info.${aggType}.keyword`
                     }
                 }
             }
@@ -158,15 +165,15 @@ exports.salary = async () => {
 
     return result.aggregations.by_survey.buckets.map(surveyBucket => {
         const total = surveyBucket.doc_count
-        const salaryTotal = surveyBucket.salary.buckets.reduce((t, bucket) => {
-            return t + constants.salaryRangeAverages[bucket.key] * bucket.doc_count
+        const salaryTotal = surveyBucket[aggType].buckets.reduce((t, bucket) => {
+            return t + averages[bucket.key] * bucket.doc_count
         }, 0)
 
         return {
             survey: surveyBucket.key,
             total,
             average: Number((salaryTotal / total).toFixed(1)),
-            ranges: surveyBucket.salary.buckets.map(bucket => ({
+            ranges: surveyBucket[aggType].buckets.map(bucket => ({
                 range: bucket.key.replace(/_/g, '-'),
                 count: bucket.doc_count,
                 percentage: Number(((bucket.doc_count / total) * 100).toFixed(1))
@@ -174,3 +181,7 @@ exports.salary = async () => {
         }
     })
 }
+
+exports.salary = async () => exports.userInfoAggs('salary', constants.salaryRangeAverages)
+exports.yearsOfExperience = async () => exports.userInfoAggs('years_of_experience', constants.yearsOfExperienceAverages)
+exports.companySize = async () => exports.userInfoAggs('company_size', constants.companySizeAverages)

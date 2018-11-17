@@ -72,6 +72,8 @@ class CompoundAggregator {
     async computeDemographic(currentSurveyId) {
         return {
             salary: await demographicAggregator.salary(),
+            years_of_experience: await demographicAggregator.yearsOfExperience(),
+            company_size: await demographicAggregator.companySize(),
             by_country: await demographicAggregator.salaryAndCompanySizeAndYearsOfExperienceByLocationForSurvey(
                 'country',
                 currentSurveyId

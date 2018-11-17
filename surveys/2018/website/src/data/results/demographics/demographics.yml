@@ -98,6 +98,206 @@ salary:
                 range: more-than-200
                 count: 177
                 percentage: 1.7
+years_of_experience:
+    -
+        survey: '2017'
+        total: 23666
+        average: 7.6
+        ranges:
+            -
+                range: 2-5
+                count: 7083
+                percentage: 29.9
+            -
+                range: 5-10
+                count: 6710
+                percentage: 28.4
+            -
+                range: 10-20
+                count: 4923
+                percentage: 20.8
+            -
+                range: 1-2
+                count: 2847
+                percentage: 12
+            -
+                range: more-than-20
+                count: 1164
+                percentage: 4.9
+            -
+                range: less-than-1
+                count: 842
+                percentage: 3.6
+    -
+        survey: '2018'
+        total: 20252
+        average: 8.4
+        ranges:
+            -
+                range: 5-10
+                count: 5680
+                percentage: 28
+            -
+                range: 2-5
+                count: 5631
+                percentage: 27.8
+            -
+                range: 10-20
+                count: 4863
+                percentage: 24
+            -
+                range: 1-2
+                count: 2005
+                percentage: 9.9
+            -
+                range: more-than-20
+                count: 1418
+                percentage: 7
+            -
+                range: less-than-1
+                count: 492
+                percentage: 2.4
+    -
+        survey: '2016'
+        total: 10251
+        average: 7.9
+        ranges:
+            -
+                range: 5-10
+                count: 3088
+                percentage: 30.1
+            -
+                range: 2-5
+                count: 2984
+                percentage: 29.1
+            -
+                range: 10-20
+                count: 2294
+                percentage: 22.4
+            -
+                range: 1-2
+                count: 1083
+                percentage: 10.6
+            -
+                range: more-than-20
+                count: 508
+                percentage: 5
+            -
+                range: less-than-1
+                count: 238
+                percentage: 2.3
+company_size:
+    -
+        survey: '2017'
+        total: 23666
+        average: 358
+        ranges:
+            -
+                range: 100-1000
+                count: 4505
+                percentage: 19
+            -
+                range: more-than-1000
+                count: 3754
+                percentage: 15.9
+            -
+                range: 20-50
+                count: 3080
+                percentage: 13
+            -
+                range: '1'
+                count: 2841
+                percentage: 12
+            -
+                range: 50-100
+                count: 2592
+                percentage: 11
+            -
+                range: 1-5
+                count: 2362
+                percentage: 10
+            -
+                range: 10-20
+                count: 2334
+                percentage: 9.9
+            -
+                range: 5-10
+                count: 2054
+                percentage: 8.7
+    -
+        survey: '2018'
+        total: 20252
+        average: 389
+        ranges:
+            -
+                range: 100-1000
+                count: 4136
+                percentage: 20.4
+            -
+                range: more-than-1000
+                count: 3525
+                percentage: 17.4
+            -
+                range: 20-50
+                count: 2647
+                percentage: 13.1
+            -
+                range: 50-100
+                count: 2324
+                percentage: 11.5
+            -
+                range: '1'
+                count: 2024
+                percentage: 10
+            -
+                range: 10-20
+                count: 1963
+                percentage: 9.7
+            -
+                range: 1-5
+                count: 1766
+                percentage: 8.7
+            -
+                range: 5-10
+                count: 1649
+                percentage: 8.1
+    -
+        survey: '2016'
+        total: 10251
+        average: 327.6
+        ranges:
+            -
+                range: 100-1000
+                count: 1824
+                percentage: 17.8
+            -
+                range: more-than-1000
+                count: 1461
+                percentage: 14.3
+            -
+                range: 20-50
+                count: 1288
+                percentage: 12.6
+            -
+                range: 50-100
+                count: 1202
+                percentage: 11.7
+            -
+                range: '1'
+                count: 1193
+                percentage: 11.6
+            -
+                range: 1-5
+                count: 1154
+                percentage: 11.3
+            -
+                range: 10-20
+                count: 1084
+                percentage: 10.6
+            -
+                range: 5-10
+                count: 940
+                percentage: 9.2
 by_country:
     -
         country: USA
