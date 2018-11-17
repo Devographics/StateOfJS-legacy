@@ -354,13 +354,13 @@ other_tools:
         name: nightwatch
         count: 33
     -
-        name: sinon
+        name: sinonjs
         count: 31
     -
         name: cucumberjs
         count: 30
     -
-        name: tap
+        name: node-tap
         count: 22
     -
         name: intern

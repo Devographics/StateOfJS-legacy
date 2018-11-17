@@ -328,7 +328,7 @@ other_tools:
         name: cyclejs
         count: 57
     -
-        name: Knockout
+        name: knockout
         count: 50
     -
         name: riotjs
@@ -358,7 +358,7 @@ other_tools:
         name: extjs
         count: 15
     -
-        name: glimmer
+        name: glimmerjs
         count: 15
     -
         name: purescript
