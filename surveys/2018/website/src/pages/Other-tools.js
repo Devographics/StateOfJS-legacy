@@ -5,6 +5,7 @@ import Layout from '../components/common/Layout'
 import SectionHeader from '../components/elements/SectionHeader'
 import BarBlock from '../components/blocks/BarBlock'
 import TextBlock from '../components/blocks/TextBlock'
+import ResourcesBlock from '../components/blocks/ResourcesBlock'
 
 const OtherTools = ({ data, ...rest }) => {
     const topics = data.topics.edges.map(({ node }) => node)
@@ -31,6 +32,7 @@ const OtherTools = ({ data, ...rest }) => {
                         />
                     )
                 })}
+                <ResourcesBlock tool="editors" />
             </div>
         </Layout>
     )
