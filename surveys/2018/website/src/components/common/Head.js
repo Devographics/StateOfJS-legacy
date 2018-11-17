@@ -5,9 +5,9 @@ import withPageData from '../../helpers/withPageData'
 const Head = ({ title, currentPage }) => {
     const pageTitle =
         title || (currentPage && currentPage.fullTitle) || 'The State of JavaScript 2018'
-    const description = 'A short survey about current popular JavaScript technologies.'
+    const description = 'Discover the most popular JavaScript technologies of the year.'
     const url = 'http://stateofjs.com'
-    const image = 'http://stateofjs.com/images/javascript2017-white.png'
+    const image = 'http://stateofjs.com/images/stateofjs2018-social.png'
 
     const meta = [
         { charset: 'utf-8' },
@@ -29,6 +29,8 @@ const Head = ({ title, currentPage }) => {
         // eslint-disable-next-line react/jsx-key
         <script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript" />
     ]
+
+    console.log(meta)
 
     return (
         <Helmet meta={meta} defaultTitle={pageTitle}>

@@ -65,7 +65,7 @@ const Tooltip = ({ library, variant }) => {
                         <StarIcon />
                     </a>
                 </h3>
-                <p>
+                <p className="tooltip__description">
                     <Description text={library.description} showEmojis />
                 </p>
                 <h4>Learn More</h4>

@@ -152,6 +152,10 @@ $tooltipDisplay: block;
     }
 }
 
+.tooltip__description{
+    @include font-bold;
+}
+
 .Tooltip__Link {
     @include font-bold;
 }

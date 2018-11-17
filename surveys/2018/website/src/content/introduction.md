@@ -14,8 +14,6 @@ Just like JavaScript, the survey itself has been changing too. Here's what's new
 - Since we now have 3 years of data, we tried to incorporate **historical trends over time** in the charts whenever possible. 
 - Finally, be sure to check out our new **Awards** section! We had a lot of fun making it, and we hope you like it too.
 
-Note: there's still some data (salaries, experience, company size, etc.) that we weren't able to analyze in time, so you can look forward to a second data drop a few weeks from now!
-
 ### Resources
 
 We figure a lot of you are checking out this survey to help you figure out what to learn next. So we've included links to useful JavaScript resources throughout the survey to help point you in the right direction. 
