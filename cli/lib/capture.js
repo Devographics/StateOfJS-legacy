@@ -48,7 +48,7 @@ module.exports = async ({ baseUrl, outputDir, nav, charts }) => {
         throw new Error(`'${outputDir}' is not a valid directory`)
     }
 
-    const browser = await puppeteer.launch({ headless: true })
+    const browser = await puppeteer.launch({ headless: true, slowMo: 250 })
     const page = await browser.newPage()
     await page.setViewport({ width: 1400, height: 10000 })
 
