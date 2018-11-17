@@ -12,7 +12,7 @@ const Conclusion = ({ data, ...rest }) => (
 
             <TextBlock text={data.file.childMarkdownRemark.html} />
             {/* hack to avoid error when capturing */}
-            <div id="quadrants"/>
+            <div id="quadrants" />
             <NewsletterBlock />
         </div>
     </Layout>

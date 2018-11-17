@@ -183,5 +183,7 @@ exports.userInfoAggs = async (aggType, averages) => {
 }
 
 exports.salary = async () => exports.userInfoAggs('salary', constants.salaryRangeAverages)
-exports.yearsOfExperience = async () => exports.userInfoAggs('years_of_experience', constants.yearsOfExperienceAverages)
-exports.companySize = async () => exports.userInfoAggs('company_size', constants.companySizeAverages)
+exports.yearsOfExperience = async () =>
+    exports.userInfoAggs('years_of_experience', constants.yearsOfExperienceAverages)
+exports.companySize = async () =>
+    exports.userInfoAggs('company_size', constants.companySizeAverages)

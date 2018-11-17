@@ -1,20 +1,20 @@
 .capture {
-    .pagelayout__inner{
-      display: block;
+    .pagelayout__inner {
+        display: block;
     }
-    .Sidebar{
-      display: none !important;
+    .Sidebar {
+        display: none !important;
     }
 
-    .Awards__Block{
-      display: block;
+    .Awards__Block {
+        display: block;
     }
-    .Award{
-      width: 1000px;
-      height: 500px;
-      justify-content: center;
+    .Award {
+        width: 1000px;
+        height: 500px;
+        justify-content: center;
     }
-    .Quadrants__Block__Content{
+    .Quadrants__Block__Content {
         display: block;
     }
 
@@ -51,7 +51,7 @@
         width: 1154px;
         @include flex-center;
         flex-direction: column;
-        .Quadrants__Wrapper{
+        .Quadrants__Wrapper {
             width: 50%;
             margin: auto auto;
         }
@@ -98,24 +98,24 @@
     #opinion-survey_too_long {
         width: 728px;
     }
-    &.PageLayout--javascript-flavors #other-tools{
-      width: 1068px;
+    &.PageLayout--javascript-flavors #other-tools {
+        width: 1068px;
     }
-    &.PageLayout--front-end-frameworks #other-tools{
-      width: 1054px;
-      height: 1054px;
+    &.PageLayout--front-end-frameworks #other-tools {
+        width: 1054px;
+        height: 1054px;
     }
-    &.PageLayout--data-layer #other-tools{
-      width: 1068px;
+    &.PageLayout--data-layer #other-tools {
+        width: 1068px;
     }
-    &.PageLayout--back-end-frameworks #other-tools{
-      width: 1054px;
-      height: 1054px;
+    &.PageLayout--back-end-frameworks #other-tools {
+        width: 1054px;
+        height: 1054px;
     }
-    &.PageLayout--testing #other-tools{
-      width: 1308px;
+    &.PageLayout--testing #other-tools {
+        width: 1308px;
     }
-    &.PageLayout--mobile-and-desktop #other-tools{
-      width: 908px;
+    &.PageLayout--mobile-and-desktop #other-tools {
+        width: 908px;
     }
 }

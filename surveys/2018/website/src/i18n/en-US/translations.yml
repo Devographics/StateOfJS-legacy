@@ -3,6 +3,10 @@ average: Average
 tools_salary_range_average: Average salary
 tools_company_size_average: Average company size
 tools_years_of_experience_average: Average years of experience
+users_percentage: percentage of users
+salary_range_axis_legend: salary range
+years_of_experience_axis_legend: years of experience
+company_size_axis_legend: number of employees
 
 nav:
     introduction: Introduction
@@ -255,6 +259,7 @@ charts:
     build_tools: Build Tools
     utility_libraries: Utility Libraries
     text_editors: Text Editors
+    years-of-experience: Years of Experience
 
 charts_descriptions: 
     overview: >
@@ -393,28 +398,70 @@ happiness:
     4: Happy    
 
 salary_range:
-    work-for-free: I work for free
-    0-10: $0k-$10k
-    10-30: $10k-$30k
-    30-50: $30k-$50k
-    50-100: $50k-$100k
-    100-200: $100k-$200k
-    more-than-200: $200k+   
+    work-for-free: 
+        long: I work for free
+        short: work for free
+    0-10:
+        long: $0k-$10k
+        short: $0k-$10k
+    10-30:
+        long: $10k-$30k
+        short: $10k-$30k
+    30-50:
+        long: $30k-$50k
+        short: $30k-$50k
+    50-100:
+        long: $50k-$100k
+        short: $50k-$100k
+    100-200:
+        long: $100k-$200k
+        short: $100k-$200k
+    more-than-200:
+        long: more than $200k
+        short: $200k+   
 
 company_size:
-    1: One employee
-    1-5: 1 to 5 employees
-    5-10: 5 to 10 employees
-    10-20: 10 to 20 employees
-    20-50: 20 to 50 employees
-    50-100: 50 to 100 employees
-    100-1000: 100 to 1000 employees
-    more-than-1000: More than 1000 employees
+    1:
+        long: One employee
+        short: one
+    1-5:
+        long: 1 to 5 employees
+        short: 1~5
+    5-10:
+        long: 5 to 10 employees
+        short: 5~10
+    10-20:
+        long: 10 to 20 employees
+        short: 10~20
+    20-50:
+        long: 20 to 50 employees
+        short: 20~50
+    50-100:
+        long: 50 to 100 employees
+        short: 50~100
+    100-1000:
+        long: 100 to 1000 employees
+        short: 100~1000
+    more-than-1000:
+        long: More than 1000 employees
+        short: 1000+
 
 years_of_experience:
-    less-than-1: Less than one year
-    1-2: 1 to 2 years
-    2-5: 2 to 5 years
-    5-10: 5 to 10 years
-    10-20: 10 to 20 years
-    more-than-20: More than 20 years
+    less-than-1:
+        long: Less than one year
+        short: '<1 year'
+    1-2:
+        long: 1 to 2 years
+        short: 1~2 years
+    2-5:
+        long: 2 to 5 years
+        short: 2~5 years
+    5-10:
+        long: 5 to 10 years
+        short: 5~10 years
+    10-20:
+        long: 10 to 20 years
+        short: 10~20 years
+    more-than-20:
+        long: More than 20 years
+        short: '>20 years'

@@ -20,7 +20,7 @@ export default class BarBlock extends Component {
 
         return (
             <div className="block block--chart block--othersbar" id={chartId}>
-                <BlockTitle chartId={chartId} values={values}/>
+                <BlockTitle chartId={chartId} values={values} />
                 <BarChart data={data} />
             </div>
         )

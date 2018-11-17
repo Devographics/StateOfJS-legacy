@@ -259,15 +259,16 @@
     align-items: center;
 }
 
-.ToolsSubAggsHeatMapChart__Heading, .ToolPairing__HeatMapChart__Section {
+.ToolsSubAggsHeatMapChart__Heading,
+.ToolPairing__HeatMapChart__Section {
     font-size: 14px;
     height: 100%;
     display: flex;
-    align-items: center;    
+    align-items: center;
     border-top: 1px dashed $dark-border-color;
 }
 
-.ToolPairing__HeatMapChart__Section:last-of-type{
+.ToolPairing__HeatMapChart__Section:last-of-type {
     border-bottom: 1px dashed $dark-border-color;
 }
 .ToolsSubAggsHeatMapChart__AverageHeading {

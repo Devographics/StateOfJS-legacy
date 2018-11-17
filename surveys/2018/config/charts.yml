@@ -4,6 +4,8 @@ demographics:
   - gender-breakdown
   - salaries
   - salary-per-country
+  - years-of-experience
+  - company-size
 
   
 connections: 

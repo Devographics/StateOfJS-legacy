@@ -30,8 +30,6 @@ const Head = ({ title, currentPage }) => {
         <script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript" />
     ]
 
-    console.log(meta)
-
     return (
         <Helmet meta={meta} defaultTitle={pageTitle}>
             <title>{pageTitle}</title>

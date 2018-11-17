@@ -11,7 +11,14 @@ function withPageData(WrappedComponent) {
                         const path = location.pathname
                         const pages = getPrevNextPages(path)
 
-                        return <WrappedComponent location={location} path={path} {...pages} {...this.props} />
+                        return (
+                            <WrappedComponent
+                                location={location}
+                                path={path}
+                                {...pages}
+                                {...this.props}
+                            />
+                        )
                     }}
                 </Location>
             )

@@ -29,18 +29,31 @@ const ToolTemplate = ({ pageContext, data, ...rest }) => {
                 <Meta />
                 <ToolHeaderBlock section={section} tool={tool} />
                 {shouldDisplayExperienceOverTime ? (
-                    <ToolOpinionsOverTimeBlock tool={tool} opinions={data.tool.experience} chartId="results-over-time" />
+                    <ToolOpinionsOverTimeBlock
+                        tool={tool}
+                        opinions={data.tool.experience}
+                        chartId="results-over-time"
+                    />
                 ) : (
                     <p className="block tool-over-time-no-data" id="results-over-time">
                         Sorry, we don&apos;t have enough data to display the evolution of this
                         library's popularity over time.
                     </p>
                 )}
-                <ReasonsBlock tool={tool} reasons={data.tool.reasons} chartIdLikes="likes" chartIdDislikes="dislikes"/>
+                <ReasonsBlock
+                    tool={tool}
+                    reasons={data.tool.reasons}
+                    chartIdLikes="likes"
+                    chartIdDislikes="dislikes"
+                />
                 {/* <SponsorsBlock tool={tool} /> */}
                 <ResourcesBlock tool={tool} />
                 <ToolPairingBlock tool={tool} data={data.tool.pairing} chartId="tool-pairing" />
-                <ToolUsageByCountryBlock tool={tool} data={wouldUseByCountryData} chartId="tool-usage-by-country" />
+                <ToolUsageByCountryBlock
+                    tool={tool}
+                    data={wouldUseByCountryData}
+                    chartId="tool-usage-by-country"
+                />
             </div>
         </Layout>
     )

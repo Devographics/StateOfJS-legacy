@@ -6,8 +6,10 @@ import GenderBreakdownBlock from '../components/blocks/GenderBreakdownBlock'
 import { graphql } from 'gatsby'
 import SectionHeader from '../components/elements/SectionHeader'
 import ParticipationByCountryBlock from '../components/blocks/ParticipationByCountryBlock'
-import SalariesBlock from '../components/blocks/SalariesBlock'
+import DemographicsSalaryBlock from '../components/blocks/DemographicsSalaryBlock'
 import SalaryPerCountryBlock from '../components/blocks/SalaryPerCountryBlock'
+import DemographicsYearsOfExperienceBlock from '../components/blocks/DemographicsYearsOfExperienceBlock'
+import DemographicsCompanySizeBlock from '../components/blocks/DemographicsCompanySizeBlock'
 
 const Demographics = ({ data, ...rest }) => {
     const participationData = data.stats.participation.find(s => s.survey === '2018').by_country
@@ -18,10 +20,21 @@ const Demographics = ({ data, ...rest }) => {
             <div>
                 <SectionHeader />
                 <TextBlock text={data.file.childMarkdownRemark.html} />
-                <ParticipationByCountryBlock data={participationData} chartId="participation-by-country" />
-                <SalariesBlock data={data.stats.salary} chartId="salaries"/>
-                <SalaryPerCountryBlock data={data.stats.by_country} chartId="salary-per-country"/>
-                <GenderBreakdownBlock data={genderData} chartId="gender-breakdown"/>
+                <ParticipationByCountryBlock
+                    data={participationData}
+                    chartId="participation-by-country"
+                />
+                <DemographicsSalaryBlock data={data.stats.salary} chartId="salaries" />
+                <SalaryPerCountryBlock data={data.stats.by_country} chartId="salary-per-country" />
+                <DemographicsYearsOfExperienceBlock
+                    data={data.stats.years_of_experience}
+                    chartId="years-of-experience"
+                />
+                <DemographicsCompanySizeBlock
+                    data={data.stats.company_size}
+                    chartId="company-size"
+                />
+                <GenderBreakdownBlock data={genderData} chartId="gender-breakdown" />
             </div>
         </Layout>
     )
@@ -76,6 +89,32 @@ Demographics.propTypes = {
                         })
                     ).isRequired
                 })
+            ).isRequired,
+            years_of_experience: PropTypes.arrayOf(
+                PropTypes.shape({
+                    survey: PropTypes.string.isRequired,
+                    average: PropTypes.number.isRequired,
+                    ranges: PropTypes.arrayOf(
+                        PropTypes.shape({
+                            range: PropTypes.string.isRequired,
+                            count: PropTypes.number.isRequired,
+                            percentage: PropTypes.number.isRequired
+                        })
+                    ).isRequired
+                })
+            ).isRequired,
+            company_size: PropTypes.arrayOf(
+                PropTypes.shape({
+                    survey: PropTypes.string.isRequired,
+                    average: PropTypes.number.isRequired,
+                    ranges: PropTypes.arrayOf(
+                        PropTypes.shape({
+                            range: PropTypes.string.isRequired,
+                            count: PropTypes.number.isRequired,
+                            percentage: PropTypes.number.isRequired
+                        })
+                    ).isRequired
+                })
             ).isRequired
         }).isRequired
     }).isRequired
@@ -112,6 +151,24 @@ export const query = graphql`
                 }
             }
             salary {
+                survey
+                average
+                ranges {
+                    range
+                    count
+                    percentage
+                }
+            }
+            years_of_experience {
+                survey
+                average
+                ranges {
+                    range
+                    count
+                    percentage
+                }
+            }
+            company_size {
                 survey
                 average
                 ranges {

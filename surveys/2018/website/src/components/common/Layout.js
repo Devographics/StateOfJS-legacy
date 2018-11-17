@@ -47,14 +47,18 @@ class Layout extends PureComponent {
         const isCapturing = location && location.search && location.search.indexOf('capture') !== -1
         return (
             <div
-                className={classNames('pageLayout', `PageLayout--${currentPage && currentPage.section.id}`, {
-                    'PageLayout--sidebar': showSidebar,
-                    'PageLayout--nosidebar': !showSidebar,
-                    'PageLayout--anim': showAnim,
-                    'PageLayout--noanim': !showAnim,
-                    capture: isCapturing,
-                    nocapture: !isCapturing
-                })}
+                className={classNames(
+                    'pageLayout',
+                    `PageLayout--${currentPage && currentPage.section.id}`,
+                    {
+                        'PageLayout--sidebar': showSidebar,
+                        'PageLayout--nosidebar': !showSidebar,
+                        'PageLayout--anim': showAnim,
+                        'PageLayout--noanim': !showAnim,
+                        capture: isCapturing,
+                        nocapture: !isCapturing
+                    }
+                )}
             >
                 <Head />
                 {showAnim && <Animation showStart={false} variant="simple" size={70} />}

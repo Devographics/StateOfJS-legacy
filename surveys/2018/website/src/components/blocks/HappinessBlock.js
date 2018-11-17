@@ -29,7 +29,7 @@ class HappinessBlock extends PureComponent {
 
         return (
             <div className="Block Block--happiness Happiness__Block" id={chartId}>
-                <BlockTitle chartId={chartId} values={{ sectionName }}/>
+                <BlockTitle chartId={chartId} values={{ sectionName }} />
                 <HappinessTrendChart data={data} />
             </div>
         )

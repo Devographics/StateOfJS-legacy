@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { salaryRanges } from '../../constants'
 import BlockTitle from '../elements/BlockTitle'
 import ChartContainer from '../elements/ChartContainer'
-import SalariesBarChart from '../charts/SalariesBarChart'
+import DemographicsVerticalBarChart from '../charts/DemographicsVerticalBarChart'
 
-export default class SalariesBlock extends Component {
+export default class DemographicsSalaryBlock extends Component {
     static propTypes = {
         data: PropTypes.arrayOf(
             PropTypes.shape({
@@ -29,7 +30,11 @@ export default class SalariesBlock extends Component {
             <div className="block" id={this.props.chartId}>
                 <BlockTitle chartId={this.props.chartId} />
                 <ChartContainer>
-                    <SalariesBarChart data={chartData} />
+                    <DemographicsVerticalBarChart
+                        data={chartData}
+                        keys={salaryRanges}
+                        i18nNamespace="salary_range"
+                    />
                 </ChartContainer>
             </div>
         )

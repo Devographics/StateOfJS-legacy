@@ -82,7 +82,7 @@ export default class ToolsSubAggsHeatMapChart extends Component {
                     return (
                         <Fragment key={key}>
                             <div className="ToolsSubAggsHeatMapChart__Heading">
-                                {getWording(`${i18nNamespace}.${key}`)}
+                                {getWording(`${i18nNamespace}.${key}.long`)}
                             </div>
                             {data.map((tool, i) => {
                                 const datum = tool.ranges.find(r => r.range === key)

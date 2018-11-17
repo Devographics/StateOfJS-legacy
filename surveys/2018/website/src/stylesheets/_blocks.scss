@@ -11,8 +11,9 @@
     }
 }
 
-.Block__Description, .block__description {
-    margin-bottom: $spacing*2;
+.Block__Description,
+.block__description {
+    margin-bottom: $spacing * 2;
     p {
         &:last-child {
             margin: 0;
@@ -40,10 +41,10 @@
             opacity: 0.2;
         }
     }
-    .nocapture &--full{
+    .nocapture &--full {
         display: none;
     }
-    .capture &--short{
+    .capture &--short {
         display: none;
     }
 }

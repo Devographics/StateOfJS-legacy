@@ -18,7 +18,7 @@ const Connections = ({ data: { connections }, ...rest }) => (
         <div className="Section">
             <SectionHeader />
             <TextBlock text={text} />
-            <ToolsConnectionsBlock data={connections} chartId="connections"/>
+            <ToolsConnectionsBlock data={connections} chartId="connections" />
         </div>
     </Layout>
 )

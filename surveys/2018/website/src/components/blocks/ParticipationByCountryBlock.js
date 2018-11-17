@@ -5,7 +5,6 @@ import ParticipationByCountryMapChart from '../charts/ParticipationByCountryMapC
 import ChartContainer from '../elements/ChartContainer'
 
 export default class ParticipationByCountryBlock extends Component {
-
     static propTypes = {
         // data: PropTypes.shape({
         //     survey: PropTypes.string.isRequired,
