@@ -6,8 +6,8 @@ const Head = ({ title, currentPage }) => {
     const pageTitle =
         title || (currentPage && currentPage.fullTitle) || 'The State of JavaScript 2018'
     const description = 'Discover the most popular JavaScript technologies of the year.'
-    const url = 'http://stateofjs.com'
-    const image = 'http://stateofjs.com/images/stateofjs2018-social.png'
+    const url = 'http://2018.stateofjs.com'
+    const image = 'http://2018.stateofjs.com/images/stateofjs2018-social.png'
 
     const meta = [
         { charset: 'utf-8' },
