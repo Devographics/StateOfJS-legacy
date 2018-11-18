@@ -118,50 +118,46 @@ export default class OverviewChart extends Component {
                         axisLeft={null}
                         enableGridY={false}
                         axisTop={{
-                            renderTick: tick => {
-                                return (
-                                    <g
-                                        key={tick.key}
-                                        transform={`translate(${tick.x - 30},${tick.y - 80})`}
-                                    >
-                                        <PeriodicElement
-                                            mode="chart"
-                                            section={section}
-                                            tool={tick.value}
-                                            symbol={periodicTableData.tools[tick.value] || '??'}
-                                            name={getToolName(tick.value)}
-                                            size={60}
-                                            number={ranking[tick.value]}
-                                            path={`${section}/${tick.value}`}
-                                        />
-                                    </g>
-                                )
-                            }
+                            renderTick: tick => (
+                                <g
+                                    key={tick.key}
+                                    transform={`translate(${tick.x - 30},${tick.y - 80})`}
+                                >
+                                    <PeriodicElement
+                                        mode="chart"
+                                        section={section}
+                                        tool={tick.value}
+                                        symbol={periodicTableData.tools[tick.value] || '??'}
+                                        name={getToolName(tick.value)}
+                                        size={60}
+                                        number={ranking[tick.value]}
+                                        path={`${section}/${tick.value}`}
+                                    />
+                                </g>
+                            )
                         }}
                         axisBottom={{
                             tickSize: 0,
                             tickPadding: 10,
-                            renderTick: tick => {
-                                return (
-                                    <g
-                                        key={tick.key}
-                                        transform={`translate(${tick.x},${tick.y + 14})`}
-                                        style={{ cursor: 'pointer' }}
-                                        onClick={() => {
-                                            navigate(`${section}/${tick.value}`)
-                                        }}
+                            renderTick: tick => (
+                                <g
+                                    key={tick.key}
+                                    transform={`translate(${tick.x},${tick.y + 14})`}
+                                    style={{ cursor: 'pointer' }}
+                                    onClick={() => {
+                                        navigate(`${section}/${tick.value}`)
+                                    }}
+                                >
+                                    <text
+                                        fill="#41c7c7"
+                                        textAnchor="middle"
+                                        alignmentBaseline="hanging"
+                                        style={{ fontSize: '13px' }}
                                     >
-                                        <text
-                                            fill="#41c7c7"
-                                            textAnchor="middle"
-                                            alignmentBaseline="hanging"
-                                            style={{ fontSize: '13px' }}
-                                        >
-                                            {getToolName(tick.value)}
-                                        </text>
-                                    </g>
-                                )
-                            }
+                                        {getToolName(tick.value)}
+                                    </text>
+                                </g>
+                            )
                         }}
                         defs={patterns}
                         fill={[
@@ -172,6 +168,10 @@ export default class OverviewChart extends Component {
                                 id: 'lines'
                             }
                         ]}
+                        tooltip={d => {
+                            console.log(d)
+                            return 'crap'
+                        }}
                     />
                 </ChartContainer>
                 <div>

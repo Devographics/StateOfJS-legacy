@@ -716,10 +716,10 @@
     react-motion "^0.5.2"
     recompose "^0.26.0"
 
-"@nivo/bar@0.51.1":
-  version "0.51.1"
-  resolved "https://registry.yarnpkg.com/@nivo/bar/-/bar-0.51.1.tgz#d56642723c43df523845cea2ea86939adad1cb87"
-  integrity sha512-CnfwclnbSgGrrZcBeJ1xQpBj4lIfdTRxTyCLWcgIP/AsjzBJ6EwyxKcseYQ2wX5UUElnqNCP+Ly+7xn4VWwaOg==
+"@nivo/bar@0.51.4":
+  version "0.51.4"
+  resolved "https://registry.yarnpkg.com/@nivo/bar/-/bar-0.51.4.tgz#31f9d2894134da0a79c86b9e50a698f9a4b0e1e4"
+  integrity sha512-F9wpplTNWMKuPvyt997v8OnPtZUs5cjApyPVMm0UPo8Wj1jDnX8YgGkOZRgF4vnlJCycSYGIZKVUWoWRwOCXsQ==
   dependencies:
     "@nivo/axes" "0.51.0"
     "@nivo/core" "0.51.0"
@@ -818,10 +818,10 @@
     d3-time-format "^2.1.3"
     lodash "^4.17.4"
 
-"@nivo/stream@0.51.0":
-  version "0.51.0"
-  resolved "https://registry.yarnpkg.com/@nivo/stream/-/stream-0.51.0.tgz#f453242cf53d56e143ce9422f44a9e51ebdd8609"
-  integrity sha512-PlarwHslzEtow6HYX32CvofxPlRSKpv03wfnl+51AlL5GuWdKyTcuibVioSeXpyfDwwhfFS2KnmooYz9msrYig==
+"@nivo/stream@0.51.4":
+  version "0.51.4"
+  resolved "https://registry.yarnpkg.com/@nivo/stream/-/stream-0.51.4.tgz#cfdca57a857f28b7863252c188872484de6d9c54"
+  integrity sha512-73M3+8POnATpNybjm/ykqIUG9LtnWRjC9g94CcggHqoaRviJJtHipMzP+xape9NJCJjEipnRT0CRCx/6WL1LIg==
   dependencies:
     "@nivo/core" "0.51.0"
     "@nivo/legends" "0.51.0"
@@ -7311,10 +7311,6 @@ num2fraction@^1.2.2:
 number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
-
-numeral@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/numeral/-/numeral-2.0.6.tgz#4ad080936d443c2561aed9f2197efffe25f4e506"
 
 oauth-sign@~0.8.2:
   version "0.8.2"

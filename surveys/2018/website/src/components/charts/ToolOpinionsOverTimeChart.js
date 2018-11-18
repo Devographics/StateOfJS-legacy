@@ -4,6 +4,7 @@ import theme from '../../nivoTheme'
 import { toolOpinionKeys } from '../../constants'
 import DisplayModeSwitch from '../elements/DisplayModeSwitch'
 import OpinionsLegends from '../elements/OpinionsLegends'
+import { getWording } from '../../helpers/wording'
 
 const Dot = ({ x, y, data, current, displayMode }) => {
     if (current !== null && data.key !== current) {
@@ -100,6 +101,11 @@ export default class ToolOpinionsOverTimeChart extends Component {
             format: i => this.props.opinions[i].survey
         }
 
+        let tooltipFormat
+        if (displayMode === 'percents') {
+            tooltipFormat = d => `${d.value}%`
+        }
+
         return (
             <div className="OverTime__Chart">
                 <div
@@ -127,6 +133,8 @@ export default class ToolOpinionsOverTimeChart extends Component {
                         renderDot={d => <Dot {...d} current={current} displayMode={displayMode} />}
                         dotColor="inherit:brighter(0.6)"
                         animate={false}
+                        tooltipLabel={d => getWording(`opinions.legends_short.${d.id}`)}
+                        tooltipFormat={tooltipFormat}
                         defs={patterns}
                         fill={[
                             {
