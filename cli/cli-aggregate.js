@@ -12,7 +12,15 @@ const outputDir = config.get('dataOutputDir')
 
 const saveResult = async (file, result) => {
     const yamlFile = path.join(outputDir, `${file}.yml`)
-    await writeFile(yamlFile, YAML.stringify(result, 10))
+    const content = `
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
+${YAML.stringify(result, 10)}
+    `.trim()
+    await writeFile(yamlFile, content)
 }
 
 const run = async () => {
@@ -124,6 +132,10 @@ const run = async () => {
     console.log('\ncomputing other tools')
     const otherTools = await aggregator.computeOtherTools(currentSurvey)
     await saveResult('other_tools/other_tools', otherTools)
+
+    console.log('\ncomputing awards')
+    const awards = await aggregator.computeAwards(currentSurvey)
+    await saveResult('awards/awards', awards)
 }
 
 run()

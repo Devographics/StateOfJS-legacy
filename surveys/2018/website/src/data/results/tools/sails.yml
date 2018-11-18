@@ -1,3 +1,8 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
 tool_id: sails
 appears_in_surveys:
     - '2017'

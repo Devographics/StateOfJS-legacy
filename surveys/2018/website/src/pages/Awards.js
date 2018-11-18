@@ -4,14 +4,18 @@ import Layout from '../components/common/Layout'
 import SectionHeader from '../components/elements/SectionHeader'
 import { graphql } from 'gatsby'
 
-const Awards = ({ data, ...rest }) => (
-    <Layout {...rest}>
-        <div>
-            <SectionHeader showIntro={true} />
-            <AwardsBlock />
-        </div>
-    </Layout>
-)
+const Awards = ({ data, ...rest }) => {
+    const awards = data.awards.edges.map(({ node }) => node)
+
+    return (
+        <Layout {...rest}>
+            <div>
+                <SectionHeader showIntro={true} />
+                <AwardsBlock data={awards} />
+            </div>
+        </Layout>
+    )
+}
 
 export default Awards
 
@@ -20,6 +24,18 @@ export const query = graphql`
         file(name: { eq: "conclusion-conclusion" }) {
             childMarkdownRemark {
                 html
+            }
+        }
+        awards: allAwardsYaml(filter: { type: { ne: null } }) {
+            edges {
+                node {
+                    type
+                    tools {
+                        id
+                        percentage
+                        count
+                    }
+                }
             }
         }
     }

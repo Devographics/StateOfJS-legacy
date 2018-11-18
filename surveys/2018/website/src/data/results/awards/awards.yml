@@ -1,0 +1,77 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
+-
+    type: highest_satisfaction
+    tools:
+        -
+            id: jest
+            would_use: 7910
+            would_not_use: 289
+            total: 8199
+            percentage: 96.5
+        -
+            id: express
+            would_use: 12764
+            would_not_use: 768
+            total: 13532
+            percentage: 94.3
+        -
+            id: graphql
+            would_use: 4108
+            would_not_use: 254
+            total: 4362
+            percentage: 94.2
+-
+    type: highest_interest
+    tools:
+        -
+            id: graphql
+            interested: 12575
+            not_interested: 1771
+            total: 14346
+            percentage: 87.7
+        -
+            id: storybook
+            interested: 4767
+            not_interested: 1225
+            total: 5992
+            percentage: 79.6
+        -
+            id: electron
+            interested: 10617
+            not_interested: 3084
+            total: 13701
+            percentage: 77.5
+-
+    type: highest_usage
+    tools:
+        -
+            id: react
+            would_use: 13062
+            would_not_use: 1355
+            count: 14417
+        -
+            id: express
+            would_use: 12764
+            would_not_use: 768
+            count: 13532
+        -
+            id: angular
+            would_use: 4817
+            would_not_use: 6826
+            count: 11643
+-
+    type: most_mentioned
+    tools:
+        -
+            id: vuex
+            count: 719
+        -
+            id: cypress
+            count: 382
+        -
+            id: hapi
+            count: 349

@@ -1,3 +1,8 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
 section_id: mobile-and-desktop
 tools:
     - electron

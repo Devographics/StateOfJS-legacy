@@ -11,6 +11,7 @@ export const getWording = (id, values, fallback = id) => {
     try {
         return template(label)(values)
     } catch (error) {
+        // console.error(error)
         return label
     }
 }

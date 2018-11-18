@@ -1,29 +1,54 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import PeriodicElement from './PeriodicElement'
-import { getToolName } from '../../helpers/wording'
+import { getWording, getToolName } from '../../helpers/wording'
 import periodicTableData from '../../data/periodic_table.yml'
 import ReactMarkdown from 'react-markdown'
 import ShareChart from '../common/ShareChart'
 import slugify from '../../helpers/slugify'
 
-class Award extends Component {
+export default class Award extends Component {
+    static propTypes = {
+        type: PropTypes.oneOf([
+            'highest_satisfaction',
+            'highest_interest',
+            'highest_usage',
+            'most_mentioned',
+            'prediction',
+            'special'
+        ]).isRequired,
+        tools: PropTypes.arrayOf(
+            PropTypes.shape({
+                id: PropTypes.string.isRequired
+            })
+        ).isRequired
+    }
+
     state = {
-        show: false
+        isRevealed: false
     }
 
     handleClick = () => {
-        this.setState({ show: true })
+        this.setState({ isRevealed: true })
     }
 
     render() {
-        const { heading, description, tool, comment, runnerups } = this.props
-        const { show } = this.state
-        const chartId = slugify(heading)
+        const { type, tools: _tools } = this.props
+        const { isRevealed } = this.state
+        const chartId = slugify(type)
+
+        const tools = _tools.map(tool => ({
+            ...tool,
+            label: getToolName(tool.id)
+        }))
+
+        const winner = tools[0]
+        const runnerUps = tools.slice(1)
 
         return (
-            <div className={`Award Award--${show ? 'show' : 'hide'}`} id={chartId}>
-                <h3 className="Award__Heading">{heading}</h3>
-                <div className="Award__Description">{description}</div>
+            <div className={`Award Award--${isRevealed ? 'show' : 'hide'}`} id={chartId}>
+                <h3 className="Award__Heading">{getWording(`award.${type}.heading`)}</h3>
+                <div className="Award__Description">{getWording(`award.${type}.description`)}</div>
                 <div className="Award__Element__Container">
                     <div className="Award__Element" onClick={this.handleClick}>
                         <PeriodicElement
@@ -35,30 +60,35 @@ class Award extends Component {
                         />
                         <PeriodicElement
                             className="Award__Element__Face Award__Element__Face--back"
-                            symbol={periodicTableData.tools[tool]}
-                            name={getToolName(tool)}
+                            symbol={periodicTableData.tools[winner.id]}
+                            name={winner.label}
                             number={1}
                             size={150}
                         />
                     </div>
                 </div>
-
                 <div className="Award__Comment">
-                    <ReactMarkdown source={comment} />
+                    <ReactMarkdown
+                        source={getWording(`award.${type}.comment`, {
+                            tools
+                        })}
+                    />
                     <ShareChart
-                        title={`${heading} Award`}
+                        title={`${getWording(`award.${type}.heading`)} Award`}
                         chartId={chartId}
                         className="Award__Share"
                     />
                 </div>
                 <div className="Awards__RunnerUps">
-                    <h4 className="Awards__RunnerUps__Heading">Runner-Ups</h4>
-                    {runnerups.map(({ tool, figure }, i) => (
+                    <h4 className="Awards__RunnerUps__Heading">
+                        {getWording(`awards_runner_ups`)}
+                    </h4>
+                    {runnerUps.map((runnerUp, i) => (
                         <div
-                            key={tool}
+                            key={runnerUp.id}
                             className={`Awards__RunnerUps__Item Awards__RunnerUps__Item--${i}`}
                         >
-                            {i + 2}. {getToolName(tool)} {figure && `(${figure})`}
+                            {i + 2}. {getWording(`award.${type}.runner_up`, { tool: runnerUp })}
                         </div>
                     ))}
                 </div>
@@ -66,4 +96,3 @@ class Award extends Component {
         )
     }
 }
-export default Award

@@ -9,6 +9,7 @@ years_of_experience_axis_legend: years of experience
 company_size_axis_legend: number of employees
 percents_display_mode: percents
 counts_display_mode: counts
+awards_runner_ups: Runner-Ups
 
 nav:
     introduction: Introduction
@@ -385,6 +386,56 @@ intros:
         Join us for the first ever State of JS awards! Can you guess which technologies took gold
         in each category? <span class="note">(Note: we've excluded ES6 from the awards to avoid skewing the data)</span>
 
+award:
+    highest_satisfaction:
+        heading: Highest Satisfaction
+        description: >
+            Awarded to the library with the highest percentage of satisfied users.
+        comment: >
+            With **${tools[0].percentage}%** of users willing to use it again,
+            ${tools[0].label} proves it’s not kidding around.
+        runner_up: ${tool.label} ${tool.percentage}%  
+    highest_interest:
+        heading: Highest Interest
+        description: >
+            Awarded to the technology developers are most interested in learning.
+        comment: >
+            **${tools[0].percentage}%** of developers who have heard about
+            ${tools[0].label} want to learn it.
+            That’s some serious interest!
+        runner_up: ${tool.label} ${tool.percentage}%
+    highest_usage:
+        heading: Most Used
+        description: >
+            Awarded to technology with the largest user base.
+        comment: >
+            With **${tools[0].count}** users ${tools[0].label}
+            is the most used library this year.        
+        runner_up: ${tool.label} ${tool.count}
+    most_mentioned:        
+        heading: Most Mentioned
+        description: >
+            Awarded to the library mentioned the most in the “other libraries” answer. 
+        comment: >
+            ${tools[0].label} collected **${tools[0].count}** mentions,
+            making it the most submitted freeform answer by far.
+        runner_up: ${tool.label} ${tool.count}
+    prediction:        
+        heading: Prediction Award
+        description: >
+            Awarded to an up-and-coming technology that might take over… or not?
+        comment:
+            The Facebook team is two for two with React and GraphQL.
+            Will Reason follow the same path?
+        runner_up: ${tool.label}
+    special:
+        heading: Special Award
+        description: >
+            Awarded to a technology that we just fell in love with this year.
+        comment: >
+            ${tools[0].label} has become the leading JavaScript text editor, and we can definitely see why!
+        runner_up: ${tool.label}
+    
 opinion_scale:
     0: Strongly Disagree
     1: Disagree

@@ -1,5 +1,5 @@
 const experience = require('../../../conf/experience')
-const userInfoAggregator = require('./user_info')
+const awardsAggregator = require('./awards')
 const sectionsAggregator = require('./sections')
 const toolsAggregator = require('./tools')
 const demographicAggregator = require('./demographic')
@@ -97,6 +97,29 @@ class CompoundAggregator {
 
     async computeOtherTools(currentSurveyId) {
         return otherToolsAggregator.otherToolsForSurvey(this.config[currentSurveyId])
+    }
+
+    async computeAwards(currentSurveyId) {
+        const currentSurvey = this.config[currentSurveyId]
+
+        return [
+            {
+                type: 'highest_satisfaction',
+                tools: await awardsAggregator.hightestSatisfaction(currentSurvey, ['es6'])
+            },
+            {
+                type: 'highest_interest',
+                tools: await awardsAggregator.highestInterest(currentSurvey, ['es6'])
+            },
+            {
+                type: 'highest_usage',
+                tools: await awardsAggregator.highestUsage(currentSurvey, ['es6'])
+            },
+            {
+                type: 'most_mentioned',
+                tools: await awardsAggregator.mostMentioned(currentSurvey, ['es6'])
+            }
+        ]
     }
 }
 
