@@ -21,14 +21,9 @@ const ConclusionTemplate = ({ pageContext, data, ...rest }) => {
                     chartId="quadrants"
                     values={{ sectionName: getWording(`nav.${pageContext.section}`) }}
                 />
-                {content === undefined && (
-                    <div style={{ color: 'red' }}>
-                        No conclusion found for section: <strong>{pageContext.name}</strong>
-                        <br />
-                        <br />
-                    </div>
+                {content !== undefined && (
+                    <TextBlock title={getWording('conclusion')} text={content} />
                 )}
-                {content !== undefined && <TextBlock title="Conclusion" text={content} />}
             </div>
         </Layout>
     )

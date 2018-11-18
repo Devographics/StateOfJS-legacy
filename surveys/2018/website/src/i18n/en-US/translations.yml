@@ -1,5 +1,6 @@
 share: Share
 average: Average
+conclusion: Conclusion
 tools_salary_range_average: Average salary
 tools_company_size_average: Average company size
 tools_years_of_experience_average: Average years of experience
@@ -436,6 +437,29 @@ award:
             ${tools[0].label} has become the leading JavaScript text editor, and we can definitely see why!
         runner_up: ${tool.label}
     
+quadrant:
+    satisfaction_legend: Satisfaction %
+    users_legend: Users
+    assess: 
+        label: Assess
+        description: >
+            Low usage, high satisfaction.
+            Technologies worth keeping an eye on.
+    adopt:
+        label: Adopt
+        description: >
+            High usage, high satisfaction. Safe technologies to adopt.
+    avoid:  
+        label: Avoid
+        description: >      
+            Low usage, low satisfaction.
+            Technologies probably best avoided currently.
+    analyze:
+        label: Analyze
+        description: >
+            High usage, low satisfaction.
+            Reassess these technologies if you're currently using them.
+
 opinion_scale:
     0: Strongly Disagree
     1: Disagree

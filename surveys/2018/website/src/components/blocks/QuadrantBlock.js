@@ -1,24 +1,17 @@
 import React from 'react'
+import { getWording } from '../../helpers/wording'
 import QuadrantChart from '../charts/QuadrantChart'
 import BlockTitle from '../elements/BlockTitle'
 
-const legend = [
-    ['Assess', 'Low usage, high satisfaction. Technologies worth keeping an eye on.'],
-    ['Adopt', 'High usage, high satisfaction. Safe technologies to adopt.'],
-    ['Avoid', `Low usage, low satisfaction. Technologies probably best avoided currently.`],
-    [
-        'Analyze',
-        `High usage, low satisfaction. Reassess these technologies if you're currently using them.`
-    ]
-]
+const facets = ['assess', 'adopt', 'avoid', 'analyze']
 
 const QuadrantLegend = () => (
     <div className="Quadrants__Chart__Legend">
-        {/* <h3 className="Quadrants__Chart__Legend__Title">Four Quadrants</h3> */}
         <div className="Quadrants__Chart__Legend__Items">
-            {legend.map(([label, description]) => (
-                <div className="Quadrants__Chart__Legend__Item" key={label}>
-                    <strong>{label}</strong>: {description}
+            {facets.map(facet => (
+                <div className="Quadrants__Chart__Legend__Item" key={facet}>
+                    <strong>{getWording(`quadrant.${facet}.label`)}</strong>:{' '}
+                    {getWording(`quadrant.${facet}.description`)}
                 </div>
             ))}
         </div>

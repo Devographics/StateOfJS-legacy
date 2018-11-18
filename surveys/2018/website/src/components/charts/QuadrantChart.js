@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { scaleLinear } from 'd3-scale'
 import { format } from 'd3-format'
+import { getWording } from '../../helpers/wording'
 import QuadrantChartNode from './QuadrantChartNode'
 
 const styles = {
@@ -148,7 +149,7 @@ const QuadrantChart = ({ tools }) => {
                             className="Quadrants__Chart__QuadrantLabel"
                             fillOpacity="0.6"
                         >
-                            Assess
+                            {getWording('quadrant.assess.label')}
                         </text>
                         <text
                             textAnchor="middle"
@@ -159,7 +160,7 @@ const QuadrantChart = ({ tools }) => {
                             className="Quadrants__Chart__QuadrantLabel"
                             fillOpacity="0.6"
                         >
-                            Avoid
+                            {getWording('quadrant.avoid.label')}
                         </text>
                         <text
                             textAnchor="middle"
@@ -170,7 +171,7 @@ const QuadrantChart = ({ tools }) => {
                             className="Quadrants__Chart__QuadrantLabel"
                             fillOpacity="0.7"
                         >
-                            Adopt
+                            {getWording('quadrant.adopt.label')}
                         </text>
                         <text
                             textAnchor="middle"
@@ -181,7 +182,7 @@ const QuadrantChart = ({ tools }) => {
                             className="Quadrants__Chart__QuadrantLabel"
                             fillOpacity="0.6"
                         >
-                            Analyze
+                            {getWording('quadrant.analyze.label')}
                         </text>
 
                         {/* points */}
@@ -287,7 +288,7 @@ const QuadrantChart = ({ tools }) => {
                             fill={styles.labelsColor}
                             className="Quadrants__Chart__Legend"
                         >
-                            Satisfaction %
+                            {getWording('quadrant.satisfaction_legend')}
                         </text>
                         <text
                             textAnchor="middle"
@@ -297,7 +298,7 @@ const QuadrantChart = ({ tools }) => {
                             fill={styles.labelsColor}
                             className="Quadrants__Chart__Legend"
                         >
-                            Users
+                            {getWording('quadrant.users_legend')}
                         </text>
                     </g>
                 </svg>
