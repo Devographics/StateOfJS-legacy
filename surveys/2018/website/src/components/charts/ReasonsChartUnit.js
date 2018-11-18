@@ -108,11 +108,10 @@ export default class ReasonsChartUnit extends Component {
                     keys={['count']}
                     indexBy="id"
                     margin={{
-                        ...barChartProps,
+                        ...barChartProps.margin,
                         left: labelsWidth
                     }}
                     tooltip={Tooltip}
-                    axisTop={{}}
                     axisLeft={{
                         tickSize: 0,
                         tickPadding: 0,
