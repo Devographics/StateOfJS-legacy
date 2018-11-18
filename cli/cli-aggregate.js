@@ -48,10 +48,12 @@ const run = async () => {
                     tool: toolId,
                     count: toolsAggs[toolId].experience.by_survey.find(
                         s => s.survey === currentSurveyConfig.id
-                    ).would_use
+                    ).counts.would_use
                 }
             })
-            .sort((a, b) => b.count - a.count)
+            .sort((a, b) => {
+                return b.count - a.count
+            })
 
         return {
             ...acc0,
