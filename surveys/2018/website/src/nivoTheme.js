@@ -40,7 +40,8 @@ export default {
                 stroke: '#bbb'
             },
             text: {
-                fill: '#bbb'
+                fill: '#bbb',
+                fontSize: 13,
             }
         },
         legend: {
@@ -77,7 +78,7 @@ export default {
     },
     tooltip: {
         container: {
-            fontSize: '13px',
+            fontSize: 13,
             background: '#000',
             color: '#ddd'
         }
