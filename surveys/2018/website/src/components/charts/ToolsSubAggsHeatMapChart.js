@@ -5,6 +5,7 @@ import { scaleLinear } from 'd3-scale'
 import { colors } from '../../constants'
 import periodicTableData from '../../data/periodic_table.yml'
 import { getWording, getToolName } from '../../helpers/wording'
+import DisplayModeSwitch from '../elements/DisplayModeSwitch'
 import PeriodicElement from '../elements/PeriodicElement'
 
 const CELL_SIZE = 60
@@ -35,8 +36,17 @@ export default class ToolsSubAggsHeatMapChart extends Component {
         formatValue: v => v
     }
 
+    state = {
+        displayMode: 'percents'
+    }
+
+    setDisplayMode = displayMode => {
+        this.setState({ displayMode })
+    }
+
     render() {
         const { keys, data: _data, i18nNamespace, averageLabel, formatValue } = this.props
+        const { displayMode } = this.state
 
         const data = [..._data].sort((a, b) => a.average - b.average)
 
@@ -59,14 +69,15 @@ export default class ToolsSubAggsHeatMapChart extends Component {
             .range([colors.redLighter, colors.redLight, colors.red])
 
         const style = {
-            // maxWidth: CELL_SIZE * columns + 320,
             gridTemplateColumns: `auto${` ${CELL_SIZE}px`.repeat(columns)}`,
             gridTemplateRows: `${CELL_SIZE}px${' 38px'.repeat(rows)} ${CELL_SIZE}px`
         }
 
         return (
             <div className="ToolsSubAggsHeatMapChart" style={style}>
-                <span />
+                <div>
+                    <DisplayModeSwitch mode={displayMode} onChange={this.setDisplayMode} />
+                </div>
                 {data.map((tool, i) => {
                     return (
                         <PeriodicElement
@@ -86,6 +97,12 @@ export default class ToolsSubAggsHeatMapChart extends Component {
                             </div>
                             {data.map((tool, i) => {
                                 const datum = tool.ranges.find(r => r.range === key)
+                                let label
+                                if (displayMode === 'percents') {
+                                    label = `${datum.percentage}%`
+                                } else {
+                                    label = datum.count
+                                }
 
                                 return (
                                     <div
@@ -98,7 +115,7 @@ export default class ToolsSubAggsHeatMapChart extends Component {
                                             background: colorScale(datum.percentage)
                                         }}
                                     >
-                                        {datum.percentage}%
+                                        {label}
                                     </div>
                                 )
                             })}

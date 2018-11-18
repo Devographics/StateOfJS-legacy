@@ -5,6 +5,7 @@ import { ResponsiveBar } from '@nivo/bar'
 import { navigate } from 'gatsby'
 import theme from '../../nivoTheme'
 import { getToolName } from '../../helpers/wording'
+import DisplayModeSwitch from '../elements/DisplayModeSwitch'
 import OpinionsLegends from '../elements/OpinionsLegends'
 import PeriodicElement from '../elements/PeriodicElement'
 import ChartContainer from '../elements/ChartContainer'
@@ -23,6 +24,11 @@ const patterns = [
     }
 ]
 
+const margin = {
+    top: 81,
+    bottom: 30
+}
+
 export default class OverviewChart extends Component {
     static propTypes = {
         section: PropTypes.string.isRequired,
@@ -34,7 +40,8 @@ export default class OverviewChart extends Component {
     }
 
     state = {
-        current: null
+        current: null,
+        displayMode: 'percents'
     }
 
     setCurrent = legend => {
@@ -43,6 +50,10 @@ export default class OverviewChart extends Component {
 
     resetCurrent = () => {
         this.setState({ current: null })
+    }
+
+    setDisplayMode = displayMode => {
+        this.setState({ displayMode })
     }
 
     getColor = ({ id }) => {
@@ -56,6 +67,7 @@ export default class OverviewChart extends Component {
 
     render() {
         const { section, opinions } = this.props
+        const { displayMode } = this.state
 
         const surveyData = opinions.find(o => o.survey_id === '2018')
         if (surveyData === undefined) {
@@ -71,19 +83,21 @@ export default class OverviewChart extends Component {
         const sortedData = sortBy(
             surveyData.tools.map(t => ({
                 tool_id: t.tool_id,
-                ...t.percentages
+                ...t[displayMode === 'percents' ? 'percentages' : 'counts']
             })),
             'would_use'
         ).reverse()
+
+        let format = v => v
+        if (displayMode === 'percents') {
+            format = v => `${v}%`
+        }
 
         return (
             <div className="Overview__Chart">
                 <ChartContainer height={360}>
                     <ResponsiveBar
-                        margin={{
-                            top: 81,
-                            bottom: 30
-                        }}
+                        margin={margin}
                         keys={[
                             'would_use',
                             'would_not_use',
@@ -95,13 +109,14 @@ export default class OverviewChart extends Component {
                         data={sortedData}
                         theme={theme}
                         colorBy={this.getColor}
-                        labelFormat={d => `${d}%`}
-                        tooltipFormat={d => `${d}%`}
-                        labelTextColor="inherit:darker(1.6)"
+                        labelFormat={format}
+                        tooltipFormat={format}
+                        labelTextColor="inherit:darker(2)"
                         labelSkipWidth={32}
                         labelSkipHeight={20}
                         padding={0.6}
                         axisLeft={null}
+                        enableGridY={false}
                         axisTop={{
                             renderTick: tick => {
                                 return (
@@ -159,13 +174,17 @@ export default class OverviewChart extends Component {
                         ]}
                     />
                 </ChartContainer>
-
-                <OpinionsLegends
-                    layout="vertical"
-                    withFrame={false}
-                    onMouseEnter={this.setCurrent}
-                    onMouseLeave={this.resetCurrent}
-                />
+                <div>
+                    <div className="Overview__Chart__SwitchContainer">
+                        <DisplayModeSwitch mode={displayMode} onChange={this.setDisplayMode} />
+                    </div>
+                    <OpinionsLegends
+                        layout="vertical"
+                        withFrame={false}
+                        onMouseEnter={this.setCurrent}
+                        onMouseLeave={this.resetCurrent}
+                    />
+                </div>
             </div>
         )
     }

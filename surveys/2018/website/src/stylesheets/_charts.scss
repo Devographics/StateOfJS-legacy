@@ -98,7 +98,26 @@
     @include large {
         display: grid;
         grid-template-columns: auto 210px;
-        column-gap: 20px;
+        column-gap: $spacing * 1.5;
+    }
+}
+
+.OverTime__Chart__SwitchContainer {
+    height: 40px;
+    @include small-medium {
+        margin-top: $spacing;
+        height: auto;
+    }
+}
+
+.Overview__Chart__SwitchContainer {
+    height: $spacing * 3;
+    display: flex;
+    align-items: center;
+
+    @include small-medium {
+        margin-top: $spacing;
+        height: auto;
     }
 }
 
@@ -151,8 +170,7 @@
             margin-top: $spacing;
         }
         @include large {
-            margin-top: 81px;
-            margin-bottom: 30px;
+            margin-top: $spacing * 2;
         }
     }
 }
@@ -175,10 +193,6 @@
 .ToolsUsageByCountry__Chart,
 .SalaryPerCountry__Chart {
     height: 500px;
-    // margin-bottom: 30px;
-}
-
-.ToolUsageByCountry__Tooltip {
 }
 
 .Bar__Chart {
@@ -327,10 +341,11 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     font-size: 12px;
     color: $bg-color;
     border-left: 1px solid $bg-color;
+    padding: 0 $spacing / 2;
 }
 .ToolsSubAggsHeatMapChart__Cell--first {
     border-left: 0;

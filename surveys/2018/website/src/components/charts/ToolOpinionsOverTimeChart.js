@@ -2,15 +2,21 @@ import React, { Component } from 'react'
 import { ResponsiveStream } from '@nivo/stream'
 import theme from '../../nivoTheme'
 import { toolOpinionKeys } from '../../constants'
+import DisplayModeSwitch from '../elements/DisplayModeSwitch'
 import OpinionsLegends from '../elements/OpinionsLegends'
 
-const Dot = ({ x, y, data, current }) => {
+const Dot = ({ x, y, data, current, displayMode }) => {
     if (current !== null && data.key !== current) {
         return null
     }
 
     const availableHeight = data.y1 - data.y2
     if (availableHeight < 8 && current === null) return null
+
+    let label = data.value
+    if (displayMode === 'percents') {
+        label = `${label}%`
+    }
 
     return (
         <g transform={`translate(${x},${y})`}>
@@ -25,7 +31,7 @@ const Dot = ({ x, y, data, current }) => {
                     fontWeight: 600
                 }}
             >
-                {data.value}%
+                {label}
             </text>
         </g>
     )
@@ -52,7 +58,8 @@ const margin = {
 
 export default class ToolOpinionsOverTimeChart extends Component {
     state = {
-        current: null
+        current: null,
+        displayMode: 'percents'
     }
 
     setCurrent = legend => {
@@ -61,6 +68,10 @@ export default class ToolOpinionsOverTimeChart extends Component {
 
     resetCurrent = () => {
         this.setState({ current: null })
+    }
+
+    setDisplayMode = displayMode => {
+        this.setState({ displayMode })
     }
 
     getLayerColor = keyIndex => {
@@ -76,11 +87,11 @@ export default class ToolOpinionsOverTimeChart extends Component {
 
     render() {
         const { opinions } = this.props
-        const { current } = this.state
+        const { current, displayMode } = this.state
 
         const data = opinions.map(xp => ({
             id: xp.survey,
-            ...xp.percentages
+            ...xp[displayMode === 'percents' ? 'percentages' : 'counts']
         }))
 
         const horizontalAxis = {
@@ -113,7 +124,7 @@ export default class ToolOpinionsOverTimeChart extends Component {
                         axisTop={horizontalAxis}
                         axisBottom={horizontalAxis}
                         enableDots={true}
-                        renderDot={d => <Dot {...d} current={current} />}
+                        renderDot={d => <Dot {...d} current={current} displayMode={displayMode} />}
                         dotColor="inherit:brighter(0.6)"
                         animate={false}
                         defs={patterns}
@@ -127,16 +138,21 @@ export default class ToolOpinionsOverTimeChart extends Component {
                         ]}
                     />
                 </div>
-                <OpinionsLegends
-                    layout="vertical"
-                    withFrame={false}
-                    onMouseEnter={this.setCurrent}
-                    onMouseLeave={this.resetCurrent}
-                    style={{
-                        marginTop: margin.top,
-                        marginBottom: margin.bottom
-                    }}
-                />
+                <div>
+                    <div className="OverTime__Chart__SwitchContainer">
+                        <DisplayModeSwitch mode={displayMode} onChange={this.setDisplayMode} />
+                    </div>
+                    <OpinionsLegends
+                        layout="vertical"
+                        withFrame={false}
+                        onMouseEnter={this.setCurrent}
+                        onMouseLeave={this.resetCurrent}
+                        style={{
+                            marginTop: 20,
+                            marginBottom: margin.bottom
+                        }}
+                    />
+                </div>
             </div>
         )
     }

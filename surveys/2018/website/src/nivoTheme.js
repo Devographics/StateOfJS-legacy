@@ -41,7 +41,7 @@ export default {
             },
             text: {
                 fill: '#bbb',
-                fontSize: 13,
+                fontSize: 13
             }
         },
         legend: {

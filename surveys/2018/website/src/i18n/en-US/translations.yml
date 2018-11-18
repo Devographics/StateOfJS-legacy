@@ -7,6 +7,8 @@ users_percentage: percentage of users
 salary_range_axis_legend: salary range
 years_of_experience_axis_legend: years of experience
 company_size_axis_legend: number of employees
+percents_display_mode: percents
+counts_display_mode: counts
 
 nav:
     introduction: Introduction
