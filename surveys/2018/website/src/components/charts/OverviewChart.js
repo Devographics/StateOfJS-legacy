@@ -4,7 +4,7 @@ import { sortBy } from 'lodash'
 import { ResponsiveBar } from '@nivo/bar'
 import { navigate } from 'gatsby'
 import theme from '../../nivoTheme'
-import { getToolName } from '../../helpers/wording'
+import { getToolName, getWording } from '../../helpers/wording'
 import DisplayModeSwitch from '../elements/DisplayModeSwitch'
 import OpinionsLegends from '../elements/OpinionsLegends'
 import PeriodicElement from '../elements/PeriodicElement'
@@ -168,10 +168,7 @@ export default class OverviewChart extends Component {
                                 id: 'lines'
                             }
                         ]}
-                        tooltip={d => {
-                            console.log(d)
-                            return 'crap'
-                        }}
+                        tooltipLabel={d => getWording(`opinions.legends_short.${d.id}`)}
                     />
                 </ChartContainer>
                 <div>

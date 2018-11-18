@@ -18,13 +18,13 @@
     "node": "^8.12.0"
   },
   "dependencies": {
-    "@nivo/bar": "0.51.4",
+    "@nivo/bar": "0.51.5",
     "@nivo/chord": "0.51.2",
     "@nivo/circle-packing": "0.51.0",
     "@nivo/core": "0.51.0",
     "@nivo/line": "^0.51.0",
     "@nivo/pie": "0.51.0",
-    "@nivo/stream": "0.51.4",
+    "@nivo/stream": "0.51.5",
     "@nivo/waffle": "0.51.0",
     "bowser": "^2.0.0-beta.3",
     "classnames": "^2.2.6",

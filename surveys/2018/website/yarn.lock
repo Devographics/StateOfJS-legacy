@@ -716,10 +716,10 @@
     react-motion "^0.5.2"
     recompose "^0.26.0"
 
-"@nivo/bar@0.51.4":
-  version "0.51.4"
-  resolved "https://registry.yarnpkg.com/@nivo/bar/-/bar-0.51.4.tgz#31f9d2894134da0a79c86b9e50a698f9a4b0e1e4"
-  integrity sha512-F9wpplTNWMKuPvyt997v8OnPtZUs5cjApyPVMm0UPo8Wj1jDnX8YgGkOZRgF4vnlJCycSYGIZKVUWoWRwOCXsQ==
+"@nivo/bar@0.51.5":
+  version "0.51.5"
+  resolved "https://registry.yarnpkg.com/@nivo/bar/-/bar-0.51.5.tgz#0e896327efd890a24ab4c0acfc2b854daaa7d8b9"
+  integrity sha512-n6sqTKySdxo5LTU2mpeGIjyIBU8kZDNdNaM63fZFXNhcTqp7qLMC9TZLW41+FegO4M/aJn8rFLZbmZSSxGTpdQ==
   dependencies:
     "@nivo/axes" "0.51.0"
     "@nivo/core" "0.51.0"
@@ -818,10 +818,10 @@
     d3-time-format "^2.1.3"
     lodash "^4.17.4"
 
-"@nivo/stream@0.51.4":
-  version "0.51.4"
-  resolved "https://registry.yarnpkg.com/@nivo/stream/-/stream-0.51.4.tgz#cfdca57a857f28b7863252c188872484de6d9c54"
-  integrity sha512-73M3+8POnATpNybjm/ykqIUG9LtnWRjC9g94CcggHqoaRviJJtHipMzP+xape9NJCJjEipnRT0CRCx/6WL1LIg==
+"@nivo/stream@0.51.5":
+  version "0.51.5"
+  resolved "https://registry.yarnpkg.com/@nivo/stream/-/stream-0.51.5.tgz#8da03cbba4535a6bb1e9670a422b68f9aee0f3fb"
+  integrity sha512-m6wnho4mM2X2oPmGAvx8Yc+qKaHWWKR5Rh+iQCKXbX1Ly/vxAw6eUzYvp1zPgZgbGUvFStxEcFM2dr4xUtnHAQ==
   dependencies:
     "@nivo/core" "0.51.0"
     "@nivo/legends" "0.51.0"
