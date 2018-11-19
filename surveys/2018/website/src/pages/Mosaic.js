@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import '../stylesheets/screen.scss'
 
 const images = [
@@ -264,7 +264,7 @@ const Mosaic = () => (
     <div className="mosaic">
         {images.map(image => (
             <div className="mosaic__image">
-                <img src={`/images/captures/${image}`} />
+                <img src={`/images/captures/${image}`} alt="capture"/>
             </div>
         ))}
     </div>

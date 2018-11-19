@@ -86,7 +86,7 @@ export const LinkedIn = ({ link, title, summary, page, chartId }) => {
 }
 
 LinkedIn.propTypes = {
-    text: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
     page: PropTypes.object
 }
 

@@ -60,6 +60,7 @@
     "react-markdown": "^4.0.1",
     "react-measure": "^2.0.2",
     "reactdown": "^1.0.0-alpha14",
+    "remove-markdown": "^0.3.0",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.5",
     "strip-markdown": "^3.0.2",
