@@ -19,13 +19,10 @@ const QuadrantLegend = () => (
 )
 
 const QuadrantBlock = ({ tools, chartId, values }) => (
-    <div className="Quadrants__Block block block--chart block--quadrant">
+    <div className="Quadrants__Block block block--chart block--quadrant" id={chartId}>
         <BlockTitle chartId={chartId} values={values} />
         <div className="Quadrants__Block__Content block__content block__content--quadrant">
-            <div
-                className="Quadrants__Block__Chart block__chart block__chart--quadrant"
-                id={chartId}
-            >
+            <div className="Quadrants__Block__Chart block__chart block__chart--quadrant">
                 <QuadrantChart tools={tools} />
             </div>
             <QuadrantLegend />

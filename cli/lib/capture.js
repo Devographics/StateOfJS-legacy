@@ -48,7 +48,7 @@ module.exports = async ({ baseUrl, outputDir, nav, charts }) => {
         throw new Error(`'${outputDir}' is not a valid directory`)
     }
 
-    const browser = await puppeteer.launch({ headless: false, slowMo: 50 })
+    const browser = await puppeteer.launch({ headless: false, slowMo: 150 })
     const page = await browser.newPage()
     await page.setViewport({ width: 1400, height: 10000, deviceScaleFactor: 2 })
     await page.emulateMedia('screen')
@@ -60,10 +60,12 @@ module.exports = async ({ baseUrl, outputDir, nav, charts }) => {
             for (let pageId of section.subPages) {
                 console.log(chalk`    {dim page: {green ${pageId}}}`)
                 const pageCharts = charts[pageId] || charts.tool
-                for (let chartId of pageCharts) {
-                    const pageConfig = getPageConfig({ sectionId, pageId, chartId })
-                    console.log(chalk`      {dim filename: {white ${pageConfig.filename}}}`)
-                    await capture(page, baseUrl, pageConfig, outputDir)
+                if (pageCharts) {
+                    for (let chartId of pageCharts) {
+                        const pageConfig = getPageConfig({ sectionId, pageId, chartId })
+                        console.log(chalk`      {dim filename: {white ${pageConfig.filename}}}`)
+                        await capture(page, baseUrl, pageConfig, outputDir)
+                    }
                 }
             }
         } else {

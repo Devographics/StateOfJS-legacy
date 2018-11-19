@@ -5,7 +5,7 @@
     .Sidebar {
         display: none !important;
     }
-    .Overview__Chart__SwitchContainer{
+    .Overview__Chart__SwitchContainer {
         display: none;
     }
 
@@ -17,10 +17,17 @@
         height: 500px;
         justify-content: center;
     }
-    .Quadrants__Block__Content {
-        display: block;
+    .Quadrants__Block {
+        .Block__Description {
+            margin-bottom: 0;
+        }
     }
-
+    .Quadrants__Chart__Legend {
+        padding-top: 60px;
+    }
+    .Quadrants__Chart__Legend__Item{
+        font-size: $medium-font;
+    }
     #connections {
         width: 1000px;
         height: 500px;
@@ -50,14 +57,7 @@
         width: 1168px;
     }
     #quadrants {
-        height: 577px;
-        width: 1154px;
-        @include flex-center;
-        flex-direction: column;
-        .Quadrants__Wrapper {
-            width: 50%;
-            margin: auto auto;
-        }
+        width: 1458px;
     }
     #tool-pairing {
         width: 880px;

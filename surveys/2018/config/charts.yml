@@ -33,7 +33,6 @@ other-libraries:
 conclusion: 
   - quadrants
 
-
 other-tools: 
   - other_languages
   - browser_apis
@@ -51,11 +50,11 @@ opinions:
   - opinion-survey_too_long
 
 awards: 
-  - highest-satisfaction
-  - highest-interest
-  - most-used
-  - most-mentioned
-  # - most-dominant
-  # - most-improved
-  - prediction-award
-  - special-award
+  - highest_satisfaction
+  - highest_interest
+  - highest_usage
+  - most_mentioned
+  # - most_dominant
+  # - most_improved
+  - prediction
+  - special
