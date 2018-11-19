@@ -115,6 +115,7 @@ tools:
     brackets: Brackets
     nano: nano
     pycharm: PyCharm
+    vim: Vim
 
 tools_descriptions:
     angular: >
