@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { flatten, times } from 'lodash'
+import { StaticQuery, graphql } from 'gatsby'
 
 import periodicTableData from '../../data/periodic-table.yaml'
 import PeriodicTable from './PeriodicTable'
@@ -31,17 +32,26 @@ const PeriodicTableContainer = ({ data }) => {
 }
 
 PeriodicTableContainer.propTypes = {
-    data: PropTypes.object.isRequired, // provided by GraphQL data store (see `layouts/index.js`)
+    data: PropTypes.object.isRequired // provided by GraphQL data store (see `layouts/index.js`)
 }
 
-export default PeriodicTableContainer
+const PeriodicTableWithData = (props) => (
+    <StaticQuery
+        query={graphql`
+            query AllProjects {
+                allProject {
+                    edges {
+                        node {
+                            id
+                            stars
+                            name
+                        }
+                    }
+                }
+            }
+        `}
+        render={data => <PeriodicTableContainer {...props} data={data} />}
+    />
+)
 
-// used in layouts/index.js
-// eslint-disable-next-line no-undef
-export const periodicTableFragment = graphql`
-    fragment PeriodicTableFragment on Project {
-        id
-        stars
-        name
-    }
-`
+export default PeriodicTableWithData

@@ -1,17 +1,16 @@
 import React from 'react'
-import DocumentTitle from 'react-document-title'
 import Helmet from 'react-helmet'
+import '../stylesheets/screen.scss'
 
 import HomeLayout from '../components/HomeLayout'
 import classNames from 'classnames'
 
 export default class Layout extends React.Component {
     render() {
-        const title = DocumentTitle.peek()
         const description = 'The annual survey about current popular JavaScript technologies.'
         const url = 'http://stateofjs.com'
         const image = 'http://stateofjs.com/images/stateofjs2018-social-media.png'
-
+        const title = 'The State of JavaScript 2018'
         const meta = [
             { charset: 'utf-8' },
             { name: 'description', content: description },
@@ -33,33 +32,19 @@ export default class Layout extends React.Component {
 
         return (
             <div
-                className={classNames('outer-wrapper', {
-                    'home-wrapper': this.props.location.pathname === '/',
-                })}
+                className={classNames('outer-wrapper', 'home-wrapper')}
             >
                 <Helmet meta={meta}>
+                    <title>{title}</title>
                     <script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript" />
                 </Helmet>
                 <link
                     href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,500"
                     rel="stylesheet"
                 />
-                <HomeLayout {...this.props}>{this.props.children()}</HomeLayout>
+                <HomeLayout {...this.props}>{this.props.children}</HomeLayout>
 
             </div>
         )
     }
 }
-
-// eslint-disable-next-line no-undef
-export const query = graphql`
-  query AllProjects {
-    allProject {
-      edges {
-        node {
-          ...PeriodicTableFragment
-        }
-      }
-    }
-  }
-`

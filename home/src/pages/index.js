@@ -1,6 +1,4 @@
 import React from 'react'
-import DocumentTitle from 'react-document-title'
-import '../stylesheets/screen.scss'
 import ResultsComingSoon from '../components/ResultsComingSoon'
 import PreviousYears from '../components/PreviousYears'
 import Share from '../components/Share'
@@ -14,13 +12,14 @@ import Footer from '../components/Footer'
 // import Stats from '../components/common/Stats'
 // import Comments from '../components/common/Comments'
 // import Bubbles from '../components/Bubbles'
+import Layout from '../layouts/layout.js'
 
 const Index = () => (
-    <DocumentTitle title="The State Of JavaScript 2018">
+    <Layout>
         <div className="results-container content home">
             {/* <Bubbles /> */}
             <div className="intro section-narrow section-border">
-                <ResultsComingSoon/>
+                <ResultsComingSoon />
                 {/* <TakeSurvey /> */}
             </div>
             {/* <Stats /> */}
@@ -28,13 +27,13 @@ const Index = () => (
             <Share />
             {/* <Comments /> */}
             <div className="section block block--newsletter--home">
-                <NewsletterIntro/>
+                <NewsletterIntro />
                 <Newsletter />
             </div>
             <About />
-            <Footer/>
+            <Footer />
         </div>
-    </DocumentTitle>
+    </Layout>
 )
 
 export default Index

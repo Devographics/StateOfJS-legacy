@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Element = ({ id, name, symbol, stars, color }) => (
-    <a className="periodic-element" target="_blank" href={`https://bestofjs.org/projects/${id}`}>
+    <a className="periodic-element" target="_blank" rel="noopener noreferrer" href={`https://bestofjs.org/projects/${id}`}>
         <svg
             width="100"
             height="100"
