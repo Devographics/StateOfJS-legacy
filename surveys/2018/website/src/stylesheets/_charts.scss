@@ -202,6 +202,9 @@
         border-bottom: 180px solid transparent;
         position: relative;
         z-index: 1;
+        #text_editors &{ // hack to prevent border from overlapping resources
+            border-bottom: none;
+        }
     }
 }
 
