@@ -43,7 +43,8 @@ used to work on the project.
 > Please make sure to use yarn if you go for manual install
 as we only provide lock files for this tool.
 
-You have several options to install project dependencies, either by installing them manually via standard `yarn install` inside the various
+You have several options to install project dependencies, either by
+installing them manually via standard `yarn install` inside the various
 directories you're planning to work on, or by using custom make targets.
 
 Another option is to install all dependencies using the following command:
@@ -60,7 +61,7 @@ make survey_install_2018
 
 ### Coding style
 
-This project uses prettier which you can run using this command:
+This project uses prettier which can be run using this command:
 
 ```bash
 make fmt
