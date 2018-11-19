@@ -28,7 +28,7 @@ You also have a dedicated folder for the homepage `home`.
 
 ## Development
 
-If you're in a hurry, you can run `make`, it will list all the available commands
+If you're in a hurry, you can run `make`. It will list all the available commands
 used to work on the project.
 
 ### Requirements
@@ -43,9 +43,8 @@ used to work on the project.
 > Please make sure to use yarn if you go for manual install
 as we only provide lock files for this tool.
 
-You have several options to install project dependencies, you can either
-install them manually using standard `yarn install` inside the various
-directories you're planing to work on or use custom make targets.
+You have several options to install project dependencies, either by installing them manually via standard `yarn install` inside the various
+directories you're planning to work on, or by using custom make targets.
 
 Another option is to install all dependencies using the following command:
 
@@ -61,19 +60,19 @@ make survey_install_2018
 
 ### Coding style
 
-This project use prettier, which you can run using this command:
+This project uses prettier, which you can run using this command:
 
 ```bash
 make fmt
 ```
 
-There's another command which only check if the code was formatted as expected:
+There's another command which only checks if the code was formatted as expected:
 
 ```bash
 make fmt_check
 ```
 
-The project also uses eslint to enforce good practice and consistency,
+The project also uses ESLint to enforce good practice and consistency,
 the configuration is common to the whole project, to run it:
 
 ```bash
@@ -102,8 +101,9 @@ prior to running this command, using `make survey_dev_2018` for example.
 
 ### Build
 
-As for install, you have several ways to build the websites and homepage,
-you can build all using:
+As for install, you have several ways to build the websites and homepage.
+
+You can build all using:
 
 ```bash
 make build
