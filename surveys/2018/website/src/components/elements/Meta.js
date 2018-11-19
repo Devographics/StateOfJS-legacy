@@ -8,9 +8,7 @@ const Meta = ({ currentPage, properties = {} }) => {
     const url = properties.url || currentPage.url
     const image = properties.image || getImageUrl(currentPage)
     const metaTitle = properties.title || `State Of JavaScript Survey Results: ${currentPage.title}`
-    const metaDescription =
-        properties.description ||
-        `Find out which ${currentPage.label} tools and frameworks are the most popular.`
+    const metaDescription = properties.description || metaTitle
 
     const meta = [
         // facebook

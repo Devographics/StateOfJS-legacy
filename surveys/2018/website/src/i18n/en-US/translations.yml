@@ -122,7 +122,9 @@ tools_descriptions:
         this year on, we will not be making a distinction between Angular and Angular.js.
     es6: >
         ES6 and its descendants are the newer versions of JavaScript, usually run through Babel.
-
+    apollo: >
+        A fully-featured, production ready caching GraphQL client for every UI framework and GraphQL server.
+        
 opinions:
     legends:
         never_heard: I've never heard of it
