@@ -59,7 +59,7 @@ export const Facebook = ({ link, page, chartId }) => {
         <a
             onClick={trackShare('Facebook', page, chartId)}
             className="share__link--facebook share__link"
-            href={`https://facebook.com/sharer/sharer.php?u=${encodeURIComponent(link)}`}
+            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(link)}`}
             target="_blank"
             rel="noopener noreferrer"
             aria-label=""
