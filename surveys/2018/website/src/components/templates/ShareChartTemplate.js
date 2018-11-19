@@ -10,6 +10,7 @@ import withPageData from '../../helpers/withPageData'
 import getImageUrl from '../../helpers/getImageUrl'
 import { getWording } from '../../helpers/wording'
 import { Redirect } from '@reach/router'
+import { stripMarkdown } from '../../helpers/stripMarkdown'
 
 class ShareChartTemplate extends Component {
     render() {
@@ -17,7 +18,7 @@ class ShareChartTemplate extends Component {
         const { chart } = pageContext
         const wordingValues = currentPage.subSection && { tool: currentPage.subSection.label }
         const title = getWording(`charts.${chart}`, wordingValues) + ' #StateOfJS'
-        const description = getWording(`charts_descriptions.${chart}`, wordingValues, title)
+        const description = stripMarkdown(getWording(`charts_descriptions.${chart}`, wordingValues, title))
         const metaProperties = {
             url: `${currentPage.url}${chart}`,
             image: getImageUrl(currentPage, chart),
