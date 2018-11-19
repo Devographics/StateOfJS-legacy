@@ -60,7 +60,7 @@ make survey_install_2018
 
 ### Coding style
 
-This project uses prettier, which you can run using this command:
+This project uses prettier which you can run using this command:
 
 ```bash
 make fmt
