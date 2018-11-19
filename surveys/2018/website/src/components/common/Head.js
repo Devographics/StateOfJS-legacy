@@ -25,9 +25,6 @@ const Head = ({ title, currentPage }) => {
         { name: 'twitter:image:src', content: image },
         { name: 'twitter:title', content: title },
         { name: 'twitter:description', content: description },
-
-        // eslint-disable-next-line react/jsx-key
-        <script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript" />
     ]
 
     return (
@@ -35,6 +32,7 @@ const Head = ({ title, currentPage }) => {
             <html lang="en" />
             <title>{pageTitle}</title>
             <link rel="shortcut icon" href="/images/favicon.png" />
+            <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/>
             <link
                 href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,600"
                 rel="stylesheet"
