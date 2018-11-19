@@ -125,7 +125,9 @@ tools_descriptions:
         ES6 and its descendants are the newer versions of JavaScript, usually run through Babel.
     apollo: >
         A fully-featured, production ready caching GraphQL client for every UI framework and GraphQL server.
-        
+    native-apps: >
+        The majority of mobile and desktop apps are still built with native languages like Java, Kotlin, Objective-C, or Swift.
+
 opinions:
     legends:
         never_heard: I've never heard of it
