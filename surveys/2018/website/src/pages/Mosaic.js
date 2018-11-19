@@ -264,7 +264,7 @@ const Mosaic = () => (
     <div className="mosaic">
         {images.map(image => (
             <div className="mosaic__image">
-                <img src={`/images/captures/${image}`} alt="capture"/>
+                <img src={`/images/captures/${image}`} alt="capture" />
             </div>
         ))}
     </div>
