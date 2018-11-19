@@ -1,6 +1,6 @@
 In the good old days, things were simple. Your data lived in your database, where the server could fetch it, plop it into a template, and send the whole thing down to the client. 
 
-But things are not so simple anymore. Today, apps need to know how to fetch data themsevles in order to render out their own templates and components. This has given rise to a whole range of data fetching and data management tools. 
+But things are not so simple anymore. Today, apps need to know how to fetch data themselves in order to render their own templates and components. This has given rise to a whole range of data fetching and data management tools. 
 
 **Redux** is without a doubt the most widespread of these tools, and its 82% satisfaction rate is a testament to how well-regarded it has become. 
 
