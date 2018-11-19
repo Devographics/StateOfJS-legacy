@@ -127,7 +127,11 @@ tools_descriptions:
         A fully-featured, production ready caching GraphQL client for every UI framework and GraphQL server.
     native-apps: >
         The majority of mobile and desktop apps are still built with native languages like Java, Kotlin, Objective-C, or Swift.
-
+    phonegap-cordova: >
+        Apache Cordova is a mobile application development framework.
+    storybook: >
+        The UI Development Environment you'll ♥️ to use.
+        
 opinions:
     legends:
         never_heard: I've never heard of it
