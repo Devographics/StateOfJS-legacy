@@ -61,3 +61,8 @@
         color: $lightgrey;
     }
 }
+
+// hack to avoid having border-bottom block share buttons
+.block--othersbar{
+    margin-bottom: $spacing*10;
+}
