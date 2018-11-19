@@ -48,9 +48,10 @@ module.exports = async ({ baseUrl, outputDir, nav, charts }) => {
         throw new Error(`'${outputDir}' is not a valid directory`)
     }
 
-    const browser = await puppeteer.launch({ headless: true, slowMo: 250 })
+    const browser = await puppeteer.launch({ headless: false, slowMo: 50 })
     const page = await browser.newPage()
-    await page.setViewport({ width: 1400, height: 10000 })
+    await page.setViewport({ width: 1400, height: 10000, deviceScaleFactor: 2 })
+    await page.emulateMedia('screen')
 
     for (let section of nav) {
         const sectionId = section.id
