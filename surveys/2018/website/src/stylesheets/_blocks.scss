@@ -29,6 +29,7 @@
     align-items: center;
     @include small {
         justify-content: space-between;
+        overflow: hidden; // make sure share options don't push past viewport limits
     }
 }
 
