@@ -187,6 +187,9 @@ $intropadding: $spacing;
       position: relative;
     }
   }
+  .view-results{
+    bottom: -47px;
+  }
   .leave-email{
     bottom: -70px;
     @include small{
