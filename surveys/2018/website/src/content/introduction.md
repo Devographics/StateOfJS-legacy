@@ -1,4 +1,4 @@
-<span class="first-line"><span class="first-letter">JavaScript</span> is always changing.</span> New libraries, new frameworks, new languages… It's part of the fun, but it can also feel overhwelming sometimes. 
+<span class="first-line"><span class="first-letter">JavaScript</span> is always changing.</span> New libraries, new frameworks, new languages… It's part of the fun, but it can also feel overwhelming sometimes. 
 
 That's where the State of JavaScript survey comes in: this year, we surveyed over 20,000 JavaScript developers to figure out what they're using, what they're happy with, and what they want to learn. And the result is a unique collection of stats and insights that will hopefully help you make your own way through the JavaScript ecosystem. 
 
@@ -18,7 +18,7 @@ Just like JavaScript, the survey itself has been changing too. Here's what's new
 
 We figure a lot of you are checking out this survey to help you figure out what to learn next. So we've included links to useful JavaScript resources throughout the survey to help point you in the right direction. 
 
-Full disclosure: some of them are paid sponsorships, but no matter what they're all high quality resources from people we know and respect who have decided to support our project. 
+Full disclosure: some of them are paid sponsorships, but no matter what they're all high-quality resources from people we know and respect who have decided to support our project. 
 
 ### Team
 
