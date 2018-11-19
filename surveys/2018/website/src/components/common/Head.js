@@ -32,6 +32,7 @@ const Head = ({ title, currentPage }) => {
 
     return (
         <Helmet meta={meta} defaultTitle={pageTitle}>
+            <html lang="en" />
             <title>{pageTitle}</title>
             <link rel="shortcut icon" href="/images/favicon.png" />
             <link
