@@ -13,6 +13,8 @@ env:
 
 globals:
   __PREFIX_LINKS__: true
+  document: true
+  fetch: true
 
 settings:
   react:

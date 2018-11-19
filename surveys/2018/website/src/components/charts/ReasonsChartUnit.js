@@ -83,6 +83,7 @@ export default class ReasonsChartUnit extends Component {
         const { current } = this.state
         const labelsWidth = this.isMobile() ? shortLabelsWidth : fullLabelsWidth
 
+        /* eslint-disable indent */
         return (
             <div
                 className={`

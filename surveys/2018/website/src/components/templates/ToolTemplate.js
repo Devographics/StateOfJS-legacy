@@ -37,7 +37,7 @@ const ToolTemplate = ({ pageContext, data, ...rest }) => {
                 ) : (
                     <p className="block tool-over-time-no-data" id="results-over-time">
                         Sorry, we don&apos;t have enough data to display the evolution of this
-                        library's popularity over time.
+                        library&#39;s popularity over time.
                     </p>
                 )}
                 <ReasonsBlock

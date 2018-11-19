@@ -10,7 +10,6 @@ const PeriodicElement = ({
     symbol,
     number,
     background,
-    borderColor,
     color = defaultColor,
     mode = 'standalone',
     size,
