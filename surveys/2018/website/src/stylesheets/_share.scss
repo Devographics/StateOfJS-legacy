@@ -55,13 +55,16 @@
         pointer-events: auto;
         @include small {
             &.share__link--twitter {
-                transform: translateX(-580%) scale(1);
+                transform: translateX(-760%) scale(1);
             }
             &.share__link--facebook {
-                transform: translateX(-480%) scale(1);
+                transform: translateX(-660%) scale(1);
+            }
+            &.share__link--linkedin {
+                transform: translateX(-560%) scale(1);
             }
             &.share__link--email {
-                transform: translateX(-360%) scale(1);
+                transform: translateX(-460%) scale(1);
             }
         }
         @include medium-large {
@@ -71,8 +74,11 @@
             &.share__link--facebook {
                 transform: translateX(320%) scale(1);
             }
-            &.share__link--email {
+            &.share__link--linkedin {
                 transform: translateX(390%) scale(1);
+            }
+            &.share__link--email {
+                transform: translateX(460%) scale(1);
             }
         }
     }

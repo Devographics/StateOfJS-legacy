@@ -21,11 +21,6 @@ export default Awards
 
 export const query = graphql`
     query {
-        file(name: { eq: "conclusion-conclusion" }) {
-            childMarkdownRemark {
-                html
-            }
-        }
         awards: allAwardsYaml(filter: { type: { ne: null } }) {
             edges {
                 node {

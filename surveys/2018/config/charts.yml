@@ -55,7 +55,7 @@ awards:
   - highest-interest
   - most-used
   - most-mentioned
-  - most-dominant
-  - most-improved
+  # - most-dominant
+  # - most-improved
   - prediction-award
   - special-award
