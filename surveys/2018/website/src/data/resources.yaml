@@ -61,5 +61,7 @@
 - name: Become a VSCode Power User
   tool: editors
   url: https://a.paddle.com/v2/click/16413/37044?link=1227
-  description: After 10 years with Sublime Text, I switched to VSCode. I've spent over a 1,000 hours perfecting my setup to help you switch today, too.
+  description: >
+    After 10 years with Sublime, I switched to VSCode.
+    I’ve spent over a 1,000 hours perfecting my dev-setup to help you switch today. In this premium video course, I’ll turn you into a VSCode.pro
   image: vscodepro.png
