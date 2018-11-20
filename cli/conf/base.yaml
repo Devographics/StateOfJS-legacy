@@ -2,7 +2,9 @@ elastic:
   host:  localhost
   port:  9200
   log:   warning
-  index: soj
+  indices:
+    norm: soj_normalized
+    raw: soj_raw
 
 typeform:
   token: EjgEahVHbf3ttJhHJuAFJVAnNAbUipmfquAUDCijz6Ly

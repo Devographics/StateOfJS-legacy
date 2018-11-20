@@ -9,14 +9,9 @@ const surveys = require('./conf/surveys')
 
 const run = async () => {
     try {
-        console.log(chalk.yellow('initializing elastic index'))
-        try {
-            await elastic.deleteIndex()
-        } catch (err) {
-            // error occurs if the index doesn't exist,
-            // which is the case on init
-        }
-        await elastic.createIndex()
+        console.log(chalk.yellow('initializing elastic indices'))
+        await elastic.recreateIndex(config.get('elastic.indices.raw'))
+        await elastic.recreateIndex(config.get('elastic.indices.norm'))
 
         for (let survey of surveys) {
             console.log(`\nfetching results for survey: ${survey.id}`)
@@ -35,7 +30,8 @@ const run = async () => {
                 count += items.length
                 console.log(`> ${count}/${total}`)
 
-                await elastic.bulk('response', items)
+                await elastic.bulk(config.get('elastic.indices.raw'), 'response', items.map(item => item.raw))
+                await elastic.bulk(config.get('elastic.indices.norm'), 'response', items.map(item => item.normalized))
             })
         }
     } catch (err) {

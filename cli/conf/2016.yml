@@ -3,228 +3,452 @@ extractor: typeform
 typeform:
     id: Mulmxw
     fields:
+        '28238416':
+            slug: java_script_flavor
+            typeform_type: group
+        '28238417':
+            slug: front_end
+            typeform_type: group
+        '28238418':
+            slug: state_management
+            typeform_type: group
+        '28238419':
+            slug: api_layer
+            typeform_type: group
+        '28238420':
+            slug: stacks
+            typeform_type: group
+        '28238421':
+            slug: testing
+            typeform_type: group
+        '28238422':
+            slug: css
+            typeform_type: group
+        '28238423':
+            slug: build_tools
+            typeform_type: group
+        '28238424':
+            slug: mobile
+            typeform_type: group
+        '28238425':
+            slug: features
+            typeform_type: group
+        '28238426':
+            slug: opinion_questions
+            typeform_type: group
+        '28238427':
+            slug: about_you
+            typeform_type: group
         '28238431':
+            slug: java_script_flavor_good_old_plain_java_script
+            typeform_type: multiple_choice
             type: tool
             tool: vanilla-js
+        '28238483':
+            slug: features_server_side_rendering
+            typeform_type: multiple_choice
+        '28238484':
+            slug: features_code_splitting
+            typeform_type: multiple_choice
+        '28238485':
+            slug: features_optimistic_updates
+            typeform_type: multiple_choice
+        '28238486':
+            slug: features_hot_module_reloading
+            typeform_type: multiple_choice
+        '28238487':
+            slug: features_time_travel_debugging
+            typeform_type: multiple_choice
+        '28238488':
+            slug: features_real_time_operations
+            typeform_type: multiple_choice
+        '28238489':
+            slug: features_dead_code_elimination
+            typeform_type: multiple_choice
+        '28238490':
+            slug: features_progressive_enhancement
+            typeform_type: multiple_choice
         '28238491':
+            slug: about_you_years_of_experience
+            typeform_type: multiple_choice
             type: years_of_experience
         '28238492':
+            slug: about_you_company_size
+            typeform_type: multiple_choice
             type: company_size
         '28238493':
+            slug: about_you_yearly_salary
+            typeform_type: multiple_choice
             type: salary
+        '28238494':
+            slug: about_you_favorite_text_editor
+            typeform_type: multiple_choice
+        '28238495':
+            slug: about_you_tabs_or_spaces
+            typeform_type: multiple_choice
         '28238496':
+            slug: java_script_flavor_on_a_scale_of_one_to_five_dogs_how_happy_are_you_with_your_current_flavor_of_java_script
+            typeform_type: rating
             type: happiness
             section: javascript-flavors
         '28238497':
+            slug: front_end_on_a_scale_of_one_to_five_cats_how_happy_are_you_with_your_current_solution_for_the_front_end
+            typeform_type: rating
             type: happiness
             section: front-end-frameworks
         '28238498':
+            slug: state_management_on_a_scale_of_one_to_five_thunderbolts_how_happy_are_you_with_your_current_solution_for_state_management
+            typeform_type: rating
             type: happiness
             section: state-management
         '28238499':
+            slug: api_layer_on_a_scale_of_one_to_five_crowns_how_happy_are_you_with_your_current_solution_for_the_api_layer
+            typeform_type: rating
             type: happiness
             section: data-layer
         '28238500':
+            slug: stacks_on_a_scale_of_one_to_five_trophies_how_happy_are_you_with_your_current_full_stack_solution
+            typeform_type: rating
             type: happiness
             section: back-end-frameworks
         '28238501':
+            slug: testing_on_a_scale_of_one_to_five_severed_hands_how_happy_are_you_with_the_current_state_of_java_script_testing
+            typeform_type: rating
             type: happiness
             section: testing
         '28238502':
+            slug: css_on_a_scale_of_one_to_five_lightbulbs_how_happy_are_you_with_the_current_state_of_css
+            typeform_type: rating
             type: happiness
             section: css
         '28238503':
+            slug: build_tools_on_a_scale_of_one_to_five_droplets_how_happy_are_you_with_the_current_state_of_build_tools
+            typeform_type: rating
             type: happiness
             section: build-tools
         '28238504':
+            slug: mobile_on_a_scale_of_one_to_five_pencils_how_happy_are_you_with_the_current_state_of_mobile_apps
+            typeform_type: rating
             type: happiness
             section: mobile-and-desktop
         '28238505':
+            slug: front_end_other_front_end_frameworks
+            typeform_type: long_text
             type: section_other_tools
             section: front-end-frameworks
         '28238506':
+            slug: state_management_other_state_management_libraries
+            typeform_type: long_text
             type: section_other_tools
             section: state-management
         '28238507':
+            slug: api_layer_other_api_layer_solutions
+            typeform_type: long_text
             type: section_other_tools
             section: data-layer
         '28238508':
+            slug: stacks_other_stacks
+            typeform_type: long_text
             type: section_other_tools
             section: back-end-frameworks
         '28238509':
+            slug: testing_other_testing_frameworks
+            typeform_type: long_text
             type: section_other_tools
             section: testing
         '28238510':
+            slug: css_other_css_solutions
+            typeform_type: long_text
             type: section_other_tools
             section: css
         '28238511':
+            slug: build_tools_other_build_tools
+            typeform_type: long_text
             type: section_other_tools
             section: build-tools
         '28238512':
+            slug: mobile_other_mobile_apps_solutions
+            typeform_type: long_text
             type: section_other_tools
             section: mobile-and-desktop
+        '28238513':
+            slug: features_other_features
+            typeform_type: long_text
+        '28238514':
+            slug: about_you_other_comments
+            typeform_type: long_text
         '28238515':
+            slug: opinion_questions_java_script_is_moving_in_the_right_direction
+            typeform_type: opinion_scale
             type: global_opinion
             subject: js_moving_in_right_direction
         '28238516':
+            slug: opinion_questions_building_java_script_apps_is_overly_complex_right_now
+            typeform_type: opinion_scale
             type: global_opinion
             subject: building_js_apps_overly_complex
         '28238517':
+            slug: opinion_questions_java_script_is_over_used_online
+            typeform_type: opinion_scale
             type: global_opinion
             subject: js_over_used_online
         '28238518':
+            slug: opinion_questions_i_enjoy_building_java_script_apps
+            typeform_type: opinion_scale
             type: global_opinion
             subject: enjoy_building_js_apps
         '28238519':
+            slug: opinion_questions_i_would_like_java_script_to_be_my_main_programming_language
+            typeform_type: opinion_scale
             type: global_opinion
             subject: would_like_js_to_be_main_lang
         '28238520':
+            slug: opinion_questions_the_java_script_ecosystem_is_changing_too_fast
+            typeform_type: opinion_scale
             type: global_opinion
             subject: js_ecosystem_changing_to_fast
         '28238521':
+            slug: opinion_questions_this_survey_is_too_damn_long
+            typeform_type: opinion_scale
             type: global_opinion
             subject: survey_too_long
         '28238522':
+            slug: about_you_your_email
+            typeform_type: email
             type: email
         '28238719':
+            slug: java_script_flavor_es_6
+            typeform_type: multiple_choice
             type: tool
             tool: es6
         '28238720':
+            slug: java_script_flavor_coffee_script
+            typeform_type: multiple_choice
             type: tool
             tool: coffeescript
         '28238721':
+            slug: java_script_flavor_type_script
+            typeform_type: multiple_choice
             type: tool
             tool: typescript
         '28238738':
+            slug: java_script_flavor_elm
+            typeform_type: multiple_choice
             type: tool
             tool: elm
         '28238739':
+            slug: java_script_flavor_clojure_script
+            typeform_type: multiple_choice
             type: tool
             tool: clojurescript
         '28238773':
+            slug: front_end_no_front_end_framework
+            typeform_type: multiple_choice
             type: tool
             tool: no-frontend-framework
         '28238785':
+            slug: front_end_react
+            typeform_type: multiple_choice
             type: tool
             tool: react
         '28238795':
+            slug: front_end_angular
+            typeform_type: multiple_choice
             type: tool
             tool: angular
         '28238797':
+            slug: front_end_angular_2
+            typeform_type: multiple_choice
             type: tool
             tool: angular
         '28238799':
+            slug: front_end_ember
+            typeform_type: multiple_choice
             type: tool
             tool: ember
         '28238803':
+            slug: front_end_vue
+            typeform_type: multiple_choice
             type: tool
             tool: vuejs
         '28238804':
+            slug: front_end_backbone
+            typeform_type: multiple_choice
             type: tool
             tool: backbone
         '28238860':
+            slug: state_management_redux
+            typeform_type: multiple_choice
             type: tool
             tool: redux
         '28238867':
+            slug: state_management_mob_x
+            typeform_type: multiple_choice
             type: tool
             tool: mobx
         '28238869':
+            slug: state_management_relay
+            typeform_type: multiple_choice
             type: tool
             tool: relay
         '28238888':
+            slug: api_layer_custom_rest_api
+            typeform_type: multiple_choice
             type: tool
             tool: rest
         '28238894':
+            slug: api_layer_firebase
+            typeform_type: multiple_choice
             type: tool
             tool: firebase
         '28238899':
+            slug: api_layer_graph_ql
+            typeform_type: multiple_choice
             type: tool
             tool: graphql
         '28238903':
+            slug: api_layer_apollo
+            typeform_type: multiple_choice
             type: tool
             tool: apollo
         '28238920':
+            slug: api_layer_falcor
+            typeform_type: multiple_choice
             type: tool
             tool: falcor
         '28238921':
+            slug: api_layer_horizon
+            typeform_type: multiple_choice
             type: tool
             tool: horizon
         '28238966':
+            slug: stacks_meteor
+            typeform_type: multiple_choice
             type: tool
             tool: meteor
         '28238968':
+            slug: stacks_feathers_js
+            typeform_type: multiple_choice
             type: tool
             tool: feathers
         '28238969':
+            slug: stacks_done_js
+            typeform_type: multiple_choice
             type: tool
             tool: donejs
         '28238971':
+            slug: stacks_mern
+            typeform_type: multiple_choice
             type: tool
             tool: mern
         '28238972':
+            slug: stacks_mean
+            typeform_type: multiple_choice
             type: tool
             tool: mean
         '28238982':
+            slug: testing_mocha
+            typeform_type: multiple_choice
             type: tool
             tool: mocha
         '28239000':
+            slug: testing_jasmine
+            typeform_type: multiple_choice
             type: tool
             tool: jasmine
         '28239005':
+            slug: testing_enzyme
+            typeform_type: multiple_choice
             type: tool
             tool: enzyme
         '28239015':
+            slug: testing_cucumber
+            typeform_type: multiple_choice
             type: tool
             tool: cucumberjs
         '28239020':
+            slug: testing_ava
+            typeform_type: multiple_choice
             type: tool
             tool: ava
         '28239049':
+            slug: testing_jest
+            typeform_type: multiple_choice
             type: tool
             tool: jest
         '28239069':
+            slug: css_plain_css
+            typeform_type: multiple_choice
             type: tool
             tool: plain-css
         '28239074':
+            slug: css_sass_scss
+            typeform_type: multiple_choice
             type: tool
             tool: sass
         '28239081':
+            slug: css_less
+            typeform_type: multiple_choice
             type: tool
             tool: less
         '28239083':
+            slug: css_css_modules
+            typeform_type: multiple_choice
             type: tool
             tool: css-modules
         '28239098':
+            slug: css_aphrodite
+            typeform_type: multiple_choice
             type: tool
             tool: aphrodite
         '28239116':
+            slug: build_tools_webpack
+            typeform_type: multiple_choice
             type: tool
             tool: webpack
         '28239129':
+            slug: build_tools_bower
+            typeform_type: multiple_choice
             type: tool
             tool: bower
         '28239144':
+            slug: build_tools_browserify
+            typeform_type: multiple_choice
             type: tool
             tool: browserify
         '28239145':
+            slug: build_tools_gulp
+            typeform_type: multiple_choice
             type: tool
             tool: gulp
         '28239146':
+            slug: build_tools_grunt
+            typeform_type: multiple_choice
             type: tool
             tool: grunt
         '28239233':
+            slug: mobile_native_apps
+            typeform_type: multiple_choice
             type: tool
             tool: native-apps
         '28239235':
+            slug: mobile_cordova
+            typeform_type: multiple_choice
             type: tool
             tool: cordova
         '28239238':
+            slug: mobile_react_native
+            typeform_type: multiple_choice
             type: tool
             tool: react-native
         '28239249':
+            slug: mobile_phone_gap
+            typeform_type: multiple_choice
             type: tool
             tool: phonegap
         '28239251':
+            slug: mobile_native_script
+            typeform_type: multiple_choice
             type: tool
             tool: nativescript
 sections:

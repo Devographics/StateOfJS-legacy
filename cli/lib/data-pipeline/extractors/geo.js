@@ -39,7 +39,7 @@ const countriesPostNormalization = {
     'Viet Nam': 'Vietnam',
     'Iran (Islamic Republic of)': 'Iran',
     'Tanzania, United Republic of': 'Tanzania',
-    'United Kingdom of Great Britain and Northern Ireland': 'England'
+    'United Kingdom of Great Britain and Northern Ireland': 'UK'
 }
 
 let countriesCache = {}

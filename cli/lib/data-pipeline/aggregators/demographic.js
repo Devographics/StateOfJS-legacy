@@ -1,3 +1,4 @@
+const config = require('@ekino/config')
 const elastic = require('../loaders/elastic')
 const constants = require('../../../conf/constants')
 
@@ -5,7 +6,7 @@ exports.salaryAndCompanySizeAndYearsOfExperienceByLocationForSurvey = async (
     locationType,
     survey
 ) => {
-    const result = await elastic.search({
+    const result = await elastic.search(config.get('elastic.indices.norm'), {
         size: 0,
         body: {
             query: {
@@ -72,7 +73,7 @@ exports.salaryAndCompanySizeAndYearsOfExperienceByLocationForSurvey = async (
 }
 
 exports.participationByLocation = async locationType => {
-    const result = await elastic.aggs({
+    const result = await elastic.aggs(config.get('elastic.indices.norm'), {
         by_survey: {
             terms: {
                 field: 'survey.keyword'
@@ -108,7 +109,7 @@ exports.participationByContinent = async () => exports.participationByLocation('
 exports.participationByCountry = async () => exports.participationByLocation('country')
 
 exports.genderBreakdown = async () => {
-    const result = await elastic.aggs({
+    const result = await elastic.aggs(config.get('elastic.indices.norm'), {
         by_survey: {
             terms: {
                 field: 'survey.keyword'
@@ -148,7 +149,7 @@ exports.genderBreakdown = async () => {
  * - company_size
  */
 exports.userInfoAggs = async (aggType, averages) => {
-    const result = await elastic.aggs({
+    const result = await elastic.aggs(config.get('elastic.indices.norm'), {
         by_survey: {
             terms: {
                 field: 'survey.keyword'

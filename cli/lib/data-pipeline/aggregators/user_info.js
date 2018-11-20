@@ -1,7 +1,8 @@
+const config = require('@ekino/config')
 const elastic = require('../loaders/elastic')
 
 exports.salary = async () => {
-    const result = await elastic.aggs({
+    const result = await elastic.aggs(config.get('elastic.indices.norm'), {
         salary: {
             terms: {
                 field: 'user_info.salary.keyword'
@@ -31,7 +32,7 @@ exports.salary = async () => {
 }
 
 exports.yearsOfExperience = async () => {
-    const result = await elastic.aggs({
+    const result = await elastic.aggs(config.get('elastic.indices.norm'), {
         years_of_experience: {
             terms: {
                 field: 'user_info.years_of_experience.keyword'
@@ -61,7 +62,7 @@ exports.yearsOfExperience = async () => {
 }
 
 exports.companySize = async () => {
-    const result = await elastic.aggs({
+    const result = await elastic.aggs(config.get('elastic.indices.norm'), {
         company_size: {
             terms: {
                 field: 'user_info.company_size.keyword'

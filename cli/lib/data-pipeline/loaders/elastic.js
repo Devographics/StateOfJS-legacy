@@ -12,14 +12,11 @@ const index = config.get('elastic.index')
 
 exports.client = client
 
-exports.createIndex = async () => client.indices.create({ index })
+exports.createIndex = async index => client.indices.create({ index })
 
-exports.deleteIndex = async () => client.indices.delete({ index })
+exports.deleteIndex = async index => client.indices.delete({ index })
 
-exports.putMapping = async (type, mapping) =>
-    client.indices.putMapping({ index, type, body: mapping })
-
-exports.bulk = async (type, items) => {
+exports.bulk = async (index, type, items) => {
     return client.bulk({
         body: items.reduce((acc, item) => {
             acc.push({
@@ -35,9 +32,9 @@ exports.bulk = async (type, items) => {
     })
 }
 
-exports.search = async query => client.search({ index, ...query })
+exports.search = async (index, query) => client.search({ index, ...query })
 
-exports.aggs = async aggs => {
+exports.aggs = async (index, aggs) => {
     return client.search({
         index,
         size: 0,
@@ -46,4 +43,14 @@ exports.aggs = async aggs => {
             aggs
         }
     })
+}
+
+exports.recreateIndex = async index => {
+    try {
+        await exports.deleteIndex(index)
+    } catch (err) {
+        // error occurs if the index doesn't exist,
+        // which is the case on init
+    }
+    await exports.createIndex(index)
 }

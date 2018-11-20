@@ -151,7 +151,7 @@ would_use_by_country:
             percentage: 6
             delta_from_average: -0.2
         -
-            country: England
+            country: UK
             total: 765
             count: 79
             percentage: 10.3

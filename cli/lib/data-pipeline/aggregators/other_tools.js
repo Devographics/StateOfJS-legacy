@@ -1,3 +1,4 @@
+const config = require('@ekino/config')
 const elastic = require('../loaders/elastic')
 
 exports.otherToolsForSurvey = async surveyConfig => {
@@ -30,7 +31,7 @@ exports.otherToolsForSurvey = async surveyConfig => {
         )
     }
 
-    const result = await elastic.search({
+    const result = await elastic.search(config.get('elastic.indices.norm'), {
         size: 0,
         body
     })

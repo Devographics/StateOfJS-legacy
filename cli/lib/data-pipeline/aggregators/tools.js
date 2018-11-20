@@ -1,9 +1,11 @@
+const config = require('@ekino/config')
 const elastic = require('../loaders/elastic')
 const personalInfo = require('../../../conf/user_info')
 const util = require('./util')
 
-exports.experiences = async (tools, surveys, config) => {
+exports.experiences = async (tools, surveys, conf) => {
     const result = await elastic.aggs(
+        config.get('elastic.indices.norm'),
         tools.reduce(
             (acc, tool) => ({
                 ...acc,
@@ -39,7 +41,7 @@ exports.experiences = async (tools, surveys, config) => {
         )
 
         const bySurvey = []
-        const appearsInSurveys = surveys.filter(s => config[s].tools.includes(tool))
+        const appearsInSurveys = surveys.filter(s => conf[s].tools.includes(tool))
         appearsInSurveys.forEach(survey => {
             let total = 0
             const counts = toolAgg.buckets.reduce((acc, bucket) => {
@@ -87,8 +89,9 @@ exports.experiences = async (tools, surveys, config) => {
     return toolsAggs
 }
 
-exports.experience = async (tools, surveys, config, experienceId) => {
+exports.experience = async (tools, surveys, conf, experienceId) => {
     const result = await elastic.aggs(
+        config.get('elastic.indices.norm'),
         tools.reduce(
             (acc, tool) => ({
                 ...acc,
@@ -183,7 +186,7 @@ exports.experience = async (tools, surveys, config, experienceId) => {
         })
         bySalary.all = util.computePercentageForKeys(bySalary.all, salaryRanges)
 
-        const appearsInSurveys = surveys.filter(s => config[s].tools.includes(tool))
+        const appearsInSurveys = surveys.filter(s => conf[s].tools.includes(tool))
         appearsInSurveys.forEach(survey => {
             const yearsOfExperienceAgg = {}
             yearsOfExperienceRanges.forEach(yearsOfExperienceRange => {
@@ -240,6 +243,7 @@ exports.experience = async (tools, surveys, config, experienceId) => {
  */
 exports.reasons = async tools => {
     const result = await elastic.aggs(
+        config.get('elastic.indices.norm'),
         tools.reduce(
             (acc, tool) => ({
                 ...acc,
@@ -285,6 +289,7 @@ exports.reasons = async tools => {
 
 exports.opinionByLocation = async (tools, opinion, locationType) => {
     const result = await elastic.aggs(
+        config.get('elastic.indices.norm'),
         tools.reduce(
             (acc, tool) => ({
                 ...acc,
@@ -391,7 +396,7 @@ exports.toolsPairingByOpinionForSurvey = async (tools, opinion, _sections, surve
         }
     }
 
-    const toolsTotalOpinionResult = await elastic.search({
+    const toolsTotalOpinionResult = await elastic.search(config.get('elastic.indices.norm'), {
         size: 0,
         body: {
             query: surveyQuery,
@@ -441,7 +446,7 @@ exports.toolsPairingByOpinionForSurvey = async (tools, opinion, _sections, surve
         }, {})
     }
 
-    const result = await elastic.search({ size: 0, body })
+    const result = await elastic.search(config.get('elastic.indices.norm'), { size: 0, body })
 
     return Object.keys(result.aggregations).reduce((acc, tool) => {
         const toolAggs = result.aggregations[tool]
