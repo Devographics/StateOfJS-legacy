@@ -10,7 +10,7 @@ const util = require('./util')
 const TYPEFORM_FIELD_TYPE_MULTI_CHOICE = 'multiple_choice'
 const TYPEFORM_FIELD_TYPE_RATING = 'rating'
 
-const BATCH_SIZE = 1000
+const BATCH_SIZE = 500
 
 const toolNormalizer = util.uniNormalizer(tools)
 const otherToolsExtractor = util.multiNormalizer(tools)
@@ -509,7 +509,7 @@ class TypeformExtractor {
                     break
 
                 case 'email':
-                    result[field.slug] = answer.email
+                    // result[field.slug] = answer.email
                     break
 
                 case 'text':
