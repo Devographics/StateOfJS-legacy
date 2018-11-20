@@ -1,6 +1,7 @@
 import React from 'react'
 import bowser from 'bowser'
 import ReactGA from 'react-ga'
+import T from '../helpers/translator'
 
 export default class TakeSurvey extends React.Component {
     constructor() {
@@ -66,12 +67,11 @@ export default class TakeSurvey extends React.Component {
                         this.state.device
                     }&gaid=${this.state.gaId}`}
                 >
-                    Take Survey
+                    {T.translate('components.takesurvey.link')}
                 </a>
 
                 <p className="take-survey-note">
-                    Note: to improve results relevance, we keep track of data such as your referrer,
-                    location, device, browser, and OS.
+                    {T.translate('components.takesurvey.note')}
                 </p>
             </div>
         )

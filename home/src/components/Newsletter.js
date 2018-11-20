@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ReactGA from 'react-ga'
 import fetch from 'isomorphic-fetch'
+import T from '../helpers/translator'
 
 const postUrl =
     'https://emailoctopus.com/lists/463dc2a9-b2ff-11e8-a3c9-06b79b628af2/members/embedded/1.3/add'
@@ -77,7 +78,7 @@ export default class Newsletter extends Component {
                             id="field_0"
                             name="field_0"
                             type="email"
-                            placeholder="Your Email"
+                            placeholder={T.translate('components.newsletter.email')}
                             onChange={this.handleChange}
                             value={email}
                             disabled={loading}

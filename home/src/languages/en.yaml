@@ -1,0 +1,65 @@
+components:
+  about:
+    madeby:
+      "StateOfJS is Made by:"
+  bubbles:
+    bubble-great:
+      "JavaScript is great!"
+    bubble-mess:
+      "JavaScript is great!"
+  comments:
+    heading:
+      "Random Comments"
+  footer:
+    text: 
+      "Hand-coded in Osaka, Japan with"
+    extra:
+      "Extra data from"
+    issue:
+      "Leave an issue"
+    get-in-touch:
+      "Get in touch"
+  intro:
+    heading:
+      "The JavaScript world could use a bit of classification."
+    row1:
+      "In 2017 this survey helped us do just that, by collecting data from over 20,000 developers to identify current and upcoming trends."
+    row2:
+      "This year, we’re asking for your help once more to find out which libraries developers want to learn next, which have the best satisfaction ratings, and much more."
+  newsletter:
+    email:
+      "Your Email"
+  newsletterintro:
+    title:
+      "Stay Tuned"
+    text:
+      "Leave us your email and we'll let you know when next year's survey comes out."
+  previousyears:
+    text:
+      "Previous Years:"
+  resultscomingsoon:
+    row1:
+      "We’ve collected data from over 20,000 developers, asking them questions on topics ranging from front-end frameworks to testing libraries and more."
+    row2:
+      "We’re now processing the data. Leave us your email below if you’d like to know as soon as the results are published."
+  share:
+    heading:
+      "Help Spread the Word!"
+    twitter:
+      "The State Of JavaScript Survey: find out the most popular JavaScript technologies of 2018 http://stateofjs.com #stateofjs"
+    email:
+      subject:
+        "The State Of JavaScript"
+      body:
+        "Find out the most popular JavaScript technologies of 2018: http://stateofjs.com"
+  stats:
+    heading:
+      "A Few Numbers"
+  takesurvey:
+    link:
+      "Take Survey"
+    note:
+      "Note: to improve results relevance, we keep track of data such as your referrer, location, device, browser, and OS."
+  viewresult:
+    link:
+      "View Results"
