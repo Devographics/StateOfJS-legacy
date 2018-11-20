@@ -88,10 +88,10 @@ export default class ReasonsChartUnit extends Component {
                 className={`
                 Reasons__Chart__Unit
                 ${
-                    this.isMobile()
-                        ? 'Reasons__Chart__Unit--mobile'
-                        : 'Reasons__Chart__Unit--desktop'
-                }`}
+                    this.isMobile() // eslint-disable-line indent
+                        ? 'Reasons__Chart__Unit--mobile' // eslint-disable-line indent
+                        : 'Reasons__Chart__Unit--desktop' // eslint-disable-line indent
+                }`} // eslint-disable-line indent
                 style={{
                     height: data.length * barHeight + verticalMargin * 2,
                     marginBottom: 30

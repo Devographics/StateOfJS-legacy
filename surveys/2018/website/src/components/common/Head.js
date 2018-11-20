@@ -24,7 +24,7 @@ const Head = ({ title, currentPage }) => {
         { name: 'twitter:card', content: 'summary' },
         { name: 'twitter:image:src', content: image },
         { name: 'twitter:title', content: title },
-        { name: 'twitter:description', content: description },
+        { name: 'twitter:description', content: description }
     ]
 
     return (
@@ -32,7 +32,7 @@ const Head = ({ title, currentPage }) => {
             <html lang="en" />
             <title>{pageTitle}</title>
             <link rel="shortcut icon" href="/images/favicon.png" />
-            <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/>
+            <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin />
             <link
                 href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,600"
                 rel="stylesheet"

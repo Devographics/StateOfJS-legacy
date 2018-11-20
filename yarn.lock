@@ -553,6 +553,11 @@ i18n-js@>=1.0.0:
   resolved "https://registry.yarnpkg.com/i18n-js/-/i18n-js-3.1.0.tgz#4ec474b2b7ba8175284a0003804c7bf713991919"
   integrity sha512-xkpkBgf7anfmoRnJFdTqSQuv3phuP2DHEakWbNJUQMZxaLf146dcYWscOyN6wlG6R2WgS6AE7y664yiAaXXDwg==
 
+i18n-react@^0.6.4:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/i18n-react/-/i18n-react-0.6.4.tgz#6d1ec68eea4224987070f9ba200b709b604f4f47"
+  integrity sha512-gSbfWmBGZtja8j9ZrHErkkPuJb+Os2XHCFv5i5l5BzQhqOJWL/DVpu5GexmnM4HUfgiJ6F4c3HqrXkjzZ8AttA==
+
 iconv-lite@^0.4.24, iconv-lite@~0.4.13:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"

@@ -10,7 +10,7 @@ const PeriodicElement = ({
     symbol,
     number,
     background,
-    borderColor,
+    borderColor, // eslint-disable-line no-unused-vars
     color = defaultColor,
     mode = 'standalone',
     size,

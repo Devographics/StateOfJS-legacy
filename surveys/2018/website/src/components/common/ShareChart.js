@@ -217,7 +217,13 @@ class ShareChart extends Component {
                     <div className="share-options">
                         <Twitter text={twitterText} page={currentPage} chartId={chartId} />
                         <Facebook link={link} page={currentPage} chartId={chartId} />
-                        <LinkedIn link={link} title={title} summary={summary} page={currentPage} chartId={chartId} />
+                        <LinkedIn
+                            link={link}
+                            title={title}
+                            summary={summary}
+                            page={currentPage}
+                            chartId={chartId}
+                        />
                         <Email subject={subject} body={body} page={currentPage} chartId={chartId} />
                     </div>
                 </div>
