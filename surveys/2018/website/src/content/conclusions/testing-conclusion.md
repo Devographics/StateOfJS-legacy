@@ -4,9 +4,9 @@ The survey confirms that **Mocha** is still the most used unit testing framework
 
 **Jest** follows closely in terms of usage but it has a slightly higher satisfaction rate: 96% versus 82%. As a side note, 96% is the second highest satisfaction in the whole survey this year. Only ES6 got a better mark!
 
-This shows that developers really appreciate the efforts made by Facebook to provide a a full-featured testing framework that can be used to test both front-end (it was intended to test React components, in the beginning) and back-end code, without requiring configuration.
+This shows that developers really appreciate the efforts made by Facebook to provide a full-featured testing framework that can be used to test both front-end (it was intended to test React components, in the beginning) and back-end code, without requiring configuration.
 
-In the "Single Page application" era, web applications are becoming more and more complex, with more and more logic implemented in the client side. The survey shows clearly that developers use a lot of tools to test their applications.
+In the "Single Page application" era, web applications are becoming more and more complex, with more and more logic implemented on the client side. The survey shows clearly that developers use many tools to test their applications.
 
 The spectrum of testing is wide: unit tests, integration tests, end-to-end tests but also "visual testing", as we can see with the success of **Storybook** (the second highest satisfaction rate of the category).
 

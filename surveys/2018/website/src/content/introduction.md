@@ -18,7 +18,7 @@ Just like JavaScript, the survey itself has been changing too. Here's what's new
 
 We figure a lot of you are checking out this survey to help you figure out what to learn next. So we've included links to useful JavaScript resources throughout the survey to help point you in the right direction. 
 
-Full disclosure: some of them are paid sponsorships, but no matter what they're all high quality resources from people we know and respect who have decided to support our project. 
+Full disclosure: some of them are paid sponsorships, but no matter what they're all high-quality resources from people we know and respect who have decided to support our project. 
 
 ### Team
 
