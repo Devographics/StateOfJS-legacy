@@ -119,9 +119,8 @@ tools:
 
 tools_descriptions:
     angular: >
-        Angular is a TypeScript-based open-source front-end web application platform. Note that from
-        this year on we are not be making a distinction between Angular and Angular.js anymore, while datapoints for 
-        2016 and 2017 correspond to Angular (a.k.a. "Angular 2").
+        Angular is a TypeScript-based open-source front-end web application platform. 
+        Note that unlike 2018, past editions of the survey also featured a question about AngularJS. But all data presented here concerns only Angular. 
     es6: >
         ES6 and its descendants are the newer versions of JavaScript, usually run through Babel.
     apollo: >
