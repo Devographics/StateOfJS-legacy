@@ -34,7 +34,7 @@ const ResourcesBlock = ({ tool }) => {
                 */}
                 <div className="resources-list">
                     {sectionResources.map(resource => {
-                        const url = `${
+                        const url = resource.url.includes('utm_source') ? resource.url : `${
                             resource.url
                         }?utm_source=stateofjs&utm_medium=sponsor&utm_campaign=${tool}`
 
