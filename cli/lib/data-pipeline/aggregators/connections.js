@@ -1,3 +1,4 @@
+const config = require('@ekino/config')
 const elastic = require('../loaders/elastic')
 
 exports.computeToolsMatrixForSurveyAndOpinion = async (sections, surveyId, opinion) => {
@@ -39,7 +40,7 @@ exports.computeToolsMatrixForSurveyAndOpinion = async (sections, surveyId, opini
         {}
     )
 
-    const result = await elastic.search({
+    const result = await elastic.search(config.get('elastic.indices.norm'), {
         size: 0,
         body: {
             query: {

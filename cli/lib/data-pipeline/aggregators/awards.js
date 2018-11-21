@@ -1,8 +1,9 @@
+const config = require('@ekino/config')
 const elastic = require('../loaders/elastic')
 const Opinion = require('../../../conf/experience')
 
 const fetchAllTools = async currentSurvey => {
-    const result = await elastic.search({
+    const result = await elastic.search(config.get('elastic.indices.norm'), {
         size: 0,
         body: {
             query: {
@@ -109,7 +110,7 @@ exports.highestUsage = async (currentSurvey, blacklist = []) => {
 }
 
 exports.mostMentioned = async (currentSurvey, blacklist = []) => {
-    const result = await elastic.search({
+    const result = await elastic.search(config.get('elastic.indices.norm'), {
         size: 0,
         body: {
             query: {

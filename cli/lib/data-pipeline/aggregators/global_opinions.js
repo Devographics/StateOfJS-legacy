@@ -1,3 +1,4 @@
+const config = require('@ekino/config')
 const elastic = require('../loaders/elastic')
 const { globalOpinionsSubjectNormalizers } = require('../../../conf/normalize')
 
@@ -5,6 +6,7 @@ const subjects = Object.values(globalOpinionsSubjectNormalizers)
 
 exports.globalOpinions = async () => {
     const result = await elastic.aggs(
+        config.get('elastic.indices.norm'),
         subjects.reduce(
             (acc, subject) => ({
                 ...acc,

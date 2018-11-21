@@ -1,8 +1,9 @@
+const config = require('@ekino/config')
 const elastic = require('../loaders/elastic')
 const constants = require('../../../conf/constants')
 
 exports.toolBySimilarOpinionForSurvey = async (tools, opinion, survey) => {
-    const max = await elastic.search({
+    const max = await elastic.search(config.get('elastic.indices.norm'), {
         size: 0,
         body: {
             query: {
@@ -46,7 +47,7 @@ exports.toolBySimilarOpinionForSurvey = async (tools, opinion, survey) => {
     )
     console.log(`max (${tools.length} tools):`, max.hits.total)
 
-    const none = await elastic.search({
+    const none = await elastic.search(config.get('elastic.indices.norm'), {
         size: 0,
         body: {
             query: {
@@ -107,7 +108,7 @@ exports.toolBySimilarOpinionForSurvey = async (tools, opinion, survey) => {
 
     //console.log(totalScript)
 
-    const result = await elastic.search({
+    const result = await elastic.search(config.get('elastic.indices.norm'), {
         size: 0,
         body: {
             query: {
@@ -160,8 +161,9 @@ exports.toolsBySimilarOpinionForSurvey = async (sections, opinion, survey) => {
     }
 }
 
-exports.happiness = async (sections, surveys, config) => {
+exports.happiness = async (sections, surveys, conf) => {
     const aggs = await elastic.aggs(
+        config.get('elastic.indices.norm'),
         sections.reduce(
             (acc, section) => ({
                 ...acc,
@@ -189,7 +191,7 @@ exports.happiness = async (sections, surveys, config) => {
         const sectionAgg = aggs.aggregations[section]
 
         const bySurvey = []
-        const appearsInSurveys = surveys.filter(s => config[s].sections[section] !== undefined)
+        const appearsInSurveys = surveys.filter(s => conf[s].sections[section] !== undefined)
         appearsInSurveys.forEach(survey => {
             const surveyBucket = sectionAgg.buckets.find(b => b.key === survey)
             const scores = surveyBucket.scores.buckets.map(bucket => ({
@@ -251,7 +253,7 @@ exports.otherToolsForSurvey = async surveyConfig => {
         )
     }
 
-    const result = await elastic.search({
+    const result = await elastic.search(config.get('elastic.indices.norm'), {
         size: 0,
         body
     })
@@ -273,7 +275,7 @@ exports.otherToolsForSurvey = async surveyConfig => {
 exports.toolsOpinionUserInfoDistribution = async (surveyConfig, opinion) => {
     const { tools } = surveyConfig
 
-    const result = await elastic.search({
+    const result = await elastic.search(config.get('elastic.indices.norm'), {
         size: 0,
         body: {
             query: {
