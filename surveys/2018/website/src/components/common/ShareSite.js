@@ -11,7 +11,7 @@ const ShareSite = () => (
     <div className="ShareSite">
         <Twitter text={twitterText} />
         <Facebook link={link} />
-        <LinkedIn link={link} title={title}/>
+        <LinkedIn link={link} title={title} />
         <Email subject={subject} body={body} />
     </div>
 )

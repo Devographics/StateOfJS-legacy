@@ -1,9 +1,10 @@
 import React from 'react'
 import stats from '../../../data/stats.yaml'
+import T from '../helpers/translator'
 
 const Stats = () => (
     <div className="section section-layout-b stats">
-        <h2 className="stats-heading">A Few Numbers</h2>
+        <h2 className="stats-heading">{T.translate('components.stats.heading')}</h2>
         <div className="stats-inner">
             {stats.map((stat, i) => (
                 <div key={i} className="stat">

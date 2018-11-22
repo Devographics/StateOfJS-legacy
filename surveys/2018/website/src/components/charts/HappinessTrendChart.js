@@ -17,18 +17,25 @@ const verticalAxis = {
         let text = ''
         if (d.value === 1) text = '☹️'
         if (d.value === 5) text = '🙂'
-        return (
-            <text
-                key={d.key}
-                style={{ fontSize: 24 }}
-                x={d.x + d.textX}
-                y={d.y}
-                textAnchor={d.textAnchor}
-                alignmentBaseline="middle"
-            >
-                {text}
-            </text>
-        )
+        return class extends Component {
+            displayName() {
+                return 'Vertical Axis'
+            }
+            render() {
+                return (
+                    <text
+                        key={d.key}
+                        style={{ fontSize: 24 }}
+                        x={d.x + d.textX}
+                        y={d.y}
+                        textAnchor={d.textAnchor}
+                        alignmentBaseline="middle"
+                    >
+                        {text}
+                    </text>
+                )
+            }
+        }
     }
 }
 

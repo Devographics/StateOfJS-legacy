@@ -1,13 +1,16 @@
 import React from 'react'
 import TextBlock from '../components/TextBlock.js'
+import T from '../helpers/translator'
+
+let heading = T.translate('components.intro.heading')
 
 const Intro = () => (
     <TextBlock>
-        <strong className="dropcap">T</strong>he JavaScript world could use a bit of classification.
+        <strong className="dropcap">{heading[0]}</strong>{heading.slice(1)}
         <br/>
-        In 2017 this survey helped us do just that, by collecting data from over 20,000 developers to identify current and upcoming trends.
+        {T.translate('components.intro.row1')}
         <br/>
-        This year, we’re asking for your help once more to find out which libraries developers want to learn next, which have the best satisfaction ratings, and much more.
+        {T.translate('components.intro.row2')}
     </TextBlock>
 )
 

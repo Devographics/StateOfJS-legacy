@@ -1,4 +1,5 @@
 import React from 'react'
+import T from '../helpers/translator'
 
 export default class ViewResults extends React.Component {
 
@@ -9,7 +10,7 @@ export default class ViewResults extends React.Component {
                     className="button large-button"
                     href="https://2018.stateofjs.com"
                 >
-                    View Results
+                    {T.translate('components.viewresult.link')}
                 </a>
             </div>
         )

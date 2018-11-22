@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import authors from '../data/authors.yaml'
+import T from '../helpers/translator'
 
 const About = () => (
     <div className="section about">
-        <h2 className="about__heading">StateOfJS is Made by:</h2>
+        <h2 className="about__heading">{T.translate('components.about.madeby')}</h2>
         <div className="about__authors">
             {authors.map(({ name, slug, bio, url }) => (
                 <div key={slug} className="about__author">

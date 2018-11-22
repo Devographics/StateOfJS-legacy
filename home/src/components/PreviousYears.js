@@ -1,8 +1,9 @@
 import React from 'react'
+import T from '../helpers/translator'
 
 const PreviousYears = () => (
     <div className="section section-layout-b previous-years">
-        <div className="or">Previous Years:</div>
+        <div className="or">{T.translate('components.previousyears.text')}</div>
         <div className="previous-years-links">
             <a className="previous-years-link button" href="http://2016.stateofjs.com">
                 2016

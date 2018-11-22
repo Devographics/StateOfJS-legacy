@@ -1,10 +1,11 @@
 import React from 'react'
 import TextBlock from '../components/TextBlock.js'
+import T from '../helpers/translator'
 
 const NewsletterIntro = () => (
     <TextBlock
-        title="Stay Tuned"
-        text="Leave us your email and we'll let you know when next year's survey comes out."
+        title={T.translate('components.newsletterintro.title')}
+        text={T.translate('components.newsletterintro.text')}
     />
 )
 

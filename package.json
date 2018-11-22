@@ -25,5 +25,9 @@
     "eslint-plugin-react": "^7.11.1",
     "prettier": "^1.14.3",
     "source-map-explorer": "^1.6.0"
+  },
+  "dependencies": {
+    "i18n-react": "^0.6.4",
+    "react-i18n": "^1.0.1"
   }
 }

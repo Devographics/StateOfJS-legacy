@@ -2,6 +2,7 @@ import _ from 'lodash'
 import React from 'react'
 import ReactGA from 'react-ga'
 import comments from '../../data/comments.yaml'
+import T from '../helpers/translator'
 
 // const commentsRandom = _.shuffle(comments)
 
@@ -38,7 +39,7 @@ export default class Comments extends React.Component {
 
         return (
             <div className="section section-layout-b comments">
-                <h2 className="section-heading comments-heading">Random Comments</h2>
+                <h2 className="section-heading comments-heading">{T.translate('components.comments.heading')}</h2>
                 <div className="comment">
                     <p className="comment-inner">
                         <span>{comment}</span>

@@ -25,10 +25,12 @@ const extractFields = (fields, registry = {}, { path = '' } = {}) => {
         const slug = slugify(field.title)
         registry[field.id] = {
             slug: `${path}${path !== '' ? '_' : ''}${slug}`,
-            typeform_type: field.type,
+            typeform_type: field.type
         }
         if (field.type === 'group') {
-            extractFields(field.properties.fields, registry, { path: `${path}${path !== '' ? '_' : ''}${slug}` })
+            extractFields(field.properties.fields, registry, {
+                path: `${path}${path !== '' ? '_' : ''}${slug}`
+            })
             return
         }
     })
@@ -339,10 +341,7 @@ class TypeformExtractor {
                         otherTools.push(toolNormalizer(answer.choice.label))
                     }
                     if (answer.choice.other !== undefined) {
-                        otherTools = [
-                            ...otherTools,
-                            ...otherToolsExtractor(answer.choice.other)
-                        ]
+                        otherTools = [...otherTools, ...otherToolsExtractor(answer.choice.other)]
                     }
                 }
                 if (answer.choices !== undefined) {
@@ -353,10 +352,7 @@ class TypeformExtractor {
                         otherTools.push()
                     }
                     if (answer.choices.other !== undefined) {
-                        otherTools = [
-                            ...otherTools,
-                            ...otherToolsExtractor(answer.choices.other)
-                        ]
+                        otherTools = [...otherTools, ...otherToolsExtractor(answer.choices.other)]
                     }
                 }
 
@@ -410,9 +406,7 @@ class TypeformExtractor {
                     const yearsExperienceRange =
                         userInfo.yearsOfExperienceRangeByLabel[answer.choice.label]
                     if (yearsExperienceRange === undefined) {
-                        throw new Error(
-                            `Unknown years of experience range ${answer.choice.label}`
-                        )
+                        throw new Error(`Unknown years of experience range ${answer.choice.label}`)
                     }
                     normalized.user_info[types.FIELD_TYPE_YEARS_OF_EXPERIENCE] =
                         yearsExperienceRange.id
@@ -487,7 +481,7 @@ class TypeformExtractor {
         if (answers === undefined) return null
 
         const result = {
-            survey: this.config.id,
+            survey: this.config.id
         }
         answers.forEach(answer => {
             const field = this.config.typeform.fields[answer.field.id]
@@ -502,7 +496,7 @@ class TypeformExtractor {
 
                 case 'choices':
                     result[field.slug] = answer.choices.labels
-                    break    
+                    break
 
                 case 'number':
                     result[field.slug] = answer.number
@@ -514,10 +508,10 @@ class TypeformExtractor {
 
                 case 'text':
                     result[field.slug] = answer.text
-                    break    
+                    break
 
                 default:
-                    throw new Error(`non supported answer type: ${answer.type}`, answer)   
+                    throw new Error(`non supported answer type: ${answer.type}`, answer)
             }
         })
 
@@ -535,7 +529,7 @@ class TypeformExtractor {
 
             normalizedItems.push({
                 normalized,
-                raw,
+                raw
             })
         }
 

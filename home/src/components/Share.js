@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactGA from 'react-ga'
+import T from '../helpers/translator'
 
 const trackShare = (platform, section) => {
     return () => {
@@ -116,13 +117,13 @@ export default class Share extends React.Component {
     render() {
         return (
             <div className="section section-narrow spread-the-word">
-                <h2 className="section-heading">Help Spread the Word!</h2>
+                <h2 className="section-heading">{T.translate('components.share.heading')}</h2>
                 <div className="share-options">
-                    <Twitter text="The State Of JavaScript Survey: find out the most popular JavaScript technologies of 2018 http://stateofjs.com #stateofjs" />
+                    <Twitter text={T.translate('components.share.twitter')} />
                     <Facebook link="http://stateofjs.com" />
                     <Email
-                        subject="The State Of JavaScript"
-                        body="Find out the most popular JavaScript technologies of 2018: http://stateofjs.com"
+                        subject={T.translate('components.share.email.subject')}
+                        body={T.translate('components.share.email.body')}
                     />
                 </div>
             </div>

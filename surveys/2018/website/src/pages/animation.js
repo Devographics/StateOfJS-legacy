@@ -233,7 +233,7 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        const element = document.getElementById('LogoAnimation__Wrapper')
+        const element = document.getElementById('LogoAnimation__Wrapper') // eslint-disable-line no-undef
         const height = element.clientHeight
         const width = element.clientWidth
         const initPositions = this.getInitPositions(height, width)

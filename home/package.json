@@ -49,6 +49,7 @@
     "react-helmet": "^5.2.0",
     "react-markdown": "^4.0.1",
     "react-measure": "^2.0.2",
+    "i18n-react": "^0.6.4",
     "reactdown": "^1.0.0-alpha14",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.5",

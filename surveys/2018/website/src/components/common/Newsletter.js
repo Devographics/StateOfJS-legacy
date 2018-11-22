@@ -35,6 +35,7 @@ export default class Newsletter extends Component {
             category: 'Subscribe',
             action: `Newsletter subscribe`
         })
+        // eslint-disable-next-line no-undef
         const response = await fetch(postUrl, {
             method: 'POST',
             body: `field_0=${encodeURIComponent(email)}`,
