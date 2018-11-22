@@ -93,11 +93,18 @@
     Build scalable React applications using the tools and techniques available in the React ecosystem: CSS in JS, Testing with Jest, Redux, Performance, SSR, TypeScript & more!
   image: ts2.jpg
 
-- name: REST & GraphQL API Design in Node.js (feat. Express & Mongo)
+- name: REST & GraphQL API Design in Node.js, feat. Express & Mongo
   tool: express
   url: https://frontendmasters.com/courses/api-node-rest-graphql/
   description: >
-    Design APIs from the ground up using Node.js Express and MongoDB! You'll build a REST API and in the course you'll migrate your API to using GraphQL.
+    Design APIs from the ground up using Node.js, Express and MongoDB! You'll build a REST API and in the course you'll migrate your API to using GraphQL.
+  image: node.jpg
+
+- name: REST & GraphQL API Design in Node.js
+  tool: graphql
+  url: https://frontendmasters.com/courses/api-node-rest-graphql/
+  description: >
+    Design APIs from the ground up using Node.js, Express and MongoDB! You'll build a REST API and in the course you'll migrate your API to using GraphQL.
   image: node.jpg
 
 - name: Advanced State Management in React (feat. Redux and MobX)
