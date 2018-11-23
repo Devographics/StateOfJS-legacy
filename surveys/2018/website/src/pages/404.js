@@ -1,13 +1,23 @@
 import React from 'react'
-import Layout from '../components/common/Layout'
-import TextBlock from '../components/blocks/TextBlock'
+import Layout from 'core/Layout'
+import TextBlock from 'core/blocks/TextBlock'
+import locales from '../../../config/locales.yml'
 
-const Introduction = () => (
-    <Layout title="Page Not Found" showPagination={false}>
+const defaultLocale = locales.find(l => l.path === 'default')
+
+const NotFound = ({ location }) => (
+    <Layout
+        location={location}
+        pageContext={{
+            locale: defaultLocale.locale,
+            localePath: ''
+        }}
+        showPagination={false}
+    >
         <div>
             <TextBlock text={`404 not found`} />
         </div>
     </Layout>
 )
 
-export default Introduction
+export default NotFound

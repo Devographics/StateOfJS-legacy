@@ -1,15 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import TextBlock from '../components/blocks/TextBlock'
-import Layout from '../components/common/Layout'
-import GenderBreakdownBlock from '../components/blocks/GenderBreakdownBlock'
 import { graphql } from 'gatsby'
-import SectionHeader from '../components/elements/SectionHeader'
-import ParticipationByCountryBlock from '../components/blocks/ParticipationByCountryBlock'
-import DemographicsSalaryBlock from '../components/blocks/DemographicsSalaryBlock'
-import SalaryPerCountryBlock from '../components/blocks/SalaryPerCountryBlock'
-import DemographicsYearsOfExperienceBlock from '../components/blocks/DemographicsYearsOfExperienceBlock'
-import DemographicsCompanySizeBlock from '../components/blocks/DemographicsCompanySizeBlock'
+import TextBlock from 'core/blocks/TextBlock'
+import Layout from 'core/Layout'
+import PageHeader from 'core/pages/PageHeader'
+import GenderBreakdownBlock from 'modules/demographics/blocks/GenderBreakdownBlock'
+import ParticipationByCountryBlock from 'modules/demographics/blocks/ParticipationByCountryBlock'
+import DemographicsSalaryBlock from 'modules/demographics/blocks/DemographicsSalaryBlock'
+import SalaryPerCountryBlock from 'modules/demographics/blocks/SalaryPerCountryBlock'
+import DemographicsYearsOfExperienceBlock from 'modules/demographics/blocks/DemographicsYearsOfExperienceBlock'
+import DemographicsCompanySizeBlock from 'modules/demographics/blocks/DemographicsCompanySizeBlock'
 
 const Demographics = ({ data, ...rest }) => {
     const participationData = data.stats.participation.find(s => s.survey === '2018').by_country
@@ -18,8 +18,8 @@ const Demographics = ({ data, ...rest }) => {
     return (
         <Layout {...rest}>
             <div>
-                <SectionHeader />
-                <TextBlock text={data.file.childMarkdownRemark.html} />
+                <PageHeader />
+                <TextBlock text={data.introduction.html} />
                 <ParticipationByCountryBlock
                     data={participationData}
                     chartId="participation-by-country"
@@ -123,7 +123,16 @@ Demographics.propTypes = {
 export default Demographics
 
 export const query = graphql`
-    query {
+    query demographics($locale: String!) {
+        introduction: markdownRemark(
+            frontmatter: {
+                type: { eq: "introduction" }
+                section: { eq: "demographics" }
+                locale: { eq: $locale }
+            }
+        ) {
+            html
+        }
         stats: demographicsYaml {
             participation {
                 survey
@@ -176,11 +185,6 @@ export const query = graphql`
                     count
                     percentage
                 }
-            }
-        }
-        file(name: { eq: "demographics-introduction" }) {
-            childMarkdownRemark {
-                html
             }
         }
     }

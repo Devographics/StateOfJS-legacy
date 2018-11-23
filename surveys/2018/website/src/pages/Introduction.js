@@ -1,15 +1,15 @@
 import { graphql } from 'gatsby'
 import React from 'react'
-import Layout from '../components/common/Layout'
-import TextBlock from '../components/blocks/TextBlock'
-import SponsorsBlock from '../components/blocks/SponsorsBlock'
-import SectionHeader from '../components/elements/SectionHeader'
+import Layout from 'core/Layout'
+import TextBlock from 'core/blocks/TextBlock'
+import SponsorsBlock from 'core/blocks/SponsorsBlock'
+import PageHeader from 'core/pages/PageHeader'
 
 const Introduction = ({ data, ...rest }) => (
     <Layout {...rest}>
         <div>
-            <SectionHeader showIntro={false} />
-            <TextBlock text={data.file.childMarkdownRemark.html} />
+            <PageHeader showIntro={false} />
+            <TextBlock text={data.introduction.html} />
             <SponsorsBlock />
         </div>
     </Layout>
@@ -18,11 +18,15 @@ const Introduction = ({ data, ...rest }) => (
 export default Introduction
 
 export const query = graphql`
-    query {
-        file(name: { eq: "introduction" }) {
-            childMarkdownRemark {
-                html
+    query introByLocale($locale: String!) {
+        introduction: markdownRemark(
+            frontmatter: {
+                type: { eq: "introduction" }
+                section: { eq: "introduction" }
+                locale: { eq: $locale }
             }
+        ) {
+            html
         }
     }
 `

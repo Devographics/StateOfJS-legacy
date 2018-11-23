@@ -1,16 +1,15 @@
 import React from 'react'
-import TextBlock from '../components/blocks/TextBlock'
-import NewsletterBlock from '../components/blocks/NewsletterBlock'
-import Layout from '../components/common/Layout'
-import SectionHeader from '../components/elements/SectionHeader'
 import { graphql } from 'gatsby'
+import TextBlock from 'core/blocks/TextBlock'
+import NewsletterBlock from 'core/blocks/NewsletterBlock'
+import Layout from 'core/Layout'
+import PageHeader from 'core/pages/PageHeader'
 
 const Conclusion = ({ data, ...rest }) => (
     <Layout {...rest}>
         <div>
-            <SectionHeader showIntro={false} />
-
-            <TextBlock text={data.file.childMarkdownRemark.html} />
+            <PageHeader showIntro={false} />
+            <TextBlock text={data.conclusion.html} />
             {/* hack to avoid error when capturing */}
             <div id="quadrants" />
             <NewsletterBlock />
@@ -21,11 +20,15 @@ const Conclusion = ({ data, ...rest }) => (
 export default Conclusion
 
 export const query = graphql`
-    query {
-        file(name: { eq: "conclusion-conclusion" }) {
-            childMarkdownRemark {
-                html
+    query conclusionByLocale($locale: String!) {
+        conclusion: markdownRemark(
+            frontmatter: {
+                type: { eq: "conclusion" }
+                section: { eq: "conclusion" }
+                locale: { eq: $locale }
             }
+        ) {
+            html
         }
     }
 `

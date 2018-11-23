@@ -1,26 +1,28 @@
 import React from 'react'
-import Layout from '../components/common/Layout'
 import { graphql } from 'gatsby'
-import TextBlock from '../components/blocks/TextBlock'
-import SectionHeader from '../components/elements/SectionHeader'
+import Layout from 'core/Layout'
+import TextBlock from 'core/blocks/TextBlock'
+import PageHeader from 'core/pages/PageHeader'
 
-const title = 'Support Us'
-
-const Support = ({ data }) => (
-    <Layout title={title}>
-        <SectionHeader currentPage={{ title }} showIntro={false} />
-        <TextBlock text={data.file.childMarkdownRemark.html} />
+const Support = ({ data, ...rest }) => (
+    <Layout {...rest}>
+        <PageHeader showIntro={false} />
+        <TextBlock text={data.content.html} />
     </Layout>
 )
 
 export default Support
 
 export const query = graphql`
-    query {
-        file(name: { eq: "support" }) {
-            childMarkdownRemark {
-                html
+    query supportByLocale($locale: String!) {
+        content: markdownRemark(
+            frontmatter: {
+                type: { eq: "introduction" }
+                section: { eq: "support_us" }
+                locale: { eq: $locale }
             }
+        ) {
+            html
         }
     }
 `
