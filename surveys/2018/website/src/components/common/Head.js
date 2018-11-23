@@ -30,9 +30,10 @@ const Head = ({ title, currentPage }) => {
     return (
         <Helmet meta={meta} defaultTitle={pageTitle}>
             <html lang="en" />
+            <meta name="google-site-verification" content="hrTRsz9fkGmQlVbLBWA4wmhn0qsI6_M3NKemTGCkpps" />
             <title>{pageTitle}</title>
             <link rel="shortcut icon" href="/images/favicon.png" />
-            <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/>
+            <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin/>
             <link
                 href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,600"
                 rel="stylesheet"
