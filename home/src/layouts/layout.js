@@ -36,6 +36,7 @@ export default class Layout extends React.Component {
             >
                 <Helmet meta={meta}>
                     <title>{title}</title>
+                    <meta name="google-site-verification" content="hrTRsz9fkGmQlVbLBWA4wmhn0qsI6_M3NKemTGCkpps" />
                     <script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript" />
                 </Helmet>
                 <link

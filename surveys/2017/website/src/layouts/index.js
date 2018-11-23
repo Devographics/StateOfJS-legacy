@@ -40,6 +40,7 @@ export default class Layout extends Component {
                 })}
             >
                 <Helmet meta={meta}>
+                    <meta name="google-site-verification" content="hrTRsz9fkGmQlVbLBWA4wmhn0qsI6_M3NKemTGCkpps" />
                     <script
                         src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js"
                         type="text/javascript"
