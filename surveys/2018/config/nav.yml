@@ -4,6 +4,9 @@
 # those ids must be updated too.
 # The same goes for tools.
 #
+- id: home
+  hide: true
+
 - id: introduction
 
 - id: demographics
@@ -11,7 +14,7 @@
 - id: connections
 
 - id: javascript-flavors
-  subPages:
+  children:
       - overview
       - es6
       - typescript
@@ -23,7 +26,7 @@
       - conclusion
 
 - id: front-end-frameworks
-  subPages:
+  children:
       - overview
       - react
       - vuejs
@@ -35,7 +38,7 @@
       - conclusion
 
 - id: data-layer
-  subPages:
+  children:
       - overview
       - redux
       - graphql
@@ -46,7 +49,7 @@
       - conclusion
 
 - id: back-end-frameworks
-  subPages:
+  children:
       - overview
       - express
       - nextjs
@@ -58,7 +61,7 @@
       - conclusion
 
 - id: testing
-  subPages:
+  children:
       - overview
       - jest
       - mocha
@@ -71,7 +74,7 @@
       - conclusion
 
 - id: mobile-and-desktop
-  subPages:
+  children:
       - overview
       - electron
       - react-native

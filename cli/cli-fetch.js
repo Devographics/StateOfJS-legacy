@@ -23,7 +23,7 @@ const run = async () => {
             const rawFile = path.join(config.get('dataOutputDir'), `${survey.id}.json`)
             try {
                 await unlink(rawFile)
-            } catch(err) {}
+            } catch (err) {}
 
             await extractor.enhanceConfig()
             await writeFile(`./conf/${survey.id}.yml`, YAML.stringify(extractor.config, 10))
@@ -36,9 +36,20 @@ const run = async () => {
                 count += items.length
                 console.log(`> ${count}/${total}`)
 
-                await elastic.bulk(config.get('elastic.indices.raw'), 'response', items.map(item => item.raw))
-                await elastic.bulk(config.get('elastic.indices.norm'), 'response', items.map(item => item.normalized))
-                await appendFile(rawFile, `${items.map(item => JSON.stringify(item.raw)).join('\n')}\n`)
+                await elastic.bulk(
+                    config.get('elastic.indices.raw'),
+                    'response',
+                    items.map(item => item.raw)
+                )
+                await elastic.bulk(
+                    config.get('elastic.indices.norm'),
+                    'response',
+                    items.map(item => item.normalized)
+                )
+                await appendFile(
+                    rawFile,
+                    `${items.map(item => JSON.stringify(item.raw)).join('\n')}\n`
+                )
             })
         }
     } catch (err) {

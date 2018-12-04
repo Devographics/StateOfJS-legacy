@@ -1,0 +1,1353 @@
+- id: home
+  path: /
+  type: custom
+  is_hidden: true
+  next:
+    id: introduction
+    type: custom
+    basePath: /introduction/
+- id: introduction
+  path: /introduction/
+  type: custom
+  is_hidden: false
+  next:
+    id: demographics
+    type: custom
+    basePath: /demographics/
+- id: demographics
+  path: /demographics/
+  type: custom
+  is_hidden: false
+  blocks:
+    - participation-by-country
+    - gender-breakdown
+    - salaries
+    - salary-per-country
+    - years-of-experience
+    - company-size
+  previous:
+    id: introduction
+    type: custom
+    basePath: /introduction/
+  next:
+    id: connections
+    type: custom
+    basePath: /connections/
+- id: connections
+  path: /connections/
+  type: custom
+  is_hidden: false
+  blocks:
+    - connections
+  previous:
+    id: demographics
+    type: custom
+    basePath: /demographics/
+  next:
+    id: javascript-flavors
+    type: section
+    basePath: /javascript-flavors/overview/
+- id: javascript-flavors
+  path: /javascript-flavors/overview/
+  type: section
+  is_hidden: false
+  children:
+    - id: overview
+      path: /javascript-flavors/overview/
+      type: overview
+      section: javascript-flavors
+      blocks:
+        - overview
+        - tools-salary-range
+        - tools-company-size
+        - tools-years-of-experience
+        - happiness
+      previous:
+        id: connections
+        type: custom
+        basePath: /connections/
+      next:
+        id: es6
+        type: tool
+        section: javascript-flavors
+        tool: es6
+        basePath: /javascript-flavors/es6/
+    - id: es6
+      path: /javascript-flavors/es6/
+      type: tool
+      section: javascript-flavors
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: es6
+      previous:
+        id: overview
+        type: overview
+        section: javascript-flavors
+        basePath: /javascript-flavors/overview/
+      next:
+        id: typescript
+        type: tool
+        section: javascript-flavors
+        tool: typescript
+        basePath: /javascript-flavors/typescript/
+    - id: typescript
+      path: /javascript-flavors/typescript/
+      type: tool
+      section: javascript-flavors
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: typescript
+      previous:
+        id: es6
+        type: tool
+        section: javascript-flavors
+        tool: es6
+        basePath: /javascript-flavors/es6/
+      next:
+        id: flow
+        type: tool
+        section: javascript-flavors
+        tool: flow
+        basePath: /javascript-flavors/flow/
+    - id: flow
+      path: /javascript-flavors/flow/
+      type: tool
+      section: javascript-flavors
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: flow
+      previous:
+        id: typescript
+        type: tool
+        section: javascript-flavors
+        tool: typescript
+        basePath: /javascript-flavors/typescript/
+      next:
+        id: reason
+        type: tool
+        section: javascript-flavors
+        tool: reason
+        basePath: /javascript-flavors/reason/
+    - id: reason
+      path: /javascript-flavors/reason/
+      type: tool
+      section: javascript-flavors
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: reason
+      previous:
+        id: flow
+        type: tool
+        section: javascript-flavors
+        tool: flow
+        basePath: /javascript-flavors/flow/
+      next:
+        id: elm
+        type: tool
+        section: javascript-flavors
+        tool: elm
+        basePath: /javascript-flavors/elm/
+    - id: elm
+      path: /javascript-flavors/elm/
+      type: tool
+      section: javascript-flavors
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: elm
+      previous:
+        id: reason
+        type: tool
+        section: javascript-flavors
+        tool: reason
+        basePath: /javascript-flavors/reason/
+      next:
+        id: clojurescript
+        type: tool
+        section: javascript-flavors
+        tool: clojurescript
+        basePath: /javascript-flavors/clojurescript/
+    - id: clojurescript
+      path: /javascript-flavors/clojurescript/
+      type: tool
+      section: javascript-flavors
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: clojurescript
+      previous:
+        id: elm
+        type: tool
+        section: javascript-flavors
+        tool: elm
+        basePath: /javascript-flavors/elm/
+      next:
+        id: other-libraries
+        type: other-libraries
+        section: javascript-flavors
+        basePath: /javascript-flavors/other-libraries/
+    - id: other-libraries
+      path: /javascript-flavors/other-libraries/
+      type: other-libraries
+      section: javascript-flavors
+      blocks:
+        - other-tools
+      previous:
+        id: clojurescript
+        type: tool
+        section: javascript-flavors
+        tool: clojurescript
+        basePath: /javascript-flavors/clojurescript/
+      next:
+        id: conclusion
+        type: conclusion
+        section: javascript-flavors
+        basePath: /javascript-flavors/conclusion/
+    - id: conclusion
+      path: /javascript-flavors/conclusion/
+      type: conclusion
+      section: javascript-flavors
+      blocks:
+        - quadrants
+      previous:
+        id: other-libraries
+        type: other-libraries
+        section: javascript-flavors
+        basePath: /javascript-flavors/other-libraries/
+      next:
+        id: front-end-frameworks
+        type: section
+        basePath: /front-end-frameworks/overview/
+  previous:
+    id: connections
+    type: custom
+    basePath: /connections/
+  next:
+    id: es6
+    type: tool
+    section: javascript-flavors
+    tool: es6
+    basePath: /javascript-flavors/es6/
+- id: front-end-frameworks
+  path: /front-end-frameworks/overview/
+  type: section
+  is_hidden: false
+  children:
+    - id: overview
+      path: /front-end-frameworks/overview/
+      type: overview
+      section: front-end-frameworks
+      blocks:
+        - overview
+        - tools-salary-range
+        - tools-company-size
+        - tools-years-of-experience
+        - happiness
+      previous:
+        id: conclusion
+        type: conclusion
+        section: javascript-flavors
+        basePath: /javascript-flavors/conclusion/
+      next:
+        id: react
+        type: tool
+        section: front-end-frameworks
+        tool: react
+        basePath: /front-end-frameworks/react/
+    - id: react
+      path: /front-end-frameworks/react/
+      type: tool
+      section: front-end-frameworks
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: react
+      previous:
+        id: overview
+        type: overview
+        section: front-end-frameworks
+        basePath: /front-end-frameworks/overview/
+      next:
+        id: vuejs
+        type: tool
+        section: front-end-frameworks
+        tool: vuejs
+        basePath: /front-end-frameworks/vuejs/
+    - id: vuejs
+      path: /front-end-frameworks/vuejs/
+      type: tool
+      section: front-end-frameworks
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: vuejs
+      previous:
+        id: react
+        type: tool
+        section: front-end-frameworks
+        tool: react
+        basePath: /front-end-frameworks/react/
+      next:
+        id: angular
+        type: tool
+        section: front-end-frameworks
+        tool: angular
+        basePath: /front-end-frameworks/angular/
+    - id: angular
+      path: /front-end-frameworks/angular/
+      type: tool
+      section: front-end-frameworks
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: angular
+      previous:
+        id: vuejs
+        type: tool
+        section: front-end-frameworks
+        tool: vuejs
+        basePath: /front-end-frameworks/vuejs/
+      next:
+        id: preact
+        type: tool
+        section: front-end-frameworks
+        tool: preact
+        basePath: /front-end-frameworks/preact/
+    - id: preact
+      path: /front-end-frameworks/preact/
+      type: tool
+      section: front-end-frameworks
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: preact
+      previous:
+        id: angular
+        type: tool
+        section: front-end-frameworks
+        tool: angular
+        basePath: /front-end-frameworks/angular/
+      next:
+        id: ember
+        type: tool
+        section: front-end-frameworks
+        tool: ember
+        basePath: /front-end-frameworks/ember/
+    - id: ember
+      path: /front-end-frameworks/ember/
+      type: tool
+      section: front-end-frameworks
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: ember
+      previous:
+        id: preact
+        type: tool
+        section: front-end-frameworks
+        tool: preact
+        basePath: /front-end-frameworks/preact/
+      next:
+        id: polymer
+        type: tool
+        section: front-end-frameworks
+        tool: polymer
+        basePath: /front-end-frameworks/polymer/
+    - id: polymer
+      path: /front-end-frameworks/polymer/
+      type: tool
+      section: front-end-frameworks
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: polymer
+      previous:
+        id: ember
+        type: tool
+        section: front-end-frameworks
+        tool: ember
+        basePath: /front-end-frameworks/ember/
+      next:
+        id: other-libraries
+        type: other-libraries
+        section: front-end-frameworks
+        basePath: /front-end-frameworks/other-libraries/
+    - id: other-libraries
+      path: /front-end-frameworks/other-libraries/
+      type: other-libraries
+      section: front-end-frameworks
+      blocks:
+        - other-tools
+      previous:
+        id: polymer
+        type: tool
+        section: front-end-frameworks
+        tool: polymer
+        basePath: /front-end-frameworks/polymer/
+      next:
+        id: conclusion
+        type: conclusion
+        section: front-end-frameworks
+        basePath: /front-end-frameworks/conclusion/
+    - id: conclusion
+      path: /front-end-frameworks/conclusion/
+      type: conclusion
+      section: front-end-frameworks
+      blocks:
+        - quadrants
+      previous:
+        id: other-libraries
+        type: other-libraries
+        section: front-end-frameworks
+        basePath: /front-end-frameworks/other-libraries/
+      next:
+        id: data-layer
+        type: section
+        basePath: /data-layer/overview/
+  previous:
+    id: conclusion
+    type: conclusion
+    section: javascript-flavors
+    basePath: /javascript-flavors/conclusion/
+  next:
+    id: react
+    type: tool
+    section: front-end-frameworks
+    tool: react
+    basePath: /front-end-frameworks/react/
+- id: data-layer
+  path: /data-layer/overview/
+  type: section
+  is_hidden: false
+  children:
+    - id: overview
+      path: /data-layer/overview/
+      type: overview
+      section: data-layer
+      blocks:
+        - overview
+        - tools-salary-range
+        - tools-company-size
+        - tools-years-of-experience
+        - happiness
+      previous:
+        id: conclusion
+        type: conclusion
+        section: front-end-frameworks
+        basePath: /front-end-frameworks/conclusion/
+      next:
+        id: redux
+        type: tool
+        section: data-layer
+        tool: redux
+        basePath: /data-layer/redux/
+    - id: redux
+      path: /data-layer/redux/
+      type: tool
+      section: data-layer
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: redux
+      previous:
+        id: overview
+        type: overview
+        section: data-layer
+        basePath: /data-layer/overview/
+      next:
+        id: graphql
+        type: tool
+        section: data-layer
+        tool: graphql
+        basePath: /data-layer/graphql/
+    - id: graphql
+      path: /data-layer/graphql/
+      type: tool
+      section: data-layer
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: graphql
+      previous:
+        id: redux
+        type: tool
+        section: data-layer
+        tool: redux
+        basePath: /data-layer/redux/
+      next:
+        id: apollo
+        type: tool
+        section: data-layer
+        tool: apollo
+        basePath: /data-layer/apollo/
+    - id: apollo
+      path: /data-layer/apollo/
+      type: tool
+      section: data-layer
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: apollo
+      previous:
+        id: graphql
+        type: tool
+        section: data-layer
+        tool: graphql
+        basePath: /data-layer/graphql/
+      next:
+        id: mobx
+        type: tool
+        section: data-layer
+        tool: mobx
+        basePath: /data-layer/mobx/
+    - id: mobx
+      path: /data-layer/mobx/
+      type: tool
+      section: data-layer
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: mobx
+      previous:
+        id: apollo
+        type: tool
+        section: data-layer
+        tool: apollo
+        basePath: /data-layer/apollo/
+      next:
+        id: relay
+        type: tool
+        section: data-layer
+        tool: relay
+        basePath: /data-layer/relay/
+    - id: relay
+      path: /data-layer/relay/
+      type: tool
+      section: data-layer
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: relay
+      previous:
+        id: mobx
+        type: tool
+        section: data-layer
+        tool: mobx
+        basePath: /data-layer/mobx/
+      next:
+        id: other-libraries
+        type: other-libraries
+        section: data-layer
+        basePath: /data-layer/other-libraries/
+    - id: other-libraries
+      path: /data-layer/other-libraries/
+      type: other-libraries
+      section: data-layer
+      blocks:
+        - other-tools
+      previous:
+        id: relay
+        type: tool
+        section: data-layer
+        tool: relay
+        basePath: /data-layer/relay/
+      next:
+        id: conclusion
+        type: conclusion
+        section: data-layer
+        basePath: /data-layer/conclusion/
+    - id: conclusion
+      path: /data-layer/conclusion/
+      type: conclusion
+      section: data-layer
+      blocks:
+        - quadrants
+      previous:
+        id: other-libraries
+        type: other-libraries
+        section: data-layer
+        basePath: /data-layer/other-libraries/
+      next:
+        id: back-end-frameworks
+        type: section
+        basePath: /back-end-frameworks/overview/
+  previous:
+    id: conclusion
+    type: conclusion
+    section: front-end-frameworks
+    basePath: /front-end-frameworks/conclusion/
+  next:
+    id: redux
+    type: tool
+    section: data-layer
+    tool: redux
+    basePath: /data-layer/redux/
+- id: back-end-frameworks
+  path: /back-end-frameworks/overview/
+  type: section
+  is_hidden: false
+  children:
+    - id: overview
+      path: /back-end-frameworks/overview/
+      type: overview
+      section: back-end-frameworks
+      blocks:
+        - overview
+        - tools-salary-range
+        - tools-company-size
+        - tools-years-of-experience
+        - happiness
+      previous:
+        id: conclusion
+        type: conclusion
+        section: data-layer
+        basePath: /data-layer/conclusion/
+      next:
+        id: express
+        type: tool
+        section: back-end-frameworks
+        tool: express
+        basePath: /back-end-frameworks/express/
+    - id: express
+      path: /back-end-frameworks/express/
+      type: tool
+      section: back-end-frameworks
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: express
+      previous:
+        id: overview
+        type: overview
+        section: back-end-frameworks
+        basePath: /back-end-frameworks/overview/
+      next:
+        id: nextjs
+        type: tool
+        section: back-end-frameworks
+        tool: nextjs
+        basePath: /back-end-frameworks/nextjs/
+    - id: nextjs
+      path: /back-end-frameworks/nextjs/
+      type: tool
+      section: back-end-frameworks
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: nextjs
+      previous:
+        id: express
+        type: tool
+        section: back-end-frameworks
+        tool: express
+        basePath: /back-end-frameworks/express/
+      next:
+        id: koa
+        type: tool
+        section: back-end-frameworks
+        tool: koa
+        basePath: /back-end-frameworks/koa/
+    - id: koa
+      path: /back-end-frameworks/koa/
+      type: tool
+      section: back-end-frameworks
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: koa
+      previous:
+        id: nextjs
+        type: tool
+        section: back-end-frameworks
+        tool: nextjs
+        basePath: /back-end-frameworks/nextjs/
+      next:
+        id: meteor
+        type: tool
+        section: back-end-frameworks
+        tool: meteor
+        basePath: /back-end-frameworks/meteor/
+    - id: meteor
+      path: /back-end-frameworks/meteor/
+      type: tool
+      section: back-end-frameworks
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: meteor
+      previous:
+        id: koa
+        type: tool
+        section: back-end-frameworks
+        tool: koa
+        basePath: /back-end-frameworks/koa/
+      next:
+        id: sails
+        type: tool
+        section: back-end-frameworks
+        tool: sails
+        basePath: /back-end-frameworks/sails/
+    - id: sails
+      path: /back-end-frameworks/sails/
+      type: tool
+      section: back-end-frameworks
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: sails
+      previous:
+        id: meteor
+        type: tool
+        section: back-end-frameworks
+        tool: meteor
+        basePath: /back-end-frameworks/meteor/
+      next:
+        id: feathers
+        type: tool
+        section: back-end-frameworks
+        tool: feathers
+        basePath: /back-end-frameworks/feathers/
+    - id: feathers
+      path: /back-end-frameworks/feathers/
+      type: tool
+      section: back-end-frameworks
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: feathers
+      previous:
+        id: sails
+        type: tool
+        section: back-end-frameworks
+        tool: sails
+        basePath: /back-end-frameworks/sails/
+      next:
+        id: other-libraries
+        type: other-libraries
+        section: back-end-frameworks
+        basePath: /back-end-frameworks/other-libraries/
+    - id: other-libraries
+      path: /back-end-frameworks/other-libraries/
+      type: other-libraries
+      section: back-end-frameworks
+      blocks:
+        - other-tools
+      previous:
+        id: feathers
+        type: tool
+        section: back-end-frameworks
+        tool: feathers
+        basePath: /back-end-frameworks/feathers/
+      next:
+        id: conclusion
+        type: conclusion
+        section: back-end-frameworks
+        basePath: /back-end-frameworks/conclusion/
+    - id: conclusion
+      path: /back-end-frameworks/conclusion/
+      type: conclusion
+      section: back-end-frameworks
+      blocks:
+        - quadrants
+      previous:
+        id: other-libraries
+        type: other-libraries
+        section: back-end-frameworks
+        basePath: /back-end-frameworks/other-libraries/
+      next:
+        id: testing
+        type: section
+        basePath: /testing/overview/
+  previous:
+    id: conclusion
+    type: conclusion
+    section: data-layer
+    basePath: /data-layer/conclusion/
+  next:
+    id: express
+    type: tool
+    section: back-end-frameworks
+    tool: express
+    basePath: /back-end-frameworks/express/
+- id: testing
+  path: /testing/overview/
+  type: section
+  is_hidden: false
+  children:
+    - id: overview
+      path: /testing/overview/
+      type: overview
+      section: testing
+      blocks:
+        - overview
+        - tools-salary-range
+        - tools-company-size
+        - tools-years-of-experience
+        - happiness
+      previous:
+        id: conclusion
+        type: conclusion
+        section: back-end-frameworks
+        basePath: /back-end-frameworks/conclusion/
+      next:
+        id: jest
+        type: tool
+        section: testing
+        tool: jest
+        basePath: /testing/jest/
+    - id: jest
+      path: /testing/jest/
+      type: tool
+      section: testing
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: jest
+      previous:
+        id: overview
+        type: overview
+        section: testing
+        basePath: /testing/overview/
+      next:
+        id: mocha
+        type: tool
+        section: testing
+        tool: mocha
+        basePath: /testing/mocha/
+    - id: mocha
+      path: /testing/mocha/
+      type: tool
+      section: testing
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: mocha
+      previous:
+        id: jest
+        type: tool
+        section: testing
+        tool: jest
+        basePath: /testing/jest/
+      next:
+        id: jasmine
+        type: tool
+        section: testing
+        tool: jasmine
+        basePath: /testing/jasmine/
+    - id: jasmine
+      path: /testing/jasmine/
+      type: tool
+      section: testing
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: jasmine
+      previous:
+        id: mocha
+        type: tool
+        section: testing
+        tool: mocha
+        basePath: /testing/mocha/
+      next:
+        id: enzyme
+        type: tool
+        section: testing
+        tool: enzyme
+        basePath: /testing/enzyme/
+    - id: enzyme
+      path: /testing/enzyme/
+      type: tool
+      section: testing
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: enzyme
+      previous:
+        id: jasmine
+        type: tool
+        section: testing
+        tool: jasmine
+        basePath: /testing/jasmine/
+      next:
+        id: karma
+        type: tool
+        section: testing
+        tool: karma
+        basePath: /testing/karma/
+    - id: karma
+      path: /testing/karma/
+      type: tool
+      section: testing
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: karma
+      previous:
+        id: enzyme
+        type: tool
+        section: testing
+        tool: enzyme
+        basePath: /testing/enzyme/
+      next:
+        id: storybook
+        type: tool
+        section: testing
+        tool: storybook
+        basePath: /testing/storybook/
+    - id: storybook
+      path: /testing/storybook/
+      type: tool
+      section: testing
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: storybook
+      previous:
+        id: karma
+        type: tool
+        section: testing
+        tool: karma
+        basePath: /testing/karma/
+      next:
+        id: ava
+        type: tool
+        section: testing
+        tool: ava
+        basePath: /testing/ava/
+    - id: ava
+      path: /testing/ava/
+      type: tool
+      section: testing
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: ava
+      previous:
+        id: storybook
+        type: tool
+        section: testing
+        tool: storybook
+        basePath: /testing/storybook/
+      next:
+        id: other-libraries
+        type: other-libraries
+        section: testing
+        basePath: /testing/other-libraries/
+    - id: other-libraries
+      path: /testing/other-libraries/
+      type: other-libraries
+      section: testing
+      blocks:
+        - other-tools
+      previous:
+        id: ava
+        type: tool
+        section: testing
+        tool: ava
+        basePath: /testing/ava/
+      next:
+        id: conclusion
+        type: conclusion
+        section: testing
+        basePath: /testing/conclusion/
+    - id: conclusion
+      path: /testing/conclusion/
+      type: conclusion
+      section: testing
+      blocks:
+        - quadrants
+      previous:
+        id: other-libraries
+        type: other-libraries
+        section: testing
+        basePath: /testing/other-libraries/
+      next:
+        id: mobile-and-desktop
+        type: section
+        basePath: /mobile-and-desktop/overview/
+  previous:
+    id: conclusion
+    type: conclusion
+    section: back-end-frameworks
+    basePath: /back-end-frameworks/conclusion/
+  next:
+    id: jest
+    type: tool
+    section: testing
+    tool: jest
+    basePath: /testing/jest/
+- id: mobile-and-desktop
+  path: /mobile-and-desktop/overview/
+  type: section
+  is_hidden: false
+  children:
+    - id: overview
+      path: /mobile-and-desktop/overview/
+      type: overview
+      section: mobile-and-desktop
+      blocks:
+        - overview
+        - tools-salary-range
+        - tools-company-size
+        - tools-years-of-experience
+        - happiness
+      previous:
+        id: conclusion
+        type: conclusion
+        section: testing
+        basePath: /testing/conclusion/
+      next:
+        id: electron
+        type: tool
+        section: mobile-and-desktop
+        tool: electron
+        basePath: /mobile-and-desktop/electron/
+    - id: electron
+      path: /mobile-and-desktop/electron/
+      type: tool
+      section: mobile-and-desktop
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: electron
+      previous:
+        id: overview
+        type: overview
+        section: mobile-and-desktop
+        basePath: /mobile-and-desktop/overview/
+      next:
+        id: react-native
+        type: tool
+        section: mobile-and-desktop
+        tool: react-native
+        basePath: /mobile-and-desktop/react-native/
+    - id: react-native
+      path: /mobile-and-desktop/react-native/
+      type: tool
+      section: mobile-and-desktop
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: react-native
+      previous:
+        id: electron
+        type: tool
+        section: mobile-and-desktop
+        tool: electron
+        basePath: /mobile-and-desktop/electron/
+      next:
+        id: native-apps
+        type: tool
+        section: mobile-and-desktop
+        tool: native-apps
+        basePath: /mobile-and-desktop/native-apps/
+    - id: native-apps
+      path: /mobile-and-desktop/native-apps/
+      type: tool
+      section: mobile-and-desktop
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: native-apps
+      previous:
+        id: react-native
+        type: tool
+        section: mobile-and-desktop
+        tool: react-native
+        basePath: /mobile-and-desktop/react-native/
+      next:
+        id: phonegap-cordova
+        type: tool
+        section: mobile-and-desktop
+        tool: phonegap-cordova
+        basePath: /mobile-and-desktop/phonegap-cordova/
+    - id: phonegap-cordova
+      path: /mobile-and-desktop/phonegap-cordova/
+      type: tool
+      section: mobile-and-desktop
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: phonegap-cordova
+      previous:
+        id: native-apps
+        type: tool
+        section: mobile-and-desktop
+        tool: native-apps
+        basePath: /mobile-and-desktop/native-apps/
+      next:
+        id: ionic
+        type: tool
+        section: mobile-and-desktop
+        tool: ionic
+        basePath: /mobile-and-desktop/ionic/
+    - id: ionic
+      path: /mobile-and-desktop/ionic/
+      type: tool
+      section: mobile-and-desktop
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: ionic
+      previous:
+        id: phonegap-cordova
+        type: tool
+        section: mobile-and-desktop
+        tool: phonegap-cordova
+        basePath: /mobile-and-desktop/phonegap-cordova/
+      next:
+        id: nativescript
+        type: tool
+        section: mobile-and-desktop
+        tool: nativescript
+        basePath: /mobile-and-desktop/nativescript/
+    - id: nativescript
+      path: /mobile-and-desktop/nativescript/
+      type: tool
+      section: mobile-and-desktop
+      blocks:
+        - results-over-time
+        - likes
+        - dislikes
+        - tool-pairing
+        - tool-usage-by-country
+      tool: nativescript
+      previous:
+        id: ionic
+        type: tool
+        section: mobile-and-desktop
+        tool: ionic
+        basePath: /mobile-and-desktop/ionic/
+      next:
+        id: other-libraries
+        type: other-libraries
+        section: mobile-and-desktop
+        basePath: /mobile-and-desktop/other-libraries/
+    - id: other-libraries
+      path: /mobile-and-desktop/other-libraries/
+      type: other-libraries
+      section: mobile-and-desktop
+      blocks:
+        - other-tools
+      previous:
+        id: nativescript
+        type: tool
+        section: mobile-and-desktop
+        tool: nativescript
+        basePath: /mobile-and-desktop/nativescript/
+      next:
+        id: conclusion
+        type: conclusion
+        section: mobile-and-desktop
+        basePath: /mobile-and-desktop/conclusion/
+    - id: conclusion
+      path: /mobile-and-desktop/conclusion/
+      type: conclusion
+      section: mobile-and-desktop
+      blocks:
+        - quadrants
+      previous:
+        id: other-libraries
+        type: other-libraries
+        section: mobile-and-desktop
+        basePath: /mobile-and-desktop/other-libraries/
+      next:
+        id: other-tools
+        type: custom
+        basePath: /other-tools/
+  previous:
+    id: conclusion
+    type: conclusion
+    section: testing
+    basePath: /testing/conclusion/
+  next:
+    id: electron
+    type: tool
+    section: mobile-and-desktop
+    tool: electron
+    basePath: /mobile-and-desktop/electron/
+- id: other-tools
+  path: /other-tools/
+  type: custom
+  is_hidden: false
+  blocks:
+    - other_languages
+    - browser_apis
+    - build_tools
+    - utility_libraries
+    - text_editors
+  previous:
+    id: conclusion
+    type: conclusion
+    section: mobile-and-desktop
+    basePath: /mobile-and-desktop/conclusion/
+  next:
+    id: opinions
+    type: custom
+    basePath: /opinions/
+- id: opinions
+  path: /opinions/
+  type: custom
+  is_hidden: false
+  blocks:
+    - opinion-js_moving_in_right_direction
+    - opinion-building_js_apps_overly_complex
+    - opinion-js_over_used_online
+    - opinion-enjoy_building_js_apps
+    - opinion-would_like_js_to_be_main_lang
+    - opinion-js_ecosystem_changing_to_fast
+    - opinion-survey_too_long
+  previous:
+    id: other-tools
+    type: custom
+    basePath: /other-tools/
+  next:
+    id: awards
+    type: custom
+    basePath: /awards/
+- id: awards
+  path: /awards/
+  type: custom
+  is_hidden: false
+  blocks:
+    - highest_satisfaction
+    - highest_interest
+    - highest_usage
+    - most_mentioned
+    - prediction
+    - special
+  previous:
+    id: opinions
+    type: custom
+    basePath: /opinions/
+  next:
+    id: conclusion
+    type: custom
+    basePath: /conclusion/
+- id: conclusion
+  path: /conclusion/
+  type: custom
+  is_hidden: false
+  blocks:
+    - quadrants
+  previous:
+    id: awards
+    type: custom
+    basePath: /awards/
+- id: support
+  path: /support/
+  type: custom
+  is_hidden: true
+  previous:
+    id: conclusion
+    type: custom
+    basePath: /conclusion/

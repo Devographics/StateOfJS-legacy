@@ -1,39 +1,44 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { getWording } from '../helpers/wording'
-import Layout from '../components/common/Layout'
-import SectionHeader from '../components/elements/SectionHeader'
-import BarBlock from '../components/blocks/BarBlock'
-import TextBlock from '../components/blocks/TextBlock'
-import ResourcesBlock from '../components/blocks/ResourcesBlock'
+import Layout from 'core/Layout'
+import PageHeader from 'core/pages/PageHeader'
+import BarBlock from 'core/blocks/BarBlock'
+import TextBlock from 'core/blocks/TextBlock'
+import ResourcesBlock from 'core/blocks/ResourcesBlock'
+import Trans from 'core/i18n/Trans'
 
 const OtherTools = ({ data, ...rest }) => {
     const topics = data.topics.edges.map(({ node }) => node)
 
     return (
         <Layout {...rest}>
-            <div className="page">
-                <SectionHeader />
-                <TextBlock text={data.file.childMarkdownRemark.html} />
-                {topics.map(topic => {
-                    const data = topic.tools
-                        .map(d => ({
-                            name: d.tool,
-                            count: d.count
-                        }))
-                        .reverse()
+            <Trans>
+                {translate => (
+                    <div className="page">
+                        <PageHeader />
+                        <TextBlock text={data.introduction.html} />
+                        {topics.map(topic => {
+                            const data = topic.tools
+                                .map(d => ({
+                                    name: d.tool,
+                                    count: d.count
+                                }))
+                                .reverse()
 
-                    return (
-                        <BarBlock
-                            key={topic.topic}
-                            data={data}
-                            title={getWording(`other_tools.${topic.topic}`)}
-                            chartId={topic.topic}
-                        />
-                    )
-                })}
-                <ResourcesBlock tool="editors" />
-            </div>
+                            return (
+                                <BarBlock
+                                    key={topic.topic}
+                                    data={data}
+                                    title={translate(`other_tool.${topic.topic}`)}
+                                    chartId={topic.topic}
+                                    showDescription={false}
+                                />
+                            )
+                        })}
+                        <ResourcesBlock tool="editors" />
+                    </div>
+                )}
+            </Trans>
         </Layout>
     )
 }
@@ -41,11 +46,15 @@ const OtherTools = ({ data, ...rest }) => {
 export default OtherTools
 
 export const query = graphql`
-    query {
-        file(name: { eq: "othertools-introduction" }) {
-            childMarkdownRemark {
-                html
+    query otherTools($locale: String!) {
+        introduction: markdownRemark(
+            frontmatter: {
+                type: { eq: "introduction" }
+                section: { eq: "other-tools" }
+                locale: { eq: $locale }
             }
+        ) {
+            html
         }
         topics: allOtherToolsYaml {
             edges {
