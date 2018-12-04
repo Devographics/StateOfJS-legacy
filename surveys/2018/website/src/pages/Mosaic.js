@@ -1,5 +1,5 @@
 import React from 'react'
-import '../stylesheets/screen.scss'
+import 'stylesheets/screen.scss'
 
 const images = [
     'awards_highest_interest.png',
@@ -264,7 +264,7 @@ const Mosaic = () => (
     <div className="mosaic">
         {images.map(image => (
             <div className="mosaic__image">
-                <img src={`/images/captures/${image}`} alt="capture"/>
+                <img src={`/images/captures/${image}`} alt="capture" />
             </div>
         ))}
     </div>

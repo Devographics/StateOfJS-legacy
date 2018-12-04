@@ -1,0 +1,83 @@
+import React from 'react'
+import Hamburger from '../components/Hamburger'
+import { PageContextConsumer } from '../pages/pageContext'
+import PageLabel from '../pages/PageLabel'
+import PageLink from '../pages/PageLink'
+
+class Pagination extends React.PureComponent {
+    render() {
+        const { position, toggleSidebar } = this.props
+
+        return (
+            <PageContextConsumer>
+                {context => {
+                    let previous = <span />
+                    if (context.previous !== undefined) {
+                        previous = (
+                            <PageLink
+                                page={context.previous}
+                                className="pagination__link pagination__previous"
+                            >
+                                <span className="pagination__link__symbol">&lt;&lt;&nbsp;</span>
+                                <span className="pagination__link__label pagination__link__label--full">
+                                    <PageLabel page={context.previous} mode="long" />
+                                </span>
+                                <span className="pagination__link__label pagination__link__label--short">
+                                    <PageLabel page={context.previous} />
+                                </span>
+                            </PageLink>
+                        )
+                    }
+
+                    let next = <span />
+                    if (context.next !== undefined) {
+                        next = (
+                            <PageLink
+                                page={context.next}
+                                className="pagination__link pagination__next"
+                            >
+                                <span className="pagination__link__label pagination__link__label--full">
+                                    <PageLabel page={context.next} mode="long" />
+                                </span>
+                                <span className="pagination__link__label pagination__link__label--short">
+                                    <PageLabel page={context.next} />
+                                </span>
+                                <span className="pagination__link__symbol">&nbsp;&gt;&gt;</span>
+                            </PageLink>
+                        )
+                    }
+                    return (
+                        <div
+                            className={`pagetitle__wrapper pagetitle__wrapper--pagination pagetitle__wrapper--${position}`}
+                        >
+                            <div className="pagetitle">
+                                <div className="pagetitle__inner">
+                                    {previous}
+                                    {position === 'top' && (
+                                        <span className="PageTitle__Sidebar__Toggle">
+                                            <button
+                                                className="Sidebar__Toggle"
+                                                onClick={toggleSidebar}
+                                            >
+                                                <span>
+                                                    <Hamburger />
+                                                </span>
+                                            </button>
+                                        </span>
+                                    )}
+                                    {next}
+                                </div>
+                            </div>
+                        </div>
+                    )
+                }}
+            </PageContextConsumer>
+        )
+    }
+}
+
+Pagination.defaultProps = {
+    mode: 'title'
+}
+
+export default Pagination

@@ -1,10 +1,10 @@
 import React from 'react'
 import keyBy from 'lodash/keyBy'
 import { graphql } from 'gatsby'
-import Layout from '../components/common/Layout'
-import SectionHeader from '../components/elements/SectionHeader'
-import TextBlock from '../components/blocks/TextBlock'
-import OpinionBlock from '../components/blocks/OpinionBlock'
+import Layout from 'core/Layout'
+import PageHeader from 'core/pages/PageHeader'
+import TextBlock from 'core/blocks/TextBlock'
+import OpinionBlock from 'modules/opinions/OpinionBlock'
 import { globalOpinionSubjects } from '../constants'
 
 const Opinions = ({ data, ...rest }) => {
@@ -13,8 +13,8 @@ const Opinions = ({ data, ...rest }) => {
     return (
         <Layout {...rest}>
             <div>
-                <SectionHeader />
-                <TextBlock text={data.file.childMarkdownRemark.html} />
+                <PageHeader />
+                <TextBlock text={data.introduction.html} />
                 {globalOpinionSubjects.map(subject => (
                     <OpinionBlock
                         key={subject}
@@ -31,11 +31,15 @@ const Opinions = ({ data, ...rest }) => {
 export default Opinions
 
 export const query = graphql`
-    query {
-        file(name: { eq: "opinions-introduction" }) {
-            childMarkdownRemark {
-                html
+    query opinions($locale: String!) {
+        introduction: markdownRemark(
+            frontmatter: {
+                type: { eq: "introduction" }
+                section: { eq: "opinions" }
+                locale: { eq: $locale }
             }
+        ) {
+            html
         }
         opinions: allGlobalOpinionsYaml {
             edges {

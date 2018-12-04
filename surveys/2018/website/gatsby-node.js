@@ -1,122 +1,184 @@
 const yaml = require('js-yaml')
 const fs = require('fs')
 const path = require(`path`)
+const { findIndex, findLastIndex, omit } = require('lodash')
+
 const nav = yaml.safeLoad(fs.readFileSync('../config/nav.yml', 'utf8'))
-const charts = yaml.safeLoad(fs.readFileSync('../config/charts.yml', 'utf8'))
-/*
+const blocks = yaml.safeLoad(fs.readFileSync('../config/blocks.yml', 'utf8'))
+const locales = yaml.safeLoad(fs.readFileSync('../config/locales.yml', 'utf8'))
 
-TODO: use https://www.gatsbyjs.org/docs/actions/#setWebpackConfig
-see: https://www.gatsbyjs.org/docs/migrating-from-v1-to-v2/#change-modifywebpackconfig-to-oncreatewebpackconfig
+const getChildPageType = id => {
+    if (['overview', 'other-libraries', 'tool', 'conclusion'].includes(id)) {
+        return id
+    }
 
-(not sure if we still need this though…)
-*/
+    return 'tool'
+}
 
-// exports.modifyWebpackConfig = function({ config }) {
-//     config.removeLoader('md')
-//     config.loader('md', cfg => {
-//         cfg.test = /\.md$/
-//         cfg.loader = 'html!markdown'
+const getChildPageTemplate = type => {
+    let template
+    switch (type) {
+        case 'overview':
+            template = 'modules/sections/SectionIntroduction'
+            break
 
-//         return cfg
-//     })
+        case 'other-libraries':
+            template = 'modules/sections/SectionOtherTools'
+            break
 
-//     return config
-// }
+        case 'conclusion':
+            template = 'modules/sections/SectionConclusion'
+            break
 
-exports.createPages = async ({ actions }) => {
-    const { createRedirect, createPage } = actions
+        case 'tool':
+            template = 'modules/tools/Tool'
+            break
+
+        default:
+            throw new Error(`no template defined for child page type: ${type}`)
+    }
+
+    return path.resolve(`./src/${template}Template.js`)
+}
+
+let enhancedNav = null
+
+const enhanceNav = async () => {
+    if (enhancedNav !== null) return enhancedNav
+
+    const flat = []
+    const hierarchy = []
 
     nav.forEach(item => {
-        if (item.subPages) {
-            createRedirect({
-                fromPath: `/${item.id}/`,
-                redirectInBrowser: true,
-                toPath: `/${item.id}/${item.subPages[0]}/`
-            })
-            createRedirect({
-                fromPath: `/${item.id}`,
-                redirectInBrowser: true,
-                toPath: `/${item.id}/${item.subPages[0]}/`
-            })
+        const page = {
+            id: item.id,
+            path: `/${item.id}/`,
+            type: 'custom',
+            is_hidden: item.hide === true
+        }
+        if (page.id === 'home') {
+            page.path = '/'
+        }
+        if (blocks[item.id] !== undefined) {
+            page.blocks = blocks[item.id]
+        }
+        if (item.children !== undefined && item.children.length > 0) {
+            page.path = `/${item.id}/${item.children[0]}/`
+            page.type = 'section'
+            page.children = []
+        }
+        flat.push(page)
+        hierarchy.push(page)
 
-            let subPageContext = {}
+        if (item.children !== undefined) {
+            item.children.forEach(childPageId => {
+                const childPageType = getChildPageType(childPageId)
 
-            item.subPages.forEach(subPage => {
-                const pagePath = `/${item.id}/${subPage}`
-                let templateName
-                let pageCharts = []
-                switch (subPage) {
-                    case 'overview':
-                        templateName = 'Overview'
-                        subPageContext = {
-                            section: item.id
-                        }
-                        pageCharts = pageCharts.concat(charts.overview)
-                        break
-
-                    case 'other-libraries':
-                        templateName = 'OtherTools'
-                        pageCharts = pageCharts.concat(charts['other-libraries'])
-                        break
-
-                    case 'conclusion':
-                        templateName = 'Conclusion'
-                        subPageContext = {
-                            section: item.id,
-                            name: `${item.id}-conclusion`
-                        }
-                        pageCharts = pageCharts.concat(charts.conclusion)
-                        break
-
-                    default:
-                        templateName = 'Tool'
-                        subPageContext = {
-                            section: item.id,
-                            tool: subPage
-                        }
-                        pageCharts = pageCharts.concat(charts.tool)
-                        break
+                const childPage = {
+                    id: childPageId,
+                    path: `/${item.id}/${childPageId}/`,
+                    type: childPageType,
+                    section: item.id,
+                    blocks: [...blocks[childPageType]]
+                }
+                if (childPageType === 'tool') {
+                    childPage.tool = childPageId
                 }
 
+                flat.push(childPage)
+                page.children.push(childPage)
+            })
+        }
+    })
+
+    // assign prev/next page using flat pages
+    flat.forEach(page => {
+        const index = findIndex(flat, p => p.path === page.path)
+        const previous = flat[index - 1]
+        if (previous !== undefined && previous.is_hidden !== true) {
+            page.previous = omit(previous, [
+                'path',
+                'children',
+                'blocks',
+                'previous',
+                'next',
+                'is_hidden'
+            ])
+            page.previous.basePath = previous.path
+        }
+
+        // we must use last index here because of section overview
+        // which is duplicated
+        const lastIndex = findLastIndex(flat, p => p.path === page.path)
+        const next = flat[lastIndex + 1]
+        if (next !== undefined && next.is_hidden !== true) {
+            page.next = omit(next, ['path', 'children', 'blocks', 'previous', 'next', 'is_hidden'])
+            page.next.basePath = next.path
+        }
+    })
+
+    await fs.writeFileSync('../config/enhanced_nav.yml', yaml.dump(hierarchy))
+
+    enhancedNav = { hierarchy, flat }
+
+    return enhancedNav
+}
+
+const localizedPath = (path, locale) =>
+    locale.path === 'default' ? path : `/${locale.path}${path}`
+
+const getPageContext = page => {
+    const context = omit(page, ['path', 'children', 'is_hidden', 'blocks'])
+    context.basePath = page.path
+
+    return context
+}
+
+const createBlockPages = async (page, context, createPage) => {
+    if (page.blocks === undefined || page.blocks.length === 0) {
+        return
+    }
+
+    page.blocks.forEach(block => {
+        locales.forEach(locale => {
+            createPage({
+                path: localizedPath(`${page.path}${block}`, locale),
+                component: path.resolve(`./src/core/share/ShareBlockTemplate.js`),
+                context: {
+                    ...context,
+                    redirect: `${localizedPath(page.path, locale)}#${block}`,
+                    block,
+                    locale: locale.locale,
+                    localePath: locale.path === 'default' ? '' : `/${locale.path}`
+                }
+            })
+        })
+    })
+}
+
+exports.createPages = async ({ actions: { createPage } }) => {
+    const { flat } = await enhanceNav()
+
+    flat.forEach(page => {
+        const context = getPageContext(page)
+
+        if (page.type !== 'custom' && page.type !== 'section') {
+            const template = getChildPageTemplate(page.type)
+
+            locales.forEach(locale => {
                 createPage({
-                    path: pagePath,
-                    component: path.resolve(
-                        `./src/components/templates/${templateName}Template.js`
-                    ),
-                    context: subPageContext
-                })
-
-                /*
-
-                Create a third-level page for each chart for sharing
-
-                */
-                pageCharts.forEach(chart => {
-                    const pagePath = `/${item.id}/${subPage}/${chart}`
-                    createPage({
-                        path: pagePath,
-                        component: path.resolve(`./src/components/templates/ShareChartTemplate.js`),
-                        context: { ...subPageContext, chart }
-                    })
+                    path: localizedPath(page.path, locale),
+                    component: template,
+                    context: {
+                        ...context,
+                        locale: locale.locale,
+                        localePath: locale.path === 'default' ? '' : `/${locale.path}`
+                    }
                 })
             })
-        } else {
-            /*
-    
-            Create sharing pages for other sections
-
-            */
-            const pageCharts = charts[item.id]
-            pageCharts &&
-                pageCharts.forEach(chart => {
-                    const pagePath = `/${item.id}/${chart}`
-                    createPage({
-                        path: pagePath,
-                        component: path.resolve(`./src/components/templates/ShareChartTemplate.js`),
-                        context: { section: item.id, chart }
-                    })
-                })
         }
+
+        createBlockPages(page, context, createPage)
     })
 }
 
@@ -130,19 +192,62 @@ exports.createPages = async ({ actions }) => {
  * Implement the Gatsby API “onCreatePage”.
  * This is called after every page is created.
  */
-exports.onCreatePage = ({ page, actions }) => {
+exports.onCreatePage = async ({ page, actions }) => {
     const { createPage, deletePage } = actions
 
-    return new Promise(resolve => {
-        const newPage = Object.assign({}, page, {
-            path: page.path.toLowerCase()
-        })
+    const { flat } = await enhanceNav()
 
-        if (newPage.path !== page.path) {
-            deletePage(page)
-            createPage(newPage)
+    const pagePath = page.path.toLowerCase()
+    const matchingPage = flat.find(p => p.path === pagePath)
+
+    // if there's no matching page
+    // it means we're dealing with an internal page
+    // thus, we don't create one for each locale
+    if (matchingPage === undefined) {
+        if (pagePath !== page.path) {
+            await deletePage(page)
+            await createPage({
+                ...page,
+                path: pagePath
+            })
         }
+        return
+    }
 
-        resolve()
+    // add context, required for pagination
+    const context = {
+        ...page.context,
+        ...getPageContext(matchingPage)
+    }
+    const newPage = {
+        ...page,
+        path: pagePath,
+        context
+    }
+
+    await deletePage(page)
+
+    // create page for each available locale
+    for (let locale of locales) {
+        await createPage({
+            ...newPage,
+            path: localizedPath(newPage.path, locale),
+            context: {
+                ...newPage.context,
+                locale: locale.locale,
+                localePath: locale.path === 'default' ? '' : `/${locale.path}`
+            }
+        })
+    }
+
+    await createBlockPages(page, context, createPage)
+}
+
+// Allow absolute imports
+exports.onCreateWebpackConfig = ({ actions }) => {
+    actions.setWebpackConfig({
+        resolve: {
+            modules: [path.resolve(__dirname, 'src'), 'node_modules']
+        }
     })
 }

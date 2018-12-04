@@ -21,19 +21,19 @@
         margin-right: $spacing;
     }
 }
-.SectionHeader {
+.PageHeader {
     margin-bottom: $spacing * 2;
 }
 
 .ToolHeader__Header,
-.SectionHeader__Header {
+.PageHeader__Header {
     display: flex;
     justify-content: space-between;
     // margin-bottom: $spacing * 0.5;
 }
 
 .ToolHeader__Title,
-.SectionHeader__Title {
+.PageHeader__Title {
     margin: 0;
     padding: 0;
     align-items: baseline;
