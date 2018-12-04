@@ -6,11 +6,11 @@ import Animation from './components/Animation'
 import Pagination from './pages/Pagination'
 import Sidebar from './components/Sidebar'
 import Head from './components/Head'
-import LangSelector from './i18n/LangSelector'
 import { PageContextProvider } from './pages/pageContext'
 import { mergePageContext } from './pages/pageHelpers'
 import { I18nContextProvider } from './i18n/i18nContext'
 import PageMetaDebug from './pages/PageMetaDebug'
+// import LangSelector from './i18n/LangSelector'
 
 export default class Layout extends PureComponent {
     static propTypes = {
@@ -101,7 +101,10 @@ export default class Layout extends PureComponent {
                                 )}
                             </div>
                         </div>
+                        {/*
+                        Disabled until we validate en-US is working as expected
                         <LangSelector />
+                        */}
                     </div>
                 </I18nContextProvider>
             </PageContextProvider>
