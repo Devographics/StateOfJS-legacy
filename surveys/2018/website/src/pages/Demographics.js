@@ -5,6 +5,7 @@ import TextBlock from 'core/blocks/TextBlock'
 import Layout from 'core/Layout'
 import PageHeader from 'core/pages/PageHeader'
 import GenderBreakdownBlock from 'modules/demographics/blocks/GenderBreakdownBlock'
+import SourceBreakdownBlock from 'modules/demographics/blocks/SourceBreakdownBlock'
 import ParticipationByCountryBlock from 'modules/demographics/blocks/ParticipationByCountryBlock'
 import DemographicsSalaryBlock from 'modules/demographics/blocks/DemographicsSalaryBlock'
 import SalaryPerCountryBlock from 'modules/demographics/blocks/SalaryPerCountryBlock'
@@ -14,7 +15,7 @@ import DemographicsCompanySizeBlock from 'modules/demographics/blocks/Demographi
 const Demographics = ({ data, ...rest }) => {
     const participationData = data.stats.participation.find(s => s.survey === '2018').by_country
     const genderData = data.stats.gender.find(s => s.survey === '2018')
-
+    const sourceData = data.stats.source.find(s => s.survey === '2018')
     return (
         <Layout {...rest}>
             <div>
@@ -34,6 +35,7 @@ const Demographics = ({ data, ...rest }) => {
                     data={data.stats.company_size}
                     chartId="company-size"
                 />
+                <SourceBreakdownBlock data={sourceData} chartId="source-breakdown" />
                 <GenderBreakdownBlock data={genderData} chartId="gender-breakdown" />
             </div>
         </Layout>
@@ -185,6 +187,16 @@ export const query = graphql`
                     count
                     percentage
                 }
+            }
+            source{
+                survey
+                total
+                by_source {
+                    source
+                    count
+                    percentage
+                }
+
             }
         }
     }

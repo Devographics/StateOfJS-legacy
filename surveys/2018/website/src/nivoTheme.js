@@ -18,6 +18,17 @@ export default {
         colors.blue
     ],
     salaryColors: ['#8b8de8', '#b3b5e6', '#dedfec', '#e4d6d9', '#dc9eaa', '#e28194', '#ea2149'],
+    sourceColors: {
+        Email: colors.purple,
+        Twitter: colors.blue,
+        Reddit: colors.red,
+        Slack: 'rgb(110, 93, 133)',
+        'JavaScript Weekly': colors.yellow,
+        'Hacker News': 'rgb(240, 128, 72)',
+        Medium: '#48A57F',
+        Facebook: 'rgb(99, 130, 197)',
+        Other: colors.greyLight
+    },
     genderColors: {
         female: colors.blue,
         male: colors.red,

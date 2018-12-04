@@ -3644,3 +3644,44 @@ gender:
         survey: '2016'
         total: 10251
         by_gender: []
+source:
+    -
+        survey: '2018'
+        total: 20252
+        by_source:
+            -
+                source: Email
+                count: 2033
+                percentage: 10.04
+            - 
+                source: Twitter
+                count: 2062
+                percentage: 10.18
+            - 
+                source: Reddit
+                count: 1043
+                percentage: 5.15
+            - 
+                source: Slack
+                count: 557
+                percentage: 2.75
+            -
+                source: JavaScript Weekly
+                count: 529
+                percentage: 2.61
+            - 
+                source: Hacker News
+                count: 468
+                percentage: 2.31
+            - 
+                source: Medium
+                count: 285
+                percentage: 1.41
+            - 
+                source: Facebook
+                count: 140
+                percentage: 0.69
+            - 
+                source: Other
+                count: 13272
+                percentage: 65.54

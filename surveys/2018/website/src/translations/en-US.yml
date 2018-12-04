@@ -377,6 +377,8 @@ translations:
       t: Company size breakdown.
     - key: block.title.gender-breakdown
       t: Gender Breakdown
+    - key: block.title.source-breakdown
+      t: Source Breakdown
     - key: block.description.gender-breakdown
       t: Gender breakdown.
     - key: block.title.connections
