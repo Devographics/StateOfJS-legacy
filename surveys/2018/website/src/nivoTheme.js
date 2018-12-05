@@ -27,7 +27,7 @@ export default {
         'Hacker News': 'rgb(240, 128, 72)',
         Medium: '#48A57F',
         Facebook: 'rgb(99, 130, 197)',
-        Other: colors.greyLight
+        'Other/Unknown': colors.greyLight
     },
     genderColors: {
         female: colors.blue,
