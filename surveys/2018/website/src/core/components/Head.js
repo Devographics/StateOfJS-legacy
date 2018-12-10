@@ -32,7 +32,7 @@ const Head = () => (
                         <Fragment>
                             <Helmet meta={mergedMeta} defaultTitle={meta.fullTitle}>
                                 <html lang="en" />
-                                <title>{meta.fullTitle}</title>
+                                <title>{meta.title}</title>
                                 <link rel="shortcut icon" href="/images/favicon.png" />
                                 <link
                                     rel="preconnect"
