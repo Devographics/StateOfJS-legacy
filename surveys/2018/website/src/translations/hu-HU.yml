@@ -6,7 +6,7 @@ translations:
     - key: average
       t: Átlag  
     - key: conclusion  
-      t: Conclusion
+      t: Következtetés
     - key: tools_salary_range_average
       t: Átlagos kereset
     - key: tools_company_size_average
@@ -174,7 +174,7 @@ translations:
     - key: section.front-end-frameworks
       t: Front-end keretrendszerek
     - key: section.data-layer
-      t: Data Layer
+      t: Adat réteg
     - key: section.back-end-frameworks
       t: Back-end keretrendszerek
     - key: section.testing
