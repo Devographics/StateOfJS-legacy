@@ -5,3 +5,7 @@
 - locale: fr-FR
   path:   fr
   label:  🇫🇷 français
+  
+- locale: pt-BR
+  path:   pt
+  label:  🇧🇷 português brasileiro
