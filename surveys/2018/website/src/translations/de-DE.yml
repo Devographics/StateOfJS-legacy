@@ -2,87 +2,87 @@ locale: en-US
 translations:
     # general
     - key: share
-      t: Share
+      t: Teilen
     - key: average
-      t: Average  
-    - key: conclusion  
-      t: Conclusion
+      t: Durschnitt
+    - key: conclusion
+      t: Zusammenfassung
     - key: tools_salary_range_average
-      t: Average salary
+      t: Durschnittliches Gehalt
     - key: tools_company_size_average
-      t: Average company size
+      t: Durchschnittliche Firmengröße
     - key: tools_years_of_experience_average
-      t: Average years of experience
+      t: Durchschnittle Erfahrung in Jahren
     - key: users_percentage
-      t: percentage of users
+      t: Prozent der Benutzer
     - key: salary_range_axis_legend
-      t: salary range
+      t: Gehaltsbereich
     - key: years_of_experience_axis_legend
-      t: years of experience
+      t: Erfahrung in Jahren
     - key: company_size_axis_legend
-      t: number of employees
+      t: Anzahl der Angestellten
     - key: percents_display_mode
-      t: Percents
+      t: Prozente
     - key: counts_display_mode
-      t: Counts
+      t: Anzahl
     - key: awards_runner_ups
       t: Runner-Ups
     - key: tool_homepage
       t: Homepage
     - key: from_to_short
-      t: ${from} to ${to}
+      t: ${from} zu ${to}
     - key: users_count
-      t: ${count} users
+      t: ${count} Benutzer
     - key: percentage_of_respondents
-      t: ${percentage} of respondents
+      t: ${percentage} der Teilnehmer
     - key: partners.premium_partners
-      t: Our 2018 Premium Partners
+      t: Unsere Premium-Sponsoren in 2018
     - key: partners.become_partner
-      t: Become a partner
+      t: Werde ein Sponsor
     - key: partners.thanks
       t: |
-        Thanks to our partners for supporting this project.
-        <a href="/support">Learn more</a> about supporting The State of JS.
+        Danke an unsere Sponsoren die dieses Projekt unterstützen.
+        <a href="/support">Erfahre mehr</a> darüber wie du The State of JS unterstützen kannst.
 
     # opinions
     - key: opinions.legends.never_heard
-      t: I've never heard of it
+      t: Ich habe noch nie davon gehört
     - key: opinions.legends_short.never_heard
-      t: Never heard of it  
+      t: Noch nie davon gehört
     - key: opinions.legends.not_interested
-      t: I've HEARD of it, and am NOT interested
+      t: Ich HABE davon gehört, habe aber KEIN Interesse
     - key: opinions.legends_short.not_interested
-      t: Heard of it, not interested
+      t: Davon gehört, kein Interesse
     - key: opinions.legends.interested
-      t: I've HEARD of it, and WOULD like to learn it
+      t: Ich HABE davon gehört, und WÜRDE es gerne lernen
     - key: opinions.legends_short.interested
-      t: Heard of it, would like to learn
-    - key: opinions.legends.would_use  
-      t: I've USED it before, and WOULD use it again
-    - key: opinions.legends_short.would_use  
-      t: Used it, would use again
-    - key: opinions.legends.would_not_use  
-      t: I've USED it before, and would NOT use it again
-    - key: opinions.legends_short.would_not_use  
-      t: Used it, would not use again
+      t: Davon gehört, würde es gerne lernen
+    - key: opinions.legends.would_use
+      t: Ich HABE es schonmal benutzt, und WÜRDE es wieder benutzen
+    - key: opinions.legends_short.would_use
+      t: Schonmal benutzt, würde es nochmal benutzen
+    - key: opinions.legends.would_not_use
+      t: Ich HABE es schonmal benutzt, und ich würde es NICHT noch einmal benutzen
+    - key: opinions.legends_short.would_not_use
+      t: Schonmal benutzt, würde es nicht nochmal benutzen.
 
     # generic opinions
     - key: opinion_scale.0
-      t: Strongly Disagree
+      t: Stimme komplett nicht zu
     - key: opinion_scale.1
-      t: Disagree
+      t: Stimme nicht zu
     - key: opinion_scale.2
       t: Neutral
     - key: opinion_scale.3
-      t: Agree
+      t: Stimme zu
     - key: opinion_scale.4
-      t: Strongly Agree
+      t: Stimme komplett zu
 
     # salary ranges
     - key: salary_range.work-for-free.long
-      t: I work for free
+      t: Ich arbeite für umsonst
     - key: salary_range.work-for-free.short
-      t: work for free
+      t: Arbeite für umsonst
     - key: salary_range.0-10.long
       t: $0k-$10k
     - key: salary_range.0-10.short
@@ -90,121 +90,123 @@ translations:
     - key: salary_range.10-30.long
       t: $10k-$30k
     - key: salary_range.10-30.short
-      t: $10k-$30k 
+      t: $10k-$30k
     - key: salary_range.30-50.long
       t: $30k-$50k
     - key: salary_range.30-50.short
-      t: $30k-$50k 
+      t: $30k-$50k
     - key: salary_range.50-100.long
       t: $50k-$100k
     - key: salary_range.50-100.short
-      t: $50k-$100k  
+      t: $50k-$100k
     - key: salary_range.100-200.long
       t: $100k-$200k
     - key: salary_range.100-200.short
-      t: $100k-$200k   
+      t: $100k-$200k
     - key: salary_range.more-than-200.long
-      t: more than $200k
+      t: mehr als $200k
     - key: salary_range.more-than-200.short
-      t: $200k+   
+      t: $200k+
 
     # company size
     - key: company_size.1.long
-      t: One employee
+      t: Einzelner Mitarbeiter
     - key: company_size.1.short
-      t: one
+      t: Einer
     - key: company_size.1-5.long
-      t: 1 to 5 employees
+      t: 1 bis 5 Mitarbeiter
     - key: company_size.1-5.short
       t: 1~5
     - key: company_size.5-10.long
-      t: 5 to 10 employees
+      t: 5 bis 10 Mitarbeiter
     - key: company_size.5-10.short
       t: 5~10
     - key: company_size.10-20.long
-      t: 10 to 20 employees
+      t: 10 bis 20 Mitarbeiter
     - key: company_size.10-20.short
       t: 10~20
     - key: company_size.20-50.long
-      t: 20 to 50 employees
+      t: 20 bis 50 Mitarbeiter
     - key: company_size.20-50.short
       t: 20~50
     - key: company_size.50-100.long
-      t: 50 to 100 employees
+      t: 50 bis 100 Mitarbeiter
     - key: company_size.50-100.short
       t: 50~100
     - key: company_size.100-1000.long
-      t: 100 to 1000 employees
+      t: 100 bis 1000 Mitarbeiter
     - key: company_size.100-1000.short
       t: 100~1000
     - key: company_size.more-than-1000.long
-      t: More than 1000 employees
+      t: Mehr als 1000 Mitarbeiter
     - key: company_size.more-than-1000.short
       t: 1000+
 
     # years of experience
     - key: years_of_experience.less-than-1.long
-      t: Less than one year
+      t: Weniger als 1 Jahr
     - key: years_of_experience.less-than-1.short
       t: '<1 year'
     - key: years_of_experience.1-2.long
-      t: 1 to 2 years
+      t: 1 bis 2 Jahre
     - key: years_of_experience.1-2.short
-      t: 1~2 years
+      t: 1~2 Jahre
     - key: years_of_experience.2-5.long
-      t: 2 to 5 years
+      t: 2 bis 5 Jahre
     - key: years_of_experience.2-5.short
-      t: 2~5 years
+      t: 2~5 Jahre
     - key: years_of_experience.5-10.long
-      t: 5 to 10 years
+      t: 5 bis 10 Jahre
     - key: years_of_experience.5-10.short
-      t: 5~10 years
+      t: 5~10 Jahre
     - key: years_of_experience.10-20.long
-      t: 10 to 20 years
+      t: 10 bis 20 Jahre
     - key: years_of_experience.10-20.short
-      t: 10~20 years
+      t: 10~20 Jahre
     - key: years_of_experience.more-than-20.long
-      t: More than 20 years
+      t: Mehr als 20 Jahre
     - key: years_of_experience.more-than-20.short
-      t: '>20 years'
+      t: '>20 Jahre'
 
     # sections
     - key: section.javascript-flavors
-      t: JavaScript Flavors
+      t: JavaScript Arten
     - key: section.front-end-frameworks
       t: Front-end Frameworks
     - key: section.data-layer
-      t: Data Layer
+      t: Daten Ebene
     - key: section.back-end-frameworks
       t: Back-end Frameworks
     - key: section.testing
-      t: Testing
+      t: Testen
     - key: section.mobile-and-desktop
-      t: Mobile & Desktop
+      t: Mobil & Desktop
 
     # tools
     - key: tool.es6
-      t: ES6  
+      t: ES6
     - key: tool.es6.description
       t: |
-        ES6 and its descendants are the newer versions of JavaScript, usually run through Babel.
+        ES6 und alles was danach kommt sind die neueren Versionen von JavaScript, die man normalerweise mit Babel benutzt.
     - key: tool.angular
       t: Angular
     - key: tool.angular.description
       t: |
+        Angular ist ein auf TypeScript basierendes open-source Front-End-Web-Application Framework.
+        Beachte das wir in diesem Jahr keinen Unterschied zwischen Angular und Angular.js machen,
         Angular is a TypeScript-based open-source front-end web application platform. Note that from
-        this year on we are not be making a distinction between Angular and Angular.js anymore, while datapoints for 
-        2016 and 2017 correspond to Angular (a.k.a. "Angular 2").
+        this year on we are not be making a distinction between Angular and Angular.js anymore, obwohl sich die
+        Umfrage in 2016 und 2017 auf Angular (a.k.a Angular 2) bezogen hat
     - key: tool.apollo
       t: Apollo
     - key: tool.apollo.description
       t: |
-        A fully-featured, production ready caching GraphQL client for every UI framework and GraphQL server.
+        Ein voll ausgestattetes, in production einsetzbarer, caching GraphQL client für jedes UI-Framework und jeden GraphQL-Server.
     - key: tool.native-apps
       t: Native Apps
     - key: tool.native-apps.description
       t: |
-        The majority of mobile and desktop apps are still built with native languages like Java, Kotlin, Objective-C, or Swift.
+        Die meisten Mobil- und Desktopapplikationen sind noch immer in nativen Sprachen wie Java, Kotlin, Objective-C oder Swift umgesetzt.
     - key: tool.phonegap-cordova
       t: Cordova
     - key: tool.phonegap-cordova.description
