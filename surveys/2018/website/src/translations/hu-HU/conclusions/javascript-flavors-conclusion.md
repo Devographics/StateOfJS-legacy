@@ -1,7 +1,7 @@
 ---
 type: conclusion
 section: javascript-flavors
-locale: en-US
+locale: hu-HU
 ---
  The idea that you can write your code in a language or language variant that compiles down to JavaScript may seem obvious now, but it's easy to forget how innovative it really is. 
 

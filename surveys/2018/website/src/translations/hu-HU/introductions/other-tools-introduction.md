@@ -1,7 +1,7 @@
 ---
 type: introduction
 section: other-tools
-locale: en-US
+locale: hu-HU
 ---
  The JavaScript ecosystem isn't only limited to libraries and frameworks. There're all these small utilities we are using every day, including bundlers for code packaging and text editors for writing our code.
 

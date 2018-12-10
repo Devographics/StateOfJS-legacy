@@ -1,7 +1,7 @@
 ---
 type: conclusion
 section: testing
-locale: en-US
+locale: hu-HU
 ---
  The testing space is a bit of an oddity: while the other parts of the JavaScript ecosystem have been slowly settling down around a few dominant solutions, testing is still very fragmented: lots of different, complementary tools share the pie. Even so, developers are satisfied by their testing solution overall, with the lowest satisfaction ratio being 68%.
 

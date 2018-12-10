@@ -1,7 +1,7 @@
 ---
 type: conclusion
 section: mobile-and-desktop
-locale: en-US
+locale: hu-HU
 ---
  This category shows clearly how JavaScript has expanded its "scope" far beyond the limits of the browser.
 

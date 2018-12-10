@@ -1,7 +1,7 @@
 ---
 type: conclusion
 section: front-end-frameworks
-locale: en-US
+locale: hu-HU
 ---
 Once again the front-end space is all about **React** and **Vue.js**. Vue's story in particular is worth considering: two years ago, 27% of respondents had never even heard of the library. Today, that fraction has fallen to just 1.3%! So while React still has a much larger share of the market, Vue's meteoric rise certainly shows no sign of stopping. In fact, Vue has already overtaken its rival for certain metrics such as total GitHub stars. 
 

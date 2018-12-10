@@ -1,7 +1,7 @@
 ---
 type: introduction
 section: demographics
-locale: en-US
+locale: hu-HU
 ---
 
 This year, we reached 20,268 developers in 153 different countries. While the **U.S.** dominates the survey as expected with 24% of respondents, **Germany** and **Australia** are both well-represented, with over 5% of respondents each. 

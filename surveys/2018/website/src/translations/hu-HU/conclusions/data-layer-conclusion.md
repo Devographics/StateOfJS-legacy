@@ -1,7 +1,7 @@
 ---
 type: conclusion
 section: data-layer
-locale: en-US
+locale: hu-HU
 ---
  In the good old days, things were simple. Your data lived in your database, where the server could fetch it, plop it into a template, and send the whole thing down to the client. 
 

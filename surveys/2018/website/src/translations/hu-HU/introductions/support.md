@@ -1,7 +1,7 @@
 ---
 type: introduction
 section: support_us
-locale: en-US
+locale: hu-HU
 ---
 The State of JavaScript survey is a volunteer project, but in order to make the
 project sustainable we’re always looking for partners who can help support us,
