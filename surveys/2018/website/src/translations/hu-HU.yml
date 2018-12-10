@@ -2,87 +2,87 @@ locale: hu-HU
 translations:
     # general
     - key: share
-      t: Share
+      t: Megosztás
     - key: average
-      t: Average  
+      t: Átlag  
     - key: conclusion  
       t: Conclusion
     - key: tools_salary_range_average
-      t: Average salary
+      t: Átlagos kereset
     - key: tools_company_size_average
-      t: Average company size
+      t: Átlagos cégméret
     - key: tools_years_of_experience_average
-      t: Average years of experience
+      t: Átlag tapasztalat (év)
     - key: users_percentage
-      t: percentage of users
+      t: Felhasználók százalékos aránya
     - key: salary_range_axis_legend
-      t: salary range
+      t: fizetési tartomány
     - key: years_of_experience_axis_legend
-      t: years of experience
+      t: tapasztalat (év)
     - key: company_size_axis_legend
-      t: number of employees
+      t: alkalmazottak száma
     - key: percents_display_mode
-      t: Percents
+      t: Százalékok
     - key: counts_display_mode
-      t: Counts
+      t: Számlálók
     - key: awards_runner_ups
-      t: Runner-Ups
+      t: Másodlagos befutók
     - key: tool_homepage
-      t: Homepage
+      t: Főoldal
     - key: from_to_short
-      t: ${from} to ${to}
+      t: ${from}-tól ${to}-ig
     - key: users_count
-      t: ${count} users
+      t: ${count} felhasználó
     - key: percentage_of_respondents
-      t: ${percentage} of respondents
+      t: ${percentage} válaszadó
     - key: partners.premium_partners
-      t: Our 2018 Premium Partners
+      t: 2018-as Prémium Partnereink
     - key: partners.become_partner
-      t: Become a partner
+      t: Légy te is partner
     - key: partners.thanks
       t: |
-        Thanks to our partners for supporting this project.
-        <a href="/support">Learn more</a> about supporting The State of JS.
+        Minden partnerünknek köszönjük, hogy a támogatják ezt a projektet.
+        <a href="/support">További információ</a> a The State of JS támogatásáról.
 
     # opinions
     - key: opinions.legends.never_heard
-      t: I've never heard of it
+      t: Soha nem hallottam róla
     - key: opinions.legends_short.never_heard
-      t: Never heard of it  
+      t: Soha nem hallotta  
     - key: opinions.legends.not_interested
-      t: I've HEARD of it, and am NOT interested
+      t: HALLOTTAM róla, de NEM érdekel
     - key: opinions.legends_short.not_interested
-      t: Heard of it, not interested
+      t: Hallotta, nem érdekli
     - key: opinions.legends.interested
-      t: I've HEARD of it, and WOULD like to learn it
+      t: HALLOTTAM róla, és ÉRDEKEL is
     - key: opinions.legends_short.interested
-      t: Heard of it, would like to learn
+      t: Hallott róla, érdekli
     - key: opinions.legends.would_use  
-      t: I've USED it before, and WOULD use it again
+      t: HASZNÁLTAM korábban, használnám megint
     - key: opinions.legends_short.would_use  
-      t: Used it, would use again
+      t: Használta korábban, használná megint
     - key: opinions.legends.would_not_use  
-      t: I've USED it before, and would NOT use it again
+      t: HASZNÁLTAM korábban, NEM használnám megint
     - key: opinions.legends_short.would_not_use  
-      t: Used it, would not use again
+      t: Használta korábban, nem használná megint
 
     # generic opinions
     - key: opinion_scale.0
-      t: Strongly Disagree
+      t: Erősen nem ért egyet
     - key: opinion_scale.1
-      t: Disagree
+      t: Nem ért egyet
     - key: opinion_scale.2
-      t: Neutral
+      t: Neutrális
     - key: opinion_scale.3
-      t: Agree
+      t: Egyet ért
     - key: opinion_scale.4
-      t: Strongly Agree
+      t: Erősen egyet ért
 
     # salary ranges
     - key: salary_range.work-for-free.long
-      t: I work for free
+      t: Ingyen dolgozom
     - key: salary_range.work-for-free.short
-      t: work for free
+      t: ingyen dolgozik
     - key: salary_range.0-10.long
       t: $0k-$10k
     - key: salary_range.0-10.short
@@ -104,83 +104,83 @@ translations:
     - key: salary_range.100-200.short
       t: $100k-$200k   
     - key: salary_range.more-than-200.long
-      t: more than $200k
+      t: több mint $200k
     - key: salary_range.more-than-200.short
       t: $200k+   
 
     # company size
     - key: company_size.1.long
-      t: One employee
+      t: Egy alkalmazott
     - key: company_size.1.short
-      t: one
+      t: egy
     - key: company_size.1-5.long
-      t: 1 to 5 employees
+      t: 1-5 alkalmazott
     - key: company_size.1-5.short
       t: 1~5
     - key: company_size.5-10.long
-      t: 5 to 10 employees
+      t: 5-10 alkalmazott
     - key: company_size.5-10.short
       t: 5~10
     - key: company_size.10-20.long
-      t: 10 to 20 employees
+      t: 10-20 alkalmazott
     - key: company_size.10-20.short
       t: 10~20
     - key: company_size.20-50.long
-      t: 20 to 50 employees
+      t: 20-50 alkalmazott
     - key: company_size.20-50.short
       t: 20~50
     - key: company_size.50-100.long
-      t: 50 to 100 employees
+      t: 50-100 alkalmazott
     - key: company_size.50-100.short
       t: 50~100
     - key: company_size.100-1000.long
-      t: 100 to 1000 employees
+      t: 100-1000 alkalmazott
     - key: company_size.100-1000.short
       t: 100~1000
     - key: company_size.more-than-1000.long
-      t: More than 1000 employees
+      t: Több mint 1000 alkalmazott
     - key: company_size.more-than-1000.short
       t: 1000+
 
     # years of experience
     - key: years_of_experience.less-than-1.long
-      t: Less than one year
+      t: Kevesebb mint egy év
     - key: years_of_experience.less-than-1.short
-      t: '<1 year'
+      t: '<1 év'
     - key: years_of_experience.1-2.long
-      t: 1 to 2 years
+      t: 1-2 év
     - key: years_of_experience.1-2.short
-      t: 1~2 years
+      t: 1~2 év
     - key: years_of_experience.2-5.long
-      t: 2 to 5 years
+      t: 2-5 év
     - key: years_of_experience.2-5.short
-      t: 2~5 years
+      t: 2~5 év
     - key: years_of_experience.5-10.long
-      t: 5 to 10 years
+      t: 5-10 év
     - key: years_of_experience.5-10.short
-      t: 5~10 years
+      t: 5~10 év
     - key: years_of_experience.10-20.long
-      t: 10 to 20 years
+      t: 10-20 év
     - key: years_of_experience.10-20.short
-      t: 10~20 years
+      t: 10~20 év
     - key: years_of_experience.more-than-20.long
-      t: More than 20 years
+      t: Több mint 20 év
     - key: years_of_experience.more-than-20.short
-      t: '>20 years'
+      t: '>20 év'
 
     # sections
     - key: section.javascript-flavors
       t: JavaScript Flavors
     - key: section.front-end-frameworks
-      t: Front-end Frameworks
+      t: Front-end keretrendszerek
     - key: section.data-layer
       t: Data Layer
     - key: section.back-end-frameworks
-      t: Back-end Frameworks
+      t: Back-end keretrendszerek
     - key: section.testing
-      t: Testing
+      t: Tesztelés
     - key: section.mobile-and-desktop
-      t: Mobile & Desktop
+      t: Mobil & Asztali
 
     # tools
     - key: tool.es6
@@ -325,11 +325,11 @@ translations:
 
     # pages
     - key: page.introduction
-      t: Introduction
+      t: Bemutatkozás
     - key: page.demographics
-      t: Demographics
+      t: Demográfia
     - key: page.connections
-      t: Connections
+      t: Kapcsolatok
     - key: page.section_overview
       t: ${section} - Overview
     - key: page.section_tool
@@ -337,23 +337,23 @@ translations:
     - key: page.section_overview.short
       t: Overview
     - key: page.section_other_tools
-      t: ${section} – Other Libraries
+      t: ${section} – Egyéb könyvtárak
     - key: page.section_other_tools.short
-      t: Other Libraries
+      t: Egyéb könyvtárak
     - key: page.section_conclusion
-      t: ${section} - Conclusion
+      t: ${section} - Következtetések
     - key: page.section_conclusion.short
-      t: Conclusion
+      t: Következtetések
     - key: page.other-tools
-      t: Other Tools
+      t: Egyéb eszközök
     - key: page.opinions
-      t: Opinions
+      t: Vélemények
     - key: page.awards
-      t: Awards 🏆
+      t: Díjak 🏆
     - key: page.conclusion
-      t: Conclusion
+      t: Következtetés
     - key: page.support
-      t: Support Us
+      t: Támogass minket
 
     # blocks
     - key: block.title.participation-by-country
