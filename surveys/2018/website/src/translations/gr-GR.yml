@@ -4,171 +4,171 @@ translations:
     - key: share
       t: Κοινοποίηση
     - key: average
-      t: Μέσος Όρος  
+      t: Μέσος όρος  
     - key: conclusion  
       t: Συμπεράσματα
     - key: tools_salary_range_average
-      t: Μέσος Όρος Εισοδήματος
+      t: Μέσος όρος εισοδήματος
     - key: tools_company_size_average
-      t: Average company size
+      t: Μέσο μέγεθος εταιρίας
     - key: tools_years_of_experience_average
-      t: Average years of experience
+      t: Μέση εμπειρία
     - key: users_percentage
-      t: percentage of users
+      t: ποσοστό χρηστών
     - key: salary_range_axis_legend
-      t: salary range
+      t: Εύρος εισοδήματος
     - key: years_of_experience_axis_legend
-      t: years of experience
+      t: Έτη εμπειρίας
     - key: company_size_axis_legend
-      t: number of employees
+      t: Αριθμός εργαζομένων
     - key: percents_display_mode
-      t: Percents
+      t: Ποσοστά
     - key: counts_display_mode
-      t: Counts
+      t: Φορές
     - key: awards_runner_ups
       t: Runner-Ups
     - key: tool_homepage
-      t: Homepage
+      t: Αρχική σελίδα
     - key: from_to_short
-      t: ${from} to ${to}
+      t: ${from} μέχρι ${to}
     - key: users_count
-      t: ${count} users
+      t: ${count} χρήστες
     - key: percentage_of_respondents
-      t: ${percentage} of respondents
+      t: ${percentage} των συμμετεχόντων
     - key: partners.premium_partners
-      t: Our 2018 Premium Partners
+      t: Οι Premium χορηγοί μας για το 2018
     - key: partners.become_partner
-      t: Become a partner
+      t: Γίνεται χορηγός
     - key: partners.thanks
       t: |
-        Thanks to our partners for supporting this project.
-        <a href="/support">Learn more</a> about supporting The State of JS.
+        Ευχαριστούμε πολύ τους χορηγούς μας για την υποστήριξη τους.
+        <a href="/support">Μάθετε περισσότερα</a> σχετικά με πώς να υποστηρίξετε το The State of JS.
 
     # opinions
     - key: opinions.legends.never_heard
-      t: I've never heard of it
+      t: Δεν το έχω ακούσει ποτέ
     - key: opinions.legends_short.never_heard
-      t: Never heard of it  
+      t: Δεν το έχω ακούσει ποτέ 
     - key: opinions.legends.not_interested
-      t: I've HEARD of it, and am NOT interested
+      t: Το έχω ΑΚΟΥΣΕΙ αλλά ΔΕΝ ενδιαφέρομαι
     - key: opinions.legends_short.not_interested
-      t: Heard of it, not interested
+      t: Το έχω ακούσει, δεν ενδιαφέρομαι
     - key: opinions.legends.interested
-      t: I've HEARD of it, and WOULD like to learn it
+      t: Το έχω ΑΚΟΥΣΕΙ, και ΘΑ ήθελα να το μάθω
     - key: opinions.legends_short.interested
-      t: Heard of it, would like to learn
+      t: Το έχω ακούσει, θα ήθελα να το μάθω
     - key: opinions.legends.would_use  
-      t: I've USED it before, and WOULD use it again
+      t: Το έχω ΧΡΗΣΙΜΟΠΟΙΗΣΕΙ και ΘΑ το ξανάχρησιμοποιουσα
     - key: opinions.legends_short.would_use  
-      t: Used it, would use again
+      t: Το έχω χρησιμοποιήσει, θα το ξαναχρησιμοποιούσα
     - key: opinions.legends.would_not_use  
-      t: I've USED it before, and would NOT use it again
+      t: Το ΧΡΗΣΙΜΟΠΟΙΗΣΑ, αλλά ΔΕΝ θα το ξαναχρησιμοποιήσω
     - key: opinions.legends_short.would_not_use  
-      t: Used it, would not use again
+      t: Το χρησιμιποίησα, δεν θα το ξαναχρησιμοποιήσω
 
     # generic opinions
     - key: opinion_scale.0
-      t: Strongly Disagree
+      t: Διαφονώ απόλυτα
     - key: opinion_scale.1
-      t: Disagree
+      t: Διαφονώ
     - key: opinion_scale.2
-      t: Neutral
+      t: Ουδέτερο
     - key: opinion_scale.3
-      t: Agree
+      t: Συμφωνώ
     - key: opinion_scale.4
-      t: Strongly Agree
+      t: Συμφωνώ απόλυτα
 
     # salary ranges
     - key: salary_range.work-for-free.long
-      t: I work for free
+      t: Δουλεύω χωρίς αμοιβή
     - key: salary_range.work-for-free.short
-      t: work for free
+      t: Δουλεύω χωρίς αμοιβή
     - key: salary_range.0-10.long
-      t: $0k-$10k
+      t: $0χιλ-$10χιλ
     - key: salary_range.0-10.short
-      t: $0k-$10k
+      t: $0χιλ-$10χιλ
     - key: salary_range.10-30.long
-      t: $10k-$30k
+      t: $10χιλ-$30χιλ
     - key: salary_range.10-30.short
-      t: $10k-$30k 
+      t: $10χιλ-$30χιλ 
     - key: salary_range.30-50.long
-      t: $30k-$50k
+      t: $30χιλ-$50χιλ
     - key: salary_range.30-50.short
-      t: $30k-$50k 
+      t: $30χιλ-$50χιλ 
     - key: salary_range.50-100.long
-      t: $50k-$100k
+      t: $50χιλ-$100χιλ
     - key: salary_range.50-100.short
-      t: $50k-$100k  
+      t: $50χιλ-$100χιλ  
     - key: salary_range.100-200.long
-      t: $100k-$200k
+      t: $100χιλ-$200χιλ
     - key: salary_range.100-200.short
-      t: $100k-$200k   
+      t: $100χιλ-$200χιλ   
     - key: salary_range.more-than-200.long
-      t: more than $200k
+      t:  Περισσότερα από $200χιλ
     - key: salary_range.more-than-200.short
-      t: $200k+   
+      t: $200χιλ+   
 
     # company size
     - key: company_size.1.long
-      t: One employee
+      t: Ένας εργαζόμενος
     - key: company_size.1.short
-      t: one
+      t: Ένας
     - key: company_size.1-5.long
-      t: 1 to 5 employees
+      t: 1 με 5 εργαζόμενοι
     - key: company_size.1-5.short
       t: 1~5
     - key: company_size.5-10.long
-      t: 5 to 10 employees
+      t: 5 με 10 εργαζόμενοι
     - key: company_size.5-10.short
       t: 5~10
     - key: company_size.10-20.long
-      t: 10 to 20 employees
+      t: 10 με 20 εργαζόμενοι
     - key: company_size.10-20.short
       t: 10~20
     - key: company_size.20-50.long
-      t: 20 to 50 employees
+      t: 20 με 50 εργαζόμενοι
     - key: company_size.20-50.short
       t: 20~50
     - key: company_size.50-100.long
-      t: 50 to 100 employees
+      t: 50 με 100 εργαζόμενοι
     - key: company_size.50-100.short
       t: 50~100
     - key: company_size.100-1000.long
-      t: 100 to 1000 employees
+      t: 100 με 1000 εργαζόμενοι
     - key: company_size.100-1000.short
       t: 100~1000
     - key: company_size.more-than-1000.long
-      t: More than 1000 employees
+      t: Περισσότεροι από 1000 εργαζόμενοι
     - key: company_size.more-than-1000.short
       t: 1000+
 
     # years of experience
     - key: years_of_experience.less-than-1.long
-      t: Less than one year
+      t: Λιγότερο από ένα έτος
     - key: years_of_experience.less-than-1.short
-      t: '<1 year'
+      t: '<1 έτος'
     - key: years_of_experience.1-2.long
-      t: 1 to 2 years
+      t: 1 με 2 έτη
     - key: years_of_experience.1-2.short
-      t: 1~2 years
+      t: 1~2 έτη
     - key: years_of_experience.2-5.long
-      t: 2 to 5 years
+      t: 2 με 5 έτη
     - key: years_of_experience.2-5.short
-      t: 2~5 years
+      t: 2~5 έτη
     - key: years_of_experience.5-10.long
-      t: 5 to 10 years
+      t: 5 με 10 έτη
     - key: years_of_experience.5-10.short
-      t: 5~10 years
+      t: 5~10 έτη
     - key: years_of_experience.10-20.long
-      t: 10 to 20 years
+      t: 10 με 20 έτη
     - key: years_of_experience.10-20.short
-      t: 10~20 years
+      t: 10~20 έτη
     - key: years_of_experience.more-than-20.long
-      t: More than 20 years
+      t: Περισσότερα από 20 έτη
     - key: years_of_experience.more-than-20.short
-      t: '>20 years'
+      t: '>20 έτη'
 
-    # sections
+    # sections ( no proper translation in greek :| )
     - key: section.javascript-flavors
       t: JavaScript Flavors
     - key: section.front-end-frameworks
