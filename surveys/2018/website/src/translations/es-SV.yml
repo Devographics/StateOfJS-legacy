@@ -2,47 +2,47 @@ locale: es-SV
 translations:
     # general
     - key: share
-      t: Share
+      t: Compartir
     - key: average
-      t: Average  
+      t: Promedio  
     - key: conclusion  
-      t: Conclusion
+      t: Conclusión
     - key: tools_salary_range_average
-      t: Average salary
+      t: Salario promedio
     - key: tools_company_size_average
-      t: Average company size
+      t: Tamaño promedio de la empresa
     - key: tools_years_of_experience_average
-      t: Average years of experience
+      t: Promedio de años de experiencia
     - key: users_percentage
-      t: percentage of users
+      t: porcentaje de usuarios
     - key: salary_range_axis_legend
-      t: salary range
+      t: rango salarial
     - key: years_of_experience_axis_legend
-      t: years of experience
+      t: años de experiencia
     - key: company_size_axis_legend
-      t: number of employees
+      t: número de empleados
     - key: percents_display_mode
-      t: Percents
+      t: Porcentaje
     - key: counts_display_mode
-      t: Counts
+      t: Conteo
     - key: awards_runner_ups
-      t: Runner-Ups
+      t: Finalistas
     - key: tool_homepage
-      t: Homepage
+      t: Página principal
     - key: from_to_short
-      t: ${from} to ${to}
+      t: ${from} a ${to}
     - key: users_count
-      t: ${count} users
+      t: ${count} usuarios
     - key: percentage_of_respondents
-      t: ${percentage} of respondents
+      t: ${percentage} de los encuestados
     - key: partners.premium_partners
-      t: Our 2018 Premium Partners
+      t: Nuestros Socios Premium 2018
     - key: partners.become_partner
-      t: Become a partner
+      t: Conviértete en un socio
     - key: partners.thanks
       t: |
-        Thanks to our partners for supporting this project.
-        <a href="/support">Learn more</a> about supporting The State of JS.
+        Gracias a nuestros socios por apoyar este proyecto.
+        <a href="/support">Aprender más</a> sobre cómo apoyar The State of JS.
 
     # opinions
     - key: opinions.legends.never_heard
