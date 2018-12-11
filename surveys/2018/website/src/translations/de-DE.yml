@@ -327,35 +327,35 @@ translations:
 
     # pages
     - key: page.introduction
-      t: Introduction
+      t: Einführung
     - key: page.demographics
-      t: Demographics
+      t: Demographie
     - key: page.connections
-      t: Connections
+      t: Verbindungen
     - key: page.section_overview
-      t: ${section} - Overview
+      t: ${section} - Überblick
     - key: page.section_tool
       t: ${section} - ${tool}
     - key: page.section_overview.short
-      t: Overview
+      t: Überblock
     - key: page.section_other_tools
-      t: ${section} – Other Libraries
+      t: ${section} – Andere Libraries
     - key: page.section_other_tools.short
-      t: Other Libraries
+      t: Andere Libraries
     - key: page.section_conclusion
-      t: ${section} - Conclusion
+      t: ${section} - Fazit
     - key: page.section_conclusion.short
-      t: Conclusion
+      t: Fazit
     - key: page.other-tools
-      t: Other Tools
+      t: Andere Tools
     - key: page.opinions
-      t: Opinions
+      t: Meinungen
     - key: page.awards
-      t: Awards 🏆
+      t: Preise 🏆
     - key: page.conclusion
-      t: Conclusion
+      t: Fazit
     - key: page.support
-      t: Support Us
+      t: Unterstütze uns
 
     # blocks
     - key: block.title.participation-by-country
