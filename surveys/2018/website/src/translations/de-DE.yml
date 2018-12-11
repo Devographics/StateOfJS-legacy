@@ -6,7 +6,7 @@ translations:
     - key: average
       t: Durschnitt
     - key: conclusion
-      t: Zusammenfassung
+      t: Fazit
     - key: tools_salary_range_average
       t: Durschnittliches Gehalt
     - key: tools_company_size_average
