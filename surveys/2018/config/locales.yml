@@ -5,3 +5,7 @@
 - locale: fr-FR
   path:   fr
   label:  🇫🇷 français
+
+- locale: hu-HU
+  path:   hu
+  label:  HU magyar
