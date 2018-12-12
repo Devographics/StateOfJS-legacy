@@ -2,185 +2,185 @@ locale: nb-NO
 translations:
     # general
     - key: share
-      t: Share
+      t: Del
     - key: average
-      t: Average  
+      t: Gjennomsnitt  
     - key: conclusion  
-      t: Conclusion
+      t: Konklusjon
     - key: tools_salary_range_average
-      t: Average salary
+      t: Gjennomsnittslønn
     - key: tools_company_size_average
-      t: Average company size
+      t: Gjennomsnitt bedriftsstørrelse
     - key: tools_years_of_experience_average
-      t: Average years of experience
+      t: Antall år erfaring
     - key: users_percentage
-      t: percentage of users
+      t: Prosentandel brukere
     - key: salary_range_axis_legend
-      t: salary range
+      t: lønnsområde (år, NOK)
     - key: years_of_experience_axis_legend
-      t: years of experience
+      t: antall år erfaring
     - key: company_size_axis_legend
-      t: number of employees
+      t: antall ansatte
     - key: percents_display_mode
-      t: Percents
+      t: Prosent
     - key: counts_display_mode
-      t: Counts
+      t: Personer
     - key: awards_runner_ups
       t: Runner-Ups
     - key: tool_homepage
-      t: Homepage
+      t: Hjemmeside
     - key: from_to_short
-      t: ${from} to ${to}
+      t: ${from} til ${to}
     - key: users_count
-      t: ${count} users
+      t: ${count} brukere
     - key: percentage_of_respondents
-      t: ${percentage} of respondents
+      t: ${percentage} av respondentene
     - key: partners.premium_partners
-      t: Our 2018 Premium Partners
+      t: Våre 2018 Premium Partnere
     - key: partners.become_partner
-      t: Become a partner
+      t: Bli en partner
     - key: partners.thanks
       t: |
-        Thanks to our partners for supporting this project.
-        <a href="/support">Learn more</a> about supporting The State of JS.
+        Takk til alle våre partnere for å støtte dette prosjektet.
+        <a href="/support">Les mer</a> om å støtte The State of JS.
 
     # opinions
     - key: opinions.legends.never_heard
-      t: I've never heard of it
+      t: Jeg har aldri hørt om det
     - key: opinions.legends_short.never_heard
-      t: Never heard of it  
+      t: Aldri hørt om det  
     - key: opinions.legends.not_interested
-      t: I've HEARD of it, and am NOT interested
+      t: Jeg har HØRT om det, og er IKKE interessert
     - key: opinions.legends_short.not_interested
-      t: Heard of it, not interested
+      t: Hørt om det, ikk er interessert
     - key: opinions.legends.interested
-      t: I've HEARD of it, and WOULD like to learn it
+      t: Jeg har HØRT om det, og vil gjerne lære det
     - key: opinions.legends_short.interested
-      t: Heard of it, would like to learn
+      t: Hørt om det, vil lære det
     - key: opinions.legends.would_use  
-      t: I've USED it before, and WOULD use it again
+      t: Jeg har BRUKT det før, og vil gjerne bruke det igjen
     - key: opinions.legends_short.would_use  
-      t: Used it, would use again
+      t: Har brukt det, vil bruke igjen 
     - key: opinions.legends.would_not_use  
-      t: I've USED it before, and would NOT use it again
+      t: Jeg har BRUKT det før, men vil ikke bruke det igjen
     - key: opinions.legends_short.would_not_use  
-      t: Used it, would not use again
+      t: Har brukt det, vil ikke bruke det igjen
 
     # generic opinions
     - key: opinion_scale.0
-      t: Strongly Disagree
+      t: Svært uenig
     - key: opinion_scale.1
-      t: Disagree
+      t: Uenig
     - key: opinion_scale.2
-      t: Neutral
+      t: Nøytral
     - key: opinion_scale.3
-      t: Agree
+      t: Enig
     - key: opinion_scale.4
-      t: Strongly Agree
+      t: Svært enig
 
     # salary ranges
     - key: salary_range.work-for-free.long
-      t: I work for free
+      t: Jeg jobber gratis
     - key: salary_range.work-for-free.short
-      t: work for free
+      t: jobber gratis
     - key: salary_range.0-10.long
-      t: $0k-$10k
+      t: 0k - 86k
     - key: salary_range.0-10.short
-      t: $0k-$10k
+      t: 0k - 86k
     - key: salary_range.10-30.long
-      t: $10k-$30k
+      t: 86k - 257k
     - key: salary_range.10-30.short
-      t: $10k-$30k 
+      t: 86k - 257k 
     - key: salary_range.30-50.long
-      t: $30k-$50k
+      t: 257k - 429k
     - key: salary_range.30-50.short
-      t: $30k-$50k 
+      t: 257k - 429k 
     - key: salary_range.50-100.long
-      t: $50k-$100k
+      t: 429k - 858k
     - key: salary_range.50-100.short
-      t: $50k-$100k  
+      t: 429k - 858k  
     - key: salary_range.100-200.long
-      t: $100k-$200k
+      t: 858k - 1,715k
     - key: salary_range.100-200.short
-      t: $100k-$200k   
+      t: 858k - 1,715k   
     - key: salary_range.more-than-200.long
-      t: more than $200k
+      t: mer enn 1,715k
     - key: salary_range.more-than-200.short
-      t: $200k+   
+      t: 1,715k+   
 
     # company size
     - key: company_size.1.long
-      t: One employee
+      t: Én ansatt
     - key: company_size.1.short
-      t: one
+      t: én
     - key: company_size.1-5.long
-      t: 1 to 5 employees
+      t: 1 til 5 ansatte
     - key: company_size.1-5.short
       t: 1~5
     - key: company_size.5-10.long
-      t: 5 to 10 employees
+      t: 5 til 10 ansatte
     - key: company_size.5-10.short
       t: 5~10
     - key: company_size.10-20.long
-      t: 10 to 20 employees
+      t: 10 til 20 ansatte
     - key: company_size.10-20.short
       t: 10~20
     - key: company_size.20-50.long
-      t: 20 to 50 employees
+      t: 20 til 50 ansatte
     - key: company_size.20-50.short
       t: 20~50
     - key: company_size.50-100.long
-      t: 50 to 100 employees
+      t: 50 til 100 ansatte
     - key: company_size.50-100.short
       t: 50~100
     - key: company_size.100-1000.long
-      t: 100 to 1000 employees
+      t: 100 til 1000 ansatte
     - key: company_size.100-1000.short
       t: 100~1000
     - key: company_size.more-than-1000.long
-      t: More than 1000 employees
+      t: Mer enn 1000 ansatte
     - key: company_size.more-than-1000.short
       t: 1000+
 
     # years of experience
     - key: years_of_experience.less-than-1.long
-      t: Less than one year
+      t: Minde enn ett år
     - key: years_of_experience.less-than-1.short
-      t: '<1 year'
+      t: '<1 år'
     - key: years_of_experience.1-2.long
-      t: 1 to 2 years
+      t: 1 til 2 år
     - key: years_of_experience.1-2.short
-      t: 1~2 years
+      t: 1~2 år
     - key: years_of_experience.2-5.long
-      t: 2 to 5 years
+      t: 2 til 5 år
     - key: years_of_experience.2-5.short
-      t: 2~5 years
+      t: 2~5 år
     - key: years_of_experience.5-10.long
-      t: 5 to 10 years
+      t: 5 til 10 år
     - key: years_of_experience.5-10.short
-      t: 5~10 years
+      t: 5~10 år
     - key: years_of_experience.10-20.long
-      t: 10 to 20 years
+      t: 10 til 20 år
     - key: years_of_experience.10-20.short
-      t: 10~20 years
+      t: 10~20 år
     - key: years_of_experience.more-than-20.long
-      t: More than 20 years
+      t: Mer enn 20 år
     - key: years_of_experience.more-than-20.short
       t: '>20 years'
 
     # sections
     - key: section.javascript-flavors
-      t: JavaScript Flavors
+      t: JavaScript Smaker
     - key: section.front-end-frameworks
-      t: Front-end Frameworks
+      t: Front-end Rammeverk
     - key: section.data-layer
-      t: Data Layer
+      t: Data Lag
     - key: section.back-end-frameworks
-      t: Back-end Frameworks
+      t: Back-end Rammeverk
     - key: section.testing
       t: Testing
     - key: section.mobile-and-desktop
-      t: Mobile & Desktop
+      t: Mobil & Desktop
 
     # tools
     - key: tool.es6
@@ -201,7 +201,7 @@ translations:
       t: |
         A fully-featured, production ready caching GraphQL client for every UI framework and GraphQL server.
     - key: tool.native-apps
-      t: Native Apps
+      t: Native Apper
     - key: tool.native-apps.description
       t: |
         The majority of mobile and desktop apps are still built with native languages like Java, Kotlin, Objective-C, or Swift.
@@ -209,7 +209,7 @@ translations:
       t: Cordova
     - key: tool.phonegap-cordova.description
       t: |
-        Apache Cordova is a mobile application development framework.
+        Apache Cordova er en mobil applikasjon utviklingsrammeverk.
     - key: tool.vanilla-js
       t: Vanilla JS
     - key: tool.extjs
@@ -325,35 +325,35 @@ translations:
 
     # pages
     - key: page.introduction
-      t: Introduction
+      t: Introduksjon
     - key: page.demographics
-      t: Demographics
+      t: Demografi
     - key: page.connections
-      t: Connections
+      t: Forbindelser
     - key: page.section_overview
-      t: ${section} - Overview
+      t: ${section} - Oversikt
     - key: page.section_tool
       t: ${section} - ${tool}
     - key: page.section_overview.short
-      t: Overview
+      t: Oversikt
     - key: page.section_other_tools
-      t: ${section} – Other Libraries
+      t: ${section} – Andre Bibliotek
     - key: page.section_other_tools.short
-      t: Other Libraries
+      t: Andre Bibliotek
     - key: page.section_conclusion
-      t: ${section} - Conclusion
+      t: ${section} - Konklusjon
     - key: page.section_conclusion.short
-      t: Conclusion
+      t: Konklusjon
     - key: page.other-tools
-      t: Other Tools
+      t: Andre verktøy
     - key: page.opinions
-      t: Opinions
+      t: Meninger
     - key: page.awards
-      t: Awards 🏆
+      t: Priser 🏆
     - key: page.conclusion
-      t: Conclusion
+      t: Konklusjon
     - key: page.support
-      t: Support Us
+      t: Støtt oss
 
     # blocks
     - key: block.title.participation-by-country
@@ -383,9 +383,9 @@ translations:
     - key: block.description.gender-breakdown
       t: Gender breakdown.
     - key: block.title.connections
-      t: Connections Between Technologies
+      t: Forbindelser mellom teknologier
     - key: block.description.connections
-      t: Connections between all libraries & technologies.
+      t: Forbindelser mellom alle bibliotek & teknologier.
     - key: block.title.overview
       t: Overall Results
     - key: block.description.overview
