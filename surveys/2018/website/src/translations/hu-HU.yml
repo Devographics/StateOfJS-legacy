@@ -16,15 +16,15 @@ translations:
     - key: users_percentage
       t: Felhasználók százalékos aránya
     - key: salary_range_axis_legend
-      t: fizetési tartomány
+      t: fizetési tartomány (év, millió forint)
     - key: years_of_experience_axis_legend
       t: tapasztalat (év)
     - key: company_size_axis_legend
       t: alkalmazottak száma
     - key: percents_display_mode
-      t: Százalékok
+      t: Százalék
     - key: counts_display_mode
-      t: Számlálók
+      t: Fő
     - key: awards_runner_ups
       t: Másodlagos befutók
     - key: tool_homepage
@@ -84,29 +84,29 @@ translations:
     - key: salary_range.work-for-free.short
       t: ingyen dolgozik
     - key: salary_range.0-10.long
-      t: $0k-$10k
+      t: 0 - 2.9
     - key: salary_range.0-10.short
-      t: $0k-$10k
+      t: 0-2.9
     - key: salary_range.10-30.long
-      t: $10k-$30k
+      t: 2.9 - 8.6
     - key: salary_range.10-30.short
-      t: $10k-$30k 
+      t: 2.9-8.6 
     - key: salary_range.30-50.long
-      t: $30k-$50k
+      t: 8.6 - 14.3
     - key: salary_range.30-50.short
-      t: $30k-$50k 
+      t: 8.6-14.3 
     - key: salary_range.50-100.long
-      t: $50k-$100k
+      t: 14.3 - 28.6
     - key: salary_range.50-100.short
-      t: $50k-$100k  
+      t: 14.3-28.6  
     - key: salary_range.100-200.long
-      t: $100k-$200k
+      t: 28.6 - 57.1
     - key: salary_range.100-200.short
-      t: $100k-$200k   
+      t: 28.6-57.1   
     - key: salary_range.more-than-200.long
-      t: több mint $200k
+      t: több mint 57.1
     - key: salary_range.more-than-200.short
-      t: $200k+   
+      t: 57.1+   
 
     # company size
     - key: company_size.1.long
@@ -170,7 +170,7 @@ translations:
 
     # sections
     - key: section.javascript-flavors
-      t: JavaScript Flavors
+      t: JavaScript "ízek"
     - key: section.front-end-frameworks
       t: Front-end keretrendszerek
     - key: section.data-layer
@@ -187,31 +187,29 @@ translations:
       t: ES6  
     - key: tool.es6.description
       t: |
-        ES6 and its descendants are the newer versions of JavaScript, usually run through Babel.
+        Az ES6 és utódai a JavaScript új generációja, általában Babel segítségével kompilálva.
     - key: tool.angular
       t: Angular
     - key: tool.angular.description
       t: |
-        Angular is a TypeScript-based open-source front-end web application platform. Note that from
-        this year on we are not be making a distinction between Angular and Angular.js anymore, while datapoints for 
-        2016 and 2017 correspond to Angular (a.k.a. "Angular 2").
+        Az Angular egy TypeScript-en alapuló, nyílt forráskódú front-end web alkalmazás platform. Figyelem! Az idei évtől nem teszünk különbséget az Angular és Angular.js között, míg az adatok a 2016-os és 2017-es felmérésben az Angular-re (a.k.a "Angular 2") vontakoznak.
     - key: tool.apollo
       t: Apollo
     - key: tool.apollo.description
       t: |
-        A fully-featured, production ready caching GraphQL client for every UI framework and GraphQL server.
+        Egy teljes értékű, használatra kész cachelő GraphQL kliens, akármilyen UI keretrendszerhez és GraphQL szerverhez.
     - key: tool.native-apps
       t: Native Apps
     - key: tool.native-apps.description
       t: |
-        The majority of mobile and desktop apps are still built with native languages like Java, Kotlin, Objective-C, or Swift.
+        A legtöbb mobil és asztali alkalmazás még mindig natív nyelvekkel (mint Java, Kotlin, Objective-C, vagy Swift) készülnek.
     - key: tool.phonegap-cordova
       t: Cordova
     - key: tool.phonegap-cordova.description
       t: |
-        Apache Cordova is a mobile application development framework.
+        Az Apache Cordova egy mobil alkalmazás fejlesztői keretrendszer.
     - key: tool.vanilla-js
-      t: Vanilla JS
+      t: Vanília JS
     - key: tool.extjs
       t: Ext JS
     - key: tool.web-assembly
@@ -253,7 +251,7 @@ translations:
     - key: tool.flutter
       t: Flutter
     - key: tool.pwa
-      t: Progressive Web Apps
+      t: Progresszív Web Alkalmazás
     - key: tool.weex
       t: weex
     - key: tool.xamarin
@@ -309,7 +307,7 @@ translations:
     - key: tool.vim
       t: Vim
     - key: tool.service-workers
-      t: Service Workers
+      t: Service Worker-ek
     - key: tool.webrtc
       t: WebRTC
     - key: tool.webvr
@@ -331,11 +329,11 @@ translations:
     - key: page.connections
       t: Kapcsolatok
     - key: page.section_overview
-      t: ${section} - Overview
+      t: ${section} - Összesítés
     - key: page.section_tool
       t: ${section} - ${tool}
     - key: page.section_overview.short
-      t: Overview
+      t: Összesítés
     - key: page.section_other_tools
       t: ${section} – Egyéb könyvtárak
     - key: page.section_other_tools.short
@@ -357,63 +355,65 @@ translations:
 
     # blocks
     - key: block.title.participation-by-country
-      t: Participation by Country
+      t: Résztvett országok
     - key: block.description.participation-by-country
-      t: Survey participants by Country.
+      t: Felmérésben résztvett országok.
     - key: block.title.salaries
-      t: Salaries
+      t: Éves fizetések
     - key: block.description.salaries
-      t: Salary range breakdown.
+      t: Éves fizetések lebontás
     - key: block.title.salary-per-country
-      t: Average Salary per Country
+      t: Átlagos fizetés országonként
     - key: block.description.salary-per-country
-      t: Average Salary per Country.
+      t: Átlagos fizetés országonként.
     - key: block.title.years-of-experience
-      t: Years of Experience
+      t: Tapasztalat (év)
     - key: block.description.years-of-experience
-      t: Years of experience breakdown.
+      t: Tapasztalat (év) lebontás.
     - key: block.title.company-size
-      t: Company Size
+      t: Cégméret
     - key: block.description.company-size
-      t: Company size breakdown.
+      t: Cégméret lebontás.
     - key: block.title.gender-breakdown
-      t: Gender Breakdown
+      t: Nem lebontás
     - key: block.title.source-breakdown
-      t: Source Breakdown
+      t: Forrás lebontás
     - key: block.description.gender-breakdown
-      t: Gender breakdown.
+      t: Nem lebontás.
     - key: block.title.connections
-      t: Connections Between Technologies
+      t: Kapcsolatok technológiák között
     - key: block.description.connections
-      t: Connections between all libraries & technologies.
+      t: Kapcsolatok minden könyvtár & technológia között.
     - key: block.title.overview
-      t: Overall Results
+      t: Összesített eredmények
     - key: block.description.overview
       t: |
-        Overall ${section} results.
+        Összesített ${section} eredménye.
     - key: block.title.results-over-time
-      t: ${tool}'s Popularity Over Time  
+      t: ${tool} népszerűsége az idő elteltével  
     - key: block.description.results-over-time 
-      t: ${tool}'s popularity evolution over time.
+      t: ${tool} népszerűségének változása.
     - key: block.results-over-time.empty
       t: |
-        Sorry, we don't have enough data to display
-        the evolution of this library's popularity over time. 
+        Sajnáljuk, de nem áll rendelkezésre elég adat, hogy ennek
+        a könyvtárnak a népszerűségi változását meg tudjuk jeleníteni.
     - key: block.title.happiness
-      t: Overall Happiness
+      t: Összesített megelégedettség
     - key: block.description.happiness
       t: |
-        On a scale of one (very unhappy) to five (very happy), how happy are developers
-        with the current overall state of this category?
+        Egy listán 1-től (nagyon nem elégedett) 5-ig (nagyon elégedett),
+        mennyire elégedettek a fejlesztők ennek a kategóriának a
+        jelenlegi állásával?
     - key: block.title.tools-salary-range
-      t: Salary Breakdown
+      t: Éves fizetés lebontás
     - key: block.description.tools-salary-range
       t: |
-        Salary breakdown for developers who picked “used it, would use again” for a given option. 
+        Azon fejlesztők fizetésének éves lebontása, akik "használta, használná megint"-t
+        válaszoltak egy adott opcióhoz.
         
         
-        Each cell shows the percentage of users in a given salary range,
-        darker means higher usage.
+        Minden cella egy százalékot mutat egy bizonyos fizetési szegmensben,
+        a sötétebb szín több felhasználót jelent.
     - key: block.title.tools-company-size
       t: Company Size Breakdown
     - key: block.description.tools-company-size
