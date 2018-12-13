@@ -6,7 +6,7 @@ locale: hu-HU
  
 <span class="first-line">A <span class="first-letter">JavaScript</span> folyamatosan változik.</span>  
 Új könyvtárak, új keretrendszerek, új nyelvek… Ez lehet szimplán szórakozás vagy jópofa, de néha kimerítő is tud lenni. 
-Itt jön a képbe a State of Javascript felmérés: idén több mint 20.000 JavaScript fejleszőt kérdeztünk meg, hogy megértsük mit használnak, mivel elégedettek, és mit szeretnének tanulni. Az eredmény pedig remélhetőleg nagyobb belátást ad a JavaScriptre, és segít megtalálni a magad útját a JavaScript ökoszisztémában.
+Itt jön a képbe a State of JavaScript felmérés: idén több mint 20.000 JavaScript fejlesztőt kérdeztünk meg, hogy megértsük mit használnak, mivel elégedettek, és mit szeretnének tanulni. Az eredmény pedig remélhetőleg nagyobb belátást ad a JavaScriptre, és segít megtalálni a magad útját a JavaScript ökoszisztémában.
 
 Ha kíváncsi vagy mi változott idén a korábbi felmérésekhez képest, tekintsd meg  [ezt](https://medium.freecodecamp.org/the-state-of-javascript-2018-8322bcc51bd8) a linket részletekért.
 
@@ -18,7 +18,7 @@ Megjegyzés: némelyik fizetett szponzoroktól származik, de ettől független�
 
 ### A csapat
 
-A State of JavaScript Felmérés készítői és karbantartói:
+A State of JavaScript felmérés készítői és karbantartói:
 
 - [Sacha Greif](https://twitter.com/sachagreif) (me!): Design, írás, programozás
 - [Raphael Benitte](https://twitter.com/benitteraphael): Adatelemzés, vizualizáció
