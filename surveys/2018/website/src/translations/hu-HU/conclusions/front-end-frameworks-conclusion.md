@@ -3,10 +3,11 @@ type: conclusion
 section: front-end-frameworks
 locale: hu-HU
 ---
-Once again the front-end space is all about **React** and **Vue.js**. Vue's story in particular is worth considering: two years ago, 27% of respondents had never even heard of the library. Today, that fraction has fallen to just 1.3%! So while React still has a much larger share of the market, Vue's meteoric rise certainly shows no sign of stopping. In fact, Vue has already overtaken its rival for certain metrics such as total GitHub stars. 
+Még egyszer, a front-end majdnem kizárólag a **React**-ról és **Vue.js**-ről szól. A Vue sztorija külön figyelmet érdemel: 2 éve a válaszadók 27%-a soha nem hallott róla. Ma, ez ennek a töredéke, csupán 1.3%! Szóval amíg a React még mindig a legnagyobb részesedést élvezheti, a Vue meteorikus felemelkedése nem mutatja nyomát megállásnák. Igazából a Vue már most túlszárnyalta riválisát némely mutató tekintetében, mint például a Github csillagok száma.
 
-The other story of those past couple years is the fall of **Angular**. While it still ranks very high in terms of raw usage, it has a fairly disappointing 41% satisfaction ratio. So while it probably isn't going anywhere thanks to its large user base, it's hard to see how it will ever regain its place atop the front-end throne. 
+A másik érdekes sztori az utóbbi években az **Angular** bukása. Annak ellenére, hogy még mindig előkelő helyen áll nyers felhasználók tekintetében, egy elég gyenge, 41%-os elégedettségi rátát tud csak felmutatni. Tehát valószínűleg az Angular még nem megy sehova a nagy felhasználótáborának köszönhetően, de nehéz megjósolni, hogy vissza fogja-e valaha szerezni a front-end trónt.
 
-Finally, keep an eye out for [Svelte](https://svelte.technology/). By using a radical new approach to front-end frameworks, it's managed to generate quite a lot of interest and was by far the most mentioned option in our "Other Tools" category. 
+Utoljára pedig, érdemes lehet szemmel tartani a [Svelte](https://svelte.technology/)-t. Egy radikálisan új front-end keretrendszer megközelítést használva sikerült elég érdeklődést generálnia ahhoz, hogy messze a legtöbbet említett "Egyéb eszköz" legyen. 
 
-Update: many people have pointed out that Angular's poor satisfaction ratio is probably in part due to the confusion between Angular and the older, deprecated AngularJS (previous surveys avoided this issue by featuring both as separate items). So while Angular did “fall” –relatively speaking– from its dominance from a few years back, it might very well regain ground once the dust clears.
+Frissítés: Sokan rámutattak arra, hogy az Angular elégedettségi rátája valószínűleg azért ilyen gyenge, mert
+nagy a zavar az Angular és annak korábbi, elavult változatával (AngularJS) kapcsolatban. (A korábbi felmérések ezt egyszerűen úgy kerülték el, hogy külön elemekként kezelte a különböző verziókat.) Tehát amíg az Angular viszonylag tényleg “megzuhant” a korábbi évek dominanciájával összehasonlítva, még így is jó esélye lehet visszaszerezni a vezető pozíciót, ha elül a por.
