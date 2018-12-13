@@ -3,10 +3,11 @@ type: conclusion
 section: javascript-flavors
 locale: hu-HU
 ---
- The idea that you can write your code in a language or language variant that compiles down to JavaScript may seem obvious now, but it's easy to forget how innovative it really is. 
+ Az elképzelés, hogy egy nyelvben/nyelv variációban programozol ami egyszerűen JavaScriptté kompilálható manapság már magától értetődő, de könnyű elfelejteni, milyen innovatív ötlet is ez. 
 
-For the longest time CoffeeScript was the lone proponent of that strategy, but today it's been overtaken by **ES6** and its follow-ups, **TypeScript**, **Flow**, and even languages with very different syntaxes such as **Elm** and **Reason**. 
+A leghosszabb ideig a CoffeScript volt az egyetlen indítványozója ennek a stratégiának, de manapság az **ES6**, ezen utódai, a **TypeScript**, **Flow** és más nyelvek más szintaxissal is, mint az **Elm** és a **Reason** is átvették ezt a stratégiát.
 
-And there're good reasons to think that this is the future of JavaScript as a whole. With projects like [Web Assembly](https://webassembly.org/) arriving on the scene, writing code directly in JavaScript might soon seem quaint as developers embrace languages like **Rust** instead. 
+És jó okunk van azt gondolni, hogy ez összességében a JavaScript jövője. Hamarosan a színpadra lépő projektekkel mint a [Web Assembly](https://webassembly.org/), közvetlenül JavaScriptben programozni hamarosan furcsa lehet, mikor a fejlesztők olyan nyelveket karolnak fel, mint pl. a **Rust**.
 
-But until that time, the two big winners here are **ES6** and **TypeScript**. Keep an eye out on **Reason** as well, which has Facebook's support and boasts both very high satisfaction and interest rates.
+
+De addig amíg ez bekövetkezik, a két legnagyobb győztes az **ES6** és a **TypeScript**. Érdmes lehet szemmel követni a **Reason**-t is, ami a Facebook támogatását élvezi, és ahogy magas elégedettség, úgy nagy érdeklődés is jellemzi.
