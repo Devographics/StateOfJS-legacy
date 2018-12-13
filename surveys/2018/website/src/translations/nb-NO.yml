@@ -337,9 +337,9 @@ translations:
     - key: page.section_overview.short
       t: Oversikt
     - key: page.section_other_tools
-      t: ${section} – Andre Bibliotek
+      t: ${section} – Andre verktøy
     - key: page.section_other_tools.short
-      t: Andre Bibliotek
+      t: Andre verktøy
     - key: page.section_conclusion
       t: ${section} - Konklusjon
     - key: page.section_conclusion.short
