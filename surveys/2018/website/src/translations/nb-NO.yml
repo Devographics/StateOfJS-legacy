@@ -187,29 +187,27 @@ translations:
       t: ES6  
     - key: tool.es6.description
       t: |
-        ES6 and its descendants are the newer versions of JavaScript, usually run through Babel.
+        ES6 og sine etterkommere er de nye versjonene av JavaScript, vanligvis kjørt gjennom Babel.
     - key: tool.angular
       t: Angular
     - key: tool.angular.description
       t: |
-        Angular is a TypeScript-based open-source front-end web application platform. Note that from
-        this year on we are not be making a distinction between Angular and Angular.js anymore, while datapoints for 
-        2016 and 2017 correspond to Angular (a.k.a. "Angular 2").
+        Angular er en TypScript-basert open-source front-end plattform for webapplikasjoner. Merk at fra i år og framover, vi gjør ikke forskjell på Angular og Angular.js, mens datapunktene i 2016 og 2017 tilsvarer Angular (også kjent som "Angular 2").
     - key: tool.apollo
       t: Apollo
     - key: tool.apollo.description
       t: |
-        A fully-featured, production ready caching GraphQL client for every UI framework and GraphQL server.
+        En fullfunksjonell, produksjonsklar caching GraphQL klient for alle UI rammeverk og GraphQL servere.
     - key: tool.native-apps
       t: Native Apper
     - key: tool.native-apps.description
       t: |
-        The majority of mobile and desktop apps are still built with native languages like Java, Kotlin, Objective-C, or Swift.
+        De fleste mobil-, og desktopapplikasjonene blir fortsatt bygget ved native språk som Java, Kotlin, Objective-C, eller Swift.
     - key: tool.phonegap-cordova
       t: Cordova
     - key: tool.phonegap-cordova.description
       t: |
-        Apache Cordova er en mobil applikasjon utviklingsrammeverk.
+        Apache Cordova er et utviklingsrammeverk for mobilapplikasjoner.
     - key: tool.vanilla-js
       t: Vanilla JS
     - key: tool.extjs
@@ -253,7 +251,7 @@ translations:
     - key: tool.flutter
       t: Flutter
     - key: tool.pwa
-      t: Progressive Web Apps
+      t: Progressive Webapplikasjoner
     - key: tool.weex
       t: weex
     - key: tool.xamarin
