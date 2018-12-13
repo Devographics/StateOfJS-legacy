@@ -359,176 +359,170 @@ translations:
 
     # blocks
     - key: block.title.participation-by-country
-      t: Participation by Country
+      t: Teilnehmer nach Herkunftsland
     - key: block.description.participation-by-country
-      t: Survey participants by Country.
+      t: Umfrageteilnehmer nach Herkunftsland.
     - key: block.title.salaries
-      t: Salaries
+      t: Gehälter
     - key: block.description.salaries
-      t: Salary range breakdown.
+      t: Gehaltsumfangsaufschlüsselung.
     - key: block.title.salary-per-country
-      t: Average Salary per Country
+      t: Durchschnittliches Gehalt nach Herkunftsland
     - key: block.description.salary-per-country
-      t: Average Salary per Country.
+      t: Durchschnittliches Gehalt nach Herkunftsland.
     - key: block.title.years-of-experience
-      t: Years of Experience
+      t: Erfahrung in Jahren
     - key: block.description.years-of-experience
-      t: Years of experience breakdown.
+      t: Aufschlüsselung nach Erfahrung in Jahren.
     - key: block.title.company-size
-      t: Company Size
+      t: Größe des Arbeitgebers
     - key: block.description.company-size
-      t: Company size breakdown.
+      t: Aufschlüsselung nach Arbeitgebergröße.
     - key: block.title.gender-breakdown
-      t: Gender Breakdown
+      t: Aufschlüsselung nach Geschlecht
     - key: block.title.source-breakdown
-      t: Source Breakdown
+      t: Aufschlüsselung nach Ursprung
     - key: block.description.gender-breakdown
-      t: Gender breakdown.
+      t: Aufschlüsselung nach Geschlecht.
     - key: block.title.connections
-      t: Connections Between Technologies
+      t: Zusammenhänge zwischen den Technologien
     - key: block.description.connections
-      t: Connections between all libraries & technologies.
+      t: Zusammenhänge zwischen allen Libraries & Technologien.
     - key: block.title.overview
-      t: Overall Results
+      t: Gesamtergebnisse
     - key: block.description.overview
       t: |
-        Overall ${section} results.
+        Gesamte ${section} Ergebnisse.
     - key: block.title.results-over-time
-      t: ${tool}'s Popularity Over Time  
+      t: ${tool}'s Popularität über die Jahre
     - key: block.description.results-over-time 
-      t: ${tool}'s popularity evolution over time.
+      t: ${tool}'s Poplaritätsevolution über die Jahre.
     - key: block.results-over-time.empty
       t: |
-        Sorry, we don't have enough data to display
-        the evolution of this library's popularity over time. 
+        Es tut uns leid, wir haben nicht genug Daten
+        um die Poplaritätsevolution dieser Library zu zeigen.
     - key: block.title.happiness
-      t: Overall Happiness
+      t: Gesamtzufriedenheit
     - key: block.description.happiness
       t: |
-        On a scale of one (very unhappy) to five (very happy), how happy are developers
-        with the current overall state of this category?
+        Auf einer Skala von eins (sehr unzufrieden) bis fünf, wie zufrieden sind die Entwickler
+        mit dem aktuellen Gesamtstatus dieser Kategorie?
     - key: block.title.tools-salary-range
-      t: Salary Breakdown
+      t: Gehaltsaufschlüsselung
     - key: block.description.tools-salary-range
       t: |
-        Salary breakdown for developers who picked “used it, would use again” for a given option. 
+        Gehaltsaufschlüsselung nach Entwicklern für "Habe es benutzt, würde es wieder benutzen" gestimmt haben.
         
-        
-        Each cell shows the percentage of users in a given salary range,
-        darker means higher usage.
+        Jede Zelle zeigt den Prozentsatz an Usern in einem Gehaltsbereich,
+        dunkler bedeutet eine höhere Benutzungsrate.
     - key: block.title.tools-company-size
-      t: Company Size Breakdown
+      t: Autschlüsselung nach Firmengröße
     - key: block.description.tools-company-size
       t: |
-        Company size breakdown for developers who picked “used it, would use again” for a given option.  
+        Aufschlüsselung nach Firmengröße für Entwickler die für "Habe es benutzt, würde es wieder benutzen" gestimmt haben.
         
-
-        Each cell shows the percentage of users in a given company size range,
-        darker means higher usage.
+        Jede Zelle zeigt den Prozentsatz an Usern in einem Firmengrößenbereich,
+        dunkler bedeutet eine höhere Benutzungsrate.
     - key: block.title.tools-years-of-experience
-      t: Years Of Experience Breakdown
+      t: Aufschlüsselung nach Erfahrung in Jahren
     - key: block.description.tools-years-of-experience
       t: |
-        Years of experience breakdown for developers who picked “used it, would use again” for a given option. 
+        Aufschlüsselung nach Erfahrung in Jahren für Entwickler die für "Habe es benutzt, würde es wieder benutzen" gestimmt haben.
 
-
-        Each cell shows the percentage of users in a given years of experience range,
-        darker means higher usage.
+        Jede Zelle zeigt den Prozentsatz an Usern in einem Erfahrungsbereich,
+        dunkler bedeutet eine höhere Benutzungsrate.
     - key: block.title.likes    
-      t: Most Liked Aspects of ${tool}
+      t: Die beliebtesten Aspekte von ${tool}
     - key: block.description.likes
       t: |
-        Most liked aspects of ${tool} among developers who picked “used it and would use again”.
+        Die beliebtesten Askpekte von ${tool} für Entwickler die für "Habe es benutzt, würde es wieder benutzen" gestimmt haben.
     - key: block.title.dislikes    
-      t: Most Disliked Aspects of ${tool}   
+      t: Die unbeliebtesten Aspekte von ${tool}
     - key: block.description.dislikes    
       t: |
-        Most disliked aspects of ${tool} among developers who picked “used it and would *not* use again”.
+        Die unbeliebtesten Askpekte von ${tool} für Entwickler die für "Habe es benutzt, würde es *nicht+ wieder benutzen" gestimmt haben.
     - key: block.title.tool-pairing    
-      t: Which Tools Are Used Alongside ${tool}?
+      t: Welche Tools werden mit ${tool} benutzt?
     - key: block.description.tool-pairing
       t: |
-        Libraries most likely to be used by developers who picked “used it and would use again” for ${tool}. 
-        Darker color means a stronger correlation.
+        Libraries, die zumeist von Entwicklern benutzt werden, die für "Habe es benutzt, würde es wieder benutzen" bei ${tool} gestimmt haben.
+        Je dunkler die Farbe, destor größer der Zusammenhang.
     - key: block.title.tool-usage-by-country
       t: ${tool} Usage by Country    
     - key: block.description.tool-usage-by-country
       t: |
-        On average, **${percentage}%** of respondents have used **${tool}** and 
-        would be happy to use it again.
+        Im Schnitt haben **${percentage}** der Teilnehmer ${tool} benutzt und würden es gerne nochmals benutzen.
         
         
-        Countries where this ratio is higher are shown in red, those where it's lower
-        are displayed in blue (countries with fewer than 20 total survey respondents are
-        omitted).
+        Länder, bei denen dieser Prozentsatz höher ist sind mit rot-markiert, Länder bei denen die Rate niedriger ist
+        sind mit blau markiert (Länder, die weniger als 20 Teilnehmer haben wurden ausgelassen).
     - key: block.tool-usage-by-country.legend
       t: |
-        Percentage of
-        happy ${tool} users:
+        Prozentsatz an zufriedenen ${tool}-Nutzern:
     - key: block.title.other-tools    
-      t: Other Libraries
+      t: Andere Libraries
     - key: block.description.other-tools
       t: |
-        Other answers mentioned by survey respondents, ranked by mention count.
+        Weitere Antworten der Umfrageteilnehmer, Geordnet nach Anzahl.
     - key: block.title.quadrants   
-      t: Quadrant Chart
+      t: Quadrantendiagramm
     - key: block.description.quadrants
       t: |
+        Dieses Diagramm zeigt die **Zufriedenheitsrate** für jede Technologie, verglichen mit ihrer **Gesamtnutzung**.
         This chart shows each technology’s **satisfaction ratio** over its **total usage**.
 
-
-        Additionally, technologies that have an **interest ratio** 
-        (percentage of non-users interested in learning it) over 50% are displayed as “on fire”.
+        Zusätzchlich: Technologien bei denen es eine **Interessenrate** gibt.
+        (Prozentsatz an Nicht-Nutztern die daran interessiert sind Diese zu lernen.) Raten die höher als 50% sind, sind mit "on fire" markiert.
     - key: block.title.other_languages
-      t: Other Languages
+      t: Andere Sprachen
     - key: block.description.other_languages
-      t: Other languages, ranked by mention count.
+      t: Andere Sprachen, geordnet nach Anzahl der Erwähnungen.
     - key: block.title.browser_apis
       t: Browser APIs
     - key: block.description.browser_apis
-      t: Browser APIs, ranked by mention count.
+      t: Browser APIs, geordnet nach Anzahl der Erwähnungen.
     - key: block.title.build_tools
       t: Build Tools
     - key: block.description.build_tools
-      t: Build tools, ranked by mention count.
+      t: Build tools, geordnet nach Anzahl der Erwähnungen.
     - key: block.title.utility_libraries
       t: Utility Libraries
     - key: block.description.utility_libraries
-      t: Utility libraries, ranked by mention count.
+      t: Utility libraries, geordnet nach Anzahl der Erwähnungen.
     - key: block.title.text_editors
-      t: Text Editors
+      t: Text Editoren
     - key: block.description.text_editors
-      t: Text editors, ranked by mention count.
+      t: Text Editoren, geordnet nach Anzahl der Erwähnungen.
     - key: block.title.recommended_resources
-      t: Recommended Resources
+      t: Empfohlene Quellen
     - key: block.title.opinion-js_moving_in_right_direction
-      t: JavaScript is moving in the right direction
+      t: JavaScript bewegt sich in die richtige Richtung
     - key: block.description.opinion-js_moving_in_right_direction
-      t: JavaScript is moving in the right direction.
+      t: JavaScript bewegt sich in die richtige Richtung.
     - key: block.title.opinion-building_js_apps_overly_complex
-      t: Building JavaScript apps is overly complex right now
+      t: JavaScript-Apps zu bauen ist momentan übermäßig komplex
     - key: block.description.opinion-building_js_apps_overly_complex
-      t: Building JavaScript apps is overly complex right now.
+      t: JavaScript-Apps zu bauen ist momentan übermäßig komplex.
     - key: block.title.opinion-js_over_used_online
-      t: JavaScript is over-used online
+      t: JavaScript wird online übermäßig benutzt
     - key: block.description.opinion-js_over_used_online
-      t: JavaScript is over-used online.
+      t: JavaScript wird online übermäßig benutzt.
     - key: block.title.opinion-enjoy_building_js_apps
-      t: I enjoy building JavaScript apps
+      t: Es macht mir Spaß JavaScript Apps zu bauen
     - key: block.description.opinion-enjoy_building_js_apps
-      t: I enjoy building JavaScript apps.
+      t: Es macht mir Spaß JavaScript Apps zu bauen.
     - key: block.title.opinion-would_like_js_to_be_main_lang
-      t: I would like JavaScript to be my main programming language
+      t: Ich hätte gerne JavaScript als meine Hauptprogrammierspache
     - key: block.description.opinion-would_like_js_to_be_main_lang
-      t: I would like JavaScript to be my main programming language.
+      t: Ich hätte gerne JavaScript als meine Hauptprogrammierspache.
     - key: block.title.opinion-js_ecosystem_changing_to_fast
-      t: The JavaScript ecosystem is changing too fast
+      t: Der Wandel des JavaScript Ökosystems ist zu schnell
     - key: block.description.opinion-js_ecosystem_changing_to_fast
-      t: The JavaScript ecosystem is changing too fast.
+      t: Der Wandel des JavaScript Ökosystems ist zu schnell.
     - key: block.title.opinion-survey_too_long
-      t: This survey is too damn long!
+      t: Diese Umfrage ist viel zu lange!
     - key: block.description.opinion-survey_too_long
-      t: This survey is too damn long!
+      t: Diese Umfrage ist viel zu lange!
 
     # reasons
     - key: reason.elegant_programming_style_patterns.long
