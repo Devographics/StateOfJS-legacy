@@ -16,7 +16,7 @@ translations:
     - key: users_percentage
       t: Prosentandel brukere
     - key: salary_range_axis_legend
-      t: lønnsområde (år, NOK)
+      t: lønnsområde (år)
     - key: years_of_experience_axis_legend
       t: antall år erfaring
     - key: company_size_axis_legend
@@ -84,29 +84,29 @@ translations:
     - key: salary_range.work-for-free.short
       t: jobber gratis
     - key: salary_range.0-10.long
-      t: 0k - 86k
+      t: $0k-$10k
     - key: salary_range.0-10.short
-      t: 0k - 86k
+      t: $0k-$10k
     - key: salary_range.10-30.long
-      t: 86k - 257k
+      t: $10k-$30k
     - key: salary_range.10-30.short
-      t: 86k - 257k 
+      t: $10k-$30k 
     - key: salary_range.30-50.long
-      t: 257k - 429k
+      t: $30k-$50k
     - key: salary_range.30-50.short
-      t: 257k - 429k 
+      t: $30k-$50k 
     - key: salary_range.50-100.long
-      t: 429k - 858k
+      t: $50k-$100k
     - key: salary_range.50-100.short
-      t: 429k - 858k  
+      t: $50k-$100k  
     - key: salary_range.100-200.long
-      t: 858k - 1,715k
+      t: $100k-$200k
     - key: salary_range.100-200.short
-      t: 858k - 1,715k   
+      t: $100k-$200k   
     - key: salary_range.more-than-200.long
-      t: mer enn 1,715k
+      t: mer enn $200k
     - key: salary_range.more-than-200.short
-      t: 1,715k+   
+      t: $200k+   
 
     # company size
     - key: company_size.1.long
