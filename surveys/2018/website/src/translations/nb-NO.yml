@@ -357,176 +357,168 @@ translations:
 
     # blocks
     - key: block.title.participation-by-country
-      t: Participation by Country
+      t: Landsdeltagelse
     - key: block.description.participation-by-country
-      t: Survey participants by Country.
+      t: Undersøkelsesdeltagere per land.
     - key: block.title.salaries
-      t: Salaries
+      t: Lønnsområde
     - key: block.description.salaries
-      t: Salary range breakdown.
+      t: Klassifisering av lønnsområde.
     - key: block.title.salary-per-country
-      t: Average Salary per Country
+      t: Gjennomsnittlig lønn per land
     - key: block.description.salary-per-country
-      t: Average Salary per Country.
+      t: Gjennomsnittlig lønn per land.
     - key: block.title.years-of-experience
-      t: Years of Experience
+      t: Årserfaring
     - key: block.description.years-of-experience
-      t: Years of experience breakdown.
+      t: Klassifisering av årserfaring.
     - key: block.title.company-size
-      t: Company Size
+      t: Bedriftsstørrelse
     - key: block.description.company-size
-      t: Company size breakdown.
+      t: Klassifisering av bedrifsstørrelse.
     - key: block.title.gender-breakdown
-      t: Gender Breakdown
+      t: Kjønnsklassifisering
     - key: block.title.source-breakdown
-      t: Source Breakdown
+      t: Kildeklassifisering
     - key: block.description.gender-breakdown
-      t: Gender breakdown.
+      t: Kjønnsklassifisering.
     - key: block.title.connections
       t: Forbindelser mellom teknologier
     - key: block.description.connections
       t: Forbindelser mellom alle bibliotek & teknologier.
     - key: block.title.overview
-      t: Overall Results
+      t: Totalresultatet
     - key: block.description.overview
       t: |
-        Overall ${section} results.
+        Totalresultat for ${section}.
     - key: block.title.results-over-time
-      t: ${tool}'s Popularity Over Time  
+      t: ${tool}s popularitet over tid  
     - key: block.description.results-over-time 
-      t: ${tool}'s popularity evolution over time.
+      t: ${tool}s utvikling av popularitet over tid.
     - key: block.results-over-time.empty
       t: |
-        Sorry, we don't have enough data to display
-        the evolution of this library's popularity over time. 
+        Beklager, men vi har ikke nok data til å vise 
+        hvordan utviklingen av dette bibliotekets popularitet
+        har vært. 
     - key: block.title.happiness
-      t: Overall Happiness
+      t: Generell lykke
     - key: block.description.happiness
       t: |
-        On a scale of one (very unhappy) to five (very happy), how happy are developers
-        with the current overall state of this category?
+        På en skala fra en (svært ufornøyd) til fem (svært fornøyd), hvor fornøyde utviklerne
+        er med den nåværende statusen av denne kategorien? 
     - key: block.title.tools-salary-range
-      t: Salary Breakdown
+      t: Klassifisering av lønn
     - key: block.description.tools-salary-range
       t: |
-        Salary breakdown for developers who picked “used it, would use again” for a given option. 
+        Klassifisering av lønna til utviklerne som valgte “har brukt det, vil bruke det igjen” for et alternativ.
         
-        
-        Each cell shows the percentage of users in a given salary range,
-        darker means higher usage.
+        Hver av cellene viser prosentandelen av brukere i et lønnsområde, jo mørkere farge desto høyere bruk.
     - key: block.title.tools-company-size
-      t: Company Size Breakdown
+      t: Klassifisering av bedriftsstørrelse
     - key: block.description.tools-company-size
       t: |
-        Company size breakdown for developers who picked “used it, would use again” for a given option.  
+        Klassifisering av bedriftsstørrelsen til utviklerne som valgte “har brukt det, vil bruke det igjen” for et alternativ.  
         
 
-        Each cell shows the percentage of users in a given company size range,
-        darker means higher usage.
+        Hver av cellene viser prosentandelen av brukere i et lønnsområde, jo mørkere farge desto høyere bruk.
     - key: block.title.tools-years-of-experience
-      t: Years Of Experience Breakdown
+      t: Klassifisering av årserfaring.
     - key: block.description.tools-years-of-experience
       t: |
-        Years of experience breakdown for developers who picked “used it, would use again” for a given option. 
+        Klassifisering av årserfaringen til utviklerne som valgte “har brukt det, vil bruke det igjen” for et alternativ.  
 
 
-        Each cell shows the percentage of users in a given years of experience range,
+        Hver av cellene viser prosentandelen av brukere i et lønnsområde, jo mørkere farge desto høyere bruk.
         darker means higher usage.
     - key: block.title.likes    
-      t: Most Liked Aspects of ${tool}
+      t: Mest likte aspekter av ${tool}
     - key: block.description.likes
       t: |
-        Most liked aspects of ${tool} among developers who picked “used it and would use again”.
+        Mest likte aspekter av ${tool} blant utviklerne som valgte “har brukt det, vil bruke det igjen.
     - key: block.title.dislikes    
-      t: Most Disliked Aspects of ${tool}   
+      t: Mest mislikte aspekter av ${tool}   
     - key: block.description.dislikes    
       t: |
-        Most disliked aspects of ${tool} among developers who picked “used it and would *not* use again”.
+        Mest mislikte aspekter av ${tool} blant utviklerne som valgte “har brukt det, vil *ikke* bruke det igjen.
     - key: block.title.tool-pairing    
-      t: Which Tools Are Used Alongside ${tool}?
+      t: Hvilke verktøy er brukt ved siden av ${tool}?
     - key: block.description.tool-pairing
       t: |
-        Libraries most likely to be used by developers who picked “used it and would use again” for ${tool}. 
-        Darker color means a stronger correlation.
+        Biblioteker som har størst sannsynlighet for å bli brukt av utviklerne som valgte “har brukt det, vil bruke det igjen” for ${tool}.
+        Jo mørkere farge, desto sterkere sammenheng.
     - key: block.title.tool-usage-by-country
-      t: ${tool} Usage by Country    
+      t: ${tool}s bruk per land    
     - key: block.description.tool-usage-by-country
       t: |
-        On average, **${percentage}%** of respondents have used **${tool}** and 
-        would be happy to use it again.
+        I gjennomsnittet, **${percentage}%** av svargiverne har brukt **${tool}** og vil gjerne bruke det igjen.
         
         
-        Countries where this ratio is higher are shown in red, those where it's lower
-        are displayed in blue (countries with fewer than 20 total survey respondents are
-        omitted).
+        Land som har en høyere rate er farget rød, mens der det er lavere har fått blå farge. (Land som har færre enn 20 svargivere utelates.)
     - key: block.tool-usage-by-country.legend
       t: |
-        Percentage of
-        happy ${tool} users:
+        Prosentandel av fornøyde brukere til ${tool}:
     - key: block.title.other-tools    
-      t: Other Libraries
+      t: Andre bibliotek
     - key: block.description.other-tools
       t: |
-        Other answers mentioned by survey respondents, ranked by mention count.
+        Andre alternativer nevnt av svargiverne, rangert etter hvor mange ganger de har blitt nevnt.
     - key: block.title.quadrants   
-      t: Quadrant Chart
+      t: Kvadrantdiagram
     - key: block.description.quadrants
       t: |
-        This chart shows each technology’s **satisfaction ratio** over its **total usage**.
+        Dette diagrammet viser enhver teknologi sin **tilfredsstillelsesforhold** over sin **total bruk**.
 
-
-        Additionally, technologies that have an **interest ratio** 
-        (percentage of non-users interested in learning it) over 50% are displayed as “on fire”.
+        I tillegg, teknologier som viser over 50% **interesse** (prosentandelen av ikke-brukere som er interessert i å lære det) har blitt markert med “ild”.
     - key: block.title.other_languages
-      t: Other Languages
+      t: Andre språk
     - key: block.description.other_languages
-      t: Other languages, ranked by mention count.
+      t: Andre språk, rangert etter hvor mange ganger de har blitt nevnt.
     - key: block.title.browser_apis
-      t: Browser APIs
+      t: Browser APIer
     - key: block.description.browser_apis
-      t: Browser APIs, ranked by mention count.
+      t: Browser APIer, rangert etter hvor mange ganger de har blitt nevnt.
     - key: block.title.build_tools
-      t: Build Tools
+      t: Bygge verktøy
     - key: block.description.build_tools
-      t: Build tools, ranked by mention count.
+      t: Bygge verktøy, rangert etter hvor mange ganger de har blitt nevnt.
     - key: block.title.utility_libraries
-      t: Utility Libraries
+      t: Verktøybiblioteker
     - key: block.description.utility_libraries
-      t: Utility libraries, ranked by mention count.
+      t: Verktøybiblioteker, rangert etter hvor mange ganger de har blitt nevnt.
     - key: block.title.text_editors
-      t: Text Editors
+      t: Text Editorer
     - key: block.description.text_editors
-      t: Text editors, ranked by mention count.
+      t: Text editorer, rangert etter hvor mange ganger de har blitt nevnt.
     - key: block.title.recommended_resources
-      t: Recommended Resources
+      t: Anbefalte kilder
     - key: block.title.opinion-js_moving_in_right_direction
-      t: JavaScript is moving in the right direction
+      t: JavaScript beveger seg i den rette retningen
     - key: block.description.opinion-js_moving_in_right_direction
-      t: JavaScript is moving in the right direction.
+      t: JavaScript beveger seg i den rette retningen.
     - key: block.title.opinion-building_js_apps_overly_complex
-      t: Building JavaScript apps is overly complex right now
+      t: Å bygge JavaScript apper er altfor komplisert per i dag
     - key: block.description.opinion-building_js_apps_overly_complex
-      t: Building JavaScript apps is overly complex right now.
+      t: Å bygge JavaScript apper er altfor komplisert per i dag.
     - key: block.title.opinion-js_over_used_online
-      t: JavaScript is over-used online
+      t: JavaScript er over-brukt online
     - key: block.description.opinion-js_over_used_online
-      t: JavaScript is over-used online.
+      t: JavaScript er over-brukt online.
     - key: block.title.opinion-enjoy_building_js_apps
-      t: I enjoy building JavaScript apps
+      t: Jeg liker å bygge JavaScript apper
     - key: block.description.opinion-enjoy_building_js_apps
-      t: I enjoy building JavaScript apps.
+      t: Jeg liker å bygge JavaScript apper.
     - key: block.title.opinion-would_like_js_to_be_main_lang
-      t: I would like JavaScript to be my main programming language
+      t: Jeg ønsker at JavaScript skal være mitt hovedprogrammeringsspråk
     - key: block.description.opinion-would_like_js_to_be_main_lang
-      t: I would like JavaScript to be my main programming language.
+      t: Jeg ønsker at JavaScript skal være mitt hovedprogrammeringsspråk.
     - key: block.title.opinion-js_ecosystem_changing_to_fast
-      t: The JavaScript ecosystem is changing too fast
+      t: JavaScript økosystemet endrer seg altfor fort
     - key: block.description.opinion-js_ecosystem_changing_to_fast
-      t: The JavaScript ecosystem is changing too fast.
+      t: JavaScript økosystemet endrer seg altfor fort.
     - key: block.title.opinion-survey_too_long
-      t: This survey is too damn long!
+      t: Denne undersøkelsen er altfor lang!
     - key: block.description.opinion-survey_too_long
-      t: This survey is too damn long!
+      t: Denne undersøkelsen er altfor lang!
 
     # reasons
     - key: reason.elegant_programming_style_patterns.long
