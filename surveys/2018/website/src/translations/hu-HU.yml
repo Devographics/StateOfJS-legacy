@@ -16,7 +16,7 @@ translations:
     - key: users_percentage
       t: Felhasználók százalékos aránya
     - key: salary_range_axis_legend
-      t: fizetési tartomány (év, millió forint)
+      t: fizetési tartomány (év)
     - key: years_of_experience_axis_legend
       t: tapasztalat (év)
     - key: company_size_axis_legend
@@ -84,29 +84,29 @@ translations:
     - key: salary_range.work-for-free.short
       t: ingyen dolgozik
     - key: salary_range.0-10.long
-      t: 0 - 2.9
+      t: $0k-$10k
     - key: salary_range.0-10.short
-      t: 0-2.9
+      t: $0k-$10k
     - key: salary_range.10-30.long
-      t: 2.9 - 8.6
+      t: $10k-$30k
     - key: salary_range.10-30.short
-      t: 2.9-8.6 
+      t: $10k-$30k 
     - key: salary_range.30-50.long
-      t: 8.6 - 14.3
+      t: $30k-$50k
     - key: salary_range.30-50.short
-      t: 8.6-14.3 
+      t: $30k-$50k 
     - key: salary_range.50-100.long
-      t: 14.3 - 28.6
+      t: $50k-$100k
     - key: salary_range.50-100.short
-      t: 14.3-28.6  
+      t: $50k-$100k  
     - key: salary_range.100-200.long
-      t: 28.6 - 57.1
+      t: $100k-$200k
     - key: salary_range.100-200.short
-      t: 28.6-57.1   
+      t: $100k-$200k   
     - key: salary_range.more-than-200.long
-      t: több mint 57.1
+      t: több mint $200k
     - key: salary_range.more-than-200.short
-      t: 57.1+   
+      t: $200k+   
 
     # company size
     - key: company_size.1.long
