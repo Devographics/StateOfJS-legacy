@@ -4,8 +4,8 @@ section: demographics
 locale: hu-HU
 ---
 
-This year, we reached 20,268 developers in 153 different countries. While the **U.S.** dominates the survey as expected with 24% of respondents, **Germany** and **Australia** are both well-represented, with over 5% of respondents each. 
+Idén 20.268 fejlesztőt sikerült megkérdeznünk 153 országból. Nem meglepetésünkre az **U.S.A.** dominált 24%-os részvételi aránnyal, de **Németország** és **Ausztrália** is jól képviseltette magát 5% feletti részvétellel.
 
-Of course, we should mention that although we're doing our best to get as many developers as we can to fill out the survey, our audience is still only a small fraction of the overall JavaScript community, and you should keep this in mind when evaluating the following results.  
+Hozzá kell tennünk, annak ellenére hogy mindent megteszünk azért, hogy a lehető legtöbb fejlesztő kitöltse a felmérést, a közönségünk még mindig csak egy töredékét képviseli a teljes JavaScript közösségnek, így ezt kérjük tartsd szemmel a felmérés eredményeinek böngészése közben.
 
-Note: one factor that could definitely help us reach broader, more international audiences in the future would be translating the survey and survey results in multiple languages. If you think you can help, please [let us know](https://github.com/StateOfJS/StateOfJS/issues/87)!
+Megjegyzés: egy dolog ami biztosan hozzájárulna egy nagyobb, nemzetközibb közönség eléréséhez, ha a jövőben több nyelven is kiadhatnánk a felmérést. Ha úgy gondolod, hogy tudnál segíteni a felmérés különböző nyelvekre való fordításában, kérünk [tudasd velünk](https://github.com/StateOfJS/StateOfJS/issues/87)!
