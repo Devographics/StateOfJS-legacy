@@ -34,7 +34,7 @@ translations:
     - key: users_count
       t: ${count} brukere
     - key: percentage_of_respondents
-      t: ${percentage} av respondentene
+      t: ${percentage} av svargiverne
     - key: partners.premium_partners
       t: Våre 2018 Premium Partnere
     - key: partners.become_partner
