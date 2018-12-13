@@ -3,5 +3,4 @@ type: introduction
 section: awards
 locale: hu-HU
 ---
- Join us for the first ever State of JS awards! Can you guess which technologies took gold
-in each category? <span class="note">(Note: we've excluded ES6 from the awards to avoid skewing the data)</span>
+ Csatlakozz hozzánk a legelső State of JS díjakért! Meg tudod tippelni melyik technológia amelyik aranyat ér mindegyik kategóriában? <span class="note">(Megjegyzés: az ES6-ot kihagytuk a díjazottak közül, az adatok torzítását elkerülendő)</span>
