@@ -68,7 +68,7 @@ translations:
 
     # generic opinions
     - key: opinion_scale.0
-      t: Erősen nem ért egyet
+      t: Egyáltalán nem ért egyet
     - key: opinion_scale.1
       t: Nem ért egyet
     - key: opinion_scale.2
@@ -76,7 +76,7 @@ translations:
     - key: opinion_scale.3
       t: Egyet ért
     - key: opinion_scale.4
-      t: Erősen egyet ért
+      t: Teljesen egyet ért
 
     # salary ranges
     - key: salary_range.work-for-free.long
@@ -335,9 +335,9 @@ translations:
     - key: page.section_overview.short
       t: Összesítés
     - key: page.section_other_tools
-      t: ${section} – Egyéb könyvtárak
+      t: ${section} – Egyéb eszközök
     - key: page.section_other_tools.short
-      t: Egyéb könyvtárak
+      t: Egyéb eszközök
     - key: page.section_conclusion
       t: ${section} - Következtetések
     - key: page.section_conclusion.short
@@ -367,7 +367,7 @@ translations:
     - key: block.description.salary-per-country
       t: Átlagos fizetés országonként.
     - key: block.title.years-of-experience
-      t: Tapasztalat (év)
+      t: Tapasztalat
     - key: block.description.years-of-experience
       t: Tapasztalat (év) lebontás.
     - key: block.title.company-size
