@@ -632,32 +632,32 @@ translations:
     
     # quadrant
     - key: quadrant.satisfaction_legend
-      t: Satisfaction %
+      t: Tilfredshet %
     - key: quadrant.users_legend
-      t: Users
+      t: Brukere
     - key: quadrant.assess.label
-      t: Assess
+      t: Aksess
     - key: quadrant.assess.description
       t: |
-        Low usage, high satisfaction.
-        Technologies worth keeping an eye on.
+        Lav bruk, høy tilfredshet.
+        Teknologier som er verdt å følge med.
     - key: quadrant.adopt.label
       t: Adopt
     - key: quadrant.adopt.description
       t: |
-        High usage, high satisfaction. Safe technologies to adopt.
+        Høy bruk, høy tilfredshet. Teknoliger som kan adopteres trygt.
     - key: quadrant.avoid.label
-      t: Avoid
+      t: Unngå
     - key: quadrant.avoid.description
       t: |
-        Low usage, low satisfaction.
-        Technologies probably best avoided currently.
+        Lav bruk, lav tilfredshet.
+        Teknologier som er best å unngå akkurat nå.
     - key: quadrant.analyze.label
-      t: Analyze
+      t: Analiser
     - key: quadrant.analyze.description
       t: |
-        High usage, low satisfaction.
-        Reassess these technologies if you're currently using them.
+        Høy bruk, lav tilfredshet.
+        Revurder disse teknologiene om du bruker de.
 
     # awards
     - key: block.title.highest_satisfaction
