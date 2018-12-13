@@ -52,7 +52,7 @@ translations:
     - key: opinions.legends.not_interested
       t: Jeg har HØRT om det, og er IKKE interessert
     - key: opinions.legends_short.not_interested
-      t: Hørt om det, ikk er interessert
+      t: Hørt om det, ikke interessert
     - key: opinions.legends.interested
       t: Jeg har HØRT om det, og vil gjerne lære det
     - key: opinions.legends_short.interested
