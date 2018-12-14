@@ -12,11 +12,11 @@ translations:
     - key: tools_company_size_average
       t: Durchschnittliche Firmengröße
     - key: tools_years_of_experience_average
-      t: Durchschnittle Erfahrung in Jahren
+      t: Durchschnittliche Erfahrung in Jahren
     - key: users_percentage
       t: Prozent der Benutzer
     - key: salary_range_axis_legend
-      t: Gehaltsbereich
+      t: Gehaltsspanne
     - key: years_of_experience_axis_legend
       t: Erfahrung in Jahren
     - key: company_size_axis_legend
@@ -58,17 +58,17 @@ translations:
     - key: opinions.legends_short.interested
       t: Davon gehört, würde es gerne lernen
     - key: opinions.legends.would_use
-      t: Ich HABE es schonmal benutzt, und WÜRDE es wieder benutzen
+      t: Ich HABE es schonmal verwendet, und WÜRDE es wieder verwenden
     - key: opinions.legends_short.would_use
-      t: Schonmal benutzt, würde es nochmal benutzen
+      t: Schonmal verwendet, würde es nochmals verwenden
     - key: opinions.legends.would_not_use
-      t: Ich HABE es schonmal benutzt, und ich würde es NICHT noch einmal benutzen
+      t: Ich HABE es schonmal verwendet, und ich würde es NICHT noch einmal verwenden
     - key: opinions.legends_short.would_not_use
-      t: Schonmal benutzt, würde es nicht nochmal benutzen.
+      t: Schonmal verwendet, würde es nicht nochmals verwenden.
 
     # generic opinions
     - key: opinion_scale.0
-      t: Stimme komplett nicht zu
+      t: Stimme gar nicht zu
     - key: opinion_scale.1
       t: Stimme nicht zu
     - key: opinion_scale.2
@@ -76,13 +76,13 @@ translations:
     - key: opinion_scale.3
       t: Stimme zu
     - key: opinion_scale.4
-      t: Stimme komplett zu
+      t: Stimme völlig zu
 
     # salary ranges
     - key: salary_range.work-for-free.long
-      t: Ich arbeite für umsonst
+      t: Ich arbeite unentgeltlich
     - key: salary_range.work-for-free.short
-      t: Arbeite für umsonst
+      t: Arbeite unentgeltlich
     - key: salary_range.0-10.long
       t: $0k-$10k
     - key: salary_range.0-10.short
@@ -146,7 +146,7 @@ translations:
     - key: years_of_experience.less-than-1.long
       t: Weniger als 1 Jahr
     - key: years_of_experience.less-than-1.short
-      t: '<1 year'
+      t: '<1 Jahr'
     - key: years_of_experience.1-2.long
       t: 1 bis 2 Jahre
     - key: years_of_experience.1-2.short
@@ -170,7 +170,7 @@ translations:
 
     # sections
     - key: section.javascript-flavors
-      t: JavaScript Arten
+      t: JavaScript Varianten
     - key: section.front-end-frameworks
       t: Front-end Frameworks
     - key: section.data-layer
@@ -187,21 +187,19 @@ translations:
       t: ES6
     - key: tool.es6.description
       t: |
-        ES6 und alles was danach kommt sind die neueren Versionen von JavaScript, die man normalerweise mit Babel benutzt.
+        ES6 und alles was danach kommt sind die neueren Versionen von JavaScript, die häufig mit Babel verwendet werden.
     - key: tool.angular
       t: Angular
     - key: tool.angular.description
       t: |
-        Angular ist ein auf TypeScript basierendes open-source Front-End-Web-Application Framework.
-        Beachte das wir in diesem Jahr keinen Unterschied zwischen Angular und Angular.js machen,
-        Angular is a TypeScript-based open-source front-end web application platform. Note that from
-        this year on we are not be making a distinction between Angular and Angular.js anymore, obwohl sich die
+        Angular ist ein auf TypeScript basierendes Open-Source Front-End-Web-Application Framework.
+        Beachte, dass wir in diesem Jahr keinen Unterschied zwischen Angular und Angular.js machen, obwohl sich die
         Umfrage in 2016 und 2017 auf Angular (a.k.a Angular 2) bezogen hat.
     - key: tool.apollo
       t: Apollo
     - key: tool.apollo.description
       t: |
-        Ein voll ausgestattetes, in production einsetzbarer, caching GraphQL client für jedes UI-Framework und jeden GraphQL-Server.
+        Ein voll ausgestattetes, in Production einsetzbarer, caching GraphQL Client für jedes UI-Framework und jeden GraphQL-Server.
     - key: tool.native-apps
       t: Native Apps
     - key: tool.native-apps.description
@@ -337,7 +335,7 @@ translations:
     - key: page.section_tool
       t: ${section} - ${tool}
     - key: page.section_overview.short
-      t: Überblock
+      t: Überblick
     - key: page.section_other_tools
       t: ${section} – Andere Libraries
     - key: page.section_other_tools.short
@@ -411,51 +409,51 @@ translations:
       t: Gehaltsaufschlüsselung
     - key: block.description.tools-salary-range
       t: |
-        Gehaltsaufschlüsselung nach Entwicklern für "Habe es benutzt, würde es wieder benutzen" gestimmt haben.
+        Gehaltsaufschlüsselung nach Entwicklern für "Habe es verwendet, würde es wieder verwenden" gestimmt haben.
         
         Jede Zelle zeigt den Prozentsatz an Usern in einem Gehaltsbereich,
-        dunkler bedeutet eine höhere Benutzungsrate.
+        dunkler bedeutet eine höhere Nutzungsrate.
     - key: block.title.tools-company-size
       t: Autschlüsselung nach Firmengröße
     - key: block.description.tools-company-size
       t: |
-        Aufschlüsselung nach Firmengröße für Entwickler die für "Habe es benutzt, würde es wieder benutzen" gestimmt haben.
+        Aufschlüsselung nach Firmengröße für Entwickler die für "Habe es verwendet, würde es wieder verwenden" gestimmt haben.
         
         Jede Zelle zeigt den Prozentsatz an Usern in einem Firmengrößenbereich,
-        dunkler bedeutet eine höhere Benutzungsrate.
+        dunkler bedeutet eine höhere Nutzungsrate.
     - key: block.title.tools-years-of-experience
       t: Aufschlüsselung nach Erfahrung in Jahren
     - key: block.description.tools-years-of-experience
       t: |
-        Aufschlüsselung nach Erfahrung in Jahren für Entwickler die für "Habe es benutzt, würde es wieder benutzen" gestimmt haben.
+        Aufschlüsselung nach Erfahrung in Jahren für Entwickler die für "Habe es verwendet, würde es wieder verwenden" gestimmt haben.
 
         Jede Zelle zeigt den Prozentsatz an Usern in einem Erfahrungsbereich,
-        dunkler bedeutet eine höhere Benutzungsrate.
+        dunkler bedeutet eine höhere Nutzungsrate.
     - key: block.title.likes    
       t: Die beliebtesten Aspekte von ${tool}
     - key: block.description.likes
       t: |
-        Die beliebtesten Askpekte von ${tool} für Entwickler die für "Habe es benutzt, würde es wieder benutzen" gestimmt haben.
+        Die beliebtesten Askpekte von ${tool} für Entwickler die für "Habe es verwendet, würde es wieder verwenden" gestimmt haben.
     - key: block.title.dislikes    
       t: Die unbeliebtesten Aspekte von ${tool}
     - key: block.description.dislikes    
       t: |
-        Die unbeliebtesten Askpekte von ${tool} für Entwickler die für "Habe es benutzt, würde es *nicht+ wieder benutzen" gestimmt haben.
+        Die unbeliebtesten Askpekte von ${tool} für Entwickler die für "Habe es verwendet, würde es *nicht+ wieder verwenden" gestimmt haben.
     - key: block.title.tool-pairing    
-      t: Welche Tools werden mit ${tool} benutzt?
+      t: Welche Tools werden mit ${tool} verwendet?
     - key: block.description.tool-pairing
       t: |
-        Libraries, die zumeist von Entwicklern benutzt werden, die für "Habe es benutzt, würde es wieder benutzen" bei ${tool} gestimmt haben.
+        Libraries, die zumeist von Entwicklern verwendet werden, die für "Habe es verwendet, würde es wieder verwenden" bei ${tool} gestimmt haben.
         Je dunkler die Farbe, destor größer der Zusammenhang.
     - key: block.title.tool-usage-by-country
       t: ${tool} Usage by Country    
     - key: block.description.tool-usage-by-country
       t: |
-        Im Schnitt haben **${percentage}** der Teilnehmer ${tool} benutzt und würden es gerne nochmals benutzen.
+        Im Schnitt haben **${percentage}** der Teilnehmer ${tool} verwendet und würden es gerne wieder verwenden.
         
         
-        Länder, bei denen dieser Prozentsatz höher ist sind mit rot-markiert, Länder bei denen die Rate niedriger ist
-        sind mit blau markiert (Länder, die weniger als 20 Teilnehmer haben wurden ausgelassen).
+        Länder, bei denen dieser Prozentsatz höher ist, sind mit rot-markiert. Länder bei denen die Rate niedriger ist,
+        sind mit blau markiert (Länder, die weniger als 20 Teilnehmer haben, wurden ausgelassen).
     - key: block.tool-usage-by-country.legend
       t: |
         Prozentsatz an zufriedenen ${tool}-Nutzern:
@@ -463,16 +461,15 @@ translations:
       t: Andere Libraries
     - key: block.description.other-tools
       t: |
-        Weitere Antworten der Umfrageteilnehmer, Geordnet nach Anzahl.
+        Weitere Antworten der Umfrageteilnehmer, geordnet nach Anzahl.
     - key: block.title.quadrants   
       t: Quadrantendiagramm
     - key: block.description.quadrants
       t: |
-        Dieses Diagramm zeigt die **Zufriedenheitsrate** für jede Technologie, verglichen mit ihrer **Gesamtnutzung**.
-        This chart shows each technology’s **satisfaction ratio** over its **total usage**.
+        Dieses Diagramm zeigt die **Zufriedenheitsrate** jeder Technologie, verglichen mit ihrer **Gesamtnutzung**.
 
-        Zusätzchlich: Technologien bei denen es eine **Interessenrate** gibt.
-        (Prozentsatz an Nicht-Nutztern die daran interessiert sind Diese zu lernen.) Raten die höher als 50% sind, sind mit "on fire" markiert.
+        Zusätzlich: Technologien, bei denen es eine **Interessenrate** gibt.
+        (Prozentsatz an Nicht-Nutzern, die daran interessiert sind, diese zu lernen.) Raten die höher als 50% sind, sind mit "on fire" markiert.
     - key: block.title.other_languages
       t: Andere Sprachen
     - key: block.description.other_languages
@@ -504,9 +501,9 @@ translations:
     - key: block.description.opinion-building_js_apps_overly_complex
       t: JavaScript-Apps zu bauen ist momentan übermäßig komplex.
     - key: block.title.opinion-js_over_used_online
-      t: JavaScript wird online übermäßig benutzt
+      t: JavaScript wird online übermäßig verwendet
     - key: block.description.opinion-js_over_used_online
-      t: JavaScript wird online übermäßig benutzt.
+      t: JavaScript wird online übermäßig verwendet.
     - key: block.title.opinion-enjoy_building_js_apps
       t: Es macht mir Spaß JavaScript Apps zu bauen
     - key: block.description.opinion-enjoy_building_js_apps
@@ -520,9 +517,9 @@ translations:
     - key: block.description.opinion-js_ecosystem_changing_to_fast
       t: Der Wandel des JavaScript Ökosystems ist zu schnell.
     - key: block.title.opinion-survey_too_long
-      t: Diese Umfrage ist viel zu lange!
+      t: Diese Umfrage ist viel zu lang!
     - key: block.description.opinion-survey_too_long
-      t: Diese Umfrage ist viel zu lange!
+      t: Diese Umfrage ist viel zu lang!
 
     # reasons
     - key: reason.elegant_programming_style_patterns.long
