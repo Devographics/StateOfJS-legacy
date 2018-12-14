@@ -68,7 +68,7 @@ translations:
 
     # generic opinions
     - key: opinion_scale.0
-      t: Stimme gar nicht zu
+      t: Stimme überhaupt nicht zu
     - key: opinion_scale.1
       t: Stimme nicht zu
     - key: opinion_scale.2
