@@ -199,7 +199,7 @@ translations:
       t: Apollo
     - key: tool.apollo.description
       t: |
-        Ein voll ausgestattetes, in Production einsetzbarer, caching GraphQL Client für jedes UI-Framework und jeden GraphQL-Server.
+        Ein voll ausgestatteter, in Production einsetzbarer, GraphQL Client für jedes UI-Framework und jeden GraphQL-Server.
     - key: tool.native-apps
       t: Native Apps
     - key: tool.native-apps.description
