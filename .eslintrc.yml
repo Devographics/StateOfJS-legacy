@@ -1,6 +1,7 @@
 extends:
   - 'eslint:recommended'
   - 'plugin:react/recommended'
+  - 'plugin:prettier/recommended'
 
 parser: babel-eslint
 parserOptions:
@@ -13,6 +14,8 @@ env:
 
 globals:
   __PREFIX_LINKS__: true
+  document: true
+  fetch: true  
 
 settings:
   react:
