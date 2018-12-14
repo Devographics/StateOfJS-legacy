@@ -3,10 +3,10 @@ type: conclusion
 section: front-end-frameworks
 locale: en-US
 ---
-Once again the front-end space is all about **React** and **Vue.js**. Vue's story in particular is worth considering: two years ago, 27% of respondents had never even heard of the library. Today, that fraction has fallen to just 1.3%! So while React still has a much larger share of the market, Vue's meteoric rise certainly shows no sign of stopping. In fact, Vue has already overtaken its rival for certain metrics such as total GitHub stars. 
+И снова в сфере front-end все говорят о **React** и **Vue.js**. История Vue очень показательна: еще 2 года назад 27% опрошенных никогда о нем не слышали. Сейчас же их доля составляет всего 1.3%! React по-прежнему занимает большую часть рынка, нет причин ожидать остановки роста доли Vue. А по некоторым метрикам(например - количество звезд на GitHub) Vue и вовсе обогнал конкурента.
 
-The other story of those past couple years is the fall of **Angular**. While it still ranks very high in terms of raw usage, it has a fairly disappointing 41% satisfaction ratio. So while it probably isn't going anywhere thanks to its large user base, it's hard to see how it will ever regain its place atop the front-end throne. 
+Другая занимательная черта последних двух лет - падение **Angular**. И хотя он находится в первых рядах по числу использовавших его пользователей, он так же имеет разочаровывающее значение показателя удовлетворенности - 41%. Вероятнее всего, он никуда не денется благодаря большому числу пользователей, но совершенно не понятно, каким образом он собирается вернуть себе лидерство.
 
-Finally, keep an eye out for [Svelte](https://svelte.technology/). By using a radical new approach to front-end frameworks, it's managed to generate quite a lot of interest and was by far the most mentioned option in our "Other Tools" category. 
+Наконец, давайте обратим внимание на [Svelte](https://svelte.technology/). Используя совершенно новый подход к работе front-end фреймворков, он сумел вызвать большой интерес и безусловно был самым упоминаемым вариантом в категории "Другие инструменты".
 
-Update: many people have pointed out that Angular's poor satisfaction ratio is probably in part due to the confusion between Angular and the older, deprecated AngularJS (previous surveys avoided this issue by featuring both as separate items). So while Angular did “fall” –relatively speaking– from its dominance from a few years back, it might very well regain ground once the dust clears.
+Update: Многие люди отмечают, что низкий показатель удовлетворенности Angular в какой-то мере связан с путаницей между Angular и устаревшим AngularJS(в предыдущих опросах данная проблема отсутствовала, так как в них были представлены обе версии). И хотя в целом Angular несколько просел относительно своего господства несколько лет назад, он может восстановить свои позиции, как только шумиха уляжется.

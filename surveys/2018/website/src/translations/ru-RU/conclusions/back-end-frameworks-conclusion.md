@@ -1,10 +1,10 @@
 ---
 type: conclusion
 section: back-end-frameworks
-locale: en-US
+locale: ru-RU
 ---
- JavaScript on the server is in a weird state. While countless frameworks emerge every year, very few manage to gain enough momentum to challenge **Express**. Even **Koa**, sometimes billed as Express' successor, has a lower satisfaction ratio (and vastly lower usage numbers).
+ Серверный JavaScript находится в весьма странном состоянии. Несмотря на то, что каждый год появляются новые фреймворки, только некоторым из них удается соперничать с **Express**. Даже **Koa**, иногда называемый преемником Express, имеет более низкий коэффициент удовлетворенности(и еще более низкий показатель использования).
 
-One interesting entrant in the space is **Next.js**, which has been generating a lot of interest lately. Although it's not quite comparable to a full-featured Node back-end, its single-minded focus on solving the server-side-rendering problem for React apps has made it a very useful tool. 
+Достаточно интересным участником в этой области выглядит **Next.js**, вызывающий большой интерес в последнее время. И хотя он не является полноценным back-end фреймворком, он решает проблему серверного рендеринга React приложений.
 
-It's also interesting to see what role serverless technologies like [AWS Lambda](https://aws.amazon.com/lambda/) will play over the next couple of years. Who knows, the back-end category as we know it might soon be a thing of the past!
+Так же интересно будет посмотреть, какую роль сыграют serverless технологии(как [AWS Lambda](https://aws.amazon.com/lambda/)) в течении следующих нескольких лет. Возможно, понятие back-end, каким мы его знаем, вскоре станет пережитком прошлого.
