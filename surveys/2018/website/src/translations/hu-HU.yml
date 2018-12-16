@@ -664,69 +664,69 @@ translations:
 
     # awards
     - key: block.title.highest_satisfaction
-      t: Highest Satisfaction
+      t: Legmagasabb elégedettség
     - key: block.description.highest_satisfaction
       t: |
-        Awarded to the library with the highest percentage of satisfied users.
+        Ezt a díjat a legmagasabb százalékos megelégedettséget elért könyvtár kapja.
     - key: award.highest_satisfaction.comment
       t: |
-        With **${tools[0].percentage}%** of users willing to use it again,
-        ${tools[0].label} proves it’s not kidding around.
+        Azzal, hogy a felhasználók **${tools[0].percentage}%**-a újra használná, 
+        a(z) ${tools[0].label} bebizonyította, hogy nem viccel.
     - key: award.highest_satisfaction.runner_up
       t: ${tool.label} ${tool.percentage}%  
     - key: block.title.highest_interest
-      t: Highest Interest
+      t: Legmagasabb érdeklődés
     - key: block.description.highest_interest
       t: |
-        Awarded to the technology developers are most interested in learning.
+        Ezt a díjat az a technológia kapja, amit a fejlesztők legnagyobb érdeklődéssel tanulnának meg.
     - key: award.highest_interest.comment
       t: |
-        **${tools[0].percentage}%** of developers who have heard about
-        ${tools[0].label} want to learn it.
-        That’s some serious interest!
+        Azon fejlesztőknek a **${tools[0].percentage}%**-a aki hallott a 
+        ${tools[0].label}-ról/ről, szeretné megtanulni.
+        Ez elég komoly érdeklődés!
     - key: award.highest_interest.runner_up
       t: ${tool.label} ${tool.percentage}%
     - key: block.title.highest_usage
-      t: Most Used
+      t: Leghasználtabb
     - key: block.description.highest_usage
       t: |
-        Awarded to technology with the largest user base.
+        Ezt a díjat a legnagyobb felhasználóbázissal rendelkező technológia kapja.
     - key: award.highest_usage.comment
       t: |
-        With **${tools[0].count}** users ${tools[0].label}
-        is the most used library this year.        
+        Összesen **${tools[0].count}** felhasználóval, a(z) ${tools[0].label} 
+        lett az év leghasználtabb könyvtára.
     - key: award.highest_usage.runner_up
       t: ${tool.label} ${tool.count}
     - key: block.title.most_mentioned
-      t: Most Mentioned
+      t: Legtöbbet említett
     - key: block.description.most_mentioned
       t: |
-        Awarded to the library mentioned the most in the “other libraries” answer. 
+        Ezt a díjat az a könyvtár kapja, amit a legtöbben említettek "egyéb könyvtárak" címszó alatt.
     - key: award.most_mentioned.comment
       t: |
-        ${tools[0].label} collected **${tools[0].count}** mentions,
-        making it the most submitted freeform answer by far.
+        A(z) ${tools[0].label} **${tools[0].count}** említést gyűjtött össze, ezzel messze 
+        a legtöbbet szabad formában beküldött válasz lett.
     - key: award.most_mentioned.runner_up
       t: ${tool.label} ${tool.count}
     - key: block.title.prediction
-      t: Prediction Award
+      t: Előrejelzés díj
     - key: block.description.prediction
       t: |
-        Awarded to an up-and-coming technology that might take over… or not?
+        Ezt a díjat olyan feltörekvő technológia érdemelte ki, ami talán egyzer átveszi a vezetést… Vagy mégsem?
     - key: award.prediction.comment
       t: |
-        The Facebook team is two for two with React and GraphQL.
-        Will Reason follow the same path?
+        A Facebook csapata eddig kettőből kétszer betalált a Reacttel és a GraphQL-el.
+        Vajon a Reason a következő?
     - key: award.prediction.runner_up
       t: ${tool.label}
     - key: block.title.special
-      t: Special Award
+      t: Különdíj
     - key: block.description.special
       t: |
-        Awarded to a technology that we just fell in love with this year.
+        Ezt a díjat az a technológia kapja, amit egyszerűen megimádtunk ebben az évben.
     - key: award.special.comment
       t: |
-        ${tools[0].label} has become the leading JavaScript text editor, and we can definitely see why!
+        A(z) ${tools[0].label} idén a vezető JavaScript szövegszerkesztővé vált, és egyértelműen látjuk, hogy miért!
     - key: award.special.runner_up
       t: ${tool.label}
 
