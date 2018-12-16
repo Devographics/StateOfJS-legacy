@@ -26,7 +26,7 @@ translations:
     - key: counts_display_mode
       t: Fő
     - key: awards_runner_ups
-      t: Másodlagos befutók
+      t: Befutók
     - key: tool_homepage
       t: Főoldal
     - key: from_to_short
