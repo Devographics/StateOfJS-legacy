@@ -635,32 +635,32 @@ translations:
     
     # quadrant
     - key: quadrant.satisfaction_legend
-      t: Satisfaction %
+      t: Elégedettség %
     - key: quadrant.users_legend
-      t: Users
+      t: Felhasználók
     - key: quadrant.assess.label
-      t: Assess
+      t: Értékel
     - key: quadrant.assess.description
       t: |
-        Low usage, high satisfaction.
-        Technologies worth keeping an eye on.
+        Alacsony használtság, magas elégedettség
+        Technológiák, amiket érdemes nyomon követni.
     - key: quadrant.adopt.label
-      t: Adopt
+      t: Adoptál
     - key: quadrant.adopt.description
       t: |
-        High usage, high satisfaction. Safe technologies to adopt.
+        Magas használtság, magas elégedettség. Nyugodtan adoptálható technológiák.
     - key: quadrant.avoid.label
-      t: Avoid
+      t: Elkerül
     - key: quadrant.avoid.description
       t: |
-        Low usage, low satisfaction.
-        Technologies probably best avoided currently.
+        Alacsony használtság, alacsony elégedettség
+        Technológiák, amiket legérdemesebb jelenleg elkerülni.
     - key: quadrant.analyze.label
-      t: Analyze
+      t: Elemez
     - key: quadrant.analyze.description
       t: |
-        High usage, low satisfaction.
-        Reassess these technologies if you're currently using them.
+        Magas használtság, alacsony elégedettség.
+        Ha használod ezeket a technológiákat, érdemes lehet újragondolni.
 
     # awards
     - key: block.title.highest_satisfaction
