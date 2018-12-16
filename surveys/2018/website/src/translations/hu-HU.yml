@@ -361,7 +361,7 @@ translations:
     - key: block.title.salaries
       t: Éves fizetések
     - key: block.description.salaries
-      t: Éves fizetések lebontás
+      t: Fizetések éves lebontása
     - key: block.title.salary-per-country
       t: Átlagos fizetés országonként
     - key: block.description.salary-per-country
@@ -369,17 +369,17 @@ translations:
     - key: block.title.years-of-experience
       t: Tapasztalat
     - key: block.description.years-of-experience
-      t: Tapasztalat (év) lebontás.
+      t: Tapasztalat éves lebontása.
     - key: block.title.company-size
       t: Cégméret
     - key: block.description.company-size
-      t: Cégméret lebontás.
+      t: Cégméret lebontása.
     - key: block.title.gender-breakdown
-      t: Nem lebontás
+      t: Nemek lebontása
     - key: block.title.source-breakdown
-      t: Forrás lebontás
+      t: Források lebontása
     - key: block.description.gender-breakdown
-      t: Nem lebontás.
+      t: Nemek lebontása.
     - key: block.title.connections
       t: Kapcsolatok technológiák között
     - key: block.description.connections
@@ -388,11 +388,11 @@ translations:
       t: Összesített eredmények
     - key: block.description.overview
       t: |
-        Összesített ${section} eredménye.
+        ${section} összesített eredménye.
     - key: block.title.results-over-time
-      t: ${tool} népszerűsége az idő elteltével  
+      t: ${tool} népszerűségének változása  
     - key: block.description.results-over-time 
-      t: ${tool} népszerűségének változása.
+      t: Hogyan változott a(z) ${tool} népszerűsége az idő elteltével.
     - key: block.results-over-time.empty
       t: |
         Sajnáljuk, de nem áll rendelkezésre elég adat, hogy ennek
@@ -405,7 +405,7 @@ translations:
         mennyire elégedettek a fejlesztők ennek a kategóriának a
         jelenlegi állásával?
     - key: block.title.tools-salary-range
-      t: Éves fizetés lebontás
+      t: Éves fizetés lebontása
     - key: block.description.tools-salary-range
       t: |
         Azon fejlesztők fizetésének éves lebontása, akik "használta, használná megint"-t
@@ -415,118 +415,113 @@ translations:
         Minden cella egy százalékot mutat egy bizonyos fizetési szegmensben,
         a sötétebb szín több felhasználót jelent.
     - key: block.title.tools-company-size
-      t: Company Size Breakdown
+      t: Cégméret lebontása
     - key: block.description.tools-company-size
       t: |
-        Company size breakdown for developers who picked “used it, would use again” for a given option.  
+        Azon fejlesztők cégméretének lebontása, akik "használta, használná megint"-t
+        válaszoltak egy adott opcióhoz.
         
 
-        Each cell shows the percentage of users in a given company size range,
-        darker means higher usage.
+        Minden cella egy százalékot mutat egy bizonyos fizetési szegmensben,
+        a sötétebb szín több felhasználót jelent.
     - key: block.title.tools-years-of-experience
       t: Years Of Experience Breakdown
     - key: block.description.tools-years-of-experience
       t: |
-        Years of experience breakdown for developers who picked “used it, would use again” for a given option. 
+        Azon fejlesztők tapasztalatának években mért lebontása, akik "használta, használná megint"-t
+        válaszoltak egy adott opcióhoz.
 
 
-        Each cell shows the percentage of users in a given years of experience range,
-        darker means higher usage.
+        Minden cella egy százalékot mutat egy bizonyos fizetési szegmensben,
+        a sötétebb szín több felhasználót jelent.
     - key: block.title.likes    
-      t: Most Liked Aspects of ${tool}
+      t: A(z) ${tool} leginkább kedvelt aspektusai
     - key: block.description.likes
       t: |
-        Most liked aspects of ${tool} among developers who picked “used it and would use again”.
+        A(z) ${tool} leginkább kedvelt aspektusai azon fejlesztők között, akik "használta, használná megint"-t válaszoltak.
     - key: block.title.dislikes    
-      t: Most Disliked Aspects of ${tool}   
+      t: A(z) ${tool} legkevésbé kedvelt aspektusai
     - key: block.description.dislikes    
       t: |
-        Most disliked aspects of ${tool} among developers who picked “used it and would *not* use again”.
+        A(z) ${tool} legkevésbé kedvelt aspektusai azon fejlesztők között, akik "használta, *nem* használná megint"-t válaszoltak.
     - key: block.title.tool-pairing    
-      t: Which Tools Are Used Alongside ${tool}?
+      t: A(z) ${tool} melyik eszközökkel van együtt használva?
     - key: block.description.tool-pairing
       t: |
-        Libraries most likely to be used by developers who picked “used it and would use again” for ${tool}. 
-        Darker color means a stronger correlation.
+        Mely könyvtárak vannak legnagyobb eséllyel együtt használva a(z) ${tool}-val/vel azon fejlesztők között, akik “használta, használta megint”-t válaszoltak. A sötétebb szín erősebb kapcsolatot feltételez.
     - key: block.title.tool-usage-by-country
-      t: ${tool} Usage by Country    
+      t: ${tool} Használat országok szerint
     - key: block.description.tool-usage-by-country
       t: |
-        On average, **${percentage}%** of respondents have used **${tool}** and 
-        would be happy to use it again.
+        Átlagosan, a válaszadók **${percentage}%**-a használta a(z) **${tool}**-t és boldogan használná megint.
         
         
-        Countries where this ratio is higher are shown in red, those where it's lower
-        are displayed in blue (countries with fewer than 20 total survey respondents are
-        omitted).
+        Azon országoknál, amiknél ez az arány az átlagnál magasabb vörössel, míg ahol alacsonyabb, kékkel van megjelölve (országok kevesebb mint 20 válaszadóval nem lettek feltüntetve).
     - key: block.tool-usage-by-country.legend
       t: |
-        Percentage of
-        happy ${tool} users:
+        ${tool} boldog felhasználóinak százaléka:
     - key: block.title.other-tools    
-      t: Other Libraries
+      t: Egyéb könyvtárak
     - key: block.description.other-tools
       t: |
-        Other answers mentioned by survey respondents, ranked by mention count.
+        Egyéb olyan válaszok, amiket a válaszadók adtak, említés száma szerint rangsorolva.
     - key: block.title.quadrants   
-      t: Quadrant Chart
+      t: Kvadráns diagram
     - key: block.description.quadrants
       t: |
-        This chart shows each technology’s **satisfaction ratio** over its **total usage**.
+        Ez a diagram minden technológia **elégedettségi arány**át mutatja a **teljes felhasználás** tekintetében.
 
-
-        Additionally, technologies that have an **interest ratio** 
-        (percentage of non-users interested in learning it) over 50% are displayed as “on fire”.
+        Emellett azon technológiák, amiknek az **érdeklődési arány**a (azon jelenleg nem-használók százaléka, akiket érdekel a technológia megtanulása) 50% feletti, “tűzzel” vannak megjelölve.
     - key: block.title.other_languages
-      t: Other Languages
+      t: Egyéb nyelvek
     - key: block.description.other_languages
-      t: Other languages, ranked by mention count.
+      t: Egyéb nyelvek, említés száma szerint rangsorolva
     - key: block.title.browser_apis
-      t: Browser APIs
+      t: Böngésző API-k
     - key: block.description.browser_apis
-      t: Browser APIs, ranked by mention count.
+      t: Böngésző API-k, említés száma szerint rangsorolva.
     - key: block.title.build_tools
-      t: Build Tools
+      t: Build eszközök
     - key: block.description.build_tools
-      t: Build tools, ranked by mention count.
+      t: Build eszközök, említés száma szerint rangsorolva.
     - key: block.title.utility_libraries
-      t: Utility Libraries
+      t: Utility könyvtárak
     - key: block.description.utility_libraries
-      t: Utility libraries, ranked by mention count.
+      t: Utility könyvtárak, említés száma szerint rangsorolva.
     - key: block.title.text_editors
-      t: Text Editors
+      t: Szövegszerkesztők
     - key: block.description.text_editors
-      t: Text editors, ranked by mention count.
+      t: Szövegszerkesztők, említés száma szerint rangsorolva.
     - key: block.title.recommended_resources
-      t: Recommended Resources
+      t: Ajánlott források
     - key: block.title.opinion-js_moving_in_right_direction
-      t: JavaScript is moving in the right direction
+      t: A JavaScript a megfelelő irányban halad
     - key: block.description.opinion-js_moving_in_right_direction
-      t: JavaScript is moving in the right direction.
+      t: A JavaScript a megfelelő irányban halad.
     - key: block.title.opinion-building_js_apps_overly_complex
-      t: Building JavaScript apps is overly complex right now
+      t: JavaScript alkalmazásokat jelenleg túl bonyolult készíteni
     - key: block.description.opinion-building_js_apps_overly_complex
-      t: Building JavaScript apps is overly complex right now.
+      t: JavaScript alkalmazásokat jelenleg túl bonyolult készíteni.
     - key: block.title.opinion-js_over_used_online
-      t: JavaScript is over-used online
+      t: A JavaScript túl van használva online 
     - key: block.description.opinion-js_over_used_online
-      t: JavaScript is over-used online.
+      t: A JavaScript túl van használva online .
     - key: block.title.opinion-enjoy_building_js_apps
-      t: I enjoy building JavaScript apps
+      t: Szeretek JavaScript alkalmazásokat készíteni
     - key: block.description.opinion-enjoy_building_js_apps
-      t: I enjoy building JavaScript apps.
+      t: Szeretek JavaScript alkalmazásokat készíteni.
     - key: block.title.opinion-would_like_js_to_be_main_lang
-      t: I would like JavaScript to be my main programming language
+      t: Szeretném, ha a JavaScript lenne a fő programozási nyelvem
     - key: block.description.opinion-would_like_js_to_be_main_lang
-      t: I would like JavaScript to be my main programming language.
+      t: Szeretném, ha a JavaScript lenne a fő programozási nyelvem.
     - key: block.title.opinion-js_ecosystem_changing_to_fast
-      t: The JavaScript ecosystem is changing too fast
+      t: A JavaScript ökoszisztéma túl gyorsan változik
     - key: block.description.opinion-js_ecosystem_changing_to_fast
-      t: The JavaScript ecosystem is changing too fast.
+      t: A JavaScript ökoszisztéma túl gyorsan változik.
     - key: block.title.opinion-survey_too_long
-      t: This survey is too damn long!
+      t: Ez a felmérés túl hosszú!
     - key: block.description.opinion-survey_too_long
-      t: This survey is too damn long!
+      t: Ez a felmérés túl hosszú!
 
     # reasons
     - key: reason.elegant_programming_style_patterns.long
