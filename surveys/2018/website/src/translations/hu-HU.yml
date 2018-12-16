@@ -525,113 +525,113 @@ translations:
 
     # reasons
     - key: reason.elegant_programming_style_patterns.long
-      t: ⚙️ Elegant programming style & patterns
+      t: ⚙️ Elegáns programozói stílus & minták
     - key: reason.elegant_programming_style_patterns.short
-      t: ⚙️ Programming style
+      t: ⚙️ Programozói stílus
     - key: reason.robust_less_error_prone_code.long
-      t: 🐞 Robust, less error-prone code
+      t: 🐞 Robosztus, hibára kevésbé hajlamos kód
     - key: reason.robust_less_error_prone_code.short
-      t: 🐞 Robust code
+      t: 🐞 Robosztus kód
     - key: reason.rich_package_ecosystem.long
-      t: 🎁 Rich package ecosystem
+      t: 🎁 Gazdag kiegészítő ökoszisztéma
     - key: reason.rich_package_ecosystem.short  
-      t: 🎁 Package ecosystem
+      t: 🎁 Kiegészítő ökoszisztéma
     - key: reason.fast_performance.long
-      t: ⚡ Fast performance
+      t: ⚡ Gyors teljesítmény
     - key: reason.fast_performance.short  
-      t: ⚡ Fast performance
+      t: ⚡ Gyors teljesítmény
     - key: reason.well_established_option.long
-      t: 🏛️ Well-established option
+      t: 🏛️ Jól megalapozott alternatíva
     - key: reason.well_established_option.short  
-      t: 🏛️ Well-established
+      t: 🏛️ Jól megalapozott
     - key: reason.easy_learning_curve.long
-      t: 👶 Easy learning curve
+      t: 👶 Egyszerű tanulási ráta
     - key: reason.easy_learning_curve.short
-      t: 👶 Easy to learn
+      t: 👶 Könnyű elsajátítani
     - key: reason.powerful_developer_tooling.long
-      t: 🔧 Powerful developer tooling
+      t: 🔧 Erőteljes fejlesztői eszközök
     - key: reason.powerful_developer_tooling.short
-      t: 🔧 Tooling
+      t: 🔧 Eszközök
     - key: reason.good_documentation.long
-      t: 📖 Good documentation
+      t: 📖 Jól dokumentált
     - key: reason.good_documentation.short
-      t: 📖 Documentation
+      t: 📖 Dokmentáció
     - key: reason.backed_by_a_great_team_company.long
-      t: 👫 Backed by a great team/company
+      t: 👫 Nagyszerű cspat/cég támogatását élvezi
     - key: reason.backed_by_a_great_team_company.short
-      t: 👫 Team/company
+      t: 👫 Csapat/cég
     - key: reason.simple_lightweight.long
-      t: 🎈 Simple & lightweight
+      t: 🎈 Egyszerű & pehelysúlyú
     - key: reason.simple_lightweight.short
-      t: 🎈 Lightweight
+      t: 🎈 Pehelysúlyú
     - key: reason.growing_momentum_popularity.long
-      t: 📉 Growing momentum/popularity
+      t: 📉 Növekvő momentum/népszerűség
     - key: reason.growing_momentum_popularity.short
       t: 📉 Momentum
     - key: reason.full_featured_powerful.long
-      t: 🕹️ Full-featured & powerful
+      t: 🕹️ Teljesértékű & erőteljes
     - key: reason.full_featured_powerful.short
-      t: 🕹️ Full-featured
+      t: 🕹️ Teljesértékű
     - key: reason.stable_backwards_compatible.long
-      t: ⚖️ Stable & backwards-compatible
+      t: ⚖️ Stabil és visszafelé kompatibilis
     - key: reason.stable_backwards_compatible.short
-      t: ⚖️ Stability
+      t: ⚖️ Stabilitás
     - key: reason.clumsy_programming_style.long
-      t: ⚙️ Clumsy programming style
+      t: ⚙️ Nehézkes programozói stílus
     - key: reason.clumsy_programming_style.short
-      t: ⚙️ Clumsy
+      t: ⚙️ Nehézkes
     - key: reason.buggy_error_prone_code.long
-      t: 🐞 Buggy, error-prone code
+      t: 🐞 Bugos, hibára hajlamos kód
     - key: reason.buggy_error_prone_code.short
-      t: 🐞 Buggy code
+      t: 🐞 Bugos kód
     - key: reason.poor_performance.long
-      t: ⚡ Poor performance
+      t: ⚡ Gyenge teljesítmény
     - key: reason.poor_performance.short
-      t: ⚡ Poor performance
+      t: ⚡ Gyenge teljesítmény
     - key: reason.small_package_ecosystem.long
-      t: 🎁 Small package ecosystem
+      t: 🎁 Kevés kiegészítő ökoszisztéma
     - key: reason.small_package_ecosystem.short
-      t: 🎁 Few packages
+      t: 🎁 Kevés kiegészítő
     - key: reason.new_untested_option.long
-      t: 🏛️ New untested option
+      t: 🏛️ Új, még nem tesztelt alternatív
     - key: reason.new_untested_option.short
-      t: 🏛️ New & untested
+      t: 🏛️ Új, még nem tesztelt
     - key: reason.hard_learning_curve.long
-      t: 👶 Hard learning curve
+      t: 👶 Nehéz tanulási ráta
     - key: reason.hard_learning_curve.short
-      t: 👶 Hard to learn
+      t: 👶 Nehéz elsajátítani
     - key: reason.lacking_developer_tooling.long
-      t: 🔧 Lacking developer tooling
+      t: 🔧 Hiányos fejlesztői eszközök
     - key: reason.lacking_developer_tooling.short
-      t: 🔧 Lacking tooling
+      t: 🔧 Hiányos eszköztár
     - key: reason.bad_documentation.long
-      t: 📖 Bad documentation
+      t: 📖 Rossz dokumentáció
     - key: reason.bad_documentation.short
-      t: 📖 Bad documentation
+      t: 📖 Rossz dokumentáció
     - key: reason.concerns_about_the_team_company.long
-      t: 👫 Concerns about the team/company
+      t: 👫 A csapattal/céggel kapcsolatos aggodalmak
     - key: reason.concerns_about_the_team_company.short
-      t: 👫 Bad team/company
+      t: 👫 Rossz csapat/cég
     - key: reason.bloated_complex.long
-      t: 🎈 Bloated & complex
+      t: 🎈 Felfújt & komplex
     - key: reason.bloated_complex.short
-      t: 🎈 Bloated & complex
+      t: 🎈 Felfújt & komplex
     - key: reason.diminishing_momentum_popularity.long
-      t: 📉 Diminishing momentum/popularity
+      t: 📉 Csökkenő momentum/népszerűség
     - key: reason.diminishing_momentum_popularity.short
-      t: 📉 Low momentum
+      t: 📉 Alacsony momentum
     - key: reason.limited_lacking_in_features.long
-      t: 🕹️ Limited & lacking in features
+      t: 🕹️ Korlátozott & hiányos funkciók
     - key: reason.limited_lacking_in_features.short
-      t: 🕹️ Limited
+      t: 🕹️ Korlátozott
     - key: reason.fast_changing_breaks_often.long
-      t: ⚖️ Fast-changing & breaks often
+      t: ⚖️ Gyorsan változik & gyakran elromlik
     - key: reason.fast_changing_breaks_often.short
-      t: ⚖️ Fast-changing
+      t: ⚖️ Gyorsan változik
     - key: reason.other.long
-      t: Other
+      t: Egyéb
     - key: reason.other.short
-      t: Other
+      t: Egyéb
     
     # quadrant
     - key: quadrant.satisfaction_legend
