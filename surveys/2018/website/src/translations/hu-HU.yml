@@ -307,7 +307,7 @@ translations:
     - key: tool.vim
       t: Vim
     - key: tool.service-workers
-      t: Service Worker-ek
+      t: Service Worker-ök
     - key: tool.webrtc
       t: WebRTC
     - key: tool.webvr
@@ -315,11 +315,11 @@ translations:
     - key: tool.webgl
       t: WebGL
     - key: tool.web-animations-api
-      t: Web Animations API
+      t: Web Animáció API
     - key: tool.web-audio-api
       t: Web Audio API
     - key: tool.web-speech-api
-      t: Web Speech API
+      t: Web Beszéd API
 
     # pages
     - key: page.introduction
