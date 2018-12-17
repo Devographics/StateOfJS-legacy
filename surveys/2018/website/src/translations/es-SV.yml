@@ -46,25 +46,25 @@ translations:
 
     # opinions
     - key: opinions.legends.never_heard
-      t: I've never heard of it
+      t: Nunca oí hablar de eso
     - key: opinions.legends_short.never_heard
-      t: Never heard of it  
+      t: Nunca oí de eso  
     - key: opinions.legends.not_interested
-      t: I've HEARD of it, and am NOT interested
+      t: He oído de eso, y no estoy interesado
     - key: opinions.legends_short.not_interested
-      t: Heard of it, not interested
+      t: Oí de eso, no me interesa
     - key: opinions.legends.interested
-      t: I've HEARD of it, and WOULD like to learn it
+      t: He oído de eso, y me interesaría aprender a usarlo
     - key: opinions.legends_short.interested
-      t: Heard of it, would like to learn
+      t: Oí de eso, me gustaría aprender
     - key: opinions.legends.would_use  
-      t: I've USED it before, and WOULD use it again
+      t: Lo he usado antes, y lo usaría de nuevo
     - key: opinions.legends_short.would_use  
-      t: Used it, would use again
+      t: Lo usé, y lo volvería a usar
     - key: opinions.legends.would_not_use  
-      t: I've USED it before, and would NOT use it again
+      t: Lo usé, y no lo volvería a usar
     - key: opinions.legends_short.would_not_use  
-      t: Used it, would not use again
+      t: Lo usé, no lo usaré de nuevo
 
     # generic opinions
     - key: opinion_scale.0
