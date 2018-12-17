@@ -485,9 +485,9 @@ translations:
     - key: block.description.build_tools
       t: Build eszközök, említés száma szerint rangsorolva.
     - key: block.title.utility_libraries
-      t: Utility könyvtárak
+      t: Segédkönyvtárak
     - key: block.description.utility_libraries
-      t: Utility könyvtárak, említés száma szerint rangsorolva.
+      t: Segédkönyvtárak, említés száma szerint rangsorolva.
     - key: block.title.text_editors
       t: Szövegszerkesztők
     - key: block.description.text_editors
