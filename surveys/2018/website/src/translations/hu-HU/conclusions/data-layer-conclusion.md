@@ -3,10 +3,10 @@ type: conclusion
 section: data-layer
 locale: hu-HU
 ---
- In the good old days, things were simple. Your data lived in your database, where the server could fetch it, plop it into a template, and send the whole thing down to the client. 
+ Bezzeg a régi szép időkben, minden olyan könnyű volt. Minden adatod az adatbázisban élt, ahonnan a szerver le tudta azt kérni, berakni egy sablonba, és leküldeni az egészet a kliensnek.
 
-But things are not so simple anymore. Today, apps need to know how to fetch data themselves in order to render their own templates and components. This has given rise to a whole range of data fetching and data management tools. 
+De a dolgok már nem ilyen egyszerűek. Manapság az alkalmatásoknak maguknak kell tudni hogy milyen adatot akarnak lekérni, hogy a saját sablonjait és komponenseit renderelni tudják. Ez egy egész sor adatlekérő és adatkezelő eszköz felemelkedéséhez vezetett.
 
-**Redux** is without a doubt the most widespread of these tools, and its 82% satisfaction rate is a testament to how well-regarded it has become. 
+A **Redux** kétség kívül a legelterjettebb ilyen eszköz, és 82%-os megelégedettségi rátája is azt erősíti meg hogy milyen tekintélyessé eszközzé vált.
 
-But the whole space might soon get shaken up by the **GraphQL** shockwave. **GraphQL** users went from 5% to 20% in two years, and their client of choice seems to be **Apollo**. Add to this the fact that the latest version of Apollo makes using Redux optional, and it wouldn't be surprising if next year's results start to look very different… 
+De hamarosan ezt az egész teret felrázhatja a **GraphQL** lökéshulláma. A **GraphQL** felhasználók 5%-ról 20%-ra nőttek két év alatt, és úgy tűnik, hogy kliensnek az **Apollo**-t választják. Ha hozzáveszed ehhez a tényhez, hogy az Apollo opcionálissá teszi a Redux használatát, nem lenne meglepő, ha a következő évek eredményei nagyon máshogy kezdenének kinézni…
