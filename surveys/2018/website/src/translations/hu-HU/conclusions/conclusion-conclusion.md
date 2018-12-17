@@ -3,14 +3,14 @@ type: conclusion
 section: conclusion
 locale: hu-HU
 ---
- After all is said and done, it looks like 2018 was mostly a continuation of the trends we already observed [last year](http://2017.stateofjs.com).
+ Miután mindenen túl vagyunk, úgy látszik, hogy 2018 leginkább a [tavalyi](http://2017.stateofjs.com) trendek folytatása.
 
-That's bad news for us, because we can't come out with a big scoop on how React's days are numbered, or the next big thing is this new state management library created by a 17-year-old Vietnamese high-schooler in her spare time. 
+Ez nekünk rossz hír, hiszen így nem tudjuk megmondani, hogy a következő nagy dolog vajon az, hogy a React napjai meg vannak számlálva, vagy ez az új state management könyvtár, amit egy 17 éves vietnámi írt a szabadidejében.
 
-But that's great news for you, because it means you can spend less time worrying about what to use, and more time actually using it!
+De ez nagyszerű hír neked, mert így kevsebbet kell aggódnod, hogy mit érdemes használnod, és több időd lesz ténylegesen használni azt!
 
-Things might get shaken up again in 2019 though. While all is currently calm on the front-end front, the question of how you get data from the database to the client is far from settled, and GraphQL is sure to start making bigger and bigger waves in that area. As GraphQL-tailored solutions emerge for both the back-end and the state management layer, we might soon feel the JavaScript ground shifting beneath our feet once more.
+Azonban 2019 felrázhatja a dolgokat. Amíg a front-end jelenleg nyugodt, a kérdés, hogy hogyan juttasd el az adatot az adatbázisból a klienshez, megmarad, és a GraphQL biztosan nagyobb és nagyobb hullámokat fog gerjeszteni ezen a téren. Ahogy a GraphQLre szabott megoldások felemelkednek mind a back-enden és a state management rétegben, hamarosan úgy érezhetjük, hogy a JavaScript talaj megint megremeg a lábaink alatt.
 
-But for now, no need to panic. There's never been a better time to be a JavaScript developer than now, and we're willing to bet that 2019 will make that even clearer!
+De jelenleg semmi ok a pánikra. Nem lehetne jobban időzíteni, hogy valaki JavaScript fejlesztő legyen, és fogadni mernénk, hogy 2019 ezt csak megerősíti!
 
-<span class="conclusion__byline">– Sacha, Raphaël, and Michael</span>
+<span class="conclusion__byline">– Sacha, Raphaël és Michael</span>
