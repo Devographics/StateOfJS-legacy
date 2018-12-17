@@ -3,16 +3,16 @@ type: conclusion
 section: testing
 locale: hu-HU
 ---
- The testing space is a bit of an oddity: while the other parts of the JavaScript ecosystem have been slowly settling down around a few dominant solutions, testing is still very fragmented: lots of different, complementary tools share the pie. Even so, developers are satisfied by their testing solution overall, with the lowest satisfaction ratio being 68%.
+ A tesztelői tér egyfajta furcsaság: amíg a JavaScript ökoszisztéma más részei szépen lassan letelepedtek pár domináns megoldás mellett, addig a tesztelés a mai napig igen fragmentált: sok különböző, kiegészítő eszköz osztozik a tortán. Még így is, a fejlesztők összességében elégedettek a tesztelő megoldásaikkal, ahogyan azt a legalacsonyabb  68%-os megelégedettségi ráta is mutatja.
 
-The survey confirms that **Mocha** is still the most used unit testing framework with over 10k users. Being around for a long time, it has the largest ecosystem and most of the Node.js developers are familiar with it.
+A felmérés megerősíti, hogy a **Mocha** még mindig a leghasználtabb unit tesztelő keretrendszer, több min 10.000 felhasználóval. Mivel már jó régóta köztünk van, neki van a legnagyobb ökoszisztémája, és a legtöbb Node.js fejlesztő jól ismeri.
 
-**Jest** follows closely in terms of usage but it has a slightly higher satisfaction rate: 96% versus 82%. As a side note, 96% is the second highest satisfaction in the whole survey this year. Only ES6 got a better mark!
+A **Jest** szorosan a nyomában felhasználók számát tekintve, valamint kicsivel magasabb megelégedettségi rátával: 92% vs. 82%. Mellékesen a 96% a második legmagasabb megelégedettségi ráta az egész felmérésben idén. Csak az ES6 szerzett jobb jegyet!
 
-This shows that developers really appreciate the efforts made by Facebook to provide a full-featured testing framework that can be used to test both front-end (it was intended to test React components, in the beginning) and back-end code, without requiring configuration.
+Ez azt mutatja, hogy a fejlesztők igazán díjazzák a Facebook erőlködéseit, hogy egy teljes értékű teszt keretrendszert tegyen le az asztalra, ami ugyanúgy használható front-end (a kezdetben csak React komponensek tesztelése volt a szándék) mint back-end kód tesztelésére is, bárminemű konfiguráció nélkül.
 
-In the "Single Page application" era, web applications are becoming more and more complex, with more and more logic implemented on the client side. The survey shows clearly that developers use many tools to test their applications.
+Az "Egyoldalas alkalmazások" korában, a web alkalmazások egyre összetettebbé válnak, több és több logikával implementálva a kliens oldalon. A felmérés tisztán megmutatja, hogy a fejlesztők sokféle eszközt használnak alkalmazásaik tesztelésére.
 
-The spectrum of testing is wide: unit tests, integration tests, end-to-end tests but also "visual testing", as we can see with the success of **Storybook** (the second highest satisfaction rate of the category).
+A tesztelés spektruma nagy: unit tesztelés, integráció tesztelés, végponttól végpontig terjedő tesztelés, ahogy "vizuális tesztelés" is, ahogy látjuk a **Storybrook** sikerén (a második legnagyobb elégedettségi ráta ebben a kategóriában).
 
-The future of testing may include more solutions to make automated tests in the browser, a project like [Cypress](https://www.cypress.io/) may be included in the next year survey and we may see more tools based on [Puppeteer](https://pptr.dev/).
+A jövő tesztelő megoldásai több, böngészőben futtatható automatizált tesztet hozhatnak, projektek, mint a [Cypress](https://www.cypress.io/) benne lehetnek a következő év felmérésében, és több eszközre is számíthatunk, amik a [Puppeteer](https://pptr.dev/)-re alapoznak.
