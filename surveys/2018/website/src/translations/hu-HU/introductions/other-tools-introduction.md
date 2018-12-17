@@ -3,6 +3,6 @@ type: introduction
 section: other-tools
 locale: hu-HU
 ---
- The JavaScript ecosystem isn't only limited to libraries and frameworks. There're all these small utilities we are using every day, including bundlers for code packaging and text editors for writing our code.
+ A JavaScript ökoszisztéma nem csupán könyvtárakból és keretrendszerekből áll. Ott van például az összes kis segédprogram amit napról napra használunk, a bundler-ektől kezdve, code packaging programokon át, egészen a szövegszerkesztőkig, amikben programozunk.
 
-In addition, we also wanted to know which new browser APIs were gaining traction; and yes, as crazy as it might sound it turns out some of us also use languages that *aren’t* JavaScript! 
+Továbbá azt is meg szerettünk volna tudni, hogy melyik új böngésző API-k iránt nőtt az érdeklődés; és igen, amilyen őrülten hangzik, az is kiderült, hogy néhányunk használ olyan nyelveket amit *nem* JavaScriptnek hívnak!
