@@ -3,6 +3,6 @@ type: introduction
 section: back-end-frameworks
 locale: hu-HU
 ---
- JavaScript on the back-end hasn't seen any major breakthroughs in recent years. 
-But compared to the rest of the ecosystem's frenetic pace,
-many will say that this is a blessing, not a curse. 
+ A JavaScript back-enden évek óta nem volt nagy áttörés.
+Mégis sokan úgy gondolják, hogy ez inkább áldás, mint átok, tekintve
+az ökoszisztéma többi részének őrületes tempóját.
