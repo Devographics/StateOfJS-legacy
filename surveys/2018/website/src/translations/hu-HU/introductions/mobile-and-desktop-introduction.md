@@ -3,6 +3,6 @@ type: introduction
 section: mobile-and-desktop
 locale: hu-HU
 ---
- “Any application that can be written in JavaScript, will eventually be written in JavaScript.”
-JavaScript is not limited to the browser anymore, and it's only
-a matter of time until your smart toaster burns your bread because NPM is down. 
+ “Akármelyik alkalmazás ami megírható JavaScriptben, meg lesz írva JavaScriptben.”
+A JavaScript többé nincs korlátozva a böngészőre, és csak idő kérdése, míg az okos kenyérpirítód
+azért égeti meg a pirítósod, mert az épp NPM nem üzemel.
