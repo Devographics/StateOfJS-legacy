@@ -187,29 +187,31 @@ translations:
       t: ES6  
     - key: tool.es6.description
       t: |
-        ES6 and its descendants are the newer versions of JavaScript, usually run through Babel.
+        ES6 y sus descendientes son las versiones más nuevas de JavaScript, usualmente ejecutadas a través de Babel.
     - key: tool.angular
       t: Angular
     - key: tool.angular.description
       t: |
-        Angular is a TypeScript-based open-source front-end web application platform. Note that from
-        this year on we are not be making a distinction between Angular and Angular.js anymore, while datapoints for 
-        2016 and 2017 correspond to Angular (a.k.a. "Angular 2").
+        Angular es una plataforma de aplicaciones web orientada al front-end, de código abierto, basada en TypeScript.
+        Vale aclarar que desde este año no vamos a hacer más una distinción entre Angular y Angular.js; sin embargo,
+        los puntos de datos para 2016 y 2017 corresponden a Angular (también conocido como "Angular 2").
     - key: tool.apollo
       t: Apollo
     - key: tool.apollo.description
       t: |
-        A fully-featured, production ready caching GraphQL client for every UI framework and GraphQL server.
+        Un cliente de GraphQL, con almacenamiento en caché, listo para producción y con todas las funciones
+        para todo framework de interfaz de usuario y servidor de GraphQL.
     - key: tool.native-apps
       t: Native Apps
     - key: tool.native-apps.description
       t: |
-        The majority of mobile and desktop apps are still built with native languages like Java, Kotlin, Objective-C, or Swift.
+        La mayoría de las aplicaciones móviles y de escritorio todavía se construyen con lenguajes nativos
+        como Java, Kotlin, Objective-C o Swift.
     - key: tool.phonegap-cordova
       t: Cordova
     - key: tool.phonegap-cordova.description
       t: |
-        Apache Cordova is a mobile application development framework.
+        Apache Cordova es un framework para desarrollar aplicaciones móviles.
     - key: tool.vanilla-js
       t: Vanilla JS
     - key: tool.extjs
