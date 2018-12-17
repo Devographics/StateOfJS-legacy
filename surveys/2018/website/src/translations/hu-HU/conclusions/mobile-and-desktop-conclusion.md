@@ -3,14 +3,14 @@ type: conclusion
 section: mobile-and-desktop
 locale: hu-HU
 ---
- This category shows clearly how JavaScript has expanded its "scope" far beyond the limits of the browser.
+ Ez a kategória egyértelműen megmutatja, hogy a JavaScript mennyire kiterjesztette a "hatókörét" a böngésző korlátain túl.
 
-**React Native** and **Electron** are the two leading solutions to build mobile and desktop apps using web technologies. Coincidentally, they show similar numbers in both satisfaction ratio and number of users.
+A **React Native** és az **Electron** a két vezető megoldás mobil és asztali alkalmazások építéséhez, web technológiákat használva.
 
-Electron's versatility (it can work with any UI framework, even if it's often associated with React or Vue.js) may explain why it got the highest satisfaction ratio of the category.
+Az Electron sokoldalúsága (akármelyik UI keretrendszerrel képes együttműködni, annak ellenére hogy gyakran a Reacttel és a Vue.js-el van azonosítva), megmagyarázhatja a legmagasabb elégedettségi rátát ebben a kategóriában.
 
-But things are far from settled: Airbnb recently published [a thorough series of article](https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c) explaining why they decided to drop React Native for their next products in favor of Native Apps.
+De a dolgok messze nincsenek lerendezve: Az Airbnb nemrég publikálta [ebben a cikkben](https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c), hogy úgy döntöttek, a jövőben eltávolodnak a React Nativetől a Natív Alkalmazások érdekében.
 
-As an alternative to React Native, developers who want to write cross-platform applications in JavaScript without using React patterns can check out [Weex](https://weex.apache.org/), which lets them use the Vue.js eco-system.
+Egy React Native alternatíva azoknak a fejlesztőknek, akik szeretnének JavaScriptben cross-platform alkalmazásokat írni React nélkül kipróbálhatják a [Weex](https://weex.apache.org/)-et, ami lehetőséget ad nekik a Vue.js ökoszisztémáját használni.
 
-And Google has many interesting entrants in the space as well. There's [Carlo](https://github.com/GoogleChromeLabs/carlo), a brand new “Headful Node app framework” released by Google and built on top of [Puppeteer](https://github.com/GoogleChromeLabs/carlo); as well as [Flutter](https://flutter.io/): instead of building a JavaScript "bridge" as React Native does, it compiles to true native code. But the code is written in Dart, so at the end of the day React Native will be still relevant to most of JavaScript developers already familiar with the React system.
+És a Googlenek is sok érdekes próbálkozása van ezen a téren. Ott van a [Carlo](https://github.com/GoogleChromeLabs/carlo), vagy a vadonatúj “Headful Node alkalmazás keretrendszer” a [Puppeteer](https://github.com/GoogleChrome/puppeteer)-re építve; ahogyan a [Flutter](https://flutter.io/): ahelyett hogy JavaScripttel próbálna áthidalni különbségeket mint a React Native, a Flutter igazi natív kóddá kompilálódik. Ezt viszont Dartban kell írni, szóval a végén a React Native így is releváns marad a legtöbb JavaScript fejlesztőnek, akiknek már ismerős a React rendszer.
