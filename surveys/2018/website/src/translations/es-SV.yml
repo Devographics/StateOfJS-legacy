@@ -144,29 +144,29 @@ translations:
 
     # years of experience
     - key: years_of_experience.less-than-1.long
-      t: Less than one year
+      t: Menos de un año
     - key: years_of_experience.less-than-1.short
-      t: '<1 year'
+      t: '<1 año'
     - key: years_of_experience.1-2.long
-      t: 1 to 2 years
+      t: 1 a 2 años
     - key: years_of_experience.1-2.short
-      t: 1~2 years
+      t: 1~2 años
     - key: years_of_experience.2-5.long
-      t: 2 to 5 years
+      t: 2 a 5 años
     - key: years_of_experience.2-5.short
-      t: 2~5 years
+      t: 2~5 años
     - key: years_of_experience.5-10.long
-      t: 5 to 10 years
+      t: 5 a 10 años
     - key: years_of_experience.5-10.short
-      t: 5~10 years
+      t: 5~10 años
     - key: years_of_experience.10-20.long
-      t: 10 to 20 years
+      t: 10 a 20 años
     - key: years_of_experience.10-20.short
-      t: 10~20 years
+      t: 10~20 años
     - key: years_of_experience.more-than-20.long
-      t: More than 20 years
+      t: Más de 20 años
     - key: years_of_experience.more-than-20.short
-      t: '>20 years'
+      t: '>20 años'
 
     # sections
     - key: section.javascript-flavors
