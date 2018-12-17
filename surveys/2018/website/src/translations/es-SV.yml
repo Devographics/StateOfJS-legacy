@@ -68,15 +68,15 @@ translations:
 
     # generic opinions
     - key: opinion_scale.0
-      t: Strongly Disagree
+      t: Muy en desacuerdo
     - key: opinion_scale.1
-      t: Disagree
+      t: En desacuerdo
     - key: opinion_scale.2
       t: Neutral
     - key: opinion_scale.3
-      t: Agree
+      t: De acuerdo
     - key: opinion_scale.4
-      t: Strongly Agree
+      t: Totalmente de acuerdo
 
     # salary ranges
     - key: salary_range.work-for-free.long
