@@ -110,35 +110,35 @@ translations:
 
     # company size
     - key: company_size.1.long
-      t: One employee
+      t: Un empleado
     - key: company_size.1.short
-      t: one
+      t: uno
     - key: company_size.1-5.long
-      t: 1 to 5 employees
+      t: 1 a 5 empleados
     - key: company_size.1-5.short
       t: 1~5
     - key: company_size.5-10.long
-      t: 5 to 10 employees
+      t: 5 a 10 empleados
     - key: company_size.5-10.short
       t: 5~10
     - key: company_size.10-20.long
-      t: 10 to 20 employees
+      t: 10 a 20 empleados
     - key: company_size.10-20.short
       t: 10~20
     - key: company_size.20-50.long
-      t: 20 to 50 employees
+      t: 20 a 50 empleados
     - key: company_size.20-50.short
       t: 20~50
     - key: company_size.50-100.long
-      t: 50 to 100 employees
+      t: 50 a 100 empleados
     - key: company_size.50-100.short
       t: 50~100
     - key: company_size.100-1000.long
-      t: 100 to 1000 employees
+      t: 100 a 1.000 empleados
     - key: company_size.100-1000.short
       t: 100~1000
     - key: company_size.more-than-1000.long
-      t: More than 1000 employees
+      t: Más de 1.000 empleados
     - key: company_size.more-than-1000.short
       t: 1000+
 
