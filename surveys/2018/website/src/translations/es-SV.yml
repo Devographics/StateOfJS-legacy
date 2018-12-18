@@ -537,113 +537,113 @@ translations:
 
     # reasons
     - key: reason.elegant_programming_style_patterns.long
-      t: ⚙️ Elegant programming style & patterns
+      t: ⚙️ Estilos de programación y patrones de desarollo elegantes
     - key: reason.elegant_programming_style_patterns.short
-      t: ⚙️ Programming style
+      t: ⚙️ Estilo de programación
     - key: reason.robust_less_error_prone_code.long
-      t: 🐞 Robust, less error-prone code
+      t: 🐞 Código robusto, menos propenso a errores
     - key: reason.robust_less_error_prone_code.short
-      t: 🐞 Robust code
+      t: 🐞 Código robusto
     - key: reason.rich_package_ecosystem.long
-      t: 🎁 Rich package ecosystem
+      t: 🎁 Ecosistema rico en paquetes
     - key: reason.rich_package_ecosystem.short  
-      t: 🎁 Package ecosystem
+      t: 🎁 Ecosistema de paquetes
     - key: reason.fast_performance.long
-      t: ⚡ Fast performance
+      t: ⚡ Performance rápida
     - key: reason.fast_performance.short  
-      t: ⚡ Fast performance
+      t: ⚡ Performance rápida
     - key: reason.well_established_option.long
-      t: 🏛️ Well-established option
+      t: 🏛️ Alternativa bien establecida
     - key: reason.well_established_option.short  
-      t: 🏛️ Well-established
+      t: 🏛️ Bien establecido
     - key: reason.easy_learning_curve.long
-      t: 👶 Easy learning curve
+      t: 👶 Curva de aprendizaje fácil
     - key: reason.easy_learning_curve.short
-      t: 👶 Easy to learn
+      t: 👶 Fácil de aprender
     - key: reason.powerful_developer_tooling.long
-      t: 🔧 Powerful developer tooling
+      t: 🔧 Poderosas herramientas de desarrollo
     - key: reason.powerful_developer_tooling.short
-      t: 🔧 Tooling
+      t: 🔧 Herramientas
     - key: reason.good_documentation.long
-      t: 📖 Good documentation
+      t: 📖 Beuna documentación
     - key: reason.good_documentation.short
-      t: 📖 Documentation
+      t: 📖 Documentación
     - key: reason.backed_by_a_great_team_company.long
-      t: 👫 Backed by a great team/company
+      t: 👫 Respaldada por un gran equipo/organización
     - key: reason.backed_by_a_great_team_company.short
-      t: 👫 Team/company
+      t: 👫 Eequipo/organización
     - key: reason.simple_lightweight.long
-      t: 🎈 Simple & lightweight
+      t: 🎈 Simple y ligera
     - key: reason.simple_lightweight.short
-      t: 🎈 Lightweight
+      t: 🎈 Ligera
     - key: reason.growing_momentum_popularity.long
-      t: 📉 Growing momentum/popularity
+      t: 📉 Creciendo en popularidad e impulso
     - key: reason.growing_momentum_popularity.short
-      t: 📉 Momentum
+      t: 📉 Impulso
     - key: reason.full_featured_powerful.long
-      t: 🕹️ Full-featured & powerful
+      t: 🕹️ Completa en funcionalidad y poderosa
     - key: reason.full_featured_powerful.short
-      t: 🕹️ Full-featured
+      t: 🕹️ Completa en funcionalidad
     - key: reason.stable_backwards_compatible.long
-      t: ⚖️ Stable & backwards-compatible
+      t: ⚖️ Estable y retrocompatible
     - key: reason.stable_backwards_compatible.short
-      t: ⚖️ Stability
+      t: ⚖️ Estabilidad
     - key: reason.clumsy_programming_style.long
-      t: ⚙️ Clumsy programming style
+      t: ⚙️ Estilo de programación torpe
     - key: reason.clumsy_programming_style.short
-      t: ⚙️ Clumsy
+      t: ⚙️ Torpe
     - key: reason.buggy_error_prone_code.long
-      t: 🐞 Buggy, error-prone code
+      t: 🐞 Defectuosa, propensa a errores
     - key: reason.buggy_error_prone_code.short
-      t: 🐞 Buggy code
+      t: 🐞 Defectuosa
     - key: reason.poor_performance.long
-      t: ⚡ Poor performance
+      t: ⚡ Pobre en performance
     - key: reason.poor_performance.short
-      t: ⚡ Poor performance
+      t: ⚡ Pobre en performance
     - key: reason.small_package_ecosystem.long
-      t: 🎁 Small package ecosystem
+      t: 🎁 Ecosistema pequeño de paquetes
     - key: reason.small_package_ecosystem.short
-      t: 🎁 Few packages
+      t: 🎁 Pocos paquetes
     - key: reason.new_untested_option.long
-      t: 🏛️ New untested option
+      t: 🏛️ Nueva alternativa, no probada
     - key: reason.new_untested_option.short
-      t: 🏛️ New & untested
+      t: 🏛️ Nueva, no probada
     - key: reason.hard_learning_curve.long
-      t: 👶 Hard learning curve
+      t: 👶 Curva de aprendizaje difícil
     - key: reason.hard_learning_curve.short
-      t: 👶 Hard to learn
+      t: 👶 Difícil de aprender
     - key: reason.lacking_developer_tooling.long
-      t: 🔧 Lacking developer tooling
+      t: 🔧 Herramientas de desarrollo incompletas
     - key: reason.lacking_developer_tooling.short
-      t: 🔧 Lacking tooling
+      t: 🔧 Herramientas incompletas
     - key: reason.bad_documentation.long
-      t: 📖 Bad documentation
+      t: 📖 Mala documentación
     - key: reason.bad_documentation.short
-      t: 📖 Bad documentation
+      t: 📖 Mala documentación
     - key: reason.concerns_about_the_team_company.long
-      t: 👫 Concerns about the team/company
+      t: 👫 Preocupaciones por el equipo/organización
     - key: reason.concerns_about_the_team_company.short
-      t: 👫 Bad team/company
+      t: 👫 Mal equipo/organización
     - key: reason.bloated_complex.long
-      t: 🎈 Bloated & complex
+      t: 🎈 Sobrecargada y compleja
     - key: reason.bloated_complex.short
-      t: 🎈 Bloated & complex
+      t: 🎈 Sovrecargada y compleja
     - key: reason.diminishing_momentum_popularity.long
-      t: 📉 Diminishing momentum/popularity
+      t: 📉 Popularidad e impulso decreciendo
     - key: reason.diminishing_momentum_popularity.short
-      t: 📉 Low momentum
+      t: 📉 Perdiendo impulso
     - key: reason.limited_lacking_in_features.long
-      t: 🕹️ Limited & lacking in features
+      t: 🕹️ Limitada, con funcionalidades faltantes
     - key: reason.limited_lacking_in_features.short
-      t: 🕹️ Limited
+      t: 🕹️ Limitada
     - key: reason.fast_changing_breaks_often.long
-      t: ⚖️ Fast-changing & breaks often
+      t: ⚖️ Cambiante, se rompe con frecuencia
     - key: reason.fast_changing_breaks_often.short
-      t: ⚖️ Fast-changing
+      t: ⚖️ Cambiante
     - key: reason.other.long
-      t: Other
+      t: Otras
     - key: reason.other.short
-      t: Other
+      t: Otras
     
     # quadrant
     - key: quadrant.satisfaction_legend
