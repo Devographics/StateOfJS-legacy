@@ -2,6 +2,7 @@
 
 [![Travis CI][travis-image]][travis-url]
 
+- [translation](#translation)
 - [structure](#structure)
 - [development](#development)
     - [requirements](#requirements)
@@ -12,6 +13,10 @@
     - [build](#build)
     - [deploy](#deploy)
 - [authors](#authors)   
+
+## Translation
+
+If you'd like to help translate the 2018 survey results, check out [this blog post](https://medium.com/@sachagreif/help-us-translate-the-state-of-javascript-2018-survey-results-1488efa525c1).
 
 ## Structure
 
