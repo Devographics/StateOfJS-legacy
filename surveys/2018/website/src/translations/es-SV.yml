@@ -677,69 +677,70 @@ translations:
 
     # awards
     - key: block.title.highest_satisfaction
-      t: Highest Satisfaction
+      t: Mayor Satisfacción
     - key: block.description.highest_satisfaction
       t: |
-        Awarded to the library with the highest percentage of satisfied users.
+        Otorgado a la librería con el mayor porcentaje de personas satisfechas.
     - key: award.highest_satisfaction.comment
       t: |
-        With **${tools[0].percentage}%** of users willing to use it again,
-        ${tools[0].label} proves it’s not kidding around.
+        Con un **${tools[0].percentage}%** de personas dispuestas a usarla nuevamente,
+        ${tools[0].label} demuestra que va en serio.
     - key: award.highest_satisfaction.runner_up
       t: ${tool.label} ${tool.percentage}%  
     - key: block.title.highest_interest
-      t: Highest Interest
+      t: Mayor Interés
     - key: block.description.highest_interest
       t: |
-        Awarded to the technology developers are most interested in learning.
+        Otorgado a la tecnología que las personas están más interesadas en aprender.
     - key: award.highest_interest.comment
       t: |
-        **${tools[0].percentage}%** of developers who have heard about
-        ${tools[0].label} want to learn it.
-        That’s some serious interest!
+        **${tools[0].percentage}%** de personas que han oído hablar de 
+        ${tools[0].label} quieren aprender sobre ella.
+        ¡Eso sí que es interés!
     - key: award.highest_interest.runner_up
       t: ${tool.label} ${tool.percentage}%
     - key: block.title.highest_usage
-      t: Most Used
+      t: Mayor Uso
     - key: block.description.highest_usage
       t: |
-        Awarded to technology with the largest user base.
+        Otorgado a la tecnología con la mayor cantidad de personas utilizándola.
     - key: award.highest_usage.comment
       t: |
-        With **${tools[0].count}** users ${tools[0].label}
-        is the most used library this year.        
+        Con **${tools[0].count}** personas, ${tools[0].label}
+        es la librería más usada este año.
     - key: award.highest_usage.runner_up
       t: ${tool.label} ${tool.count}
     - key: block.title.most_mentioned
-      t: Most Mentioned
+      t: Mayor Cantidad de Menciones
     - key: block.description.most_mentioned
       t: |
-        Awarded to the library mentioned the most in the “other libraries” answer. 
+        Otorgado a la librería más mencionada en la respuesta sobre "otras librerías".
     - key: award.most_mentioned.comment
       t: |
-        ${tools[0].label} collected **${tools[0].count}** mentions,
-        making it the most submitted freeform answer by far.
+        ${tools[0].label} reunió **${tools[0].count}** menciones,
+        haciéndola la respuesta libre más mencionada por lejos.
     - key: award.most_mentioned.runner_up
       t: ${tool.label} ${tool.count}
     - key: block.title.prediction
-      t: Prediction Award
+      t: Premio a la Predicción
     - key: block.description.prediction
       t: |
-        Awarded to an up-and-coming technology that might take over… or not?
+        Otorgado a una tecnología creciente que podría volverse relevante... ¿o no?
     - key: award.prediction.comment
       t: |
-        The Facebook team is two for two with React and GraphQL.
-        Will Reason follow the same path?
+        El equipo de Facebook ya logró esto con React y GraphQL.
+        ¿Será Reason la próxima en este camino?
     - key: award.prediction.runner_up
       t: ${tool.label}
     - key: block.title.special
-      t: Special Award
+      t: Premio Especial
     - key: block.description.special
       t: |
-        Awarded to a technology that we just fell in love with this year.
+        Otorgado a una tecnología de la que nos enamoramos este año.
     - key: award.special.comment
       t: |
-        ${tools[0].label} has become the leading JavaScript text editor, and we can definitely see why!
+        ${tools[0].label} se ha convertido en el editor de texto líder para JavaScript,
+        ¡y claramente se entiende el por qué!
     - key: award.special.runner_up
       t: ${tool.label}
 
