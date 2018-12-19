@@ -636,32 +636,32 @@ translations:
     
     # quadrant
     - key: quadrant.satisfaction_legend
-      t: Satisfaction %
+      t: Zufreidenheit in %
     - key: quadrant.users_legend
-      t: Users
+      t: Benutzer
     - key: quadrant.assess.label
-      t: Assess
+      t: Schätzen
     - key: quadrant.assess.description
       t: |
-        Low usage, high satisfaction.
-        Technologies worth keeping an eye on.
+        Geringe Nutzung, hohe Zufriedenheit.
+        Technologien die es Wert sind sie im Auge zu behalten.
     - key: quadrant.adopt.label
-      t: Adopt
+      t: Übernehmen
     - key: quadrant.adopt.description
       t: |
-        High usage, high satisfaction. Safe technologies to adopt.
+        Viel Genutzt, hohe Zufriedenheit. Sichere Technologie zum Übernehmen.
     - key: quadrant.avoid.label
-      t: Avoid
+      t: Vermeiden
     - key: quadrant.avoid.description
       t: |
-        Low usage, low satisfaction.
-        Technologies probably best avoided currently.
+        Geringe Nutzung, geringe Zufriedenheit.
+        Technologien die man gerade besser nicht nutzen sollte.
     - key: quadrant.analyze.label
-      t: Analyze
+      t: Analysieren
     - key: quadrant.analyze.description
       t: |
-        High usage, low satisfaction.
-        Reassess these technologies if you're currently using them.
+        Viel Benutzt, geringe Zufriedenheit.
+        Überdenke diese Technologien wenn du diese aktuell benutzt.
 
     # awards
     - key: block.title.highest_satisfaction
