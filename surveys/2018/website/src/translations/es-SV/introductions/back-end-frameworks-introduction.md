@@ -3,6 +3,6 @@ type: introduction
 section: back-end-frameworks
 locale: es-SV
 ---
- JavaScript on the back-end hasn't seen any major breakthroughs in recent years. 
-But compared to the rest of the ecosystem's frenetic pace,
-many will say that this is a blessing, not a curse. 
+ JavaScript en el back-end no ha visto ningún avance importante en los últimos años.
+Pero en comparación con el ritmo frenético del resto del ecosistema,
+muchos dirán que esto es una bendición, no una maldición.
