@@ -3,8 +3,7 @@ type: introduction
 section: connections
 locale: es-SV
 ---
-How many *React* users also use *Redux*? Do *GraphQL* fans prefer *Jest*? 
-Are *Express* developers also into *Ember*?
+¿Cuántos usuarios de *React* también usan *Redux*? Personas aficionadaas *GraphQL* prefieren *Jest*?
+¿Hay usuarios de *Express* también con interés por *Ember*?
 
-The size of each section corresponds to the number of respondents who have used each library
-and would be willing to use it again.
+El tamaño de cada sección corresponde al número de personas encuestadas que han utilizado cada biblioteca, y que estarían dispuestas a usarla nuevamente.
