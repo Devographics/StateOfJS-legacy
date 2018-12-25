@@ -26,6 +26,10 @@ The State of JavaScript Survey is created and maintained by:
 
 Be sure to check out my React/GraphQL JavaScript framework, [Vulcan.js](http://vulcanjs.org), Raphael's React data visualization library [Nivo.js](https://nivo.rocks), and Michael's JavaScript library directory [Best of JS](https://bestofjs.org).
 
+### Download Our Data
+
+You can [download the data for this survey](https://www.kaggle.com/sachag/state-of-javascript-2018). Let us know if you end up making your own data visualizations!
+
 ### Other Links
 
 - [State of JavaScript Homepage](https://stateofjs.com)
