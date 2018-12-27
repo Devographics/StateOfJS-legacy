@@ -26,6 +26,11 @@ A State of JavaScript felmérés készítői és karbantartói:
 
 Ne felejtsd el megnézni a React/GraphQL Javascript keretrendszerem, [Vulcan.js](http://vulcanjs.org), Raphael React adat vizualizáló könyvtárát [Nivo.js](https://nivo.rocks), és Michael JavaScript [Best of JS](https://bestofjs.org) könyvtárát.
 
+### Töltsd le a nyers adatokat
+
+Az ehhez a felméréshez tartózó adatokat [innen tudod letölteni](https://www.kaggle.com/sachag/state-of-javascript-2018).
+Tudasd felénk, ha saját adatvizualizációkat készítesz!
+
 ### Egyéb linkek
 
 - [State of JavaScript Főoldal](https://stateofjs.com)

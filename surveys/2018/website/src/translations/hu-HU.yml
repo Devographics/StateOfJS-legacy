@@ -1,6 +1,8 @@
 locale: hu-HU
 translations:
     # general
+    - key: start
+      t: Indulás
     - key: share
       t: Megosztás
     - key: average
