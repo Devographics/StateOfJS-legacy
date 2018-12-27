@@ -18,9 +18,9 @@ const LangSelector = () => (
 
             return (
                 <div className="Locales">
-                    {links.map(link => (
-                        <Link className="Locales__Item" key={link.locale} to={link.link}>
-                            {link.label}
+                    {links.map(({ label, locale, link, isCurrent }) => (
+                        <Link className={`Locales__Item Locales__Item--${isCurrent && 'current'}`} key={locale} to={link}>
+                            {label}
                         </Link>
                     ))}
                 </div>
