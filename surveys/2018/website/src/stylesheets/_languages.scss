@@ -1,5 +1,4 @@
 .LanguageSwitcher {
-    position: relative;
     .pagetitle & {
         border-right: 1px solid $dark-border-color;
         @include small-medium {
@@ -11,6 +10,13 @@
             display: none;
         }
     }
+    .Home__Wrapper & {
+        padding: $spacing/2 $spacing;
+    }
+}
+
+.LanguageSwitcher__Inner{
+    position: relative;
 }
 
 .LanguageSwitcher__Toggle {
@@ -43,12 +49,12 @@
     position: absolute;
     width: 100%;
     max-width: 300px;
+
     @include small-medium {
     }
     @include large {
         width: 300px;
         left: 50%;
-        top: 130%;
         margin-left: -150px;
     }
     border: 1px solid $border-color;
@@ -76,6 +82,8 @@
         margin-left: -11px;
     }
     .LanguageSwitcher--bottom & {
+
+    top: 130%;
         &:after,
         &:before {
             bottom: 100%;
@@ -88,6 +96,7 @@
         }
     }
     .LanguageSwitcher--top & {
+        bottom: 160%;
         &:after,
         &:before {
             top: 100%;
@@ -108,6 +117,7 @@
 }
 
 .Locales__Item {
+    text-align: center;
     @include font-regular;
     @include small-medium {
         font-size: $small-font;

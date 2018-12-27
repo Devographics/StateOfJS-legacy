@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import PeriodicElement from './PeriodicElement'
+import { PageContextConsumer } from '../../core/pages/pageContext'
+import Trans from '../../core/i18n/Trans'
 
 /*
 
@@ -22,6 +24,7 @@ const returnVelocity = 10 // lower = faster
 const frictionCoefficient = 2.5 // lower = stronger friction
 const initialMultiplier = 10 // higher = faster
 const velocityVariance = 1.1
+const languageSwitcherHeight = 47 // in px
 // const buttonWidth = 200
 // const buttonHeight = 80
 
@@ -296,7 +299,7 @@ class Animation extends Component {
 
     componentDidMount() {
         const element = document.getElementById('LogoAnimation__Wrapper')
-        const height = element.clientHeight
+        const height = element.clientHeight - languageSwitcherHeight
         const width = element.clientWidth
         const initPositions = this.getInitPositions(height, width)
         this.setState({
@@ -337,7 +340,6 @@ class Animation extends Component {
             <div
                 className={`LogoAnimation__Wrapper LogoAnimation__Wrapper--${variant}`}
                 id="LogoAnimation__Wrapper"
-                style={{ height: '100vh', width: '100%' }}
             >
                 {ready && (
                     <svg
@@ -363,29 +365,29 @@ class Animation extends Component {
                         ))}
                         {variant === 'full' && (
                             <>
-                            <foreignObject
-                                x={width / 2 - (size * 3) / 2}
-                                y={height / 2 + (size * 3) / 2 + 40}
-                                width={size * 3}
-                                height={size}
-                            >
-                                <Link
-                                    onMouseEnter={this.stopAnimation}
-                                    onMouseLeave={this.restartAnimation}
-                                    className="LogoAnimation__Button button"
-                                    to="/introduction"
+                                <foreignObject
+                                    x={width / 2 - (size * 3) / 2}
+                                    y={height / 2 + (size * 3) / 2 + 40}
+                                    width={size * 3}
+                                    height={size}
                                 >
-                                    <span>Start</span>
-                                </Link>
-                            </foreignObject>
-                            {/* <foreignObject
-                                x={width / 2 - (size * 3) / 2}
-                                y={height / 2 + (size * 3) / 2 + 40 + size}
-                                width={size * 3}
-                                height={size}
-                            >
-                                <div className="LogoAnimation__Language">Choose Language…</div>
-                            </foreignObject> */}
+                                    <PageContextConsumer>
+                                        {context => (
+                                            <Trans>
+                                                {translate => (
+                                                    <Link
+                                                        onMouseEnter={this.stopAnimation}
+                                                        onMouseLeave={this.restartAnimation}
+                                                        className="LogoAnimation__Button button"
+                                                        to={`${context.localePath}/introduction`}
+                                                    >
+                                                        <span>{translate('start')}</span>
+                                                    </Link>
+                                                )}
+                                            </Trans>
+                                        )}
+                                    </PageContextConsumer>
+                                </foreignObject>
                             </>
                         )}
                     </svg>
