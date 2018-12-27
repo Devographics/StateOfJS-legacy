@@ -8,9 +8,9 @@ et votre serveur pouvait simplement y accéder, injecter tout ça dans un templa
 pour enfin envoyer ça au client.
 
 Mais les choses se sont quelque peu complexifiées.
-Aujourd'hui, les applications doivent souvent savoir récupérer de la donnée par
-elle mêmes afin de rendre leur propre template ou composant.
-Cela a donnée naissance à tout autre type d'outillage. 
+Aujourd'hui, les applications doivent souvent savoir récupérer leur données par
+elle-mêmes afin de générer leur propre template ou composant.
+Cela a donné naissance à un tout autre type d'outillage. 
 
 **Redux** est sans conteste l'une des libraries les plus utilisées,
 et sont taux de satisfaction de 82% démontre bien combien elle est estimée.
