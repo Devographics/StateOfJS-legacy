@@ -1,7 +1,7 @@
 - locale: en-US
   path:   default
-  label:  🇬🇧 english
+  label:  English
 
 - locale: fr-FR
   path:   fr
-  label:  🇫🇷 français
+  label:  Français

@@ -3,6 +3,7 @@ import Hamburger from '../components/Hamburger'
 import { PageContextConsumer } from '../pages/pageContext'
 import PageLabel from '../pages/PageLabel'
 import PageLink from '../pages/PageLink'
+import LanguageSwitcher from '../i18n/LanguageSwitcher'
 
 class Pagination extends React.PureComponent {
     render() {
@@ -65,6 +66,7 @@ class Pagination extends React.PureComponent {
                                             </button>
                                         </span>
                                     )}
+                                    <LanguageSwitcher/>
                                     {next}
                                 </div>
                             </div>

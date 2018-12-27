@@ -362,6 +362,7 @@ class Animation extends Component {
                             />
                         ))}
                         {variant === 'full' && (
+                            <>
                             <foreignObject
                                 x={width / 2 - (size * 3) / 2}
                                 y={height / 2 + (size * 3) / 2 + 40}
@@ -377,6 +378,15 @@ class Animation extends Component {
                                     <span>Start</span>
                                 </Link>
                             </foreignObject>
+                            {/* <foreignObject
+                                x={width / 2 - (size * 3) / 2}
+                                y={height / 2 + (size * 3) / 2 + 40 + size}
+                                width={size * 3}
+                                height={size}
+                            >
+                                <div className="LogoAnimation__Language">Choose Language…</div>
+                            </foreignObject> */}
+                            </>
                         )}
                     </svg>
                 )}
