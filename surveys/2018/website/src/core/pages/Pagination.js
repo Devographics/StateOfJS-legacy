@@ -54,19 +54,21 @@ class Pagination extends React.PureComponent {
                             <div className="pagetitle">
                                 <div className="pagetitle__inner">
                                     {previous}
-                                    {position === 'top' && (
-                                        <span className="PageTitle__Sidebar__Toggle">
-                                            <button
-                                                className="Sidebar__Toggle"
-                                                onClick={toggleSidebar}
-                                            >
-                                                <span>
-                                                    <Hamburger />
-                                                </span>
-                                            </button>
-                                        </span>
-                                    )}
-                                    <LanguageSwitcher/>
+                                    <div className="pagination__middle">
+                                        {position === 'top' && (
+                                            <span className="PageTitle__Sidebar__Toggle">
+                                                <button
+                                                    className="Sidebar__Toggle"
+                                                    onClick={toggleSidebar}
+                                                >
+                                                    <span>
+                                                        <Hamburger />
+                                                    </span>
+                                                </button>
+                                            </span>
+                                        )}
+                                        <LanguageSwitcher/>
+                                    </div>
                                     {next}
                                 </div>
                             </div>

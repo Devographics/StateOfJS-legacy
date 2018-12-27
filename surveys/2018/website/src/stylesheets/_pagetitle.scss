@@ -51,6 +51,9 @@
 
 .pagination__middle{
     @include flex-center;
+    span + & {
+        border-left: 1px solid $dark-border-color;
+    }
 }
 
 .pagination__link__label {
