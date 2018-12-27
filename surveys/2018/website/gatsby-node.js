@@ -172,6 +172,7 @@ exports.createPages = async ({ actions: { createPage } }) => {
                     context: {
                         ...context,
                         locale: locale.locale,
+                        localeLabel: locale.label,
                         localePath: locale.path === 'default' ? '' : `/${locale.path}`
                     }
                 })
@@ -235,6 +236,7 @@ exports.onCreatePage = async ({ page, actions }) => {
             context: {
                 ...newPage.context,
                 locale: locale.locale,
+                localeLabel: locale.label,
                 localePath: locale.path === 'default' ? '' : `/${locale.path}`
             }
         })

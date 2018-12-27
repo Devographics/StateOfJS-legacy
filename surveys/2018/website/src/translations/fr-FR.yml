@@ -1,5 +1,7 @@
 locale: fr-FR
 translations:
+    - key: start
+      t: Démarrer
     - key: share
       t: Partager
     - key: average

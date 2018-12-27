@@ -1,0 +1,131 @@
+.LanguageSwitcher {
+    .pagetitle & {
+        border-right: 1px solid $dark-border-color;
+        @include small-medium {
+            display: none;
+        }
+    }
+    .nav & {
+        @include large{
+            display: none;
+        }
+    }
+    .Home__Wrapper & {
+        padding: $spacing/2 $spacing;
+    }
+}
+
+.LanguageSwitcher__Inner{
+    position: relative;
+}
+
+.LanguageSwitcher__Toggle {
+    @include flex-center;
+    font-size: $medium-font;
+    cursor: pointer;
+    span {
+        display: block;
+        margin-right: $spacing/4;
+    }
+    svg {
+        display: block;
+        width: 12px;
+        position: relative;
+        polygon {
+            fill: $text-color;
+        }
+    }
+    .pagetitle .LanguageSwitcher--open & {
+        background: white(0.1);
+    }
+    .pagetitle & {
+        padding: $spacing;
+    }
+    .nav & {
+        margin-bottom: $spacing/2;
+    }
+}
+.LanguageSwitcher__Options {
+    position: absolute;
+    width: 100%;
+    max-width: 300px;
+
+    @include small-medium {
+    }
+    @include large {
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
+    }
+    border: 1px solid $border-color;
+    background: $bg-color;
+    padding: $spacing;
+    &:after,
+    &:before {
+        left: 50%;
+        border: solid transparent;
+        content: ' ';
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    &:after {
+        border-color: rgba(136, 183, 213, 0);
+        border-width: 10px;
+        margin-left: -10px;
+    }
+    &:before {
+        border-color: rgba(194, 225, 245, 0);
+        border-width: 11px;
+        margin-left: -11px;
+    }
+    .LanguageSwitcher--bottom & {
+
+    top: 130%;
+        &:after,
+        &:before {
+            bottom: 100%;
+        }
+        &:after {
+            border-bottom-color: $bg-color;
+        }
+        &:before {
+            border-bottom-color: $border-color;
+        }
+    }
+    .LanguageSwitcher--top & {
+        bottom: 160%;
+        &:after,
+        &:before {
+            top: 100%;
+        }
+        &:after {
+            border-top-color: $bg-color;
+        }
+        &:before {
+            border-top-color: $border-color;
+        }
+    }
+}
+
+.Locales {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: $spacing;
+}
+
+.Locales__Item {
+    text-align: center;
+    @include font-regular;
+    @include small-medium {
+        font-size: $small-font;
+    }
+    @include large {
+        font-size: $medium-font;
+    }
+    &--current{
+        @include font-bold;
+    }
+}

@@ -1,6 +1,8 @@
 locale: en-US
 translations:
     # general
+    - key: start
+      t: Start
     - key: share
       t: Share
     - key: average
