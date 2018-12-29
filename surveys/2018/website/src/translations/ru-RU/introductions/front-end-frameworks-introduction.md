@@ -1,8 +1,8 @@
 ---
 type: introduction
 section: front-end-frameworks
-locale: en-US
+locale: ru-RU
 ---
-The front-end remains the key battleground for JavaScript. But now
-that the dust has cleared, it's starting to look like only two
-combatants are left standing…
+
+Фронтэнд является основным полем боя для JavaScript. Однако сейчас, когда
+пыль рассеялась, начинает казаться, что только два соперника остались в игре...

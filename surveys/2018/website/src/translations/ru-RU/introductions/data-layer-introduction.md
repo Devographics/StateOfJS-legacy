@@ -1,8 +1,9 @@
 ---
 type: introduction
 section: data-layer
-locale: en-US
+locale: ru-RU
 ---
- The data layer regroups all the technologies used to transmit and manage data. 
-It's a vast category where many approaches compete to make a tricky problem more
-approachable.
+
+Уровень данных объединяет все технологии, используемые для передачи и
+управления данными. Эта обширная группа включает в себя большое количество
+подходов, соревнующихся в создании решений для упрощения данной проблемы.

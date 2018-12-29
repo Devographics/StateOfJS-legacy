@@ -1,11 +1,20 @@
 ---
 type: introduction
 section: demographics
-locale: en-US
+locale: ru-RU
 ---
 
-This year, we reached 20,268 developers in 153 different countries. While the **U.S.** dominates the survey as expected with 24% of respondents, **Germany** and **Australia** are both well-represented, with over 5% of respondents each. 
+В этом году в опросе поучаствовали 20 268 разработчиков из 153 различных стран.
+Как и ожидалось **США** доминирует в опросе с 24% респондентов, однако такие
+старны как **Германия** и **Австралия** так же хорошо представлены - более 5%
+респондентов из каждой страны.
 
-Of course, we should mention that although we're doing our best to get as many developers as we can to fill out the survey, our audience is still only a small fraction of the overall JavaScript community, and you should keep this in mind when evaluating the following results.  
+Конечно же стоит отметить, что хотя мы и пытались сделать все что в наших силах,
+чтобы вовлечь в опрос как можно больше разработчиков, наша аудитория составляет
+лишь малую часть от всего JavaScript сообщества. Поэтому следует принимать во
+внимание этот факт при оценке результатов опроса.
 
-Note: one factor that could definitely help us reach broader, more international audiences in the future would be translating the survey and survey results in multiple languages. If you think you can help, please [let us know](https://github.com/StateOfJS/StateOfJS/issues/87)!
+Прим.: одним из факторов, который определенно может расширить международную
+аудиторию в будущем, является перевод опроса и его результатов на множество
+других языков. Если вы считаете, что можете нам в этом помочь,
+[свяжитесь с нами](https://github.com/StateOfJS/StateOfJS/issues/87)!

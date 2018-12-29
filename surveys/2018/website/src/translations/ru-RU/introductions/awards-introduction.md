@@ -1,7 +1,9 @@
 ---
 type: introduction
 section: awards
-locale: en-US
+locale: ru-RU
 ---
- Join us for the first ever State of JS awards! Can you guess which technologies took gold
-in each category? <span class="note">(Note: we've excluded ES6 from the awards to avoid skewing the data)</span>
+
+Приглашаем вас на первое вручение наград State of JS! Угадайте, какая из
+технологий стала победителем в каждой категории? <span class="note">(Прим.:
+мы исключили ES6, чтобы не искажать реальные данные)</span>

@@ -1,6 +1,9 @@
 ---
 type: introduction
 section: opinions
-locale: en-US
+locale: ru-RU
 ---
- Cold, hard data has its place, but there's also something to be said for personal opinion. That's why each year, we ask a few questions to try and get a feel for the pulse of the JavaScript developer community. 
+
+Холодные и жесткие данные имеют свое место, но всегда остается место и для
+личного мнения. Вот почему каждый год мы задаем несколько вопросов, чтобы
+прощупать пульс сообщества разработчиков JavaScript.

@@ -1,43 +1,63 @@
 ---
 type: introduction
 section: introduction
-locale: en-US
+locale: ru-RU
 ---
- 
-<span class="first-line"><span class="first-letter">JavaScript</span> is always changing.</span> New libraries, new frameworks, new languages… It's part of the fun, but it can also feel overwhelming sometimes. 
 
-That's where the State of JavaScript survey comes in: this year, we surveyed over 20,000 JavaScript developers to figure out what they're using, what they're happy with, and what they want to learn. And the result is a unique collection of stats and insights that will hopefully help you make your own way through the JavaScript ecosystem. 
+<span class="first-line"><span class="first-letter">JavaScript</span> постоянно
+меняется.</span> Новые библиотеки, новые фреймворки, новые языки… Это часть
+веселья, но иногда может создаваться ошеломляющее ощущение.
 
-If you want to learn more about what's new this year, check out our [announcement post](https://medium.freecodecamp.org/the-state-of-javascript-2018-8322bcc51bd8) for more details.
+Именно здесь на помощь приходит опрос State of JavaScript. В этом году мы
+опросили более 20,000 разработчиков JavaScript, чтобы выяснить что они
+используют, что делает их счастливыми и что им хотелось бы изучить. В результате
+получились уникальная статистика и открытия, которые, мы надеимся, помогут вам
+найти свой путь в экосистеме JavaScript.
 
-### Resources
+Если вы хотит больше узнать о новинках этого года, читайте подробности в этой
+[статье](https://medium.freecodecamp.org/the-state-of-javascript-2018-8322bcc51bd8).
 
-We figure a lot of you are checking out this survey to help you figure out what to learn next. So we've included links to useful JavaScript resources throughout the survey to help point you in the right direction. 
+### Источники
 
-Full disclosure: some of them are paid sponsorships, but no matter what they're all high-quality resources from people we know and respect who have decided to support our project. 
+Мы предполагаем, что многие из вас знакомятся с этим опросом, чтобы определиться
+с тем, что следует изучать дальше. Поэтому мы добавили в опрос ссылки на
+полезные источники по JavaScript, чтобы помочь вам определиться с дальнейшим
+направлением развития.
 
-### Team
+Раскрытие: некоторые из источников являются платными и предоставляются нашими
+спонсорами. Однако независимо от этого, источники высококачественные и
+поддерживаются людьми, которых мы знаем и уважаем, людьми, которые решили
+поддержать наш проект.
 
-The State of JavaScript Survey is created and maintained by:
+### Команда
 
-- [Sacha Greif](https://twitter.com/sachagreif) (me!): Design, writing, coding
-- [Raphael Benitte](https://twitter.com/benitteraphael): Data analysis, visualizations
-- [Michael Rambeau](https://twitter.com/michaelrambeau): Writing, additional stats
+Опрос State of JavaScript создан и поддерживается следующими людьми:
 
-Be sure to check out my React/GraphQL JavaScript framework, [Vulcan.js](http://vulcanjs.org), Raphael's React data visualization library [Nivo.js](https://nivo.rocks), and Michael's JavaScript library directory [Best of JS](https://bestofjs.org).
+-   [Sacha Greif](https://twitter.com/sachagreif) (я!): Дизайн, контент, программирование
+-   [Raphael Benitte](https://twitter.com/benitteraphael): Анализ данных, визуализация
+-   [Michael Rambeau](https://twitter.com/michaelrambeau): Контент, дополнительная статистика
 
-### Other Links
+Обязательно ознакомьтесь с моим React/GraphQL JavaScript фреймворком,
+[Vulcan.js](http://vulcanjs.org), библиотекой визуализации данных от Raphael
+[Nivo.js](https://nivo.rocks) и каталогом библиотек JavaScript от Michael
+[Best of JS](https://bestofjs.org).
 
-- [State of JavaScript Homepage](https://stateofjs.com)
-- [2016](https://2016.stateofjs.com/)
-- [2017](https://2017.stateofjs.com/)
+### Прочие ссылки
 
-### Credits & Stuff
+-   [страница State of JavaScript](https://stateofjs.com)
+-   [2016](https://2016.stateofjs.com/)
+-   [2017](https://2017.stateofjs.com/)
 
-The site is set in IBM Plex Mono. Fire gif borrowed from [Animal Jam](https://animal-jam-roleplay.wikia.com/wiki/File:Pixel-fire-gif-1.gif). Questions? Feedback? Want access to the raw data? [Get in touch!](mailto:hello@stateofjs.com)
+### Благодарности и прочее
 
-And now, let's see what JavaScript has been up to this year!
+Сайт использует шрифт IBM Plex Mono. Гифка с огнем позаимствована у
+[Animal Jam](https://animal-jam-roleplay.wikia.com/wiki/File:Pixel-fire-gif-1.gif).
+Вопросы? Обратная связь? Нужен доступ к необработанным данным?
+[Свяжитесь с нами!](mailto:hello@stateofjs.com)
 
-P.S. We put a lot of work and care into this year's site, so please don't go clicking around breaking things!
+А теперь давайте посмотрим, каким был JavaScript в этом году!
 
-<span class="conclusion__byline">– Sacha, Raphaël, and Michael</span>
+P.S. Мы вложили душу и много усилий в этот сайт, поэтому просим не пытаться
+его сломать кликая повсюду!
+
+<span class="conclusion__byline">– Sacha, Raphaël и Michael</span>

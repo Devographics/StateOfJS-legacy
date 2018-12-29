@@ -1,10 +1,12 @@
 ---
 type: introduction
 section: connections
-locale: en-US
+locale: ru-RU
 ---
-How many *React* users also use *Redux*? Do *GraphQL* fans prefer *Jest*? 
-Are *Express* developers also into *Ember*?
 
-The size of each section corresponds to the number of respondents who have used each library
-and would be willing to use it again.
+Сколько пользователей _React_ также используют _Redux_? Предпочитают ли _Jest_
+поклонники _GraphQL_?
+Используют ли _Ember_ разработчики, использующие _Express_?
+
+Размер каждой секции соответствует количеству респондентов, использовавших
+каждую библиотеку раньше и готовых использовать её снова.

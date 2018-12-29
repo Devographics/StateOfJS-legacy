@@ -1,8 +1,10 @@
 ---
 type: introduction
 section: mobile-and-desktop
-locale: en-US
+locale: ru-RU
 ---
- “Any application that can be written in JavaScript, will eventually be written in JavaScript.”
-JavaScript is not limited to the browser anymore, and it's only
-a matter of time until your smart toaster burns your bread because NPM is down. 
+
+"Любое приложение, которое может быть написано на JavaScript, будет рано или
+поздно написано на JavaScript." Область применения JavaScript уже не
+ограничивается браузерами, и это только лишь вопрос времени, когда ваш умный
+тостер сожжёт тост, потому что NPM упал.
