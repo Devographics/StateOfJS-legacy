@@ -1,4 +1,8 @@
 # the survey outline
+
+# First level: blocks
+# Second level: questions (will use the block's question template if no template is specified)
+
 ---
 
 ### TOOLS ###
@@ -20,8 +24,10 @@
     - PostCSS
     - Stylus
     # - No Pre-/Post-processor
-    - Other|preprocessors_other
-    - Rating|preprocessors_rating
+    - title: pre-/post-processors
+      template: other
+    - title: pre-/post-processors
+      template: rating
 
 - title: CSS Frameworks
   description: Libraries that give you pre-made components and styles.
@@ -42,8 +48,10 @@
     - Milligram
     - BassCSS
     # - No Framework
-    - Other|frameworks_other
-    - Rating|frameworks_rating
+    - title: CSS frameworks
+      template: other
+    - title: CSS frameworks
+      template: rating
 
 - title: CSS-in-JS
   description: Libraries that give you pre-made components and styles.
@@ -57,8 +65,10 @@
     - Styled-JSX
     - Radium
     - Emotion
-    - Other|cssinjs_other
-    - Rating|cssinjs_rating
+    - title: CSS-in-JS
+      template: other
+    - title: CSS-in-JS
+      template: rating
 
 - title: Methodologies
   description: Codified ways to write cleaner CSS. 
@@ -70,8 +80,10 @@
     - OOCSS
     - SMACSS
     - IT CSS
-    - Other|methodologies_other
-    - Rating|methodologies_rating
+    - title: methodologies
+      template: other
+    - title: methodologies
+      template: rating
 
 ### OTHER TOOLS ###
 
@@ -240,16 +252,16 @@
         - ID selectors should be avoided if possible
         - ID selectors are fine to use
         - ID selectors use should be encouraged
-    - title: "!important"
-      description: How often do you use !important?
+    - title: important
+      description: How often do you use important?
       template: multiple
       allowmultiple: false
       randomize: false
       options:
-        - "!important" should never be used
-        - "!important" should be avoided if possible
-        - "!important" is fine to use
-        - "!important" use should be encouraged
+        - important should never be used
+        - important should be avoided if possible
+        - important is fine to use
+        - important use should be encouraged
 
 ### ENVIRONMENTS ###
 
@@ -427,6 +439,7 @@
     - title: Your Gender
       template: multiple
       allowmultiple: false
+      allowother: true
       options: 
         - Female
         - Male
