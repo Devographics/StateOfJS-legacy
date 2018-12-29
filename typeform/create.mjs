@@ -10,8 +10,8 @@ const YAML = require('yamljs')
 const fs = require('fs')
 const fetch = require('node-fetch')
 
-const outline = YAML.load('./templates/outline.yaml')
-const survey = YAML.load('./templates/survey.yaml')
+const outline = YAML.load('./surveys/2018js/outline.yaml')
+const survey = YAML.load('./surveys/2018js/survey.yaml')
 const templates = {
   section: fs.readFileSync('./templates/section.yaml', 'utf8'),
   library: fs.readFileSync('./templates/library.yaml', 'utf8'),
