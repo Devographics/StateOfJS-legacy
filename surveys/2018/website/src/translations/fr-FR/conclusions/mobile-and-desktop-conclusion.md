@@ -13,6 +13,6 @@ Mais la situation est loin d'être figée: Airbnb a publié [une série d'articl
 
 [Weex](https://weex.apache.org/) constitue une alternative à React Native pour construire des applications mobiles avec JavaScript, à partir de l'écosystème Vue.js.
 
-Google a 2 projets très intéressants dans la catégorie. [Carlo](https://github.com/GoogleChromeLabs/carlo), sorti il y a quelques semaines, est un framework pour contrôler Node.js dans Chrome, basé sur [Puppeteer](https://pptr.dev/).
+Google possède 2 projets très intéressants dans cette catégorie : [Carlo](https://github.com/GoogleChromeLabs/carlo), sorti il y a quelques semaines, est un framework pour contrôler Node.js dans Chrome, basé sur [Puppeteer](https://pptr.dev/).
 
-Ensuite [Flutter](https://flutter.io/) est une solution en vogue pour construire des applications mobiles, qui se compilent directement dans du code "natif". Mais le code est écrit dans le langage Dart et non pas en JavaScript, si bien que React Native restera un choix approprié, en particulier pour les développeurs familiers avec l'écosystème React.
+Ensuite [Flutter](https://flutter.io/) est une solution en vogue pour construire des applications mobiles, qui compilent directement vers du code "natif". Mais le code est écrit dans le langage Dart et non pas en JavaScript, si bien que React Native restera un choix approprié, en particulier pour les développeurs familiers avec l'écosystème React.

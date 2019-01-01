@@ -23,7 +23,7 @@ translations:
     - key: company_size_axis_legend
       t: nombre d'employés
     - key: percents_display_mode
-      t: Pourcents
+      t: Pourcent
     - key: counts_display_mode
       t: Comptes
     - key: awards_runner_ups
@@ -48,17 +48,17 @@ translations:
 
     # opinions
     - key: opinions.legends.never_heard
-      t: Je n'en ai jamais entendu parlé
+      t: Je n'en ai jamais entendu parler
     - key: opinions.legends_short.never_heard
-      t: Jamais entendu parlé
+      t: Jamais entendu parler
     - key: opinions.legends.not_interested
-      t: J'en ai entendu parlé, mais je ne suis pas intéressé
+      t: J'en ai entendu parler, mais je ne suis pas intéressé
     - key: opinions.legends_short.not_interested
-      t: Entendu parlé, pas intéressé
+      t: Entendu parler, pas intéressé
     - key: opinions.legends.interested
-      t: J'en ai entendu parlé et je souhaiterais apprendre
+      t: J'en ai entendu parler et je souhaiterais apprendre
     - key: opinions.legends_short.interested
-      t: Entendu parlé, souhaiterais apprendre
+      t: Entendu parler, souhaiterais apprendre
     - key: opinions.legends.would_use
       t: Je l'ai utilisé, et souhaiterais l'utiliser de nouveau
     - key: opinions.legends_short.would_use
@@ -468,7 +468,7 @@ translations:
         seraient heureux de l'utiliser de nouveau.
 
 
-        Les pays où son utilisation est plus importante sont affichées en rouge,
+        Les pays où son utilisation est plus importante sont affichés en rouge,
         ceux où elle est plus faible sont quant à eux affichés en bleu
         (nous avons exclu les pays avec moins de 20 participants).
     - key: block.tool-usage-by-country.legend
@@ -513,7 +513,7 @@ translations:
     - key: block.description.text_editors
       t: Éditeurs de texte, triés par nombre de mentions.
     - key: block.title.recommended_resources
-      t: Ressources recommendées
+      t: Ressources recommandées
     - key: block.title.opinion-js_moving_in_right_direction
       t: JavaScript évolue dans la bonne direction
     - key: block.description.opinion-js_moving_in_right_direction
@@ -767,7 +767,7 @@ translations:
     - key: share.site.subject
       t: Résultats du State Of JavaScript 2018
     - key: share.site.body
-      t: 'Des résultats intéressants dans le sondage StateOf JavaScript 2018: ${link}'
+      t: 'Des résultats intéressants dans le sondage State Of JavaScript 2018: ${link}'
     - key: share.block.twitter_text
       t: '#StateOfJS 2018: ${title} ${link}'
     - key: share.block.subject
