@@ -4,7 +4,7 @@ section: other-tools
 locale: fr-FR
 ---
 L'écosystème JavaScript n'est pas seulement limité à ses librairies et frameworks.
-Il y a aussi tout ces outils que nous utilisons quotidiennement, 
+Il y a aussi tous ces outils que nous utilisons quotidiennement,
 les *packagers*, compileurs et bien entendu notre éditeur de texte.
 
 Nous avons également souhaité voir quelles nouvelles APIs navigateur

@@ -5,11 +5,11 @@ translations:
     - key: share
       t: Partager
     - key: average
-      t: Moyenne  
-    - key: conclusion  
+      t: Moyenne
+    - key: conclusion
       t: Conclusion
     - key: tools_salary_range_average
-      t: Salire moyen
+      t: Salaire moyen
     - key: tools_company_size_average
       t: Nombre d'employés en moyenne
     - key: tools_years_of_experience_average
@@ -50,7 +50,7 @@ translations:
     - key: opinions.legends.never_heard
       t: Je n'en ai jamais entendu parlé
     - key: opinions.legends_short.never_heard
-      t: Jamais entendu parlé 
+      t: Jamais entendu parlé
     - key: opinions.legends.not_interested
       t: J'en ai entendu parlé, mais je ne suis pas intéressé
     - key: opinions.legends_short.not_interested
@@ -58,15 +58,15 @@ translations:
     - key: opinions.legends.interested
       t: J'en ai entendu parlé et je souhaiterais apprendre
     - key: opinions.legends_short.interested
-      t: Entendu parlé, souhaiterai apprendre
-    - key: opinions.legends.would_use  
+      t: Entendu parlé, souhaiterais apprendre
+    - key: opinions.legends.would_use
       t: Je l'ai utilisé, et souhaiterais l'utiliser de nouveau
-    - key: opinions.legends_short.would_use  
-      t: L'ai utilisé, l'utiliserais de nouveau
-    - key: opinions.legends.would_not_use  
-      t: Utilisé, et ne souhaites pas l'utiliser de nouveau
-    - key: opinions.legends_short.would_not_use  
-      t: Utilisé, ne l'utiliserais plus
+    - key: opinions.legends_short.would_use
+      t: L'ai utilisé, l'utiliserai de nouveau
+    - key: opinions.legends.would_not_use
+      t: Utilisé, et ne souhaite pas l'utiliser de nouveau
+    - key: opinions.legends_short.would_not_use
+      t: Utilisé, ne l'utiliserai plus
 
     # generic opinions
     - key: opinion_scale.0
@@ -186,7 +186,7 @@ translations:
 
     # tools
     - key: tool.es6
-      t: ES6  
+      t: ES6
     - key: tool.es6.description
       t: |
         ES6 and its descendants are the newer versions of JavaScript, usually run through Babel.
@@ -195,7 +195,7 @@ translations:
     - key: tool.angular.description
       t: |
         Angular is a TypeScript-based open-source front-end web application platform. Note that from
-        this year on we are not be making a distinction between Angular and Angular.js anymore, while datapoints for 
+        this year on we are not be making a distinction between Angular and Angular.js anymore, while datapoints for
         2016 and 2017 correspond to Angular (a.k.a. "Angular 2").
     - key: tool.apollo
       t: Apollo
@@ -324,7 +324,7 @@ translations:
       t: Web Audio API
     - key: tool.web-speech-api
       t: Web Speech API
-    
+
     # pages
     - key: page.introduction
       t: Introduction
@@ -399,8 +399,8 @@ translations:
         au fil du temps.
     - key: block.results-over-time.empty
       t: |
-        Désolé, nous ne disposons pas de suffisamment de donnée
-        afin de calculer l'évolution de cette librarie au fil du temps. 
+        Désolé, nous ne disposons pas de suffisamment de données
+        pour calculer l'évolution de cette librarie au fil du temps.
     - key: block.title.happiness
       t: Sentiment global
     - key: block.description.happiness
@@ -412,9 +412,9 @@ translations:
     - key: block.description.tools-salary-range
       t: |
         Répartition des tranches de salaire pour les dévelopeurs ayant sélectionné
-        "je l'ai utilisé et l'utiliserais de nouveau" pour une option donnée.
-        
-        
+        "je l'ai utilisé et l'utiliserai de nouveau" pour une option donnée.
+
+
         Chaque cellule montre le pourcentage/nombre d'utilisateurs dans une tranche
         de salaire donnée, une couleur plus foncée démontre une plus grande utilisation
         dans cette tranche.
@@ -423,9 +423,9 @@ translations:
     - key: block.description.tools-company-size
       t: |
         Répartition du nombre d'employés pour les dévelopeurs ayant sélectionné
-        "je l'ai utilisé et l'utiliserais de nouveau" pour une option donnée.
-        
-        
+        "je l'ai utilisé et l'utiliserai de nouveau" pour une option donnée.
+
+
         Chaque cellule montre le pourcentage/nombre d'utilisateurs dans une tranche
         donnée, une couleur plus foncée démontre une plus grande utilisation
         dans cette tranche.
@@ -434,30 +434,30 @@ translations:
     - key: block.description.tools-years-of-experience
       t: |
         Répartition des années d'expérience pour les dévelopeurs ayant sélectionné
-        "je l'ai utilisé et l'utiliserais de nouveau" pour une option donnée.
-        
-        
+        "je l'ai utilisé et l'utiliserai de nouveau" pour une option donnée.
+
+
         Chaque cellule montre le pourcentage/nombre d'utilisateurs dans une tranche
         donnée, une couleur plus foncée démontre une plus grande utilisation
         dans cette tranche.
-    - key: block.title.likes    
+    - key: block.title.likes
       t: Aspects les plus appréciés de ${tool}
     - key: block.description.likes
       t: |
         Aspects les plus appréciés de ${tool} parmi les dévelopeurs ayant
-        choisi l'option “je l'ai utilisé et l'utiliserais de nouveau”.
-    - key: block.title.dislikes    
-      t: Aspects les plus critiqués de ${tool}  
-    - key: block.description.dislikes    
+        choisi l'option “je l'ai utilisé et l'utiliserai de nouveau”.
+    - key: block.title.dislikes
+      t: Aspects les plus critiqués de ${tool}
+    - key: block.description.dislikes
       t: |
         Aspects les plus critiqués de ${tool} parmi les dévelopeurs ayant
-        choisi l'option “je l'ai utilisé et ne l'utiliserais plus”.
-    - key: block.title.tool-pairing    
+        choisi l'option “je l'ai utilisé et ne l'utiliserai plus”.
+    - key: block.title.tool-pairing
       t: Quels outils sont utilisés avec ${tool} ?
     - key: block.description.tool-pairing
       t: |
         Probabilité d'utilisation conjointe de librairies pour les dévelopeurs
-        ayant choisi l'option "je l'ai utilisé et l'utiliserais de nouveau"
+        ayant choisi l'option "je l'ai utilisé et l'utiliserai de nouveau"
         concernant ${tool}.
         Une couleur plus foncée démontre une corrélation plus forte.
     - key: block.title.tool-usage-by-country
@@ -466,8 +466,8 @@ translations:
       t: |
         En moyenne, **${percentage}%** des participants ont utilisé **${tool}** et
         seraient heureux de l'utiliser de nouveau.
-        
-        
+
+
         Les pays où son utilisation est plus importante sont affichées en rouge,
         ceux où elle est plus faible sont quant à eux affichés en bleu
         (nous avons exclu les pays avec moins de 20 participants).
@@ -475,17 +475,17 @@ translations:
       t: |
         Pourcentage d'utilisateurs
         de ${tool} satisfaits:
-    - key: block.title.other-tools    
+    - key: block.title.other-tools
       t: Autres librairies
     - key: block.description.other-tools
       t: |
         Autres librairies mentionnées par les participants,
         triés par nombre de mentions.
-    - key: block.title.quadrants   
+    - key: block.title.quadrants
       t: Quadrant Chart
     - key: block.description.quadrants
       t: |
-        Ce graph montre le **taux de satisfaction** pour chaque outil
+        Ce graphe montre le **taux de satisfaction** pour chaque outil
         ainsi que son **utilisation totale**.
 
 
@@ -531,9 +531,9 @@ translations:
     - key: block.description.opinion-enjoy_building_js_apps
       t: J'aime coder des applications en JavaScript.
     - key: block.title.opinion-would_like_js_to_be_main_lang
-      t: J'aimerai faire de JavaScript mon langage principal
+      t: J'aimerais faire de JavaScript mon langage principal
     - key: block.description.opinion-would_like_js_to_be_main_lang
-      t: J'aimerai faire de JavaScript mon langage principal.
+      t: J'aimerais faire de JavaScript mon langage principal.
     - key: block.title.opinion-js_ecosystem_changing_to_fast
       t: L'écosystème JavaScript change trop rapidement
     - key: block.description.opinion-js_ecosystem_changing_to_fast
@@ -556,15 +556,15 @@ translations:
       t: 🐞 Robustesse
     - key: reason.rich_package_ecosystem.long
       t: 🎁 Écosystème riche
-    - key: reason.rich_package_ecosystem.short  
+    - key: reason.rich_package_ecosystem.short
       t: 🎁 Écosystème riche
     - key: reason.fast_performance.long
       t: ⚡ Bonnes performances
-    - key: reason.fast_performance.short  
+    - key: reason.fast_performance.short
       t: ⚡ Bonnes performances
     - key: reason.well_established_option.long
       t: 🏛️ Option bien établie
-    - key: reason.well_established_option.short  
+    - key: reason.well_established_option.short
       t: 🏛️ Option bien établie
     - key: reason.easy_learning_curve.long
       t: 👶 Courbe d'apprentissage aisée
@@ -654,7 +654,7 @@ translations:
       t: Autre
     - key: reason.other.short
       t: Autre
-    
+
     # quadrant
     - key: quadrant.satisfaction_legend
       t: Satisfaction %
@@ -670,7 +670,7 @@ translations:
       t: Adopter
     - key: quadrant.adopt.description
       t: |
-        Importante utilisation, haut taux de satisfaction satisfaction.
+        Utilisation importante, taux élevé de satisfaction.
         Des technologies qu'il semble sûr d'adopter.
     - key: quadrant.avoid.label
       t: Éviter
@@ -682,7 +682,7 @@ translations:
       t: Analyser
     - key: quadrant.analyze.description
       t: |
-        Importante utilisation, faible taux de satisfaction.
+        Utilisation importante, faible taux de satisfaction.
         Il serait probablement pertinent de considérer d'autres
         options si vous utilisez cette technologie.
 
@@ -698,7 +698,7 @@ translations:
         Avec **${tools[0].percentage}%** d'utilisateurs souhaitant continuer
         à l'utiliser, ${tools[0].label} ne plaisante pas!
     - key: award.highest_satisfaction.runner_up
-      t: ${tool.label} ${tool.percentage}%  
+      t: ${tool.label} ${tool.percentage}%
     - key: block.title.highest_interest
       t: Intérêt
     - key: block.description.highest_interest
@@ -707,7 +707,7 @@ translations:
         le plus apprendre.
     - key: award.highest_interest.comment
       t: |
-        **${tools[0].percentage}%** des dévelopeurs ayant entedu parler
+        **${tools[0].percentage}%** des dévelopeurs ayant entendu parler
         de ${tools[0].label} souhaitent l'apprendre.
         C'est un intérêt indéniable!
     - key: award.highest_interest.runner_up
@@ -721,7 +721,7 @@ translations:
     - key: award.highest_usage.comment
       t: |
         Avec **${tools[0].count}** utilisateurs ${tools[0].label}
-        est la librairie la plus utilisée cette année.        
+        est la librairie la plus utilisée cette année.
     - key: award.highest_usage.runner_up
       t: ${tool.label} ${tool.count}
     - key: block.title.most_mentioned
@@ -751,7 +751,7 @@ translations:
       t: Mentions spéciales
     - key: block.description.special
       t: |
-        Les technologies que nous avons particulièrement aimé cette année :)
+        Les technologies que nous avons particulièrement aimées cette année :)
     - key: award.special.comment
       t: |
         ${tools[0].label} est devenu l'éditeur de référence pour JavaScript,
@@ -761,17 +761,16 @@ translations:
 
     # sharing
     - key: share.site.title
-      t: Découvrez les résultats du StateOf JavaScript 2018
+      t: Découvrez les résultats du State Of JavaScript 2018
     - key: share.site.twitter_text
-      t: 'Découvrez les résultats du StateOf JavaScript 2018 ${link} #StateOfJS'
+      t: 'Découvrez les résultats du State Of JavaScript 2018 ${link} #StateOfJS'
     - key: share.site.subject
-      t: Résultats du StateOf JavaScript 2018
+      t: Résultats du State Of JavaScript 2018
     - key: share.site.body
-      t: 'Des résultats intéressants du sondage StateOf JavaScript 2018: ${link}'
+      t: 'Des résultats intéressants dans le sondage StateOf JavaScript 2018: ${link}'
     - key: share.block.twitter_text
       t: '#StateOfJS 2018: ${title} ${link}'
     - key: share.block.subject
       t: 'Résultats du sondage : State Of JavaScript'
     - key: share.block.body
-      t: 'Quelques résultats intéressant concernant ce sondage (${title}): ${link}'
-
+      t: 'Quelques résultats intéressants concernant ce sondage (${title}): ${link}'
