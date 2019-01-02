@@ -3,11 +3,11 @@ type: conclusion
 section: front-end-frameworks
 locale: fr-FR
 ---
-[FR] Once again the front-end space is all about **React** and **Vue.js**. Vue's story in particular is worth considering: two years ago, 27% of respondents had never even heard of the library. Today, that fraction has fallen to just 1.3%! So while React still has a much larger share of the market, Vue's meteoric rise certainly shows no sign of stopping. In fact, Vue has already overtaken its rival for certain metrics such as total GitHub stars. 
 
-The other story of those past couple years is the fall of **Angular**. While it still ranks very high in terms of raw usage, it has a fairly disappointing 41% satisfaction ratio. So while it probably isn't going anywhere thanks to its large user base, it's hard to see how it will ever regain its place atop the front-end throne. 
+Une fois de plus, le monde du front-end est accaparé par **React** et **Vue.js**. Il est important de noter l'évolution de Vue en particulier : il y a 2 ans, 27% des répondants n'avaient encore jamais entendu parler de cette librairie. Aujourd'hui, ce pourcentage est descendu jusqu'à seulement 1.3% ! Bien que React représente encore une bien plus grande part du marché, l'ascension stratosphérique de Vue ne montre aucun signe de faiblesse. En effet, Vue a déjà surpassé ses rivaux sur certaines métriques telles que le nombre total de favoris sur Github.
 
-Finally, keep an eye out for [Svelte](https://svelte.technology/). By using a radical new approach to front-end frameworks, it's managed to generate quite a lot of interest and was by far the most mentioned option in our "Other Tools" category. 
+L'autre histoire de ces dernières années est la chute d'**Angular**. Bien qu'il se classe encore très haut en terme d'usage brut, il ne récolte qu'un ratio de satisfaction décevant de 41%. Il y a peu de chance qu'il disparaisse du jour au lendemain grâce notamment à sa base importante d'utilisateurs, mais il est bien difficile de voir comment il pourrait un jour reprendre sa place au sommet du classement.
 
-Update: many people have pointed out that Angular's poor satisfaction ratio is probably in part due to the confusion between Angular and the older, deprecated AngularJS (previous surveys avoided this issue by featuring both as separate items). So while Angular did “fall” –relatively speaking– from its dominance from a few years back, it might very well regain ground once the dust clears. 
- 
+Finalement, gardez un oeil sur [Svelte](https://svelte.technology/). En prenant une nouvelle approche radicale des frameworks front-end, il a réussi à générer beaucoup d'intérêt et représente de loin l'option la plus mentionnée dans la catégorie "Autres outils".
+
+Mise à jour : beaucoup de personnes ont souligné que le ratio de satisfaction peu élevé d'Angular était certainement dû en partie à la confusion entre Angular et son ancêtre obsolète AngularJs (les sondages précédents évitaient ce problème en les gardant séparés). Bien que l'usage d'Angular ait vraiment baissé par rapport à sa dominance d'il y a quelques années, il pourrait bien reprendre du poil de la bête une fois que la poussière se sera dissipée.
