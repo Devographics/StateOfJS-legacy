@@ -3,14 +3,15 @@ type: conclusion
 section: conclusion
 locale: fr-FR
 ---
-[FR] After all is said and done, it looks like 2018 was mostly a continuation of the trends we already observed [last year](http://2017.stateofjs.com).
 
-That's bad news for us, because we can't come out with a big scoop on how React's days are numbered, or the next big thing is this new state management library created by a 17-year-old Vietnamese high-schooler in her spare time. 
+En fin de compte, 2018 s'est averré être une continuation des tendances déjà observées [l'année dernière](http://2017.stateofjs.com).
 
-But that's great news for you, because it means you can spend less time worrying about what to use, and more time actually using it!
+Mauvaise nouvelle pour nous, vu que nous n'avons pas pu sortir un gros scoop sur la prochaine déchéance de React, ou sur une nouvelle librairie de state management développée par une lycénne vietnamienne dans son temps libre qui va tout changer. 
 
-Things might get shaken up again in 2019 though. While all is currently calm on the front-end front, the question of how you get data from the database to the client is far from settled, and GraphQL is sure to start making bigger and bigger waves in that area. As GraphQL-tailored solutions emerge for both the back-end and the state management layer, we might soon feel the JavaScript ground shifting beneath our feet once more.
+Mais bonne nouvelle pour vous, car cela veux aussi dire moins de temps passer à se demander quoi utiliser, et plus de temps pour coder!
 
-But for now, no need to panic. There's never been a better time to be a JavaScript developer than now, and we're willing to bet that 2019 will make that even clearer!
+Mais les choses risquent de changer à nouveau en 2019. Tout est peut-être calme du coté front-end, mais la problématique du transfert de données du serveur au client est loin d'être réglée, et GraphQL va sans doute continuer à faire des vagues dans ce domaine. Et une fois que plus d solutions adaptées sur-mesure pour GraphQL auront fait leur apparition, nous seront peut-être confrontés à un nouveau renouvellement de l'écosystème JavaScript. 
 
-<span class="conclusion__byline">– Sacha, Raphaël, and Michael</span>
+Mais pour le moment, pas de panique. Il n'y a jamais eu un meilleur moment pour commencer l'aprentissage du JavaScript, et nous faisons le pari que 2019 ne va faire qu'améliorer les choses!
+
+<span class="conclusion__byline">– Sacha, Raphaël, et Michael</span>
