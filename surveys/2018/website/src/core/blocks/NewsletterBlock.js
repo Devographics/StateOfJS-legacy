@@ -1,15 +1,17 @@
 import React from 'react'
 import Newsletter from '../components/Newsletter'
+import Trans from '../i18n/Trans'
 
-const newsletterText = `
-If you'd like to know when we release additional results or announce next year's edition, just leave us your email below:
-`
 const NewsletterBlock = () => (
-    <div className="Block Block--Newsletter Newsletter">
-        <h3 className="Newsletter__Heading">Stay Tuned</h3>
-        <div className="Newsletter__Description">{newsletterText}</div>
-        <Newsletter />
-    </div>
+    <Trans>
+        {translate => (
+            <div className="Block Block--Newsletter Newsletter">
+                <h3 className="Newsletter__Heading">{translate('stay_tuned')}</h3>
+                <div className="Newsletter__Description">{translate('leave_your_email')}</div>
+                <Newsletter />
+            </div>
+        )}
+    </Trans>
 )
 
 export default NewsletterBlock

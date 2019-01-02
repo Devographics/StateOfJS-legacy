@@ -44,7 +44,14 @@ translations:
       t: |
         Merci à nos partenaires pour leur support.
         <a href="/support">Apprenez en plus</a> sur comment soutenir The State of JS.
-
+    - key: stay_tuned
+      t: Restez au Courant
+    - key: leave_your_email
+      t: "Si vous souhaitez savoir quand nous publions d'autres résultats ou annonçons le prochain sondage, laissez-nous votre email ci-dessous:"
+    - key: your_email
+      t: Votre Email
+    - key: notify_me
+      t: Inscription
 
     # opinions
     - key: opinions.legends.never_heard
@@ -324,6 +331,12 @@ translations:
       t: Web Audio API
     - key: tool.web-speech-api
       t: Web Speech API
+    - key: tool.dart
+      t: Dart
+    - key: tool.kotlin
+      t: Kotlin
+    - key: tool.haxe
+      t: Haxe
 
     # pages
     - key: page.introduction
@@ -380,6 +393,8 @@ translations:
       t: Nombre d'employés.
     - key: block.title.gender-breakdown
       t: Genres
+    - key: block.title.source-breakdown
+      t: Sources
     - key: block.description.gender-breakdown
       t: Genres.
     - key: block.title.connections
@@ -482,7 +497,7 @@ translations:
         Autres librairies mentionnées par les participants,
         triés par nombre de mentions.
     - key: block.title.quadrants
-      t: Quadrant Chart
+      t: Quadrants
     - key: block.description.quadrants
       t: |
         Ce graphe montre le **taux de satisfaction** pour chaque outil

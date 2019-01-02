@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ReactGA from 'react-ga'
+import Trans from '../i18n/Trans'
 
 const postUrl =
     'https://emailoctopus.com/lists/463dc2a9-b2ff-11e8-a3c9-06b79b628af2/members/embedded/1.3/add'
@@ -56,50 +57,57 @@ export default class Newsletter extends Component {
     }
 
     render() {
-        const { submitLabel = 'Notify Me' } = this.props
         const { email, loading, error, success } = this.state
 
         return (
-            <div className={`Newsletter Newsletter--${loading ? 'loading' : ''}`}>
-                {error && <div className="Newsletter__Error">{error.message}</div>}
-                {success ? (
-                    <div className="Newsletter__Success">{success.message}</div>
-                ) : (
-                    <form
-                        method="post"
-                        action={postUrl}
-                        datasitekey="6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6"
-                        onSubmit={this.handleSubmit}
-                    >
-                        <input
-                            className="Newsletter__Email"
-                            id="field_0"
-                            name="field_0"
-                            type="email"
-                            placeholder="Your Email"
-                            onChange={this.handleChange}
-                            value={email}
-                            disabled={loading}
-                        />
+            <Trans>
+                {translate => {
+                    const { submitLabel = translate('notify_me') } = this.props
 
-                        <input
-                            type="text"
-                            name="hp463dc2a9-b2ff-11e8-a3c9-06b79b628af2"
-                            tabIndex="-1"
-                            autoComplete="nope"
-                            className="Newsletter__Hidden"
-                        />
+                    return (
+                        <div className={`Newsletter Newsletter--${loading ? 'loading' : ''}`}>
+                            {error && <div className="Newsletter__Error">{error.message}</div>}
+                            {success ? (
+                                <div className="Newsletter__Success">{success.message}</div>
+                            ) : (
+                                <form
+                                    method="post"
+                                    action={postUrl}
+                                    datasitekey="6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6"
+                                    onSubmit={this.handleSubmit}
+                                >
+                                    <input
+                                        className="Newsletter__Email"
+                                        id="field_0"
+                                        name="field_0"
+                                        type="email"
+                                        placeholder={translate('your_email')}
+                                        onChange={this.handleChange}
+                                        value={email}
+                                        disabled={loading}
+                                    />
 
-                        <button
-                            type="submit"
-                            name="subscribe"
-                            className="Newsletter__Button Button"
-                        >
-                            {submitLabel}
-                        </button>
-                    </form>
-                )}
-            </div>
+                                    <input
+                                        type="text"
+                                        name="hp463dc2a9-b2ff-11e8-a3c9-06b79b628af2"
+                                        tabIndex="-1"
+                                        autoComplete="nope"
+                                        className="Newsletter__Hidden"
+                                    />
+
+                                    <button
+                                        type="submit"
+                                        name="subscribe"
+                                        className="Newsletter__Button Button"
+                                    >
+                                        {submitLabel}
+                                    </button>
+                                </form>
+                            )}
+                        </div>
+                    )
+                }}
+            </Trans>
         )
     }
 }
