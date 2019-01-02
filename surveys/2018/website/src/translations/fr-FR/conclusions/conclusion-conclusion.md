@@ -4,14 +4,14 @@ section: conclusion
 locale: fr-FR
 ---
 
-En fin de compte, 2018 s'est averré être une continuation des tendances déjà observées [l'année dernière](http://2017.stateofjs.com).
+Au bout du compte, il semblerait que 2018 soit resté dans la continuité des tendances que nous avions déjà observées [l'année dernière](http://2017.stateofjs.com).
 
-Mauvaise nouvelle pour nous, vu que nous n'avons pas pu sortir un gros scoop sur la prochaine déchéance de React, ou sur une nouvelle librairie de state management développée par une lycénne vietnamienne dans son temps libre qui va tout changer. 
+C'est une mauvaise nouvelle pour nous car nous n'avons pas pu vous sortir un énorme scoop sur la déchéance à venir de React, ou sur cette nouvelle libraire de state management qui va tout changer, créée par une lycéenne vietnamienne de 17 ans durant son temps libre.
 
-Mais bonne nouvelle pour vous, car cela veux aussi dire moins de temps passer à se demander quoi utiliser, et plus de temps pour coder!
+C'est plutôt une bonne nouvelle pour vous, car vous aurez moins de temps à perdre à vous demander ce qu'il faut utiliser, et donc plus de temps pour développer !
 
-Mais les choses risquent de changer à nouveau en 2019. Tout est peut-être calme du coté front-end, mais la problématique du transfert de données du serveur au client est loin d'être réglée, et GraphQL va sans doute continuer à faire des vagues dans ce domaine. Et une fois que plus d solutions adaptées sur-mesure pour GraphQL auront fait leur apparition, nous seront peut-être confrontés à un nouveau renouvellement de l'écosystème JavaScript. 
+Mais attention, cela pourrait bien changer à partir de 2019. Bien que tout soit encore calme du côté front-end, la problématique du transfert des données du serveur au client est loin d'être réglée, et GraphQL va certainement continuer à faire des vagues dans ce domaine. À mesure que des solutions basées sur GraphQL émergent à la fois pour le back-end et le state management, nous serons peut-être bientôt confrontés à un nouveau renouvellement de l'écosystème JavaScript.
 
-Mais pour le moment, pas de panique. Il n'y a jamais eu un meilleur moment pour commencer l'aprentissage du JavaScript, et nous faisons le pari que 2019 ne va faire qu'améliorer les choses!
+Mais pas de panique, le contexte n'a jamais été aussi favorable pour commencer l'apprentissage du Javascript, et il y a fort à parier que 2019 ne fera que confirmer cela !
 
-<span class="conclusion__byline">– Sacha, Raphaël, et Michael</span>
+<span class="conclusion__byline">– Sacha, Raphaël, and Michael</span>
