@@ -3,12 +3,8 @@ type: introduction
 section: testing
 locale: ru-RU
 ---
-Тестирование, тестирование... Эта штука вообще работает? Извините, 
-шучу (ориг. - _I Jest_), но я не собирался насмехаться (ориг. - _Mocha-ry_, 
-прим.: здесь игра слов "mockery" - насмешка) над вами. Это было бы грубо 
-(ориг. - _Jasmine (“just mean”? get it?)_) и испортило бы карму (ориг. - _Karma_).
+Тестирование, тестирование… Эта штука вообще работает? Шучу-шучу (ориг. - *I Jest*), я не собирался насмехаться (ориг. - *Mocha-ry*, прим.: здесь игра слов "mockery" - насмешка) над вами. Это было бы грубо (ориг. - *Jasmine (“just mean”? get it?)*) и испортило мне карму (ориг. - *Karma*).
 
-_Прим.: Для ценителей юмора ниже представлен оригинал:_  
+*Прим.: Для англоговорящих ценителей юмора ниже представлен оригинал:*
 
- Testing, testing… Is this thing on? Sorry, I Jest, but I would never want to make a Mocha-ry 
-of this section. That would be Jasmine (“just mean”? get it?), and that's bad Karma.
+Testing, testing… Is this thing on? Sorry, I Jest, but I would never want to make a Mocha-ry of this section. That would be Jasmine (“just mean”? get it?), and that's bad Karma.
