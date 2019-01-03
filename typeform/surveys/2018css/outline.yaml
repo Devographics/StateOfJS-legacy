@@ -19,8 +19,8 @@
   template: tool
   id: preprocessors 
   questions:
-    - SASS
-    - LESS
+    - Sass
+    - Less
     - PostCSS
     - Stylus
     # - No Pre-/Post-processor
