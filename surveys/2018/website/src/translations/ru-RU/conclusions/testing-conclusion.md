@@ -1,18 +1,18 @@
 ---
 type: conclusion
 section: testing
-locale: en-US
+locale: ru-RU
 ---
- The testing space is a bit of an oddity: while the other parts of the JavaScript ecosystem have been slowly settling down around a few dominant solutions, testing is still very fragmented: lots of different, complementary tools share the pie. Even so, developers are satisfied by their testing solution overall, with the lowest satisfaction ratio being 68%.
+В этой сфере дела обстоят немного странно: в то время, как в других частях экосистемы JavaScript появились явные лидеры и шум немного поутих, в сфере тестирования дела обстоят не столь однозначно: существует множество разных дополнительных инструментов. И несмотря на это, разработчики довольны своим выбором в сфере тестирования, о чем говорит наименьший коэффициент удовлетворенности в 68%.
 
-The survey confirms that **Mocha** is still the most used unit testing framework with over 10k users. Being around for a long time, it has the largest ecosystem and most of the Node.js developers are familiar with it.
+Результаты опросы подтверждают, что **Mocha** по-прежнему самый используемый фреймворк для тестирования с более чем 10 000 пользователей. Он появился уже достаточно давно и успел обрасти большой экосистемой. Большинство Node.js разработчиков знакомы с ним.
 
-**Jest** follows closely in terms of usage but it has a slightly higher satisfaction rate: 96% versus 82%. As a side note, 96% is the second highest satisfaction in the whole survey this year. Only ES6 got a better mark!
+По количеству пользователей, следом идет **Jest**, но он имеет несколько более высокий показатель коэффициента удовлетворенности: 96% против 82% у Mocha. Кстати, 96% - второй лучший результат по коэффициенту удовлетворенности во всем опросе в этом году. Больше признания получил только ES6.
 
-This shows that developers really appreciate the efforts made by Facebook to provide a full-featured testing framework that can be used to test both front-end (it was intended to test React components, in the beginning) and back-end code, without requiring configuration.
+По-видимому, разработчики по достоинству оценили усердие Facebook в попытке представить полноценный фреймворк для тестирования, который может использоваться как для тестирования front-end кода(изначально Jest был предназначен для тестирования React компонентов), так и back-end кода, не требуя дополнительной конфигурации.
 
-In the "Single Page application" era, web applications are becoming more and more complex, with more and more logic implemented on the client side. The survey shows clearly that developers use many tools to test their applications.
+В эпоху одностраничных приложений, web-приложения становятся все более сложными, и все больше логики реализуется на стороне клиента. Результаты опроса явно показываются, что разработчики используют множество инструментов для тестирования своих приложений.
 
-The spectrum of testing is wide: unit tests, integration tests, end-to-end tests but also "visual testing", as we can see with the success of **Storybook** (the second highest satisfaction rate of the category).
+Сфера тестирования очень широка: это и unit-тесты, и интеграционные тесты, и end-to-end тесты и так называемое "визуальное тестирование", что мы можем увидеть по успеху **Storybook** (второе место по коэффициенту удовлетворенности в данной категории).
 
-The future of testing may include more solutions to make automated tests in the browser, a project like [Cypress](https://www.cypress.io/) may be included in the next year survey and we may see more tools based on [Puppeteer](https://pptr.dev/).
+В будущем, в сфере тестирования может появиться больше различных решений для автоматизированного тестирования в браузере, и проекты, подобные [Cypress](https://www.cypress.io/) могут быть представлены в опросе за следующий год. Кроме того, мы сможем увидеть больше инструментов, построенных с использованием [Puppeteer](https://pptr.dev/).

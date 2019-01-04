@@ -1,16 +1,16 @@
 ---
 type: conclusion
 section: conclusion
-locale: en-US
+locale: ru-RU
 ---
- After all is said and done, it looks like 2018 was mostly a continuation of the trends we already observed [last year](http://2017.stateofjs.com).
+По-видимому, в 2018 мы продолжаем наблюдать те же тренды, что и [годом ранее](http://2017.stateofjs.com).
 
-That's bad news for us, because we can't come out with a big scoop on how React's days are numbered, or the next big thing is this new state management library created by a 17-year-old Vietnamese high-schooler in her spare time. 
+Для нас, это плохие результаты. Мы не можем утверждать, что дни React сочтены, или что следующей революцией станет библиотека для управления состоянием приложения, написанная 17-летним вьетнамским школьником в свободное время.
 
-But that's great news for you, because it means you can spend less time worrying about what to use, and more time actually using it!
+Но это отличные результаты для вас. Вы можете меньше беспокоиться о том, какую технологию стоит применить, а больше времени тратить на, собственно, использование технологии.
 
-Things might get shaken up again in 2019 though. While all is currently calm on the front-end front, the question of how you get data from the database to the client is far from settled, and GraphQL is sure to start making bigger and bigger waves in that area. As GraphQL-tailored solutions emerge for both the back-end and the state management layer, we might soon feel the JavaScript ground shifting beneath our feet once more.
+Но все может измениться в 2019. В то время как все более или менее спокойно в сфере front-end, проблема получения данных из базы на клиент еще не решена - GraphQL создает все больше шума в этой области. Как только появится решение, использующее GraphQL и для back-end, и для управления состоянием приложения - в мире JavaScript все встанет с ног на голову вновь.
 
-But for now, no need to panic. There's never been a better time to be a JavaScript developer than now, and we're willing to bet that 2019 will make that even clearer!
+Не нужно паниковать! Сейчас лучшее время, чтобы быть JavaScript разработчиком, и мы готовы спорить, что в 2019 это станет еще очевиднее.
 
-<span class="conclusion__byline">– Sacha, Raphaël, and Michael</span>
+<span class="conclusion__byline">– Sacha, Raphaël, и Michael</span>

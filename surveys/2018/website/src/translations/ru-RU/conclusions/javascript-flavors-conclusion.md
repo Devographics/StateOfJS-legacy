@@ -1,12 +1,12 @@
 ---
 type: conclusion
 section: javascript-flavors
-locale: en-US
+locale: ru-RU
 ---
- The idea that you can write your code in a language or language variant that compiles down to JavaScript may seem obvious now, but it's easy to forget how innovative it really is. 
+Идея написания кода на языке или диалекте, который в итоге компилируются в JavaScript сейчас может показаться очевидной, но не стоит забыть, насколько она на самом деле новаторская.
 
-For the longest time CoffeeScript was the lone proponent of that strategy, but today it's been overtaken by **ES6** and its follow-ups, **TypeScript**, **Flow**, and even languages with very different syntaxes such as **Elm** and **Reason**. 
+Долгое время, эту стратегию использовал только CoffeeScript. Сейчас же лидирует **ES6** и его последователи: **TypeScript**, **Flow** и даже языки с абсолютно иным синтаксисом - **Elm** и **Reason**.
 
-And there're good reasons to think that this is the future of JavaScript as a whole. With projects like [Web Assembly](https://webassembly.org/) arriving on the scene, writing code directly in JavaScript might soon seem quaint as developers embrace languages like **Rust** instead. 
+И мы можем полагать, что таково будущее JavaScript. С появлением проектов вроде [Web Assembly](https://webassembly.org/), вскоре сама мысль о написании кода непосредственно на JavaScript начнет казаться чем-то странным. Вместо него выбор будет падать на такие языки, как **Rust**.
 
-But until that time, the two big winners here are **ES6** and **TypeScript**. Keep an eye out on **Reason** as well, which has Facebook's support and boasts both very high satisfaction and interest rates.
+Но до тех пор бесспорными лидерами в этой категории являются **ES6** и **TypeScript**. Советуем следить за **Reason**, созданным и поддерживаемым Facebook, который может похвастаться очень высокими коэффициентами интереса и удовлетворенности.
