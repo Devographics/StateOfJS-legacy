@@ -188,7 +188,7 @@ export const query = graphql`
                     percentage
                 }
             }
-            source{
+            source {
                 survey
                 total
                 by_source {
@@ -196,7 +196,6 @@ export const query = graphql`
                     count
                     percentage
                 }
-
             }
         }
     }

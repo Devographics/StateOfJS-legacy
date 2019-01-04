@@ -1,0 +1,98 @@
+---
+title: State of CSS 2018
+theme:
+  href: https://api.typeform.com/themes/jHo1tn
+workspace:
+  href: https://api.typeform.com/workspaces/QhHBZg
+settings:
+  is_public: false
+  is_trial: true
+  language: en
+  progress_bar: percentage
+  show_progress_bar: true
+  show_typeform_branding: true
+  meta:
+    allow_indexing: true
+    description: The annual survey about the current State of CSS
+    image:
+      href: https://images.typeform.com/images/z49hZMjx6tBr
+welcome_screens:
+- title: |-
+    Thanks for taking this survey! Together, maybe we'll be able to figure out this CSS thing once and for all!
+
+    Also, we know this survey seems long, but it's mostly the same questions repeated for different frameworks and libraries. Most people only take around *10 minutes* to fill it in.
+  properties:
+    show_button: true
+    button_text: Let's Get This Started
+  attachment:
+    type: image
+    href: https://images.typeform.com/images/zV6rWABByCzN
+thankyou_screens:
+- title: |-
+    Thanks for completing this typeform
+    Now *create your own* — it's free, easy, & beautiful
+  properties:
+    show_button: true
+    share_icons: false
+    button_mode: redirect
+    button_text: Create a *typeform*
+    redirect_url: https://admin.typeform.com/powered-by?utm_campaign=S5iLk9&utm_source=typeform.com-4189488-Basic&utm_medium=typeform&utm_content=typeform-thankyoubutton&utm_term=EN
+  attachment:
+    type: image
+    href: https://images.typeform.com/images/2dpnUBBkz2VN
+fields:
+- title: |-
+    *How this survey works
+
+    *For each technology, framework, or library mentioned, please pick one of the following options:
+
+    - 🤷 You've never heard about it, or are not sure what it is
+    - ✅ You've heard about it and you *want* to learn it
+    - 🚫 You've heard about it, but *don't want* to learn it (or are *unsure*)
+    - 👍 You've used it and *want* to use it again
+    - 👎 You've used it but *don't* *want* to use it again
+
+  properties:
+    hide_marks: true
+  type: statement
+
+logic: []
+
+#  note: rather than test if the value is equal to "undefined" we need to 
+#  test if it's empty. Uncomment when we find a way to do that, until then always show
+#  the country and city fields.
+
+# logic: 
+#   - type: field
+#     ref: youremail
+#     actions:
+#       - action: jump
+#         details: 
+#           to:
+#             type: field
+#             value: yourcountry
+#         condition:
+#           op: equal
+#           vars:
+#             - type: hidden
+#               value: location
+#             - type: constant
+#               value: undefined
+#       - action: jump
+#         details: 
+#           to:
+#             type: field
+#             value: othercomments
+#         condition:
+#           op: always
+#           vars: []
+
+hidden: 
+  - location
+  - device
+  - browser
+  - version
+  - os
+  - city
+  - gaid
+  - referrer

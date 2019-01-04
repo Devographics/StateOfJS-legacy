@@ -1,5 +1,10 @@
-.LogoAnimation__Wrapper {
+.Home__Wrapper {
     height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto; 
+}
+.LogoAnimation__Wrapper {
+    height: 100%;
     width: 100%;
     position: relative;
     &--simple {
@@ -19,7 +24,7 @@
     @include flex-center;
 }
 .LogoAnimation {
-    height: 100%;
+    // height: 100%;
     width: 100%;
 }
 .LogoAnimation__Element {
@@ -60,4 +65,9 @@
     @include large {
         font-size: 2rem;
     }
+}
+
+.LogoAnimation__Language {
+    color: $text-color;
+    text-align: center;
 }

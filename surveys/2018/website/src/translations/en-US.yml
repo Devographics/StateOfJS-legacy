@@ -1,6 +1,8 @@
 locale: en-US
 translations:
     # general
+    - key: start
+      t: Start
     - key: share
       t: Share
     - key: average
@@ -43,6 +45,14 @@ translations:
       t: |
         Thanks to our partners for supporting this project.
         <a href="/support">Learn more</a> about supporting The State of JS.
+    - key: stay_tuned
+      t: Stay Tuned
+    - key: leave_your_email
+      t: "If you'd like to know when we release additional results or announce next year's edition, just leave us your email below:"
+    - key: your_email
+      t: Your Email
+    - key: notify_me
+      t: Notify Me
 
     # opinions
     - key: opinions.legends.never_heard
