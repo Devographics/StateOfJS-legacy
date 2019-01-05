@@ -17,7 +17,7 @@
       "allow_indexing": true,
       "description": "The annual survey about the current State of CSS",
       "image": {
-        "href": "https://images.typeform.com/images/MUtdERrijhk8"
+        "href": "https://images.typeform.com/images/N3FwZVLBa8gR"
       }
     }
   },
@@ -30,7 +30,7 @@
       },
       "attachment": {
         "type": "image",
-        "href": "https://images.typeform.com/images/MUtdERrijhk8"
+        "href": "https://images.typeform.com/images/N3FwZVLBa8gR"
       }
     }
   ],
@@ -949,16 +949,16 @@
               "vertical_alignment": true,
               "choices": [
                 {
-                  "label": "descendant (div span)"
+                  "label": "div span (descendant)"
                 },
                 {
-                  "label": "child (div > span)"
+                  "label": "div > span (child)"
                 },
                 {
-                  "label": "next sibling (div + div)"
+                  "label": "div + div (next sibling)"
                 },
                 {
-                  "label": "subsequent sibling (div ~ div)"
+                  "label": "div ~ div (subsequent sibling)"
                 }
               ],
               "description": "Which of these CSS selectors have you used?"
@@ -1031,22 +1031,22 @@
               "vertical_alignment": true,
               "choices": [
                 {
-                  "label": "Presence (div[foo])"
+                  "label": "div[foo] (Presence)"
                 },
                 {
-                  "label": "Equality (div[foo=\"bar\"])"
+                  "label": "div[foo=\"bar\"] (Equality)"
                 },
                 {
-                  "label": "Starts with (div[foo^=\"bar\"])"
+                  "label": "div[foo^=\"bar\"] (Starts with)"
                 },
                 {
-                  "label": "Ends with (div[foo$=\"bar\"]"
+                  "label": "div[foo$=\"bar\"] (Ends with)"
                 },
                 {
-                  "label": "Contains word (div[foo~=\"bar\"])"
+                  "label": "div[foo~=\"bar\"] (Contains word)"
                 },
                 {
-                  "label": "Contains substring (div[foo*=\"bar\"])"
+                  "label": "div[foo*=\"bar\"] (Contains substring)"
                 }
               ],
               "description": "Which of these CSS selectors have you used?"
@@ -1168,7 +1168,7 @@
         "description": "Utilities that augment CSS.",
         "fields": [
           {
-            "title": "SASS",
+            "title": "Sass",
             "ref": "pre/postprocessors_sass",
             "properties": {
               "randomize": false,
@@ -1204,7 +1204,7 @@
             "type": "multiple_choice"
           },
           {
-            "title": "LESS",
+            "title": "Less",
             "ref": "pre/postprocessors_less",
             "properties": {
               "randomize": false,
@@ -2731,16 +2731,22 @@
               "vertical_alignment": true,
               "choices": [
                 {
-                  "label": "Front-end Developer"
+                  "label": "Front-end Developer/Engineer"
                 },
                 {
-                  "label": "Full-stack Developer"
+                  "label": "Full-stack Developer/Engineer"
                 },
                 {
-                  "label": "Back-end Developer"
+                  "label": "Back-end Developer/Engineer"
                 },
                 {
-                  "label": "Designer"
+                  "label": "Web Designer"
+                },
+                {
+                  "label": "UI Designer"
+                },
+                {
+                  "label": "UX Designer"
                 }
               ],
               "description": "How do you introduce yourself at parties?"
@@ -2753,7 +2759,7 @@
             "properties": {
               "randomize": false,
               "allow_multiple_selection": false,
-              "allow_other_choice": true,
+              "allow_other_choice": false,
               "vertical_alignment": true,
               "choices": [
                 {
@@ -2766,7 +2772,7 @@
                   "label": "I can work on existing front-end codebases using modern frameworks (React, Vue, etc.)"
                 },
                 {
-                  "label": "I can architecture an entire front-end codebases from scratch"
+                  "label": "I can architecture entire front-end codebases from scratch"
                 },
                 {
                   "label": "I can handle advanced front-end patterns (state management, data loading, etc.)"
@@ -2782,7 +2788,7 @@
             "properties": {
               "randomize": false,
               "allow_multiple_selection": false,
-              "allow_other_choice": true,
+              "allow_other_choice": false,
               "vertical_alignment": true,
               "choices": [
                 {

@@ -142,10 +142,10 @@
         allowother: false
         randomize: false
         options:
-            - descendant (div span)
-            - child (div > span)
-            - next sibling (div + div)
-            - subsequent sibling (div ~ div)
+            - div span (descendant)
+            - div > span (child)
+            - div + div (next sibling)
+            - div ~ div (subsequent sibling)
       - title: Tree / Document Structure
         description: Which of these CSS selectors have you used?
         template: multiple
@@ -174,12 +174,12 @@
         allowother: false
         randomize: false
         options:
-            - Presence (div[foo])
-            - Equality (div[foo="bar"])
-            - Starts with (div[foo^="bar"])
-            - Ends with (div[foo$="bar"]
-            - Contains word (div[foo~="bar"])
-            - Contains substring (div[foo*="bar"])
+            - div[foo] (Presence)
+            - div[foo="bar"] (Equality)
+            - div[foo^="bar"] (Starts with)
+            - div[foo$="bar"] (Ends with)
+            - div[foo~="bar"] (Contains word)
+            - div[foo*="bar"] (Contains substring)
             # - Case sensitivity (div[foo="bar" s] vs (div[foo="bar" i])
       - title: Links/URLs
         description: Which of these CSS selectors have you used?
@@ -520,7 +520,6 @@
 - title: About You
   description: Let's get to know the real you.
   questions:
-<<<<<<< HEAD
       - title: Years of Experience
         description: How long you've been writing CSS.
         template: multiple
@@ -619,78 +618,3 @@
       - title: Other Comments
         description: Things we missed, feedback on the survey, your favorite color, etc.
         template: longtext
-=======
-    - title: Years of Experience
-      description: How long you've been writing CSS.
-      template: multiple
-      allowmultiple: false
-      allowother: false
-      randomize: false
-      options:
-        - Less than one year
-        - 1-2 years
-        - 2-5 years
-        - 5-10 years
-        - 10-20 years
-        - 20+ years
-    - title: Job Title
-      description: How do you introduce yourself at parties?
-      template: multiple
-      allowmultiple: false
-      allowother: true
-      randomize: false
-      options:
-        - Front-end Developer
-        - Full-stack Developer
-        - Back-end Developer
-        - Designer
-    - title: Company Size
-      template: multiple
-      allowmultiple: false
-      allowother: false
-      randomize: false
-      options:
-        - Just me
-        - 1-5 people
-        - 5-10 people
-        - 10-20 people
-        - 20-50 people
-        - 50-100 people
-        - 100-1000 people
-        - 1000+ people
-    - title: Yearly Salary
-      description: In USD
-      template: multiple
-      allowmultiple: false
-      allowother: false
-      randomize: false
-      options: 
-        - I work for free :(
-        - $0-$10k
-        - $10k-$30k
-        - $30k-$50k
-        - $50k-$100k
-        - $100k-$200k
-        - $200k+
-    - title: How did you find out about this survey?
-      template: text
-    - title: Your Gender
-      template: multiple
-      allowmultiple: false
-      allowother: true
-      options: 
-        - Female
-        - Male
-        - Non-binary/ third gender
-        - Prefer not to say
-    - title: Your Email
-      description: If you'd like to be notified when survey results are available. Your email won't be used for any other purpose.
-      template: email
-    - title: Your Country
-      template: text
-    - title: Your City
-      template: text
-    - title: Other Comments
-      description: Things we missed, feedback on the survey, your favorite color, etc.
-      template: longtext
->>>>>>> 27b74701b31ff02b533efb2c5c8605d9e1e0b1ef
