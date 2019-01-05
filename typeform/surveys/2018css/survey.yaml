@@ -1,7 +1,7 @@
 ---
 title: State of CSS 2018
 theme:
-  href: https://api.typeform.com/themes/jHo1tn
+  href: https://api.typeform.com/themes/Gp3idU
 workspace:
   href: https://api.typeform.com/workspaces/QhHBZg
 settings:
@@ -15,7 +15,7 @@ settings:
     allow_indexing: true
     description: The annual survey about the current State of CSS
     image:
-      href: https://images.typeform.com/images/z49hZMjx6tBr
+      href: https://images.typeform.com/images/AcwtLBWmQwWZ
 welcome_screens:
 - title: |-
     Thanks for taking this survey! Together, maybe we'll be able to figure out this CSS thing once and for all!
@@ -26,7 +26,7 @@ welcome_screens:
     button_text: Let's Get This Started
   attachment:
     type: image
-    href: https://images.typeform.com/images/zV6rWABByCzN
+    href: https://images.typeform.com/images/AcwtLBWmQwWZ
 thankyou_screens:
 - title: |-
     Thanks for completing this typeform
@@ -42,15 +42,15 @@ thankyou_screens:
     href: https://images.typeform.com/images/2dpnUBBkz2VN
 fields:
 - title: |-
-    *How this survey works
 
-    *For each technology, framework, or library mentioned, please pick one of the following options:
+    Table Of Contents
 
-    - 🤷 You've never heard about it, or are not sure what it is
-    - ✅ You've heard about it and you *want* to learn it
-    - 🚫 You've heard about it, but *don't want* to learn it (or are *unsure*)
-    - 👍 You've used it and *want* to use it again
-    - 👎 You've used it but *don't* *want* to use it again
+    1. CSS Features – Grid, Flexbox…
+    2. Tools – preprocessors, frameworks…
+    3. Environments – Browsers, devices…
+    4. Resources – Blogs, podcasts…
+    5. Opinions – How you feel about CSS.
+    6. About You – Experience, salary…
 
   properties:
     hide_marks: true

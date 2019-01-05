@@ -15,15 +15,15 @@ properties:
   vertical_alignment: true
   choices:
   - ref: ID_neverheard
-    label: Never heard of it/Not sure what it is
+    label: 🤷 Never heard of it/Not sure what it is
   - ref: ID_heard
-    label: Heard of it but haven't used it
-  - ref: ID_experimented
-    label: I've experimented with it
-  - ref: ID_used_in_production
-    label: I've used it in production
-  - ref: ID_would_not_use_again
-    label: I would rather not use it again
+    label: ✅ Know what it is, but haven't used it
+  # - ref: ID_experimented
+  #   label: I've experimented with it
+  - ref: ID_used
+    label: 👍 I've used it
+  # - ref: ID_would_not_use_again
+  #   label: I would rather not use it again
 validations:
   required: false
 type: multiple_choice

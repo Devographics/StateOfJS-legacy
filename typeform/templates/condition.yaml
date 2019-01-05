@@ -1,0 +1,7 @@
+---
+title: TITLE
+ref: ID
+properties: {}
+validations:
+  required: false
+type: yes_no
