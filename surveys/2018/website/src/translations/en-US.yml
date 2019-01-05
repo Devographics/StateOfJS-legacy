@@ -332,6 +332,12 @@ translations:
       t: Web Audio API
     - key: tool.web-speech-api
       t: Web Speech API
+    - key: tool.dart
+      t: Dart
+    - key: tool.kotlin
+      t: Kotlin
+    - key: tool.haxe
+      t: Haxe
 
     # pages
     - key: page.introduction
