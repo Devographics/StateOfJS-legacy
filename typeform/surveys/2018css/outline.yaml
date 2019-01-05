@@ -460,7 +460,8 @@
 - title: Resources
   description: What CSS resources do you consult?
   questions:
-      - title: Sites
+
+      - title: Blogs & Magazines
         description: Which CSS-related blogs/magazines/etc. do you read?
         template: multiple
         allowmultiple: true
@@ -472,10 +473,23 @@
             - A List Apart
             - CoDrops
             - SitePoint
+
+      - title: Sites & Courses
+        description: Which CSS-related sites/courses/etc. do you consult?
+        template: multiple
+        allowmultiple: true
+        allowother: true
+        randomize: true
+        options:
             - Stack Overflow
             - MDN
             - W3Schools
             - The CSS Specs
+            - FreeCodeCamp
+            - Codecademy
+            - LevelUp Tutorials
+            - Wes Bos Courses (GSSGrid.io, Flexbox.io, etc.)
+            - Pluralsight
 
       - title: Podcasts
         description: Which CSS or programming-related podcasts do you listen to?

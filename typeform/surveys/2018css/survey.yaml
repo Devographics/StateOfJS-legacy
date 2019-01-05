@@ -94,5 +94,6 @@ hidden:
   - version
   - os
   - city
-  - gaid
   - referrer
+  - source
+  - gaid
