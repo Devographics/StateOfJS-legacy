@@ -5,7 +5,7 @@ locale: fr-FR
 ---
 <span class="first-line"><span class="first-letter">JavaScript</span> est en mouvement constant.</span> De nouvelles librairies, de nouveaux frameworks, langages… Cela fait en quelque sorte *partie du fun*, mais cela peut devenir épuisant.
 
-C'est là tout l'intérêt du sondage *State of JavaScript*: cette année, nous avons sondé plus de 20 000 développeurs JavaScript pour discerner ce qu'ils utilisent, ce qu'ils apprécient, et ce qu'ils comptent apprendre. Le résultat est une collection de statistiques unique qui, on l'espère, vous aidera à trouver votre chemin à travers l'écosystème JavaScript.
+C'est là tout l'intérêt du sondage *State of JavaScript* : cette année, nous avons sondé plus de 20 000 développeurs JavaScript pour discerner ce qu'ils utilisent, ce qu'ils apprécient, et ce qu'ils comptent apprendre. Le résultat est une collection de statistiques unique qui, on l'espère, vous aidera à trouver votre chemin à travers l'écosystème JavaScript.
 
 Si vous souhaitez en savoir plus sur les nouveautés de cette année,
 nous vous invitons à consulter [ce post](https://medium.freecodecamp.org/the-state-of-javascript-2018-8322bcc51bd8) pour plus de détails.
@@ -18,7 +18,7 @@ Par souci de transparence nous devons aussi préciser que certains de ces liens 
 
 ### L'Équipe
 
-Le sondage **State of JavaScript** est créé et maintenu par:
+Le sondage **State of JavaScript** est créé et maintenu par :
 
 - [Sacha Greif](https://twitter.com/sachagreif) (moi!): Design, rédaction, code
 - [Raphael Benitte](https://twitter.com/benitteraphael): Analyse des données, visualisations
@@ -39,8 +39,8 @@ Le gif en feu vient quant à lui d'[Animal Jam](https://animal-jam-roleplay.wiki
 
 Une question ? Une remarque ? Vous souhaitez accéder aux données brutes ? [Contactez nous!](mailto:hello@stateofjs.com)
 
-Et maintenant, voyons voir ce qu'il s'est passé cette année dans l'écosystème JavaScript!
+Et maintenant, voyons voir ce qu'il s'est passé cette année dans l'écosystème JavaScript !
 
-P.S. Nous avons mis beaucoup d'énergie et d'attention dans l'élaboration du site cette année, merci de ne pas cliquer partout pour tout casser!
+P.S. Nous avons mis beaucoup d'énergie et d'attention dans l'élaboration du site cette année, merci de ne pas cliquer partout pour tout casser !
 
 <span class="conclusion__byline">– Sacha, Raphaël, et Michael</span>

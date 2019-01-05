@@ -86,29 +86,29 @@ translations:
     - key: salary_range.work-for-free.short
       t: '0'
     - key: salary_range.0-10.long
-      t: 'de plus de 0 à 10K$'
+      t: 'de plus de 0 à 10k$'
     - key: salary_range.0-10.short
-      t: '>0 à 10K$'
+      t: '> 0 à 10k$'
     - key: salary_range.10-30.long
-      t: 'de plus de 10K$ à 30K$'
+      t: 'de plus de 10k$ à 30k$'
     - key: salary_range.10-30.short
-      t: '>10K$ à 30K$'
+      t: '> 10k$ à 30k$'
     - key: salary_range.30-50.long
-      t: 'de plus de 30K$ à 50K$'
+      t: 'de plus de 30k$ à 50k$'
     - key: salary_range.30-50.short
-      t: '>30K$ à 50K$'
+      t: '> 30k$ à 50k$'
     - key: salary_range.50-100.long
-      t: 'de plus de 50K$ à 100K$'
+      t: 'de plus de 50k$ à 100k$'
     - key: salary_range.50-100.short
-      t: '>50K$ à 100K$'
+      t: '> 50k$ à 100k$'
     - key: salary_range.100-200.long
-      t: 'de plus de 100K$ à 200K$'
+      t: 'de plus de 100k$ à 200k$'
     - key: salary_range.100-200.short
-      t: '>100K$ à 200K$'
+      t: '> 100k$ à 200k$'
     - key: salary_range.more-than-200.long
-      t: plus de 200K$
+      t: plus de 200k$
     - key: salary_range.more-than-200.short
-      t: '>200K$'
+      t: '> 200k$'
 
     # company size
     - key: company_size.1.long
@@ -118,27 +118,27 @@ translations:
     - key: company_size.1-5.long
       t: de plus de 1 à 5 employés
     - key: company_size.1-5.short
-      t: '>1 à 5'
+      t: '> 1 à 5'
     - key: company_size.5-10.long
       t: de plus de 5 à 10 employés
     - key: company_size.5-10.short
-      t: '>5 à 10'
+      t: '> 5 à 10'
     - key: company_size.10-20.long
       t: de plus de 10 à 20 employés
     - key: company_size.10-20.short
-      t: '>10 à 20'
+      t: '> 10 à 20'
     - key: company_size.20-50.long
       t: de plus de 20 à 50 employés
     - key: company_size.20-50.short
-      t: '>20 à 50'
+      t: '> 20 à 50'
     - key: company_size.50-100.long
       t: de plus de 50 à 100 employés
     - key: company_size.50-100.short
-      t: '>50 à 100'
+      t: '> 50 à 100'
     - key: company_size.100-1000.long
       t: de plus de 100 à 1000 employés
     - key: company_size.100-1000.short
-      t: '>100 à 1000'
+      t: '> 100 à 1000'
     - key: company_size.more-than-1000.long
       t: plus de 1000 employés
     - key: company_size.more-than-1000.short
@@ -148,27 +148,27 @@ translations:
     - key: years_of_experience.less-than-1.long
       t: moins d'un an
     - key: years_of_experience.less-than-1.short
-      t: '<1 year'
+      t: '< 1 year'
     - key: years_of_experience.1-2.long
       t: de plus de 1 à 2 ans
     - key: years_of_experience.1-2.short
-      t: '>1 à 2 ans'
+      t: '> 1 à 2 ans'
     - key: years_of_experience.2-5.long
       t: de plus de 2 à 5 ans
     - key: years_of_experience.2-5.short
-      t: '>2 à 5 ans'
+      t: '> 2 à 5 ans'
     - key: years_of_experience.5-10.long
       t: de plus de 5 à 10 ans
     - key: years_of_experience.5-10.short
-      t: '>5 à 10 ans'
+      t: '> 5 à 10 ans'
     - key: years_of_experience.10-20.long
       t: de plus de 10 à 20 ans
     - key: years_of_experience.10-20.short
-      t: '>10 à 20 ans'
+      t: '> 10 à 20 ans'
     - key: years_of_experience.more-than-20.long
       t: plus de 20 ans
     - key: years_of_experience.more-than-20.short
-      t: '>20 ans'
+      t: '> 20 ans'
 
     # sections
     - key: section.javascript-flavors
@@ -541,9 +541,9 @@ translations:
         Sentiment des participants sur le fait que
         l'écosystème JavaScript change trop rapidement.
     - key: block.title.opinion-survey_too_long
-      t: Ce sondage est bien trop long!
+      t: Ce sondage est bien trop long !
     - key: block.description.opinion-survey_too_long
-      t: Ce sondage est bien trop long!
+      t: Ce sondage est bien trop long !
 
     # reasons
     - key: reason.elegant_programming_style_patterns.long
@@ -696,7 +696,7 @@ translations:
     - key: award.highest_satisfaction.comment
       t: |
         Avec **${tools[0].percentage}%** d'utilisateurs souhaitant continuer
-        à l'utiliser, ${tools[0].label} ne plaisante pas!
+        à l'utiliser, ${tools[0].label} ne plaisante pas !
     - key: award.highest_satisfaction.runner_up
       t: ${tool.label} ${tool.percentage}%
     - key: block.title.highest_interest
@@ -740,11 +740,11 @@ translations:
       t: Prédiction
     - key: block.description.prediction
       t: |
-        Récompense la technologie risquant d'émerger prochainement… ou pas?
+        Récompense la technologie risquant d'émerger prochainement… ou pas ?
     - key: award.prediction.comment
       t: |
         L'équipe de Facebook réalise un score parfait avec
-        React et GraphQL, en sera-t-il de même pour Reason?
+        React et GraphQL, en sera-t-il de même pour Reason ?
     - key: award.prediction.runner_up
       t: ${tool.label}
     - key: block.title.special
@@ -755,7 +755,7 @@ translations:
     - key: award.special.comment
       t: |
         ${tools[0].label} est devenu l'éditeur de référence pour JavaScript,
-        et nous pouvons aisément voir pourquoi!
+        et nous pouvons aisément voir pourquoi !
     - key: award.special.runner_up
       t: ${tool.label}
 

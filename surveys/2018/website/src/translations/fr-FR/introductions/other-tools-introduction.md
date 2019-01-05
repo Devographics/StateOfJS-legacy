@@ -10,4 +10,4 @@ les *packagers*, compileurs et bien entendu notre éditeur de texte.
 Nous avons également souhaité savoir quelles nouvelles APIs navigateur
 commencent à émerger et enfin, aussi fou que cela puisse paraître, il
 semblerait que certains d'entre nous codent également dans des langages
-autres que JavaScript!
+autres que JavaScript !
