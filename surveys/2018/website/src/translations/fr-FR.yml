@@ -196,29 +196,30 @@ translations:
       t: ES6
     - key: tool.es6.description
       t: |
-        ES6 and its descendants are the newer versions of JavaScript, usually run through Babel.
+        ES6 et ses descendants représentent les dernières versions de Javascript, généralement compilées via Babel.
     - key: tool.angular
       t: Angular
     - key: tool.angular.description
       t: |
-        Angular is a TypeScript-based open-source front-end web application platform. Note that from
-        this year on we are not be making a distinction between Angular and Angular.js anymore, while datapoints for
-        2016 and 2017 correspond to Angular (a.k.a. "Angular 2").
+        Angular est un framework front-end opensource basé sur Typescript. A partir de cette année, nous ne faisons
+        plus la distinction entre Angular et AngularJs, alors que les données de 2016 et 2017 correspondent
+        à Angular (a.k.a "Angular 2").
     - key: tool.apollo
       t: Apollo
     - key: tool.apollo.description
       t: |
-        A fully-featured, production ready caching GraphQL client for every UI framework and GraphQL server.
+        Un client complet de cache GraphQL prêt pour la prod pour n'importe quel framework UI ou serveur GraphQL.
     - key: tool.native-apps
-      t: Native Apps
+      t: Apps natives
     - key: tool.native-apps.description
       t: |
-        The majority of mobile and desktop apps are still built with native languages like Java, Kotlin, Objective-C, or Swift.
+        La majorité des applications mobile et desktop sont encore développées avec des langages natifs tels que
+        Java, Kotlin, Objective-C ou Swift.
     - key: tool.phonegap-cordova
       t: Cordova
     - key: tool.phonegap-cordova.description
       t: |
-        Apache Cordova is a mobile application development framework.
+        Apache Cordova un un framework de développement d'applications mobiles.
     - key: tool.vanilla-js
       t: Vanilla JS
     - key: tool.extjs
@@ -562,11 +563,11 @@ translations:
 
     # reasons
     - key: reason.elegant_programming_style_patterns.long
-      t: ⚙️ Elegant programming style & patterns
+      t: ⚙️ Style de programmation élégant
     - key: reason.elegant_programming_style_patterns.short
-      t: ⚙️ Programming style
+      t: ⚙️ Style de programmation
     - key: reason.robust_less_error_prone_code.long
-      t: 🐞 Robust, less error-prone code
+      t: 🐞 Robustesse, code moins sujet aux erreurs
     - key: reason.robust_less_error_prone_code.short
       t: 🐞 Robustesse
     - key: reason.rich_package_ecosystem.long
@@ -594,33 +595,33 @@ translations:
     - key: reason.good_documentation.short
       t: 📖 Documentation
     - key: reason.backed_by_a_great_team_company.long
-      t: 👫 Backed by a great team/company
+      t: 👫 Soutenu par une super société/équipe
     - key: reason.backed_by_a_great_team_company.short
-      t: 👫 Team/company
+      t: 👫 Société/équipe
     - key: reason.simple_lightweight.long
       t: 🎈 Simple & léger
     - key: reason.simple_lightweight.short
       t: 🎈 Léger
     - key: reason.growing_momentum_popularity.long
-      t: 📉 Growing momentum/popularity
+      t: 📉 Dynamisme/popularité croissante
     - key: reason.growing_momentum_popularity.short
-      t: 📉 Momentum
+      t: 📉 Populaire
     - key: reason.full_featured_powerful.long
-      t: 🕹️ Full-featured & powerful
+      t: 🕹️ Complet et puissant
     - key: reason.full_featured_powerful.short
-      t: 🕹️ Full-featured
+      t: 🕹️ Complet
     - key: reason.stable_backwards_compatible.long
       t: ⚖️ Stable & rétro-compatible
     - key: reason.stable_backwards_compatible.short
       t: ⚖️ Stabilité
     - key: reason.clumsy_programming_style.long
-      t: ⚙️ Clumsy programming style
+      t: ⚙️ Style de développement inélégant
     - key: reason.clumsy_programming_style.short
-      t: ⚙️ Clumsy
+      t: ⚙️ Inélégant
     - key: reason.buggy_error_prone_code.long
-      t: 🐞 Buggy, error-prone code
+      t: 🐞 Plein de bugs, sujet aux erreurs
     - key: reason.buggy_error_prone_code.short
-      t: 🐞 Buggy code
+      t: 🐞 Plein de bugs
     - key: reason.poor_performance.long
       t: ⚡ Faibles performances
     - key: reason.poor_performance.short
@@ -630,9 +631,9 @@ translations:
     - key: reason.small_package_ecosystem.short
       t: 🎁 Écosystème limité
     - key: reason.new_untested_option.long
-      t: 🏛️ New untested option
+      t: 🏛️ Nouvelle option non testée
     - key: reason.new_untested_option.short
-      t: 🏛️ New & untested
+      t: 🏛️ Nouveau & non testé
     - key: reason.hard_learning_curve.long
       t: 👶 Courbe d'apprentissage élevée
     - key: reason.hard_learning_curve.short
@@ -646,25 +647,25 @@ translations:
     - key: reason.bad_documentation.short
       t: 📖 Mauvaise documentation
     - key: reason.concerns_about_the_team_company.long
-      t: 👫 Concerns about the team/company
+      t: 👫 Inquiétudes vis à vis de l'équipe/société
     - key: reason.concerns_about_the_team_company.short
-      t: 👫 Bad team/company
+      t: 👫 Mauvaise équipe/société
     - key: reason.bloated_complex.long
       t: 🎈 Complexe
     - key: reason.bloated_complex.short
       t: 🎈 Complexe
     - key: reason.diminishing_momentum_popularity.long
-      t: 📉 Diminishing momentum/popularity
+      t: 📉 Dynamisme/popularité en baisse
     - key: reason.diminishing_momentum_popularity.short
-      t: 📉 Low momentum
+      t: 📉 Perte de popularité
     - key: reason.limited_lacking_in_features.long
       t: 🕹️ Limité, manque de fonctionnalités
     - key: reason.limited_lacking_in_features.short
       t: 🕹️ Limité
     - key: reason.fast_changing_breaks_often.long
-      t: ⚖️ Fast-changing & breaks often
+      t: ⚖️ Changements rapides et non rétro-compatibles
     - key: reason.fast_changing_breaks_often.short
-      t: ⚖️ Fast-changing
+      t: ⚖️ Changements rapides
     - key: reason.other.long
       t: Autre
     - key: reason.other.short
