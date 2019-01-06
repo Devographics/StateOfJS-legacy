@@ -1,0 +1,25 @@
+# the template for a library's questions
+# TITLE: Vue.js
+# ID: vue
+---
+title: TITLE
+ref: ID
+properties:
+  randomize: false
+  allow_multiple_selection: false
+  allow_other_choice: false
+  vertical_alignment: true
+  choices:
+  - ref: ID_neverheard
+    label: 🤷 Never heard of it/Not sure what it is
+  - ref: ID_interested
+    label: ✅ Heard of it > Would like to learn
+  - ref: ID_not_interested
+    label: 🚫 Heard of it > Not interested
+  - ref: ID_would_use_again
+    label: 👍 Used it > Would use again
+  - ref: ID_would_not_use_again
+    label: 👎 Used it > Would avoid
+validations:
+  required: false
+type: multiple_choice
