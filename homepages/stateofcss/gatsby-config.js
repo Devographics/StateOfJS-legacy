@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `The State Of JavaScript`
+        title: `The State Of CSS`
     },
     plugins: [
         {

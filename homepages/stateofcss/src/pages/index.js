@@ -6,7 +6,7 @@ import Newsletter from '../components/Newsletter'
 import About from '../components/About'
 import Footer from '../components/Footer'
 // import Intro from '../components/Intro'
-import ViewResults from '../components/ViewResults'
+// import ViewResults from '../components/ViewResults'
 // import ReactGA from 'react-ga'
 // import Stats from '../components/common/Stats'
 // import Comments from '../components/common/Comments'
@@ -19,7 +19,7 @@ const Index = () => (
             {/* <Bubbles /> */}
             <div className="intro section-narrow section-border">
                 <ResultsComingSoon />
-                <ViewResults />
+                {/* <ViewResults /> */}
             </div>
             {/* <Stats /> */}
             <Share />
