@@ -7,9 +7,9 @@ import classNames from 'classnames'
 
 export default class Layout extends React.Component {
     render() {
-        const description = 'The annual survey about current popular JavaScript technologies.'
-        const url = 'http://stateofjs.com'
-        const image = 'http://stateofjs.com/images/stateofjs2018-social-media.png'
+        const description = 'The annual survey about the latest trends in CSS.'
+        const url = 'http://stateofcss.com'
+        const image = 'http://stateofcss.com/images/stateofcss-social-media.png'
         const title = 'The State of JavaScript 2018'
         const meta = [
             { charset: 'utf-8' },

@@ -1,6 +1,5 @@
 import React from 'react'
 import ResultsComingSoon from '../components/ResultsComingSoon'
-import PreviousYears from '../components/PreviousYears'
 import Share from '../components/Share'
 import NewsletterIntro from '../components/NewsletterIntro'
 import Newsletter from '../components/Newsletter'
@@ -23,7 +22,6 @@ const Index = () => (
                 <ViewResults />
             </div>
             {/* <Stats /> */}
-            <PreviousYears />
             <Share />
             {/* <Comments /> */}
             <div className="section block block--newsletter--home">
