@@ -662,69 +662,69 @@ translations:
 
     # awards
     - key: block.title.highest_satisfaction
-      t: Highest Satisfaction
+      t: Höchste Zufriedenheit
     - key: block.description.highest_satisfaction
       t: |
-        Awarded to the library with the highest percentage of satisfied users.
+        Verliehen an die Library mit dem höchsten Prozentsatz an zufriedenen Nutzern.
     - key: award.highest_satisfaction.comment
       t: |
-        With **${tools[0].percentage}%** of users willing to use it again,
-        ${tools[0].label} proves it’s not kidding around.
+        Mit **${tools[0].percentage}%** an Nutzern die es nochmals nutzen würden,
+        beweist ${tools[0].label} dass es keine halben Sachen macht.
     - key: award.highest_satisfaction.runner_up
       t: ${tool.label} ${tool.percentage}%  
     - key: block.title.highest_interest
-      t: Highest Interest
+      t: Höchstes Interesse
     - key: block.description.highest_interest
       t: |
-        Awarded to the technology developers are most interested in learning.
+        Verliehen an die Technologie, die die meisten Entwickler lernen wollen.
     - key: award.highest_interest.comment
       t: |
-        **${tools[0].percentage}%** of developers who have heard about
-        ${tools[0].label} want to learn it.
-        That’s some serious interest!
+        **${tools[0].percentage}%** der Entwickler die schon von
+        ${tools[0].label} gehört haben, wollen es lernen.
+        Das sieht nach einem hohen Interesse aus!
     - key: award.highest_interest.runner_up
       t: ${tool.label} ${tool.percentage}%
     - key: block.title.highest_usage
-      t: Most Used
+      t: Am meisten genutzt
     - key: block.description.highest_usage
       t: |
-        Awarded to technology with the largest user base.
+        Verliehen an die Technologie mit dem größten Nutzerstamm
     - key: award.highest_usage.comment
       t: |
-        With **${tools[0].count}** users ${tools[0].label}
-        is the most used library this year.        
+        Mit **${tools[0].count}** Nutzern ist ${tools[0].label}
+        die am meisten genutzte Library dieses Jahr.
     - key: award.highest_usage.runner_up
       t: ${tool.label} ${tool.count}
     - key: block.title.most_mentioned
-      t: Most Mentioned
+      t: Am häufigsten erwähnt
     - key: block.description.most_mentioned
       t: |
-        Awarded to the library mentioned the most in the “other libraries” answer. 
+        Verliehen an die Library die am häufigsten in "Sonstige Libraries" angegeben wurde.
     - key: award.most_mentioned.comment
       t: |
-        ${tools[0].label} collected **${tools[0].count}** mentions,
-        making it the most submitted freeform answer by far.
+        ${tools[0].label} wurde **${tools[0].count}** erwähnt,
+        das macht es zur bei weitem am häufigsten gegebenen "Sonstige"-Antwort.
     - key: award.most_mentioned.runner_up
       t: ${tool.label} ${tool.count}
     - key: block.title.prediction
-      t: Prediction Award
+      t: Zukunfts Award
     - key: block.description.prediction
       t: |
-        Awarded to an up-and-coming technology that might take over… or not?
+        Verliehen an die neuste Technologie die durchstarten könnte... oder nicht?
     - key: award.prediction.comment
       t: |
-        The Facebook team is two for two with React and GraphQL.
-        Will Reason follow the same path?
+        Das Facebook-Team ist sowhl mit React als auch mit GraphQL erfolgreich.
+        Wird Reason sich diesem Erfolg anschließen?
     - key: award.prediction.runner_up
       t: ${tool.label}
     - key: block.title.special
       t: Special Award
     - key: block.description.special
       t: |
-        Awarded to a technology that we just fell in love with this year.
+        Verliehen an die Technologie die uns dieses Jahr einfach den Kopf verdreht hat.
     - key: award.special.comment
       t: |
-        ${tools[0].label} has become the leading JavaScript text editor, and we can definitely see why!
+        ${tools[0].label} hat sich zum führenden Editor für JavaScript entwickelt, wir wissen auch genau warum!
     - key: award.special.runner_up
       t: ${tool.label}
 
