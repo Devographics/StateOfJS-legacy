@@ -6,8 +6,6 @@
 }
 
 .home-logo{
-  border-right: 1px solid $border-color;
-  overflow: hidden;
   @include flex-center;
   flex-direction: column;
   .logo{
