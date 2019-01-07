@@ -1,0 +1,200 @@
+flavors:
+  color: "#F7DF1E"
+  projects:
+    - symbol: Ts
+      id: typescript
+    - symbol: Fw
+      id: flow
+    - symbol: Cj
+      id: clojurescript
+    - symbol: Re
+      id: reason
+    - symbol: Ps
+      id: purescript
+    - symbol: Bb
+      id: babel
+    - symbol: Cs
+      id: coffeescript
+
+frontend:
+  color: "#72D7D1"
+  projects:
+    - symbol: V
+      id: vuejs
+    - symbol: R
+      id: react
+    - symbol: Ng
+      id: angular
+    - symbol: Bb
+      id: backbone
+    - symbol: Em
+      id: ember
+    - symbol: Pr
+      id: preact
+    - symbol: Ha
+      id: hyperapp
+    - symbol: In
+      id: inferno
+    - symbol: Sv
+      id: Svelte
+    # - Symbol: Dv
+    #   id: dva
+datalayer:
+  color: "#7FD258"
+  projects:
+    - symbol: Rd
+      id: redux
+    - symbol: Ry
+      id: relay
+    - symbol: Ap
+      id: apollo-client
+      name: Apollo
+    - symbol: Mx
+      id: mobx
+    - symbol: Fx
+      id: flux
+buildtools:
+  color: "#9D7CE2"
+  projects:
+    - symbol: Wp
+      id: webpack
+    - symbol: Gu
+      id: gulp
+    - symbol: Pc
+      id: parcel
+    - symbol: Ru
+      id: rollup
+    - symbol: Br
+      id: Broccoli
+backend:
+  color: "#E486C4"
+  projects:
+    - symbol: Ex
+      id: express
+    - symbol: Me
+      id: meteor
+    - symbol: Nx
+      id: nextjs
+    - symbol: G
+      id: gatsby
+    - symbol: Ko
+      id: koa
+    - symbol: Sa
+      id: sails
+    - symbol: Lb
+      id: loopback
+    - symbol: Sk
+      id: socketio
+    - symbol: Vn
+      id: vulcan
+    - symbol: Ha
+      id: hapi
+    - symbol: Fe
+      id: feathers
+testing:
+  color: "#488352"
+  projects:
+    - symbol: Sb
+      id: storybook
+    - symbol: Je
+      id: jest
+    - symbol: Mo
+      id: mocha
+    - symbol: Av
+      id: ava
+    - symbol: Ez
+      id: enzyme
+    - symbol: Ja
+      id: jasmine
+    - symbol: Ka
+      id: karma
+    - symbol: Cy
+      id: cypress
+    - symbol: Pp
+      id: puppeteer
+    - symbol: Js
+      id: json-server
+    - symbol: Nm
+      id: nightmare
+mobile:
+  color: "#2798C8"
+  projects:
+    - symbol: Rn
+      id: react-native
+    - symbol: E
+      id: electron
+    - symbol: Io
+      id: ionic
+    - symbol: Ns
+      id: nativescript
+    - symbol: We
+      id: weex
+    - symbol: Nw
+      id: nwjs
+    #- symbol: Cv
+    #  id: cordova
+utilities:
+  color: "#FE6A6A"
+  projects:
+    - symbol: D
+      id: d3
+    - symbol: Jq
+      id: jquery
+    - symbol: Mt
+      id: moment
+    - symbol: Lo
+      id: lodash
+    - symbol: Un
+      id: underscore
+    - symbol: Ra
+      id: ramda
+    - symbol: Ax
+      id: axios
+    - symbol: Th
+      id: threejs
+    - symbol: Ch
+      id: chartjs
+    - symbol: Ec
+      id: echarts
+    - symbol: Pt
+      id: prettier
+    - symbol: Im
+      id: immutable
+    - symbol: An
+      id: animejs
+    - symbol: Md
+      id: modernizr
+    - symbol: Rx
+      id: rxjs
+      
+ui:
+  color: "#E49B57"
+  projects:
+    - symbol: Bs
+      id: bootstrap
+    - symbol: Su
+      id: semanticui
+    - symbol: Mu
+      id: material-ui
+    - symbol: An
+      id: ant-design
+    - symbol: Et
+      id: element
+    - symbol: Fd
+      id: foundation
+
+ssg:
+  color: "#25A586"
+  projects:
+    - symbol: G
+      id: gatsby
+    - symbol: Hx
+      id: hexo
+    - symbol: Vp
+      id: vuepress
+    - symbol: Ms
+      id: metalsmith
+    - symbol: Rs
+      id: react-static
+    - symbol: Hp
+      id: harp

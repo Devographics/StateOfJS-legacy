@@ -1,0 +1,30 @@
+.Button, .button{
+  background: none;
+  @include border;
+  padding: $spacing/2 $spacing;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  @include font-bold;
+  @include secondary-font;
+  @include small{
+    font-size: $small-font;
+  }
+  @include medium-large{
+    font-size: $medium-font;
+  }
+  white-space: nowrap;
+  &, &:link, &:visited{
+    color: $text-color;
+    text-decoration: none;
+  }
+  &:hover{
+    color: $hover-color;
+    border-color: $hover-color;
+  }
+  &.large-button{
+    padding: $spacing $spacing;
+    font-size: $large-font;
+  }
+}

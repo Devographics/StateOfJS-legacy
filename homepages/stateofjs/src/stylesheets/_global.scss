@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  background: $bg-color;
+  color: $text-color;
+  padding: 0;
+  font-feature-settings: "liga" 0;
+  line-height: 1.5;
+
+  // background: linear-gradient(180deg, rgb(30, 32, 32) 0%, rgb(55, 58, 58) 100%) fixed;
+
+  @include primary-font;
+  @include small{
+    font-size: $root-size-mobile;
+  }
+  @include large{
+    font-size: $root-size;
+    // border: 10px solid $active-color;
+    // padding: 10px;
+    min-height: 100vh;
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  @include secondary-font;
+  margin: 0 0 $spacing 0;
+}
+
+p, ul, ol{
+  margin: 0 0 $spacing 0;
+  @include small{
+    line-height: 1.6;
+  }
+  @include medium-large{
+    line-height: 1.8;
+  }
+}
+
+
+a{
+  text-decoration: none;
+  &, &:link, &:visited, &:active, &:focus{
+    @include small{
+      color: $active-color;
+    }
+    @include medium-large{
+      color: $active-color;
+    }
+  }
+  &:hover{
+    position: relative;
+    // color: $hover-color;
+    text-decoration: underline;
+    // animation-name: threedee;
+    // animation-duration: 200ms;
+    // animation-iteration-count: 1;
+    // animation-timing-function: ease-out;
+    // animation-fill-mode: forwards;
+
+    // animation-name: blinkfast;
+    // animation-duration: 300ms;
+    // animation-iteration-count: infinite;
+    // animation-timing-function: linear;
+  }
+  &.button, &.resp-sharing-button__link{
+    &:hover{
+      animation: none;
+    }
+  }
+}
+
+.conclusion__byline{
+  text-align: right;
+  display: block;
+  @include font-bold;
+}

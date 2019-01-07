@@ -1,0 +1,117 @@
+.block--resources{
+  border-top: 1px dashed $border-color;
+  padding: $spacing*3 0 0 0;
+  @include large{
+    padding-left: $spacing*9;
+    padding-right: $spacing*9;
+  }
+}
+
+.resources{
+}
+
+.resources-title, .sponsors-title{
+  font-size: $medium-font;
+  @include medium-large{
+    @include flex-center;
+    justify-content: space-between;
+  }
+  margin-bottom: $spacing/2;
+  h2{
+    margin: 0;
+  }
+}
+.resources-sponsor{
+  color: $lighter-text-color;
+  @include secondary-font;
+  font-size: $small-font;
+  img{
+    display: inline-block;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
+.resources-list{
+}
+.sponsors-list{
+  margin-bottom: $spacing;
+}
+.resource, .sponsor{
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  background: white;
+  margin-bottom: $spacing/2;
+  padding: $spacing $spacing;
+  @include medium-large{
+    @include flex-center;
+  }
+}
+.resource-image, .sponsor-image{
+  @include crosshatchBg;
+  @include small{
+    width: 60px;
+    float: right;
+    margin: 0 0 $spacing $spacing;
+  }
+  @include medium-large{
+    width: 160px;
+    margin-right: $spacing*1.2;
+  }
+  div {
+    background: white;
+    position: relative;
+    z-index: 10;
+    border: 2px solid $border-color;
+  }
+  img, svg{
+    display: block;
+    width: 100%;
+    border: 3px solid white;
+    position: relative;
+  }
+}
+.resource-contents, .sponsor-contents{
+  flex: 1;
+}
+.resource-title, .sponsor-title{
+  margin-bottom: 0;
+}
+.sponsor-title{
+  font-size: $large-font;
+}
+.resource-author{
+  margin-bottom: $spacing/4;
+}
+.resource-description{
+  font-size: $medium-font;
+}
+.sponsor-description{
+  p{
+    margin-bottom: 0;
+  }
+}
+.resource-play{
+  @include small{
+    display: none;
+  }
+  margin-left: $spacing/2;
+  a{
+    display: block;
+    height: 70px;
+    width: 70px;
+  }
+  svg{
+    width: 100%;
+    fill: $grey;
+  }
+  a:hover svg{
+    fill: $secondary-color;
+  }
+}
+.resources-sponsored{
+  color: $lighter-text-color;
+  font-size: $smaller-font;
+  text-align: center;
+  @include secondary-font;
+}

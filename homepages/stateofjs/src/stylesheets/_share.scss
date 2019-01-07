@@ -1,0 +1,81 @@
+.share-wrapper{
+  margin-top: $spacing*2;
+  position: relative;
+}
+.share{
+  @include flex-center;
+}
+.share-button{
+}
+.share-popup{
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%) scale(0.5);
+  transition: all 500ms cubic-bezier(.87,-.41,.19,1.44);
+  .share-popup-visible &{
+    opacity: 1;
+    pointer-events: auto;
+    bottom: -110%;
+    transform: translateX(-50%) scale(1);
+  }
+  .share-options{
+    a{
+      // height: 24px;
+      // width: 24px;
+    }
+  }
+}
+
+.share-options{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  max-width: 300px;
+  margin: 0 auto;
+  a{
+    display: block;
+    height: 40px;
+    width: 40px;
+    flex-shrink: 0;
+    &:last-child{
+      margin-right: 0;
+    }
+    svg{
+      height: 100%;
+      width: 100%;
+      path{
+        fill: $beige;
+      }
+    }
+    @include segmented;
+    &:hover{
+      svg path{
+        fill: $hover-color;
+        // animation-name: blink2;
+        // animation-duration: 300ms;
+        // animation-iteration-count: infinite;
+        // animation-timing-function: linear;
+      }
+    }
+  }
+}
+
+
+.home .share-options{
+  max-width: 300px;
+  a{
+    @include small{
+      height: 40px;
+      width: 40px;
+      padding: 10px;
+    }
+    @include medium-large{
+      height: 60px;
+      width: 60px;
+      padding: 15px;
+    }
+  }
+}
