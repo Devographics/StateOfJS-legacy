@@ -3,6 +3,6 @@ type: introduction
 section: mobile-and-desktop
 locale: es-SV
 ---
- “Any application that can be written in JavaScript, will eventually be written in JavaScript.”
-JavaScript is not limited to the browser anymore, and it's only
-a matter of time until your smart toaster burns your bread because NPM is down. 
+ “Cualquier aplicación que pueda ser escrita en JavaScript, eventualmente será escrita en JavaScript.”
+JavaScript ya no está limitado al navegador, y es sólo cuestión de tiempo hasta que 
+tu tostadora inteligente queme tu pan porque NPM está caído.
