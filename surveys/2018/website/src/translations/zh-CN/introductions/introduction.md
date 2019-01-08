@@ -26,6 +26,10 @@ State of JavaScript 调查是由以下人员创建并维护的：
 
 欢迎了解我的 React 与 GraphQL 的 JavaScript 框架 [Vulcan.js](http://vulcanjs.org)；Raphael 的 React 数据可视化库 [Nivo.js](https://nivo.rocks)；以及 Michael 的 JavaScript 工具推荐与排行榜 [Best of JS](https://bestofjs.org)。
 
+### 下载我们的数据
+
+你可以在[这里](https://www.kaggle.com/sachag/state-of-javascript-2018)下载调查结果数据。如果你基于此数据做出了自己的数据可视化页面，请告知我们！
+
 ### 其他链接
 
 - [State of JavaScript 主页](https://stateofjs.com)

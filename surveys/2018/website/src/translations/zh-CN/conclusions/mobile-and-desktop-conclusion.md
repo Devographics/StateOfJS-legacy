@@ -13,4 +13,4 @@ Electron 可以与任何前端框架搭配使用，这让它的灵活性大受�
 
 作为 React Native 的替代品，不想使用 React 做跨平台开发的可以考虑 [Weex](https://weex.apache.org/)。同时，使用 Weex 也可以很好地利用 Vue.js 的生态圈。
 
-Google 在这一方面也颇有建树，基于 [Puppeteer](https://github.com/GoogleChromeLabs/carlo) 开发的 [Carlo](https://github.com/GoogleChromeLabs/carlo) 就是一个 “headful Node app” 框架。同时，它们还发布了 [Flutter](https://flutter.io/)。相比之下，Flutter 可以直接编译成平台的原生代码；而 React Native 这类的框架更像是代码与原生环境间的一座桥梁。
+Google 在这一方面也颇有建树，基于 [Puppeteer](https://github.com/GoogleChromeLabs/puppeteer) 开发的 [Carlo](https://github.com/GoogleChromeLabs/carlo) 就是一个 “headful Node app” 框架。同时，它们还发布了 [Flutter](https://flutter.io/)。相比之下，Flutter 可以直接编译成平台的原生代码；而 React Native 这类的框架更像是代码与原生环境间的一座桥梁。

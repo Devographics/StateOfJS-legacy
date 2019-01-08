@@ -8,4 +8,4 @@ locale: zh-CN
 
 诚然，尽管我们尽己所能，让尽可能多的开发者参与我们的调查；然而我们的参与者依旧只是偌大的 JavaScript 社区中的一小部分。因此，调查结果可能会有失偏颇，望周知。
 
-注：为帮助我们扩大影响力，来自不同国家的读者将会帮助我们把调查结果翻译成不同语言。如果你也可以帮助翻译，请[联系我们](https://github.com/StateOfJS/StateOfJS/issues/87)！
+注：为帮助我们扩大影响力，来自不同国家的读者将会帮助我们把调查结果翻译成不同语言。如果你也可以帮助翻译，请[联系我们](https://medium.com/@sachagreif/help-us-translate-the-state-of-javascript-2018-survey-results-1488efa525c1)！
