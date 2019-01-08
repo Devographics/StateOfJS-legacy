@@ -3,6 +3,6 @@ type: introduction
 section: other-tools
 locale: es-SV
 ---
- The JavaScript ecosystem isn't only limited to libraries and frameworks. There're all these small utilities we are using every day, including bundlers for code packaging and text editors for writing our code.
+ El ecosistema de JavaScript no está sólo limitado a librerías y frameworks. Existen también todas estas pequeñas utilidades que usamos a diario, incluyendo bundlers para empaquetar nuestro código y editores de texto para escribir nuestrso código.
 
-In addition, we also wanted to know which new browser APIs were gaining traction; and yes, as crazy as it might sound it turns out some of us also use languages that *aren’t* JavaScript! 
+También queríamos saber qué nuevas APIs del navegador están ganando tracción; y sí, puede sonar alocado pero resulta ser que algunos de nosotros ¡también usamos lenguajes que *no son* JavaScript!
