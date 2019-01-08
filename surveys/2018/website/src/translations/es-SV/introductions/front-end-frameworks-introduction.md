@@ -3,6 +3,6 @@ type: introduction
 section: front-end-frameworks
 locale: es-SV
 ---
-The front-end remains the key battleground for JavaScript. But now
-that the dust has cleared, it's starting to look like only two
-combatants are left standing…
+El front-end continúa siendo el campo de batalla clave para JavaScript.
+Ahora que la polvareda se ha despejado, parece que sólo quedan
+dos combatientes en pie…
