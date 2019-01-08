@@ -5,3 +5,8 @@
 - locale: fr-FR
   path:   fr
   label:  Français
+
+- locale: zh-CN
+  path:   cn
+  label:  简体中文
+
