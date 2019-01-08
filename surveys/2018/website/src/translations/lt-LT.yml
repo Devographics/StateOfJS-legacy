@@ -2,29 +2,29 @@ locale: en-US
 translations:
     # general
     - key: start
-      t: Start
+      t: Įžanga
     - key: share
-      t: Share
+      t: Dalis
     - key: average
-      t: Average  
+      t: Vidurkis  
     - key: conclusion  
-      t: Conclusion
+      t: Išvada
     - key: tools_salary_range_average
-      t: Average salary
+      t: Vidutinės pajamos
     - key: tools_company_size_average
-      t: Average company size
+      t: Kompanijų dydžio vidurkis
     - key: tools_years_of_experience_average
-      t: Average years of experience
+      t: Patirties metų vidurkis
     - key: users_percentage
-      t: percentage of users
+      t: Vartotojų dalis procentais
     - key: salary_range_axis_legend
-      t: salary range
+      t: Pajamų diapazonas
     - key: years_of_experience_axis_legend
-      t: years of experience
+      t: Metai patirties
     - key: company_size_axis_legend
-      t: number of employees
+      t: Darbuotojų skaičius
     - key: percents_display_mode
-      t: Percents
+      t: Procentai
     - key: counts_display_mode
       t: Counts
     - key: awards_runner_ups
