@@ -736,10 +736,10 @@ translations:
     - key: share.site.subject
       t: State Of JavaScript Umfrageergebnisse
     - key: share.site.body
-      t: 'Hier sind ein paar interessante JavaScript Umfrageergebnisse: ${link}'
+      t: 'Hier findest du ein paar interessante JavaScript Umfrageergebnisse: ${link}'
     - key: share.block.twitter_text
       t: '#StateOfJS 2018: ${title} ${link}'
     - key: share.block.subject
       t: State Of JavaScript Umfrageergebnisse
     - key: share.block.body
-      t: 'Hier sind ein paar interessante JavaScript Umfrageergebnisse (${title}): ${link}'
+      t: 'Hier findest du ein paar interessante JavaScript Umfrageergebnisse (${title}): ${link}'
