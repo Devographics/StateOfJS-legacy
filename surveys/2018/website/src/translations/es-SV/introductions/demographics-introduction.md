@@ -4,8 +4,8 @@ section: demographics
 locale: es-SV
 ---
 
-This year, we reached 20,268 developers in 153 different countries. While the **U.S.** dominates the survey as expected with 24% of respondents, **Germany** and **Australia** are both well-represented, with over 5% of respondents each. 
+Este año alcanazamos a 20.268 personas en 153 países diferentes. Mientras que **Estados Unidos** tiene, esperablemente, la mayor proporción de personas participando (alcanzando un 24%), **Alemania** y **Australia** también se encuentran bien representados, con más del 5% de personas encuestadas cada uno.
 
-Of course, we should mention that although we're doing our best to get as many developers as we can to fill out the survey, our audience is still only a small fraction of the overall JavaScript community, and you should keep this in mind when evaluating the following results.  
+Por supuesto, también deberíamos mencionar que a pesar de que estamos haciendo nuestro mejor esfuerzo para que cada vez más personas se sumen a participar de la encuesta, nuestra audiencia es sólo una pequeña fracción del total de la comunidad de JavaScript, por lo cual es importante tener esto en cuenta a la hora de evaluar los resultados.
 
-Note: one factor that could definitely help us reach broader, more international audiences in the future would be translating the survey and survey results in multiple languages. If you think you can help, please [let us know](https://github.com/StateOfJS/StateOfJS/issues/87)!
+Un factor que podría sin duda ayudarnos a hacer crecer nuestra audiencia, abarcando más países en el futuro, sería traducir la encuesta y sus resultados en múltiples idiomas. Si crees que puedes ayudar, por favor [háznoslo saber](https://github.com/StateOfJS/StateOfJS/issues/87)!
