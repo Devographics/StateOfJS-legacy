@@ -2,91 +2,91 @@ locale: ru-RU
 translations:
   # general
   - key: start
-    t: Start
+    t: Начать
   - key: share
-    t: Share
+    t: Поделиться
   - key: average
-    t: Average
+    t: Средн.
   - key: conclusion
-    t: Conclusion
+    t: Заключение
   - key: tools_salary_range_average
-    t: Average salary
+    t: Средняя зарплата
   - key: tools_company_size_average
-    t: Average company size
+    t: Средний размер компании
   - key: tools_years_of_experience_average
-    t: Average years of experience
+    t: Средний опыт работы
   - key: users_percentage
-    t: percentage of users
+    t: процент пользователей
   - key: salary_range_axis_legend
-    t: salary range
+    t: диапазон зарплат
   - key: years_of_experience_axis_legend
-    t: years of experience
+    t: опыт работы
   - key: company_size_axis_legend
-    t: number of employees
+    t: количество сотрудников
   - key: percents_display_mode
-    t: Percents
+    t: Проценты
   - key: counts_display_mode
-    t: Counts
+    t: Кол-во
   - key: awards_runner_ups
-    t: Runner-Ups
+    t: Претенденты на победу
   - key: tool_homepage
-    t: Homepage
+    t: Веб-сайт
   - key: from_to_short
-    t: ${from} to ${to}
+    t: от ${from} до ${to}
   - key: users_count
-    t: ${count} users
+    t: 'пользователей: ${count}'
   - key: percentage_of_respondents
-    t: ${percentage} of respondents
+    t: 'респондентов: ${percentage}'
   - key: partners.premium_partners
-    t: Our 2018 Premium Partners
+    t: Наши Премиум Партнёры 2018
   - key: partners.become_partner
-    t: Become a partner
+    t: Стать партнером
   - key: partners.thanks
     t: |
-      Thanks to our partners for supporting this project.
-      <a href="/support">Learn more</a> about supporting The State of JS.
+      Благодарим наших партнёров за поддержку проекта.
+      Подробнее о поддержке The State of JS читайте <a href="/support">здесь</a>.
   - key: stay_tuned
-    t: Stay Tuned
+    t: Будьте в курсе
   - key: leave_your_email
-    t: "If you'd like to know when we release additional results or announce next year's edition, just leave us your email below:"
+    t: "Если вы хотите получать уведомления о публикации дополнительных результатов и старте нового опроса, оставьте свой email:"
   - key: your_email
-    t: Your Email
+    t: Ваш Email
   - key: notify_me
-    t: Notify Me
+    t: Уведомить меня
 
   # opinions
   - key: opinions.legends.never_heard
-    t: I've never heard of it
+    t: Никогда не слышал(а)
   - key: opinions.legends_short.never_heard
-    t: Never heard of it
+    t: Никогда не слышал(а)
   - key: opinions.legends.not_interested
-    t: I've HEARD of it, and am NOT interested
+    t: Слышал(а), но не интересно
   - key: opinions.legends_short.not_interested
-    t: Heard of it, not interested
+    t: Слышал(а), но не интересно
   - key: opinions.legends.interested
-    t: I've HEARD of it, and WOULD like to learn it
+    t: Слышал(а) и хотел(а) бы изучить
   - key: opinions.legends_short.interested
-    t: Heard of it, would like to learn
+    t: Слышал(а) и хотел(а) бы изучить
   - key: opinions.legends.would_use
-    t: I've USED it before, and WOULD use it again
+    t: Использовал(а) ранее и буду использовать снова
   - key: opinions.legends_short.would_use
-    t: Used it, would use again
+    t: Использовал(а) ранее и буду использовать снова
   - key: opinions.legends.would_not_use
-    t: I've USED it before, and would NOT use it again
+    t: Использовал(а) ранее, но больше не буду использовать
   - key: opinions.legends_short.would_not_use
-    t: Used it, would not use again
+    t: Использовал(а) ранее, но больше не буду использовать
 
   # generic opinions
   - key: opinion_scale.0
-    t: Strongly Disagree
+    t: Полностью не согласен
   - key: opinion_scale.1
-    t: Disagree
+    t: Скорее не согласен
   - key: opinion_scale.2
-    t: Neutral
+    t: Затрудняюсь ответить
   - key: opinion_scale.3
-    t: Agree
+    t: Скорее согласен
   - key: opinion_scale.4
-    t: Strongly Agree
+    t: Полностью согласен
 
   # salary ranges
   - key: salary_range.work-for-free.long
