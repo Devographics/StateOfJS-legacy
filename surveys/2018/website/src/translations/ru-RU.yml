@@ -90,9 +90,9 @@ translations:
 
   # salary ranges
   - key: salary_range.work-for-free.long
-    t: I work for free
+    t: Я работаю без оплаты
   - key: salary_range.work-for-free.short
-    t: work for free
+    t: Работаю без оплаты
   - key: salary_range.0-10.long
     t: $0k-$10k
   - key: salary_range.0-10.short
@@ -114,69 +114,69 @@ translations:
   - key: salary_range.100-200.short
     t: $100k-$200k
   - key: salary_range.more-than-200.long
-    t: more than $200k
+    t: более $200k
   - key: salary_range.more-than-200.short
     t: $200k+
 
   # company size
   - key: company_size.1.long
-    t: One employee
+    t: Один сотрудник
   - key: company_size.1.short
-    t: one
+    t: один сотрудник
   - key: company_size.1-5.long
-    t: 1 to 5 employees
+    t: от 1 до 5 сотрудников
   - key: company_size.1-5.short
     t: 1~5
   - key: company_size.5-10.long
-    t: 5 to 10 employees
+    t: от 5 до 10 сотрудников
   - key: company_size.5-10.short
     t: 5~10
   - key: company_size.10-20.long
-    t: 10 to 20 employees
+    t: от 10 до 20 сотрудников
   - key: company_size.10-20.short
     t: 10~20
   - key: company_size.20-50.long
-    t: 20 to 50 employees
+    t: от 20 до 50 сотрудников
   - key: company_size.20-50.short
     t: 20~50
   - key: company_size.50-100.long
-    t: 50 to 100 employees
+    t: от 50 до 100 сотрудников
   - key: company_size.50-100.short
     t: 50~100
   - key: company_size.100-1000.long
-    t: 100 to 1000 employees
+    t: от 100 до 1000 сотрудников
   - key: company_size.100-1000.short
     t: 100~1000
   - key: company_size.more-than-1000.long
-    t: More than 1000 employees
+    t: Более 1000 сотрудников
   - key: company_size.more-than-1000.short
     t: 1000+
 
   # years of experience
   - key: years_of_experience.less-than-1.long
-    t: Less than one year
+    t: Меньше года
   - key: years_of_experience.less-than-1.short
-    t: '<1 year'
+    t: '<1 года'
   - key: years_of_experience.1-2.long
-    t: 1 to 2 years
+    t: от 1 до 2 лет
   - key: years_of_experience.1-2.short
-    t: 1~2 years
+    t: 1~2 года
   - key: years_of_experience.2-5.long
-    t: 2 to 5 years
+    t: от 2 до 5 лет
   - key: years_of_experience.2-5.short
-    t: 2~5 years
+    t: 2~5 лет
   - key: years_of_experience.5-10.long
-    t: 5 to 10 years
+    t: от 5 до 10 лет
   - key: years_of_experience.5-10.short
-    t: 5~10 years
+    t: 5~10 лет
   - key: years_of_experience.10-20.long
-    t: 10 to 20 years
+    t: от 10 до 20 лет
   - key: years_of_experience.10-20.short
-    t: 10~20 years
+    t: 10~20 лет
   - key: years_of_experience.more-than-20.long
-    t: More than 20 years
+    t: Более 20 лет
   - key: years_of_experience.more-than-20.short
-    t: '>20 years'
+    t: '>20 лет'
 
   # sections
   - key: section.javascript-flavors
