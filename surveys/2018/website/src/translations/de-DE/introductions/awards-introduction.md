@@ -1,7 +1,7 @@
 ---
 type: introduction
 section: awards
-locale: en-US
+locale: de-DE
 ---
- Join us for the first ever State of JS awards! Can you guess which technologies took gold
-in each category? <span class="note">(Note: we've excluded ES6 from the awards to avoid skewing the data)</span>
+ Schau vorbei bei den allerersten "State of JS"-Awards! Welche Technologien haben in ihrer Kategorie 
+Gold geholt? <span class="note">(Info: Wir haben ES6 nicht in den Awards mit einbezogen, um die Ergebnisse nicht zu verdrehen)</span>
