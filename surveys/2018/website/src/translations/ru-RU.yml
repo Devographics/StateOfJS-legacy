@@ -335,35 +335,35 @@ translations:
 
   # pages
   - key: page.introduction
-    t: Introduction
+    t: Вступление
   - key: page.demographics
-    t: Demographics
+    t: Демография
   - key: page.connections
-    t: Connections
+    t: Связь
   - key: page.section_overview
-    t: ${section} - Overview
+    t: ${section} - Обзор
   - key: page.section_tool
     t: ${section} - ${tool}
   - key: page.section_overview.short
-    t: Overview
+    t: Обзор
   - key: page.section_other_tools
-    t: ${section} – Other Libraries
+    t: ${section} – Другие инструменты
   - key: page.section_other_tools.short
-    t: Other Libraries
+    t: Другие инструменты
   - key: page.section_conclusion
-    t: ${section} - Conclusion
+    t: ${section} - Заключение
   - key: page.section_conclusion.short
-    t: Conclusion
+    t: Заключение
   - key: page.other-tools
-    t: Other Tools
+    t: Другие инструменты
   - key: page.opinions
-    t: Opinions
+    t: Мнения
   - key: page.awards
-    t: Awards 🏆
+    t: Награды 🏆
   - key: page.conclusion
-    t: Conclusion
+    t: Заключение
   - key: page.support
-    t: Support Us
+    t: Поддержите нас
 
   # blocks
   - key: block.title.participation-by-country
