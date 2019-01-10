@@ -180,15 +180,15 @@ translations:
 
   # sections
   - key: section.javascript-flavors
-    t: JavaScript Flavors
+    t: Разновидности JavaScript
   - key: section.front-end-frameworks
-    t: Front-end Frameworks
+    t: Front-end фреймворки
   - key: section.data-layer
-    t: Data Layer
+    t: Слой данных
   - key: section.back-end-frameworks
-    t: Back-end Frameworks
+    t: Back-end фреймворки
   - key: section.testing
-    t: Testing
+    t: Тестирование
   - key: section.mobile-and-desktop
     t: Mobile & Desktop
 
@@ -197,29 +197,36 @@ translations:
     t: ES6
   - key: tool.es6.description
     t: |
-      ES6 and its descendants are the newer versions of JavaScript, usually run through Babel.
+      ES6 и его потомки составляют множество новых версий JavaScript, которые
+      как правило работают через Babel.
   - key: tool.angular
     t: Angular
   - key: tool.angular.description
     t: |
-      Angular is a TypeScript-based open-source front-end web application platform. Note that from
-      this year on we are not be making a distinction between Angular and Angular.js anymore, while datapoints for
-      2016 and 2017 correspond to Angular (a.k.a. "Angular 2").
+      Angular - это платформа с открытым исходным кодом на основе TypeScript
+      для создания front-end веб-приложений. Стоит отметить, что с этого года мы
+      больше не делаем отличий между Angular и Angular.js. При этом данные для
+      2016 и 2017 годов соответствуют данным по Angular, общеизвестному как
+      "Angular 2".
+
   - key: tool.apollo
     t: Apollo
   - key: tool.apollo.description
     t: |
-      A fully-featured, production ready caching GraphQL client for every UI framework and GraphQL server.
+      Полнофункциональный GraphQL-клиент с кэшированием, готовый к
+      использованию в боевой среде и совместимый с любым UI-фреймворком и
+      GraphQL-сервером.
   - key: tool.native-apps
     t: Native Apps
   - key: tool.native-apps.description
     t: |
-      The majority of mobile and desktop apps are still built with native languages like Java, Kotlin, Objective-C, or Swift.
+      Большинство мобильных и десктопных приложений все еще написаны с помощью
+      нативных языков таких как Java, Kotlin, Objective-C или Swift.
   - key: tool.phonegap-cordova
     t: Cordova
   - key: tool.phonegap-cordova.description
     t: |
-      Apache Cordova is a mobile application development framework.
+      Apache Cordova - это фреймворк для разработки мобильных приложений.
   - key: tool.vanilla-js
     t: Vanilla JS
   - key: tool.extjs
