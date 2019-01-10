@@ -6,9 +6,9 @@ translations:
     - key: share
       t: Megosztás
     - key: average
-      t: Átlag  
-    - key: conclusion  
-      t: Következtetés
+      t: Átlag
+    - key: conclusion
+      t: Konklúzió
     - key: tools_salary_range_average
       t: Átlagos kereset
     - key: tools_company_size_average
@@ -18,11 +18,11 @@ translations:
     - key: users_percentage
       t: Felhasználók százalékos aránya
     - key: salary_range_axis_legend
-      t: fizetési tartomány (év)
+      t: Fizetési tartomány (év)
     - key: years_of_experience_axis_legend
-      t: tapasztalat (év)
+      t: Tapasztalat (év)
     - key: company_size_axis_legend
-      t: alkalmazottak száma
+      t: Alkalmazottak száma
     - key: percents_display_mode
       t: Százalék
     - key: counts_display_mode
@@ -50,22 +50,22 @@ translations:
     - key: opinions.legends.never_heard
       t: Soha nem hallottam róla
     - key: opinions.legends_short.never_heard
-      t: Soha nem hallotta  
+      t: Soha nem hallott róla
     - key: opinions.legends.not_interested
       t: HALLOTTAM róla, de NEM érdekel
     - key: opinions.legends_short.not_interested
-      t: Hallotta, nem érdekli
+      t: Hallott róla, nem érdekli
     - key: opinions.legends.interested
       t: HALLOTTAM róla, és ÉRDEKEL is
     - key: opinions.legends_short.interested
       t: Hallott róla, érdekli
-    - key: opinions.legends.would_use  
+    - key: opinions.legends.would_use
       t: HASZNÁLTAM korábban, használnám megint
-    - key: opinions.legends_short.would_use  
+    - key: opinions.legends_short.would_use
       t: Használta korábban, használná megint
-    - key: opinions.legends.would_not_use  
+    - key: opinions.legends.would_not_use
       t: HASZNÁLTAM korábban, NEM használnám megint
-    - key: opinions.legends_short.would_not_use  
+    - key: opinions.legends_short.would_not_use
       t: Használta korábban, nem használná megint
 
     # generic opinions
@@ -92,23 +92,23 @@ translations:
     - key: salary_range.10-30.long
       t: $10k-$30k
     - key: salary_range.10-30.short
-      t: $10k-$30k 
+      t: $10k-$30k
     - key: salary_range.30-50.long
       t: $30k-$50k
     - key: salary_range.30-50.short
-      t: $30k-$50k 
+      t: $30k-$50k
     - key: salary_range.50-100.long
       t: $50k-$100k
     - key: salary_range.50-100.short
-      t: $50k-$100k  
+      t: $50k-$100k
     - key: salary_range.100-200.long
       t: $100k-$200k
     - key: salary_range.100-200.short
-      t: $100k-$200k   
+      t: $100k-$200k
     - key: salary_range.more-than-200.long
       t: több mint $200k
     - key: salary_range.more-than-200.short
-      t: $200k+   
+      t: $200k+
 
     # company size
     - key: company_size.1.long
@@ -172,7 +172,7 @@ translations:
 
     # sections
     - key: section.javascript-flavors
-      t: JavaScript "ízek"
+      t: Nyelvek
     - key: section.front-end-frameworks
       t: Front-end keretrendszerek
     - key: section.data-layer
@@ -186,15 +186,17 @@ translations:
 
     # tools
     - key: tool.es6
-      t: ES6  
+      t: ES6
     - key: tool.es6.description
       t: |
-        Az ES6 és utódai a JavaScript új generációja, általában Babel segítségével kompilálva.
+        Az ES6 és utódai a JavaScript új generációja, általában Babel segítségével fordítva.
     - key: tool.angular
       t: Angular
     - key: tool.angular.description
       t: |
-        Az Angular egy TypeScript-en alapuló, nyílt forráskódú front-end web alkalmazás platform. Figyelem! Az idei évtől nem teszünk különbséget az Angular és Angular.js között, míg az adatok a 2016-os és 2017-es felmérésben az Angular-re (a.k.a "Angular 2") vontakoznak.
+        Az Angular egy TypeScript-en alapuló, nyílt forráskódú front-end web alkalmazás platform.
+        Figyelem! Az idei évtől nem teszünk különbséget az Angular és Angular.js között, míg az adatok
+        a 2016-os és 2017-es felmérésben az Angular-re (a.k.a "Angular 2") vontakoznak.
     - key: tool.apollo
       t: Apollo
     - key: tool.apollo.description
@@ -322,12 +324,18 @@ translations:
       t: Web Audio API
     - key: tool.web-speech-api
       t: Web Beszéd API
+    - key: tool.dart
+      t: Dart
+    - key: tool.kotlin
+      t: Kotlin
+    - key: tool.haxe
+      t: Haxe
 
     # pages
     - key: page.introduction
       t: Bemutatkozás
     - key: page.demographics
-      t: Demográfia
+      t: Társadalom
     - key: page.connections
       t: Kapcsolatok
     - key: page.section_overview
@@ -357,7 +365,7 @@ translations:
 
     # blocks
     - key: block.title.participation-by-country
-      t: Résztvett országok
+      t: Résztvevők száma országonként
     - key: block.description.participation-by-country
       t: Felmérésben résztvett országok.
     - key: block.title.salaries
@@ -379,9 +387,9 @@ translations:
     - key: block.title.gender-breakdown
       t: Nemek lebontása
     - key: block.title.source-breakdown
-      t: Források lebontása
+      t: Források szerinti megoszlás
     - key: block.description.gender-breakdown
-      t: Nemek lebontása.
+      t: Nemek szerinti megoszlás
     - key: block.title.connections
       t: Kapcsolatok technológiák között
     - key: block.description.connections
@@ -392,15 +400,15 @@ translations:
       t: |
         ${section} összesített eredménye.
     - key: block.title.results-over-time
-      t: ${tool} népszerűségének változása  
-    - key: block.description.results-over-time 
+      t: ${tool} népszerűségének változása
+    - key: block.description.results-over-time
       t: Hogyan változott a(z) ${tool} népszerűsége az idő elteltével.
     - key: block.results-over-time.empty
       t: |
         Sajnáljuk, de nem áll rendelkezésre elég adat, hogy ennek
         a könyvtárnak a népszerűségi változását meg tudjuk jeleníteni.
     - key: block.title.happiness
-      t: Összesített megelégedettség
+      t: Összesített elégedettség
     - key: block.description.happiness
       t: |
         Egy listán 1-től (nagyon nem elégedett) 5-ig (nagyon elégedett),
@@ -410,70 +418,67 @@ translations:
       t: Éves fizetés lebontása
     - key: block.description.tools-salary-range
       t: |
-        Azon fejlesztők fizetésének éves lebontása, akik "használta, használná megint"-t
-        válaszoltak egy adott opcióhoz.
-        
-        
-        Minden cella egy százalékot mutat egy bizonyos fizetési szegmensben,
-        a sötétebb szín több felhasználót jelent.
+        Azon fejlesztők éves fizetésének lebontása, akik a "használta, használná megint" választ adták
+        az egyes nyelvekhez.
+
+        Minden cella a válaszadók adott százalékát reprezentálja egy bizonyos fizetési szegmensben,
+        a sötétebb szín több embert jelent.
     - key: block.title.tools-company-size
       t: Cégméret lebontása
     - key: block.description.tools-company-size
       t: |
-        Azon fejlesztők cégméretének lebontása, akik "használta, használná megint"-t
-        válaszoltak egy adott opcióhoz.
-        
+        Azon fejlesztők cégméretének lebontása, akik a "használta, használná megint" választ adták
+        az egyes nyelvekhez.
 
-        Minden cella egy százalékot mutat egy bizonyos fizetési szegmensben,
-        a sötétebb szín több felhasználót jelent.
+        Minden cella a válaszadók adott százalékát reprezentálja egy bizonyos fizetési szegmensben,
+        a sötétebb szín több embert jelent.
     - key: block.title.tools-years-of-experience
-      t: Years Of Experience Breakdown
+      t: Tapasztalat lebontása
     - key: block.description.tools-years-of-experience
       t: |
-        Azon fejlesztők tapasztalatának években mért lebontása, akik "használta, használná megint"-t
-        válaszoltak egy adott opcióhoz.
+        Azon fejlesztők  években mért tapasztalatának lebontása, akik a "használta, használná megint" választ adták
+        az egyes nyelvekhez.
 
-
-        Minden cella egy százalékot mutat egy bizonyos fizetési szegmensben,
-        a sötétebb szín több felhasználót jelent.
-    - key: block.title.likes    
+        Minden cella a válaszadók adott százalékát reprezentálja egy bizonyos fizetési szegmensben,
+        a sötétebb szín több embert jelent.
+    - key: block.title.likes
       t: A(z) ${tool} leginkább kedvelt aspektusai
     - key: block.description.likes
       t: |
         A(z) ${tool} leginkább kedvelt aspektusai azon fejlesztők között, akik "használta, használná megint"-t válaszoltak.
-    - key: block.title.dislikes    
+    - key: block.title.dislikes
       t: A(z) ${tool} legkevésbé kedvelt aspektusai
-    - key: block.description.dislikes    
+    - key: block.description.dislikes
       t: |
         A(z) ${tool} legkevésbé kedvelt aspektusai azon fejlesztők között, akik "használta, *nem* használná megint"-t válaszoltak.
-    - key: block.title.tool-pairing    
+    - key: block.title.tool-pairing
       t: A(z) ${tool} melyik eszközökkel van együtt használva?
     - key: block.description.tool-pairing
       t: |
-        Mely könyvtárak vannak legnagyobb eséllyel együtt használva a(z) ${tool}-val/vel azon fejlesztők között, akik “használta, használta megint”-t válaszoltak. A sötétebb szín erősebb kapcsolatot feltételez.
+        Mely könyvtárak vannak legnagyobb eséllyel együtt használva a(z) ${tool}-val/vel azon fejlesztők között, akik “használta, használta megint”-t válaszoltak. A sötétebb szín erősebb kapcsolatot jelent.
     - key: block.title.tool-usage-by-country
-      t: ${tool} Használat országok szerint
+      t: ${tool} használat országok szerint
     - key: block.description.tool-usage-by-country
       t: |
         Átlagosan, a válaszadók **${percentage}%**-a használta a(z) **${tool}**-t és boldogan használná megint.
-        
-        
-        Azon országoknál, amiknél ez az arány az átlagnál magasabb vörössel, míg ahol alacsonyabb, kékkel van megjelölve (országok kevesebb mint 20 válaszadóval nem lettek feltüntetve).
+
+
+        Pirossal jelöltük azokat az átlag fölötti országokat, az alattiakat pedig kékkel. (A kevesebb mint 20 válaszadóval rendelkező nem lettek feltüntetve)
     - key: block.tool-usage-by-country.legend
       t: |
         ${tool} boldog felhasználóinak százaléka:
-    - key: block.title.other-tools    
+    - key: block.title.other-tools
       t: Egyéb könyvtárak
     - key: block.description.other-tools
       t: |
         Egyéb olyan válaszok, amiket a válaszadók adtak, említés száma szerint rangsorolva.
-    - key: block.title.quadrants   
-      t: Kvadráns diagram
+    - key: block.title.quadrants
+      t: Negyed diagram
     - key: block.description.quadrants
       t: |
-        Ez a diagram minden technológia **elégedettségi arány**át mutatja a **teljes felhasználás** tekintetében.
+        Ez a diagram minden technológia **elégedettségi arányát** mutatja a **teljes felhasználás** tekintetében.
 
-        Emellett azon technológiák, amiknek az **érdeklődési arány**a (azon jelenleg nem-használók százaléka, akiket érdekel a technológia megtanulása) 50% feletti, “tűzzel” vannak megjelölve.
+        Emellett azon technológiák, amiknek az **érdeklődési aránya** (azon kitöltők akik még nem használják, de szeretnék megtanulni) 50% feletti, tűzzel vannak megjelölve.
     - key: block.title.other_languages
       t: Egyéb nyelvek
     - key: block.description.other_languages
@@ -505,7 +510,7 @@ translations:
     - key: block.description.opinion-building_js_apps_overly_complex
       t: JavaScript alkalmazásokat jelenleg túl bonyolult készíteni.
     - key: block.title.opinion-js_over_used_online
-      t: A JavaScript túl van használva online 
+      t: A JavaScript túl van használva online
     - key: block.description.opinion-js_over_used_online
       t: A JavaScript túl van használva online .
     - key: block.title.opinion-enjoy_building_js_apps
@@ -536,22 +541,22 @@ translations:
       t: 🐞 Robosztus kód
     - key: reason.rich_package_ecosystem.long
       t: 🎁 Gazdag kiegészítő ökoszisztéma
-    - key: reason.rich_package_ecosystem.short  
+    - key: reason.rich_package_ecosystem.short
       t: 🎁 Kiegészítő ökoszisztéma
     - key: reason.fast_performance.long
       t: ⚡ Gyors teljesítmény
-    - key: reason.fast_performance.short  
+    - key: reason.fast_performance.short
       t: ⚡ Gyors teljesítmény
     - key: reason.well_established_option.long
       t: 🏛️ Jól megalapozott alternatíva
-    - key: reason.well_established_option.short  
+    - key: reason.well_established_option.short
       t: 🏛️ Jól megalapozott
     - key: reason.easy_learning_curve.long
-      t: 👶 Egyszerű tanulási ráta
+      t: 👶 Egyszerű megtanulni
     - key: reason.easy_learning_curve.short
       t: 👶 Könnyű elsajátítani
     - key: reason.powerful_developer_tooling.long
-      t: 🔧 Erőteljes fejlesztői eszközök
+      t: 🔧 Erőteljes fejlesztői eszköztár
     - key: reason.powerful_developer_tooling.short
       t: 🔧 Eszközök
     - key: reason.good_documentation.long
@@ -559,7 +564,7 @@ translations:
     - key: reason.good_documentation.short
       t: 📖 Dokmentáció
     - key: reason.backed_by_a_great_team_company.long
-      t: 👫 Nagyszerű cspat/cég támogatását élvezi
+      t: 👫 Nagyszerű csapat/cég támogatja
     - key: reason.backed_by_a_great_team_company.short
       t: 👫 Csapat/cég
     - key: reason.simple_lightweight.long
@@ -567,9 +572,9 @@ translations:
     - key: reason.simple_lightweight.short
       t: 🎈 Pehelysúlyú
     - key: reason.growing_momentum_popularity.long
-      t: 📉 Növekvő momentum/népszerűség
+      t: 📉 Növekvő lendület/népszerűség
     - key: reason.growing_momentum_popularity.short
-      t: 📉 Momentum
+      t: 📉 Lendület
     - key: reason.full_featured_powerful.long
       t: 🕹️ Teljesértékű & erőteljes
     - key: reason.full_featured_powerful.short
@@ -595,11 +600,11 @@ translations:
     - key: reason.small_package_ecosystem.short
       t: 🎁 Kevés kiegészítő
     - key: reason.new_untested_option.long
-      t: 🏛️ Új, még nem tesztelt alternatív
+      t: 🏛️ Új, még nem tesztelt alternatíva
     - key: reason.new_untested_option.short
       t: 🏛️ Új, még nem tesztelt
     - key: reason.hard_learning_curve.long
-      t: 👶 Nehéz tanulási ráta
+      t: 👶 Nehezen tanulható
     - key: reason.hard_learning_curve.short
       t: 👶 Nehéz elsajátítani
     - key: reason.lacking_developer_tooling.long
@@ -634,35 +639,35 @@ translations:
       t: Egyéb
     - key: reason.other.short
       t: Egyéb
-    
+
     # quadrant
     - key: quadrant.satisfaction_legend
       t: Elégedettség %
     - key: quadrant.users_legend
       t: Felhasználók
     - key: quadrant.assess.label
-      t: Értékel
+      t: Mérd fel
     - key: quadrant.assess.description
       t: |
-        Alacsony használtság, magas elégedettség
-        Technológiák, amiket érdemes nyomon követni.
+        Kevesen használják, de magas elégedettséggel.
+        Technológiák amiket érdemes nyomon követned.
     - key: quadrant.adopt.label
-      t: Adoptál
+      t: Használd
     - key: quadrant.adopt.description
       t: |
-        Magas használtság, magas elégedettség. Nyugodtan adoptálható technológiák.
+        Sokan használják magas elégedettséggel. Nyugodtan adoptálható technológiák.
     - key: quadrant.avoid.label
-      t: Elkerül
+      t: Kerüld el
     - key: quadrant.avoid.description
       t: |
-        Alacsony használtság, alacsony elégedettség
-        Technológiák, amiket legérdemesebb jelenleg elkerülni.
+        Kevesen használják, alacsony elégedettséggel.
+        Technológiák amiket jelenleg érdemes elkerülni.
     - key: quadrant.analyze.label
-      t: Elemez
+      t: Elemezd
     - key: quadrant.analyze.description
       t: |
-        Magas használtság, alacsony elégedettség.
-        Ha használod ezeket a technológiákat, érdemes lehet újragondolni.
+        Sokan használják, alacsony elégedettséggel.
+        Ha használod ezeket a technológiákat, érdemes lehet más alternatívákat keresned.
 
     # awards
     - key: block.title.highest_satisfaction
@@ -672,10 +677,10 @@ translations:
         Ezt a díjat a legmagasabb százalékos megelégedettséget elért könyvtár kapja.
     - key: award.highest_satisfaction.comment
       t: |
-        Azzal, hogy a felhasználók **${tools[0].percentage}%**-a újra használná, 
+        Azzal, hogy a felhasználók **${tools[0].percentage}%**-a újra használná,
         a(z) ${tools[0].label} bebizonyította, hogy nem viccel.
     - key: award.highest_satisfaction.runner_up
-      t: ${tool.label} ${tool.percentage}%  
+      t: ${tool.label} ${tool.percentage}%
     - key: block.title.highest_interest
       t: Legmagasabb érdeklődés
     - key: block.description.highest_interest
@@ -683,7 +688,7 @@ translations:
         Ezt a díjat az a technológia kapja, amit a fejlesztők legnagyobb érdeklődéssel tanulnának meg.
     - key: award.highest_interest.comment
       t: |
-        Azon fejlesztőknek a **${tools[0].percentage}%**-a aki hallott a 
+        Azon fejlesztőknek a **${tools[0].percentage}%**-a aki hallott a
         ${tools[0].label}-ról/ről, szeretné megtanulni.
         Ez elég komoly érdeklődés!
     - key: award.highest_interest.runner_up
@@ -695,7 +700,7 @@ translations:
         Ezt a díjat a legnagyobb felhasználóbázissal rendelkező technológia kapja.
     - key: award.highest_usage.comment
       t: |
-        Összesen **${tools[0].count}** felhasználóval, a(z) ${tools[0].label} 
+        Összesen **${tools[0].count}** felhasználóval, a(z) ${tools[0].label}
         lett az év leghasználtabb könyvtára.
     - key: award.highest_usage.runner_up
       t: ${tool.label} ${tool.count}
@@ -706,7 +711,7 @@ translations:
         Ezt a díjat az a könyvtár kapja, amit a legtöbben említettek "egyéb könyvtárak" címszó alatt.
     - key: award.most_mentioned.comment
       t: |
-        A(z) ${tools[0].label} **${tools[0].count}** említést gyűjtött össze, ezzel messze 
+        A(z) ${tools[0].label} **${tools[0].count}** említést gyűjtött össze, ezzel messze
         a legtöbbet szabad formában beküldött válasz lett.
     - key: award.most_mentioned.runner_up
       t: ${tool.label} ${tool.count}
