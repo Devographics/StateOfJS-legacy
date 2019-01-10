@@ -3,10 +3,10 @@ type: conclusion
 section: javascript-flavors
 locale: es-SV
 ---
- The idea that you can write your code in a language or language variant that compiles down to JavaScript may seem obvious now, but it's easy to forget how innovative it really is. 
+ La idea de que puedes escribir código en un lenguaje o una variante de lenguaje que se compila a JavaScript puede parecer obvia ahora, pero es fácil olvidar lo realmente innovador que es.
 
-For the longest time CoffeeScript was the lone proponent of that strategy, but today it's been overtaken by **ES6** and its follow-ups, **TypeScript**, **Flow**, and even languages with very different syntaxes such as **Elm** and **Reason**. 
+Por muchísimo tiempo, CoffeeScript fue la única propuesta con esta estrategia, pero hoy ha sido sobrepasado por **ES6** y sus seguidores, **TypeScript**, **Flow** e incluso lenguajes con sintaxis muy distintas como **Elm** y **Reason**.
 
-And there're good reasons to think that this is the future of JavaScript as a whole. With projects like [Web Assembly](https://webassembly.org/) arriving on the scene, writing code directly in JavaScript might soon seem quaint as developers embrace languages like **Rust** instead. 
+Y hay buenas razones para pensar que este es el futuro de JavaScript en sí. Con proyectos como [Web Assembly](https://webassembly.org/) llegando a la escena, puede que, pronto, escribir código directamente en JavaScript sea algo pintoresco, a medida que las personas adoptan lenguajes como **Rust** en su lugar.
 
-But until that time, the two big winners here are **ES6** and **TypeScript**. Keep an eye out on **Reason** as well, which has Facebook's support and boasts both very high satisfaction and interest rates.
+Pero, hasta que ese momento llegue, los dos grandes ganadores aquí son **ES6** y **TypeScript**. Estén atentos a **Reason** también, que tiene el apoyo de Facebook y ostenta proporciones de satisfacción e interés muy altas.
