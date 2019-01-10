@@ -657,32 +657,35 @@ translations:
 
   # quadrant
   - key: quadrant.satisfaction_legend
-    t: Satisfaction %
+    t: Удовлетворённость %
   - key: quadrant.users_legend
-    t: Users
+    t: Пользователи
   - key: quadrant.assess.label
-    t: Assess
+    t: Пробуй
   - key: quadrant.assess.description
     t: |
-      Low usage, high satisfaction.
-      Technologies worth keeping an eye on.
+      Низкий уровень использования, высокий уровень удовлетворённости.
+      В этом секторе находятся технологии, за которыми стоит следить.
   - key: quadrant.adopt.label
-    t: Adopt
+    t: Применяй
   - key: quadrant.adopt.description
     t: |
-      High usage, high satisfaction. Safe technologies to adopt.
+      Высокий уровень использования, высокий уровень удовлетворённости.
+      В этом секторе находятся технологии, которые можно спокойно использовать.
   - key: quadrant.avoid.label
-    t: Avoid
+    t: Избегай
   - key: quadrant.avoid.description
     t: |
-      Low usage, low satisfaction.
-      Technologies probably best avoided currently.
+      Низкий уровень использования, низкий уровень удовлетворённости.
+      В этом секторе находятся технологии, которые вероятно лучше избегать в
+      настоящий момент.
   - key: quadrant.analyze.label
-    t: Analyze
+    t: Проанализируй
   - key: quadrant.analyze.description
     t: |
-      High usage, low satisfaction.
-      Reassess these technologies if you're currently using them.
+      Высокий уровень использования, низкий уровень удовлетворённости.
+      В этом секторе находятся технологии, использование которых стоит
+      пересмотреть.
 
   # awards
   - key: block.title.highest_satisfaction
