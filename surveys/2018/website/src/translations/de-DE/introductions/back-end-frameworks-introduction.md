@@ -1,8 +1,8 @@
 ---
 type: introduction
 section: back-end-frameworks
-locale: en-US
+locale: de-DE
 ---
- JavaScript on the back-end hasn't seen any major breakthroughs in recent years. 
-But compared to the rest of the ecosystem's frenetic pace,
-many will say that this is a blessing, not a curse. 
+ JavaScript hat in den letzten Jahren im Backend-Bereich keine größeren Durchbrüche geschafft.
+Aber, aufgrund der wahnsinnigen Entwicklungsgeschwindigkeit des restlichen Ökosystems, 
+könnte Dies eher ein Segen als ein Fluch sein.
