@@ -3,5 +3,4 @@ type: introduction
 section: testing
 locale: es-SV
 ---
- Testing, testing… Is this thing on? Sorry, I Jest, but I would never want to make a Mocha-ry 
-of this section. That would be Jasmine (“just mean”? get it?), and that's bad Karma.
+ Las aplicaciones web se están volviendo cada vez más complejas, con más y más lógica implementada en el cliente. Es de vital importancia testear todo este código que escribimos y, afortunadamente, el testing es una de las áreas que más diversidad de soluciones ofrece.
