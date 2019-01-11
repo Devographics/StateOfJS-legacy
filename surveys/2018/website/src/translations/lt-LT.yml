@@ -90,138 +90,136 @@ translations:
 
     # salary ranges
     - key: salary_range.work-for-free.long
-      t: I work for free
+      t: Dirbu nemokamai
     - key: salary_range.work-for-free.short
-      t: work for free
+      t: Dirba nemokamai
     - key: salary_range.0-10.long
-      t: $0k-$10k
+      t: $0-$10000 per metus
     - key: salary_range.0-10.short
-      t: $0k-$10k
+      t: $0k-$10000
     - key: salary_range.10-30.long
-      t: $10k-$30k
+      t: $10000-$30000 per metus
     - key: salary_range.10-30.short
-      t: $10k-$30k 
+      t: $10000-$30000 
     - key: salary_range.30-50.long
-      t: $30k-$50k
+      t: $30000-$50000 per metus
     - key: salary_range.30-50.short
-      t: $30k-$50k 
+      t: $30000-$50000
     - key: salary_range.50-100.long
-      t: $50k-$100k
+      t: $50000-$100000 per metus
     - key: salary_range.50-100.short
-      t: $50k-$100k  
+      t: $50000-$100000  
     - key: salary_range.100-200.long
-      t: $100k-$200k
+      t: $100000-$200000 per metus
     - key: salary_range.100-200.short
-      t: $100k-$200k   
+      t: $100000-$200000   
     - key: salary_range.more-than-200.long
-      t: more than $200k
+      t: virš $200000 per metus
     - key: salary_range.more-than-200.short
-      t: $200k+   
+      t: $200000+   
 
     # company size
     - key: company_size.1.long
-      t: One employee
+      t: Vienas darbuotojas
     - key: company_size.1.short
-      t: one
+      t: vienas
     - key: company_size.1-5.long
-      t: 1 to 5 employees
+      t: nuo 1 iki 5 darbuotojų
     - key: company_size.1-5.short
-      t: 1~5
+      t: 1-5
     - key: company_size.5-10.long
-      t: 5 to 10 employees
+      t: nuo 5 iki 10 darbuotojų
     - key: company_size.5-10.short
-      t: 5~10
+      t: 5-10
     - key: company_size.10-20.long
-      t: 10 to 20 employees
+      t: nuo 10 iki 20 darbuotojų
     - key: company_size.10-20.short
-      t: 10~20
+      t: 10-20
     - key: company_size.20-50.long
-      t: 20 to 50 employees
+      t: nuo 20 iki 50 darbuotojų
     - key: company_size.20-50.short
-      t: 20~50
+      t: 20-50
     - key: company_size.50-100.long
-      t: 50 to 100 employees
+      t: nuo 50 iki 100 darbuotojų
     - key: company_size.50-100.short
-      t: 50~100
+      t: 50-100
     - key: company_size.100-1000.long
-      t: 100 to 1000 employees
+      t: nuo 100 iki 1000 darbuotojų
     - key: company_size.100-1000.short
-      t: 100~1000
+      t: 100-1000
     - key: company_size.more-than-1000.long
-      t: More than 1000 employees
+      t: virš 1000 darbuotojų
     - key: company_size.more-than-1000.short
       t: 1000+
 
     # years of experience
     - key: years_of_experience.less-than-1.long
-      t: Less than one year
+      t: mažiau nei metai
     - key: years_of_experience.less-than-1.short
-      t: '<1 year'
+      t: 0-1 m.
     - key: years_of_experience.1-2.long
-      t: 1 to 2 years
-    - key: years_of_experience.1-2.short
-      t: 1~2 years
-    - key: years_of_experience.2-5.long
-      t: 2 to 5 years
-    - key: years_of_experience.2-5.short
-      t: 2~5 years
-    - key: years_of_experience.5-10.long
-      t: 5 to 10 years
-    - key: years_of_experience.5-10.short
-      t: 5~10 years
-    - key: years_of_experience.10-20.long
-      t: 10 to 20 years
-    - key: years_of_experience.10-20.short
-      t: 10~20 years
-    - key: years_of_experience.more-than-20.long
-      t: More than 20 years
-    - key: years_of_experience.more-than-20.short
-      t: '>20 years'
+      t: nuo 1 iki 2 metų
+      - key: years_of_experience.1-2.short
+      t: 1~2 m.
+      - key: years_of_experience.2-5.long
+      t: nuo 2 iki 5 metų
+      - key: years_of_experience.2-5.short
+      t: 2~5 m.
+      - key: years_of_experience.5-10.long
+      t: nuo 5 iki 10 metų
+      - key: years_of_experience.5-10.short
+      t: 5~10 m.
+      - key: years_of_experience.10-20.long
+      t: nuo 10 iki 20 metų
+      - key: years_of_experience.10-20.short
+      t: 10~20 m.
+      - key: years_of_experience.more-than-20.long
+      t: virš 20 metų
+      - key: years_of_experience.more-than-20.short
+      t: 20+ m.
 
     # sections
     - key: section.javascript-flavors
-      t: JavaScript Flavors
+      t: JavaScript Įvairovė
     - key: section.front-end-frameworks
-      t: Front-end Frameworks
+      t: Front-end Framework'ai
     - key: section.data-layer
-      t: Data Layer
+      t: Duomenų sluoksniai
     - key: section.back-end-frameworks
-      t: Back-end Frameworks
+      t: Back-end Framework'ai
     - key: section.testing
-      t: Testing
+      t: Testavimas
     - key: section.mobile-and-desktop
-      t: Mobile & Desktop
+      t: Mobile ir Desktop
 
     # tools
     - key: tool.es6
       t: ES6  
     - key: tool.es6.description
       t: |
-        ES6 and its descendants are the newer versions of JavaScript, usually run through Babel.
+        ES6 ir jo palikuonys yra naujesnės "JavaScript" versijos, paprastai ledžiamos per "Babel".
     - key: tool.angular
       t: Angular
     - key: tool.angular.description
       t: |
-        Angular is a TypeScript-based open-source front-end web application platform. Note that from
-        this year on we are not be making a distinction between Angular and Angular.js anymore, while datapoints for 
-        2016 and 2017 correspond to Angular (a.k.a. "Angular 2").
+        "Angular" remiasi į "TypeScript" open-source front-end web applikacijų platformą. Verta paminėti kad nuo praeitų metų mes neskiriame "Angular ir Angular.JS", tuo metu 2016 ir 2017 m. duomenys atitinka Angular (t.y. "Angular 2").
     - key: tool.apollo
       t: Apollo
     - key: tool.apollo.description
       t: |
-        A fully-featured, production ready caching GraphQL client for every UI framework and GraphQL server.
+       Pilnas producijai paruoštas "caching GraphQL" klientas kiekvienam UI framework'ui ir "GraphQL" serveriui.
     - key: tool.native-apps
       t: Native Apps
     - key: tool.native-apps.description
       t: |
-        The majority of mobile and desktop apps are still built with native languages like Java, Kotlin, Objective-C, or Swift.
+        Dauguma mobilių ir kompiuterių aplikacijų vis dar kuriamos naudojant tokias programavimo kalbas kaip "Java", "Kotlin", "Objective-C", arba "Swift".
     - key: tool.phonegap-cordova
       t: Cordova
     - key: tool.phonegap-cordova.description
       t: |
-        Apache Cordova is a mobile application development framework.
+        Apache Cordova yra mobilių aplikacijų produkcijos framework'as.
     - key: tool.vanilla-js
-      t: Vanilla JS
+      t: Paprastasis JS
     - key: tool.extjs
       t: Ext JS
     - key: tool.web-assembly
@@ -263,7 +261,7 @@ translations:
     - key: tool.flutter
       t: Flutter
     - key: tool.pwa
-      t: Progressive Web Apps
+      t: PWA
     - key: tool.weex
       t: weex
     - key: tool.xamarin
@@ -341,17 +339,17 @@ translations:
 
     # pages
     - key: page.introduction
-      t: Introduction
+      t: Įvadas
     - key: page.demographics
-      t: Demographics
+      t: Demografija
     - key: page.connections
-      t: Connections
+      t: Ryšys
     - key: page.section_overview
-      t: ${section} - Overview
+      t: ${section} - Apžvalga
     - key: page.section_tool
       t: ${section} - ${tool}
     - key: page.section_overview.short
-      t: Overview
+      t: Apžvalga
     - key: page.section_other_tools
       t: ${section} – Other Libraries
     - key: page.section_other_tools.short
