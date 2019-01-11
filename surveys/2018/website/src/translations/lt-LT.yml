@@ -26,67 +26,67 @@ translations:
     - key: percents_display_mode
       t: Procentai
     - key: counts_display_mode
-      t: Counts
+      t: Kiekis
     - key: awards_runner_ups
-      t: Runner-Ups
+      t: Sekantys
     - key: tool_homepage
-      t: Homepage
+      t: Naminis puslapis
     - key: from_to_short
-      t: ${from} to ${to}
+      t: ${from} iki ${to}
     - key: users_count
-      t: ${count} users
+      t: ${count} vartotojų
     - key: percentage_of_respondents
-      t: ${percentage} of respondents
+      t: ${percentage} atsakiusių
     - key: partners.premium_partners
-      t: Our 2018 Premium Partners
+      t: Mūsų 2018 Premium Partneriai
     - key: partners.become_partner
-      t: Become a partner
+      t: Tapk partneriu
     - key: partners.thanks
       t: |
-        Thanks to our partners for supporting this project.
-        <a href="/support">Learn more</a> about supporting The State of JS.
+        Dėkojame mūsų partneriams už projekto palaikymą.
+        <a href="/support">Learn more</a> apie "The State of JS" projekto palaikymą.
     - key: stay_tuned
-      t: Stay Tuned
+      t: Prenumeruoti
     - key: leave_your_email
-      t: "If you'd like to know when we release additional results or announce next year's edition, just leave us your email below:"
+      t: "Jei norite gauti naujienas apie naujus rezultatus arba sekančių metų apklausos paskelbimą, palikite savo el. paštą:"
     - key: your_email
-      t: Your Email
+      t: Jūsų el. paštas
     - key: notify_me
-      t: Notify Me
+      t: Patvirtinti
 
     # opinions
     - key: opinions.legends.never_heard
-      t: I've never heard of it
+      t: Niekada negirdėjęs (-usi)
     - key: opinions.legends_short.never_heard
-      t: Never heard of it  
+      t: Niekada negirdėjo  
     - key: opinions.legends.not_interested
-      t: I've HEARD of it, and am NOT interested
+      t: Girdėjau, bet nesu suinteresuotas (-a) 
     - key: opinions.legends_short.not_interested
-      t: Heard of it, not interested
+      t: Girdėjo, nedomina 
     - key: opinions.legends.interested
-      t: I've HEARD of it, and WOULD like to learn it
+      t: Girdėjau ir norėčiau išmokt
     - key: opinions.legends_short.interested
-      t: Heard of it, would like to learn
+      t: Girdėjau, norėčiau išmokt
     - key: opinions.legends.would_use  
-      t: I've USED it before, and WOULD use it again
+      t: Naudojau ir naudočiau vėl
     - key: opinions.legends_short.would_use  
-      t: Used it, would use again
+      t: Naudojo, naudotų vėl
     - key: opinions.legends.would_not_use  
-      t: I've USED it before, and would NOT use it again
+      t: Naudojau, tačiau nenaudočiau vėl
     - key: opinions.legends_short.would_not_use  
-      t: Used it, would not use again
+      t: Naudojo, bet nenaudotų vėl
 
     # generic opinions
     - key: opinion_scale.0
-      t: Strongly Disagree
+      t: Visiškai nesutinka
     - key: opinion_scale.1
-      t: Disagree
+      t: Nesutinka
     - key: opinion_scale.2
-      t: Neutral
+      t: Neturi nuomonės
     - key: opinion_scale.3
-      t: Agree
+      t: Sutinka
     - key: opinion_scale.4
-      t: Strongly Agree
+      t: Visiškai sutinka
 
     # salary ranges
     - key: salary_range.work-for-free.long
