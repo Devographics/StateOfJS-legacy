@@ -351,117 +351,116 @@ translations:
     - key: page.section_overview.short
       t: Apžvalga
     - key: page.section_other_tools
-      t: ${section} – Other Libraries
+      t: ${section} – Kitos bibliotekos
     - key: page.section_other_tools.short
-      t: Other Libraries
+      t: Kitos bibliotekos
     - key: page.section_conclusion
-      t: ${section} - Conclusion
+      t: ${section} - Išvados
     - key: page.section_conclusion.short
-      t: Conclusion
+      t: Išvados
     - key: page.other-tools
-      t: Other Tools
+      t: Kitos priemonės
     - key: page.opinions
-      t: Opinions
+      t: Nuomonės
     - key: page.awards
-      t: Awards 🏆
+      t: Apdovanijimai 🏆
     - key: page.conclusion
-      t: Conclusion
+      t: Išvados
     - key: page.support
-      t: Support Us
+      t: Palaikykite mus
 
     # blocks
     - key: block.title.participation-by-country
-      t: Participation by Country
+      t: Dalyvavimas pagal šalį
     - key: block.description.participation-by-country
-      t: Survey participants by Country.
+      t: Dalyviai pagal šalį.
     - key: block.title.salaries
-      t: Salaries
+      t: Metinės pajamos
     - key: block.description.salaries
-      t: Salary range breakdown.
+      t: Išsamiau apie metines pajamas.
     - key: block.title.salary-per-country
-      t: Average Salary per Country
+      t: Vidutinės pajamos pagal šalį
     - key: block.description.salary-per-country
-      t: Average Salary per Country.
+      t: Vidutinės pajamos pagal šalį.
     - key: block.title.years-of-experience
-      t: Years of Experience
+      t: Patirtis
     - key: block.description.years-of-experience
-      t: Years of experience breakdown.
+      t: Išsamiau apie patirtis.
     - key: block.title.company-size
-      t: Company Size
+      t: Kompanijos dydis
     - key: block.description.company-size
-      t: Company size breakdown.
+      t: Apie kompanijos dydį.
     - key: block.title.gender-breakdown
-      t: Gender Breakdown
+      t: Lytys
     - key: block.title.source-breakdown
-      t: Source Breakdown
+      t: Šaltiniai
     - key: block.description.gender-breakdown
-      t: Gender breakdown.
+      t: Lytys.
     - key: block.title.connections
-      t: Connections Between Technologies
+      t: Ryšys tarp technologijų
     - key: block.description.connections
-      t: Connections between all libraries & technologies.
+      t: Ryšys tarp visų technologijų.
     - key: block.title.overview
-      t: Overall Results
+      t: Rezultatai
     - key: block.description.overview
       t: |
-        Overall ${section} results.
+        '${section}' rezultatai.
     - key: block.title.results-over-time
-      t: ${tool}'s Popularity Over Time  
+      t: ${tool} populiarumas pagal laiką  
     - key: block.description.results-over-time 
-      t: ${tool}'s popularity evolution over time.
+      t: ${tool} populiarumo pokytis pagal laiką
     - key: block.results-over-time.empty
       t: |
-        Sorry, we don't have enough data to display
-        the evolution of this library's popularity over time. 
+        Dėja, neturime pakankamai duomenų parodyti populiarumo pokytį. 
     - key: block.title.happiness
-      t: Overall Happiness
+      t: Malonumas
     - key: block.description.happiness
       t: |
-        On a scale of one (very unhappy) to five (very happy), how happy are developers
-        with the current overall state of this category?
+        Įvertinimas, rodantis programuotojų patenkinimą naudojantis technologija šiuo metu (1 - labai nepatenkina, 5 - labai patenkina)
     - key: block.title.tools-salary-range
-      t: Salary Breakdown
+      t: Išsamiau apie pajamas
     - key: block.description.tools-salary-range
       t: |
-        Salary breakdown for developers who picked “used it, would use again” for a given option. 
+        Išsamiau apie programuotojų, pasirinkusių “Naudojau ir naudočiau vėl” pajamas. 
         
         
-        Each cell shows the percentage of users in a given salary range,
-        darker means higher usage.
+        Kiekviena skiltis parodo vartotojų dalį kiekviename pajamų diapazone.
+        Tamsesnė spalva atitinka dažnesnį naudojamą.
     - key: block.title.tools-company-size
-      t: Company Size Breakdown
+      t: Išsamiau apie kompanijos dydį
     - key: block.description.tools-company-size
       t: |
-        Company size breakdown for developers who picked “used it, would use again” for a given option.  
+        Išsamiau apie kompanijas, kuriose dirba pasirinkę “Naudojau ir naudočiau vėl” programuotojai.  
         
 
-        Each cell shows the percentage of users in a given company size range,
-        darker means higher usage.
+        Kiekviena skiltis parodo vartotojų dalį kiekviename dydžio diapazone.
+        Tamsesnė spalva atitinka dažnesnį naudojamą.
     - key: block.title.tools-years-of-experience
       t: Years Of Experience Breakdown
     - key: block.description.tools-years-of-experience
       t: |
-        Years of experience breakdown for developers who picked “used it, would use again” for a given option. 
+        
+       Išsamiau apie programuotojų, pasirinkusių “Naudojau ir naudočiau vėl” patirtį metais. 
 
 
-        Each cell shows the percentage of users in a given years of experience range,
-        darker means higher usage.
+        Kiekviena skiltis parodo vartotojų dalį kiekviename patirties diapazone.
+        Tamsesnė spalva atitinka dažnesnį naudojamą.
     - key: block.title.likes    
-      t: Most Liked Aspects of ${tool}
+      t: Labiausiai patinkantys ${tool} aspektai
     - key: block.description.likes
       t: |
-        Most liked aspects of ${tool} among developers who picked “used it and would use again”.
+        Labiausiai patinkantys ${tool} aspektai programuotojams, pasirinkusiems “Naudojau ir naudočiau vėl”
     - key: block.title.dislikes    
-      t: Most Disliked Aspects of ${tool}   
+      t: Mažiausiai patinkantys ${tool} aspektai   
     - key: block.description.dislikes    
       t: |
-        Most disliked aspects of ${tool} among developers who picked “used it and would *not* use again”.
+        Mažiausiai patinkantys ${tool} aspektai programuotojams, pasirinkusiems “Naudojau ir naudočiau vėl”
     - key: block.title.tool-pairing    
-      t: Which Tools Are Used Alongside ${tool}?
+      t: Kokios priemonės naudojamos kartu su ${tool}?
     - key: block.description.tool-pairing
       t: |
-        Libraries most likely to be used by developers who picked “used it and would use again” for ${tool}. 
-        Darker color means a stronger correlation.
+        Bibliotekos, kurios turi didžiausią tikimybę būti naudojamos kartu su ${tool} tarp programuotojų, pasirinkusių “Naudojau ir naudočiau vėl”.
+        Tamsesnė spalva atitinka didžiausią tikimybę.
     - key: block.title.tool-usage-by-country
       t: ${tool} Usage by Country    
     - key: block.description.tool-usage-by-country
