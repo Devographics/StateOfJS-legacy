@@ -1,10 +1,10 @@
 ---
 type: introduction
 section: connections
-locale: en-US
+locale: de-DE
 ---
-How many *React* users also use *Redux*? Do *GraphQL* fans prefer *Jest*? 
-Are *Express* developers also into *Ember*?
+Wieviele *React*-Benutzer verwenden ebenfalls *Redux*? Bevorzugen *GraphQL*-Fans *Jest*?
+Arbeiten *Express*-Entwickler auch mit *Ember*?
 
-The size of each section corresponds to the number of respondents who have used each library
-and would be willing to use it again.
+Die Größe jedes Abschnitts steht für die Anzahl an Teilnehmern die die jeweiligen Libraries genutzt haben
+und dies auch wieder tun würden.
