@@ -1,8 +1,7 @@
 ---
 type: introduction
 section: data-layer
-locale: en-US
+locale: de-DE
 ---
- The data layer regroups all the technologies used to transmit and manage data. 
-It's a vast category where many approaches compete to make a tricky problem more
-approachable.
+ Die Datenansicht fasst alle Technologien zusammen, die zum Übertragen und Verwalten von Daten verwendet werden.
+Eine riesige Kategorie, bei der viele Ansätze darum konkurrieren ein schwieriges Problem zu vereinfachen.
