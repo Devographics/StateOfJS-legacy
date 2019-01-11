@@ -255,7 +255,7 @@ translations:
     - key: tool.flutter
       t: Flutter
     - key: tool.pwa
-      t: Progresszív Web Alkalmazás
+      t: PWA
     - key: tool.weex
       t: weex
     - key: tool.xamarin
@@ -674,7 +674,7 @@ translations:
       t: Legmagasabb elégedettség
     - key: block.description.highest_satisfaction
       t: |
-        Ezt a díjat a legmagasabb százalékos megelégedettséget elért könyvtár kapja.
+        Ezt a díjat a legmagasabb százalékos elégedettséget elért könyvtár kapja.
     - key: award.highest_satisfaction.comment
       t: |
         Azzal, hogy a felhasználók **${tools[0].percentage}%**-a újra használná,
@@ -685,7 +685,7 @@ translations:
       t: Legmagasabb érdeklődés
     - key: block.description.highest_interest
       t: |
-        Ezt a díjat az a technológia kapja, amit a fejlesztők legnagyobb érdeklődéssel tanulnának meg.
+        Ezt a díjat az a technológia kapja, amit a fejlesztők leginkább szeretnének megtanulni.
     - key: award.highest_interest.comment
       t: |
         Azon fejlesztőknek a **${tools[0].percentage}%**-a aki hallott a
