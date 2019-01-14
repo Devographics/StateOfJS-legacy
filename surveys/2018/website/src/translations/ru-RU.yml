@@ -688,69 +688,67 @@ translations:
 
   # awards
   - key: block.title.highest_satisfaction
-    t: Highest Satisfaction
+    t: Самый высокий уровень удовлетворённости
   - key: block.description.highest_satisfaction
     t: |
-      Awarded to the library with the highest percentage of satisfied users.
+      Награда присуждается библиотеке с наибольшим процентом удовлетворённых пользователей.
   - key: award.highest_satisfaction.comment
     t: |
-      With **${tools[0].percentage}%** of users willing to use it again,
-      ${tools[0].label} proves it’s not kidding around.
+      **${tools[0].percentage}%** пользователей хотят использовать библиотеку снова.
+      Таким образом ${tools[0].label} доказывает, что это не шутка.
   - key: award.highest_satisfaction.runner_up
     t: ${tool.label} ${tool.percentage}%
   - key: block.title.highest_interest
-    t: Highest Interest
+    t: Самая высокая заинтересованность
   - key: block.description.highest_interest
     t: |
-      Awarded to the technology developers are most interested in learning.
+      Награда присуждается технологии с наибольшим процентом разработчиков, желающих её изучить.
   - key: award.highest_interest.comment
     t: |
-      **${tools[0].percentage}%** of developers who have heard about
-      ${tools[0].label} want to learn it.
-      That’s some serious interest!
+      **${tools[0].percentage}%** разработчиков слышали и хотели бы изучить ${tools[0].label}.
+      Это серьёзный уровень заинтересованности!
   - key: award.highest_interest.runner_up
     t: ${tool.label} ${tool.percentage}%
   - key: block.title.highest_usage
-    t: Most Used
+    t: Наиболее используемая технология
   - key: block.description.highest_usage
     t: |
-      Awarded to technology with the largest user base.
+      Награда присуждается технологии, обладающей самой большой базой пользователей.
   - key: award.highest_usage.comment
     t: |
-      With **${tools[0].count}** users ${tools[0].label}
-      is the most used library this year.
+      ${tools[0].label} становиться победителем в данной номинации - **${tools[0].count}** пользователей.
   - key: award.highest_usage.runner_up
     t: ${tool.label} ${tool.count}
   - key: block.title.most_mentioned
-    t: Most Mentioned
+    t: Самая упоминаемая библиотека
   - key: block.description.most_mentioned
     t: |
-      Awarded to the library mentioned the most in the “other libraries” answer.
+      Награда присуждается библиотеке с наибольшим количеством упоминаний при ответе на вопрос "другие инструменты".
   - key: award.most_mentioned.comment
     t: |
-      ${tools[0].label} collected **${tools[0].count}** mentions,
-      making it the most submitted freeform answer by far.
+      Библиотека ${tools[0].label} была упомянута **${tools[0].count}** раз,
+      что сделало её победителем.
   - key: award.most_mentioned.runner_up
     t: ${tool.label} ${tool.count}
   - key: block.title.prediction
-    t: Prediction Award
+    t: Самая перспективная технология
   - key: block.description.prediction
     t: |
-      Awarded to an up-and-coming technology that might take over… or not?
+      Награда присуждается перспективной технологии, которая может стать лидером... а может и нет?
   - key: award.prediction.comment
     t: |
-      The Facebook team is two for two with React and GraphQL.
-      Will Reason follow the same path?
+      Команад Facebook лидирует в двух направлениях из двух с React и GraphQL.
+      Ждёт ли Reason аналогичный успех?
   - key: award.prediction.runner_up
     t: ${tool.label}
   - key: block.title.special
-    t: Special Award
+    t: Специальная награда
   - key: block.description.special
     t: |
-      Awarded to a technology that we just fell in love with this year.
+      Присуждается технологии, в которую мы просто влюбились в этом году.
   - key: award.special.comment
     t: |
-      ${tools[0].label} has become the leading JavaScript text editor, and we can definitely see why!
+      ${tools[0].label} стал ведущим текстовым редактором JavaScript, и мы определенно видим почему!
   - key: award.special.runner_up
     t: ${tool.label}
 
