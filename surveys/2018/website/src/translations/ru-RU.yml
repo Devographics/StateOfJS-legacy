@@ -754,16 +754,16 @@ translations:
 
   # sharing
   - key: share.site.title
-    t: Discover the StateOf JavaScript 2018 results
+    t: Резульаты опроса StateOf JavaScript 2018
   - key: share.site.twitter_text
-    t: 'Discover the State Of JavaScript 2018 results ${link} #StateOfJS'
+    t: 'Результаты опроса State Of JavaScript 2018 ${link} #StateOfJS'
   - key: share.site.subject
-    t: State Of JavaScript Survey Results
+    t: Результаты опроса State Of JavaScript
   - key: share.site.body
-    t: 'Here are some interesting JavaScript survey results: ${link}'
+    t: 'Интересные результаты JavaScript опроса: ${link}'
   - key: share.block.twitter_text
     t: '#StateOfJS 2018: ${title} ${link}'
   - key: share.block.subject
-    t: State Of JavaScript Survey Results
+    t: Результаты опроса State Of JavaScript
   - key: share.block.body
-    t: 'Here are some interesting JavaScript survey results (${title}): ${link}'
+    t: 'Интересные результаты JavaScript опроса (${title}): ${link}'
