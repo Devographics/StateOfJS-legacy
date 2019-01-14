@@ -8,7 +8,7 @@ translations:
     - key: average
       t: Vidurkis  
     - key: conclusion  
-      t: Išvada
+      t: Išvados
     - key: tools_salary_range_average
       t: Vidutinės pajamos
     - key: tools_company_size_average
@@ -449,67 +449,68 @@ translations:
       t: Labiausiai patinkantys ${tool} aspektai
     - key: block.description.likes
       t: |
-        Labiausiai patinkantys ${tool} aspektai programuotojams, pasirinkusiems “Naudojau ir naudočiau vėl”
+        Labiausiai patinkantys ${tool} aspektai programuotojams, pasirinkusiems “Naudojau
+        ir naudočiau vėl”
     - key: block.title.dislikes    
       t: Mažiausiai patinkantys ${tool} aspektai   
     - key: block.description.dislikes    
       t: |
-        Mažiausiai patinkantys ${tool} aspektai programuotojams, pasirinkusiems “Naudojau ir naudočiau vėl”
+        Mažiausiai patinkantys ${tool} aspektai programuotojams, pasirinkusiems “Naudojau 
+        ir naudočiau vėl”
     - key: block.title.tool-pairing    
       t: Kokios priemonės naudojamos kartu su ${tool}?
     - key: block.description.tool-pairing
       t: |
-        Bibliotekos, kurios turi didžiausią tikimybę būti naudojamos kartu su ${tool} tarp programuotojų, pasirinkusių “Naudojau ir naudočiau vėl”.
+        Bibliotekos, kurios turi didžiausią tikimybę būti naudojamos kartu su ${tool}
+        tarp programuotojų, pasirinkusių “Naudojau ir naudočiau vėl”.
         Tamsesnė spalva atitinka didžiausią tikimybę.
     - key: block.title.tool-usage-by-country
       t: ${tool} Usage by Country    
     - key: block.description.tool-usage-by-country
       t: |
-        On average, **${percentage}%** of respondents have used **${tool}** and 
-        would be happy to use it again.
+        Vidutiniškai **${percentage}%** atsakiusių naudojo **${tool}** ir mielai naudotų 
+        vėl.
         
         
-        Countries where this ratio is higher are shown in red, those where it's lower
-        are displayed in blue (countries with fewer than 20 total survey respondents are
-        omitted).
+        Šalys, kur santykis yra aukštesnis, pažymėtos raudonai, tuo metu mėlynai pažymėtos 
+        šalys su žemiausiu santykiu (šalys, kuriose mažiau nei 20 atsakiusių nepažymėtos).
     - key: block.tool-usage-by-country.legend
       t: |
-        Percentage of
-        happy ${tool} users:
+        Patenkitų ${tool} naudotojų procentas
     - key: block.title.other-tools    
-      t: Other Libraries
+      t: Kitos bibliotekos
     - key: block.description.other-tools
       t: |
-        Other answers mentioned by survey respondents, ranked by mention count.
+        Kiti atsakymai, rykiuoti pagal atsakiusių kiekį.
     - key: block.title.quadrants   
-      t: Quadrant Chart
+      t: Diagrama
     - key: block.description.quadrants
       t: |
-        This chart shows each technology’s **satisfaction ratio** over its **total usage**.
+        Ši diagrama parodo kiekvienos technologijos **naudotojų patenkinimo** ir **naudojimo** santykį.
+        
 
-
-        Additionally, technologies that have an **interest ratio** 
-        (percentage of non-users interested in learning it) over 50% are displayed as “on fire”.
+        Prie to, technologijos turinčios **suinteresuotumo santykį** 
+        (procentas nenaudojusių, bet norinčių išmokti) virš 50% yra pažymėtos kaip “on fire”.
     - key: block.title.other_languages
-      t: Other Languages
+      t: kitos kalbos
     - key: block.description.other_languages
-      t: Other languages, ranked by mention count.
+      t: kitos kalbos, rykiuotos pagal kiek kartų minėta.
     - key: block.title.browser_apis
       t: Browser APIs
     - key: block.description.browser_apis
-      t: Browser APIs, ranked by mention count.
+      t: Naršyklių API, rykiuotos pagal kiek kartų minėta.
     - key: block.title.build_tools
-      t: Build Tools
+      t: Konstravimo priemonės
     - key: block.description.build_tools
-      t: Build tools, ranked by mention count.
+      t: Konstravimo priemonės, rykiuotos pagal kiek kartų minėta.
     - key: block.title.utility_libraries
       t: Utility Libraries
     - key: block.description.utility_libraries
-      t: Utility libraries, ranked by mention count.
+      t: Utility libraries, rykiuotos pagal kiek kartų minėta.
     - key: block.title.text_editors
       t: Text Editors
     - key: block.description.text_editors
-      t: Text editors, ranked by mention count.
+      t: Text editors, rykiuotos pagal kiek kartų minėta.
     - key: block.title.recommended_resources
       t: Recommended Resources
     - key: block.title.opinion-js_moving_in_right_direction
