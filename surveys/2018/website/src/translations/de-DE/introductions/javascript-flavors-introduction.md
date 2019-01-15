@@ -1,8 +1,8 @@
 ---
 type: introduction
 section: javascript-flavors
-locale: en-US
+locale: de-DE
 ---
- As JavaScript matures, developers are starting to look
-beyond its borders and create various languages and dialects that
-compile to JavaScript.
+Während JavaScript erwachsen wird, schauen Entwickler über den Tellerand
+hinaus und schaffen verschiedene Sprachen und Dialekte, welche
+zu JavaScript kompiliert werden.
