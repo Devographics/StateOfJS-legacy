@@ -1,5 +1,5 @@
 .logo{
-  img{
+  img, svg{
     display: block;
     width: 100%;
   }
@@ -22,3 +22,170 @@
   grid-template-columns: 1fr 1fr;
   column-gap: $spacing;
 }
+
+
+// $steps: 4;
+// $duration: 500ms;
+// $wait: 2000ms;
+// $animationRatio: $duration/($duration + $wait);
+
+// @mixin blink{
+//   @keyframes blink {
+//     0% {
+//       stroke-width:10;
+//     }
+//     #{100 * $animationRatio}% {
+//       stroke-width:2;
+//     }
+//     100% {
+//       stroke-width:2;
+//     }
+//   }
+// }
+
+// // @keyframes blink {
+// //   0% {
+// //     stroke-width:10;
+// //   }
+// //   25% {
+// //     stroke-width:2;
+// //   }
+// // }
+
+// @include blink;
+
+// @mixin stepDelay($step) {
+//   animation-delay: #{$duration/$steps * ($step - 1)};
+// }
+// .illustration{
+//   .circle{
+//     animation-duration: $duration + $wait;
+//     animation-iteration-count: infinite;
+//     animation-timing-function: steps(1);
+//   }
+//   .circle{
+//     // animation-name: blink;
+//   }
+//   #hl1{  
+//    @include stepDelay(3);
+//   }
+//   #hl2{
+//     @include stepDelay(1);
+//   }
+//   #hl3{
+//     @include stepDelay(3);
+//   }
+//   #c1a, #c2a, #c3a{
+//     @include stepDelay(1);
+//   }
+//   #c1b, #c2b, #c3b{
+//     @include stepDelay(2);
+//   }
+//   #c1c, #c2c, #c3c{
+//     @include stepDelay(3);
+//   }
+//   #c1d, #c2d, #c3d{
+//     @include stepDelay(4);
+//   }
+//   // #vl5{
+//   //   @include stepDelay(1);
+//   // }
+//   // #vl4, #vl6{
+//   //   @include stepDelay(1);
+//   // }
+//   // #vl3, #vl7{
+//   //   @include stepDelay(2);
+//   // }
+
+//   // #vl2, #vl8{
+//   //   @include stepDelay(3);
+//   // }
+//   // #vl1, #vl9{
+//   //   @include stepDelay(4);
+//   // }
+
+// }
+
+// delay to wait in between animation cycles
+$wait: 4s;
+
+@mixin blinkFrames($prefix, $count, $duration, $delay) {
+  $animationRatio: $duration/($duration + $wait);
+  $steps: $count * 2 - 1;
+  $stepDuration: $duration/$steps;
+
+  @for $i from 1 to ($count+1) {
+    $itemName: "#{$prefix}#{$i}";
+    $itemId: "##{$prefix}#{$i}";
+    $firstOccurence: $i;
+    $secondOccurence: $steps - $i + 1;
+    $firstOccurencePercent: 100 * $firstOccurence/$steps;
+    $secondOccurencePercent: 100 * $secondOccurence/$steps;
+    $stepDurationPercent: 100/$steps;
+    @warn "----------------------";
+    @warn "$itemName: #{$itemName}";
+    @warn "$itemId: #{$itemId}";
+    @warn "$i: #{$i}";
+    @warn "$firstOccurence: #{$firstOccurence}";
+    @warn "$secondOccurence: #{$secondOccurence}";
+    @warn "$firstOccurencePercent: #{$firstOccurencePercent}";
+    @warn "$secondOccurencePercent: #{$secondOccurencePercent}";
+    @warn "$stepDurationPercent: #{$stepDurationPercent}";
+    @keyframes #{$itemName} {
+      0% {
+        stroke-width:2;
+      }
+      #{$firstOccurencePercent * $animationRatio}% {
+        stroke-width:10;
+      }
+      #{($firstOccurencePercent + $stepDurationPercent) * $animationRatio}% {
+        stroke-width:2;
+      }
+      // last line does not have a second occurence
+      @if $i != $count {
+        #{$secondOccurencePercent * $animationRatio}% {
+          stroke-width:10;
+        }
+        #{($secondOccurencePercent + $stepDurationPercent) * $animationRatio}% {
+          stroke-width:2;
+        }
+      }
+      100%{
+        stroke-width:2;
+      }
+    }
+    #{$itemId}{
+      animation-duration: $duration + $wait;
+      animation-iteration-count: infinite;
+      animation-timing-function: steps(1);
+      animation-name: $itemName;
+      animation-delay: $delay;
+    }
+  }
+}
+
+@include blinkFrames("c", 4, 600ms, 500ms);
+@include blinkFrames("s", 4, 600ms, 1000ms);
+@include blinkFrames("ss", 4, 600ms, 1500ms);
+@include blinkFrames("vl", 9, 1s, 2000ms);
+@include blinkFrames("hl", 3, 900ms, 3000ms);
+// @include blinkFrames("d", 6, 900ms, 4000ms);
+
+// // handle last vertical line separately
+// @keyframes vl#{$vlCount} {
+//   0%{
+
+//   }
+//   #{}% {
+
+//   }
+//   #{}% {
+
+//   }
+//   100% {
+
+//   }
+// }
+// #vl#{$vlCount}{
+    
+// }
