@@ -39,3 +39,4 @@ rules:
   react/prop-types: [0]
   import/no-unresolved: [0]
   global-require: [0]
+  no-unused-vars: ["warn"]

@@ -8,9 +8,6 @@
 .home-logo{
   @include flex-center;
   flex-direction: column;
-  .logo{
-    transform: scale(2.2);
-  }
 }
 
 .home-content{
