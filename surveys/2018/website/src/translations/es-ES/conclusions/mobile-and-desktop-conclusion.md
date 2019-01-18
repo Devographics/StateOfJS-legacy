@@ -1,7 +1,7 @@
 ---
 type: conclusion
 section: mobile-and-desktop
-locale: es-SV
+locale: es-ES
 ---
  Esta categoría muestra claramente cómo JavaScript ha expandido su "alcance" más allá de los confines del navegador.
 

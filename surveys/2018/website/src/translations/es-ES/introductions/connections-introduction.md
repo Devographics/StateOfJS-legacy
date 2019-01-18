@@ -1,7 +1,7 @@
 ---
 type: introduction
 section: connections
-locale: es-SV
+locale: es-ES
 ---
 ¿Cuántos usuarios de *React* también usan *Redux*? ¿Personas aficionadas a *GraphQL* prefieren *Jest*?
 ¿Hay usuarios de *Express* también con interés por *Ember*?

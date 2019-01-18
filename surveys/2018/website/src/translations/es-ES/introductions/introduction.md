@@ -1,7 +1,7 @@
 ---
 type: introduction
 section: introduction
-locale: es-SV
+locale: es-ES
 ---
  
 <span class="first-line"><span class="first-letter">JavaScript</span> cambia todo el tiempo.</span> Nuevas librerías, nuevos frameworks, nuevos lenguajes… Es parte de la diversión, pero también puede parecer un poco abrumador.

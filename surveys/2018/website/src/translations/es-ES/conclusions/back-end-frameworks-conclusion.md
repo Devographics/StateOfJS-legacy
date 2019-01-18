@@ -1,7 +1,7 @@
 ---
 type: conclusion
 section: back-end-frameworks
-locale: es-SV
+locale: es-ES
 ---
  JavaScript en el servidor está en una situación extraña. Aunque cada año surgen innumerables frameworks, muy pocos logran ganar el impulso suficiente para desafiar a **Express**. Incluso **Koa**, a veces considerado como el sucesor de Express, tiene un índice de satisfacción bajo (y números de uso mucho más bajos).
 

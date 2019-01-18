@@ -1,7 +1,7 @@
 ---
 type: conclusion
 section: data-layer
-locale: es-SV
+locale: es-ES
 ---
  En los días de antaño, las cosas eran simples. Tus datos vivían en tu base de datos, donde el servidor podía obtenerlas, pasarlas a una plantilla, y enviar todo al cliente. 
 

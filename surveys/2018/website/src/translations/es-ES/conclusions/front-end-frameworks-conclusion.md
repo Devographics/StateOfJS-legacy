@@ -1,7 +1,7 @@
 ---
 type: conclusion
 section: front-end-frameworks
-locale: es-SV
+locale: es-ES
 ---
 Una vez más, el espacio del front-end es de **React** y **Vue.js**. Vale la pena ahondar en particular en la historia de Vue: dos años atrás, un 27% de las personas encuestadas ńunca había oído hablar de la librería. Hoy, esa fracción se ha reducido ¡a sólo un 1.3%! Así que mientras React todavía tiene una gran cuota de mercado, el ascenso meteórico de Vue sin lugar a dudas no muestra señales de detenerse. De hecho, Vue ya ha sobrepasado a su rival por ciertas métricas como cantidad de estrellas en GitHub.
 

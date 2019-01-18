@@ -1,7 +1,7 @@
 ---
 type: conclusion
 section: testing
-locale: es-SV
+locale: es-ES
 ---
  El mundo del testing es un poco raro: mientras todos los demás componentes del ecosistema de JavaScript se han ido consolidando sobre algunas pocas soluciones dominantes, en testing todavía hay mucha fragmentación: muchas herramientas diversas y complementarias comparten el pastel. Aun así, las personas están en general satisfechas con sus soluciones de testing, siendo 68% el porcentaje de satisfacción más bajo.
 

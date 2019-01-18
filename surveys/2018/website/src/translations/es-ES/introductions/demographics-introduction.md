@@ -1,7 +1,7 @@
 ---
 type: introduction
 section: demographics
-locale: es-SV
+locale: es-ES
 ---
 
 Este año alcanzamos a 20.268 personas en 153 países diferentes. Mientras que **Estados Unidos** tiene, esperablemente, la mayor proporción de personas participando (alcanzando un 24%), **Alemania** y **Australia** también se encuentran bien representados, con más del 5% de personas encuestadas cada uno.

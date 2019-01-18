@@ -1,7 +1,7 @@
 ---
 type: conclusion
 section: conclusion
-locale: es-SV
+locale: es-ES
 ---
  Con todo lo dicho y hecho, parece que 2018 fue en general una continuación de las tendencias que ya habíamos notado durante [el año pasado](http://2017.stateofjs.com).
 

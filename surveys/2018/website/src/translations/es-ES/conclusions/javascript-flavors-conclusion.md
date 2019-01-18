@@ -1,7 +1,7 @@
 ---
 type: conclusion
 section: javascript-flavors
-locale: es-SV
+locale: es-ES
 ---
  La idea de que puedes escribir código en un lenguaje o una variante de lenguaje que se compila a JavaScript puede parecer obvia ahora, pero es fácil olvidar lo realmente innovador que es.
 

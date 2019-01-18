@@ -1,7 +1,7 @@
 ---
 type: introduction
 section: other-tools
-locale: es-SV
+locale: es-ES
 ---
  El ecosistema de JavaScript no está sólo limitado a librerías y frameworks. Existen también todas estas pequeñas utilidades que usamos a diario, incluyendo bundlers para empaquetar nuestro código y editores de texto para escribir nuestrso código.
 
