@@ -12,6 +12,7 @@ import OpinionsLegends from 'core/charts/OpinionsLegends'
 import PeriodicElement from 'core/components/PeriodicElement'
 import ChartContainer from 'core/charts/ChartContainer'
 import Trans from 'core/i18n/Trans'
+import { PageContextConsumer } from '../../../core/pages/pageContext'
 
 const patterns = [
     {
@@ -95,6 +96,8 @@ export default class OverviewChart extends Component {
         }
 
         return (
+            <PageContextConsumer>
+        {pageContext => (
             <Trans>
                 {translate => (
                     <div className="Overview__Chart">
@@ -134,7 +137,7 @@ export default class OverviewChart extends Component {
                                                 name={getToolName(tick.value, translate)}
                                                 size={60}
                                                 number={ranking[tick.value]}
-                                                path={`${section}/${tick.value}`}
+                                                path={`${pageContext.localePath}/${section}/${tick.value}`}
                                             />
                                         </g>
                                     )
@@ -190,7 +193,8 @@ export default class OverviewChart extends Component {
                         </div>
                     </div>
                 )}
-            </Trans>
+            </Trans>)}
+    </PageContextConsumer>
         )
     }
 }

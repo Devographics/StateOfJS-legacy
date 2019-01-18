@@ -210,15 +210,16 @@ $wait: 4s;
   }
 }
 
-@include drawMe("hl", 5, 200ms, 100ms, 0ms);
-@include drawMe("vl", 13, 200ms, 100ms, 500ms);
-@include drawMe("dla", 5, 200ms, 100ms, 1000ms);
-@include drawMe("dlb", 5, 200ms, 100ms, 1500ms);
-@include drawMe("cc", 10, 200ms, 100ms, 2000ms);
-@include drawMe("csa", 10, 200ms, 100ms, 2500ms);
-@include drawMe("csb", 10, 200ms, 100ms, 3000ms);
-@include drawMe("letter", 3, 2000ms, 1000ms, 3500ms);
-@include drawMe("crosshatch", 3, 3000ms, 1000ms, 4000ms);
+// @include drawMe("hl", 100, 200ms, 100ms, 0ms);
+// @include drawMe("vl", 100, 200ms, 100ms, 500ms);
+
+// @include drawMe("dla", 5, 200ms, 100ms, 1000ms);
+// @include drawMe("dlb", 5, 200ms, 100ms, 1500ms);
+// @include drawMe("cc", 10, 200ms, 100ms, 2000ms);
+// @include drawMe("csa", 10, 200ms, 100ms, 2500ms);
+// @include drawMe("csb", 10, 200ms, 100ms, 3000ms);
+// @include drawMe("letter", 3, 2000ms, 1000ms, 3500ms);
+// @include drawMe("crosshatch", 3, 3000ms, 1000ms, 4000ms);
 
 @include appear("theStateOf", 300ms, 6600ms);
 @include appear("year", 300ms, 6800ms);

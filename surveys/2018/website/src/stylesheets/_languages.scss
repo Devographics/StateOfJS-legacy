@@ -114,6 +114,7 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: $spacing;
+    grid-row-gap: $spacing;
 }
 
 .Locales__Item {

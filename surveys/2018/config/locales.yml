@@ -10,3 +10,7 @@
   path:   cn
   label:  简体中文
 
+- locale: hu-HU
+  path:   hu
+  label:  Magyar
+

@@ -1,7 +1,7 @@
 ---
 type: introduction
 section: introduction
-locale: en-US
+locale: zh-CN
 ---
  
 <span class="first-line"><span class="first-letter">JavaScript</span> 一直在发展。</span>新的库、框架、语言依旧层出不穷。这让前端开发变得十分有趣，同时，也让从业者感到力不从心。

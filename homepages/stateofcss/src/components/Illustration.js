@@ -17,13 +17,13 @@ const centerY = totalHeight / 2
 const minDimension = Math.min(totalWidth, totalHeight)
 
 // vertical lines
-const vLineCount = 13
+const vLineCount = 100
 const vLineSpacing = 100
 const vLineOffset = ((vLineCount - 1) / 2) * vLineSpacing
 const vLineStart = centerX - vLineOffset
 
 // horizontal lines
-const hLineCount = 5
+const hLineCount = 100
 const hLineSpacing = 100
 const hLineOffset = ((hLineCount - 1) / 2) * hLineSpacing
 const hLineStart = centerY - hLineOffset
