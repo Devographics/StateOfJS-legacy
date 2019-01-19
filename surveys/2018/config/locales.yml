@@ -14,3 +14,7 @@
   path:   hu
   label:  Magyar
 
+- locale: es-ES
+  path:   es
+  label:  Español
+
