@@ -1,0 +1,761 @@
+locale: es-ES
+translations:
+    # general
+    - key: share
+      t: Compartir
+    - key: average
+      t: Promedio  
+    - key: conclusion  
+      t: Conclusión
+    - key: tools_salary_range_average
+      t: Salario promedio
+    - key: tools_company_size_average
+      t: Tamaño promedio de la empresa
+    - key: tools_years_of_experience_average
+      t: Promedio de años de experiencia
+    - key: users_percentage
+      t: porcentaje de usuarios
+    - key: salary_range_axis_legend
+      t: rango salarial
+    - key: years_of_experience_axis_legend
+      t: años de experiencia
+    - key: company_size_axis_legend
+      t: número de empleados
+    - key: percents_display_mode
+      t: Porcentaje
+    - key: counts_display_mode
+      t: Conteo
+    - key: awards_runner_ups
+      t: Finalistas
+    - key: tool_homepage
+      t: Página principal
+    - key: from_to_short
+      t: ${from} a ${to}
+    - key: users_count
+      t: ${count} usuarios
+    - key: percentage_of_respondents
+      t: ${percentage} de los encuestados
+    - key: partners.premium_partners
+      t: Nuestros Socios Premium 2018
+    - key: partners.become_partner
+      t: Conviértete en un socio
+    - key: partners.thanks
+      t: |
+        Gracias a nuestros socios por apoyar este proyecto.
+        <a href="/support">Aprender más</a> sobre cómo apoyar The State of JS.
+
+    # opinions
+    - key: opinions.legends.never_heard
+      t: Nunca oí hablar de eso
+    - key: opinions.legends_short.never_heard
+      t: Nunca oí de eso  
+    - key: opinions.legends.not_interested
+      t: He oído de eso, y no estoy interesado
+    - key: opinions.legends_short.not_interested
+      t: Oí de eso, no me interesa
+    - key: opinions.legends.interested
+      t: He oído de eso, y me interesaría aprender a usarlo
+    - key: opinions.legends_short.interested
+      t: Oí de eso, me gustaría aprender
+    - key: opinions.legends.would_use  
+      t: Lo he usado antes, y lo usaría de nuevo
+    - key: opinions.legends_short.would_use  
+      t: Lo usé, y lo volvería a usar
+    - key: opinions.legends.would_not_use  
+      t: Lo usé, y no lo volvería a usar
+    - key: opinions.legends_short.would_not_use  
+      t: Lo usé, no lo usaré de nuevo
+
+    # generic opinions
+    - key: opinion_scale.0
+      t: Muy en desacuerdo
+    - key: opinion_scale.1
+      t: En desacuerdo
+    - key: opinion_scale.2
+      t: Neutral
+    - key: opinion_scale.3
+      t: De acuerdo
+    - key: opinion_scale.4
+      t: Totalmente de acuerdo
+
+    # salary ranges
+    - key: salary_range.work-for-free.long
+      t: Trabajo gratis
+    - key: salary_range.work-for-free.short
+      t: trabajo gratis
+    - key: salary_range.0-10.long
+      t: De $0 a $10.000 dólares
+    - key: salary_range.0-10.short
+      t: $0-$10 mil
+    - key: salary_range.10-30.long
+      t: De $10.000 a $30.000 dólares
+    - key: salary_range.10-30.short
+      t: $10-$30 mil
+    - key: salary_range.30-50.long
+      t: De $30.000 a $50.000 dólares
+    - key: salary_range.30-50.short
+      t: $30-$50 mil
+    - key: salary_range.50-100.long
+      t: De $50.000 a $100.000 dólares
+    - key: salary_range.50-100.short
+      t: $50-$100 mil
+    - key: salary_range.100-200.long
+      t: De $100.000 a $200.000 dólares
+    - key: salary_range.100-200.short
+      t: $100-$200 mil
+    - key: salary_range.more-than-200.long
+      t: Más de $200.000 dólares
+    - key: salary_range.more-than-200.short
+      t: + de $200 mil
+
+    # company size
+    - key: company_size.1.long
+      t: Un empleado
+    - key: company_size.1.short
+      t: uno
+    - key: company_size.1-5.long
+      t: 1 a 5 empleados
+    - key: company_size.1-5.short
+      t: 1~5
+    - key: company_size.5-10.long
+      t: 5 a 10 empleados
+    - key: company_size.5-10.short
+      t: 5~10
+    - key: company_size.10-20.long
+      t: 10 a 20 empleados
+    - key: company_size.10-20.short
+      t: 10~20
+    - key: company_size.20-50.long
+      t: 20 a 50 empleados
+    - key: company_size.20-50.short
+      t: 20~50
+    - key: company_size.50-100.long
+      t: 50 a 100 empleados
+    - key: company_size.50-100.short
+      t: 50~100
+    - key: company_size.100-1000.long
+      t: 100 a 1.000 empleados
+    - key: company_size.100-1000.short
+      t: 100~1000
+    - key: company_size.more-than-1000.long
+      t: Más de 1.000 empleados
+    - key: company_size.more-than-1000.short
+      t: 1000+
+
+    # years of experience
+    - key: years_of_experience.less-than-1.long
+      t: Menos de un año
+    - key: years_of_experience.less-than-1.short
+      t: '<1 año'
+    - key: years_of_experience.1-2.long
+      t: 1 a 2 años
+    - key: years_of_experience.1-2.short
+      t: 1~2 años
+    - key: years_of_experience.2-5.long
+      t: 2 a 5 años
+    - key: years_of_experience.2-5.short
+      t: 2~5 años
+    - key: years_of_experience.5-10.long
+      t: 5 a 10 años
+    - key: years_of_experience.5-10.short
+      t: 5~10 años
+    - key: years_of_experience.10-20.long
+      t: 10 a 20 años
+    - key: years_of_experience.10-20.short
+      t: 10~20 años
+    - key: years_of_experience.more-than-20.long
+      t: Más de 20 años
+    - key: years_of_experience.more-than-20.short
+      t: '>20 años'
+
+    # sections
+    - key: section.javascript-flavors
+      t: Variantes de JavaScript
+    - key: section.front-end-frameworks
+      t: Frameworks de Front-end
+    - key: section.data-layer
+      t: Capa de Datos
+    - key: section.back-end-frameworks
+      t: Frameworks de Back-end 
+    - key: section.testing
+      t: Testing
+    - key: section.mobile-and-desktop
+      t: Mobile & Desktop
+
+    # tools
+    - key: tool.es6
+      t: ES6  
+    - key: tool.es6.description
+      t: |
+        ES6 y sus descendientes son las versiones más nuevas de JavaScript, usualmente ejecutadas a través de Babel.
+    - key: tool.angular
+      t: Angular
+    - key: tool.angular.description
+      t: |
+        Angular es una plataforma de aplicaciones web orientada al front-end, de código abierto, basada en TypeScript.
+        Vale aclarar que desde este año no vamos a hacer más una distinción entre Angular y Angular.js; sin embargo,
+        los puntos de datos para 2016 y 2017 corresponden a Angular (también conocido como "Angular 2").
+    - key: tool.apollo
+      t: Apollo
+    - key: tool.apollo.description
+      t: |
+        Un cliente de GraphQL, con almacenamiento en caché, listo para producción y con todas las funciones
+        para todo framework de interfaz de usuario y servidor de GraphQL.
+    - key: tool.native-apps
+      t: Native Apps
+    - key: tool.native-apps.description
+      t: |
+        La mayoría de las aplicaciones móviles y de escritorio todavía se construyen con lenguajes nativos
+        como Java, Kotlin, Objective-C o Swift.
+    - key: tool.phonegap-cordova
+      t: Cordova
+    - key: tool.phonegap-cordova.description
+      t: |
+        Apache Cordova es un framework para desarrollar aplicaciones móviles.
+    - key: tool.vanilla-js
+      t: Vanilla JS
+    - key: tool.extjs
+      t: Ext JS
+    - key: tool.web-assembly
+      t: WebAssembly
+    - key: tool.firebase
+      t: Firebase
+    - key: tool.dotnet
+      t: .NET
+    - key: tool.rails
+      t: Rails
+    - key: tool.php
+      t: PHP
+    - key: tool.python
+      t: Python
+    - key: tool.laravel
+      t: Laravel
+    - key: tool.ruby
+      t: Ruby
+    - key: tool.elixir
+      t: Elixir
+    - key: tool.django
+      t: Django
+    - key: tool.golang
+      t: Go
+    - key: tool.C#
+      t: C#
+    - key: tool.java
+      t: Java
+    - key: tool.rust
+      t: Rust
+    - key: tool.haskell
+      t: Haskell
+    - key: tool.scala
+      t: Scala
+    - key: tool.selenium
+      t: Selenium
+    - key: tool.elm-test
+      t: elm-test
+    - key: tool.flutter
+      t: Flutter
+    - key: tool.pwa
+      t: Progressive Web Apps
+    - key: tool.weex
+      t: weex
+    - key: tool.xamarin
+      t: xamarin
+    - key: tool.appcelerator
+      t: Appcelerator
+    - key: tool.c-cplusplus
+      t: C/C++
+    - key: tool.swift
+      t: Swift
+    - key: tool.objective-c
+      t: Objective-C
+    - key: tool.ocaml
+      t: OCaml
+    - key: tool.parcel
+      t: Parcel
+    - key: tool.make
+      t: Make
+    - key: tool.lodash
+      t: lodash
+    - key: tool.moment
+      t: moment
+    - key: tool.underscore
+      t: underscore
+    - key: tool.date-fns
+      t: Date-fns
+    - key: tool.ramda
+      t: Ramda
+    - key: tool.luxon
+      t: luxon
+    - key: tool.visual-studio
+      t: VS Code
+    - key: tool.sublime-text
+      t: Sublime Text
+    - key: tool.webstorm
+      t: WebStorm
+    - key: tool.atom
+      t: Atom
+    - key: tool.emacs
+      t: emacs
+    - key: tool.intellij
+      t: IntelliJ
+    - key: tool.phpstorm
+      t: PhpStorm
+    - key: tool.notepad++
+      t: notepad++
+    - key: tool.brackets
+      t: Brackets
+    - key: tool.nano
+      t: nano
+    - key: tool.pycharm
+      t: PyCharm
+    - key: tool.vim
+      t: Vim
+    - key: tool.service-workers
+      t: Service Workers
+    - key: tool.webrtc
+      t: WebRTC
+    - key: tool.webvr
+      t: WebVR
+    - key: tool.webgl
+      t: WebGL
+    - key: tool.web-animations-api
+      t: Web Animations API
+    - key: tool.web-audio-api
+      t: Web Audio API
+    - key: tool.web-speech-api
+      t: Web Speech API
+
+    # pages
+    - key: page.introduction
+      t: Introducción
+    - key: page.demographics
+      t: Demográfica
+    - key: page.connections
+      t: Conexiones
+    - key: page.section_overview
+      t: ${section} - Generalidades
+    - key: page.section_tool
+      t: ${section} - ${tool}
+    - key: page.section_overview.short
+      t: Generalidades
+    - key: page.section_other_tools
+      t: ${section} – Otras Librerías
+    - key: page.section_other_tools.short
+      t: Otras Librerías
+    - key: page.section_conclusion
+      t: ${section} - Conclusión
+    - key: page.section_conclusion.short
+      t: Conclusión
+    - key: page.other-tools
+      t: Otras Herramientas
+    - key: page.opinions
+      t: Opiniones
+    - key: page.awards
+      t: Premios 🏆
+    - key: page.conclusion
+      t: Conclusión
+    - key: page.support
+      t: ¡Danos tu apoyo!
+
+    # blocks
+    - key: block.title.participation-by-country
+      t: Participación por País
+    - key: block.description.participation-by-country
+      t: Participantes de la encuesta, por país.
+    - key: block.title.salaries
+      t: Salarios
+    - key: block.description.salaries
+      t: Segmentación por rangos de salario.
+    - key: block.title.salary-per-country
+      t: Salario Promedio por País
+    - key: block.description.salary-per-country
+      t: Salario Promedio por País.
+    - key: block.title.years-of-experience
+      t: Años de Experiencia
+    - key: block.description.years-of-experience
+      t: Segmentación por años de experiencia.
+    - key: block.title.company-size
+      t: Tamaño de organización
+    - key: block.description.company-size
+      t: Segmentación por tamaño de organización.
+    - key: block.title.gender-breakdown
+      t: Segmentación por género
+    - key: block.title.source-breakdown
+      t: Segmentación por fuente
+    - key: block.description.gender-breakdown
+      t: Segmentación por género.
+    - key: block.title.connections
+      t: Conexiones entre Tecnologías
+    - key: block.description.connections
+      t: Cómo se relacionan todas las librerías y tecnologías.
+    - key: block.title.overview
+      t: Resultados generales
+    - key: block.description.overview
+      t: |
+        Resultados generales - ${section}
+    - key: block.title.results-over-time
+      t: Popularidad de ${tool} en el transcurso del tiempo
+    - key: block.description.results-over-time 
+      t: Evolución de la popularidad de ${tool} en el transcurso del tiempo.
+    - key: block.results-over-time.empty
+      t: |
+        Lo sentimos, pero no tenemos suficientes datos
+        para mostrar la evolución de la popularidad de esta
+        librería en el transcurso del tiempo.
+    - key: block.title.happiness
+      t: Satisfacción General
+    - key: block.description.happiness
+      t: |
+        En una escala de uno (mucha insatisfacción) a cinco (mucha satisfación), ¿qué tanta
+        satisfacción siente la comunidad de desarrollo con el estado general y actual
+        de esta categoría?
+    - key: block.title.tools-salary-range
+      t: Segmentación por Salario
+    - key: block.description.tools-salary-range
+      t: |
+        Segmentación por salario para personas que eligieron "lo usé, lo usaría de nuevo"
+        para una opción dada.
+        
+    
+        Cada celda muestra el porcentaje de personas en un rango dado de salarios. Los colores
+        más oscuros representan el mayor uso.
+    - key: block.title.tools-company-size
+      t: Segmentación por Tamaño de Organización
+    - key: block.description.tools-company-size
+      t: |
+        Segmentación por tamaño de organización para personas que eligieron "lo usé, lo usaría de nuevo"
+        para una opción dada.
+        
+
+        Cada celda muestra el porcentaje de personas en un rango dado de tamaños de organización. Los colores
+        más oscuros representan el mayor uso.
+    - key: block.title.tools-years-of-experience
+      t: Segmentación por Años de Experiencia
+    - key: block.description.tools-years-of-experience
+      t: |
+        Segmentación por años de experiencia para personas que eligieron "lo usé, lo usaría de nuevo"
+        para una opción dada.
+
+
+        Cada celda muestra el porcentaje de personas en un rango dado de tamaños de experiencia. Los colores
+        más oscuros representan el mayor uso.
+    - key: block.title.likes    
+      t: Características más favorecidas de ${tool}
+    - key: block.description.likes
+      t: |
+        Las características que más les gustan de ${tool} a las personas que eligieron "lo usé, lo usaría de nuevo".
+    - key: block.title.dislikes    
+      t: Características menos favorecidas de ${tool}   
+    - key: block.description.dislikes    
+      t: |
+        Las características que menos les gustan de ${tool} a las personas que eligieron "lo usé y *no* volvería a usarlo".
+    - key: block.title.tool-pairing    
+      t: ¿Qué herramientas se usan en conjunto con ${tool}?
+    - key: block.description.tool-pairing
+      t: |
+        Librerías frecuentemente utilizadas en conjunto con ${tool} por las personas que eligieron "lo usé, lo usaría de nuevo".
+        Los colores más oscuros representan una correlación más fuerte.
+    - key: block.title.tool-usage-by-country
+      t: Uso de ${tool} por País
+    - key: block.description.tool-usage-by-country
+      t: |
+        En promedio, **${percentage}%** de las personas encuestadas han usado **${tool}** y
+        volverían a usarlo.
+        
+        
+        Los países en los que esta proporción es mayor se muestran en rojo; donde es menor, se muestra en azul.
+        Omitimos aquellos países con menos de 20 respuestas en total.
+    - key: block.tool-usage-by-country.legend
+      t: |
+        Porcentaje de
+        personas felices con ${tool}:
+    - key: block.title.other-tools    
+      t: Otras Librerías
+    - key: block.description.other-tools
+      t: |
+        Otras respuestas mencionadas por las personas encuestadas, ordenadas por cantidad de menciones.
+    - key: block.title.quadrants   
+      t: Gráfico de cuadrantes
+    - key: block.description.quadrants
+      t: |
+        Este gráfico muestra la **proporción de satisfacción** de cada tecnología respecto a su **uso total**.
+
+
+        Adicionalmente, las tecnologías que tienen una **proporción de interés**
+        (porcentaje de personas que no las usan pero están interesadas en aprender sobre ellas)
+        mayor al 50% se muestran "en llamas".
+    - key: block.title.other_languages
+      t: Otros Lenguajes
+    - key: block.description.other_languages
+      t: Otros lenguajes, ordenados por cantidad de menciones.
+    - key: block.title.browser_apis
+      t: APIs de navegador
+    - key: block.description.browser_apis
+      t: APIs de navegador, ordenadas por cantidad de menciones.
+    - key: block.title.build_tools
+      t: Herramientas de Compilación
+    - key: block.description.build_tools
+      t: Herramientas de compilación, ordenadas por cantidad de menciones.
+    - key: block.title.utility_libraries
+      t: Librerías Utilitarias
+    - key: block.description.utility_libraries
+      t: Librerías utilitarias, ordenadas por cantidad de menciones.
+    - key: block.title.text_editors
+      t: Editores de Texto
+    - key: block.description.text_editors
+      t: Editores de texto, ordenados por cantidad de menciones.
+    - key: block.title.recommended_resources
+      t: Recursos Recomendados
+    - key: block.title.opinion-js_moving_in_right_direction
+      t: JavaScript está yendo en la dirección correcta
+    - key: block.description.opinion-js_moving_in_right_direction
+      t: JavaScript está yendo en la dirección correcta.
+    - key: block.title.opinion-building_js_apps_overly_complex
+      t: Desarrollar aplicaciones JavaScript es demasiado complejo hoy en día
+    - key: block.description.opinion-building_js_apps_overly_complex
+      t: Desarrollar aplicaciones JavaScript es demasiado complejo hoy en día.
+    - key: block.title.opinion-js_over_used_online
+      t: JavaScript es sobreutilizado en línea
+    - key: block.description.opinion-js_over_used_online
+      t: JavaScript es sobreutilizado en línea.
+    - key: block.title.opinion-enjoy_building_js_apps
+      t: Disfruto de desarrollar aplicaciones JavaScript.
+    - key: block.description.opinion-enjoy_building_js_apps
+      t: Disfruto de desarrollar aplicaciones JavaScript.
+    - key: block.title.opinion-would_like_js_to_be_main_lang
+      t: Me gustaría que JavaScript fuera mi principal lenguaje de programación
+    - key: block.description.opinion-would_like_js_to_be_main_lang
+      t: Me gustaría que JavaScript fuera mi principal lenguaje de programación.
+    - key: block.title.opinion-js_ecosystem_changing_to_fast
+      t: El ecosistema de JavaScript está cambiando demasiado rápido
+    - key: block.description.opinion-js_ecosystem_changing_to_fast
+      t: el ecosistema de JavaScript está cambiando demasiado rápido.
+    - key: block.title.opinion-survey_too_long
+      t: ¡Esta encuesta es demasiado extensa!
+    - key: block.description.opinion-survey_too_long
+      t: ¡Esta encuesta es demasiado extensa!
+
+    # reasons
+    - key: reason.elegant_programming_style_patterns.long
+      t: ⚙️ Estilos de programación y patrones de desarollo elegantes
+    - key: reason.elegant_programming_style_patterns.short
+      t: ⚙️ Estilo de programación
+    - key: reason.robust_less_error_prone_code.long
+      t: 🐞 Código robusto, menos propenso a errores
+    - key: reason.robust_less_error_prone_code.short
+      t: 🐞 Código robusto
+    - key: reason.rich_package_ecosystem.long
+      t: 🎁 Ecosistema rico en paquetes
+    - key: reason.rich_package_ecosystem.short  
+      t: 🎁 Ecosistema de paquetes
+    - key: reason.fast_performance.long
+      t: ⚡ Performance rápida
+    - key: reason.fast_performance.short  
+      t: ⚡ Performance rápida
+    - key: reason.well_established_option.long
+      t: 🏛️ Alternativa bien establecida
+    - key: reason.well_established_option.short  
+      t: 🏛️ Bien establecido
+    - key: reason.easy_learning_curve.long
+      t: 👶 Curva de aprendizaje fácil
+    - key: reason.easy_learning_curve.short
+      t: 👶 Fácil de aprender
+    - key: reason.powerful_developer_tooling.long
+      t: 🔧 Poderosas herramientas de desarrollo
+    - key: reason.powerful_developer_tooling.short
+      t: 🔧 Herramientas
+    - key: reason.good_documentation.long
+      t: 📖 Beuna documentación
+    - key: reason.good_documentation.short
+      t: 📖 Documentación
+    - key: reason.backed_by_a_great_team_company.long
+      t: 👫 Respaldada por un gran equipo/organización
+    - key: reason.backed_by_a_great_team_company.short
+      t: 👫 Eequipo/organización
+    - key: reason.simple_lightweight.long
+      t: 🎈 Simple y ligera
+    - key: reason.simple_lightweight.short
+      t: 🎈 Ligera
+    - key: reason.growing_momentum_popularity.long
+      t: 📉 Creciendo en popularidad e impulso
+    - key: reason.growing_momentum_popularity.short
+      t: 📉 Impulso
+    - key: reason.full_featured_powerful.long
+      t: 🕹️ Completa en funcionalidad y poderosa
+    - key: reason.full_featured_powerful.short
+      t: 🕹️ Completa en funcionalidad
+    - key: reason.stable_backwards_compatible.long
+      t: ⚖️ Estable y retrocompatible
+    - key: reason.stable_backwards_compatible.short
+      t: ⚖️ Estabilidad
+    - key: reason.clumsy_programming_style.long
+      t: ⚙️ Estilo de programación torpe
+    - key: reason.clumsy_programming_style.short
+      t: ⚙️ Torpe
+    - key: reason.buggy_error_prone_code.long
+      t: 🐞 Defectuosa, propensa a errores
+    - key: reason.buggy_error_prone_code.short
+      t: 🐞 Defectuosa
+    - key: reason.poor_performance.long
+      t: ⚡ Pobre en performance
+    - key: reason.poor_performance.short
+      t: ⚡ Pobre en performance
+    - key: reason.small_package_ecosystem.long
+      t: 🎁 Ecosistema pequeño de paquetes
+    - key: reason.small_package_ecosystem.short
+      t: 🎁 Pocos paquetes
+    - key: reason.new_untested_option.long
+      t: 🏛️ Nueva alternativa, no probada
+    - key: reason.new_untested_option.short
+      t: 🏛️ Nueva, no probada
+    - key: reason.hard_learning_curve.long
+      t: 👶 Curva de aprendizaje difícil
+    - key: reason.hard_learning_curve.short
+      t: 👶 Difícil de aprender
+    - key: reason.lacking_developer_tooling.long
+      t: 🔧 Herramientas de desarrollo incompletas
+    - key: reason.lacking_developer_tooling.short
+      t: 🔧 Herramientas incompletas
+    - key: reason.bad_documentation.long
+      t: 📖 Mala documentación
+    - key: reason.bad_documentation.short
+      t: 📖 Mala documentación
+    - key: reason.concerns_about_the_team_company.long
+      t: 👫 Preocupaciones por el equipo/organización
+    - key: reason.concerns_about_the_team_company.short
+      t: 👫 Mal equipo/organización
+    - key: reason.bloated_complex.long
+      t: 🎈 Sobrecargada y compleja
+    - key: reason.bloated_complex.short
+      t: 🎈 Sovrecargada y compleja
+    - key: reason.diminishing_momentum_popularity.long
+      t: 📉 Popularidad e impulso decreciendo
+    - key: reason.diminishing_momentum_popularity.short
+      t: 📉 Perdiendo impulso
+    - key: reason.limited_lacking_in_features.long
+      t: 🕹️ Limitada, con funcionalidades faltantes
+    - key: reason.limited_lacking_in_features.short
+      t: 🕹️ Limitada
+    - key: reason.fast_changing_breaks_often.long
+      t: ⚖️ Cambiante, se rompe con frecuencia
+    - key: reason.fast_changing_breaks_often.short
+      t: ⚖️ Cambiante
+    - key: reason.other.long
+      t: Otras
+    - key: reason.other.short
+      t: Otras
+    
+    # quadrant
+    - key: quadrant.satisfaction_legend
+      t: '% de satisfacción'
+    - key: quadrant.users_legend
+      t: Usuarios
+    - key: quadrant.assess.label
+      t: Valora
+    - key: quadrant.assess.description
+      t: |
+        Poco uso, mucha satisfacción.
+        Tecnologías que vale la pena tener en vista.
+    - key: quadrant.adopt.label
+      t: Adopta
+    - key: quadrant.adopt.description
+      t: |
+        Mucho uso, mucha satisfacción.
+        Tecnologías que es seguro adoptar.
+    - key: quadrant.avoid.label
+      t: Evita
+    - key: quadrant.avoid.description
+      t: |
+        Poco uso, poca satisfacción.
+        Tecnologías que probablemente es mejor evitar por ahora.
+    - key: quadrant.analyze.label
+      t: Analiza
+    - key: quadrant.analyze.description
+      t: |
+        Mucho uso, poca satisfacción.
+        Re-evalúa estas tecnologías si las estás usando actualmente.
+
+    # awards
+    - key: block.title.highest_satisfaction
+      t: Mayor Satisfacción
+    - key: block.description.highest_satisfaction
+      t: |
+        Otorgado a la librería con el mayor porcentaje de personas satisfechas.
+    - key: award.highest_satisfaction.comment
+      t: |
+        Con un **${tools[0].percentage}%** de personas dispuestas a usarla nuevamente,
+        ${tools[0].label} demuestra que va en serio.
+    - key: award.highest_satisfaction.runner_up
+      t: ${tool.label} ${tool.percentage}%  
+    - key: block.title.highest_interest
+      t: Mayor Interés
+    - key: block.description.highest_interest
+      t: |
+        Otorgado a la tecnología que las personas están más interesadas en aprender.
+    - key: award.highest_interest.comment
+      t: |
+        **${tools[0].percentage}%** de personas que han oído hablar de 
+        ${tools[0].label} quieren aprender sobre ella.
+        ¡Eso sí que es interés!
+    - key: award.highest_interest.runner_up
+      t: ${tool.label} ${tool.percentage}%
+    - key: block.title.highest_usage
+      t: Mayor Uso
+    - key: block.description.highest_usage
+      t: |
+        Otorgado a la tecnología con la mayor cantidad de personas utilizándola.
+    - key: award.highest_usage.comment
+      t: |
+        Con **${tools[0].count}** personas, ${tools[0].label}
+        es la librería más usada este año.
+    - key: award.highest_usage.runner_up
+      t: ${tool.label} ${tool.count}
+    - key: block.title.most_mentioned
+      t: Mayor Cantidad de Menciones
+    - key: block.description.most_mentioned
+      t: |
+        Otorgado a la librería más mencionada en la respuesta sobre "otras librerías".
+    - key: award.most_mentioned.comment
+      t: |
+        ${tools[0].label} reunió **${tools[0].count}** menciones,
+        haciéndola la respuesta libre más mencionada por lejos.
+    - key: award.most_mentioned.runner_up
+      t: ${tool.label} ${tool.count}
+    - key: block.title.prediction
+      t: Premio a la Predicción
+    - key: block.description.prediction
+      t: |
+        Otorgado a una tecnología creciente que podría volverse relevante... ¿o no?
+    - key: award.prediction.comment
+      t: |
+        El equipo de Facebook ya logró esto con React y GraphQL.
+        ¿Será Reason la próxima en este camino?
+    - key: award.prediction.runner_up
+      t: ${tool.label}
+    - key: block.title.special
+      t: Premio Especial
+    - key: block.description.special
+      t: |
+        Otorgado a una tecnología de la que nos enamoramos este año.
+    - key: award.special.comment
+      t: |
+        ${tools[0].label} se ha convertido en el editor de texto líder para JavaScript,
+        ¡y claramente se entiende el por qué!
+    - key: award.special.runner_up
+      t: ${tool.label}
+
+    # sharing
+    - key: share.site.title
+      t: Descubre los resultados de 2018 de StateOf JavaScript
+    - key: share.site.twitter_text
+      t: 'Descubre los resultados de State Of JavaScript 2018 ${link} #StateOfJS'
+    - key: share.site.subject
+      t: Resultados de la encuesta State Of JavaScript
+    - key: share.site.body
+      t: 'Aquí hay algunos resultados interesantes de la encuesta de JavaScript: ${link}'
+    - key: share.block.twitter_text
+      t: '#StateOfJS 2018: ${title} ${link}'
+    - key: share.block.subject
+      t: Resultados de la encuesta State Of JavaScript
+    - key: share.block.body
+      t: 'Aquí hay algunos resultados interesantes de la encuesta de JavaScript (${title}): ${link}'
