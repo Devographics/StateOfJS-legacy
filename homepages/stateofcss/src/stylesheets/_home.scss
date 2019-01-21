@@ -221,8 +221,8 @@ $wait: 4s;
 // @include drawMe("letter", 3, 2000ms, 1000ms, 3500ms);
 // @include drawMe("crosshatch", 3, 3000ms, 1000ms, 4000ms);
 
-@include appear("theStateOf", 300ms, 6600ms);
-@include appear("year", 300ms, 6800ms);
+// @include appear("theStateOf", 300ms, 6600ms);
+// @include appear("year", 300ms, 6800ms);
 
 
 // @include backAndForth("dl", 5, 900ms, 0ms);
