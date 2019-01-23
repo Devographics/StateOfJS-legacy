@@ -1,16 +1,16 @@
 ---
 type: conclusion
 section: conclusion
-locale: en-US
+locale: de-DE
 ---
- After all is said and done, it looks like 2018 was mostly a continuation of the trends we already observed [last year](http://2017.stateofjs.com).
+ Nachdem nun alles erledigt ist, sieht es so aus als ob 2018 im Großen und Ganzen eine Fortsetzung der Trends war die wir schon im [letzten Jahr](http://2017.stateofjs.com) beobachten konnten.
 
-That's bad news for us, because we can't come out with a big scoop on how React's days are numbered, or the next big thing is this new state management library created by a 17-year-old Vietnamese high-schooler in her spare time. 
+Schlecht für uns, denn die großen Sensationsmeldungen, wie z.B. dass die Tage von React gezählt sind, oder darüber dass das nächste große Ding diese State-Management-Library ist, die ein 17-jähriger vietnameischer Schüler in seiner Frezeit entwickelt hat, bleiben aus.
 
-But that's great news for you, because it means you can spend less time worrying about what to use, and more time actually using it!
+Andereseits gut für dich, denn es bedeutet dass du dir weniger Gedanken darüber machen musst was du benutzt, sondern mehr Zeit damit verbringen kannst die Dinge auch wirklich umzusetzen!
 
-Things might get shaken up again in 2019 though. While all is currently calm on the front-end front, the question of how you get data from the database to the client is far from settled, and GraphQL is sure to start making bigger and bigger waves in that area. As GraphQL-tailored solutions emerge for both the back-end and the state management layer, we might soon feel the JavaScript ground shifting beneath our feet once more.
+Die Umstände könnten sich in 2019 trotzdem ändern. Während es momentan ziemlich ruhig an der Frontend-Front ist, ist die Frage wie du Daten aus deiner Datenbank bekommst noch lange nicht beantwortet und GraphQL wird hier sicher immer größere Wellen schlagen.  Während GraphQL-basierte Lösungen für Backend und die State-Management-Ebene enstehen, werden wir vielleicht schon bald den richtungsweisenden Einfluss von JavaScript ein weiteres mal erleben.
 
-But for now, no need to panic. There's never been a better time to be a JavaScript developer than now, and we're willing to bet that 2019 will make that even clearer!
+Momentan gibt es aber keinen Grund zur Sorge. Noch nie waren die Zeiten für JavaScript-Entwickler besser als heute, und wir gehen jede Wette ein dass Dies in 2019 sogar noch klarer zu erkennen sein wird!
 
-<span class="conclusion__byline">– Sacha, Raphaël, and Michael</span>
+<span class="conclusion__byline">– Sacha, Raphaël und Michael</span>
