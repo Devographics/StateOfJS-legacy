@@ -1,12 +1,12 @@
 ---
 type: conclusion
 section: data-layer
-locale: en-US
+locale: de-DE
 ---
- In the good old days, things were simple. Your data lived in your database, where the server could fetch it, plop it into a template, and send the whole thing down to the client. 
+ Früher war alles besser. Deine Daten waren in der Datenbank, der Server nahm sich die Daten von Dieser, packte sie in ein Template und schickte das ganze Ding dann zurück an den Client.
 
-But things are not so simple anymore. Today, apps need to know how to fetch data themselves in order to render their own templates and components. This has given rise to a whole range of data fetching and data management tools. 
+Aber die Dinge sind nicht mehr so einfach, heute müssen Apps selbst wissen woher sie die Daten bekommen um Diese dann eigenhändig in Templates und Components zu rendern. Aufgrund dessen ist eine ganze Menge an Fetching- und Datamanagementtools aufgetaucht.
 
-**Redux** is without a doubt the most widespread of these tools, and its 82% satisfaction rate is a testament to how well-regarded it has become. 
+**Redux** ist ohne jeden Zweifel das am weitesten verbreitete dieser Tools, 82% Zufriedenheitsrate zeigen wie hochangesehen **Redux** mitlerweile ist.
 
-But the whole space might soon get shaken up by the **GraphQL** shockwave. **GraphQL** users went from 5% to 20% in two years, and their client of choice seems to be **Apollo**. Add to this the fact that the latest version of Apollo makes using Redux optional, and it wouldn't be surprising if next year's results start to look very different… 
+Aber der ganze Bereich könnte bald von der **GraphQL**-Schockwelle aufgerollt werden. Die **GraphQL**-Nutzterrate ist in zwei Jahren von 5 auf 20 Prozent gestiegen, und die meisten User nutzen **Apollo** als Client. Da in Apollo die Nutzung von Redux seit der letzten Version optional ist, sollte es keine Überraschung sein wenn das Ergebnis des nächsten Jahres ziemlich unterschiedlich aussieht...
