@@ -20,7 +20,7 @@ Con un espíritu de total transparencia, debemos decir que algunos de estos enla
 
 La encuesta _State of JavaScript_ fue creada y es mantenida por:
 
-- [Sacha Greif](https://twitter.com/sachagreif) (yo!): Diseño, redacción, programación
+- [Sacha Greif](https://twitter.com/sachagreif) (¡yo!): Diseño, redacción, programación
 - [Raphaël Benitte](https://twitter.com/benitteraphael): Análisis de datos, visualizaciones
 - [Michael Rambeau](https://twitter.com/michaelrambeau): Redacción, estadísticas adicionales
 
