@@ -770,13 +770,33 @@ translations:
 
     # genders
     - key: genders.female
-      t: femenino
+      t: Femenino
     - key: genders.male
-      t: masculino
+      t: Masculino
     - key: genders.non_binary__third_gender
-      t: no-binario / tercer género
+      t: No-binario / Tercer género
     - key: genders.other
-      t: otro
+      t: Otro
+
+    # sources
+    - key: sources.email
+      t: Correo electrónico
+    - key: sources.slack
+      t: Slack
+    - key: sources.medium
+      t: Medium
+    - key: sources.twitter
+      t: Twitter
+    - key: sources.javascript_weekly
+      t: JavaScript Weekly
+    - key: sources.facebook
+      t: Facebook
+    - key: sources.reddit
+      t: Reddit
+    - key: sources.hacker_news
+      t: Hacker News
+    - key: sources.other_unknown
+      t: Otras/Desconocida
 
     # countries
     - key: countries.usa

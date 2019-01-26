@@ -4,7 +4,7 @@ import theme from 'nivoTheme'
 import ChartRatioContainer from 'core/charts/ChartRatioContainer'
 import GenderLegends from './GendersLegends'
 import Trans from 'core/i18n/Trans'
-import { genderNameToTranslationKey } from "core/i18n/gender-name"
+import { genderNameToTranslationKey } from "core/i18n/translation-key-getters"
 
 const rows = 32
 const columns = 128
