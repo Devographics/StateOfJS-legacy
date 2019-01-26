@@ -541,9 +541,9 @@ translations:
 
     # reasons
     - key: reason.elegant_programming_style_patterns.long
-      t: ⚙️ Estilos de programación y patrones de desarollo elegantes
+      t: ⚙️ Paradigma y patrones de desarrollo elegantes
     - key: reason.elegant_programming_style_patterns.short
-      t: ⚙️ Estilo de programación
+      t: ⚙️ Paradigma elegante
     - key: reason.robust_less_error_prone_code.long
       t: 🐞 Código robusto, menos propenso a errores
     - key: reason.robust_less_error_prone_code.short
@@ -551,7 +551,7 @@ translations:
     - key: reason.rich_package_ecosystem.long
       t: 🎁 Ecosistema rico en paquetes
     - key: reason.rich_package_ecosystem.short  
-      t: 🎁 Ecosistema de paquetes
+      t: 🎁 Muchos paquetes
     - key: reason.fast_performance.long
       t: ⚡ Performance rápida
     - key: reason.fast_performance.short  
@@ -587,7 +587,7 @@ translations:
     - key: reason.full_featured_powerful.long
       t: 🕹️ Completa en funcionalidad y poderosa
     - key: reason.full_featured_powerful.short
-      t: 🕹️ Completa en funcionalidad
+      t: 🕹️ Funcional
     - key: reason.stable_backwards_compatible.long
       t: ⚖️ Estable y retrocompatible
     - key: reason.stable_backwards_compatible.short
