@@ -768,3 +768,7 @@ translations:
       t: State Of JavaScript Survey Results
     - key: share.block.body
       t: 'Here are some interesting JavaScript survey results (${title}): ${link}'
+
+    # meta
+    - key: meta.description
+      t: Discover the most popular JavaScript technologies of the year.
