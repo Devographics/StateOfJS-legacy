@@ -44,12 +44,21 @@ export default class ToolHeaderBlock extends Component {
                                     <h2 className="ToolHeader__Title">{toolName}</h2>
                                     {project.stars && (
                                         <div className="ToolHeader__Stars">
-                                            {starsFormatter(project.stars)} {translateOrFallback(translate("github_stars"), "stars")}
+                                            {starsFormatter(project.stars)}{' '}
+                                            {translateOrFallback(
+                                                translate('github_stars'),
+                                                'stars'
+                                            )}
                                         </div>
                                     )}
                                 </div>
                                 <Fragment>
-                                    <div>{translateOrFallback(translate(libraryDescriptionToTranslationKey(toolName)), project.description)}</div>
+                                    <div>
+                                        {translateOrFallback(
+                                            translate(libraryDescriptionToTranslationKey(toolName)),
+                                            project.description
+                                        )}
+                                    </div>
                                     <div className="ToolHeader__Links">
                                         {project.homepage && (
                                             <a

@@ -48,7 +48,9 @@ const SectionIntroductionTemplate = ({ pageContext, data: { introduction, sectio
                                 aggsType="years_of_experience"
                                 chartId="tools-years-of-experience"
                                 keys={yearsOfExperience}
-                                formatValue={v => `${v}${translateOrFallback(translate("years_short"), "yrs")}`}
+                                formatValue={v =>
+                                    `${v}${translateOrFallback(translate('years_short'), 'yrs')}`
+                                }
                                 data={section.usage_users_info.by_years_of_experience}
                             />
                             <HappinessBlock

@@ -67,7 +67,7 @@ class Pagination extends React.PureComponent {
                                                 </button>
                                             </span>
                                         )}
-                                        <LanguageSwitcher/>
+                                        <LanguageSwitcher />
                                     </div>
                                     {next}
                                 </div>

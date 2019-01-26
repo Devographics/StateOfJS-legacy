@@ -15,16 +15,17 @@ export default class SourceBreakdownWaffleChart extends Component {
         console.log(data)
         let total = 0
         const colors = []
-        const chartData = (translate) => data.map(d => {
-            colors.push(theme.sourceColors[d.source])
-            total += d.count
+        const chartData = translate =>
+            data.map(d => {
+                colors.push(theme.sourceColors[d.source])
+                total += d.count
 
-            return {
-                id: d.source,
-                label: translate(sourceNameToTranslationKey(d.source)),
-                value: d.count
-            }
-        })
+                return {
+                    id: d.source,
+                    label: translate(sourceNameToTranslationKey(d.source)),
+                    value: d.count
+                }
+            })
 
         return (
             <Fragment>
@@ -32,23 +33,21 @@ export default class SourceBreakdownWaffleChart extends Component {
                 <div className="SourceBreakdown__Chart">
                     <ChartRatioContainer ratio={rows / columns} maxHeight={260}>
                         <Trans>
-                            {
-                                translate => {
-                                    const data = chartData(translate);
+                            {translate => {
+                                const data = chartData(translate)
 
-                                    return (                                
-                                        <ResponsiveWaffleCanvas
-                                            total={total}
-                                            rows={rows}
-                                            columns={columns}
-                                            data={data}
-                                            fillDirection="left"
-                                            theme={theme}
-                                            colors={colors}
-                                        />
-                                    )
-                                }
-                            }
+                                return (
+                                    <ResponsiveWaffleCanvas
+                                        total={total}
+                                        rows={rows}
+                                        columns={columns}
+                                        data={data}
+                                        fillDirection="left"
+                                        theme={theme}
+                                        colors={colors}
+                                    />
+                                )
+                            }}
                         </Trans>
                     </ChartRatioContainer>
                 </div>

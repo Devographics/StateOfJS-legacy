@@ -4,7 +4,7 @@ import theme from 'nivoTheme'
 import ChartRatioContainer from 'core/charts/ChartRatioContainer'
 import GenderLegends from './GendersLegends'
 import Trans from 'core/i18n/Trans'
-import { genderNameToTranslationKey } from "core/i18n/translation-key-getters"
+import { genderNameToTranslationKey } from 'core/i18n/translation-key-getters'
 
 const rows = 32
 const columns = 128
@@ -15,7 +15,7 @@ export default class GenderBreakdownWaffleChart extends Component {
 
         let total = 0
         const colors = []
-        const chartData = (translate) => {
+        const chartData = translate => {
             const result = data.filter(d => d.gender !== 'prefer not to say').map(d => {
                 colors.push(theme.genderColors[d.gender])
                 total += d.count
@@ -29,9 +29,9 @@ export default class GenderBreakdownWaffleChart extends Component {
                 }
             })
 
-            console.log("CHART DATA FOR GENDER BREAKDOWN", total);
+            console.log('CHART DATA FOR GENDER BREAKDOWN', total)
 
-            return result;
+            return result
         }
 
         return (
@@ -40,22 +40,20 @@ export default class GenderBreakdownWaffleChart extends Component {
                 <div className="GenderBreakdown__Chart">
                     <ChartRatioContainer ratio={rows / columns} maxHeight={260}>
                         <Trans>
-                            {
-                                translate => {
-                                    const data = chartData(translate);
-                                    return (
-                                        <ResponsiveWaffleCanvas
-                                            total={total}
-                                            rows={rows}
-                                            columns={columns}
-                                            data={data}
-                                            fillDirection="left"
-                                            theme={theme}
-                                            colors={colors}
-                                        />
-                                    )
-                                }
-                            }
+                            {translate => {
+                                const data = chartData(translate)
+                                return (
+                                    <ResponsiveWaffleCanvas
+                                        total={total}
+                                        rows={rows}
+                                        columns={columns}
+                                        data={data}
+                                        fillDirection="left"
+                                        theme={theme}
+                                        colors={colors}
+                                    />
+                                )
+                            }}
                         </Trans>
                     </ChartRatioContainer>
                 </div>
