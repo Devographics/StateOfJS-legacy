@@ -897,7 +897,7 @@ translations:
       t: Pakistán
     - key: countries.kazakhstan
       t: Kazakistán
-    - key: countires.kyrgyzstan
+    - key: countries.kyrgyzstan
       t: Kirguistán
     - key: countries.thailand
       t: Tailandia
@@ -917,3 +917,107 @@ translations:
       t: Corea
     - key: countries.lebanon
       t: Líbano
+    - key: countries.argentina
+      t: Argentina
+    - key: countries.chile
+      t: Chile
+    - key: countries.uruguay
+      t: Uruguay
+    - key: countries.paraguay
+      t: Paraguay
+    - key: countries.ecuador
+      t: Ecuador
+    - key: countries.venezuela
+      t: Venezuela
+    - key: countries.bolivia
+      t: Bolivia
+    - key: countries.colombia
+      t: Colombia
+    - key: countries.costa_rica
+      t: Costa Rica
+    - key: countries.nicaragua
+      t: Nicaragua
+    - key: countries.honduras
+      t: Honduras
+    - key: countries.el_salvador
+      t: El Salvador
+    - key: countries.belize
+      t: Belice
+    - key: countries.guatemala
+      t: Guatemala
+    - key: countries.cuba
+      t: Cuba
+    - key: countries.dominican_republic
+      t: República Dominicana
+    - key: countries.puerto_rico
+      t: Puerto Rico
+    - key: countries.jamaica
+      t: Jamaica
+    - key: countries.senegal
+      t: Senegal
+    - key: countries.burkina_faso
+      t: Burkina Faso
+    - key: countries.ghana
+      t: Ghana
+    - key: countries.chad
+      t: Chad
+    - key: countries.nigeria
+      t: Nigeria
+    - key: countries.uganda
+      t: Uganda
+    - key: countries.tanzania
+      t: Tanzania
+    - key: countries.mozambique
+      t: Mozambique
+    - key: countries.zambia
+      t: Zambia
+    - key: countries.angola
+      t: Angola
+    - key: countries.zimbabwe
+      t: Zimbabwe
+    - key: countries.madagascar
+      t: Madagascar
+    - key: countries.serbia
+      t: Serbia
+    - key: countries.bulgaria
+      t: Bulgaria
+    - key: countries.china
+      t: China
+    - key: countries.nepal
+      t: Nepal
+    - key: countries.vietnam
+      t: Vietnam
+    - key: countries.australia
+      t: Australia
+    - key: countries.india
+      t: India
+    - key: countries.indonesia
+      t: Indonesia
+    - key: countries.myanmar
+      t: Myanmar
+    - key: countries.mongolia
+      t: Mongolia
+    - key: countries.iraq
+      t: Irak
+    - key: countries.austria
+      t: Austria
+    - key: countries.montenegro
+      t: Montenegro
+    - key: countries.albania
+      t: Albania
+    - key: countries.georgia
+      t: Georgia
+    - key: countries.sri_lanka
+      t: Sri Lanka
+    - key: countries.armenia
+      t: Armenia
+    - key: countries.cyprus
+      t: Chipre
+    - key: countries.israel
+      t: Israel
+    - key: countries.macedonia
+      t: Macedonia
+    - key: countries.portugal
+      t: Portugal
+    - key: countries.estonia
+      t: Estonia
