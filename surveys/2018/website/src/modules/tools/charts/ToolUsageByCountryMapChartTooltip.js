@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import Trans from 'core/i18n/Trans'
+import { countryNameToTranslationKey } from "core/i18n/translation-key-getters";
 
 const ToolUsageByCountryMapChartTooltip = ({
     feature: {
@@ -11,7 +12,7 @@ const ToolUsageByCountryMapChartTooltip = ({
     <Trans>
         {translate => (
             <Fragment>
-                <strong>{properties.name}</strong>
+                <strong>{translate(countryNameToTranslationKey(properties.name))}</strong>
                 <br />
                 {translate('users_count', { values: { count } })}
                 <br />
