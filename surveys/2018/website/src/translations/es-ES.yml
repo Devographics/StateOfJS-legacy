@@ -172,7 +172,7 @@ translations:
 
     # sections
     - key: section.javascript-flavors
-      t: Variantes de JavaScript
+      t: Variantes de JS
     - key: section.front-end-frameworks
       t: Frameworks de Front-end
     - key: section.data-layer
