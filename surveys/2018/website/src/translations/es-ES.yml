@@ -768,6 +768,16 @@ translations:
     - key: meta.description
       t: Descubre las tecnologías de JavaScript más populares del año.
 
+    # genders
+    - key: genders.female
+      t: femenino
+    - key: genders.male
+      t: masculino
+    - key: genders.non_binary__third_gender
+      t: no-binario / tercer género
+    - key: genders.other
+      t: otro
+
     # countries
     - key: countries.usa
       t: Estados Unidos

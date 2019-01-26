@@ -3,6 +3,8 @@ import { ResponsiveWaffleCanvas } from '@nivo/waffle'
 import theme from 'nivoTheme'
 import ChartRatioContainer from 'core/charts/ChartRatioContainer'
 import GenderLegends from './GendersLegends'
+import Trans from 'core/i18n/Trans'
+import { genderNameToTranslationKey } from "core/i18n/gender-name"
 
 const rows = 32
 const columns = 128
@@ -13,13 +15,13 @@ export default class GenderBreakdownWaffleChart extends Component {
 
         let total = 0
         const colors = []
-        const chartData = data.filter(d => d.gender !== 'prefer not to say').map(d => {
+        const chartData = (translate) => data.filter(d => d.gender !== 'prefer not to say').map(d => {
             colors.push(theme.genderColors[d.gender])
             total += d.count
 
             return {
                 id: d.gender,
-                label: d.gender,
+                label: translate(genderNameToTranslationKey(d.gender)) || d.gender,
                 value: d.count
             }
         })
@@ -29,15 +31,19 @@ export default class GenderBreakdownWaffleChart extends Component {
                 <GenderLegends />
                 <div className="GenderBreakdown__Chart">
                     <ChartRatioContainer ratio={rows / columns} maxHeight={260}>
-                        <ResponsiveWaffleCanvas
-                            total={total}
-                            rows={rows}
-                            columns={columns}
-                            data={chartData}
-                            fillDirection="left"
-                            theme={theme}
-                            colors={colors}
-                        />
+                        <Trans>
+                            {translate => (
+                                <ResponsiveWaffleCanvas
+                                    total={total}
+                                    rows={rows}
+                                    columns={columns}
+                                    data={chartData(translate)}
+                                    fillDirection="left"
+                                    theme={theme}
+                                    colors={colors}
+                                />
+                            )}
+                        </Trans>
                     </ChartRatioContainer>
                 </div>
             </Fragment>
