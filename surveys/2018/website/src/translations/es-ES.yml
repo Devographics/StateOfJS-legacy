@@ -326,6 +326,12 @@ translations:
       t: Web Audio API
     - key: tool.web-speech-api
       t: Web Speech API
+    - key: tool.dart
+      t: Dart
+    - key: tool.kotlin
+      t: Kotlin
+    - key: tool.haxe
+      t: Haxe
 
     # pages
     - key: page.home
@@ -619,7 +625,7 @@ translations:
     - key: reason.lacking_developer_tooling.long
       t: 🔧 Herramientas de desarrollo incompletas
     - key: reason.lacking_developer_tooling.short
-      t: 🔧 Herramientas incompletas
+      t: 🔧 Faltan herramientas
     - key: reason.bad_documentation.long
       t: 📖 Mala documentación
     - key: reason.bad_documentation.short
@@ -627,11 +633,11 @@ translations:
     - key: reason.concerns_about_the_team_company.long
       t: 👫 Preocupaciones por el equipo/organización
     - key: reason.concerns_about_the_team_company.short
-      t: 👫 Mal equipo/organización
+      t: 👫 Mal administración
     - key: reason.bloated_complex.long
       t: 🎈 Sobrecargada y compleja
     - key: reason.bloated_complex.short
-      t: 🎈 Sovrecargada y compleja
+      t: 🎈 Compleja de usar
     - key: reason.diminishing_momentum_popularity.long
       t: 📉 Popularidad e impulso decreciendo
     - key: reason.diminishing_momentum_popularity.short
