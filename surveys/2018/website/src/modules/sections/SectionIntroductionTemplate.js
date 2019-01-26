@@ -5,6 +5,7 @@ import { salaryRanges, companySizes, yearsOfExperience } from '../../constants'
 import Layout from 'core/Layout'
 import PageHeader from 'core/pages/PageHeader'
 import Trans from 'core/i18n/Trans'
+import { translateOrFallback } from 'core/i18n/translator'
 import OverviewBlock from './blocks/OverviewBlock'
 import HappinessBlock from './blocks/HappinessBlock'
 import ToolsSubAggsDistributionBlock from './blocks/ToolsSubAggsDistributionBlock'
@@ -47,7 +48,7 @@ const SectionIntroductionTemplate = ({ pageContext, data: { introduction, sectio
                                 aggsType="years_of_experience"
                                 chartId="tools-years-of-experience"
                                 keys={yearsOfExperience}
-                                formatValue={v => `${v}yrs`}
+                                formatValue={v => `${v}${translateOrFallback(translate("years_short"), "yrs")}`}
                                 data={section.usage_users_info.by_years_of_experience}
                             />
                             <HappinessBlock

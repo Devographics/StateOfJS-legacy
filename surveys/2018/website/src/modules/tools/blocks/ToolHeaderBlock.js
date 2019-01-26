@@ -6,6 +6,8 @@ import periodicTableData from 'data/periodic_table.yml'
 import ranking from 'data/results/tools_ranking.yml'
 import PeriodicElement from 'core/components/PeriodicElement'
 import Trans from 'core/i18n/Trans'
+import { translateOrFallback } from 'core/i18n/translator'
+import { libraryDescriptionToTranslationKey } from 'core/i18n/translation-key-getters'
 import { getToolName } from 'core/helpers/tools'
 
 const starsFormatter = format('.2s')
@@ -42,12 +44,12 @@ export default class ToolHeaderBlock extends Component {
                                     <h2 className="ToolHeader__Title">{toolName}</h2>
                                     {project.stars && (
                                         <div className="ToolHeader__Stars">
-                                            {starsFormatter(project.stars)} stars
+                                            {starsFormatter(project.stars)} {translateOrFallback(translate("github_stars"), "stars")}
                                         </div>
                                     )}
                                 </div>
                                 <Fragment>
-                                    <div>{project.description}</div>
+                                    <div>{translateOrFallback(translate(libraryDescriptionToTranslationKey(toolName)), project.description)}</div>
                                     <div className="ToolHeader__Links">
                                         {project.homepage && (
                                             <a

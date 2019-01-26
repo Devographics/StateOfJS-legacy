@@ -47,6 +47,10 @@ translations:
       t: |
         Gracias a nuestros socios por apoyar este proyecto.
         <a href="/support">Aprender más</a> sobre cómo apoyar The State of JS.
+    - key: years_short
+      t: "años"
+    - key: github_stars
+      t: estrellas
 
     # opinions
     - key: opinions.legends.never_heard
