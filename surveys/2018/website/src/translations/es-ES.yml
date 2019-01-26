@@ -767,3 +767,143 @@ translations:
     # meta
     - key: meta.description
       t: Descubre las tecnologías de JavaScript más populares del año.
+
+    # countries
+    - key: countries.usa
+      t: Estados Unidos
+    - key: countries.canada
+      t: Canadá
+    - key: countries.mexico
+      t: México
+    - key: countries.panama
+      t: Panamá
+    - key: countries.haiti
+      t: Haití
+    - key: countries.france
+      t: Francia
+    - key: countries.brazil
+      t: Brasil
+    - key: countries.peru
+      t: Perú
+    - key: countries.morocco
+      t: Marruecos
+    - key: countries.algeria
+      t: Argelia
+    - key: countries.iceland
+      t: Islandia
+    - key: countries.ireland
+      t: Irlanda
+    - key: countries.uk
+      t: Reino Unido
+    - key: countries.spain
+      t: España
+    - key: countries.cameroon
+      t: Camerún
+    - key: countries.libya
+      t: Libia
+    - key: countries.tunisia
+      t: Túnez
+    - key: countries.egypt
+      t: Egipto
+    - key: countries.central_african_republic
+      t: República Centroafricana
+    - key: countries.south_sudan
+      t: Sudán del Sur
+    - key: countries.ethiopia
+      t: Etiopía
+    - key: countries.somalia
+      t: Somalía
+    - key: countries.kenya
+      t: Kenia
+    - key: countries.south_africa
+      t: Sudáfrica
+    - key: countries.italy
+      t: Italia
+    - key: countries.switzerland
+      t: Suiza
+    - key: countries.belgium
+      t: Bélgica
+    - key: countries.germany
+      t: Alemania
+    - key: countries.luxembourg
+      t: Luxemburgo
+    - key: countries.netherlands
+      t: Países Bajos
+    - key: countries.denmark
+      t: Dinamarca
+    - key: countries.norway
+      t: Noruega
+    - key: countries.sweden
+      t: Suecia
+    - key: countries.finland
+      t: Finlandia
+    - key: countries.russia
+      t: Rusia
+    - key: countries.belarus
+      t: Belarús
+    - key: countries.slovenia
+      t: Eslovenia
+    - key: countries.czech_republic
+      t: República Checa
+    - key: countries.poland
+      t: Polonia
+    - key: countries.slovakia
+      t: Eslovaquia
+    - key: countries.hungary
+      t: Hungría
+    - key: countries.romania
+      t: Rumania
+    - key: countries.bosnia_and_herzegovina
+      t: Bosnia y Herzegovina
+    - key: countries.croatia
+      t: Croacia
+    - key: countries.greece
+      t: Grecia
+    - key: countries.turkey
+      t: Turquía
+    - key: countries.ukraine
+      t: Ucrania
+    - key: countries.moldova
+      t: Moldavia
+    - key: countries.lithuania
+      t: Lituania
+    - key: countries.latvia
+      t: Letonia
+    - key: countries.azerbaijan
+      t: Azerbaiyán
+    - key: countries.jordan
+      t: Jordania
+    - key: countries.saudi_arabia
+      t: Arabia Saudita
+    - key: countries.united_arab_emirates
+      t: Emiratos Árabes Unidos
+    - key: countries.iran
+      t: Irán
+    - key: countries.afghanistan
+      t: Afganistán
+    - key: countries.uzbekistan
+      t: Uzbekistán
+    - key: countries.pakistan
+      t: Pakistán
+    - key: countries.kazakhstan
+      t: Kazakistán
+    - key: countires.kyrgyzstan
+      t: Kirguistán
+    - key: countries.thailand
+      t: Tailandia
+    - key: countries.cambodia
+      t: Camboya
+    - key: countries.malaysia
+      t: Malasia
+    - key: countries.philippines
+      t: Filipinas
+    - key: countries.new_zealand
+      t: Nueva Zelanda
+    - key: countries.new_caledonia
+      t: Nueva Caledonia
+    - key: countries.japan
+      t: Japón
+    - key: countries.korea
+      t: Corea
+    - key: countries.lebanon
+      t: Líbano
