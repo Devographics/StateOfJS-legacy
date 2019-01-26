@@ -174,11 +174,11 @@ translations:
     - key: section.javascript-flavors
       t: Variantes de JS
     - key: section.front-end-frameworks
-      t: Frameworks de Front-end
+      t: "Frameworks: Front-end"
     - key: section.data-layer
       t: Capa de Datos
     - key: section.back-end-frameworks
-      t: Frameworks de Back-end 
+      t: "Frameworks: Back-end"
     - key: section.testing
       t: Testing
     - key: section.mobile-and-desktop
