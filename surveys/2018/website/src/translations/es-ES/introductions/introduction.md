@@ -36,7 +36,7 @@ Te invito a conocer mi framework de JavaScript para React/GraphQL, [Vulcan.js](h
 
 El sitio está montado sobre IBM Plex Mono. El "GIF de fuego" fue tomado prestado de [Animal Jam](https://animal-jam-roleplay.wikia.com/wiki/File:Pixel-fire-gif-1.gif). ¿Preguntas? ¿Sugerencias? ¿Quieres acceso a los datos sin procesar? [¡Ponte en contacto con nosotros!](mailto:hello@stateofjs.com)
 
-Y ahora, ¡veamos qué ha estado pasando con JavaScript este año!
+Y ahora, ¡veamos qué ha estado pasando con JavaScript en 2018!
 
 PD: Pusimos mucho esfuerzo y cariño en el sitio de este año, así que por favor ¡no andes clickeando por ahí rompiendo cosas!
 
