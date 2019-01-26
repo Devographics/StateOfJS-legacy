@@ -569,7 +569,7 @@ translations:
     - key: reason.powerful_developer_tooling.short
       t: 🔧 Herramientas
     - key: reason.good_documentation.long
-      t: 📖 Beuna documentación
+      t: 📖 Buena documentación
     - key: reason.good_documentation.short
       t: 📖 Documentación
     - key: reason.backed_by_a_great_team_company.long
