@@ -16,3 +16,6 @@ export const getTranslator = ({ locale, translations }) => (key, { values } = {}
         return `[${locale}][ERR] ${key}`
     }
 }
+
+export const translateOrFallback = (translatedKey, fallback) =>
+  translatedKey.match(/\[[a-z]{2}-[A-Z]{2}?\] [a-z_\-.]+/) ? fallback : translatedKey;

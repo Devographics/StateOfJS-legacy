@@ -31,6 +31,8 @@ translations:
       t: Finalistas
     - key: tool_homepage
       t: Página principal
+    - key: learn_more
+      t: Aprende más
     - key: from_to_short
       t: ${from} a ${to}
     - key: users_count
