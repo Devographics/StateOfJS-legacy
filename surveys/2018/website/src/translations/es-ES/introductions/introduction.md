@@ -38,6 +38,6 @@ El sitio está montado sobre IBM Plex Mono. El "GIF de fuego" fue tomado prestad
 
 Y ahora, ¡veamos qué ha estado pasando con JavaScript este año!
 
-PD: Pusimos mucho esfuerzo y cariño en el stiio de este año, así que por favor no andes clickeando por ahí rompiendo cosas!
+PD: Pusimos mucho esfuerzo y cariño en el sitio de este año, así que por favor ¡no andes clickeando por ahí rompiendo cosas!
 
 <span class="conclusion__byline">– Sacha, Raphaël y Michael</span>
