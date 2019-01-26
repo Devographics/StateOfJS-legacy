@@ -340,6 +340,8 @@ translations:
       t: Haxe
 
     # pages
+    - key: page.home
+      t: Home
     - key: page.introduction
       t: Introduction
     - key: page.demographics

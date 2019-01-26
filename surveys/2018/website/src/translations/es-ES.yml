@@ -328,6 +328,8 @@ translations:
       t: Web Speech API
 
     # pages
+    - key: page.home
+      t: Inicio
     - key: page.introduction
       t: Introducción
     - key: page.demographics
