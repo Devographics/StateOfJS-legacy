@@ -1,4 +1,4 @@
-const keyFrom = (name) => name.replace(/ |-|\//g, "_").toLowerCase()
+const keyFrom = (name) => name.replace(/ |-|\/|\./g, "_").toLowerCase()
 
 export const countryNameToTranslationKey = (name) => `countries.${keyFrom(name)}`
 

@@ -1049,3 +1049,251 @@ translations:
       t: Portugal
     - key: countries.estonia
       t: Estonia
+
+    # tool descriptions (see bestof.json)
+    - key: library.descriptions.typescript
+      t: TypeScript es una extensión de JavaScript que compila a JavaScript puro.
+    - key: library.descriptions.flow
+      t: Agrega tipos estáticos a JavaScript para mejorar la productividad y la calidad del código en el desarrollo.
+    - key: library.descriptions.elm
+      t: Compilador para Elm, un lenguaje funcional para aplicaciones web confiables.
+    - key: library.descriptions.clojurescript
+      t: Compilador de JS a Clojure.
+    - key: library.descriptions.reason
+      t: Código tipado, simple y rápido que se nutre de los ecosistemas de JavaScript y OCaml.
+    - key: library.descriptions.purescript
+      t: Un lenguaje fuertamente tipado que compila a JavaScript.
+    - key: library.descriptions.coffeescript
+      t: Un pequeño lenguaje que compila a JavaScript.
+    - key: library.descriptions.react
+      t: Una librería de JavaScript, flexible, declarativa y eficiente para construir interfaces de usuario.
+    - key: library.descriptions.angular_1
+      t: "AngularJS: ¡HTML mejorado para aplicaciones web!"
+    - key: library.descriptions.ember
+      t: "Ember.js, un framework de JavaScript para crear aplicaciones web ambiciosas."
+    - key: library.descriptions.vue_js
+      t: "🖖 Un framework de JavaScript, progresivo e incrementalmente adoptable para construir interfaces de usuario en la Web."
+    - key: library.descriptions.backbone
+      t: Dale a tus aplicaciones JavaScript un esqueleto con modelos, vistas, colecciones y eventos.
+    - key: library.descriptions.polymer
+      t: La librería original para Web Components.
+    - key: library.descriptions.aurelia
+      t: El framework de Aurelia une todas las librerías principales de Aurelia en una plataforma de construcción de aplicaciones lista para usar.
+    - key: library.descriptions.preact
+      t: ⚛️ Una alternativa rápida y de 3kb a React, con la misma API moderna. Componentes y Virtual DOM.
+    - key: library.descriptions.knockout
+      t: Knockout hace más fácil la creación de interfaces de usuario responsivas con JavaScript.
+    - key: library.descriptions.jquery
+      t: La librería jQuery para JavaScript.
+    - key: library.descriptions.cycle_js
+      t: Un framework reactivo y funcional para escribir código predecible en JavaScript.
+    - key: library.descriptions.mithril
+      t: Un framework de JavaScript para construir aplicaciones brillantes.
+    - key: library.descriptions.inferno
+      t: 🔥 Una librería de JavaScript extremadamente rápida, al estilo de React, para construir interfaces de usuario modernas.
+    - key: library.descriptions.svelte
+      t: El framework de interfaces de usuario que mágicamente desaparece
+    - key: library.descriptions.hyperapp
+      t: Un microframework de 1Kb en JavaScript, para construir aplicaciones web declarativas.
+    - key: library.descriptions.choo
+      t: 🚂🚆 Un framework robusto de 4kb para front-end
+    - key: library.descriptions.marionette
+      t: El framework de Backbone
+    - key: library.descriptions.marko
+      t: Una amigable (¡y veloz!) librería de interfaz de usuario hecha por eBay, que hace divertido el construir aplicaciones web.
+    - key: library.descriptions.riot
+      t: Una librería de interfaz de usuario basada en componentes, simple y elegante.
+    - key: library.descriptions.dojo
+      t: 🚀 Dojo 2 - utilidades y funciones auxiliares para el lenguaje.
+    - key: library.descriptions.canjs
+      t: Un framework de JavaScript que provee administración de estados, plantillas y elementos personalizados. Ayuda a construir lo imposible mientras mantiene fáciles las cosas comunes.
+    - key: library.descriptions.glimmer_js
+      t: Una veloz y ligera librería de componentes de interfaz de usuario, creada por el equipo de Ember.js.
+    - key: library.descriptions.web_components
+      t: Una suite de polyfills que da soporte a la especificación de HTML Web Components
+    - key: library.descriptions.reagent
+      t: Una interfaz minimalista de React, para ClojureScript.
+    - key: library.descriptions.meteor
+      t: Meteor, la plataforma de aplicaciones JavaScript.
+    - key: library.descriptions.express
+      t: "Framework de aplicaciones Web para Node: minimalista, no-dogmático y veloz."
+    - key: library.descriptions.koa
+      t: "Middlewares expresivos para Node.js utilizando funciones asíncronas de ES2017."
+    - key: library.descriptions.hapi
+      t: Framework de servidor para Node.js.
+    - key: library.descriptions.feathersjs
+      t: Una capa de APIs REST y en tiempo real para aplicaciones modernas.
+    - key: library.descriptions.sails
+      t: Un framework MVC en tiempo real para Node.js.
+    - key: library.descriptions.loopback
+      t: LoopBack simplifica la construcción de aplicaciones modernas que requieren integraciones complejas.
+    - key: library.descriptions.keystone
+      t: Un framework de aplicaciones Web y gestor de contenidos para Node.js.
+    - key: library.descriptions.node_js
+      t: Motor de ejecución de JavaScript ✨🐢🚀✨
+    - key: library.descriptions.restify
+      t: El futuro de desarrollo en REST para Node.js.
+    - key: library.descriptions.adonis
+      t: Un framework de aplicaciones Web para Node.js. Hace más facil la creación de aplicaciones con menos código 😊
+    - key: library.descriptions.next_js
+      t: El framework de React
+    - key: library.descriptions.serverless
+      t: Construye aplicaciones web, mobile y IoT con arquitecturas sin servidor utilizando AWS Lambda, funciones Azure, CloudFunctions de Google ¡y más!
+    - key: library.descriptions.socket_io
+      t: Framework de aplicaciones en tiempo real para servidores Node.js.
+    - key: library.descriptions.micro
+      t: Microservicios HTTP asíncronos
+    - key: library.descriptions.kraken
+      t: Un módulo de inicialización de aplicaciones Web para Node.js, basado en Express.
+    - key: library.descriptions.redux
+      t: Un contenedor de estado predecible para aplicaciones JavaScript.
+    - key: library.descriptions.mobx
+      t: Administración de estados, simple y escalable.
+    - key: library.descriptions.graphql
+      t: GraphQL es un motor de ejecución y lenguaje de consultas, enlazable a cualquier servicio de back-end.
+    - key: library.descriptions.relay_relay_modern
+      t: Relay es un framework de JavaScript para escribir aplicaciones React controladas por datos.
+    - key: library.descriptions.falcor
+      t: Una librería de JavaScript para obtención eficiente de datos
+    - key: library.descriptions.apollo
+      t: 🚀 Un cliente completo de GraphQL, listo para producción, con soporte de caché, para todo framework de front-end y servidor de GraphQL existente.
+    - key: library.descriptions.vuex
+      t: 🗃️ Administración de estado centralizada para Vue.js.
+    - key: library.descriptions.flux
+      t: Arquitectura de aplicaciones para construir interfaces de usuario.
+    - key: library.descriptions.pouchdb
+      t: 🐨 - PouchDB es una base de datos de bolsillo.
+    - key: library.descriptions.rxjs
+      t: Extensiones reactivas para JavaScript.
+    - key: library.descriptions.realm
+      t: Realm es una base de datos mobile, una alternativa a SQLite y repositorios de datos clave-valor.
+    - key: library.descriptions.gun_js
+      t: Un motor de base de datos basado en grafos, desconectado por defecto, decentralizado y capaz de ejecutar operaciones en tiempo real.
+    - key: library.descriptions.cerebral
+      t: Administración declarativa de estados y efectos colaterales para frameworks populares de JavaScript.
+    - key: library.descriptions.ember_data
+      t: Una librería de persistencia de datos para Ember.js.
+    - key: library.descriptions.ngrx
+      t: Librerías reactivas para Angular
+    - key: library.descriptions.mongodb
+      t: Controlador nativo en NodeJS para MongoDB.
+    - key: library.descriptions.mocha
+      t: ☕️ Un framework de testing simple, flexible y divertido para Node.js y el navegador.
+    - key: library.descriptions.jasmine
+      t: Un framework de testing simple para navegadores y Node.js.
+    - key: library.descriptions.enzyme
+      t: Utilidades de testing en JavaScript para React.
+    - key: library.descriptions.jest
+      t: Testing placentero para JavaScript.
+    - key: library.descriptions.tape
+      t: Framework de testing automatizado compatible con TAP para Node.js y navegadores.
+    - key: library.descriptions.ava
+      t: 🚀 Ejecutor futurista de pruebas en JavaScript.
+    - key: library.descriptions.karma
+      t: Un espectacular ejecutor de pruebas para JavaScript.
+    - key: library.descriptions.chai
+      t: Un framework de aseveraciones en estilos BDD/TDD para Node.js y el navegador, que puede enlazarse con cualquier framework de testing.
+    - key: library.descriptions.nightwatch
+      t: Un framework en Node.js para pruebas automatizadas e integración continua, utilizando el protocolo WebDriver.
+    - key: library.descriptions.tap
+      t: Herramientas de Node para el protocolo TAP (Test Anything Protocol).
+    - key: library.descriptions.cypress
+      t: Testing confiable, fácil y rápido para cualquier cosa que funcione en un navegador.
+    - key: library.descriptions.intern
+      t: Un stack del futuro para pruebas de código en JavaScript.
+    - key: library.descriptions.phantomjs
+      t: Un navegador sin interfaz gráfica, controlable vía scripts.
+    - key: library.descriptions.nightmare
+      t: Una librería de alto nivel para automatización de navegadores.
+    - key: library.descriptions.sinon
+      t: Espías y objetos falsos para pruebas en JavaScript.
+    - key: library.descriptions.testcafe
+      t: Una herramienta en Node.js para automatizar pruebas web de punta a punta.
+    - key: library.descriptions.qunit
+      t: Un framework de testing unitario, fácil de usar.
+    - key: library.descriptions.protractor
+      t: Un framework de pruebas de punta a punta para aplicaciones en Angular.
+    - key: library.descriptions.cucumber_js
+      t: Cucumber para JavaScript.
+    - key: library.descriptions.storybook
+      t: Desarrollo y testing interactivo para componentes de interfaz de usuario de React, React Native, Vue, Angular y Ember.
+    - key: library.descriptions.sass_scss
+      t: 🌈 Enlaces de Node.js a libsass.
+    - key: library.descriptions.stylus
+      t: Un lenguaje CSS expresivo, robusto y rico en funcionalidad para Node.js.
+    - key: library.descriptions.less
+      t: Less, el lenguaje de hojas de estilos dinámicas.
+    - key: library.descriptions.bootstrap
+      t: El framework más popular de HTML/CSS/JS para crear projectos mobile-first y responsivos en la web.
+    - key: library.descriptions.foundation
+      t: El framework responsivo de front-end más avanzado del mundo. Rápidamente crea prototipos y código productivo para sitios que funcionen en cualquier clase de dispositivo.
+    - key: library.descriptions.postcss
+      t: Transformando estilos con plugins de JavaScript
+    - key: library.descriptions.bulma
+      t: Framework moderno de CSS basado en Flexbox
+    - key: library.descriptions.semantic_ui
+      t: Semantic es un framework de componentes de interfaz de usuario basado en torno a principios útiles derivados del lenguaje natural.
+    - key: library.descriptions.materialize
+      t: Materialize, un framework CSS basado en Material Design.
+    - key: library.descriptions.css_modules
+      t: Documentación acerca de módulos CSS
+    - key: library.descriptions.material_design
+      t: Componentes de Material Design en HTML, CSS y JS.
+    - key: library.descriptions.pure_css
+      t: Un sert de pequeños y responsivos módulos CSS que puedes utilizar en todos tus proyectos Web.
+    - key: library.descriptions.material_ui
+      t: Componentes de React que implementan Material Design de Google.
+    - key: library.descriptions.uikit
+      t: Un ligero y modular framework de front-end para desarrollar interfaces Web veloces y poderosas.
+    - key: library.descriptions.tachyons
+      t: CSS funcional para humanos.
+    - key: library.descriptions.skeleton
+      t: Skeleton, una plantilla base súper-simple para desarrollos preparados para mobile.
+    - key: library.descriptions.styled_components
+      t: Primitivos visuales para la era de los componentes. Utiliza las mejores partes de ES6 y CSS y estiliza tus aplicaciones sin estrés 💅
+    - key: library.descriptions.cssnext
+      t: postcss-cssnext ha sido deprecado en favor de postcss-preset-env.
+    - key: library.descriptions.webpack
+      t: Un empaquetador para JavaScript y amigos. Empaqueta múltiples módulos en unos pocos archivos. La separación de código permite cargar a demanda las distintas partes de una aplicación. A través de 'cargadores', los módulos pueden ser CommonJS, AMD, ES6, imágenes, JSON, CoffeeScript, Less, ...y lo que tú quieras.
+    - key: library.descriptions.grunt
+      t: "Grunt: el ejecutor de tareas de JavaScript"
+    - key: library.descriptions.gulp
+      t: El sistema de compilación basado en streams
+    - key: library.descriptions.browserify
+      t: require() para navegadores, al estilo de Node.js
+    - key: library.descriptions.rollup
+      t: Empaquetador moderno de módulos ES
+    - key: library.descriptions.brunch
+      t: 🍴 Herramienta de compilación para aplicaciones Web de front-end, veloz, con configuración declarativa sencilla, compilación incremental y transparente para desarrollar más rápido, un flujo de trabajo y tareas de compilación predefinido y soporte incorporado para Source Maps.
+    - key: library.descriptions.broccoli
+      t: Una librería de compilación para el navegador.
+    - key: library.descriptions.jspm
+      t: Interfaz de consola para administración de paquetes.
+    - key: library.descriptions.fusebox
+      t: Un cargador/empaquetador para JavaScript ultra-rápido, con una exhaustiva API 🔥
+    - key: library.descriptions.systemjs
+      t: Cargador dinámico de módulos ES
+    - key: library.descriptions.stealjs
+      t: Comprende JavaScript
+    - key: library.descriptions.babel
+      t: 🐠 Babel es un compilador para escribir JavaScript del futuro.
+    - key: library.descriptions.react_native
+      t: Un framework para escribir aplicaciones nativas con React.
+    - key: library.descriptions.ionic
+      t: Construye aplicaciones nativas y aplicaciones web progresivas increíbles con tecnologías web libres. Una aplicación que corre en todos lados 🎉
+    - key: library.descriptions.nativescript
+      t: NativeScript es un framework de código abierto para construir aplicaciones verdaderamente nativas con JavaScript. Utiliza habilidades Web, como Angular y Vue.js, FlexBox y CSS, y obtén performance e interfaces de usuario nativas en iOS y Android.
+    - key: library.descriptions.electron
+      t: Construye aplicaciones de escritorio multiplataforma, con JavaScript, HTML y CSS.
+    - key: library.descriptions.weex
+      t: Apache Weex
+    - key: library.descriptions.nw_js
+      t: Invoca a todos los módulos de Node.js directamente desde el DOM o un Web Worker y accede a una nueva forma de escribir aplicaciones con todas las tecnologías Web.
+    - key: library.descriptions.quasar
+      t: Quasar Framework 
+    - key: library.descriptions.expo
+      t: La plataforma Expo, para crear aplicaciones mobile multiplataforma
+    - key: library.descriptions.yarn
+      t: 📦🐈 Administración de dependencias segura, veloz y confiable.
+    - key: library.descriptions.npm
+      t: Un administrador de paquetes para JavaScript.
