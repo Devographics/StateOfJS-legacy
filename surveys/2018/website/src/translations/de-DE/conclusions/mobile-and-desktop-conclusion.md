@@ -1,16 +1,16 @@
 ---
 type: conclusion
 section: mobile-and-desktop
-locale: en-US
+locale: de-DE
 ---
- This category shows clearly how JavaScript has expanded its "scope" far beyond the limits of the browser.
+ In dieser Kategorie erkennt man klar und deutlich wie JavaScript seinen Einfluss auf mehr als den Browser ausgeweitet hat.
 
-**React Native** and **Electron** are the two leading solutions to build mobile and desktop apps using web technologies. Coincidentally, they show similar numbers in both satisfaction ratio and number of users.
+**React Native** und **Electron** sind die beiden führenden Lösungen um Mobil- und Desktopapplikationen unter der Nutzung von Webtechnologien umzusetzen. Zufälligerweise zeigen beide Techniken auch ähnliche Ergebnisse in "Zufriedenheit" und Nutzeranzahl.
 
-Electron's versatility (it can work with any UI framework, even if it's often associated with React or Vue.js) may explain why it got the highest satisfaction ratio of the category.
+Die Vielseitigkeit von Electron (man kann es mit jedem UI-Framework nutzen und es wird oft mit React oder Vue.js assoziiert) erklärt wahrscheinlich warum diese Technologie in Sachen "Zufriedenheit" am besten in der Kategorie abgeschnitten hat.
 
-But things are far from settled: Airbnb recently published [a thorough series of article](https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c) explaining why they decided to drop React Native for their next products in favor of Native Apps.
+Doch die Dinge sind noch lange nicht fix. Airbnb hat jüngst [eine gründliche Artikelreihe](https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c) veröffentlicht, welche ihre Entscheidung, React Native im Bezug auf native Apps für ihre nächsten Produkte aufzugeben, erklärt.
 
-As an alternative to React Native, developers who want to write cross-platform applications in JavaScript without using React patterns can check out [Weex](https://weex.apache.org/), which lets them use the Vue.js eco-system.
+Als Alternative zu React Native, können Entwickler, die plattformunabhängige Apps in JavaScript schreiben wollen ohne dabei an die React-Regeln gebunden zu sein, [Weex](https://weex.apache.org/) einen Besuch abstatten, welches auf dem Vue.js-Ökosystem basiert.
 
-And Google has many interesting entrants in the space as well. There's [Carlo](https://github.com/GoogleChromeLabs/carlo), a brand new “Headful Node app framework” released by Google and built on top of [Puppeteer](https://github.com/GoogleChromeLabs/carlo); as well as [Flutter](https://flutter.io/): instead of building a JavaScript "bridge" as React Native does, it compiles to true native code. But the code is written in Dart, so at the end of the day React Native will be still relevant to most of JavaScript developers already familiar with the React system.
+Außerdem hat auch Google einige interessante Mitstreiter in diesem Bereich. Zum Einen wäre da [Carlo](https://github.com/GoogleChromeLabs/carlo), ein brandneues "Cleveres Node App Framework" veröffentlicht von Google und aufbauend auf [Puppeteer](https://github.com/GoogleChromeLabs/carlo); Zum Anderen [Flutter](https://flutter.io/): Anstatt wie React Native eine JavaScript "Brücke" zu schaffen, kompiliert Flutter zu richtigem nativen Code. Allerdings nutzt Flutter Dart, also wird React Native immernoch relevant für JavaScript-Entwickler blieben die sich bereits mit dem React-System auskennen.
