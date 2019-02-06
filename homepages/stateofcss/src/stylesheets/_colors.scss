@@ -4,8 +4,10 @@ $blue-faded: #b3d8da;
 
 $darkblue: #2e3092;
 $darkblue2: #5757ec;
+$darkblue3: #3c52d1;
 
-$pink: #ed387a;
+
+$pink: #ec2f95;
 $pink-faded: #e0a4bc;
 
 $red: #FE6A6A;
@@ -24,6 +26,7 @@ $grey3: #cecece;
 $mediumgrey: #788080;
 $darkgrey: #344c4c;
 $beige: #fffef0;
+$pencil: #a7b1b3;
 
 $interest-dark: $blue;
 $interest-light: $blue-faded;
@@ -40,9 +43,9 @@ $never-heard: $grey;
 $active-color: rgb(33, 198, 231);
 $secondary-color: #EC2F95;
 $hover-color: #EC2F95;
-$text-color: #217889;
+$text-color: $darkblue3;
 $lighter-text-color: $mediumgrey;
 $light-border-color: $grey3;
-$border-color: #217889;
+$border-color: $darkblue3;
 $bg-color: #D9DEDF;
 $highlight-color: $yellow-faded;

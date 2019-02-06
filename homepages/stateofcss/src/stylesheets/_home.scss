@@ -1,8 +1,25 @@
+.home-layout{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.home-logo{
+  position: relative;
+}
+
 .logo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  @include flex-center;
+  margin: 0;
   img, svg{
     display: block;
-    width: 100%;
-    width: 1200px;
+    height: 100%;
+    min-width: 100%;
+    background: rgb(223, 228, 228);
   }
 }
 
@@ -24,151 +41,19 @@
   column-gap: $spacing;
 }
 
+.logo-text{
+  fill: $pink;
+  font-style: italic;
+  font-size: 8rem;
+  @include font-light;
+}
 
-// $steps: 4;
-// $duration: 500ms;
-// $wait: 2000ms;
-// $animationRatio: $duration/($duration + $wait);
-
-// @mixin blink{
-//   @keyframes blink {
-//     0% {
-//       stroke-width:10;
-//     }
-//     #{100 * $animationRatio}% {
-//       stroke-width:2;
-//     }
-//     100% {
-//       stroke-width:2;
-//     }
-//   }
-// }
-
-// // @keyframes blink {
-// //   0% {
-// //     stroke-width:10;
-// //   }
-// //   25% {
-// //     stroke-width:2;
-// //   }
-// // }
-
-// @include blink;
-
-// @mixin stepDelay($step) {
-//   animation-delay: #{$duration/$steps * ($step - 1)};
-// }
-// .illustration{
-//   .circle{
-//     animation-duration: $duration + $wait;
-//     animation-iteration-count: infinite;
-//     animation-timing-function: steps(1);
-//   }
-//   .circle{
-//     // animation-name: blink;
-//   }
-//   #hl1{  
-//    @include stepDelay(3);
-//   }
-//   #hl2{
-//     @include stepDelay(1);
-//   }
-//   #hl3{
-//     @include stepDelay(3);
-//   }
-//   #c1a, #c2a, #c3a{
-//     @include stepDelay(1);
-//   }
-//   #c1b, #c2b, #c3b{
-//     @include stepDelay(2);
-//   }
-//   #c1c, #c2c, #c3c{
-//     @include stepDelay(3);
-//   }
-//   #c1d, #c2d, #c3d{
-//     @include stepDelay(4);
-//   }
-//   // #vl5{
-//   //   @include stepDelay(1);
-//   // }
-//   // #vl4, #vl6{
-//   //   @include stepDelay(1);
-//   // }
-//   // #vl3, #vl7{
-//   //   @include stepDelay(2);
-//   // }
-
-//   // #vl2, #vl8{
-//   //   @include stepDelay(3);
-//   // }
-//   // #vl1, #vl9{
-//   //   @include stepDelay(4);
-//   // }
-
-// }
-
+$hLineCount: 3;
+$vLineCount: 9;
+$dLineCount: 3;
+$crossHatchCount: 80;
 // delay to wait in between animation cycles
 $wait: 4s;
-@mixin offState{
-  // opacity: 0.5;
-  stroke-width: 2;
-}
-@mixin onState{
-  // opacity: 1;
-  stroke-width: 10;
-}
-@mixin backAndForth($prefix, $count, $duration, $delay) {
-  $animationRatio: $duration/($duration + $wait);
-  $steps: $count * 2 - 1;
-  $stepDuration: $duration/$steps;
-
-  @for $i from 1 to ($count+1) {
-    $itemName: "#{$prefix}#{$i}";
-    $firstOccurence: $i;
-    $secondOccurence: $steps - $i + 1;
-    $firstOccurencePercent: 100 * $firstOccurence/$steps;
-    $secondOccurencePercent: 100 * $secondOccurence/$steps;
-    $stepDurationPercent: 100/$steps;
-    @warn "----------------------";
-    @warn "$itemName: #{$itemName}";
-    @warn "$i: #{$i}";
-    @warn "$firstOccurence: #{$firstOccurence}";
-    @warn "$secondOccurence: #{$secondOccurence}";
-    @warn "$firstOccurencePercent: #{$firstOccurencePercent}";
-    @warn "$secondOccurencePercent: #{$secondOccurencePercent}";
-    @warn "$stepDurationPercent: #{$stepDurationPercent}";
-    @keyframes #{$itemName} {
-      0% {
-        @include offState;
-      }
-      #{$firstOccurencePercent * $animationRatio}% {
-        @include onState;
-      }
-      #{($firstOccurencePercent + $stepDurationPercent) * $animationRatio}% {
-        @include offState;
-      }
-      // last line does not have a second occurence
-      @if $i != $count {
-        #{$secondOccurencePercent * $animationRatio}% {
-          @include onState;
-        }
-        #{($secondOccurencePercent + $stepDurationPercent) * $animationRatio}% {
-          @include offState;
-        }
-      }
-      100%{
-        stroke-width:2;
-      }
-    }
-    .#{$itemName}{
-      animation-duration: $duration + $wait;
-      animation-iteration-count: infinite;
-      animation-timing-function: steps(1);
-      animation-name: $itemName;
-      animation-delay: $delay;
-    }
-  }
-}
 
 @keyframes drawMe {
   to {
@@ -177,16 +62,16 @@ $wait: 4s;
 }
 
 @mixin drawMe($prefix, $count, $duration, $interval, $delay) {
-  .#{$prefix} {
-    stroke-dasharray: 10000;
-    stroke-dashoffset: 10000;
+  .animated .#{$prefix} {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;      
     animation-name: drawMe;
     animation-duration: $duration;
   }
   @for $i from 0 to $count {
-    $itemName: "#{$prefix}#{$i + 1}";
+    $itemName: "#{$prefix}#{$i}";
     .#{$itemName}{
       animation-delay: $interval * $i + $delay;
     }
@@ -200,7 +85,7 @@ $wait: 4s;
 }
 
 @mixin appear($className, $duration, $delay) {
-  .#{$className} {
+  .animated .#{$className} {
     opacity: 0;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;      
@@ -210,44 +95,21 @@ $wait: 4s;
   }
 }
 
-// @include drawMe("hl", 100, 200ms, 100ms, 0ms);
-// @include drawMe("vl", 100, 200ms, 100ms, 500ms);
+.hl, .vl, .cc, .cc, .cs1_, .cs2_, .letter, .s1-ch, .s2-ch{
+  // display: none;
+}
 
-// @include drawMe("dla", 5, 200ms, 100ms, 1000ms);
-// @include drawMe("dlb", 5, 200ms, 100ms, 1500ms);
-// @include drawMe("cc", 10, 200ms, 100ms, 2000ms);
-// @include drawMe("csa", 10, 200ms, 100ms, 2500ms);
-// @include drawMe("csb", 10, 200ms, 100ms, 3000ms);
-// @include drawMe("letter", 3, 2000ms, 1000ms, 3500ms);
-// @include drawMe("crosshatch", 3, 3000ms, 1000ms, 4000ms);
+@include drawMe("hl", $hLineCount, 400ms, 200ms, 0ms);
+@include drawMe("vl", $vLineCount, 200ms, 100ms, 800ms);
+@include drawMe("dl", $dLineCount*2, 300ms, 200ms, 2000ms);
+@include drawMe("cc", 3, 400ms, 200ms, 3000ms);
+@include drawMe("cs1_", 3, 400ms, 200ms, 3500ms);
+@include drawMe("cs2_", 3, 400ms, 200ms, 4000ms);
+@include drawMe("letter", 3, 600ms, 600ms, 5000ms);
+@include drawMe("c-ch", $crossHatchCount, 50ms, 20ms, 6000ms);
+@include drawMe("s1-ch", $crossHatchCount, 50ms, 20ms, 7000ms);
+@include drawMe("s2-ch", $crossHatchCount, 50ms, 20ms, 8000ms);
 
-// @include appear("theStateOf", 300ms, 6600ms);
-// @include appear("year", 300ms, 6800ms);
+@include appear("theStateOf", 200ms, 9000ms);
+@include appear("year", 200ms, 9200ms);
 
-
-// @include backAndForth("dl", 5, 900ms, 0ms);
-// @include backAndForth("vl", 5, 1s, 0ms);
-
-// @include backAndForth("c", 4, 600ms, 300ms);
-// @include backAndForth("s", 4, 600ms, 600ms);
-// @include backAndForth("ss", 4, 600ms, 900ms);
-// @include backAndForth("hl", 3, 900ms, 3000ms);
-
-// // handle last vertical line separately
-// @keyframes vl#{$vlCount} {
-//   0%{
-
-//   }
-//   #{}% {
-
-//   }
-//   #{}% {
-
-//   }
-//   100% {
-
-//   }
-// }
-// #vl#{$vlCount}{
-    
-// }
