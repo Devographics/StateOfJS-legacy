@@ -1,19 +1,3 @@
-.logo{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  @include flex-center;
-  margin: 0;
-  img, svg{
-    display: block;
-    height: 100%;
-    min-width: 100%;
-    background: rgb(223, 228, 228);
-  }
-}
-
 $hLineCount: 3;
 $vLineCount: 9;
 $dLineCount: 3;
@@ -28,7 +12,7 @@ $wait: 4s;
 }
 
 @mixin drawMe($prefix, $count, $duration, $interval, $delay) {
-  .animated .#{$prefix} {
+  .Animated .#{$prefix} {
     stroke-dasharray: 2000;
     stroke-dashoffset: 2000;
     animation-iteration-count: 1;
@@ -51,7 +35,7 @@ $wait: 4s;
 }
 
 @mixin appear($className, $duration, $delay) {
-  .animated .#{$className} {
+  .Animated .#{$className} {
     opacity: 0;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;      

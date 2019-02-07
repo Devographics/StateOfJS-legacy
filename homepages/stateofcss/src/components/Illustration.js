@@ -189,7 +189,7 @@ const CrossHatching = ({ x, y, prefix, ...rest }) => (
 
 const Illustration = ({ done }) => (
     <svg
-        className={`illustration ${animated ? 'animated' : ''}`}
+        className={`Illustration ${animated && 'Animated'}`}
         viewBox={`0 0 ${totalWidth} ${totalHeight}`}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
