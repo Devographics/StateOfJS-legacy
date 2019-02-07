@@ -116,7 +116,7 @@ export default class Share extends React.Component {
     render() {
         return (
             <div className="block spread-the-word">
-                <h2 className="block-heading">Help Spread the Word!</h2>
+                <h3 className="block__title block-heading">Help Spread the Word!</h3>
                 <div className="share-options">
                     <Twitter text="The State Of JavaScript Survey: find out the most popular JavaScript technologies of 2018 http://stateofjs.com #stateofjs" />
                     <Facebook link="http://stateofjs.com" />

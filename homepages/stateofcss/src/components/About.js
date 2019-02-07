@@ -4,7 +4,7 @@ import authors from '../data/authors.yaml'
 
 const About = () => (
     <div className="block about">
-        <h2 className="block-heading about__heading">The State of CSS is Made by:</h2>
+        <h3 className="block-heading about__heading">The State of CSS is Made by:</h3>
         <div className="about__authors">
             {authors.map(({ name, slug, bio, url }) => (
                 <div key={slug} className="about__author">

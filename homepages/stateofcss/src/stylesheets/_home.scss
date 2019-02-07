@@ -23,26 +23,52 @@
   }
 }
 
+.home-intro{
+  font-size: $large-font;
+  margin-bottom: $spacing*2;
+  p:first-child{
+    font-size: 1.8rem;
+  }
+}
+
 .home-take-survey{
-  background: $secondary-color;
-  position: relative;
-  top: -120px;
+  @include flex-center;
+}
+.home-take-survey-button{
+  background: $active-color;
+  // position: relative;
+  // top: -120px;
   font-size: $largest-font;
   padding: $spacing;
   font-style: italic;
   &, &:link{
     color: $white;
   }
+  &:hover{
+    background: white;
+    color: $active-color;
+    text-decoration: none;
+  }
+}
+
+.block__title{
+
 }
 
 .about__authors{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: $spacing;
+  column-gap: $spacing*2;
+}
+.about__author__name{
+  margin-bottom: $spacing/4;
+}
+.about__author__bio{
+  font-size: $medium-font;
 }
 
 .logo-text{
-  fill: $pink;
+  fill: $darkblue;
   font-style: italic;
   font-size: 8rem;
   @include font-light;
@@ -106,10 +132,18 @@ $wait: 4s;
 @include drawMe("cs1_", 3, 400ms, 200ms, 3500ms);
 @include drawMe("cs2_", 3, 400ms, 200ms, 4000ms);
 @include drawMe("letter", 3, 600ms, 600ms, 5000ms);
-@include drawMe("c-ch", $crossHatchCount, 50ms, 20ms, 6000ms);
-@include drawMe("s1-ch", $crossHatchCount, 50ms, 20ms, 7000ms);
-@include drawMe("s2-ch", $crossHatchCount, 50ms, 20ms, 8000ms);
 
-@include appear("theStateOf", 200ms, 9000ms);
-@include appear("year", 200ms, 9200ms);
+// with crosshatching
+// @include drawMe("c-ch", $crossHatchCount, 50ms, 20ms, 6000ms);
+// @include drawMe("s1-ch", $crossHatchCount, 50ms, 20ms, 7000ms);
+// @include drawMe("s2-ch", $crossHatchCount, 50ms, 20ms, 8000ms);
 
+// @include appear("theStateOf", 200ms, 9000ms);
+// @include appear("year", 200ms, 9200ms);
+
+// without crosshatching
+// .ch{
+//   display: none;
+// }
+@include appear("theStateOf", 200ms, 6800ms);
+@include appear("year", 200ms, 7000ms);

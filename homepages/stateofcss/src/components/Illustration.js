@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 const animated = true
 
 let blue = '#3c52d1'
 let grey = '#A2C7CE'
-let darkBlue = '#a7b1b3'
+let darkBlue = '#a2c3ca'
 let pink = '#ec2f95'
 let crossHatchStroke = pink
 // blue = 'red'
@@ -14,7 +14,7 @@ let crossHatchStroke = pink
 const dashArray = '16.45 6.17'
 
 const gridStrokeWidth = 2
-const strokeWidth = 5
+const strokeWidth = 7
 const letterStrokeWidth = 16
 const crossHatchStrokeWidth = 6
 
@@ -33,10 +33,10 @@ const letterOffset = 5 * baseUnit
 const radiusSteps = [1.2, 2, 3]
 const totalFrameWidth = frameWidth * 3 - (frameWidth - letterOffset) * 2
 const totalFrameHeight = 6 * baseUnit
-const topLeftX = centerX - totalFrameWidth/2
-const topLeftY = centerY - totalFrameHeight/2
-const bottomRightX = centerX + totalFrameWidth/2
-const bottomRightY = centerY + totalFrameHeight/2
+const topLeftX = centerX - totalFrameWidth / 2
+const topLeftY = centerY - totalFrameHeight / 2
+const bottomRightX = centerX + totalFrameWidth / 2
+const bottomRightY = centerY + totalFrameHeight / 2
 const cxCenter = totalWidth / 2 - letterOffset
 const cyCenter = totalHeight / 2
 const cxTopLeft = cxCenter - frameWidth / 2
@@ -81,8 +81,8 @@ const dLine1y = cyCenter - 3 * baseUnit
 const dLineOverflow = hLineOverflow * 0.8
 
 // crosshatching
-const crossHatchCount = 80
-const crossHatchGap = Math.round(frameWidth/crossHatchCount)*2
+const crossHatchCount = 100
+const crossHatchGap = Math.round(frameWidth / crossHatchCount) * 2
 
 // note: x, y are the coordinates of the center of the letter
 // we subtract frameWidth/2 to get the top left point
@@ -109,20 +109,22 @@ const LetterC = ({ x, y, ...rest }) => (
 const getCrossHatchCoords = (x, y, i) => {
     let point1, point2
     const isEven = i % 2 === 0
-    const halfCount = crossHatchCount/2
+    const halfCount = crossHatchCount / 2
     const offset1 = isEven ? 0 : 1
     const offset2 = isEven ? 1 : 0
     const randomCoefficient = 10
-    const randomFactor1 = Math.round(Math.random()*randomCoefficient)
-    const randomFactor2 = Math.round(Math.random()*randomCoefficient)
-    if (i < halfCount) { // e.g. 0 to 19
+    const randomFactor1 = Math.round(Math.random() * randomCoefficient)
+    const randomFactor2 = Math.round(Math.random() * randomCoefficient)
+    if (i < halfCount) {
+        // e.g. 0 to 19
         point1 = [x, y + (i - offset1) * crossHatchGap + randomFactor1]
         point2 = [x + (i - offset2) * crossHatchGap + randomFactor2, y]
 
         let [x1, y1] = isEven ? point1 : point2
         let [x2, y2] = isEven ? point2 : point1
         return { x1, y1, x2, y2 }
-    } else { // e.g. 20 to 39
+    } else {
+        // e.g. 20 to 39
         point1 = [x + (i - offset1 - halfCount) * crossHatchGap + randomFactor1, y + frameWidth]
         point2 = [x + frameWidth, y + (i - offset2 - halfCount) * crossHatchGap + randomFactor2]
 
@@ -132,14 +134,33 @@ const getCrossHatchCoords = (x, y, i) => {
     }
 }
 
+class Line extends Component {
+    state = {
+        visible: false
+    }
+
+    render() {
+        const { visible } = this.state
+        return (
+            <line
+                style={{ opacity: visible ? 1 : 0 }}
+                onMouseOver={() => {
+                    this.setState({ visible: true })
+                }}
+                {...this.props}
+            />
+        )
+    }
+}
+
 const CrossHatching = ({ x, y, prefix, ...rest }) => (
     <g stroke={pink} strokeWidth={crossHatchStrokeWidth} {...rest}>
         {Array.from(Array(crossHatchCount).keys()).map(i => {
             const { x1, y1, x2, y2 } = getCrossHatchCoords(x, y, i)
             return (
-                <line
+                <Line
                     key={i}
-                    className={`${prefix}ch ${prefix}ch${i}`}
+                    className={`ch ${prefix}ch ${prefix}ch${i}`}
                     x1={x1}
                     y1={y1}
                     x2={x2}
@@ -192,9 +213,9 @@ const Illustration = () => (
                 <line
                     key={i}
                     className={`hgl`}
-                    x1={0}
+                    x1={-9999}
                     y1={hLineStart + i * hLineSpacing}
-                    x2={totalWidth}
+                    x2={9999}
                     y2={hLineStart + i * hLineSpacing}
                     stroke={grey}
                     strokeWidth={gridStrokeWidth}
@@ -329,7 +350,9 @@ const Illustration = () => (
             <LetterS className="letter letter2 ls2" x={sbxCenter} y={sbyCenter} />
 
             {/* the state of */}
-            <text x={topLeftX - 30} y={topLeftY - 100} className="logo-text theStateOf theStateOf1">The State Of</text>
+            <text x={topLeftX - 30} y={topLeftY - 100} className="logo-text theStateOf theStateOf1">
+                The State Of
+            </text>
             {/* <path
                 transform={`translate(-${totalWidth},${totalHeight/100})`}
                 className="theStateOf theStateOf1"
@@ -337,7 +360,9 @@ const Illustration = () => (
                 fill={pink}
             /> */}
             {/* 2019 */}
-            <text x={bottomRightX - 310} y={bottomRightY + 200} className="logo-text year year1">2019</text>
+            <text x={bottomRightX - 310} y={bottomRightY + 200} className="logo-text year year1">
+                2019
+            </text>
 
             {/* <path
                 className="year year1"

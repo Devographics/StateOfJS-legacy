@@ -40,7 +40,7 @@ export default class Layout extends React.Component {
                     <script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript" />
                 </Helmet>
                 <link
-                    href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,500"
+                    href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,500,300i"
                     rel="stylesheet"
                 />
                 <HomeLayout {...this.props}>{this.props.children}</HomeLayout>
