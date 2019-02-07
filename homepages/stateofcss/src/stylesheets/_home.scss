@@ -34,15 +34,15 @@ Logo
 }
 
 .Home__Logo {
-  @include medium-large{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    @include flex-center;
-    margin: 0;
-  }
+    @include medium-large {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        @include flex-center;
+        margin: 0;
+    }
     svg {
         display: block;
         height: 100%;
@@ -89,7 +89,8 @@ Take Survey
     padding: $spacing;
     font-style: italic;
     &,
-    &:link {
+    &:link,
+    &:visited {
         color: $white;
     }
     &:hover {
