@@ -10,7 +10,7 @@ export default class Layout extends React.Component {
         const description = 'The annual survey about the latest trends in CSS.'
         const url = 'http://stateofcss.com'
         const image = 'http://stateofcss.com/images/stateofcss-social-media.png'
-        const title = 'The State of JavaScript 2018'
+        const title = 'The State of CSS'
         const meta = [
             { charset: 'utf-8' },
             { name: 'description', content: description },

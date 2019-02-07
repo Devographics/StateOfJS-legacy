@@ -121,11 +121,11 @@ export default class Share extends React.Component {
             <div className="Block Block--Share Share">
                 <h3 className="Block__Heading">Help Spread the Word!</h3>
                 <div className="Block__Content Share__Options">
-                    <Twitter text="The State Of JavaScript Survey: find out the most popular JavaScript technologies of 2018 http://stateofjs.com #stateofjs" />
-                    <Facebook link="http://stateofjs.com" />
+                    <Twitter text="The State Of CSS: take the survey and help us find out the latest CSS trends https://stateofcss.com #StateOfCSS" />
+                    <Facebook link="https://stateofcss.com" />
                     <Email
-                        subject="The State Of JavaScript"
-                        body="Find out the most popular JavaScript technologies of 2018: http://stateofjs.com"
+                        subject="The State Of CSS"
+                        body="The State Of CSS: take the survey and help us find out the latest CSS trends https://stateofcss.com"
                     />
                 </div>
             </div>
