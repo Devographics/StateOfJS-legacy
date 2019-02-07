@@ -115,9 +115,9 @@ const Email = ({ subject, body }) => {
 export default class Share extends React.Component {
     render() {
         return (
-            <div className="block spread-the-word">
-                <h3 className="block__title block-heading">Help Spread the Word!</h3>
-                <div className="share-options">
+            <div className="Block Block--Share Share">
+                <h3 className="Block__Heading">Help Spread the Word!</h3>
+                <div className="Block__Content Share__Options">
                     <Twitter text="The State Of JavaScript Survey: find out the most popular JavaScript technologies of 2018 http://stateofjs.com #stateofjs" />
                     <Facebook link="http://stateofjs.com" />
                     <Email

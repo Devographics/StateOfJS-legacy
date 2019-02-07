@@ -55,9 +55,9 @@ export default class TakeSurvey extends React.Component {
 
     render() {
         return (
-            <div className="take-survey">
+            <div className="Block Block--takeSurvey TakeSurvey">
                 <a
-                    className="button large-button"
+                    className="TakeSurvey__Button"
                     href={`https://stateofjs.typeform.com/to/J9gRJf?browser=${
                         this.state.browser
                     }&version=${this.state.version}&os=${this.state.os}&referrer=${
@@ -69,7 +69,7 @@ export default class TakeSurvey extends React.Component {
                     Take Survey
                 </a>
 
-                <p className="take-survey-note">
+                <p className="TakeSurvey__Note">
                     Note: to improve results relevance, we keep track of data such as your referrer,
                     location, device, browser, and OS.
                 </p>

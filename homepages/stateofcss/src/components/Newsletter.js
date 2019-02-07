@@ -61,10 +61,18 @@ export default class Newsletter extends Component {
         const { email, loading, error, success } = this.state
 
         return (
-            <div className={`Newsletter Newsletter--${loading ? 'loading' : ''}`}>
-                {error && <div className="Newsletter__Error">{error.message}</div>}
+            <div
+                className={`Block Block--Newsletter Newsletter Newsletter--${
+                    loading ? 'loading' : ''
+                }`}
+            >
+                <h3 className="Block__Heading">Stay Tuned</h3>
+                <p className="Block__Concent">
+                    Leave us your email and we’ll let you know when the results are published.
+                </p>
+
                 {success ? (
-                    <div className="Newsletter__Success">{success.message}</div>
+                    <div className="Newsletter__Message Newsletter__Success">{success.message}</div>
                 ) : (
                     <form
                         method="post"
@@ -100,6 +108,8 @@ export default class Newsletter extends Component {
                         </button>
                     </form>
                 )}
+                {error && <div className="Newsletter__Message Newsletter__Error">{error.message}</div>}
+
             </div>
         )
     }

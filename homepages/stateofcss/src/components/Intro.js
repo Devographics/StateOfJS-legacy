@@ -1,8 +1,7 @@
 import React from 'react'
-import TextBlock from '../components/TextBlock.js'
 
 const Intro = () => (
-    <div className="home-intro">
+    <div className="Block Block--intro Intro">
         <p>CSS is evolving faster than ever.</p>
         <p> Flexbox, Grid, Multi-Column… To say nothing of whole new paradgims like CSS-in-JS.</p>
         <p>
