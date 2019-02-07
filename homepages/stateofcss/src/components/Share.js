@@ -18,7 +18,8 @@ const Twitter = ({ text }) => {
             href={`https://twitter.com/intent/tweet/?text=${encodeURIComponent(text)}`}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label=""
+            title="Share on Twitter"
+            aria-label="Share on Twitter"
         >
             <div className="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
                 <div
@@ -53,7 +54,8 @@ const Facebook = ({ link }) => {
             href={`https://facebook.com/sharer/sharer.php?u=${encodeURIComponent(link)}`}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label=""
+            title="Share on Facebook"
+            aria-label="Share on Facebook"
         >
             <div className="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
                 <div
@@ -87,7 +89,8 @@ const Email = ({ subject, body }) => {
             className="resp-sharing-button__link button"
             href={`mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
             target="_self"
-            aria-label=""
+            title="Share by Email"
+            aria-label="Share by Email"
         >
             <div className="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
                 <div

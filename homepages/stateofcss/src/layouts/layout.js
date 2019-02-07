@@ -31,7 +31,12 @@ export default class Layout extends React.Component {
 
         return (
             <div className={classNames('outer-wrapper', 'home-wrapper')}>
-                <Helmet meta={meta}>
+                <Helmet
+                    meta={meta}
+                    htmlAttributes={{
+                        lang: 'en'
+                    }}
+                >
                     <title>{title}</title>
                     <meta
                         name="google-site-verification"
