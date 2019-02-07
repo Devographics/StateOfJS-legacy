@@ -58,7 +58,7 @@ export default class TakeSurvey extends React.Component {
             <div className="Block Block--takeSurvey TakeSurvey">
                 <a
                     className="TakeSurvey__Button"
-                    href={`https://stateofjs.typeform.com/to/J9gRJf?browser=${
+                    href={`http://stateofjs.typeform.com/to/J9gRJf?browser=${
                         this.state.browser
                     }&version=${this.state.version}&os=${this.state.os}&referrer=${
                         this.state.referrer

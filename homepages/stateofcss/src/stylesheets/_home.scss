@@ -115,8 +115,8 @@ About
 .About__Authors {
     @include medium-large {
         display: grid;
-        grid-template-columns: 1fr 1fr;
         column-gap: $spacing * 2;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
 .About__Author__Name {

@@ -26,25 +26,28 @@ export default class Layout extends React.Component {
             { name: 'twitter:card', content: 'summary' },
             { name: 'twitter:image:src', content: image },
             { name: 'twitter:title', content: title },
-            { name: 'twitter:description', content: description },
-
+            { name: 'twitter:description', content: description }
         ]
 
         return (
-            <div
-                className={classNames('outer-wrapper', 'home-wrapper')}
-            >
+            <div className={classNames('outer-wrapper', 'home-wrapper')}>
                 <Helmet meta={meta}>
                     <title>{title}</title>
-                    <meta name="google-site-verification" content="hrTRsz9fkGmQlVbLBWA4wmhn0qsI6_M3NKemTGCkpps" />
-                    <script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript" />
+                    <meta
+                        name="google-site-verification"
+                        content="hrTRsz9fkGmQlVbLBWA4wmhn0qsI6_M3NKemTGCkpps"
+                    />
+                    <script
+                        src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js"
+                        type="text/javascript"
+                    />
+                    <link rel="icon" type="image/png" href="/images/favicon.png" />
+                    <link
+                        href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,500,300i"
+                        rel="stylesheet"
+                    />
                 </Helmet>
-                <link
-                    href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,500,300i"
-                    rel="stylesheet"
-                />
                 <HomeLayout {...this.props}>{this.props.children}</HomeLayout>
-
             </div>
         )
     }

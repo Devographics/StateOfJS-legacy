@@ -6,7 +6,6 @@ const animationDuration = 7000
 
 let blue = '#3c52d1'
 let grey = '#A2C7CE'
-let darkBlue = '#a2c3ca'
 let pink = '#ec2f95'
 let crossHatchStroke = pink
 // blue = 'red'
@@ -234,7 +233,7 @@ const Illustration = ({ done }) => (
                     y1={cyTopLeft + i * hLineGap}
                     x2={cxTopLeft + totalFrameWidth + hLineOverflow}
                     y2={cyTopLeft + i * hLineGap}
-                    stroke={darkBlue}
+                    stroke={grey}
                     strokeWidth={strokeWidth}
                 />
             ))}
@@ -248,7 +247,7 @@ const Illustration = ({ done }) => (
                     y1={cyTopLeft - vLineOverflow}
                     x2={cxTopLeft + i * vLineGap}
                     y2={cyTopLeft + frameWidth + vLineOverflow}
-                    stroke={darkBlue}
+                    stroke={grey}
                     strokeWidth={strokeWidth}
                 />
             ))}
@@ -261,7 +260,7 @@ const Illustration = ({ done }) => (
                     cx={cxCenter}
                     cy={cyCenter}
                     r={baseUnit * s}
-                    stroke={darkBlue}
+                    stroke={grey}
                     strokeWidth={strokeWidth}
                 />
             ))}
@@ -274,7 +273,7 @@ const Illustration = ({ done }) => (
                     cx={saxCenter}
                     cy={sayCenter}
                     r={baseUnit * s}
-                    stroke={darkBlue}
+                    stroke={grey}
                     strokeWidth={strokeWidth}
                 />
             ))}
@@ -286,7 +285,7 @@ const Illustration = ({ done }) => (
                     cx={sbxCenter}
                     cy={sbyCenter}
                     r={baseUnit * s}
-                    stroke={darkBlue}
+                    stroke={grey}
                     strokeWidth={strokeWidth}
                 />
             ))}
@@ -300,7 +299,7 @@ const Illustration = ({ done }) => (
                         y1={dLine1y - dLineOverflow}
                         x2={dLine1x + i * letterOffset + frameWidth + dLineOverflow}
                         y2={dLine1y + frameWidth + dLineOverflow}
-                        stroke={darkBlue}
+                        stroke={grey}
                         strokeWidth={strokeWidth}
                     />
                     <line
@@ -309,7 +308,7 @@ const Illustration = ({ done }) => (
                         y1={dLine1y - dLineOverflow}
                         x2={dLine1x + i * letterOffset - dLineOverflow}
                         y2={dLine1y + frameWidth + dLineOverflow}
-                        stroke={darkBlue}
+                        stroke={grey}
                         strokeWidth={strokeWidth}
                     />
                 </g>
