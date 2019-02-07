@@ -1,5 +1,5 @@
 import React from 'react'
-import ResultsComingSoon from '../components/ResultsComingSoon'
+// import ResultsComingSoon from '../components/ResultsComingSoon'
 import Share from '../components/Share'
 import Newsletter from '../components/Newsletter'
 import TakeSurvey from '../components/TakeSurvey'
@@ -12,17 +12,10 @@ import Layout from '../layouts/layout.js'
 
 const Index = () => (
     <Layout>
-        <div className="results-container content home">
-            {/* <Bubbles /> */}
+        <div className="Content Content--Home Home">
             <Intro />
-            {/* <ResultsComingSoon /> */}
-            {/* <ViewResults /> */}
-
             <TakeSurvey />
-            {/* <Stats /> */}
-            {/* <Comments /> */}
             <Share />
-
             <Newsletter />
             <About />
             <Footer />

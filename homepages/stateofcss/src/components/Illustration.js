@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 
 const animated = true
 
+const animationDuration = 7000
+
 let blue = '#3c52d1'
 let grey = '#A2C7CE'
 let darkBlue = '#a2c3ca'
@@ -22,7 +24,7 @@ const totalWidth = 2000
 const totalHeight = 2000
 const centerX = totalWidth / 2
 const centerY = totalHeight / 2
-const minDimension = Math.min(totalWidth, totalHeight)
+const minDimension = Math.min(totalWidth, totalHeight) // eslint-disable-line no-unused-vars
 
 // parameters
 const baseUnit = 100
@@ -44,13 +46,13 @@ const cyTopLeft = cyCenter - frameWidth / 2
 
 const saxCenter = totalWidth / 2
 const sayCenter = cyCenter
-const saxTopLeft = saxCenter - frameWidth / 2
-const sayTopLeft = cyTopLeft
+const saxTopLeft = saxCenter - frameWidth / 2 // eslint-disable-line no-unused-vars
+const sayTopLeft = cyTopLeft // eslint-disable-line no-unused-vars
 
 const sbxCenter = totalWidth / 2 + letterOffset
 const sbyCenter = cyCenter
-const sbxTopLeft = sbxCenter - frameWidth / 2
-const sbyTopLeft = cyTopLeft
+const sbxTopLeft = sbxCenter - frameWidth / 2 // eslint-disable-line no-unused-vars
+const sbyTopLeft = cyTopLeft // eslint-disable-line no-unused-vars
 
 // vertical gridlines
 const vGridLineCount = 99
@@ -185,7 +187,7 @@ const CrossHatching = ({ x, y, prefix, ...rest }) => (
     </g>
 )
 
-const Illustration = () => (
+const Illustration = ({ done }) => (
     <svg
         className={`illustration ${animated ? 'animated' : ''}`}
         viewBox={`0 0 ${totalWidth} ${totalHeight}`}
@@ -313,6 +315,7 @@ const Illustration = () => (
                 </g>
             ))}
 
+            {done && <> (
             {/* masks (cross-hatching) */}
             <mask id="maskC" maskUnits="userSpaceOnUse">
                 <LetterC x={cxCenter} y={cyCenter} fill="#fff" />
@@ -343,6 +346,7 @@ const Illustration = () => (
                 mask="url(#maskS2)"
                 prefix="s2-"
             />
+            )</>}
 
             {/* letters */}
             <LetterC className="letter letter0 lc" x={cxCenter} y={cyCenter} />
@@ -378,4 +382,20 @@ const Illustration = () => (
     </svg>
 )
 
-export default Illustration
+class IllustrationWithTimer extends Component {
+    state = {
+        done: false
+    }
+
+    componentDidMount = () => {
+      setTimeout(() => {
+          this.setState({ done: true })
+      }, animationDuration)
+    }
+
+    render() {
+        return <Illustration done={this.state.done}/>
+    }
+    
+}
+export default IllustrationWithTimer
