@@ -192,6 +192,7 @@ const Illustration = ({ done }) => (
         viewBox={`0 0 ${totalWidth} ${totalHeight}`}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
     >
         <g clipPath="url(#clip0)">
             {/* vertical gridlines */}

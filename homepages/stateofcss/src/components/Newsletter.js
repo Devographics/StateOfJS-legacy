@@ -80,6 +80,8 @@ export default class Newsletter extends Component {
                         datasitekey="6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6"
                         onSubmit={this.handleSubmit}
                     >
+                        <label className="hidden" htmlFor="field_0">Email</label>
+
                         <input
                             className="Newsletter__Email"
                             id="field_0"

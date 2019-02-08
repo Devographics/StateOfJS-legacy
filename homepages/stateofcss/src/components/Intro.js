@@ -2,7 +2,7 @@ import React from 'react'
 
 const Intro = () => (
     <div className="Block Block--intro Intro">
-        <p>CSS is evolving faster than ever.</p>
+        <h2>CSS is evolving faster than ever.</h2>
         <p> Flexbox, Grid, Multi-Column… To say nothing of whole new paradigms like CSS-in-JS.</p>
         <p>
             So after the success of our annual{' '}

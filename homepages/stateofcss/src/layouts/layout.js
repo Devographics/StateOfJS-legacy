@@ -48,7 +48,7 @@ export default class Layout extends React.Component {
                     />
                     <link rel="icon" type="image/png" href="/images/favicon.png" />
                     <link
-                        href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,500,300i"
+                        href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,400i"
                         rel="stylesheet"
                     />
                 </Helmet>

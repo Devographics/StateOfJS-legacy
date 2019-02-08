@@ -11,7 +11,7 @@ $larger-font: 1.3rem;
 $largest-font: 1.5rem;
 
 $light: 100;
-$medium: 300;
+$medium: 400;
 $bold: 500;
 
 @mixin font-light{
@@ -28,11 +28,11 @@ $bold: 500;
 
 @mixin primary-font{
   font-family: 'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif;
-  font-weight: 300;
+  font-weight: $medium;
 }
 @mixin secondary-font{
   font-family: 'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif;
-  font-weight: 500;
+  font-weight: $bold;
 }
 
 pre, code{

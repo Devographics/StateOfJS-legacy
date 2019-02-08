@@ -8,9 +8,9 @@ const About = () => (
         <div className="About__Authors">
             {authors.map(({ name, slug, bio, url }) => (
                 <div key={slug} className="About__Author">
-                    <h3 className="About__Author__Name">
+                    <h4 className="About__Author__Name">
                         <a href={url}>{name}</a>
-                    </h3>
+                    </h4>
                     <div className="About__Author__Bio">
                         <ReactMarkdown source={bio} />
                     </div>

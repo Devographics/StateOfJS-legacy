@@ -7,6 +7,7 @@ const HomeLayout = props => (
             <div className="Home__LogoWrapper">
                 <h1 className="Home__Logo">
                     <Illustration/>
+                    <span className="Home__Logo__Text hidden">The State of CSS 2019</span>
                 </h1>
                 {/* <a className="home-take-survey" href="#">Take the Survey</a> */}
             </div>
