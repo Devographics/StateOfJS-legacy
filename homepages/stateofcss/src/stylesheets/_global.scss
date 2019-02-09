@@ -1,4 +1,5 @@
-html {
+
+html, body {
     box-sizing: border-box;
 }
 *,
@@ -13,7 +14,6 @@ body {
     padding: 0;
     font-feature-settings: 'liga' 0;
     line-height: 1.5;
-
     // background: linear-gradient(180deg, rgb(30, 32, 32) 0%, rgb(55, 58, 58) 100%) fixed;
 
     @include primary-font;

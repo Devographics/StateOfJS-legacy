@@ -30,7 +30,7 @@ export default class Layout extends React.Component {
         ]
 
         return (
-            <div className={classNames('outer-wrapper', 'home-wrapper')}>
+            <div className="Wrapper">
                 <Helmet
                     meta={meta}
                     htmlAttributes={{
