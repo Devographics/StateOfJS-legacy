@@ -25,6 +25,7 @@
       # - Tables (for layout)
       - CSS Multi-Column
       - CSS Writing Modes
+      - CSS Exclusions
 
 - title: Shapes & Graphics
   description: Controlling the shape and display of elements.

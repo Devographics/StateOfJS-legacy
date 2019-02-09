@@ -194,7 +194,7 @@ const Illustration = ({ done }) => (
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
     >
-        <g clipPath="url(#clip0)">
+        <g>
             {/* vertical gridlines */}
             {Array.from(Array(vGridLineCount).keys()).map(i => (
                 <line

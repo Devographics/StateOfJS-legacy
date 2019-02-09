@@ -3,7 +3,7 @@ title: State of CSS 2018
 theme:
   href: https://api.typeform.com/themes/Gp3idU
 workspace:
-  href: https://api.typeform.com/workspaces/QhHBZg
+  href: https://api.typeform.com/workspaces/uhgVv2
 settings:
   is_public: false
   is_trial: true
@@ -15,7 +15,7 @@ settings:
     allow_indexing: true
     description: The annual survey about the current State of CSS
     image:
-      href: https://images.typeform.com/images/N3FwZVLBa8gR
+      href: https://images.typeform.com/images/gY3LRBvFgzs6
 welcome_screens:
 - title: |-
     Thanks for taking this survey! Together, maybe we'll be able to figure out this CSS thing once and for all!
@@ -26,7 +26,7 @@ welcome_screens:
     button_text: Let's Get This Started
   attachment:
     type: image
-    href: https://images.typeform.com/images/N3FwZVLBa8gR
+    href: https://images.typeform.com/images/gY3LRBvFgzs6
 thankyou_screens:
 - title: |-
     Thanks for completing this typeform
