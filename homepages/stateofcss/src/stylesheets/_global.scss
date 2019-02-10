@@ -1,5 +1,5 @@
-
-html, body {
+html,
+body {
     box-sizing: border-box;
 }
 *,
@@ -24,6 +24,7 @@ body {
         font-size: $root-size;
         // border: 10px solid $active-color;
         // padding: 10px;
+        overflow: hidden;
         min-height: 100vh;
     }
 }
@@ -87,19 +88,19 @@ a {
     &--text {
     }
     &__Heading {
-      text-align: center;
+        text-align: center;
     }
     &__Content {
     }
 }
 
-.hidden{
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(0 0 99.9% 99.9%);
-  overflow: hidden;
-  border: 0;
+.hidden {
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0 0 99.9% 99.9%);
+    overflow: hidden;
+    border: 0;
 }
