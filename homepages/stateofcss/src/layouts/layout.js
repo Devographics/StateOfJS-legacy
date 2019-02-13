@@ -3,14 +3,13 @@ import Helmet from 'react-helmet'
 import '../stylesheets/screen.scss'
 
 import HomeLayout from '../components/HomeLayout'
-import classNames from 'classnames'
 
 export default class Layout extends React.Component {
     render() {
         const description = 'The annual survey about the latest trends in CSS.'
         const url = 'http://stateofcss.com'
-        const image = 'http://stateofcss.com/images/stateofcss-social-media.png'
-        const title = 'The State of CSS'
+        const image = 'http://stateofcss.com/images/stateofcss_logo.png'
+        const title = 'The State of CSS Survey'
         const meta = [
             { charset: 'utf-8' },
             { name: 'description', content: description },
@@ -32,12 +31,12 @@ export default class Layout extends React.Component {
         return (
             <div className="Wrapper">
                 <Helmet
-                    meta={meta}
                     htmlAttributes={{
                         lang: 'en'
                     }}
                 >
                     <title>{title}</title>
+                    {meta.map((tag, i) => <meta key={i} {...tag}/>)}
                     <meta
                         name="google-site-verification"
                         content="hrTRsz9fkGmQlVbLBWA4wmhn0qsI6_M3NKemTGCkpps"
