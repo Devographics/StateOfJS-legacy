@@ -4,7 +4,7 @@ import ReactGA from 'react-ga'
 import fetch from 'isomorphic-fetch'
 
 const postUrl =
-    'https://emailoctopus.com/lists/463dc2a9-b2ff-11e8-a3c9-06b79b628af2/members/embedded/1.3/add'
+    'https://emailoctopus.com/lists/ed0386c4-2f55-11e9-a3c9-06b79b628af2/members/embedded/1.3/add'
 
 export default class Newsletter extends Component {
     static propTypes = {
@@ -95,7 +95,7 @@ export default class Newsletter extends Component {
 
                         <input
                             type="text"
-                            name="hp463dc2a9-b2ff-11e8-a3c9-06b79b628af2"
+                            name="hped0386c4-2f55-11e9-a3c9-06b79b628af2"
                             tabIndex="-1"
                             autoComplete="nope"
                             className="Newsletter__Hidden"

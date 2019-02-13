@@ -35,7 +35,7 @@ export default class TakeSurvey extends React.Component {
                         .get('clientId')
                 })
             }
-        }, 200)
+        }, 600)
 
         // eslint-disable-next-line no-undef
         const browser = bowser.getParser(window.navigator.userAgent)
