@@ -104,6 +104,29 @@ Take Survey
     margin: $spacing/1.5 0 0 0;
 }
 
+.TakeSurvey__MobileWarning{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: $highlight-color;
+    padding: $spacing;
+    display: flex;
+    flex-direction: column;
+    h3{
+        text-align: center;
+    }
+}
+.TakeSurvey__Button--warning{
+    margin-top: $spacing;
+    text-align: center;
+}
+.TakeSurvey__MobileWarning__Cancel{
+    margin-top: $spacing;
+    text-align: center;
+}
 /*
 
 About

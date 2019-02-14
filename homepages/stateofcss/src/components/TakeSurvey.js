@@ -6,7 +6,9 @@ import qs from 'qs'
 export default class TakeSurvey extends React.Component {
     constructor() {
         super()
-        this.state = {}
+        this.state = {
+            showWarning: false
+        }
     }
 
     componentDidMount() {
@@ -52,32 +54,78 @@ export default class TakeSurvey extends React.Component {
             os: info.os.name,
             // eslint-disable-next-line no-undef
             referrer: document.referrer,
-            source: queryString.source,
+            source: queryString.source
         }
 
         this.setState(browserData)
     }
 
+    getSurveyUrl = () => {
+        return `http://stateofjs.typeform.com/to/TxDuh6?browser=${this.state.browser}&version=${
+            this.state.version
+        }&os=${this.state.os}&referrer=${this.state.referrer}&city=${this.state.city}&location=${
+            this.state.location
+        }&device=${this.state.device}&gaid=${this.state.gaId}&source=${this.state.source}`
+    }
+
+    showWarning = event => {
+        event.preventDefault()
+        this.setState({ showWarning: true })
+    }
+
+    closeWarning = event => {
+        event.preventDefault()
+        this.setState({ showWarning: false })
+    }
+
     render() {
         return (
             <div className="Block Block--takeSurvey TakeSurvey">
-                <a
-                    className="TakeSurvey__Button"
-                    href={`http://stateofjs.typeform.com/to/TxDuh6?browser=${
-                        this.state.browser
-                    }&version=${this.state.version}&os=${this.state.os}&referrer=${
-                        this.state.referrer
-                    }&city=${this.state.city}&location=${this.state.location}&device=${
-                        this.state.device
-                    }&gaid=${this.state.gaId}&source=${this.state.source}`}
-                >
-                    Take Survey
-                </a>
-
+                {this.state.device === 'mobile' ? (
+                    <a className="TakeSurvey__Button" href="#" onClick={this.showWarning}>
+                        Take Survey
+                    </a>
+                ) : (
+                    <a className="TakeSurvey__Button" href={this.getSurveyUrl()}>
+                        Take Survey
+                    </a>
+                )}
                 <p className="TakeSurvey__Note">
                     Note: to improve results relevance, we keep track of data such as your referrer,
                     location, device, browser, and OS.
                 </p>
+                {this.state.showWarning && (
+                    <div className="TakeSurvey__MobileWarning">
+                        <h3>A Note for Mobile Users</h3>
+                        <p>
+                            Some users have reported poor performance or even a non-working survey
+                            form on mobile devices.{' '}
+                        </p>
+
+                        <p>
+                            Sadly, this is outside our control as we rely on a hosted survey
+                            service.
+                        </p>
+                        <p>
+                            So until we figure out what’s going on, if you do experience any such
+                            issues we suggest coming back later and filling out the survey on a
+                            desktop device.{' '}
+                        </p>
+                        <a
+                            className="TakeSurvey__Button TakeSurvey__Button--warning"
+                            href={this.getSurveyUrl()}
+                        >
+                            Proceed to Survey
+                        </a>
+                        <a
+                            className="TakeSurvey__MobileWarning__Cancel"
+                            href="#"
+                            onClick={this.closeWarning}
+                        >
+                            Go Back
+                        </a>
+                    </div>
+                )}
             </div>
         )
     }
