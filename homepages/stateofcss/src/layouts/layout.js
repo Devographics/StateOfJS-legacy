@@ -41,10 +41,10 @@ export default class Layout extends React.Component {
                         name="google-site-verification"
                         content="hrTRsz9fkGmQlVbLBWA4wmhn0qsI6_M3NKemTGCkpps"
                     />
-                    <script
+                    {/* <script
                         src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js"
                         type="text/javascript"
-                    />
+                    /> */}
                     <link rel="icon" type="image/png" href="/images/favicon.png" />
                     <link
                         href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,400i"
