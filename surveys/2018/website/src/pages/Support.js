@@ -7,7 +7,7 @@ import PageHeader from 'core/pages/PageHeader'
 const Support = ({ data, ...rest }) => (
     <Layout {...rest}>
         <PageHeader showIntro={false} />
-        <TextBlock text={data.content.html} />
+        {data.content && data.content.html && <TextBlock text={data.content.html} />}
     </Layout>
 )
 
