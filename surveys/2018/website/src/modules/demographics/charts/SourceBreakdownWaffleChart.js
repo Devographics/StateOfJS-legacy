@@ -12,7 +12,6 @@ const columns = 128
 export default class SourceBreakdownWaffleChart extends Component {
     render() {
         const { data } = this.props
-        console.log(data)
         let total = 0
         const colors = []
         const chartData = translate =>

@@ -21,7 +21,6 @@ export default class SourceBreakdownBlock extends Component {
 
     render() {
         const { data, chartId } = this.props
-        console.log(data)
         return (
             <Block id={chartId} showDescription={false} className="Block--source Source__Block">
                 <SourceBreakdownWaffleChart total={data.total} data={data.by_source} />

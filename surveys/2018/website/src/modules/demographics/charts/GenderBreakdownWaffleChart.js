@@ -29,8 +29,6 @@ export default class GenderBreakdownWaffleChart extends Component {
                 }
             })
 
-            console.log('CHART DATA FOR GENDER BREAKDOWN', total)
-
             return result
         }
 
