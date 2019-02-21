@@ -6,7 +6,7 @@
         }
     }
     .nav & {
-        @include large{
+        @include large {
             display: none;
         }
     }
@@ -15,7 +15,7 @@
     }
 }
 
-.LanguageSwitcher__Inner{
+.LanguageSwitcher__Inner {
     position: relative;
 }
 
@@ -82,8 +82,7 @@
         margin-left: -11px;
     }
     .LanguageSwitcher--bottom & {
-
-    top: 130%;
+        top: 130%;
         &:after,
         &:before {
             bottom: 100%;
@@ -126,7 +125,7 @@
     @include large {
         font-size: $medium-font;
     }
-    &--current{
+    &--current {
         @include font-bold;
     }
 }
