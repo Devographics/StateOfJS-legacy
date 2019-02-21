@@ -18,3 +18,7 @@
   path:   es
   label:  Español
 
+- locale: de-DE
+  path:   de
+  label:  Deutsch
+
