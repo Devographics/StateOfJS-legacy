@@ -5,7 +5,7 @@ import Animation from 'core/components/Animation'
 import { PageContextProvider } from 'core/pages/pageContext'
 import { mergePageContext } from 'core/pages/pageHelpers'
 import { I18nContextProvider } from 'core/i18n/i18nContext'
-import LanguageSwitcher from '../core/i18n/LanguageSwitcher';
+import LanguageSwitcher from '../core/i18n/LanguageSwitcher'
 
 const Home = ({ pageContext, location }) => {
     const context = mergePageContext(pageContext, location)
@@ -17,7 +17,7 @@ const Home = ({ pageContext, location }) => {
                     <Head />
                     <div className="Home__Wrapper">
                         <Animation />
-                        <LanguageSwitcher position="top"/>
+                        <LanguageSwitcher position="top" />
                     </div>
                 </Fragment>
             </I18nContextProvider>

@@ -340,6 +340,8 @@ translations:
       t: Haxe
 
     # pages
+    - key: page.home
+      t: Home
     - key: page.introduction
       t: Introduction
     - key: page.demographics
@@ -766,3 +768,7 @@ translations:
       t: State Of JavaScript Survey Results
     - key: share.block.body
       t: 'Here are some interesting JavaScript survey results (${title}): ${link}'
+
+    # meta
+    - key: meta.description
+      t: Discover the most popular JavaScript technologies of the year.

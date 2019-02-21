@@ -2,6 +2,9 @@
     border-top: 1px solid $dark-border-color;
     border-bottom: 1px solid $dark-border-color;
 
+    // Fixes overlap with <Tooltip />
+    z-index: 0;
+
     // background: $light-bg-color;
 }
 
@@ -49,7 +52,7 @@
     }
 }
 
-.pagination__middle{
+.pagination__middle {
     @include flex-center;
     span + & {
         border-left: 1px solid $dark-border-color;
