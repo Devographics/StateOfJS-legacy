@@ -6,7 +6,6 @@ import TextBlock from 'core/blocks/TextBlock'
 import ToolOpinionBlock from './blocks/ToolOpinionBlock'
 
 const ToolsTemplate = ({ pageContext, data, ...rest }) => {
-    console.log(pageContext, data, rest)
     return (
         <Layout {...rest} pageContext={pageContext}>
             <PageHeader />
@@ -19,13 +18,20 @@ const ToolsTemplate = ({ pageContext, data, ...rest }) => {
             />
             {pageContext.blocks.map(block => {
                 const blockData = data.aggs.aggregations.find(a => a.id === block.id)
-                console.log(blockData)
+                const resources = data.aggs.fields.resources.find(r => r.id === block.id)
 
                 if (!blockData) {
                     return <div key={block.id}>No data available for tool: {block.id}</div>
                 }
 
-                return <ToolOpinionBlock key={block.id} block={block} buckets={blockData.buckets} />
+                return (
+                    <ToolOpinionBlock
+                        key={block.id}
+                        block={block}
+                        buckets={blockData.buckets}
+                        resources={resources}
+                    />
+                )
             })}
         </Layout>
     )
@@ -52,6 +58,21 @@ export const query = graphql`
                 buckets {
                     id
                     count
+                }
+            }
+            fields {
+                resources {
+                    id
+                    github {
+                        name
+                        full_name
+                        description
+                        url
+                        stars
+                        forks
+                        opened_issues
+                        homepage
+                    }
                 }
             }
         }

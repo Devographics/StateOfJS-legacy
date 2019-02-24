@@ -10,352 +10,352 @@
   is_hidden: true
   children: []
   next:
-    id: demographics
-    path: /demographics/
-    type: page
+      id: demographics
+      path: /demographics/
+      type: page
 - id: demographics
   path: /demographics/
   type: page
   blocks:
-    - id: participation-by-country
-      path: /demographics/participation-by-country/
-    - id: gender-breakdown
-      path: /demographics/gender-breakdown/
-    - id: salaries
-      path: /demographics/salaries/
-    - id: salary-per-country
-      path: /demographics/salary-per-country/
-    - id: years-of-experience
-      path: /demographics/years-of-experience/
-    - id: company-size
-      path: /demographics/company-size/
+      - id: participation-by-country
+        path: /demographics/participation-by-country/
+      - id: gender-breakdown
+        path: /demographics/gender-breakdown/
+      - id: salaries
+        path: /demographics/salaries/
+      - id: salary-per-country
+        path: /demographics/salary-per-country/
+      - id: years-of-experience
+        path: /demographics/years-of-experience/
+      - id: company-size
+        path: /demographics/company-size/
   is_hidden: false
   children: []
   next:
-    id: features
-    path: /features/
-    type: page
+      id: features
+      path: /features/
+      type: page
 - id: features
   path: /features/
   type: page
   children:
-    - id: layout
-      path: /features/layout/
-      type: features_usage
-      blocks:
-        - id: css-grid
-          path: /features/layout/css-grid/
-        - id: flexbox
-          path: /features/layout/flexbox/
-        - id: css-multi-column
-          path: /features/layout/css-multi-column/
-        - id: css-writing-modes
-          path: /features/layout/css-writing-modes/
-        - id: css-exclusions
-          path: /features/layout/css-exclusions/
-      is_hidden: false
-      children: []
-      previous:
-        id: features
-        path: /features/
-        type: page
-      next:
-        id: shapes-and-graphics
-        path: /features/shape-and-graphics/
-        type: features_usage
-    - id: shapes-and-graphics
-      path: /features/shape-and-graphics/
-      type: features_usage
-      blocks:
-        - id: css-shapes
-          path: /features/shape-and-graphics/css-shapes/
-        - id: object-fit
-          path: /features/shape-and-graphics/object-fit/
-        - id: clip-path
-          path: /features/shape-and-graphics/clip-path/
-        - id: css-masks
-          path: /features/shape-and-graphics/css-masks/
-        - id: blend-modes
-          path: /features/shape-and-graphics/blend-modes/
-        - id: css-filter-effects
-          path: /features/shape-and-graphics/css-filter-effects/
-      is_hidden: false
-      children: []
-      previous:
-        id: layout
+      - id: layout
         path: /features/layout/
         type: features_usage
-      next:
-        id: interactions
-        path: /features/interactions/
-        type: features_usage
-    - id: interactions
-      path: /features/interactions/
-      type: features_usage
-      blocks:
-        - id: css-scroll-snap
-          path: /features/interactions/css-scroll-snap/
-        - id: overscroll-behavior
-          path: /features/interactions/overscroll-behavior/
-        - id: overflow-anchor
-          path: /features/interactions/overflow-anchor/
-      is_hidden: false
-      children: []
-      previous:
-        id: shapes-and-graphics
+        blocks:
+            - id: css-grid
+              path: /features/layout/css-grid/
+            - id: flexbox
+              path: /features/layout/flexbox/
+            - id: css-multi-column
+              path: /features/layout/css-multi-column/
+            - id: css-writing-modes
+              path: /features/layout/css-writing-modes/
+            - id: css-exclusions
+              path: /features/layout/css-exclusions/
+        is_hidden: false
+        children: []
+        previous:
+            id: features
+            path: /features/
+            type: page
+        next:
+            id: shapes-and-graphics
+            path: /features/shape-and-graphics/
+            type: features_usage
+      - id: shapes-and-graphics
         path: /features/shape-and-graphics/
         type: features_usage
-      next:
-        id: typography
-        path: /features/typography/
-        type: features_usage
-    - id: typography
-      path: /features/typography/
-      type: features_usage
-      blocks:
-        - id: web-fonts-font-face
-          path: /features/typography/web-fonts-font-face/
-        - id: variable-fonts
-          path: /features/typography/variable-fonts/
-        - id: line-breaking-properties
-          path: /features/typography/line-breaking-properties/
-        - id: font-variant
-          path: /features/typography/font-variant/
-        - id: initial-letter
-          path: /features/typography/initial-letter/
-      is_hidden: false
-      children: []
-      previous:
-        id: interactions
+        blocks:
+            - id: css-shapes
+              path: /features/shape-and-graphics/css-shapes/
+            - id: object-fit
+              path: /features/shape-and-graphics/object-fit/
+            - id: clip-path
+              path: /features/shape-and-graphics/clip-path/
+            - id: css-masks
+              path: /features/shape-and-graphics/css-masks/
+            - id: blend-modes
+              path: /features/shape-and-graphics/blend-modes/
+            - id: css-filter-effects
+              path: /features/shape-and-graphics/css-filter-effects/
+        is_hidden: false
+        children: []
+        previous:
+            id: layout
+            path: /features/layout/
+            type: features_usage
+        next:
+            id: interactions
+            path: /features/interactions/
+            type: features_usage
+      - id: interactions
         path: /features/interactions/
         type: features_usage
-      next:
-        id: animations-and-transforms
-        path: /features/animations-and-transforms/
-        type: features_usage
-    - id: animations-and-transforms
-      path: /features/animations-and-transforms/
-      type: features_usage
-      blocks:
-        - id: css-transitions
-          path: /features/animations-and-transforms/css-transitions/
-        - id: css-transforms
-          path: /features/animations-and-transforms/css-transforms/
-        - id: css-animations
-          path: /features/animations-and-transforms/css-animations/
-      is_hidden: false
-      children: []
-      previous:
-        id: typography
+        blocks:
+            - id: css-scroll-snap
+              path: /features/interactions/css-scroll-snap/
+            - id: overscroll-behavior
+              path: /features/interactions/overscroll-behavior/
+            - id: overflow-anchor
+              path: /features/interactions/overflow-anchor/
+        is_hidden: false
+        children: []
+        previous:
+            id: shapes-and-graphics
+            path: /features/shape-and-graphics/
+            type: features_usage
+        next:
+            id: typography
+            path: /features/typography/
+            type: features_usage
+      - id: typography
         path: /features/typography/
         type: features_usage
-      next:
-        id: other-features
-        path: /features/other-features/
-        type: features_usage
-    - id: other-features
-      path: /features/other-features/
-      type: features_usage
-      blocks: []
-      is_hidden: false
-      children: []
-      previous:
-        id: animations-and-transforms
+        blocks:
+            - id: web-fonts-font-face
+              path: /features/typography/web-fonts-font-face/
+            - id: variable-fonts
+              path: /features/typography/variable-fonts/
+            - id: line-breaking-properties
+              path: /features/typography/line-breaking-properties/
+            - id: font-variant
+              path: /features/typography/font-variant/
+            - id: initial-letter
+              path: /features/typography/initial-letter/
+        is_hidden: false
+        children: []
+        previous:
+            id: interactions
+            path: /features/interactions/
+            type: features_usage
+        next:
+            id: animations-and-transforms
+            path: /features/animations-and-transforms/
+            type: features_usage
+      - id: animations-and-transforms
         path: /features/animations-and-transforms/
         type: features_usage
-      next:
-        id: units-and-selectors
-        path: /units-and-selectors/
-        type: page
+        blocks:
+            - id: css-transitions
+              path: /features/animations-and-transforms/css-transitions/
+            - id: css-transforms
+              path: /features/animations-and-transforms/css-transforms/
+            - id: css-animations
+              path: /features/animations-and-transforms/css-animations/
+        is_hidden: false
+        children: []
+        previous:
+            id: typography
+            path: /features/typography/
+            type: features_usage
+        next:
+            id: other-features
+            path: /features/other-features/
+            type: features_usage
+      - id: other-features
+        path: /features/other-features/
+        type: features_usage
+        blocks: []
+        is_hidden: false
+        children: []
+        previous:
+            id: animations-and-transforms
+            path: /features/animations-and-transforms/
+            type: features_usage
+        next:
+            id: units-and-selectors
+            path: /units-and-selectors/
+            type: page
   is_hidden: false
   previous:
-    id: demographics
-    path: /demographics/
-    type: page
+      id: demographics
+      path: /demographics/
+      type: page
   next:
-    id: layout
-    path: /features/layout/
-    type: features_usage
+      id: layout
+      path: /features/layout/
+      type: features_usage
 - id: units-and-selectors
   path: /units-and-selectors/
   type: page
   is_hidden: false
   children: []
   previous:
-    id: other-features
-    path: /features/other-features/
-    type: features_usage
+      id: other-features
+      path: /features/other-features/
+      type: features_usage
   next:
-    id: tools-and-methodology
-    path: /tools-and-methodology/
-    type: page
+      id: tools-and-methodology
+      path: /tools-and-methodology/
+      type: page
 - id: tools-and-methodology
   path: /tools-and-methodology/
   type: page
   children:
-    - id: pre-post-processors
-      path: /tools-and-methodology/pre-post-processors/
-      type: tools
-      blocks:
-        - id: sass
-          path: /tools-and-methodology/pre-post-processors/sass/
-        - id: less
-          path: /tools-and-methodology/pre-post-processors/less/
-        - id: postcss
-          path: /tools-and-methodology/pre-post-processors/postcss/
-        - id: stylus
-          path: /tools-and-methodology/pre-post-processors/stylus/
-      is_hidden: false
-      children: []
-      previous:
-        id: tools-and-methodology
-        path: /tools-and-methodology/
-        type: page
-      next:
-        id: css-frameworks
-        path: /tools-and-methodology/css-frameworks/
-        type: tools
-    - id: css-frameworks
-      path: /tools-and-methodology/css-frameworks/
-      type: tools
-      blocks:
-        - id: bootstrap
-          path: /tools-and-methodology/css-frameworks/bootstrap/
-        - id: materialize-css
-          path: /tools-and-methodology/css-frameworks/materialize-css/
-        - id: ant-design
-          path: /tools-and-methodology/css-frameworks/ant-design/
-        - id: semantic-ui
-          path: /tools-and-methodology/css-frameworks/semantic-ui/
-        - id: bulma
-          path: /tools-and-methodology/css-frameworks/bulma/
-        - id: foundation
-          path: /tools-and-methodology/css-frameworks/foundation/
-        - id: uikit
-          path: /tools-and-methodology/css-frameworks/uikit/
-        - id: tachyons
-          path: /tools-and-methodology/css-frameworks/tachyons/
-        - id: primer
-          path: /tools-and-methodology/css-frameworks/primer/
-        - id: tailwind
-          path: /tools-and-methodology/css-frameworks/tailwind/
-        - id: purecss
-          path: /tools-and-methodology/css-frameworks/purecss/
-      is_hidden: false
-      children: []
-      previous:
-        id: pre-post-processors
+      - id: pre-post-processors
         path: /tools-and-methodology/pre-post-processors/
         type: tools
-      next:
-        id: methodologies
-        path: /tools-and-methodology/methodologies/
-        type: tools
-    - id: methodologies
-      path: /tools-and-methodology/methodologies/
-      type: tools
-      blocks: []
-      is_hidden: false
-      children: []
-      previous:
-        id: css-frameworks
+        blocks:
+            - id: sass
+              path: /tools-and-methodology/pre-post-processors/sass/
+            - id: less
+              path: /tools-and-methodology/pre-post-processors/less/
+            - id: postcss
+              path: /tools-and-methodology/pre-post-processors/postcss/
+            - id: stylus
+              path: /tools-and-methodology/pre-post-processors/stylus/
+        is_hidden: false
+        children: []
+        previous:
+            id: tools-and-methodology
+            path: /tools-and-methodology/
+            type: page
+        next:
+            id: css-frameworks
+            path: /tools-and-methodology/css-frameworks/
+            type: tools
+      - id: css-frameworks
         path: /tools-and-methodology/css-frameworks/
         type: tools
-      next:
-        id: css-in-js
-        path: /tools-and-methodology/css-in-js/
-        type: tools
-    - id: css-in-js
-      path: /tools-and-methodology/css-in-js/
-      type: tools
-      blocks: []
-      is_hidden: false
-      children: []
-      previous:
-        id: methodologies
+        blocks:
+            - id: bootstrap
+              path: /tools-and-methodology/css-frameworks/bootstrap/
+            - id: materialize-css
+              path: /tools-and-methodology/css-frameworks/materialize-css/
+            - id: ant-design
+              path: /tools-and-methodology/css-frameworks/ant-design/
+            - id: semantic-ui
+              path: /tools-and-methodology/css-frameworks/semantic-ui/
+            - id: bulma
+              path: /tools-and-methodology/css-frameworks/bulma/
+            - id: foundation
+              path: /tools-and-methodology/css-frameworks/foundation/
+            - id: uikit
+              path: /tools-and-methodology/css-frameworks/uikit/
+            - id: tachyons
+              path: /tools-and-methodology/css-frameworks/tachyons/
+            - id: primer
+              path: /tools-and-methodology/css-frameworks/primer/
+            - id: tailwind
+              path: /tools-and-methodology/css-frameworks/tailwind/
+            - id: purecss
+              path: /tools-and-methodology/css-frameworks/purecss/
+        is_hidden: false
+        children: []
+        previous:
+            id: pre-post-processors
+            path: /tools-and-methodology/pre-post-processors/
+            type: tools
+        next:
+            id: methodologies
+            path: /tools-and-methodology/methodologies/
+            type: tools
+      - id: methodologies
         path: /tools-and-methodology/methodologies/
         type: tools
-      next:
-        id: other-tools
-        path: /tools-and-methodology/other-tools/
-        type: tools
-    - id: other-tools
-      path: /tools-and-methodology/other-tools/
-      type: tools
-      blocks: []
-      is_hidden: false
-      children: []
-      previous:
-        id: css-in-js
+        blocks: []
+        is_hidden: false
+        children: []
+        previous:
+            id: css-frameworks
+            path: /tools-and-methodology/css-frameworks/
+            type: tools
+        next:
+            id: css-in-js
+            path: /tools-and-methodology/css-in-js/
+            type: tools
+      - id: css-in-js
         path: /tools-and-methodology/css-in-js/
         type: tools
-      next:
-        id: environments
-        path: /environments/
-        type: page
+        blocks: []
+        is_hidden: false
+        children: []
+        previous:
+            id: methodologies
+            path: /tools-and-methodology/methodologies/
+            type: tools
+        next:
+            id: other-tools
+            path: /tools-and-methodology/other-tools/
+            type: tools
+      - id: other-tools
+        path: /tools-and-methodology/other-tools/
+        type: tools
+        blocks: []
+        is_hidden: false
+        children: []
+        previous:
+            id: css-in-js
+            path: /tools-and-methodology/css-in-js/
+            type: tools
+        next:
+            id: environments
+            path: /environments/
+            type: page
   is_hidden: false
   previous:
-    id: units-and-selectors
-    path: /units-and-selectors/
-    type: page
+      id: units-and-selectors
+      path: /units-and-selectors/
+      type: page
   next:
-    id: pre-post-processors
-    path: /tools-and-methodology/pre-post-processors/
-    type: tools
+      id: pre-post-processors
+      path: /tools-and-methodology/pre-post-processors/
+      type: tools
 - id: environments
   path: /environments/
   type: page
   is_hidden: false
   children: []
   previous:
-    id: other-tools
-    path: /tools-and-methodology/other-tools/
-    type: tools
+      id: other-tools
+      path: /tools-and-methodology/other-tools/
+      type: tools
   next:
-    id: resources
-    path: /resources/
-    type: page
+      id: resources
+      path: /resources/
+      type: page
 - id: resources
   path: /resources/
   type: page
   is_hidden: false
   children: []
   previous:
-    id: environments
-    path: /environments/
-    type: page
+      id: environments
+      path: /environments/
+      type: page
   next:
-    id: opinions
-    path: /opinions/
-    type: page
+      id: opinions
+      path: /opinions/
+      type: page
 - id: opinions
   path: /opinions/
   type: page
   is_hidden: false
   children: []
   previous:
-    id: resources
-    path: /resources/
-    type: page
+      id: resources
+      path: /resources/
+      type: page
   next:
-    id: conclusion
-    path: /conclusion/
-    type: page
+      id: conclusion
+      path: /conclusion/
+      type: page
 - id: conclusion
   path: /conclusion/
   type: page
   is_hidden: false
   children: []
   previous:
-    id: opinions
-    path: /opinions/
-    type: page
+      id: opinions
+      path: /opinions/
+      type: page
 - id: support
   path: /support/
   type: page
   is_hidden: true
   children: []
   previous:
-    id: conclusion
-    path: /conclusion/
-    type: page
+      id: conclusion
+      path: /conclusion/
+      type: page

@@ -20,14 +20,14 @@ const FeatureUsageTemplate = ({ pageContext, data, ...rest }) => {
             />
             {pageContext.blocks.map(block => {
                 const blockData = data.aggs.aggregations.find(a => a.id === block.id)
-                const blockResources = data.aggs.fields.resources.find(r => r.id === block.id)
+                const resources = data.aggs.fields.resources.find(r => r.id === block.id)
 
                 return (
                     <FeatureUsageBlock
                         key={block.id}
                         block={block}
                         buckets={blockData.buckets}
-                        resources={blockResources}
+                        resources={resources}
                     />
                 )
             })}
