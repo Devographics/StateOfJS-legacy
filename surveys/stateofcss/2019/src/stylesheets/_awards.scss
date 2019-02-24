@@ -1,0 +1,181 @@
+@keyframes glow-soft {
+    from {
+        box-shadow: 0px 1px 1px 1px rgba(65, 199, 199, 0.1);
+    }
+    50% {
+        box-shadow: 0px 1px 20px 1px rgba(65, 199, 199, 0.4);
+    }
+    to {
+        box-shadow: 0px 1px 1px 1px rgba(65, 199, 199, 0.1);
+    }
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0px 1px 2px 1px rgba(254, 255, 106, 0.5);
+    }
+    50% {
+        box-shadow: 0px 1px 30px 2px rgba(254, 255, 106, 0.9);
+    }
+    to {
+        box-shadow: 0px 1px 2px 1px rgba(254, 255, 106, 0.5);
+    }
+}
+
+@keyframes burst {
+    from {
+        box-shadow: 0px 0px 0px 0px rgba(254, 106, 106, 0);
+    }
+    50% {
+        box-shadow: 0px 0px 30px 30px rgba(254, 255, 106, 0.9);
+    }
+    to {
+        box-shadow: 0px 0px 60px 60px rgba(254, 106, 106, 0);
+    }
+}
+
+.Awards__Block {
+    @include large {
+        margin: $spacing * 4 $spacing * 3 $spacing * 3 $spacing * 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: $spacing * 8;
+        row-gap: $spacing * 3;
+    }
+}
+
+.Award {
+    @include small-medium {
+        margin-bottom: $spacing * 3;
+    }
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background: $bg-color-light;
+    // padding: $spacing*2;
+}
+
+.Award__Heading {
+    margin-bottom: $spacing/4;
+    font-size: 1.5rem;
+}
+
+.Award__Description {
+    margin-bottom: $spacing;
+    font-size: $smallish-font;
+    color: $text-color-dark;
+}
+
+.Award__Element__Container {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    perspective: 800px;
+    margin-bottom: $spacing;
+}
+.Award__Element {
+    cursor: pointer;
+    margin-bottom: $spacing;
+
+    svg {
+        display: block;
+    }
+    // .Award--hide & {
+    //     opacity: 0;
+    // }
+    // .Award--show & {
+    //     opacity: 1;
+    // }
+    // transition: ease-in all 500ms;
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: rotateY(0deg) scale(0.75);
+
+    .Award--hide & {
+        animation-name: glow-soft;
+        animation-duration: 3000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        &:hover {
+            animation-name: glow;
+            animation-duration: 1200ms;
+        }
+    }
+    .Award--show & {
+        animation-name: burst;
+        animation-duration: 500ms;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+    }
+    .Award--show &,
+    .capture & {
+        cursor: default;
+        transform: rotateY(540deg) scale(1);
+    }
+}
+
+.Award__Element__Face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    &--back {
+        transform: rotateY(180deg);
+    }
+    &--front {
+        .PeriodicTableElement_Symbol {
+            fill: $text-color;
+        }
+    }
+}
+
+.Award__Comment {
+    // font-size: $smallish-font;
+    transition: ease-in opacity 500ms 500ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        margin-bottom: $spacing/2;
+    }
+    .Award--hide & {
+        opacity: 0;
+    }
+    .Award--show &,
+    .capture & {
+        opacity: 1;
+    }
+}
+
+.Award__Share {
+    margin-bottom: $spacing;
+}
+.Awards__RunnerUps__Heading {
+    transition: ease-in opacity 500ms 1000ms;
+    opacity: 0;
+    margin-bottom: 0;
+    .Award--show &,
+    .capture & {
+        opacity: 1;
+    }
+}
+
+.Awards__RunnerUps__Item {
+    opacity: 0;
+    font-size: $smallish-font;
+    .Award--show &,
+    .capture & {
+        opacity: 1;
+    }
+    &--0 {
+        transition: ease-in opacity 300ms 1500ms;
+    }
+    &--1 {
+        transition: ease-in opacity 300ms 1800ms;
+    }
+}

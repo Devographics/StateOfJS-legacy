@@ -1,0 +1,1072 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
+section_id: testing
+tools:
+    - storybook
+    - mocha
+    - jasmine
+    - jest
+    - enzyme
+    - ava
+    - karma
+happiness:
+    -
+        survey: '2016'
+        scores:
+            -
+                score: 2
+                count: 2864
+                percentage: 27.9
+            -
+                score: 3
+                count: 2806
+                percentage: 27.4
+            -
+                score: 1
+                count: 1343
+                percentage: 13.1
+            -
+                score: 4
+                count: 1286
+                percentage: 12.5
+            -
+                score: 0
+                count: 1256
+                percentage: 12.3
+        average: 2.2
+    -
+        survey: '2017'
+        scores:
+            -
+                score: 2
+                count: 7017
+                percentage: 29.7
+            -
+                score: 3
+                count: 6742
+                percentage: 28.5
+            -
+                score: 4
+                count: 3270
+                percentage: 13.8
+            -
+                score: 1
+                count: 3138
+                percentage: 13.3
+            -
+                score: 0
+                count: 2566
+                percentage: 10.8
+        average: 2.2
+    -
+        survey: '2018'
+        scores:
+            -
+                score: 3
+                count: 7242
+                percentage: 35.8
+            -
+                score: 2
+                count: 5145
+                percentage: 25.4
+            -
+                score: 4
+                count: 4832
+                percentage: 23.9
+            -
+                score: 1
+                count: 1142
+                percentage: 5.6
+            -
+                score: 0
+                count: 498
+                percentage: 2.5
+        average: 2.8
+opinions:
+    -
+        survey_id: '2016'
+        tools:
+            -
+                tool_id: mocha
+                counts:
+                    would_use: 4665
+                    interested: 3071
+                    not_interested: 1053
+                    never_heard: 1153
+                    would_not_use: 308
+                percentages:
+                    would_use: 45.5
+                    interested: 30
+                    not_interested: 10.3
+                    never_heard: 11.2
+                    would_not_use: 3
+            -
+                tool_id: jasmine
+                counts:
+                    would_use: 4078
+                    interested: 2820
+                    not_interested: 1302
+                    never_heard: 1235
+                    would_not_use: 815
+                percentages:
+                    would_use: 39.8
+                    interested: 27.5
+                    not_interested: 12.7
+                    never_heard: 12
+                    would_not_use: 8
+            -
+                tool_id: jest
+                counts:
+                    never_heard: 6545
+                    would_use: 482
+                    interested: 1701
+                    not_interested: 1184
+                    would_not_use: 338
+                percentages:
+                    never_heard: 63.9
+                    would_use: 4.7
+                    interested: 16.6
+                    not_interested: 11.6
+                    would_not_use: 3.3
+            -
+                tool_id: enzyme
+                counts:
+                    never_heard: 7108
+                    would_use: 1075
+                    interested: 1405
+                    not_interested: 604
+                    would_not_use: 58
+                percentages:
+                    never_heard: 69.3
+                    would_use: 10.5
+                    interested: 13.7
+                    not_interested: 5.9
+                    would_not_use: 0.6
+            -
+                tool_id: ava
+                counts:
+                    never_heard: 8230
+                    not_interested: 573
+                    interested: 995
+                    would_use: 386
+                    would_not_use: 66
+                percentages:
+                    never_heard: 80.3
+                    not_interested: 5.6
+                    interested: 9.7
+                    would_use: 3.8
+                    would_not_use: 0.6
+    -
+        survey_id: '2017'
+        tools:
+            -
+                tool_id: mocha
+                counts:
+                    would_use: 10694
+                    interested: 6585
+                    not_interested: 2582
+                    never_heard: 2254
+                    would_not_use: 1551
+                percentages:
+                    would_use: 45.2
+                    interested: 27.8
+                    not_interested: 10.9
+                    never_heard: 9.5
+                    would_not_use: 6.6
+            -
+                tool_id: jasmine
+                counts:
+                    would_use: 9214
+                    interested: 5769
+                    not_interested: 3289
+                    never_heard: 3033
+                    would_not_use: 2361
+                percentages:
+                    would_use: 38.9
+                    interested: 24.4
+                    not_interested: 13.9
+                    never_heard: 12.8
+                    would_not_use: 10
+            -
+                tool_id: jest
+                counts:
+                    never_heard: 9006
+                    would_use: 5845
+                    interested: 6455
+                    not_interested: 1964
+                    would_not_use: 396
+                percentages:
+                    never_heard: 38.1
+                    would_use: 24.7
+                    interested: 27.3
+                    not_interested: 8.3
+                    would_not_use: 1.7
+            -
+                tool_id: enzyme
+                counts:
+                    never_heard: 13526
+                    would_use: 4567
+                    interested: 3392
+                    not_interested: 1913
+                    would_not_use: 268
+                percentages:
+                    never_heard: 57.2
+                    would_use: 19.3
+                    interested: 14.3
+                    not_interested: 8.1
+                    would_not_use: 1.1
+            -
+                tool_id: ava
+                counts:
+                    never_heard: 18004
+                    not_interested: 1922
+                    interested: 2175
+                    would_use: 1174
+                    would_not_use: 391
+                percentages:
+                    never_heard: 76.1
+                    not_interested: 8.1
+                    interested: 9.2
+                    would_use: 5
+                    would_not_use: 1.7
+    -
+        survey_id: '2018'
+        tools:
+            -
+                tool_id: storybook
+                counts:
+                    never_heard: 10547
+                    interested: 4767
+                    would_use: 3085
+                    not_interested: 1225
+                    would_not_use: 379
+                percentages:
+                    never_heard: 52.7
+                    interested: 23.8
+                    would_use: 15.4
+                    not_interested: 6.1
+                    would_not_use: 1.9
+            -
+                tool_id: mocha
+                counts:
+                    would_use: 7873
+                    interested: 5238
+                    not_interested: 3133
+                    never_heard: 2022
+                    would_not_use: 1683
+                percentages:
+                    would_use: 39.5
+                    interested: 26.3
+                    not_interested: 15.7
+                    never_heard: 10.1
+                    would_not_use: 8.4
+            -
+                tool_id: jasmine
+                counts:
+                    would_use: 5689
+                    interested: 4971
+                    not_interested: 4515
+                    never_heard: 2843
+                    would_not_use: 1919
+                percentages:
+                    would_use: 28.5
+                    interested: 24.9
+                    not_interested: 22.6
+                    never_heard: 14.3
+                    would_not_use: 9.6
+            -
+                tool_id: jest
+                counts:
+                    never_heard: 4047
+                    would_use: 7910
+                    interested: 5923
+                    not_interested: 1783
+                    would_not_use: 289
+                percentages:
+                    never_heard: 20.3
+                    would_use: 39.6
+                    interested: 29.7
+                    not_interested: 8.9
+                    would_not_use: 1.4
+            -
+                tool_id: enzyme
+                counts:
+                    never_heard: 9289
+                    would_use: 4039
+                    interested: 3612
+                    not_interested: 2455
+                    would_not_use: 528
+                percentages:
+                    never_heard: 46.6
+                    would_use: 20.3
+                    interested: 18.1
+                    not_interested: 12.3
+                    would_not_use: 2.7
+            -
+                tool_id: ava
+                counts:
+                    never_heard: 14419
+                    not_interested: 2674
+                    interested: 1734
+                    would_use: 804
+                    would_not_use: 320
+                percentages:
+                    never_heard: 72.3
+                    not_interested: 13.4
+                    interested: 8.7
+                    would_use: 4
+                    would_not_use: 1.6
+            -
+                tool_id: karma
+                counts:
+                    never_heard: 6633
+                    not_interested: 4091
+                    interested: 3788
+                    would_use: 3676
+                    would_not_use: 1744
+                percentages:
+                    never_heard: 33.3
+                    not_interested: 20.5
+                    interested: 19
+                    would_use: 18.4
+                    would_not_use: 8.7
+other_tools:
+    -
+        name: cypress
+        count: 382
+    -
+        name: qunit
+        count: 170
+    -
+        name: tape
+        count: 167
+    -
+        name: chai
+        count: 70
+    -
+        name: testcafe
+        count: 45
+    -
+        name: protractor
+        count: 44
+    -
+        name: selenium
+        count: 43
+    -
+        name: nightwatch
+        count: 33
+    -
+        name: sinonjs
+        count: 31
+    -
+        name: cucumberjs
+        count: 30
+    -
+        name: node-tap
+        count: 22
+    -
+        name: intern
+        count: 14
+    -
+        name: elm-test
+        count: 13
+usage_users_info:
+    by_salary:
+        -
+            tool: storybook
+            total: 3085
+            average: 83.5
+            ranges:
+                -
+                    range: 50-100
+                    count: 1037
+                    percentage: 33.6
+                -
+                    range: 100-200
+                    count: 876
+                    percentage: 28.4
+                -
+                    range: 30-50
+                    count: 502
+                    percentage: 16.3
+                -
+                    range: 10-30
+                    count: 355
+                    percentage: 11.5
+                -
+                    range: 0-10
+                    count: 104
+                    percentage: 3.4
+                -
+                    range: more-than-200
+                    count: 83
+                    percentage: 2.7
+                -
+                    range: work-for-free
+                    count: 52
+                    percentage: 1.7
+        -
+            tool: mocha
+            total: 7873
+            average: 81.1
+            ranges:
+                -
+                    range: 50-100
+                    count: 2532
+                    percentage: 32.2
+                -
+                    range: 100-200
+                    count: 2127
+                    percentage: 27
+                -
+                    range: 30-50
+                    count: 1240
+                    percentage: 15.8
+                -
+                    range: 10-30
+                    count: 937
+                    percentage: 11.9
+                -
+                    range: 0-10
+                    count: 328
+                    percentage: 4.2
+                -
+                    range: work-for-free
+                    count: 255
+                    percentage: 3.2
+                -
+                    range: more-than-200
+                    count: 238
+                    percentage: 3
+        -
+            tool: jasmine
+            total: 5689
+            average: 84.5
+            ranges:
+                -
+                    range: 50-100
+                    count: 1872
+                    percentage: 32.9
+                -
+                    range: 100-200
+                    count: 1653
+                    percentage: 29.1
+                -
+                    range: 30-50
+                    count: 914
+                    percentage: 16.1
+                -
+                    range: 10-30
+                    count: 612
+                    percentage: 10.8
+                -
+                    range: 0-10
+                    count: 189
+                    percentage: 3.3
+                -
+                    range: more-than-200
+                    count: 171
+                    percentage: 3
+                -
+                    range: work-for-free
+                    count: 122
+                    percentage: 2.1
+        -
+            tool: jest
+            total: 7910
+            average: 79.4
+            ranges:
+                -
+                    range: 50-100
+                    count: 2638
+                    percentage: 33.4
+                -
+                    range: 100-200
+                    count: 2018
+                    percentage: 25.5
+                -
+                    range: 30-50
+                    count: 1318
+                    percentage: 16.7
+                -
+                    range: 10-30
+                    count: 996
+                    percentage: 12.6
+                -
+                    range: 0-10
+                    count: 329
+                    percentage: 4.2
+                -
+                    range: work-for-free
+                    count: 220
+                    percentage: 2.8
+                -
+                    range: more-than-200
+                    count: 214
+                    percentage: 2.7
+        -
+            tool: enzyme
+            total: 4039
+            average: 84.2
+            ranges:
+                -
+                    range: 50-100
+                    count: 1339
+                    percentage: 33.2
+                -
+                    range: 100-200
+                    count: 1198
+                    percentage: 29.7
+                -
+                    range: 30-50
+                    count: 644
+                    percentage: 15.9
+                -
+                    range: 10-30
+                    count: 460
+                    percentage: 11.4
+                -
+                    range: 0-10
+                    count: 134
+                    percentage: 3.3
+                -
+                    range: more-than-200
+                    count: 97
+                    percentage: 2.4
+                -
+                    range: work-for-free
+                    count: 87
+                    percentage: 2.2
+        -
+            tool: ava
+            total: 804
+            average: 79.7
+            ranges:
+                -
+                    range: 50-100
+                    count: 276
+                    percentage: 34.3
+                -
+                    range: 100-200
+                    count: 196
+                    percentage: 24.4
+                -
+                    range: 30-50
+                    count: 123
+                    percentage: 15.3
+                -
+                    range: 10-30
+                    count: 83
+                    percentage: 10.3
+                -
+                    range: work-for-free
+                    count: 41
+                    percentage: 5.1
+                -
+                    range: 0-10
+                    count: 31
+                    percentage: 3.9
+                -
+                    range: more-than-200
+                    count: 29
+                    percentage: 3.6
+        -
+            tool: karma
+            total: 3676
+            average: 82.6
+            ranges:
+                -
+                    range: 50-100
+                    count: 1198
+                    percentage: 32.6
+                -
+                    range: 100-200
+                    count: 1008
+                    percentage: 27.4
+                -
+                    range: 30-50
+                    count: 647
+                    percentage: 17.6
+                -
+                    range: 10-30
+                    count: 411
+                    percentage: 11.2
+                -
+                    range: 0-10
+                    count: 125
+                    percentage: 3.4
+                -
+                    range: more-than-200
+                    count: 112
+                    percentage: 3
+                -
+                    range: work-for-free
+                    count: 72
+                    percentage: 2
+    by_company_size:
+        -
+            tool: storybook
+            total: 3085
+            average: 451
+            ranges:
+                -
+                    range: 100-1000
+                    count: 808
+                    percentage: 26.2
+                -
+                    range: more-than-1000
+                    count: 597
+                    percentage: 19.4
+                -
+                    range: 20-50
+                    count: 444
+                    percentage: 14.4
+                -
+                    range: 50-100
+                    count: 408
+                    percentage: 13.2
+                -
+                    range: 10-20
+                    count: 303
+                    percentage: 9.8
+                -
+                    range: 5-10
+                    count: 210
+                    percentage: 6.8
+                -
+                    range: 1-5
+                    count: 170
+                    percentage: 5.5
+                -
+                    range: '1'
+                    count: 129
+                    percentage: 4.2
+        -
+            tool: mocha
+            total: 7873
+            average: 450
+            ranges:
+                -
+                    range: 100-1000
+                    count: 1795
+                    percentage: 22.8
+                -
+                    range: more-than-1000
+                    count: 1619
+                    percentage: 20.6
+                -
+                    range: 20-50
+                    count: 1030
+                    percentage: 13.1
+                -
+                    range: 50-100
+                    count: 999
+                    percentage: 12.7
+                -
+                    range: 10-20
+                    count: 720
+                    percentage: 9.1
+                -
+                    range: 5-10
+                    count: 596
+                    percentage: 7.6
+                -
+                    range: 1-5
+                    count: 549
+                    percentage: 7
+                -
+                    range: '1'
+                    count: 526
+                    percentage: 6.7
+        -
+            tool: jasmine
+            total: 5689
+            average: 508
+            ranges:
+                -
+                    range: 100-1000
+                    count: 1455
+                    percentage: 25.6
+                -
+                    range: more-than-1000
+                    count: 1334
+                    percentage: 23.4
+                -
+                    range: 50-100
+                    count: 731
+                    percentage: 12.8
+                -
+                    range: 20-50
+                    count: 722
+                    percentage: 12.7
+                -
+                    range: 10-20
+                    count: 467
+                    percentage: 8.2
+                -
+                    range: 5-10
+                    count: 337
+                    percentage: 5.9
+                -
+                    range: 1-5
+                    count: 312
+                    percentage: 5.5
+                -
+                    range: '1'
+                    count: 302
+                    percentage: 5.3
+        -
+            tool: jest
+            total: 7910
+            average: 447
+            ranges:
+                -
+                    range: 100-1000
+                    count: 1930
+                    percentage: 24.4
+                -
+                    range: more-than-1000
+                    count: 1563
+                    percentage: 19.8
+                -
+                    range: 20-50
+                    count: 1058
+                    percentage: 13.4
+                -
+                    range: 50-100
+                    count: 1038
+                    percentage: 13.1
+                -
+                    range: 10-20
+                    count: 758
+                    percentage: 9.6
+                -
+                    range: 5-10
+                    count: 550
+                    percentage: 7
+                -
+                    range: 1-5
+                    count: 504
+                    percentage: 6.4
+                -
+                    range: '1'
+                    count: 475
+                    percentage: 6
+        -
+            tool: enzyme
+            total: 4039
+            average: 505
+            ranges:
+                -
+                    range: 100-1000
+                    count: 1121
+                    percentage: 27.8
+                -
+                    range: more-than-1000
+                    count: 906
+                    percentage: 22.4
+                -
+                    range: 20-50
+                    count: 551
+                    percentage: 13.6
+                -
+                    range: 50-100
+                    count: 499
+                    percentage: 12.4
+                -
+                    range: 10-20
+                    count: 322
+                    percentage: 8
+                -
+                    range: 5-10
+                    count: 240
+                    percentage: 5.9
+                -
+                    range: '1'
+                    count: 203
+                    percentage: 5
+                -
+                    range: 1-5
+                    count: 180
+                    percentage: 4.5
+        -
+            tool: ava
+            total: 804
+            average: 341
+            ranges:
+                -
+                    range: 100-1000
+                    count: 166
+                    percentage: 20.6
+                -
+                    range: 20-50
+                    count: 125
+                    percentage: 15.5
+                -
+                    range: more-than-1000
+                    count: 113
+                    percentage: 14.1
+                -
+                    range: 50-100
+                    count: 95
+                    percentage: 11.8
+                -
+                    range: 10-20
+                    count: 90
+                    percentage: 11.2
+                -
+                    range: 5-10
+                    count: 74
+                    percentage: 9.2
+                -
+                    range: 1-5
+                    count: 71
+                    percentage: 8.8
+                -
+                    range: '1'
+                    count: 67
+                    percentage: 8.3
+        -
+            tool: karma
+            total: 3676
+            average: 528
+            ranges:
+                -
+                    range: 100-1000
+                    count: 985
+                    percentage: 26.8
+                -
+                    range: more-than-1000
+                    count: 895
+                    percentage: 24.3
+                -
+                    range: 20-50
+                    count: 458
+                    percentage: 12.5
+                -
+                    range: 50-100
+                    count: 457
+                    percentage: 12.4
+                -
+                    range: 10-20
+                    count: 287
+                    percentage: 7.8
+                -
+                    range: 1-5
+                    count: 206
+                    percentage: 5.6
+                -
+                    range: 5-10
+                    count: 192
+                    percentage: 5.2
+                -
+                    range: '1'
+                    count: 177
+                    percentage: 4.8
+    by_years_of_experience:
+        -
+            tool: storybook
+            total: 3085
+            average: 8.4
+            ranges:
+                -
+                    range: 5-10
+                    count: 1023
+                    percentage: 33.2
+                -
+                    range: 2-5
+                    count: 880
+                    percentage: 28.5
+                -
+                    range: 10-20
+                    count: 808
+                    percentage: 26.2
+                -
+                    range: 1-2
+                    count: 218
+                    percentage: 7.1
+                -
+                    range: more-than-20
+                    count: 123
+                    percentage: 4
+                -
+                    range: less-than-1
+                    count: 24
+                    percentage: 0.8
+        -
+            tool: mocha
+            total: 7873
+            average: 9
+            ranges:
+                -
+                    range: 5-10
+                    count: 2422
+                    percentage: 30.8
+                -
+                    range: 10-20
+                    count: 2126
+                    percentage: 27
+                -
+                    range: 2-5
+                    count: 2083
+                    percentage: 26.5
+                -
+                    range: more-than-20
+                    count: 577
+                    percentage: 7.3
+                -
+                    range: 1-2
+                    count: 552
+                    percentage: 7
+                -
+                    range: less-than-1
+                    count: 88
+                    percentage: 1.1
+        -
+            tool: jasmine
+            total: 5689
+            average: 9.5
+            ranges:
+                -
+                    range: 5-10
+                    count: 1729
+                    percentage: 30.4
+                -
+                    range: 10-20
+                    count: 1674
+                    percentage: 29.4
+                -
+                    range: 2-5
+                    count: 1410
+                    percentage: 24.8
+                -
+                    range: more-than-20
+                    count: 467
+                    percentage: 8.2
+                -
+                    range: 1-2
+                    count: 336
+                    percentage: 5.9
+                -
+                    range: less-than-1
+                    count: 53
+                    percentage: 0.9
+        -
+            tool: jest
+            total: 7910
+            average: 8.2
+            ranges:
+                -
+                    range: 5-10
+                    count: 2432
+                    percentage: 30.7
+                -
+                    range: 2-5
+                    count: 2346
+                    percentage: 29.7
+                -
+                    range: 10-20
+                    count: 1896
+                    percentage: 24
+                -
+                    range: 1-2
+                    count: 717
+                    percentage: 9.1
+                -
+                    range: more-than-20
+                    count: 388
+                    percentage: 4.9
+                -
+                    range: less-than-1
+                    count: 109
+                    percentage: 1.4
+        -
+            tool: enzyme
+            total: 4039
+            average: 8.1
+            ranges:
+                -
+                    range: 5-10
+                    count: 1309
+                    percentage: 32.4
+                -
+                    range: 2-5
+                    count: 1222
+                    percentage: 30.3
+                -
+                    range: 10-20
+                    count: 947
+                    percentage: 23.4
+                -
+                    range: 1-2
+                    count: 330
+                    percentage: 8.2
+                -
+                    range: more-than-20
+                    count: 169
+                    percentage: 4.2
+                -
+                    range: less-than-1
+                    count: 51
+                    percentage: 1.3
+        -
+            tool: ava
+            total: 804
+            average: 8.8
+            ranges:
+                -
+                    range: 5-10
+                    count: 304
+                    percentage: 37.8
+                -
+                    range: 10-20
+                    count: 218
+                    percentage: 27.1
+                -
+                    range: 2-5
+                    count: 212
+                    percentage: 26.4
+                -
+                    range: more-than-20
+                    count: 34
+                    percentage: 4.2
+                -
+                    range: 1-2
+                    count: 32
+                    percentage: 4
+                -
+                    range: less-than-1
+                    count: 2
+                    percentage: 0.2
+        -
+            tool: karma
+            total: 3676
+            average: 9.5
+            ranges:
+                -
+                    range: 5-10
+                    count: 1192
+                    percentage: 32.4
+                -
+                    range: 10-20
+                    count: 1066
+                    percentage: 29
+                -
+                    range: 2-5
+                    count: 926
+                    percentage: 25.2
+                -
+                    range: more-than-20
+                    count: 281
+                    percentage: 7.6
+                -
+                    range: 1-2
+                    count: 167
+                    percentage: 4.5
+                -
+                    range: less-than-1
+                    count: 29
+                    percentage: 0.8

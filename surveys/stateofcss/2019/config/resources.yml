@@ -1,0 +1,72 @@
+layout:
+    css-grid:
+        mdn: /en-US/docs/Web/CSS/CSS_Grid_Layout
+        caniuse: css-grid
+    flexbox:
+        mdn: /en-US/docs/Web/CSS/CSS_Flexible_Box_Layout
+        caniuse: flexbox
+    css-multi-column:
+        mdn: /en-US/docs/Web/CSS/CSS_Columns
+        caniuse: multicolumn
+    css-writing-modes:
+        mdn: /en-US/docs/Web/CSS/CSS_Writing_Modes
+        caniuse: css-writing-mode
+    css-exclusions:
+        caniuse: css-exclusions
+
+shapes-and-graphics:
+    css-shapes:
+        mdn: /en-US/docs/Web/CSS/CSS_Shapes
+        caniuse: css-shapes
+    object-fit:
+        mdn: /en-US/docs/Web/CSS/object-fit
+        caniuse: object-fit
+    clip-path:
+        mdn: /en-US/docs/Web/CSS/clip-path
+        caniuse: css-clip-path
+    css-masks:
+        mdn: /en-US/docs/Web/CSS/CSS_Masking
+        caniuse: css-masks
+    blend-modes:
+        mdn: /en-US/docs/Web/CSS/blend-mode
+        caniuse: css-mixblendmode
+    css-filter-effects:
+        mdn: /en-US/docs/Web/CSS/filter
+        caniuse: css-filters
+
+interactions:
+    css-scroll-snap:
+        mdn: /en-US/docs/Web/CSS/CSS_Scroll_Snap
+        caniuse: css-snappoints
+    overscroll-behavior:
+        mdn: /en-US/docs/Web/CSS/overscroll-behavior
+        caniuse: css-overscroll-behavior
+    overflow-anchor:
+        mdn: /en-US/docs/Web/CSS/overflow-anchor
+        caniuse: css-overflow-anchor
+
+typography:
+    web-fonts-font-face:
+        mdn: /en-US/docs/Web/CSS/@font-face
+        caniuse: fontface
+    variable-fonts:
+        mdn: /en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide
+        caniuse: variable-fonts
+    line-breaking-properties: {}
+    font-variant:
+        mdn: /en-US/docs/Web/CSS/font-variant
+        caniuse: font-variant-alternates
+    initial-letter:
+        mdn: /en-US/docs/Web/CSS/initial-letter
+        caniuse: css-initial-letter
+
+animations-and-transforms:
+    css-transitions:
+        mdn: /en-US/docs/Web/CSS/CSS_Transitions
+        caniuse: css-transitions
+    css-transforms:
+        mdn: /en-US/docs/Web/CSS/CSS_Transforms
+        caniuse: transforms2d
+    css-animations:
+        mdn: /en-US/docs/Web/CSS/CSS_Animations
+        caniuse: css-animation

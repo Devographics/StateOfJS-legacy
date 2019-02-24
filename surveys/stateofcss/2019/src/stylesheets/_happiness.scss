@@ -1,0 +1,97 @@
+.happiness__wrapper {
+    @include small {
+        padding: $spacing * 3 $spacing;
+    }
+    @include medium-large {
+        padding: $spacing * 3 $spacing * 3;
+    }
+    position: relative;
+}
+
+.happiness {
+    position: relative;
+    font-size: $medium-font;
+}
+
+.happiness__levels {
+    @include flex-center;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid $border-color;
+}
+
+.happiness__item {
+    position: relative;
+    &:after {
+        position: absolute;
+        display: block;
+        content: ' ';
+        border-left: 1px solid $border-color;
+        height: 50px;
+        width: 1px;
+        top: -25px;
+    }
+    @include small {
+        .happiness__item__label {
+            display: none;
+        }
+        &:first-child {
+            .happiness__item__label {
+                left: -20px;
+                display: block;
+                text-align: left;
+            }
+        }
+        &:last-child {
+            .happiness__item__label {
+                right: -20px;
+                display: block;
+                text-align: right;
+            }
+        }
+    }
+}
+
+.happiness__item__index {
+    position: absolute;
+    top: 30px;
+    width: 100px;
+    left: -50px;
+    text-align: center;
+    @include secondary-font;
+}
+
+.happiness__item__label {
+    position: absolute;
+    top: -60px;
+    white-space: nowrap;
+    width: 100px;
+    right: -50px;
+    text-align: center;
+}
+
+.happiness__meter {
+    position: absolute;
+    background: $red;
+    height: 10px;
+    top: -5px;
+    left: 0px;
+}
+
+.happiness__target {
+    position: absolute;
+    top: -25px;
+    right: -30px;
+    border: 7px solid $red;
+    // border-radius: 200px;
+    height: 60px;
+    width: 60px;
+    background: $bg-color;
+    @include flex-center;
+    justify-content: center;
+    font-size: 0.9rem;
+    @include font-bold;
+    h4 {
+        margin: 0;
+    }
+}

@@ -1,0 +1,35 @@
+section_id: animations-and-transforms
+aggregations:
+  - id: css-transitions
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F44D I've used it"
+        count: 8916
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 401
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 58
+  - id: css-transforms
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F44D I've used it"
+        count: 8872
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 383
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 111
+  - id: css-animations
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F44D I've used it"
+        count: 8516
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 791
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 133

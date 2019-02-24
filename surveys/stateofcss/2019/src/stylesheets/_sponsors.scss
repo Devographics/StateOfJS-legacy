@@ -1,0 +1,46 @@
+.Sponsors {
+    background: $bg-color-light;
+    padding: $spacing * 1.5;
+    margin-top: $spacing * 3;
+}
+.Sponsors__Heading {
+    text-align: center;
+    margin-bottom: $spacing;
+}
+.Sponsors__Items {
+    @include flex-center;
+    @include small-medium {
+        flex-direction: column;
+    }
+}
+.Sponsors__Item {
+    width: 150px;
+    @include small-medium {
+        margin-bottom: $spacing;
+    }
+    @include large {
+        margin-right: $spacing * 3;
+    }
+    &:last-child {
+        margin: 0;
+    }
+    a,
+    svg,
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.Sponsors__Support {
+    font-size: $smallish-font;
+    text-align: center;
+    display: block;
+    margin-top: $spacing/2;
+    @include font-regular;
+    &,
+    &:link,
+    &:visited {
+        color: $darker-text-color;
+    }
+}

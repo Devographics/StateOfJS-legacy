@@ -1,0 +1,732 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
+tool_id: reason
+appears_in_surveys:
+    - '2017'
+    - '2018'
+experience:
+    all:
+        never_heard: 28778
+        interested: 6822
+        not_interested: 6666
+        would_use: 1245
+        would_not_use: 227
+    by_survey:
+        -
+            survey: '2017'
+            counts:
+                never_heard: 18404
+                interested: 2351
+                not_interested: 2724
+                would_use: 131
+                would_not_use: 56
+            percentages:
+                never_heard: 77.8
+                interested: 9.9
+                not_interested: 11.5
+                would_use: 0.6
+                would_not_use: 0.2
+        -
+            survey: '2018'
+            counts:
+                never_heard: 10374
+                interested: 4471
+                not_interested: 3942
+                would_use: 1114
+                would_not_use: 171
+            percentages:
+                never_heard: 51.7
+                interested: 22.3
+                not_interested: 19.6
+                would_use: 5.6
+                would_not_use: 0.9
+reasons:
+    like:
+        -
+            id: elegant_programming_style_patterns
+            count: 738
+        -
+            id: robust_less_error_prone_code
+            count: 595
+        -
+            id: powerful_developer_tooling
+            count: 383
+        -
+            id: fast_performance
+            count: 347
+        -
+            id: growing_momentum_popularity
+            count: 281
+        -
+            id: good_documentation
+            count: 279
+        -
+            id: full_featured_powerful
+            count: 274
+        -
+            id: backed_by_a_great_team_company
+            count: 266
+        -
+            id: rich_package_ecosystem
+            count: 223
+        -
+            id: easy_learning_curve
+            count: 195
+        -
+            id: simple_lightweight
+            count: 158
+        -
+            id: stable_backwards_compatible
+            count: 157
+        -
+            id: well_established_option
+            count: 129
+    dislike:
+        -
+            id: clumsy_programming_style
+            count: 53
+        -
+            id: bloated_complex
+            count: 49
+        -
+            id: hard_learning_curve
+            count: 48
+        -
+            id: lacking_developer_tooling
+            count: 36
+        -
+            id: fast_changing_breaks_often
+            count: 35
+        -
+            id: bad_documentation
+            count: 35
+        -
+            id: concerns_about_the_team_company
+            count: 33
+        -
+            id: small_package_ecosystem
+            count: 23
+        -
+            id: new_untested_option
+            count: 22
+        -
+            id: diminishing_momentum_popularity
+            count: 21
+        -
+            id: limited_lacking_in_features
+            count: 18
+        -
+            id: poor_performance
+            count: 15
+        -
+            id: buggy_error_prone_code
+            count: 14
+would_use_by_country:
+    survey: '2018'
+    total: 20252
+    percentage: 5.5
+    buckets:
+        -
+            country: USA
+            total: 4929
+            count: 185
+            percentage: 3.8
+            delta_from_average: -1.7
+        -
+            country: Germany
+            total: 1064
+            count: 49
+            percentage: 4.6
+            delta_from_average: -0.9
+        -
+            country: Australia
+            total: 1050
+            count: 59
+            percentage: 5.6
+            delta_from_average: 0.1
+        -
+            country: Ukraine
+            total: 897
+            count: 47
+            percentage: 5.2
+            delta_from_average: -0.3
+        -
+            country: France
+            total: 856
+            count: 40
+            percentage: 4.7
+            delta_from_average: -0.8
+        -
+            country: Canada
+            total: 831
+            count: 36
+            percentage: 4.3
+            delta_from_average: -1.2
+        -
+            country: UK
+            total: 765
+            count: 35
+            percentage: 4.6
+            delta_from_average: -0.9
+        -
+            country: Russia
+            total: 754
+            count: 41
+            percentage: 5.4
+            delta_from_average: -0.1
+        -
+            country: India
+            total: 521
+            count: 70
+            percentage: 13.4
+            delta_from_average: 7.9
+        -
+            country: Sweden
+            total: 506
+            count: 25
+            percentage: 4.9
+            delta_from_average: -0.6
+        -
+            country: Netherlands
+            total: 503
+            count: 24
+            percentage: 4.8
+            delta_from_average: -0.7
+        -
+            country: Poland
+            total: 487
+            count: 22
+            percentage: 4.5
+            delta_from_average: -1
+        -
+            country: Brazil
+            total: 451
+            count: 23
+            percentage: 5.1
+            delta_from_average: -0.4
+        -
+            country: Spain
+            total: 396
+            count: 27
+            percentage: 6.8
+            delta_from_average: 1.3
+        -
+            country: Italy
+            total: 272
+            count: 16
+            percentage: 5.9
+            delta_from_average: 0.4
+        -
+            country: Belgium
+            total: 210
+            count: 15
+            percentage: 7.1
+            delta_from_average: 1.6
+        -
+            country: Finland
+            total: 210
+            count: 2
+            percentage: 1
+            delta_from_average: -4.5
+        -
+            country: Norway
+            total: 202
+            count: 6
+            percentage: 3
+            delta_from_average: -2.5
+        -
+            country: Denmark
+            total: 198
+            count: 9
+            percentage: 4.5
+            delta_from_average: -1
+        -
+            country: Argentina
+            total: 192
+            count: 8
+            percentage: 4.2
+            delta_from_average: -1.3
+        -
+            country: Mexico
+            total: 188
+            count: 15
+            percentage: 8
+            delta_from_average: 2.5
+        -
+            country: Switzerland
+            total: 188
+            count: 10
+            percentage: 5.3
+            delta_from_average: -0.2
+        -
+            country: 'Czech Republic'
+            total: 178
+            count: 9
+            percentage: 5.1
+            delta_from_average: -0.4
+        -
+            country: 'South Africa'
+            total: 155
+            count: 14
+            percentage: 9
+            delta_from_average: 3.5
+        -
+            country: Romania
+            total: 153
+            count: 11
+            percentage: 7.2
+            delta_from_average: 1.7
+        -
+            country: Austria
+            total: 149
+            count: 4
+            percentage: 2.7
+            delta_from_average: -2.8
+        -
+            country: Israel
+            total: 148
+            count: 7
+            percentage: 4.7
+            delta_from_average: -0.8
+        -
+            country: 'New Zealand'
+            total: 146
+            count: 6
+            percentage: 4.1
+            delta_from_average: -1.4
+        -
+            country: Belarus
+            total: 135
+            count: 9
+            percentage: 6.7
+            delta_from_average: 1.2
+        -
+            country: Portugal
+            total: 135
+            count: 6
+            percentage: 4.4
+            delta_from_average: -1.1
+        -
+            country: Ireland
+            total: 126
+            count: 8
+            percentage: 6.3
+            delta_from_average: 0.8
+        -
+            country: Colombia
+            total: 124
+            count: 8
+            percentage: 6.5
+            delta_from_average: 1
+        -
+            country: Indonesia
+            total: 120
+            count: 20
+            percentage: 16.7
+            delta_from_average: 11.2
+        -
+            country: Hungary
+            total: 95
+            count: 1
+            percentage: 1.1
+            delta_from_average: -4.4
+        -
+            country: Turkey
+            total: 90
+            count: 10
+            percentage: 11.1
+            delta_from_average: 5.6
+        -
+            country: Philippines
+            total: 87
+            count: 10
+            percentage: 11.5
+            delta_from_average: 6
+        -
+            country: Bulgaria
+            total: 86
+            count: 7
+            percentage: 8.1
+            delta_from_average: 2.6
+        -
+            country: Greece
+            total: 86
+            count: 5
+            percentage: 5.8
+            delta_from_average: 0.3
+        -
+            country: Serbia
+            total: 83
+            count: 5
+            percentage: 6
+            delta_from_average: 0.5
+        -
+            country: Singapore
+            total: 76
+            count: 3
+            percentage: 3.9
+            delta_from_average: -1.6
+        -
+            country: China
+            total: 75
+            count: 12
+            percentage: 16
+            delta_from_average: 10.5
+        -
+            country: Japan
+            total: 75
+            count: 11
+            percentage: 14.7
+            delta_from_average: 9.2
+        -
+            country: Croatia
+            total: 59
+            count: 1
+            percentage: 1.7
+            delta_from_average: -3.8
+        -
+            country: Nigeria
+            total: 58
+            count: 4
+            percentage: 6.9
+            delta_from_average: 1.4
+        -
+            country: Slovakia
+            total: 58
+            count: 4
+            percentage: 6.9
+            delta_from_average: 1.4
+        -
+            country: Taiwan
+            total: 55
+            count: 4
+            percentage: 7.3
+            delta_from_average: 1.8
+        -
+            country: Estonia
+            total: 54
+            count: 1
+            percentage: 1.9
+            delta_from_average: -3.6
+        -
+            country: Korea
+            total: 51
+            count: 15
+            percentage: 29.4
+            delta_from_average: 23.9
+        -
+            country: Chile
+            total: 49
+            count: 3
+            percentage: 6.1
+            delta_from_average: 0.6
+        -
+            country: Egypt
+            total: 48
+            count: 4
+            percentage: 8.3
+            delta_from_average: 2.8
+        -
+            country: Malaysia
+            total: 47
+            count: 4
+            percentage: 8.5
+            delta_from_average: 3
+        -
+            country: Iran
+            total: 46
+            count: 7
+            percentage: 15.2
+            delta_from_average: 9.7
+        -
+            country: Bangladesh
+            total: 41
+            count: 3
+            percentage: 7.3
+            delta_from_average: 1.8
+        -
+            country: Slovenia
+            total: 38
+            count: 0
+            percentage: 0
+            delta_from_average: -5.5
+        -
+            country: Lithuania
+            total: 37
+            count: 4
+            percentage: 10.8
+            delta_from_average: 5.3
+        -
+            country: Uruguay
+            total: 37
+            count: 0
+            percentage: 0
+            delta_from_average: -5.5
+        -
+            country: Vietnam
+            total: 37
+            count: 6
+            percentage: 16.2
+            delta_from_average: 10.7
+        -
+            country: Moldova
+            total: 34
+            count: 2
+            percentage: 5.9
+            delta_from_average: 0.4
+        -
+            country: Pakistan
+            total: 34
+            count: 4
+            percentage: 11.8
+            delta_from_average: 6.3
+        -
+            country: 'Hong Kong'
+            total: 33
+            count: 3
+            percentage: 9.1
+            delta_from_average: 3.6
+        -
+            country: Latvia
+            total: 31
+            count: 1
+            percentage: 3.2
+            delta_from_average: -2.3
+        -
+            country: 'Costa Rica'
+            total: 30
+            count: 3
+            percentage: 10
+            delta_from_average: 4.5
+        -
+            country: Peru
+            total: 30
+            count: 2
+            percentage: 6.7
+            delta_from_average: 1.2
+        -
+            country: Thailand
+            total: 30
+            count: 1
+            percentage: 3.3
+            delta_from_average: -2.2
+        -
+            country: Venezuela
+            total: 29
+            count: 6
+            percentage: 20.7
+            delta_from_average: 15.2
+        -
+            country: Bolivia
+            total: 27
+            count: 2
+            percentage: 7.4
+            delta_from_average: 1.9
+        -
+            country: Morocco
+            total: 22
+            count: 4
+            percentage: 18.2
+            delta_from_average: 12.7
+pairing:
+    -
+        section: javascript-flavors
+        tools:
+            -
+                tool: reason
+                total: 1114
+                count: 1114
+                score: 1
+            -
+                tool: clojurescript
+                total: 466
+                count: 48
+                score: 0.04
+            -
+                tool: elm
+                total: 872
+                count: 102
+                score: 0.09
+            -
+                tool: flow
+                total: 2065
+                count: 189
+                score: 0.17
+            -
+                tool: typescript
+                total: 9419
+                count: 706
+                score: 0.63
+            -
+                tool: es6
+                total: 17400
+                count: 971
+                score: 0.87
+    -
+        section: front-end-frameworks
+        tools:
+            -
+                tool: react
+                total: 13062
+                count: 744
+                score: 0.67
+            -
+                tool: angular
+                total: 4817
+                count: 351
+                score: 0.32
+            -
+                tool: ember
+                total: 1013
+                count: 42
+                score: 0.04
+            -
+                tool: polymer
+                total: 635
+                count: 46
+                score: 0.04
+            -
+                tool: vuejs
+                total: 5810
+                count: 301
+                score: 0.27
+            -
+                tool: preact
+                total: 1251
+                count: 99
+                score: 0.09
+    -
+        section: data-layer
+        tools:
+            -
+                tool: redux
+                total: 9503
+                count: 560
+                score: 0.5
+            -
+                tool: graphql
+                total: 4108
+                count: 316
+                score: 0.28
+            -
+                tool: relay
+                total: 213
+                count: 26
+                score: 0.02
+            -
+                tool: apollo
+                total: 2228
+                count: 182
+                score: 0.16
+            -
+                tool: mobx
+                total: 1126
+                count: 73
+                score: 0.07
+    -
+        section: back-end-frameworks
+        tools:
+            -
+                tool: meteor
+                total: 922
+                count: 44
+                score: 0.04
+            -
+                tool: express
+                total: 12764
+                count: 760
+                score: 0.68
+            -
+                tool: nextjs
+                total: 1701
+                count: 140
+                score: 0.13
+            -
+                tool: koa
+                total: 1491
+                count: 109
+                score: 0.1
+            -
+                tool: sails
+                total: 335
+                count: 18
+                score: 0.02
+            -
+                tool: feathers
+                total: 317
+                count: 22
+                score: 0.02
+    -
+        section: testing
+        tools:
+            -
+                tool: storybook
+                total: 3085
+                count: 198
+                score: 0.18
+            -
+                tool: mocha
+                total: 7873
+                count: 411
+                score: 0.37
+            -
+                tool: jasmine
+                total: 5689
+                count: 337
+                score: 0.3
+            -
+                tool: jest
+                total: 7910
+                count: 525
+                score: 0.47
+            -
+                tool: enzyme
+                total: 4039
+                count: 256
+                score: 0.23
+            -
+                tool: ava
+                total: 804
+                count: 61
+                score: 0.05
+            -
+                tool: karma
+                total: 3676
+                count: 222
+                score: 0.2
+    -
+        section: mobile-and-desktop
+        tools:
+            -
+                tool: electron
+                total: 3913
+                count: 247
+                score: 0.22
+            -
+                tool: react-native
+                total: 3738
+                count: 259
+                score: 0.23
+            -
+                tool: phonegap-cordova
+                total: 2042
+                count: 130
+                score: 0.12
+            -
+                tool: nativescript
+                total: 335
+                count: 27
+                score: 0.02
+            -
+                tool: ionic
+                total: 1665
+                count: 126
+                score: 0.11
+            -
+                tool: native-apps
+                total: 2113
+                count: 129
+                score: 0.12

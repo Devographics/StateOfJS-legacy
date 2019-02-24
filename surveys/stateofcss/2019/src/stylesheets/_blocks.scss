@@ -1,0 +1,68 @@
+.Block,
+.block {
+    @include small {
+        margin-bottom: $spacing * 2;
+    }
+    @include medium-large {
+        margin-bottom: $spacing * 4;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.Block__Description,
+.block__description {
+    margin-bottom: $spacing * 2;
+    p {
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+
+.Block__Title {
+    padding-bottom: $spacing/2;
+    border-bottom: 1px dashed $border-color;
+    margin-bottom: $spacing;
+    display: flex;
+    align-items: center;
+    @include small {
+        justify-content: space-between;
+        overflow: hidden; // make sure share options don't push past viewport limits
+    }
+}
+
+.Block__Title__Text {
+    margin-bottom: 0;
+    @include small {
+        opacity: 1;
+        transition: all 300ms ease-in;
+        .Block__Title--open & {
+            opacity: 0.2;
+        }
+    }
+    .nocapture &--full {
+        display: none;
+    }
+    .capture &--short {
+        display: none;
+    }
+}
+.Block__Title__Share {
+    margin-left: $spacing/2;
+}
+
+.block__content {
+    li {
+        margin-bottom: $spacing/2;
+    }
+    strong {
+        color: $grey-light;
+    }
+}
+
+// hack to avoid having border-bottom block share buttons
+.block--othersbar {
+    margin-bottom: $spacing * 10;
+}

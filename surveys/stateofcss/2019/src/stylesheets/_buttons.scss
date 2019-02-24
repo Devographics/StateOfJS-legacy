@@ -1,0 +1,73 @@
+.Button,
+.button {
+    background: none;
+    @include border;
+    padding: $spacing/2 $spacing;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    @include font-bold;
+    @include secondary-font;
+    @include small {
+        font-size: $small-font;
+    }
+    @include medium-large {
+        font-size: $medium-font;
+    }
+    white-space: nowrap;
+    &,
+    &:link,
+    &:visited {
+        color: $text-color;
+        text-decoration: none;
+    }
+    &:hover {
+        color: $hover-color;
+        border-color: $hover-color;
+        text-decoration: none;
+    }
+    &--small {
+        font-size: $small-font;
+        padding: $spacing/4 $spacing/2;
+        &:link {
+            color: $darker-text-color;
+        }
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+    &.large-button {
+        padding: $spacing $spacing;
+        font-size: $large-font;
+    }
+    &--disabled {
+        color: #555;
+    }
+}
+
+.ButtonGroup {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+
+    .Button {
+        border-left-width: 0;
+
+        &:hover {
+            border-left-color: $border-color;
+            border-right-color: $border-color;
+
+            &:first-child {
+                border-left-color: $hover-color;
+            }
+            &:last-child {
+                border-right-color: $hover-color;
+            }
+        }
+
+        &:first-child {
+            border-left-width: 1px;
+        }
+    }
+}

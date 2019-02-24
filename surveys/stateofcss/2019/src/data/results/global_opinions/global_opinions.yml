@@ -1,0 +1,530 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
+-
+    subject: js_moving_in_right_direction
+    by_survey:
+        -
+            survey: '2016'
+            total: 10251
+            by_choice:
+                -
+                    choice: 0
+                    count: 247
+                    percentage: 2.4
+                -
+                    choice: 1
+                    count: 379
+                    percentage: 3.7
+                -
+                    choice: 2
+                    count: 1609
+                    percentage: 15.7
+                -
+                    choice: 3
+                    count: 3845
+                    percentage: 37.5
+                -
+                    choice: 4
+                    count: 4058
+                    percentage: 39.6
+        -
+            survey: '2017'
+            total: 23666
+            by_choice:
+                -
+                    choice: 0
+                    count: 471
+                    percentage: 2
+                -
+                    choice: 1
+                    count: 712
+                    percentage: 3
+                -
+                    choice: 2
+                    count: 3182
+                    percentage: 13.4
+                -
+                    choice: 3
+                    count: 8909
+                    percentage: 37.6
+                -
+                    choice: 4
+                    count: 10176
+                    percentage: 43
+        -
+            survey: '2018'
+            total: 20252
+            by_choice:
+                -
+                    choice: 0
+                    count: 276
+                    percentage: 1.4
+                -
+                    choice: 1
+                    count: 487
+                    percentage: 2.4
+                -
+                    choice: 2
+                    count: 2199
+                    percentage: 10.9
+                -
+                    choice: 3
+                    count: 6673
+                    percentage: 32.9
+                -
+                    choice: 4
+                    count: 10378
+                    percentage: 51.2
+-
+    subject: building_js_apps_overly_complex
+    by_survey:
+        -
+            survey: '2016'
+            total: 10251
+            by_choice:
+                -
+                    choice: 0
+                    count: 473
+                    percentage: 4.6
+                -
+                    choice: 1
+                    count: 1057
+                    percentage: 10.3
+                -
+                    choice: 2
+                    count: 2746
+                    percentage: 26.8
+                -
+                    choice: 3
+                    count: 2873
+                    percentage: 28
+                -
+                    choice: 4
+                    count: 3014
+                    percentage: 29.4
+        -
+            survey: '2017'
+            total: 23666
+            by_choice:
+                -
+                    choice: 0
+                    count: 1051
+                    percentage: 4.4
+                -
+                    choice: 1
+                    count: 2512
+                    percentage: 10.6
+                -
+                    choice: 2
+                    count: 6438
+                    percentage: 27.2
+                -
+                    choice: 3
+                    count: 6692
+                    percentage: 28.3
+                -
+                    choice: 4
+                    count: 6778
+                    percentage: 28.6
+        -
+            survey: '2018'
+            total: 20252
+            by_choice:
+                -
+                    choice: 0
+                    count: 1327
+                    percentage: 6.6
+                -
+                    choice: 1
+                    count: 2741
+                    percentage: 13.5
+                -
+                    choice: 2
+                    count: 6020
+                    percentage: 29.7
+                -
+                    choice: 3
+                    count: 5446
+                    percentage: 26.9
+                -
+                    choice: 4
+                    count: 4465
+                    percentage: 22
+-
+    subject: js_over_used_online
+    by_survey:
+        -
+            survey: '2016'
+            total: 10251
+            by_choice:
+                -
+                    choice: 0
+                    count: 3060
+                    percentage: 29.9
+                -
+                    choice: 1
+                    count: 2011
+                    percentage: 19.6
+                -
+                    choice: 2
+                    count: 2717
+                    percentage: 26.5
+                -
+                    choice: 3
+                    count: 1160
+                    percentage: 11.3
+                -
+                    choice: 4
+                    count: 1225
+                    percentage: 12
+        -
+            survey: '2017'
+            total: 23666
+            by_choice:
+                -
+                    choice: 0
+                    count: 6663
+                    percentage: 28.2
+                -
+                    choice: 1
+                    count: 4778
+                    percentage: 20.2
+                -
+                    choice: 2
+                    count: 6359
+                    percentage: 26.9
+                -
+                    choice: 3
+                    count: 2762
+                    percentage: 11.7
+                -
+                    choice: 4
+                    count: 2911
+                    percentage: 12.3
+        -
+            survey: '2018'
+            total: 20252
+            by_choice:
+                -
+                    choice: 0
+                    count: 5448
+                    percentage: 26.9
+                -
+                    choice: 1
+                    count: 4144
+                    percentage: 20.5
+                -
+                    choice: 2
+                    count: 5278
+                    percentage: 26.1
+                -
+                    choice: 3
+                    count: 2493
+                    percentage: 12.3
+                -
+                    choice: 4
+                    count: 2652
+                    percentage: 13.1
+-
+    subject: enjoy_building_js_apps
+    by_survey:
+        -
+            survey: '2016'
+            total: 10251
+            by_choice:
+                -
+                    choice: 0
+                    count: 252
+                    percentage: 2.5
+                -
+                    choice: 1
+                    count: 376
+                    percentage: 3.7
+                -
+                    choice: 2
+                    count: 1218
+                    percentage: 11.9
+                -
+                    choice: 3
+                    count: 3071
+                    percentage: 30
+                -
+                    choice: 4
+                    count: 5260
+                    percentage: 51.3
+        -
+            survey: '2017'
+            total: 23666
+            by_choice:
+                -
+                    choice: 0
+                    count: 564
+                    percentage: 2.4
+                -
+                    choice: 1
+                    count: 808
+                    percentage: 3.4
+                -
+                    choice: 2
+                    count: 2797
+                    percentage: 11.8
+                -
+                    choice: 3
+                    count: 7461
+                    percentage: 31.5
+                -
+                    choice: 4
+                    count: 11859
+                    percentage: 50.1
+        -
+            survey: '2018'
+            total: 20252
+            by_choice:
+                -
+                    choice: 0
+                    count: 359
+                    percentage: 1.8
+                -
+                    choice: 1
+                    count: 524
+                    percentage: 2.6
+                -
+                    choice: 2
+                    count: 1908
+                    percentage: 9.4
+                -
+                    choice: 3
+                    count: 5689
+                    percentage: 28.1
+                -
+                    choice: 4
+                    count: 11543
+                    percentage: 57
+-
+    subject: would_like_js_to_be_main_lang
+    by_survey:
+        -
+            survey: '2016'
+            total: 10251
+            by_choice:
+                -
+                    choice: 0
+                    count: 917
+                    percentage: 8.9
+                -
+                    choice: 1
+                    count: 710
+                    percentage: 6.9
+                -
+                    choice: 2
+                    count: 1858
+                    percentage: 18.1
+                -
+                    choice: 3
+                    count: 1773
+                    percentage: 17.3
+                -
+                    choice: 4
+                    count: 4919
+                    percentage: 48
+        -
+            survey: '2017'
+            total: 23666
+            by_choice:
+                -
+                    choice: 0
+                    count: 2230
+                    percentage: 9.4
+                -
+                    choice: 1
+                    count: 1744
+                    percentage: 7.4
+                -
+                    choice: 2
+                    count: 4207
+                    percentage: 17.8
+                -
+                    choice: 3
+                    count: 4248
+                    percentage: 17.9
+                -
+                    choice: 4
+                    count: 11082
+                    percentage: 46.8
+        -
+            survey: '2018'
+            total: 20252
+            by_choice:
+                -
+                    choice: 0
+                    count: 1633
+                    percentage: 8.1
+                -
+                    choice: 1
+                    count: 1418
+                    percentage: 7
+                -
+                    choice: 2
+                    count: 3546
+                    percentage: 17.5
+                -
+                    choice: 3
+                    count: 3281
+                    percentage: 16.2
+                -
+                    choice: 4
+                    count: 10158
+                    percentage: 50.2
+-
+    subject: js_ecosystem_changing_to_fast
+    by_survey:
+        -
+            survey: '2016'
+            total: 10251
+            by_choice:
+                -
+                    choice: 0
+                    count: 655
+                    percentage: 6.4
+                -
+                    choice: 1
+                    count: 937
+                    percentage: 9.1
+                -
+                    choice: 2
+                    count: 2585
+                    percentage: 25.2
+                -
+                    choice: 3
+                    count: 2559
+                    percentage: 25
+                -
+                    choice: 4
+                    count: 3446
+                    percentage: 33.6
+        -
+            survey: '2017'
+            total: 23666
+            by_choice:
+                -
+                    choice: 0
+                    count: 1568
+                    percentage: 6.6
+                -
+                    choice: 1
+                    count: 2471
+                    percentage: 10.4
+                -
+                    choice: 2
+                    count: 6112
+                    percentage: 25.8
+                -
+                    choice: 3
+                    count: 5833
+                    percentage: 24.6
+                -
+                    choice: 4
+                    count: 7501
+                    percentage: 31.7
+        -
+            survey: '2018'
+            total: 20252
+            by_choice:
+                -
+                    choice: 0
+                    count: 1534
+                    percentage: 7.6
+                -
+                    choice: 1
+                    count: 2590
+                    percentage: 12.8
+                -
+                    choice: 2
+                    count: 5859
+                    percentage: 28.9
+                -
+                    choice: 3
+                    count: 4990
+                    percentage: 24.6
+                -
+                    choice: 4
+                    count: 5065
+                    percentage: 25
+-
+    subject: survey_too_long
+    by_survey:
+        -
+            survey: '2016'
+            total: 10251
+            by_choice:
+                -
+                    choice: 0
+                    count: 1363
+                    percentage: 13.3
+                -
+                    choice: 1
+                    count: 822
+                    percentage: 8
+                -
+                    choice: 2
+                    count: 3140
+                    percentage: 30.6
+                -
+                    choice: 3
+                    count: 1539
+                    percentage: 15
+                -
+                    choice: 4
+                    count: 3321
+                    percentage: 32.4
+        -
+            survey: '2017'
+            total: 23666
+            by_choice:
+                -
+                    choice: 0
+                    count: 4130
+                    percentage: 17.5
+                -
+                    choice: 1
+                    count: 2278
+                    percentage: 9.6
+                -
+                    choice: 2
+                    count: 7328
+                    percentage: 31
+                -
+                    choice: 3
+                    count: 3185
+                    percentage: 13.5
+                -
+                    choice: 4
+                    count: 6555
+                    percentage: 27.7
+        -
+            survey: '2018'
+            total: 20252
+            by_choice:
+                -
+                    choice: 0
+                    count: 4009
+                    percentage: 19.8
+                -
+                    choice: 1
+                    count: 2448
+                    percentage: 12.1
+                -
+                    choice: 2
+                    count: 6715
+                    percentage: 33.2
+                -
+                    choice: 3
+                    count: 2666
+                    percentage: 13.2
+                -
+                    choice: 4
+                    count: 4202
+                    percentage: 20.7

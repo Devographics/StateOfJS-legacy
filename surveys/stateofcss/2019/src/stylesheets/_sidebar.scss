@@ -1,0 +1,138 @@
+.PageLayout--sidebar {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.Sidebar {
+    border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    @include small-medium {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $bg-color;
+        z-index: 1000;
+        text-align: center;
+        overflow-y: scroll;
+        padding: 0 0 $spacing * 2 0;
+        &.Sidebar--hidden {
+            display: none;
+        }
+        &.Sidebar--shown {
+            overflow: hidden;
+            overflow-y: scroll;
+            position: fixed;
+        }
+    }
+}
+
+.Sidebar__Fixed {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    @include small-medium {
+        width: 100%;
+    }
+    @include large {
+        width: $sidebar_width;
+    }
+}
+
+.Sidebar__Inner {
+    padding: $spacing * 1.5;
+    overflow-y: scroll;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    @include small {
+        padding-bottom: $spacing * 4;
+    }
+}
+
+.Sidebar__Close {
+    margin: 0;
+    padding: 0;
+    border: 1px solid $border-color;
+    border-right: none;
+    button {
+        background: none;
+        cursor: pointer;
+        border: none;
+    }
+    @include flex-center;
+    width: 100%;
+    @include large {
+        display: none;
+    }
+    svg {
+        stroke: $active-color;
+    }
+}
+
+.nav {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        margin-bottom: $spacing/1.5;
+    }
+}
+
+.nav-page {
+    white-space: nowrap;
+    font-size: $medium-font;
+    margin: 0;
+}
+
+.nav-page-active {
+    @include font-bold;
+    &:before {
+        content: '> ';
+    }
+}
+
+.nav-page-comingsoon {
+    opacity: 0.35;
+}
+
+.nav-subpages {
+    padding-left: $spacing;
+    margin-top: $spacing/2;
+}
+
+.nav-subpage {
+    display: block;
+    // margin-right: $spacing/2;
+    font-size: $smallish-font;
+    @include font-regular;
+    &,
+    &:link,
+    &:visited {
+        color: $text-color;
+    }
+}
+
+.nav-subpage-active {
+    @include font-bold;
+    &:before {
+        content: '> ';
+    }
+}
+
+.nav-subpage--overview {
+    border-bottom: 1px dashed $border-color;
+    padding-bottom: $spacing/3;
+    margin-bottom: $spacing/3;
+}
+.nav-subpage--other-libraries {
+    border-top: 1px dashed $border-color;
+    padding-top: $spacing/3;
+    margin-top: $spacing/3;
+}
+.Logo__Wrapper {
+    margin: 0;
+}

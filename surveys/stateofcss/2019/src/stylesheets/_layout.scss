@@ -1,0 +1,151 @@
+$sidebar_width: 270px;
+
+.results-container {
+    pointer-events: none;
+    & > div {
+        pointer-events: all;
+    }
+}
+
+.pagelayout__header {
+    @include flex-center;
+    margin-bottom: $spacing;
+    justify-content: space-between;
+}
+
+.pagelayout__spacer {
+    height: 5px;
+    flex: 1;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px dashed $border-color;
+}
+
+.pagelayout__inner {
+    min-height: 100vh;
+    @include large {
+        display: grid;
+        grid-template-columns: $sidebar_width 1fr;
+    }
+}
+
+.pagelayout__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.pagelayout__main {
+    flex-grow: 1;
+    @include small-medium {
+        padding: $spacing $spacing $spacing * 4 $spacing;
+    }
+    @include large {
+        padding: $spacing * 3 $spacing * 3 $spacing * 7 $spacing * 3;
+    }
+}
+
+.section {
+    @include small {
+        margin-bottom: $spacing * 2;
+    }
+    @include medium {
+        margin-bottom: $spacing * 4;
+    }
+    @include large {
+        margin-bottom: $spacing * 4;
+    }
+    .section-inner {
+        @include large {
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+        }
+    }
+    .section-title {
+        @include small {
+            font-size: $medium-font;
+        }
+        @include medium-large {
+            font-size: $large-font;
+        }
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 3px;
+        margin: 0 0 $spacing * 2 0;
+        span {
+            display: block;
+            padding-bottom: $spacing/2;
+            border-bottom: 1px solid $border-color;
+        }
+    }
+    // background: rgba(0,0,0,0.1);
+}
+.section-layout-b {
+    display: block;
+}
+.section-contents {
+    @include large {
+        width: 40%;
+    }
+}
+.section-narrow {
+    @include large {
+        margin-left: $spacing * 16;
+        margin-right: $spacing * 16;
+    }
+    .section-contents-wide {
+        padding: 0;
+    }
+}
+.section-contents-wide {
+    @include large {
+        padding: 0 $spacing * 9;
+    }
+}
+.sticky-container {
+    @include small-medium {
+        margin-bottom: $spacing;
+    }
+    @include large {
+        width: 55%;
+        margin-right: 5%;
+        .sticky {
+            // padding: $spacing*2 0;
+        }
+    }
+}
+.chart {
+    h2 {
+        margin-top: 0;
+    }
+}
+
+.section-block {
+    margin-bottom: $spacing * 3;
+    h3 {
+        text-align: center;
+    }
+}
+.section-border {
+    @include border;
+    position: relative;
+    @include small {
+        padding: $spacing $spacing $spacing * 2 $spacing;
+    }
+    @include medium {
+        padding: $spacing $spacing $spacing * 2 $spacing;
+    }
+    @include large {
+        padding: $spacing * 2 $spacing * 2;
+    }
+    h3 {
+        margin: 0;
+        display: table;
+        max-width: 90%;
+        background: $beige;
+        padding: 0 20px;
+        position: absolute;
+        line-height: 1.4;
+        top: -3px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

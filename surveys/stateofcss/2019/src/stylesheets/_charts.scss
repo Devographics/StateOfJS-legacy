@@ -1,0 +1,356 @@
+.chart-wrapper {
+    font-size: $medium-font;
+    g.xsmall {
+        font-size: 0.6rem;
+    }
+    g.small {
+        font-size: $smaller-font;
+    }
+    g.medium {
+        font-size: $small-font;
+    }
+    g.large,
+    g.xlarge {
+        font-size: $medium-font;
+    }
+}
+
+.chart--bar {
+    font-size: $medium-font;
+}
+
+.block__contents {
+    @include small {
+        overflow-x: scroll;
+        background: rgba(255, 255, 255, 0.5);
+    }
+}
+.block__contents__inner {
+    @include small {
+        padding: 0 $spacing $spacing $spacing;
+        min-width: 800px;
+    }
+}
+.PieRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.PieRow svg {
+    margin-right: 15px;
+}
+
+.Help {
+    font-size: 13px;
+    color: #6f8183;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+.Help svg {
+    color: rgb(150, 136, 228);
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.user-facts-placeholder {
+    @include flex-center;
+    border: dotted 1px $border-color;
+    min-height: 400px;
+    h3 {
+        margin: 0;
+    }
+}
+
+.results-chart-wrapper {
+    padding: 0 $spacing * 3;
+    text {
+        font-size: $small-font;
+    }
+}
+
+.block--numberoflibs {
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.block--othersbubble {
+    .chart-wrapper {
+        @include small {
+            height: 300px;
+        }
+        @include medium-large {
+            height: 600px;
+        }
+    }
+}
+
+.block--connections {
+    .chart-wrapper {
+        margin-top: $spacing;
+    }
+}
+
+.OverTime__Chart,
+.Overview__Chart {
+    @include large {
+        display: grid;
+        grid-template-columns: auto 210px;
+        column-gap: $spacing * 1.5;
+    }
+}
+
+.OverTime__Chart__SwitchContainer {
+    height: 40px;
+    @include small-medium {
+        margin-top: $spacing;
+        height: auto;
+    }
+}
+
+.Overview__Chart__SwitchContainer {
+    height: $spacing * 3;
+    display: flex;
+    align-items: center;
+
+    @include small-medium {
+        margin-top: $spacing;
+        height: auto;
+    }
+}
+
+.Chart__Container__Outer {
+    position: relative;
+}
+.Chart__Container {
+    @include small-medium {
+        overflow-x: scroll;
+    }
+    svg {
+        display: block;
+    }
+}
+.Chart__Container__Inner {
+    @include small-medium {
+        min-width: 600px;
+        padding-bottom: $spacing;
+    }
+}
+.Chart__Container__Indicator {
+    @include small-medium {
+        position: absolute;
+        @include flex-center;
+        top: 0;
+        bottom: 0;
+        width: 20px;
+        z-index: 100;
+        svg {
+            display: block;
+            stroke: $grey;
+            opacity: 0.2;
+            overflow: visible;
+        }
+        &--left {
+            left: 10px;
+        }
+        &--right {
+            right: 10px;
+        }
+    }
+    @include large {
+        display: none;
+    }
+}
+
+.Overview__Chart {
+    .Legends {
+        @include small-medium {
+            margin-top: $spacing;
+        }
+        @include large {
+            margin-top: $spacing * 2;
+        }
+    }
+}
+
+.OpinionSelector {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: none;
+    color: $blue;
+    border-bottom: 1px dashed $blue;
+    border-radius: 0;
+
+    &:focus {
+        outline: transparent;
+        border-bottom-style: solid;
+    }
+}
+
+.ToolsUsageByCountry__Chart,
+.SalaryPerCountry__Chart {
+    height: 500px;
+}
+
+.Bar__Chart {
+    & > div > div > svg {
+        overflow: visible;
+        box-sizing: content-box;
+        border-bottom: 180px solid transparent;
+        position: relative;
+        z-index: 1;
+        #text_editors & {
+            // hack to prevent border from overlapping resources
+            border-bottom: none;
+        }
+    }
+}
+
+.Bar__Tick {
+    z-index: 1000;
+}
+
+.Bar__Tooltip__Wrapper {
+    overflow: visible;
+    display: none;
+    z-index: 1000;
+    .Bar__Tick:hover & {
+        display: block;
+    }
+}
+
+.Bar__Tick__Label {
+    fill: $text-color;
+    font-size: $small-font;
+    cursor: default;
+    &--hoverable {
+        cursor: pointer;
+        @include font-bold;
+        fill: $active-color;
+    }
+}
+
+.Tooltip {
+    z-index: 1000;
+}
+
+.ToolPairing__HeatMapChart {
+    display: grid;
+    align-items: center;
+    font-size: $medium-font;
+}
+
+.ToolPairing__HeatMapChart__Section {
+    grid-column-start: 1;
+    @include font-bold;
+}
+
+.Reasons__Chart__Unit {
+    &--mobile {
+        @include large {
+            display: none;
+        }
+    }
+    &--desktop {
+        @include small-medium {
+            display: none;
+        }
+    }
+}
+
+.tool-over-time-no-data {
+    font-style: italic;
+    @include border2;
+    color: $text-color-dark;
+    @include small {
+        padding: $spacing;
+    }
+    @include medium-large {
+        padding: $spacing * 1.5;
+    }
+}
+
+.ToolsSubAggsHeatMapChart {
+    display: grid;
+    align-items: center;
+}
+
+.ToolsSubAggsHeatMapChart__Heading,
+.ToolPairing__HeatMapChart__Section {
+    font-size: 14px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 1px dashed $dark-border-color;
+}
+
+.ToolPairing__HeatMapChart__Section:last-of-type {
+    border-bottom: 1px dashed $dark-border-color;
+}
+.ToolsSubAggsHeatMapChart__AverageHeading {
+    font-size: 14px;
+    @include font-bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 1px dashed $dark-border-color;
+}
+
+.ToolsSubAggsHeatMapChart__AverageCell {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    color: $blue;
+}
+.ToolsSubAggsHeatMapChart__AverageCell--first {
+    border-left: 1px solid $border-color;
+}
+.ToolsSubAggsHeatMapChart__AverageCell--lowest {
+    &:before {
+        content: '';
+        position: absolute;
+        left: calc(50% - 5px);
+        bottom: 10px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid $blue;
+    }
+}
+.ToolsSubAggsHeatMapChart__AverageCell--highest {
+    &:before {
+        content: '';
+        position: absolute;
+        left: calc(50% - 5px);
+        top: 11px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid $blue;
+    }
+}
+
+.ToolsSubAggsHeatMapChart__Cell {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 12px;
+    color: $bg-color;
+    border-left: 1px solid $bg-color;
+    padding: 0 $spacing / 2;
+}
+.ToolsSubAggsHeatMapChart__Cell--first {
+    border-left: 0;
+}

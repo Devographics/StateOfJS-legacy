@@ -1,0 +1,124 @@
+.capture {
+    .pagelayout__inner {
+        display: block;
+    }
+    .Sidebar {
+        display: none !important;
+    }
+    .Overview__Chart__SwitchContainer {
+        display: none;
+    }
+
+    .Awards__Block {
+        display: block;
+    }
+    .Award {
+        width: 1000px;
+        height: 500px;
+        justify-content: center;
+    }
+    .Quadrants__Block {
+        .Block__Description {
+            margin-bottom: 0;
+        }
+    }
+    .Quadrants__Chart__Legend {
+        padding-top: 60px;
+    }
+    .Quadrants__Chart__Legend__Item {
+        font-size: $medium-font;
+    }
+    #connections {
+        width: 1000px;
+        height: 500px;
+    }
+    #participation-by-country {
+        width: 1128px;
+    }
+    #salaries {
+        width: 648px;
+    }
+    #salary-per-country {
+        width: 1128px;
+    }
+    #gender-breakdown {
+        width: 892px;
+    }
+    #overview {
+        width: 988px;
+    }
+    #results-over-time {
+        width: 728px;
+    }
+    #likes {
+        width: 1168px;
+    }
+    #dislikes {
+        width: 1168px;
+    }
+    #quadrants {
+        width: 1458px;
+    }
+    #tool-pairing {
+        width: 880px;
+    }
+    #tool-usage-by-country {
+        width: 1428;
+    }
+    #tools-salary-range {
+        width: 1140px;
+    }
+    #tools-company-size {
+        width: 1216px;
+    }
+    #tools-years-of-experience {
+        width: 1124px;
+    }
+    #happiness {
+        width: 808px;
+    }
+    #other_languages {
+        width: 1408px;
+    }
+    #browser_apis {
+        width: 928px;
+    }
+    #build_tools {
+        width: 1088px;
+    }
+    #utility_libraries {
+        width: 768px;
+    }
+    #text_editors {
+        width: 1164px;
+    }
+    #opinion-js_moving_in_right_direction,
+    #opinion-building_js_apps_overly_complex,
+    #opinion-js_over_used_online,
+    #opinion-enjoy_building_js_apps,
+    #opinion-would_like_js_to_be_main_lang,
+    #opinion-js_ecosystem_changing_to_fast,
+    #opinion-survey_too_long {
+        width: 728px;
+    }
+    &.PageLayout--javascript-flavors #other-tools {
+        width: 1068px;
+    }
+    &.PageLayout--front-end-frameworks #other-tools {
+        width: 1054px;
+        height: 1054px;
+    }
+    &.PageLayout--data-layer #other-tools {
+        width: 1068px;
+    }
+    &.PageLayout--back-end-frameworks #other-tools {
+        width: 1054px;
+        height: 1054px;
+    }
+    &.PageLayout--testing #other-tools {
+        width: 1308px;
+    }
+    &.PageLayout--mobile-and-desktop #other-tools {
+        width: 908px;
+    }
+}

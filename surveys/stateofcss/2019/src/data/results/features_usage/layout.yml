@@ -1,0 +1,57 @@
+section_id: layout
+aggregations:
+  - id: css-grid
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F44D I've used it"
+        count: 5215
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 4043
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 168
+  - id: flexbox
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F44D I've used it"
+        count: 8981
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 425
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 54
+  - id: css-multi-column
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 3917
+      - id: "\U0001F44D I've used it"
+        count: 2911
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 2638
+  - id: css-writing-modes
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 6923
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 1838
+      - id: "\U0001F44D I've used it"
+        count: 707
+  - id: css-exclusions
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 7441
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 1354
+      - id: "\U0001F44D I've used it"
+        count: 667

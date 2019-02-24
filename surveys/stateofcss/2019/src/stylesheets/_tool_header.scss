@@ -1,0 +1,73 @@
+.ToolHeader {
+    @include medium-large {
+        display: flex;
+    }
+    .PeriodicTableElementHtml {
+        width: 100%;
+    }
+}
+.ToolHeader__Element {
+    svg {
+        display: block;
+    }
+    @include small {
+        max-width: 150px;
+        margin: 0 auto $spacing/4 auto;
+    }
+
+    @include medium-large {
+        flex-shrink: 1;
+        flex-basis: 120px;
+        margin-right: $spacing;
+    }
+}
+.PageHeader {
+    margin-bottom: $spacing * 2;
+}
+
+.ToolHeader__Header,
+.PageHeader__Header {
+    display: flex;
+    justify-content: space-between;
+    // margin-bottom: $spacing * 0.5;
+}
+
+.ToolHeader__Title,
+.PageHeader__Title {
+    margin: 0;
+    padding: 0;
+    align-items: baseline;
+    // line-height: 1;
+    @include small {
+        font-size: 1.3rem;
+    }
+    @include medium {
+        font-size: 1.5rem;
+    }
+    @include large {
+        font-size: 2rem;
+    }
+}
+.ToolHeader__Title {
+    @include small {
+        display: none;
+    }
+}
+.ToolHeader__Content {
+    flex: 1;
+}
+
+.ToolHeader__Links {
+    display: flex;
+    align-items: center;
+    margin-top: $spacing/2;
+}
+.ToolHeader__Link {
+    margin-right: $spacing/2;
+}
+
+.ToolHeader__Stars {
+    @include small-medium {
+        display: none;
+    }
+}

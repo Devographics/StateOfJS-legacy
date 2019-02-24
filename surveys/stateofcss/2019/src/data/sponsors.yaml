@@ -1,0 +1,9 @@
+- name: Chromatic
+  url: https://www.chromaticqa.com/
+  image: chroma_logo.svg
+- name: Ekino
+  url: https://www.ekino.com/en/
+  image: ekino_logo.svg
+- name: ZensHome
+  url: https://zenshome.jp
+  image: zenshome-whitebg.svg

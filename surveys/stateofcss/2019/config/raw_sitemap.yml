@@ -1,0 +1,119 @@
+- id: home
+  path: /
+  type: page
+  is_hidden: true
+
+- id: introduction
+  path: /introduction
+  type: page
+
+- id: demographics
+  path: /demographics
+  type: page
+  blocks:
+      - participation-by-country
+      - gender-breakdown
+      - salaries
+      - salary-per-country
+      - years-of-experience
+      - company-size
+
+- id: features
+  path: /features
+  type: page
+  children:
+    - id: layout
+      path: /layout
+      type: features_usage
+      blocks:
+          - css-grid
+          - flexbox
+          - css-multi-column
+          - css-writing-modes
+          - css-exclusions
+
+    - id: shapes-and-graphics
+      path: /shape-and-graphics
+      type: features_usage
+      blocks:
+          - css-shapes
+          - object-fit
+          - clip-path
+          - css-masks
+          - blend-modes
+          - css-filter-effects
+
+    - id: interactions
+      path: /interactions
+      type: features_usage
+      blocks:
+          - css-scroll-snap
+          - overscroll-behavior
+          - overflow-anchor
+
+    - id: typography
+      path: /typography
+      type: features_usage
+      blocks:
+          - web-fonts-font-face
+          - variable-fonts
+          - line-breaking-properties
+          - font-variant
+          - initial-letter
+
+    - id: animations-and-transforms
+      path: /animations-and-transforms
+      type: features_usage
+      blocks:
+          - css-transitions
+          - css-transforms
+          - css-animations
+
+    - id: other-features
+      path: /other-features
+      type: page
+
+- id: units-and-selectors
+  path: /units-and-selectors
+  type: page
+
+- id: tools-and-methodology
+  path: /tools-and-methodology
+  type: page
+  children:
+    - id: pre-post-processors
+      path: /pre-post-processors
+      type: page
+
+    - id: css-frameworks
+      path: /css-frameworks
+      type: page
+
+    - id: methodologies
+      path: /methodologies
+      type: page
+
+    - id: css-in-js
+      path: /css-in-js
+      type: page
+
+    - id: other-tools
+      path: /other-tools
+      type: page
+
+- id: environments
+  path: /environments
+  type: page
+
+- id: resources
+  path: /resources
+  type: page
+
+- id: conclusion
+  path: /conclusion
+  type: page
+
+- id: support
+  path: /support
+  type: page
+  is_hidden: true

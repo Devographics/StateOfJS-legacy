@@ -1,0 +1,68 @@
+section_id: shapes-and-graphics
+aggregations:
+  - id: css-shapes
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 4468
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 2963
+      - id: "\U0001F44D I've used it"
+        count: 2014
+  - id: object-fit
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F44D I've used it"
+        count: 4076
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 3446
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 1928
+  - id: clip-path
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 3695
+      - id: "\U0001F44D I've used it"
+        count: 3680
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 2072
+  - id: css-masks
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 4256
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 2677
+      - id: "\U0001F44D I've used it"
+        count: 2511
+  - id: blend-modes
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 3345
+      - id: "\U0001F44D I've used it"
+        count: 3231
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 2861
+  - id: css-filter-effects
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F44D I've used it"
+        count: 5582
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 2628
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 1246

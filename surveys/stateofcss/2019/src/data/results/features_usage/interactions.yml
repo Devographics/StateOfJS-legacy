@@ -1,0 +1,35 @@
+section_id: interactions
+aggregations:
+  - id: css-scroll-snap
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 4549
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 3767
+      - id: "\U0001F44D I've used it"
+        count: 1109
+  - id: overscroll-behavior
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 5439
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 2081
+      - id: "\U0001F44D I've used it"
+        count: 1893
+  - id: overflow-anchor
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 7340
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 1387
+      - id: "\U0001F44D I've used it"
+        count: 698

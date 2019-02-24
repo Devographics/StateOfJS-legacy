@@ -1,0 +1,71 @@
+.Legends {
+    font-size: 12px;
+    display: grid;
+    grid-gap: $spacing;
+    @include small-medium {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include large {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.Legends--horizontal {
+    display: grid;
+    grid-column-gap: $spacing;
+    margin: $spacing 0;
+}
+
+.Legends--vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include small {
+        margin-top: $spacing;
+        border: 1px solid $dark-border-color;
+        padding: $spacing;
+    }
+    @include medium {
+    }
+}
+
+.Legends--withFrame {
+    border: 1px dashed $light-border-color;
+    border-radius: 3px;
+    padding: $spacing;
+}
+
+.Legends--horizontal.Legends--withFrame {
+    padding: $spacing $spacing * 1.5;
+}
+
+.Legends--vertical.Legends--withFrame {
+    padding: $spacing;
+}
+
+.Legends__Item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    flex: 1;
+}
+
+.Legends__Item:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.Legends__Item__Chip {
+    display: block;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+// .Legends--connections {
+//     padding: $spacing / 2;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+// }
+
+// .Legends--connections .Legends__Item {
+//     padding: $spacing / 2;
+// }

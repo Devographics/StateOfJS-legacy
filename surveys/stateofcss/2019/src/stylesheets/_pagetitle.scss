@@ -1,0 +1,137 @@
+.pagetitle__wrapper {
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+
+    // Fixes overlap with <Tooltip />
+    z-index: 0;
+
+    // background: $bg-color-light;
+}
+
+.pagetitle {
+    font-size: $larger-font;
+}
+
+.pagetitle__inner {
+    text-align: center;
+    z-index: 10;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+
+    @include small-medium {
+        .pagetitle__wrapper--top & {
+            grid-template-columns: 1fr 50px 1fr;
+        }
+    }
+
+    .pagetitle__wrapper--title & {
+        padding: $spacing;
+        background: $bg-color;
+    }
+}
+
+.pagination__link {
+    padding: $spacing;
+    display: block;
+    @include secondary-font;
+    white-space: nowrap;
+    // flex-grow: 1;
+    // flex-basis: 50%;
+    border-right: 1px solid $border-color;
+    @include small-medium {
+        font-size: $smaller-font;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    @include large {
+        font-size: $medium-font;
+    }
+    &:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.pagination__middle {
+    @include flex-center;
+    span + & {
+        border-left: 1px solid $border-color;
+    }
+}
+
+.pagination__link__label {
+    @include small-medium {
+        display: inline-block;
+    }
+    @include large {
+        .pagetitle__wrapper--title & {
+            display: none;
+        }
+    }
+    &--short {
+        @include medium-large {
+            display: none;
+        }
+    }
+    &--full {
+        @include small {
+            display: none;
+        }
+    }
+}
+
+.pagination__link__symbol {
+    @include small {
+        display: none;
+    }
+}
+
+.pagination__previous {
+    text-align: left;
+}
+
+.pagination__next {
+    border: none;
+    text-align: right;
+    span + span + &,
+    .pagetitle__wrapper--bottom span + & {
+        border-left: 1px solid $border-color;
+    }
+}
+
+.PageTitle__Sidebar__Toggle {
+    @include small-medium {
+        padding: 0 $spacing/2;
+        height: 100%;
+        @include flex-center;
+        border-right: 1px solid $border-color;
+        span + & {
+            border-left: 1px solid $border-color;
+        }
+    }
+    @include large {
+        display: none;
+    }
+}
+
+.Sidebar__Toggle {
+    // flex-grow: 0;
+    border: none;
+    background: $bg-color;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    svg {
+        display: block;
+        width: 100%;
+        height: auto;
+        stroke: $active-color;
+    }
+    @include large {
+        display: none;
+    }
+}
+.Hamburger {
+    fill: $white;
+    stroke: $white;
+}

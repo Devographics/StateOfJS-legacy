@@ -1,0 +1,197 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
+-
+    topic: other_languages
+    tools:
+        -
+            tool: python
+            count: 6262
+        -
+            tool: php
+            count: 5559
+        -
+            tool: java
+            count: 4605
+        -
+            tool: 'C#'
+            count: 3779
+        -
+            tool: dotnet
+            count: 2963
+        -
+            tool: ruby
+            count: 2532
+        -
+            tool: golang
+            count: 2163
+        -
+            tool: c-cplusplus
+            count: 1873
+        -
+            tool: swift
+            count: 1069
+        -
+            tool: rust
+            count: 864
+        -
+            tool: objective-c
+            count: 535
+        -
+            tool: scala
+            count: 529
+        -
+            tool: haskell
+            count: 511
+        -
+            tool: elixir
+            count: 339
+        -
+            tool: clojurescript
+            count: 237
+        -
+            tool: ocaml
+            count: 231
+-
+    topic: browser_apis
+    tools:
+        -
+            tool: service-workers
+            count: 8843
+        -
+            tool: pwa
+            count: 8792
+        -
+            tool: web-components
+            count: 5304
+        -
+            tool: webgl
+            count: 4134
+        -
+            tool: web-animations-api
+            count: 3434
+        -
+            tool: web-audio-api
+            count: 3259
+        -
+            tool: webrtc
+            count: 2731
+        -
+            tool: web-assembly
+            count: 1574
+        -
+            tool: web-speech-api
+            count: 1472
+        -
+            tool: webvr
+            count: 613
+-
+    topic: build_tools
+    tools:
+        -
+            tool: webpack
+            count: 17104
+        -
+            tool: gulp
+            count: 7276
+        -
+            tool: grunt
+            count: 3717
+        -
+            tool: browserify
+            count: 2594
+        -
+            tool: rollup
+            count: 2078
+        -
+            tool: parcel
+            count: 1825
+        -
+            tool: meteor
+            count: 656
+        -
+            tool: broccoli
+            count: 236
+        -
+            tool: npm
+            count: 96
+        -
+            tool: ember
+            count: 88
+        -
+            tool: make
+            count: 61
+        -
+            tool: brunch
+            count: 36
+-
+    topic: utility_libraries
+    tools:
+        -
+            tool: lodash
+            count: 11427
+        -
+            tool: moment
+            count: 11354
+        -
+            tool: jquery
+            count: 7159
+        -
+            tool: underscore
+            count: 3199
+        -
+            tool: date-fns
+            count: 2412
+        -
+            tool: ramda
+            count: 1735
+        -
+            tool: rxjs
+            count: 84
+        -
+            tool: luxon
+            count: 63
+-
+    topic: text_editors
+    tools:
+        -
+            tool: visual-studio
+            count: 14492
+        -
+            tool: sublime-text
+            count: 4478
+        -
+            tool: vim
+            count: 4467
+        -
+            tool: webstorm
+            count: 4304
+        -
+            tool: atom
+            count: 3354
+        -
+            tool: emacs
+            count: 610
+        -
+            tool: intellij
+            count: 304
+        -
+            tool: php
+            count: 192
+        -
+            tool: phpstorm
+            count: 182
+        -
+            tool: notepad++
+            count: 167
+        -
+            tool: brackets
+            count: 77
+        -
+            tool: nano
+            count: 76
+        -
+            tool: pycharm
+            count: 36

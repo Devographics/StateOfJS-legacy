@@ -1,0 +1,136 @@
+- name: ES6 For Everyone
+  tool: es6
+  url: https://ES6.io/friend/STATEOFJS
+  description: A premium training course to strengthen your core JavaScript skills and master all that ES6 has to offer.
+  image: es6.jpg
+
+- name: React For Beginners
+  tool: react
+  url: https://ReactForBeginners.com/friend/STATEOFJS
+  description: Upgrade your JavaScript skills, learn React.js in just a couple of afternoons.
+  image: reactforbeginners.jpg
+
+- name: Advanced React
+  tool: react
+  url: https://advancedreact.com/friend/STATEOFJS
+  description: Join 10,393 others learning to build Full Stack JavaScript Apps with React.js and GraphQL.
+  image: advancedreact.jpg
+
+- name: Vue.js Black Friday Offer
+  tool: vuejs
+  url: https://vueschool.io/?utm_source=State%20of%20JavaScript&utm_medium=banner&utm_campaign=Black%20Friday
+  description: Learn Vue.js from core members and industry experts with Vue School’s top-notch courses and over 200 lessons for $58 per year.
+  image: vueschool.jpg
+
+- name: '#JavaScript30'
+  tool: es6
+  url: https://javascript30.com/friend/STATEOFJS
+  description: '30 Day Vanilla JS Coding Challenge: Build 30 things in 30 days with 30 tutorials'
+  image: javascript30.jpg
+
+- name: Learn Node
+  tool: express
+  url: https://learnnode.com/friend/STATEOFJS
+  description: A premium training course to learn to build apps with Node.js, Express, MongoDB, and friends.
+  image: learnnode.jpg
+
+- name: GraphQL Guide
+  tool: graphql
+  url: https://graphql.guide/?utm_source=stateofjs&utm_medium=partner&utm_campaign=2018
+  description: The complete guide to GraphQL and Apollo. From John Resig, the creator of jQuery.
+  image: graphql.jpg
+
+- name: Learn Storybook Tutorial
+  tool: storybook
+  url: https://www.learnstorybook.com/?utm_source=stateofjs2018&utm_campaign=stateofjs2018
+  description: Get a free 9-chapter tutorial that teaches Storybook best practices as you build a UI from scratch.
+  image: sojs2018-lsb.jpg
+
+- name: Component-Driven Development
+  tool: storybook
+  url: https://blog.hichroma.com/component-driven-development-ce1109d56c8e?utm_source=stateofjs2018&utm_campaign=stateofjs2018
+  description: Learn how to speed up development in Storybook by building UIs from the “bottom up” starting at components and ending with screens.
+  image: sojs2018-cdd.jpg
+
+- name: Visual Testing Handbook
+  tool: jest
+  url: https://www.chromaticqa.com/book/visual-testing-handbook?utm_source=stateofjs2018&utm_campaign=stateofjs2018
+  description: Get a free 31-page handbook that gives you an overview of visual testing, a pragmatic yet precise way to verify the look of UI components.
+  image: sojs2018-visual-testing-handbook.jpg
+
+- name: Become a VSCode Power User
+  tool: editors
+  url: https://a.paddle.com/v2/click/16413/37044?link=1227
+  description: >
+    After 10 years with Sublime, I switched to VSCode. Love it. Spent 1000+ hours building a premium video course to help you switch today. 200+ power user tips & tricks turn you into a VSCode.pro
+  image: vscodepro.png
+
+- name: Introduction to Elm
+  tool: elm
+  url: https://frontendmasters.com/courses/intro-elm/
+  description: >
+    Learn how to write applications with Elm, the functional programming language, from the ground up!
+  image: elm.jpg
+
+- name: TypeScript Fundamentals
+  tool: typescript
+  url: https://frontendmasters.com/courses/typescript/
+  description: >
+    TypeScript combines modern JavaScript language features with a powerful and flexible type system, to make building high-performance and scalable apps easy!
+  image: ts.jpg
+
+- name: Intermediate React
+  tool: typescript
+  url: https://frontendmasters.com/courses/intermediate-react/
+  description: >
+    Build scalable React applications using the tools and techniques available in the React ecosystem: CSS in JS, Testing with Jest, Redux, Performance, SSR, TypeScript & more!
+  image: ts2.jpg
+
+- name: Intermediate React
+  tool: jest
+  url: https://frontendmasters.com/courses/intermediate-react/
+  description: >
+    Build scalable React applications using the tools and techniques available in the React ecosystem: CSS in JS, Testing with Jest, Redux, Performance, SSR, TypeScript & more!
+  image: ts2.jpg
+
+- name: REST & GraphQL API Design in Node.js, feat. Express & Mongo
+  tool: express
+  url: https://frontendmasters.com/courses/api-node-rest-graphql/
+  description: >
+    Design APIs from the ground up using Node.js, Express and MongoDB! You'll build a REST API and in the course you'll migrate your API to using GraphQL.
+  image: node.jpg
+
+- name: REST & GraphQL API Design in Node.js
+  tool: graphql
+  url: https://frontendmasters.com/courses/api-node-rest-graphql/
+  description: >
+    Design APIs from the ground up using Node.js, Express and MongoDB! You'll build a REST API and in the course you'll migrate your API to using GraphQL.
+  image: node.jpg
+
+- name: Advanced State Management in React (feat. Redux and MobX)
+  tool: redux
+  url: https://frontendmasters.com/courses/react-state/
+  description: >
+    Explore popular libraries to manage state including Flux, Redux, MobX, Redux Sagas, and more. Learning these patterns will help you leverage the best techniques for managing state in your React applications!
+  image: mobx.jpg
+  
+- name: Advanced State Management in React (feat. Redux and MobX)
+  tool: mobx
+  url: https://frontendmasters.com/courses/react-state/
+  description: >
+    Explore popular libraries to manage state including Flux, Redux, MobX, Redux Sagas, and more. Learning these patterns will help you leverage the best techniques for managing state in your React applications!
+  image: mobx.jpg
+
+- name: Webpack 4 Fundamentals
+  tool: editors # same as build tools
+  url: https://frontendmasters.com/courses/webpack-fundamentals/
+  description: > 
+    Learn the core concepts of Webpack 4. Start from scratch by adding Webpack with npm and build up a pipeline with popular loaders from the Webpack ecosystem!
+  image: webpack.jpg
+
+- name: Introduction to Vue.js
+  tool: vuejs
+  url: https://frontendmasters.com/courses/vue/
+  description: >
+    Vue.js brings together the best features of the javascript framework landscape elegantly. Build complex and maintainable applications faster!
+  image: vue.jpg

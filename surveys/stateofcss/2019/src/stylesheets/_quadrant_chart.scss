@@ -1,0 +1,115 @@
+/*
+
+Block
+
+*/
+.Quadrants__Block__Content {
+    @include small {
+    }
+    @include medium-large {
+        display: flex;
+    }
+}
+.Quadrants__Block__Chart {
+    @include small {
+    }
+    @include medium-large {
+        flex: 0 0 55%;
+    }
+}
+
+/*
+
+Chart
+
+*/
+.Quadrants__Chart {
+    svg {
+        display: block;
+        margin-top: -20px;
+    }
+}
+.Quadrants__Chart__QuadrantLabel {
+    font-size: $large-font;
+    // @include font-bold;
+    letter-spacing: 4px;
+    @include font-regular;
+    text-transform: uppercase;
+}
+.Quadrants__Chart__TickLabel {
+    font-size: $smaller-font;
+}
+.Quadrants__Chart__Legend {
+    padding: 40px 0 0 0;
+}
+.Quadrants__Chart__Legend__Title {
+    text-align: center;
+    display: none;
+}
+.Quadrants__Chart__Legend__Items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0;
+    border-top: 1px solid $dark-border-color;
+    border-left: 1px solid $dark-border-color;
+    height: 83%;
+}
+
+.Quadrants__Chart__Legend__Item {
+    @include small {
+        padding: $spacing/2;
+        font-size: $smaller-font;
+    }
+    @include medium-large {
+        padding: $spacing;
+        font-size: $small-font;
+    }
+    border-bottom: 1px solid $dark-border-color;
+    border-right: 1px solid $dark-border-color;
+    strong {
+        text-transform: uppercase;
+    }
+}
+
+/*
+
+Circular Node (not used)
+
+*/
+
+.Quadrants__Chart__Value {
+    letter-spacing: 0.2em;
+}
+.Quadrants__Chart__Label {
+    font-size: $small-font;
+    @include font-regular;
+}
+
+/*
+
+Symbol Node
+
+*/
+
+.Quadrants__Chart {
+    .PeriodicTableElement {
+        overflow: visible !important;
+    }
+    .PeriodicTableElement_Frame {
+        stroke: $white;
+        fill: $bg-color-light;
+    }
+}
+.Quadrants__Chart__PeriodicTableElement {
+    &--collision {
+        .PeriodicTableElement_Container {
+            transition: all 300ms cubic-bezier(0.87, -0.41, 0.19, 1.44);
+        }
+        &:hover {
+            .PeriodicTableElement_Container {
+                transform: translateX(var(--dx)) translateY(var(--dy));
+            }
+        }
+    }
+}

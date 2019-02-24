@@ -1,0 +1,7 @@
+- locale: en-US
+  path: default
+  label: English
+
+- locale: fr-FR
+  path: fr
+  label: Français

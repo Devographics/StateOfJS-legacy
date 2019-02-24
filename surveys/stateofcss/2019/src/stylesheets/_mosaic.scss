@@ -1,0 +1,14 @@
+.mosaic {
+    display: grid;
+    // grid-template-columns: repeat(1fr, 20);
+    grid-template-columns: repeat(15, 1fr);
+}
+.mosaic__image {
+    // background-size: cover;
+    height: 50px;
+    overflow: hidden;
+    img {
+        display: block;
+        width: 100%;
+    }
+}
