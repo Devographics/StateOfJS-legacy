@@ -21,23 +21,11 @@
         margin-right: $spacing;
     }
 }
-.PageHeader {
-    margin-bottom: $spacing * 2;
-}
 
-.ToolHeader__Header,
-.PageHeader__Header {
-    display: flex;
-    justify-content: space-between;
-    // margin-bottom: $spacing * 0.5;
-}
-
-.ToolHeader__Title,
-.PageHeader__Title {
+.Page__Title {
     margin: 0;
     padding: 0;
-    align-items: baseline;
-    // line-height: 1;
+    font-weight: bold;
     @include small {
         font-size: 1.3rem;
     }
@@ -48,26 +36,29 @@
         font-size: 2rem;
     }
 }
-.ToolHeader__Title {
+
+.Page__Intro {
+    margin: 0;
+    margin: 0.66rem 0 0.66rem 3.33rem;
+    font-style: italic;
+}
+.Page__Intro:after {
+    content: "}";
+    font-weight: bold;
+    font-style: normal;
+    margin-left: -3.33rem;
     @include small {
-        display: none;
+        font-size: 1.3rem;
+    }
+    @include medium {
+        font-size: 1.5rem;
+    }
+    @include large {
+        font-size: 2rem;
     }
 }
-.ToolHeader__Content {
-    flex: 1;
+
+.Page__Intro p {
+    margin: 0;
 }
 
-.ToolHeader__Links {
-    display: flex;
-    align-items: center;
-    margin-top: $spacing/2;
-}
-.ToolHeader__Link {
-    margin-right: $spacing/2;
-}
-
-.ToolHeader__Stars {
-    @include small-medium {
-        display: none;
-    }
-}

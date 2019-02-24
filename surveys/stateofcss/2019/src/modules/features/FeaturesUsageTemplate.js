@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from 'core/Layout'
 import PageHeader from 'core/pages/PageHeader'
-import TextBlock from 'core/blocks/TextBlock'
 import FeatureUsageBlock from './blocks/FeatureUsageBlock'
 
 const FeatureUsageTemplate = ({ pageContext, data, ...rest }) => {
@@ -10,9 +9,8 @@ const FeatureUsageTemplate = ({ pageContext, data, ...rest }) => {
 
     return (
         <Layout {...rest} pageContext={pageContext}>
-            <PageHeader />
-            <TextBlock
-                text={
+            <PageHeader
+                introduction={
                     data.introduction !== null
                         ? data.introduction.html
                         : `[missing] ${pageContext.id} introduction.`

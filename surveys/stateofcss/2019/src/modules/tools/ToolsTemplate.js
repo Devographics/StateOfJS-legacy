@@ -2,15 +2,13 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from 'core/Layout'
 import PageHeader from 'core/pages/PageHeader'
-import TextBlock from 'core/blocks/TextBlock'
 import ToolOpinionBlock from './blocks/ToolOpinionBlock'
 
 const ToolsTemplate = ({ pageContext, data, ...rest }) => {
     return (
         <Layout {...rest} pageContext={pageContext}>
-            <PageHeader />
-            <TextBlock
-                text={
+            <PageHeader
+                introduction={
                     data.introduction !== null
                         ? data.introduction.html
                         : `[missing] ${pageContext.id} introduction.`

@@ -56,6 +56,7 @@
     "react-helmet": "^5.2.0",
     "react-markdown": "^4.0.6",
     "react-measure": "^2.2.4",
+    "react-spring": "^8.0.7",
     "reactdown": "^1.0.0-alpha14",
     "remove-markdown": "^0.3.0",
     "request": "^2.88.0",
