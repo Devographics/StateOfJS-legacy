@@ -1,0 +1,167 @@
+section_id: css-frameworks
+aggregations:
+  - id: bootstrap
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F44D Used it > Would use again"
+        count: 4231
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 3989
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 1009
+      - id: ✅ Heard of it > Would like to learn
+        count: 189
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 8
+  - id: materialize-css
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 2603
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 2528
+      - id: "\U0001F44D Used it > Would use again"
+        count: 1621
+      - id: ✅ Heard of it > Would like to learn
+        count: 1431
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 1243
+  - id: ant-design
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 6224
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 1511
+      - id: ✅ Heard of it > Would like to learn
+        count: 935
+      - id: "\U0001F44D Used it > Would use again"
+        count: 422
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 325
+  - id: semantic-ui
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 3433
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 2484
+      - id: ✅ Heard of it > Would like to learn
+        count: 2014
+      - id: "\U0001F44D Used it > Would use again"
+        count: 888
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 585
+  - id: bulma
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 4685
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 2030
+      - id: ✅ Heard of it > Would like to learn
+        count: 1380
+      - id: "\U0001F44D Used it > Would use again"
+        count: 984
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 338
+  - id: foundation
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 3259
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 1930
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 1669
+      - id: "\U0001F44D Used it > Would use again"
+        count: 1325
+      - id: ✅ Heard of it > Would like to learn
+        count: 1227
+  - id: uikit
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 5575
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 2176
+      - id: ✅ Heard of it > Would like to learn
+        count: 1065
+      - id: "\U0001F44D Used it > Would use again"
+        count: 306
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 263
+  - id: tachyons
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 6184
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 1611
+      - id: ✅ Heard of it > Would like to learn
+        count: 978
+      - id: "\U0001F44D Used it > Would use again"
+        count: 405
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 213
+  - id: primer
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 7602
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 1177
+      - id: ✅ Heard of it > Would like to learn
+        count: 433
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 90
+      - id: "\U0001F44D Used it > Would use again"
+        count: 60
+  - id: tailwind
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 6078
+      - id: ✅ Heard of it > Would like to learn
+        count: 1361
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 1354
+      - id: "\U0001F44D Used it > Would use again"
+        count: 495
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 111
+  - id: purecss
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 5751
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 1647
+      - id: ✅ Heard of it > Would like to learn
+        count: 1254
+      - id: "\U0001F44D Used it > Would use again"
+        count: 517
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 246

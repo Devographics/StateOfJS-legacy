@@ -3,4 +3,4 @@ type: introduction
 page: layout
 locale: en-US
 ---
-Layout page introduction.
+How do you position elements on the screen?

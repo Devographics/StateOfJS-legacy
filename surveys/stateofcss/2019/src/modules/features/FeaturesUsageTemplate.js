@@ -11,7 +11,13 @@ const FeatureUsageTemplate = ({ pageContext, data, ...rest }) => {
     return (
         <Layout {...rest} pageContext={pageContext}>
             <PageHeader />
-            <TextBlock text={data.introduction.html} />
+            <TextBlock
+                text={
+                    data.introduction !== null
+                        ? data.introduction.html
+                        : `[missing] ${pageContext.id} introduction.`
+                }
+            />
             {pageContext.blocks.map(block => {
                 const blockData = data.aggs.aggregations.find(a => a.id === block.id)
                 const blockResources = data.aggs.fields.resources.find(r => r.id === block.id)

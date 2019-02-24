@@ -3,4 +3,4 @@ type: introduction
 page: shapes-and-graphics
 locale: en-US
 ---
-Shape & graphics page introduction.
+Controlling the shape and display of elements.

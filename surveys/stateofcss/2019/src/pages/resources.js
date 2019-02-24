@@ -13,4 +13,3 @@ const ResourcesPage = ({ data, ...rest }) => (
 )
 
 export default ResourcesPage
-

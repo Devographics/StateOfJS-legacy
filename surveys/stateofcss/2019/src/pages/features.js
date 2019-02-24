@@ -13,4 +13,3 @@ const FeaturesPage = ({ data, ...rest }) => (
 )
 
 export default FeaturesPage
-

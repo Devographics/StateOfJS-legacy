@@ -13,4 +13,3 @@ const OpinionsPage = ({ data, ...rest }) => (
 )
 
 export default OpinionsPage
-

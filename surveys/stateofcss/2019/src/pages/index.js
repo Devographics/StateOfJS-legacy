@@ -1,26 +1,32 @@
+import { graphql } from 'gatsby'
 import React from 'react'
-import 'stylesheets/screen.scss'
-import Head from '../core/components/Head'
-import { PageContextProvider } from '../core/pages/pageContext'
-import { mergePageContext } from '../core/pages/pageHelpers'
-import { I18nContextProvider } from '../core/i18n/i18nContext'
-import LanguageSwitcher from '../core/i18n/LanguageSwitcher'
+import Layout from '../core/Layout'
+import TextBlock from '../core/blocks/TextBlock'
+import SponsorsBlock from '../core/blocks/SponsorsBlock'
+import PageHeader from '../core/pages/PageHeader'
 
-const Home = ({ pageContext, location }) => {
-    const context = mergePageContext(pageContext, location)
+const Introduction = ({ data, ...rest }) => (
+    <Layout {...rest}>
+        <div>
+            <PageHeader showIntro={false} />
+            <TextBlock text={data.introduction.html} />
+            <SponsorsBlock />
+        </div>
+    </Layout>
+)
 
-    return (
-        <PageContextProvider value={context}>
-            <I18nContextProvider>
-                <>
-                    <Head />
-                    <div className="Home__Wrapper">
-                        <LanguageSwitcher position="top" />
-                    </div>
-                </>
-            </I18nContextProvider>
-        </PageContextProvider>
-    )
-}
+export default Introduction
 
-export default Home
+export const query = graphql`
+    query introByLocale($locale: String!) {
+        introduction: markdownRemark(
+            frontmatter: {
+                type: { eq: "introduction" }
+                section: { eq: "introduction" }
+                locale: { eq: $locale }
+            }
+        ) {
+            html
+        }
+    }
+`

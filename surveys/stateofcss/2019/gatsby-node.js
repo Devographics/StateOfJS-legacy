@@ -3,7 +3,7 @@ const _ = require('lodash')
 const fs = require('fs')
 const path = require(`path`)
 const { computeSitemap } = require('./node_src/sitemap')
-const { fetchMdnResource, fetchCaniuseResource } = require('./node_src/resources')
+const { fetchMdnResource, fetchCaniuseResource, fetchGithubResource } = require('./node_src/resources')
 const { omit } = require('lodash')
 
 const rawSitemap = yaml.safeLoad(fs.readFileSync('./config/raw_sitemap.yml', 'utf8'))
@@ -170,7 +170,7 @@ exports.onCreateWebpackConfig = ({
 exports.onCreateNode = async ({ node, actions }) => {
     const { createNodeField } = actions
   
-    if (node.internal.type === `FeaturesUsageYaml`) {
+    if (node.internal.type === `FeaturesUsageYaml` || node.internal.type === 'ToolsYaml') {
         const nodeResources = []
         for (const agg of node.aggregations) {
             const aggResources = {
@@ -183,6 +183,9 @@ exports.onCreateNode = async ({ node, actions }) => {
                 }
                 if (itemResourcesConfig.caniuse !== undefined) {
                     aggResources.caniuse = await fetchCaniuseResource(itemResourcesConfig.caniuse)
+                }
+                if (itemResourcesConfig.github !== undefined) {
+                    aggResources.github = await fetchGithubResource(itemResourcesConfig.github)
                 }
             }
             nodeResources.push(aggResources)

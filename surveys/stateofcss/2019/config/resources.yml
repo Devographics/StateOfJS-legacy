@@ -1,3 +1,11 @@
+###############################################################################
+# Additionnal resources to attach to contents
+# you can use the following resource types:
+# - mdn
+# - caniuse
+# - github
+# - npm
+###############################################################################
 layout:
     css-grid:
         mdn: /en-US/docs/Web/CSS/CSS_Grid_Layout
@@ -70,3 +78,50 @@ animations-and-transforms:
     css-animations:
         mdn: /en-US/docs/Web/CSS/CSS_Animations
         caniuse: css-animation
+
+pre-post-processors:
+    sass:
+        github: sass/sass
+        npm: node-sass
+    less:
+        github: less/less.js
+        npm: less
+    postcss:
+        github: postcss/postcss
+    stylus:
+        github: stylus/stylus
+        npm: stylus
+
+css-frameworks:
+    bootstrap:
+        github: twbs/bootstrap
+        npm: bootstrap
+    materialize-css:
+        github: Dogfalo/materialize
+        npm: materialize-css
+    ant-design:
+        github: ant-design/ant-design
+        npm: antd
+    semantic-ui:
+        github: Semantic-Org/Semantic-UI
+        npm: semantic-ui
+    bulma:
+        github: jgthms/bulma
+        npm: bulma
+    foundation:
+        github: zurb/foundation-sites
+    uikit:
+        github: uikit/uikit
+        npm: uikit
+    tachyons:
+        github: tachyons-css/tachyons
+    primer:
+        github: primer/css
+        npm: '@primer/css'
+    tailwind:
+        github: tailwindcss/tailwindcss
+        npm: tailwindcss
+    purecss:
+        github: pure-css/pure
+        npm: purecss
+

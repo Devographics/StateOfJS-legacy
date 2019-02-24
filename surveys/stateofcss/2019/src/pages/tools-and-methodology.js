@@ -13,4 +13,3 @@ const ToolsAndMethodologyPage = ({ data, ...rest }) => (
 )
 
 export default ToolsAndMethodologyPage
-

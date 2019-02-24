@@ -3,10 +3,6 @@
   type: page
   is_hidden: true
 
-- id: introduction
-  path: /introduction
-  type: page
-
 - id: demographics
   path: /demographics
   type: page
@@ -22,57 +18,57 @@
   path: /features
   type: page
   children:
-    - id: layout
-      path: /layout
-      type: features_usage
-      blocks:
-          - css-grid
-          - flexbox
-          - css-multi-column
-          - css-writing-modes
-          - css-exclusions
+      - id: layout
+        path: /layout
+        type: features_usage
+        blocks:
+            - css-grid
+            - flexbox
+            - css-multi-column
+            - css-writing-modes
+            - css-exclusions
 
-    - id: shapes-and-graphics
-      path: /shape-and-graphics
-      type: features_usage
-      blocks:
-          - css-shapes
-          - object-fit
-          - clip-path
-          - css-masks
-          - blend-modes
-          - css-filter-effects
+      - id: shapes-and-graphics
+        path: /shape-and-graphics
+        type: features_usage
+        blocks:
+            - css-shapes
+            - object-fit
+            - clip-path
+            - css-masks
+            - blend-modes
+            - css-filter-effects
 
-    - id: interactions
-      path: /interactions
-      type: features_usage
-      blocks:
-          - css-scroll-snap
-          - overscroll-behavior
-          - overflow-anchor
+      - id: interactions
+        path: /interactions
+        type: features_usage
+        blocks:
+            - css-scroll-snap
+            - overscroll-behavior
+            - overflow-anchor
 
-    - id: typography
-      path: /typography
-      type: features_usage
-      blocks:
-          - web-fonts-font-face
-          - variable-fonts
-          - line-breaking-properties
-          - font-variant
-          - initial-letter
+      - id: typography
+        path: /typography
+        type: features_usage
+        blocks:
+            - web-fonts-font-face
+            - variable-fonts
+            - line-breaking-properties
+            - font-variant
+            - initial-letter
 
-    - id: animations-and-transforms
-      path: /animations-and-transforms
-      type: features_usage
-      blocks:
-          - css-transitions
-          - css-transforms
-          - css-animations
+      - id: animations-and-transforms
+        path: /animations-and-transforms
+        type: features_usage
+        blocks:
+            - css-transitions
+            - css-transforms
+            - css-animations
 
-    - id: other-features
-      path: /other-features
-      type: features_usage
-      blocks: []
+      - id: other-features
+        path: /other-features
+        type: features_usage
+        blocks: []
 
 - id: units-and-selectors
   path: /units-and-selectors
@@ -82,30 +78,45 @@
   path: /tools-and-methodology
   type: page
   children:
-    - id: pre-post-processors
-      path: /pre-post-processors
-      type: tools
-      blocks: []
+      - id: pre-post-processors
+        path: /pre-post-processors
+        type: tools
+        blocks:
+            - sass
+            - less
+            - postcss
+            - stylus
 
-    - id: css-frameworks
-      path: /css-frameworks
-      type: tools
-      blocks: []
+      - id: css-frameworks
+        path: /css-frameworks
+        type: tools
+        blocks:
+            - bootstrap
+            - materialize-css
+            - ant-design
+            - semantic-ui
+            - bulma
+            - foundation
+            - uikit
+            - tachyons
+            - primer
+            - tailwind
+            - purecss
 
-    - id: methodologies
-      path: /methodologies
-      type: tools
-      blocks: []
+      - id: methodologies
+        path: /methodologies
+        type: tools
+        blocks: []
 
-    - id: css-in-js
-      path: /css-in-js
-      type: tools
-      blocks: []
+      - id: css-in-js
+        path: /css-in-js
+        type: tools
+        blocks: []
 
-    - id: other-tools
-      path: /other-tools
-      type: tools
-      blocks: []
+      - id: other-tools
+        path: /other-tools
+        type: tools
+        blocks: []
 
 - id: environments
   path: /environments

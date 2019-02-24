@@ -13,4 +13,3 @@ const UnitsAndSelectorsPage = ({ data, ...rest }) => (
 )
 
 export default UnitsAndSelectorsPage
-

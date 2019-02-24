@@ -1,4 +1,5 @@
 module.exports = {
     ...require('./mdn'),
-    ...require('./caniuse') 
+    ...require('./caniuse'),
+    ...require('./github')
 }

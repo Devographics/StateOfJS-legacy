@@ -13,4 +13,3 @@ const EnvironmentsPage = ({ data, ...rest }) => (
 )
 
 export default EnvironmentsPage
-

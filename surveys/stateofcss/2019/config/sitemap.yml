@@ -10,15 +10,6 @@
   is_hidden: true
   children: []
   next:
-    id: introduction
-    path: /introduction/
-    type: page
-- id: introduction
-  path: /introduction/
-  type: page
-  is_hidden: false
-  children: []
-  next:
     id: demographics
     path: /demographics/
     type: page
@@ -40,10 +31,6 @@
       path: /demographics/company-size/
   is_hidden: false
   children: []
-  previous:
-    id: introduction
-    path: /introduction/
-    type: page
   next:
     id: features
     path: /features/
@@ -209,7 +196,15 @@
     - id: pre-post-processors
       path: /tools-and-methodology/pre-post-processors/
       type: tools
-      blocks: []
+      blocks:
+        - id: sass
+          path: /tools-and-methodology/pre-post-processors/sass/
+        - id: less
+          path: /tools-and-methodology/pre-post-processors/less/
+        - id: postcss
+          path: /tools-and-methodology/pre-post-processors/postcss/
+        - id: stylus
+          path: /tools-and-methodology/pre-post-processors/stylus/
       is_hidden: false
       children: []
       previous:
@@ -223,7 +218,29 @@
     - id: css-frameworks
       path: /tools-and-methodology/css-frameworks/
       type: tools
-      blocks: []
+      blocks:
+        - id: bootstrap
+          path: /tools-and-methodology/css-frameworks/bootstrap/
+        - id: materialize-css
+          path: /tools-and-methodology/css-frameworks/materialize-css/
+        - id: ant-design
+          path: /tools-and-methodology/css-frameworks/ant-design/
+        - id: semantic-ui
+          path: /tools-and-methodology/css-frameworks/semantic-ui/
+        - id: bulma
+          path: /tools-and-methodology/css-frameworks/bulma/
+        - id: foundation
+          path: /tools-and-methodology/css-frameworks/foundation/
+        - id: uikit
+          path: /tools-and-methodology/css-frameworks/uikit/
+        - id: tachyons
+          path: /tools-and-methodology/css-frameworks/tachyons/
+        - id: primer
+          path: /tools-and-methodology/css-frameworks/primer/
+        - id: tailwind
+          path: /tools-and-methodology/css-frameworks/tailwind/
+        - id: purecss
+          path: /tools-and-methodology/css-frameworks/purecss/
       is_hidden: false
       children: []
       previous:

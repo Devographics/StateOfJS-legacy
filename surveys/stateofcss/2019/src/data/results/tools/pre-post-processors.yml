@@ -1,0 +1,62 @@
+section_id: pre-post-processors
+aggregations:
+  - id: sass
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F44D Used it > Would use again"
+        count: 7369
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 833
+      - id: ✅ Heard of it > Would like to learn
+        count: 688
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 509
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 30
+  - id: less
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 3036
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 2879
+      - id: "\U0001F44D Used it > Would use again"
+        count: 2397
+      - id: ✅ Heard of it > Would like to learn
+        count: 998
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 117
+  - id: postcss
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F44D Used it > Would use again"
+        count: 3544
+      - id: ✅ Heard of it > Would like to learn
+        count: 2223
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 1831
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 1487
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 350
+  - id: stylus
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 3993
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 2521
+      - id: ✅ Heard of it > Would like to learn
+        count: 1290
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 855
+      - id: "\U0001F44D Used it > Would use again"
+        count: 768
