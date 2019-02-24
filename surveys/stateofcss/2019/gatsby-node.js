@@ -17,6 +17,10 @@ const guessPageTemplate = type => {
             template = 'modules/features/FeaturesUsage'
             break
 
+        case 'tools':
+            template = 'modules/tools/Tools'
+            break
+
         default:
             throw new Error(`no template defined for page type: ${type}`)
     }

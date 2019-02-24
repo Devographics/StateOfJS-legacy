@@ -71,7 +71,8 @@
 
     - id: other-features
       path: /other-features
-      type: page
+      type: features_usage
+      blocks: []
 
 - id: units-and-selectors
   path: /units-and-selectors
@@ -83,23 +84,28 @@
   children:
     - id: pre-post-processors
       path: /pre-post-processors
-      type: page
+      type: tools
+      blocks: []
 
     - id: css-frameworks
       path: /css-frameworks
-      type: page
+      type: tools
+      blocks: []
 
     - id: methodologies
       path: /methodologies
-      type: page
+      type: tools
+      blocks: []
 
     - id: css-in-js
       path: /css-in-js
-      type: page
+      type: tools
+      blocks: []
 
     - id: other-tools
       path: /other-tools
-      type: page
+      type: tools
+      blocks: []
 
 - id: environments
   path: /environments
@@ -107,6 +113,10 @@
 
 - id: resources
   path: /resources
+  type: page
+
+- id: opinions
+  path: /opinions
   type: page
 
 - id: conclusion

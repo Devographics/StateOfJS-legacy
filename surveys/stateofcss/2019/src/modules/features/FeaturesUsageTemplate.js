@@ -2,17 +2,16 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from 'core/Layout'
 import PageHeader from 'core/pages/PageHeader'
-//import TextBlock from 'core/blocks/TextBlock'
+import TextBlock from 'core/blocks/TextBlock'
 import FeatureUsageBlock from './blocks/FeatureUsageBlock'
 
 const FeatureUsageTemplate = ({ pageContext, data, ...rest }) => {
     console.log(pageContext, data, rest)
+
     return (
         <Layout {...rest} pageContext={pageContext}>
             <PageHeader />
-            {/*
             <TextBlock text={data.introduction.html} />
-            */}
             {pageContext.blocks.map(block => {
                 const blockData = data.aggs.aggregations.find(a => a.id === block.id)
                 const blockResources = data.aggs.fields.resources.find(r => r.id === block.id)
@@ -37,7 +36,7 @@ export const query = graphql`
         introduction: markdownRemark(
             frontmatter: {
                 type: { eq: "introduction" }
-                page: { eq: "$id" }
+                page: { eq: $id }
                 locale: { eq: $locale }
             }
         ) {

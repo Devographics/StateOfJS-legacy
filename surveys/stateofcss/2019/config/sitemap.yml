@@ -165,10 +165,11 @@
       next:
         id: other-features
         path: /features/other-features/
-        type: page
+        type: features_usage
     - id: other-features
       path: /features/other-features/
-      type: page
+      type: features_usage
+      blocks: []
       is_hidden: false
       children: []
       previous:
@@ -196,7 +197,7 @@
   previous:
     id: other-features
     path: /features/other-features/
-    type: page
+    type: features_usage
   next:
     id: tools-and-methodology
     path: /tools-and-methodology/
@@ -207,7 +208,8 @@
   children:
     - id: pre-post-processors
       path: /tools-and-methodology/pre-post-processors/
-      type: page
+      type: tools
+      blocks: []
       is_hidden: false
       children: []
       previous:
@@ -217,55 +219,59 @@
       next:
         id: css-frameworks
         path: /tools-and-methodology/css-frameworks/
-        type: page
+        type: tools
     - id: css-frameworks
       path: /tools-and-methodology/css-frameworks/
-      type: page
+      type: tools
+      blocks: []
       is_hidden: false
       children: []
       previous:
         id: pre-post-processors
         path: /tools-and-methodology/pre-post-processors/
-        type: page
+        type: tools
       next:
         id: methodologies
         path: /tools-and-methodology/methodologies/
-        type: page
+        type: tools
     - id: methodologies
       path: /tools-and-methodology/methodologies/
-      type: page
+      type: tools
+      blocks: []
       is_hidden: false
       children: []
       previous:
         id: css-frameworks
         path: /tools-and-methodology/css-frameworks/
-        type: page
+        type: tools
       next:
         id: css-in-js
         path: /tools-and-methodology/css-in-js/
-        type: page
+        type: tools
     - id: css-in-js
       path: /tools-and-methodology/css-in-js/
-      type: page
+      type: tools
+      blocks: []
       is_hidden: false
       children: []
       previous:
         id: methodologies
         path: /tools-and-methodology/methodologies/
-        type: page
+        type: tools
       next:
         id: other-tools
         path: /tools-and-methodology/other-tools/
-        type: page
+        type: tools
     - id: other-tools
       path: /tools-and-methodology/other-tools/
-      type: page
+      type: tools
+      blocks: []
       is_hidden: false
       children: []
       previous:
         id: css-in-js
         path: /tools-and-methodology/css-in-js/
-        type: page
+        type: tools
       next:
         id: environments
         path: /environments/
@@ -278,7 +284,7 @@
   next:
     id: pre-post-processors
     path: /tools-and-methodology/pre-post-processors/
-    type: page
+    type: tools
 - id: environments
   path: /environments/
   type: page
@@ -287,7 +293,7 @@
   previous:
     id: other-tools
     path: /tools-and-methodology/other-tools/
-    type: page
+    type: tools
   next:
     id: resources
     path: /resources/
@@ -302,6 +308,19 @@
     path: /environments/
     type: page
   next:
+    id: opinions
+    path: /opinions/
+    type: page
+- id: opinions
+  path: /opinions/
+  type: page
+  is_hidden: false
+  children: []
+  previous:
+    id: resources
+    path: /resources/
+    type: page
+  next:
     id: conclusion
     path: /conclusion/
     type: page
@@ -311,8 +330,8 @@
   is_hidden: false
   children: []
   previous:
-    id: resources
-    path: /resources/
+    id: opinions
+    path: /opinions/
     type: page
 - id: support
   path: /support/
