@@ -12,13 +12,14 @@ const Pagination = ({ position, toggleSidebar }) => {
     if (context.previous !== undefined) {
         previous = (
             <PageLink page={context.previous} className="pagination__link pagination__previous">
-                <span className="pagination__link__symbol">&lt;&lt;&nbsp;</span>
+                <span className="pagination__link__symbol">&amp;:before {'{ '}</span>
                 <span className="pagination__link__label pagination__link__label--full">
                     <PageLabel page={context.previous} mode="long" />
                 </span>
                 <span className="pagination__link__label pagination__link__label--short">
                     <PageLabel page={context.previous} />
                 </span>
+                {' }'}
             </PageLink>
         )
     }
@@ -27,13 +28,14 @@ const Pagination = ({ position, toggleSidebar }) => {
     if (context.next !== undefined) {
         next = (
             <PageLink page={context.next} className="pagination__link pagination__next">
+                <span className="pagination__link__symbol">&amp;:after {'{ '}</span>
                 <span className="pagination__link__label pagination__link__label--full">
                     <PageLabel page={context.next} mode="long" />
                 </span>
                 <span className="pagination__link__label pagination__link__label--short">
                     <PageLabel page={context.next} />
                 </span>
-                <span className="pagination__link__symbol">&nbsp;&gt;&gt;</span>
+                {' }'}
             </PageLink>
         )
     }
