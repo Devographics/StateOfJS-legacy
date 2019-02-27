@@ -46,3 +46,9 @@
     justify-content: center;
     align-items: center;
 }
+
+.Features__Overview__Item__Footer:hover {
+    background: $border-color;
+    color: #ffffff;
+    cursor: pointer;
+}

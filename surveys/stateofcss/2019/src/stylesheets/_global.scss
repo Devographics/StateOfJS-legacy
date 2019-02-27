@@ -59,26 +59,15 @@ a {
     &:active,
     &:focus {
         @include small {
-            color: $active-color;
+            color: $blue;
         }
         @include medium-large {
-            color: $active-color;
+            color: $blue;
         }
     }
     &:hover {
         position: relative;
-        // color: $hover-color;
         text-decoration: underline;
-        // animation-name: threedee;
-        // animation-duration: 200ms;
-        // animation-iteration-count: 1;
-        // animation-timing-function: ease-out;
-        // animation-fill-mode: forwards;
-
-        // animation-name: blinkfast;
-        // animation-duration: 300ms;
-        // animation-iteration-count: infinite;
-        // animation-timing-function: linear;
     }
     &.button,
     &.resp-sharing-button__link {
