@@ -5,7 +5,6 @@ import Block from 'core/blocks/Block'
 import FeatureUsageWaffleChart from '../charts/FeatureUsageWaffleChart'
 import FeatureUsageLegends from '../charts/FeatureUsageLegends'
 
-
 const allKeys = [
     'used_it',
     'know_not_used',
@@ -13,17 +12,25 @@ const allKeys = [
 ]
 
 const FeaturesOverviewBlock = ({ features }) => {
-    const [currentKeys, setCurrentKeys] = useState({ ...allKeys })
-    const sortedFeatures = sortBy(features, f => f.usage.used_it).reverse()
+    const [currentKeys, setCurrentKeys] = useState([ ...allKeys ])
+    const legendClickHandler = ({ id }) => {
+        if (currentKeys.length === 1) {
+            if (currentKeys.includes(id)) {
+                setCurrentKeys([...allKeys])    
+            } else {
+                setCurrentKeys([id])    
+            }
+        } else {
+            setCurrentKeys([id])
+        }
+    }
 
-    console.log(currentKeys)
+    const sortedFeatures = sortBy(features, f => f.usage.used_it).reverse()
 
     return (
         <Block id="overview" showDescription={false}>
             <FeatureUsageLegends
-                onClick={d => {
-                    console.log(d)
-                }}
+                onClick={legendClickHandler}
             />
             <div className="Features__Overview">
                 {sortedFeatures.map(feature => {
@@ -32,6 +39,7 @@ const FeaturesOverviewBlock = ({ features }) => {
                             <div>
                                 <FeatureUsageWaffleChart
                                     feature={feature}
+                                    keys={currentKeys}
                                 />
                             </div>                        
                             <div className="Features__Overview__Item__Footer">

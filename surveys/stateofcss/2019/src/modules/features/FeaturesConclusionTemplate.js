@@ -3,12 +3,14 @@ import { graphql } from 'gatsby'
 import { PageContext } from 'core/pages/pageContext'
 import { I18nContext } from 'core/i18n/i18nContext'
 import PageHeader from 'core/pages/PageHeader'
+import FeaturesScatterplotBlock from './blocks/FeaturesScatterplotBlock'
+import { mergeFeaturesResources } from './featuresHelpers'
 
 const FeaturesConclusionTemplate = ({ data }) => {
     const context = useContext(PageContext)
     const { translate } = useContext(I18nContext)
 
-    console.log(data.conclusion)
+    const features = mergeFeaturesResources(data.features.aggregations, data.features.fields.resources)
 
     return (
         <>
@@ -21,6 +23,9 @@ const FeaturesConclusionTemplate = ({ data }) => {
                         ? data.conclusion.html
                         : `[missing] ${context.section} conclusion.`
                 }
+            />
+            <FeaturesScatterplotBlock
+                features={features}
             />
         </>
     )
@@ -38,6 +43,42 @@ export const query = graphql`
             }
         ) {
             html
+        }
+        features: featuresUsageYaml(section_id: { eq: $section }) {
+            aggregations {
+                id
+                total
+                buckets {
+                    id
+                    count
+                }
+            }
+            fields {
+                resources {
+                    id
+                    mdn {
+                        locale
+                        url
+                        title
+                        summary
+                    }
+                    caniuse {
+                        title
+                        spec
+                        links {
+                            title
+                            url
+                        }
+                        stats {
+                            browser
+                            by_version {
+                                version
+                                support
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 `

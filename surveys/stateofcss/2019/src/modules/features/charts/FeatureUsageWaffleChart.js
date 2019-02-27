@@ -17,7 +17,28 @@ const Cell = props => {
     )
 }
 
-const FeatureUsageWaffleChart= ({ feature, facets = [] }) => {
+const FeatureUsageWaffleChart= ({ feature, keys }) => {
+    const data = ([
+        {
+            id: 'used_it',
+            label: 'used_it',
+            value: feature.usage.used_it
+        },
+        {
+            id: 'know_not_used',
+            label: 'know_not_used',
+            value: feature.usage.know_not_used
+        },
+        {
+            id: 'never_heard_not_sure',
+            label: 'never_heard_not_sure',
+            value: feature.usage.never_heard_not_sure
+        }
+    ]).map(d => ({
+        ...d,
+        value: keys.includes(d.id) ? d.value : 0
+    }))
+
     return (
         <ResponsiveWaffle
             columns={8}
@@ -29,23 +50,8 @@ const FeatureUsageWaffleChart= ({ feature, facets = [] }) => {
             }}
             cellComponent={Cell}
             colors={['#3c52d1', '#5dd6da', '#cccccc']}
-            data={[
-                {
-                    id: 'used_it',
-                    label: 'used_it',
-                    value: feature.usage.used_it
-                },
-                {
-                    id: 'know_not_used',
-                    label: 'know_not_used',
-                    value: feature.usage.know_not_used
-                },
-                {
-                    id: 'never_heard_not_sure',
-                    label: 'never_heard_not_sure',
-                    value: feature.usage.never_heard_not_sure
-                }
-            ]}
+            emptyColor="#ffffff"
+            data={data}
         />
     )
 }

@@ -68,12 +68,9 @@ FeatureBlock.propTypes = {
         id: PropTypes.string.isRequired,
         path: PropTypes.string.isRequired
     }).isRequired,
-    buckets: PropTypes.arrayOf(
-        PropTypes.shape({
-            id: PropTypes.string.isRequired,
-            count: PropTypes.number.isRequired
-        })
-    ).isRequired
+    feature: PropTypes.shape({
+        id: PropTypes.string.isRequired,
+    }).isRequired
 }
 
 export default FeatureBlock
