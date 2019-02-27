@@ -2,7 +2,7 @@ import { colors } from './constants'
 
 export default {
     name: 'state_of_css_2019',
-    background: '#d9dedf',
+    background: '#ffffff',
     opinionColors: {
         would_use: colors.red,
         would_not_use: colors.redLight,
@@ -52,14 +52,14 @@ export default {
             },
             text: {
                 fill: colors.blue,
-                fontSize: 13
+                fontSize: 12
             }
         },
         legend: {
             text: {
                 fill: colors.blue,
-                fontSize: 12,
-                fontWeight: 500
+                fontSize: 14,
+                fontWeight: 600
             }
         }
     },
@@ -76,9 +76,8 @@ export default {
         }
     },
     grid: {
-        stroke: '#A2C7CE',
         line: {
-            stroke: '#A2C7CE'
+            stroke: '#dddddd'
         }
     },
     legends: {

@@ -21,6 +21,7 @@
     "@nivo/core": "0.52.1",
     "@nivo/line": "0.52.1",
     "@nivo/pie": "0.52.1",
+    "@nivo/scatterplot": "^0.52.1",
     "@nivo/stream": "0.52.1",
     "@nivo/waffle": "0.52.1",
     "bowser": "2.1.0",

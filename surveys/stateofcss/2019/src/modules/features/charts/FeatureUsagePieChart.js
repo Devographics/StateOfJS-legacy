@@ -3,17 +3,17 @@ import PropTypes from 'prop-types'
 import { patternLinesDef } from '@nivo/core'
 import { ResponsivePie } from '@nivo/pie'
 
-const FeatureUsagePieChart= ({ feature }) => {
+const FeatureUsagePieChart = ({ feature }) => {
     return (
         <ResponsivePie
             margin={{
                 top: 20,
                 right: 20,
                 bottom: 20,
-                left: 20,
+                left: 20
             }}
             colors={['#3c52d1', '#5dd6da', '#cccccc']}
-            innerRadius={.6}
+            innerRadius={0.6}
             enableRadialLabels={false}
             enableSlicesLabels={false}
             defs={[
@@ -56,8 +56,8 @@ FeatureUsagePieChart.propTypes = {
         usage: PropTypes.shape({
             used_it: PropTypes.number.isRequired,
             know_not_used: PropTypes.number.isRequired,
-            never_heard_not_sure: PropTypes.number.isRequired,
-        }).isRequired,
+            never_heard_not_sure: PropTypes.number.isRequired
+        }).isRequired
     }).isRequired
 }
 

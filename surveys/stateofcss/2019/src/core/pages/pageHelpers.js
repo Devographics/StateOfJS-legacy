@@ -14,17 +14,21 @@ export const getTranslationValuesFromContext = (context, translate) => {
     return values
 }
 
-export const getPageLabel = (page, translate, {
-    isContextual = false,
-    includeWebsite = false
-} = {}) => {
+export const getPageLabel = (
+    page,
+    translate,
+    { isContextual = false, includeWebsite = false } = {}
+) => {
     let label
-    if ((['features_intro', 'features_results', 'features_conclusion']).includes(page.type)) {
-        label = translate(`page.${page.type}.${isContextual === true ? 'contextual_label' : 'label'}`, {
-            values: {
-                section: translate(`features.${page.data.section}`)
+    if (['features_intro', 'features_results', 'features_conclusion'].includes(page.type)) {
+        label = translate(
+            `page.${page.type}.${isContextual === true ? 'contextual_label' : 'label'}`,
+            {
+                values: {
+                    section: translate(`features.${page.data.section}`)
+                }
             }
-        })
+        )
     } else {
         label = translate(`page.${page.id}.label`)
     }

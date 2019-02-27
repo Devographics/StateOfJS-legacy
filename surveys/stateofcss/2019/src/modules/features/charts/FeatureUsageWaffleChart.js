@@ -17,8 +17,8 @@ const Cell = props => {
     )
 }
 
-const FeatureUsageWaffleChart= ({ feature, keys }) => {
-    const data = ([
+const FeatureUsageWaffleChart = ({ feature, keys }) => {
+    const data = [
         {
             id: 'used_it',
             label: 'used_it',
@@ -34,7 +34,7 @@ const FeatureUsageWaffleChart= ({ feature, keys }) => {
             label: 'never_heard_not_sure',
             value: feature.usage.never_heard_not_sure
         }
-    ]).map(d => ({
+    ].map(d => ({
         ...d,
         value: keys.includes(d.id) ? d.value : 0
     }))
@@ -63,8 +63,8 @@ FeatureUsageWaffleChart.propTypes = {
         usage: PropTypes.shape({
             used_it: PropTypes.number.isRequired,
             know_not_used: PropTypes.number.isRequired,
-            never_heard_not_sure: PropTypes.number.isRequired,
-        }).isRequired,
+            never_heard_not_sure: PropTypes.number.isRequired
+        }).isRequired
     }).isRequired
 }
 

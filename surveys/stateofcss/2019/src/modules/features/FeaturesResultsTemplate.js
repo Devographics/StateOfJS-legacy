@@ -10,7 +10,10 @@ const FeaturesResultsTemplate = ({ data }) => {
     const context = useContext(PageContext)
     const { translate } = useContext(I18nContext)
 
-    const features = mergeFeaturesResources(data.features.aggregations, data.features.fields.resources)
+    const features = mergeFeaturesResources(
+        data.features.aggregations,
+        data.features.fields.resources
+    )
 
     return (
         <>
@@ -22,13 +25,7 @@ const FeaturesResultsTemplate = ({ data }) => {
             {context.blocks.map(block => {
                 const feature = features.find(a => a.id === block.id)
 
-                return (
-                    <FeatureBlock
-                        key={block.id}
-                        block={block}
-                        feature={feature}
-                    />
-                )
+                return <FeatureBlock key={block.id} block={block} feature={feature} />
             })}
         </>
     )

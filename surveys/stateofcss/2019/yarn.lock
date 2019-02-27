@@ -881,6 +881,22 @@
     d3-time-format "^2.1.3"
     lodash "^4.17.4"
 
+"@nivo/scatterplot@^0.52.1":
+  version "0.52.1"
+  resolved "https://registry.yarnpkg.com/@nivo/scatterplot/-/scatterplot-0.52.1.tgz#d60a3e054559a22878d3d0a656ee632c8c171160"
+  integrity sha512-gSgJongIGUFK27RT8wn2wnq/NPiA+yHFdCfScB/150jDTAZt3mkGVOO8ajsWNokzZxizxe3itPMgVJDC5qoElg==
+  dependencies:
+    "@nivo/axes" "0.52.1"
+    "@nivo/core" "0.52.1"
+    "@nivo/legends" "0.52.1"
+    "@nivo/scales" "0.52.1"
+    "@nivo/voronoi" "0.52.1"
+    d3-scale "^2.1.2"
+    d3-shape "^1.2.2"
+    lodash "^4.17.4"
+    react-motion "^0.5.2"
+    recompose "^0.26.0"
+
 "@nivo/stream@0.52.1":
   version "0.52.1"
   resolved "https://registry.yarnpkg.com/@nivo/stream/-/stream-0.52.1.tgz#b037a2bbfec6c46f12178f580aced9dd004552ac"
@@ -892,6 +908,16 @@
     d3-scale "^2.1.2"
     d3-shape "^1.2.2"
     lodash "^4.17.4"
+    recompose "^0.26.0"
+
+"@nivo/voronoi@0.52.1":
+  version "0.52.1"
+  resolved "https://registry.yarnpkg.com/@nivo/voronoi/-/voronoi-0.52.1.tgz#4cfa027fdc5dc20673c5a67c8eff5dcabf640da5"
+  integrity sha512-OMM4l2zFQEBz5ySEUIEWD5xz7v5ih6CDPNDcuvBASKG07XhilTIB0iFNu2a6lyMxy5Sm2KovHlSgb+Z2y1uu6Q==
+  dependencies:
+    "@nivo/core" "0.52.1"
+    d3-delaunay "^4.1.5"
+    d3-scale "^2.1.2"
     recompose "^0.26.0"
 
 "@nivo/waffle@0.52.1":
@@ -3077,6 +3103,13 @@ d3-color@1, d3-color@^1.0.3:
   resolved "https://registry.yarnpkg.com/d3-color/-/d3-color-1.2.3.tgz#6c67bb2af6df3cc8d79efcc4d3a3e83e28c8048f"
   integrity sha512-x37qq3ChOTLd26hnps36lexMRhNXEtVxZ4B25rL0DVdDsGQIJGB18S7y9XDwlDD6MD/ZBzITCf4JjGMM10TZkw==
 
+d3-delaunay@^4.1.5:
+  version "4.1.5"
+  resolved "https://registry.yarnpkg.com/d3-delaunay/-/d3-delaunay-4.1.5.tgz#4318c6d28b22988d88d11650eda440318afe419a"
+  integrity sha512-rBKVohmXT9+BrDicH8umAVUwtkfLIydVlWnpIEDUZ4l2e1vXCaKbypByF8tkN8TUUKnzJY0s8ldQEroeBRMO9Q==
+  dependencies:
+    delaunator "^2.0.0"
+
 d3-format@1, d3-format@^1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/d3-format/-/d3-format-1.3.2.tgz#6a96b5e31bcb98122a30863f7d92365c00603562"
@@ -3279,6 +3312,11 @@ del@^3.0.0:
     p-map "^1.1.1"
     pify "^3.0.0"
     rimraf "^2.2.8"
+
+delaunator@^2.0.0:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/delaunator/-/delaunator-2.0.5.tgz#c2a9ba2cf3d5aaab8fa0aa3ae82426d3fc0aeaf5"
+  integrity sha512-GSYmkITO56erpQzv5Pw+8Vg769kurM16IVUq/AcMb5ZCJCtV7Z2agx9lJ7EbbLno8L099iH2d+hvAK34ZnsvIQ==
 
 delayed-stream@~1.0.0:
   version "1.0.0"

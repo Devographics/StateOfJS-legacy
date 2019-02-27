@@ -30,10 +30,7 @@ const Demographics = ({ data }) => {
                 data={data.stats.years_of_experience}
                 chartId="years-of-experience"
             />
-            <DemographicsCompanySizeBlock
-                data={data.stats.company_size}
-                chartId="company-size"
-            />
+            <DemographicsCompanySizeBlock data={data.stats.company_size} chartId="company-size" />
             <SourceBreakdownBlock data={sourceData} chartId="source-breakdown" />
             <GenderBreakdownBlock data={genderData} chartId="gender-breakdown" />
         </>

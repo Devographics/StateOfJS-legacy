@@ -10,7 +10,10 @@ const FeaturesConclusionTemplate = ({ data }) => {
     const context = useContext(PageContext)
     const { translate } = useContext(I18nContext)
 
-    const features = mergeFeaturesResources(data.features.aggregations, data.features.fields.resources)
+    const features = mergeFeaturesResources(
+        data.features.aggregations,
+        data.features.fields.resources
+    )
 
     return (
         <>
@@ -24,9 +27,7 @@ const FeaturesConclusionTemplate = ({ data }) => {
                         : `[missing] ${context.section} conclusion.`
                 }
             />
-            <FeaturesScatterplotBlock
-                features={features}
-            />
+            <FeaturesScatterplotBlock features={features} />
         </>
     )
 }

@@ -10,7 +10,10 @@ const FeaturesIntroTemplate = ({ data }) => {
     const context = useContext(PageContext)
     const { translate } = useContext(I18nContext)
 
-    const features = mergeFeaturesResources(data.features.aggregations, data.features.fields.resources)
+    const features = mergeFeaturesResources(
+        data.features.aggregations,
+        data.features.fields.resources
+    )
 
     return (
         <>
@@ -24,7 +27,7 @@ const FeaturesIntroTemplate = ({ data }) => {
                         : `[missing] ${context.section} introduction.`
                 }
             />
-            <FeaturesOverviewBlock features={features}/>
+            <FeaturesOverviewBlock features={features} />
         </>
     )
 }

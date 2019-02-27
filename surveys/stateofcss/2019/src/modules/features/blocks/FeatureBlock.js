@@ -28,7 +28,7 @@ const FeatureBlock = ({ block, feature }) => {
                 </div>
                 <div>
                     <div style={{ height: 260 }}>
-                        <FeatureUsagePieChart feature={feature}/>
+                        <FeatureUsagePieChart feature={feature} />
                     </div>
                 </div>
                 <div className="Feature__Support">browser support:</div>
@@ -69,7 +69,7 @@ FeatureBlock.propTypes = {
         path: PropTypes.string.isRequired
     }).isRequired,
     feature: PropTypes.shape({
-        id: PropTypes.string.isRequired,
+        id: PropTypes.string.isRequired
     }).isRequired
 }
 
