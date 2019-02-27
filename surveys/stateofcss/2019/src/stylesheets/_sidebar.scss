@@ -71,42 +71,15 @@
     }
 }
 
-.nav {
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    li {
-        margin-bottom: $spacing/1.5;
-    }
-}
-
-.nav-page {
+.Nav__Page {
+    display: block;
     white-space: nowrap;
     font-size: $medium-font;
-    margin: 0;
+    margin: 0 0 $spacing / 3;
 }
 
-.nav-page-active {
-    @include font-bold;
-    &:before {
-        content: '> ';
-    }
-}
-
-.nav-page-comingsoon {
-    opacity: 0.35;
-}
-
-.nav-subpages {
-    padding-left: $spacing;
-    margin-top: $spacing/2;
-}
-
-.nav-subpage {
-    display: block;
-    // margin-right: $spacing/2;
+.Nav__Page--lvl-1,
+.Nav__Page--lvl-2 {
     font-size: $smallish-font;
     @include font-regular;
     &,
@@ -116,23 +89,38 @@
     }
 }
 
-.nav-subpage-active {
+.Nav__Page--active {
     @include font-bold;
-    &:before {
-        content: '& > ';
+}
+
+.Nav__Page--lvl-1 {
+    &:after {
+        content: ' {…}';
     }
 }
 
-.nav-subpage--overview {
-    border-bottom: 1px dashed $border-color;
-    padding-bottom: $spacing/3;
-    margin-bottom: $spacing/3;
+.Nav__Page--lvl-1.Nav__Page--active {
+    &:after {
+        content: ' {';
+    }
 }
-.nav-subpage--other-libraries {
-    border-top: 1px dashed $border-color;
-    padding-top: $spacing/3;
-    margin-top: $spacing/3;
+
+.Nav__SubPages {
+    margin-top: $spacing * .5;
 }
+
+.Nav__SubPages--lvl-1 {
+    padding-left: $spacing;
+    margin-bottom: $spacing * .5;
+}
+
+.Nav__SubPages--lvl-1:after {
+    content: '}';
+    margin-left: $spacing * -1;
+    font-size: $smallish-font;
+    @include font-bold;
+}
+
 .Logo__Wrapper {
     margin: 0;
 }

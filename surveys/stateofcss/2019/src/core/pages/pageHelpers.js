@@ -1,6 +1,6 @@
 import { getToolName } from '../helpers/tools'
 
-const WEBSITE_TITLE = 'The State of JavaScript 2018'
+const WEBSITE_TITLE = 'The State of CSS 2019'
 
 export const getTranslationValuesFromContext = (context, translate) => {
     const values = {}
@@ -14,15 +14,22 @@ export const getTranslationValuesFromContext = (context, translate) => {
     return values
 }
 
-/**
- * mode:
- *   - short: React
- *   - normal: Front-end Frameworks : React
- *   - full: The State of JavaScript 2018: Front-end Frameworks : React
- */
-export const getPageLabel = (page, translate, mode = 'normal') => {
-    let label = translate(`page.${page.id}`)
-    if (mode === 'full') {
+export const getPageLabel = (page, translate, {
+    isContextual = false,
+    includeWebsite = false
+} = {}) => {
+    let label
+    if ((['features_intro', 'features_results', 'features_conclusion']).includes(page.type)) {
+        label = translate(`page.${page.type}.${isContextual === true ? 'contextual_label' : 'label'}`, {
+            values: {
+                section: translate(`features.${page.data.section}`)
+            }
+        })
+    } else {
+        label = translate(`page.${page.id}.label`)
+    }
+
+    if (includeWebsite === true) {
         label = `${WEBSITE_TITLE}: ${label}`
     }
 

@@ -39,27 +39,10 @@
 
 .Page__Intro {
     margin: 0;
-    margin: 0.66rem 0 0.66rem 3.33rem;
-    font-style: italic;
-}
-.Page__Intro:after {
-    content: "}";
-    display: block;
-    font-weight: bold;
-    font-style: normal;
-    margin-left: -3.33rem;
-    @include small {
-        font-size: 1.3rem;
-    }
-    @include medium {
-        font-size: 1.5rem;
-    }
-    @include large {
-        font-size: 2rem;
-    }
+    margin: $spacing * .5 0 $spacing * 2;
 }
 
 .Page__Intro p {
-    margin: 0;
+    margin: 0 0 $spacing;
 }
 

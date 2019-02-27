@@ -7,41 +7,36 @@ import LanguageSwitcher from '../i18n/LanguageSwitcher'
 
 const filteredNav = sitemap.filter(page => !page.is_hidden)
 
-const NavItem = ({ page, currentPath, closeSidebar }) => {
+const NavItem = ({ page, currentPath, closeSidebar, level = 0 }) => {
     const isActive = currentPath.indexOf(page.id) !== -1
+    const shouldDisplayChildren = page.children.length > 0 && (level < 1 || isActive)
 
     return (
-        <li>
-            <h3 className="nav-page">
-                <PageLink onClick={closeSidebar} page={page}>
-                    <PageLabel page={page} />
-                </PageLink>
-            </h3>
-            {page.children.length > 0 && (
-                <div className="nav-subpages">
+        <>
+            <PageLink
+                className={`Nav__Page Nav__Page--lvl-${level}${
+                    isActive ? ' Nav__Page--active' : ''
+                }`}
+                activeClassName="Nav__Page--active"
+                onClick={closeSidebar}
+                page={page}
+            >
+                <PageLabel page={page} />
+            </PageLink>
+            {shouldDisplayChildren && (
+                <div className={`Nav__SubPages Nav__SubPages--lvl-${level}`}>
                     {page.children.map(childPage => (
-                        <NavSubItem
+                        <NavItem
                             key={childPage.id}
                             page={childPage}
                             closeSidebar={closeSidebar}
+                            currentPath={currentPath}
+                            level={level + 1}
                         />
                     ))}
                 </div>
             )}
-        </li>
-    )
-}
-
-const NavSubItem = ({ page, closeSidebar }) => {
-    return (
-        <PageLink
-            className={`nav-subpage nav-subpage--${page.type}`}
-            activeClassName="nav-subpage-active"
-            page={page}
-            onClick={closeSidebar}
-        >
-            <PageLabel page={page} />{' '}
-        </PageLink>
+        </>
     )
 }
 
@@ -49,20 +44,16 @@ const Nav = ({ closeSidebar }) => {
     const context = useContext(PageContext)
 
     return (
-        <div className="nav">
-            <ul>
-                <li>
-                    <LanguageSwitcher />
-                </li>
-                {filteredNav.map((page, i) => (
-                    <NavItem
-                        key={i}
-                        page={page}
-                        currentPath={context.currentPath}
-                        closeSidebar={closeSidebar}
-                    />
-                ))}
-            </ul>
+        <div className="Nav">
+            <LanguageSwitcher />
+            {filteredNav.map((page, i) => (
+                <NavItem
+                    key={i}
+                    page={page}
+                    currentPath={context.currentPath}
+                    closeSidebar={closeSidebar}
+                />
+            ))}
         </div>
     )
 }

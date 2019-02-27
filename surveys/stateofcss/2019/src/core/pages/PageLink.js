@@ -12,7 +12,7 @@ const PageLink = ({ page, ...rest }) => {
 PageLink.propTypes = {
     page: PropTypes.shape({
         path: PropTypes.string.isRequired
-    }).isRequired
+    }).isRequired,
 }
 
 export default PageLink

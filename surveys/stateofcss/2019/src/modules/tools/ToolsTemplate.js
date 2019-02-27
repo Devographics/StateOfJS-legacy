@@ -1,20 +1,24 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { graphql } from 'gatsby'
-import Layout from 'core/Layout'
+import { PageContext } from 'core/pages/pageContext'
+// import { I18nContext } from 'core/i18n/i18nContext'
 import PageHeader from 'core/pages/PageHeader'
 import ToolOpinionBlock from './blocks/ToolOpinionBlock'
 
-const ToolsTemplate = ({ pageContext, data, ...rest }) => {
+const ToolsTemplate = ({ data }) => {
+    const context = useContext(PageContext)
+    // const { translate } = useContext(I18nContext)
+
     return (
-        <Layout {...rest} pageContext={pageContext}>
+        <>
             <PageHeader
                 introduction={
                     data.introduction !== null
                         ? data.introduction.html
-                        : `[missing] ${pageContext.id} introduction.`
+                        : `[missing] ${context.id} introduction.`
                 }
             />
-            {pageContext.blocks.map(block => {
+            {context.blocks.map(block => {
                 const blockData = data.aggs.aggregations.find(a => a.id === block.id)
                 const resources = data.aggs.fields.resources.find(r => r.id === block.id)
 
@@ -31,11 +35,24 @@ const ToolsTemplate = ({ pageContext, data, ...rest }) => {
                     />
                 )
             })}
-        </Layout>
+        </>
     )
 }
 
 export default ToolsTemplate
+
+/*
+github {
+    name
+    full_name
+    description
+    url
+    stars
+    forks
+    opened_issues
+    homepage
+}
+*/
 
 export const query = graphql`
     query toolsByLocale($id: String!, $locale: String!) {
@@ -61,16 +78,6 @@ export const query = graphql`
             fields {
                 resources {
                     id
-                    github {
-                        name
-                        full_name
-                        description
-                        url
-                        stars
-                        forks
-                        opened_issues
-                        homepage
-                    }
                 }
             }
         }

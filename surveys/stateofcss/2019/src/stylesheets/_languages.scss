@@ -5,7 +5,7 @@
             display: none;
         }
     }
-    .nav & {
+    .Nav & {
         @include large {
             display: none;
         }
@@ -41,7 +41,7 @@
     .pagetitle & {
         padding: $spacing;
     }
-    .nav & {
+    .Nav & {
         margin-bottom: $spacing/2;
     }
 }

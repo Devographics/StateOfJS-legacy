@@ -35,6 +35,8 @@ translations:
       t: Ressources
 
     # general
+    - key: and
+      t: et
     - key: start
       t: Start
     - key: share

@@ -20,55 +20,150 @@
   children:
       - id: layout
         path: /layout
-        type: features_usage
+        type: features_intro
+        data:
+            section: layout
         blocks:
-            - css-grid
-            - flexbox
-            - css-multi-column
-            - css-writing-modes
-            - css-exclusions
+            - overview
+        children:
+            - id: layout-results
+              path: /results
+              type: features_results
+              data:
+                  section: layout
+              blocks:
+                  - css-grid
+                  - flexbox
+                  - css-multi-column
+                  - css-writing-modes
+                  - css-exclusions
+            - id: layout-conclusion
+              path: /conclusion
+              type: features_conclusion
+              data:
+                  section: layout
 
       - id: shapes-and-graphics
-        path: /shape-and-graphics
-        type: features_usage
+        path: /shapes-and-graphics
+        type: features_intro
+        data:
+            section: shapes-and-graphics
         blocks:
-            - css-shapes
-            - object-fit
-            - clip-path
-            - css-masks
-            - blend-modes
-            - css-filter-effects
+            - overview
+        children:
+            - id: shapes-and-graphics-results
+              path: /results
+              type: features_results
+              data:
+                  section: shapes-and-graphics
+              blocks:
+                  - css-shapes
+                  - object-fit
+                  - clip-path
+                  - css-masks
+                  - blend-modes
+                  - css-filter-effects
+            - id: shapes-and-graphics-conclusion
+              path: /conclusion
+              type: features_conclusion
+              data:
+                  section: shapes-and-graphics
 
       - id: interactions
         path: /interactions
-        type: features_usage
+        type: features_intro
+        data:
+            section: interactions
         blocks:
-            - css-scroll-snap
-            - overscroll-behavior
-            - overflow-anchor
+            - overview
+        children:
+            - id: interactions-results
+              path: /results
+              type: features_results
+              data:
+                  section: interactions
+              blocks:
+                  - css-scroll-snap
+                  - overscroll-behavior
+                  - overflow-anchor
+            - id: interactions-conclusion
+              path: /conclusion
+              type: features_conclusion
+              data:
+                  section: interactions
 
       - id: typography
         path: /typography
-        type: features_usage
+        type: features_intro
+        data:
+            section: typography
         blocks:
-            - web-fonts-font-face
-            - variable-fonts
-            - line-breaking-properties
-            - font-variant
-            - initial-letter
+            - overview
+        children:
+            - id: typography-results
+              path: /results
+              type: features_results
+              data:
+                  section: typography
+              blocks:
+                  - web-fonts-font-face
+                  - variable-fonts
+                  - line-breaking-properties
+                  - font-variant
+                  - initial-letter
+            - id: typography-conclusion
+              path: /conclusion
+              type: features_conclusion
+              data:
+                  section: typography
 
       - id: animations-and-transforms
         path: /animations-and-transforms
-        type: features_usage
+        type: features_intro
+        data:
+            section: animations-and-transforms
         blocks:
-            - css-transitions
-            - css-transforms
-            - css-animations
+            - overview
+        children:
+            - id: animations-and-transforms-results
+              path: /results
+              type: features_results
+              data:
+                  section: animations-and-transforms
+              blocks:
+                  - css-transitions
+                  - css-transforms
+                  - css-animations
+            - id: animations-and-transforms-conclusion
+              path: /conclusion
+              type: features_conclusion
+              data:
+                  section: animations-and-transforms
 
       - id: other-features
         path: /other-features
-        type: features_usage
-        blocks: []
+        type: features_intro
+        data:
+            section: other-features
+        blocks:
+            - overview
+        children:
+            - id: other-features-results
+              path: /results
+              type: features_results
+              data:
+                  section: other-features
+              blocks:
+                  - css-variables
+                  - support-queries
+                  - css-containment
+                  - will-change
+                  - calc
+            - id: other-features-conclusion
+              path: /conclusion
+              type: features_conclusion
+              data:
+                  section: other-features
 
 - id: units-and-selectors
   path: /units-and-selectors

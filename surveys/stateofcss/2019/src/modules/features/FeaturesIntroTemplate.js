@@ -1,52 +1,48 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { graphql } from 'gatsby'
-import Layout from 'core/Layout'
+import { PageContext } from 'core/pages/pageContext'
+import { I18nContext } from 'core/i18n/i18nContext'
 import PageHeader from 'core/pages/PageHeader'
-import FeatureUsageBlock from './blocks/FeatureUsageBlock'
+import FeaturesOverviewBlock from './blocks/FeaturesOverviewBlock'
+import { mergeFeaturesResources } from './featuresHelpers'
 
-const FeatureUsageTemplate = ({ pageContext, data, ...rest }) => {
-    console.log(pageContext, data, rest)
+const FeaturesIntroTemplate = ({ data }) => {
+    const context = useContext(PageContext)
+    const { translate } = useContext(I18nContext)
+
+    const features = mergeFeaturesResources(data.features.aggregations, data.features.fields.resources)
 
     return (
-        <Layout {...rest} pageContext={pageContext}>
+        <>
             <PageHeader
+                title={translate('page.features_intro', {
+                    values: { section: translate(`features.${context.section}`) }
+                })}
                 introduction={
                     data.introduction !== null
                         ? data.introduction.html
-                        : `[missing] ${pageContext.id} introduction.`
+                        : `[missing] ${context.section} introduction.`
                 }
             />
-            {pageContext.blocks.map(block => {
-                const blockData = data.aggs.aggregations.find(a => a.id === block.id)
-                const resources = data.aggs.fields.resources.find(r => r.id === block.id)
-
-                return (
-                    <FeatureUsageBlock
-                        key={block.id}
-                        block={block}
-                        buckets={blockData.buckets}
-                        resources={resources}
-                    />
-                )
-            })}
-        </Layout>
+            <FeaturesOverviewBlock features={features}/>
+        </>
     )
 }
 
-export default FeatureUsageTemplate
+export default FeaturesIntroTemplate
 
 export const query = graphql`
-    query featureUsageByLocale($id: String!, $locale: String!) {
+    query featuresOverviewByLocale($section: String!, $locale: String!) {
         introduction: markdownRemark(
             frontmatter: {
                 type: { eq: "introduction" }
-                page: { eq: $id }
+                page: { eq: $section }
                 locale: { eq: $locale }
             }
         ) {
             html
         }
-        aggs: featuresUsageYaml(section_id: { eq: $id }) {
+        features: featuresUsageYaml(section_id: { eq: $section }) {
             aggregations {
                 id
                 total

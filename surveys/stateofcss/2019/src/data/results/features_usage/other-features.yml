@@ -1,0 +1,57 @@
+section_id: other-features
+aggregations:
+  - id: css-variables
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F44D I've used it"
+        count: 5664
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 3282
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 481
+  - id: support-queries
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F44D I've used it"
+        count: 3526
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 3377
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 2530
+  - id: css-containment
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 7782
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 1166
+      - id: "\U0001F44D I've used it"
+        count: 465
+  - id: will-change
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 5404
+      - id: "\U0001F44D I've used it"
+        count: 2312
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 1702
+  - id: calc
+    total: 9491
+    errors: 0
+    others_count: 0
+    buckets:
+      - id: "\U0001F44D I've used it"
+        count: 8171
+      - id: '✅ Know what it is, but haven''t used it'
+        count: 851
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 417

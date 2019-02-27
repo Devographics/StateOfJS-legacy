@@ -1,14 +1,13 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../core/Layout'
 import TextBlock from '../core/blocks/TextBlock'
 import PageHeader from '../core/pages/PageHeader'
 
-const Support = ({ data, ...rest }) => (
-    <Layout {...rest}>
+const Support = ({ data }) => (
+    <>
         <PageHeader showIntro={false} />
         {data.content && data.content.html && <TextBlock text={data.content.html} />}
-    </Layout>
+    </>
 )
 
 export default Support

@@ -2,19 +2,16 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import TextBlock from 'core/blocks/TextBlock'
 import NewsletterBlock from 'core/blocks/NewsletterBlock'
-import Layout from 'core/Layout'
 import PageHeader from 'core/pages/PageHeader'
 
-const Conclusion = ({ data, ...rest }) => (
-    <Layout {...rest}>
-        <div>
-            <PageHeader showIntro={false} />
-            <TextBlock text={data.conclusion.html} />
-            {/* hack to avoid error when capturing */}
-            <div id="quadrants" />
-            <NewsletterBlock />
-        </div>
-    </Layout>
+const Conclusion = ({ data }) => (
+    <>
+        <PageHeader showIntro={false} />
+        <TextBlock text={data.conclusion.html} />
+        {/* hack to avoid error when capturing */}
+        <div id="quadrants" />
+        <NewsletterBlock />
+    </>
 )
 
 export default Conclusion

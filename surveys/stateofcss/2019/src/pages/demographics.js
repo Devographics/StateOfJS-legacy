@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import TextBlock from 'core/blocks/TextBlock'
-import Layout from 'core/Layout'
 import PageHeader from 'core/pages/PageHeader'
 import GenderBreakdownBlock from 'modules/demographics/blocks/GenderBreakdownBlock'
 import SourceBreakdownBlock from 'modules/demographics/blocks/SourceBreakdownBlock'
@@ -12,33 +11,32 @@ import SalaryPerCountryBlock from 'modules/demographics/blocks/SalaryPerCountryB
 import DemographicsYearsOfExperienceBlock from 'modules/demographics/blocks/DemographicsYearsOfExperienceBlock'
 import DemographicsCompanySizeBlock from 'modules/demographics/blocks/DemographicsCompanySizeBlock'
 
-const Demographics = ({ data, ...rest }) => {
+const Demographics = ({ data }) => {
     const participationData = data.stats.participation.find(s => s.survey === '2018').by_country
     const genderData = data.stats.gender.find(s => s.survey === '2018')
     const sourceData = data.stats.source.find(s => s.survey === '2018')
+
     return (
-        <Layout {...rest}>
-            <div>
-                <PageHeader />
-                <TextBlock text={data.introduction.html} />
-                <ParticipationByCountryBlock
-                    data={participationData}
-                    chartId="participation-by-country"
-                />
-                <DemographicsSalaryBlock data={data.stats.salary} chartId="salaries" />
-                <SalaryPerCountryBlock data={data.stats.by_country} chartId="salary-per-country" />
-                <DemographicsYearsOfExperienceBlock
-                    data={data.stats.years_of_experience}
-                    chartId="years-of-experience"
-                />
-                <DemographicsCompanySizeBlock
-                    data={data.stats.company_size}
-                    chartId="company-size"
-                />
-                <SourceBreakdownBlock data={sourceData} chartId="source-breakdown" />
-                <GenderBreakdownBlock data={genderData} chartId="gender-breakdown" />
-            </div>
-        </Layout>
+        <>
+            <PageHeader />
+            <TextBlock text={data.introduction.html} />
+            <ParticipationByCountryBlock
+                data={participationData}
+                chartId="participation-by-country"
+            />
+            <DemographicsSalaryBlock data={data.stats.salary} chartId="salaries" />
+            <SalaryPerCountryBlock data={data.stats.by_country} chartId="salary-per-country" />
+            <DemographicsYearsOfExperienceBlock
+                data={data.stats.years_of_experience}
+                chartId="years-of-experience"
+            />
+            <DemographicsCompanySizeBlock
+                data={data.stats.company_size}
+                chartId="company-size"
+            />
+            <SourceBreakdownBlock data={sourceData} chartId="source-breakdown" />
+            <GenderBreakdownBlock data={genderData} chartId="gender-breakdown" />
+        </>
     )
 }
 

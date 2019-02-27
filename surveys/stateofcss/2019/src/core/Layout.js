@@ -98,10 +98,6 @@ export default class Layout extends PureComponent {
                                 )}
                             </div>
                         </div>
-                        {/*
-                        Disabled until we validate en-US is working as expected
-                        <LangSelector />
-                        */}
                     </div>
                 </I18nContextProvider>
             </PageContextProvider>

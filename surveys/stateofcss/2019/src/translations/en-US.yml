@@ -1,20 +1,47 @@
 locale: en-US
 translations:
     # pages
+    # pages offer 3 variants regarding translations:
+    # - label:            used for navigation
+    # - contextual_label: used mostly for pagination where you don't have any context
+    # - title:            used for page titles
+    - key: page.features_intro
+      t: ${section} Features
+    - key: page.features_intro.label
+      t: ${section}
+    - key: page.features_overview.contextual_label
+      t: ${section}
+
+    - key: page.features_results
+      t: ${section} Features Results
+    - key: page.features_results.label
+      t: Features Usage
+    - key: page.features_result.label
+      t: ${section} Features Usage
+
+    - key: page.features_conclusion
+      t: ${section} Features Conclusion
+    - key: page.features_conclusion.label
+      t: Conclusion
+    - key: page.features_conclusion.label
+      t: ${section} Conclusion
+  
     - key: page.features
       t: CSS Features
-    - key: page.layout
+    - key: page.features.label
+      t: CSS Features
+    - key: features.layout
       t: Layout
-    - key: page.shapes-and-graphics
+    - key: features.shapes-and-graphics
       t: Shapes & Graphics
-    - key: page.interactions
+    - key: features.interactions
       t: Interactions
-    - key: page.typography
+    - key: features.typography
       t: Typography
-    - key: page.animations-and-transforms
+    - key: features.animations-and-transforms
       t: Animations & Transforms
-    - key: page.other-features
-      t: Other Features
+    - key: features.other-features
+      t: Other
     - key: page.units-and-selectors
       t: Units & Selectors
     - key: page.tools-and-methodology
@@ -35,6 +62,8 @@ translations:
       t: Resources
 
     # general
+    - key: and
+      t: and
     - key: start
       t: Start
     - key: share
@@ -91,6 +120,12 @@ translations:
     # features
     - key: feature.specication_link
       t: Specification
+    - key: features.usage.used_it
+      t: Have used it
+    - key: features.usage.know_not_used
+      t: Know what it is, but haven't used it
+    - key: features.usage.never_heard_not_sure
+      t: Never heard of it/Not sure what it is
 
     # opinions
     - key: opinions.legends.never_heard

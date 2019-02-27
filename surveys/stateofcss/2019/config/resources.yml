@@ -79,6 +79,24 @@ animations-and-transforms:
         mdn: /en-US/docs/Web/CSS/CSS_Animations
         caniuse: css-animation
 
+other-features:
+    css-variables:
+        mdn: /en-US/docs/Web/CSS/CSS_Variables
+        caniuse: css-variables
+    support-queries:
+        mdn: /en-US/docs/Web/CSS/@supports
+        caniuse: css-supports-api
+    css-containment:
+        {}
+        #mdn:
+        #caniuse
+    will-change:
+        mdn: /en-US/docs/Web/CSS/will-change
+        caniuse: will-change
+    calc:
+        mdn: /en-US/docs/Web/CSS/calc
+        caniuse: calc
+
 pre-post-processors:
     sass:
         github: sass/sass

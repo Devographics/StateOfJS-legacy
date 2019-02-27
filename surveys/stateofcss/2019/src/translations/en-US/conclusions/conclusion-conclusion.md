@@ -13,4 +13,4 @@ Things might get shaken up again in 2019 though. While all is currently calm on 
 
 But for now, no need to panic. There's never been a better time to be a JavaScript developer than now, and we're willing to bet that 2019 will make that even clearer!
 
-<span class="conclusion__byline">– Sacha, Raphaël, and Michael</span>
+<span class="conclusion__byline">– Sacha and Raphaël</span>

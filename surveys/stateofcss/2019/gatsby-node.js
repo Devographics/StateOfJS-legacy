@@ -13,8 +13,16 @@ const resources = yaml.safeLoad(fs.readFileSync('./config/resources.yml', 'utf8'
 const guessPageTemplate = type => {
     let template
     switch (type) {
-        case 'features_usage':
-            template = 'modules/features/FeaturesUsage'
+        case 'features_intro':
+            template = 'modules/features/FeaturesIntro'
+            break
+
+        case 'features_results':
+            template = 'modules/features/FeaturesResults'
+            break
+
+        case 'features_conclusion':
+            template = 'modules/features/FeaturesConclusion'
             break
 
         case 'tools':
@@ -35,7 +43,10 @@ const getPageContext = page => {
     const context = omit(page, ['path', 'children', 'is_hidden'])
     context.basePath = page.path
 
-    return context
+    return {
+        ...context,
+        ...page.data
+    }
 }
 
 const createBlockPages = (page, context, createPage) => {
