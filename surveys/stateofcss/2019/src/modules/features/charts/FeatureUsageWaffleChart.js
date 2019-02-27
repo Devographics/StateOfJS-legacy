@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ResponsiveWaffle } from '@nivo/waffle'
+import theme from 'nivoTheme'
 
 const Cell = props => {
     return (
@@ -41,6 +42,7 @@ const FeatureUsageWaffleChart = ({ feature, keys }) => {
 
     return (
         <ResponsiveWaffle
+            theme={theme}
             columns={8}
             rows={12}
             padding={5}

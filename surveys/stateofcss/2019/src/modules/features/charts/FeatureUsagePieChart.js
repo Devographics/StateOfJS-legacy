@@ -2,10 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { patternLinesDef } from '@nivo/core'
 import { ResponsivePie } from '@nivo/pie'
+import theme from 'nivoTheme'
 
 const FeatureUsagePieChart = ({ feature }) => {
     return (
         <ResponsivePie
+            theme={theme}
             margin={{
                 top: 20,
                 right: 20,

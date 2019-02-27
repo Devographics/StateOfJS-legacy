@@ -51,7 +51,7 @@ const FeaturesScatterplotChart = ({ features }) => {
                         })
                     }
                 ]}
-                tooltip={d => <span>{d.featureId}</span>}
+                tooltip={d => <strong>{d.featureId}</strong>}
             />
         </div>
     )

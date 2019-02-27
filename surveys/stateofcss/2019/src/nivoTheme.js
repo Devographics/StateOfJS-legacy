@@ -88,9 +88,11 @@ export default {
     },
     tooltip: {
         container: {
-            fontSize: 13,
-            background: '#000',
-            color: '#ddd'
+            fontSize: 14,
+            background: '#ffffff',
+            color: colors.blue,
+            borderRadius: 0,
+            boxShadow: `0 5px 9px rgba(0, 0, 0, 0.2)`
         }
     },
     labels: {
