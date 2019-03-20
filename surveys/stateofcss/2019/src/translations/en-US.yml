@@ -12,6 +12,9 @@ translations:
     - key: page.features_overview.contextual_label
       t: ${section}
 
+    - key: page.demographics.label
+      t: Demographics
+
     - key: page.features_results
       t: ${section} Features Results
     - key: page.features_results.label

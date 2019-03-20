@@ -7,13 +7,19 @@ $grey-light: #e0e4e4;
 $blue: #3c52d1;
 $blue-dark: #273aa2;
 
+$teal: #9ac6c9;
+$pink: #ec2f95;
+
+$darkgrey: #445a5a;
+
 /*****************************************************************************\
   "functional" colors
 \*****************************************************************************/
-$bg-color: #ffffff;
+$bg-color: $grey-light;
 $bg-color-light: $grey-light;
 
-$border-color: $blue;
+$border-color: $teal;
+$hover-color: $pink;
 
 /*****************************************************************************\
   OLD colors
@@ -23,7 +29,7 @@ $blueLight: #8be7e7;
 $blue2: #49b7be; // mobile
 $blue-faded: #b3d8da;
 
-$pink: #ed387a;
+
 $pink-faded: #e0a4bc;
 
 $red: #fe6a6a;
@@ -41,7 +47,6 @@ $purple-faded: #7d7494;
 $grey2: #dadada;
 $grey3: #cecece;
 $mediumgrey: #788080;
-$darkgrey: #344c4c;
 $beige: #fffef0;
 
 $interest-dark: $blue;
@@ -58,8 +63,7 @@ $never-heard: $grey;
 
 $active-color: $blue;
 $secondary-color: $red;
-$hover-color: $red;
-$text-color: $blue;
+$text-color: $darkgrey;
 $text-color-dark: #8c8c8c;
 $text-color-inverted: $bg-color-light;
 $darker-text-color: $mediumgrey;

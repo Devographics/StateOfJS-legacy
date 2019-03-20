@@ -1,6 +1,6 @@
 .LanguageSwitcher {
     .pagetitle & {
-        border-right: 1px solid $dark-border-color;
+        border-right: $border;
         @include small-medium {
             display: none;
         }
@@ -57,7 +57,7 @@
         left: 50%;
         margin-left: -150px;
     }
-    border: 1px solid $border-color;
+    border: $border;
     background: $bg-color;
     padding: $spacing;
     &:after,
@@ -78,8 +78,8 @@
     }
     &:before {
         border-color: rgba(194, 225, 245, 0);
-        border-width: 11px;
-        margin-left: -11px;
+        border-width: 12px;
+        margin-left: -12px;
     }
     .LanguageSwitcher--bottom & {
         top: 130%;

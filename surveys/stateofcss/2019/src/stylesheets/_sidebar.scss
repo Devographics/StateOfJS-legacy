@@ -4,8 +4,8 @@
 }
 
 .Sidebar {
-    border-right: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
+    border-right: $border;
+    border-bottom: $border;
     @include small-medium {
         top: 0;
         bottom: 0;

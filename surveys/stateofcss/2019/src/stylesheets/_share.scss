@@ -84,7 +84,7 @@
     }
 
     .ShareSite & {
-        border-right: 1px solid $border-color;
+        border-right: $border;
         flex-grow: 1;
         text-align: center;
         padding: 22px $spacing/3;
@@ -129,8 +129,8 @@
 }
 
 .ShareSite {
-    border-top: 1px solid $border-color;
+    border-top: $border;
     display: flex;
     justify-content: space-evenly;
-    border-right: 1px solid $border-color;
+    border-right: $border;
 }

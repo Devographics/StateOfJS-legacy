@@ -6,8 +6,10 @@ $spacing: 20px;
     align-items: center;
 }
 
+$border: 2px dashed $border-color;
+
 @mixin border {
-    border: 1px solid $border-color;
+    border: $border;
 }
 
 @mixin border2 {

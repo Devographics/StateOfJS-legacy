@@ -1,6 +1,6 @@
 .pagetitle__wrapper {
-    border-top: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
+    border-top: $border;
+    border-bottom: $border;
 
     // Fixes overlap with <Tooltip />
     z-index: 0;
@@ -38,7 +38,7 @@
     white-space: nowrap;
     // flex-grow: 1;
     // flex-basis: 50%;
-    border-right: 1px solid $border-color;
+    border-right: $border;
     @include small-medium {
         font-size: $smaller-font;
         overflow: hidden;
@@ -55,7 +55,7 @@
 .pagination__middle {
     @include flex-center;
     span + & {
-        border-left: 1px solid $border-color;
+        border-left: $border;
     }
 }
 
@@ -95,7 +95,7 @@
     text-align: right;
     span + span + &,
     .pagetitle__wrapper--bottom span + & {
-        border-left: 1px solid $border-color;
+        border-left: $border;
     }
 }
 
@@ -104,9 +104,9 @@
         padding: 0 $spacing/2;
         height: 100%;
         @include flex-center;
-        border-right: 1px solid $border-color;
+        border-right: $border;
         span + & {
-            border-left: 1px solid $border-color;
+            border-left: $border;
         }
     }
     @include large {
