@@ -64,11 +64,27 @@ Intro
 
 */
 
-.Intro {
+.Intro, .introtext {
     font-size: $large-font;
     margin-bottom: $spacing * 2;
 }
 
+/*
+
+Coming Soon
+
+*/
+.ComingSoon{
+    margin-top: -$spacing;
+}
+.button--comingsoon{
+    &:hover{
+        border-color: $darkblue;
+        color: $darkblue;
+    }
+    cursor: default;
+    margin-bottom: $spacing;
+}
 /*
 
 Take Survey

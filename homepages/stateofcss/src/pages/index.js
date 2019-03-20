@@ -1,8 +1,8 @@
 import React from 'react'
-// import ResultsComingSoon from '../components/ResultsComingSoon'
+import ResultsComingSoon from '../components/ResultsComingSoon'
 import Share from '../components/Share'
 import Newsletter from '../components/Newsletter'
-import TakeSurvey from '../components/TakeSurvey'
+// import TakeSurvey from '../components/TakeSurvey'
 import About from '../components/About'
 import Footer from '../components/Footer'
 import Intro from '../components/Intro'
@@ -14,7 +14,8 @@ const Index = () => (
     <Layout>
         <div className="Content Content--Home Home">
             <Intro />
-            <TakeSurvey />
+            <ResultsComingSoon />
+            {/* <TakeSurvey /> */}
             <Share />
             <Newsletter />
             <About />
