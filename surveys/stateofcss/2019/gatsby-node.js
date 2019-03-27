@@ -18,18 +18,6 @@ const guessPageTemplate = type => {
             template = 'modules/features/Features'
             break
 
-        case 'features_intro':
-            template = 'modules/features/FeaturesIntro'
-            break
-
-        case 'features_results':
-            template = 'modules/features/FeaturesResults'
-            break
-
-        case 'features_conclusion':
-            template = 'modules/features/FeaturesConclusion'
-            break
-
         case 'tools':
             template = 'modules/tools/Tools'
             break

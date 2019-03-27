@@ -68,70 +68,33 @@
       next:
         id: shapes-and-graphics
         path: /features/shapes-and-graphics/
-        type: features_intro
+        type: features
         data:
           section: shapes-and-graphics
     - id: shapes-and-graphics
       path: /features/shapes-and-graphics/
-      type: features_intro
+      type: features
       data:
         section: shapes-and-graphics
       blocks:
         - id: overview
           path: /features/shapes-and-graphics/overview/
-      children:
-        - id: shapes-and-graphics-results
-          path: /features/shapes-and-graphics/results/
-          type: features_results
-          data:
-            section: shapes-and-graphics
-          blocks:
-            - id: css-shapes
-              path: /features/shapes-and-graphics/results/css-shapes/
-            - id: object-fit
-              path: /features/shapes-and-graphics/results/object-fit/
-            - id: clip-path
-              path: /features/shapes-and-graphics/results/clip-path/
-            - id: css-masks
-              path: /features/shapes-and-graphics/results/css-masks/
-            - id: blend-modes
-              path: /features/shapes-and-graphics/results/blend-modes/
-            - id: css-filter-effects
-              path: /features/shapes-and-graphics/results/css-filter-effects/
-          is_hidden: false
-          children: []
-          previous:
-            id: shapes-and-graphics
-            path: /features/shapes-and-graphics/
-            type: features_intro
-            data:
-              section: shapes-and-graphics
-          next:
-            id: shapes-and-graphics-conclusion
-            path: /features/shapes-and-graphics/conclusion/
-            type: features_conclusion
-            data:
-              section: shapes-and-graphics
-        - id: shapes-and-graphics-conclusion
+        - id: css-shapes
+          path: /features/shapes-and-graphics/css-shapes/
+        - id: object-fit
+          path: /features/shapes-and-graphics/object-fit/
+        - id: clip-path
+          path: /features/shapes-and-graphics/clip-path/
+        - id: css-masks
+          path: /features/shapes-and-graphics/css-masks/
+        - id: blend-modes
+          path: /features/shapes-and-graphics/blend-modes/
+        - id: css-filter-effects
+          path: /features/shapes-and-graphics/css-filter-effects/
+        - id: conclusion
           path: /features/shapes-and-graphics/conclusion/
-          type: features_conclusion
-          data:
-            section: shapes-and-graphics
-          is_hidden: false
-          children: []
-          previous:
-            id: shapes-and-graphics-results
-            path: /features/shapes-and-graphics/results/
-            type: features_results
-            data:
-              section: shapes-and-graphics
-          next:
-            id: interactions
-            path: /features/interactions/
-            type: features_intro
-            data:
-              section: interactions
       is_hidden: false
+      children: []
       previous:
         id: layout
         path: /features/layout/
@@ -139,285 +102,137 @@
         data:
           section: layout
       next:
-        id: shapes-and-graphics-results
-        path: /features/shapes-and-graphics/results/
-        type: features_results
+        id: interactions
+        path: /features/interactions/
+        type: features
         data:
-          section: shapes-and-graphics
+          section: interactions
     - id: interactions
       path: /features/interactions/
-      type: features_intro
+      type: features
       data:
         section: interactions
       blocks:
         - id: overview
           path: /features/interactions/overview/
-      children:
-        - id: interactions-results
-          path: /features/interactions/results/
-          type: features_results
-          data:
-            section: interactions
-          blocks:
-            - id: css-scroll-snap
-              path: /features/interactions/results/css-scroll-snap/
-            - id: overscroll-behavior
-              path: /features/interactions/results/overscroll-behavior/
-            - id: overflow-anchor
-              path: /features/interactions/results/overflow-anchor/
-          is_hidden: false
-          children: []
-          previous:
-            id: interactions
-            path: /features/interactions/
-            type: features_intro
-            data:
-              section: interactions
-          next:
-            id: interactions-conclusion
-            path: /features/interactions/conclusion/
-            type: features_conclusion
-            data:
-              section: interactions
-        - id: interactions-conclusion
+        - id: css-scroll-snap
+          path: /features/interactions/css-scroll-snap/
+        - id: overscroll-behavior
+          path: /features/interactions/overscroll-behavior/
+        - id: overflow-anchor
+          path: /features/interactions/overflow-anchor/
+        - id: conclusion
           path: /features/interactions/conclusion/
-          type: features_conclusion
-          data:
-            section: interactions
-          is_hidden: false
-          children: []
-          previous:
-            id: interactions-results
-            path: /features/interactions/results/
-            type: features_results
-            data:
-              section: interactions
-          next:
-            id: typography
-            path: /features/typography/
-            type: features_intro
-            data:
-              section: typography
       is_hidden: false
+      children: []
       previous:
-        id: shapes-and-graphics-conclusion
-        path: /features/shapes-and-graphics/conclusion/
-        type: features_conclusion
+        id: shapes-and-graphics
+        path: /features/shapes-and-graphics/
+        type: features
         data:
           section: shapes-and-graphics
       next:
-        id: interactions-results
-        path: /features/interactions/results/
-        type: features_results
+        id: typography
+        path: /features/typography/
+        type: features
         data:
-          section: interactions
+          section: typography
     - id: typography
       path: /features/typography/
-      type: features_intro
+      type: features
       data:
         section: typography
       blocks:
         - id: overview
           path: /features/typography/overview/
-      children:
-        - id: typography-results
-          path: /features/typography/results/
-          type: features_results
-          data:
-            section: typography
-          blocks:
-            - id: web-fonts-font-face
-              path: /features/typography/results/web-fonts-font-face/
-            - id: variable-fonts
-              path: /features/typography/results/variable-fonts/
-            - id: line-breaking-properties
-              path: /features/typography/results/line-breaking-properties/
-            - id: font-variant
-              path: /features/typography/results/font-variant/
-            - id: initial-letter
-              path: /features/typography/results/initial-letter/
-          is_hidden: false
-          children: []
-          previous:
-            id: typography
-            path: /features/typography/
-            type: features_intro
-            data:
-              section: typography
-          next:
-            id: typography-conclusion
-            path: /features/typography/conclusion/
-            type: features_conclusion
-            data:
-              section: typography
-        - id: typography-conclusion
+        - id: web-fonts-font-face
+          path: /features/typography/web-fonts-font-face/
+        - id: variable-fonts
+          path: /features/typography/variable-fonts/
+        - id: line-breaking-properties
+          path: /features/typography/line-breaking-properties/
+        - id: font-variant
+          path: /features/typography/font-variant/
+        - id: initial-letter
+          path: /features/typography/initial-letter/
+        - id: conclusion
           path: /features/typography/conclusion/
-          type: features_conclusion
-          data:
-            section: typography
-          is_hidden: false
-          children: []
-          previous:
-            id: typography-results
-            path: /features/typography/results/
-            type: features_results
-            data:
-              section: typography
-          next:
-            id: animations-and-transforms
-            path: /features/animations-and-transforms/
-            type: features_intro
-            data:
-              section: animations-and-transforms
       is_hidden: false
+      children: []
       previous:
-        id: interactions-conclusion
-        path: /features/interactions/conclusion/
-        type: features_conclusion
+        id: interactions
+        path: /features/interactions/
+        type: features
         data:
           section: interactions
       next:
-        id: typography-results
-        path: /features/typography/results/
-        type: features_results
+        id: animations-and-transforms
+        path: /features/animations-and-transforms/
+        type: features
         data:
-          section: typography
+          section: animations-and-transforms
     - id: animations-and-transforms
       path: /features/animations-and-transforms/
-      type: features_intro
+      type: features
       data:
         section: animations-and-transforms
       blocks:
         - id: overview
           path: /features/animations-and-transforms/overview/
-      children:
-        - id: animations-and-transforms-results
-          path: /features/animations-and-transforms/results/
-          type: features_results
-          data:
-            section: animations-and-transforms
-          blocks:
-            - id: css-transitions
-              path: /features/animations-and-transforms/results/css-transitions/
-            - id: css-transforms
-              path: /features/animations-and-transforms/results/css-transforms/
-            - id: css-animations
-              path: /features/animations-and-transforms/results/css-animations/
-          is_hidden: false
-          children: []
-          previous:
-            id: animations-and-transforms
-            path: /features/animations-and-transforms/
-            type: features_intro
-            data:
-              section: animations-and-transforms
-          next:
-            id: animations-and-transforms-conclusion
-            path: /features/animations-and-transforms/conclusion/
-            type: features_conclusion
-            data:
-              section: animations-and-transforms
-        - id: animations-and-transforms-conclusion
+        - id: css-transitions
+          path: /features/animations-and-transforms/css-transitions/
+        - id: css-transforms
+          path: /features/animations-and-transforms/css-transforms/
+        - id: css-animations
+          path: /features/animations-and-transforms/css-animations/
+        - id: conclusion
           path: /features/animations-and-transforms/conclusion/
-          type: features_conclusion
-          data:
-            section: animations-and-transforms
-          is_hidden: false
-          children: []
-          previous:
-            id: animations-and-transforms-results
-            path: /features/animations-and-transforms/results/
-            type: features_results
-            data:
-              section: animations-and-transforms
-          next:
-            id: other-features
-            path: /features/other-features/
-            type: features_intro
-            data:
-              section: other-features
       is_hidden: false
+      children: []
       previous:
-        id: typography-conclusion
-        path: /features/typography/conclusion/
-        type: features_conclusion
+        id: typography
+        path: /features/typography/
+        type: features
         data:
           section: typography
       next:
-        id: animations-and-transforms-results
-        path: /features/animations-and-transforms/results/
-        type: features_results
+        id: other-features
+        path: /features/other-features/
+        type: features
         data:
-          section: animations-and-transforms
+          section: other-features
     - id: other-features
       path: /features/other-features/
-      type: features_intro
+      type: features
       data:
         section: other-features
       blocks:
         - id: overview
           path: /features/other-features/overview/
-      children:
-        - id: other-features-results
-          path: /features/other-features/results/
-          type: features_results
-          data:
-            section: other-features
-          blocks:
-            - id: css-variables
-              path: /features/other-features/results/css-variables/
-            - id: support-queries
-              path: /features/other-features/results/support-queries/
-            - id: css-containment
-              path: /features/other-features/results/css-containment/
-            - id: will-change
-              path: /features/other-features/results/will-change/
-            - id: calc
-              path: /features/other-features/results/calc/
-          is_hidden: false
-          children: []
-          previous:
-            id: other-features
-            path: /features/other-features/
-            type: features_intro
-            data:
-              section: other-features
-          next:
-            id: other-features-conclusion
-            path: /features/other-features/conclusion/
-            type: features_conclusion
-            data:
-              section: other-features
-        - id: other-features-conclusion
+        - id: css-variables
+          path: /features/other-features/css-variables/
+        - id: support-queries
+          path: /features/other-features/support-queries/
+        - id: css-containment
+          path: /features/other-features/css-containment/
+        - id: will-change
+          path: /features/other-features/will-change/
+        - id: calc
+          path: /features/other-features/calc/
+        - id: conclusion
           path: /features/other-features/conclusion/
-          type: features_conclusion
-          data:
-            section: other-features
-          is_hidden: false
-          children: []
-          previous:
-            id: other-features-results
-            path: /features/other-features/results/
-            type: features_results
-            data:
-              section: other-features
-          next:
-            id: units-and-selectors
-            path: /units-and-selectors/
-            type: page
       is_hidden: false
+      children: []
       previous:
-        id: animations-and-transforms-conclusion
-        path: /features/animations-and-transforms/conclusion/
-        type: features_conclusion
+        id: animations-and-transforms
+        path: /features/animations-and-transforms/
+        type: features
         data:
           section: animations-and-transforms
       next:
-        id: other-features-results
-        path: /features/other-features/results/
-        type: features_results
-        data:
-          section: other-features
+        id: units-and-selectors
+        path: /units-and-selectors/
+        type: page
   is_hidden: false
   previous:
     id: demographics
@@ -435,9 +250,9 @@
   is_hidden: false
   children: []
   previous:
-    id: other-features-conclusion
-    path: /features/other-features/conclusion/
-    type: features_conclusion
+    id: other-features
+    path: /features/other-features/
+    type: features
     data:
       section: other-features
   next:
