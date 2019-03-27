@@ -20,28 +20,34 @@
   children:
       - id: layout
         path: /layout
-        type: features_intro
+        type: features
         data:
             section: layout
         blocks:
             - overview
-        children:
-            - id: layout-results
-              path: /results
-              type: features_results
-              data:
-                  section: layout
-              blocks:
-                  - css-grid
-                  - flexbox
-                  - css-multi-column
-                  - css-writing-modes
-                  - css-exclusions
-            - id: layout-conclusion
-              path: /conclusion
-              type: features_conclusion
-              data:
-                  section: layout
+            - css-grid
+            - flexbox
+            - css-multi-column
+            - css-writing-modes
+            - css-exclusions
+            - conclusion
+        # children:
+        #     - id: layout-results
+        #       path: /results
+        #       type: features_results
+        #       data:
+        #           section: layout
+        #       blocks:
+        #           - css-grid
+        #           - flexbox
+        #           - css-multi-column
+        #           - css-writing-modes
+        #           - css-exclusions
+        #     - id: layout-conclusion
+        #       path: /conclusion
+        #       type: features_conclusion
+        #       data:
+        #           section: layout
 
       - id: shapes-and-graphics
         path: /shapes-and-graphics

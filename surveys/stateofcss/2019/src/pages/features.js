@@ -6,6 +6,8 @@ const FeaturesPage = ({ data }) => (
     <>
         <PageHeader showIntro={false} />
         <TextBlock text="@todo" />
+        <TextBlock text="@todo top 20 most used features" />
+        <TextBlock text="@todo top 20 least used features" />
     </>
 )
 

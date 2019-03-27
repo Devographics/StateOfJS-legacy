@@ -13,11 +13,12 @@ const NavItem = ({ page, currentPath, closeSidebar, level = 0 }) => {
 
     return (
         <>
+            <div className={`Nav__Page Nav__Page--lvl-${level}`}>
             <PageLink
-                className={`Nav__Page Nav__Page--lvl-${level}${
-                    isActive ? ' Nav__Page--active' : ''
+                className={`Nav__Page__Link ${
+                    isActive ? ' Nav__Page__Link--active' : ''
                 }`}
-                activeClassName="Nav__Page--active"
+                activeClassName="Nav__Page__Link--active"
                 onClick={closeSidebar}
                 page={page}
             >
@@ -36,6 +37,7 @@ const NavItem = ({ page, currentPath, closeSidebar, level = 0 }) => {
                     ))}
                 </div>
             )}
+            </div>
         </>
     )
 }

@@ -4,6 +4,17 @@ section: introduction
 locale: en-US
 ---
  
+Web development is kinda like a big family. HTML is the no-nonsense, reliable big sister, and JavaScript is the flashy, rebellious teenager going through a new phase every year and telling you you're too old to understand.
+
+In that analogy CSS would be the well-behaved, studious kid who always thinks about everybody else and never makes a rash decision. 
+
+But don't take CSS for granted: despite being over 20 years old, there's signs that CSS might soon experience the same tumultuous teenage years that JavaScript just went through. Flexbox! Grid! CSS-in-JS! CSS is finally dyeing its hair pink and getting a tattoo just like it's always wanted. 
+
+Parenting books won't help with this one, but don't worry. We've surveyed over 10,000 developers to ask them which CSS features they use, which tools they've adopted, and much more. 
+
+
+ //
+
 <span class="first-line"><span class="first-letter">CSS</span> is always changing.</span> New features, new approachs, new pre-/post-prrocessors… It's part of the fun, but it can also feel overwhelming sometimes. 
 
 That's where the State of CSS survey comes in: this year, we surveyed over 20,000 developers to figure out what they're using, what they're happy with, and what they want to learn. And the result is a unique collection of stats and insights that will hopefully help you make your own way through the CSS ecosystem & features. 

@@ -47,15 +47,17 @@ const Pagination = ({ position, toggleSidebar }) => {
                     {previous}
                     <div className="pagination__middle">
                         {position === 'top' && (
-                            <span className="PageTitle__Sidebar__Toggle">
-                                <button className="Sidebar__Toggle" onClick={toggleSidebar}>
-                                    <span>
-                                        <Hamburger />
-                                    </span>
-                                </button>
-                            </span>
+                            <>
+                                <span className="PageTitle__Sidebar__Toggle">
+                                    <button className="Sidebar__Toggle" onClick={toggleSidebar}>
+                                        <span>
+                                            <Hamburger />
+                                        </span>
+                                    </button>
+                                </span>
+                                <LanguageSwitcher />
+                            </>
                         )}
-                        <LanguageSwitcher />
                     </div>
                     {next}
                 </div>

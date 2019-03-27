@@ -6,8 +6,9 @@ import PageHeader from 'core/pages/PageHeader'
 import FeaturesOverviewBlock from './blocks/FeaturesOverviewBlock'
 import { mergeFeaturesResources } from './featuresHelpers'
 import FeatureBlock from './blocks/FeatureBlock'
+import FeaturesScatterplotBlock from './blocks/FeaturesScatterplotBlock'
 
-const FeaturesIntroTemplate = ({ data }) => {
+const FeaturesTemplate = ({ data }) => {
     const context = useContext(PageContext)
     const { translate } = useContext(I18nContext)
 
@@ -15,7 +16,6 @@ const FeaturesIntroTemplate = ({ data }) => {
         data.features.aggregations,
         data.features.fields.resources
     )
-    console.log(context)
 
     return (
         <>
@@ -29,21 +29,23 @@ const FeaturesIntroTemplate = ({ data }) => {
                         : `[missing] ${context.section} introduction.`
                 }
             />
+            <FeaturesScatterplotBlock features={features} />
+
             {/* <FeaturesOverviewBlock features={features} /> */}
 
             {context.blocks.map(block => {
                 const feature = features.find(a => a.id === block.id)
-
-                return <FeatureBlock key={block.id} block={block} feature={feature} />
+                return feature && <FeatureBlock key={block.id} block={block} feature={feature} />
             })}
+
         </>
     )
 }
 
-export default FeaturesIntroTemplate
+export default FeaturesTemplate
 
 export const query = graphql`
-    query featuresOverviewByLocale($section: String!, $locale: String!) {
+    query featuresOverviewByLocale2($section: String!, $locale: String!) {
         introduction: markdownRemark(
             frontmatter: {
                 type: { eq: "introduction" }

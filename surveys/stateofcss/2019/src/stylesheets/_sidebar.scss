@@ -71,7 +71,7 @@
     }
 }
 
-.Nav__Page {
+.Nav__Page__Link {
     display: block;
     white-space: nowrap;
     font-size: $medium-font;
@@ -80,32 +80,35 @@
 
 .Nav__Page--lvl-1,
 .Nav__Page--lvl-2 {
-    font-size: $smallish-font;
-    @include font-regular;
-    &,
-    &:link,
-    &:visited {
-        color: $text-color;
+    .Nav__Page__Link{
+        font-size: $smallish-font;
+        @include font-regular;
+        &,
+        &:link,
+        &:visited {
+            color: $text-color;
+        }
     }
 }
 
-.Nav__Page--active {
+.Nav__Page__Link--active {
     @include font-bold;
 }
 
-.Nav__Page--lvl-1 {
+.Nav__Page__Link--lvl-1 {
     &:after {
         content: ' {…}';
     }
 }
 
-.Nav__Page--lvl-1.Nav__Page--active {
+.Nav__Page__Link--lvl-1.Nav__Page__Link--active {
     &:after {
         content: ' {';
     }
 }
 
 .Nav__SubPages {
+    padding-left: $spacing;
     margin-top: $spacing * .5;
 }
 

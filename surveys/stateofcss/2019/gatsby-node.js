@@ -13,6 +13,11 @@ const resources = yaml.safeLoad(fs.readFileSync('./config/resources.yml', 'utf8'
 const guessPageTemplate = type => {
     let template
     switch (type) {
+
+        case 'features':
+            template = 'modules/features/Features'
+            break
+
         case 'features_intro':
             template = 'modules/features/FeaturesIntro'
             break

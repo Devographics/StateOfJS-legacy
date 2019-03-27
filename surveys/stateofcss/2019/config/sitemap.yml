@@ -41,73 +41,36 @@
   children:
     - id: layout
       path: /features/layout/
-      type: features_intro
+      type: features
       data:
         section: layout
       blocks:
         - id: overview
           path: /features/layout/overview/
-      children:
-        - id: layout-results
-          path: /features/layout/results/
-          type: features_results
-          data:
-            section: layout
-          blocks:
-            - id: css-grid
-              path: /features/layout/results/css-grid/
-            - id: flexbox
-              path: /features/layout/results/flexbox/
-            - id: css-multi-column
-              path: /features/layout/results/css-multi-column/
-            - id: css-writing-modes
-              path: /features/layout/results/css-writing-modes/
-            - id: css-exclusions
-              path: /features/layout/results/css-exclusions/
-          is_hidden: false
-          children: []
-          previous:
-            id: layout
-            path: /features/layout/
-            type: features_intro
-            data:
-              section: layout
-          next:
-            id: layout-conclusion
-            path: /features/layout/conclusion/
-            type: features_conclusion
-            data:
-              section: layout
-        - id: layout-conclusion
+        - id: css-grid
+          path: /features/layout/css-grid/
+        - id: flexbox
+          path: /features/layout/flexbox/
+        - id: css-multi-column
+          path: /features/layout/css-multi-column/
+        - id: css-writing-modes
+          path: /features/layout/css-writing-modes/
+        - id: css-exclusions
+          path: /features/layout/css-exclusions/
+        - id: conclusion
           path: /features/layout/conclusion/
-          type: features_conclusion
-          data:
-            section: layout
-          is_hidden: false
-          children: []
-          previous:
-            id: layout-results
-            path: /features/layout/results/
-            type: features_results
-            data:
-              section: layout
-          next:
-            id: shapes-and-graphics
-            path: /features/shapes-and-graphics/
-            type: features_intro
-            data:
-              section: shapes-and-graphics
       is_hidden: false
+      children: []
       previous:
         id: features
         path: /features/
         type: page
       next:
-        id: layout-results
-        path: /features/layout/results/
-        type: features_results
+        id: shapes-and-graphics
+        path: /features/shapes-and-graphics/
+        type: features_intro
         data:
-          section: layout
+          section: shapes-and-graphics
     - id: shapes-and-graphics
       path: /features/shapes-and-graphics/
       type: features_intro
@@ -170,9 +133,9 @@
               section: interactions
       is_hidden: false
       previous:
-        id: layout-conclusion
-        path: /features/layout/conclusion/
-        type: features_conclusion
+        id: layout
+        path: /features/layout/
+        type: features
         data:
           section: layout
       next:
@@ -463,7 +426,7 @@
   next:
     id: layout
     path: /features/layout/
-    type: features_intro
+    type: features
     data:
       section: layout
 - id: units-and-selectors
