@@ -29,6 +29,12 @@
       path: /demographics/years-of-experience/
     - id: company-size
       path: /demographics/company-size/
+    - id: job-titles
+      path: /demographics/job-titles/
+    - id: javascript-proficiency
+      path: /demographics/javascript-proficiency/
+    - id: backend-proficiency
+      path: /demographics/backend-proficiency/
   is_hidden: false
   children: []
   next:

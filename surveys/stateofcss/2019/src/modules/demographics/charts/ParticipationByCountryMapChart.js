@@ -4,14 +4,13 @@ import { scaleLinear } from 'd3-scale'
 import withPropsOnChange from 'recompose/withPropsOnChange'
 import countries from 'data/geo/world_countries'
 import theme from 'nivoTheme'
-import { colors } from '../../../constants'
+import { blueRange as colorRange } from '../../../constants'
 import ResponsiveGeoMap from 'core/charts/geo/ResponsiveGeoMapCanvas'
 import ParticipationByCountryMapChartTooltip from './ParticipationByCountryMapChartTooltip'
 
 const legendWidth = 10
 const legendHeight = 100
 
-const colorRange = [colors.redLight, colors.red, colors.redDark, colors.redDarker]
 const colorDomain = [0, 2, 4, 24]
 const colorScale = scaleLinear()
     .domain(colorDomain)
@@ -35,10 +34,10 @@ const renderLegend = (ctx, props) => {
     ctx.textBaseline = 'middle'
 
     const gradient = ctx.createLinearGradient(0, 0, 0, legendHeight)
-    gradient.addColorStop(0, colors.redDarker)
-    gradient.addColorStop(0.33, colors.redDark)
-    gradient.addColorStop(0.66, colors.red)
-    gradient.addColorStop(1, colors.redLight)
+    gradient.addColorStop(0, colorRange[0])
+    gradient.addColorStop(0.33, colorRange[1])
+    gradient.addColorStop(0.66, colorRange[2])
+    gradient.addColorStop(1, colorRange[3])
 
     ctx.fillStyle = gradient
     ctx.strokeStyle = '#000000'

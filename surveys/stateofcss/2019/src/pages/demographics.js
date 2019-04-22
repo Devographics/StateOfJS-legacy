@@ -10,6 +10,9 @@ import DemographicsSalaryBlock from 'modules/demographics/blocks/DemographicsSal
 import SalaryPerCountryBlock from 'modules/demographics/blocks/SalaryPerCountryBlock'
 import DemographicsYearsOfExperienceBlock from 'modules/demographics/blocks/DemographicsYearsOfExperienceBlock'
 import DemographicsCompanySizeBlock from 'modules/demographics/blocks/DemographicsCompanySizeBlock'
+import JobTitlesBlock from 'modules/demographics/blocks/JobTitlesBlock'
+import JavaScriptProficiencyBlock from 'modules/demographics/blocks/JavaScriptProficiencyBlock'
+import BackEndProficiencyBlock from 'modules/demographics/blocks/BackEndProficiencyBlock'
 
 const Demographics = ({ data }) => {
     const participationData = data.stats.participation.find(s => s.survey === '2018').by_country
@@ -33,6 +36,9 @@ const Demographics = ({ data }) => {
             <DemographicsCompanySizeBlock data={data.stats.company_size} chartId="company-size" />
             <SourceBreakdownBlock data={sourceData} chartId="source-breakdown" />
             <GenderBreakdownBlock data={genderData} chartId="gender-breakdown" />
+            <JobTitlesBlock data={data.stats.salary} chartId="job-titles" />
+            <JavaScriptProficiencyBlock data={data.stats.salary} chartId="javascript-proficiency" />
+            <BackEndProficiencyBlock data={data.stats.salary} chartId="backend-proficiency" />
         </>
     )
 }

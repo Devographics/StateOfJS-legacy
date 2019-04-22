@@ -8,9 +8,10 @@ $blue: #3c52d1;
 $blue-dark: #273aa2;
 
 $teal: #9ac6c9;
+$teal-dark: #445a5a;
+
 $pink: #ec2f95;
 
-$darkgrey: #445a5a;
 
 /*****************************************************************************\
   "functional" colors
@@ -63,7 +64,7 @@ $never-heard: $grey;
 
 $active-color: $blue;
 $secondary-color: $red;
-$text-color: $darkgrey;
+$text-color: $teal-dark;
 $text-color-dark: #8c8c8c;
 $text-color-inverted: $bg-color-light;
 $darker-text-color: $mediumgrey;

@@ -66,7 +66,7 @@ export default class DemographicsVerticalBarChart extends Component {
                             indexBy="range"
                             data={chartData}
                             labelFormat={d => `${d}%`}
-                            labelTextColor="#111"
+                            // labelTextColor="#111"
                             enableGridX={false}
                             enableGridY={true}
                             gridYValues={[0, 5, 10, 15, 20, 25, 30]}

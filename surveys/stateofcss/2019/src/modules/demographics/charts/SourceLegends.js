@@ -7,7 +7,7 @@ import { sourceNameToTranslationKey } from 'core/i18n/translation-key-getters'
 const legends = translate =>
     Object.keys(theme.sourceColors).map(source => ({
         id: source,
-        label: translate(sourceNameToTranslationKey(source)),
+        label: source === 'other_unknown' ? translate(sourceNameToTranslationKey(source)) : source,
         color: theme.sourceColors[source]
     }))
 

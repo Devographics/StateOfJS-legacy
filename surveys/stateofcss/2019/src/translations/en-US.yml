@@ -476,6 +476,12 @@ translations:
       t: Source Breakdown
     - key: block.description.gender-breakdown
       t: Gender breakdown.
+    - key: block.title.job-titles
+      t: Job Titles
+    - key: block.title.javascript-proficiency
+      t: JavaScript Proficiency
+    - key: block.title.backend-proficiency
+      t: Back-end Proficiency
     - key: block.title.css-grid
       t: CSS Grid Layout
     - key: block.title.flexbox
@@ -889,3 +895,17 @@ translations:
     # meta
     - key: meta.description
       t: Discover the most popular JavaScript technologies of the year.
+
+    # sources
+    - key: sources.other_unknown
+      t: Other/Unknown
+
+    # genders
+    - key: genders.female
+      t: Female
+    - key: genders.male
+      t: Male
+    - key: genders.non_binary__third_gender
+      t: Non-Binary/Third Gender
+    - key: genders.other
+      t: Other

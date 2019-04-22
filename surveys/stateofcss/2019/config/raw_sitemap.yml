@@ -13,6 +13,9 @@
       - salary-per-country
       - years-of-experience
       - company-size
+      - job-titles
+      - javascript-proficiency
+      - backend-proficiency
 
 - id: features
   path: /features

@@ -1,39 +1,59 @@
-export const colors = {
+export let colors = {
     grey: '#d9dedf',
     greyLight: '#e0e4e4',
-
-    blue: '#3c52d1',
-
-    // old colors
-    purpleLight: '#b4addc',
-    purple: '#9688e4',
-    purpleDark: '#786bc3',
-    otherPurple: '#4500EE',
-
-    yellowLight: '#fffec7',
-    yellow: '#fbf34c',
-    yellowDark: '#d2b924',
-
     greyDark: '#aeaeae',
-    warmGrey: '#e4d6d9',
 
-    redLighter: '#fbcaca',
-    redLight: '#f89f9f',
+    blueLighter: '#B2BBEE',
+    blueLight: '#808EE1',
+    blue: '#3c52d1',
+    blueDark: '#273aa2',
+
+    pinkLightest: '#D3BBF2',
+    pinkLighter: '#D68DF0',
+    pinkLight: '#EC75CB',
+    pink: '#ec2f95',
+
+    teal: '#9ac6c9',
+    tealDark: '#445a5a',
+
+    // other colors
+    purple: '#9688e4',
     red: '#FE6A6A',
-    redDark: '#ca4040',
-    redDarker: '#a22528',
+    yellow: '#fbf34c',
+    aqua: '#1ea0f2',
 
-    blueDark: '#008888',
-    blueLight: '#8be7e7'
+    // // old colors
+    // purpleLight: '#b4addc',
+    // purpleDark: '#786bc3',
+    // otherPurple: '#4500EE',
+
+    // yellowLight: '#fffec7',
+    // yellowDark: '#d2b924',
+
+    // warmGrey: '#e4d6d9',
+
+    // redLighter: '#fbcaca',
+    // redLight: '#f89f9f',
+    // redDark: '#ca4040',
+    // redDarker: '#a22528',
+
+    // blueDark: '#008888',
+    // blueLight: '#8be7e7'
 }
 
 export const colorRange = [
-    colors.red,
-    colors.redLight,
+    colors.blueDark,
     colors.blue,
     colors.blueLight,
-    colors.greyLight
+    colors.blueLighter,
+    colors.pinkLightest,
+    colors.pinkLighter,
+    colors.pinkLight,
+    colors.pink
 ]
+
+export const pinkRange = [colors.pinkLightest, colors.pinkLighter, colors.pinkLight, colors.pink]
+export const blueRange = [colors.blueLighter, colors.blueLight, colors.blue, colors.blueDark]
 
 // export const chordScale = [
 //     colors.blue,

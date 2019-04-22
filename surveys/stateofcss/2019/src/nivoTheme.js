@@ -1,39 +1,33 @@
-import { colors } from './constants'
+import { colors, colorRange } from './constants'
 
 export default {
     name: 'state_of_css_2019',
-    background: '#ffffff',
+    // background: '#ffffff',
     opinionColors: {
-        would_use: colors.red,
-        would_not_use: colors.redLight,
+        would_use: colors.pink,
+        would_not_use: colors.pinkLight,
         interested: colors.blue,
-        not_interested: colors.blueLight,
+        not_interested: colors.blueDark,
         never_heard: colors.greyLight
     },
-    opinionScaleColors: [
-        colors.red,
-        colors.redLight,
-        colors.greyLight,
-        colors.blueLight,
-        colors.blue
-    ],
-    salaryColors: ['#8b8de8', '#b3b5e6', '#dedfec', '#e4d6d9', '#dc9eaa', '#e28194', '#ea2149'],
+    opinionScaleColors: colorRange,
+    salaryColors: colorRange,
     sourceColors: {
-        Email: colors.purple,
-        Twitter: colors.blue,
+        Email: colors.teal,
+        Twitter: colors.aqua,
         Reddit: colors.red,
         Slack: 'rgb(110, 93, 133)',
         'JavaScript Weekly': colors.yellow,
         'Hacker News': 'rgb(240, 128, 72)',
         Medium: '#48A57F',
         Facebook: 'rgb(99, 130, 197)',
-        'Other/Unknown': colors.greyLight
+        'Other/Unknown': colors.greyDark
     },
     genderColors: {
-        female: colors.blue,
-        male: colors.red,
+        female: colors.blueLight,
+        male: colors.teal,
         'non-binary/ third gender': colors.yellow,
-        other: colors.greyLight
+        other: colors.greyDark
     },
     reasonsColors: {
         like: colors.blue,
@@ -100,7 +94,7 @@ export default {
             fill: '#ddd',
             fontSize: 12,
             fontWeight: 500,
-            fontFamily: `'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif`
+            // fontFamily: `'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif`
         }
     },
     dots: {
