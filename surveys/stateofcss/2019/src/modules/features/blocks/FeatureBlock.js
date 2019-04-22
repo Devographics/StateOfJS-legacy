@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Block from 'core/blocks/Block'
 import { PageContext } from 'core/pages/pageContext'
 import { I18nContext } from 'core/i18n/i18nContext'
-import FeatureUsagePieChart from '../charts/FeatureUsagePieChart'
+import FeatureUsageWaffleChart from '../charts/FeatureUsageWaffleChart'
 
 const FeatureBlock = ({ block, feature }) => {
     const context = useContext(PageContext)
@@ -28,7 +28,7 @@ const FeatureBlock = ({ block, feature }) => {
                 </div>
                 <div>
                     <div style={{ height: 260 }}>
-                        <FeatureUsagePieChart feature={feature} />
+                        <FeatureUsageWaffleChart feature={feature} keys={['used_it', 'know_not_used', 'never_heard_not_sure']}/>
                     </div>
                 </div>
                 <div className="Feature__Support">browser support:</div>
