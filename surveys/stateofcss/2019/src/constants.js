@@ -195,3 +195,6 @@ export const barChartProps = {
         format: '.2s'
     }
 }
+
+
+export const fontFamily = `'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif`

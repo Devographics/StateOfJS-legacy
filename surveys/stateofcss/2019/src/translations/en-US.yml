@@ -33,17 +33,17 @@ translations:
       t: CSS Features
     - key: page.features.label
       t: CSS Features
-    - key: features.layout
+    - key: page.layout
       t: Layout
-    - key: features.shapes-and-graphics
+    - key: page.shapes-and-graphics
       t: Shapes & Graphics
-    - key: features.interactions
+    - key: page.interactions
       t: Interactions
-    - key: features.typography
+    - key: page.typography
       t: Typography
-    - key: features.animations-and-transforms
+    - key: page.animations-and-transforms
       t: Animations & Transforms
-    - key: features.other-features
+    - key: page.other-features
       t: Other
     - key: page.units-and-selectors
       t: Units & Selectors
@@ -482,6 +482,10 @@ translations:
       t: JavaScript Proficiency
     - key: block.title.backend-proficiency
       t: Back-end Proficiency
+
+    - key: block.title.features-overview
+      t: Overview
+
     - key: block.title.css-grid
       t: CSS Grid Layout
     - key: block.title.flexbox
@@ -492,6 +496,7 @@ translations:
       t: CSS Writing Modes
     - key: block.title.css-exclusions
       t: CSS Exclusions
+
     - key: block.title.css-shapes
       t: CSS Shapes
     - key: block.title.object-fit

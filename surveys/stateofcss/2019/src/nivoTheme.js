@@ -1,4 +1,4 @@
-import { colors, colorRange } from './constants'
+import { colors, colorRange, fontFamily } from './constants'
 
 export default {
     name: 'state_of_css_2019',
@@ -94,7 +94,7 @@ export default {
             fill: '#ddd',
             fontSize: 12,
             fontWeight: 500,
-            // fontFamily: `'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif`
+            fontFamily,
         }
     },
     dots: {

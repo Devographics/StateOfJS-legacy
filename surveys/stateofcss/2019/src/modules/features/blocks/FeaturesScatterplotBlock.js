@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import Block from 'core/blocks/Block'
 import FeaturesScatterplotChart from '../charts/FeaturesScatterplotChart'
 
-const FeaturesScatterplotBlock = ({ features }) => {
+const FeaturesScatterplotBlock = ({ id, features }) => {
     return (
-        <Block id="scatterplot" showDescription={false}>
+        <Block id={id} showDescription={false}>
             <FeaturesScatterplotChart features={features} />
         </Block>
     )

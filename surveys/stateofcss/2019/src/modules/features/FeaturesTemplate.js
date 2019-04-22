@@ -20,16 +20,14 @@ const FeaturesTemplate = ({ data }) => {
     return (
         <>
             <PageHeader
-                title={translate('page.features_intro', {
-                    values: { section: translate(`features.${context.section}`) }
-                })}
+                title={translate(`page.${context.section}`)}
                 introduction={
                     data.introduction !== null
                         ? data.introduction.html
                         : `[missing] ${context.section} introduction.`
                 }
             />
-            <FeaturesScatterplotBlock features={features} />
+            <FeaturesScatterplotBlock id="features-overview" features={features} />
 
             {/* <FeaturesOverviewBlock features={features} /> */}
 
