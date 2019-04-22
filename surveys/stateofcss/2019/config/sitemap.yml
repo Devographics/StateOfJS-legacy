@@ -253,6 +253,23 @@
 - id: units-and-selectors
   path: /units-and-selectors/
   type: page
+  blocks:
+    - id: units
+      path: /units-and-selectors/units/
+    - id: pseudo-elements
+      path: /units-and-selectors/pseudo-elements/
+    - id: combinators
+      path: /units-and-selectors/combinators/
+    - id: tree-document-structure
+      path: /units-and-selectors/tree-document-structure/
+    - id: attributes
+      path: /units-and-selectors/attributes/
+    - id: links-urls
+      path: /units-and-selectors/links-urls/
+    - id: interaction
+      path: /units-and-selectors/interaction/
+    - id: form-controls
+      path: /units-and-selectors/form-controls/
   is_hidden: false
   children: []
   previous:

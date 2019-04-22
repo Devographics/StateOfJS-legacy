@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 import { ResponsiveWaffle } from '@nivo/waffle'
 import theme from 'nivoTheme'
+import { I18nContext } from 'core/i18n/i18nContext'
 
 const Cell = props => {
     return (
@@ -18,26 +19,16 @@ const Cell = props => {
     )
 }
 
-const FeatureUsageWaffleChart = ({ feature, keys }) => {
-    const data = [
-        {
-            id: 'used_it',
-            label: 'used_it',
-            value: feature.usage.used_it
-        },
-        {
-            id: 'know_not_used',
-            label: 'know_not_used',
-            value: feature.usage.know_not_used
-        },
-        {
-            id: 'never_heard_not_sure',
-            label: 'never_heard_not_sure',
-            value: feature.usage.never_heard_not_sure
-        }
-    ].map(d => ({
-        ...d,
-        value: keys.includes(d.id) ? d.value : 0
+const defaultKeys = ['used_it', 'know_not_used', 'never_heard_not_sure']
+
+const FeatureUsageWaffleChart = ({ feature, keys = defaultKeys }) => {
+
+    const { translate } = useContext(I18nContext)
+
+    const data = keys.map(key => ({
+        id: key,
+        label: translate(`features.usage.${key}`),
+        value: feature.usage[key] || 0
     }))
 
     return (

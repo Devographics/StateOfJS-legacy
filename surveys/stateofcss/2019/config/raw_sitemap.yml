@@ -105,6 +105,15 @@
 - id: units-and-selectors
   path: /units-and-selectors
   type: page
+  blocks: 
+    - units
+    - pseudo-elements
+    - combinators
+    - tree-document-structure
+    - attributes
+    - links-urls
+    - interaction
+    - form-controls
 
 - id: tools-and-methodology
   path: /tools-and-methodology

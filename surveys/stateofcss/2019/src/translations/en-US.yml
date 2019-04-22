@@ -674,6 +674,23 @@ translations:
     - key: block.description.opinion-survey_too_long
       t: This survey is too damn long!
 
+    - key: block.title.units
+      t: Units
+    - key: block.title.pseudo-elements
+      t: Pseudo-Elements
+    - key: block.title.combinators
+      t: Combinators
+    - key: block.title.tree-document-structure
+      t: Tree & Document Structure
+    - key: block.title.attributes
+      t: Attributes
+    - key: block.title.links-urls
+      t: Link & URLs
+    - key: block.title.interaction
+      t: Interaction
+    - key: block.title.form-controls
+      t: Form Controls
+
     # reasons
     - key: reason.elegant_programming_style_patterns.long
       t: ⚙️ Elegant programming style & patterns

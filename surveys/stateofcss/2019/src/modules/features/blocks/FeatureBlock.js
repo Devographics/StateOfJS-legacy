@@ -28,7 +28,7 @@ const FeatureBlock = ({ block, feature }) => {
                 </div>
                 <div>
                     <div style={{ height: 260 }}>
-                        <FeatureUsageWaffleChart feature={feature} keys={['used_it', 'know_not_used', 'never_heard_not_sure']}/>
+                        <FeatureUsageWaffleChart feature={feature}/>
                     </div>
                 </div>
                 <div className="Feature__Support">browser support:</div>
