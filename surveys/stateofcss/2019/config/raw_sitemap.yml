@@ -105,15 +105,15 @@
 - id: units-and-selectors
   path: /units-and-selectors
   type: page
-  blocks: 
-    - units
-    - pseudo-elements
-    - combinators
-    - tree-document-structure
-    - attributes
-    - links-urls
-    - interaction
-    - form-controls
+  blocks:
+      - units
+      - pseudo-elements
+      - combinators
+      - tree-document-structure
+      - attributes
+      - links-urls
+      - interaction
+      - form-controls
 
 - id: tools-and-methodology
   path: /tools-and-methodology
@@ -147,29 +147,58 @@
       - id: methodologies
         path: /methodologies
         type: tools
-        blocks: []
+        blocks:
+            - bem
+            - atomic-css
+            - oocss
+            - smacss
+            - it-css
 
       - id: css-in-js
         path: /css-in-js
         type: tools
-        blocks: []
+        blocks:
+            - styled-components
+            - glamor
+            - aphrodite
+            - jss
+            - styled-jsx
+            - radium
+            - emotion
+            - css-modules
 
       - id: other-tools
         path: /other-tools
-        type: tools
-        blocks: []
+        type: page
 
 - id: environments
   path: /environments
   type: page
+  blocks:
+    - browsers
+    - form-factors
+    - print-styles
+    - email-styles
 
 - id: resources
   path: /resources
   type: page
+  blocks:
+    - blogs-magazines
+    - sites-courses
+    - podcasts
 
 - id: opinions
   path: /opinions
   type: page
+  blocks:
+    - easy-to-learn
+    - evolving-too-slowly
+    - utility-classes
+    - selector-nesting
+    - programming-language
+    - enjoy-css
+    - missing-features
 
 - id: conclusion
   path: /conclusion

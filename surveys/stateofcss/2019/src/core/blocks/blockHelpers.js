@@ -2,6 +2,7 @@ import removeMarkdown from 'remove-markdown'
 import { getTranslationValuesFromContext, getPageLabel } from '../pages/pageHelpers'
 
 export const getBlockTitle = (id, context, translate, { format = 'short', values = {} } = {}) => {
+
     let blockTitle = translate(`block.title.${id}`, {
         values: {
             ...getTranslationValuesFromContext(context, translate),

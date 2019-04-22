@@ -6,6 +6,7 @@ import ChartContainer from 'core/charts/ChartContainer'
 // import { PageContext } from 'core/pages/pageContext'
 import { I18nContext } from 'core/i18n/i18nContext'
 import { getToolDescription } from '../tools_helpers'
+import ToolOpinionsChart from '../charts/ToolOpinionsChart'
 
 const ToolOpinionBlock = ({ block, buckets, resources }) => {
     // const context = useContext(PageContext)
@@ -15,6 +16,7 @@ const ToolOpinionBlock = ({ block, buckets, resources }) => {
         <Block id={block.id} showDescription={false}>
             <TextBlock text={getToolDescription(block, resources, translate)} />
             <ChartContainer>
+                <ToolOpinionsChart/>
                 {buckets.map(bucket => (
                     <div key={bucket.id}>
                         {bucket.id}: <strong>{bucket.count}</strong>

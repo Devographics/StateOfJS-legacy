@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import TextBlock from '../core/blocks/TextBlock'
 import PageHeader from '../core/pages/PageHeader'
+import { PageContext } from 'core/pages/pageContext'
 
-const ResourcesPage = ({ data }) => (
+const ResourcesPage = ({ data }) => {
+    const context = useContext(PageContext)
+
+    return (
     <>
         <PageHeader showIntro={false} />
-        <TextBlock text="@todo" />
+        {context.blocks.map(block => (
+                <TextBlock key={block.id} text={`@todo ${block.id}`} />
+            ))}
     </>
-)
+)}
 
 export default ResourcesPage

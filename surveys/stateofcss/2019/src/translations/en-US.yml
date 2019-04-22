@@ -691,6 +691,38 @@ translations:
     - key: block.title.form-controls
       t: Form Controls
 
+    # tools blocks (do not translate)
+    - key: block.title.sass
+      t: Sass
+    - key: block.title.less
+      t: Less
+    - key: block.title.postcss
+      t: PostCSS
+    - key: block.title.stylus
+      t: Stylus
+    - key: block.title.bootstrap
+      t: Bootstrap
+    - key: block.title.materialize-css
+      t: Materialize CSS
+    - key: block.title.ant-design
+      t: Ant Design
+    - key: block.title.semantic-ui
+      t: Semantic UI
+    - key: block.title.bulma
+      t: Bulma
+    - key: block.title.foundation
+      t: Foundation
+    - key: block.title.uikit
+      t: UIKit
+    - key: block.title.tachyons
+      t: Tachyons
+    - key: block.title.primer
+      t: Primer
+    - key: block.title.tailwind
+      t: Tailwind
+    - key: block.title.purecss
+      t: PureCSS
+
     # reasons
     - key: reason.elegant_programming_style_patterns.long
       t: ⚙️ Elegant programming style & patterns

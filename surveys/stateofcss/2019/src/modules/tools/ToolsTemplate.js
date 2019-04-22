@@ -4,6 +4,8 @@ import { PageContext } from 'core/pages/pageContext'
 // import { I18nContext } from 'core/i18n/i18nContext'
 import PageHeader from 'core/pages/PageHeader'
 import ToolOpinionBlock from './blocks/ToolOpinionBlock'
+import ToolOverviewBlock from './blocks/ToolOverviewBlock';
+import ToolOtherBlock from './blocks/ToolOtherBlock';
 
 const ToolsTemplate = ({ data }) => {
     const context = useContext(PageContext)
@@ -18,6 +20,7 @@ const ToolsTemplate = ({ data }) => {
                         : `[missing] ${context.id} introduction.`
                 }
             />
+            <ToolOverviewBlock id={context.id}/>
             {context.blocks.map(block => {
                 const blockData = data.aggs.aggregations.find(a => a.id === block.id)
                 const resources = data.aggs.fields.resources.find(r => r.id === block.id)
@@ -35,6 +38,7 @@ const ToolsTemplate = ({ data }) => {
                     />
                 )
             })}
+            <ToolOtherBlock/>
         </>
     )
 }

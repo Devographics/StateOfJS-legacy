@@ -347,7 +347,17 @@
     - id: methodologies
       path: /tools-and-methodology/methodologies/
       type: tools
-      blocks: []
+      blocks:
+        - id: bem
+          path: /tools-and-methodology/methodologies/bem/
+        - id: atomic-css
+          path: /tools-and-methodology/methodologies/atomic-css/
+        - id: oocss
+          path: /tools-and-methodology/methodologies/oocss/
+        - id: smacss
+          path: /tools-and-methodology/methodologies/smacss/
+        - id: it-css
+          path: /tools-and-methodology/methodologies/it-css/
       is_hidden: false
       children: []
       previous:
@@ -361,7 +371,23 @@
     - id: css-in-js
       path: /tools-and-methodology/css-in-js/
       type: tools
-      blocks: []
+      blocks:
+        - id: styled-components
+          path: /tools-and-methodology/css-in-js/styled-components/
+        - id: glamor
+          path: /tools-and-methodology/css-in-js/glamor/
+        - id: aphrodite
+          path: /tools-and-methodology/css-in-js/aphrodite/
+        - id: jss
+          path: /tools-and-methodology/css-in-js/jss/
+        - id: styled-jsx
+          path: /tools-and-methodology/css-in-js/styled-jsx/
+        - id: radium
+          path: /tools-and-methodology/css-in-js/radium/
+        - id: emotion
+          path: /tools-and-methodology/css-in-js/emotion/
+        - id: css-modules
+          path: /tools-and-methodology/css-in-js/css-modules/
       is_hidden: false
       children: []
       previous:
@@ -371,11 +397,10 @@
       next:
         id: other-tools
         path: /tools-and-methodology/other-tools/
-        type: tools
+        type: page
     - id: other-tools
       path: /tools-and-methodology/other-tools/
-      type: tools
-      blocks: []
+      type: page
       is_hidden: false
       children: []
       previous:
@@ -398,12 +423,21 @@
 - id: environments
   path: /environments/
   type: page
+  blocks:
+    - id: browsers
+      path: /environments/browsers/
+    - id: form-factors
+      path: /environments/form-factors/
+    - id: print-styles
+      path: /environments/print-styles/
+    - id: email-styles
+      path: /environments/email-styles/
   is_hidden: false
   children: []
   previous:
     id: other-tools
     path: /tools-and-methodology/other-tools/
-    type: tools
+    type: page
   next:
     id: resources
     path: /resources/
@@ -411,6 +445,13 @@
 - id: resources
   path: /resources/
   type: page
+  blocks:
+    - id: blogs-magazines
+      path: /resources/blogs-magazines/
+    - id: sites-courses
+      path: /resources/sites-courses/
+    - id: podcasts
+      path: /resources/podcasts/
   is_hidden: false
   children: []
   previous:
@@ -424,6 +465,21 @@
 - id: opinions
   path: /opinions/
   type: page
+  blocks:
+    - id: easy-to-learn
+      path: /opinions/easy-to-learn/
+    - id: evolving-too-slowly
+      path: /opinions/evolving-too-slowly/
+    - id: utility-classes
+      path: /opinions/utility-classes/
+    - id: selector-nesting
+      path: /opinions/selector-nesting/
+    - id: programming-language
+      path: /opinions/programming-language/
+    - id: enjoy-css
+      path: /opinions/enjoy-css/
+    - id: missing-features
+      path: /opinions/missing-features/
   is_hidden: false
   children: []
   previous:
