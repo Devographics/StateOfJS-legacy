@@ -1,25 +1,14 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import TextBlock from '../core/blocks/TextBlock'
-import PageHeader from '../core/pages/PageHeader'
-import FeaturesScatterplotBlock from '../modules/features/blocks/FeaturesScatterplotBlock'
-import { mergeFeaturesResources } from '../modules/features/featuresHelpers'
+import PageTemplate from 'core/pages/PageTemplate'
 
 const FeaturesPage = ({ data }) => {
-    const features = mergeFeaturesResources(
-        data.features.aggregations,
-        data.features.fields.resources
-    )
-    
-    return (
-    <>
-        <PageHeader showIntro={false} />
-        <TextBlock text="@todo intro" />
-        <FeaturesScatterplotBlock id="features-overview" features={features}/>
-        <TextBlock text="@todo top 20 most used features" />
-        <TextBlock text="@todo top 20 least used features" />
-    </>
-)}
+    // const features = mergeFeaturesResources(
+    //     data.features.aggregations,
+    //     data.features.fields.resources
+    // )
+    return <PageTemplate data={data} />
+}
 
 export default FeaturesPage
 

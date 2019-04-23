@@ -1,21 +1,8 @@
-import React, { useContext } from 'react'
-import TextBlock from '../core/blocks/TextBlock'
-import PageHeader from '../core/pages/PageHeader'
-import UnitsSelectorsBlock from '../modules/units-selectors/blocks/UnitsSelectorsBlock'
-import { PageContext } from 'core/pages/pageContext'
+import React from 'react'
+import PageTemplate from '../core/pages/PageTemplate'
 
 const UnitsAndSelectorsPage = ({ data }) => {
-    const context = useContext(PageContext)
-
-    return (
-        <>
-            <PageHeader showIntro={false} />
-            <TextBlock text="@todo" />
-            {context.blocks.map(block => (
-                <UnitsSelectorsBlock key={block.id} block={block} />
-            ))}
-        </>
-    )
+    return <PageTemplate data={data} />
 }
 
 export default UnitsAndSelectorsPage

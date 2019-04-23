@@ -1,12 +1,8 @@
 import React from 'react'
-import TextBlock from '../core/blocks/TextBlock'
-import PageHeader from '../core/pages/PageHeader'
+import PageTemplate from 'core/pages/PageTemplate'
 
-const ToolsAndMethodologyPage = ({ data, ...rest }) => (
-    <>
-        <PageHeader showIntro={false} />
-        <TextBlock text="@todo" />
-    </>
-)
+const ToolsAndMethodologyPage = ({ data }) => {
+    return <PageTemplate data={data} />
+}
 
 export default ToolsAndMethodologyPage

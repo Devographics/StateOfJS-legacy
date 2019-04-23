@@ -9,6 +9,11 @@ exports.pageFromConfig = (stack, config, parent) => {
         is_hidden: !!config.is_hidden,
         children: []
     }
+    // if page has no defaultBlockType, get it from parent
+    if (!page.defaultBlockType) {
+        page.defaultBlockType = parent && parent.defaultBlockType || 'default'
+    }
+
     if (!page.path.endsWith('/')) {
         page.path = `${page.path}/`
     }
@@ -17,6 +22,10 @@ exports.pageFromConfig = (stack, config, parent) => {
         page.blocks = page.blocks.map(block => {
             // block can either be a string (used as `id`); or an object with an `id` property
             const blockObject = typeof block === 'string' ? { id: block } : block
+            // if block type is missing, get it from parent
+            if (!blockObject.type) {
+                blockObject.type = page.defaultBlockType
+            }
             return {
                 ...blockObject,
                 path: `${page.path}${block}/`

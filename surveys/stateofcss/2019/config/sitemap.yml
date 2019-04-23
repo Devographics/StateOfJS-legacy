@@ -9,10 +9,12 @@
   type: page
   is_hidden: true
   children: []
+  defaultBlockType: default
   next:
     id: demographics
     path: /demographics/
     type: page
+    defaultBlockType: default
 - id: demographics
   path: /demographics/
   type: page
@@ -43,21 +45,28 @@
       path: '/demographics/[object Object]/'
     - id: javascript-proficiency
       type: vertical-bar
+      fullLegend: true
       path: '/demographics/[object Object]/'
     - id: backend-proficiency
       type: vertical-bar
+      fullLegend: true
       path: '/demographics/[object Object]/'
   is_hidden: false
   children: []
+  defaultBlockType: default
   next:
     id: features
     path: /features/
     type: page
-    defaultChartType: feature
+    defaultBlockType: feature
 - id: features
   path: /features/
   type: page
-  defaultChartType: feature
+  defaultBlockType: feature
+  blocks:
+    - id: features-overview
+      type: features-overview
+      path: '/features/[object Object]/'
   children:
     - id: layout
       path: /features/layout/
@@ -69,31 +78,38 @@
           type: feature-overview
           path: '/features/layout/[object Object]/'
         - id: css-grid
+          type: feature
           path: /features/layout/css-grid/
         - id: flexbox
+          type: feature
           path: /features/layout/flexbox/
         - id: css-multi-column
+          type: feature
           path: /features/layout/css-multi-column/
         - id: css-writing-modes
+          type: feature
           path: /features/layout/css-writing-modes/
         - id: css-exclusions
+          type: feature
           path: /features/layout/css-exclusions/
         - id: conclusion
           type: conclusion
           path: '/features/layout/[object Object]/'
       is_hidden: false
       children: []
+      defaultBlockType: feature
       previous:
         id: features
         path: /features/
         type: page
-        defaultChartType: feature
+        defaultBlockType: feature
       next:
         id: shapes-and-graphics
         path: /features/shapes-and-graphics/
         type: features
         data:
           section: shapes-and-graphics
+        defaultBlockType: feature
     - id: shapes-and-graphics
       path: /features/shapes-and-graphics/
       type: features
@@ -104,34 +120,43 @@
           type: feature-overview
           path: '/features/shapes-and-graphics/[object Object]/'
         - id: css-shapes
+          type: feature
           path: /features/shapes-and-graphics/css-shapes/
         - id: object-fit
+          type: feature
           path: /features/shapes-and-graphics/object-fit/
         - id: clip-path
+          type: feature
           path: /features/shapes-and-graphics/clip-path/
         - id: css-masks
+          type: feature
           path: /features/shapes-and-graphics/css-masks/
         - id: blend-modes
+          type: feature
           path: /features/shapes-and-graphics/blend-modes/
         - id: css-filter-effects
+          type: feature
           path: /features/shapes-and-graphics/css-filter-effects/
         - id: conclusion
           type: conclusion
           path: '/features/shapes-and-graphics/[object Object]/'
       is_hidden: false
       children: []
+      defaultBlockType: feature
       previous:
         id: layout
         path: /features/layout/
         type: features
         data:
           section: layout
+        defaultBlockType: feature
       next:
         id: interactions
         path: /features/interactions/
         type: features
         data:
           section: interactions
+        defaultBlockType: feature
     - id: interactions
       path: /features/interactions/
       type: features
@@ -142,28 +167,34 @@
           type: feature-overview
           path: '/features/interactions/[object Object]/'
         - id: css-scroll-snap
+          type: feature
           path: /features/interactions/css-scroll-snap/
         - id: overscroll-behavior
+          type: feature
           path: /features/interactions/overscroll-behavior/
         - id: overflow-anchor
+          type: feature
           path: /features/interactions/overflow-anchor/
         - id: conclusion
           type: conclusion
           path: '/features/interactions/[object Object]/'
       is_hidden: false
       children: []
+      defaultBlockType: feature
       previous:
         id: shapes-and-graphics
         path: /features/shapes-and-graphics/
         type: features
         data:
           section: shapes-and-graphics
+        defaultBlockType: feature
       next:
         id: typography
         path: /features/typography/
         type: features
         data:
           section: typography
+        defaultBlockType: feature
     - id: typography
       path: /features/typography/
       type: features
@@ -174,32 +205,40 @@
           type: feature-overview
           path: '/features/typography/[object Object]/'
         - id: web-fonts-font-face
+          type: feature
           path: /features/typography/web-fonts-font-face/
         - id: variable-fonts
+          type: feature
           path: /features/typography/variable-fonts/
         - id: line-breaking-properties
+          type: feature
           path: /features/typography/line-breaking-properties/
         - id: font-variant
+          type: feature
           path: /features/typography/font-variant/
         - id: initial-letter
+          type: feature
           path: /features/typography/initial-letter/
         - id: conclusion
           type: conclusion
           path: '/features/typography/[object Object]/'
       is_hidden: false
       children: []
+      defaultBlockType: feature
       previous:
         id: interactions
         path: /features/interactions/
         type: features
         data:
           section: interactions
+        defaultBlockType: feature
       next:
         id: animations-and-transforms
         path: /features/animations-and-transforms/
         type: features
         data:
           section: animations-and-transforms
+        defaultBlockType: feature
     - id: animations-and-transforms
       path: /features/animations-and-transforms/
       type: features
@@ -210,28 +249,34 @@
           type: feature-overview
           path: '/features/animations-and-transforms/[object Object]/'
         - id: css-transitions
+          type: feature
           path: /features/animations-and-transforms/css-transitions/
         - id: css-transforms
+          type: feature
           path: /features/animations-and-transforms/css-transforms/
         - id: css-animations
+          type: feature
           path: /features/animations-and-transforms/css-animations/
         - id: conclusion
           type: conclusion
           path: '/features/animations-and-transforms/[object Object]/'
       is_hidden: false
       children: []
+      defaultBlockType: feature
       previous:
         id: typography
         path: /features/typography/
         type: features
         data:
           section: typography
+        defaultBlockType: feature
       next:
         id: other-features
         path: /features/other-features/
         type: features
         data:
           section: other-features
+        defaultBlockType: feature
     - id: other-features
       path: /features/other-features/
       type: features
@@ -242,62 +287,79 @@
           type: feature-overview
           path: '/features/other-features/[object Object]/'
         - id: css-variables
+          type: feature
           path: /features/other-features/css-variables/
         - id: support-queries
+          type: feature
           path: /features/other-features/support-queries/
         - id: css-containment
+          type: feature
           path: /features/other-features/css-containment/
         - id: will-change
+          type: feature
           path: /features/other-features/will-change/
         - id: calc
+          type: feature
           path: /features/other-features/calc/
         - id: conclusion
           type: conclusion
           path: '/features/other-features/[object Object]/'
       is_hidden: false
       children: []
+      defaultBlockType: feature
       previous:
         id: animations-and-transforms
         path: /features/animations-and-transforms/
         type: features
         data:
           section: animations-and-transforms
+        defaultBlockType: feature
       next:
         id: units-and-selectors
         path: /units-and-selectors/
         type: page
-        defaultChartType: horizontal-bar
+        defaultBlockType: horizontal-bar
   is_hidden: false
   previous:
     id: demographics
     path: /demographics/
     type: page
+    defaultBlockType: default
   next:
     id: layout
     path: /features/layout/
     type: features
     data:
       section: layout
+    defaultBlockType: feature
 - id: units-and-selectors
   path: /units-and-selectors/
   type: page
-  defaultChartType: horizontal-bar
+  defaultBlockType: horizontal-bar
   blocks:
     - id: units
+      type: horizontal-bar
       path: /units-and-selectors/units/
     - id: pseudo-elements
+      type: horizontal-bar
       path: /units-and-selectors/pseudo-elements/
     - id: combinators
+      type: horizontal-bar
       path: /units-and-selectors/combinators/
     - id: tree-document-structure
+      type: horizontal-bar
       path: /units-and-selectors/tree-document-structure/
     - id: attributes
+      type: horizontal-bar
       path: /units-and-selectors/attributes/
     - id: links-urls
+      type: horizontal-bar
       path: /units-and-selectors/links-urls/
     - id: interaction
+      type: horizontal-bar
       path: /units-and-selectors/interaction/
     - id: form-controls
+      type: horizontal-bar
       path: /units-and-selectors/form-controls/
   is_hidden: false
   children: []
@@ -307,15 +369,20 @@
     type: features
     data:
       section: other-features
+    defaultBlockType: feature
   next:
     id: tools-and-methodology
     path: /tools-and-methodology/
     type: page
-    defaultChartType: tool
+    defaultBlockType: tool
 - id: tools-and-methodology
   path: /tools-and-methodology/
   type: page
-  defaultChartType: tool
+  defaultBlockType: tool
+  blocks:
+    - id: tools-overview
+      type: tools-overview
+      path: '/tools-and-methodology/[object Object]/'
   children:
     - id: pre-post-processors
       path: /tools-and-methodology/pre-post-processors/
@@ -325,24 +392,33 @@
           type: tool-overview
           path: '/tools-and-methodology/pre-post-processors/[object Object]/'
         - id: sass
+          type: tool
           path: /tools-and-methodology/pre-post-processors/sass/
         - id: less
+          type: tool
           path: /tools-and-methodology/pre-post-processors/less/
         - id: postcss
+          type: tool
           path: /tools-and-methodology/pre-post-processors/postcss/
         - id: stylus
+          type: tool
           path: /tools-and-methodology/pre-post-processors/stylus/
+        - id: other-pre-post-processors
+          type: horizontal-bar
+          path: '/tools-and-methodology/pre-post-processors/[object Object]/'
       is_hidden: false
       children: []
+      defaultBlockType: tool
       previous:
         id: tools-and-methodology
         path: /tools-and-methodology/
         type: page
-        defaultChartType: tool
+        defaultBlockType: tool
       next:
         id: css-frameworks
         path: /tools-and-methodology/css-frameworks/
         type: tools
+        defaultBlockType: tool
     - id: css-frameworks
       path: /tools-and-methodology/css-frameworks/
       type: tools
@@ -351,37 +427,54 @@
           type: tool-overview
           path: '/tools-and-methodology/css-frameworks/[object Object]/'
         - id: bootstrap
+          type: tool
           path: /tools-and-methodology/css-frameworks/bootstrap/
         - id: materialize-css
+          type: tool
           path: /tools-and-methodology/css-frameworks/materialize-css/
         - id: ant-design
+          type: tool
           path: /tools-and-methodology/css-frameworks/ant-design/
         - id: semantic-ui
+          type: tool
           path: /tools-and-methodology/css-frameworks/semantic-ui/
         - id: bulma
+          type: tool
           path: /tools-and-methodology/css-frameworks/bulma/
         - id: foundation
+          type: tool
           path: /tools-and-methodology/css-frameworks/foundation/
         - id: uikit
+          type: tool
           path: /tools-and-methodology/css-frameworks/uikit/
         - id: tachyons
+          type: tool
           path: /tools-and-methodology/css-frameworks/tachyons/
         - id: primer
+          type: tool
           path: /tools-and-methodology/css-frameworks/primer/
         - id: tailwind
+          type: tool
           path: /tools-and-methodology/css-frameworks/tailwind/
         - id: purecss
+          type: tool
           path: /tools-and-methodology/css-frameworks/purecss/
+        - id: other-css-frameworks
+          type: horizontal-bar
+          path: '/tools-and-methodology/css-frameworks/[object Object]/'
       is_hidden: false
       children: []
+      defaultBlockType: tool
       previous:
         id: pre-post-processors
         path: /tools-and-methodology/pre-post-processors/
         type: tools
+        defaultBlockType: tool
       next:
         id: methodologies
         path: /tools-and-methodology/methodologies/
         type: tools
+        defaultBlockType: tool
     - id: methodologies
       path: /tools-and-methodology/methodologies/
       type: tools
@@ -390,25 +483,36 @@
           type: tool-overview
           path: '/tools-and-methodology/methodologies/[object Object]/'
         - id: bem
+          type: tool
           path: /tools-and-methodology/methodologies/bem/
         - id: atomic-css
+          type: tool
           path: /tools-and-methodology/methodologies/atomic-css/
         - id: oocss
+          type: tool
           path: /tools-and-methodology/methodologies/oocss/
         - id: smacss
+          type: tool
           path: /tools-and-methodology/methodologies/smacss/
         - id: it-css
+          type: tool
           path: /tools-and-methodology/methodologies/it-css/
+        - id: other-methodologies
+          type: horizontal-bar
+          path: '/tools-and-methodology/methodologies/[object Object]/'
       is_hidden: false
       children: []
+      defaultBlockType: tool
       previous:
         id: css-frameworks
         path: /tools-and-methodology/css-frameworks/
         type: tools
+        defaultBlockType: tool
       next:
         id: css-in-js
         path: /tools-and-methodology/css-in-js/
         type: tools
+        defaultBlockType: tool
     - id: css-in-js
       path: /tools-and-methodology/css-in-js/
       type: tools
@@ -417,54 +521,79 @@
           type: tool-overview
           path: '/tools-and-methodology/css-in-js/[object Object]/'
         - id: styled-components
+          type: tool
           path: /tools-and-methodology/css-in-js/styled-components/
         - id: glamor
+          type: tool
           path: /tools-and-methodology/css-in-js/glamor/
         - id: aphrodite
+          type: tool
           path: /tools-and-methodology/css-in-js/aphrodite/
         - id: jss
+          type: tool
           path: /tools-and-methodology/css-in-js/jss/
         - id: styled-jsx
+          type: tool
           path: /tools-and-methodology/css-in-js/styled-jsx/
         - id: radium
+          type: tool
           path: /tools-and-methodology/css-in-js/radium/
         - id: emotion
+          type: tool
           path: /tools-and-methodology/css-in-js/emotion/
         - id: css-modules
+          type: tool
           path: /tools-and-methodology/css-in-js/css-modules/
+        - id: other-css-in-js
+          type: horizontal-bar
+          path: '/tools-and-methodology/css-in-js/[object Object]/'
       is_hidden: false
       children: []
+      defaultBlockType: tool
       previous:
         id: methodologies
         path: /tools-and-methodology/methodologies/
         type: tools
+        defaultBlockType: tool
       next:
         id: other-tools
-        path: /tools-and-methodology/other-tools/
+        path: /other-tools/
         type: page
-    - id: other-tools
-      path: /tools-and-methodology/other-tools/
-      type: page
-      is_hidden: false
-      children: []
-      previous:
-        id: css-in-js
-        path: /tools-and-methodology/css-in-js/
-        type: tools
-      next:
-        id: environments
-        path: /environments/
-        type: page
+        defaultBlockType: default
   is_hidden: false
   previous:
     id: units-and-selectors
     path: /units-and-selectors/
     type: page
-    defaultChartType: horizontal-bar
+    defaultBlockType: horizontal-bar
   next:
     id: pre-post-processors
     path: /tools-and-methodology/pre-post-processors/
     type: tools
+    defaultBlockType: tool
+- id: other-tools
+  path: /other-tools/
+  type: page
+  blocks:
+    - id: text-editors
+      type: horizontal-bar
+      path: '/other-tools/[object Object]/'
+    - id: browsers
+      type: horizontal-bar
+      path: '/other-tools/[object Object]/'
+  is_hidden: false
+  children: []
+  defaultBlockType: default
+  previous:
+    id: css-in-js
+    path: /tools-and-methodology/css-in-js/
+    type: tools
+    defaultBlockType: tool
+  next:
+    id: environments
+    path: /environments/
+    type: page
+    defaultBlockType: default
 - id: environments
   path: /environments/
   type: page
@@ -483,14 +612,17 @@
       path: '/environments/[object Object]/'
   is_hidden: false
   children: []
+  defaultBlockType: default
   previous:
     id: other-tools
-    path: /tools-and-methodology/other-tools/
+    path: /other-tools/
     type: page
+    defaultBlockType: default
   next:
     id: resources
     path: /resources/
     type: page
+    defaultBlockType: default
 - id: resources
   path: /resources/
   type: page
@@ -506,14 +638,17 @@
       path: '/resources/[object Object]/'
   is_hidden: false
   children: []
+  defaultBlockType: default
   previous:
     id: environments
     path: /environments/
     type: page
+    defaultBlockType: default
   next:
     id: opinions
     path: /opinions/
     type: page
+    defaultBlockType: default
 - id: opinions
   path: /opinions/
   type: page
@@ -541,29 +676,40 @@
       path: '/opinions/[object Object]/'
   is_hidden: false
   children: []
+  defaultBlockType: default
   previous:
     id: resources
     path: /resources/
     type: page
+    defaultBlockType: default
   next:
     id: conclusion
     path: /conclusion/
     type: page
+    defaultBlockType: default
 - id: conclusion
   path: /conclusion/
   type: page
+  blocks:
+    - id: conclusion
+      type: text
+      path: '/conclusion/[object Object]/'
   is_hidden: false
   children: []
+  defaultBlockType: default
   previous:
     id: opinions
     path: /opinions/
     type: page
+    defaultBlockType: default
 - id: support
   path: /support/
   type: page
   is_hidden: true
   children: []
+  defaultBlockType: default
   previous:
     id: conclusion
     path: /conclusion/
     type: page
+    defaultBlockType: default

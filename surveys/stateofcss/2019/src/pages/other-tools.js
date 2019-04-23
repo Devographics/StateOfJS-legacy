@@ -1,14 +1,8 @@
 import React from 'react'
-import TextBlock from '../core/blocks/TextBlock'
-import PageHeader from '../core/pages/PageHeader'
+import PageTemplate from 'core/pages/PageTemplate'
 
-const OtherToolsPage = ({ data }) => (
-    <>
-        <PageHeader showIntro={false} />
-        <TextBlock text="@todo" />
-        <p>TODO: Text Editors</p>
-        <p>TODO: Browsers</p>
-    </>
-)
+const OtherToolsPage = ({ data }) => {
+    return <PageTemplate data={data} />
+}
 
 export default OtherToolsPage

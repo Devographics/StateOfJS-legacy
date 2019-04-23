@@ -1,49 +1,15 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import PageTemplate from 'core/pages/PageTemplate'
 import { graphql } from 'gatsby'
-import TextBlock from 'core/blocks/TextBlock'
-import PageHeader from 'core/pages/PageHeader'
-import GenderBreakdownBlock from 'modules/demographics/blocks/GenderBreakdownBlock'
-import SourceBreakdownBlock from 'modules/demographics/blocks/SourceBreakdownBlock'
-import ParticipationByCountryBlock from 'modules/demographics/blocks/ParticipationByCountryBlock'
-import DemographicsSalaryBlock from 'modules/demographics/blocks/DemographicsSalaryBlock'
-import SalaryPerCountryBlock from 'modules/demographics/blocks/SalaryPerCountryBlock'
-import DemographicsYearsOfExperienceBlock from 'modules/demographics/blocks/DemographicsYearsOfExperienceBlock'
-import DemographicsCompanySizeBlock from 'modules/demographics/blocks/DemographicsCompanySizeBlock'
-import JobTitlesBlock from 'modules/demographics/blocks/JobTitlesBlock'
-import JavaScriptProficiencyBlock from 'modules/demographics/blocks/JavaScriptProficiencyBlock'
-import BackEndProficiencyBlock from 'modules/demographics/blocks/BackEndProficiencyBlock'
+import PropTypes from 'prop-types'
 
-const Demographics = ({ data }) => {
-    const participationData = data.stats.participation.find(s => s.survey === '2018').by_country
-    const genderData = data.stats.gender.find(s => s.survey === '2018')
-    const sourceData = data.stats.source.find(s => s.survey === '2018')
-
-    return (
-        <>
-            <PageHeader />
-            <TextBlock text={data.introduction.html} />
-            <ParticipationByCountryBlock
-                data={participationData}
-                chartId="participation-by-country"
-            />
-            <DemographicsSalaryBlock data={data.stats.salary} chartId="salaries" />
-            <SalaryPerCountryBlock data={data.stats.by_country} chartId="salary-per-country" />
-            <DemographicsYearsOfExperienceBlock
-                data={data.stats.years_of_experience}
-                chartId="years-of-experience"
-            />
-            <DemographicsCompanySizeBlock data={data.stats.company_size} chartId="company-size" />
-            <SourceBreakdownBlock data={sourceData} chartId="source-breakdown" />
-            <GenderBreakdownBlock data={genderData} chartId="gender-breakdown" />
-            <JobTitlesBlock data={data.stats.salary} chartId="job-titles" />
-            <JavaScriptProficiencyBlock data={data.stats.salary} chartId="javascript-proficiency" />
-            <BackEndProficiencyBlock data={data.stats.salary} chartId="backend-proficiency" />
-        </>
-    )
+const DemographicsPage = ({ data }) => {
+    return <PageTemplate data={data} />
 }
 
-Demographics.propTypes = {
+export default DemographicsPage
+
+DemographicsPage.propTypes = {
     data: PropTypes.shape({
         stats: PropTypes.shape({
             participation: PropTypes.arrayOf(
@@ -122,8 +88,6 @@ Demographics.propTypes = {
         }).isRequired
     }).isRequired
 }
-
-export default Demographics
 
 export const query = graphql`
     query demographics($locale: String!) {

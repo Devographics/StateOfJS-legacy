@@ -25,13 +25,18 @@
         type: horizontal-bar
       - id: javascript-proficiency
         type: vertical-bar
+        fullLegend: true
       - id: backend-proficiency
         type: vertical-bar
+        fullLegend: true
 
 - id: features
   path: /features
   type: page
-  defaultChartType: feature
+  defaultBlockType: feature
+  blocks: 
+      - id: features-overview
+        type: features-overview
   children:
       - id: layout
         path: /layout
@@ -129,7 +134,7 @@
 - id: units-and-selectors
   path: /units-and-selectors
   type: page
-  defaultChartType: horizontal-bar
+  defaultBlockType: horizontal-bar
   blocks:
       - units
       - pseudo-elements
@@ -143,7 +148,10 @@
 - id: tools-and-methodology
   path: /tools-and-methodology
   type: page
-  defaultChartType: tool
+  defaultBlockType: tool
+  blocks: 
+      - id: tools-overview
+        type: tools-overview
   children:
       - id: pre-post-processors
         path: /pre-post-processors
@@ -155,6 +163,8 @@
             - less
             - postcss
             - stylus
+            - id: other-pre-post-processors
+              type: horizontal-bar
 
       - id: css-frameworks
         path: /css-frameworks
@@ -173,6 +183,8 @@
             - primer
             - tailwind
             - purecss
+            - id: other-css-frameworks
+              type: horizontal-bar
 
       - id: methodologies
         path: /methodologies
@@ -185,6 +197,8 @@
             - oocss
             - smacss
             - it-css
+            - id: other-methodologies
+              type: horizontal-bar
 
       - id: css-in-js
         path: /css-in-js
@@ -200,57 +214,67 @@
             - radium
             - emotion
             - css-modules
+            - id: other-css-in-js
+              type: horizontal-bar
 
-      - id: other-tools
-        path: /other-tools
-        type: page
+- id: other-tools
+  path: /other-tools
+  type: page
+  blocks:
+      - id: text-editors
+        type: horizontal-bar
+      - id: browsers
+        type: horizontal-bar
 
 - id: environments
   path: /environments
   type: page
   blocks:
-    - id: browsers
-      type: horizontal-bar
-    - id: form-factors
-      type: horizontal-bar
-    - id: print-styles
-      type: vertical-bar
-    - id: email-styles
-      type: vertical-bar
+      - id: browsers
+        type: horizontal-bar
+      - id: form-factors
+        type: horizontal-bar
+      - id: print-styles
+        type: vertical-bar
+      - id: email-styles
+        type: vertical-bar
 
 - id: resources
   path: /resources
   type: page
   blocks:
-    - id: blogs-magazines
-      type: horizontal-bar
-    - id: sites-courses
-      type: horizontal-bar
-    - id: podcasts
-      type: horizontal-bar
+      - id: blogs-magazines
+        type: horizontal-bar
+      - id: sites-courses
+        type: horizontal-bar
+      - id: podcasts
+        type: horizontal-bar
 
 - id: opinions
   path: /opinions
   type: page
   blocks:
-    - id: easy-to-learn
-      type: vertical-bar
-    - id: evolving-too-slowly
-      type: vertical-bar
-    - id: utility-classes
-      type: vertical-bar
-    - id: selector-nesting
-      type: vertical-bar
-    - id: programming-language
-      type: vertical-bar
-    - id: enjoy-css
-      type: vertical-bar
-    - id: missing-features
-      type: horizontal-bar
+      - id: easy-to-learn
+        type: vertical-bar
+      - id: evolving-too-slowly
+        type: vertical-bar
+      - id: utility-classes
+        type: vertical-bar
+      - id: selector-nesting
+        type: vertical-bar
+      - id: programming-language
+        type: vertical-bar
+      - id: enjoy-css
+        type: vertical-bar
+      - id: missing-features
+        type: horizontal-bar
 
 - id: conclusion
   path: /conclusion
   type: page
+  blocks: 
+    - id: conclusion
+      type: text
 
 - id: support
   path: /support
