@@ -9,7 +9,7 @@
   blocks:
       - id: participation-by-country
         type: countries
-      - id: salaries
+      - id: salary
         type: vertical-bar
       - id: salary-per-country
         type: countries
@@ -17,10 +17,10 @@
         type: vertical-bar
       - id: company-size
         type: vertical-bar
-      - id: source-breakdown
-        type: source-breakdown
-      - id: gender-breakdown
-        type: gender-breakdown
+      - id: source
+        type: source
+      - id: gender
+        type: gender
       - id: job-titles
         type: horizontal-bar
       - id: javascript-proficiency

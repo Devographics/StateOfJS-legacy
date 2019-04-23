@@ -22,7 +22,7 @@
     - id: participation-by-country
       type: countries
       path: '/demographics/[object Object]/'
-    - id: salaries
+    - id: salary
       type: vertical-bar
       path: '/demographics/[object Object]/'
     - id: salary-per-country
@@ -34,11 +34,11 @@
     - id: company-size
       type: vertical-bar
       path: '/demographics/[object Object]/'
-    - id: source-breakdown
-      type: source-breakdown
+    - id: source
+      type: source
       path: '/demographics/[object Object]/'
-    - id: gender-breakdown
-      type: gender-breakdown
+    - id: gender
+      type: gender
       path: '/demographics/[object Object]/'
     - id: job-titles
       type: horizontal-bar

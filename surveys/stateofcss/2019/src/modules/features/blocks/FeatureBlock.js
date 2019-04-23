@@ -4,8 +4,16 @@ import Block from 'core/blocks/Block'
 import { PageContext } from 'core/pages/pageContext'
 import { I18nContext } from 'core/i18n/i18nContext'
 import FeatureUsageWaffleChart from '../charts/FeatureUsageWaffleChart'
+import { mergeFeaturesResources } from '../featuresHelpers'
 
-const FeatureBlock = ({ block, feature }) => {
+const FeatureBlock = ({ block, data }) => {
+
+    const features = mergeFeaturesResources(
+        data.features.aggregations,
+        data.features.fields.resources
+    )
+    const feature = features.find(a => a.id === block.id)
+
     const context = useContext(PageContext)
     const { translate } = useContext(I18nContext)
 

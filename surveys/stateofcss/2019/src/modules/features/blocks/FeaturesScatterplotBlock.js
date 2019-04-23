@@ -2,8 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Block from 'core/blocks/Block'
 import FeaturesScatterplotChart from '../charts/FeaturesScatterplotChart'
+import { mergeFeaturesResources } from '../featuresHelpers'
 
-const FeaturesScatterplotBlock = ({ id, features }) => {
+const FeaturesScatterplotBlock = ({ block, data }) => {
+    const { id } = block
+
+    const features = mergeFeaturesResources(
+        data.features.aggregations,
+        data.features.fields.resources
+    )
+
     return (
         <Block id={id} showDescription={false}>
             <FeaturesScatterplotChart features={features} />

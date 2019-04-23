@@ -20,7 +20,7 @@ export let colors = {
     purple: '#9688e4',
     red: '#FE6A6A',
     yellow: '#fbf34c',
-    aqua: '#1ea0f2',
+    aqua: '#1ea0f2'
 
     // // old colors
     // purpleLight: '#b4addc',
@@ -76,6 +76,11 @@ export const colorScale = [
     '#ca4040'
 ]
 
+export const keys = {
+    salary: ['work-for-free', '0-10', '10-30', '30-50', '50-100', '100-200', 'more-than-200'],
+    'company-size': ['1', '1-5', '5-10', '10-20', '20-50', '50-100', '100-1000', 'more-than-1000'],
+    'years-of-experience': ['less-than-1', '1-2', '2-5', '5-10', '10-20', 'more-than-20']
+}
 export const toolOpinionKeys = [
     'would_use',
     'would_not_use',
@@ -83,29 +88,6 @@ export const toolOpinionKeys = [
     'not_interested',
     'never_heard'
 ]
-
-export const salaryRanges = [
-    'work-for-free',
-    '0-10',
-    '10-30',
-    '30-50',
-    '50-100',
-    '100-200',
-    'more-than-200'
-]
-
-export const companySizes = [
-    '1',
-    '1-5',
-    '5-10',
-    '10-20',
-    '20-50',
-    '50-100',
-    '100-1000',
-    'more-than-1000'
-]
-
-export const yearsOfExperience = ['less-than-1', '1-2', '2-5', '5-10', '10-20', 'more-than-20']
 
 export const featureKeys = [
     "I don't know what that is",
@@ -195,6 +177,5 @@ export const barChartProps = {
         format: '.2s'
     }
 }
-
 
 export const fontFamily = `'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif`
