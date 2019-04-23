@@ -21,9 +21,11 @@ export default class SourceBreakdownBlock extends Component {
 
     render() {
         const { data, block } = this.props
+        const yearData = data.stats.source && data.stats.source.find(d => d.survey === '2018')
+        
         return (
             <Block id={block.id} showDescription={false} className="Block--source Source__Block">
-                <SourceBreakdownWaffleChart total={data.total} data={data.by_source} />
+                <SourceBreakdownWaffleChart total={yearData.total} data={yearData.by_source} />
             </Block>
         )
     }

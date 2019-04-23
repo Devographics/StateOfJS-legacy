@@ -3,7 +3,7 @@ import blockRegistry from './blockRegistry'
 
 const DefaultComponent = ({ block }) => (
     <p>
-        Block ID: {block.id} | type: {block.type}
+        Missing Block Component! Block ID: {block.id} | type: {block.type}
     </p>
 )
 
@@ -17,7 +17,6 @@ const BlockSwitcher = ({ data, block }) => {
     }
     const { type } = block
     const BlockComponent = blockRegistry[type] ? blockRegistry[type] : DefaultComponent
-
     return <BlockComponent block={block} data={data} />
 }
 

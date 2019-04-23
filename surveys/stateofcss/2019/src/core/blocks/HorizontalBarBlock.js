@@ -2,7 +2,7 @@ import React from 'react'
 import { keys } from '../../constants'
 import Block from 'core/blocks/Block'
 import ChartContainer from 'core/charts/ChartContainer'
-import VerticalBarChart from '../charts/VerticalBarChart'
+import HorizontalBarChart from '../charts/HorizontalBarChart'
 
 // try id variants with both `-` and `_`
 // TODO: normalize data to make this less hacky
@@ -12,23 +12,24 @@ const getBlockData = (data, id) => {
     return yearData && yearData.ranges
 }
 
-const VerticalBarBlock = ({ block, data }) => {
+const HorizontalBarBlock = ({ block, data }) => {
     const blockKeys = keys[block.id]
     const blockData = getBlockData(data, block.id)
 
     if (!blockData) {
-        return <div>VerticalBarBlock: Missing data for block {block.id}</div>
+        return <div>HorizontalBarBlock: Missing data for block {block.id}</div>
     }
     if (!blockKeys) {
-        return <div>VerticalBarBlock: Missing keys for block {block.id}</div>
+        return <div>HorizontalBarBlock: Missing keys for block {block.id}</div>
     }
     return (
         <Block id={block.id} showDescription={false}>
             <ChartContainer>
-                <VerticalBarChart data={blockData} keys={blockKeys} i18nNamespace={block.id} />
+                <p>horizontal bar block goes here</p>
+                <HorizontalBarChart data={blockData} keys={blockKeys} i18nNamespace={block.id} />
             </ChartContainer>
         </Block>
     )
 }
 
-export default VerticalBarBlock
+export default HorizontalBarBlock

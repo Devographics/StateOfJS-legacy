@@ -1,5 +1,6 @@
 // Generic Blocks
 import VerticalBarBlock from './VerticalBarBlock'
+import HorizontalBarBlock from './HorizontalBarBlock'
 
 // Demographics Blocks
 import SourceBreakdownBlock from '../../modules/demographics/blocks/SourceBreakdownBlock'
@@ -15,6 +16,7 @@ import ToolOpinionBlock from '../../modules/tools/blocks/ToolOpinionBlock'
 
 const blockRegistry = {
     'vertical-bar': VerticalBarBlock,
+    'horizontal-bar': HorizontalBarBlock,
 
     'source': SourceBreakdownBlock,
     'gender': GenderBreakdownBlock,
