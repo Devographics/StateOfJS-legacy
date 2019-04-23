@@ -373,286 +373,285 @@ translations:
 
   # blocks
   - key: block.title.participation-by-country
-    t: Participation by Country
+    t: Участники по странам.
   - key: block.description.participation-by-country
-    t: Survey participants by Country.
+    t: Участники опроса по странам.
   - key: block.title.salaries
-    t: Salaries
+    t: Зазплаты
   - key: block.description.salaries
-    t: Salary range breakdown.
+    t: Разбиение зарплат по значениям.
   - key: block.title.salary-per-country
-    t: Average Salary per Country
+    t: Средняя зарплата по стране
   - key: block.description.salary-per-country
-    t: Average Salary per Country.
+    t: Средняя зарплата по стране.
   - key: block.title.years-of-experience
-    t: Years of Experience
+    t: Лет опыта
   - key: block.description.years-of-experience
-    t: Years of experience breakdown.
+    t: Разбиение по годам опыта.
   - key: block.title.company-size
-    t: Company Size
+    t: Размер компании
   - key: block.description.company-size
-    t: Company size breakdown.
+    t: Разбиение по размеру компании.
   - key: block.title.gender-breakdown
-    t: Gender Breakdown
+    t: Разбиение по полу
   - key: block.title.source-breakdown
-    t: Source Breakdown
+    t: Разбиение по источнику информации
   - key: block.description.gender-breakdown
-    t: Gender breakdown.
+    t: Разбиение по полу.
   - key: block.title.connections
-    t: Connections Between Technologies
+    t: Связи между технологиями
   - key: block.description.connections
-    t: Connections between all libraries & technologies.
+    t: Связи между всеми библиотеками и технологиями.
   - key: block.title.overview
-    t: Overall Results
+    t: Общие результаты
   - key: block.description.overview
     t: |
-      Overall ${section} results.
+      Общие результаты по ${section}.
   - key: block.title.results-over-time
-    t: ${tool}'s Popularity Over Time
+    t: Популярность ${tool} с течением времени
   - key: block.description.results-over-time
-    t: ${tool}'s popularity evolution over time.
+    t: Изменение популярности ${tool} с течением времени.
   - key: block.results-over-time.empty
     t: |
-      Sorry, we don't have enough data to display
-      the evolution of this library's popularity over time.
+      К сожалению, у нас недостаточно данныех для отображения
+      изменений популярности этой библиотеки с течением времени.
   - key: block.title.happiness
-    t: Overall Happiness
+    t: Общее счастье
   - key: block.description.happiness
     t: |
-      On a scale of one (very unhappy) to five (very happy), how happy are developers
-      with the current overall state of this category?
+      По шкале от одного(очень несчастлив) до пять(очень счастлив), на сколько счастливы
+      разработчики от текущим положения дел в этой категории?
   - key: block.title.tools-salary-range
-    t: Salary Breakdown
+    t: Разбиение по зарплатам
   - key: block.description.tools-salary-range
     t: |
-      Salary breakdown for developers who picked “used it, would use again” for a given option.
+      Разбиение по зарплатам разработчиков, которые выбрали "использовал, буду использовать снова" для данной позиции.
 
 
-      Each cell shows the percentage of users in a given salary range,
-      darker means higher usage.
+      Каждая клетка показывает процент пользователей в данном диапазоне зарплат,
+      более темный цвет означает больший показатель.
   - key: block.title.tools-company-size
-    t: Company Size Breakdown
+    t: Разбиение по размеру компании
   - key: block.description.tools-company-size
     t: |
-      Company size breakdown for developers who picked “used it, would use again” for a given option.
+      Разбиение по размеру компании разработчиков, которые выбрали "использовал, буду использовать снова" для данной позиции.
 
 
-      Each cell shows the percentage of users in a given company size range,
-      darker means higher usage.
+      Каждая клетка показывает процент пользователей в данном диапазоне размера компании,
+      более темный цвет означает больший показатель.
   - key: block.title.tools-years-of-experience
-    t: Years Of Experience Breakdown
+    t: Разбиение по годам опыта
   - key: block.description.tools-years-of-experience
     t: |
-      Years of experience breakdown for developers who picked “used it, would use again” for a given option.
+      Разбиение по годам опыта разработчиков, которые выбрали "использовал, буду использовать снова" для данной позиции.
 
 
-      Each cell shows the percentage of users in a given years of experience range,
-      darker means higher usage.
+      Каждая клетка показывает процент пользователей в данном диапазоне лет опыта,
+      более темный цвет означает больший показатель.
   - key: block.title.likes
-    t: Most Liked Aspects of ${tool}
+    t: Наиболее популярные аспекты ${tool}
   - key: block.description.likes
     t: |
-      Most liked aspects of ${tool} among developers who picked “used it and would use again”.
+      Наиболее популярные аспекты ${tool} среди разработчиков, которые выбрали "использовал, буду использовать снова".
   - key: block.title.dislikes
-    t: Most Disliked Aspects of ${tool}
+    t: Наиболее раздражающие аспекты ${tool}
   - key: block.description.dislikes
     t: |
-      Most disliked aspects of ${tool} among developers who picked “used it and would *not* use again”.
+      Наиболее раздражающие аспекты ${tool} среди разработчиков, которые выбрали "использовал, *не* буду использовать снова".
   - key: block.title.tool-pairing
-    t: Which Tools Are Used Alongside ${tool}?
+    t: Какие инструменты используются вместе с ${tool}?
   - key: block.description.tool-pairing
     t: |
-      Libraries most likely to be used by developers who picked “used it and would use again” for ${tool}.
-      Darker color means a stronger correlation.
+      Библиотеки, которые наверянка будут использованы разработчиками, которые выбрали "использовал, буду использовать снова" для ${tool}.
+      Более темный цвет означает более сильную корреляцию.
   - key: block.title.tool-usage-by-country
-    t: ${tool} Usage by Country
+    t: Использование ${tool} по странам
   - key: block.description.tool-usage-by-country
     t: |
-      On average, **${percentage}%** of respondents have used **${tool}** and
-      would be happy to use it again.
+      В среднем, **${percentage}%** процентов опрошенных использовали **${tool}** и
+      с радостью использовали его снова.
 
 
-      Countries where this ratio is higher are shown in red, those where it's lower
-      are displayed in blue (countries with fewer than 20 total survey respondents are
-      omitted).
+      Страны, где это соотношение выше, показаны красным, страные, оно ниже - синим
+      (страны с менее, чем 20 опрошенными не учитываются).
   - key: block.tool-usage-by-country.legend
     t: |
-      Percentage of
-      happy ${tool} users:
+      Процент счастливых
+      ползователей ${tool}:
   - key: block.title.other-tools
-    t: Other Libraries
+    t: Другие библиотеки
   - key: block.description.other-tools
     t: |
-      Other answers mentioned by survey respondents, ranked by mention count.
+      Другие ответы опрошенных, по популярности.
   - key: block.title.quadrants
-    t: Quadrant Chart
+    t: Диаграмма квадрантов
   - key: block.description.quadrants
     t: |
-      This chart shows each technology’s **satisfaction ratio** over its **total usage**.
+      Эта диаграмма показывает **рейтинг удовлетворения** каждой технологией в сравнении к **общему количеству использования**.
 
 
-      Additionally, technologies that have an **interest ratio**
-      (percentage of non-users interested in learning it) over 50% are displayed as “on fire”.
+      Так же, технологии, имеющие **рейтинг интереса**
+      (процент не использовавших ее пользователей, желающих ее изучить) более 50% показаны как "горячие".
   - key: block.title.other_languages
-    t: Other Languages
+    t: Другие языки
   - key: block.description.other_languages
-    t: Other languages, ranked by mention count.
+    t: Другие языки, по числу упоминаний.
   - key: block.title.browser_apis
-    t: Browser APIs
+    t: API браузеров
   - key: block.description.browser_apis
-    t: Browser APIs, ranked by mention count.
+    t: API браузеров, по числу упоминаний.
   - key: block.title.build_tools
-    t: Build Tools
+    t: Сборщики
   - key: block.description.build_tools
-    t: Build tools, ranked by mention count.
+    t: Сборщики, по числу упоминаний.
   - key: block.title.utility_libraries
-    t: Utility Libraries
+    t: Utility библиотеки
   - key: block.description.utility_libraries
-    t: Utility libraries, ranked by mention count.
+    t: Utility библиотеки, по числу упоминаний.
   - key: block.title.text_editors
-    t: Text Editors
+    t: Текстовые редакторы
   - key: block.description.text_editors
-    t: Text editors, ranked by mention count.
+    t: Текстовые редакторы, по числу упоминаний.
   - key: block.title.recommended_resources
-    t: Recommended Resources
+    t: Рекомендованные ресурсы
   - key: block.title.opinion-js_moving_in_right_direction
-    t: JavaScript is moving in the right direction
+    t: JavaScript двигается в правильном направлении
   - key: block.description.opinion-js_moving_in_right_direction
-    t: JavaScript is moving in the right direction.
+    t: JavaScript двигается в правильном направлении
   - key: block.title.opinion-building_js_apps_overly_complex
-    t: Building JavaScript apps is overly complex right now
+    t: Разработка JavaScript приложений черезчур сложная на текущий момент
   - key: block.description.opinion-building_js_apps_overly_complex
-    t: Building JavaScript apps is overly complex right now.
+    t: Разработка JavaScript приложений черезчур сложная на текущий момент.
   - key: block.title.opinion-js_over_used_online
-    t: JavaScript is over-used online
+    t: JavaScript черезчур часто используется в сети
   - key: block.description.opinion-js_over_used_online
-    t: JavaScript is over-used online.
+    t: JavaScript черезчур часто используется в сети.
   - key: block.title.opinion-enjoy_building_js_apps
-    t: I enjoy building JavaScript apps
+    t: Мне нравится разрабатывать приложения с JavaScript
   - key: block.description.opinion-enjoy_building_js_apps
-    t: I enjoy building JavaScript apps.
+    t: Мне нравится разрабатывать приложения с JavaScript.
   - key: block.title.opinion-would_like_js_to_be_main_lang
-    t: I would like JavaScript to be my main programming language
+    t: Я хотел бы, чтобы JavaScript был моим основным языком программирования
   - key: block.description.opinion-would_like_js_to_be_main_lang
-    t: I would like JavaScript to be my main programming language.
+    t: Я хотел бы, чтобы JavaScript был моим основным языком программирования.
   - key: block.title.opinion-js_ecosystem_changing_to_fast
-    t: The JavaScript ecosystem is changing too fast
+    t: Экосистема JavaScript меняется слишком часто
   - key: block.description.opinion-js_ecosystem_changing_to_fast
-    t: The JavaScript ecosystem is changing too fast.
+    t: Экосистема JavaScript меняется слишком часто.
   - key: block.title.opinion-survey_too_long
-    t: This survey is too damn long!
+    t: Этот опрос чертовски длинный!
   - key: block.description.opinion-survey_too_long
-    t: This survey is too damn long!
+    t: Этот опрос чертовски длинный!
 
   # reasons
   - key: reason.elegant_programming_style_patterns.long
-    t: ⚙️ Elegant programming style & patterns
+    t: ⚙️ Элегантный стиль написания кода и шаблонов
   - key: reason.elegant_programming_style_patterns.short
-    t: ⚙️ Programming style
+    t: ⚙️ Стиль написания кода
   - key: reason.robust_less_error_prone_code.long
-    t: 🐞 Robust, less error-prone code
+    t: 🐞 Надежный, более отказоустойчивый код
   - key: reason.robust_less_error_prone_code.short
-    t: 🐞 Robust code
+    t: 🐞 Надежный код
   - key: reason.rich_package_ecosystem.long
-    t: 🎁 Rich package ecosystem
+    t: 🎁 Богатая экосистема
   - key: reason.rich_package_ecosystem.short
-    t: 🎁 Package ecosystem
+    t: 🎁 Экосистема
   - key: reason.fast_performance.long
-    t: ⚡ Fast performance
+    t: ⚡ Высокая производительность
   - key: reason.fast_performance.short
-    t: ⚡ Fast performance
+    t: ⚡ Высокая производительность
   - key: reason.well_established_option.long
-    t: 🏛️ Well-established option
+    t: 🏛️ Зарекомендовавший себя вариант
   - key: reason.well_established_option.short
-    t: 🏛️ Well-established
+    t: 🏛️ Зарекомендовавший себя вариант
   - key: reason.easy_learning_curve.long
-    t: 👶 Easy learning curve
+    t: 👶 Плавная кривая обучения
   - key: reason.easy_learning_curve.short
-    t: 👶 Easy to learn
+    t: 👶 Легко изучить
   - key: reason.powerful_developer_tooling.long
-    t: 🔧 Powerful developer tooling
+    t: 🔧 Мощные иструменты разработки
   - key: reason.powerful_developer_tooling.short
-    t: 🔧 Tooling
+    t: 🔧 Инструменты разработки
   - key: reason.good_documentation.long
-    t: 📖 Good documentation
+    t: 📖 Хорошая документация
   - key: reason.good_documentation.short
-    t: 📖 Documentation
+    t: 📖 Жокументация
   - key: reason.backed_by_a_great_team_company.long
-    t: 👫 Backed by a great team/company
+    t: 👫 Поддерживается отличной командой/компанией
   - key: reason.backed_by_a_great_team_company.short
-    t: 👫 Team/company
+    t: 👫 Команда/компания
   - key: reason.simple_lightweight.long
-    t: 🎈 Simple & lightweight
+    t: 🎈 Просто и легковесный
   - key: reason.simple_lightweight.short
-    t: 🎈 Lightweight
+    t: 🎈 Легковесный
   - key: reason.growing_momentum_popularity.long
-    t: 📉 Growing momentum/popularity
+    t: 📉 Набирающий популярнось
   - key: reason.growing_momentum_popularity.short
-    t: 📉 Momentum
+    t: 📉 Набирающий популярнось
   - key: reason.full_featured_powerful.long
-    t: 🕹️ Full-featured & powerful
+    t: 🕹️ Функциональный и мощный
   - key: reason.full_featured_powerful.short
-    t: 🕹️ Full-featured
+    t: 🕹️ Функциональный
   - key: reason.stable_backwards_compatible.long
-    t: ⚖️ Stable & backwards-compatible
+    t: ⚖️ Стабильный и обратно-совместимый
   - key: reason.stable_backwards_compatible.short
-    t: ⚖️ Stability
+    t: ⚖️ Стабильность
   - key: reason.clumsy_programming_style.long
-    t: ⚙️ Clumsy programming style
+    t: ⚙️ Грубый стиль написания кода
   - key: reason.clumsy_programming_style.short
-    t: ⚙️ Clumsy
+    t: ⚙️ Грубый
   - key: reason.buggy_error_prone_code.long
-    t: 🐞 Buggy, error-prone code
+    t: 🐞 Забагованный, подверженный ошибкам код
   - key: reason.buggy_error_prone_code.short
-    t: 🐞 Buggy code
+    t: 🐞 Забагованный код
   - key: reason.poor_performance.long
-    t: ⚡ Poor performance
+    t: ⚡ Низкая производительной
   - key: reason.poor_performance.short
-    t: ⚡ Poor performance
+    t: ⚡ Низкая производительной
   - key: reason.small_package_ecosystem.long
-    t: 🎁 Small package ecosystem
+    t: 🎁 Маленькая экосистема
   - key: reason.small_package_ecosystem.short
-    t: 🎁 Few packages
+    t: 🎁 Маленькая экосистема
   - key: reason.new_untested_option.long
-    t: 🏛️ New untested option
+    t: 🏛️ Новый и непроверенный
   - key: reason.new_untested_option.short
-    t: 🏛️ New & untested
+    t: 🏛️ Новый и непроверенный
   - key: reason.hard_learning_curve.long
-    t: 👶 Hard learning curve
+    t: 👶 Сложная кривая обучения
   - key: reason.hard_learning_curve.short
-    t: 👶 Hard to learn
+    t: 👶 Сложно изучить
   - key: reason.lacking_developer_tooling.long
-    t: 🔧 Lacking developer tooling
+    t: 🔧 Недостаток инструментов разработки
   - key: reason.lacking_developer_tooling.short
-    t: 🔧 Lacking tooling
+    t: 🔧 Недостаток инструментов
   - key: reason.bad_documentation.long
-    t: 📖 Bad documentation
+    t: 📖 Плохая документация
   - key: reason.bad_documentation.short
-    t: 📖 Bad documentation
+    t: 📖 Плохая документация
   - key: reason.concerns_about_the_team_company.long
-    t: 👫 Concerns about the team/company
+    t: 👫 Сомнения относительно команды/компании
   - key: reason.concerns_about_the_team_company.short
-    t: 👫 Bad team/company
+    t: 👫 Плохая команда/компания
   - key: reason.bloated_complex.long
-    t: 🎈 Bloated & complex
+    t: 🎈 Раздутый и сложный
   - key: reason.bloated_complex.short
-    t: 🎈 Bloated & complex
+    t: 🎈 Раздутый и сложный
   - key: reason.diminishing_momentum_popularity.long
-    t: 📉 Diminishing momentum/popularity
+    t: 📉 Теряет популярность
   - key: reason.diminishing_momentum_popularity.short
-    t: 📉 Low momentum
+    t: 📉 Теряет популярность
   - key: reason.limited_lacking_in_features.long
-    t: 🕹️ Limited & lacking in features
+    t: 🕹️ Не хватает функций
   - key: reason.limited_lacking_in_features.short
-    t: 🕹️ Limited
+    t: 🕹️ Не хватает функций
   - key: reason.fast_changing_breaks_often.long
-    t: ⚖️ Fast-changing & breaks often
+    t: ⚖️ Часто изменяется и ломается
   - key: reason.fast_changing_breaks_often.short
-    t: ⚖️ Fast-changing
+    t: ⚖️ Часто изменяется
   - key: reason.other.long
-    t: Other
+    t: Другой вариант
   - key: reason.other.short
-    t: Other
+    t: Другой вариант
 
   # quadrant
   - key: quadrant.satisfaction_legend
