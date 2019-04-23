@@ -5,7 +5,7 @@ import { PageContext } from 'core/pages/pageContext'
 
 const OpinionsPage = ({ data, ...rest }) => {
     const context = useContext(PageContext)
-    console.log(context)
+
     return (
         <>
             <PageHeader showIntro={false} />

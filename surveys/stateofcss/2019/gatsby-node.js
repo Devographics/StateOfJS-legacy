@@ -69,7 +69,6 @@ exports.createPages = async ({ actions: { createPage } }) => {
 
     flat.forEach(page => {
         const context = getPageContext(page)
-
         if (page.type !== 'page') {
             const template = guessPageTemplate(page.type)
 

@@ -15,8 +15,10 @@ exports.pageFromConfig = (stack, config, parent) => {
 
     if (Array.isArray(page.blocks)) {
         page.blocks = page.blocks.map(block => {
+            // block can either be a string (used as `id`); or an object with an `id` property
+            const blockObject = typeof block === 'string' ? { id: block } : block
             return {
-                id: block,
+                ...blockObject,
                 path: `${page.path}${block}/`
             }
         })

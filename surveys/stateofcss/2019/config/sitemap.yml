@@ -18,32 +18,46 @@
   type: page
   blocks:
     - id: participation-by-country
-      path: /demographics/participation-by-country/
-    - id: gender-breakdown
-      path: /demographics/gender-breakdown/
+      type: countries
+      path: '/demographics/[object Object]/'
     - id: salaries
-      path: /demographics/salaries/
+      type: vertical-bar
+      path: '/demographics/[object Object]/'
     - id: salary-per-country
-      path: /demographics/salary-per-country/
+      type: countries
+      path: '/demographics/[object Object]/'
     - id: years-of-experience
-      path: /demographics/years-of-experience/
+      type: vertical-bar
+      path: '/demographics/[object Object]/'
     - id: company-size
-      path: /demographics/company-size/
+      type: vertical-bar
+      path: '/demographics/[object Object]/'
+    - id: source-breakdown
+      type: source-breakdown
+      path: '/demographics/[object Object]/'
+    - id: gender-breakdown
+      type: gender-breakdown
+      path: '/demographics/[object Object]/'
     - id: job-titles
-      path: /demographics/job-titles/
+      type: horizontal-bar
+      path: '/demographics/[object Object]/'
     - id: javascript-proficiency
-      path: /demographics/javascript-proficiency/
+      type: vertical-bar
+      path: '/demographics/[object Object]/'
     - id: backend-proficiency
-      path: /demographics/backend-proficiency/
+      type: vertical-bar
+      path: '/demographics/[object Object]/'
   is_hidden: false
   children: []
   next:
     id: features
     path: /features/
     type: page
+    defaultChartType: feature
 - id: features
   path: /features/
   type: page
+  defaultChartType: feature
   children:
     - id: layout
       path: /features/layout/
@@ -52,7 +66,8 @@
         section: layout
       blocks:
         - id: overview
-          path: /features/layout/overview/
+          type: feature-overview
+          path: '/features/layout/[object Object]/'
         - id: css-grid
           path: /features/layout/css-grid/
         - id: flexbox
@@ -64,13 +79,15 @@
         - id: css-exclusions
           path: /features/layout/css-exclusions/
         - id: conclusion
-          path: /features/layout/conclusion/
+          type: conclusion
+          path: '/features/layout/[object Object]/'
       is_hidden: false
       children: []
       previous:
         id: features
         path: /features/
         type: page
+        defaultChartType: feature
       next:
         id: shapes-and-graphics
         path: /features/shapes-and-graphics/
@@ -84,7 +101,8 @@
         section: shapes-and-graphics
       blocks:
         - id: overview
-          path: /features/shapes-and-graphics/overview/
+          type: feature-overview
+          path: '/features/shapes-and-graphics/[object Object]/'
         - id: css-shapes
           path: /features/shapes-and-graphics/css-shapes/
         - id: object-fit
@@ -98,7 +116,8 @@
         - id: css-filter-effects
           path: /features/shapes-and-graphics/css-filter-effects/
         - id: conclusion
-          path: /features/shapes-and-graphics/conclusion/
+          type: conclusion
+          path: '/features/shapes-and-graphics/[object Object]/'
       is_hidden: false
       children: []
       previous:
@@ -120,7 +139,8 @@
         section: interactions
       blocks:
         - id: overview
-          path: /features/interactions/overview/
+          type: feature-overview
+          path: '/features/interactions/[object Object]/'
         - id: css-scroll-snap
           path: /features/interactions/css-scroll-snap/
         - id: overscroll-behavior
@@ -128,7 +148,8 @@
         - id: overflow-anchor
           path: /features/interactions/overflow-anchor/
         - id: conclusion
-          path: /features/interactions/conclusion/
+          type: conclusion
+          path: '/features/interactions/[object Object]/'
       is_hidden: false
       children: []
       previous:
@@ -150,7 +171,8 @@
         section: typography
       blocks:
         - id: overview
-          path: /features/typography/overview/
+          type: feature-overview
+          path: '/features/typography/[object Object]/'
         - id: web-fonts-font-face
           path: /features/typography/web-fonts-font-face/
         - id: variable-fonts
@@ -162,7 +184,8 @@
         - id: initial-letter
           path: /features/typography/initial-letter/
         - id: conclusion
-          path: /features/typography/conclusion/
+          type: conclusion
+          path: '/features/typography/[object Object]/'
       is_hidden: false
       children: []
       previous:
@@ -184,7 +207,8 @@
         section: animations-and-transforms
       blocks:
         - id: overview
-          path: /features/animations-and-transforms/overview/
+          type: feature-overview
+          path: '/features/animations-and-transforms/[object Object]/'
         - id: css-transitions
           path: /features/animations-and-transforms/css-transitions/
         - id: css-transforms
@@ -192,7 +216,8 @@
         - id: css-animations
           path: /features/animations-and-transforms/css-animations/
         - id: conclusion
-          path: /features/animations-and-transforms/conclusion/
+          type: conclusion
+          path: '/features/animations-and-transforms/[object Object]/'
       is_hidden: false
       children: []
       previous:
@@ -214,7 +239,8 @@
         section: other-features
       blocks:
         - id: overview
-          path: /features/other-features/overview/
+          type: feature-overview
+          path: '/features/other-features/[object Object]/'
         - id: css-variables
           path: /features/other-features/css-variables/
         - id: support-queries
@@ -226,7 +252,8 @@
         - id: calc
           path: /features/other-features/calc/
         - id: conclusion
-          path: /features/other-features/conclusion/
+          type: conclusion
+          path: '/features/other-features/[object Object]/'
       is_hidden: false
       children: []
       previous:
@@ -239,6 +266,7 @@
         id: units-and-selectors
         path: /units-and-selectors/
         type: page
+        defaultChartType: horizontal-bar
   is_hidden: false
   previous:
     id: demographics
@@ -253,6 +281,7 @@
 - id: units-and-selectors
   path: /units-and-selectors/
   type: page
+  defaultChartType: horizontal-bar
   blocks:
     - id: units
       path: /units-and-selectors/units/
@@ -282,14 +311,19 @@
     id: tools-and-methodology
     path: /tools-and-methodology/
     type: page
+    defaultChartType: tool
 - id: tools-and-methodology
   path: /tools-and-methodology/
   type: page
+  defaultChartType: tool
   children:
     - id: pre-post-processors
       path: /tools-and-methodology/pre-post-processors/
       type: tools
       blocks:
+        - id: overview
+          type: tool-overview
+          path: '/tools-and-methodology/pre-post-processors/[object Object]/'
         - id: sass
           path: /tools-and-methodology/pre-post-processors/sass/
         - id: less
@@ -304,6 +338,7 @@
         id: tools-and-methodology
         path: /tools-and-methodology/
         type: page
+        defaultChartType: tool
       next:
         id: css-frameworks
         path: /tools-and-methodology/css-frameworks/
@@ -312,6 +347,9 @@
       path: /tools-and-methodology/css-frameworks/
       type: tools
       blocks:
+        - id: overview
+          type: tool-overview
+          path: '/tools-and-methodology/css-frameworks/[object Object]/'
         - id: bootstrap
           path: /tools-and-methodology/css-frameworks/bootstrap/
         - id: materialize-css
@@ -348,6 +386,9 @@
       path: /tools-and-methodology/methodologies/
       type: tools
       blocks:
+        - id: overview
+          type: tool-overview
+          path: '/tools-and-methodology/methodologies/[object Object]/'
         - id: bem
           path: /tools-and-methodology/methodologies/bem/
         - id: atomic-css
@@ -372,6 +413,9 @@
       path: /tools-and-methodology/css-in-js/
       type: tools
       blocks:
+        - id: overview
+          type: tool-overview
+          path: '/tools-and-methodology/css-in-js/[object Object]/'
         - id: styled-components
           path: /tools-and-methodology/css-in-js/styled-components/
         - id: glamor
@@ -416,6 +460,7 @@
     id: units-and-selectors
     path: /units-and-selectors/
     type: page
+    defaultChartType: horizontal-bar
   next:
     id: pre-post-processors
     path: /tools-and-methodology/pre-post-processors/
@@ -425,13 +470,17 @@
   type: page
   blocks:
     - id: browsers
-      path: /environments/browsers/
+      type: horizontal-bar
+      path: '/environments/[object Object]/'
     - id: form-factors
-      path: /environments/form-factors/
+      type: horizontal-bar
+      path: '/environments/[object Object]/'
     - id: print-styles
-      path: /environments/print-styles/
+      type: vertical-bar
+      path: '/environments/[object Object]/'
     - id: email-styles
-      path: /environments/email-styles/
+      type: vertical-bar
+      path: '/environments/[object Object]/'
   is_hidden: false
   children: []
   previous:
@@ -447,11 +496,14 @@
   type: page
   blocks:
     - id: blogs-magazines
-      path: /resources/blogs-magazines/
+      type: horizontal-bar
+      path: '/resources/[object Object]/'
     - id: sites-courses
-      path: /resources/sites-courses/
+      type: horizontal-bar
+      path: '/resources/[object Object]/'
     - id: podcasts
-      path: /resources/podcasts/
+      type: horizontal-bar
+      path: '/resources/[object Object]/'
   is_hidden: false
   children: []
   previous:
@@ -467,19 +519,26 @@
   type: page
   blocks:
     - id: easy-to-learn
-      path: /opinions/easy-to-learn/
+      type: vertical-bar
+      path: '/opinions/[object Object]/'
     - id: evolving-too-slowly
-      path: /opinions/evolving-too-slowly/
+      type: vertical-bar
+      path: '/opinions/[object Object]/'
     - id: utility-classes
-      path: /opinions/utility-classes/
+      type: vertical-bar
+      path: '/opinions/[object Object]/'
     - id: selector-nesting
-      path: /opinions/selector-nesting/
+      type: vertical-bar
+      path: '/opinions/[object Object]/'
     - id: programming-language
-      path: /opinions/programming-language/
+      type: vertical-bar
+      path: '/opinions/[object Object]/'
     - id: enjoy-css
-      path: /opinions/enjoy-css/
+      type: vertical-bar
+      path: '/opinions/[object Object]/'
     - id: missing-features
-      path: /opinions/missing-features/
+      type: horizontal-bar
+      path: '/opinions/[object Object]/'
   is_hidden: false
   children: []
   previous:

@@ -7,19 +7,31 @@
   path: /demographics
   type: page
   blocks:
-      - participation-by-country
-      - gender-breakdown
-      - salaries
-      - salary-per-country
-      - years-of-experience
-      - company-size
-      - job-titles
-      - javascript-proficiency
-      - backend-proficiency
+      - id: participation-by-country
+        type: countries
+      - id: salaries
+        type: vertical-bar
+      - id: salary-per-country
+        type: countries
+      - id: years-of-experience
+        type: vertical-bar
+      - id: company-size
+        type: vertical-bar
+      - id: source-breakdown
+        type: source-breakdown
+      - id: gender-breakdown
+        type: gender-breakdown
+      - id: job-titles
+        type: horizontal-bar
+      - id: javascript-proficiency
+        type: vertical-bar
+      - id: backend-proficiency
+        type: vertical-bar
 
 - id: features
   path: /features
   type: page
+  defaultChartType: feature
   children:
       - id: layout
         path: /layout
@@ -27,13 +39,15 @@
         data:
             section: layout
         blocks:
-            - overview
+            - id: overview
+              type: feature-overview
             - css-grid
             - flexbox
             - css-multi-column
             - css-writing-modes
             - css-exclusions
-            - conclusion
+            - id: conclusion
+              type: conclusion
 
       - id: shapes-and-graphics
         path: /shapes-and-graphics
@@ -41,14 +55,16 @@
         data:
             section: shapes-and-graphics
         blocks:
-            - overview
+            - id: overview
+              type: feature-overview
             - css-shapes
             - object-fit
             - clip-path
             - css-masks
             - blend-modes
             - css-filter-effects
-            - conclusion
+            - id: conclusion
+              type: conclusion
 
       - id: interactions
         path: /interactions
@@ -56,11 +72,13 @@
         data:
             section: interactions
         blocks:
-            - overview
+            - id: overview
+              type: feature-overview
             - css-scroll-snap
             - overscroll-behavior
             - overflow-anchor
-            - conclusion
+            - id: conclusion
+              type: conclusion
 
       - id: typography
         path: /typography
@@ -68,13 +86,15 @@
         data:
             section: typography
         blocks:
-            - overview
+            - id: overview
+              type: feature-overview
             - web-fonts-font-face
             - variable-fonts
             - line-breaking-properties
             - font-variant
             - initial-letter
-            - conclusion
+            - id: conclusion
+              type: conclusion
 
       - id: animations-and-transforms
         path: /animations-and-transforms
@@ -82,11 +102,13 @@
         data:
             section: animations-and-transforms
         blocks:
-            - overview
+            - id: overview
+              type: feature-overview
             - css-transitions
             - css-transforms
             - css-animations
-            - conclusion
+            - id: conclusion
+              type: conclusion
 
       - id: other-features
         path: /other-features
@@ -94,17 +116,20 @@
         data:
             section: other-features
         blocks:
-            - overview
+            - id: overview
+              type: feature-overview
             - css-variables
             - support-queries
             - css-containment
             - will-change
             - calc
-            - conclusion
+            - id: conclusion
+              type: conclusion
 
 - id: units-and-selectors
   path: /units-and-selectors
   type: page
+  defaultChartType: horizontal-bar
   blocks:
       - units
       - pseudo-elements
@@ -118,11 +143,14 @@
 - id: tools-and-methodology
   path: /tools-and-methodology
   type: page
+  defaultChartType: tool
   children:
       - id: pre-post-processors
         path: /pre-post-processors
         type: tools
         blocks:
+            - id: overview
+              type: tool-overview
             - sass
             - less
             - postcss
@@ -132,6 +160,8 @@
         path: /css-frameworks
         type: tools
         blocks:
+            - id: overview
+              type: tool-overview
             - bootstrap
             - materialize-css
             - ant-design
@@ -148,6 +178,8 @@
         path: /methodologies
         type: tools
         blocks:
+            - id: overview
+              type: tool-overview
             - bem
             - atomic-css
             - oocss
@@ -158,6 +190,8 @@
         path: /css-in-js
         type: tools
         blocks:
+            - id: overview
+              type: tool-overview
             - styled-components
             - glamor
             - aphrodite
@@ -175,30 +209,44 @@
   path: /environments
   type: page
   blocks:
-    - browsers
-    - form-factors
-    - print-styles
-    - email-styles
+    - id: browsers
+      type: horizontal-bar
+    - id: form-factors
+      type: horizontal-bar
+    - id: print-styles
+      type: vertical-bar
+    - id: email-styles
+      type: vertical-bar
 
 - id: resources
   path: /resources
   type: page
   blocks:
-    - blogs-magazines
-    - sites-courses
-    - podcasts
+    - id: blogs-magazines
+      type: horizontal-bar
+    - id: sites-courses
+      type: horizontal-bar
+    - id: podcasts
+      type: horizontal-bar
 
 - id: opinions
   path: /opinions
   type: page
   blocks:
-    - easy-to-learn
-    - evolving-too-slowly
-    - utility-classes
-    - selector-nesting
-    - programming-language
-    - enjoy-css
-    - missing-features
+    - id: easy-to-learn
+      type: vertical-bar
+    - id: evolving-too-slowly
+      type: vertical-bar
+    - id: utility-classes
+      type: vertical-bar
+    - id: selector-nesting
+      type: vertical-bar
+    - id: programming-language
+      type: vertical-bar
+    - id: enjoy-css
+      type: vertical-bar
+    - id: missing-features
+      type: horizontal-bar
 
 - id: conclusion
   path: /conclusion
