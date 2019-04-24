@@ -45,7 +45,7 @@
             section: layout
         blocks:
             - id: overview
-              type: feature-overview
+              type: features-section-overview
             - css-grid
             - flexbox
             - css-multi-column
@@ -61,7 +61,7 @@
             section: shapes-and-graphics
         blocks:
             - id: overview
-              type: feature-overview
+              type: features-section-overview
             - css-shapes
             - object-fit
             - clip-path
@@ -78,7 +78,7 @@
             section: interactions
         blocks:
             - id: overview
-              type: feature-overview
+              type: features-section-overview
             - css-scroll-snap
             - overscroll-behavior
             - overflow-anchor
@@ -92,7 +92,7 @@
             section: typography
         blocks:
             - id: overview
-              type: feature-overview
+              type: features-section-overview
             - web-fonts-font-face
             - variable-fonts
             - line-breaking-properties
@@ -108,7 +108,7 @@
             section: animations-and-transforms
         blocks:
             - id: overview
-              type: feature-overview
+              type: features-section-overview
             - css-transitions
             - css-transforms
             - css-animations
@@ -122,7 +122,7 @@
             section: other-features
         blocks:
             - id: overview
-              type: feature-overview
+              type: features-section-overview
             - css-variables
             - support-queries
             - css-containment
@@ -158,7 +158,7 @@
         type: tools
         blocks:
             - id: overview
-              type: tool-overview
+              type: tools-section-overview
             - sass
             - less
             - postcss
@@ -171,7 +171,7 @@
         type: tools
         blocks:
             - id: overview
-              type: tool-overview
+              type: tools-section-overview
             - bootstrap
             - materialize-css
             - ant-design
@@ -191,7 +191,7 @@
         type: tools
         blocks:
             - id: overview
-              type: tool-overview
+              type: tools-section-overview
             - bem
             - atomic-css
             - oocss
@@ -205,7 +205,7 @@
         type: tools
         blocks:
             - id: overview
-              type: tool-overview
+              type: tools-section-overview
             - styled-components
             - glamor
             - aphrodite

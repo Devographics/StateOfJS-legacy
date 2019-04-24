@@ -75,7 +75,7 @@
         section: layout
       blocks:
         - id: overview
-          type: feature-overview
+          type: features-section-overview
           path: '/features/layout/[object Object]/'
         - id: css-grid
           type: feature
@@ -117,7 +117,7 @@
         section: shapes-and-graphics
       blocks:
         - id: overview
-          type: feature-overview
+          type: features-section-overview
           path: '/features/shapes-and-graphics/[object Object]/'
         - id: css-shapes
           type: feature
@@ -164,7 +164,7 @@
         section: interactions
       blocks:
         - id: overview
-          type: feature-overview
+          type: features-section-overview
           path: '/features/interactions/[object Object]/'
         - id: css-scroll-snap
           type: feature
@@ -202,7 +202,7 @@
         section: typography
       blocks:
         - id: overview
-          type: feature-overview
+          type: features-section-overview
           path: '/features/typography/[object Object]/'
         - id: web-fonts-font-face
           type: feature
@@ -246,7 +246,7 @@
         section: animations-and-transforms
       blocks:
         - id: overview
-          type: feature-overview
+          type: features-section-overview
           path: '/features/animations-and-transforms/[object Object]/'
         - id: css-transitions
           type: feature
@@ -284,7 +284,7 @@
         section: other-features
       blocks:
         - id: overview
-          type: feature-overview
+          type: features-section-overview
           path: '/features/other-features/[object Object]/'
         - id: css-variables
           type: feature
@@ -389,7 +389,7 @@
       type: tools
       blocks:
         - id: overview
-          type: tool-overview
+          type: tools-section-overview
           path: '/tools-and-methodology/pre-post-processors/[object Object]/'
         - id: sass
           type: tool
@@ -424,7 +424,7 @@
       type: tools
       blocks:
         - id: overview
-          type: tool-overview
+          type: tools-section-overview
           path: '/tools-and-methodology/css-frameworks/[object Object]/'
         - id: bootstrap
           type: tool
@@ -480,7 +480,7 @@
       type: tools
       blocks:
         - id: overview
-          type: tool-overview
+          type: tools-section-overview
           path: '/tools-and-methodology/methodologies/[object Object]/'
         - id: bem
           type: tool
@@ -518,7 +518,7 @@
       type: tools
       blocks:
         - id: overview
-          type: tool-overview
+          type: tools-section-overview
           path: '/tools-and-methodology/css-in-js/[object Object]/'
         - id: styled-components
           type: tool
