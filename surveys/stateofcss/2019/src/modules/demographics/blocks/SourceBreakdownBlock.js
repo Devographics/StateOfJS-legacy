@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Block from 'core/blocks/Block'
+import Block from 'core/components/Block'
 import SourceBreakdownWaffleChart from '../charts/SourceBreakdownWaffleChart'
 
 export default class SourceBreakdownBlock extends Component {

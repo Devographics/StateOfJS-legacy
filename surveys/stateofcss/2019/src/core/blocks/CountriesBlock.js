@@ -1,5 +1,5 @@
 import React from 'react'
-import Block from 'core/blocks/Block'
+import Block from 'core/components/Block'
 import ChartContainer from 'core/charts/ChartContainer'
 import CountriesChart from 'core/charts/CountriesChart'
 

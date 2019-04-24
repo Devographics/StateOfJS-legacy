@@ -12,7 +12,7 @@ import OpinionsLegends from 'core/charts/OpinionsLegends'
 import PeriodicElement from 'core/components/PeriodicElement'
 import ChartContainer from 'core/charts/ChartContainer'
 import Trans from 'core/i18n/Trans'
-import { PageContextConsumer } from '../../../core/pages/pageContext'
+import { PageContextConsumer } from '../../../core/helpers/pageContext'
 
 const patterns = [
     {

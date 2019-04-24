@@ -165,6 +165,8 @@
             - stylus
             - id: other-pre-post-processors
               type: horizontal-bar
+            - id: conclusion
+              type: text
 
       - id: css-frameworks
         path: /css-frameworks
@@ -185,6 +187,8 @@
             - purecss
             - id: other-css-frameworks
               type: horizontal-bar
+            - id: conclusion
+              type: text
 
       - id: methodologies
         path: /methodologies
@@ -199,6 +203,8 @@
             - it-css
             - id: other-methodologies
               type: horizontal-bar
+            - id: conclusion
+              type: text
 
       - id: css-in-js
         path: /css-in-js
@@ -216,6 +222,8 @@
             - css-modules
             - id: other-css-in-js
               type: horizontal-bar
+            - id: conclusion
+              type: text
 
 - id: other-tools
   path: /other-tools
@@ -268,6 +276,13 @@
         type: vertical-bar
       - id: missing-features
         type: horizontal-bar
+
+- id: awards
+  path: /awards
+  type: page
+  blocks: 
+    - id: awards
+      type: text
 
 - id: conclusion
   path: /conclusion

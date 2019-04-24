@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import Hamburger from '../components/Hamburger'
-import { PageContext } from '../pages/pageContext'
+import { PageContext } from '../helpers/pageContext'
 import PageLabel from '../pages/PageLabel'
 import PageLink from '../pages/PageLink'
 import LanguageSwitcher from '../i18n/LanguageSwitcher'

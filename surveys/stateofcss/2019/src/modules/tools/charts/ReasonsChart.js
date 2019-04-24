@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { reasons } from '../../../constants'
 import theme from 'nivoTheme'
-import Block from 'core/blocks/Block'
+import Block from 'core/components/Block'
 import ReasonsChartUnit from './ReasonsChartUnit'
 
 export default class ReasonsChart extends Component {

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Link from 'gatsby-link'
 import locales from '../../../config/locales.yml'
-import { PageContext } from '../pages/pageContext'
+import { PageContext } from '../helpers/pageContext'
 
 const LangSelector = () => {
     const context = useContext(PageContext)

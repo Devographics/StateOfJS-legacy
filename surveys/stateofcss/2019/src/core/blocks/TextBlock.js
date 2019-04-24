@@ -1,6 +1,6 @@
 import React from 'react'
-import addParagraphs from './paragraphs'
-import parseBold from './bold'
+import addParagraphs from '../helpers/paragraphs'
+import parseBold from '../helpers/bold'
 
 const TextBlock = ({ text, title, children }) => {
     if (children) {

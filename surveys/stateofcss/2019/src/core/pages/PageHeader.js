@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
-import { PageContext } from './pageContext'
+import { PageContext } from '../helpers/pageContext'
 import { I18nContext } from '../i18n/i18nContext'
-import { getPageLabel } from './pageHelpers'
+import { getPageLabel } from '../helpers/pageHelpers'
 
 const PageHeader = ({ title: titleOverride, showIntro = true, introduction }) => {
     const context = useContext(PageContext)

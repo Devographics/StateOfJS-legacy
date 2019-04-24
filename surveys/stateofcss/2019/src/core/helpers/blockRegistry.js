@@ -1,7 +1,7 @@
 // Generic Blocks
-import VerticalBarBlock from './VerticalBarBlock'
-import HorizontalBarBlock from './HorizontalBarBlock'
-import CountriesBlock from './CountriesBlock'
+import VerticalBarBlock from '../blocks/VerticalBarBlock'
+import HorizontalBarBlock from '../blocks/HorizontalBarBlock'
+import CountriesBlock from '../blocks/CountriesBlock'
 
 // Demographics Blocks
 import SourceBreakdownBlock from '../../modules/demographics/blocks/SourceBreakdownBlock'

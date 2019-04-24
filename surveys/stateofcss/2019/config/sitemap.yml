@@ -406,6 +406,9 @@
         - id: other-pre-post-processors
           type: horizontal-bar
           path: '/tools-and-methodology/pre-post-processors/[object Object]/'
+        - id: conclusion
+          type: text
+          path: '/tools-and-methodology/pre-post-processors/[object Object]/'
       is_hidden: false
       children: []
       defaultBlockType: tool
@@ -462,6 +465,9 @@
         - id: other-css-frameworks
           type: horizontal-bar
           path: '/tools-and-methodology/css-frameworks/[object Object]/'
+        - id: conclusion
+          type: text
+          path: '/tools-and-methodology/css-frameworks/[object Object]/'
       is_hidden: false
       children: []
       defaultBlockType: tool
@@ -499,6 +505,9 @@
           path: /tools-and-methodology/methodologies/it-css/
         - id: other-methodologies
           type: horizontal-bar
+          path: '/tools-and-methodology/methodologies/[object Object]/'
+        - id: conclusion
+          type: text
           path: '/tools-and-methodology/methodologies/[object Object]/'
       is_hidden: false
       children: []
@@ -546,6 +555,9 @@
           path: /tools-and-methodology/css-in-js/css-modules/
         - id: other-css-in-js
           type: horizontal-bar
+          path: '/tools-and-methodology/css-in-js/[object Object]/'
+        - id: conclusion
+          type: text
           path: '/tools-and-methodology/css-in-js/[object Object]/'
       is_hidden: false
       children: []
@@ -683,6 +695,26 @@
     type: page
     defaultBlockType: default
   next:
+    id: awards
+    path: /awards/
+    type: page
+    defaultBlockType: default
+- id: awards
+  path: /awards/
+  type: page
+  blocks:
+    - id: awards
+      type: text
+      path: '/awards/[object Object]/'
+  is_hidden: false
+  children: []
+  defaultBlockType: default
+  previous:
+    id: opinions
+    path: /opinions/
+    type: page
+    defaultBlockType: default
+  next:
     id: conclusion
     path: /conclusion/
     type: page
@@ -698,8 +730,8 @@
   children: []
   defaultBlockType: default
   previous:
-    id: opinions
-    path: /opinions/
+    id: awards
+    path: /awards/
     type: page
     defaultBlockType: default
 - id: support

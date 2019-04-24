@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-// import { PageContext } from 'core/pages/pageContext'
+// import { PageContext } from 'core/helpers/pageContext'
 // import { I18nContext } from 'core/i18n/i18nContext'
 import PageTemplate from 'core/pages/PageTemplate'
 // import ToolOpinionBlock from './blocks/ToolOpinionBlock'

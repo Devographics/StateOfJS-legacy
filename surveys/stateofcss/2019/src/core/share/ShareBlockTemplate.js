@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Redirect } from '@reach/router'
-import { getBlockTitle, getBlockDescription } from '../blocks/blockHelpers'
-import { mergePageContext } from '../pages/pageHelpers'
+import { getBlockTitle, getBlockDescription } from 'core/helpers/blockHelpers'
+import { mergePageContext } from '../helpers/pageHelpers'
 import PageMeta from '../pages/PageMeta'
 import PageMetaDebug from '../pages/PageMetaDebug'
-import { PageContextProvider } from '../pages/pageContext'
+import { PageContextProvider } from '../helpers/pageContext'
 import { I18nContextProvider } from '../i18n/i18nContext'
 import Trans from '../i18n/Trans'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { keys } from '../../constants'
-import Block from 'core/blocks/Block'
+import Block from 'core/components/Block'
 import ChartContainer from 'core/charts/ChartContainer'
 import VerticalBarChart from '../charts/VerticalBarChart'
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { yearsOfExperience } from '../../../constants'
-import Block from 'core/blocks/Block'
+import Block from 'core/components/Block'
 import ChartContainer from 'core/charts/ChartContainer'
 import DemographicsVerticalBarChart from '../charts/DemographicsVerticalBarChart'
 

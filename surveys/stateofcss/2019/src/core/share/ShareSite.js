@@ -3,7 +3,7 @@ import ShareTwitter from './ShareTwitter'
 import ShareEmail from './ShareEmail'
 import ShareFacebook from './ShareFacebook'
 import ShareLinkedIn from './ShareLinkedIn'
-import { PageContext } from '../pages/pageContext'
+import { PageContext } from '../helpers/pageContext'
 import { I18nContext } from '../i18n/i18nContext'
 
 const ShareSite = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import blockRegistry from './blockRegistry'
+import blockRegistry from '../helpers/blockRegistry'
 
 const DefaultComponent = ({ block }) => (
     <p>

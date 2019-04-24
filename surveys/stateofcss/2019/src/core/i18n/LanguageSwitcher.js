@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Locales from './Locales'
-import { PageContextConsumer } from '../pages/pageContext'
+import { PageContextConsumer } from '../helpers/pageContext'
 
 export default class LanguageSwitcher extends Component {
     state = {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Block from 'core/blocks/Block'
+import Block from 'core/components/Block'
 import GenderBreakdownWaffleChart from '../charts/GenderBreakdownWaffleChart'
 
 export default class GenderBreakdownBlock extends Component {

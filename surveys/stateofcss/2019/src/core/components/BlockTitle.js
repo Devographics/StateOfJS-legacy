@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import ReactMarkdown from 'react-markdown'
 import ShareBlock from '../share/ShareBlock'
 import { I18nContext } from '../i18n/i18nContext'
-import { PageContext } from '../pages/pageContext'
-import { getBlockTitle, getBlockDescription } from './blockHelpers'
+import { PageContext } from '../helpers/pageContext'
+import { getBlockTitle, getBlockDescription } from 'core/helpers/blockHelpers'
 
 const BlockTitle = ({ id, showDescription, isShareable, values }) => {
     const [showOptions, setShowOptions] = useState(false)

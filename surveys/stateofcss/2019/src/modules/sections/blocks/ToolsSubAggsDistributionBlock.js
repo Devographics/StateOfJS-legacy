@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
-import Block from 'core/blocks/Block'
+import Block from 'core/components/Block'
 import ChartContainer from 'core/charts/ChartContainer'
 import { I18nContext } from 'core/i18n/i18nContext'
 import ToolsSubAggsHeatMapChart from '../charts/ToolsSubAggsHeatMapChart'

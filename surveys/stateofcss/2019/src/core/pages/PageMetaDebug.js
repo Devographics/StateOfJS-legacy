@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
-import { PageContext } from '../pages/pageContext'
+import { PageContext } from '../helpers/pageContext'
 import { I18nContext } from '../i18n/i18nContext'
 import Debug from '../components/Debug'
-import { getPageSocialMeta } from './pageHelpers'
+import { getPageSocialMeta } from '../helpers/pageHelpers'
 
 const PageMetaDebug = ({ overrides = {} }) => {
     const context = useContext(PageContext)

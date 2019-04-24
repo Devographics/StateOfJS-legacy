@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import Block from 'core/blocks/Block'
+import Block from 'core/components/Block'
 import HappinessTrendChart from '../charts/HappinessTrendChart'
 
 const chartId = 'happiness'

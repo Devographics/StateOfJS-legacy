@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Helmet from 'react-helmet'
-import { PageContext } from '../pages/pageContext'
-import { getPageSocialMeta, getPageMeta } from '../pages/pageHelpers'
+import { PageContext } from '../helpers/pageContext'
+import { getPageSocialMeta, getPageMeta } from '../helpers/pageHelpers'
 import { I18nContext } from '../i18n/i18nContext'
 
 const Head = () => {

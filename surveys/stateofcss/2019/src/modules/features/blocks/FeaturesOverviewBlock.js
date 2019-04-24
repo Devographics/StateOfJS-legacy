@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { sortBy } from 'lodash'
-import Block from 'core/blocks/Block'
+import Block from 'core/components/Block'
 import FeatureUsageWaffleChart from '../charts/FeatureUsageWaffleChart'
 import FeatureUsageLegends from '../charts/FeatureUsageLegends'
 

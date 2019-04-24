@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
-import { PageContext } from '../pages/pageContext'
-import { I18nContext } from '../i18n/i18nContext'
-import { getBlockMeta } from '../blocks/blockHelpers'
+import { PageContext } from 'core/helpers/pageContext'
+import { I18nContext } from 'core/i18n/i18nContext'
+import { getBlockMeta } from 'core/helpers/blockHelpers'
 import Debug from '../components/Debug'
 
 const ShareBlockDebug = ({ id }) => {

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import Block from 'core/blocks/Block'
+import Block from 'core/components/Block'
 import { I18nContext } from 'core/i18n/i18nContext'
 import QuadrantChart from '../charts/QuadrantChart'
 

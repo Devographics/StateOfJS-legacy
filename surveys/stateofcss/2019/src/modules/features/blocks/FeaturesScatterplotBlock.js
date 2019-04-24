@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Block from 'core/blocks/Block'
+import Block from 'core/components/Block'
 import FeaturesScatterplotChart from '../charts/FeaturesScatterplotChart'
 import { mergeFeaturesResources } from '../featuresHelpers'
 

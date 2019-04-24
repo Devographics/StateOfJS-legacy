@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { getPageLabel } from './pageHelpers'
+import { getPageLabel } from '../helpers/pageHelpers'
 import { I18nContext } from '../i18n/i18nContext'
 
 const PageLabel = ({ page, isContextual, includeWebsite }) => {

@@ -1,7 +1,7 @@
 import React, { createContext, useContext } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import { getTranslator } from './translator'
-import { PageContext } from '../pages/pageContext'
+import { PageContext } from '../helpers/pageContext'
 
 export const I18nContext = createContext()
 
