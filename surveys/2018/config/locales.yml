@@ -22,3 +22,7 @@
   path:   de
   label:  Deutsch
 
+- locale: ru-RU
+  path:   ru
+  label:  Русский
+
