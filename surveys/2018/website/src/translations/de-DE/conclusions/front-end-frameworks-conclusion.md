@@ -1,7 +1,7 @@
 ---
 type: conclusion
 section: front-end-frameworks
-locale: en-US
+locale: de-DE
 ---
 Ein weiteres mal gehts im Frontend-Bereich nur um **React** und **Vue.js**. Die Geschichte von Vue ist hier besonders spannend: Vor 2 Jahren hatten noch 27% der Teilnehmer noch nie etwas von dieser Library gehört. Heute sind es nur noch 1,3%! Während React immer noch den größeren Marktanteil hat, zeigt der kometenhafte Aufstieg von Vue keine Anzeichen abzuschwächen. Vue hat seinen Mitspieler in manchen Punkten, wie z.B. GitHub-Stars, sogar bereits überholt.
 
