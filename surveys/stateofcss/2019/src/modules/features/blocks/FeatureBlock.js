@@ -4,10 +4,10 @@ import Block from 'core/components/Block'
 import { PageContext } from 'core/helpers/pageContext'
 import { I18nContext } from 'core/i18n/i18nContext'
 import FeatureUsageWaffleChart from '../charts/FeatureUsageWaffleChart'
+import FeatureUsageBarChart from '../charts/FeatureUsageBarChart'
 import { mergeFeaturesResources } from '../featuresHelpers'
 
 const FeatureBlock = ({ block, data }) => {
-
     const features = mergeFeaturesResources(
         data.features.aggregations,
         data.features.fields.resources
@@ -30,41 +30,43 @@ const FeatureBlock = ({ block, data }) => {
     return (
         <Block id={block.id} showDescription={false}>
             <div className="Feature">
-                <div>
+                <div className="Feature__Chart">
+                    <div style={{ height: 260 }}>
+                        <FeatureUsageBarChart feature={feature} />
+                    </div>
+                </div>
+                <div className="Feature__Description">
                     {mdnInfo && <div dangerouslySetInnerHTML={{ __html: mdnInfo.summary }} />}
                     {!mdnInfo && translate(`block.description.${block.id}`)}
                 </div>
-                <div>
-                    <div style={{ height: 260 }}>
-                        <FeatureUsageWaffleChart feature={feature}/>
-                    </div>
-                </div>
-                <div className="Feature__Support">browser support:</div>
-                <div className="Feature__Links">
-                    {caniuseInfo && (
-                        <div>
-                            resources:
+                <div className="Feature__Resources">
+                    <div className="Feature__Support">browser support:</div>
+                    <div className="Feature__Links">
+                        {caniuseInfo && (
                             <div>
-                                <a
-                                    href={caniuseInfo.spec}
-                                    title="spec"
-                                    className="Feature__Links__Item"
-                                >
-                                    {translate('feature.specication_link')}
-                                </a>
-                                {caniuseInfo.links.map((link, i) => (
+                                resources:
+                                <div>
                                     <a
-                                        key={i}
-                                        href={link.url}
-                                        title={link.title}
+                                        href={caniuseInfo.spec}
+                                        title="spec"
                                         className="Feature__Links__Item"
                                     >
-                                        {link.title}
+                                        {translate('feature.specication_link')}
                                     </a>
-                                ))}
+                                    {caniuseInfo.links.map((link, i) => (
+                                        <a
+                                            key={i}
+                                            href={link.url}
+                                            title={link.title}
+                                            className="Feature__Links__Item"
+                                        >
+                                            {link.title}
+                                        </a>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-                    )}
+                        )}
+                    </div>
                 </div>
             </div>
         </Block>

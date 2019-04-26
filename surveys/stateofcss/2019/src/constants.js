@@ -98,11 +98,9 @@ export const featureKeys = [
 ]
 
 export const featureColors = {
-    "I don't know what that is": colors.purple,
-    'Not needed': colors.purple,
-    'Nice-to-have, but not important': colors.purple,
-    'Major feature': colors.purple,
-    'Vital feature': colors.purple
+    'used_it': colors.pink, 
+    'know_not_used': colors.blue, 
+    'never_heard_not_sure': colors.grey,
 }
 
 export const DIVERGENCE_MAX_OFFSET = 15
