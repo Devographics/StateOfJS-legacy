@@ -47,7 +47,7 @@ const FeatureUsageBarChart = ({ feature, keys = defaultKeys }) => {
             //     bottom: 5
             // }}
             // cellComponent={Cell}
-            // colors={['#3c52d1', '#5dd6da', '#cccccc']}
+            colors={['#3c52d1', '#5dd6da', '#cccccc']}
             // emptyColor="#ffffff"
             data={[data]}
             indexBy="country"

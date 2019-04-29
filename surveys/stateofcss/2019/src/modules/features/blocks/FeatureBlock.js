@@ -31,7 +31,7 @@ const FeatureBlock = ({ block, data }) => {
         <Block id={block.id} showDescription={false}>
             <div className="Feature">
                 <div className="Feature__Chart">
-                    <div style={{ height: 260 }}>
+                    <div style={{ height: 60 }}>
                         <FeatureUsageBarChart feature={feature} />
                     </div>
                 </div>
