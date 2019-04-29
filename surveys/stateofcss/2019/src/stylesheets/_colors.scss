@@ -1,17 +1,18 @@
 /*****************************************************************************\
   base colors
 \*****************************************************************************/
-$grey: #d9dedf;
 $grey-light: #e0e4e4;
+$grey: #d9dedf;
+$grey-dark: #aeaeae;
 
 $blue: #3c52d1;
 $blue-dark: #273aa2;
 
+$teal-light: #ced9da;
 $teal: #9ac6c9;
 $teal-dark: #445a5a;
 
 $pink: #ec2f95;
-
 
 /*****************************************************************************\
   "functional" colors
@@ -20,6 +21,7 @@ $bg-color: $grey-light;
 $bg-color-light: $grey-light;
 
 $border-color: $teal;
+$dark-border-color: $teal-dark;
 $hover-color: $pink;
 
 /*****************************************************************************\
@@ -29,7 +31,6 @@ $hover-color: $pink;
 $blueLight: #8be7e7;
 $blue2: #49b7be; // mobile
 $blue-faded: #b3d8da;
-
 
 $pink-faded: #e0a4bc;
 
@@ -70,6 +71,4 @@ $text-color-inverted: $bg-color-light;
 $darker-text-color: $mediumgrey;
 $lighter-text-color: $mediumgrey;
 $light-border-color: $grey3;
-$dark-border-color: rgba(255, 255, 255, 0.2);
-$dark-border-color: #4d4f4f;
 $highlight-color: $yellow-faded;

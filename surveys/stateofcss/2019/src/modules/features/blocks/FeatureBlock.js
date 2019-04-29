@@ -6,8 +6,9 @@ import { I18nContext } from 'core/i18n/i18nContext'
 import FeatureUsageWaffleChart from '../charts/FeatureUsageWaffleChart'
 import FeatureUsageBarChart from '../charts/FeatureUsageBarChart'
 import { mergeFeaturesResources } from '../featuresHelpers'
+import FeatureUsageLegends from '../charts/FeatureUsageLegends'
 
-const FeatureBlock = ({ block, data }) => {
+const FeatureBlock = ({ block, data, index }) => {
     const features = mergeFeaturesResources(
         data.features.aggregations,
         data.features.fields.resources
@@ -31,13 +32,17 @@ const FeatureBlock = ({ block, data }) => {
         <Block id={block.id} showDescription={false}>
             <div className="Feature">
                 <div className="Feature__Chart">
-                    <div style={{ height: 60 }}>
+                    <FeatureUsageLegends />
+                    <div style={{ height: 40 }}>
                         <FeatureUsageBarChart feature={feature} />
                     </div>
                 </div>
                 <div className="Feature__Description">
-                    {mdnInfo && <div dangerouslySetInnerHTML={{ __html: mdnInfo.summary }} />}
-                    {!mdnInfo && translate(`block.description.${block.id}`)}
+                    {mdnInfo ? (
+                        <p dangerouslySetInnerHTML={{ __html: mdnInfo.summary }} />
+                    ) : (
+                        translate(`block.description.${block.id}`)
+                    )}
                 </div>
                 <div className="Feature__Resources">
                     <div className="Feature__Support">browser support:</div>

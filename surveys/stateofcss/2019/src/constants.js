@@ -1,6 +1,6 @@
 export let colors = {
-    grey: '#d9dedf',
     greyLight: '#e0e4e4',
+    grey: '#d9dedf',
     greyDark: '#aeaeae',
 
     blueLighter: '#B2BBEE',
@@ -13,6 +13,7 @@ export let colors = {
     pinkLight: '#EC75CB',
     pink: '#ec2f95',
 
+    tealLight: '#ced9da',
     teal: '#9ac6c9',
     tealDark: '#445a5a',
 
@@ -97,11 +98,12 @@ export const featureKeys = [
     'Vital feature'
 ]
 
-export const featureColors = {
-    'used_it': colors.pink, 
-    'know_not_used': colors.blue, 
-    'never_heard_not_sure': colors.grey,
-}
+// export const featureColors = {
+//     'used_it': colors.pink,
+//     'know_not_used': colors.blue,
+//     'never_heard_not_sure': colors.grey,
+// }
+export const featureColors = [colors.blue, colors.teal, colors.tealLight]
 
 export const DIVERGENCE_MAX_OFFSET = 15
 export const DIVERGENCE_COLORS = ['#8b8de8', '#dadada', '#ea2149']

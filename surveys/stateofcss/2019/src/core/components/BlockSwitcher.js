@@ -7,7 +7,7 @@ const DefaultComponent = ({ block }) => (
     </p>
 )
 
-const BlockSwitcher = ({ data, block }) => {
+const BlockSwitcher = ({ data, block, index }) => {
     if (!data) {
         return (
             <div>
@@ -17,7 +17,7 @@ const BlockSwitcher = ({ data, block }) => {
     }
     const { type } = block
     const BlockComponent = blockRegistry[type] ? blockRegistry[type] : DefaultComponent
-    return <BlockComponent block={block} data={data} />
+    return <BlockComponent block={block} data={data} index={index}/>
 }
 
 export default BlockSwitcher

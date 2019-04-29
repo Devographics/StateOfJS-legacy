@@ -30,8 +30,7 @@
 }
 
 .Legends--withFrame {
-    border: 1px dashed $light-border-color;
-    border-radius: 3px;
+    border: $border2;
     padding: $spacing;
 }
 

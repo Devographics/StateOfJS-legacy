@@ -23,7 +23,7 @@
 
 .Block__Title {
     padding-bottom: $spacing/2;
-    border-bottom: 1px dashed $border-color;
+    border-bottom: $border;
     margin-bottom: $spacing;
     display: flex;
     align-items: center;

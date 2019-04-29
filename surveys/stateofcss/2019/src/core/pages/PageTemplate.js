@@ -11,11 +11,12 @@ const PageTemplate = ({ data = {} }) => {
             <PageHeader />
             {data.introduction && <TextBlock text={data.introduction.html} />}
             {context.blocks &&
-                context.blocks.map(block => (
+                context.blocks.map((block, i) => (
                     <BlockSwitcher
                         key={block.id}
                         block={block}
                         data={data}
+                        index={i}
                     />
                 ))}
         </>

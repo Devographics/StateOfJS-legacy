@@ -7,13 +7,14 @@ $spacing: 20px;
 }
 
 $border: 2px dashed $border-color;
+$border2: 1px solid $border-color;
 
 @mixin border {
     border: $border;
 }
 
 @mixin border2 {
-    border: 1px solid $dark-border-color;
+    border: $border2;
 }
 
 @mixin clearfix {

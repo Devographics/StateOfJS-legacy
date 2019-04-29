@@ -24,7 +24,6 @@ const Cell = props => {
 const defaultKeys = ['used_it', 'know_not_used', 'never_heard_not_sure']
 
 const FeatureUsageBarChart = ({ feature, keys = defaultKeys }) => {
-
     const { translate } = useContext(I18nContext)
 
     // const data = keys.map(key => ({
@@ -37,7 +36,7 @@ const FeatureUsageBarChart = ({ feature, keys = defaultKeys }) => {
 
     return (
         <ResponsiveBar
-        layout="horizontal"
+            layout="horizontal"
             theme={theme}
             // columns={8}
             // rows={12}
@@ -47,11 +46,11 @@ const FeatureUsageBarChart = ({ feature, keys = defaultKeys }) => {
             //     bottom: 5
             // }}
             // cellComponent={Cell}
-            colors={['#3c52d1', '#5dd6da', '#cccccc']}
+            colors={featureColors}
             // emptyColor="#ffffff"
             data={[data]}
             indexBy="country"
-        keys={keys}
+            keys={keys}
         />
     )
 }
