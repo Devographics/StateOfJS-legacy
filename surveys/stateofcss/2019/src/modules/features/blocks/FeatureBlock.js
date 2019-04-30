@@ -7,6 +7,42 @@ import FeatureUsageWaffleChart from '../charts/FeatureUsageWaffleChart'
 import FeatureUsageBarChart from '../charts/FeatureUsageBarChart'
 import { mergeFeaturesResources } from '../featuresHelpers'
 import FeatureUsageLegends from '../charts/FeatureUsageLegends'
+import ChartContainer from 'core/charts/ChartContainer'
+
+const FeatureResources = ({ caniuseInfo }) => {
+    const { translate } = useContext(I18nContext)
+    return (
+        <div className="Feature__Resources FTBlock__Resources">
+            <div className="Feature__Support">browser support:</div>
+            <div className="Feature__Links">
+                {caniuseInfo && (
+                    <div>
+                        resources:
+                        <div>
+                            <a
+                                href={caniuseInfo.spec}
+                                title="spec"
+                                className="Feature__Links__Item"
+                            >
+                                {translate('feature.specication_link')}
+                            </a>
+                            {caniuseInfo.links.map((link, i) => (
+                                <a
+                                    key={i}
+                                    href={link.url}
+                                    title={link.title}
+                                    className="Feature__Links__Item"
+                                >
+                                    {link.title}
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                )}
+            </div>
+        </div>
+    )
+}
 
 const FeatureBlock = ({ block, data, index }) => {
     const features = mergeFeaturesResources(
@@ -30,49 +66,21 @@ const FeatureBlock = ({ block, data, index }) => {
 
     return (
         <Block id={block.id} showDescription={false}>
-            <div className="Feature">
-                <div className="Feature__Chart">
+            <div className="Feature FTBlock">
+                <div className="Feature__Chart FTBlock__Chart">
                     <FeatureUsageLegends />
-                    <div style={{ height: 40 }}>
+                    <ChartContainer height={40}>
                         <FeatureUsageBarChart feature={feature} />
-                    </div>
+                    </ChartContainer>
                 </div>
-                <div className="Feature__Description">
+                <div className="Feature__Description FTBlock__Description">
                     {mdnInfo ? (
                         <p dangerouslySetInnerHTML={{ __html: mdnInfo.summary }} />
                     ) : (
                         translate(`block.description.${block.id}`)
                     )}
                 </div>
-                <div className="Feature__Resources">
-                    <div className="Feature__Support">browser support:</div>
-                    <div className="Feature__Links">
-                        {caniuseInfo && (
-                            <div>
-                                resources:
-                                <div>
-                                    <a
-                                        href={caniuseInfo.spec}
-                                        title="spec"
-                                        className="Feature__Links__Item"
-                                    >
-                                        {translate('feature.specication_link')}
-                                    </a>
-                                    {caniuseInfo.links.map((link, i) => (
-                                        <a
-                                            key={i}
-                                            href={link.url}
-                                            title={link.title}
-                                            className="Feature__Links__Item"
-                                        >
-                                            {link.title}
-                                        </a>
-                                    ))}
-                                </div>
-                            </div>
-                        )}
-                    </div>
-                </div>
+                {caniuseInfo && <FeatureResources caniuseInfo={caniuseInfo} />}
             </div>
         </Block>
     )

@@ -1,7 +1,7 @@
 export let colors = {
     greyLight: '#e0e4e4',
     grey: '#d9dedf',
-    greyDark: '#aeaeae',
+    greyMedium: '#cecdcc',
 
     blueLighter: '#B2BBEE',
     blueLight: '#808EE1',
@@ -13,7 +13,8 @@ export let colors = {
     pinkLight: '#EC75CB',
     pink: '#ec2f95',
 
-    tealLight: '#ced9da',
+    // tealLight: '#ced9da',
+    tealLight: '#bad9db',
     teal: '#9ac6c9',
     tealDark: '#445a5a',
 
@@ -105,7 +106,7 @@ export const featureKeys = ['used_it', 'know_not_used', 'never_heard_not_sure']
 //     'know_not_used': colors.blue,
 //     'never_heard_not_sure': colors.grey,
 // }
-export const featureColors = [colors.blue, colors.teal, colors.tealLight]
+export const featureColors = [colors.blue, colors.teal, colors.greyMedium]
 
 export const opinionKeys = [
     'would_use',
@@ -124,11 +125,11 @@ export const opinionKeysFull = [
 ]
 
 export const opinionColors = [
-    colors.pink,
-    colors.pinkLight,
     colors.blue,
     colors.blueLight,
-    colors.teal
+    colors.teal,
+    colors.tealLight,
+    colors.greyMedium
 ]
 
 export const DIVERGENCE_MAX_OFFSET = 15

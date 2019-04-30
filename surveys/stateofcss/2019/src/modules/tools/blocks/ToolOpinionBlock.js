@@ -7,6 +7,7 @@ import ChartContainer from 'core/charts/ChartContainer'
 import { I18nContext } from 'core/i18n/i18nContext'
 import { getToolDescription } from '../tools_helpers'
 import ToolOpinionsChart from '../charts/ToolOpinionsChart'
+import ToolOpinionsLegend from '../charts/ToolOpinionsLegend'
 
 const ToolOpinionBlock = ({ block, data }) => {
     const blockData = data.aggs.aggregations.find(a => a.id === block.id)
@@ -22,17 +23,19 @@ const ToolOpinionBlock = ({ block, data }) => {
 
     return (
         <Block id={block.id} showDescription={false}>
-            <TextBlock text={getToolDescription(block, resources, translate)} />
-            <ChartContainer>
-                <div style={{ height: 40 }}>
-                    <ToolOpinionsChart buckets={buckets} />
+            <div className="Tool FTBlock">
+                <div className="Tool__Chart FTBlock__Chart">
+                    <ToolOpinionsLegend />
+                    <ChartContainer height={40}>
+                        <ToolOpinionsChart buckets={buckets} />
+                    </ChartContainer>
                 </div>
-                {buckets.map(bucket => (
-                    <div key={bucket.id}>
-                        {bucket.id}: <strong>{bucket.count}</strong>
-                    </div>
-                ))}
-            </ChartContainer>
+
+                <div className="Tool__Description FTBlock__Description">
+                    <TextBlock text={getToolDescription(block, resources, translate)} />
+                </div>
+                <div className="Feature__Resources FTBlock__Resources">*resources*</div>
+            </div>
         </Block>
     )
 }
