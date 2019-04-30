@@ -11,6 +11,17 @@
   children: []
   defaultBlockType: default
   next:
+    id: introduction
+    path: /introduction/
+    type: page
+    defaultBlockType: default
+- id: introduction
+  path: /introduction/
+  type: page
+  is_hidden: false
+  children: []
+  defaultBlockType: default
+  next:
     id: demographics
     path: /demographics/
     type: page
@@ -54,6 +65,11 @@
   is_hidden: false
   children: []
   defaultBlockType: default
+  previous:
+    id: introduction
+    path: /introduction/
+    type: page
+    defaultBlockType: default
   next:
     id: features
     path: /features/

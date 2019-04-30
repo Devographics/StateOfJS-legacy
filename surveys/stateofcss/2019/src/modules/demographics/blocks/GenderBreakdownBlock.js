@@ -16,15 +16,15 @@ export default class GenderBreakdownBlock extends Component {
                 })
             ).isRequired
         }),
-        chartId: PropTypes.string.isRequired
+        block: PropTypes.object.isRequired
     }
 
     render() {
-        const { data, chartId } = this.props
+        const { data, block } = this.props
         const yearData = data.stats.gender && data.stats.gender.find(d => d.survey === '2018')
 
         return (
-            <Block id={chartId} showDescription={false} className="Block--gender Gender__Block">
+            <Block id={block.id} showDescription={false} className="Block--gender Gender__Block">
                 <GenderBreakdownWaffleChart total={data.total} data={yearData.by_gender} />
             </Block>
         )

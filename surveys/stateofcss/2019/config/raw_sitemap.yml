@@ -3,6 +3,10 @@
   type: page
   is_hidden: true
 
+- id: introduction
+  path: /introduction
+  type: page
+
 - id: demographics
   path: /demographics
   type: page

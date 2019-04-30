@@ -1,11 +1,14 @@
 .Logo {
     font-weight: 800;
-    padding: 20px;
+    // padding: 20px;
     font-size: 1.4rem;
     line-height: 1.7rem;
     display: block;
     border: $border;
     border-left: 0;
+    svg{
+        display: block;
+    }
 }
 .Logo__Wrapper {
     margin: 0;

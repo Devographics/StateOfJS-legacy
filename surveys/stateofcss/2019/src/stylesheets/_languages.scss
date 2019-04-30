@@ -35,8 +35,8 @@
             fill: $text-color;
         }
     }
-    .pagetitle .LanguageSwitcher--open & {
-        background: white(0.1);
+    &:hover, .pagetitle .LanguageSwitcher--open & {
+        background: $teal-light;
     }
     .pagetitle & {
         padding: $spacing;

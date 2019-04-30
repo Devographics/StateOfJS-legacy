@@ -21,13 +21,13 @@ export default {
         'Hacker News': 'rgb(240, 128, 72)',
         Medium: '#48A57F',
         Facebook: 'rgb(99, 130, 197)',
-        'Other/Unknown': colors.greyDark
+        'Other/Unknown': colors.greyMedium
     },
     genderColors: {
         female: colors.blueLight,
         male: colors.teal,
         'non-binary/ third gender': colors.yellow,
-        other: colors.greyDark
+        other: colors.greyMedium
     },
     reasonsColors: {
         like: colors.blue,

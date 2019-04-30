@@ -90,7 +90,7 @@
         padding: 22px $spacing/3;
 
         &:hover {
-            background: $bg-color-light;
+            background: black(0.05);
         }
         svg {
             display: block;
@@ -128,9 +128,22 @@
     }
 }
 
-.ShareSite {
+.ShareSite__Content {
     border-top: $border;
     display: flex;
     justify-content: space-evenly;
     border-right: $border;
+    position: relative;
+    z-index: 1;
+}
+
+.ShareSite{
+    position: relative;
+    .GridLines{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
 }
