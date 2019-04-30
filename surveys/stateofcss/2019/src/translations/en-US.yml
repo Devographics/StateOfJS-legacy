@@ -121,7 +121,7 @@ translations:
       t: Notify Me
 
     # features
-    - key: feature.specication_link
+    - key: feature.specification_link
       t: Specification
     - key: features.usage.used_it
       t: Have used it

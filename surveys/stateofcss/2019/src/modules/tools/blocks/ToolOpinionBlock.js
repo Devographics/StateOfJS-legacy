@@ -9,7 +9,6 @@ import { getToolDescription } from '../tools_helpers'
 import ToolOpinionsChart from '../charts/ToolOpinionsChart'
 
 const ToolOpinionBlock = ({ block, data }) => {
-
     const blockData = data.aggs.aggregations.find(a => a.id === block.id)
     const resources = data.aggs.fields.resources.find(r => r.id === block.id)
 
@@ -25,7 +24,9 @@ const ToolOpinionBlock = ({ block, data }) => {
         <Block id={block.id} showDescription={false}>
             <TextBlock text={getToolDescription(block, resources, translate)} />
             <ChartContainer>
-                <ToolOpinionsChart/>
+                <div style={{ height: 40 }}>
+                    <ToolOpinionsChart buckets={buckets} />
+                </div>
                 {buckets.map(bucket => (
                     <div key={bucket.id}>
                         {bucket.id}: <strong>{bucket.count}</strong>
@@ -40,7 +41,7 @@ ToolOpinionBlock.propTypes = {
     block: PropTypes.shape({
         id: PropTypes.string.isRequired,
         path: PropTypes.string.isRequired
-    }).isRequired,
+    }).isRequired
 }
 
 export default ToolOpinionBlock

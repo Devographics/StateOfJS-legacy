@@ -90,13 +90,15 @@ export const toolOpinionKeys = [
     'never_heard'
 ]
 
-export const featureKeys = [
-    "I don't know what that is",
-    'Not needed',
-    'Nice-to-have, but not important',
-    'Major feature',
-    'Vital feature'
-]
+// export const featureKeys = [
+//     "I don't know what that is",
+//     'Not needed',
+//     'Nice-to-have, but not important',
+//     'Major feature',
+//     'Vital feature'
+// ]
+
+export const featureKeys = ['used_it', 'know_not_used', 'never_heard_not_sure']
 
 // export const featureColors = {
 //     'used_it': colors.pink,
@@ -104,6 +106,30 @@ export const featureKeys = [
 //     'never_heard_not_sure': colors.grey,
 // }
 export const featureColors = [colors.blue, colors.teal, colors.tealLight]
+
+export const opinionKeys = [
+    'would_use',
+    'would_not_use',
+    'interested',
+    'not_interested',
+    'never_heard'
+]
+
+export const opinionKeysFull = [
+    '👍 Used it > Would use again',
+    '👎 Used it > Would avoid',
+    '✅ Heard of it > Would like to learn',
+    '🚫 Heard of it > Not interested',
+    '🤷 Never heard of it/Not sure what it is'
+]
+
+export const opinionColors = [
+    colors.pink,
+    colors.pinkLight,
+    colors.blue,
+    colors.blueLight,
+    colors.teal
+]
 
 export const DIVERGENCE_MAX_OFFSET = 15
 export const DIVERGENCE_COLORS = ['#8b8de8', '#dadada', '#ea2149']
@@ -178,4 +204,4 @@ export const barChartProps = {
     }
 }
 
-export const fontFamily = `'IBM Plex Mono', 'Space Grotesk', 'Roboto Slab', sans-serif`
+export const fontFamily = `'IBM Plex Mono', monospace`

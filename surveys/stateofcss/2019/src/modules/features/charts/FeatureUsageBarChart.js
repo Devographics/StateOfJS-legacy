@@ -4,7 +4,7 @@ import { ResponsiveWaffle } from '@nivo/waffle'
 import theme from 'nivoTheme'
 import { I18nContext } from 'core/i18n/i18nContext'
 import { ResponsiveBar } from '@nivo/bar'
-import { featureColors } from '../../../constants'
+import { featureKeys, featureColors } from '../../../constants'
 
 const Cell = props => {
     return (
@@ -21,9 +21,7 @@ const Cell = props => {
     )
 }
 
-const defaultKeys = ['used_it', 'know_not_used', 'never_heard_not_sure']
-
-const FeatureUsageBarChart = ({ feature, keys = defaultKeys }) => {
+const FeatureUsageBarChart = ({ feature, keys = featureKeys }) => {
     const { translate } = useContext(I18nContext)
 
     // const data = keys.map(key => ({
@@ -31,9 +29,9 @@ const FeatureUsageBarChart = ({ feature, keys = defaultKeys }) => {
     //     label: translate(`features.usage.${key}`),
     //     value: feature.usage[key] || 0
     // }))
-
+  
     const data = feature.usage
-
+    console.log(data)
     return (
         <ResponsiveBar
             layout="horizontal"
