@@ -47,12 +47,14 @@ const FeaturesScatterplotChart = ({ features }) => {
                     max
                 }}
                 axisLeft={{
+                    format: '.2s',
                     tickPadding: 14,
                     legend: 'awareness',
                     legendPosition: 'middle',
                     legendOffset: -60,
                 }}
                 axisBottom={{
+                    format: '.2s',
                     tickPadding: 14,
                     legend: 'usage',
                     legendPosition: 'middle',

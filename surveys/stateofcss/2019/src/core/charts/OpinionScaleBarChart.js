@@ -13,6 +13,8 @@ const Tooltip = memo(({ translate, indexValue, value }) => (
     </span>
 ))
 
+console.log(colors)
+
 const scaleLabel = translate => value => {
     if (value === '1' || value === '3') return null
 
@@ -87,7 +89,11 @@ const OpinionScaleBarChart = ({ buckets }) => {
                 }}
                 enableLabel={false}
                 theme={theme}
-                colors={[colors.blue]}
+                colors={bar => {
+                    if (bar.indexValue === '0' || bar.indexValue === '1') return '#77bcbf'
+                    if (bar.indexValue === '2') return '#bbb'
+                    return colors.blue
+                }}
                 borderWidth={2}
                 borderColor={{ from: 'color' }}
                 defs={[
