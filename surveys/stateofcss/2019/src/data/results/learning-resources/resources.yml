@@ -1,0 +1,82 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
+section_id: resources
+aggregations:
+  - id: blogs-magazines
+    total: 10384
+    others_count: 0
+    buckets:
+      - id: CSS Tricks
+        count: 10085
+        percentage: -58.65
+      - id: Smashing Magazine
+        count: 6456
+        percentage: 62.17
+      - id: A List Apart
+        count: 3861
+        percentage: 37.18
+      - id: CoDrops
+        count: 3216
+        percentage: 30.97
+      - id: SitePoint
+        count: 2942
+        percentage: 28.33
+  - id: sites-courses
+    total: 11001
+    others_count: 0
+    buckets:
+      - id: Stack Overflow
+        count: 9732
+        percentage: -141.46
+      - id: MDN
+        count: 8602
+        percentage: 78.19
+      - id: W3Schools
+        count: 5951
+        percentage: 54.1
+      - id: 'Wes Bos Courses (GSSGrid.io, Flexbox.io, etc.)'
+        count: 3351
+        percentage: 30.46
+      - id: FreeCodeCamp
+        count: 2326
+        percentage: 21.14
+      - id: Codecademy
+        count: 2221
+        percentage: 20.19
+      - id: The CSS Specs
+        count: 2174
+        percentage: 19.76
+      - id: Pluralsight
+        count: 1223
+        percentage: 11.12
+      - id: LevelUp Tutorials
+        count: 715
+        percentage: 6.5
+  - id: podcasts
+    total: 3126
+    others_count: 0
+    buckets:
+      - id: Syntax
+        count: 2007
+        percentage: 10.75
+      - id: Shop Talk Show
+        count: 1089
+        percentage: 34.84
+      - id: The Changelog
+        count: 560
+        percentage: 17.91
+      - id: The Web Ahead
+        count: 429
+        percentage: 13.72
+      - id: The Big Web Show
+        count: 385
+        percentage: 12.32
+      - id: Style Guide Podcast
+        count: 227
+        percentage: 7.26
+      - id: Non Breaking Space Show
+        count: 100
+        percentage: 3.2

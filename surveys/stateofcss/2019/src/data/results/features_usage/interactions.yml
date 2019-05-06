@@ -1,35 +1,46 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
 section_id: interactions
 aggregations:
   - id: css-scroll-snap
-    total: 9491
-    errors: 0
+    total: 11236
     others_count: 0
     buckets:
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 4549
+        count: 5378
+        percentage: 47.87
       - id: '✅ Know what it is, but haven''t used it'
-        count: 3767
+        count: 4550
+        percentage: 40.49
       - id: "\U0001F44D I've used it"
-        count: 1109
+        count: 1308
+        percentage: 11.64
   - id: overscroll-behavior
-    total: 9491
-    errors: 0
+    total: 11227
     others_count: 0
     buckets:
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 5439
+        count: 6525
+        percentage: 58.12
       - id: '✅ Know what it is, but haven''t used it'
-        count: 2081
+        count: 2461
+        percentage: 21.92
       - id: "\U0001F44D I've used it"
-        count: 1893
+        count: 2241
+        percentage: 19.96
   - id: overflow-anchor
-    total: 9491
-    errors: 0
+    total: 11239
     others_count: 0
     buckets:
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 7340
+        count: 8772
+        percentage: 78.05
       - id: '✅ Know what it is, but haven''t used it'
-        count: 1387
+        count: 1646
+        percentage: 14.65
       - id: "\U0001F44D I've used it"
-        count: 698
+        count: 821
+        percentage: 7.3

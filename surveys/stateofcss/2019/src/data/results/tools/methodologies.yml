@@ -1,0 +1,102 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
+section_id: methodologies
+aggregations:
+  - id: bem
+    total: 11203
+    others_count: 0
+    buckets:
+      - id: "\U0001F44D Used it > Would use again"
+        count: 5840
+        percentage: 52.13
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 1982
+        percentage: 17.69
+      - id: ✅ Heard of it > Would like to learn
+        count: 1418
+        percentage: 12.66
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 1031
+        percentage: 9.2
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 932
+        percentage: 8.32
+  - id: atomic-css
+    total: 11169
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 3666
+        percentage: 32.81
+      - id: ✅ Heard of it > Would like to learn
+        count: 2734
+        percentage: 24.48
+      - id: "\U0001F44D Used it > Would use again"
+        count: 2249
+        percentage: 20.14
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 1981
+        percentage: 17.74
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 539
+        percentage: 4.83
+  - id: oocss
+    total: 11137
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 4563
+        percentage: 40.98
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 2261
+        percentage: 20.3
+      - id: ✅ Heard of it > Would like to learn
+        count: 2049
+        percentage: 18.4
+      - id: "\U0001F44D Used it > Would use again"
+        count: 1749
+        percentage: 15.7
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 515
+        percentage: 4.62
+  - id: smacss
+    total: 11144
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 5087
+        percentage: 45.65
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 2081
+        percentage: 18.67
+      - id: ✅ Heard of it > Would like to learn
+        count: 1815
+        percentage: 16.29
+      - id: "\U0001F44D Used it > Would use again"
+        count: 1688
+        percentage: 15.15
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 473
+        percentage: 4.24
+  - id: it-css
+    total: 11207
+    others_count: 0
+    buckets:
+      - id: "\U0001F937 Never heard of it/Not sure what it is"
+        count: 8484
+        percentage: 75.7
+      - id: "\U0001F6AB Heard of it > Not interested"
+        count: 1072
+        percentage: 9.57
+      - id: "\U0001F44D Used it > Would use again"
+        count: 791
+        percentage: 7.06
+      - id: ✅ Heard of it > Would like to learn
+        count: 714
+        percentage: 6.37
+      - id: "\U0001F44E Used it > Would avoid"
+        count: 146
+        percentage: 1.3

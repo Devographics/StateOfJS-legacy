@@ -1,62 +1,148 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
 section_id: pre-post-processors
 aggregations:
   - id: sass
-    total: 9491
-    errors: 0
+    total: 11238
     others_count: 0
     buckets:
       - id: "\U0001F44D Used it > Would use again"
-        count: 7369
+        count: 8726
+        percentage: 77.65
       - id: "\U0001F44E Used it > Would avoid"
-        count: 833
+        count: 956
+        percentage: 8.51
       - id: ✅ Heard of it > Would like to learn
-        count: 688
+        count: 888
+        percentage: 7.9
       - id: "\U0001F6AB Heard of it > Not interested"
-        count: 509
+        count: 627
+        percentage: 5.58
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 30
+        count: 41
+        percentage: 0.36
   - id: less
-    total: 9491
-    errors: 0
+    total: 11234
     others_count: 0
     buckets:
       - id: "\U0001F6AB Heard of it > Not interested"
-        count: 3036
+        count: 3603
+        percentage: 32.06
       - id: "\U0001F44E Used it > Would avoid"
-        count: 2879
+        count: 3345
+        percentage: 29.78
       - id: "\U0001F44D Used it > Would use again"
-        count: 2397
+        count: 2881
+        percentage: 25.65
       - id: ✅ Heard of it > Would like to learn
-        count: 998
+        count: 1250
+        percentage: 11.13
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 117
+        count: 155
+        percentage: 1.38
   - id: postcss
-    total: 9491
-    errors: 0
+    total: 11240
     others_count: 0
     buckets:
       - id: "\U0001F44D Used it > Would use again"
-        count: 3544
+        count: 4070
+        percentage: 36.22
       - id: ✅ Heard of it > Would like to learn
-        count: 2223
+        count: 2671
+        percentage: 23.76
       - id: "\U0001F6AB Heard of it > Not interested"
-        count: 1831
+        count: 2238
+        percentage: 19.91
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 1487
+        count: 1865
+        percentage: 16.59
       - id: "\U0001F44E Used it > Would avoid"
-        count: 350
+        count: 396
+        percentage: 3.52
   - id: stylus
-    total: 9491
-    errors: 0
+    total: 11231
     others_count: 0
     buckets:
       - id: "\U0001F6AB Heard of it > Not interested"
-        count: 3993
+        count: 4712
+        percentage: 41.96
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 2521
+        count: 3118
+        percentage: 27.76
       - id: ✅ Heard of it > Would like to learn
-        count: 1290
+        count: 1539
+        percentage: 13.7
       - id: "\U0001F44E Used it > Would avoid"
-        count: 855
+        count: 980
+        percentage: 8.73
       - id: "\U0001F44D Used it > Would use again"
-        count: 768
+        count: 882
+        percentage: 7.85
+  - id: other
+    total: 1384
+    others_count: 512
+    buckets:
+      - id: |+
+
+        count: 380
+        percentage: 64.46
+      - id: SCSS
+        count: 77
+        percentage: 5.56
+      - id: none
+        count: 56
+        percentage: 4.05
+      - id: None
+        count: 48
+        percentage: 3.47
+      - id: ' '
+        count: 45
+        percentage: 3.25
+      - id: scss
+        count: 40
+        percentage: 2.89
+      - id: Autoprefixer
+        count: 25
+        percentage: 1.81
+      - id: Scss
+        count: 23
+        percentage: 1.66
+      - id: '-'
+        count: 21
+        percentage: 1.52
+      - id: Sass
+        count: 21
+        percentage: 1.52
+      - id: styled-components
+        count: 19
+        percentage: 1.37
+      - id: N/A
+        count: 18
+        percentage: 1.3
+      - id: autoprefixer
+        count: 15
+        percentage: 1.08
+      - id: n/a
+        count: 14
+        percentage: 1.01
+      - id: CSS Modules
+        count: 13
+        percentage: 0.94
+      - id: 'No'
+        count: 13
+        percentage: 0.94
+      - id: 'no'
+        count: 13
+        percentage: 0.94
+      - id: SASS
+        count: 11
+        percentage: 0.79
+      - id: '?'
+        count: 10
+        percentage: 0.72
+      - id: sass
+        count: 10
+        percentage: 0.72

@@ -19,13 +19,14 @@ export const query = graphql`
         ) {
             html
         }
-        features: featuresUsageYaml(section_id: { eq: $section }) {
+        data: featuresUsageYaml(section_id: { eq: $section }) {
             aggregations {
                 id
                 total
                 buckets {
                     id
                     count
+                    percentage
                 }
             }
             fields {

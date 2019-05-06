@@ -1,0 +1,45 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
+section_id: other-tools
+aggregations:
+  - id: text-editors
+    total: 10836
+    others_count: 0
+    buckets:
+      - id: VS Code
+        count: 7994
+        percentage: 1.97
+      - id: Sublime Text
+        count: 3855
+        percentage: 35.58
+      - id: Atom
+        count: 2487
+        percentage: 22.95
+      - id: Webstorm
+        count: 2096
+        percentage: 19.34
+      - id: Vim
+        count: 1984
+        percentage: 18.31
+      - id: Emacs
+        count: 201
+        percentage: 1.85
+  - id: browsers
+    total: 11179
+    others_count: 0
+    buckets:
+      - id: Chrome
+        count: 10305
+        percentage: 19.01
+      - id: Firefox
+        count: 5922
+        percentage: 52.97
+      - id: Safari
+        count: 2262
+        percentage: 20.23
+      - id: Edge
+        count: 871
+        percentage: 7.79

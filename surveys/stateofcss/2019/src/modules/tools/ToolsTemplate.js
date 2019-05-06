@@ -61,7 +61,7 @@ github {
 */
 
 export const query = graphql`
-    query toolsByLocale($id: String!, $locale: String!) {
+    query toolsAndMethodologiesSectionByIdAndLocale($id: String!, $locale: String!) {
         introduction: markdownRemark(
             frontmatter: {
                 type: { eq: "introduction" }
@@ -71,14 +71,14 @@ export const query = graphql`
         ) {
             html
         }
-        aggs: toolsYaml(section_id: { eq: $id }) {
-            id
+        data: toolsYaml(section_id: { eq: $id }) {
             aggregations {
                 id
                 total
                 buckets {
                     id
                     count
+                    percentage
                 }
             }
             fields {

@@ -1,0 +1,1906 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
+section_id: new-demographics
+aggregations:
+  - id: by_country
+    total: 10312
+    others_count: 194
+    buckets:
+      - id: United States
+        count: 1427
+        percentage: 15.51
+      - id: USA
+        count: 615
+        percentage: 5.96
+      - id: Germany
+        count: 595
+        percentage: 5.77
+      - id: United Kingdom
+        count: 488
+        percentage: 4.73
+      - id: Canada
+        count: 461
+        percentage: 4.47
+      - id: France
+        count: 454
+        percentage: 4.4
+      - id: Australia
+        count: 267
+        percentage: 2.59
+      - id: Russia
+        count: 265
+        percentage: 2.57
+      - id: Poland
+        count: 248
+        percentage: 2.4
+      - id: UK
+        count: 235
+        percentage: 2.28
+      - id: Brazil
+        count: 223
+        percentage: 2.16
+      - id: Netherlands
+        count: 218
+        percentage: 2.11
+      - id: Spain
+        count: 209
+        percentage: 2.03
+      - id: India
+        count: 197
+        percentage: 1.91
+      - id: Sweden
+        count: 195
+        percentage: 1.89
+      - id: US
+        count: 168
+        percentage: 1.63
+      - id: Ukraine
+        count: 154
+        percentage: 1.49
+      - id: Belgium
+        count: 133
+        percentage: 1.29
+      - id: Italy
+        count: 120
+        percentage: 1.16
+      - id: Denmark
+        count: 113
+        percentage: 1.1
+      - id: United States of America
+        count: 98
+        percentage: 0.95
+      - id: Argentina
+        count: 97
+        percentage: 0.94
+      - id: Finland
+        count: 92
+        percentage: 0.89
+      - id: Portugal
+        count: 90
+        percentage: 0.87
+      - id: The Netherlands
+        count: 88
+        percentage: 0.85
+      - id: Switzerland
+        count: 85
+        percentage: 0.82
+      - id: Romania
+        count: 83
+        percentage: 0.8
+      - id: Norway
+        count: 79
+        percentage: 0.77
+      - id: Austria
+        count: 78
+        percentage: 0.76
+      - id: New Zealand
+        count: 76
+        percentage: 0.74
+      - id: Israel
+        count: 75
+        percentage: 0.73
+      - id: Colombia
+        count: 73
+        percentage: 0.71
+      - id: Philippines
+        count: 67
+        percentage: 0.65
+      - id: Belarus
+        count: 62
+        percentage: 0.6
+      - id: Czech Republic
+        count: 56
+        percentage: 0.54
+      - id: Mexico
+        count: 56
+        percentage: 0.54
+      - id: England
+        count: 52
+        percentage: 0.5
+      - id: South Africa
+        count: 49
+        percentage: 0.48
+      - id: Hungary
+        count: 45
+        percentage: 0.44
+      - id: Japan
+        count: 45
+        percentage: 0.44
+      - id: Bulgaria
+        count: 43
+        percentage: 0.42
+      - id: China
+        count: 43
+        percentage: 0.42
+      - id: france
+        count: 42
+        percentage: 0.41
+      - id: Deutschland
+        count: 41
+        percentage: 0.4
+      - id: usa
+        count: 40
+        percentage: 0.39
+      - id: Indonesia
+        count: 39
+        percentage: 0.38
+      - id: Ireland
+        count: 38
+        percentage: 0.37
+      - id: Croatia
+        count: 37
+        percentage: 0.36
+      - id: Serbia
+        count: 36
+        percentage: 0.35
+      - id: Greece
+        count: 35
+        percentage: 0.34
+      - id: Taiwan
+        count: 34
+        percentage: 0.33
+      - id: Brasil
+        count: 33
+        percentage: 0.32
+      - id: Egypt
+        count: 33
+        percentage: 0.32
+      - id: Slovakia
+        count: 33
+        percentage: 0.32
+      - id: Czechia
+        count: 29
+        percentage: 0.28
+      - id: Turkey
+        count: 29
+        percentage: 0.28
+      - id: Lithuania
+        count: 27
+        percentage: 0.26
+      - id: canada
+        count: 27
+        percentage: 0.26
+      - id: México
+        count: 26
+        percentage: 0.25
+      - id: Nigeria
+        count: 26
+        percentage: 0.25
+      - id: germany
+        count: 26
+        percentage: 0.25
+      - id: Singapore
+        count: 25
+        percentage: 0.24
+      - id: Scotland
+        count: 23
+        percentage: 0.22
+      - id: Chile
+        count: 22
+        percentage: 0.21
+      - id: España
+        count: 22
+        percentage: 0.21
+      - id: Malaysia
+        count: 22
+        percentage: 0.21
+      - id: united states
+        count: 22
+        percentage: 0.21
+      - id: Pakistan
+        count: 21
+        percentage: 0.2
+      - id: Estonia
+        count: 20
+        percentage: 0.19
+      - id: Latvia
+        count: 20
+        percentage: 0.19
+      - id: Russian Federation
+        count: 19
+        percentage: 0.18
+      - id: Polska
+        count: 17
+        percentage: 0.16
+      - id: Usa
+        count: 17
+        percentage: 0.16
+      - id: spain
+        count: 17
+        percentage: 0.16
+      - id: Iran
+        count: 16
+        percentage: 0.16
+      - id: Czech republic
+        count: 15
+        percentage: 0.15
+      - id: Nederland
+        count: 15
+        percentage: 0.15
+      - id: Slovenia
+        count: 15
+        percentage: 0.15
+      - id: india
+        count: 15
+        percentage: 0.15
+      - id: russia
+        count: 15
+        percentage: 0.15
+      - id: Hong Kong
+        count: 14
+        percentage: 0.14
+      - id: Uruguay
+        count: 14
+        percentage: 0.14
+      - id: Costa Rica
+        count: 13
+        percentage: 0.13
+      - id: Uk
+        count: 13
+        percentage: 0.13
+      - id: netherlands
+        count: 13
+        percentage: 0.13
+      - id: uk
+        count: 13
+        percentage: 0.13
+      - id: us
+        count: 13
+        percentage: 0.13
+      - id: South Korea
+        count: 12
+        percentage: 0.12
+      - id: Thailand
+        count: 12
+        percentage: 0.12
+      - id: 'USA '
+        count: 12
+        percentage: 0.12
+      - id: Vietnam
+        count: 12
+        percentage: 0.12
+      - id: Danmark
+        count: 11
+        percentage: 0.11
+      - id: Ecuador
+        count: 11
+        percentage: 0.11
+      - id: Iceland
+        count: 11
+        percentage: 0.11
+      - id: 'Australia '
+        count: 10
+        percentage: 0.1
+      - id: 'Germany '
+        count: 10
+        percentage: 0.1
+      - id: Italia
+        count: 10
+        percentage: 0.1
+      - id: Nepal
+        count: 10
+        percentage: 0.1
+      - id: 'United States '
+        count: 10
+        percentage: 0.1
+      - id: italy
+        count: 10
+        percentage: 0.1
+      - id: romania
+        count: 10
+        percentage: 0.1
+      - id: Kazakhstan
+        count: 9
+        percentage: 0.09
+      - id: Tunisia
+        count: 9
+        percentage: 0.09
+      - id: El Salvador
+        count: 8
+        percentage: 0.08
+      - id: Georgia
+        count: 8
+        percentage: 0.08
+      - id: czech republic
+        count: 8
+        percentage: 0.08
+      - id: Catalonia
+        count: 7
+        percentage: 0.07
+      - id: Dominican Republic
+        count: 7
+        percentage: 0.07
+      - id: Moldova
+        count: 7
+        percentage: 0.07
+      - id: 'United Kingdom '
+        count: 7
+        percentage: 0.07
+      - id: Uzbekistan
+        count: 7
+        percentage: 0.07
+      - id: Venezuela
+        count: 7
+        percentage: 0.07
+      - id: china
+        count: 7
+        percentage: 0.07
+      - id: united kingdom
+        count: 7
+        percentage: 0.07
+      - id: Kenya
+        count: 6
+        percentage: 0.06
+      - id: Lebanon
+        count: 6
+        percentage: 0.06
+      - id: Luxembourg
+        count: 6
+        percentage: 0.06
+      - id: NL
+        count: 6
+        percentage: 0.06
+      - id: Peru
+        count: 6
+        percentage: 0.06
+      - id: Sverige
+        count: 6
+        percentage: 0.06
+      - id: U.S.
+        count: 6
+        percentage: 0.06
+      - id: United kingdom
+        count: 6
+        percentage: 0.06
+      - id: United states
+        count: 6
+        percentage: 0.06
+      - id: belgium
+        count: 6
+        percentage: 0.06
+      - id: brazil
+        count: 6
+        percentage: 0.06
+      - id: indonesia
+        count: 6
+        percentage: 0.06
+      - id: mexico
+        count: 6
+        percentage: 0.06
+      - id: poland
+        count: 6
+        percentage: 0.06
+      - id: portugal
+        count: 6
+        percentage: 0.06
+      - id: the Netherlands
+        count: 6
+        percentage: 0.06
+      - id: Россия
+        count: 6
+        percentage: 0.06
+      - id: Guatemala
+        count: 5
+        percentage: 0.05
+      - id: Korea
+        count: 5
+        percentage: 0.05
+      - id: Kosovo
+        count: 5
+        percentage: 0.05
+      - id: Morocco
+        count: 5
+        percentage: 0.05
+      - id: Perú
+        count: 5
+        percentage: 0.05
+      - id: U.S.A.
+        count: 5
+        percentage: 0.05
+      - id: australia
+        count: 5
+        percentage: 0.05
+      - id: ireland
+        count: 5
+        percentage: 0.05
+      - id: israel
+        count: 5
+        percentage: 0.05
+      - id: Azerbaijan
+        count: 4
+        percentage: 0.04
+      - id: Bolivia
+        count: 4
+        percentage: 0.04
+      - id: Cyprus
+        count: 4
+        percentage: 0.04
+      - id: 'England '
+        count: 4
+        percentage: 0.04
+      - id: FRANCE
+        count: 4
+        percentage: 0.04
+      - id: Macedonia
+        count: 4
+        percentage: 0.04
+      - id: Malta
+        count: 4
+        percentage: 0.04
+      - id: 'Netherlands '
+        count: 4
+        percentage: 0.04
+      - id: 'New Zealand '
+        count: 4
+        percentage: 0.04
+      - id: Nicaragua
+        count: 4
+        percentage: 0.04
+      - id: Schweiz
+        count: 4
+        percentage: 0.04
+      - id: Us
+        count: 4
+        percentage: 0.04
+      - id: Viet Nam
+        count: 4
+        percentage: 0.04
+      - id: Česko
+        count: 4
+        percentage: 0.04
+      - id: America
+        count: 3
+        percentage: 0.03
+      - id: Bangladesh
+        count: 3
+        percentage: 0.03
+      - id: Bosnia & Herzegovina
+        count: 3
+        percentage: 0.03
+      - id: 'Canada '
+        count: 3
+        percentage: 0.03
+      - id: Gemany
+        count: 3
+        percentage: 0.03
+      - id: Honduras
+        count: 3
+        percentage: 0.03
+      - id: 'Israel '
+        count: 3
+        percentage: 0.03
+      - id: Jamaica
+        count: 3
+        percentage: 0.03
+      - id: Madagascar
+        count: 3
+        percentage: 0.03
+      - id: 'México '
+        count: 3
+        percentage: 0.03
+      - id: Norge
+        count: 3
+        percentage: 0.03
+      - id: Northern Ireland
+        count: 3
+        percentage: 0.03
+      - id: 'Poland '
+        count: 3
+        percentage: 0.03
+      - id: 'Portugal '
+        count: 3
+        percentage: 0.03
+      - id: Russian
+        count: 3
+        percentage: 0.03
+      - id: 'South Africa '
+        count: 3
+        percentage: 0.03
+      - id: Suomi
+        count: 3
+        percentage: 0.03
+      - id: 'Sweden '
+        count: 3
+        percentage: 0.03
+      - id: 'The Netherlands '
+        count: 3
+        percentage: 0.03
+      - id: The netherlands
+        count: 3
+        percentage: 0.03
+      - id: United Arab Emirates
+        count: 3
+        percentage: 0.03
+      - id: 'United States of America '
+        count: 3
+        percentage: 0.03
+      - id: Wales
+        count: 3
+        percentage: 0.03
+      - id: armenia
+        count: 3
+        percentage: 0.03
+      - id: austria
+        count: 3
+        percentage: 0.03
+      - id: de
+        count: 3
+        percentage: 0.03
+      - id: england
+        count: 3
+        percentage: 0.03
+      - id: finland
+        count: 3
+        percentage: 0.03
+      - id: iran
+        count: 3
+        percentage: 0.03
+      - id: luxembourg
+        count: 3
+        percentage: 0.03
+      - id: new zealand
+        count: 3
+        percentage: 0.03
+      - id: philippines
+        count: 3
+        percentage: 0.03
+      - id: sweden
+        count: 3
+        percentage: 0.03
+      - id: taiwan
+        count: 3
+        percentage: 0.03
+      - id: ukraine
+        count: 3
+        percentage: 0.03
+      - id: ' '
+        count: 2
+        percentage: 0.02
+      - id: Algeria
+        count: 2
+        percentage: 0.02
+      - id: Armenia
+        count: 2
+        percentage: 0.02
+      - id: 'Austria '
+        count: 2
+        percentage: 0.02
+      - id: Bahrain
+        count: 2
+        percentage: 0.02
+      - id: België
+        count: 2
+        percentage: 0.02
+      - id: Bosnia and Herzegovina
+        count: 2
+        percentage: 0.02
+      - id: 'Brazil '
+        count: 2
+        percentage: 0.02
+      - id: COLOMBIA
+        count: 2
+        percentage: 0.02
+      - id: Cameroon
+        count: 2
+        percentage: 0.02
+      - id: Czech
+        count: 2
+        percentage: 0.02
+      - id: DE
+        count: 2
+        percentage: 0.02
+      - id: 'France '
+        count: 2
+        percentage: 0.02
+      - id: GB
+        count: 2
+        percentage: 0.02
+      - id: GREECE
+        count: 2
+        percentage: 0.02
+      - id: Ghana
+        count: 2
+        percentage: 0.02
+      - id: Great Britain
+        count: 2
+        percentage: 0.02
+      - id: 'India '
+        count: 2
+        percentage: 0.02
+      - id: 'Italy '
+        count: 2
+        percentage: 0.02
+      - id: Jordan
+        count: 2
+        percentage: 0.02
+      - id: Kazakstan
+        count: 2
+        percentage: 0.02
+      - id: Magyarország
+        count: 2
+        percentage: 0.02
+      - id: Netherland
+        count: 2
+        percentage: 0.02
+      - id: Panama
+        count: 2
+        percentage: 0.02
+      - id: Qatar
+        count: 2
+        percentage: 0.02
+      - id: RUSSIA
+        count: 2
+        percentage: 0.02
+      - id: 'Russia '
+        count: 2
+        percentage: 0.02
+      - id: Russian federation
+        count: 2
+        percentage: 0.02
+      - id: Sri Lanka
+        count: 2
+        percentage: 0.02
+      - id: 'Switzerland '
+        count: 2
+        percentage: 0.02
+      - id: Taiwain
+        count: 2
+        percentage: 0.02
+      - id: 'Ukraine '
+        count: 2
+        percentage: 0.02
+      - id: United State of America
+        count: 2
+        percentage: 0.02
+      - id: VietNam
+        count: 2
+        percentage: 0.02
+      - id: 'Wales, UK'
+        count: 2
+        percentage: 0.02
+      - id: america
+        count: 2
+        percentage: 0.02
+      - id: brasil
+        count: 2
+        percentage: 0.02
+      - id: colombia
+        count: 2
+        percentage: 0.02
+      - id: cz
+        count: 2
+        percentage: 0.02
+      - id: denmark
+        count: 2
+        percentage: 0.02
+      - id: hungary
+        count: 2
+        percentage: 0.02
+      - id: malaysia
+        count: 2
+        percentage: 0.02
+      - id: norway
+        count: 2
+        percentage: 0.02
+      - id: slovakia
+        count: 2
+        percentage: 0.02
+      - id: slovenia
+        count: 2
+        percentage: 0.02
+      - id: south africa
+        count: 2
+        percentage: 0.02
+      - id: the netherlands
+        count: 2
+        percentage: 0.02
+      - id: venezuela
+        count: 2
+        percentage: 0.02
+      - id: Österreich
+        count: 2
+        percentage: 0.02
+      - id: Украина
+        count: 2
+        percentage: 0.02
+      - id: 中国
+        count: 2
+        percentage: 0.02
+      - id: ' Canada'
+        count: 1
+        percentage: 0.01
+      - id: ' Russia'
+        count: 1
+        percentage: 0.01
+      - id: ' Spain'
+        count: 1
+        percentage: 0.01
+      - id: ' United States of America'
+        count: 1
+        percentage: 0.01
+      - id: ...
+        count: 1
+        percentage: 0.01
+      - id: ARGENTINA
+        count: 1
+        percentage: 0.01
+      - id: AUSTRALIA
+        count: 1
+        percentage: 0.01
+      - id: Agrentina
+        count: 1
+        percentage: 0.01
+      - id: Australia/US
+        count: 1
+        percentage: 0.01
+      - id: Australiay
+        count: 1
+        percentage: 0.01
+      - id: AustriaV
+        count: 1
+        percentage: 0.01
+      - id: BE
+        count: 1
+        percentage: 0.01
+      - id: BNZ
+        count: 1
+        percentage: 0.01
+      - id: Barbados
+        count: 1
+        percentage: 0.01
+      - id: Based in Austria.
+        count: 1
+        percentage: 0.01
+      - id: Basque Country
+        count: 1
+        percentage: 0.01
+      - id: Belgique
+        count: 1
+        percentage: 0.01
+      - id: Belgiu
+        count: 1
+        percentage: 0.01
+      - id: 'Belgium '
+        count: 1
+        percentage: 0.01
+      - id: Belgium / Sweden
+        count: 1
+        percentage: 0.01
+      - id: Belize
+        count: 1
+        percentage: 0.01
+      - id: BetEasy
+        count: 1
+        percentage: 0.01
+      - id: Bonaire
+        count: 1
+        percentage: 0.01
+      - id: 'Born in Usa (live in Colombia) '
+        count: 1
+        percentage: 0.01
+      - id: Botswana
+        count: 1
+        percentage: 0.01
+      - id: Brasil (Brazil)
+        count: 1
+        percentage: 0.01
+      - id: Brazil / Netherlands
+        count: 1
+        percentage: 0.01
+      - id: "Brazil \U0001F1E7\U0001F1F7 "
+        count: 1
+        percentage: 0.01
+      - id: 'Bulgaria '
+        count: 1
+        percentage: 0.01
+      - id: CANADA
+        count: 1
+        percentage: 0.01
+      - id: CZ
+        count: 1
+        percentage: 0.01
+      - id: CZech
+        count: 1
+        percentage: 0.01
+      - id: Cambodia
+        count: 1
+        percentage: 0.01
+      - id: Canadaa
+        count: 1
+        percentage: 0.01
+      - id: 'Catalonia '
+        count: 1
+        percentage: 0.01
+      - id: Cebulandia
+        count: 1
+        percentage: 0.01
+      - id: 'Colombia '
+        count: 1
+        percentage: 0.01
+      - id: Cove.
+        count: 1
+        percentage: 0.01
+      - id: Credit Suisse
+        count: 1
+        percentage: 0.01
+      - id: 'Croatia '
+        count: 1
+        percentage: 0.01
+      - id: Cuba
+        count: 1
+        percentage: 0.01
+      - id: Curaçao
+        count: 1
+        percentage: 0.01
+      - id: Currently in The Netherlands (Originally from Serbia)
+        count: 1
+        percentage: 0.01
+      - id: Czech Republc
+        count: 1
+        percentage: 0.01
+      - id: 'Czech Republic '
+        count: 1
+        percentage: 0.01
+      - id: DENMARK
+        count: 1
+        percentage: 0.01
+      - id: 'Denmark '
+        count: 1
+        percentage: 0.01
+      - id: 'Deutschland '
+        count: 1
+        percentage: 0.01
+      - id: Digital Nomad
+        count: 1
+        percentage: 0.01
+      - id: Donetsk People Republic
+        count: 1
+        percentage: 0.01
+      - id: EGYPT
+        count: 1
+        percentage: 0.01
+      - id: EL Salvador
+        count: 1
+        percentage: 0.01
+      - id: EU
+        count: 1
+        percentage: 0.01
+      - id: Earth
+        count: 1
+        percentage: 0.01
+      - id: Edaks
+        count: 1
+        percentage: 0.01
+      - id: El Salvaor
+        count: 1
+        percentage: 0.01
+      - id: Espanya
+        count: 1
+        percentage: 0.01
+      - id: Europe
+        count: 1
+        percentage: 0.01
+      - id: FRance
+        count: 1
+        percentage: 0.01
+      - id: 'Finland '
+        count: 1
+        percentage: 0.01
+  - id: by_city
+    total: 9388
+    others_count: 3737
+    buckets:
+      - id: London
+        count: 261
+        percentage: 42.83
+      - id: Paris
+        count: 167
+        percentage: 1.78
+      - id: Berlin
+        count: 148
+        percentage: 1.58
+      - id: Toronto
+        count: 129
+        percentage: 1.37
+      - id: Stockholm
+        count: 98
+        percentage: 1.04
+      - id: Seattle
+        count: 94
+        percentage: 1
+      - id: Sydney
+        count: 94
+        percentage: 1
+      - id: Moscow
+        count: 92
+        percentage: 0.98
+      - id: Amsterdam
+        count: 91
+        percentage: 0.97
+      - id: San Francisco
+        count: 78
+        percentage: 0.83
+      - id: New York
+        count: 73
+        percentage: 0.78
+      - id: Chicago
+        count: 68
+        percentage: 0.72
+      - id: Copenhagen
+        count: 64
+        percentage: 0.68
+      - id: Melbourne
+        count: 64
+        percentage: 0.68
+      - id: Madrid
+        count: 63
+        percentage: 0.67
+      - id: Vancouver
+        count: 62
+        percentage: 0.66
+      - id: Los Angeles
+        count: 57
+        percentage: 0.61
+      - id: Montreal
+        count: 57
+        percentage: 0.61
+      - id: Boston
+        count: 52
+        percentage: 0.55
+      - id: Kyiv
+        count: 52
+        percentage: 0.55
+      - id: Barcelona
+        count: 51
+        percentage: 0.54
+      - id: Buenos Aires
+        count: 51
+        percentage: 0.54
+      - id: São Paulo
+        count: 51
+        percentage: 0.54
+      - id: Minsk
+        count: 50
+        percentage: 0.53
+      - id: Prague
+        count: 50
+        percentage: 0.53
+      - id: Denver
+        count: 48
+        percentage: 0.51
+      - id: Warsaw
+        count: 48
+        percentage: 0.51
+      - id: Vienna
+        count: 47
+        percentage: 0.5
+      - id: Munich
+        count: 46
+        percentage: 0.49
+      - id: Austin
+        count: 45
+        percentage: 0.48
+      - id: Oslo
+        count: 43
+        percentage: 0.46
+      - id: Bristol
+        count: 39
+        percentage: 0.42
+      - id: Manchester
+        count: 39
+        percentage: 0.42
+      - id: Hamburg
+        count: 37
+        percentage: 0.39
+      - id: Philadelphia
+        count: 37
+        percentage: 0.39
+      - id: Auckland
+        count: 36
+        percentage: 0.38
+      - id: Budapest
+        count: 36
+        percentage: 0.38
+      - id: Helsinki
+        count: 36
+        percentage: 0.38
+      - id: Brooklyn
+        count: 33
+        percentage: 0.35
+      - id: Edinburgh
+        count: 31
+        percentage: 0.33
+      - id: Lisbon
+        count: 31
+        percentage: 0.33
+      - id: Nantes
+        count: 31
+        percentage: 0.33
+      - id: Atlanta
+        count: 30
+        percentage: 0.32
+      - id: Bangalore
+        count: 30
+        percentage: 0.32
+      - id: Brisbane
+        count: 30
+        percentage: 0.32
+      - id: San Diego
+        count: 30
+        percentage: 0.32
+      - id: Milan
+        count: 28
+        percentage: 0.3
+      - id: Minneapolis
+        count: 28
+        percentage: 0.3
+      - id: Rotterdam
+        count: 28
+        percentage: 0.3
+      - id: Sofia
+        count: 28
+        percentage: 0.3
+      - id: Brighton
+        count: 27
+        percentage: 0.29
+      - id: New York City
+        count: 26
+        percentage: 0.28
+      - id: Portland
+        count: 26
+        percentage: 0.28
+      - id: Saint-Petersburg
+        count: 26
+        percentage: 0.28
+      - id: Taipei
+        count: 26
+        percentage: 0.28
+      - id: Tokyo
+        count: 26
+        percentage: 0.28
+      - id: Rio de Janeiro
+        count: 25
+        percentage: 0.27
+      - id: Bogotá
+        count: 24
+        percentage: 0.26
+      - id: Chennai
+        count: 24
+        percentage: 0.26
+      - id: Gothenburg
+        count: 24
+        percentage: 0.26
+      - id: Bucharest
+        count: 23
+        percentage: 0.24
+      - id: Cologne
+        count: 23
+        percentage: 0.24
+      - id: Dublin
+        count: 23
+        percentage: 0.24
+      - id: Porto
+        count: 23
+        percentage: 0.24
+      - id: Tel Aviv
+        count: 23
+        percentage: 0.24
+      - id: Toulouse
+        count: 23
+        percentage: 0.24
+      - id: Leeds
+        count: 22
+        percentage: 0.23
+      - id: Saint Petersburg
+        count: 22
+        percentage: 0.23
+      - id: Salt Lake City
+        count: 22
+        percentage: 0.23
+      - id: Wellington
+        count: 22
+        percentage: 0.23
+      - id: Athens
+        count: 21
+        percentage: 0.22
+      - id: Birmingham
+        count: 21
+        percentage: 0.22
+      - id: Cairo
+        count: 21
+        percentage: 0.22
+      - id: Medellin
+        count: 21
+        percentage: 0.22
+      - id: Mexico City
+        count: 21
+        percentage: 0.22
+      - id: Antwerp
+        count: 20
+        percentage: 0.21
+      - id: Belgrade
+        count: 20
+        percentage: 0.21
+      - id: Dallas
+        count: 20
+        percentage: 0.21
+      - id: Glasgow
+        count: 20
+        percentage: 0.21
+      - id: Lagos
+        count: 20
+        percentage: 0.21
+      - id: Lviv
+        count: 20
+        percentage: 0.21
+      - id: Lyon
+        count: 20
+        percentage: 0.21
+      - id: Orlando
+        count: 20
+        percentage: 0.21
+      - id: Poznań
+        count: 20
+        percentage: 0.21
+      - id: Singapore
+        count: 20
+        percentage: 0.21
+      - id: Vilnius
+        count: 20
+        percentage: 0.21
+      - id: 'Washington, DC'
+        count: 20
+        percentage: 0.21
+      - id: Cape Town
+        count: 19
+        percentage: 0.2
+      - id: Montréal
+        count: 19
+        percentage: 0.2
+      - id: St. Louis
+        count: 19
+        percentage: 0.2
+      - id: Santiago
+        count: 18
+        percentage: 0.19
+      - id: Kraków
+        count: 17
+        percentage: 0.18
+      - id: Mumbai
+        count: 17
+        percentage: 0.18
+      - id: Pittsburgh
+        count: 17
+        percentage: 0.18
+      - id: San Jose
+        count: 17
+        percentage: 0.18
+      - id: Stuttgart
+        count: 17
+        percentage: 0.18
+      - id: Cambridge
+        count: 16
+        percentage: 0.17
+      - id: Detroit
+        count: 16
+        percentage: 0.17
+      - id: Grenoble
+        count: 16
+        percentage: 0.17
+      - id: Hyderabad
+        count: 16
+        percentage: 0.17
+      - id: Perth
+        count: 16
+        percentage: 0.17
+      - id: Riga
+        count: 16
+        percentage: 0.17
+      - id: Dresden
+        count: 15
+        percentage: 0.16
+      - id: NYC
+        count: 15
+        percentage: 0.16
+      - id: Nashville
+        count: 15
+        percentage: 0.16
+      - id: Seoul
+        count: 15
+        percentage: 0.16
+      - id: Utrecht
+        count: 15
+        percentage: 0.16
+      - id: Warszawa
+        count: 15
+        percentage: 0.16
+      - id: Wrocław
+        count: 15
+        percentage: 0.16
+      - id: Beijing
+        count: 14
+        percentage: 0.15
+      - id: Bengaluru
+        count: 14
+        percentage: 0.15
+      - id: Edmonton
+        count: 14
+        percentage: 0.15
+      - id: Jakarta
+        count: 14
+        percentage: 0.15
+      - id: Kansas City
+        count: 14
+        percentage: 0.15
+      - id: Kuala Lumpur
+        count: 14
+        percentage: 0.15
+      - id: Montevideo
+        count: 14
+        percentage: 0.15
+      - id: Pune
+        count: 14
+        percentage: 0.15
+      - id: Baltimore
+        count: 13
+        percentage: 0.14
+      - id: Belo Horizonte
+        count: 13
+        percentage: 0.14
+      - id: Brno
+        count: 13
+        percentage: 0.14
+      - id: Cleveland
+        count: 13
+        percentage: 0.14
+      - id: Lille
+        count: 13
+        percentage: 0.14
+      - id: Rennes
+        count: 13
+        percentage: 0.14
+      - id: Strasbourg
+        count: 13
+        percentage: 0.14
+      - id: Tallinn
+        count: 13
+        percentage: 0.14
+      - id: Zagreb
+        count: 13
+        percentage: 0.14
+      - id: Bergen
+        count: 12
+        percentage: 0.13
+      - id: Bratislava
+        count: 12
+        percentage: 0.13
+      - id: Brussels
+        count: 12
+        percentage: 0.13
+      - id: Durham
+        count: 12
+        percentage: 0.13
+      - id: Düsseldorf
+        count: 12
+        percentage: 0.13
+      - id: Karlsruhe
+        count: 12
+        percentage: 0.13
+      - id: Omaha
+        count: 12
+        percentage: 0.13
+      - id: Ottawa
+        count: 12
+        percentage: 0.13
+      - id: Oxford
+        count: 12
+        percentage: 0.13
+      - id: 'Portland, OR'
+        count: 12
+        percentage: 0.13
+      - id: Bangkok
+        count: 11
+        percentage: 0.12
+      - id: Bordeaux
+        count: 11
+        percentage: 0.12
+      - id: Calgary
+        count: 11
+        percentage: 0.12
+      - id: Campinas
+        count: 11
+        percentage: 0.12
+      - id: Cardiff
+        count: 11
+        percentage: 0.12
+      - id: Eindhoven
+        count: 11
+        percentage: 0.12
+      - id: Groningen
+        count: 11
+        percentage: 0.12
+      - id: Indianapolis
+        count: 11
+        percentage: 0.12
+      - id: Manila
+        count: 11
+        percentage: 0.12
+      - id: Phoenix
+        count: 11
+        percentage: 0.12
+      - id: Tilburg
+        count: 11
+        percentage: 0.12
+      - id: Turku
+        count: 11
+        percentage: 0.12
+      - id: Zurich
+        count: 11
+        percentage: 0.12
+      - id: Zürich
+        count: 11
+        percentage: 0.12
+      - id: berlin
+        count: 11
+        percentage: 0.12
+      - id: ' '
+        count: 10
+        percentage: 0.11
+      - id: Aarhus
+        count: 10
+        percentage: 0.11
+      - id: Belfast
+        count: 10
+        percentage: 0.11
+      - id: Bogota
+        count: 10
+        percentage: 0.11
+      - id: Kiev
+        count: 10
+        percentage: 0.11
+      - id: Leipzig
+        count: 10
+        percentage: 0.11
+      - id: Quezon City
+        count: 10
+        percentage: 0.11
+      - id: Tampa
+        count: 10
+        percentage: 0.11
+      - id: Ann Arbor
+        count: 9
+        percentage: 0.1
+      - id: Bremen
+        count: 9
+        percentage: 0.1
+      - id: CDMX
+        count: 9
+        percentage: 0.1
+      - id: Cluj-Napoca
+        count: 9
+        percentage: 0.1
+      - id: Espoo
+        count: 9
+        percentage: 0.1
+      - id: Halifax
+        count: 9
+        percentage: 0.1
+      - id: Hong Kong
+        count: 9
+        percentage: 0.1
+      - id: Houston
+        count: 9
+        percentage: 0.1
+      - id: Nottingham
+        count: 9
+        percentage: 0.1
+      - id: Porto Alegre
+        count: 9
+        percentage: 0.1
+      - id: '-'
+        count: 8
+        percentage: 0.09
+      - id: Adelaide
+        count: 8
+        percentage: 0.09
+      - id: Arnhem
+        count: 8
+        percentage: 0.09
+      - id: 'Austin, TX'
+        count: 8
+        percentage: 0.09
+      - id: Boise
+        count: 8
+        percentage: 0.09
+      - id: Charlotte
+        count: 8
+        percentage: 0.09
+      - id: Christchurch
+        count: 8
+        percentage: 0.09
+      - id: Fortaleza
+        count: 8
+        percentage: 0.09
+      - id: Göteborg
+        count: 8
+        percentage: 0.09
+      - id: Johannesburg
+        count: 8
+        percentage: 0.09
+      - id: Kathmandu
+        count: 8
+        percentage: 0.09
+      - id: Kharkiv
+        count: 8
+        percentage: 0.09
+      - id: Ljubljana
+        count: 8
+        percentage: 0.09
+      - id: Novosibirsk
+        count: 8
+        percentage: 0.09
+      - id: Richmond
+        count: 8
+        percentage: 0.09
+      - id: Sacramento
+        count: 8
+        percentage: 0.09
+      - id: Sao Paulo
+        count: 8
+        percentage: 0.09
+      - id: Timisoara
+        count: 8
+        percentage: 0.09
+      - id: Victoria
+        count: 8
+        percentage: 0.09
+      - id: Wroclaw
+        count: 8
+        percentage: 0.09
+      - id: amsterdam
+        count: 8
+        percentage: 0.09
+      - id: london
+        count: 8
+        percentage: 0.09
+      - id: Ahmedabad
+        count: 7
+        percentage: 0.07
+      - id: 'Boston, MA'
+        count: 7
+        percentage: 0.07
+      - id: Cincinnati
+        count: 7
+        percentage: 0.07
+      - id: Ciudad de México
+        count: 7
+        percentage: 0.07
+      - id: Curitiba
+        count: 7
+        percentage: 0.07
+      - id: Córdoba
+        count: 7
+        percentage: 0.07
+      - id: Essen
+        count: 7
+        percentage: 0.07
+      - id: Ghent
+        count: 7
+        percentage: 0.07
+      - id: Istanbul
+        count: 7
+        percentage: 0.07
+      - id: Madison
+        count: 7
+        percentage: 0.07
+      - id: Malmö
+        count: 7
+        percentage: 0.07
+      - id: Poznan
+        count: 7
+        percentage: 0.07
+      - id: Raleigh
+        count: 7
+        percentage: 0.07
+      - id: Reykjavik
+        count: 7
+        percentage: 0.07
+      - id: Rochester
+        count: 7
+        percentage: 0.07
+      - id: Szczecin
+        count: 7
+        percentage: 0.07
+      - id: Tbilisi
+        count: 7
+        percentage: 0.07
+      - id: Tehran
+        count: 7
+        percentage: 0.07
+      - id: Washington DC
+        count: 7
+        percentage: 0.07
+      - id: Ankara
+        count: 6
+        percentage: 0.06
+      - id: Arlington
+        count: 6
+        percentage: 0.06
+      - id: Augsburg
+        count: 6
+        percentage: 0.06
+      - id: Bilbao
+        count: 6
+        percentage: 0.06
+      - id: Boulder
+        count: 6
+        percentage: 0.06
+      - id: Chisinau
+        count: 6
+        percentage: 0.06
+      - id: Columbus
+        count: 6
+        percentage: 0.06
+      - id: Dayton
+        count: 6
+        percentage: 0.06
+      - id: Des Moines
+        count: 6
+        percentage: 0.06
+      - id: Frankfurt
+        count: 6
+        percentage: 0.06
+      - id: Gdańsk
+        count: 6
+        percentage: 0.06
+      - id: Gold Coast
+        count: 6
+        percentage: 0.06
+      - id: Graz
+        count: 6
+        percentage: 0.06
+      - id: Kharkov
+        count: 6
+        percentage: 0.06
+      - id: Krasnoyarsk
+        count: 6
+        percentage: 0.06
+      - id: Lahore
+        count: 6
+        percentage: 0.06
+      - id: Lima
+        count: 6
+        percentage: 0.06
+      - id: Liverpool
+        count: 6
+        percentage: 0.06
+      - id: Medellín
+        count: 6
+        percentage: 0.06
+      - id: Milano
+        count: 6
+        percentage: 0.06
+      - id: Mountain View
+        count: 6
+        percentage: 0.06
+      - id: New Delhi
+        count: 6
+        percentage: 0.06
+      - id: Quebec
+        count: 6
+        percentage: 0.06
+      - id: Redwood City
+        count: 6
+        percentage: 0.06
+      - id: Shanghai
+        count: 6
+        percentage: 0.06
+      - id: Sorocaba
+        count: 6
+        percentage: 0.06
+      - id: Turin
+        count: 6
+        percentage: 0.06
+      - id: Valencia
+        count: 6
+        percentage: 0.06
+      - id: York
+        count: 6
+        percentage: 0.06
+      - id: Zwolle
+        count: 6
+        percentage: 0.06
+      - id: madrid
+        count: 6
+        percentage: 0.06
+      - id: toronto
+        count: 6
+        percentage: 0.06
+      - id: Aachen
+        count: 5
+        percentage: 0.05
+      - id: Aalborg
+        count: 5
+        percentage: 0.05
+      - id: Antwerpen
+        count: 5
+        percentage: 0.05
+      - id: Astana
+        count: 5
+        percentage: 0.05
+      - id: Bandung
+        count: 5
+        percentage: 0.05
+      - id: Basel
+        count: 5
+        percentage: 0.05
+      - id: 'Berlin '
+        count: 5
+        percentage: 0.05
+      - id: Braga
+        count: 5
+        percentage: 0.05
+      - id: Breda
+        count: 5
+        percentage: 0.05
+      - id: Cali
+        count: 5
+        percentage: 0.05
+      - id: Canberra
+        count: 5
+        percentage: 0.05
+      - id: Canterbury
+        count: 5
+        percentage: 0.05
+      - id: Cebu
+        count: 5
+        percentage: 0.05
+      - id: Charlottesville
+        count: 5
+        percentage: 0.05
+      - id: Colorado Springs
+        count: 5
+        percentage: 0.05
+      - id: Cordoba
+        count: 5
+        percentage: 0.05
+      - id: Cracow
+        count: 5
+        percentage: 0.05
+      - id: Dnipro
+        count: 5
+        percentage: 0.05
+      - id: Dortmund
+        count: 5
+        percentage: 0.05
+      - id: Florianópolis
+        count: 5
+        percentage: 0.05
+      - id: Freiburg
+        count: 5
+        percentage: 0.05
+      - id: Gliwice
+        count: 5
+        percentage: 0.05
+      - id: Haarlem
+        count: 5
+        percentage: 0.05
+      - id: Heredia
+        count: 5
+        percentage: 0.05
+      - id: Krasnodar
+        count: 5
+        percentage: 0.05
+      - id: Lausanne
+        count: 5
+        percentage: 0.05
+      - id: Monterrey
+        count: 5
+        percentage: 0.05
+      - id: Oakland
+        count: 5
+        percentage: 0.05
+      - id: Rome
+        count: 5
+        percentage: 0.05
+      - id: Rostov-on-Don
+        count: 5
+        percentage: 0.05
+      - id: Saint Louis
+        count: 5
+        percentage: 0.05
+      - id: Trondheim
+        count: 5
+        percentage: 0.05
+      - id: Washington
+        count: 5
+        percentage: 0.05
+      - id: chicago
+        count: 5
+        percentage: 0.05
+      - id: moscow
+        count: 5
+        percentage: 0.05
+      - id: Łódź
+        count: 5
+        percentage: 0.05
+      - id: A Coruña
+        count: 4
+        percentage: 0.04
+      - id: Alexandria
+        count: 4
+        percentage: 0.04
+      - id: Alicante
+        count: 4
+        percentage: 0.04
+      - id: Almaty
+        count: 4
+        percentage: 0.04
+      - id: Almere
+        count: 4
+        percentage: 0.04
+      - id: Amersfoort
+        count: 4
+        percentage: 0.04
+      - id: Baku
+        count: 4
+        percentage: 0.04
+      - id: 'Barcelona '
+        count: 4
+        percentage: 0.04
+      - id: Baton Rouge
+        count: 4
+        percentage: 0.04
+      - id: Berkeley
+        count: 4
+        percentage: 0.04
+      - id: Bolton
+        count: 4
+        percentage: 0.04
+      - id: Brasília
+        count: 4
+        percentage: 0.04
+      - id: Brunswick
+        count: 4
+        percentage: 0.04
+      - id: Bucuresti
+        count: 4
+        percentage: 0.04
+      - id: Chattanooga
+        count: 4
+        percentage: 0.04
+      - id: Cheltenham
+        count: 4
+        percentage: 0.04
+      - id: Columbia
+        count: 4
+        percentage: 0.04
+      - id: 'Columbus, OH'
+        count: 4
+        percentage: 0.04
+      - id: Coventry
+        count: 4
+        percentage: 0.04
+      - id: Delhi
+        count: 4
+        percentage: 0.04
+      - id: Durban
+        count: 4
+        percentage: 0.04
+      - id: Fort Collins
+        count: 4
+        percentage: 0.04
+  - id: gender_breakdown
+    total: 11100
+    others_count: 0
+    buckets:
+      - id: Male
+        count: 9587
+        percentage: 86.37
+      - id: Female
+        count: 1120
+        percentage: 10.09
+      - id: Prefer not to say
+        count: 296
+        percentage: 2.67
+      - id: Non-binary/ third gender
+        count: 97
+        percentage: 0.87
+  - id: salary
+    total: 10746
+    others_count: 0
+    buckets:
+      - id: $50k-$100k
+        count: 3425
+        percentage: 31.86
+      - id: $30k-$50k
+        count: 2254
+        percentage: 20.98
+      - id: $10k-$30k
+        count: 1957
+        percentage: 18.21
+      - id: $100k-$200k
+        count: 1604
+        percentage: 14.93
+      - id: $0-$10k
+        count: 840
+        percentage: 7.82
+      - id: 'I work for free :('
+        count: 533
+        percentage: 4.96
+      - id: $200k+
+        count: 133
+        percentage: 1.24
+  - id: company_size
+    total: 11146
+    others_count: 0
+    buckets:
+      - id: 100-1000 people
+        count: 2184
+        percentage: 19.59
+      - id: 1000+ people
+        count: 1651
+        percentage: 14.81
+      - id: 20-50 people
+        count: 1534
+        percentage: 13.76
+      - id: Just me
+        count: 1453
+        percentage: 13.04
+      - id: 50-100 people
+        count: 1264
+        percentage: 11.34
+      - id: 10-20 people
+        count: 1131
+        percentage: 10.15
+      - id: 1-5 people
+        count: 1014
+        percentage: 9.1
+      - id: 5-10 people
+        count: 915
+        percentage: 8.21
+  - id: years_of_experience
+    total: 11205
+    others_count: 0
+    buckets:
+      - id: 5-10 years
+        count: 3610
+        percentage: 32.22
+      - id: 10-20 years
+        count: 3064
+        percentage: 27.34
+      - id: 2-5 years
+        count: 2922
+        percentage: 26.08
+      - id: 1-2 years
+        count: 957
+        percentage: 8.54
+      - id: 20+ years
+        count: 425
+        percentage: 3.79
+      - id: Less than one year
+        count: 227
+        percentage: 2.03

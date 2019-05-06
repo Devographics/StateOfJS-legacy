@@ -1,57 +1,72 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
 section_id: typography
 aggregations:
   - id: web-fonts-font-face
-    total: 9491
-    errors: 0
+    total: 11249
     others_count: 0
     buckets:
       - id: "\U0001F44D I've used it"
-        count: 8840
+        count: 10507
+        percentage: 93.41
       - id: '✅ Know what it is, but haven''t used it'
-        count: 439
+        count: 547
+        percentage: 4.86
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 156
+        count: 195
+        percentage: 1.73
   - id: variable-fonts
-    total: 9491
-    errors: 0
+    total: 11252
     others_count: 0
     buckets:
       - id: '✅ Know what it is, but haven''t used it'
-        count: 4198
+        count: 4970
+        percentage: 44.17
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 2799
+        count: 3376
+        percentage: 30
       - id: "\U0001F44D I've used it"
-        count: 2443
+        count: 2906
+        percentage: 25.83
   - id: line-breaking-properties
-    total: 9491
-    errors: 0
+    total: 11257
     others_count: 0
     buckets:
       - id: "\U0001F44D I've used it"
-        count: 8349
+        count: 9900
+        percentage: 87.95
       - id: '✅ Know what it is, but haven''t used it'
-        count: 759
+        count: 946
+        percentage: 8.4
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 334
+        count: 411
+        percentage: 3.65
   - id: font-variant
-    total: 9491
-    errors: 0
+    total: 11228
     others_count: 0
     buckets:
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 4440
+        count: 5285
+        percentage: 47.07
       - id: '✅ Know what it is, but haven''t used it'
-        count: 2641
+        count: 3210
+        percentage: 28.59
       - id: "\U0001F44D I've used it"
-        count: 2339
+        count: 2733
+        percentage: 24.34
   - id: initial-letter
-    total: 9491
-    errors: 0
+    total: 11247
     others_count: 0
     buckets:
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 3408
+        count: 4039
+        percentage: 35.91
       - id: '✅ Know what it is, but haven''t used it'
-        count: 3343
+        count: 4015
+        percentage: 35.7
       - id: "\U0001F44D I've used it"
-        count: 2688
+        count: 3193
+        percentage: 28.39

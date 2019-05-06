@@ -13,34 +13,14 @@ export let colors = {
     pinkLight: '#EC75CB',
     pink: '#ec2f95',
 
-    // tealLight: '#ced9da',
     tealLight: '#bad9db',
     teal: '#9ac6c9',
     tealDark: '#445a5a',
 
-    // other colors
     purple: '#9688e4',
     red: '#FE6A6A',
     yellow: '#fbf34c',
     aqua: '#1ea0f2'
-
-    // // old colors
-    // purpleLight: '#b4addc',
-    // purpleDark: '#786bc3',
-    // otherPurple: '#4500EE',
-
-    // yellowLight: '#fffec7',
-    // yellowDark: '#d2b924',
-
-    // warmGrey: '#e4d6d9',
-
-    // redLighter: '#fbcaca',
-    // redLight: '#f89f9f',
-    // redDark: '#ca4040',
-    // redDarker: '#a22528',
-
-    // blueDark: '#008888',
-    // blueLight: '#8be7e7'
 }
 
 export const colorRange = [
@@ -57,17 +37,6 @@ export const colorRange = [
 export const pinkRange = [colors.pinkLightest, colors.pinkLighter, colors.pinkLight, colors.pink]
 export const blueRange = [colors.blueLighter, colors.blueLight, colors.blue, colors.blueDark]
 
-// export const chordScale = [
-//     colors.blue,
-//     colors.red,
-//     colors.blueLight,
-//     colors.redLight,
-//     colors.blueDark,
-//     colors.redDark
-// ]
-
-export const chordScale = [colors.red, colors.red, colors.red, colors.red, colors.red, colors.red]
-
 export const colorScale = [
     '#41c7c7',
     '#8be7e7',
@@ -83,102 +52,52 @@ export const keys = {
     'company-size': ['1', '1-5', '5-10', '10-20', '20-50', '50-100', '100-1000', 'more-than-1000'],
     'years-of-experience': ['less-than-1', '1-2', '2-5', '5-10', '10-20', 'more-than-20']
 }
-export const toolOpinionKeys = [
-    'would_use',
-    'would_not_use',
-    'interested',
-    'not_interested',
-    'never_heard'
+
+export const usage = [
+    {
+        id: 'used_it',
+        raw: `👍 I've used it`,
+        color: colors.blue
+    },
+    {
+        id: 'know_not_used',
+        raw: `✅ Know what it is, but haven't used it`,
+        color: colors.teal
+    },
+    {
+        id: 'never_heard_not_sure',
+        raw: `🤷 Never heard of it/Not sure what it is`,
+        color: colors.greyMedium
+    }
 ]
 
-// export const featureKeys = [
-//     "I don't know what that is",
-//     'Not needed',
-//     'Nice-to-have, but not important',
-//     'Major feature',
-//     'Vital feature'
-// ]
-
-export const featureKeys = ['used_it', 'know_not_used', 'never_heard_not_sure']
-
-// export const featureColors = {
-//     'used_it': colors.pink,
-//     'know_not_used': colors.blue,
-//     'never_heard_not_sure': colors.grey,
-// }
-export const featureColors = [colors.blue, colors.teal, colors.greyMedium]
-
-export const opinionKeys = [
-    'would_use',
-    'would_not_use',
-    'interested',
-    'not_interested',
-    'never_heard'
+export const opinions = [
+    {
+        id: 'would_use',
+        raw: `👍 Used it > Would use again`,
+        color: colors.blue,
+    },
+    {
+        id: 'would_not_use',
+        raw: `👎 Used it > Would avoid`,
+        color: colors.blueLight,
+    },
+    {
+        id: 'interested',
+        raw: `✅ Heard of it > Would like to learn`,
+        color: colors.teal,
+    },
+    {
+        id: 'not_interested',
+        raw: `🚫 Heard of it > Not interested`,
+        color: colors.tealLight
+    },
+    {
+        id: 'never_heard',
+        raw: '🤷 Never heard of it/Not sure what it is',
+        color: colors.greyMedium
+    }
 ]
-
-export const opinionKeysFull = [
-    '👍 Used it > Would use again',
-    '👎 Used it > Would avoid',
-    '✅ Heard of it > Would like to learn',
-    '🚫 Heard of it > Not interested',
-    '🤷 Never heard of it/Not sure what it is'
-]
-
-export const opinionColors = [
-    colors.blue,
-    colors.blueLight,
-    colors.teal,
-    colors.tealLight,
-    colors.greyMedium
-]
-
-export const DIVERGENCE_MAX_OFFSET = 15
-export const DIVERGENCE_COLORS = ['#8b8de8', '#dadada', '#ea2149']
-
-export const globalOpinionSubjects = [
-    'js_moving_in_right_direction',
-    'building_js_apps_overly_complex',
-    'js_over_used_online',
-    'enjoy_building_js_apps',
-    'would_like_js_to_be_main_lang',
-    'js_ecosystem_changing_to_fast',
-    'survey_too_long'
-]
-
-export const reasons = {
-    like: [
-        'elegant_programming_style_patterns',
-        'robust_less_error_prone_code',
-        'rich_package_ecosystem',
-        'fast_performance',
-        'well_established_option',
-        'easy_learning_curve',
-        'powerful_developer_tooling',
-        'good_documentation',
-        'backed_by_a_great_team_company',
-        'simple_lightweight',
-        'growing_momentum_popularity',
-        'full_featured_powerful',
-        'stable_backwards_compatible',
-        'other'
-    ],
-    dislike: [
-        'clumsy_programming_style',
-        'buggy_error_prone_code',
-        'poor_performance',
-        'small_package_ecosystem',
-        'new_untested_option',
-        'hard_learning_curve',
-        'lacking_developer_tooling',
-        'bad_documentation',
-        'concerns_about_the_team_company',
-        'bloated_complex',
-        'diminishing_momentum_popularity',
-        'limited_lacking_in_features',
-        'fast_changing_breaks_often',
-        'other'
-    ]
-}
 
 export const verticalMargin = 30
 export const innerMargin = 10

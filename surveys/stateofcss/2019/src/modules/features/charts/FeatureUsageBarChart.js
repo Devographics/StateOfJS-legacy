@@ -1,68 +1,15 @@
-import React, { useContext } from 'react'
-import PropTypes from 'prop-types'
-import { ResponsiveWaffle } from '@nivo/waffle'
-import theme from 'nivoTheme'
-import { I18nContext } from 'core/i18n/i18nContext'
-import { ResponsiveBar } from '@nivo/bar'
-import { featureKeys, featureColors } from '../../../constants'
+import React from 'react'
+import GaugeBarChart from 'core/charts/GaugeBarChart'
+import { usage } from '../../../constants'
 
-const Cell = props => {
-    return (
-        <circle
-            cx={props.x + props.size / 2}
-            cy={props.y + props.size / 2}
-            r={props.size / 2}
-            fill={props.color}
-            onClick={props.onClick}
-            onMouseEnter={props.onHover}
-            onMouseMove={props.onHover}
-            onMouseLeave={props.onLeave}
-        />
-    )
-}
-
-const FeatureUsageBarChart = ({ feature, keys = featureKeys }) => {
-    const { translate } = useContext(I18nContext)
-
-    // const data = keys.map(key => ({
-    //     id: key,
-    //     label: translate(`features.usage.${key}`),
-    //     value: feature.usage[key] || 0
-    // }))
-  
-    const data = feature.usage
-    console.log(data)
-    return (
-        <ResponsiveBar
-            layout="horizontal"
-            theme={theme}
-            // columns={8}
-            // rows={12}
-            // padding={5}
-            // total={feature.total}
-            // margin={{
-            //     bottom: 5
-            // }}
-            // cellComponent={Cell}
-            colors={featureColors}
-            // emptyColor="#ffffff"
-            data={[data]}
-            indexBy="country"
-            keys={keys}
-        />
-    )
-}
-
-FeatureUsageBarChart.propTypes = {
-    feature: PropTypes.shape({
-        id: PropTypes.string.isRequired,
-        total: PropTypes.number.isRequired,
-        usage: PropTypes.shape({
-            used_it: PropTypes.number.isRequired,
-            know_not_used: PropTypes.number.isRequired,
-            never_heard_not_sure: PropTypes.number.isRequired
-        }).isRequired
-    }).isRequired
-}
+const FeatureUsageBarChart = ({ buckets }) => (
+    <GaugeBarChart
+        buckets={buckets}
+        mapping={usage}
+        mode="percentage"
+        applyEmptyPatternTo="never_heard_not_sure"
+        i18nNamespace="features.usage"
+    />
+)
 
 export default FeatureUsageBarChart

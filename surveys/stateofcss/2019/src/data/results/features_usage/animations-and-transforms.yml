@@ -1,35 +1,46 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
 section_id: animations-and-transforms
 aggregations:
   - id: css-transitions
-    total: 9491
-    errors: 0
+    total: 11176
     others_count: 0
     buckets:
       - id: "\U0001F44D I've used it"
-        count: 8916
+        count: 10606
+        percentage: 94.9
       - id: '✅ Know what it is, but haven''t used it'
-        count: 401
+        count: 498
+        percentage: 4.46
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 58
+        count: 72
+        percentage: 0.64
   - id: css-transforms
-    total: 9491
-    errors: 0
+    total: 11162
     others_count: 0
     buckets:
       - id: "\U0001F44D I've used it"
-        count: 8872
+        count: 10551
+        percentage: 94.52
       - id: '✅ Know what it is, but haven''t used it'
-        count: 383
+        count: 473
+        percentage: 4.24
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 111
+        count: 138
+        percentage: 1.24
   - id: css-animations
-    total: 9491
-    errors: 0
+    total: 11250
     others_count: 0
     buckets:
       - id: "\U0001F44D I've used it"
-        count: 8516
+        count: 10128
+        percentage: 90.03
       - id: '✅ Know what it is, but haven''t used it'
-        count: 791
+        count: 968
+        percentage: 8.6
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 133
+        count: 154
+        percentage: 1.37

@@ -1,57 +1,72 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
 section_id: layout
 aggregations:
   - id: css-grid
-    total: 9491
-    errors: 0
+    total: 11247
     others_count: 0
     buckets:
       - id: "\U0001F44D I've used it"
-        count: 5215
+        count: 6153
+        percentage: 54.71
       - id: '✅ Know what it is, but haven''t used it'
-        count: 4043
+        count: 4890
+        percentage: 43.48
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 168
+        count: 204
+        percentage: 1.81
   - id: flexbox
-    total: 9491
-    errors: 0
+    total: 11281
     others_count: 0
     buckets:
       - id: "\U0001F44D I've used it"
-        count: 8981
+        count: 10687
+        percentage: 94.74
       - id: '✅ Know what it is, but haven''t used it'
-        count: 425
+        count: 525
+        percentage: 4.65
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 54
+        count: 69
+        percentage: 0.61
   - id: css-multi-column
-    total: 9491
-    errors: 0
+    total: 11287
     others_count: 0
     buckets:
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 3917
+        count: 4611
+        percentage: 40.85
       - id: "\U0001F44D I've used it"
-        count: 2911
+        count: 3492
+        percentage: 30.94
       - id: '✅ Know what it is, but haven''t used it'
-        count: 2638
+        count: 3184
+        percentage: 28.21
   - id: css-writing-modes
-    total: 9491
-    errors: 0
+    total: 11287
     others_count: 0
     buckets:
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 6923
+        count: 8258
+        percentage: 73.17
       - id: '✅ Know what it is, but haven''t used it'
-        count: 1838
+        count: 2197
+        percentage: 19.46
       - id: "\U0001F44D I've used it"
-        count: 707
+        count: 832
+        percentage: 7.37
   - id: css-exclusions
-    total: 9491
-    errors: 0
+    total: 11280
     others_count: 0
     buckets:
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 7441
+        count: 8860
+        percentage: 78.55
       - id: '✅ Know what it is, but haven''t used it'
-        count: 1354
+        count: 1618
+        percentage: 14.34
       - id: "\U0001F44D I've used it"
-        count: 667
+        count: 802
+        percentage: 7.11

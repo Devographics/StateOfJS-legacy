@@ -1,34 +1,40 @@
-// Generic Blocks
-import VerticalBarBlock from '../blocks/VerticalBarBlock'
-import HorizontalBarBlock from '../blocks/HorizontalBarBlock'
-import CountriesBlock from '../blocks/CountriesBlock'
+// generic
+import VerticalBarBlock from 'core/blocks/VerticalBarBlock'
+import HorizontalBarBlock from 'core/blocks/HorizontalBarBlock'
+import CountriesBlock from 'core/blocks/CountriesBlock'
+import OpinionScaleBlock from 'core/blocks/OpinionScaleBlock'
 
-// Demographics Blocks
-import SourceBreakdownBlock from '../../modules/demographics/blocks/SourceBreakdownBlock'
-import GenderBreakdownBlock from '../../modules/demographics/blocks/GenderBreakdownBlock'
+// demographics
+import SourceBreakdownBlock from 'modules/demographics/blocks/SourceBreakdownBlock'
+import GenderBreakdownBlock from 'modules/demographics/blocks/GenderBreakdownBlock'
 
-// Features Blocks
-import FeaturesOverviewBlock from '../../modules/features/blocks/FeaturesOverviewBlock'
-import FeaturesScatterplotBlock from '../../modules/features/blocks/FeaturesScatterplotBlock'
-import FeatureBlock from '../../modules/features/blocks/FeatureBlock'
+// features
+import FeaturesOverviewBlock from 'modules/features/blocks/FeaturesOverviewBlock'
+import FeaturesSectionOverviewBlock from 'modules/features/blocks/FeaturesSectionOverviewBlock'
+import FeatureBlock from 'modules/features/blocks/FeatureBlock'
 
-// Tools Blocks
-import ToolsOverviewBlock from '../../modules/tools/blocks/ToolsOverviewBlock'
-import ToolsSectionOverviewBlock from '../../modules/tools/blocks/ToolsSectionOverviewBlock'
-import ToolOpinionBlock from '../../modules/tools/blocks/ToolOpinionBlock'
+// tools
+import ToolsOverviewBlock from 'modules/tools/blocks/ToolsOverviewBlock'
+import ToolsSectionOverviewBlock from 'modules/tools/blocks/ToolsSectionOverviewBlock'
+import ToolOpinionBlock from 'modules/tools/blocks/ToolOpinionBlock'
 
 const blockRegistry = {
+    // generic
     'vertical-bar': VerticalBarBlock,
     'horizontal-bar': HorizontalBarBlock,
     'countries': CountriesBlock,
+    'opinion-scale': OpinionScaleBlock,
 
+    //demographics
     'source': SourceBreakdownBlock,
     'gender': GenderBreakdownBlock,
 
+    // features
     'features-overview': FeaturesOverviewBlock,
-    'features-section-overview': FeaturesScatterplotBlock,
+    'features-section-overview': FeaturesSectionOverviewBlock,
     feature: FeatureBlock,
-
+    
+    // tools
     'tools-overview': ToolsOverviewBlock,
     'tools-section-overview': ToolsSectionOverviewBlock,
     tool: ToolOpinionBlock

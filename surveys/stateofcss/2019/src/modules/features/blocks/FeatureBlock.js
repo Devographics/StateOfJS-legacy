@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Block from 'core/components/Block'
 import { PageContext } from 'core/helpers/pageContext'
 import { I18nContext } from 'core/i18n/i18nContext'
-import FeatureUsageWaffleChart from '../charts/FeatureUsageWaffleChart'
 import FeatureUsageBarChart from '../charts/FeatureUsageBarChart'
 import { mergeFeaturesResources } from '../featuresHelpers'
 import FeatureUsageLegends from '../charts/FeatureUsageLegends'
@@ -11,6 +10,7 @@ import ChartContainer from 'core/charts/ChartContainer'
 
 const FeatureResources = ({ caniuseInfo }) => {
     const { translate } = useContext(I18nContext)
+
     return (
         <div className="Feature__Resources FTBlock__Resources">
             <div className="Feature__Support">browser support:</div>
@@ -44,10 +44,10 @@ const FeatureResources = ({ caniuseInfo }) => {
     )
 }
 
-const FeatureBlock = ({ block, data, index }) => {
+const FeatureBlock = ({ block, data }) => {
     const features = mergeFeaturesResources(
-        data.features.aggregations,
-        data.features.fields.resources
+        data.data.aggregations,
+        data.data.fields.resources
     )
     const feature = features.find(a => a.id === block.id)
 
@@ -70,7 +70,7 @@ const FeatureBlock = ({ block, data, index }) => {
                 <div className="Feature__Chart FTBlock__Chart">
                     <FeatureUsageLegends />
                     <ChartContainer height={40}>
-                        <FeatureUsageBarChart feature={feature} />
+                        <FeatureUsageBarChart buckets={feature.buckets} />
                     </ChartContainer>
                 </div>
                 <div className="Feature__Description FTBlock__Description">
@@ -91,8 +91,22 @@ FeatureBlock.propTypes = {
         id: PropTypes.string.isRequired,
         path: PropTypes.string.isRequired
     }).isRequired,
-    feature: PropTypes.shape({
-        id: PropTypes.string.isRequired
+    data: PropTypes.shape({
+        data: PropTypes.shape({
+            aggregations: PropTypes.arrayOf(
+                PropTypes.shape({
+                    id: PropTypes.string.isRequired,
+                    total: PropTypes.number.isRequired,
+                    buckets: PropTypes.arrayOf(
+                        PropTypes.shape({
+                            id: PropTypes.string.isRequired,
+                            count: PropTypes.number.isRequired,
+                            percentage: PropTypes.number.isRequired
+                        })
+                    ).isRequired
+                })
+            )
+        }).isRequired
     }).isRequired
 }
 

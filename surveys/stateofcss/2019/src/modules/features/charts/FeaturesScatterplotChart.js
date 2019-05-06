@@ -1,9 +1,30 @@
-import React from 'react'
+import React, { memo, useMemo } from 'react'
 import PropTypes from 'prop-types'
 import theme from 'nivoTheme'
 import { ResponsiveScatterPlot } from '@nivo/scatterplot'
+import { usage } from '../../../constants'
+
+const usageByKey = usage.reduce((acc, u) => ({ ...acc, [u.id]: u }), {})
 
 const FeaturesScatterplotChart = ({ features }) => {
+    const max = useMemo(() => Math.max(...features.map(feature => feature.total)), features)
+    const data = useMemo(
+        () => {
+           return features.map(feature => {
+                const usageBucket = feature.buckets.find(b => b.id === usageByKey.used_it.raw)
+                const knowNotUsedBucket = feature.buckets.find(b => b.id === usageByKey.know_not_used.raw)
+
+                return {
+                    featureId: feature.id,
+                    x: usageBucket.count,
+                    y: usageBucket.count + knowNotUsedBucket.count
+                }
+            })
+        },
+        [features]
+    )
+
+
     return (
         <div style={{ height: 400 }}>
             <ResponsiveScatterPlot
@@ -11,46 +32,34 @@ const FeaturesScatterplotChart = ({ features }) => {
                 margin={{
                     top: 20,
                     right: 20,
-                    bottom: 60,
+                    bottom: 80,
                     left: 80
                 }}
                 colors={['#3c52d1', '#5dd6da', '#cccccc']}
                 xScale={{
                     type: 'linear',
-                    min: 'auto',
-                    max: 'auto'
+                    min: 0,
+                    max
                 }}
                 yScale={{
                     type: 'linear',
-                    min: 'auto',
-                    max: 'auto'
+                    min: 0,
+                    max
                 }}
                 axisLeft={{
                     tickPadding: 14,
-                    legend: '% of users aware of the feature',
+                    legend: 'awareness',
                     legendPosition: 'middle',
                     legendOffset: -60,
-                    format: v => `${v}%`
                 }}
                 axisBottom={{
                     tickPadding: 14,
-                    legend: 'number of participants who used the feature',
+                    legend: 'usage',
                     legendPosition: 'middle',
                     legendOffset: 54
                 }}
                 symbolSize={24}
-                data={[
-                    {
-                        id: 'stats',
-                        data: features.map(f => {
-                            return {
-                                featureId: f.id,
-                                x: f.usage.used_it,
-                                y: ((f.usage.used_it + f.usage.know_not_used) / f.total) * 100
-                            }
-                        })
-                    }
-                ]}
+                data={[{ id: 'stats', data }]}
                 tooltip={d => <strong>{d.featureId}</strong>}
             />
         </div>
@@ -62,14 +71,15 @@ FeaturesScatterplotChart.propTypes = {
         PropTypes.shape({
             id: PropTypes.string.isRequired,
             total: PropTypes.number.isRequired,
-            usage: PropTypes.shape({
-                used_it: PropTypes.number.isRequired,
-                know_not_used: PropTypes.number.isRequired,
-                never_heard_not_sure: PropTypes.number.isRequired
-            }).isRequired,
-            resources: PropTypes.shape({}).isRequired
+            buckets: PropTypes.arrayOf(
+                PropTypes.shape({
+                    id: PropTypes.string.isRequired,
+                    count: PropTypes.number.isRequired,
+                    percentage: PropTypes.number.isRequired
+                })
+            ).isRequired
         })
-    ).isRequired
+    )
 }
 
-export default FeaturesScatterplotChart
+export default memo(FeaturesScatterplotChart)

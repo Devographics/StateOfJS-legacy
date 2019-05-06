@@ -1,0 +1,222 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
+section_id: units-and-selectors
+aggregations:
+  - id: units
+    total: 11266
+    others_count: 0
+    buckets:
+      - id: px
+        count: 11212
+        percentage: -381.83
+      - id: '%'
+        count: 10919
+        percentage: 96.92
+      - id: em
+        count: 10473
+        percentage: 92.96
+      - id: 'vh, vw'
+        count: 10235
+        percentage: 90.85
+      - id: rem
+        count: 9696
+        percentage: 86.06
+      - id: pt
+        count: 4653
+        percentage: 41.3
+      - id: 'vmin, vmax'
+        count: 4404
+        percentage: 39.09
+      - id: cm
+        count: 984
+        percentage: 8.73
+      - id: ch
+        count: 944
+        percentage: 8.38
+      - id: mm
+        count: 880
+        percentage: 7.81
+      - id: in
+        count: 706
+        percentage: 6.27
+      - id: ex
+        count: 390
+        percentage: 3.46
+  - id: pseudo-elements
+    total: 11154
+    others_count: 0
+    buckets:
+      - id: '::before'
+        count: 11059
+        percentage: -179.83
+      - id: '::after'
+        count: 11057
+        percentage: 99.13
+      - id: '::placeholder'
+        count: 7511
+        percentage: 67.34
+      - id: '::selection'
+        count: 4921
+        percentage: 44.12
+      - id: '::first-letter'
+        count: 4504
+        percentage: 40.38
+      - id: '::first-line'
+        count: 3219
+        percentage: 28.86
+  - id: combinators
+    total: 11138
+    others_count: 0
+    buckets:
+      - id: div span (descendant)
+        count: 10862
+        percentage: -139.41
+      - id: div > span (child)
+        count: 10784
+        percentage: 96.82
+      - id: div + div (next sibling)
+        count: 8921
+        percentage: 80.1
+      - id: div ~ div (subsequent sibling)
+        count: 6960
+        percentage: 62.49
+  - id: tree-document-structure
+    total: 11126
+    others_count: 0
+    buckets:
+      - id: ':first-child'
+        count: 10706
+        percentage: -605.69
+      - id: ':nth-child()'
+        count: 10635
+        percentage: 95.59
+      - id: ':last-child'
+        count: 10360
+        percentage: 93.12
+      - id: ':not()'
+        count: 9062
+        percentage: 81.45
+      - id: ':nth-of-type()'
+        count: 7885
+        percentage: 70.87
+      - id: ':nth-last-child()'
+        count: 7788
+        percentage: 70
+      - id: ':first-of-type'
+        count: 6529
+        percentage: 58.68
+      - id: ':last-of-type'
+        count: 6061
+        percentage: 54.48
+      - id: ':root'
+        count: 5157
+        percentage: 46.35
+      - id: ':nth-last-of-type()'
+        count: 4952
+        percentage: 44.51
+      - id: ':empty'
+        count: 4645
+        percentage: 41.75
+      - id: ':only-child'
+        count: 2989
+        percentage: 26.87
+      - id: ':only-of-type'
+        count: 1617
+        percentage: 14.53
+      - id: ':lang()'
+        count: 833
+        percentage: 7.49
+  - id: attributes
+    total: 10360
+    others_count: 0
+    buckets:
+      - id: 'div[foo="bar"] (Equality)'
+        count: 9494
+        percentage: -177.49
+      - id: 'div[foo] (Presence)'
+        count: 8718
+        percentage: 84.15
+      - id: 'div[foo^="bar"] (Starts with)'
+        count: 6244
+        percentage: 60.27
+      - id: 'div[foo*="bar"] (Contains substring)'
+        count: 5333
+        percentage: 51.48
+      - id: 'div[foo~="bar"] (Contains word)'
+        count: 4488
+        percentage: 43.32
+      - id: 'div[foo$="bar"] (Ends with)'
+        count: 3965
+        percentage: 38.27
+  - id: links-urls
+    total: 9577
+    others_count: 0
+    buckets:
+      - id: ':link and :visited'
+        count: 8540
+        percentage: 37.07
+      - id: ':target'
+        count: 4976
+        percentage: 51.96
+      - id: ':any-link'
+        count: 798
+        percentage: 8.33
+      - id: ':local-link'
+        count: 253
+        percentage: 2.64
+  - id: interaction
+    total: 11242
+    others_count: 0
+    buckets:
+      - id: ':hover'
+        count: 11225
+        percentage: -120.35
+      - id: ':focus'
+        count: 10881
+        percentage: 96.79
+      - id: ':active'
+        count: 10784
+        percentage: 95.93
+      - id: ':focus-within'
+        count: 1888
+        percentage: 16.79
+      - id: ':focus-visible'
+        count: 1219
+        percentage: 10.84
+  - id: form-controls
+    total: 10236
+    others_count: 0
+    buckets:
+      - id: ':checked'
+        count: 9337
+        percentage: -122.23
+      - id: ':enabled and :disabled'
+        count: 7112
+        percentage: 69.48
+      - id: ':required and :optional'
+        count: 4247
+        percentage: 41.49
+      - id: ':valid and :invalid'
+        count: 3927
+        percentage: 38.36
+      - id: ':default'
+        count: 2313
+        percentage: 22.6
+      - id: ':read-only and :read-write'
+        count: 2111
+        percentage: 20.62
+      - id: ':placeholder-shown'
+        count: 1643
+        percentage: 16.05
+      - id: ':indeterminate'
+        count: 673
+        percentage: 6.57
+      - id: ':in-range and :out-of-range'
+        count: 399
+        percentage: 3.9
+      - id: ':user-invalid'
+        count: 323
+        percentage: 3.16

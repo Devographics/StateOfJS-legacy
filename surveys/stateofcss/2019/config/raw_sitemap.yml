@@ -267,17 +267,19 @@
   type: page
   blocks:
       - id: easy-to-learn
-        type: vertical-bar
+        type: opinion-scale
       - id: evolving-too-slowly
-        type: vertical-bar
+        type: opinion-scale
       - id: utility-classes
-        type: vertical-bar
+        type: opinion-scale
+        showDescription: true
       - id: selector-nesting
-        type: vertical-bar
+        type: opinion-scale
+        showDescription: true
       - id: programming-language
-        type: vertical-bar
+        type: opinion-scale
       - id: enjoy-css
-        type: vertical-bar
+        type: opinion-scale
       - id: missing-features
         type: horizontal-bar
 

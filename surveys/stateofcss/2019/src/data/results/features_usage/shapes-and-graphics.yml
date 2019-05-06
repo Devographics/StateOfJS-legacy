@@ -1,68 +1,85 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
 section_id: shapes-and-graphics
 aggregations:
   - id: css-shapes
-    total: 9491
-    errors: 0
+    total: 11260
     others_count: 0
     buckets:
       - id: '✅ Know what it is, but haven''t used it'
-        count: 4468
+        count: 5336
+        percentage: 47.39
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 2963
+        count: 3493
+        percentage: 31.02
       - id: "\U0001F44D I've used it"
-        count: 2014
+        count: 2431
+        percentage: 21.59
   - id: object-fit
-    total: 9491
-    errors: 0
+    total: 11264
     others_count: 0
     buckets:
       - id: "\U0001F44D I've used it"
-        count: 4076
+        count: 4798
+        percentage: 42.59
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 3446
+        count: 4145
+        percentage: 36.8
       - id: '✅ Know what it is, but haven''t used it'
-        count: 1928
+        count: 2321
+        percentage: 20.61
   - id: clip-path
-    total: 9491
-    errors: 0
+    total: 11262
     others_count: 0
     buckets:
       - id: '✅ Know what it is, but haven''t used it'
-        count: 3695
+        count: 4422
+        percentage: 39.27
       - id: "\U0001F44D I've used it"
-        count: 3680
+        count: 4381
+        percentage: 38.9
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 2072
+        count: 2459
+        percentage: 21.83
   - id: css-masks
-    total: 9491
-    errors: 0
+    total: 11254
     others_count: 0
     buckets:
       - id: '✅ Know what it is, but haven''t used it'
-        count: 4256
+        count: 5097
+        percentage: 45.29
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 2677
+        count: 3171
+        percentage: 28.18
       - id: "\U0001F44D I've used it"
-        count: 2511
+        count: 2986
+        percentage: 26.53
   - id: blend-modes
-    total: 9491
-    errors: 0
+    total: 11249
     others_count: 0
     buckets:
       - id: '✅ Know what it is, but haven''t used it'
-        count: 3345
+        count: 4002
+        percentage: 35.58
       - id: "\U0001F44D I've used it"
-        count: 3231
+        count: 3820
+        percentage: 33.96
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 2861
+        count: 3427
+        percentage: 30.46
   - id: css-filter-effects
-    total: 9491
-    errors: 0
+    total: 11271
     others_count: 0
     buckets:
       - id: "\U0001F44D I've used it"
-        count: 5582
+        count: 6649
+        percentage: 58.99
       - id: '✅ Know what it is, but haven''t used it'
-        count: 2628
+        count: 3147
+        percentage: 27.92
       - id: "\U0001F937 Never heard of it/Not sure what it is"
-        count: 1246
+        count: 1475
+        percentage: 13.09

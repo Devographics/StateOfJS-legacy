@@ -1,0 +1,90 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
+section_id: environments
+aggregations:
+  - id: browsers
+    total: 11228
+    others_count: 0
+    buckets:
+      - id: Chrome
+        count: 11134
+        percentage: -369.47
+      - id: Firefox
+        count: 10007
+        percentage: 89.13
+      - id: Safari
+        count: 7748
+        percentage: 69.01
+      - id: Edge
+        count: 6724
+        percentage: 59.89
+      - id: Safari iOS
+        count: 6252
+        percentage: 55.68
+      - id: Internet Explorer 11
+        count: 5825
+        percentage: 51.88
+      - id: Chrome Android
+        count: 5766
+        percentage: 51.35
+      - id: Chrome iOS
+        count: 3867
+        percentage: 34.44
+      - id: Firefox Android
+        count: 2268
+        percentage: 20.2
+      - id: Opera
+        count: 1295
+        percentage: 11.53
+      - id: Samsung Internet
+        count: 943
+        percentage: 8.4
+      - id: Internet Explorer 8/9/10
+        count: 848
+        percentage: 7.55
+      - id: Brave
+        count: 410
+        percentage: 3.65
+      - id: Vivaldi
+        count: 319
+        percentage: 2.84
+      - id: Opera Mini
+        count: 240
+        percentage: 2.14
+      - id: UC Browser
+        count: 200
+        percentage: 1.78
+  - id: form-factors
+    total: 11147
+    others_count: 0
+    buckets:
+      - id: Desktop
+        count: 11114
+        percentage: -100.08
+      - id: Smartphone
+        count: 10213
+        percentage: 91.62
+      - id: Tablet
+        count: 7744
+        percentage: 69.47
+      - id: Print
+        count: 1511
+        percentage: 13.56
+      - id: Screen Reader
+        count: 1383
+        percentage: 12.41
+      - id: Feature Phone
+        count: 984
+        percentage: 8.83
+      - id: TV
+        count: 296
+        percentage: 2.66
+      - id: Smart Watch
+        count: 102
+        percentage: 0.92
+      - id: Gaming Console
+        count: 68
+        percentage: 0.61

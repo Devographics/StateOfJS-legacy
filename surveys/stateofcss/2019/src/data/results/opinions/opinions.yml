@@ -1,0 +1,186 @@
+#
+# This file has been automatically generated.
+# Please do not modify it manually as it might
+# be overriden.
+#
+section_id: opinions
+aggregations:
+  - id: easy-to-learn
+    total: 11154
+    others_count: 0
+    buckets:
+      - id: '3'
+        count: 3837
+        percentage: 34.4
+      - id: '2'
+        count: 3099
+        percentage: 27.78
+      - id: '4'
+        count: 2754
+        percentage: 24.69
+      - id: '1'
+        count: 1124
+        percentage: 10.08
+      - id: '0'
+        count: 340
+        percentage: 3.05
+  - id: evolving-too-slowly
+    total: 11196
+    others_count: 0
+    buckets:
+      - id: '2'
+        count: 4310
+        percentage: 38.5
+      - id: '1'
+        count: 2499
+        percentage: 22.32
+      - id: '3'
+        count: 1833
+        percentage: 16.37
+      - id: '0'
+        count: 1325
+        percentage: 11.83
+      - id: '4'
+        count: 1229
+        percentage: 10.98
+  - id: utility-classes
+    total: 11150
+    others_count: 0
+    buckets:
+      - id: '2'
+        count: 3601
+        percentage: 32.3
+      - id: '4'
+        count: 2306
+        percentage: 20.68
+      - id: '0'
+        count: 2064
+        percentage: 18.51
+      - id: '3'
+        count: 1659
+        percentage: 14.88
+      - id: '1'
+        count: 1520
+        percentage: 13.63
+  - id: selector-nesting
+    total: 11159
+    others_count: 0
+    buckets:
+      - id: '4'
+        count: 2969
+        percentage: 26.6
+      - id: '2'
+        count: 2786
+        percentage: 24.97
+      - id: '3'
+        count: 2227
+        percentage: 19.96
+      - id: '1'
+        count: 1610
+        percentage: 14.43
+      - id: '0'
+        count: 1567
+        percentage: 14.04
+  - id: programming-language
+    total: 11168
+    others_count: 0
+    buckets:
+      - id: '0'
+        count: 3457
+        percentage: 30.95
+      - id: '2'
+        count: 2576
+        percentage: 23.07
+      - id: '1'
+        count: 1998
+        percentage: 17.89
+      - id: '4'
+        count: 1596
+        percentage: 14.29
+      - id: '3'
+        count: 1541
+        percentage: 13.8
+  - id: enjoy-css
+    total: 11201
+    others_count: 0
+    buckets:
+      - id: '4'
+        count: 5452
+        percentage: 48.67
+      - id: '3'
+        count: 3003
+        percentage: 26.81
+      - id: '2'
+        count: 1604
+        percentage: 14.32
+      - id: '1'
+        count: 700
+        percentage: 6.25
+      - id: '0'
+        count: 442
+        percentage: 3.95
+  - id: missing-features
+    total: 3780
+    others_count: 3123
+    buckets:
+      - id: |+
+
+        count: 212
+        percentage: 88.22
+      - id: Container queries
+        count: 71
+        percentage: 1.88
+      - id: Parent selector
+        count: 46
+        percentage: 1.22
+      - id: parent selector
+        count: 43
+        percentage: 1.14
+      - id: Parent selectors
+        count: 41
+        percentage: 1.08
+      - id: container queries
+        count: 34
+        percentage: 0.9
+      - id: ' '
+        count: 31
+        percentage: 0.82
+      - id: Nesting
+        count: 25
+        percentage: 0.66
+      - id: nesting
+        count: 21
+        percentage: 0.56
+      - id: Element queries
+        count: 19
+        percentage: 0.5
+      - id: parent selectors
+        count: 19
+        percentage: 0.5
+      - id: '-'
+        count: 15
+        percentage: 0.4
+      - id: Container Queries
+        count: 15
+        percentage: 0.4
+      - id: element queries
+        count: 12
+        percentage: 0.32
+      - id: functions
+        count: 11
+        percentage: 0.29
+      - id: Subgrid
+        count: 10
+        percentage: 0.26
+      - id: Houdini
+        count: 9
+        percentage: 0.24
+      - id: Nothing
+        count: 8
+        percentage: 0.21
+      - id: subgrid
+        count: 8
+        percentage: 0.21
+      - id: mixins
+        count: 7
+        percentage: 0.19

@@ -42,7 +42,7 @@ export default {
         },
         ticks: {
             line: {
-                stroke: '#bbb'
+                stroke: colors.teal,
             },
             text: {
                 fill: colors.blue,
@@ -57,6 +57,12 @@ export default {
             }
         }
     },
+    grid: {
+        line: {
+            stroke: colors.teal,
+            strokeDasharray: '1 2'
+        }
+    },
     streamTimelineAxis: {
         ticks: {
             line: {
@@ -67,11 +73,6 @@ export default {
                 fontSize: 16,
                 fill: '#e8e8e8'
             }
-        }
-    },
-    grid: {
-        line: {
-            stroke: '#dddddd'
         }
     },
     legends: {

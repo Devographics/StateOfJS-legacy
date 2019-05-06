@@ -1,3 +1,6 @@
+#
+# Please try to folow the same structure as the website
+#
 locale: en-US
 translations:
     # pages
@@ -5,6 +8,114 @@ translations:
     # - label:            used for navigation
     # - contextual_label: used mostly for pagination where you don't have any context
     # - title:            used for page titles
+
+    ###########################################################################
+    # Demographics
+    ###########################################################################
+
+    ###########################################################################
+    # Features
+    ###########################################################################
+
+    ###########################################################################
+    # Units & Selectors
+    ###########################################################################
+
+    ###########################################################################
+    # Tools & Methodology
+    ###########################################################################
+
+    ###########################################################################
+    # Other tools
+    ###########################################################################
+    - key: block.title.text-editors
+      t: Text Editors
+    - key: block.description.text-editors
+      t: Which text editor(s) developers regularly use?
+    - key: block.title.browsers
+      t: Browsers
+    - key: block.description.browsers
+      t: Which browser(s) do developers work in primarily during initial development?
+
+    ###########################################################################
+    # Environments
+    ###########################################################################
+    - key: block.title.form-factors
+      t: Form Factors
+    - key: block.description.form-factors
+      t: Which form factors do developers test on?
+
+    ###########################################################################
+    # Resources
+    ###########################################################################
+    - key: block.title.blogs-magazines
+      t: Blogs & Magazines
+    - key: block.description.blogs-magazines
+      t: Which CSS-related blogs/magazines/etc. do developers read?
+
+    - key: block.title.sites-courses
+      t: Sites & Courses
+    - key: block.description.sites-courses
+      t: Which CSS-related sites/courses/etc. do developers consult?
+
+    - key: block.title.podcasts
+      t: Podcasts
+    - key: block.description.podcasts
+      t: Which CSS or programming-related podcasts do developers listen to?
+
+    ###########################################################################
+    # Opinions
+    ###########################################################################
+    - key: block.title.easy-to-learn
+      t: CSS is easy to learn
+
+    - key: block.title.evolving-too-slowly
+      t: CSS is evolving too slowly
+
+    - key: block.title.utility-classes
+      t: Non-semantic classes
+    - key: block.description.utility-classes
+      t: Non-semantic classes such as `.center`, `.large-text`, etc. should be avoided.
+
+    - key: block.title.selector-nesting
+      t: Selector nesting
+    - key: block.description.selector-nesting
+      t: Selector nesting such as `.foo .bar ul li {...}` should be avoided.
+
+    - key: block.title.programming-language
+      t: CSS is a programming language
+  
+    - key: block.title.enjoy-css
+      t: Developers enjoy writing CSS
+
+    # ?
+    # CSS is moving in the right direction
+
+    - key: block.title.missing-features
+      t: What do developers feel is currently missing from CSS?
+
+    ###########################################################################
+    # Awards
+    ###########################################################################
+
+
+
+    ###########################################################################
+    # Generic
+    ###########################################################################
+    # opinion scale
+    - key: opinion_scale.step.0
+      t: Strongly Disagree
+    - key: opinion_scale.step.1
+      t: Disagree
+    - key: opinion_scale.step.2
+      t: Neutral
+    - key: opinion_scale.step.3
+      t: Agree
+    - key: opinion_scale.step.4
+      t: Strongly Agree
+
+
     - key: page.features_intro
       t: ${section} Features
     - key: page.features_intro.label
@@ -151,18 +262,6 @@ translations:
       t: I've USED it before, and would NOT use it again
     - key: opinions.legends_short.would_not_use  
       t: Used it, would not use again
-
-    # generic opinions
-    - key: opinion_scale.0
-      t: Strongly Disagree
-    - key: opinion_scale.1
-      t: Disagree
-    - key: opinion_scale.2
-      t: Neutral
-    - key: opinion_scale.3
-      t: Agree
-    - key: opinion_scale.4
-      t: Strongly Agree
 
     # salary ranges
     - key: salary.work-for-free.long
@@ -422,8 +521,6 @@ translations:
       t: Introduction
     - key: page.demographics
       t: Demographics
-    - key: page.connections
-      t: Connections
     - key: page.section_overview
       t: ${section} - Overview
     - key: page.section_tool

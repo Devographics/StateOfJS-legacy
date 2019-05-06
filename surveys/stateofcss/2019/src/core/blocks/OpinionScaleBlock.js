@@ -2,31 +2,32 @@ import React, { memo, useMemo } from 'react'
 import PropTypes from 'prop-types'
 import Block from 'core/components/Block'
 import ChartContainer from 'core/charts/ChartContainer'
-import HorizontalBarChart from '../charts/HorizontalBarChart'
+import OpinionScaleBarChart from 'core/charts/OpinionScaleBarChart'
 
-const HorizontalBarBlock = ({ block, data }) => {
+const OpinionScaleBlock = ({ block, data }) => {
     if (!data || !data.data) {
-        return <div>HorizontalBarBlock: Missing data for block {block.id}, page data is undefined</div>
+        return <div>OpinionScaleBlock: Missing data for block {block.id}, page data is undefined</div>
     }
 
     const blockData = useMemo(() => data.data.aggregations.find(agg => agg.id === block.id), [block, data.data])
 
     if (!blockData) {
-        return <div>HorizontalBarBlock: Missing data for block {block.id}</div>
+        return <div>OpinionScaleBlock: Missing data for block {block.id}</div>
     }
 
     return (
-        <Block id={block.id} showDescription={true}>
+        <Block id={block.id} showDescription={!!block.showDescription}>
             <ChartContainer>
-                <HorizontalBarChart buckets={blockData.buckets} i18nNamespace={block.id} />
+                <OpinionScaleBarChart buckets={blockData.buckets} i18nNamespace={block.id} />
             </ChartContainer>
         </Block>
     )
 }
 
-HorizontalBarBlock.propTypes = {
+OpinionScaleBlock.propTypes = {
     block: PropTypes.shape({
         id: PropTypes.string.isRequired,
+        showDescription: PropTypes.bool,
     }).isRequired,
     data: PropTypes.shape({
         data: PropTypes.shape({
@@ -47,4 +48,4 @@ HorizontalBarBlock.propTypes = {
     }).isRequired
 }
 
-export default memo(HorizontalBarBlock)
+export default memo(OpinionScaleBlock)
