@@ -21,7 +21,10 @@ export default class SourceBreakdownWaffleChart extends Component {
 
                 return {
                     id: d.source,
-                    label: d.source === 'Other/Unknown' ? translate(sourceNameToTranslationKey(d.source)) : d.source,
+                    label:
+                        d.source === 'Other/Unknown'
+                            ? translate(sourceNameToTranslationKey(d.source))
+                            : d.source,
                     value: d.count
                 }
             })
@@ -43,7 +46,7 @@ export default class SourceBreakdownWaffleChart extends Component {
                                         data={data}
                                         fillDirection="left"
                                         theme={theme}
-                                        emptyColor='white'
+                                        emptyColor="white"
                                         colors={colors}
                                     />
                                 )

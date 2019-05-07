@@ -6,10 +6,15 @@ import OpinionScaleBarChart from 'core/charts/OpinionScaleBarChart'
 
 const OpinionScaleBlock = ({ block, data }) => {
     if (!data || !data.data) {
-        return <div>OpinionScaleBlock: Missing data for block {block.id}, page data is undefined</div>
+        return (
+            <div>OpinionScaleBlock: Missing data for block {block.id}, page data is undefined</div>
+        )
     }
 
-    const blockData = useMemo(() => data.data.aggregations.find(agg => agg.id === block.id), [block, data.data])
+    const blockData = useMemo(() => data.data.aggregations.find(agg => agg.id === block.id), [
+        block,
+        data.data
+    ])
 
     if (!blockData) {
         return <div>OpinionScaleBlock: Missing data for block {block.id}</div>
@@ -27,7 +32,7 @@ const OpinionScaleBlock = ({ block, data }) => {
 OpinionScaleBlock.propTypes = {
     block: PropTypes.shape({
         id: PropTypes.string.isRequired,
-        showDescription: PropTypes.bool,
+        showDescription: PropTypes.bool
     }).isRequired,
     data: PropTypes.shape({
         data: PropTypes.shape({

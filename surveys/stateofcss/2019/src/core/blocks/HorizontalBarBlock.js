@@ -6,10 +6,15 @@ import HorizontalBarChart from '../charts/HorizontalBarChart'
 
 const HorizontalBarBlock = ({ block, data }) => {
     if (!data || !data.data) {
-        return <div>HorizontalBarBlock: Missing data for block {block.id}, page data is undefined</div>
+        return (
+            <div>HorizontalBarBlock: Missing data for block {block.id}, page data is undefined</div>
+        )
     }
 
-    const blockData = useMemo(() => data.data.aggregations.find(agg => agg.id === block.id), [block, data.data])
+    const blockData = useMemo(() => data.data.aggregations.find(agg => agg.id === block.id), [
+        block,
+        data.data
+    ])
 
     if (!blockData) {
         return <div>HorizontalBarBlock: Missing data for block {block.id}</div>
@@ -26,7 +31,7 @@ const HorizontalBarBlock = ({ block, data }) => {
 
 HorizontalBarBlock.propTypes = {
     block: PropTypes.shape({
-        id: PropTypes.string.isRequired,
+        id: PropTypes.string.isRequired
     }).isRequired,
     data: PropTypes.shape({
         data: PropTypes.shape({

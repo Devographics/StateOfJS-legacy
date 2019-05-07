@@ -10,9 +10,11 @@ const FeaturesScatterplotChart = ({ features }) => {
     const max = useMemo(() => Math.max(...features.map(feature => feature.total)), features)
     const data = useMemo(
         () => {
-           return features.map(feature => {
+            return features.map(feature => {
                 const usageBucket = feature.buckets.find(b => b.id === usageByKey.used_it.raw)
-                const knowNotUsedBucket = feature.buckets.find(b => b.id === usageByKey.know_not_used.raw)
+                const knowNotUsedBucket = feature.buckets.find(
+                    b => b.id === usageByKey.know_not_used.raw
+                )
 
                 return {
                     featureId: feature.id,
@@ -23,7 +25,6 @@ const FeaturesScatterplotChart = ({ features }) => {
         },
         [features]
     )
-
 
     return (
         <div style={{ height: 400 }}>
@@ -51,7 +52,7 @@ const FeaturesScatterplotChart = ({ features }) => {
                     tickPadding: 14,
                     legend: 'awareness',
                     legendPosition: 'middle',
-                    legendOffset: -60,
+                    legendOffset: -60
                 }}
                 axisBottom={{
                     format: '.2s',

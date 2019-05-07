@@ -14,10 +14,7 @@ const Tooltip = memo(({ indexValue, value }) => (
 ))
 
 const HorizontalBarChart = ({ buckets }) => {
-    const data = useMemo(
-        () => sortBy(buckets.map(bucket => ({ ...bucket })), 'count'),
-        [buckets]
-    )
+    const data = useMemo(() => sortBy(buckets.map(bucket => ({ ...bucket })), 'count'), [buckets])
 
     return (
         <div style={{ height: buckets.length * 36 + 80 }}>
@@ -27,7 +24,7 @@ const HorizontalBarChart = ({ buckets }) => {
                     top: 40,
                     right: 20,
                     bottom: 40,
-                    left: 160,
+                    left: 160
                 }}
                 keys={['count']}
                 data={data}
@@ -37,7 +34,7 @@ const HorizontalBarChart = ({ buckets }) => {
                 enableLabel={false}
                 colors={[colors.blue]}
                 padding={0.68}
-                borderRadius={5}            
+                borderRadius={5}
                 axisTop={{
                     format: '.2s'
                 }}
@@ -46,9 +43,9 @@ const HorizontalBarChart = ({ buckets }) => {
                 }}
                 axisLeft={{
                     tickSize: 0,
-                    tickPadding: 10,
+                    tickPadding: 10
                 }}
-                tooltip={barProps => <Tooltip {...barProps}/>}
+                tooltip={barProps => <Tooltip {...barProps} />}
             />
         </div>
     )

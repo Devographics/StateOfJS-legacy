@@ -82,23 +82,28 @@ const GaugeBarChart = ({ buckets, mapping, mode, applyEmptyPatternTo, i18nNamesp
 
     const keys = useMemo(() => mapping.map(m => m.id), [mapping])
     const data = useMemo(
-        () => [buckets.reduce((acc, bucket) => {
-            const key = mapping.find(m => m.raw === bucket.id).id
+        () => [
+            buckets.reduce((acc, bucket) => {
+                const key = mapping.find(m => m.raw === bucket.id).id
 
-            return {
-                ...acc,
-                [key]: bucket.percentage,
-                [`${key}_count`]: bucket.count
-            }
-        }, {})],
+                return {
+                    ...acc,
+                    [key]: bucket.percentage,
+                    [`${key}_count`]: bucket.count
+                }
+            }, {})
+        ],
         [buckets, mapping]
     )
     const colors = useMemo(
         () => {
-            const colorById = mapping.reduce((acc, m) => ({
-                ...acc,
-                [m.id]: m.color,
-            }), {})
+            const colorById = mapping.reduce(
+                (acc, m) => ({
+                    ...acc,
+                    [m.id]: m.color
+                }),
+                {}
+            )
 
             return bar => colorById[bar.id]
         },
@@ -106,10 +111,12 @@ const GaugeBarChart = ({ buckets, mapping, mode, applyEmptyPatternTo, i18nNamesp
     )
     const labelsLayer = useMemo(() => getLabels(mode), [mode])
     const patternRules = useMemo(
-        () => [{
-            id: 'empty',
-            match: { id: applyEmptyPatternTo },
-        }],
+        () => [
+            {
+                id: 'empty',
+                match: { id: applyEmptyPatternTo }
+            }
+        ],
         [applyEmptyPatternTo]
     )
 
@@ -135,11 +142,7 @@ const GaugeBarChart = ({ buckets, mapping, mode, applyEmptyPatternTo, i18nNamesp
             defs={patterns}
             fill={patternRules}
             tooltip={bar => (
-                <Tooltip
-                    bar={bar}
-                    translate={translate}
-                    i18nNamespace={i18nNamespace}
-                />
+                <Tooltip bar={bar} translate={translate} i18nNamespace={i18nNamespace} />
             )}
         />
     )
@@ -150,14 +153,14 @@ GaugeBarChart.propTypes = {
         PropTypes.shape({
             id: PropTypes.string.isRequired,
             count: PropTypes.number.isRequired,
-            percentage: PropTypes.number.isRequired,
+            percentage: PropTypes.number.isRequired
         }).isRequired
     ).isRequired,
     mapping: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.string.isRequired,
             raw: PropTypes.string.isRequired,
-            color: PropTypes.string.isRequired,
+            color: PropTypes.string.isRequired
         })
     ).isRequired,
     mode: PropTypes.oneOf(['count', 'percentage']),

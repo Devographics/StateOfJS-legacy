@@ -348,45 +348,46 @@ const Illustration = ({ done = false, animated = true, crosshatching = true, d }
                 </g>
             ))}
 
-            {crosshatching && done && (
-                <>
-                    {' '}
-                    ({/* masks (cross-hatching) */}
-                    <mask id="maskC" maskUnits="userSpaceOnUse">
-                        <LetterC x={d.cxCenter} y={d.cyCenter} fill="#fff" d={d} />
-                    </mask>
-                    {
+            {crosshatching &&
+                done && (
+                    <>
+                        {' '}
+                        ({/* masks (cross-hatching) */}
+                        <mask id="maskC" maskUnits="userSpaceOnUse">
+                            <LetterC x={d.cxCenter} y={d.cyCenter} fill="#fff" d={d} />
+                        </mask>
+                        {
+                            <CrossHatching
+                                x={d.cxCenter - d.frameWidth / 2}
+                                y={d.cyCenter - d.frameWidth / 2}
+                                mask="url(#maskC)"
+                                prefix="c-"
+                                d={d}
+                            />
+                        }
+                        <mask id="maskS1" maskUnits="userSpaceOnUse">
+                            <LetterS x={d.saxCenter} y={d.sayCenter} fill="#fff" d={d} />
+                        </mask>
                         <CrossHatching
-                            x={d.cxCenter - d.frameWidth / 2}
-                            y={d.cyCenter - d.frameWidth / 2}
-                            mask="url(#maskC)"
-                            prefix="c-"
+                            x={d.saxCenter - d.frameWidth / 2}
+                            y={d.sayCenter - d.frameWidth / 2}
+                            mask="url(#maskS1)"
+                            prefix="s1-"
                             d={d}
                         />
-                    }
-                    <mask id="maskS1" maskUnits="userSpaceOnUse">
-                        <LetterS x={d.saxCenter} y={d.sayCenter} fill="#fff" d={d} />
-                    </mask>
-                    <CrossHatching
-                        x={d.saxCenter - d.frameWidth / 2}
-                        y={d.sayCenter - d.frameWidth / 2}
-                        mask="url(#maskS1)"
-                        prefix="s1-"
-                        d={d}
-                    />
-                    <mask id="maskS2" maskUnits="userSpaceOnUse">
-                        <LetterS x={d.sbxCenter} y={d.sbyCenter} fill="#fff" d={d} />
-                    </mask>
-                    <CrossHatching
-                        x={d.sbxCenter - d.frameWidth / 2}
-                        y={d.sbyCenter - d.frameWidth / 2}
-                        mask="url(#maskS2)"
-                        prefix="s2-"
-                        d={d}
-                    />
-                    )
-                </>
-            )}
+                        <mask id="maskS2" maskUnits="userSpaceOnUse">
+                            <LetterS x={d.sbxCenter} y={d.sbyCenter} fill="#fff" d={d} />
+                        </mask>
+                        <CrossHatching
+                            x={d.sbxCenter - d.frameWidth / 2}
+                            y={d.sbyCenter - d.frameWidth / 2}
+                            mask="url(#maskS2)"
+                            prefix="s2-"
+                            d={d}
+                        />
+                        )
+                    </>
+                )}
 
             {/* letters */}
             <LetterC className="letter letter0 lc" x={d.cxCenter} y={d.cyCenter} d={d} />

@@ -6,11 +6,8 @@ import FeaturesTreeMapChart from '../charts/FeaturesTreeMapChart'
 import { mergeFeaturesResources } from '../featuresHelpers'
 
 const FeaturesSectionOverviewBlock = ({ block, data }) => {
-    const features = mergeFeaturesResources(
-        data.data.aggregations,
-        data.data.fields.resources
-    )
-    
+    const features = mergeFeaturesResources(data.data.aggregations, data.data.fields.resources)
+
     return (
         <Block id={block.id} showDescription={false}>
             <FeaturesScatterplotChart features={features} />

@@ -80,7 +80,7 @@
 
 .Nav__Page--lvl-1,
 .Nav__Page--lvl-2 {
-    .Nav__Page__Link{
+    .Nav__Page__Link {
         font-size: $smallish-font;
         @include font-regular;
         &,
@@ -109,12 +109,12 @@
 
 .Nav__SubPages {
     padding-left: $spacing;
-    margin-top: $spacing * .5;
+    margin-top: $spacing * 0.5;
 }
 
 .Nav__SubPages--lvl-1 {
     padding-left: $spacing;
-    margin-bottom: $spacing * .5;
+    margin-bottom: $spacing * 0.5;
 }
 
 .Nav__SubPages--lvl-1:after {

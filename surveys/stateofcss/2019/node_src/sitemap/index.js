@@ -5,13 +5,14 @@ const yaml = require('js-yaml')
 exports.pageFromConfig = (stack, config, parent) => {
     const page = {
         ...config,
-        path: parent === undefined ? config.path : `${parent.path.replace(/\/$/, '')}${config.path}`,
+        path:
+            parent === undefined ? config.path : `${parent.path.replace(/\/$/, '')}${config.path}`,
         is_hidden: !!config.is_hidden,
         children: []
     }
     // if page has no defaultBlockType, get it from parent
     if (!page.defaultBlockType) {
-        page.defaultBlockType = parent && parent.defaultBlockType || 'default'
+        page.defaultBlockType = (parent && parent.defaultBlockType) || 'default'
     }
 
     if (!page.path.endsWith('/')) {
@@ -51,7 +52,7 @@ exports.pageFromConfig = (stack, config, parent) => {
 
 let computedSitemap = null
 
-exports.computeSitemap = async (rawSitemap) => {
+exports.computeSitemap = async rawSitemap => {
     if (computedSitemap !== null) {
         return computedSitemap
     }
@@ -70,25 +71,13 @@ exports.computeSitemap = async (rawSitemap) => {
         const index = findIndex(stack.flat, p => p.path === page.path)
         const previous = stack.flat[index - 1]
         if (previous !== undefined && previous.is_hidden !== true) {
-            page.previous = omit(previous, [
-                'is_hidden',
-                'previous',
-                'next',
-                'children',
-                'blocks'
-            ])
+            page.previous = omit(previous, ['is_hidden', 'previous', 'next', 'children', 'blocks'])
         }
 
         const lastIndex = findLastIndex(stack.flat, p => p.path === page.path)
         const next = stack.flat[lastIndex + 1]
         if (next !== undefined && next.is_hidden !== true) {
-            page.next = omit(next, [
-                'is_hidden',
-                'previous',
-                'next',
-                'children',
-                'blocks'
-            ])
+            page.next = omit(next, ['is_hidden', 'previous', 'next', 'children', 'blocks'])
         }
     })
 
@@ -101,7 +90,7 @@ exports.computeSitemap = async (rawSitemap) => {
         `# please edit \`raw_sitemap.yaml\` instead.`,
         `# generated on: ${now.toISOString()}`,
         `###################################################################`,
-        yaml.dump(stack.hierarchy, { noRefs: true }),
+        yaml.dump(stack.hierarchy, { noRefs: true })
     ].join('\n')
     await fs.writeFileSync('./config/sitemap.yml', sitemapContent)
 

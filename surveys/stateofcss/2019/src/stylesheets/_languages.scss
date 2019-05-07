@@ -35,7 +35,8 @@
             fill: $text-color;
         }
     }
-    &:hover, .pagetitle .LanguageSwitcher--open & {
+    &:hover,
+    .pagetitle .LanguageSwitcher--open & {
         background: $teal-light;
     }
     .pagetitle & {

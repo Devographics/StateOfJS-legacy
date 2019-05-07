@@ -1,7 +1,7 @@
 const fetch = require('node-fetch')
 
 exports.normalizeMdnResource = res => {
-    return ([res, ...res.translations]).map(translation => {
+    return [res, ...res.translations].map(translation => {
         return {
             locale: translation.locale,
             url: translation.url,
@@ -11,7 +11,7 @@ exports.normalizeMdnResource = res => {
     })
 }
 
-exports.fetchMdnResource = async (path) => {
+exports.fetchMdnResource = async path => {
     try {
         const res = await fetch(`https://developer.mozilla.org${path}$json`)
         const json = await res.json()

@@ -8,11 +8,10 @@ import PageTemplate from 'core/pages/PageTemplate'
 // import ToolOtherBlock from './blocks/ToolOtherBlock';
 
 const ToolsTemplate = ({ data }) => {
-
     // const context = useContext(PageContext)
     // const { translate } = useContext(I18nContext)
-    return <PageTemplate data={data}/>
-    
+    return <PageTemplate data={data} />
+
     // return (
     //     <>
     //         <PageHeader

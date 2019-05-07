@@ -10,7 +10,7 @@ export default OpinionsPage
 
 export const query = graphql`
     query opinions {
-        data: opinionsYaml(section_id: { eq: "opinions"}) {
+        data: opinionsYaml(section_id: { eq: "opinions" }) {
             aggregations {
                 id
                 buckets {

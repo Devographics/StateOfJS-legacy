@@ -14,29 +14,27 @@ const NavItem = ({ page, currentPath, closeSidebar, level = 0 }) => {
     return (
         <>
             <div className={`Nav__Page Nav__Page--lvl-${level}`}>
-            <PageLink
-                className={`Nav__Page__Link ${
-                    isActive ? ' Nav__Page__Link--active' : ''
-                }`}
-                activeClassName="Nav__Page__Link--active"
-                onClick={closeSidebar}
-                page={page}
-            >
-                <PageLabel page={page} />
-            </PageLink>
-            {shouldDisplayChildren && (
-                <div className={`Nav__SubPages Nav__SubPages--lvl-${level}`}>
-                    {page.children.map(childPage => (
-                        <NavItem
-                            key={childPage.id}
-                            page={childPage}
-                            closeSidebar={closeSidebar}
-                            currentPath={currentPath}
-                            level={level + 1}
-                        />
-                    ))}
-                </div>
-            )}
+                <PageLink
+                    className={`Nav__Page__Link ${isActive ? ' Nav__Page__Link--active' : ''}`}
+                    activeClassName="Nav__Page__Link--active"
+                    onClick={closeSidebar}
+                    page={page}
+                >
+                    <PageLabel page={page} />
+                </PageLink>
+                {shouldDisplayChildren && (
+                    <div className={`Nav__SubPages Nav__SubPages--lvl-${level}`}>
+                        {page.children.map(childPage => (
+                            <NavItem
+                                key={childPage.id}
+                                page={childPage}
+                                closeSidebar={closeSidebar}
+                                currentPath={currentPath}
+                                level={level + 1}
+                            />
+                        ))}
+                    </div>
+                )}
             </div>
         </>
     )

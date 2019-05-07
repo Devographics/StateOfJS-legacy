@@ -14,20 +14,18 @@ const GenderBreakdownWaffleChart = ({ data }) => {
 
     let total = 0
     const colors = []
-    const translatedData = data
-        .filter(d => d.gender !== 'prefer not to say')
-        .map(d => {
-            colors.push(theme.genderColors[d.gender])
-            total += d.count
+    const translatedData = data.filter(d => d.gender !== 'prefer not to say').map(d => {
+        colors.push(theme.genderColors[d.gender])
+        total += d.count
 
-            const gender = translate(genderNameToTranslationKey(d.gender)) || d.gender
+        const gender = translate(genderNameToTranslationKey(d.gender)) || d.gender
 
-            return {
-                id: d.gender,
-                label: gender,
-                value: d.count
-            }
-        })
+        return {
+            id: d.gender,
+            label: gender,
+            value: d.count
+        }
+    })
 
     return (
         <>

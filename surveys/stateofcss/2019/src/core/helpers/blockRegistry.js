@@ -22,18 +22,18 @@ const blockRegistry = {
     // generic
     'vertical-bar': VerticalBarBlock,
     'horizontal-bar': HorizontalBarBlock,
-    'countries': CountriesBlock,
+    countries: CountriesBlock,
     'opinion-scale': OpinionScaleBlock,
 
     //demographics
-    'source': SourceBreakdownBlock,
-    'gender': GenderBreakdownBlock,
+    source: SourceBreakdownBlock,
+    gender: GenderBreakdownBlock,
 
     // features
     'features-overview': FeaturesOverviewBlock,
     'features-section-overview': FeaturesSectionOverviewBlock,
     feature: FeatureBlock,
-    
+
     // tools
     'tools-overview': ToolsOverviewBlock,
     'tools-section-overview': ToolsSectionOverviewBlock,

@@ -9,11 +9,11 @@ exports.normalizeGithubResource = res => {
         stars: res.stargazers_count,
         forks: res.forks,
         opened_issues: res.open_issues_count,
-        homepage: res.homepage,
+        homepage: res.homepage
     }
 }
 
-exports.fetchGithubResource = async (ownerAndRepo) => {
+exports.fetchGithubResource = async ownerAndRepo => {
     try {
         const res = await fetch(`https://api.github.com/repos/${ownerAndRepo}`)
         const json = await res.json()

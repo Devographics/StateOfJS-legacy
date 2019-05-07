@@ -7,25 +7,27 @@ const used = usage.find(u => u.id === 'used_it')
 
 const Node = memo(({ style, node }) => {
     return (
-        <div style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: style.width,
-            height: style.height,
-            backgroundColor: style.color,
-            transform: `translate3d(${style.x}px,${style.y}px,0)`,
-            display: 'flex',
-            color: 'white',
-            fontSize: '14px',
-            lineHeight: '19px',
-            padding: '10px 14px',
-            flexDirection: 'column',
-            justifyContent: 'flex-end',
-            alignItems: 'flex-start',
-            whiteSpace: 'pre',
-            overflow: 'hidden'
-        }}>
+        <div
+            style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: style.width,
+                height: style.height,
+                backgroundColor: style.color,
+                transform: `translate3d(${style.x}px,${style.y}px,0)`,
+                display: 'flex',
+                color: 'white',
+                fontSize: '14px',
+                lineHeight: '19px',
+                padding: '10px 14px',
+                flexDirection: 'column',
+                justifyContent: 'flex-end',
+                alignItems: 'flex-start',
+                whiteSpace: 'pre',
+                overflow: 'hidden'
+            }}
+        >
             <span>{node.id}</span>
             <strong>{node.value}</strong>
         </div>
@@ -54,7 +56,7 @@ const FeaturesTreeMapChart = ({ features }) => {
                 orientLabel={false}
                 isInteractive={false}
                 colors={['rgb(60, 82, 209)']}
-                nodeComponent={props => <Node {...props}/>}
+                nodeComponent={props => <Node {...props} />}
             />
         </div>
     )

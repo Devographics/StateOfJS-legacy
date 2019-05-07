@@ -22,13 +22,12 @@ const ShareSite = () => {
 
     return (
         <div className="ShareSite">
-            <GridLinesSVG ratio="logo"/>
+            <GridLinesSVG ratio="logo" />
             <div className="ShareSite__Content">
-
-            <ShareTwitter text={twitterText} />
-            <ShareFacebook link={link} />
-            <ShareLinkedIn link={link} title={title} />
-            <ShareEmail subject={subject} body={body} />
+                <ShareTwitter text={twitterText} />
+                <ShareFacebook link={link} />
+                <ShareLinkedIn link={link} title={title} />
+                <ShareEmail subject={subject} body={body} />
             </div>
         </div>
     )

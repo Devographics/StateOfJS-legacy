@@ -59,6 +59,7 @@ const TickItem = translate => tick => {
     }
 }
 
+// eslint-disable-next-line react/display-name
 const BarTooltip = translate => ({ indexValue, value }) => (
     <span>
         {getToolName(indexValue, translate)}

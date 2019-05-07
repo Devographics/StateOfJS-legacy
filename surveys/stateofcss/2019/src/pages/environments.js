@@ -10,7 +10,7 @@ export default EnvironmentsPage
 
 export const query = graphql`
     query environments {
-        data: environmentsYaml(section_id: { eq: "environments"}) {
+        data: environmentsYaml(section_id: { eq: "environments" }) {
             aggregations {
                 id
                 buckets {

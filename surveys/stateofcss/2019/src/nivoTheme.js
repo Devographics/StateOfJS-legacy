@@ -42,7 +42,7 @@ export default {
         },
         ticks: {
             line: {
-                stroke: colors.teal,
+                stroke: colors.teal
             },
             text: {
                 fill: colors.blue,
@@ -95,7 +95,7 @@ export default {
             fill: '#ddd',
             fontSize: 12,
             fontWeight: 500,
-            fontFamily,
+            fontFamily
         }
     },
     dots: {

@@ -59,18 +59,19 @@ const Emojis = ({ bars }) => (
 const OpinionScaleBarChart = ({ buckets }) => {
     const { translate } = useContext(I18nContext)
     const data = useMemo(
-        () => [0, 1, 2, 3, 4].map(step => {
-            const bucket = buckets.find(b => b.id === `${step}`)
-            if (bucket === undefined) {
-                return {
-                    id: `${step}`,
-                    count: 0,
-                    percentage: 0
+        () =>
+            [0, 1, 2, 3, 4].map(step => {
+                const bucket = buckets.find(b => b.id === `${step}`)
+                if (bucket === undefined) {
+                    return {
+                        id: `${step}`,
+                        count: 0,
+                        percentage: 0
+                    }
                 }
-            }
 
-            return bucket
-        }),
+                return bucket
+            }),
         [buckets]
     )
     const getScaleTickLabel = scaleLabel(translate)
@@ -85,12 +86,12 @@ const OpinionScaleBarChart = ({ buckets }) => {
                     top: 40,
                     right: 40,
                     bottom: 40,
-                    left: 40,
+                    left: 40
                 }}
                 enableLabel={false}
                 theme={theme}
                 colors={bar => {
-                    if (bar.indexValue === '0' || bar.indexValue === '1') return '#77bcbf'
+                    if (bar.indexValue === '0' || bar.indexValue === '1') return colors.blueLight
                     if (bar.indexValue === '2') return '#bbb'
                     return colors.blue
                 }}
@@ -105,12 +106,14 @@ const OpinionScaleBarChart = ({ buckets }) => {
                         rotation: -45,
                         lineWidth: 4,
                         spacing: 8
-                    },
+                    }
                 ]}
-                fill={[{
-                    id: 'neutral',
-                    match: { indexValue: '2' }
-                }]}
+                fill={[
+                    {
+                        id: 'neutral',
+                        match: { indexValue: '2' }
+                    }
+                ]}
                 padding={0.6}
                 enableGridX={false}
                 enableGridY={true}
@@ -126,15 +129,10 @@ const OpinionScaleBarChart = ({ buckets }) => {
                 axisBottom={{
                     tickSize: 0,
                     tickPadding: 15,
-                    format: getScaleTickLabel,
+                    format: getScaleTickLabel
                 }}
-                tooltip={barProps => <Tooltip translate={translate} {...barProps}/>}
-                layers={[
-                    'grid',
-                    'axes',
-                    'bars',
-                    Emojis,
-                ]}
+                tooltip={barProps => <Tooltip translate={translate} {...barProps} />}
+                layers={['grid', 'axes', 'bars', Emojis]}
                 animate={false}
             />
         </div>

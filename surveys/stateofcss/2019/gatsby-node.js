@@ -3,7 +3,11 @@ const _ = require('lodash')
 const fs = require('fs')
 const path = require(`path`)
 const { computeSitemap } = require('./node_src/sitemap')
-const { fetchMdnResource, fetchCaniuseResource, fetchGithubResource } = require('./node_src/resources')
+const {
+    fetchMdnResource,
+    fetchCaniuseResource,
+    fetchGithubResource
+} = require('./node_src/resources')
 const { omit } = require('lodash')
 
 const rawSitemap = yaml.safeLoad(fs.readFileSync('./config/raw_sitemap.yml', 'utf8'))
@@ -13,7 +17,6 @@ const resources = yaml.safeLoad(fs.readFileSync('./config/resources.yml', 'utf8'
 const guessPageTemplate = type => {
     let template
     switch (type) {
-
         case 'features':
             template = 'modules/features/Features'
             break
@@ -153,31 +156,27 @@ exports.onCreatePage = async ({ page, actions }) => {
 }
 
 // Allow absolute imports and inject `ENV`
-exports.onCreateWebpackConfig = ({
-    stage,
-    actions,
-    plugins,
-}) => {
+exports.onCreateWebpackConfig = ({ stage, actions, plugins }) => {
     actions.setWebpackConfig({
         resolve: {
             modules: [path.resolve(__dirname, 'src'), 'node_modules']
         },
         plugins: [
             plugins.define({
-                ENV: (stage === `develop` || stage === `develop-html`) ? 'development' : 'production',
-            }),
-        ],
+                ENV: stage === `develop` || stage === `develop-html` ? 'development' : 'production'
+            })
+        ]
     })
 }
 
 exports.onCreateNode = async ({ node, actions }) => {
     const { createNodeField } = actions
-  
+
     if (node.internal.type === `FeaturesUsageYaml` || node.internal.type === 'ToolsYaml') {
         const nodeResources = []
         for (const agg of node.aggregations) {
             const aggResources = {
-                id: agg.id,
+                id: agg.id
             }
             const itemResourcesConfig = _.get(resources, `${node.section_id}.${agg.id}`)
             if (itemResourcesConfig !== undefined) {
@@ -201,4 +200,3 @@ exports.onCreateNode = async ({ node, actions }) => {
         })
     }
 }
-  

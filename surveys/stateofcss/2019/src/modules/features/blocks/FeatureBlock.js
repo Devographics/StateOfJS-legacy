@@ -45,10 +45,7 @@ const FeatureResources = ({ caniuseInfo }) => {
 }
 
 const FeatureBlock = ({ block, data }) => {
-    const features = mergeFeaturesResources(
-        data.data.aggregations,
-        data.data.fields.resources
-    )
+    const features = mergeFeaturesResources(data.data.aggregations, data.data.fields.resources)
     const feature = features.find(a => a.id === block.id)
 
     const context = useContext(PageContext)

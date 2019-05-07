@@ -6,7 +6,7 @@ import BlockSwitcher from 'core/components/BlockSwitcher'
 
 const PageTemplate = ({ data = {} }) => {
     const context = useContext(PageContext)
- 
+
     console.log({ context, data })
 
     return (
@@ -15,12 +15,7 @@ const PageTemplate = ({ data = {} }) => {
             {data.introduction && <TextBlock text={data.introduction.html} />}
             {context.blocks &&
                 context.blocks.map((block, i) => (
-                    <BlockSwitcher
-                        key={block.id}
-                        block={block}
-                        data={data}
-                        index={i}
-                    />
+                    <BlockSwitcher key={block.id} block={block} data={data} index={i} />
                 ))}
         </>
     )
