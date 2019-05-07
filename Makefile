@@ -57,8 +57,6 @@ fmt: ##@global format code using prettier (js, css, md)
 	@./node_modules/.bin/prettier --color --write \
 		"surveys/*/website/**/*.js" \
 		"surveys/*/website/**/*.scss" \
-		"surveys/stateofcss/2019/**/*.js" \
-		"surveys/stateofcss/2019/**/*.scss" \
 		"surveys/*/README.md" \
 		"cli/**/*.js"
 
@@ -67,15 +65,12 @@ fmt_check: ##@global check if files were all formatted using prettier
 	@./node_modules/.bin/prettier --color --list-different \
 		"surveys/*/website/**/*.js" \
 		"surveys/*/website/**/*.scss" \
-		"surveys/stateofcss/2019/**/*.js" \
-		"surveys/stateofcss/2019/**/*.scss" \
 		"surveys/*/README.md" \
 		"cli/**/*.js"
 
 lint: ##@global run eslint on the whole project
 	@echo "${YELLOW}Running eslint on the whole project${RESET}"
 	@yarn run eslint "./surveys/*/website/src/**/*.js"
-	@yarn run eslint "./surveys/stateofcss/2019/src/**/*.js"
 
 ########################################################################################################################
 ##
