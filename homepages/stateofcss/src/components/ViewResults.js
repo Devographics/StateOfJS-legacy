@@ -4,12 +4,12 @@ export default class ViewResults extends React.Component {
 
     render() {
         return (
-            <div className="view-results">
+            <div className="Block Block--ViewResults ViewResults">
                 <a
                     className="button large-button"
-                    href="https://2018.stateofjs.com"
+                    href="https://2019.stateofcss.com"
                 >
-                    View Results
+                    View 2019 Results
                 </a>
             </div>
         )

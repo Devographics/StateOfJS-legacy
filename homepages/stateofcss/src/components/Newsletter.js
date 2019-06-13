@@ -68,7 +68,7 @@ export default class Newsletter extends Component {
             >
                 <h3 className="Block__Heading">Stay Tuned</h3>
                 <p className="Block__Concent">
-                    Leave us your email and we’ll let you know when the results are published.
+                    Leave us your email and we’ll let you know when the next survey takes place.
                 </p>
 
                 {success ? (

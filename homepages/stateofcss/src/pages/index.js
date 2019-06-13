@@ -6,7 +6,7 @@ import Newsletter from '../components/Newsletter'
 import About from '../components/About'
 import Footer from '../components/Footer'
 import Intro from '../components/Intro'
-// import ViewResults from '../components/ViewResults'
+import ViewResults from '../components/ViewResults'
 // import ReactGA from 'react-ga'
 import Layout from '../layouts/layout.js'
 
@@ -14,8 +14,9 @@ const Index = () => (
     <Layout>
         <div className="Content Content--Home Home">
             <Intro />
-            <ResultsComingSoon />
+            {/* <ResultsComingSoon /> */}
             {/* <TakeSurvey /> */}
+            <ViewResults />
             <Share />
             <Newsletter />
             <About />
