@@ -377,7 +377,7 @@ translations:
   - key: block.description.participation-by-country
     t: Участники опроса по странам.
   - key: block.title.salaries
-    t: Зазплаты
+    t: Зарплаты
   - key: block.description.salaries
     t: Разбиение зарплат по значениям.
   - key: block.title.salary-per-country
