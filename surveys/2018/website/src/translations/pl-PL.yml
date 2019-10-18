@@ -1,11 +1,13 @@
 locale: en-US
 translations:
     # general
+    - key: start
+      t: Start
     - key: share
       t: Share
     - key: average
-      t: Average  
-    - key: conclusion  
+      t: Average
+    - key: conclusion
       t: Conclusion
     - key: tools_salary_range_average
       t: Average salary
@@ -41,14 +43,22 @@ translations:
       t: Become a partner
     - key: partners.thanks
       t: |
-        Thanks to our partners for supporting this project.
-        <a href="/support">Learn more</a> about supporting The State of JS.
+          Thanks to our partners for supporting this project.
+          <a href="/support">Learn more</a> about supporting The State of JS.
+    - key: stay_tuned
+      t: Stay Tuned
+    - key: leave_your_email
+      t: "If you'd like to know when we release additional results or announce next year's edition, just leave us your email below:"
+    - key: your_email
+      t: Your Email
+    - key: notify_me
+      t: Notify Me
 
     # opinions
     - key: opinions.legends.never_heard
       t: I've never heard of it
     - key: opinions.legends_short.never_heard
-      t: Never heard of it  
+      t: Never heard of it
     - key: opinions.legends.not_interested
       t: I've HEARD of it, and am NOT interested
     - key: opinions.legends_short.not_interested
@@ -57,13 +67,13 @@ translations:
       t: I've HEARD of it, and WOULD like to learn it
     - key: opinions.legends_short.interested
       t: Heard of it, would like to learn
-    - key: opinions.legends.would_use  
+    - key: opinions.legends.would_use
       t: I've USED it before, and WOULD use it again
-    - key: opinions.legends_short.would_use  
+    - key: opinions.legends_short.would_use
       t: Used it, would use again
-    - key: opinions.legends.would_not_use  
+    - key: opinions.legends.would_not_use
       t: I've USED it before, and would NOT use it again
-    - key: opinions.legends_short.would_not_use  
+    - key: opinions.legends_short.would_not_use
       t: Used it, would not use again
 
     # generic opinions
@@ -90,23 +100,23 @@ translations:
     - key: salary_range.10-30.long
       t: $10k-$30k
     - key: salary_range.10-30.short
-      t: $10k-$30k 
+      t: $10k-$30k
     - key: salary_range.30-50.long
       t: $30k-$50k
     - key: salary_range.30-50.short
-      t: $30k-$50k 
+      t: $30k-$50k
     - key: salary_range.50-100.long
       t: $50k-$100k
     - key: salary_range.50-100.short
-      t: $50k-$100k  
+      t: $50k-$100k
     - key: salary_range.100-200.long
       t: $100k-$200k
     - key: salary_range.100-200.short
-      t: $100k-$200k   
+      t: $100k-$200k
     - key: salary_range.more-than-200.long
       t: more than $200k
     - key: salary_range.more-than-200.short
-      t: $200k+   
+      t: $200k+
 
     # company size
     - key: company_size.1.long
@@ -184,32 +194,32 @@ translations:
 
     # tools
     - key: tool.es6
-      t: ES6  
+      t: ES6
     - key: tool.es6.description
       t: |
-        ES6 and its descendants are the newer versions of JavaScript, usually run through Babel.
+          ES6 and its descendants are the newer versions of JavaScript, usually run through Babel.
     - key: tool.angular
       t: Angular
     - key: tool.angular.description
       t: |
-        Angular is a TypeScript-based open-source front-end web application platform. Note that from
-        this year on we are not be making a distinction between Angular and Angular.js anymore, while datapoints for 
-        2016 and 2017 correspond to Angular (a.k.a. "Angular 2").
+          Angular is a TypeScript-based open-source front-end web application platform. Note that from
+          this year on we are not be making a distinction between Angular and Angular.js anymore, while datapoints for 
+          2016 and 2017 correspond to Angular (a.k.a. "Angular 2").
     - key: tool.apollo
       t: Apollo
     - key: tool.apollo.description
       t: |
-        A fully-featured, production ready caching GraphQL client for every UI framework and GraphQL server.
+          A fully-featured, production ready caching GraphQL client for every UI framework and GraphQL server.
     - key: tool.native-apps
       t: Native Apps
     - key: tool.native-apps.description
       t: |
-        The majority of mobile and desktop apps are still built with native languages like Java, Kotlin, Objective-C, or Swift.
+          The majority of mobile and desktop apps are still built with native languages like Java, Kotlin, Objective-C, or Swift.
     - key: tool.phonegap-cordova
       t: Cordova
     - key: tool.phonegap-cordova.description
       t: |
-        Apache Cordova is a mobile application development framework.
+          Apache Cordova is a mobile application development framework.
     - key: tool.vanilla-js
       t: Vanilla JS
     - key: tool.extjs
@@ -322,8 +332,16 @@ translations:
       t: Web Audio API
     - key: tool.web-speech-api
       t: Web Speech API
+    - key: tool.dart
+      t: Dart
+    - key: tool.kotlin
+      t: Kotlin
+    - key: tool.haxe
+      t: Haxe
 
     # pages
+    - key: page.home
+      t: Home
     - key: page.introduction
       t: Introduction
     - key: page.demographics
@@ -390,93 +408,93 @@ translations:
       t: Overall Results
     - key: block.description.overview
       t: |
-        Overall ${section} results.
+          Overall ${section} results.
     - key: block.title.results-over-time
-      t: ${tool}'s Popularity Over Time  
-    - key: block.description.results-over-time 
+      t: ${tool}'s Popularity Over Time
+    - key: block.description.results-over-time
       t: ${tool}'s popularity evolution over time.
     - key: block.results-over-time.empty
       t: |
-        Sorry, we don't have enough data to display
-        the evolution of this library's popularity over time. 
+          Sorry, we don't have enough data to display
+          the evolution of this library's popularity over time.
     - key: block.title.happiness
       t: Overall Happiness
     - key: block.description.happiness
       t: |
-        On a scale of one (very unhappy) to five (very happy), how happy are developers
-        with the current overall state of this category?
+          On a scale of one (very unhappy) to five (very happy), how happy are developers
+          with the current overall state of this category?
     - key: block.title.tools-salary-range
       t: Salary Breakdown
     - key: block.description.tools-salary-range
       t: |
-        Salary breakdown for developers who picked “used it, would use again” for a given option. 
-        
-        
-        Each cell shows the percentage of users in a given salary range,
-        darker means higher usage.
+          Salary breakdown for developers who picked “used it, would use again” for a given option. 
+
+
+          Each cell shows the percentage of users in a given salary range,
+          darker means higher usage.
     - key: block.title.tools-company-size
       t: Company Size Breakdown
     - key: block.description.tools-company-size
       t: |
-        Company size breakdown for developers who picked “used it, would use again” for a given option.  
-        
+          Company size breakdown for developers who picked “used it, would use again” for a given option.  
 
-        Each cell shows the percentage of users in a given company size range,
-        darker means higher usage.
+
+          Each cell shows the percentage of users in a given company size range,
+          darker means higher usage.
     - key: block.title.tools-years-of-experience
       t: Years Of Experience Breakdown
     - key: block.description.tools-years-of-experience
       t: |
-        Years of experience breakdown for developers who picked “used it, would use again” for a given option. 
+          Years of experience breakdown for developers who picked “used it, would use again” for a given option. 
 
 
-        Each cell shows the percentage of users in a given years of experience range,
-        darker means higher usage.
-    - key: block.title.likes    
+          Each cell shows the percentage of users in a given years of experience range,
+          darker means higher usage.
+    - key: block.title.likes
       t: Most Liked Aspects of ${tool}
     - key: block.description.likes
       t: |
-        Most liked aspects of ${tool} among developers who picked “used it and would use again”.
-    - key: block.title.dislikes    
-      t: Most Disliked Aspects of ${tool}   
-    - key: block.description.dislikes    
+          Most liked aspects of ${tool} among developers who picked “used it and would use again”.
+    - key: block.title.dislikes
+      t: Most Disliked Aspects of ${tool}
+    - key: block.description.dislikes
       t: |
-        Most disliked aspects of ${tool} among developers who picked “used it and would *not* use again”.
-    - key: block.title.tool-pairing    
+          Most disliked aspects of ${tool} among developers who picked “used it and would *not* use again”.
+    - key: block.title.tool-pairing
       t: Which Tools Are Used Alongside ${tool}?
     - key: block.description.tool-pairing
       t: |
-        Libraries most likely to be used by developers who picked “used it and would use again” for ${tool}. 
-        Darker color means a stronger correlation.
+          Libraries most likely to be used by developers who picked “used it and would use again” for ${tool}. 
+          Darker color means a stronger correlation.
     - key: block.title.tool-usage-by-country
-      t: ${tool} Usage by Country    
+      t: ${tool} Usage by Country
     - key: block.description.tool-usage-by-country
       t: |
-        On average, **${percentage}%** of respondents have used **${tool}** and 
-        would be happy to use it again.
-        
-        
-        Countries where this ratio is higher are shown in red, those where it's lower
-        are displayed in blue (countries with fewer than 20 total survey respondents are
-        omitted).
+          On average, **${percentage}%** of respondents have used **${tool}** and 
+          would be happy to use it again.
+
+
+          Countries where this ratio is higher are shown in red, those where it's lower
+          are displayed in blue (countries with fewer than 20 total survey respondents are
+          omitted).
     - key: block.tool-usage-by-country.legend
       t: |
-        Percentage of
-        happy ${tool} users:
-    - key: block.title.other-tools    
+          Percentage of
+          happy ${tool} users:
+    - key: block.title.other-tools
       t: Other Libraries
     - key: block.description.other-tools
       t: |
-        Other answers mentioned by survey respondents, ranked by mention count.
-    - key: block.title.quadrants   
+          Other answers mentioned by survey respondents, ranked by mention count.
+    - key: block.title.quadrants
       t: Quadrant Chart
     - key: block.description.quadrants
       t: |
-        This chart shows each technology’s **satisfaction ratio** over its **total usage**.
+          This chart shows each technology’s **satisfaction ratio** over its **total usage**.
 
 
-        Additionally, technologies that have an **interest ratio** 
-        (percentage of non-users interested in learning it) over 50% are displayed as “on fire”.
+          Additionally, technologies that have an **interest ratio** 
+          (percentage of non-users interested in learning it) over 50% are displayed as “on fire”.
     - key: block.title.other_languages
       t: Other Languages
     - key: block.description.other_languages
@@ -539,15 +557,15 @@ translations:
       t: 🐞 Robust code
     - key: reason.rich_package_ecosystem.long
       t: 🎁 Rich package ecosystem
-    - key: reason.rich_package_ecosystem.short  
+    - key: reason.rich_package_ecosystem.short
       t: 🎁 Package ecosystem
     - key: reason.fast_performance.long
       t: ⚡ Fast performance
-    - key: reason.fast_performance.short  
+    - key: reason.fast_performance.short
       t: ⚡ Fast performance
     - key: reason.well_established_option.long
       t: 🏛️ Well-established option
-    - key: reason.well_established_option.short  
+    - key: reason.well_established_option.short
       t: 🏛️ Well-established
     - key: reason.easy_learning_curve.long
       t: 👶 Easy learning curve
@@ -637,7 +655,7 @@ translations:
       t: Other
     - key: reason.other.short
       t: Other
-    
+
     # quadrant
     - key: quadrant.satisfaction_legend
       t: Satisfaction %
@@ -647,91 +665,91 @@ translations:
       t: Assess
     - key: quadrant.assess.description
       t: |
-        Low usage, high satisfaction.
-        Technologies worth keeping an eye on.
+          Low usage, high satisfaction.
+          Technologies worth keeping an eye on.
     - key: quadrant.adopt.label
       t: Adopt
     - key: quadrant.adopt.description
       t: |
-        High usage, high satisfaction. Safe technologies to adopt.
+          High usage, high satisfaction. Safe technologies to adopt.
     - key: quadrant.avoid.label
       t: Avoid
     - key: quadrant.avoid.description
       t: |
-        Low usage, low satisfaction.
-        Technologies probably best avoided currently.
+          Low usage, low satisfaction.
+          Technologies probably best avoided currently.
     - key: quadrant.analyze.label
       t: Analyze
     - key: quadrant.analyze.description
       t: |
-        High usage, low satisfaction.
-        Reassess these technologies if you're currently using them.
+          High usage, low satisfaction.
+          Reassess these technologies if you're currently using them.
 
     # awards
     - key: block.title.highest_satisfaction
       t: Highest Satisfaction
     - key: block.description.highest_satisfaction
       t: |
-        Awarded to the library with the highest percentage of satisfied users.
+          Awarded to the library with the highest percentage of satisfied users.
     - key: award.highest_satisfaction.comment
       t: |
-        With **${tools[0].percentage}%** of users willing to use it again,
-        ${tools[0].label} proves it’s not kidding around.
+          With **${tools[0].percentage}%** of users willing to use it again,
+          ${tools[0].label} proves it’s not kidding around.
     - key: award.highest_satisfaction.runner_up
-      t: ${tool.label} ${tool.percentage}%  
+      t: ${tool.label} ${tool.percentage}%
     - key: block.title.highest_interest
       t: Highest Interest
     - key: block.description.highest_interest
       t: |
-        Awarded to the technology developers are most interested in learning.
+          Awarded to the technology developers are most interested in learning.
     - key: award.highest_interest.comment
       t: |
-        **${tools[0].percentage}%** of developers who have heard about
-        ${tools[0].label} want to learn it.
-        That’s some serious interest!
+          **${tools[0].percentage}%** of developers who have heard about
+          ${tools[0].label} want to learn it.
+          That’s some serious interest!
     - key: award.highest_interest.runner_up
       t: ${tool.label} ${tool.percentage}%
     - key: block.title.highest_usage
       t: Most Used
     - key: block.description.highest_usage
       t: |
-        Awarded to technology with the largest user base.
+          Awarded to technology with the largest user base.
     - key: award.highest_usage.comment
       t: |
-        With **${tools[0].count}** users ${tools[0].label}
-        is the most used library this year.        
+          With **${tools[0].count}** users ${tools[0].label}
+          is the most used library this year.
     - key: award.highest_usage.runner_up
       t: ${tool.label} ${tool.count}
     - key: block.title.most_mentioned
       t: Most Mentioned
     - key: block.description.most_mentioned
       t: |
-        Awarded to the library mentioned the most in the “other libraries” answer. 
+          Awarded to the library mentioned the most in the “other libraries” answer.
     - key: award.most_mentioned.comment
       t: |
-        ${tools[0].label} collected **${tools[0].count}** mentions,
-        making it the most submitted freeform answer by far.
+          ${tools[0].label} collected **${tools[0].count}** mentions,
+          making it the most submitted freeform answer by far.
     - key: award.most_mentioned.runner_up
       t: ${tool.label} ${tool.count}
     - key: block.title.prediction
       t: Prediction Award
     - key: block.description.prediction
       t: |
-        Awarded to an up-and-coming technology that might take over… or not?
+          Awarded to an up-and-coming technology that might take over… or not?
     - key: award.prediction.comment
       t: |
-        The Facebook team is two for two with React and GraphQL.
-        Will Reason follow the same path?
+          The Facebook team is two for two with React and GraphQL.
+          Will Reason follow the same path?
     - key: award.prediction.runner_up
       t: ${tool.label}
     - key: block.title.special
       t: Special Award
     - key: block.description.special
       t: |
-        Awarded to a technology that we just fell in love with this year.
+          Awarded to a technology that we just fell in love with this year.
     - key: award.special.comment
       t: |
-        ${tools[0].label} has become the leading JavaScript text editor, and we can definitely see why!
+          ${tools[0].label} has become the leading JavaScript text editor, and we can definitely see why!
     - key: award.special.runner_up
       t: ${tool.label}
 
@@ -750,3 +768,7 @@ translations:
       t: State Of JavaScript Survey Results
     - key: share.block.body
       t: 'Here are some interesting JavaScript survey results (${title}): ${link}'
+
+    # meta
+    - key: meta.description
+      t: Discover the most popular JavaScript technologies of the year.

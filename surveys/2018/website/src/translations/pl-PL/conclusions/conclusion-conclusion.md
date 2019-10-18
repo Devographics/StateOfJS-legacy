@@ -3,9 +3,10 @@ type: conclusion
 section: conclusion
 locale: en-US
 ---
- After all is said and done, it looks like 2018 was mostly a continuation of the trends we already observed [last year](http://2017.stateofjs.com).
 
-That's bad news for us, because we can't come out with a big scoop on how React's days are numbered, or the next big thing is this new state management library created by a 17-year-old Vietnamese high-schooler in her spare time. 
+After all is said and done, it looks like 2018 was mostly a continuation of the trends we already observed [last year](http://2017.stateofjs.com).
+
+That's bad news for us, because we can't come out with a big scoop on how React's days are numbered, or the next big thing is this new state management library created by a 17-year-old high-schooler in her spare time.
 
 But that's great news for you, because it means you can spend less time worrying about what to use, and more time actually using it!
 

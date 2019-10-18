@@ -3,7 +3,8 @@ type: conclusion
 section: testing
 locale: en-US
 ---
- The testing space is a bit of an oddity: while the other parts of the JavaScript ecosystem have been slowly settling down around a few dominant solutions, testing is still very fragmented: lots of different, complementary tools share the pie. Even so, developers are satisfied by their testing solution overall, with the lowest satisfaction ratio being 68%.
+
+The testing space is a bit of an oddity: while the other parts of the JavaScript ecosystem have been slowly settling down around a few dominant solutions, testing is still very fragmented: lots of different, complementary tools share the pie. Even so, developers are satisfied by their testing solution overall, with the lowest satisfaction ratio being 68%.
 
 The survey confirms that **Mocha** is still the most used unit testing framework with over 10k users. Being around for a long time, it has the largest ecosystem and most of the Node.js developers are familiar with it.
 
