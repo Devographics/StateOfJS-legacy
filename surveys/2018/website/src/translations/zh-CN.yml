@@ -1,0 +1,755 @@
+locale: zh-CN
+translations:
+    # general
+    - key: start
+      t: 开始
+    - key: share
+      t: 分享
+    - key: average
+      t: 平均
+    - key: conclusion
+      t: 结论
+    - key: tools_salary_range_average
+      t: 平均薪资
+    - key: tools_company_size_average
+      t: 平均公司雇员数
+    - key: tools_years_of_experience_average
+      t: 平均工龄
+    - key: users_percentage
+      t: 用户百分比
+    - key: salary_range_axis_legend
+      t: 薪资
+    - key: years_of_experience_axis_legend
+      t: 工龄
+    - key: company_size_axis_legend
+      t: 公司雇员数
+    - key: percents_display_mode
+      t: 百分比
+    - key: counts_display_mode
+      t: 数量
+    - key: awards_runner_ups
+      t: 亚军
+    - key: tool_homepage
+      t: 主页
+    - key: from_to_short
+      t: ${from} 至 ${to}
+    - key: users_count
+      t: ${count} 位用户
+    - key: percentage_of_respondents
+      t: ${percentage} 的受访者
+    - key: partners.premium_partners
+      t: 2018 年合作伙伴
+    - key: partners.become_partner
+      t: 与我们合作
+    - key: partners.thanks
+      t: |
+          感谢我们的合作伙伴对本项目的大力支持。
+          如果您有合作意向，请点击<a href="/support">这里</a>查看详情。
+    - key: stay_tuned
+      t: 订阅我们的邮件
+    - key: leave_your_email
+      t: "如果你想获取我们的内容更新，或者想让我们在发布下一次调查时第一时间通知你，请在下方留下你的邮箱："
+    - key: your_email
+      t: 你的邮箱
+    - key: notify_me
+      t: 通知我
+
+    # opinions
+    - key: opinions.legends.never_heard
+      t: 我从来没有听说过这个技术
+    - key: opinions.legends_short.never_heard
+      t: 从来没听说过
+    - key: opinions.legends.not_interested
+      t: 我听说过这个技术，但我不感兴趣
+    - key: opinions.legends_short.not_interested
+      t: 听说过，但不感兴趣
+    - key: opinions.legends.interested
+      t: 我听说过这个技术，且有学习的意向
+    - key: opinions.legends_short.interested
+      t: 听说过，且打算学习
+    - key: opinions.legends.would_use
+      t: 我使用过这个技术，以后也愿意再次使用
+    - key: opinions.legends_short.would_use
+      t: 使用过，以后也愿意用
+    - key: opinions.legends.would_not_use
+      t: 我使用过这个技术，但以后不愿意再用
+    - key: opinions.legends_short.would_not_use
+      t: 使用过，以后不愿意用
+
+    # generic opinions
+    - key: opinion_scale.0
+      t: 强烈反对
+    - key: opinion_scale.1
+      t: 反对
+    - key: opinion_scale.2
+      t: 中立
+    - key: opinion_scale.3
+      t: 同意
+    - key: opinion_scale.4
+      t: 十分同意
+
+    # salary ranges
+    - key: salary_range.work-for-free.long
+      t: 我没有收入
+    - key: salary_range.work-for-free.short
+      t: 没有收入
+    - key: salary_range.0-10.long
+      t: 0 美元 - 1 万美元
+    - key: salary_range.0-10.short
+      t: 0 美元 - 1 万美元
+    - key: salary_range.10-30.long
+      t: 1 万美元 - 3 万美元
+    - key: salary_range.10-30.short
+      t: 1 万美元 - 3 万美元
+    - key: salary_range.30-50.long
+      t: 3 万美元 - 5 万美元
+    - key: salary_range.30-50.short
+      t: 3 万美元 - 5 万美元
+    - key: salary_range.50-100.long
+      t: 5 万美元 - 10 万美元
+    - key: salary_range.50-100.short
+      t: 5 万美元 - 10 万美元
+    - key: salary_range.100-200.long
+      t: 10 万美元 - 20 万美元
+    - key: salary_range.100-200.short
+      t: 10 万美元 - 20 万美元
+    - key: salary_range.more-than-200.long
+      t: 大于 20 万美元
+    - key: salary_range.more-than-200.short
+      t: 大于 20 万美元
+
+    # company size
+    - key: company_size.1.long
+      t: 1 个雇员
+    - key: company_size.1.short
+      t: '1'
+    - key: company_size.1-5.long
+      t: 1 至 5 个雇员
+    - key: company_size.1-5.short
+      t: 1~5
+    - key: company_size.5-10.long
+      t: 5 至 10 个雇员
+    - key: company_size.5-10.short
+      t: 5~10
+    - key: company_size.10-20.long
+      t: 10 至 20 个雇员
+    - key: company_size.10-20.short
+      t: 10~20
+    - key: company_size.20-50.long
+      t: 20 至 50 个雇员
+    - key: company_size.20-50.short
+      t: 20~50
+    - key: company_size.50-100.long
+      t: 50 至 100 个雇员
+    - key: company_size.50-100.short
+      t: 50~100
+    - key: company_size.100-1000.long
+      t: 100 至 1000 个雇员
+    - key: company_size.100-1000.short
+      t: 100~1000
+    - key: company_size.more-than-1000.long
+      t: 1000+ 个雇员
+    - key: company_size.more-than-1000.short
+      t: 1000+
+
+    # years of experience
+    - key: years_of_experience.less-than-1.long
+      t: 少于 1 年
+    - key: years_of_experience.less-than-1.short
+      t: '<1 年'
+    - key: years_of_experience.1-2.long
+      t: 1 至 2 年
+    - key: years_of_experience.1-2.short
+      t: 1~2 年
+    - key: years_of_experience.2-5.long
+      t: 2 至 5 年
+    - key: years_of_experience.2-5.short
+      t: 2~5 年
+    - key: years_of_experience.5-10.long
+      t: 5 至 10 年
+    - key: years_of_experience.5-10.short
+      t: 5~10 年
+    - key: years_of_experience.10-20.long
+      t: 10 至 20 年
+    - key: years_of_experience.10-20.short
+      t: 10~20 年
+    - key: years_of_experience.more-than-20.long
+      t: 20 年以上
+    - key: years_of_experience.more-than-20.short
+      t: '>20 年'
+
+    # sections
+    - key: section.javascript-flavors
+      t: JavaScript 偏好
+    - key: section.front-end-frameworks
+      t: 前端框架
+    - key: section.data-layer
+      t: 数据层
+    - key: section.back-end-frameworks
+      t: 后端框架
+    - key: section.testing
+      t: 测试
+    - key: section.mobile-and-desktop
+      t: 移动端与桌面端
+
+    # tools
+    - key: tool.es6
+      t: ES6
+    - key: tool.es6.description
+      t: |
+          ES6 及其后续都是较新版本的 JavaScript，习惯上，我们会用 Babel 对他们进行编译。
+    - key: tool.angular
+      t: Angular
+    - key: tool.angular.description
+      t: |
+        Angular 是基于 TypeScript 的前端开源平台。注意，从今年起，我们不再区分 Angular 与 Angular.js。
+        然而，2016 和 2017 年的数据是基于 Angular（也叫 “Angular 2+”）的。
+    - key: tool.apollo
+      t: Apollo
+    - key: tool.apollo.description
+      t: |
+        Apollo 是一个功能完善、生产环境友好、集成了缓存机制的 GraphQL 客户端。它可以与几乎所有的前端框架和支持 GraphQL 的服务器搭配使用。
+    - key: tool.native-apps
+      t: Native Apps
+    - key: tool.native-apps.description
+      t: |
+        目前，大部分移动端和桌面端应用依旧采用平台原生语言（如 Java、Kotlin、Objective-C、Swift）搭建。
+    - key: tool.phonegap-cordova
+      t: Cordova
+    - key: tool.phonegap-cordova.description
+      t: |
+        Apache 公司出品的 Cordova 是一个适用于移动端开发的框架
+    - key: tool.vanilla-js
+      t: 原生 JS
+    - key: tool.extjs
+      t: Ext JS
+    - key: tool.web-assembly
+      t: WebAssembly
+    - key: tool.firebase
+      t: Firebase
+    - key: tool.dotnet
+      t: .NET
+    - key: tool.rails
+      t: Rails
+    - key: tool.php
+      t: PHP
+    - key: tool.python
+      t: Python
+    - key: tool.laravel
+      t: Laravel
+    - key: tool.ruby
+      t: Ruby
+    - key: tool.elixir
+      t: Elixir
+    - key: tool.django
+      t: Django
+    - key: tool.golang
+      t: Go
+    - key: tool.C#
+      t: C#
+    - key: tool.java
+      t: Java
+    - key: tool.rust
+      t: Rust
+    - key: tool.haskell
+      t: Haskell
+    - key: tool.scala
+      t: Scala
+    - key: tool.selenium
+      t: Selenium
+    - key: tool.elm-test
+      t: elm-test
+    - key: tool.flutter
+      t: Flutter
+    - key: tool.pwa
+      t: Progressive Web Apps
+    - key: tool.weex
+      t: weex
+    - key: tool.xamarin
+      t: xamarin
+    - key: tool.appcelerator
+      t: Appcelerator
+    - key: tool.c-cplusplus
+      t: C/C++
+    - key: tool.swift
+      t: Swift
+    - key: tool.objective-c
+      t: Objective-C
+    - key: tool.ocaml
+      t: OCaml
+    - key: tool.parcel
+      t: Parcel
+    - key: tool.make
+      t: Make
+    - key: tool.lodash
+      t: lodash
+    - key: tool.moment
+      t: moment
+    - key: tool.underscore
+      t: underscore
+    - key: tool.date-fns
+      t: Date-fns
+    - key: tool.ramda
+      t: Ramda
+    - key: tool.luxon
+      t: luxon
+    - key: tool.visual-studio
+      t: VS Code
+    - key: tool.sublime-text
+      t: Sublime Text
+    - key: tool.webstorm
+      t: WebStorm
+    - key: tool.atom
+      t: Atom
+    - key: tool.emacs
+      t: emacs
+    - key: tool.intellij
+      t: IntelliJ
+    - key: tool.phpstorm
+      t: PhpStorm
+    - key: tool.notepad++
+      t: notepad++
+    - key: tool.brackets
+      t: Brackets
+    - key: tool.nano
+      t: nano
+    - key: tool.pycharm
+      t: PyCharm
+    - key: tool.vim
+      t: Vim
+    - key: tool.service-workers
+      t: Service Workers
+    - key: tool.webrtc
+      t: WebRTC
+    - key: tool.webvr
+      t: WebVR
+    - key: tool.webgl
+      t: WebGL
+    - key: tool.web-animations-api
+      t: Web Animations API
+    - key: tool.web-audio-api
+      t: Web Audio API
+    - key: tool.web-speech-api
+      t: Web Speech API
+    - key: tool.dart
+      t: Dart
+    - key: tool.kotlin
+      t: Kotlin
+    - key: tool.haxe
+      t: Haxe
+
+    # pages
+    - key: page.introduction
+      t: 简介
+    - key: page.demographics
+      t: 从业者统计
+    - key: page.connections
+      t: 技术栈关联
+    - key: page.section_overview
+      t: ${section} - 概览
+    - key: page.section_tool
+      t: ${section} - ${tool}
+    - key: page.section_overview.short
+      t: 概览
+    - key: page.section_other_tools
+      t: ${section} – 其他工具
+    - key: page.section_other_tools.short
+      t: 其他工具
+    - key: page.section_conclusion
+      t: ${section} - 结论
+    - key: page.section_conclusion.short
+      t: 结论
+    - key: page.other-tools
+      t: 其他工具
+    - key: page.opinions
+      t: 观点
+    - key: page.awards
+      t: 颁奖台 🏆
+    - key: page.conclusion
+      t: 结论
+    - key: page.support
+      t: 支持我们
+
+    # blocks
+    - key: block.title.participation-by-country
+      t: 参与者所在国家分布
+    - key: block.description.participation-by-country
+      t: 参与者所在国家分布。
+    - key: block.title.salaries
+      t: 薪资
+    - key: block.description.salaries
+      t: 薪资分布。
+    - key: block.title.salary-per-country
+      t: 每个国家的平均薪资
+    - key: block.description.salary-per-country
+      t: 每个国家的平均薪资。
+    - key: block.title.years-of-experience
+      t: 工龄
+    - key: block.description.years-of-experience
+      t: 工龄分布。
+    - key: block.title.company-size
+      t: 公司雇员数
+    - key: block.description.company-size
+      t: 公司雇员数分布。
+    - key: block.title.gender-breakdown
+      t: 性别分布
+    - key: block.title.source-breakdown
+      t: 来源分布
+    - key: block.description.gender-breakdown
+      t: 性别分布。
+    - key: block.title.connections
+      t: 技术栈关联
+    - key: block.description.connections
+      t: 所有工具与技术的关联使用情况。
+    - key: block.title.overview
+      t: 概览
+    - key: block.description.overview
+      t: |
+        ${section} 概览。
+    - key: block.title.results-over-time
+      t: ${tool} 不同年份的调查结果
+    - key: block.description.results-over-time
+      t: ${tool} 不同年份的调查结果。
+    - key: block.results-over-time.empty
+      t: |
+        抱歉，由于数据不足，我们无法展示这个技术随时间变化的调查结果。
+    - key: block.title.happiness
+      t: 整体满意度
+    - key: block.description.happiness
+      t: |
+        开发者对这一类技术栈的现状有什么感受呢？其中 1 分表示非常不满意，5 分表示非常满意。
+    - key: block.title.tools-salary-range
+      t: 薪资分布
+    - key: block.description.tools-salary-range
+      t: |
+        薪资分布基于在这个技术中选择了“使用过，以后也愿意用”的开发者。
+
+
+        每个格子代表对应的薪资范围中，使用此项技术的开发者占比。颜色越深则占比越高。
+    - key: block.title.tools-company-size
+      t: 公司雇员数分布
+    - key: block.description.tools-company-size
+      t: |
+        公司雇员数分布基于在这个技术中选择了“使用过，以后也愿意用”的开发者。
+
+
+        每个格子代表对应的公司雇员数范围中，使用此项技术的开发者占比。颜色越深则占比越高。
+    - key: block.title.tools-years-of-experience
+      t: 工龄分布
+    - key: block.description.tools-years-of-experience
+      t: |
+        工龄分布基于在这个技术中选择了“使用过，以后也愿意用”的开发者。
+
+
+        每个格子代表对应的工龄范围中，使用此项技术的开发者占比。颜色越深则占比越高。
+    - key: block.title.likes
+      t: 喜欢 ${tool} 的原因
+    - key: block.description.likes
+      t: |
+        选择了“使用过，以后也愿意用” ${tool} 的开发者，喜欢这项技术的原因。
+    - key: block.title.dislikes
+      t: 不喜欢 ${tool} 的原因
+    - key: block.description.dislikes
+      t: |
+        选择了“使用过，以后*不*愿意用” ${tool} 的开发者，不喜欢这项技术的原因。
+    - key: block.title.tool-pairing
+      t: 使用 ${tool} 的开发者还会用什么？
+    - key: block.description.tool-pairing
+      t: |
+        选择了“使用过，以后也愿意用” ${tool} 的开发者，还会用到以下技术。
+        颜色越深则关联度越大。
+    - key: block.title.tool-usage-by-country
+      t: ${tool} 在不同国家的使用情况
+    - key: block.description.tool-usage-by-country
+      t: |
+        平均来看，**${percentage}%** 的 **${tool}** 用户愿意再次使用这项技术。
+
+
+        下图展示了不同国家的开发者对继续使用这项技术的倾向。“以后也愿意用”占比高的国家以红色表示，低的国家以蓝色表示；参与人数小于 20 的国家会显示成灰色。
+    - key: block.tool-usage-by-country.legend
+      t: |
+        愿意继续使用
+        ${tool} 的开发者比例：
+    - key: block.title.other-tools
+      t: 其他工具
+    - key: block.description.other-tools
+      t: |
+        参与调查的受访者提及的其他同类工具，依照提及次数排名。
+    - key: block.title.quadrants
+      t: 象限图
+    - key: block.description.quadrants
+      t: |
+        以下图表展示了**满意度**与**用户数量**的对比。
+
+
+        额外地，对于**感兴趣程度**（非用户，但有兴趣学习此项技术）高于 50% 的技术，会在技术图标背后出现“火焰🔥”标识。
+    - key: block.title.other_languages
+      t: 其他语言
+    - key: block.description.other_languages
+      t: 其他语言，依照提及次数排名。
+    - key: block.title.browser_apis
+      t: 浏览器 API
+    - key: block.description.browser_apis
+      t: 浏览器 API，依照提及次数排名
+    - key: block.title.build_tools
+      t: 构建工具
+    - key: block.description.build_tools
+      t: 构建工具，依照提及次数排名
+    - key: block.title.utility_libraries
+      t: 工具类库
+    - key: block.description.utility_libraries
+      t: 工具类库，依照提及次数排名
+    - key: block.title.text_editors
+      t: 编辑器
+    - key: block.description.text_editors
+      t: 编辑器，依照提及次数排名
+    - key: block.title.recommended_resources
+      t: 推荐资源
+    - key: block.title.opinion-js_moving_in_right_direction
+      t: JavaScript 正在朝着好的方向发展
+    - key: block.description.opinion-js_moving_in_right_direction
+      t: JavaScript 正在朝着好的方向发展。
+    - key: block.title.opinion-building_js_apps_overly_complex
+      t: 现在，开发 JavaScript 应用实在是太复杂了
+    - key: block.description.opinion-building_js_apps_overly_complex
+      t: 现在，开发 JavaScript 应用实在是太复杂了。
+    - key: block.title.opinion-js_over_used_online
+      t: JavaScript 在开发中被过度地使用了
+    - key: block.description.opinion-js_over_used_online
+      t: JavaScript 在开发中被过度地使用了。
+    - key: block.title.opinion-enjoy_building_js_apps
+      t: 我很享受开发 JavaScript 应用的过程
+    - key: block.description.opinion-enjoy_building_js_apps
+      t: 我很享受开发 JavaScript 应用的过程。
+    - key: block.title.opinion-would_like_js_to_be_main_lang
+      t: 我想让 JavaScript 成为我的主要编程语言
+    - key: block.description.opinion-would_like_js_to_be_main_lang
+      t: 我想让 JavaScript 成为我的主要编程语言。
+    - key: block.title.opinion-js_ecosystem_changing_to_fast
+      t: JavaScript 生态圈变化地太快了
+    - key: block.description.opinion-js_ecosystem_changing_to_fast
+      t: JavaScript 生态圈变化地太快了。
+    - key: block.title.opinion-survey_too_long
+      t: 这份调查实在是太长了！
+    - key: block.description.opinion-survey_too_long
+      t: 这份调查实在是太长了！
+
+    # reasons
+    - key: reason.elegant_programming_style_patterns.long
+      t: ⚙️ 优雅的编程范式
+    - key: reason.elegant_programming_style_patterns.short
+      t: ⚙️ 编程范式
+    - key: reason.robust_less_error_prone_code.long
+      t: 🐞 较高的容错性
+    - key: reason.robust_less_error_prone_code.short
+      t: 🐞 容错性高
+    - key: reason.rich_package_ecosystem.long
+      t: 🎁 丰富的生态圈
+    - key: reason.rich_package_ecosystem.short
+      t: 🎁 生态圈
+    - key: reason.fast_performance.long
+      t: ⚡ 速度快，性能好
+    - key: reason.fast_performance.short
+      t: ⚡ 优秀的性能
+    - key: reason.well_established_option.long
+      t: 🏛️ 完善，构建良好
+    - key: reason.well_established_option.short
+      t: 🏛️ 完善
+    - key: reason.easy_learning_curve.long
+      t: 👶 平缓的学习曲线
+    - key: reason.easy_learning_curve.short
+      t: 👶 易于上手
+    - key: reason.powerful_developer_tooling.long
+      t: 🔧 强大的开发工具
+    - key: reason.powerful_developer_tooling.short
+      t: 🔧 开发工具
+    - key: reason.good_documentation.long
+      t: 📖 良好的文档
+    - key: reason.good_documentation.short
+      t: 📖 文档
+    - key: reason.backed_by_a_great_team_company.long
+      t: 👫 背后有坚实的团队/公司支持
+    - key: reason.backed_by_a_great_team_company.short
+      t: 👫 团队/公司支持
+    - key: reason.simple_lightweight.long
+      t: 🎈 简单且轻量
+    - key: reason.simple_lightweight.short
+      t: 🎈 轻量
+    - key: reason.growing_momentum_popularity.long
+      t: 📉 日趋火热
+    - key: reason.growing_momentum_popularity.short
+      t: 📉 热门
+    - key: reason.full_featured_powerful.long
+      t: 🕹️ 功能完备且强大
+    - key: reason.full_featured_powerful.short
+      t: 🕹️ 功能完备
+    - key: reason.stable_backwards_compatible.long
+      t: ⚖️ 稳定且向后兼容
+    - key: reason.stable_backwards_compatible.short
+      t: ⚖️ 稳定
+    - key: reason.clumsy_programming_style.long
+      t: ⚙️ 不优雅的编程范式
+    - key: reason.clumsy_programming_style.short
+      t: ⚙️ 不优雅
+    - key: reason.buggy_error_prone_code.long
+      t: 🐞 较低的容错性
+    - key: reason.buggy_error_prone_code.short
+      t: 🐞 容错性低
+    - key: reason.poor_performance.long
+      t: ⚡ 性能差
+    - key: reason.poor_performance.short
+      t: ⚡ 性能差
+    - key: reason.small_package_ecosystem.long
+      t: 🎁 有限的生态圈
+    - key: reason.small_package_ecosystem.short
+      t: 🎁 有限的生态圈
+    - key: reason.new_untested_option.long
+      t: 🏛️ 不完善
+    - key: reason.new_untested_option.short
+      t: 🏛️ 不完善
+    - key: reason.hard_learning_curve.long
+      t: 👶 陡峭的学习曲线
+    - key: reason.hard_learning_curve.short
+      t: 👶 不易入门
+    - key: reason.lacking_developer_tooling.long
+      t: 🔧 缺乏开发工具
+    - key: reason.lacking_developer_tooling.short
+      t: 🔧 缺乏开发工具
+    - key: reason.bad_documentation.long
+      t: 📖 较差的文档
+    - key: reason.bad_documentation.short
+      t: 📖 较差的文档
+    - key: reason.concerns_about_the_team_company.long
+      t: 👫 背后的团队/公司不稳定
+    - key: reason.concerns_about_the_team_company.short
+      t: 👫 背后的团队/公司不稳定
+    - key: reason.bloated_complex.long
+      t: 🎈 复杂
+    - key: reason.bloated_complex.short
+      t: 🎈 复杂
+    - key: reason.diminishing_momentum_popularity.long
+      t: 📉 火热程度日渐衰退
+    - key: reason.diminishing_momentum_popularity.short
+      t: 📉 过时
+    - key: reason.limited_lacking_in_features.long
+      t: 🕹️ 有限或缺少功能
+    - key: reason.limited_lacking_in_features.short
+      t: 🕹️ 有限的功能
+    - key: reason.fast_changing_breaks_often.long
+      t: ⚖️ 更新太快且向后兼容性差
+    - key: reason.fast_changing_breaks_often.short
+      t: ⚖️ 更新太快
+    - key: reason.other.long
+      t: 其他
+    - key: reason.other.short
+      t: 其他
+
+    # quadrant
+    - key: quadrant.satisfaction_legend
+      t: 满意度 %
+    - key: quadrant.users_legend
+      t: 用户数量
+    - key: quadrant.assess.label
+      t: 评估阶段
+    - key: quadrant.assess.description
+      t: |
+        使用率低，但满意度高。
+        值得关注的技术。
+    - key: quadrant.adopt.label
+      t: 采用
+    - key: quadrant.adopt.description
+      t: |
+        使用率高，满意度也高。可以放心地使用。
+    - key: quadrant.avoid.label
+      t: 避免
+    - key: quadrant.avoid.description
+      t: |
+        使用率低，且满意度低。
+        建议避免使用的技术。
+    - key: quadrant.analyze.label
+      t: 分析阶段
+    - key: quadrant.analyze.description
+      t: |
+        使用率高，但满意度低。
+        如果你正在使用这个技术，建议重新对它们进行评估。
+
+    # awards
+    - key: block.title.highest_satisfaction
+      t: 最满意的技术
+    - key: block.description.highest_satisfaction
+      t: |
+        此为今年调查中，用户满意度最高的技术。
+    - key: award.highest_satisfaction.comment
+      t: |
+        **${tools[0].percentage}%** 的受访者表示愿意再次使用它。
+        ${tools[0].label} 果然不是吹的，是真的很好用。
+    - key: award.highest_satisfaction.runner_up
+      t: ${tool.label} ${tool.percentage}%
+    - key: block.title.highest_interest
+      t: 开发者最想学的技术
+    - key: block.description.highest_interest
+      t: |
+        此为今年调查中，开发者最想学的技术。
+    - key: award.highest_interest.comment
+      t: |
+        在听说过 ${tools[0].label} 的受访者中，**${tools[0].percentage}%** 的人愿意学习它。
+        看来，这项技术的吸睛指数真的很高。
+    - key: award.highest_interest.runner_up
+      t: ${tool.label} ${tool.percentage}%
+    - key: block.title.highest_usage
+      t: 使用最多的技术
+    - key: block.description.highest_usage
+      t: |
+        此为今年调查中，使用人数最多的技术。
+    - key: award.highest_usage.comment
+      t: |
+        在今年的调查中，${tools[0].label} 拥有 **${tools[0].count}** 的用户，获此殊荣。
+    - key: award.highest_usage.runner_up
+      t: ${tool.label} ${tool.count}
+    - key: block.title.most_mentioned
+      t: 最多提及的技术
+    - key: block.description.most_mentioned
+      t: |
+        此为今年调查中，在“其他工具”中被提及次数最多的。
+    - key: award.most_mentioned.comment
+      t: |
+        ${tools[0].label} 收获了 **${tools[0].count}** 次提名，当之无愧。
+    - key: award.most_mentioned.runner_up
+      t: ${tool.label} ${tool.count}
+    - key: block.title.prediction
+      t: 最具潜力奖
+    - key: block.description.prediction
+      t: |
+        颁发给在不远的将来，有可能会替代……嗯，应该不会替代，只是未来一片光明。
+    - key: award.prediction.comment
+      t: |
+        Facebook（脸书）团队创建并捧红了 React 和 GraphQL。
+        Reason 会是下一个么？让我们拭目以待。
+    - key: award.prediction.runner_up
+      t: ${tool.label}
+    - key: block.title.special
+      t: 特别贡献奖
+    - key: block.description.special
+      t: |
+        颁发给直到今年今年，我们才突然意识到它的好的工具。
+    - key: award.special.comment
+      t: |
+        ${tools[0].label} 已经成为 JavaScript 最热门的编辑器，至于原因，大家都懂。
+    - key: award.special.runner_up
+      t: ${tool.label}
+
+    # sharing
+    - key: share.site.title
+      t: 来看看 State Of JavaScript 2018 的调查结果吧
+    - key: share.site.twitter_text
+      t: '来看看 State Of JavaScript 2018 的调查结果吧：${link} #StateOfJS'
+    - key: share.site.subject
+      t: State Of JavaScript 调查结果
+    - key: share.site.body
+      t: '与你分享有意思的 JavaScript 调查结果：${link}'
+    - key: share.block.twitter_text
+      t: '#StateOfJS 2018 调查结果：${title} ${link}'
+    - key: share.block.subject
+      t: State Of JavaScript 调查结果
+    - key: share.block.body
+      t: '与你分享有意思的 JavaScript 调查结果 (${title}): ${link}'

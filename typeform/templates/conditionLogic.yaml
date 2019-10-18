@@ -1,0 +1,28 @@
+# the template for logic fields
+# SECTIONID: id for current section
+# FIRSTQUESTION: id of the current section's first question
+# NEXT: id for whichever section comes next
+---
+- type: field
+  ref: SECTIONID_condition
+  actions:
+    - action: jump
+      details:
+        to:
+          type: field
+          value: FIRSTQUESTION # jump to next question of survey instead of section
+      condition:
+        op: is
+        vars:
+        - type: field
+          value: SECTIONID_condition
+        - type: constant
+          value: true
+    - action: jump
+      details: 
+        to:
+          type: field
+          value: NEXT_section
+      condition:
+        op: always
+        vars: []

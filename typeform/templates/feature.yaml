@@ -1,0 +1,29 @@
+# the template for a feature's questions
+# Answers:
+# - I've never heard about it
+# - I've heard about it but not used it
+# - I've experimented with it
+# - I've used it in production
+# - I try to avoid it
+---
+title: TITLE
+ref: ID
+properties:
+  randomize: false
+  allow_multiple_selection: false
+  allow_other_choice: false
+  vertical_alignment: true
+  choices:
+  - ref: ID_neverheard
+    label: 🤷 Never heard of it/Not sure what it is
+  - ref: ID_heard
+    label: ✅ Know what it is, but haven't used it
+  # - ref: ID_experimented
+  #   label: I've experimented with it
+  - ref: ID_used
+    label: 👍 I've used it
+  # - ref: ID_would_not_use_again
+  #   label: I would rather not use it again
+validations:
+  required: false
+type: multiple_choice

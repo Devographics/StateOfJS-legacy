@@ -70,7 +70,7 @@ fmt_check: ##@global check if files were all formatted using prettier
 
 lint: ##@global run eslint on the whole project
 	@echo "${YELLOW}Running eslint on the whole project${RESET}"
-	@./node_modules/.bin/eslint "./surveys/*/website/src/**/*.js"
+	@yarn run eslint "./surveys/*/website/src/**/*.js"
 
 ########################################################################################################################
 ##

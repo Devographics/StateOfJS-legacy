@@ -1,0 +1,635 @@
+# the survey outline
+
+# First level: blocks
+# Second level: questions (will use the block's question template if no template is specified)
+
+---
+### FEATURES ###
+
+- template: statictext
+  id: features_intro
+  title: >
+      "For each of the following CSS feature, please pick one of the following options:
+
+      \n- 🤷 You've never heard about it, or are not sure what it is
+      \n- ✅ You've heard about it but *haven't* used it
+      \n- 👍 You've used it in a project"
+
+- title: Layout
+  description: How do you position elements on the screen?
+  template: feature
+  questions:
+      - CSS Grid
+      - Flexbox
+      # - Floats (for layout)
+      # - Tables (for layout)
+      - CSS Multi-Column
+      - CSS Writing Modes
+      - CSS Exclusions
+
+- title: Shapes & Graphics
+  description: Controlling the shape and display of elements.
+  template: feature
+  questions:
+      - CSS Shapes
+      - Object-fit
+      - Clip-path
+      - CSS Masks
+      - Blend Modes
+      - CSS Filter Effects
+
+- title: Interactions
+  description: Controlling how the user interacts with the page.
+  template: feature
+  questions:
+      - CSS Scroll Snap
+      - Overscroll-behavior
+      - Overflow-anchor
+
+- title: Typography
+  description: Setting and laying out text.
+  template: feature
+  questions:
+      - Web fonts (@font-face)
+      - Variable fonts
+      - Line breaking properties (overflow-wrap, word-break, line-break, hyphens)
+      - Font-variant-*
+      - Initial-letter
+
+- title: Animations & Transforms
+  description: Animating and transforming elements.
+  template: feature
+  questions:
+      - CSS Transitions
+      - CSS Transforms
+      - CSS Animations
+
+# - title: Units
+#   description: Units for sizing and positioning elements
+#   template: feature
+#   questions:
+#       - px
+#       - '%'
+#       - em
+#       - rem
+#       - vh, vw
+#       - vmin, vmax
+#       - ch
+#       - ex
+#       - pt
+
+- title: Other Features
+  description: Other CSS features.
+  template: feature
+  questions:
+      - CSS Variables
+      - Feature Support Queries (@supports)
+      - CSS Containment
+      - Will-change
+      - calc()
+
+### UNITS & SELECTORS ###
+
+- title: Units & Selectors
+  description: Test your knowledge of CSS units and selectors.
+  questions:
+      - title: Units
+        description: Which of these CSS units have you used?
+        template: multiple
+        allowmultiple: true
+        allowother: false
+        randomize: false
+        options:
+            - px
+            - pt
+            - '%'
+            - em
+            - rem
+            - vh, vw
+            - vmin, vmax
+            - ch
+            - ex
+            - mm
+            - cm
+            - in
+      # - title: Basic Selectors
+      #   description: Which of these CSS selectors have you used?
+      #   template: multiple
+      #   allowmultiple: true
+      #   allowother: false
+      #   randomize: false
+      #   options:
+      #       - universal (*)
+      #       - simple (div)
+      #       - id (#id)
+      #       - class (.class)
+      - title: Pseudo Elements
+        description: Which of these CSS selectors have you used?
+        template: multiple
+        allowmultiple: true
+        allowother: false
+        randomize: false
+        options:
+            - ::before
+            - ::after
+            - ::first-line
+            - ::first-letter
+            - ::selection
+            - ::placeholder
+      - title: Combinators
+        description: Which of these CSS selectors have you used?
+        template: multiple
+        allowmultiple: true
+        allowother: false
+        randomize: false
+        options:
+            - div span (descendant)
+            - div > span (child)
+            - div + div (next sibling)
+            - div ~ div (subsequent sibling)
+      - title: Tree / Document Structure
+        description: Which of these CSS selectors have you used?
+        template: multiple
+        allowmultiple: true
+        allowother: false
+        randomize: false
+        options:
+            - :root
+            - :empty
+            - :not()
+            - :nth-child()
+            - :nth-last-child()
+            - :first-child
+            - :last-child
+            - :only-child
+            - :nth-of-type()
+            - :nth-last-of-type()
+            - :first-of-type
+            - :last-of-type
+            - :only-of-type
+            - :lang()
+      - title: Attributes
+        description: Which of these CSS selectors have you used?
+        template: multiple
+        allowmultiple: true
+        allowother: false
+        randomize: false
+        options:
+            - div[foo] (Presence)
+            - div[foo="bar"] (Equality)
+            - div[foo^="bar"] (Starts with)
+            - div[foo$="bar"] (Ends with)
+            - div[foo~="bar"] (Contains word)
+            - div[foo*="bar"] (Contains substring)
+            # - Case sensitivity (div[foo="bar" s] vs (div[foo="bar" i])
+      - title: Links/URLs
+        description: Which of these CSS selectors have you used?
+        template: multiple
+        allowmultiple: true
+        allowother: false
+        randomize: false
+        options:
+            - :any-link
+            - :link and :visited
+            - :local-link
+            - :target
+      - title: Interaction
+        description: Which of these CSS selectors have you used?
+        template: multiple
+        allowmultiple: true
+        allowother: false
+        randomize: false
+        options:
+            - :hover
+            - :active
+            - :focus
+            - :focus-within
+            - :focus-visible
+      - title: Form controls
+        description: Which of these CSS selectors have you used?
+        template: multiple
+        allowmultiple: true
+        allowother: false
+        randomize: false
+        options:
+            - :enabled and :disabled
+            - :read-only and :read-write
+            - :placeholder-shown
+            - :default
+            - :checked
+            - :indeterminate
+            - :valid and :invalid
+            - :user-invalid
+            - :in-range and :out-of-range
+            - :required and :optional
+      # - title: Fullscreen
+      #   description: Which of these CSS selectors do you know about?
+      #   template: multiple
+      #   allowmultiple: true
+      #   allowother: false
+      #   randomize: false
+      #   options:
+      #     - ::backdrop
+      #     - :fulscreen
+
+### CODING PATTERNS ###
+
+# - title: Coding Patterns
+#   description: How you write your CSS
+#   questions:
+#     - title: Selector Nesting
+#       description: How often do you use selector nesting? (.foo .bar ul li {...})
+#       template: multiple
+#       allowmultiple: false
+#       allowother: false
+#       randomize: false
+#       options:
+#         - Selector nesting should never be used
+#         - Selector nesting should be avoided if possible
+#         - Selector nesting is fine to use
+#         - Selector nesting should be encouraged
+#     - title: Naming
+#       description: What pattern do you follow for naming classes?
+#       template: multiple
+#       allowmultiple: false
+#       randomize: false
+#       options:
+#         - .my-class
+#         - .my_class
+#         - .MyClass
+#         - .myClass
+#     - title: IDs
+#       description: How often do you use ID selectors (#myDiv)?
+#       template: multiple
+#       allowmultiple: false
+#       randomize: false
+#       options:
+#         - ID selectors should never be used
+#         - ID selectors should be avoided if possible
+#         - ID selectors are fine to use
+#         - ID selectors use should be encouraged
+#     - title: important
+#       description: How often do you use important?
+#       template: multiple
+#       allowmultiple: false
+#       randomize: false
+#       options:
+#         - important should never be used
+#         - important should be avoided if possible
+#         - important is fine to use
+#         - important use should be encouraged
+
+### TOOLS ###
+
+- template: statictext
+  id: tools_intro
+  title: >
+      "For each of the following technology, framework, or methodology mentioned, please pick one of the following options:
+
+      \n- 🤷 You've never heard about it, or are not sure what it is
+      \n- ✅ You've heard about it and you *want* to learn it
+      \n- 🚫 You've heard about it, but *don't want* to learn it (or are *unsure*)
+      \n- 👍 You've used it and *want* to use it again
+      \n- 👎 You've used it but *don't* *want* to use it again"
+
+- title: Pre-/Post-processors
+  description: Utilities that augment CSS.
+  template: tool
+  id: preprocessors
+  # condition: Have you ever heard of or used CSS pre- or post-processors such as SASS, LESS, etc.?
+  questions:
+      - Sass
+      - Less
+      - PostCSS
+      - Stylus
+      # - No Pre-/Post-processor
+      - other
+
+- title: CSS Frameworks
+  description: Libraries that give you pre-made components and styles.
+  template: tool
+  id: frameworks
+  # condition: Have you ever heard of or used CSS framworks such as Bootstrap, Material Design, etc.?
+  questions:
+      - Bootstrap
+      - Materialize CSS
+      - Ant Design
+      - Semantic UI
+      - Bulma
+      - Foundation
+      - UIKit
+      - Tachyons
+      - Primer
+      - Tailwind
+      - PureCSS
+      # - Milligram
+      # - BassCSS
+      # - No Framework
+      - other
+
+- title: Methodologies
+  description: Codified ways to write cleaner CSS.
+  template: tool
+  id: methodologies
+  # condition: Have you ever heard of or used CSS methodologies such as BEM, OOCSS, etc.?
+  questions:
+      - BEM
+      - Atomic CSS
+      - OOCSS
+      - SMACSS
+      - IT CSS
+      - other
+
+- title: CSS-in-JS
+  description: Libraries that give you pre-made components and styles.
+  template: tool
+  id: cssinjs
+  # condition: Have you ever heard of or used CSS-in-JS libraries?
+  questions:
+      - Styled Components
+      - Glamor
+      - Aphrodite
+      - JSS
+      - Styled-JSX
+      - Radium
+      - Emotion
+      - CSS Modules
+      - other
+
+### OTHER TOOLS ###
+
+- title: Other Tools
+  description: For these tools & technologies, just check the ones that you use regularly.
+  questions:
+      - title: Text Editors
+        description: Which text editor(s) do you regularly use?
+        template: multiple
+        allowmultiple: true
+        allowother: true
+        randomize: true
+        options:
+            - VS Code
+            - Sublime Text
+            - Atom
+            - Vim
+            - Emacs
+            - Webstorm
+      - title: Browsers
+        description: Which browser(s) do you work in primarily during initial development?
+        template: multiple
+        allowmultiple: true
+        allowother: true
+        randomize: false
+        options:
+            - Edge
+            - Chrome
+            - Safari
+            - Firefox
+
+### ENVIRONMENTS ###
+
+- title: Environments
+  description: Which environments do you write CSS for?
+  questions:
+      - title: Browsers
+        description: Which browsers do you test in?
+        template: multiple
+        allowmultiple: true
+        allowother: true
+        randomize: false
+        options:
+            - Edge
+            - Chrome
+            - Safari
+            - Firefox
+            - Internet Explorer 11
+            - Internet Explorer 8/9/10
+            - Opera Mini
+            - Safari iOS
+            - Chrome iOS
+            - Chrome Android
+            - Firefox Android
+            - Samsung Internet
+            - Vivaldi
+            - Brave
+            - UC Browser
+            - Opera
+
+      - title: Form Factors
+        description: Which form factors do you test on?
+        template: multiple
+        allowmultiple: true
+        allowother: true
+        randomize: false
+        options:
+            - Desktop
+            - Smartphone
+            - Feature Phone
+            - Tablet
+            - Smart Watch
+            - TV
+            - Gaming Console
+            - Screen Reader
+            - Print
+
+      - title: CSS for Print
+        description: Do you write print styles?
+        template: multiple
+        allowmultiple: false
+        allowother: false
+        randomize: false
+        options:
+            - I (almost) never write print styles
+            - I occasionally write print styles
+            - I write print styles as part of most projects
+            - I focus mainly on CSS for print
+
+      - title: CSS for Email Clients
+        description: Do you write CSS for email clients?
+        template: multiple
+        allowmultiple: false
+        allowother: false
+        randomize: false
+        options:
+            - I (almost) never write CSS for email clients
+            - I occasionally write CSS for email clients
+            - I write CSS for email clients as part of most projects
+            - I focus mainly on CSS for email clients
+
+### RESOURCES ###
+
+- title: Resources
+  description: What CSS resources do you consult?
+  questions:
+
+      - title: Blogs & Magazines
+        description: Which CSS-related blogs/magazines/etc. do you read?
+        template: multiple
+        allowmultiple: true
+        allowother: true
+        randomize: true
+        options:
+            - CSS Tricks
+            - Smashing Magazine
+            - A List Apart
+            - CoDrops
+            - SitePoint
+
+      - title: Sites & Courses
+        description: Which CSS-related sites/courses/etc. do you consult?
+        template: multiple
+        allowmultiple: true
+        allowother: true
+        randomize: true
+        options:
+            - Stack Overflow
+            - MDN
+            - W3Schools
+            - The CSS Specs
+            - FreeCodeCamp
+            - Codecademy
+            - LevelUp Tutorials
+            - Wes Bos Courses (GSSGrid.io, Flexbox.io, etc.)
+            - Pluralsight
+
+      - title: Podcasts
+        description: Which CSS or programming-related podcasts do you listen to?
+        template: multiple
+        allowmultiple: true
+        allowother: true
+        randomize: true
+        options:
+            - Shop Talk Show
+            - Style Guide Podcast
+            - The Big Web Show
+            - The Web Ahead
+            - Non Breaking Space Show
+            - The Changelog
+            - Syntax
+
+### OPINIONS ###
+
+- title: Opinion Questions
+  description: How do you feel about the state of CSS?
+  questions:
+      - title: CSS is easy to learn
+        template: opinion
+      - title: CSS is evolving too slowly
+        template: opinion
+      - title: Utility (non-semantic) classes (.center, .large-text, etc.) should be avoided
+        template: opinion
+      - title: Selector nesting (.foo .bar ul li {...}) should be avoided
+        template: opinion
+      - title: CSS is a programming language
+        template: opinion
+      - title: I enjoy writing CSS
+        template: opinion
+      - title: What do you feel is currently missing from CSS?
+        description: Features you'd like to see in CSS one day.
+        template: longtext
+      # - title: CSS is moving in the right direction
+      #   template: opinion
+
+### DEMOGRAPHICS ###
+
+- title: About You
+  description: Let's get to know the real you.
+  questions:
+      - title: Years of Experience
+        description: How long you've been writing CSS.
+        template: multiple
+        allowmultiple: false
+        allowother: false
+        randomize: false
+        options:
+            - Less than one year
+            - 1-2 years
+            - 2-5 years
+            - 5-10 years
+            - 10-20 years
+            - 20+ years
+      - title: Job Title
+        description: How do you introduce yourself at parties?
+        template: multiple
+        allowmultiple: false
+        allowother: true
+        randomize: false
+        options:
+            - Front-end Developer/Engineer
+            - Full-stack Developer/Engineer
+            - Back-end Developer/Engineer
+            - Web Designer
+            - UI Designer
+            - UX Designer
+      - title: JavaScript Proficiency
+        description: How proficient are you at JavaScript development? (pick the most advanced option corresponding to your skills)
+        template: multiple
+        allowmultiple: false
+        allowother: false
+        randomize: false
+        options:
+            - I am not able to write any JavaScript
+            - I can write short, simple JavaScript or jQuery statements
+            - I can work on existing front-end codebases using modern frameworks (React, Vue, etc.)
+            - I can architecture entire front-end codebases from scratch
+            - I can handle advanced front-end patterns (state management, data loading, etc.)
+      - title: Back-end Proficiency
+        description: How proficient are you at back-end development? (pick the most advanced option corresponding to your skills)
+        template: multiple
+        allowmultiple: false
+        allowother: false
+        randomize: false
+        options:
+            - I am not able to handle any back-end work
+            - I can set up all-in-one CMSs (WordPress, etc.) or static site generators (Jekyll, etc.)
+            - I can develop apps using pre-existing frameworks (Rails, Laravel, etc.)
+            - I can set up an entire back-end from scratch (Go, Node, etc.)
+      - title: Company Size
+        template: multiple
+        allowmultiple: false
+        allowother: false
+        randomize: false
+        options:
+            - Just me
+            - 1-5 people
+            - 5-10 people
+            - 10-20 people
+            - 20-50 people
+            - 50-100 people
+            - 100-1000 people
+            - 1000+ people
+      - title: Yearly Salary
+        description: In USD
+        template: multiple
+        allowmultiple: false
+        allowother: false
+        randomize: false
+        options:
+            - I work for free :(
+            - $0-$10k
+            - $10k-$30k
+            - $30k-$50k
+            - $50k-$100k
+            - $100k-$200k
+            - $200k+
+      - title: How did you find out about this survey?
+        template: text
+      - title: Your Gender
+        template: multiple
+        allowmultiple: false
+        allowother: true
+        options:
+            - Female
+            - Male
+            - Non-binary/ third gender
+            - Prefer not to say
+      - title: Your Email
+        description: If you'd like to be notified when survey results are available. Your email won't be used for any other purpose.
+        template: email
+      - title: Your Country
+        template: text
+      - title: Your City
+        template: text
+      - title: Other Comments
+        description: Things we missed, feedback on the survey, your favorite color, etc.
+        template: longtext

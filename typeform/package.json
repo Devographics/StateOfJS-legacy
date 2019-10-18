@@ -1,0 +1,15 @@
+{
+  "name": "typeformgen",
+  "version": "1.0.0",
+  "description": "Generate a Typeform survey from YAML files",
+  "main": "create.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.3.0",
+    "yamljs": "^0.3.0"
+  }
+}

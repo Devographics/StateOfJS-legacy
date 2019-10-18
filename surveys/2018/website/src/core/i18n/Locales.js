@@ -17,30 +17,17 @@ const LangSelector = () => (
             })
 
             return (
-                <span
-                    style={{
-                        position: 'fixed',
-                        zIndex: 10000,
-                        bottom: 20,
-                        right: 20,
-                        background: '#111',
-                        fontSize: '14px',
-                        padding: '10px'
-                    }}
-                >
-                    {links.map(link => (
+                <div className="Locales">
+                    {links.map(({ label, locale, link, isCurrent }) => (
                         <Link
-                            key={link.locale}
-                            to={link.link}
-                            style={{
-                                display: 'block',
-                                fontWeight: link.isCurrent ? 'bold' : 'normal'
-                            }}
+                            className={`Locales__Item Locales__Item--${isCurrent && 'current'}`}
+                            key={locale}
+                            to={link}
                         >
-                            {link.label}
+                            {label}
                         </Link>
                     ))}
-                </span>
+                </div>
             )
         }}
     </PageContextConsumer>

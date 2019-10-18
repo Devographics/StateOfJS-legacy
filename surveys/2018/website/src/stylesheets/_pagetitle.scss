@@ -2,6 +2,9 @@
     border-top: 1px solid $dark-border-color;
     border-bottom: 1px solid $dark-border-color;
 
+    // Fixes overlap with <Tooltip />
+    z-index: 0;
+
     // background: $light-bg-color;
 }
 
@@ -14,7 +17,7 @@
     z-index: 10;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto 1fr;
 
     @include small-medium {
         .pagetitle__wrapper--top & {
@@ -46,6 +49,13 @@
     }
     &:hover {
         background: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.pagination__middle {
+    @include flex-center;
+    span + & {
+        border-left: 1px solid $dark-border-color;
     }
 }
 

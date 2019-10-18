@@ -11,8 +11,7 @@ const Head = () => (
                 {translate => {
                     const meta = getPageMeta(context, translate)
                     const socialMeta = getPageSocialMeta(context, translate)
-                    const description =
-                        'Discover the most popular JavaScript technologies of the year.'
+                    const description = translate(`meta.description`)
 
                     const mergedMeta = [
                         { charset: 'utf-8' },

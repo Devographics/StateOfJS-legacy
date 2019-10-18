@@ -1,3 +1,5 @@
+/* eslint-disable react/display-name */
+
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { ResponsiveBar } from '@nivo/bar'

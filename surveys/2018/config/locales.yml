@@ -1,7 +1,28 @@
 - locale: en-US
   path:   default
-  label:  🇬🇧 english
+  label:  English
 
 - locale: fr-FR
   path:   fr
-  label:  🇫🇷 français
+  label:  Français
+
+- locale: zh-CN
+  path:   cn
+  label:  简体中文
+
+- locale: hu-HU
+  path:   hu
+  label:  Magyar
+
+- locale: es-ES
+  path:   es
+  label:  Español
+
+- locale: de-DE
+  path:   de
+  label:  Deutsch
+
+- locale: ru-RU
+  path:   ru
+  label:  Русский
+

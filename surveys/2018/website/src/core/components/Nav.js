@@ -3,6 +3,7 @@ import nav from '../../../../config/enhanced_nav.yml'
 import { PageContextConsumer } from '../pages/pageContext'
 import PageLink from '../pages/PageLink'
 import PageLabel from '../pages/PageLabel'
+import LanguageSwitcher from '../i18n/LanguageSwitcher'
 
 const filteredNav = nav.filter(page => !page.is_hidden)
 
@@ -50,6 +51,9 @@ const Nav = ({ closeSidebar }) => (
         {context => (
             <div className="nav">
                 <ul>
+                    <li>
+                        <LanguageSwitcher />
+                    </li>
                     {filteredNav.map((page, i) => (
                         <NavItem
                             key={i}

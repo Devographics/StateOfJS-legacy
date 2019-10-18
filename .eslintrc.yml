@@ -1,6 +1,8 @@
 extends:
   - 'eslint:recommended'
   - 'plugin:react/recommended'
+  - 'prettier'
+  - 'prettier/react'
 
 parser: babel-eslint
 parserOptions:
@@ -13,13 +15,14 @@ env:
 
 globals:
   __PREFIX_LINKS__: true
+  document: true
+  fetch: true  
 
 settings:
   react:
     version: 16.2.0
 
 rules:
-  indent: [2, 4, { SwitchCase: 1 }]
   no-console: [0]
   func-names: [0]
   semi: [2, never]
@@ -36,3 +39,4 @@ rules:
   react/prop-types: [0]
   import/no-unresolved: [0]
   global-require: [0]
+  no-unused-vars: ["warn"]

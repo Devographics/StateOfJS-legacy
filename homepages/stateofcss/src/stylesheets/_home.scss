@@ -1,0 +1,177 @@
+/*
+
+Layout
+
+*/
+
+.Layout--Home {
+    @include medium-large {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        overflow: hidden;
+        height: 100vh;
+    }
+}
+.Home__Content {
+    overflow-y: scroll;
+    @include small {
+        padding: $spacing * 1.5;
+    }
+    @include medium-large {
+        padding: $spacing * 3;
+    }
+}
+/*
+
+Logo
+
+*/
+
+.Home__LogoWrapper {
+    position: relative;
+    margin: 0;
+    height: 100%;
+}
+
+.Home__Logo {
+    @include medium-large {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        @include flex-center;
+        margin: 0;
+    }
+    svg {
+        display: block;
+        height: 100%;
+        min-width: 100%;
+        background: $lightgrey;
+    }
+}
+
+.logo-text {
+    fill: $darkblue;
+    font-style: italic;
+    font-size: 8rem;
+    @include font-light;
+}
+
+/*
+
+Intro
+
+*/
+
+.Intro, .introtext {
+    font-size: $large-font;
+    margin-bottom: $spacing * 2;
+}
+
+/*
+
+Coming Soon
+
+*/
+.ComingSoon{
+    margin-top: -$spacing;
+}
+.button--comingsoon{
+    &:hover{
+        border-color: $darkblue;
+        color: $darkblue;
+    }
+    cursor: default;
+    margin-bottom: $spacing;
+}
+/*
+
+View Results
+
+*/
+.ViewResults{
+    margin-top: -$spacing;
+}
+/*
+
+Take Survey
+
+*/
+
+.TakeSurvey {
+    @include flex-center;
+    flex-direction: column;
+}
+
+.TakeSurvey__Button {
+    background: $active-color;
+    font-size: $largest-font;
+    padding: $spacing;
+    font-style: italic;
+    &,
+    &:link,
+    &:visited {
+        color: $white;
+    }
+    &:hover {
+        background: white;
+        color: $active-color;
+        text-decoration: none;
+    }
+}
+
+.TakeSurvey__Note {
+    font-size: $smaller-font;
+    text-align: center;
+    max-width: 400px;
+    margin: $spacing/1.5 0 0 0;
+}
+
+.TakeSurvey__MobileWarning{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: $highlight-color;
+    padding: $spacing;
+    display: flex;
+    flex-direction: column;
+    h3{
+        text-align: center;
+    }
+}
+.TakeSurvey__Button--warning{
+    margin-top: $spacing;
+    text-align: center;
+}
+.TakeSurvey__MobileWarning__Cancel{
+    margin-top: $spacing;
+    text-align: center;
+}
+/*
+
+About
+
+*/
+.About__Authors {
+    @include medium-large {
+        display: grid;
+        column-gap: $spacing * 2;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+.About__Author__Name {
+    margin-bottom: $spacing/4;
+}
+.About__Author__Bio {
+    font-size: $medium-font;
+}
+
+.Footer {
+    text-align: center;
+    font-size: $medium-font;
+    margin: 0;
+}

@@ -1,6 +1,8 @@
 locale: en-US
 translations:
     # general
+    - key: start
+      t: Start
     - key: share
       t: Share
     - key: average
@@ -43,6 +45,14 @@ translations:
       t: |
         Thanks to our partners for supporting this project.
         <a href="/support">Learn more</a> about supporting The State of JS.
+    - key: stay_tuned
+      t: Stay Tuned
+    - key: leave_your_email
+      t: "If you'd like to know when we release additional results or announce next year's edition, just leave us your email below:"
+    - key: your_email
+      t: Your Email
+    - key: notify_me
+      t: Notify Me
 
     # opinions
     - key: opinions.legends.never_heard
@@ -322,8 +332,16 @@ translations:
       t: Web Audio API
     - key: tool.web-speech-api
       t: Web Speech API
+    - key: tool.dart
+      t: Dart
+    - key: tool.kotlin
+      t: Kotlin
+    - key: tool.haxe
+      t: Haxe
 
     # pages
+    - key: page.home
+      t: Home
     - key: page.introduction
       t: Introduction
     - key: page.demographics
@@ -750,3 +768,7 @@ translations:
       t: State Of JavaScript Survey Results
     - key: share.block.body
       t: 'Here are some interesting JavaScript survey results (${title}): ${link}'
+
+    # meta
+    - key: meta.description
+      t: Discover the most popular JavaScript technologies of the year.

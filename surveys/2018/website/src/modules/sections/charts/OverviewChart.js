@@ -12,6 +12,7 @@ import OpinionsLegends from 'core/charts/OpinionsLegends'
 import PeriodicElement from 'core/components/PeriodicElement'
 import ChartContainer from 'core/charts/ChartContainer'
 import Trans from 'core/i18n/Trans'
+import { PageContextConsumer } from '../../../core/pages/pageContext'
 
 const patterns = [
     {
@@ -95,102 +96,115 @@ export default class OverviewChart extends Component {
         }
 
         return (
-            <Trans>
-                {translate => (
-                    <div className="Overview__Chart">
-                        <ChartContainer height={360}>
-                            <ResponsiveBar
-                                margin={margin}
-                                keys={[
-                                    'would_use',
-                                    'would_not_use',
-                                    'interested',
-                                    'not_interested',
-                                    'never_heard'
-                                ]}
-                                indexBy="tool_id"
-                                data={sortedData}
-                                theme={theme}
-                                colorBy={this.getColor}
-                                labelFormat={format}
-                                tooltipFormat={format}
-                                labelTextColor="inherit:darker(2)"
-                                labelSkipWidth={32}
-                                labelSkipHeight={20}
-                                padding={0.6}
-                                axisLeft={null}
-                                enableGridY={false}
-                                axisTop={{
-                                    renderTick: tick => (
-                                        <g
-                                            key={tick.key}
-                                            transform={`translate(${tick.x - 30},${tick.y - 80})`}
-                                        >
-                                            <PeriodicElement
-                                                mode="chart"
-                                                section={section}
-                                                tool={tick.value}
-                                                symbol={periodicTableData.tools[tick.value] || '??'}
-                                                name={getToolName(tick.value, translate)}
-                                                size={60}
-                                                number={ranking[tick.value]}
-                                                path={`${section}/${tick.value}`}
-                                            />
-                                        </g>
-                                    )
-                                }}
-                                axisBottom={{
-                                    tickSize: 0,
-                                    tickPadding: 10,
-                                    renderTick: tick => (
-                                        <g
-                                            key={tick.key}
-                                            transform={`translate(${tick.x},${tick.y + 14})`}
-                                            style={{ cursor: 'pointer' }}
-                                            onClick={() => {
-                                                navigate(`${section}/${tick.value}`)
-                                            }}
-                                        >
-                                            <text
-                                                fill="#41c7c7"
-                                                textAnchor="middle"
-                                                alignmentBaseline="hanging"
-                                                style={{ fontSize: '13px' }}
-                                            >
-                                                {getToolName(tick.value, translate)}
-                                            </text>
-                                        </g>
-                                    )
-                                }}
-                                defs={patterns}
-                                fill={[
-                                    {
-                                        match: {
-                                            id: 'never_heard'
-                                        },
-                                        id: 'lines'
-                                    }
-                                ]}
-                                tooltipLabel={d => translate(`opinions.legends_short.${d.id}`)}
-                            />
-                        </ChartContainer>
-                        <div>
-                            <div className="Overview__Chart__SwitchContainer">
-                                <DisplayModeSwitch
-                                    mode={displayMode}
-                                    onChange={this.setDisplayMode}
-                                />
+            <PageContextConsumer>
+                {pageContext => (
+                    <Trans>
+                        {translate => (
+                            <div className="Overview__Chart">
+                                <ChartContainer height={360}>
+                                    <ResponsiveBar
+                                        margin={margin}
+                                        keys={[
+                                            'would_use',
+                                            'would_not_use',
+                                            'interested',
+                                            'not_interested',
+                                            'never_heard'
+                                        ]}
+                                        indexBy="tool_id"
+                                        data={sortedData}
+                                        theme={theme}
+                                        colorBy={this.getColor}
+                                        labelFormat={format}
+                                        tooltipFormat={format}
+                                        labelTextColor="inherit:darker(2)"
+                                        labelSkipWidth={32}
+                                        labelSkipHeight={20}
+                                        padding={0.6}
+                                        axisLeft={null}
+                                        enableGridY={false}
+                                        axisTop={{
+                                            renderTick: tick => (
+                                                <g
+                                                    key={tick.key}
+                                                    transform={`translate(${tick.x - 30},${tick.y -
+                                                        80})`}
+                                                >
+                                                    <PeriodicElement
+                                                        mode="chart"
+                                                        section={section}
+                                                        tool={tick.value}
+                                                        symbol={
+                                                            periodicTableData.tools[tick.value] ||
+                                                            '??'
+                                                        }
+                                                        name={getToolName(tick.value, translate)}
+                                                        size={60}
+                                                        number={ranking[tick.value]}
+                                                        path={`${
+                                                            pageContext.localePath
+                                                        }/${section}/${tick.value}`}
+                                                    />
+                                                </g>
+                                            )
+                                        }}
+                                        axisBottom={{
+                                            tickSize: 0,
+                                            tickPadding: 10,
+                                            renderTick: tick => (
+                                                <g
+                                                    key={tick.key}
+                                                    transform={`translate(${tick.x},${tick.y +
+                                                        14})`}
+                                                    style={{ cursor: 'pointer' }}
+                                                    onClick={() => {
+                                                        navigate(`${section}/${tick.value}`)
+                                                    }}
+                                                >
+                                                    <text
+                                                        fill="#41c7c7"
+                                                        textAnchor="middle"
+                                                        alignmentBaseline="hanging"
+                                                        style={{ fontSize: '13px' }}
+                                                    >
+                                                        {getToolName(tick.value, translate)}
+                                                    </text>
+                                                </g>
+                                            )
+                                        }}
+                                        defs={patterns}
+                                        fill={[
+                                            {
+                                                match: {
+                                                    id: 'never_heard'
+                                                },
+                                                id: 'lines'
+                                            }
+                                        ]}
+                                        tooltipLabel={d =>
+                                            translate(`opinions.legends_short.${d.id}`)
+                                        }
+                                    />
+                                </ChartContainer>
+                                <div>
+                                    <div className="Overview__Chart__SwitchContainer">
+                                        <DisplayModeSwitch
+                                            mode={displayMode}
+                                            onChange={this.setDisplayMode}
+                                        />
+                                    </div>
+                                    <OpinionsLegends
+                                        layout="vertical"
+                                        withFrame={false}
+                                        onMouseEnter={this.setCurrent}
+                                        onMouseLeave={this.resetCurrent}
+                                    />
+                                </div>
                             </div>
-                            <OpinionsLegends
-                                layout="vertical"
-                                withFrame={false}
-                                onMouseEnter={this.setCurrent}
-                                onMouseLeave={this.resetCurrent}
-                            />
-                        </div>
-                    </div>
+                        )}
+                    </Trans>
                 )}
-            </Trans>
+            </PageContextConsumer>
         )
     }
 }

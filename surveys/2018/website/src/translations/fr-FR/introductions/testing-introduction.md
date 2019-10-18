@@ -3,5 +3,5 @@ type: introduction
 section: testing
 locale: fr-FR
 ---
-[FR] Testing, testing… Is this thing on? Sorry, I Jest, but I would never want to make a Mocha-ry 
-of this section. That would be Jasmine (“just mean”? get it?), and that's bad Karma.
+
+Mauvais Karma ? Faites un Jest : offrez un Mocha ou un thé au Jasmine à un ami !

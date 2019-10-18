@@ -3,16 +3,15 @@ type: conclusion
 section: testing
 locale: fr-FR
 ---
-[FR] The testing space is a bit of an oddity: while the other parts of the JavaScript ecosystem have been slowly settling down around a few dominant solutions, testing is still very fragmented: lots of different, complementary tools share the pie. Even so, developers are satisfied by their testing solution overall, with the lowest satisfaction ratio being 68%.
 
-The survey confirms that **Mocha** is still the most used unit testing framework with over 10k users. Being around for a long time, it has the largest ecosystem and most of the Node.js developers are familiar with it.
+Alors que des leaders se détachent dans d'autres catégories, le domaine du testing reste très fragmenté. Les développeurs semblent toutefois satisfaits de leurs outils, aucun framework n'affichant un taux de satisfaction inférieur à 68%.
 
-**Jest** follows closely in terms of usage but it has a slightly higher satisfaction rate: 96% versus 82%. As a side note, 96% is the second highest satisfaction in the whole survey this year. Only ES6 got a better mark!
+L'enquête confirme que **Mocha** reste le framework le plus utilisé. Bien aidé par un écosystème en place depuis plusieurs années, il fait partie du quotidien de nombreux développeurs Node.js.
 
-This shows that developers really appreciate the efforts made by Facebook to provide a full-featured testing framework that can be used to test both front-end (it was intended to test React components, in the beginning) and back-end code, without requiring configuration.
+**Jest** est le concurrent immédiat en matière de taux d'usage mais il affiche un meilleur taux de satisfaction : 96% contre 82%. Il s'agit du second meilleur taux de satisfaction rélevé dans notre enquête, toutes catégories confondues (seul ES6 fait mieux).
 
-In the "Single Page application" era, web applications are becoming more and more complex, with more and more logic implemented on the client side. The survey shows clearly that developers use many tools to test their applications.
+Les développeurs interrogés apprécient les efforts de Facebook pour faire de Jest un framework de testing complet, simple d'usage, n'exigeant aucune configuration et qui peut être utilisé aussi bien pour tester du code "côté serveur" que "côté client" (à l'origine Jest était destiné à tester des applications web construites avec des composants React).
 
-The spectrum of testing is wide: unit tests, integration tests, end-to-end tests but also "visual testing", as we can see with the success of **Storybook** (the second highest satisfaction rate of the category).
+Le domaine du testing est large, son spectre s'étend des tests unitaires aux tests d'utilisation dans le navigateur, en passant par les tests d'intégration. On peut également parler de "testing visuel" comme le prouve le succès de **Storybook** (le second plus fort taux de satisfaction de la catégorie).
 
-The future of testing may include more solutions to make automated tests in the browser, a project like [Cypress](https://www.cypress.io/) may be included in the next year survey and we may see more tools based on [Puppeteer](https://pptr.dev/).
+Pour le futur du testing, il faudra compter sur des solutions qui simplifient l'automatisation des tests dans le client (web ou mobile). Un projet tel que [Cypress](https://www.cypress.io/) sera sans doute inclus dans le questionnaire de l'année prochaine et l'on verra plus d'outils basés sur [Puppeteer](https://pptr.dev/).
