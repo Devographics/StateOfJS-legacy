@@ -1,0 +1,408 @@
+# the survey outline
+
+# First level: blocks
+# Second level: questions (will use the block's question template if no template is specified)
+
+---
+### FEATURES ###
+
+- template: statictext
+  id: features_intro
+  title: >
+      "For each of the following features, please pick one of the following options:
+
+      \n- 🤷 You've never heard about it, or are not sure what it is
+      \n- ✅ You've heard about it but *haven't* used it
+      \n- 👍 You've used it"
+
+- title: Language
+  description: Which of these language features do you use?
+  template: feature
+  questions:
+      - Conditional/Ternary Operator
+      - Destructuration
+      - Inline If with Logical && Operator
+
+- title: Hooks
+  description: Controlling how the user interacts with the page.
+  template: feature
+  questions:
+      - useState
+      - useEffect
+      - useContext
+      - useReducer
+      - useCallback
+      - useMemo
+
+- title: Lifecycle
+  description: Controlling how the user interacts with the page.
+  template: feature
+  questions:
+      - getDerivedStateFromProps()
+      - componentDidMount()
+      - shouldComponentUpdate()
+      - getSnapshotBeforeUpdate()
+      - componentDidUpdate()
+      - componentWillUnmount()
+
+- title: Other Features
+  description: Other React features.
+  template: feature
+  questions:
+      - React.PureComponent
+      - React.memo
+      - createElement()
+      - createFactory()
+      - cloneElement()
+      - React.createRef
+      - React.lazy
+      - defaultProps
+      - displayName
+
+### PATTERNS ###
+
+- title: Class Components vs Functional Components
+  description: How do you write your components?
+  template: multiple
+  allowmultiple: false
+  allowother: false
+  randomize: false
+  options:
+      - I prefer using class components as much as possible.
+      - I don't have a preference.
+      - I prefer using functional components as much as possible.
+
+- title: Dependency Injection
+  description: Which dependency injection patterns do you use?
+  questions:
+      - title: Higher-Order Components
+        template: rating
+      - title: renderProps
+        template: rating
+      - title: Hooks
+        template: rating
+      
+### TECHNOLOGIES ###
+
+- template: statictext
+  id: tools_intro
+  title: >
+      "For each technology, please pick one of the following options:
+
+      \n- 🤷 You've never heard about it, or are not sure what it is
+      \n- ✅ You've heard about it and you *want* to learn it
+      \n- 🚫 You've heard about it, but *don't want* to learn it (or are *unsure*)
+      \n- 👍 You've used it and *want* to use it again
+      \n- 👎 You've used it but *don't* *want* to use it again"
+
+- title: State Management
+  description: How you manage your application state.
+  template: tool
+  id: statemanagement
+  questions:
+      - Context
+      - Redux
+      - MobX
+      - Apollo-link-state
+      - Unstated
+      - Relay
+      - other
+
+- title: Routing
+  description: Routing inside your app.
+  template: tool
+  id: routing
+  questions:
+      - React Router
+      - Reach Router
+      - other
+
+- title: Testing
+  description: How you test your app.
+  template: tool
+  id: testing
+  questions:
+      - Jest
+      - other
+
+- title: Animation
+  description: How you animate your interface.
+  template: tool
+  id: animation
+  questions:
+      - React-Motion
+      - React-Spring
+      - other
+
+- title: CSS
+  description: CSS-in-JS and other methods. 
+  template: tool
+  id: css
+  questions:
+      - Styled Components
+      - Glamor
+      - Aphrodite
+      - JSS
+      - Styled-JSX
+      - Radium
+      - Emotion
+      - CSS Modules
+      - Sass
+      - Less
+      - Plain CSS
+      - other
+
+- title: API
+  description: How your app gets its data.
+  template: tool
+  id: api
+  questions:
+      - GraphQL
+      - REST
+      - Firebase
+      - other
+
+- title: Back-end
+  description: How you bundle and/or serve your app. 
+  template: tool
+  id: backend
+  questions:
+      - Create React App
+      - Next.js
+      - Gatsby
+      - Meteor
+      - Node.js
+      - other
+
+- title: Types
+  description: Type systems to make your code more predictable. 
+  template: tool
+  id: types
+  questions:
+      - TypeScript
+      - Flow
+      - other
+
+- title: UI Libraries
+  description: Ready-made component libraries.
+  template: tool
+  id: methodologies
+  questions:
+      - React-Bootstrap
+      - Reactstrap
+      - Material UI
+      - other
+
+- title: Forms
+  description: Form generating and handling. 
+  template: tool
+  id: methodologies
+  questions:
+      - TypeScript
+      - Flow
+      - other
+
+- title: Other Platforms
+  description: React-adjacent platforms.
+  template: tool
+  id: methodologies
+  questions:
+      - React Native
+      - Reason
+
+### OTHER TOOLS ###
+
+- title: Other Tools
+  description: For these tools & technologies, just check the ones that you use regularly.
+  questions:
+      - title: Text Editors
+        description: Which text editor(s) do you regularly use?
+        template: multiple
+        allowmultiple: true
+        allowother: true
+        randomize: true
+        options:
+            - VS Code
+            - Sublime Text
+            - Atom
+            - Vim
+            - Emacs
+            - Webstorm
+
+### RESOURCES ###
+
+- title: Resources
+  description: What React resources do you consult?
+  questions:
+
+      - title: Blogs & Magazines
+        description: Which CSS-related blogs/magazines/etc. do you read?
+        template: multiple
+        allowmultiple: true
+        allowother: true
+        randomize: true
+        options:
+            - CSS Tricks
+            - Smashing Magazine
+            - A List Apart
+            - CoDrops
+            - SitePoint
+
+      - title: Sites & Courses
+        description: Which CSS-related sites/courses/etc. do you consult?
+        template: multiple
+        allowmultiple: true
+        allowother: true
+        randomize: true
+        options:
+            - Stack Overflow
+            - MDN
+            - W3Schools
+            - The CSS Specs
+            - FreeCodeCamp
+            - Codecademy
+            - LevelUp Tutorials
+            - Wes Bos Courses (GSSGrid.io, Flexbox.io, etc.)
+            - Pluralsight
+
+      - title: Podcasts
+        description: Which CSS or programming-related podcasts do you listen to?
+        template: multiple
+        allowmultiple: true
+        allowother: true
+        randomize: true
+        options:
+            - Shop Talk Show
+            - Style Guide Podcast
+            - The Big Web Show
+            - The Web Ahead
+            - Non Breaking Space Show
+            - The Changelog
+            - Syntax
+
+### OPINIONS ### // TODO
+
+- title: Opinion Questions
+  description: How do you feel about the state of CSS?
+  questions:
+      - title: CSS is easy to learn
+        template: opinion
+      - title: CSS is evolving too slowly
+        template: opinion
+      - title: Utility (non-semantic) classes (.center, .large-text, etc.) should be avoided
+        template: opinion
+      - title: Selector nesting (.foo .bar ul li {...}) should be avoided
+        template: opinion
+      - title: CSS is a programming language
+        template: opinion
+      - title: I enjoy writing CSS
+        template: opinion
+      - title: What do you feel is currently missing from CSS?
+        description: Features you'd like to see in CSS one day.
+        template: longtext
+      # - title: CSS is moving in the right direction
+      #   template: opinion
+
+### DEMOGRAPHICS ###
+
+- title: About You
+  description: Let's get to know the real you.
+  questions:
+      - title: Years of Experience
+        description: How long you've been writing CSS.
+        template: multiple
+        allowmultiple: false
+        allowother: false
+        randomize: false
+        options:
+            - Less than one year
+            - 1-2 years
+            - 2-5 years
+            - 5-10 years
+            - 10-20 years
+            - 20+ years
+      - title: Job Title
+        description: How do you introduce yourself at parties?
+        template: multiple
+        allowmultiple: false
+        allowother: true
+        randomize: false
+        options:
+            - Front-end Developer/Engineer
+            - Full-stack Developer/Engineer
+            - Back-end Developer/Engineer
+            - Web Designer
+            - UI Designer
+            - UX Designer
+      - title: JavaScript Proficiency
+        description: How proficient are you at JavaScript development? (pick the most advanced option corresponding to your skills)
+        template: multiple
+        allowmultiple: false
+        allowother: false
+        randomize: false
+        options:
+            - I am not able to write any JavaScript
+            - I can write short, simple JavaScript or jQuery statements
+            - I can work on existing front-end codebases using modern frameworks (React, Vue, etc.)
+            - I can architecture entire front-end codebases from scratch
+            - I can handle advanced front-end patterns (state management, data loading, etc.)
+      - title: Back-end Proficiency
+        description: How proficient are you at back-end development? (pick the most advanced option corresponding to your skills)
+        template: multiple
+        allowmultiple: false
+        allowother: false
+        randomize: false
+        options:
+            - I am not able to handle any back-end work
+            - I can set up all-in-one CMSs (WordPress, etc.) or static site generators (Jekyll, etc.)
+            - I can develop apps using pre-existing frameworks (Rails, Laravel, etc.)
+            - I can set up an entire back-end from scratch (Go, Node, etc.)
+      - title: Company Size
+        template: multiple
+        allowmultiple: false
+        allowother: false
+        randomize: false
+        options:
+            - Just me
+            - 1-5 people
+            - 5-10 people
+            - 10-20 people
+            - 20-50 people
+            - 50-100 people
+            - 100-1000 people
+            - 1000+ people
+      - title: Yearly Salary
+        description: In USD
+        template: multiple
+        allowmultiple: false
+        allowother: false
+        randomize: false
+        options:
+            - I work for free :(
+            - $0-$10k
+            - $10k-$30k
+            - $30k-$50k
+            - $50k-$100k
+            - $100k-$200k
+            - $200k+
+      - title: How did you find out about this survey?
+        template: text
+      - title: Your Gender
+        template: multiple
+        allowmultiple: false
+        allowother: true
+        options:
+            - Female
+            - Male
+            - Non-binary/ third gender
+            - Prefer not to say
+      - title: Your Email
+        description: If you'd like to be notified when survey results are available. Your email won't be used for any other purpose.
+        template: email
+      - title: Your Country
+        template: text
+      - title: Your City
+        template: text
+      - title: Other Comments
+        description: Things we missed, feedback on the survey, your favorite color, etc.
+        template: longtext

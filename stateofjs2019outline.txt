@@ -1,0 +1,149 @@
+- get rid of like/dislike questions for 2019
+- don't have separate pages for each techologies?
+- drop back-end section
+
+
+---
+
+Demographics
+
+  Country
+  Salary
+  Years of Experience
+  Company Size
+  Gender
+  Job Title
+  CSS Proficiency
+  Back-end Proficiency
+
+Features/Patterns (have used it/know what it is/never heard of it)
+
+  Syntax
+    Destructuring
+    Spread operator
+    Arrow Functions
+
+  Language
+    Proxy
+    Async/await
+    Promises
+    Decorators
+
+  Data Structures
+    Maps
+    Sets
+    Typed Arrays
+
+  Browser APIs
+    Service Workers
+    LocalStorage
+    i18n
+    Web Components
+    Web Audio API
+    WebGL
+    Web Animations API
+    WebRTC
+    Web Speech API
+    WebVR
+
+  Other
+    PWA
+    WebAssembly
+
+  Patterns (more opinion-oriented questions)
+    Classes/Object-oriented programming
+      - never use it
+      - avoid it
+      - neutral
+      - use it when I can
+      - always use it
+    Functional programming
+    Reactive programming
+
+Technologies
+
+  JavaScript Flavors
+
+    TypeScript
+    Reason
+    Elm
+    ClojureScript
+    PureScript
+    Other Technologies
+    Happiness level
+
+  Front-end Frameworks
+  
+    React
+    Vue
+    Angular
+    Preact
+    Ember
+    Svelte
+    Other Technologies
+    Happiness level
+
+  Data Layer
+
+    Redux
+    Apollo
+    GraphQL
+    MobX
+    RxJS
+    Other Technologies
+    Happiness level
+  
+  Testing
+
+    Jest
+    Mocha
+    Storybook
+    Cypress
+    Enzyme
+    Ava
+    Other Technologies
+    Happiness level
+  
+  Mobile & Desktop
+
+    Electron
+    React Native
+    Cordova
+    Ionic
+    NW.js
+    Expo
+    Other Technologies
+    Happiness level
+
+Other Tools
+
+  Utilities
+
+    Immer
+    Lodash
+    Underscore
+    Moment
+    Date Fns
+    Ramda
+    jQuery
+
+  Build Tools
+
+    Webpack
+    Parcel
+    Gulp
+    RollUp
+
+  Other Languages
+  
+  Text Editors
+  
+  Browsers
+
+Resources
+
+Opinions
+
+Awards
+
+Conclusion
