@@ -7,7 +7,7 @@ const HomeLayout = props => (
         <PeriodicTable {...props} />
         <div className="home-layout-wrapper">
             <h1 className="logo">
-                <img src="images/stateofjs2018-logo.svg" alt="The State Of JavaScript" />
+                <img src="images/stateofjs2019-logo.svg" alt="The State Of JavaScript" />
                 {/* <div className="logo-1"/>
             <div className="logo-2"/>*/}
             </h1>
