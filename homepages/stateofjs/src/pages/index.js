@@ -15,13 +15,13 @@ import TakeSurvey from '../components/TakeSurvey'
 // import Bubbles from '../components/Bubbles'
 import Layout from '../layouts/layout.js'
 
-const Index = () => (
+const Index = ({ location }) => (
     <Layout>
         <div className="results-container content home">
             {/* <Bubbles /> */}
             <div className="intro section-narrow section-border">
                 <Intro />
-                <TakeSurvey />
+                <TakeSurvey location={location}/>
             </div>
             {/* <Stats /> */}
             <PreviousYears />
