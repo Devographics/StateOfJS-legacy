@@ -27,18 +27,18 @@ export default class Layout extends React.Component {
             { name: 'twitter:image:src', content: image },
             { name: 'twitter:title', content: title },
             { name: 'twitter:description', content: description },
-
+            // google
+            { name: 'google-site-verification', content: 'hrTRsz9fkGmQlVbLBWA4wmhn0qsI6_M3NKemTGCkpps' },
+        ]
+        const script = [
+            { src: '//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js', type: 'text/javascript' }
         ]
 
         return (
             <div
                 className={classNames('outer-wrapper', 'home-wrapper')}
             >
-                <Helmet meta={meta}>
-                    <title>{title}</title>
-                    <meta name="google-site-verification" content="hrTRsz9fkGmQlVbLBWA4wmhn0qsI6_M3NKemTGCkpps" />
-                    <script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript" />
-                </Helmet>
+               <Helmet title={title} meta={meta} script={script}></Helmet>
                 <link
                     href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,500"
                     rel="stylesheet"
