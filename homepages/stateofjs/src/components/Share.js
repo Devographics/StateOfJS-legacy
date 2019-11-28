@@ -118,11 +118,11 @@ export default class Share extends React.Component {
             <div className="section section-narrow spread-the-word">
                 <h2 className="section-heading">Help Spread the Word!</h2>
                 <div className="share-options">
-                    <Twitter text="The State Of JavaScript Survey: find out the most popular JavaScript technologies of 2018 http://stateofjs.com #stateofjs" />
+                    <Twitter text="The State Of JavaScript Survey: find out the most popular JavaScript technologies of 2019 http://stateofjs.com #stateofjs" />
                     <Facebook link="http://stateofjs.com" />
                     <Email
                         subject="The State Of JavaScript"
-                        body="Find out the most popular JavaScript technologies of 2018: http://stateofjs.com"
+                        body="Find out the most popular JavaScript technologies of 2019: http://stateofjs.com"
                     />
                 </div>
             </div>
