@@ -1,6 +1,6 @@
 import { getToolName } from '../helpers/tools'
 
-const WEBSITE_TITLE = 'The State of JavaScript 2018'
+const WEBSITE_TITLE = 'The State of JavaScript 2019'
 
 export const getTranslationValuesFromContext = (context, translate) => {
     const values = {}
@@ -18,7 +18,7 @@ export const getTranslationValuesFromContext = (context, translate) => {
  * mode:
  *   - short: React
  *   - normal: Front-end Frameworks : React
- *   - full: The State of JavaScript 2018: Front-end Frameworks : React
+ *   - full: The State of JavaScript 2019: Front-end Frameworks : React
  */
 export const getPageLabel = (page, translate, mode = 'normal') => {
     let label = ''

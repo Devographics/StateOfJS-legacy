@@ -18,7 +18,7 @@ export const getPageLabel = (page, includeSectionName = false) => {
 
 export const pageTitle = (page, mode = 'normal') => {
     if (page.type === 'custom') {
-        return mode === 'full' ? `The State of JavaScript 2018: ${page.id}` : page.id
+        return mode === 'full' ? `The State of JavaScript 2019: ${page.id}` : page.id
     }
 
     return `page_title.${page.id}`
@@ -29,7 +29,7 @@ export const pageTitle = (page, mode = 'normal') => {
 Mode: 
     - Short: React
     - Normal: Front-end Frameworks : React
-    - Full: The State of JavaScript 2018: Front-end Frameworks : React
+    - Full: The State of JavaScript 2019: Front-end Frameworks : React
 
 */
 const getPageTitle = ({ section, subSection }, mode = 'normal') => {
@@ -59,7 +59,7 @@ const getPageTitle = ({ section, subSection }, mode = 'normal') => {
     } else {
         pageTitle = section.label
     }
-    return mode === 'full' ? `The State of JavaScript 2018: ${pageTitle}` : pageTitle
+    return mode === 'full' ? `The State of JavaScript 2019: ${pageTitle}` : pageTitle
 }
 
 export default getPageTitle
