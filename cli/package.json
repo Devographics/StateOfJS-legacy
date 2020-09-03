@@ -10,7 +10,7 @@
     "dotenv": "^6.1.0",
     "elasticsearch": "^15.1.1",
     "node-fetch": "^2.2.0",
-    "puppeteer": "^1.10.0",
+    "puppeteer": "^1.13.0",
     "yamljs": "^0.3.0"
   }
 }
