@@ -276,7 +276,7 @@
         {
             "name": "Hapi",
             "description": "Server Framework  for Node.js",
-            "homepage": "hapijs.com",
+            "homepage": "https://hapijs.com",
             "slug": "hapi",
             "github": "hapijs/hapi",
             "stars": 10379
