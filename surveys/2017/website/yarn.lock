@@ -324,7 +324,7 @@ are-we-there-yet@~1.1.2:
 
 arg@2.0.0:
   version "2.0.0"
-  resolved "http://registry.npmjs.org/arg/-/arg-2.0.0.tgz#c06e7ff69ab05b3a4a03ebe0407fac4cba657545"
+  resolved "https://registry.npmjs.org/arg/-/arg-2.0.0.tgz#c06e7ff69ab05b3a4a03ebe0407fac4cba657545"
 
 argparse@^1.0.7:
   version "1.0.9"
@@ -4303,7 +4303,7 @@ graphql-relay@^0.5.1:
 
 graphql-skip-limit@^1.0.11:
   version "1.0.11"
-  resolved "http://registry.npmjs.org/graphql-skip-limit/-/graphql-skip-limit-1.0.11.tgz#c6970d11bdfe7aa001f96c8ba41b9a93a6dc805c"
+  resolved "https://registry.npmjs.org/graphql-skip-limit/-/graphql-skip-limit-1.0.11.tgz#c6970d11bdfe7aa001f96c8ba41b9a93a6dc805c"
   dependencies:
     babel-runtime "^6.26.0"
     graphql "^0.11.7"
@@ -6288,8 +6288,8 @@ object-keys@^1.0.10, object-keys@^1.0.8:
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.0.11.tgz#c54601778ad560f1142ce0e01bcca8b56d13426d"
 
 object-path@^0.11.2:
-  version "0.11.4"
-  resolved "https://registry.yarnpkg.com/object-path/-/object-path-0.11.4.tgz#370ae752fbf37de3ea70a861c23bba8915691949"
+  version "0.11.8"
+  resolved "https://registry.yarnpkg.com/object-path/-/object-path-0.11.8.tgz#ed002c02bbdd0070b78a27455e8ae01fc14d4742"
 
 object-visit@^1.0.0:
   version "1.0.1"
@@ -10100,7 +10100,7 @@ yargs@4.7.1:
 
 yargs@^11.1.0:
   version "11.1.0"
-  resolved "http://registry.npmjs.org/yargs/-/yargs-11.1.0.tgz#90b869934ed6e871115ea2ff58b03f4724ed2d77"
+  resolved "https://registry.npmjs.org/yargs/-/yargs-11.1.0.tgz#90b869934ed6e871115ea2ff58b03f4724ed2d77"
   dependencies:
     cliui "^4.0.0"
     decamelize "^1.1.1"
