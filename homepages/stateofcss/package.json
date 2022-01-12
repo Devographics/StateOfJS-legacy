@@ -33,7 +33,7 @@
     "html-loader": "^0.5.5",
     "js-yaml": "^3.12.0",
     "lodash": "^4.17.11",
-    "markdown-it": "^8.4.2",
+    "markdown-it": "^12.3.2",
     "markdown-loader": "^4.0.0",
     "node-fetch": "^2.2.0",
     "node-sass": "^4.9.3",
