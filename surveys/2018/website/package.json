@@ -47,7 +47,7 @@
     "markdown-it": "^8.4.2",
     "markdown-loader": "^4.0.0",
     "node-fetch": "^2.2.0",
-    "node-sass": "^4.9.3",
+    "node-sass": "^7.0.0",
     "object-assign": "^4.1.1",
     "path-dirname": "^1.0.2",
     "prop-types": "^15.6.2",
