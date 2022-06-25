@@ -39,7 +39,7 @@
     "js-yaml": "^3.10.0",
     "lodash": "^4.17.4",
     "markdown-loader": "^4.0.0",
-    "node-fetch": "^2.2.0",
+    "node-fetch": "^2.6.7",
     "numeral": "^2.0.6",
     "object-assign": "^4.1.0",
     "path-dirname": "^1.0.2",
