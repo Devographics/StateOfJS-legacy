@@ -46,7 +46,7 @@
     "lodash": "^4.17.11",
     "markdown-it": "^8.4.2",
     "markdown-loader": "^4.0.0",
-    "node-fetch": "^2.2.0",
+    "node-fetch": "^2.6.7",
     "node-sass": "^4.9.3",
     "object-assign": "^4.1.1",
     "path-dirname": "^1.0.2",
